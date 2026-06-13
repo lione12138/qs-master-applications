@@ -1,0 +1,61 @@
+name: Submit a programme application window
+description: Propose a verified master's programme opening or deadline.
+title: "[Programme window] "
+labels: ["data"]
+body:
+  - type: input
+    id: university
+    attributes:
+      label: University
+    validations:
+      required: true
+  - type: input
+    id: programme
+    attributes:
+      label: Programme
+    validations:
+      required: true
+  - type: input
+    id: intake
+    attributes:
+      label: Intake
+      placeholder: "2027 Fall"
+    validations:
+      required: true
+  - type: input
+    id: round
+    attributes:
+      label: Application round
+  - type: input
+    id: opens
+    attributes:
+      label: Opening date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: input
+    id: closes
+    attributes:
+      label: Closing date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: input
+    id: application_url
+    attributes:
+      label: Official application URL
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Official deadline source URL
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and applicant category
+      description: Explain which applicants and programme group the dates cover.
+    validations:
+      required: true

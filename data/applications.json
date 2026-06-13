@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "title": "Verified graduate application windows",
+    "rankingEdition": "QS World University Rankings 2026",
+    "updatedAt": "2026-06-14T00:00:00Z",
+    "demo": false,
+    "disclaimer": "A window may apply to an institution, a programme group, or one programme. Every published date must be verified against an official university page and scoped explicitly."
+  },
+  "applications": [
+    {
+      "id": "cambridge-advanced-computer-science-michaelmas-2026",
+      "universityId": "university-of-cambridge",
+      "scopeType": "programme",
+      "scopeId": "cambridge-advanced-computer-science-mphil",
+      "intake": "Michaelmas 2026",
+      "round": "",
+      "applicantCategories": ["all"],
+      "opensAt": "2025-09-03",
+      "closesAt": "2026-02-26",
+      "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
+      "verifiedAt": "2026-06-14",
+      "evidence": "The official course page lists applications opening on 3 September 2025 and the application deadline as 26 February 2026 for Michaelmas 2026."
+    },
+    {
+      "id": "cambridge-advanced-chemical-engineering-michaelmas-2026",
+      "universityId": "university-of-cambridge",
+      "scopeType": "programme",
+      "scopeId": "cambridge-advanced-chemical-engineering-mphil",
+      "intake": "Michaelmas 2026",
+      "round": "",
+      "applicantCategories": ["all"],
+      "opensAt": "2025-09-03",
+      "closesAt": "2026-05-14",
+      "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
+      "verifiedAt": "2026-06-14",
+      "evidence": "The official course page lists applications opening on 3 September 2025 and the application deadline as 14 May 2026 for Michaelmas 2026."
+    },
+    {
+      "id": "eth-autumn-2026-international-bachelors",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "scopeType": "institution",
+      "scopeId": "eth-zurich-swiss-federal-institute-of-technology",
+      "intake": "Autumn 2026",
+      "round": "International Bachelor's window",
+      "applicantCategories": ["international-bachelors", "esop", "direct-doctorate"],
+      "opensAt": "2025-11-01",
+      "closesAt": "2025-11-30",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/application/dates.html",
+      "verifiedAt": "2026-06-14",
+      "evidence": "ETH Zurich lists 1 to 30 November 2025 as the mandatory window for applicants with an international Bachelor's degree and for ESOP or Direct Doctorate applicants."
+    },
+    {
+      "id": "eth-autumn-2026-swiss-bachelors",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "scopeType": "institution",
+      "scopeId": "eth-zurich-swiss-federal-institute-of-technology",
+      "intake": "Autumn 2026",
+      "round": "Swiss Bachelor's window",
+      "applicantCategories": ["swiss-bachelors"],
+      "opensAt": "2026-04-01",
+      "closesAt": "2026-04-30",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/application/dates.html",
+      "verifiedAt": "2026-06-14",
+      "evidence": "ETH Zurich lists 1 to 30 April 2026 as a second window only for applicants with a Bachelor's degree from a Swiss university."
+    },
+    {
+      "id": "ucl-advanced-materials-science-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-advanced-materials-science-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": ["requires-uk-study-visa"],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-06-26",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
+      "verifiedAt": "2026-06-14",
+      "evidence": "The official UCL programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 26 June 2026, closing at 5pm UK time."
+    },
+    {
+      "id": "ucl-advanced-materials-science-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-advanced-materials-science-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": ["does-not-require-uk-study-visa"],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
+      "verifiedAt": "2026-06-14",
+      "evidence": "The official UCL programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026, closing at 5pm UK time."
+    }
+  ]
+}

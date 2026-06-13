@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "checkedAt": "2026-06-13T23:27:17.830512+00:00",
+    "uniqueSourcePages": 4,
+    "summary": {
+      "total": 6,
+      "ok": 6,
+      "changed": 0,
+      "blocked": 0,
+      "errors": 0
+    }
+  },
+  "applications": {
+    "cambridge-advanced-computer-science-michaelmas-2026": {
+      "url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
+      "checkedAt": "2026-06-13T23:27:17.404437+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "contentHash": "3afedfc79e8be2df6581604e9c8fe188a86812d09307e19ec612e5cdf086a7e1",
+      "changed": false,
+      "changeDetected": false,
+      "pendingContentHash": null,
+      "pendingChangeCount": 0,
+      "firstSeenAt": "2026-06-13T23:27:17.404437+00:00",
+      "lastSuccessfulAt": "2026-06-13T23:27:17.404437+00:00",
+      "recordId": "cambridge-advanced-computer-science-michaelmas-2026",
+      "universityId": "university-of-cambridge"
+    },
+    "cambridge-advanced-chemical-engineering-michaelmas-2026": {
+      "url": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
+      "checkedAt": "2026-06-13T23:27:17.404437+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "contentHash": "37062495cb57880262e6205805a75e9c8d183d2d3d2c7d3449db041516a88161",
+      "changed": false,
+      "changeDetected": false,
+      "pendingContentHash": null,
+      "pendingChangeCount": 0,
+      "firstSeenAt": "2026-06-13T23:27:17.404437+00:00",
+      "lastSuccessfulAt": "2026-06-13T23:27:17.404437+00:00",
+      "recordId": "cambridge-advanced-chemical-engineering-michaelmas-2026",
+      "universityId": "university-of-cambridge"
+    },
+    "eth-autumn-2026-international-bachelors": {
+      "url": "https://ethz.ch/en/studies/master/application/dates.html",
+      "checkedAt": "2026-06-13T23:27:17.405467+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "contentHash": "937ce32afb82f95539709d9a58897bc734b22316b5e928074073421a9e736cfb",
+      "changed": false,
+      "changeDetected": false,
+      "pendingContentHash": null,
+      "pendingChangeCount": 0,
+      "firstSeenAt": "2026-06-13T23:27:17.405467+00:00",
+      "lastSuccessfulAt": "2026-06-13T23:27:17.405467+00:00",
+      "recordId": "eth-autumn-2026-international-bachelors",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology"
+    },
+    "eth-autumn-2026-swiss-bachelors": {
+      "url": "https://ethz.ch/en/studies/master/application/dates.html",
+      "checkedAt": "2026-06-13T23:27:17.405467+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "contentHash": "937ce32afb82f95539709d9a58897bc734b22316b5e928074073421a9e736cfb",
+      "changed": false,
+      "changeDetected": false,
+      "pendingContentHash": null,
+      "pendingChangeCount": 0,
+      "firstSeenAt": "2026-06-13T23:27:17.405467+00:00",
+      "lastSuccessfulAt": "2026-06-13T23:27:17.405467+00:00",
+      "recordId": "eth-autumn-2026-swiss-bachelors",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology"
+    },
+    "ucl-advanced-materials-science-2026-visa": {
+      "url": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
+      "checkedAt": "2026-06-13T23:27:17.405467+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "contentHash": "09da0ad5fe3e802253513a0b1d6111f793e3bee47ab255369419c4cfc638f47d",
+      "changed": false,
+      "changeDetected": false,
+      "pendingContentHash": null,
+      "pendingChangeCount": 0,
+      "firstSeenAt": "2026-06-13T23:27:17.405467+00:00",
+      "lastSuccessfulAt": "2026-06-13T23:27:17.405467+00:00",
+      "recordId": "ucl-advanced-materials-science-2026-visa",
+      "universityId": "ucl-university-college-london"
+    },
+    "ucl-advanced-materials-science-2026-nonvisa": {
+      "url": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
+      "checkedAt": "2026-06-13T23:27:17.405467+00:00",
+      "status": "ok",
+      "httpStatus": 200,
+      "contentHash": "09da0ad5fe3e802253513a0b1d6111f793e3bee47ab255369419c4cfc638f47d",
+      "changed": false,
+      "changeDetected": false,
+      "pendingContentHash": null,
+      "pendingChangeCount": 0,
+      "firstSeenAt": "2026-06-13T23:27:17.405467+00:00",
+      "lastSuccessfulAt": "2026-06-13T23:27:17.405467+00:00",
+      "recordId": "ucl-advanced-materials-science-2026-nonvisa",
+      "universityId": "ucl-university-college-london"
+    }
+  }
+}

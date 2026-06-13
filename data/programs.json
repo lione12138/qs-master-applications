@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
+    "updatedAt": "2026-06-14"
+  },
+  "programs": [
+    {
+      "id": "cambridge-advanced-computer-science-mphil",
+      "universityId": "university-of-cambridge",
+      "name": "MPhil in Advanced Computer Science",
+      "degreeType": "MPhil",
+      "faculty": "Department of Computer Science and Technology",
+      "programmeGroup": "Cambridge taught master's",
+      "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs"
+    },
+    {
+      "id": "cambridge-advanced-chemical-engineering-mphil",
+      "universityId": "university-of-cambridge",
+      "name": "MPhil in Advanced Chemical Engineering",
+      "degreeType": "MPhil",
+      "faculty": "Department of Chemical Engineering and Biotechnology",
+      "programmeGroup": "Cambridge taught master's",
+      "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace"
+    },
+    {
+      "id": "eth-computer-science-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Computer Science",
+      "degreeType": "MSc",
+      "faculty": "Department of Computer Science",
+      "programmeGroup": "ETH master's programmes",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
+      "id": "eth-data-science-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Data Science",
+      "degreeType": "MSc",
+      "faculty": "ETH Zurich",
+      "programmeGroup": "ETH master's programmes",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
+      "id": "eth-robotics-systems-control-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Robotics, Systems and Control",
+      "degreeType": "MSc",
+      "faculty": "ETH Zurich",
+      "programmeGroup": "ETH master's programmes",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
+      "id": "eth-statistics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Statistics",
+      "degreeType": "MSc",
+      "faculty": "ETH Zurich",
+      "programmeGroup": "ETH master's programmes",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
+      "id": "eth-quantitative-finance-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Quantitative Finance",
+      "degreeType": "MSc",
+      "faculty": "ETH Zurich and University of Zurich",
+      "programmeGroup": "ETH master's programmes",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
+      "id": "ucl-advanced-materials-science-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Advanced Materials Science MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Mathematical and Physical Sciences",
+      "programmeGroup": "UCL graduate taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc"
+    }
+  ]
+}

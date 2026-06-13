@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "description": "Verified examples of how universities define graduate application periods. These describe granularity, not current application dates.",
+    "verifiedAt": "2026-06-14"
+  },
+  "policies": [
+    {
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "MIT describes graduate admissions as decentralised. Departments determine timelines, and degree programmes have their own requirements and deadlines.",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/applications/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "dates-not-exact",
+        "opensText": "Early Fall 2026",
+        "notes": "The central timeline is approximate; use each programme page for an exact deadline."
+      }
+    },
+    {
+      "universityId": "university-of-cambridge",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The specific deadline depends on the course and on whether the applicant is applying for funding.",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/application-process/application-deadlines",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "open-programme-specific",
+        "opensText": "Applications open; deadlines vary by course",
+        "notes": "Cambridge's directory is open for 2026/27, but each course has its own deadline and may close early."
+      }
+    },
+    {
+      "universityId": "stanford-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Applicants submit by the deadline set by the intended graduate programme.",
+      "sourceUrl": "https://gradadmissions.stanford.edu/apply",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "announced-not-exact",
+        "opensText": "Mid-September 2026",
+        "notes": "The central application opening is announced, while deadlines remain programme-specific."
+      }
+    },
+    {
+      "universityId": "university-of-oxford",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Oxford's central guide applies broadly, but individual course pages define deadlines and some courses use separate application processes.",
+      "sourceUrl": "https://www.ox.ac.uk/admissions/graduate/application-guide",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "guidance-pending",
+        "opensText": "Guidance expected mid-September 2026",
+        "notes": "Oxford says guidance for applications made in 2026-27 will be available from mid-September 2026."
+      }
+    },
+    {
+      "universityId": "harvard-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Harvard Griffin GSAS states that application deadlines vary by programme and are listed on the relevant programme page.",
+      "sourceUrl": "https://gsas.harvard.edu/apply",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "dates-not-exact",
+        "opensText": "September 2026",
+        "notes": "The degree programme application becomes available in September; no exact day is stated."
+      }
+    },
+    {
+      "universityId": "imperial-college-london",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Many courses remain open until full; some departments use fixed application rounds shared by taught postgraduate courses.",
+      "sourceUrl": "https://www.imperial.ac.uk/study/apply/postgraduate-taught/application-process/deadlines/",
+      "verifiedAt": "2026-06-14"
+    },
+    {
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "model": "applicant-category",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Master's windows are shared across programmes but differ by prior degree origin and scholarship/direct-doctorate category.",
+      "sourceUrl": "https://ethz.ch/en/studies/master/application/dates.html",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "closed",
+        "opensText": "1–30 Nov 2025 or 1–30 Apr 2026",
+        "notes": "The applicable window depends on the country of the applicant's Bachelor's degree and scholarship/direct-doctorate status."
+      }
+    },
+    {
+      "universityId": "national-university-of-singapore-nus",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "NUS separates research and coursework routes and directs applicants to individual programme pages for programme-specific requirements and application details.",
+      "sourceUrl": "https://nusgs.nus.edu.sg/admissions/",
+      "verifiedAt": "2026-06-14"
+    },
+    {
+      "universityId": "ucl-university-college-london",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Each UCL prospectus page states its own deadlines. Deadlines commonly differ by visa requirement, and courses may close earlier than advertised.",
+      "sourceUrl": "https://www.ucl.ac.uk/study/prospective-students/graduate/how-apply/applying-graduate-taught-study-ucl",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific-open",
+        "opensText": "Check each course; many are currently open",
+        "notes": "Admissions take place throughout the year, with visa-specific deadlines on individual course pages."
+      }
+    },
+    {
+      "universityId": "california-institute-of-technology-caltech",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "limited",
+      "notes": "Caltech generally accepts graduate applications once yearly, while requirements and exceptions are controlled by academic options. Not all options admit directly to the M.S.; some award it only on the Ph.D. path or in special terminal cases.",
+      "sourceUrl": "https://gradoffice.caltech.edu/admissions",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "following Fall",
+        "status": "recurring-dates-without-year",
+        "opensText": "Generally 21 Nov–15 Dec",
+        "notes": "The official page gives a recurring month/day range without an explicit application-cycle year, so no exact calendar record is published."
+      }
+    }
+  ]
+}

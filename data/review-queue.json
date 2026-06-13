@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "generatedAt": "2026-06-13T23:29:04.009255+00:00",
+    "description": "Automatic findings require maintainer review before publication."
+  },
+  "items": [
+    {
+      "id": "content-change:national-university-of-singapore-nus:158b195715f7",
+      "type": "content-change",
+      "universityId": "national-university-of-singapore-nus",
+      "school": "National University of Singapore (NUS)",
+      "qsRank": 8,
+      "url": "https://nusgs.nus.edu.sg/admissions/",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:11.500333+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "content-change:cole-polytechnique-f-d-rale-de-lausanne:1ab864179e6f",
+      "type": "content-change",
+      "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
+      "school": "École Polytechnique Fédérale de Lausanne",
+      "qsRank": 22,
+      "url": "https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:12.721385+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "content-change:city-university-of-hong-kong:383ee91f9cc4",
+      "type": "content-change",
+      "universityId": "city-university-of-hong-kong",
+      "school": "City University of Hong Kong",
+      "qsRank": 63,
+      "url": "https://www.cityu.edu.hk/admissions/postgraduate",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:15.585782+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "content-change:adelaide-university:33c3734b0ee3",
+      "type": "content-change",
+      "universityId": "adelaide-university",
+      "school": "Adelaide University",
+      "qsRank": 82,
+      "url": "https://adelaide.edu.au",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:16.858710+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "content-change:university-of-zurich-uzh:5c4c4e121a9b",
+      "type": "content-change",
+      "universityId": "university-of-zurich-uzh",
+      "school": "University of Zurich (UZH)",
+      "qsRank": 100,
+      "url": "https://uzh.ch/de.html",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:18.225409+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "content-change:indian-institute-of-technology-delhi-iitd:d712c2efac11",
+      "type": "content-change",
+      "universityId": "indian-institute-of-technology-delhi-iitd",
+      "school": "Indian Institute of Technology Delhi (IITD)",
+      "qsRank": 123,
+      "url": "https://home.iitd.ac.in",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:19.852542+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "content-change:universiti-putra-malaysia-upm:7f153261aca5",
+      "type": "content-change",
+      "universityId": "universiti-putra-malaysia-upm",
+      "school": "Universiti Putra Malaysia (UPM)",
+      "qsRank": 134,
+      "url": "https://upm.edu.my/admission/programmes/postgraduate-76276",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:20.602058+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "content-change:chalmers-university-of-technology:6d1b8a48a24f",
+      "type": "content-change",
+      "universityId": "chalmers-university-of-technology",
+      "school": "Chalmers University of Technology",
+      "qsRank": 165,
+      "url": "https://www.chalmers.se/en/education/find-masters-programme/",
+      "reason": "Official page content changed consistently in two consecutive checks.",
+      "detectedAt": "2026-06-13T22:29:22.855078+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:university-of-pennsylvania",
+      "type": "monitor-error",
+      "universityId": "university-of-pennsylvania",
+      "school": "University of Pennsylvania",
+      "qsRank": 15,
+      "url": "https://gradcenter.upenn.edu/graduate-admissions/",
+      "reason": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "detectedAt": "2026-06-13T22:29:11.503341+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:korea-university",
+      "type": "monitor-error",
+      "universityId": "korea-university",
+      "school": "Korea University",
+      "qsRank": 61,
+      "url": "https://www.korea.edu/",
+      "reason": "<urlopen error [WinError 10054] 远程主机强迫关闭了一个现有的连接。>",
+      "detectedAt": "2026-06-13T22:29:15.455852+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:nanjing-university",
+      "type": "monitor-error",
+      "universityId": "nanjing-university",
+      "school": "Nanjing University",
+      "qsRank": 103,
+      "url": "http://www.nju.edu.cn/english/",
+      "reason": "HTTP status 404",
+      "detectedAt": "2026-06-13T22:29:18.359082+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:indian-institute-of-technology-bombay-iitb",
+      "type": "monitor-error",
+      "universityId": "indian-institute-of-technology-bombay-iitb",
+      "school": "Indian Institute of Technology Bombay (IITB)",
+      "qsRank": 129,
+      "url": "http://www.iitb.ac.in/",
+      "reason": "[WinError 10054] 远程主机强迫关闭了一个现有的连接。",
+      "detectedAt": "2026-06-13T22:29:20.225053+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:hanyang-university",
+      "type": "monitor-error",
+      "universityId": "hanyang-university",
+      "school": "Hanyang University",
+      "qsRank": 159,
+      "url": "http://www.hanyang.ac.kr/english/",
+      "reason": "HTTP status 404",
+      "detectedAt": "2026-06-13T22:29:22.424785+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:king-abdul-aziz-university-kau",
+      "type": "monitor-error",
+      "universityId": "king-abdul-aziz-university-kau",
+      "school": "King Abdul Aziz University (KAU)",
+      "qsRank": 163,
+      "url": "http://www.kau.edu.sa/home_english.aspx",
+      "reason": "HTTP status 404",
+      "detectedAt": "2026-06-13T22:29:22.722089+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:al-farabi-kazakh-national-university",
+      "type": "monitor-error",
+      "universityId": "al-farabi-kazakh-national-university",
+      "school": "Al-Farabi Kazakh National University",
+      "qsRank": 166,
+      "url": "https://farabi.university",
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+      "detectedAt": "2026-06-13T22:29:22.900374+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:national-tsing-hua-university",
+      "type": "monitor-error",
+      "universityId": "national-tsing-hua-university",
+      "school": "National Tsing Hua University",
+      "qsRank": 176,
+      "url": "http://www.nthu.edu.tw/english/",
+      "reason": "HTTP status 404",
+      "detectedAt": "2026-06-13T22:29:23.617868+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:curtin-university",
+      "type": "monitor-error",
+      "universityId": "curtin-university",
+      "school": "Curtin University",
+      "qsRank": 183,
+      "url": "https://www.curtin.edu.au",
+      "reason": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>",
+      "detectedAt": "2026-06-13T22:29:24.111466+00:00",
+      "status": "pending"
+    },
+    {
+      "id": "monitor-error:universit-catholique-de-louvain-ucl",
+      "type": "monitor-error",
+      "universityId": "universit-catholique-de-louvain-ucl",
+      "school": "Université Catholique de Louvain (UCL)",
+      "qsRank": 191,
+      "url": "https://uclouvain.be",
+      "reason": "HTTP status 503",
+      "detectedAt": "2026-06-13T22:29:24.988007+00:00",
+      "status": "pending"
+    }
+  ]
+}

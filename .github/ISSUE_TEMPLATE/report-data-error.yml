@@ -1,0 +1,38 @@
+name: Report a data error
+description: Report an incorrect ranking, official URL, status, or deadline.
+title: "[Data correction] "
+labels: ["data"]
+body:
+  - type: input
+    id: university
+    attributes:
+      label: University or record
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Incorrect field
+      options:
+        - Ranking
+        - Official homepage
+        - Graduate admissions URL
+        - Opening date
+        - Closing date
+        - Intake or application round
+        - Monitoring status
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official supporting URL
+    validations:
+      required: true
