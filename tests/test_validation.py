@@ -13,9 +13,9 @@ def test_current_public_data_is_valid() -> None:
     assert errors == []
     assert summary["universities"] == 200
     assert summary["curatedAdmissions"] >= 25
-    assert summary["windowPolicies"] >= 20
-    assert summary["programs"] >= 18
-    assert summary["programmeGroups"] >= 14
+    assert summary["windowPolicies"] >= 25
+    assert summary["programs"] >= 23
+    assert summary["programmeGroups"] >= 19
     assert summary["applicantCategories"] >= 8
     assert summary["verifiedWindows"] >= 10
     assert summary["predictedWindows"] >= 10

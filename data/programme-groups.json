@@ -87,6 +87,36 @@
       "universityId": "the-university-of-new-south-wales",
       "name": "UNSW postgraduate coursework",
       "description": "Postgraduate coursework programmes using standard term dates or programme-specific exceptions."
+    },
+    {
+      "id": "yale-gsas-masters",
+      "universityId": "yale-university",
+      "name": "Yale GSAS master's programmes",
+      "description": "Master's programmes administered through the Yale Graduate School of Arts and Sciences."
+    },
+    {
+      "id": "epfl-external-degree-masters",
+      "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
+      "name": "EPFL master's applications with an external degree",
+      "description": "Master's programmes using EPFL's common dossier-based application route for applicants whose prior degree is from another institution."
+    },
+    {
+      "id": "tum-informatics-masters",
+      "universityId": "technical-university-of-munich",
+      "name": "TUM Informatics master's programmes",
+      "description": "Master's programmes in informatics with programme-level semester application periods."
+    },
+    {
+      "id": "jhu-engineering-for-professionals",
+      "universityId": "johns-hopkins-university",
+      "name": "Johns Hopkins Engineering for Professionals",
+      "description": "Part-time online and hybrid graduate engineering programmes with admissions separate from full-time Homewood programmes."
+    },
+    {
+      "id": "princeton-computer-science-graduate",
+      "universityId": "princeton-university",
+      "name": "Princeton Computer Science graduate programmes",
+      "description": "Computer Science graduate degrees sharing the department's fall-only application route."
     }
   ]
 }

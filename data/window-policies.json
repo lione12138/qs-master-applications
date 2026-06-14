@@ -291,6 +291,81 @@
         "opensText": "Applications are accepted through the relevant UNSW or UAC portal",
         "notes": "The published 2026 term table gives closing dates but not a precise opening day, and the Master of Information Technology is subject to grouped offer rounds and capacity."
       }
+    },
+    {
+      "universityId": "yale-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Yale GSAS programmes evaluate applications independently and publish programme-specific deadlines. The central application opening is shared, but the exact deadline depends on the programme.",
+      "sourceUrl": "https://gsas.yale.edu/admissions/phdmasters-application-process",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "announced-not-exact",
+        "opensText": "Mid-September 2026",
+        "notes": "The exact opening day is not yet published. Yale lists 2 January 2027 at 11:59 p.m. Eastern time as the Computer Science MS deadline."
+      }
+    },
+    {
+      "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
+      "model": "applicant-category",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "EPFL uses a common master's application process for applicants with external degrees. Published application periods are shared broadly, while eligibility and programme requirements remain programme-specific.",
+      "sourceUrl": "https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "following September",
+        "status": "recurring-dates-without-year",
+        "opensText": "Mid-November to 15 December, or 16 December to 31 March",
+        "notes": "The official page states recurring month/day periods without binding them to a calendar year, so no exact calendar window is published."
+      }
+    },
+    {
+      "universityId": "technical-university-of-munich",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "TUM master's application periods are defined by the individual degree programme. The Informatics MSc accepts applications for both winter and summer semesters.",
+      "sourceUrl": "https://www.tum.de/en/studies/application/application-info-portal/dates-periods-and-deadlines",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "winter or summer semester",
+        "status": "recurring-dates-without-year",
+        "opensText": "Informatics MSc: 1 February–31 May for winter; 1 October–30 November for summer",
+        "notes": "The programme page publishes stable month/day periods without an explicit cycle year, so they are retained as recurring guidance rather than exact calendar records."
+      }
+    },
+    {
+      "universityId": "johns-hopkins-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Johns Hopkins graduate admissions are administered by its schools and programmes. Engineering for Professionals uses a separate route for part-time online and hybrid master's programmes.",
+      "sourceUrl": "https://provost.jhu.edu/education/graduate-and-professional-education/admissions/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "rolling",
+        "status": "rolling-year-round",
+        "opensText": "Applications accepted year-round",
+        "notes": "The tracked Engineering for Professionals Computer Science MS accepts applications at any time and therefore has no finite application window."
+      }
+    },
+    {
+      "universityId": "princeton-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Princeton admits graduate students for fall entry only. Departments publish their own deadlines and degree availability, including whether a master's route accepts direct applications.",
+      "sourceUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "announced-not-exact",
+        "opensText": "September 2026",
+        "notes": "The exact Fall 2027 opening day and Computer Science deadline are not yet published. The current Computer Science page still shows 15 December 2025 for Fall 2026."
+      }
     }
   ]
 }

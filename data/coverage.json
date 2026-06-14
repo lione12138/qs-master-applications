@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-14T10:23:13.427417+00:00",
+    "generatedAt": "2026-06-14T10:35:00.160866+00:00",
     "rankingScope": "QS World University Rankings 2026 top 30",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -9,20 +9,20 @@
     "targetUniversities": 30,
     "entriesLocated": 28,
     "curatedEntries": 25,
-    "policiesVerified": 20,
-    "cycleGuidanceAvailable": 18,
-    "broadMastersAvailability": 19,
+    "policiesVerified": 25,
+    "cycleGuidanceAvailable": 23,
+    "broadMastersAvailability": 24,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 13,
+    "universitiesWithPrograms": 18,
     "universitiesWithWindows": 7,
     "verifiedWindows": 10,
     "universitiesWithPredictions": 7,
     "predictedWindows": 10,
     "nextActions": {
       "locate-official-entry": 2,
-      "verify-window-policy": 8,
+      "verify-window-policy": 3,
       "select-target-programmes": 7,
-      "verify-exact-windows": 6,
+      "verify-exact-windows": 11,
       "monitor-and-refresh": 7
     }
   },
@@ -87,8 +87,8 @@
       ],
       "universities": 5,
       "entriesLocated": 5,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -587,14 +587,19 @@
       "batch": 5,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "announced-not-exact",
+        "opensText": "Mid-September 2026",
+        "notes": "The exact opening day is not yet published. Yale lists 2 January 2027 at 11:59 p.m. Eastern time as the Computer Science MS deadline."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
@@ -606,14 +611,19 @@
       "batch": 5,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "following September",
+        "status": "recurring-dates-without-year",
+        "opensText": "Mid-November to 15 December, or 16 December to 31 March",
+        "notes": "The official page states recurring month/day periods without binding them to a calendar year, so no exact calendar window is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "technical-university-of-munich",
@@ -625,14 +635,19 @@
       "batch": 5,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "winter or summer semester",
+        "status": "recurring-dates-without-year",
+        "opensText": "Informatics MSc: 1 February–31 May for winter; 1 October–30 November for summer",
+        "notes": "The programme page publishes stable month/day periods without an explicit cycle year, so they are retained as recurring guidance rather than exact calendar records."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "johns-hopkins-university",
@@ -644,14 +659,19 @@
       "batch": 5,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "rolling",
+        "status": "rolling-year-round",
+        "opensText": "Applications accepted year-round",
+        "notes": "The tracked Engineering for Professionals Computer Science MS accepts applications at any time and therefore has no finite application window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "princeton-university",
@@ -663,14 +683,19 @@
       "batch": 5,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "announced-not-exact",
+        "opensText": "September 2026",
+        "notes": "The exact Fall 2027 opening day and Computer Science deadline are not yet published. The current Computer Science page still shows 15 December 2025 for Fall 2026."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "the-university-of-sydney",

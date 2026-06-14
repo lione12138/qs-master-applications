@@ -86,11 +86,21 @@ Status: policy verification complete for all five institutions.
 
 ## Batch 5 · QS 21–25
 
-- Yale University
-- EPFL
-- Technical University of Munich
-- Johns Hopkins University
-- Princeton University
+- Yale University — GSAS policy and Computer Science MS added. Yale has
+  published the 2 January 2027 deadline, but only says the application opens
+  in mid-September 2026, so no complete exact window is published.
+- EPFL — common external-degree master's route and Computer Science MSc
+  added. EPFL gives recurring mid-November/December/March dates without a
+  cycle year, so they remain guidance rather than an exact calendar record.
+- Technical University of Munich — programme-specific policy and Informatics
+  MSc added. Its winter and summer application periods are published as
+  stable month/day ranges without an explicit year.
+- Johns Hopkins University — mixed school-level policy and the Engineering
+  for Professionals Computer Science MS added. This tracked route is
+  part-time online/hybrid and accepts applications year-round.
+- Princeton University — fall-only, programme-specific policy and Computer
+  Science MSE added. Fall 2027 opens in September 2026, but the exact day and
+  programme deadline are not yet published.
 
 ## Batch 6 · QS 26–30
 
