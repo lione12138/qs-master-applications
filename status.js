@@ -16,7 +16,6 @@ export function getApplicationStatus(
   today = localCalendarDate(),
   upcomingWindowDays = UPCOMING_WINDOW_DAYS,
 ) {
-  if (record.dataStatus === "predicted") return "predicted";
   if (!record.opensAt || !record.closesAt) return "unknown";
 
   const opens = parseUtcDate(record.opensAt);

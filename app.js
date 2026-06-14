@@ -34,10 +34,6 @@ const STATUS_LABELS = {
     title: "未来开放",
     description: "开放日期距离今天超过 30 天",
   },
-  predicted: {
-    title: "下一周期预测",
-    description: "按上一周期同一日历日期平移一年，不代表学校真实预测",
-  },
   closed: {
     title: "当前已截止",
     description: "本轮申请已结束",
@@ -159,7 +155,7 @@ function formatDate(value) {
 }
 
 function deadlineNote(record, status) {
-  if (status === "predicted") {
+  if (record.dataStatus === "predicted") {
     return `同日历日期平移 · 参考 ${record.sourceCycle}`;
   }
   const days = daysUntil(record.closesAt);
@@ -666,7 +662,6 @@ function renderCounts(records, universities) {
     open: 0,
     upcoming: 0,
     future: 0,
-    predicted: 0,
     closed: 0,
     unknown: universities.length,
   };
@@ -691,7 +686,7 @@ function render() {
   const emptyState = document.getElementById("empty-state");
   container.replaceChildren();
 
-  ["open", "upcoming", "future", "predicted", "closed"].forEach((status) => {
+  ["open", "upcoming", "future", "closed"].forEach((status) => {
     if (state.status !== "all" && state.status !== status) return;
     const groupRecords = records
       .filter((record) => getStatus(record) === status)
@@ -954,7 +949,6 @@ async function init() {
       "open",
       "upcoming",
       "future",
-      "predicted",
       "closed",
       "unknown",
     ]);

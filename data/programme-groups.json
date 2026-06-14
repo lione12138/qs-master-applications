@@ -237,6 +237,36 @@
       "universityId": "university-of-michigan-ann-arbor",
       "name": "Michigan CSE master's programmes",
       "description": "Fall-only terminal master's programmes administered by Computer Science and Engineering."
+    },
+    {
+      "id": "ucla-computer-science-graduate",
+      "universityId": "university-of-california-los-angeles-ucla",
+      "name": "UCLA Computer Science graduate programmes",
+      "description": "Fall-only Computer Science MS and PhD admissions using the department's shared deadline."
+    },
+    {
+      "id": "tu-delft-computer-science-msc-admissions",
+      "universityId": "delft-university-of-technology",
+      "name": "TU Delft Computer Science MSc",
+      "description": "Computer Science MSc admissions using TU Delft's selected-programme deadline for international diplomas."
+    },
+    {
+      "id": "sjtu-international-graduate-programmes",
+      "universityId": "shanghai-jiao-tong-university",
+      "name": "SJTU international graduate programmes",
+      "description": "International master's and doctoral programmes covered by SJTU's central annual admissions guide."
+    },
+    {
+      "id": "zju-international-postgraduate-programmes",
+      "universityId": "zhejiang-university",
+      "name": "Zhejiang international postgraduate programmes",
+      "description": "International postgraduate routes published through Zhejiang University's annual admissions guides."
+    },
+    {
+      "id": "yonsei-international-graduate-admissions",
+      "universityId": "yonsei-university",
+      "name": "Yonsei international graduate admissions",
+      "description": "Graduate programmes available through Yonsei Graduate School's international-student track."
     }
   ]
 }

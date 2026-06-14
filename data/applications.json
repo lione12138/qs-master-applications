@@ -416,6 +416,30 @@
         "term": "fall",
         "startMonth": 9
       }
+    },
+    {
+      "id": "yonsei-international-graduate-fall-2026",
+      "universityId": "yonsei-university",
+      "scopeType": "programme-group",
+      "scopeId": "yonsei-international-graduate-admissions",
+      "intake": "Fall 2026",
+      "round": "International student track",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-04-06",
+      "closesAt": "2026-04-13",
+      "applicationUrl": "https://www.gradnet.co.kr/",
+      "sourceUrl": "https://graduate.yonsei.ac.kr/graduate_en/admission/forein_fall_schedule.do",
+      "verifiedAt": "2026-06-14",
+      "evidence": "Yonsei Graduate School's official Fall 2026 international-student schedule states that applications were accepted from 10:00 on 6 April to 17:00 on 13 April 2026.",
+      "intakeDetails": {
+        "label": "Fall 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
     }
   ]
 }

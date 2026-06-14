@@ -49,7 +49,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
         encoding="utf-8"
     )
     assert "来源与覆盖" in (tmp_path / "sources.html").read_text(encoding="utf-8")
-    assert "预测参考" in (tmp_path / "index.html").read_text(encoding="utf-8")
+    index_html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert 'data-status="predicted"' not in index_html
+    assert "明确标为非官方" in index_html
     assert "university-of-cambridge" in (
         tmp_path / "sitemap.xml"
     ).read_text(encoding="utf-8")

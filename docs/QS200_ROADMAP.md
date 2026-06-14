@@ -62,3 +62,21 @@ five institutions while preserving the same completion rules:
 - University of Michigan-Ann Arbor — fall-only programme policy and CSE MSE
   added. The next cycle is expected to reopen around September, but its exact
   opening date has not been announced.
+
+## Batch 10 · QS positions 46–50
+
+- UCLA — fall-only Computer Science MS policy added. The department describes
+  a mid-September to 15 December period, but the next exact opening day is not
+  yet published.
+- Delft University of Technology — applicant-category and selected-programme
+  policy plus Computer Science MSc added. Recurring dates are published without
+  a cycle year, so they remain guidance rather than a formal window.
+- Shanghai Jiao Tong University — central international graduate policy and
+  Computer Science master's programme added. The 2026 opening and scholarship
+  or self-funded deadlines are documented, but the legacy source could not be
+  captured reliably enough for an evidence snapshot.
+- Zhejiang University — annual international postgraduate policy and Computer
+  Science master's programme added. The next annual guide is not yet published.
+- Yonsei University — central international-student policy and Computer Science
+  master's programme added with the complete 6–13 April 2026 Fall application
+  window.

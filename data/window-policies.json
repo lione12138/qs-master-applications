@@ -666,6 +666,81 @@
         "opensText": "Expected around mid-September 2026; exact next-cycle date not published",
         "notes": "The current page says applications reopen in mid-September and the master's deadline is 15 January. A similar September 2026-January 2027 period is only a prior-cycle reference until the new cycle is dated explicitly."
       }
+    },
+    {
+      "universityId": "university-of-california-los-angeles-ucla",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UCLA graduate departments set programme-level deadlines. Computer Science accepts MS applications for fall entry only.",
+      "sourceUrl": "https://www.cs.ucla.edu/graduate-admission-frequently-asked-questions/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "prior-cycle-reference",
+        "opensText": "Usually mid-September; exact next-cycle opening day not published",
+        "notes": "The CS FAQ states that applications are submitted between mid-September and 15 December. The next cycle should be treated as a prior-cycle reference until exact dated guidance is published."
+      }
+    },
+    {
+      "universityId": "delft-university-of-technology",
+      "model": "mixed",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "TU Delft publishes common dates for general MSc programmes, with earlier deadlines for selected programmes and different deadlines by EU/EFTA status.",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September intake",
+        "status": "recurring-dates-cycle-not-labelled",
+        "opensText": "Applications open 15 October",
+        "notes": "Computer Science is in the selected-programme group with a 15 January deadline for non-EU/EFTA applicants. EU/EFTA applicants use the 1 April deadline. The page does not label these dates with a cycle year."
+      }
+    },
+    {
+      "universityId": "shanghai-jiao-tong-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "SJTU publishes a central international graduate window with earlier scholarship deadlines. Some schools, including Computer Science master's programmes, also require a supervisor acceptance letter.",
+      "sourceUrl": "https://isc.sjtu.edu.cn/EN/content.aspx?flag=2&info_lb=38",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "closed",
+        "opensText": "Applications opened 15 October 2025",
+        "notes": "The official guide lists scholarship deadlines on 15 December 2025, 15 February 2026, and 31 March 2026, with self-supported applications closing 31 May 2026."
+      }
+    },
+    {
+      "universityId": "zhejiang-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Zhejiang University publishes separate annual international postgraduate guides and programme-specific notices. Scholarship routes may close earlier than self-funded applications.",
+      "sourceUrl": "https://iczu.zju.edu.cn/admissionsen/68990/list.htm",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "not-yet-published",
+        "opensText": "Exact next-cycle dates not published",
+        "notes": "The international admissions listing should be monitored for the next annual postgraduate guide. No complete 2027 application period is currently published."
+      }
+    },
+    {
+      "universityId": "yonsei-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Yonsei Graduate School publishes central international-student application periods for spring and fall entry. Department-specific interviews or performance assessments may follow.",
+      "sourceUrl": "https://graduate.yonsei.ac.kr/graduate_en/admission/forein_fall_schedule.do",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "6-13 April 2026",
+        "notes": "The official international-student schedule gives a complete application period for Fall 2026."
+      }
     }
   ]
 }

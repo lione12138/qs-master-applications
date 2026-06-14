@@ -518,6 +518,36 @@
       "evidenceCycleCount": 1,
       "methodology": "calendar-date-shift-plus-one-year",
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-yonsei-international-graduate-fall-2026-next-cycle",
+      "basedOnRecordId": "yonsei-international-graduate-fall-2026",
+      "universityId": "yonsei-university",
+      "scopeType": "programme-group",
+      "scopeId": "yonsei-international-graduate-admissions",
+      "intake": "Fall 2027",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International student track",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-04-06",
+      "closesAt": "2027-04-13",
+      "applicationUrl": "https://www.gradnet.co.kr/",
+      "sourceUrl": "https://graduate.yonsei.ac.kr/graduate_en/admission/forein_fall_schedule.do",
+      "sourceCycle": "Fall 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     }
   ]
 }
