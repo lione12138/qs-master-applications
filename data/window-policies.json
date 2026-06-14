@@ -441,6 +441,81 @@
         "opensText": "13 October–12 December 2025 and 1–31 March 2026",
         "notes": "The official English-taught postgraduate admissions brochure publishes two complete application phases for international applicants."
       }
+    },
+    {
+      "universityId": "king-s-college-london-kcl",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "King's normally opens postgraduate taught applications centrally, while each course page publishes its own application status, closing-date guidance, requirements, and exceptions.",
+      "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/how-to-apply",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-programme-specific",
+        "opensText": "Applications usually open in mid-October for the following September",
+        "notes": "The Advanced Computing MSc is currently marked open, but the official guidance does not expose an exact opening day and its accessible course content does not state a finite closing date."
+      }
+    },
+    {
+      "universityId": "australian-national-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "ANU application dates differ by domestic or international applicant route, semester, and programme. Programme pages may publish earlier exceptions to the general closing dates.",
+      "sourceUrl": "https://study.anu.edu.au/apply",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Semester 1 or Semester 2, 2027",
+        "status": "open-applicant-category-specific",
+        "opensText": "2027 direct applications are currently open; exact opening day not stated",
+        "notes": "Domestic direct applications close 13 February or 17 July 2027. International applications generally close 15 December 2026 or 15 May 2027, with earlier programme exceptions."
+      }
+    },
+    {
+      "universityId": "the-chinese-university-of-hong-kong",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "CUHK uses a shared Graduate School application commencement date, but each taught and research programme publishes its own deadline or application rounds.",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "closed-or-programme-specific",
+        "opensText": "Applications commenced 1 September 2025 at 09:00 Hong Kong time",
+        "notes": "The MSc in Computer Science closed on 31 January 2026. Other CUHK taught programmes use different rounds and deadlines."
+      }
+    },
+    {
+      "universityId": "university-of-edinburgh",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Edinburgh postgraduate taught programmes publish their own application status and deadline. High-demand programmes may close after a fixed deadline and can extend only if places remain.",
+      "sourceUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2027",
+        "status": "announced-not-exact",
+        "opensText": "Applications usually open in October 2026",
+        "notes": "The Computer Science MSc is closed for September 2026 and lists a 31 March 2026 deadline. The exact next-cycle opening day and deadline are not yet published."
+      }
+    },
+    {
+      "universityId": "the-university-of-manchester",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Manchester taught master's courses set programme-specific admissions processes. High-demand Computer Science programmes use staged selection deadlines and may close when capacity is reached.",
+      "sourceUrl": "https://www.manchester.ac.uk/study/masters/admissions/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "staged-programme-specific",
+        "opensText": "Exact opening day not stated",
+        "notes": "Advanced Computer Science lists 7 November 2025, 2 January 2026, 27 February 2026, and 22 May 2026 selection deadlines. Later applications depend on availability."
+      }
     }
   ]
 }

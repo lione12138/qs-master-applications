@@ -190,6 +190,36 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-cuhk-computer-science-msc-2026-next-cycle",
+      "basedOnRecordId": "cuhk-computer-science-msc-2026",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "scopeType": "programme",
+      "scopeId": "cuhk-computer-science-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main application period",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-09-01",
+      "closesAt": "2027-01-31",
+      "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-tsinghua-advanced-computing-autumn-2026-round-2-next-cycle",
       "basedOnRecordId": "tsinghua-advanced-computing-autumn-2026-round-2",
       "universityId": "tsinghua-university",
