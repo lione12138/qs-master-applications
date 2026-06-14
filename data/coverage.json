@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-14T09:29:28.126645+00:00",
+    "generatedAt": "2026-06-14T09:54:57.011848+00:00",
     "rankingScope": "QS World University Rankings 2026 top 30",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -9,21 +9,21 @@
     "targetUniversities": 30,
     "entriesLocated": 28,
     "curatedEntries": 25,
-    "policiesVerified": 10,
-    "cycleGuidanceAvailable": 8,
-    "broadMastersAvailability": 9,
+    "policiesVerified": 15,
+    "cycleGuidanceAvailable": 13,
+    "broadMastersAvailability": 14,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 3,
-    "universitiesWithWindows": 3,
-    "verifiedWindows": 6,
-    "universitiesWithPredictions": 3,
-    "predictedWindows": 6,
+    "universitiesWithPrograms": 8,
+    "universitiesWithWindows": 6,
+    "verifiedWindows": 9,
+    "universitiesWithPredictions": 6,
+    "predictedWindows": 9,
     "nextActions": {
       "locate-official-entry": 2,
-      "verify-window-policy": 18,
+      "verify-window-policy": 13,
       "select-target-programmes": 7,
-      "verify-exact-windows": 0,
-      "monitor-and-refresh": 3
+      "verify-exact-windows": 2,
+      "monitor-and-refresh": 6
     }
   },
   "batches": [
@@ -61,10 +61,10 @@
       ],
       "universities": 5,
       "entriesLocated": 5,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 3,
+      "predictedWindows": 3
     },
     {
       "batch": 4,
@@ -347,14 +347,19 @@
       "batch": 3,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "programme-specific-closed-or-closing",
+        "opensText": "Check each programme page",
+        "notes": "The MSc Computer Science page publishes main and clearing deadlines but does not expose an exact application opening date, so no complete calendar window is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "nanyang-technological-university-singapore-ntu-singapore",
@@ -366,14 +371,19 @@
       "batch": 3,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Academic Year 2026-27",
+        "status": "programme-specific",
+        "opensText": "Dates vary by programme",
+        "notes": "The Master of Computing in Applied Artificial Intelligence lists a 1 November to 31 March period for the August 2026 intake."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-chicago",
@@ -385,14 +395,19 @@
       "batch": 3,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "programme-specific-open",
+        "opensText": "Application is open; exact opening day not stated",
+        "notes": "The MS in Applied Data Science lists several exact deadlines through 23 June 2026, but its page does not state the exact opening date required for a complete calendar window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "peking-university",
@@ -404,14 +419,19 @@
       "batch": 3,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "closed",
+        "opensText": "20 October to 23 December 2025",
+        "notes": "The standard international route is closed; English-taught master's programmes may have different deadlines."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-pennsylvania",
@@ -423,14 +443,19 @@
       "batch": 3,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "15 September 2025 to 1 February 2026",
+        "notes": "Penn Engineering's regular master's window is shared across its on-campus master's programmes."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "cornell-university",

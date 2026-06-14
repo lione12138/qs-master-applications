@@ -141,6 +141,8 @@ Machine-readable contracts are generated under `docs/schemas/`.
 
 All pipeline fetches use `httpx` with redirect support, explicit timeouts,
 per-host throttling, retryable error classification, and exponential backoff.
+Official PDF notices are converted to text with `pypdf` before fingerprinting
+and evidence extraction.
 Fingerprints are computed from the likely main content after removing scripts,
 navigation, footers, cookie banners, and other repeated chrome.
 

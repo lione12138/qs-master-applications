@@ -21,6 +21,7 @@ _last_request_by_host: dict[str, float] = {}
 @dataclass(slots=True)
 class FetchedPage:
     body: str
+    raw_bytes: bytes
     final_url: str
     status_code: int
     content_type: str
@@ -123,6 +124,7 @@ def _fetch_once(
                 charset = response.encoding or "utf-8"
                 return FetchedPage(
                     body=bytes(chunks).decode(charset, errors="replace"),
+                    raw_bytes=bytes(chunks),
                     final_url=str(response.url),
                     status_code=status,
                     content_type=response.headers.get("content-type", ""),

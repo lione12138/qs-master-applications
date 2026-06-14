@@ -21,6 +21,42 @@
       "universityId": "ucl-university-college-london",
       "name": "UCL graduate taught",
       "description": "Graduate taught programmes at University College London."
+    },
+    {
+      "id": "hku-computing-data-science-taught-postgraduate",
+      "universityId": "the-university-of-hong-kong",
+      "name": "HKU Computing and Data Science taught postgraduate programmes",
+      "description": "Taught postgraduate programmes offered by HKU's School of Computing and Data Science."
+    },
+    {
+      "id": "ntu-coursework-masters",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "name": "NTU master's by coursework",
+      "description": "Coursework master's programmes with programme-specific intake periods."
+    },
+    {
+      "id": "uchicago-applied-data-science",
+      "universityId": "university-of-chicago",
+      "name": "UChicago Applied Data Science master's",
+      "description": "In-person and online MS in Applied Data Science routes."
+    },
+    {
+      "id": "pku-international-standard-graduate-admissions",
+      "universityId": "peking-university",
+      "name": "PKU standard international graduate admissions",
+      "description": "International graduate programmes using PKU's standard application period; English-taught master's programmes may publish separate dates."
+    },
+    {
+      "id": "pku-yenching-academy",
+      "universityId": "peking-university",
+      "name": "Yenching Academy",
+      "description": "Yenching Academy's interdisciplinary master's programme and separate admissions route."
+    },
+    {
+      "id": "penn-engineering-masters",
+      "universityId": "university-of-pennsylvania",
+      "name": "Penn Engineering master's programmes",
+      "description": "On-campus master's programmes sharing Penn Engineering's published admissions timeline."
     }
   ]
 }

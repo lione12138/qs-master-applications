@@ -183,11 +183,13 @@ site/                 构建生成的 GitHub Pages 发布目录
 
 - 官方研究生入口：28/30
 - 人工核验入口：25/30
-- 日期粒度规则：10/30
-- 有精确日期的学校：3/30
-- 正式日期窗口：6
-- 下一周期预测窗口：6
+- 日期粒度规则：15/30
+- 有代表项目的学校：8/30
+- 有精确日期的学校：6/30
+- 正式日期窗口：9
+- 下一周期预测窗口：9
 
-前两批 QS 1–10 的规则已经核验完成。Stanford、Oxford、Harvard 和 MIT
+前三批 QS 1–15 的规则已经核验完成。Stanford、Oxford、Harvard 和 MIT
 公布了 2027 周期的大致开放时间，但尚未给出足以写入日历的精确日期，因此
-只作为周期预告展示。Cambridge、ETH Zurich 和 UCL 已有官网精确窗口。
+只作为周期预告展示。Cambridge、ETH Zurich、UCL、NTU、Peking
+University 和 Penn 已有官网精确窗口。

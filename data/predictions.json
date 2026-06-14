@@ -70,6 +70,66 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-ntu-applied-ai-august-2026-next-cycle",
+      "basedOnRecordId": "ntu-applied-ai-august-2026",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "scopeType": "programme",
+      "scopeId": "ntu-applied-artificial-intelligence-mcomp",
+      "intake": "August 2027",
+      "intakeDetails": {
+        "label": "August 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": 8
+      },
+      "round": "Main application period",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-11-01",
+      "closesAt": "2027-03-31",
+      "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/coursework",
+      "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/coursework",
+      "sourceCycle": "August 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-pku-international-standard-autumn-2026-next-cycle",
+      "basedOnRecordId": "pku-international-standard-autumn-2026",
+      "universityId": "peking-university",
+      "scopeType": "programme-group",
+      "scopeId": "pku-international-standard-graduate-admissions",
+      "intake": "Autumn 2027",
+      "intakeDetails": {
+        "label": "Autumn 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Standard international application period",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-10-20",
+      "closesAt": "2026-12-23",
+      "applicationUrl": "https://www.studyatpku.com",
+      "sourceUrl": "https://admission.pku.edu.cn/docs/20251020095346239221.pdf",
+      "sourceCycle": "Autumn 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-ucl-advanced-materials-science-2026-visa-next-cycle",
       "basedOnRecordId": "ucl-advanced-materials-science-2026-visa",
       "universityId": "ucl-university-college-london",
@@ -182,6 +242,36 @@
       "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
       "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
       "sourceCycle": "Michaelmas 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-penn-engineering-masters-fall-2026-next-cycle",
+      "basedOnRecordId": "penn-engineering-masters-fall-2026",
+      "universityId": "university-of-pennsylvania",
+      "scopeType": "programme-group",
+      "scopeId": "penn-engineering-masters",
+      "intake": "Fall 2027",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Regular admissions",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-09-15",
+      "closesAt": "2027-02-01",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceCycle": "Fall 2026",
       "basedOnVerifiedAt": "2026-06-14",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",

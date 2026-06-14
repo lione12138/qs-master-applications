@@ -141,6 +141,81 @@
         "opensText": "Generally 21 Nov–15 Dec",
         "notes": "The official page gives a recurring month/day range without an explicit application-cycle year, so no exact calendar record is published."
       }
+    },
+    {
+      "universityId": "the-university-of-hong-kong",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "HKU's taught postgraduate directory publishes deadlines and application status on individual programme and study-mode pages. Programmes may use multiple rounds.",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-listing",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "programme-specific-closed-or-closing",
+        "opensText": "Check each programme page",
+        "notes": "The MSc Computer Science page publishes main and clearing deadlines but does not expose an exact application opening date, so no complete calendar window is published."
+      }
+    },
+    {
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "NTU coursework programmes publish their own intake availability and application periods. Some programmes admit in August only, while others also admit in January.",
+      "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/coursework",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Academic Year 2026-27",
+        "status": "programme-specific",
+        "opensText": "Dates vary by programme",
+        "notes": "The Master of Computing in Applied Artificial Intelligence lists a 1 November to 31 March period for the August 2026 intake."
+      }
+    },
+    {
+      "universityId": "university-of-chicago",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UChicago graduate applications are managed by individual divisions and programmes. Requirements, rounds, and deadlines vary by programme.",
+      "sourceUrl": "https://grad.uchicago.edu/admissions/programs",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "programme-specific-open",
+        "opensText": "Application is open; exact opening day not stated",
+        "notes": "The MS in Applied Data Science lists several exact deadlines through 23 June 2026, but its page does not state the exact opening date required for a complete calendar window."
+      }
+    },
+    {
+      "universityId": "peking-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "PKU publishes a standard international graduate application period, while English-taught master's programmes and special academies may use separate notices and portals.",
+      "sourceUrl": "https://admission.pku.edu.cn/docs/20251020095346239221.pdf",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "closed",
+        "opensText": "20 October to 23 December 2025",
+        "notes": "The standard international route is closed; English-taught master's programmes may have different deadlines."
+      }
+    },
+    {
+      "universityId": "university-of-pennsylvania",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Penn's graduate programmes are organised by school. Penn Engineering publishes one shared master's timeline, with an additional early deadline for selected programmes.",
+      "sourceUrl": "https://www.upenn.edu/academics/graduate",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "15 September 2025 to 1 February 2026",
+        "notes": "Penn Engineering's regular master's window is shared across its on-campus master's programmes."
+      }
     }
   ]
 }

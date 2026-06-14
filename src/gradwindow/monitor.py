@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import concurrent.futures
 import hashlib
+from io import BytesIO
 import json
 import re
 from datetime import datetime, timezone
@@ -17,9 +18,25 @@ from .http_client import FetchFailure, fetch_page
 from .io import read_json, write_json
 from .paths import MONITOR_STATE_PATH, UNIVERSITIES_PATH
 
+try:
+    from pypdf import PdfReader
+except ImportError:  # Compatibility for older local environments.
+    from PyPDF2 import PdfReader
+
 USER_AGENT = "Mozilla/5.0 (compatible; GradWindowMonitor/1.0; daily admissions check)"
 TIMEOUT = 20
-FINGERPRINT_VERSION = 2
+FINGERPRINT_VERSION = 3
+
+
+def extract_fetched_text(page) -> str:
+    if "application/pdf" not in page.content_type.lower():
+        return page.body
+    reader = PdfReader(BytesIO(page.raw_bytes))
+    return "\n".join(
+        text
+        for pdf_page in reader.pages
+        if (text := (pdf_page.extract_text() or "").strip())
+    )
 
 
 def evaluate_content_change(
@@ -82,8 +99,9 @@ def check_university(
     previous_success = previous_success_fields(previous)
     try:
         page = fetch_page(url, user_agent=USER_AGENT, timeout=TIMEOUT)
-        digest = content_fingerprint(page.body)
-        signal_text = deadline_signal_text(page.body)
+        fetched_text = extract_fetched_text(page)
+        digest = content_fingerprint(fetched_text)
+        signal_text = deadline_signal_text(fetched_text)
         signal_hash = (
             hashlib.sha256(signal_text.encode("utf-8")).hexdigest()
             if signal_text
@@ -99,7 +117,7 @@ def check_university(
                 severity = "deadline"
             elif re.search(
                 r"\bapplication|applications|admission|admissions\b",
-                extract_main_text(page.body),
+                extract_main_text(fetched_text),
                 flags=re.IGNORECASE,
             ):
                 severity = "application"
@@ -121,7 +139,7 @@ def check_university(
         }
         if capture_evidence:
             result["evidenceContext"] = evidence_context(
-                page.body,
+                fetched_text,
                 university.get("evidenceDates", []),
             )
         return result

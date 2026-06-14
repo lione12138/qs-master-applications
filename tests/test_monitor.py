@@ -3,10 +3,16 @@ from __future__ import annotations
 from gradwindow.monitor import (
     content_fingerprint,
     evaluate_content_change,
+    extract_fetched_text,
     previous_success_fields,
     summarize_monitor_results,
 )
-from gradwindow.content import evidence_context, evidence_excerpt
+from gradwindow.content import (
+    evidence_context,
+    evidence_excerpt,
+    evidence_matches_target_dates,
+)
+from gradwindow.http_client import FetchedPage
 
 
 def test_fingerprint_ignores_scripts_comments_and_whitespace() -> None:
@@ -57,6 +63,14 @@ def test_evidence_excerpt_prioritizes_deadline_content() -> None:
     assert context["matchedText"] == "The application deadline is 15 January 2027."
     assert context["matchedTextBefore"] == (
         "General course description with application examples."
+    )
+
+
+def test_evidence_matching_supports_chinese_dates() -> None:
+    excerpt = "申请时间：2025年10月20日至2025年12月23日。"
+    assert evidence_matches_target_dates(
+        excerpt,
+        ["2025-10-20", "2025-12-23"],
     )
 
 
@@ -149,3 +163,41 @@ def test_fingerprint_version_change_rebuilds_the_baseline() -> None:
         "pendingChangeCount": 0,
         "fingerprintVersion": 2,
     }
+
+
+def test_non_pdf_fetched_text_uses_decoded_body() -> None:
+    page = FetchedPage(
+        body="<main>Applications open.</main>",
+        raw_bytes=b"<main>Applications open.</main>",
+        final_url="https://example.edu",
+        status_code=200,
+        content_type="text/html",
+        charset="utf-8",
+        bytes_read=31,
+        truncated=False,
+    )
+    assert extract_fetched_text(page) == "<main>Applications open.</main>"
+
+
+def test_pdf_fetched_text_uses_pdf_reader(monkeypatch) -> None:
+    class FakePdfPage:
+        def extract_text(self):
+            return "申请时间：2025年10月20日至2025年12月23日"
+
+    class FakePdfReader:
+        def __init__(self, stream):
+            assert stream.read() == b"%PDF fixture"
+            self.pages = [FakePdfPage()]
+
+    monkeypatch.setattr("gradwindow.monitor.PdfReader", FakePdfReader)
+    page = FetchedPage(
+        body="%PDF decoded incorrectly",
+        raw_bytes=b"%PDF fixture",
+        final_url="https://example.edu/notice.pdf",
+        status_code=200,
+        content_type="application/pdf",
+        charset="utf-8",
+        bytes_read=12,
+        truncated=False,
+    )
+    assert "2025年10月20日" in extract_fetched_text(page)

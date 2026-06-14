@@ -58,6 +58,19 @@ Status: policy verification complete for all five institutions.
 - Peking University
 - University of Pennsylvania
 
+Status: policy verification complete for all five institutions.
+
+- HKU: MSc Computer Science added; the official page publishes two deadlines
+  but no exact opening date, so it is not represented as a complete window.
+- NTU: Master of Computing in Applied Artificial Intelligence added with its
+  verified August 2026 application period.
+- Chicago: MS in Applied Data Science added; exact 2026 deadlines are visible,
+  but the application opening day is not stated.
+- Peking University: standard 2026 international graduate application period
+  added, with English-taught master's exceptions explicitly excluded.
+- Penn: Penn Engineering's shared Fall 2026 master's window and MAS-CS
+  representative programme added.
+
 ## Batch 4 · QS 16–20
 
 - Cornell University

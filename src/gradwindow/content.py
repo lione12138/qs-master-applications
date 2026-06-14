@@ -32,8 +32,23 @@ DATE_PATTERN = re.compile(
     r"\b(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|"
     r"jul(?:y)?|aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|"
     r"dec(?:ember)?)\.?\s+\d{1,2},?\s+20\d{2}\b|"
-    r"\b20\d{2}-\d{2}-\d{2}\b",
+    r"\b20\d{2}-\d{2}-\d{2}\b|"
+    r"20\d{2}年\d{1,2}月\d{1,2}日",
     flags=re.IGNORECASE,
+)
+MONTH_TOKENS = (
+    ("january", "jan"),
+    ("february", "feb"),
+    ("march", "mar"),
+    ("april", "apr"),
+    ("may", "may"),
+    ("june", "jun"),
+    ("july", "jul"),
+    ("august", "aug"),
+    ("september", "sep", "sept"),
+    ("october", "oct"),
+    ("november", "nov"),
+    ("december", "dec"),
 )
 
 
@@ -71,6 +86,35 @@ def content_fingerprint(raw_html: str) -> str:
     return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
 
+def text_contains_target_date(text: str, target: date) -> bool:
+    lowered = text.lower()
+    normalized = re.sub(r"[^a-z0-9]+", " ", lowered)
+    tokens = MONTH_TOKENS[target.month - 1]
+    english_match = (
+        str(target.year) in normalized
+        and re.search(rf"\b0?{target.day}\b", normalized)
+        and any(re.search(rf"\b{token}", normalized) for token in tokens)
+    )
+    chinese_match = bool(
+        re.search(
+            rf"{target.year}\s*年\s*0?{target.month}\s*月\s*"
+            rf"0?{target.day}\s*日",
+            text,
+        )
+    )
+    return english_match or chinese_match or target.isoformat() in text
+
+
+def evidence_matches_target_dates(
+    excerpt: str,
+    target_dates: list[str],
+) -> bool:
+    return all(
+        text_contains_target_date(excerpt, date.fromisoformat(value))
+        for value in target_dates
+    )
+
+
 def evidence_excerpt(
     raw_html: str,
     target_dates: list[str] | None = None,
@@ -78,39 +122,19 @@ def evidence_excerpt(
 ) -> str:
     lines = extract_main_text(raw_html).splitlines()
     parsed_targets = [date.fromisoformat(value) for value in target_dates or []]
-    month_tokens = (
-        ("january", "jan"),
-        ("february", "feb"),
-        ("march", "mar"),
-        ("april", "apr"),
-        ("may", "may"),
-        ("june", "jun"),
-        ("july", "jul"),
-        ("august", "aug"),
-        ("september", "sep", "sept"),
-        ("october", "oct"),
-        ("november", "nov"),
-        ("december", "dec"),
-    )
     scored: list[tuple[int, int, bool, bool]] = []
     for index, line in enumerate(lines):
         lowered = line.lower()
         score = 0
         target_match = False
         semantic_match = False
-        normalized = re.sub(r"[^a-z0-9]+", " ", lowered)
         for target in parsed_targets:
-            tokens = month_tokens[target.month - 1]
-            if (
-                str(target.year) in normalized
-                and re.search(rf"\b0?{target.day}\b", normalized)
-                and any(re.search(rf"\b{token}", normalized) for token in tokens)
-            ):
+            if text_contains_target_date(line, target):
                 score += 20
                 target_match = True
         if DATE_PATTERN.search(line):
             score += 8
-        if re.search(r"\bdeadline|deadlines\b", lowered):
+        if re.search(r"\bdeadline|deadlines\b|申请时间|截止", lowered):
             score += 6
             semantic_match = True
         if re.search(r"\bclosed|closing|closes|re-open|reopen\b", lowered):
@@ -184,7 +208,7 @@ def deadline_signal_text(raw_html: str) -> str:
         for line in lines
         if DATE_PATTERN.search(line)
         or re.search(
-            r"\bdeadline|deadlines|closing|closes|opening|opens\b",
+            r"\bdeadline|deadlines|closing|closes|opening|opens\b|申请时间|截止",
             line,
             flags=re.IGNORECASE,
         )
