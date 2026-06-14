@@ -80,3 +80,21 @@ five institutions while preserving the same completion rules:
 - Yonsei University — central international-student policy and Computer Science
   master's programme added with the complete 6–13 April 2026 Fall application
   window.
+
+## Batch 11 · QS positions 51–55
+
+- University of Bristol — programme-specific Computer Science conversion MSc
+  policy added. Overseas and home deadlines are published, but the opening is
+  stated only as September 2025 without an exact day.
+- Carnegie Mellon University — School of Computer Science graduate policy and
+  MS in Computer Science added with the complete 9 September to 9 December
+  2026 Fall 2027 application window.
+- University of Amsterdam — joint UvA/VU Computer Science MSc policy added.
+  Applicant-category deadlines are published, but no exact opening date is
+  available.
+- Hong Kong Polytechnic University — rolling taught-postgraduate policy and
+  MSc in Information Technology added with the complete 2 July 2025 to
+  30 April 2026 application window.
+- New York University — Tandon programme-specific policy and Computer Science
+  MS added. Fall milestones are published without a cycle-specific opening
+  date, and the programme does not accept spring applications.

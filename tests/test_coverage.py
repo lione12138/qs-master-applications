@@ -5,13 +5,13 @@ import json
 from gradwindow.coverage import generate_coverage, next_action
 
 
-def test_generate_top30_coverage(tmp_path) -> None:
+def test_generate_top200_coverage(tmp_path) -> None:
     output = tmp_path / "coverage.json"
     payload = generate_coverage(output_path=output)
     assert output.exists()
-    assert payload["summary"]["targetUniversities"] == 30
-    assert len(payload["universities"]) == 30
-    assert len(payload["batches"]) == 6
+    assert payload["summary"]["targetUniversities"] == 200
+    assert len(payload["universities"]) == 200
+    assert len(payload["batches"]) == 40
     assert payload["batches"][0]["positions"] == [1, 5]
     assert payload["batches"][0]["policiesVerified"] == 5
     assert payload["batches"][1]["policiesVerified"] == 5
@@ -19,10 +19,10 @@ def test_generate_top30_coverage(tmp_path) -> None:
     assert payload["batches"][3]["policiesVerified"] == 5
     assert payload["batches"][4]["policiesVerified"] == 5
     assert payload["batches"][5]["policiesVerified"] == 5
-    assert payload["summary"]["policiesVerified"] >= 30
-    assert payload["summary"]["universitiesWithPrograms"] >= 23
-    assert payload["summary"]["predictedWindows"] >= 12
-    assert payload["summary"]["verifiedWindows"] >= 12
+    assert payload["summary"]["policiesVerified"] >= 55
+    assert payload["summary"]["universitiesWithPrograms"] >= 48
+    assert payload["summary"]["predictedWindows"] >= 20
+    assert payload["summary"]["verifiedWindows"] >= 20
     assert json.loads(output.read_text(encoding="utf-8"))["summary"] == payload[
         "summary"
     ]

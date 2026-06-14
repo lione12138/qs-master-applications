@@ -13,7 +13,7 @@ from .paths import (
     WINDOW_POLICIES_PATH,
 )
 
-TOP_LIMIT = 30
+TOP_LIMIT = 200
 BATCH_SIZE = 5
 
 
@@ -154,7 +154,7 @@ def generate_coverage(
     payload = {
         "meta": {
             "generatedAt": datetime.now(timezone.utc).isoformat(),
-            "rankingScope": "QS World University Rankings 2026 top 30",
+            "rankingScope": "QS World University Rankings 2026 top 200",
             "batchSize": BATCH_SIZE,
             "definition": (
                 "Entry, policy, programme, and exact-window coverage are counted "

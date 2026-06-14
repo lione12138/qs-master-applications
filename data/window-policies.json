@@ -741,6 +741,81 @@
         "opensText": "6-13 April 2026",
         "notes": "The official international-student schedule gives a complete application period for Fall 2026."
       }
+    },
+    {
+      "universityId": "university-of-bristol",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Bristol publishes programme-level deadlines and may close high-demand programmes before their advertised dates.",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-computer-science-conversion/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-approximate-start",
+        "opensText": "Applications have been allocated continuously since September 2025; exact opening day not stated",
+        "notes": "The Computer Science conversion MSc closes on 27 August 2026 for overseas applicants and 21 September 2026 for home applicants, subject to earlier closure if full."
+      }
+    },
+    {
+      "universityId": "carnegie-mellon-university",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "CMU's School of Computer Science publishes a shared application calendar for most graduate programmes, with limited programme exceptions.",
+      "sourceUrl": "https://www.cs.cmu.edu/education/graduate-admissions",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "announced",
+        "opensText": "9 September to 9 December 2026",
+        "notes": "Most SCS graduate programmes have an 18 November early deadline and a 9 December final deadline. MHCI and several MSE routes have stated exceptions."
+      }
+    },
+    {
+      "universityId": "the-university-of-amsterdam",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UvA master's programmes set their own requirements and deadlines. The Computer Science joint degree is administered through VU Amsterdam.",
+      "sourceUrl": "https://www.uva.nl/shared-content/programmas/en/masters/computer-science/application-and-admission/application-and-admission.html",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September intake",
+        "status": "deadline-only-applicant-category-specific",
+        "opensText": "Exact opening day not stated",
+        "notes": "The joint Computer Science master's lists 1 June for Dutch-prior-education and EU/EEA applicants on the UvA page. VU publishes applicant-specific procedures for other international degrees."
+      }
+    },
+    {
+      "universityId": "the-hong-kong-polytechnic-university",
+      "model": "mixed",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "PolyU taught postgraduate programmes use rolling admissions with programme-level early, main, and extended deadlines.",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2026/61030-fit-pit",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "closed",
+        "opensText": "2 July 2025 to 30 April 2026",
+        "notes": "The MSc in Information Technology had early and main deadlines on 15 October 2025 and 15 January 2026, followed by an extended deadline on 30 April 2026."
+      }
+    },
+    {
+      "universityId": "new-york-university-nyu",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "NYU schools manage graduate admissions separately. Tandon publishes school-wide MS milestones with programme-specific intake exceptions.",
+      "sourceUrl": "https://engineering.nyu.edu/admissions/graduate/apply/application-deadlines",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall or Spring",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "Exact opening day not stated",
+        "notes": "Tandon lists 1 December for fall priority consideration and 15 March as the extended final on-campus MS deadline. Computer Science MS does not accept spring applications."
+      }
     }
   ]
 }

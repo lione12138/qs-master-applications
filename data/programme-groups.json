@@ -267,6 +267,36 @@
       "universityId": "yonsei-university",
       "name": "Yonsei international graduate admissions",
       "description": "Graduate programmes available through Yonsei Graduate School's international-student track."
+    },
+    {
+      "id": "bristol-computer-science-conversion-admissions",
+      "universityId": "university-of-bristol",
+      "name": "Bristol Computer Science conversion MSc",
+      "description": "Computer Science conversion master's admissions with separate home and overseas closing dates."
+    },
+    {
+      "id": "cmu-scs-graduate-programmes",
+      "universityId": "carnegie-mellon-university",
+      "name": "CMU School of Computer Science graduate programmes",
+      "description": "School of Computer Science master's and doctoral programmes using the central SCS application timetable."
+    },
+    {
+      "id": "uva-vu-computer-science-joint-degree",
+      "universityId": "the-university-of-amsterdam",
+      "name": "UvA/VU Computer Science joint master's",
+      "description": "Joint Computer Science master's administered through Vrije Universiteit Amsterdam."
+    },
+    {
+      "id": "polyu-information-technology-msc-admissions",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "name": "PolyU Information Technology MSc",
+      "description": "Information Technology taught postgraduate admissions with early, main, and extended rounds."
+    },
+    {
+      "id": "nyu-tandon-computer-science-ms-admissions",
+      "universityId": "new-york-university-nyu",
+      "name": "NYU Tandon Computer Science MS",
+      "description": "On-campus Computer Science MS admissions under NYU Tandon's school-wide graduate deadlines."
     }
   ]
 }

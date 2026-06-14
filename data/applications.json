@@ -440,6 +440,54 @@
         "term": "fall",
         "startMonth": 9
       }
+    },
+    {
+      "id": "cmu-scs-graduate-fall-2027",
+      "universityId": "carnegie-mellon-university",
+      "scopeType": "programme-group",
+      "scopeId": "cmu-scs-graduate-programmes",
+      "intake": "Fall 2027",
+      "round": "Final deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-09-09",
+      "closesAt": "2026-12-09",
+      "applicationUrl": "https://admissions.scs.cmu.edu/",
+      "sourceUrl": "https://www.cs.cmu.edu/education/graduate-admissions",
+      "verifiedAt": "2026-06-14",
+      "evidence": "CMU School of Computer Science states that Fall 2027 applications open on 9 September 2026 and that the final deadline for its general graduate programmes is 9 December 2026 at 3 p.m. Eastern time.",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 8
+      }
+    },
+    {
+      "id": "polyu-information-technology-september-2026",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "scopeType": "programme",
+      "scopeId": "polyu-information-technology-msc",
+      "intake": "September 2026",
+      "round": "Extended round",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2025-07-02",
+      "closesAt": "2026-04-30",
+      "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/taught-postgraduate?pg_programmes_semester_term_value=2634",
+      "verifiedAt": "2026-06-14",
+      "evidence": "PolyU's official taught-postgraduate listing gives 2 July 2025 as the September 2026 application start and the MSc in Information Technology programme gives 30 April 2026 as its extended-round deadline.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
     }
   ]
 }

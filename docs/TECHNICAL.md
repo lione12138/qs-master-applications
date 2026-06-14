@@ -22,7 +22,7 @@ data/
     review-queue.json        internal findings awaiting review
     window-candidates.json   exact-window proposals awaiting approval
     reports/                 daily internal monitoring reports
-  coverage.json              generated QS top-30 quality metrics
+  coverage.json              generated QS top-200 quality metrics
   sources.json               dedicated programme parser configuration
 src/gradwindow/
   cli.py                      command entry point

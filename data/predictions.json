@@ -8,6 +8,36 @@
   },
   "predictions": [
     {
+      "id": "prediction-cmu-scs-graduate-fall-2027-next-cycle",
+      "basedOnRecordId": "cmu-scs-graduate-fall-2027",
+      "universityId": "carnegie-mellon-university",
+      "scopeType": "programme-group",
+      "scopeId": "cmu-scs-graduate-programmes",
+      "intake": "Fall 2028",
+      "intakeDetails": {
+        "label": "Fall 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Final deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-09",
+      "closesAt": "2027-12-09",
+      "applicationUrl": "https://admissions.scs.cmu.edu/",
+      "sourceUrl": "https://www.cs.cmu.edu/education/graduate-admissions",
+      "sourceCycle": "Fall 2027",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-eth-autumn-2026-international-bachelors-next-cycle",
       "basedOnRecordId": "eth-autumn-2026-international-bachelors",
       "universityId": "eth-zurich-swiss-federal-institute-of-technology",
@@ -301,6 +331,36 @@
       "closesAt": "2027-01-31",
       "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
       "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-polyu-information-technology-september-2026-next-cycle",
+      "basedOnRecordId": "polyu-information-technology-september-2026",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "scopeType": "programme",
+      "scopeId": "polyu-information-technology-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Extended round",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-07-02",
+      "closesAt": "2027-04-30",
+      "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/taught-postgraduate?pg_programmes_semester_term_value=2634",
       "sourceCycle": "September 2026",
       "basedOnVerifiedAt": "2026-06-14",
       "confidence": "low",

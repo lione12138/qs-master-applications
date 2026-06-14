@@ -40,7 +40,7 @@ def main() -> None:
     pipeline.add_argument("--workers", type=int, default=16)
     pipeline.add_argument("--skip-monitor", action="store_true")
     pipeline.add_argument("--skip-build", action="store_true")
-    subparsers.add_parser("coverage", help="Generate QS top-30 coverage metrics")
+    subparsers.add_parser("coverage", help="Generate QS top-200 coverage metrics")
     subparsers.add_parser(
         "predictions", help="Generate non-official next-cycle estimates"
     )
@@ -97,7 +97,7 @@ def main() -> None:
         coverage = generate_coverage()
         print(
             f"Approved {record['id']}; "
-            f"{coverage['summary']['verifiedWindows']} top-30 windows tracked."
+            f"{coverage['summary']['verifiedWindows']} verified windows tracked."
         )
     elif args.command == "pipeline":
         generate_predictions()
@@ -114,9 +114,9 @@ def main() -> None:
         _validate_or_exit()
         coverage = generate_coverage()
         print(
-            "Top-30 coverage: "
-            f"{coverage['summary']['policiesVerified']}/30 policies, "
-            f"{coverage['summary']['universitiesWithWindows']}/30 with windows"
+            "Top-200 coverage: "
+            f"{coverage['summary']['policiesVerified']}/200 policies, "
+            f"{coverage['summary']['universitiesWithWindows']}/200 with windows"
         )
         review_report, review_summary = generate_review_outputs(
             source_state_path=APPLICATION_SOURCE_STATE_PATH
