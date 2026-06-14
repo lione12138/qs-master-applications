@@ -6,7 +6,7 @@ from gradwindow.monitor import (
     previous_success_fields,
     summarize_monitor_results,
 )
-from gradwindow.content import evidence_excerpt
+from gradwindow.content import evidence_context, evidence_excerpt
 
 
 def test_fingerprint_ignores_scripts_comments_and_whitespace() -> None:
@@ -52,6 +52,12 @@ def test_evidence_excerpt_prioritizes_deadline_content() -> None:
     excerpt = evidence_excerpt(html, ["2027-01-15"])
     assert "15 January 2027" in excerpt
     assert "How to apply" not in excerpt
+    context = evidence_context(html, ["2027-01-15"])
+    assert context["contentSelector"] == "main"
+    assert context["matchedText"] == "The application deadline is 15 January 2027."
+    assert context["matchedTextBefore"] == (
+        "General course description with application examples."
+    )
 
 
 def test_monitor_summary() -> None:

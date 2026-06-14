@@ -1,5 +1,9 @@
 # GradWindow
 
+[![Tests](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml/badge.svg)](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml)
+[![GitHub Pages](https://github.com/lione12138/qs-master-applications/actions/workflows/pages.yml/badge.svg)](https://lione12138.github.io/qs-master-applications/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 QS 2026 前 200 所大学硕士申请追踪站。项目参考
 [Research Seasonal School Radar](https://github.com/lione12138/research-school-radar)
 的透明数据流水线、可信分层和静态发布结构。
@@ -25,22 +29,26 @@ QS 2026 前 200 所大学硕士申请追踪站。项目参考
   - 只有一个历史周期时标为低置信度；连续周期完全重复后才提高置信度
 - `data/programs.json`
   - 项目目录；项目可以继承上级窗口，只记录自身例外
+- `data/programme-groups.json`
+  - 显式项目组字典；项目组窗口和项目继承关系都必须引用存在且属于同校的 ID
+- `data/applicant-categories.json`
+  - 申请人类别字典；禁止在窗口记录中临时创造近义类别
 - `data/window-policies.json`
   - 官网核验过的日期粒度规则，例如项目独立、院系共享轮次或学校共享窗口
-- `data/monitor-state.json`
+- `data/ops/monitor-state.json`
   - 200 所学校官网的每日可访问性和内容指纹
   - 同一页面变化需连续出现两次，只触发复核，不会直接覆盖截止日期
-- `data/application-source-state.json`
+- `data/ops/application-source-state.json`
   - 单独监控已经发布的精确日期来源页
   - 多条窗口引用同一官网时每天只请求一次
 - `data/evidence/`
-  - 保存正式窗口来源页的正文哈希、短证据摘录和抓取元数据
+  - 保存正文哈希、短证据摘录、匹配文本前后文、正文选择器和抓取元数据
   - 不保存整页 HTML，也不会发布到静态网站
-- `data/review-queue.json` 与 `reports/`
+- `data/ops/review-queue.json` 与 `data/ops/reports/`
   - 内部审核队列和每日监控报告，不发布到静态网站
 - `data/coverage.json`
   - 从正式数据自动生成的 QS 前30入口、规则、项目和精确日期覆盖率
-- `data/window-candidates.json`
+- `data/ops/window-candidates.json`
   - 待人工审核的精确窗口候选，不发布到静态网站
   - 自动解析器只能写入这里，不能直接修改正式日期
 
@@ -111,11 +119,11 @@ gradwindow pipeline
 
 ```text
 data/                 正式数据、窗口策略、人工覆盖与审核状态
+data/ops/             高频运行状态、候选、审核队列和日报
 src/gradwindow/       可安装的数据流水线与 CLI
 scripts/              排名导入、入口发现及兼容入口
 tests/                离线数据契约和行为测试
 docs/                 技术说明
-reports/              每日内部审核报告
 site/                 构建生成的 GitHub Pages 发布目录
 ```
 
@@ -140,7 +148,7 @@ site/                 构建生成的 GitHub Pages 发布目录
     "startMonth": 9
   },
   "round": "Round 1",
-  "applicantCategories": ["international"],
+  "applicantCategories": ["international-bachelors"],
   "opensAt": "2026-09-01",
   "closesAt": "2026-12-01",
   "applicationUrl": "https://official.example/apply",
@@ -156,11 +164,15 @@ site/                 构建生成的 GitHub Pages 发布目录
 
 ## GitHub Actions
 
-- `tests.yml`：推送和 PR 时在 Python 3.10、3.12 上运行测试
-- `pages.yml`：测试、构建独立 `site/` 并部署 GitHub Pages
-- `update-data.yml`：UTC 04:17 运行完整流水线并提交正式数据变化
+- `tests.yml`：推送、PR 和手动触发时在 Python 3.10、3.12 上测试，并只构建一次站点制品
+- `pages.yml`：只下载已通过测试的 `site` 制品并部署 GitHub Pages
+- `update-data.yml`：UTC 04:17 运行监控、候选生成、预测和校验，然后更新审核 PR
   - 同一内容变化连续出现两次后进入审核队列
-  - 当天新确认变化会创建去重的 GitHub Issue
+  - 只有截止日期关键词变化才创建去重 Issue；普通页面变化只进入报告
+  - bot 不再直接推送 `main`，审核分支会单独触发测试
+
+静态构建同时生成 `/university/`、`/country/`、`/deadline/` 页面以及
+`sitemap.xml`、`robots.txt` 和 OpenGraph 元数据，便于搜索和外部引用。
 
 公共仓库的标准 GitHub-hosted Actions 通常不计费；私有仓库受 GitHub
 账户包含额度和届时计费规则限制。

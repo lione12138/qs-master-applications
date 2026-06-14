@@ -8,19 +8,22 @@ GradWindow is a Python data pipeline that publishes a zero-backend static site.
 data/
   universities.json          QS top-200 institution directory
   programs.json              programme directory and inheritance targets
+  programme-groups.json      validated programme-group scope registry
+  applicant-categories.json  canonical applicant category registry
   applications.json          verified scoped application windows
   predictions.json           generated non-official next-cycle estimates
   evidence/                  source hashes and short evidence excerpts
   window-policies.json       reviewed institution granularity policies
   admissions-overrides.json  manually reviewed admissions links
-  monitor-state.json         daily availability and content fingerprints
-  application-source-state.json
+  ops/
+    monitor-state.json       daily availability and content fingerprints
+    application-source-state.json
                               checks for published exact-window sources
-  review-queue.json          internal findings awaiting review
-  window-candidates.json     exact-window proposals awaiting approval
+    review-queue.json        internal findings awaiting review
+    window-candidates.json   exact-window proposals awaiting approval
+    reports/                 daily internal monitoring reports
   coverage.json              generated QS top-30 quality metrics
   sources.json               dedicated programme parser configuration
-reports/                     daily internal monitoring reports
 src/gradwindow/
   cli.py                      command entry point
   validation.py               public data contracts
@@ -95,7 +98,7 @@ used for publication or validation.
 Records in `applications.json` are official dated windows. Generated records
 in `predictions.json` appear in a separate non-official section and never
 increase verified coverage metrics.
-`review-queue.json` and `reports/` are intentionally excluded from the public
+`data/ops/review-queue.json` and `data/ops/reports/` are intentionally excluded from the public
 site build.
 
 ## Commands
@@ -142,8 +145,17 @@ Fingerprints are computed from the likely main content after removing scripts,
 navigation, footers, cookie banners, and other repeated chrome.
 
 Published-window source checks write a compact audit record to `data/evidence/`
-containing the final URL, content hash, response metadata, and a short
-deadline-related excerpt. Full HTML is intentionally not retained.
+containing the final URL, content hash, response metadata, a short
+deadline-related excerpt, the matched line, adjacent context, and the selected
+main-content region. Full HTML is intentionally not retained.
+
+Monitoring classifies confirmed changes as `deadline`, `application`, or
+`generic`. Only deadline-significant changes create GitHub issues; lower
+severity changes remain visible in the review queue and daily report.
+
+The static build emits university, country, and deadline-month index pages in
+addition to the JavaScript board, plus `sitemap.xml`, `robots.txt`, canonical
+links, and OpenGraph metadata.
 
 ## Operational limitations
 

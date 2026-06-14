@@ -15,6 +15,8 @@ def test_current_public_data_is_valid() -> None:
     assert summary["curatedAdmissions"] >= 25
     assert summary["windowPolicies"] >= 10
     assert summary["programs"] >= 8
+    assert summary["programmeGroups"] >= 3
+    assert summary["applicantCategories"] >= 7
     assert summary["verifiedWindows"] >= 6
     assert summary["predictedWindows"] >= 6
     assert summary["evidenceSnapshots"] >= 6
@@ -59,3 +61,37 @@ def test_validation_rejects_duplicate_semantic_window(tmp_path) -> None:
         predictions_path=predictions_path,
     )
     assert any("duplicate semantic application window" in error for error in errors)
+
+
+def test_validation_rejects_unknown_applicant_category(tmp_path) -> None:
+    payload = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))
+    payload["applications"][0]["applicantCategories"] = ["overseas-student"]
+    applications_path = tmp_path / "applications.json"
+    predictions_path = tmp_path / "predictions.json"
+    applications_path.write_text(json.dumps(payload), encoding="utf-8")
+    generate_predictions(predictions_path, applications_path)
+
+    errors, _ = validate_data(
+        applications_path=applications_path,
+        predictions_path=predictions_path,
+    )
+    assert any("unknown applicant categories" in error for error in errors)
+
+
+def test_validation_rejects_orphan_programme_group_scope(tmp_path) -> None:
+    payload = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))
+    payload["applications"][0]["scopeType"] = "programme-group"
+    payload["applications"][0]["scopeId"] = "missing-programme-group"
+    applications_path = tmp_path / "applications.json"
+    predictions_path = tmp_path / "predictions.json"
+    applications_path.write_text(json.dumps(payload), encoding="utf-8")
+    generate_predictions(predictions_path, applications_path)
+
+    errors, _ = validate_data(
+        applications_path=applications_path,
+        predictions_path=predictions_path,
+    )
+    assert any(
+        "programme-group scope references an unknown group" in error
+        for error in errors
+    )

@@ -1,0 +1,50 @@
+{
+  "meta": {
+    "description": "Canonical applicant categories referenced by official and predicted application windows.",
+    "updatedAt": "2026-06-14"
+  },
+  "categories": [
+    {
+      "id": "all",
+      "labelZh": "所有申请人",
+      "labelEn": "All applicants",
+      "description": "The window applies without an applicant-category distinction."
+    },
+    {
+      "id": "international-bachelors",
+      "labelZh": "境外本科申请人",
+      "labelEn": "Applicants with an international bachelor's degree",
+      "description": "Applicants whose qualifying bachelor's degree is from outside the institution's domestic system."
+    },
+    {
+      "id": "esop",
+      "labelZh": "ESOP 奖学金申请人",
+      "labelEn": "ESOP scholarship applicants",
+      "description": "Applicants applying for the ETH Excellence Scholarship and Opportunity Programme."
+    },
+    {
+      "id": "direct-doctorate",
+      "labelZh": "直博申请人",
+      "labelEn": "Direct doctorate applicants",
+      "description": "Applicants using the same application window for a direct doctorate route."
+    },
+    {
+      "id": "swiss-bachelors",
+      "labelZh": "瑞士高校本科申请人",
+      "labelEn": "Applicants with a Swiss bachelor's degree",
+      "description": "Applicants holding a bachelor's degree from a Swiss university."
+    },
+    {
+      "id": "requires-uk-study-visa",
+      "labelZh": "需要英国学生签证",
+      "labelEn": "Applicants requiring a UK Student visa",
+      "description": "Applicants who require a UK Student visa for the programme."
+    },
+    {
+      "id": "does-not-require-uk-study-visa",
+      "labelZh": "无需英国学生签证",
+      "labelEn": "Applicants not requiring a UK Student visa",
+      "description": "Applicants who do not require a UK Student visa for the programme."
+    }
+  ]
+}

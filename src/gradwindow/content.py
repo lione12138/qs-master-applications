@@ -37,22 +37,33 @@ DATE_PATTERN = re.compile(
 )
 
 
-def extract_main_text(raw_html: str) -> str:
+def extract_main_content(raw_html: str) -> tuple[str, str]:
     soup = BeautifulSoup(raw_html, "html.parser")
     for node in soup.select(NOISE_SELECTOR):
         node.decompose()
-    root = (
-        soup.find("main")
-        or soup.find("article")
-        or soup.find(attrs={"role": "main"})
-        or soup.body
-        or soup
-    )
+    root = soup.find("main")
+    selector = "main"
+    if root is None:
+        root = soup.find("article")
+        selector = "article"
+    if root is None:
+        root = soup.find(attrs={"role": "main"})
+        selector = "[role=main]"
+    if root is None:
+        root = soup.body
+        selector = "body"
+    if root is None:
+        root = soup
+        selector = "document"
     lines = [
         re.sub(r"\s+", " ", line).strip()
         for line in root.get_text("\n", strip=True).splitlines()
     ]
-    return "\n".join(line for line in lines if line)
+    return "\n".join(line for line in lines if line), selector
+
+
+def extract_main_text(raw_html: str) -> str:
+    return extract_main_content(raw_html)[0]
 
 
 def content_fingerprint(raw_html: str) -> str:
@@ -140,3 +151,42 @@ def evidence_excerpt(
         selected.append(line[:max_chars] if not selected else line)
         length += addition
     return "\n".join(selected)[:max_chars]
+
+
+def evidence_context(
+    raw_html: str,
+    target_dates: list[str] | None = None,
+    max_chars: int = 650,
+) -> dict[str, str]:
+    text, selector = extract_main_content(raw_html)
+    lines = text.splitlines()
+    excerpt = evidence_excerpt(raw_html, target_dates, max_chars)
+    matched = excerpt.splitlines()[0] if excerpt else ""
+    try:
+        index = lines.index(matched)
+    except ValueError:
+        index = -1
+    return {
+        "excerpt": excerpt,
+        "contentSelector": selector,
+        "matchedTextBefore": lines[index - 1] if index > 0 else "",
+        "matchedText": matched,
+        "matchedTextAfter": (
+            lines[index + 1] if 0 <= index < len(lines) - 1 else ""
+        ),
+    }
+
+
+def deadline_signal_text(raw_html: str) -> str:
+    lines = extract_main_text(raw_html).splitlines()
+    selected = [
+        line
+        for line in lines
+        if DATE_PATTERN.search(line)
+        or re.search(
+            r"\bdeadline|deadlines|closing|closes|opening|opens\b",
+            line,
+            flags=re.IGNORECASE,
+        )
+    ]
+    return "\n".join(selected[:20])

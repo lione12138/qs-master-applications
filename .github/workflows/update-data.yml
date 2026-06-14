@@ -6,8 +6,10 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   issues: write
+  pull-requests: write
 
 concurrency:
   group: update-application-data
@@ -29,35 +31,43 @@ jobs:
       - name: Install
         run: pip install -e ".[dev]"
 
-      - name: Test
-        run: |
-          gradwindow predictions
-          gradwindow export-schemas
-          pytest
-
       - name: Run daily pipeline
-        run: gradwindow pipeline
+        run: gradwindow pipeline --skip-build
 
-      - name: Commit verified changes
-        run: |
-          if git diff --quiet -- data/applications.json data/predictions.json data/application-source-state.json data/evidence/ data/coverage.json data/monitor-state.json data/review-queue.json data/window-candidates.json reports/; then
-            echo "No data changes."
-            exit 0
-          fi
-          git config user.name "gradwindow-bot"
-          git config user.email "gradwindow-bot@users.noreply.github.com"
-          git add data/applications.json data/predictions.json data/application-source-state.json data/evidence/ data/coverage.json data/monitor-state.json data/review-queue.json data/window-candidates.json reports/
-          git commit -m "data: refresh application windows"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push
+      - name: Open or update data review pull request
+        id: data-pr
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "data: refresh application windows"
+          branch: automation/application-data
+          delete-branch: true
+          title: "data: review automated application-window refresh"
+          body: |
+            Automated daily refresh of monitoring state, parser candidates,
+            predictions, evidence snapshots, coverage, and review reports.
+
+            No parser candidate is promoted into `applications.json` without
+            explicit maintainer approval.
+          add-paths: |
+            data/applications.json
+            data/predictions.json
+            data/evidence/
+            data/coverage.json
+            data/ops/
+
+      - name: Run tests on the data review branch
+        if: steps.data-pr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run tests.yml --ref automation/application-data
 
       - name: Open issue for newly confirmed page changes
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require("fs");
-            const queue = JSON.parse(fs.readFileSync("data/review-queue.json", "utf8"));
-            const candidates = JSON.parse(fs.readFileSync("data/window-candidates.json", "utf8"));
+            const queue = JSON.parse(fs.readFileSync("data/ops/review-queue.json", "utf8"));
+            const candidates = JSON.parse(fs.readFileSync("data/ops/window-candidates.json", "utf8"));
             const universities = JSON.parse(fs.readFileSync("data/universities.json", "utf8"));
             const universityById = new Map(
               universities.universities.map(item => [item.id, item])
@@ -65,6 +75,7 @@ jobs:
             const today = new Date().toISOString().slice(0, 10);
             const monitorChanges = queue.items.filter(
               item => ["content-change", "window-source-change"].includes(item.type) &&
+                item.severity === "deadline" &&
                 item.status === "pending" &&
                 item.detectedAt.startsWith(today)
             );

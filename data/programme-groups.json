@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "description": "Explicit programme groups used as inheritance and application-window scope targets.",
+    "updatedAt": "2026-06-14"
+  },
+  "groups": [
+    {
+      "id": "cambridge-taught-masters",
+      "universityId": "university-of-cambridge",
+      "name": "Cambridge taught master's",
+      "description": "Tracked taught master's programmes at the University of Cambridge."
+    },
+    {
+      "id": "eth-masters-programmes",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "ETH master's programmes",
+      "description": "Master's degree programmes covered by ETH Zurich's general application rules."
+    },
+    {
+      "id": "ucl-graduate-taught",
+      "universityId": "ucl-university-college-london",
+      "name": "UCL graduate taught",
+      "description": "Graduate taught programmes at University College London."
+    }
+  ]
+}

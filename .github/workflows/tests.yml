@@ -3,6 +3,7 @@ name: Tests
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
@@ -18,11 +19,31 @@ jobs:
           cache: pip
       - name: Install
         run: pip install -e ".[dev]"
-      - name: Regenerate derived prediction data
+      - name: Prepare generated contracts
         run: |
           gradwindow predictions
           gradwindow export-schemas
       - name: Test
         run: pytest
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -e ".[dev]"
       - name: Build deployable site
         run: gradwindow build-site
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-build
+          path: site
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 3

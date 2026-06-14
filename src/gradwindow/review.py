@@ -7,12 +7,10 @@ from .io import read_json, write_json
 from .paths import (
     APPLICATIONS_PATH,
     MONITOR_STATE_PATH,
+    REPORTS_DIR,
     REVIEW_QUEUE_PATH,
-    ROOT,
     UNIVERSITIES_PATH,
 )
-
-REPORTS_DIR = ROOT / "reports"
 
 
 def generate_review_outputs(
@@ -40,7 +38,7 @@ def generate_review_outputs(
         monitor_error_id = f"monitor-error:{university_id}"
         if result.get("changed"):
             item_id = f"content-change:{university_id}:{result.get('contentHash', '')[:12]}"
-            existing_by_id.setdefault(
+            review_item = existing_by_id.setdefault(
                 item_id,
                 {
                     "id": item_id,
@@ -50,9 +48,14 @@ def generate_review_outputs(
                     "qsRank": university["qsRank"],
                     "url": result["url"],
                     "reason": "Official page content changed consistently in two consecutive checks.",
+                    "severity": result.get("changeSeverity", "generic"),
                     "detectedAt": result["checkedAt"],
                     "status": "pending",
                 },
+            )
+            review_item["severity"] = result.get(
+                "changeSeverity",
+                review_item.get("severity", "generic"),
             )
         elif result.get("status") in {"error", "http-error"}:
             existing_by_id[monitor_error_id] = {
@@ -89,7 +92,7 @@ def generate_review_outputs(
                     f"window-source-change:{record_id}:"
                     f"{result.get('contentHash', '')[:12]}"
                 )
-                existing_by_id.setdefault(
+                review_item = existing_by_id.setdefault(
                     item_id,
                     {
                         "id": item_id,
@@ -103,10 +106,12 @@ def generate_review_outputs(
                             "A published application-window source changed "
                             "consistently in two consecutive checks."
                         ),
+                        "severity": "deadline",
                         "detectedAt": result["checkedAt"],
                         "status": "pending",
                     },
                 )
+                review_item["severity"] = "deadline"
             if result.get("status") in {"error", "http-error"}:
                 existing_by_id[error_id] = {
                     "id": error_id,
@@ -163,12 +168,13 @@ def generate_review_outputs(
 def render_report(monitor: dict, items: list[dict], summary: dict[str, int]) -> str:
     monitor_summary = monitor["meta"]["summary"]
     rows = "\n".join(
-        f"| {item['qsRank']} | {item['school']} | {item['type']} | "
+        f"| {item['qsRank']} | {item['school']} | "
+        f"{item.get('severity', '-')} | {item['type']} | "
         f"[official page]({item['url']}) | {item['reason']} |"
         for item in items
     )
     if not rows:
-        rows = "| - | No pending review items | - | - | - |"
+        rows = "| - | No pending review items | - | - | - | - |"
     return f"""# GradWindow daily report · {date.today().isoformat()}
 
 ## Monitor summary
@@ -184,8 +190,8 @@ def render_report(monitor: dict, items: list[dict], summary: dict[str, int]) -> 
 
 ## Review queue
 
-| QS | University | Type | Source | Reason |
-|---:|---|---|---|---|
+| QS | University | Severity | Type | Source | Reason |
+|---:|---|---|---|---|---|
 {rows}
 
 Automatic findings are not published as application deadlines until reviewed.

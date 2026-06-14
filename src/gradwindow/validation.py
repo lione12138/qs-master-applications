@@ -9,19 +9,23 @@ from pydantic import BaseModel, ValidationError
 from .discovery import same_official_domain
 from .io import read_json
 from .models import (
+    ApplicantCategory,
     ApplicationWindow,
     EvidenceSnapshot,
     ParserSource,
     Prediction,
     Programme,
+    ProgrammeGroup,
     University,
     WindowPolicy,
 )
 from .paths import (
+    APPLICANT_CATEGORIES_PATH,
     APPLICATIONS_PATH,
     EVIDENCE_DIR,
     PREDICTIONS_PATH,
     PROGRAMS_PATH,
+    PROGRAMME_GROUPS_PATH,
     SOURCES_PATH,
     UNIVERSITIES_PATH,
     WINDOW_POLICIES_PATH,
@@ -82,6 +86,8 @@ def validate_data(
     policies_path: Path = WINDOW_POLICIES_PATH,
     predictions_path: Path = PREDICTIONS_PATH,
     evidence_dir: Path = EVIDENCE_DIR,
+    programme_groups_path: Path = PROGRAMME_GROUPS_PATH,
+    applicant_categories_path: Path = APPLICANT_CATEGORIES_PATH,
 ) -> tuple[list[str], dict[str, int]]:
     university_payload = read_json(universities_path)
     application_payload = read_json(applications_path)
@@ -90,6 +96,8 @@ def validate_data(
     sources_payload = read_json(sources_path)
     sources = sources_payload.get("sources")
     programs = read_json(programs_path).get("programs")
+    programme_groups = read_json(programme_groups_path).get("groups")
+    applicant_categories = read_json(applicant_categories_path).get("categories")
     policies = read_json(policies_path).get("policies")
     predictions = read_json(predictions_path).get("predictions")
     errors: list[str] = []
@@ -106,6 +114,12 @@ def validate_data(
     if not isinstance(programs, list):
         errors.append("programs must be a list")
         programs = []
+    if not isinstance(programme_groups, list):
+        errors.append("programme groups must be a list")
+        programme_groups = []
+    if not isinstance(applicant_categories, list):
+        errors.append("applicant categories must be a list")
+        applicant_categories = []
     if not isinstance(policies, list):
         errors.append("window policies must be a list")
         policies = []
@@ -129,6 +143,30 @@ def validate_data(
     if sorted(positions) != list(range(1, 201)):
         errors.append("QS positions must be unique and cover 1 through 200")
 
+    category_ids: set[str] = set()
+    for item in applicant_categories:
+        label = item.get("id", "unknown applicant category")
+        if not validate_model(ApplicantCategory, item, label, errors):
+            continue
+        if label in category_ids:
+            errors.append(f"{label}: duplicate applicant category id")
+        category_ids.add(label)
+    if "all" not in category_ids:
+        errors.append("applicant categories must define all")
+
+    group_ids: set[str] = set()
+    groups_by_id: dict[str, dict] = {}
+    for item in programme_groups:
+        label = item.get("id", "unknown programme group")
+        if not validate_model(ProgrammeGroup, item, label, errors):
+            continue
+        if label in group_ids:
+            errors.append(f"{label}: duplicate programme group id")
+        group_ids.add(label)
+        groups_by_id[label] = item
+        if item["universityId"] not in university_ids:
+            errors.append(f"{label}: unknown universityId")
+
     application_ids: set[str] = set()
     program_ids: set[str] = set()
     programs_by_id: dict[str, dict] = {}
@@ -142,6 +180,14 @@ def validate_data(
         programs_by_id[label] = item
         if item["universityId"] not in university_ids:
             errors.append(f"{label}: unknown universityId")
+        group_id = item.get("programmeGroupId")
+        if group_id and group_id not in group_ids:
+            errors.append(f"{label}: unknown programmeGroupId")
+        if (
+            group_id in groups_by_id
+            and groups_by_id[group_id]["universityId"] != item["universityId"]
+        ):
+            errors.append(f"{label}: programme group belongs to another university")
         if (
             item["universityId"] in university_domains
             and not same_official_domain(
@@ -170,12 +216,32 @@ def validate_data(
             )
         if scope_type == "programme" and scope_id not in program_ids:
             errors.append(f"{label}: programme scope references an unknown programme")
+        if scope_type == "programme-group" and scope_id not in group_ids:
+            errors.append(
+                f"{label}: programme-group scope references an unknown group"
+            )
         if (
             scope_type == "programme"
             and scope_id in programs_by_id
             and programs_by_id[scope_id]["universityId"] != item["universityId"]
         ):
             errors.append(f"{label}: programme scope belongs to another university")
+        if (
+            scope_type == "programme-group"
+            and scope_id in groups_by_id
+            and groups_by_id[scope_id]["universityId"] != item["universityId"]
+        ):
+            errors.append(
+                f"{label}: programme-group scope belongs to another university"
+            )
+        unknown_categories = sorted(
+            set(item["applicantCategories"]) - category_ids
+        )
+        if unknown_categories:
+            errors.append(
+                f"{label}: unknown applicant categories: "
+                f"{', '.join(unknown_categories)}"
+            )
         if (
             item["universityId"] in university_domains
             and not same_official_domain(
@@ -218,6 +284,14 @@ def validate_data(
                 errors.append(f"{label}: {field} must match its source window")
         if item["sourceCycle"] != source["intake"]:
             errors.append(f"{label}: sourceCycle must match its source intake")
+        unknown_categories = sorted(
+            set(item["applicantCategories"]) - category_ids
+        )
+        if unknown_categories:
+            errors.append(
+                f"{label}: unknown applicant categories: "
+                f"{', '.join(unknown_categories)}"
+            )
         if item["intake"] != shift_intake_one_year(source["intake"]):
             errors.append(f"{label}: intake is not a one-year shift")
         if item["basedOnVerifiedAt"] != source["verifiedAt"]:
@@ -299,6 +373,8 @@ def validate_data(
         "verifiedWindows": len(applications),
         "enabledParsers": sum(bool(item.get("enabled")) for item in sources),
         "programs": len(programs),
+        "programmeGroups": len(programme_groups),
+        "applicantCategories": len(applicant_categories),
         "windowPolicies": len(policies),
         "predictedWindows": len(predictions),
         "evidenceSnapshots": evidence_count,

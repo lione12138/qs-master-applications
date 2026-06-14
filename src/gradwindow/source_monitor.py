@@ -81,7 +81,17 @@ def monitor_application_sources(
     entries = {}
     for record in applications:
         result = dict(results_by_url[record["sourceUrl"]])
-        excerpt = result.pop("evidenceExcerpt", "")
+        context = result.pop(
+            "evidenceContext",
+            {
+                "excerpt": result.pop("evidenceExcerpt", ""),
+                "contentSelector": "main|article|[role=main]|body",
+                "matchedTextBefore": "",
+                "matchedText": "",
+                "matchedTextAfter": "",
+            },
+        )
+        excerpt = context["excerpt"]
         result["recordId"] = record["id"]
         result["universityId"] = record["universityId"]
         entries[record["id"]] = result
@@ -102,6 +112,10 @@ def monitor_application_sources(
                     "excerptHash": hashlib.sha256(
                         excerpt.encode("utf-8")
                     ).hexdigest(),
+                    "contentSelector": context["contentSelector"],
+                    "matchedTextBefore": context["matchedTextBefore"],
+                    "matchedText": context["matchedText"],
+                    "matchedTextAfter": context["matchedTextAfter"],
                 },
             )
 

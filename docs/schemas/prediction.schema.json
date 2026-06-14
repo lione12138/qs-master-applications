@@ -163,9 +163,9 @@
       "type": "integer"
     },
     "methodology": {
-      "const": "previous-cycle-plus-one-year",
+      "const": "calendar-date-shift-plus-one-year",
       "enum": [
-        "previous-cycle-plus-one-year"
+        "calendar-date-shift-plus-one-year"
       ],
       "title": "Methodology",
       "type": "string"

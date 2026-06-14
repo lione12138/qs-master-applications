@@ -48,15 +48,19 @@ class IntakeDetails(DataModel):
     def validate_academic_year(self) -> "IntakeDetails":
         if (
             self.academic_year_end is not None
-            and self.academic_year_end != self.cycle_year + 1
+            and not self.cycle_year
+            <= self.academic_year_end
+            <= self.cycle_year + 2
         ):
-            raise ValueError("academicYearEnd must be cycleYear + 1")
+            raise ValueError(
+                "academicYearEnd must be between cycleYear and cycleYear + 2"
+            )
         return self
 
 
 class University(DataModel):
     id: str = Field(pattern=SLUG_PATTERN)
-    qs_rank: int = Field(alias="qsRank", ge=1, le=200)
+    qs_rank: int = Field(alias="qsRank", ge=1)
     qs_position: int = Field(alias="qsPosition", ge=1, le=200)
     rank_display: str = Field(alias="rankDisplay")
     school: str
@@ -93,10 +97,28 @@ class Programme(DataModel):
     name: str
     degree_type: str = Field(alias="degreeType")
     faculty: str = ""
-    programme_group: str = Field(default="", alias="programmeGroup")
+    programme_group_id: str | None = Field(
+        default=None,
+        alias="programmeGroupId",
+        pattern=SLUG_PATTERN,
+    )
     application_url: AnyHttpUrl = Field(alias="applicationUrl")
     source_url: AnyHttpUrl = Field(alias="sourceUrl")
     inherits_window_from: str = Field(default="", alias="inheritsWindowFrom")
+
+
+class ProgrammeGroup(DataModel):
+    id: str = Field(pattern=SLUG_PATTERN)
+    university_id: str = Field(alias="universityId", pattern=SLUG_PATTERN)
+    name: str
+    description: str = ""
+
+
+class ApplicantCategory(DataModel):
+    id: str = Field(pattern=SLUG_PATTERN)
+    label_zh: str = Field(alias="labelZh")
+    label_en: str = Field(alias="labelEn")
+    description: str = ""
 
 
 class ApplicationWindow(DataModel):
@@ -164,7 +186,7 @@ class Prediction(DataModel):
     confidence: Confidence
     confidence_reason: str = Field(alias="confidenceReason")
     evidence_cycle_count: int = Field(alias="evidenceCycleCount", ge=1)
-    methodology: Literal["previous-cycle-plus-one-year"]
+    methodology: Literal["calendar-date-shift-plus-one-year"]
     disclaimer: str
 
     @field_validator("applicant_categories")
@@ -241,6 +263,13 @@ class EvidenceSnapshot(DataModel):
     truncated: bool
     excerpt: str
     excerpt_hash: str = Field(alias="excerptHash", pattern=r"^[a-f0-9]{64}$")
+    content_selector: str = Field(
+        default="main|article|[role=main]|body",
+        alias="contentSelector",
+    )
+    matched_text_before: str = Field(default="", alias="matchedTextBefore")
+    matched_text: str = Field(default="", alias="matchedText")
+    matched_text_after: str = Field(default="", alias="matchedTextAfter")
 
     @field_validator("excerpt")
     @classmethod

@@ -14,6 +14,8 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "sources.html").exists()
     assert (tmp_path / "data" / "universities.json").exists()
     assert (tmp_path / "data" / "programs.json").exists()
+    assert (tmp_path / "data" / "programme-groups.json").exists()
+    assert (tmp_path / "data" / "applicant-categories.json").exists()
     assert (tmp_path / "data" / "window-policies.json").exists()
     assert (tmp_path / "data" / "coverage.json").exists()
     assert (tmp_path / "data" / "application-source-state.json").exists()
@@ -24,6 +26,16 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert not (tmp_path / "data" / "review-queue.json").exists()
     assert not (tmp_path / "data" / "window-candidates.json").exists()
     assert not (tmp_path / "data" / "evidence").exists()
+    assert (tmp_path / "sitemap.xml").exists()
+    assert (tmp_path / "robots.txt").exists()
+    assert (
+        tmp_path
+        / "university"
+        / "university-of-cambridge"
+        / "index.html"
+    ).exists()
+    assert (tmp_path / "country" / "united-kingdom" / "index.html").exists()
+    assert (tmp_path / "deadline" / "2026-02" / "index.html").exists()
 
 
 def test_built_site_has_complete_directory(tmp_path) -> None:
@@ -37,3 +49,6 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     )
     assert "来源与覆盖" in (tmp_path / "sources.html").read_text(encoding="utf-8")
     assert "预测参考" in (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert "university-of-cambridge" in (
+        tmp_path / "sitemap.xml"
+    ).read_text(encoding="utf-8")

@@ -1,11 +1,18 @@
 from __future__ import annotations
 
 import concurrent.futures
+import hashlib
 import json
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from .content import content_fingerprint, evidence_excerpt
+from .content import (
+    content_fingerprint,
+    deadline_signal_text,
+    evidence_context,
+    extract_main_text,
+)
 from .http_client import FetchFailure, fetch_page
 from .io import read_json, write_json
 from .paths import MONITOR_STATE_PATH, UNIVERSITIES_PATH
@@ -76,7 +83,28 @@ def check_university(
     try:
         page = fetch_page(url, user_agent=USER_AGENT, timeout=TIMEOUT)
         digest = content_fingerprint(page.body)
+        signal_text = deadline_signal_text(page.body)
+        signal_hash = (
+            hashlib.sha256(signal_text.encode("utf-8")).hexdigest()
+            if signal_text
+            else None
+        )
         change = evaluate_content_change(previous, digest, FINGERPRINT_VERSION)
+        severity = None
+        if change["changed"]:
+            if capture_evidence or (
+                signal_hash
+                and signal_hash != (previous or {}).get("deadlineSignalHash")
+            ):
+                severity = "deadline"
+            elif re.search(
+                r"\bapplication|applications|admission|admissions\b",
+                extract_main_text(page.body),
+                flags=re.IGNORECASE,
+            ):
+                severity = "application"
+            else:
+                severity = "generic"
         result = {
             "url": page.final_url,
             "checkedAt": checked_at,
@@ -86,11 +114,13 @@ def check_university(
             "bytesRead": page.bytes_read,
             "truncated": page.truncated,
             **change,
+            "deadlineSignalHash": signal_hash,
+            "changeSeverity": severity,
             "firstSeenAt": first_seen,
             "lastSuccessfulAt": checked_at,
         }
         if capture_evidence:
-            result["evidenceExcerpt"] = evidence_excerpt(
+            result["evidenceContext"] = evidence_context(
                 page.body,
                 university.get("evidenceDates", []),
             )
@@ -130,7 +160,12 @@ def previous_success_fields(previous: dict | None) -> dict:
         return {}
     return {
         key: previous[key]
-        for key in ("contentHash", "lastSuccessfulAt", "fingerprintVersion")
+        for key in (
+            "contentHash",
+            "lastSuccessfulAt",
+            "fingerprintVersion",
+            "deadlineSignalHash",
+        )
         if previous.get(key)
     }
 

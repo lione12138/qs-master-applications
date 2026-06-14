@@ -2,6 +2,8 @@ const state = {
   data: [],
   universities: [],
   programs: [],
+  programmeGroups: [],
+  applicantCategoryLabels: {},
   policies: [],
   coverage: null,
   sourceMonitor: {},
@@ -28,7 +30,7 @@ const STATUS_LABELS = {
   },
   predicted: {
     title: "下一周期预测",
-    description: "基于最近一个官网周期平移一年，非官方日期",
+    description: "按上一周期同一日历日期平移一年，不代表学校真实预测",
   },
   closed: {
     title: "当前已截止",
@@ -157,7 +159,9 @@ function formatDate(value) {
 }
 
 function deadlineNote(record, status) {
-  if (status === "predicted") return `预计截止 · 参考 ${record.sourceCycle}`;
+  if (status === "predicted") {
+    return `同日历日期平移 · 参考 ${record.sourceCycle}`;
+  }
   const days = daysUntil(record.closesAt);
   if (status === "closed") return `${Math.abs(days)} 天前截止`;
   if (days === 0) return "今天截止";
@@ -178,7 +182,12 @@ const APPLICANT_CATEGORY_LABELS = {
 
 function applicantCategoryText(categories = []) {
   return categories
-    .map((category) => APPLICANT_CATEGORY_LABELS[category] || category)
+    .map(
+      (category) =>
+        state.applicantCategoryLabels[category] ||
+        APPLICANT_CATEGORY_LABELS[category] ||
+        category,
+    )
     .join("、");
 }
 
@@ -201,7 +210,9 @@ function googleCalendarUrl(record) {
   const prefix = record.dataStatus === "predicted" ? "[预测] " : "";
   const title = `${prefix}${record.school} ${record.program} 申请截止`;
   const details = [
-    record.dataStatus === "predicted" ? "非官方预测，请在提交前核对官网。" : "",
+    record.dataStatus === "predicted"
+      ? "非官方日历平移参考，不代表学校真实预测；请在提交前核对官网。"
+      : "",
     `申请入口：${record.applicationUrl}`,
     `信息来源：${record.sourceUrl}`,
   ].filter(Boolean).join("\n");
@@ -235,7 +246,7 @@ function downloadIcs(record) {
     `DTSTART;VALUE=DATE:${start}`,
     `DTEND;VALUE=DATE:${end}`,
     `SUMMARY:${escapeIcs(`${record.dataStatus === "predicted" ? "[预测] " : ""}${record.school} ${record.program} 申请截止`)}`,
-    `DESCRIPTION:${escapeIcs(`${record.dataStatus === "predicted" ? "非官方预测，请在提交前核对官网。\n" : ""}申请入口：${record.applicationUrl}\n信息来源：${record.sourceUrl}`)}`,
+    `DESCRIPTION:${escapeIcs(`${record.dataStatus === "predicted" ? "非官方日历平移参考，不代表学校真实预测；请在提交前核对官网。\n" : ""}申请入口：${record.applicationUrl}\n信息来源：${record.sourceUrl}`)}`,
     `URL:${record.applicationUrl}`,
     "END:VEVENT",
     "END:VCALENDAR",
@@ -802,63 +813,79 @@ function bindEvents() {
 
 async function init() {
   try {
+    const fetchRequiredJson = async (path) => {
+      const response = await fetch(path);
+      if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
+      return response.json();
+    };
+    const optionalFailures = [];
+    const fetchOptionalJson = async (path, fallback) => {
+      try {
+        return await fetchRequiredJson(path);
+      } catch (error) {
+        optionalFailures.push(path);
+        console.warn(`Optional data unavailable: ${path}`, error);
+        return fallback;
+      }
+    };
+
     const [
-      applicationsResponse,
-      universitiesResponse,
-      monitorResponse,
-      programsResponse,
-      policiesResponse,
-      coverageResponse,
-      sourceMonitorResponse,
-      predictionsResponse,
-    ] =
-      await Promise.all([
-      fetch("./data/applications.json"),
-      fetch("./data/universities.json"),
-      fetch("./data/monitor-state.json"),
-      fetch("./data/programs.json"),
-      fetch("./data/window-policies.json"),
-      fetch("./data/coverage.json"),
-      fetch("./data/application-source-state.json"),
-      fetch("./data/predictions.json"),
+      payload,
+      universityPayload,
+      programsPayload,
+      predictionsPayload,
+      monitorPayload,
+      policiesPayload,
+      coveragePayload,
+      sourceMonitorPayload,
+      programmeGroupsPayload,
+      applicantCategoriesPayload,
+    ] = await Promise.all([
+      fetchRequiredJson("./data/applications.json"),
+      fetchRequiredJson("./data/universities.json"),
+      fetchRequiredJson("./data/programs.json"),
+      fetchRequiredJson("./data/predictions.json"),
+      fetchOptionalJson("./data/monitor-state.json", null),
+      fetchOptionalJson("./data/window-policies.json", { policies: [] }),
+      fetchOptionalJson("./data/coverage.json", null),
+      fetchOptionalJson("./data/application-source-state.json", {
+        applications: {},
+      }),
+      fetchOptionalJson("./data/programme-groups.json", { groups: [] }),
+      fetchOptionalJson("./data/applicant-categories.json", {
+        categories: [],
+      }),
     ]);
-    if (
-      !applicationsResponse.ok ||
-      !universitiesResponse.ok ||
-      !monitorResponse.ok ||
-      !programsResponse.ok ||
-      !policiesResponse.ok ||
-      !coverageResponse.ok ||
-      !sourceMonitorResponse.ok ||
-      !predictionsResponse.ok
-    ) {
-      throw new Error(
-        `HTTP ${applicationsResponse.status}/${universitiesResponse.status}/${monitorResponse.status}/${programsResponse.status}/${policiesResponse.status}/${coverageResponse.status}/${sourceMonitorResponse.status}/${predictionsResponse.status}`,
-      );
-    }
-    const payload = await applicationsResponse.json();
-    const universityPayload = await universitiesResponse.json();
-    const monitorPayload = await monitorResponse.json();
-    const programsPayload = await programsResponse.json();
-    const policiesPayload = await policiesResponse.json();
-    state.coverage = await coverageResponse.json();
-    const sourceMonitorPayload = await sourceMonitorResponse.json();
-    const predictionsPayload = await predictionsResponse.json();
+    state.coverage = coveragePayload;
     state.sourceMonitor = sourceMonitorPayload.applications || {};
     state.universities = universityPayload.universities;
     state.programs = programsPayload.programs;
-    state.policies = policiesPayload.policies;
+    state.programmeGroups = programmeGroupsPayload.groups || [];
+    state.applicantCategoryLabels = Object.fromEntries(
+      (applicantCategoriesPayload.categories || []).map((category) => [
+        category.id,
+        category.labelZh || category.labelEn || category.id,
+      ]),
+    );
+    state.policies = policiesPayload.policies || [];
     const universityById = new Map(
       state.universities.map((university) => [university.id, university]),
     );
     const programById = new Map(
       state.programs.map((program) => [program.id, program]),
     );
+    const groupById = new Map(
+      state.programmeGroups.map((group) => [group.id, group]),
+    );
     const enrichRecord = (record) => {
       const university = universityById.get(record.universityId) || {};
       const program =
         record.scopeType === "programme"
           ? programById.get(record.scopeId) || {}
+          : {};
+      const programmeGroup =
+        record.scopeType === "programme-group"
+          ? groupById.get(record.scopeId) || {}
           : {};
       return {
         ...record,
@@ -871,6 +898,7 @@ async function init() {
         region: university.region || record.region || "",
         program:
           program.name ||
+          programmeGroup.name ||
           record.program ||
           (record.scopeType === "institution" ? "学校级默认窗口" : record.scopeId),
       };
@@ -885,13 +913,16 @@ async function init() {
     state.predictionCount = predictedRecords.length;
     state.data = [...officialRecords, ...predictedRecords];
     state.universities.forEach((university) => {
-      university.monitor = monitorPayload.universities[university.id] || {};
+      university.monitor = monitorPayload?.universities?.[university.id] || {};
     });
     const policyByUniversity = new Map(
       state.policies.map((policy) => [policy.universityId, policy]),
     );
     const coverageByUniversity = new Map(
-      state.coverage.universities.map((item) => [item.universityId, item]),
+      (state.coverage?.universities || []).map((item) => [
+        item.universityId,
+        item,
+      ]),
     );
     state.universities.forEach((university) => {
       university.windowPolicy = policyByUniversity.get(university.id) || null;
@@ -953,11 +984,18 @@ async function init() {
     document.getElementById("total-records").textContent = state.officialCount;
     document.getElementById("total-predictions").textContent =
       state.predictionCount;
-    document.getElementById("updated-at").textContent =
-      `官网检查于 ${formatDate(monitorPayload.meta.checkedAt.slice(0, 10))}`;
-    const monitorSummary = monitorPayload.meta.summary;
-    document.getElementById("monitor-summary").textContent =
-      ` 最近一次检查：${monitorSummary.ok}/${monitorSummary.total} 个页面可直接访问，${monitorSummary.blocked} 个页面限制自动访问。`;
+    const checkedAt = monitorPayload?.meta?.checkedAt;
+    document.getElementById("updated-at").textContent = checkedAt
+      ? `官网检查于 ${formatDate(checkedAt.slice(0, 10))}`
+      : `正式数据更新于 ${formatDate(state.meta.updatedAt.slice(0, 10))}`;
+    const monitorSummary = monitorPayload?.meta?.summary;
+    document.getElementById("monitor-summary").textContent = monitorSummary
+      ? ` 最近一次检查：${monitorSummary.ok}/${monitorSummary.total} 个页面可直接访问，${monitorSummary.blocked} 个页面限制自动访问。`
+      : " 监控状态暂不可用，正式窗口数据仍可正常浏览。";
+    if (optionalFailures.length) {
+      document.getElementById("monitor-summary").textContent +=
+        ` ${optionalFailures.length} 项辅助数据暂未加载。`;
+    }
     document.getElementById("demo-banner").hidden = false;
     renderCoverage();
     setupHero();

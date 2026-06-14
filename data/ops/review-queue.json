@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-13T23:29:04.009255+00:00",
+    "generatedAt": "2026-06-14T09:27:46.884491+00:00",
     "description": "Automatic findings require maintainer review before publication."
   },
   "items": [
@@ -13,7 +13,8 @@
       "url": "https://nusgs.nus.edu.sg/admissions/",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:11.500333+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "content-change:cole-polytechnique-f-d-rale-de-lausanne:1ab864179e6f",
@@ -24,7 +25,8 @@
       "url": "https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:12.721385+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "content-change:city-university-of-hong-kong:383ee91f9cc4",
@@ -35,7 +37,8 @@
       "url": "https://www.cityu.edu.hk/admissions/postgraduate",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:15.585782+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "content-change:adelaide-university:33c3734b0ee3",
@@ -46,7 +49,8 @@
       "url": "https://adelaide.edu.au",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:16.858710+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "content-change:university-of-zurich-uzh:5c4c4e121a9b",
@@ -57,7 +61,8 @@
       "url": "https://uzh.ch/de.html",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:18.225409+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "content-change:indian-institute-of-technology-delhi-iitd:d712c2efac11",
@@ -68,7 +73,8 @@
       "url": "https://home.iitd.ac.in",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:19.852542+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "content-change:universiti-putra-malaysia-upm:7f153261aca5",
@@ -79,7 +85,8 @@
       "url": "https://upm.edu.my/admission/programmes/postgraduate-76276",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:20.602058+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "content-change:chalmers-university-of-technology:6d1b8a48a24f",
@@ -90,7 +97,8 @@
       "url": "https://www.chalmers.se/en/education/find-masters-programme/",
       "reason": "Official page content changed consistently in two consecutive checks.",
       "detectedAt": "2026-06-13T22:29:22.855078+00:00",
-      "status": "pending"
+      "status": "pending",
+      "severity": "generic"
     },
     {
       "id": "monitor-error:university-of-pennsylvania",

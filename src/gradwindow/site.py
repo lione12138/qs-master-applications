@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import html
+import re
 import shutil
 from pathlib import Path
 
 from .io import read_json
 from .paths import (
+    APPLICANT_CATEGORIES_PATH,
     APPLICATIONS_PATH,
     APPLICATION_SOURCE_STATE_PATH,
     COVERAGE_PATH,
@@ -14,17 +16,21 @@ from .paths import (
     ROOT,
     SITE_DIR,
     PROGRAMS_PATH,
+    PROGRAMME_GROUPS_PATH,
     UNIVERSITIES_PATH,
     WINDOW_POLICIES_PATH,
 )
 
 PUBLIC_FILES = ("index.html", "app.js", "styles.css")
+SITE_URL = "https://lione12138.github.io/qs-master-applications"
 PUBLIC_DATA = (
     UNIVERSITIES_PATH,
     APPLICATIONS_PATH,
     PREDICTIONS_PATH,
     MONITOR_STATE_PATH,
     PROGRAMS_PATH,
+    PROGRAMME_GROUPS_PATH,
+    APPLICANT_CATEGORIES_PATH,
     WINDOW_POLICIES_PATH,
     COVERAGE_PATH,
     APPLICATION_SOURCE_STATE_PATH,
@@ -50,7 +56,241 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
     (output_dir / "sources.html").write_text(
         render_sources_page(), encoding="utf-8"
     )
+    generated_urls = generate_index_pages(output_dir)
+    sitemap_urls = [SITE_URL, f"{SITE_URL}/sources.html", *generated_urls]
+    (output_dir / "sitemap.xml").write_text(
+        render_sitemap(sitemap_urls), encoding="utf-8"
+    )
+    (output_dir / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n",
+        encoding="utf-8",
+    )
     return output_dir / "index.html"
+
+
+def slugify(value: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
+    return slug or "other"
+
+
+def generate_index_pages(output_dir: Path) -> list[str]:
+    universities = read_json(UNIVERSITIES_PATH)["universities"]
+    applications = read_json(APPLICATIONS_PATH)["applications"]
+    predictions = read_json(PREDICTIONS_PATH)["predictions"]
+    programs = read_json(PROGRAMS_PATH)["programs"]
+    groups = read_json(PROGRAMME_GROUPS_PATH)["groups"]
+    program_names = {item["id"]: item["name"] for item in programs}
+    group_names = {item["id"]: item["name"] for item in groups}
+    university_names = {item["id"]: item["school"] for item in universities}
+    generated_urls: list[str] = []
+
+    for university in universities:
+        university_dir = output_dir / "university" / university["id"]
+        university_dir.mkdir(parents=True, exist_ok=True)
+        official = [
+            item
+            for item in applications
+            if item["universityId"] == university["id"]
+        ]
+        estimated = [
+            item
+            for item in predictions
+            if item["universityId"] == university["id"]
+        ]
+        canonical = f"{SITE_URL}/university/{university['id']}/"
+        body = (
+            f"<p class=\"back\"><a href=\"../../index.html\">返回申请看板</a></p>"
+            f"<p>QS {html.escape(university['rankDisplay'])} · "
+            f"{html.escape(university['country'])}</p>"
+            f"<p><a href=\"{html.escape(university['homepageUrl'], quote=True)}\">"
+            "学校官网</a>"
+            + (
+                f" · <a href=\"{html.escape(university['admissionsUrl'], quote=True)}\">"
+                "研究生申请入口</a>"
+                if university.get("admissionsUrl")
+                else ""
+            )
+            + "</p>"
+            + render_window_list(
+                official,
+                "官网核验窗口",
+                program_names,
+                group_names,
+            )
+            + render_window_list(
+                estimated,
+                "下一周期日历平移参考",
+                program_names,
+                group_names,
+                predicted=True,
+            )
+        )
+        (university_dir / "index.html").write_text(
+            render_static_page(
+                f"{university['school']} 硕士申请时间",
+                (
+                    f"查看 {university['school']} 的官网核验硕士申请窗口、"
+                    "截止日期与下一周期非官方日历平移参考。"
+                ),
+                body,
+                canonical,
+            ),
+            encoding="utf-8",
+        )
+        generated_urls.append(canonical)
+
+    by_country: dict[str, list[dict]] = {}
+    for university in universities:
+        by_country.setdefault(university["country"], []).append(university)
+    for country, items in by_country.items():
+        country_slug = slugify(country)
+        country_dir = output_dir / "country" / country_slug
+        country_dir.mkdir(parents=True, exist_ok=True)
+        rows = "".join(
+            "<li>"
+            f"<strong>QS {html.escape(item['rankDisplay'])}</strong> "
+            f"<a href=\"../../university/{item['id']}/\">"
+            f"{html.escape(item['school'])}</a></li>"
+            for item in sorted(items, key=lambda value: value["qsPosition"])
+        )
+        canonical = f"{SITE_URL}/country/{country_slug}/"
+        body = (
+            '<p class="back"><a href="../../index.html">返回申请看板</a></p>'
+            f"<p>共 {len(items)} 所 QS 前 200 大学。</p><ul>{rows}</ul>"
+        )
+        (country_dir / "index.html").write_text(
+            render_static_page(
+                f"{country} QS 前 200 大学硕士申请",
+                f"{country} 的 QS 前 200 大学目录与硕士申请时间入口。",
+                body,
+                canonical,
+            ),
+            encoding="utf-8",
+        )
+        generated_urls.append(canonical)
+
+    by_month: dict[str, list[tuple[dict, bool]]] = {}
+    for item in applications:
+        by_month.setdefault(item["closesAt"][:7], []).append((item, False))
+    for item in predictions:
+        by_month.setdefault(item["closesAt"][:7], []).append((item, True))
+    for month, items in by_month.items():
+        month_dir = output_dir / "deadline" / month
+        month_dir.mkdir(parents=True, exist_ok=True)
+        rows = "".join(
+            "<li>"
+            f"<strong>{html.escape(item['closesAt'])}</strong> "
+            f"<a href=\"../../university/{item['universityId']}/\">"
+            f"{html.escape(university_names[item['universityId']])}</a>"
+            f" · {html.escape(scope_name(item, program_names, group_names))}"
+            f"{' · 非官方日历平移参考' if predicted else ''}</li>"
+            for item, predicted in sorted(
+                items, key=lambda pair: (pair[0]["closesAt"], pair[0]["universityId"])
+            )
+        )
+        canonical = f"{SITE_URL}/deadline/{month}/"
+        body = (
+            '<p class="back"><a href="../../index.html">返回申请看板</a></p>'
+            f"<ul>{rows}</ul>"
+        )
+        (month_dir / "index.html").write_text(
+            render_static_page(
+                f"{month} 硕士申请截止日期",
+                f"汇总 {month} 的官网核验硕士申请截止日期与非官方日历平移参考。",
+                body,
+                canonical,
+            ),
+            encoding="utf-8",
+        )
+        generated_urls.append(canonical)
+    return generated_urls
+
+
+def scope_name(
+    item: dict,
+    program_names: dict[str, str],
+    group_names: dict[str, str],
+) -> str:
+    if item["scopeType"] == "programme":
+        return program_names.get(item["scopeId"], item["scopeId"])
+    if item["scopeType"] == "programme-group":
+        return group_names.get(item["scopeId"], item["scopeId"])
+    return "学校级窗口"
+
+
+def render_window_list(
+    items: list[dict],
+    heading: str,
+    program_names: dict[str, str],
+    group_names: dict[str, str],
+    predicted: bool = False,
+) -> str:
+    if not items:
+        return f"<section><h2>{html.escape(heading)}</h2><p>暂无记录。</p></section>"
+    rows = "".join(
+        "<li>"
+        f"<strong>{html.escape(item['opensAt'])} 至 "
+        f"{html.escape(item['closesAt'])}</strong><br>"
+        f"{html.escape(scope_name(item, program_names, group_names))} · "
+        f"{html.escape(item['intake'])}"
+        + (
+            "<br><small>同日历日期平移一年，不代表学校实际发布日期。</small>"
+            if predicted
+            else ""
+        )
+        + f"<br><a href=\"{html.escape(item['sourceUrl'], quote=True)}\">官网来源</a>"
+        "</li>"
+        for item in sorted(items, key=lambda value: value["closesAt"])
+    )
+    return f"<section><h2>{html.escape(heading)}</h2><ul>{rows}</ul></section>"
+
+
+def render_static_page(
+    title: str,
+    description: str,
+    body: str,
+    canonical: str,
+) -> str:
+    escaped_title = html.escape(title)
+    escaped_description = html.escape(description, quote=True)
+    escaped_canonical = html.escape(canonical, quote=True)
+    return f"""<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{escaped_title} · GradWindow</title>
+  <meta name="description" content="{escaped_description}">
+  <link rel="canonical" href="{escaped_canonical}">
+  <meta property="og:title" content="{escaped_title} · GradWindow">
+  <meta property="og:description" content="{escaped_description}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{escaped_canonical}">
+  <style>
+    body {{ margin: 0; background: #f7f5ef; color: #17231d; font: 16px/1.65 system-ui, sans-serif; }}
+    main {{ width: min(820px, calc(100% - 32px)); margin: 48px auto; }}
+    h1 {{ line-height: 1.2; }}
+    h2 {{ margin-top: 36px; }}
+    li {{ margin: 12px 0; }}
+    a {{ color: #1e6548; }}
+    small {{ color: #68736d; }}
+    .back {{ margin-bottom: 28px; }}
+  </style>
+</head>
+<body><main><h1>{escaped_title}</h1>{body}</main></body>
+</html>
+"""
+
+
+def render_sitemap(urls: list[str]) -> str:
+    entries = "".join(
+        f"  <url><loc>{html.escape(url)}</loc></url>\n" for url in urls
+    )
+    return (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{entries}</urlset>\n"
+    )
 
 
 def render_sources_page() -> str:

@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "labelZh": {
+      "title": "Labelzh",
+      "type": "string"
+    },
+    "labelEn": {
+      "title": "Labelen",
+      "type": "string"
+    },
+    "description": {
+      "default": "",
+      "title": "Description",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "labelZh",
+    "labelEn"
+  ],
+  "title": "ApplicantCategory",
+  "type": "object"
+}

@@ -6,7 +6,7 @@ import json
 import pytest
 from pydantic import ValidationError
 
-from gradwindow.models import ApplicationWindow, EvidenceSnapshot
+from gradwindow.models import ApplicationWindow, EvidenceSnapshot, IntakeDetails, University
 from gradwindow.paths import APPLICATIONS_PATH, EVIDENCE_DIR
 
 
@@ -43,3 +43,36 @@ def test_evidence_snapshot_accepts_current_record() -> None:
     snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
     parsed = EvidenceSnapshot.model_validate(snapshot)
     assert parsed.captured_at.tzinfo is not None
+
+
+def test_intake_model_allows_same_year_and_two_year_academic_ranges() -> None:
+    same_year = IntakeDetails.model_validate(
+        {
+            "label": "Calendar 2027",
+            "cycleYear": 2027,
+            "academicYearEnd": 2027,
+            "term": "other",
+            "startMonth": 1,
+        }
+    )
+    two_year = IntakeDetails.model_validate(
+        {
+            "label": "2027/29",
+            "cycleYear": 2027,
+            "academicYearEnd": 2029,
+            "term": "other",
+            "startMonth": None,
+        }
+    )
+    assert same_year.academic_year_end == 2027
+    assert two_year.academic_year_end == 2029
+
+
+def test_university_model_does_not_treat_qs_rank_as_list_position() -> None:
+    payload = json.loads(
+        (APPLICATIONS_PATH.parent / "universities.json").read_text(encoding="utf-8")
+    )
+    record = copy.deepcopy(payload["universities"][0])
+    record["qsRank"] = 225
+    parsed = University.model_validate(record)
+    assert parsed.qs_rank == 225

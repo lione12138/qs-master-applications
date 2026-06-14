@@ -9,10 +9,11 @@ from .intakes import intake_identity, parse_intake_details
 from .io import read_json, write_json
 from .paths import APPLICATIONS_PATH, PREDICTIONS_PATH
 
-PREDICTION_METHOD = "previous-cycle-plus-one-year"
+PREDICTION_METHOD = "calendar-date-shift-plus-one-year"
 PREDICTION_DISCLAIMER = (
-    "This is a non-official estimate based on the most recent verified "
-    "application cycle. The university may change the dates."
+    "This is a non-official calendar-shift reference: the prior verified "
+    "dates are moved forward exactly one calendar year. It is not a forecast "
+    "of the university's actual dates; weekdays and policies may change."
 )
 def shift_date_one_year(value: str) -> str:
     original = date.fromisoformat(value)

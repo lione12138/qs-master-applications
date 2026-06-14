@@ -33,6 +33,8 @@ def test_current_windows_generate_next_cycle_predictions(tmp_path) -> None:
     assert cambridge["closesAt"] == "2027-02-26"
     assert cambridge["confidence"] == "low"
     assert cambridge["evidenceCycleCount"] == 1
+    assert cambridge["methodology"] == "calendar-date-shift-plus-one-year"
+    assert "not a forecast" in cambridge["disclaimer"]
     assert payload["meta"]["official"] is False
 
 

@@ -54,6 +54,26 @@
       "pattern": "^[a-f0-9]{64}$",
       "title": "Excerpthash",
       "type": "string"
+    },
+    "contentSelector": {
+      "default": "main|article|[role=main]|body",
+      "title": "Contentselector",
+      "type": "string"
+    },
+    "matchedTextBefore": {
+      "default": "",
+      "title": "Matchedtextbefore",
+      "type": "string"
+    },
+    "matchedText": {
+      "default": "",
+      "title": "Matchedtext",
+      "type": "string"
+    },
+    "matchedTextAfter": {
+      "default": "",
+      "title": "Matchedtextafter",
+      "type": "string"
     }
   },
   "required": [

@@ -39,6 +39,7 @@ def main() -> None:
     pipeline = subparsers.add_parser("pipeline", help="Run the daily pipeline")
     pipeline.add_argument("--workers", type=int, default=16)
     pipeline.add_argument("--skip-monitor", action="store_true")
+    pipeline.add_argument("--skip-build", action="store_true")
     subparsers.add_parser("coverage", help="Generate QS top-30 coverage metrics")
     subparsers.add_parser(
         "predictions", help="Generate non-official next-cycle estimates"
@@ -124,7 +125,8 @@ def main() -> None:
             f"Wrote review report: {review_report} "
             f"({review_summary['pendingReview']} pending)"
         )
-        print(f"Wrote site: {build_site()}")
+        if not args.skip_build:
+            print(f"Wrote site: {build_site()}")
 
 
 def _validate_or_exit() -> dict[str, int]:
