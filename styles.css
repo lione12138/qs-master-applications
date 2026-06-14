@@ -652,6 +652,11 @@ h1 em::after {
   box-shadow: 0 0 0 5px rgba(240, 164, 93, 0.12);
 }
 
+.status-indicator.future {
+  background: #4f86a6;
+  box-shadow: 0 0 0 5px rgba(79, 134, 166, 0.11);
+}
+
 .status-indicator.predicted {
   background: var(--purple);
   box-shadow: 0 0 0 5px rgba(119, 86, 165, 0.11);

@@ -9,6 +9,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     index = build_site(tmp_path)
     assert index.exists()
     assert (tmp_path / "app.js").exists()
+    assert (tmp_path / "status.js").exists()
     assert (tmp_path / "styles.css").exists()
     assert (tmp_path / ".nojekyll").exists()
     assert (tmp_path / "sources.html").exists()

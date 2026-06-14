@@ -1,3 +1,5 @@
+import { getApplicationStatus } from "./status.js";
+
 const state = {
   data: [],
   universities: [],
@@ -26,7 +28,11 @@ const STATUS_LABELS = {
   },
   upcoming: {
     title: "即将开放",
-    description: "开放日期尚未到来",
+    description: "将在未来 30 天内开放",
+  },
+  future: {
+    title: "未来开放",
+    description: "开放日期距离今天超过 30 天",
   },
   predicted: {
     title: "下一周期预测",
@@ -141,13 +147,7 @@ function todayUtc() {
 }
 
 function getStatus(record, today = todayUtc()) {
-  if (record.dataStatus === "predicted") return "predicted";
-  if (!record.opensAt || !record.closesAt) return "unknown";
-  const opens = parseDate(record.opensAt);
-  const closes = parseDate(record.closesAt);
-  if (today < opens) return "upcoming";
-  if (today > closes) return "closed";
-  return "open";
+  return getApplicationStatus(record, today);
 }
 
 function daysUntil(dateValue) {
@@ -665,6 +665,7 @@ function renderCounts(records, universities) {
     all: records.length + universities.length,
     open: 0,
     upcoming: 0,
+    future: 0,
     predicted: 0,
     closed: 0,
     unknown: universities.length,
@@ -690,7 +691,7 @@ function render() {
   const emptyState = document.getElementById("empty-state");
   container.replaceChildren();
 
-  ["open", "upcoming", "predicted", "closed"].forEach((status) => {
+  ["open", "upcoming", "future", "predicted", "closed"].forEach((status) => {
     if (state.status !== "all" && state.status !== status) return;
     const groupRecords = records
       .filter((record) => getStatus(record) === status)
@@ -952,6 +953,7 @@ async function init() {
       "all",
       "open",
       "upcoming",
+      "future",
       "predicted",
       "closed",
       "unknown",

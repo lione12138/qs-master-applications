@@ -21,7 +21,7 @@ from .paths import (
     WINDOW_POLICIES_PATH,
 )
 
-PUBLIC_FILES = ("index.html", "app.js", "styles.css")
+PUBLIC_FILES = ("index.html", "app.js", "status.js", "styles.css")
 SITE_URL = "https://lione12138.github.io/qs-master-applications"
 PUBLIC_DATA = (
     UNIVERSITIES_PATH,
