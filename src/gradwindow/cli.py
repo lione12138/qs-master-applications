@@ -9,12 +9,14 @@ from .approvals import approve_window
 from .deadlines import update_deadlines
 from .coverage import generate_coverage
 from .monitor import monitor_universities, print_summary
+from .intakes import migrate_application_intakes
 from .paths import APPLICATION_SOURCE_STATE_PATH, SITE_DIR
 from .predictions import generate_predictions
 from .source_monitor import monitor_application_sources
 from .site import build_site
 from .validation import validate_data
 from .review import generate_review_outputs
+from .schemas import export_schemas
 
 
 def main() -> None:
@@ -40,6 +42,12 @@ def main() -> None:
     subparsers.add_parser("coverage", help="Generate QS top-30 coverage metrics")
     subparsers.add_parser(
         "predictions", help="Generate non-official next-cycle estimates"
+    )
+    subparsers.add_parser(
+        "migrate-intakes", help="Add structured intake details to applications"
+    )
+    subparsers.add_parser(
+        "export-schemas", help="Export Pydantic contracts as JSON Schema"
     )
     approve = subparsers.add_parser(
         "approve-window", help="Promote a reviewed exact-window candidate"
@@ -73,6 +81,15 @@ def main() -> None:
         print(
             f"Wrote {len(predictions['predictions'])} non-official predictions."
         )
+    elif args.command == "migrate-intakes":
+        payload = migrate_application_intakes()
+        generate_predictions()
+        print(
+            f"Migrated {len(payload['applications'])} structured intake records."
+        )
+    elif args.command == "export-schemas":
+        written = export_schemas()
+        print(f"Wrote {len(written)} JSON Schema files.")
     elif args.command == "approve-window":
         record = approve_window(args.candidate_id, args.reviewer)
         generate_predictions()
@@ -123,6 +140,7 @@ def _validate_or_exit() -> dict[str, int]:
         f"({summary['curatedAdmissions']} curated), and "
         f"{summary['verifiedWindows']} verified windows with "
         f"{summary['predictedWindows']} next-cycle predictions and "
+        f"{summary['evidenceSnapshots']} evidence snapshots; "
         f"{summary['enabledParsers']} enabled parsers."
     )
     return summary

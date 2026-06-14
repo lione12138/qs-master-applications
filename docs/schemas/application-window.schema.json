@@ -1,0 +1,160 @@
+{
+  "$defs": {
+    "IntakeDetails": {
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "title": "Label",
+          "type": "string"
+        },
+        "cycleYear": {
+          "maximum": 2200,
+          "minimum": 2000,
+          "title": "Cycleyear",
+          "type": "integer"
+        },
+        "academicYearEnd": {
+          "anyOf": [
+            {
+              "maximum": 2201,
+              "minimum": 2000,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Academicyearend"
+        },
+        "term": {
+          "enum": [
+            "fall",
+            "spring",
+            "summer",
+            "winter",
+            "michaelmas",
+            "other"
+          ],
+          "title": "Term",
+          "type": "string"
+        },
+        "startMonth": {
+          "anyOf": [
+            {
+              "maximum": 12,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Startmonth"
+        }
+      },
+      "required": [
+        "label",
+        "cycleYear",
+        "term"
+      ],
+      "title": "IntakeDetails",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "universityId": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Universityid",
+      "type": "string"
+    },
+    "scopeType": {
+      "enum": [
+        "institution",
+        "programme-group",
+        "programme"
+      ],
+      "title": "Scopetype",
+      "type": "string"
+    },
+    "scopeId": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Scopeid",
+      "type": "string"
+    },
+    "intake": {
+      "title": "Intake",
+      "type": "string"
+    },
+    "intakeDetails": {
+      "$ref": "#/$defs/IntakeDetails"
+    },
+    "round": {
+      "default": "",
+      "title": "Round",
+      "type": "string"
+    },
+    "applicantCategories": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Applicantcategories",
+      "type": "array"
+    },
+    "opensAt": {
+      "format": "date",
+      "title": "Opensat",
+      "type": "string"
+    },
+    "closesAt": {
+      "format": "date",
+      "title": "Closesat",
+      "type": "string"
+    },
+    "applicationUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Applicationurl",
+      "type": "string"
+    },
+    "sourceUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Sourceurl",
+      "type": "string"
+    },
+    "verifiedAt": {
+      "format": "date",
+      "title": "Verifiedat",
+      "type": "string"
+    },
+    "evidence": {
+      "title": "Evidence",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "universityId",
+    "scopeType",
+    "scopeId",
+    "intake",
+    "intakeDetails",
+    "applicantCategories",
+    "opensAt",
+    "closesAt",
+    "applicationUrl",
+    "sourceUrl",
+    "verifiedAt",
+    "evidence"
+  ],
+  "title": "ApplicationWindow",
+  "type": "object"
+}

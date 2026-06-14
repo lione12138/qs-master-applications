@@ -5,6 +5,7 @@ from datetime import date
 from pathlib import Path
 import re
 
+from .intakes import intake_identity, parse_intake_details
 from .io import read_json, write_json
 from .paths import APPLICATIONS_PATH, PREDICTIONS_PATH
 
@@ -13,11 +14,6 @@ PREDICTION_DISCLAIMER = (
     "This is a non-official estimate based on the most recent verified "
     "application cycle. The university may change the dates."
 )
-TERM_ALIASES = {
-    "autumn": "fall",
-}
-
-
 def shift_date_one_year(value: str) -> str:
     original = date.fromisoformat(value)
     day = min(original.day, monthrange(original.year + 1, original.month)[1])
@@ -40,21 +36,18 @@ def shift_intake_one_year(value: str) -> str:
 
 
 def canonical_intake_key(value: str) -> tuple[tuple[int, ...], str]:
-    years: list[int] = []
-    for match in re.finditer(r"\b(20\d{2})(?:([/-])(\d{2}|20\d{2}))?\b", value):
-        first = int(match.group(1))
-        years.append(first)
-        second = match.group(3)
-        if second:
-            years.append(
-                int(second) if len(second) == 4 else (first // 100) * 100 + int(second)
+    details = parse_intake_details(value)
+    return (
+        tuple(
+            year
+            for year in (
+                details["cycleYear"],
+                details.get("academicYearEnd"),
             )
-    label = value.lower()
-    label = re.sub(r"\b20\d{2}(?:[/-](?:\d{2}|20\d{2}))?\b", " ", label)
-    for original, canonical in TERM_ALIASES.items():
-        label = re.sub(rf"\b{re.escape(original)}\b", canonical, label)
-    label = re.sub(r"[^a-z0-9]+", " ", label).strip()
-    return tuple(years), label
+            if year is not None
+        ),
+        f"{details['term']}:{details.get('startMonth')}",
+    )
 
 
 def window_signature(item: dict) -> tuple:
@@ -68,7 +61,7 @@ def window_signature(item: dict) -> tuple:
 
 
 def official_cycle_key(item: dict) -> tuple:
-    return (*window_signature(item), canonical_intake_key(item["intake"]))
+    return (*window_signature(item), intake_identity(item))
 
 
 def prediction_confidence(history: list[dict]) -> tuple[str, str]:
@@ -132,6 +125,7 @@ def generate_predictions(
             "scopeType": source["scopeType"],
             "scopeId": source["scopeId"],
             "intake": target_intake,
+            "intakeDetails": parse_intake_details(target_intake),
             "round": source.get("round", ""),
             "applicantCategories": source["applicantCategories"],
             "opensAt": shift_date_one_year(source["opensAt"]),

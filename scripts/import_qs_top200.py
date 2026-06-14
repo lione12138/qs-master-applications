@@ -6,14 +6,21 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 import time
 import urllib.parse
-import urllib.request
 from pathlib import Path
 
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+sys_path = str(ROOT / "src")
+if sys_path not in sys.path:
+    sys.path.insert(0, sys_path)
+
+from gradwindow.http_client import fetch_page
+from gradwindow.io import read_json, write_json
+
 OUTPUT_PATH = ROOT / "data" / "universities.json"
 CACHE_PATH = ROOT / "data" / "ror-cache.json"
 ROR_API = "https://api.ror.org/v2/organizations"
@@ -49,27 +56,15 @@ def slugify(value: str) -> str:
     return value.strip("-")
 
 
-def read_json(path: Path, default: dict) -> dict:
-    if not path.exists():
-        return default
-    with path.open(encoding="utf-8") as handle:
-        return json.load(handle)
-
-
-def write_json(path: Path, payload: dict) -> None:
-    with path.open("w", encoding="utf-8", newline="\n") as handle:
-        json.dump(payload, handle, ensure_ascii=False, indent=2)
-        handle.write("\n")
-
-
 def resolve_ror(name: str, country: str) -> dict:
     affiliation = urllib.parse.quote(f"{name}, {country}")
-    request = urllib.request.Request(
+    page = fetch_page(
         f"{ROR_API}?affiliation={affiliation}",
-        headers={"User-Agent": USER_AGENT},
+        user_agent=USER_AGENT,
+        timeout=30,
+        accept="application/json",
     )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        payload = json.load(response)
+    payload = json.loads(page.body)
     if not payload.get("items"):
         return {"matched": False}
 

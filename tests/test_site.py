@@ -23,6 +23,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert not (tmp_path / "data" / "admissions-overrides.json").exists()
     assert not (tmp_path / "data" / "review-queue.json").exists()
     assert not (tmp_path / "data" / "window-candidates.json").exists()
+    assert not (tmp_path / "data" / "evidence").exists()
 
 
 def test_built_site_has_complete_directory(tmp_path) -> None:

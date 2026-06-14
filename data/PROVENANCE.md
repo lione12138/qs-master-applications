@@ -38,3 +38,10 @@ opening date, and closing date by one calendar year.
 Predictions are non-official, remain separate from verified coverage totals,
 and link back to the prior-cycle official source. When an official record for
 the target cycle is added, that cycle's prediction is removed automatically.
+
+## Evidence snapshots
+
+Checks of published-window sources store a content hash, final URL, response
+metadata, and a short deadline-related excerpt under `data/evidence/`. Full
+webpages are not retained. These files support later review of what the
+monitor observed without treating an automatic observation as verification.

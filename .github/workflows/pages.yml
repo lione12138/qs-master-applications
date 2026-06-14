@@ -36,6 +36,7 @@ jobs:
       - name: Test and build
         run: |
           gradwindow predictions
+          gradwindow export-schemas
           pytest
           gradwindow build-site
 

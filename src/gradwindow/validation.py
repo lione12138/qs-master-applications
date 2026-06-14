@@ -1,14 +1,25 @@
 from __future__ import annotations
 
-from datetime import date
 from pathlib import Path
 import re
 from urllib.parse import urlparse
 
+from pydantic import BaseModel, ValidationError
+
 from .discovery import same_official_domain
 from .io import read_json
+from .models import (
+    ApplicationWindow,
+    EvidenceSnapshot,
+    ParserSource,
+    Prediction,
+    Programme,
+    University,
+    WindowPolicy,
+)
 from .paths import (
     APPLICATIONS_PATH,
+    EVIDENCE_DIR,
     PREDICTIONS_PATH,
     PROGRAMS_PATH,
     SOURCES_PATH,
@@ -16,31 +27,18 @@ from .paths import (
     WINDOW_POLICIES_PATH,
 )
 from .predictions import (
-    PREDICTION_METHOD,
-    canonical_intake_key,
     official_cycle_key,
     shift_date_one_year,
     shift_intake_one_year,
 )
 
-UNIVERSITY_FIELDS = {
-    "id",
-    "qsRank",
-    "qsPosition",
-    "rankDisplay",
-    "school",
-    "country",
-    "region",
-    "homepageUrl",
-    "officialDomains",
-    "admissionsDiscovery",
-}
 APPLICATION_FIELDS = {
     "id",
     "universityId",
     "scopeType",
     "scopeId",
     "intake",
+    "intakeDetails",
     "round",
     "opensAt",
     "closesAt",
@@ -50,45 +48,7 @@ APPLICATION_FIELDS = {
     "applicantCategories",
     "evidence",
 }
-PROGRAM_FIELDS = {
-    "id",
-    "universityId",
-    "name",
-    "degreeType",
-    "applicationUrl",
-    "sourceUrl",
-}
-PREDICTION_FIELDS = {
-    "id",
-    "basedOnRecordId",
-    "universityId",
-    "scopeType",
-    "scopeId",
-    "intake",
-    "round",
-    "applicantCategories",
-    "opensAt",
-    "closesAt",
-    "applicationUrl",
-    "sourceUrl",
-    "sourceCycle",
-    "basedOnVerifiedAt",
-    "confidence",
-    "confidenceReason",
-    "evidenceCycleCount",
-    "methodology",
-    "disclaimer",
-}
 WINDOW_SCOPE_TYPES = {"institution", "programme-group", "programme"}
-MASTERS_AVAILABILITY = {"broad", "limited", "unclear"}
-DISCOVERY_STATES = {
-    "curated",
-    "discovered",
-    "low-confidence",
-    "not-found",
-    "pending",
-    "error",
-}
 
 
 def valid_http_url(value: str | None) -> bool:
@@ -98,6 +58,22 @@ def valid_http_url(value: str | None) -> bool:
     return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
 
 
+def validate_model(
+    model: type[BaseModel],
+    item: object,
+    label: str,
+    errors: list[str],
+) -> bool:
+    try:
+        model.model_validate(item)
+        return True
+    except ValidationError as exc:
+        for detail in exc.errors(include_url=False):
+            location = ".".join(str(part) for part in detail["loc"]) or "record"
+            errors.append(f"{label}: {location}: {detail['msg']}")
+        return False
+
+
 def validate_data(
     universities_path: Path = UNIVERSITIES_PATH,
     applications_path: Path = APPLICATIONS_PATH,
@@ -105,6 +81,7 @@ def validate_data(
     programs_path: Path = PROGRAMS_PATH,
     policies_path: Path = WINDOW_POLICIES_PATH,
     predictions_path: Path = PREDICTIONS_PATH,
+    evidence_dir: Path = EVIDENCE_DIR,
 ) -> tuple[list[str], dict[str, int]]:
     university_payload = read_json(universities_path)
     application_payload = read_json(applications_path)
@@ -141,25 +118,13 @@ def validate_data(
     positions: list[int] = []
     for item in universities:
         label = item.get("id", "unknown university")
-        missing = UNIVERSITY_FIELDS - item.keys()
-        if missing:
-            errors.append(f"{label}: missing university fields {sorted(missing)}")
+        if not validate_model(University, item, label, errors):
             continue
         if label in university_ids:
             errors.append(f"{label}: duplicate university id")
         university_ids.add(label)
         university_domains[label] = item["officialDomains"]
         positions.append(item["qsPosition"])
-        if not isinstance(item["qsRank"], int) or not 1 <= item["qsRank"] <= 200:
-            errors.append(f"{label}: invalid QS rank")
-        if item["admissionsDiscovery"] not in DISCOVERY_STATES:
-            errors.append(f"{label}: invalid admissionsDiscovery")
-        if not valid_http_url(item["homepageUrl"]):
-            errors.append(f"{label}: invalid official homepage")
-        if item.get("admissionsUrl") and not valid_http_url(item["admissionsUrl"]):
-            errors.append(f"{label}: invalid admissions URL")
-        if not isinstance(item["officialDomains"], list):
-            errors.append(f"{label}: officialDomains must be a list")
 
     if sorted(positions) != list(range(1, 201)):
         errors.append("QS positions must be unique and cover 1 through 200")
@@ -169,9 +134,7 @@ def validate_data(
     programs_by_id: dict[str, dict] = {}
     for item in programs:
         label = item.get("id", "unknown programme")
-        missing = PROGRAM_FIELDS - item.keys()
-        if missing:
-            errors.append(f"{label}: missing programme fields {sorted(missing)}")
+        if not validate_model(Programme, item, label, errors):
             continue
         if label in program_ids:
             errors.append(f"{label}: duplicate programme id")
@@ -179,12 +142,8 @@ def validate_data(
         programs_by_id[label] = item
         if item["universityId"] not in university_ids:
             errors.append(f"{label}: unknown universityId")
-        for field in ("applicationUrl", "sourceUrl"):
-            if item.get(field) and not valid_http_url(item[field]):
-                errors.append(f"{label}: invalid {field}")
         if (
-            valid_http_url(item.get("sourceUrl"))
-            and item["universityId"] in university_domains
+            item["universityId"] in university_domains
             and not same_official_domain(
                 item["sourceUrl"], university_domains[item["universityId"]]
             )
@@ -194,9 +153,7 @@ def validate_data(
     application_keys: set[tuple] = set()
     for item in applications:
         label = item.get("id", "unknown application")
-        missing = APPLICATION_FIELDS - item.keys()
-        if missing:
-            errors.append(f"{label}: missing application fields {sorted(missing)}")
+        if not validate_model(ApplicationWindow, item, label, errors):
             continue
         if label in application_ids:
             errors.append(f"{label}: duplicate application id")
@@ -219,35 +176,8 @@ def validate_data(
             and programs_by_id[scope_id]["universityId"] != item["universityId"]
         ):
             errors.append(f"{label}: programme scope belongs to another university")
-        categories = item["applicantCategories"]
-        if not isinstance(categories, list):
-            errors.append(f"{label}: applicantCategories must be a list")
-        elif (
-            not categories
-            or any(not isinstance(value, str) or not value.strip() for value in categories)
-            or len(set(categories)) != len(categories)
-        ):
-            errors.append(
-                f"{label}: applicantCategories must contain unique non-empty strings"
-            )
-        elif "all" in categories and len(categories) != 1:
-            errors.append(f"{label}: all cannot be combined with other categories")
-        if not str(item["evidence"]).strip():
-            errors.append(f"{label}: evidence is required")
-        try:
-            opens = date.fromisoformat(item["opensAt"])
-            closes = date.fromisoformat(item["closesAt"])
-            date.fromisoformat(item["verifiedAt"])
-            if opens > closes:
-                errors.append(f"{label}: opensAt is after closesAt")
-        except (TypeError, ValueError):
-            errors.append(f"{label}: dates must use YYYY-MM-DD")
-        for field in ("applicationUrl", "sourceUrl"):
-            if not valid_http_url(item[field]):
-                errors.append(f"{label}: invalid {field}")
         if (
-            valid_http_url(item.get("sourceUrl"))
-            and item["universityId"] in university_domains
+            item["universityId"] in university_domains
             and not same_official_domain(
                 item["sourceUrl"], university_domains[item["universityId"]]
             )
@@ -266,9 +196,7 @@ def validate_data(
     prediction_keys: set[tuple] = set()
     for item in predictions:
         label = item.get("id", "unknown prediction")
-        missing = PREDICTION_FIELDS - item.keys()
-        if missing:
-            errors.append(f"{label}: missing prediction fields {sorted(missing)}")
+        if not validate_model(Prediction, item, label, errors):
             continue
         if label in prediction_ids:
             errors.append(f"{label}: duplicate prediction id")
@@ -277,21 +205,6 @@ def validate_data(
         if source is None:
             errors.append(f"{label}: basedOnRecordId references an unknown window")
             continue
-        if item["confidence"] not in {"low", "medium", "high"}:
-            errors.append(f"{label}: invalid prediction confidence")
-        if not isinstance(item["evidenceCycleCount"], int) or item[
-            "evidenceCycleCount"
-        ] < 1:
-            errors.append(f"{label}: invalid evidenceCycleCount")
-        if not str(item["confidenceReason"]).strip():
-            errors.append(f"{label}: confidenceReason is required")
-        if item["methodology"] != PREDICTION_METHOD:
-            errors.append(f"{label}: invalid prediction methodology")
-        if not str(item["disclaimer"]).strip():
-            errors.append(f"{label}: prediction disclaimer is required")
-        for field in ("applicationUrl", "sourceUrl"):
-            if not valid_http_url(item[field]):
-                errors.append(f"{label}: invalid {field}")
         for field in (
             "universityId",
             "scopeType",
@@ -315,13 +228,6 @@ def validate_data(
             errors.append(f"{label}: opensAt is not a one-year shift")
         if item["closesAt"] != shift_date_one_year(source["closesAt"]):
             errors.append(f"{label}: closesAt is not a one-year shift")
-        try:
-            opens = date.fromisoformat(item["opensAt"])
-            closes = date.fromisoformat(item["closesAt"])
-            if opens > closes:
-                errors.append(f"{label}: opensAt is after closesAt")
-        except (TypeError, ValueError):
-            errors.append(f"{label}: dates must use YYYY-MM-DD")
         prediction_key = official_cycle_key(item)
         if prediction_key in official_keys:
             errors.append(f"{label}: an official target-cycle window already exists")
@@ -329,16 +235,32 @@ def validate_data(
             errors.append(f"{label}: duplicate predicted target window")
         prediction_keys.add(prediction_key)
 
+    evidence_count = 0
+    if applications_path == APPLICATIONS_PATH:
+        for item in applications:
+            evidence_path = evidence_dir / f"{item['id']}.json"
+            if not evidence_path.exists():
+                errors.append(f"{item['id']}: missing evidence snapshot")
+                continue
+            snapshot = read_json(evidence_path)
+            if not validate_model(EvidenceSnapshot, snapshot, item["id"], errors):
+                continue
+            evidence_count += 1
+            if snapshot["recordId"] != item["id"]:
+                errors.append(f"{item['id']}: evidence recordId mismatch")
+            if snapshot["universityId"] != item["universityId"]:
+                errors.append(f"{item['id']}: evidence universityId mismatch")
+            if snapshot["sourceUrl"] != item["sourceUrl"]:
+                errors.append(f"{item['id']}: evidence sourceUrl mismatch")
+
     for index, source in enumerate(sources):
         label = source.get("recordId", f"source {index}")
+        if not validate_model(ParserSource, source, label, errors):
+            continue
         if not source.get("enabled"):
             continue
         if label not in application_ids:
             errors.append(f"{label}: enabled source references an unknown application")
-        if not valid_http_url(source.get("url")):
-            errors.append(f"{label}: invalid source URL")
-        if not source.get("openDateRegex") and not source.get("closeDateRegex"):
-            errors.append(f"{label}: enabled source has no date regex")
         for field in ("openDateRegex", "closeDateRegex"):
             pattern = source.get(field)
             if not pattern:
@@ -354,25 +276,17 @@ def validate_data(
     policy_ids: set[str] = set()
     for index, policy in enumerate(policies):
         label = policy.get("universityId", f"policy {index}")
+        if not validate_model(WindowPolicy, policy, label, errors):
+            continue
         if label in policy_ids:
             errors.append(f"{label}: duplicate window policy")
         policy_ids.add(label)
         if label not in university_ids:
             errors.append(f"{label}: policy references an unknown university")
-        if policy.get("defaultScope") not in WINDOW_SCOPE_TYPES:
-            errors.append(f"{label}: invalid policy defaultScope")
-        if policy.get("mastersAvailability", "unclear") not in MASTERS_AVAILABILITY:
-            errors.append(f"{label}: invalid mastersAvailability")
-        if not valid_http_url(policy.get("sourceUrl")):
-            errors.append(f"{label}: invalid policy sourceUrl")
-        elif label in university_domains and not same_official_domain(
+        if label in university_domains and not same_official_domain(
             policy["sourceUrl"], university_domains[label]
         ):
             errors.append(f"{label}: policy sourceUrl is outside official domains")
-        try:
-            date.fromisoformat(policy["verifiedAt"])
-        except (KeyError, TypeError, ValueError):
-            errors.append(f"{label}: invalid policy verifiedAt")
 
     summary = {
         "universities": len(universities),
@@ -387,5 +301,6 @@ def validate_data(
         "programs": len(programs),
         "windowPolicies": len(policies),
         "predictedWindows": len(predictions),
+        "evidenceSnapshots": evidence_count,
     }
     return errors, summary

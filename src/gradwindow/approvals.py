@@ -5,6 +5,7 @@ import copy
 from pathlib import Path
 
 from .io import read_json, write_json
+from .intakes import with_intake_details
 from .paths import APPLICATIONS_PATH, PREDICTIONS_PATH, WINDOW_CANDIDATES_PATH
 from .predictions import generate_predictions
 from .validation import validate_data
@@ -30,6 +31,7 @@ def approve_window(
     record = copy.deepcopy(candidate.get("record"))
     if not isinstance(record, dict):
         raise ValueError(f"Candidate {candidate_id} has no application record")
+    record = with_intake_details(record)
     verified_at = datetime.now(timezone.utc).date().isoformat()
     record["verifiedAt"] = verified_at
     if candidate.get("type") == "parser-date-change":

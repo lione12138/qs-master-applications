@@ -1,0 +1,100 @@
+{
+  "$defs": {
+    "CycleGuidance": {
+      "additionalProperties": false,
+      "properties": {
+        "entry": {
+          "title": "Entry",
+          "type": "string"
+        },
+        "status": {
+          "title": "Status",
+          "type": "string"
+        },
+        "opensText": {
+          "title": "Openstext",
+          "type": "string"
+        },
+        "notes": {
+          "title": "Notes",
+          "type": "string"
+        }
+      },
+      "required": [
+        "entry",
+        "status",
+        "opensText",
+        "notes"
+      ],
+      "title": "CycleGuidance",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "universityId": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Universityid",
+      "type": "string"
+    },
+    "model": {
+      "title": "Model",
+      "type": "string"
+    },
+    "defaultScope": {
+      "enum": [
+        "institution",
+        "programme-group",
+        "programme"
+      ],
+      "title": "Defaultscope",
+      "type": "string"
+    },
+    "mastersAvailability": {
+      "enum": [
+        "broad",
+        "limited",
+        "unclear"
+      ],
+      "title": "Mastersavailability",
+      "type": "string"
+    },
+    "notes": {
+      "title": "Notes",
+      "type": "string"
+    },
+    "sourceUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Sourceurl",
+      "type": "string"
+    },
+    "verifiedAt": {
+      "format": "date",
+      "title": "Verifiedat",
+      "type": "string"
+    },
+    "cycleGuidance": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/CycleGuidance"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "universityId",
+    "model",
+    "defaultScope",
+    "mastersAvailability",
+    "notes",
+    "sourceUrl",
+    "verifiedAt"
+  ],
+  "title": "WindowPolicy",
+  "type": "object"
+}

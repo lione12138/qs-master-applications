@@ -29,7 +29,7 @@ def test_source_monitor_fetches_duplicate_urls_once(tmp_path, monkeypatch) -> No
     )
     calls = []
 
-    def fake_check(university, previous):
+    def fake_check(university, previous, capture_evidence=False):
         calls.append(university["homepageUrl"])
         return {
             "url": university["homepageUrl"],
@@ -37,6 +37,7 @@ def test_source_monitor_fetches_duplicate_urls_once(tmp_path, monkeypatch) -> No
             "status": "ok",
             "changed": False,
             "contentHash": "abc",
+            "evidenceExcerpt": "Applications close 15 January 2027.",
         }
 
     monkeypatch.setattr(source_monitor, "check_university", fake_check)
@@ -48,3 +49,7 @@ def test_source_monitor_fetches_duplicate_urls_once(tmp_path, monkeypatch) -> No
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert set(state["applications"]) == {"one", "two"}
     assert state["meta"]["uniqueSourcePages"] == 1
+    evidence = json.loads(
+        (tmp_path / "evidence" / "one.json").read_text(encoding="utf-8")
+    )
+    assert evidence["excerpt"] == "Applications close 15 January 2027."

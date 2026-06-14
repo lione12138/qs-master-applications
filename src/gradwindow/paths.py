@@ -4,6 +4,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
+EVIDENCE_DIR = DATA_DIR / "evidence"
+SCHEMA_DIR = ROOT / "docs" / "schemas"
 SITE_DIR = ROOT / "site"
 
 UNIVERSITIES_PATH = DATA_DIR / "universities.json"

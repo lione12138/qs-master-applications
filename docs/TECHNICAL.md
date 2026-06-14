@@ -10,6 +10,7 @@ data/
   programs.json              programme directory and inheritance targets
   applications.json          verified scoped application windows
   predictions.json           generated non-official next-cycle estimates
+  evidence/                  source hashes and short evidence excerpts
   window-policies.json       reviewed institution granularity policies
   admissions-overrides.json  manually reviewed admissions links
   monitor-state.json         daily availability and content fingerprints
@@ -23,6 +24,10 @@ reports/                     daily internal monitoring reports
 src/gradwindow/
   cli.py                      command entry point
   validation.py               public data contracts
+  models.py                   Pydantic v2 domain models
+  intakes.py                  structured intake parsing and migration
+  http_client.py              retries, throttling, redirects, error taxonomy
+  content.py                  main-content extraction and evidence snippets
   monitor.py                  low-frequency official-page monitoring
   deadlines.py                conservative programme date updates
   discovery.py                admissions-page classification rules
@@ -70,6 +75,11 @@ The most specific applicable verified record wins. Applicant categories and
 intake remain part of the match, so an international deadline cannot silently
 replace a domestic or scholarship deadline.
 
+Every dated record keeps both a human label (`intake`) and a structured
+`intakeDetails` object. Identity and prediction logic use the structured
+cycle year, term, academic-year end, and start month rather than comparing
+free text.
+
 `window-policies.json` is the source of truth for granularity. The historical
 `datePolicy` value still present on some university directory records is not
 used for publication or validation.
@@ -96,6 +106,8 @@ gradwindow monitor
 gradwindow monitor-sources
 gradwindow update-deadlines --dry-run
 gradwindow predictions
+gradwindow migrate-intakes
+gradwindow export-schemas
 gradwindow coverage
 gradwindow approve-window candidate-id --reviewer maintainer-name
 gradwindow build-site
@@ -114,6 +126,24 @@ date change becomes a pending item in `window-candidates.json` and must pass
 `approve-window` performs a full validation against a temporary proposed
 applications dataset before writing the approved record. Candidate and review
 files are never copied into `site/`.
+
+## Data contracts
+
+Pydantic models validate URLs, dates, enums, unknown fields, and cross-field
+rules. Hand-written validation is limited to cross-file relationships such as
+programme ownership, official-domain checks, and semantic uniqueness.
+Machine-readable contracts are generated under `docs/schemas/`.
+
+## HTTP and evidence
+
+All pipeline fetches use `httpx` with redirect support, explicit timeouts,
+per-host throttling, retryable error classification, and exponential backoff.
+Fingerprints are computed from the likely main content after removing scripts,
+navigation, footers, cookie banners, and other repeated chrome.
+
+Published-window source checks write a compact audit record to `data/evidence/`
+containing the final URL, content hash, response metadata, and a short
+deadline-related excerpt. Full HTML is intentionally not retained.
 
 ## Operational limitations
 

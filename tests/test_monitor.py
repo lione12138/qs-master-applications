@@ -6,6 +6,7 @@ from gradwindow.monitor import (
     previous_success_fields,
     summarize_monitor_results,
 )
+from gradwindow.content import evidence_excerpt
 
 
 def test_fingerprint_ignores_scripts_comments_and_whitespace() -> None:
@@ -26,6 +27,31 @@ def test_fingerprint_ignores_scripts_comments_and_whitespace() -> None:
 
 def test_fingerprint_changes_when_visible_content_changes() -> None:
     assert content_fingerprint("<p>Open</p>") != content_fingerprint("<p>Closed</p>")
+
+
+def test_fingerprint_ignores_navigation_and_cookie_banners() -> None:
+    first = """
+    <body><nav>Menu A</nav><main><p>Applications open.</p></main>
+    <div class="cookie-banner">Accept cookies</div></body>
+    """
+    second = """
+    <body><nav>Menu B</nav><main><p>Applications open.</p></main>
+    <div class="cookie-banner">Different cookies</div></body>
+    """
+    assert content_fingerprint(first) == content_fingerprint(second)
+
+
+def test_evidence_excerpt_prioritizes_deadline_content() -> None:
+    html = """
+    <body><nav>How to apply</nav><main>
+    <p>General course description with application examples.</p>
+    <p>The application deadline is 15 January 2027.</p>
+    <p>Applications may close early.</p>
+    </main></body>
+    """
+    excerpt = evidence_excerpt(html, ["2027-01-15"])
+    assert "15 January 2027" in excerpt
+    assert "How to apply" not in excerpt
 
 
 def test_monitor_summary() -> None:
@@ -96,3 +122,24 @@ def test_a_different_second_fingerprint_restarts_confirmation() -> None:
     assert result["changed"] is False
     assert result["pendingContentHash"] == "candidate-b"
     assert result["pendingChangeCount"] == 1
+
+
+def test_fingerprint_version_change_rebuilds_the_baseline() -> None:
+    result = evaluate_content_change(
+        {
+            "contentHash": "old",
+            "fingerprintVersion": 1,
+            "pendingContentHash": "new",
+            "pendingChangeCount": 1,
+        },
+        "new",
+        fingerprint_version=2,
+    )
+    assert result == {
+        "contentHash": "new",
+        "changed": False,
+        "changeDetected": False,
+        "pendingContentHash": None,
+        "pendingChangeCount": 0,
+        "fingerprintVersion": 2,
+    }

@@ -1,0 +1,60 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "universityId": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Universityid",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "degreeType": {
+      "title": "Degreetype",
+      "type": "string"
+    },
+    "faculty": {
+      "default": "",
+      "title": "Faculty",
+      "type": "string"
+    },
+    "programmeGroup": {
+      "default": "",
+      "title": "Programmegroup",
+      "type": "string"
+    },
+    "applicationUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Applicationurl",
+      "type": "string"
+    },
+    "sourceUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Sourceurl",
+      "type": "string"
+    },
+    "inheritsWindowFrom": {
+      "default": "",
+      "title": "Inheritswindowfrom",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "universityId",
+    "name",
+    "degreeType",
+    "applicationUrl",
+    "sourceUrl"
+  ],
+  "title": "Programme",
+  "type": "object"
+}

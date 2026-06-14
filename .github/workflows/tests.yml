@@ -19,7 +19,9 @@ jobs:
       - name: Install
         run: pip install -e ".[dev]"
       - name: Regenerate derived prediction data
-        run: gradwindow predictions
+        run: |
+          gradwindow predictions
+          gradwindow export-schemas
       - name: Test
         run: pytest
       - name: Build deployable site

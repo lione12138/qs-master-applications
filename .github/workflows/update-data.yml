@@ -32,6 +32,7 @@ jobs:
       - name: Test
         run: |
           gradwindow predictions
+          gradwindow export-schemas
           pytest
 
       - name: Run daily pipeline
@@ -39,13 +40,13 @@ jobs:
 
       - name: Commit verified changes
         run: |
-          if git diff --quiet -- data/applications.json data/predictions.json data/application-source-state.json data/coverage.json data/monitor-state.json data/review-queue.json data/window-candidates.json reports/; then
+          if git diff --quiet -- data/applications.json data/predictions.json data/application-source-state.json data/evidence/ data/coverage.json data/monitor-state.json data/review-queue.json data/window-candidates.json reports/; then
             echo "No data changes."
             exit 0
           fi
           git config user.name "gradwindow-bot"
           git config user.email "gradwindow-bot@users.noreply.github.com"
-          git add data/applications.json data/predictions.json data/application-source-state.json data/coverage.json data/monitor-state.json data/review-queue.json data/window-candidates.json reports/
+          git add data/applications.json data/predictions.json data/application-source-state.json data/evidence/ data/coverage.json data/monitor-state.json data/review-queue.json data/window-candidates.json reports/
           git commit -m "data: refresh application windows"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push

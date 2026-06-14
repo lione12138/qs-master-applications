@@ -1,0 +1,74 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "recordId": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Recordid",
+      "type": "string"
+    },
+    "universityId": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Universityid",
+      "type": "string"
+    },
+    "sourceUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Sourceurl",
+      "type": "string"
+    },
+    "finalUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Finalurl",
+      "type": "string"
+    },
+    "capturedAt": {
+      "format": "date-time",
+      "title": "Capturedat",
+      "type": "string"
+    },
+    "contentHash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Contenthash",
+      "type": "string"
+    },
+    "contentType": {
+      "title": "Contenttype",
+      "type": "string"
+    },
+    "bytesRead": {
+      "minimum": 0,
+      "title": "Bytesread",
+      "type": "integer"
+    },
+    "truncated": {
+      "title": "Truncated",
+      "type": "boolean"
+    },
+    "excerpt": {
+      "title": "Excerpt",
+      "type": "string"
+    },
+    "excerptHash": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Excerpthash",
+      "type": "string"
+    }
+  },
+  "required": [
+    "recordId",
+    "universityId",
+    "sourceUrl",
+    "finalUrl",
+    "capturedAt",
+    "contentHash",
+    "contentType",
+    "bytesRead",
+    "truncated",
+    "excerpt",
+    "excerptHash"
+  ],
+  "title": "EvidenceSnapshot",
+  "type": "object"
+}

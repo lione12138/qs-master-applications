@@ -1,8 +1,6 @@
 from __future__ import annotations
 
 import re
-import urllib.error
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -29,10 +27,7 @@ def extract_iso_date(raw_html: str, pattern: str | None) -> str | None:
 
 
 def fetch(url: str) -> str:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(request, timeout=25) as response:
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.read().decode(charset, errors="replace")
+    return fetch_page(url, user_agent=USER_AGENT, timeout=25).body
 
 
 def update_deadlines(
@@ -119,7 +114,7 @@ def update_deadlines(
             OSError,
             ValueError,
             re.error,
-            urllib.error.URLError,
+            FetchFailure,
         ) as exc:
             result.update(status="error", message=str(exc))
         report["results"].append(result)
@@ -133,3 +128,4 @@ def update_deadlines(
         write_json(candidates_path, candidate_payload)
     write_json(report_path, report)
     return report
+from .http_client import FetchFailure, fetch_page

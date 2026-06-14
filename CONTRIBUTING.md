@@ -32,6 +32,7 @@ An application window may be published only when all of these are known:
 - official application URL
 - official source URL
 - verification date
+- structured intake details matching the display label
 
 Do not turn an institution-level page into a single university-wide deadline.
 Do not convert “September”, “mid-September”, or an unqualified month/day into
@@ -65,3 +66,6 @@ to `data/applications.json`.
 
 Every behavioural change to parsing, validation, monitoring, or publication
 must include a test.
+
+Run `gradwindow export-schemas` after changing a Pydantic model. Do not hand
+edit files under `docs/schemas/`.

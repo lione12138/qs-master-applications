@@ -1,49 +1,50 @@
 from __future__ import annotations
 
 import concurrent.futures
-import hashlib
-import html
 import json
-import re
-import ssl
-import urllib.error
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from .content import content_fingerprint, evidence_excerpt
+from .http_client import FetchFailure, fetch_page
 from .io import read_json, write_json
 from .paths import MONITOR_STATE_PATH, UNIVERSITIES_PATH
 
 USER_AGENT = "Mozilla/5.0 (compatible; GradWindowMonitor/1.0; daily admissions check)"
-MAX_BYTES = 1_500_000
 TIMEOUT = 20
+FINGERPRINT_VERSION = 2
 
 
-def content_fingerprint(raw_html: str) -> str:
-    text = re.sub(
-        r"<(script|style|noscript|svg)\b[^>]*>.*?</\1>",
-        " ",
-        raw_html,
-        flags=re.IGNORECASE | re.DOTALL,
-    )
-    text = re.sub(r"<!--.*?-->", " ", text, flags=re.DOTALL)
-    text = re.sub(r"<[^>]+>", " ", text)
-    text = html.unescape(text)
-    text = re.sub(r"\s+", " ", text).strip().lower()
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
-
-
-def evaluate_content_change(previous: dict | None, digest: str) -> dict:
+def evaluate_content_change(
+    previous: dict | None,
+    digest: str,
+    fingerprint_version: int | None = None,
+) -> dict:
     previous = previous or {}
-    previous_hash = previous.get("contentHash")
-    if not previous_hash or digest == previous_hash:
+    if (
+        fingerprint_version is not None
+        and previous.get("fingerprintVersion") != fingerprint_version
+    ):
         return {
             "contentHash": digest,
             "changed": False,
             "changeDetected": False,
             "pendingContentHash": None,
             "pendingChangeCount": 0,
+            "fingerprintVersion": fingerprint_version,
         }
+    previous_hash = previous.get("contentHash")
+    if not previous_hash or digest == previous_hash:
+        result = {
+            "contentHash": digest,
+            "changed": False,
+            "changeDetected": False,
+            "pendingContentHash": None,
+            "pendingChangeCount": 0,
+        }
+        if fingerprint_version is not None:
+            result["fingerprintVersion"] = fingerprint_version
+        return result
 
     pending_count = (
         int(previous.get("pendingChangeCount", 0)) + 1
@@ -51,51 +52,65 @@ def evaluate_content_change(previous: dict | None, digest: str) -> dict:
         else 1
     )
     changed = pending_count >= 2
-    return {
+    result = {
         "contentHash": digest if changed else previous_hash,
         "changed": changed,
         "changeDetected": True,
         "pendingContentHash": None if changed else digest,
         "pendingChangeCount": 0 if changed else pending_count,
     }
+    if fingerprint_version is not None:
+        result["fingerprintVersion"] = fingerprint_version
+    return result
 
 
-def check_university(university: dict, previous: dict | None) -> dict:
+def check_university(
+    university: dict,
+    previous: dict | None,
+    capture_evidence: bool = False,
+) -> dict:
     url = university.get("admissionsUrl") or university["homepageUrl"]
     checked_at = datetime.now(timezone.utc).isoformat()
-    request = urllib.request.Request(
-        url,
-        headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"},
-    )
     first_seen = (previous or {}).get("firstSeenAt", checked_at)
     previous_success = previous_success_fields(previous)
     try:
-        with urllib.request.urlopen(
-            request,
-            timeout=TIMEOUT,
-            context=ssl.create_default_context(),
-        ) as response:
-            body = response.read(MAX_BYTES)
-            charset = response.headers.get_content_charset() or "utf-8"
-            digest = content_fingerprint(body.decode(charset, errors="replace"))
-            change = evaluate_content_change(previous, digest)
-            return {
-                "url": response.geturl(),
-                "checkedAt": checked_at,
-                "status": "ok",
-                "httpStatus": response.status,
-                **change,
-                "firstSeenAt": first_seen,
-                "lastSuccessfulAt": checked_at,
-            }
-    except urllib.error.HTTPError as exc:
+        page = fetch_page(url, user_agent=USER_AGENT, timeout=TIMEOUT)
+        digest = content_fingerprint(page.body)
+        change = evaluate_content_change(previous, digest, FINGERPRINT_VERSION)
+        result = {
+            "url": page.final_url,
+            "checkedAt": checked_at,
+            "status": "ok",
+            "httpStatus": page.status_code,
+            "contentType": page.content_type,
+            "bytesRead": page.bytes_read,
+            "truncated": page.truncated,
+            **change,
+            "firstSeenAt": first_seen,
+            "lastSuccessfulAt": checked_at,
+        }
+        if capture_evidence:
+            result["evidenceExcerpt"] = evidence_excerpt(
+                page.body,
+                university.get("evidenceDates", []),
+            )
+        return result
+    except FetchFailure as exc:
         return {
             "url": url,
             "checkedAt": checked_at,
-            "status": "blocked" if exc.code in {401, 403, 429} else "http-error",
-            "httpStatus": exc.code,
+            "status": (
+                "blocked"
+                if exc.kind in {"blocked", "rate-limited"}
+                else "http-error"
+                if exc.status_code is not None
+                else "error"
+            ),
+            "errorKind": exc.kind,
+            "httpStatus": exc.status_code,
             "changed": False,
             "firstSeenAt": first_seen,
+            "message": str(exc)[:240],
             **previous_success,
         }
     except (OSError, ValueError) as exc:
@@ -115,7 +130,7 @@ def previous_success_fields(previous: dict | None) -> dict:
         return {}
     return {
         key: previous[key]
-        for key in ("contentHash", "lastSuccessfulAt")
+        for key in ("contentHash", "lastSuccessfulAt", "fingerprintVersion")
         if previous.get(key)
     }
 

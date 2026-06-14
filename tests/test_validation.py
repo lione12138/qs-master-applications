@@ -17,6 +17,7 @@ def test_current_public_data_is_valid() -> None:
     assert summary["programs"] >= 8
     assert summary["verifiedWindows"] >= 6
     assert summary["predictedWindows"] >= 6
+    assert summary["evidenceSnapshots"] >= 6
 
 
 def test_http_url_validation() -> None:

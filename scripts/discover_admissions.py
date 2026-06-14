@@ -8,10 +8,8 @@ import concurrent.futures
 import html.parser
 import json
 import re
-import ssl
 import sys
 import urllib.parse
-import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,6 +22,8 @@ from gradwindow.discovery import (
     same_official_domain,
     score_candidate,
 )
+from gradwindow.http_client import fetch_page as fetch_http_page
+from gradwindow.io import write_json
 
 DATA_PATH = ROOT / "data" / "universities.json"
 OVERRIDES_PATH = ROOT / "data" / "admissions-overrides.json"
@@ -80,12 +80,6 @@ def load_json(path: Path) -> dict:
         return json.load(handle)
 
 
-def write_json(path: Path, payload: dict) -> None:
-    with path.open("w", encoding="utf-8", newline="\n") as handle:
-        json.dump(payload, handle, ensure_ascii=False, indent=2)
-        handle.write("\n")
-
-
 def normalize_url(url: str) -> str:
     parsed = urllib.parse.urlsplit(url)
     return urllib.parse.urlunsplit(
@@ -101,17 +95,15 @@ def normalize_url(url: str) -> str:
 
 def fetch_page(url: str) -> tuple[str, str]:
     url = normalize_url(url)
-    request = urllib.request.Request(
+    page = fetch_http_page(
         url,
-        headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml"},
+        user_agent=USER_AGENT,
+        timeout=TIMEOUT,
+        max_bytes=MAX_BYTES,
     )
-    context = ssl.create_default_context()
-    with urllib.request.urlopen(request, timeout=TIMEOUT, context=context) as response:
-        content_type = response.headers.get("Content-Type", "")
-        if "html" not in content_type.lower():
-            return response.geturl(), ""
-        charset = response.headers.get_content_charset() or "utf-8"
-        return response.geturl(), response.read(MAX_BYTES).decode(charset, errors="replace")
+    if "html" not in page.content_type.lower():
+        return page.final_url, ""
+    return page.final_url, page.body
 
 
 def discover(university: dict) -> dict:

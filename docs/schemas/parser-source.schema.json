@@ -1,0 +1,51 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "enabled": {
+      "title": "Enabled",
+      "type": "boolean"
+    },
+    "recordId": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Recordid",
+      "type": "string"
+    },
+    "url": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Url",
+      "type": "string"
+    },
+    "openDateRegex": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Opendateregex"
+    },
+    "closeDateRegex": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Closedateregex"
+    }
+  },
+  "required": [
+    "enabled",
+    "recordId",
+    "url"
+  ],
+  "title": "ParserSource",
+  "type": "object"
+}

@@ -17,6 +17,7 @@ QS 2026 前 200 所大学硕士申请追踪站。项目参考
 - `data/applications.json`
   - 保存经过官网核验的学校级、项目组级或项目级窗口
   - 每条记录明确作用范围、入学季和申请人类别，不包含推测日期
+  - `intakeDetails` 同时保存周期年份、学期和起始月份，`intake` 只负责展示
 - `data/predictions.json`
   - 基于同一范围最近一个官网核验周期生成下一周期参考日期
   - 预测与正式数据分开存储、分开统计，并始终标注为非官方
@@ -32,6 +33,9 @@ QS 2026 前 200 所大学硕士申请追踪站。项目参考
 - `data/application-source-state.json`
   - 单独监控已经发布的精确日期来源页
   - 多条窗口引用同一官网时每天只请求一次
+- `data/evidence/`
+  - 保存正式窗口来源页的正文哈希、短证据摘录和抓取元数据
+  - 不保存整页 HTML，也不会发布到静态网站
 - `data/review-queue.json` 与 `reports/`
   - 内部审核队列和每日监控报告，不发布到静态网站
 - `data/coverage.json`
@@ -92,6 +96,8 @@ gradwindow monitor
 gradwindow monitor-sources
 gradwindow update-deadlines --dry-run
 gradwindow predictions
+gradwindow migrate-intakes
+gradwindow export-schemas
 gradwindow coverage
 gradwindow approve-window candidate-id --reviewer maintainer-name
 gradwindow build-site
@@ -126,6 +132,13 @@ site/                 构建生成的 GitHub Pages 发布目录
   "scopeType": "programme",
   "scopeId": "msc-example",
   "intake": "2027 Fall",
+  "intakeDetails": {
+    "label": "2027 Fall",
+    "cycleYear": 2027,
+    "academicYearEnd": null,
+    "term": "fall",
+    "startMonth": 9
+  },
   "round": "Round 1",
   "applicantCategories": ["international"],
   "opensAt": "2026-09-01",
@@ -136,6 +149,10 @@ site/                 构建生成的 GitHub Pages 发布目录
   "evidence": "The official page states that international applicants..."
 }
 ```
+
+核心数据由 Pydantic v2 校验，并在 `docs/schemas/` 导出对应 JSON Schema。
+抓取统一使用 `httpx + tenacity`，包含重定向、超时、按域名限速、可重试
+错误分类和指数退避。
 
 ## GitHub Actions
 

@@ -1,0 +1,149 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "qsRank": {
+      "maximum": 200,
+      "minimum": 1,
+      "title": "Qsrank",
+      "type": "integer"
+    },
+    "qsPosition": {
+      "maximum": 200,
+      "minimum": 1,
+      "title": "Qsposition",
+      "type": "integer"
+    },
+    "rankDisplay": {
+      "title": "Rankdisplay",
+      "type": "string"
+    },
+    "school": {
+      "title": "School",
+      "type": "string"
+    },
+    "schoolZh": {
+      "title": "Schoolzh",
+      "type": "string"
+    },
+    "country": {
+      "title": "Country",
+      "type": "string"
+    },
+    "region": {
+      "title": "Region",
+      "type": "string"
+    },
+    "homepageUrl": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Homepageurl",
+      "type": "string"
+    },
+    "officialDomains": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Officialdomains",
+      "type": "array"
+    },
+    "rorId": {
+      "format": "uri",
+      "minLength": 1,
+      "title": "Rorid",
+      "type": "string"
+    },
+    "rorMatchScore": {
+      "maximum": 1.0,
+      "minimum": 0.0,
+      "title": "Rormatchscore",
+      "type": "number"
+    },
+    "rorMatched": {
+      "title": "Rormatched",
+      "type": "boolean"
+    },
+    "admissionsUrl": {
+      "anyOf": [
+        {
+          "format": "uri",
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Admissionsurl"
+    },
+    "admissionsDiscovery": {
+      "enum": [
+        "curated",
+        "discovered",
+        "low-confidence",
+        "not-found",
+        "pending",
+        "error"
+      ],
+      "title": "Admissionsdiscovery",
+      "type": "string"
+    },
+    "datePolicy": {
+      "title": "Datepolicy",
+      "type": "string"
+    },
+    "monitorEnabled": {
+      "title": "Monitorenabled",
+      "type": "boolean"
+    },
+    "admissionsCandidateScore": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Admissionscandidatescore"
+    },
+    "admissionsCandidateTitle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Admissionscandidatetitle"
+    }
+  },
+  "required": [
+    "id",
+    "qsRank",
+    "qsPosition",
+    "rankDisplay",
+    "school",
+    "schoolZh",
+    "country",
+    "region",
+    "homepageUrl",
+    "officialDomains",
+    "rorId",
+    "rorMatchScore",
+    "rorMatched",
+    "admissionsUrl",
+    "admissionsDiscovery",
+    "datePolicy",
+    "monitorEnabled",
+    "admissionsCandidateScore",
+    "admissionsCandidateTitle"
+  ],
+  "title": "University",
+  "type": "object"
+}

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gradwindow"
-version = "0.2.0"
+version = "0.3.0"
 description = "A transparent QS top-200 graduate application window tracker."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -20,7 +20,12 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
 ]
-dependencies = []
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "httpx>=0.27,<1",
+  "pydantic>=2.8,<3",
+  "tenacity>=8.2,<10",
+]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
