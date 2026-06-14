@@ -21,7 +21,7 @@ def test_shift_helpers_handle_years_and_leap_days() -> None:
 def test_current_windows_generate_next_cycle_predictions(tmp_path) -> None:
     output = tmp_path / "predictions.json"
     payload = generate_predictions(output_path=output)
-    assert len(payload["predictions"]) == 13
+    assert len(payload["predictions"]) == 15
     cambridge = next(
         item
         for item in payload["predictions"]

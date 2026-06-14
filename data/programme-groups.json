@@ -177,6 +177,36 @@
       "universityId": "the-university-of-manchester",
       "name": "Manchester Advanced Computer Science master's programmes",
       "description": "Advanced Computer Science master's routes using the department's staged admissions process."
+    },
+    {
+      "id": "monash-information-technology-coursework-masters",
+      "universityId": "monash-university",
+      "name": "Monash Information Technology coursework master's programmes",
+      "description": "Coursework master's programmes with course-level intake availability and direct application links."
+    },
+    {
+      "id": "utokyo-ist-computer-science-masters",
+      "universityId": "the-university-of-tokyo",
+      "name": "UTokyo IST Computer Science master's programme",
+      "description": "The Department of Computer Science master's route using the IST summer entrance examination."
+    },
+    {
+      "id": "columbia-computer-science-ms-programmes",
+      "universityId": "columbia-university",
+      "name": "Columbia Computer Science MS",
+      "description": "Computer Science master's admissions with separate fall priority, fall final, and spring deadlines."
+    },
+    {
+      "id": "snu-international-graduate-admissions",
+      "universityId": "seoul-national-university",
+      "name": "SNU international graduate admissions",
+      "description": "Master's and doctoral programmes available through SNU's central international graduate admission route."
+    },
+    {
+      "id": "ubc-computer-science-research-graduate",
+      "universityId": "university-of-british-columbia",
+      "name": "UBC Computer Science research graduate programmes",
+      "description": "Research-based MSc, PhD Track, and PhD programmes sharing the department's annual admissions deadline."
     }
   ]
 }

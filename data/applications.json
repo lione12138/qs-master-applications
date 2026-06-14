@@ -320,6 +320,54 @@
         "term": "fall",
         "startMonth": 9
       }
+    },
+    {
+      "id": "utokyo-computer-science-masters-ay2027-summer",
+      "universityId": "the-university-of-tokyo",
+      "scopeType": "programme",
+      "scopeId": "utokyo-computer-science-master",
+      "intake": "Academic Year 2027",
+      "round": "Summer entrance examination",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-05-29",
+      "closesAt": "2026-06-04",
+      "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
+      "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml",
+      "verifiedAt": "2026-06-14",
+      "evidence": "The official IST admissions page states that AY2027 summer entrance-examination applications were accepted from 29 May until 14:00 JST on 4 June 2026. The Computer Science guide confirms that master's applications use the summer examination only.",
+      "intakeDetails": {
+        "label": "Academic Year 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "spring",
+        "startMonth": 4
+      }
+    },
+    {
+      "id": "snu-international-graduate-spring-2027",
+      "universityId": "seoul-national-university",
+      "scopeType": "programme-group",
+      "scopeId": "snu-international-graduate-admissions",
+      "intake": "Spring 2027",
+      "round": "International graduate admissions",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-07-06",
+      "closesAt": "2026-07-09",
+      "applicationUrl": "https://en.snu.ac.kr/admission",
+      "sourceUrl": "https://en.snu.ac.kr/webdata/uploads/eng/file/2026/06/2027Spring_graduate_eng.pdf",
+      "verifiedAt": "2026-06-14",
+      "evidence": "SNU's official Spring 2027 international graduate admissions guide states that online applications and scanned documents are accepted from 10:00 KST on 6 July to 17:00 KST on 9 July 2026.",
+      "intakeDetails": {
+        "label": "Spring 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "spring",
+        "startMonth": 3
+      }
     }
   ]
 }

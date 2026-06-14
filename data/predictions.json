@@ -190,6 +190,36 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-snu-international-graduate-spring-2027-next-cycle",
+      "basedOnRecordId": "snu-international-graduate-spring-2027",
+      "universityId": "seoul-national-university",
+      "scopeType": "programme-group",
+      "scopeId": "snu-international-graduate-admissions",
+      "intake": "Spring 2028",
+      "intakeDetails": {
+        "label": "Spring 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "spring",
+        "startMonth": 1
+      },
+      "round": "International graduate admissions",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-07-06",
+      "closesAt": "2027-07-09",
+      "applicationUrl": "https://en.snu.ac.kr/admission",
+      "sourceUrl": "https://en.snu.ac.kr/webdata/uploads/eng/file/2026/06/2027Spring_graduate_eng.pdf",
+      "sourceCycle": "Spring 2027",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-cuhk-computer-science-msc-2026-next-cycle",
       "basedOnRecordId": "cuhk-computer-science-msc-2026",
       "universityId": "the-chinese-university-of-hong-kong",
@@ -212,6 +242,36 @@
       "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
       "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
       "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-utokyo-computer-science-masters-ay2027-summer-next-cycle",
+      "basedOnRecordId": "utokyo-computer-science-masters-ay2027-summer",
+      "universityId": "the-university-of-tokyo",
+      "scopeType": "programme",
+      "scopeId": "utokyo-computer-science-master",
+      "intake": "Academic Year 2028",
+      "intakeDetails": {
+        "label": "Academic Year 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": null
+      },
+      "round": "Summer entrance examination",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-05-29",
+      "closesAt": "2027-06-04",
+      "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
+      "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml",
+      "sourceCycle": "Academic Year 2027",
       "basedOnVerifiedAt": "2026-06-14",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",

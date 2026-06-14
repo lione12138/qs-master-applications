@@ -19,6 +19,7 @@ def test_frontend_upcoming_window_has_thirty_day_boundary() -> None:
         today: status("2026-06-14"),
         within30: status("2026-07-14"),
         after30: status("2026-07-15"),
+        snuSpring2027: status("2026-07-06", "2026-07-09"),
         alreadyOpen: status("2026-06-01"),
         closed: status("2026-01-01", "2026-06-13"),
         predicted: getApplicationStatus({{
@@ -38,6 +39,7 @@ def test_frontend_upcoming_window_has_thirty_day_boundary() -> None:
         "today": "open",
         "within30": "upcoming",
         "after30": "future",
+        "snuSpring2027": "upcoming",
         "alreadyOpen": "open",
         "closed": "closed",
         "predicted": "predicted",

@@ -516,6 +516,81 @@
         "opensText": "Exact opening day not stated",
         "notes": "Advanced Computer Science lists 7 November 2025, 2 January 2026, 27 February 2026, and 22 May 2026 selection deadlines. Later applications depend on availability."
       }
+    },
+    {
+      "universityId": "monash-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Monash coursework master's programmes publish available intakes and direct-application links on each course page. Intake availability and closing dates can differ by course, campus, and applicant route.",
+      "sourceUrl": "https://www.monash.edu/study/courses/find-a-course/artificial-intelligence-c6007",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "February or July intake",
+        "status": "open-programme-specific",
+        "opensText": "Direct applications are available; exact opening and closing dates are not stated",
+        "notes": "The Master of Artificial Intelligence lists February and July starts and links both intakes to the direct application route, without publishing a complete dated window."
+      }
+    },
+    {
+      "universityId": "the-university-of-tokyo",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "University of Tokyo graduate schools and departments publish separate entrance-examination guides and short application periods. The Department of Computer Science accepts master's applications only through its summer examination.",
+      "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Academic Year 2027",
+        "status": "closed",
+        "opensText": "29 May-4 June 2026",
+        "notes": "The IST application page gives a complete summer application period. The Computer Science guide states that its master's programme does not accept winter-examination applications."
+      }
+    },
+    {
+      "universityId": "columbia-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Columbia graduate admissions are administered by individual schools and programmes. Computer Science publishes separate fall priority, fall final, and spring deadlines.",
+      "sourceUrl": "https://www.cs.columbia.edu/education/ms/appfaq/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall or Spring",
+        "status": "deadline-only-programme-specific",
+        "opensText": "Exact opening day not stated",
+        "notes": "The Computer Science MS FAQ lists January 15 as the fall priority deadline, February 15 as the fall final deadline, and October 15 as the spring deadline, without identifying the cycle year or opening day."
+      }
+    },
+    {
+      "universityId": "seoul-national-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "SNU publishes central international graduate admission windows by spring or fall entry, while domestic and professional graduate routes use separate notices.",
+      "sourceUrl": "https://en.snu.ac.kr/admission/graduate/application",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Spring 2027",
+        "status": "announced",
+        "opensText": "6-9 July 2026",
+        "notes": "The official Spring 2027 international graduate guide gives a complete online application and document-upload period in Korea Standard Time."
+      }
+    },
+    {
+      "universityId": "university-of-british-columbia",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UBC graduate programmes configure their own application intakes and deadlines in the central admissions system. Programme and department pages should both be checked.",
+      "sourceUrl": "https://www.grad.ubc.ca/prospective-students/graduate-degree-programs/master-of-science-computer-science",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "September 2027 or January 2028",
+        "status": "prior-cycle-reference",
+        "opensText": "Next exact dates are not configured; previous cycle deadline was 15 December 2025",
+        "notes": "The current central MSc page says upcoming intake dates are not yet configured. The department records 15 December 2025 for September 2026 or January 2027 starts, so a similar mid-December deadline is only a low-confidence prior-cycle reference."
+      }
     }
   ]
 }
