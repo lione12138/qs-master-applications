@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-06-14T10:35:00.160866+00:00",
+    "generatedAt": "2026-06-14T10:50:25.650168+00:00",
     "rankingScope": "QS World University Rankings 2026 top 30",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
   },
   "summary": {
     "targetUniversities": 30,
-    "entriesLocated": 28,
-    "curatedEntries": 25,
-    "policiesVerified": 25,
-    "cycleGuidanceAvailable": 23,
-    "broadMastersAvailability": 24,
+    "entriesLocated": 30,
+    "curatedEntries": 30,
+    "policiesVerified": 30,
+    "cycleGuidanceAvailable": 28,
+    "broadMastersAvailability": 29,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 18,
-    "universitiesWithWindows": 7,
-    "verifiedWindows": 10,
-    "universitiesWithPredictions": 7,
-    "predictedWindows": 10,
+    "universitiesWithPrograms": 23,
+    "universitiesWithWindows": 8,
+    "verifiedWindows": 12,
+    "universitiesWithPredictions": 8,
+    "predictedWindows": 12,
     "nextActions": {
-      "locate-official-entry": 2,
-      "verify-window-policy": 3,
+      "locate-official-entry": 0,
+      "verify-window-policy": 0,
       "select-target-programmes": 7,
-      "verify-exact-windows": 11,
-      "monitor-and-refresh": 7
+      "verify-exact-windows": 15,
+      "monitor-and-refresh": 8
     }
   },
   "batches": [
@@ -99,11 +99,11 @@
         30
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 1,
+      "predictedWindows": 2
     }
   ],
   "universities": [
@@ -705,16 +705,21 @@
       "school": "The University of Sydney",
       "country": "Australia",
       "batch": 6,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Semester 1 or Semester 2",
+        "status": "recurring-rules-without-cycle-year",
+        "opensText": "Generally two years before the semester start date",
+        "notes": "Standard postgraduate closing rules are 31 January or 15 July for domestic applicants and 18 December or 29 May for international applicants. Exact course pages take precedence."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "mcgill-university",
@@ -724,16 +729,21 @@
       "school": "McGill University",
       "country": "Canada",
       "batch": 6,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall",
+        "status": "recurring-dates-without-year",
+        "opensText": "Computer Science MSc opens 15 September",
+        "notes": "The thesis MSc lists 15 December for international applicants and 15 February for domestic applicants. The non-thesis MSc lists 15 December for both, but the page does not bind these dates to a calendar year."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "psl-university",
@@ -743,16 +753,21 @@
       "school": "PSL University",
       "country": "France",
       "batch": 6,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master 1, 2026/27",
+        "status": "closed",
+        "opensText": "15 January–24 February or 17 February–16 March 2026 for the main platform groups",
+        "notes": "The tracked Master Informatique is listed under the Mon Master route for eligible profiles, with an exact 17 February to 16 March 2026 window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-toronto",
@@ -762,16 +777,21 @@
       "school": "University of Toronto",
       "country": "Canada",
       "batch": 6,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "announced-not-exact",
+        "opensText": "October 2026",
+        "notes": "Computer Science states that Fall 2027 applications will open in October 2026, but the exact opening day and deadline are not yet published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "fudan-university",
@@ -781,16 +801,21 @@
       "school": "Fudan University",
       "country": "China (Mainland)",
       "batch": 6,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "closed",
+        "opensText": "13 October–12 December 2025 and 1–31 March 2026",
+        "notes": "The official English-taught postgraduate admissions brochure publishes two complete application phases for international applicants."
+      },
+      "programmeCount": 1,
+      "windowCount": 2,
+      "predictionCount": 2,
+      "nextAction": "monitor-and-refresh"
     }
   ]
 }

@@ -117,6 +117,36 @@
       "universityId": "princeton-university",
       "name": "Princeton Computer Science graduate programmes",
       "description": "Computer Science graduate degrees sharing the department's fall-only application route."
+    },
+    {
+      "id": "sydney-postgraduate-coursework",
+      "universityId": "the-university-of-sydney",
+      "name": "Sydney postgraduate coursework",
+      "description": "Postgraduate coursework programmes using Sydney's standard semester dates unless a course page publishes an exception."
+    },
+    {
+      "id": "mcgill-computer-science-masters",
+      "universityId": "mcgill-university",
+      "name": "McGill Computer Science master's programmes",
+      "description": "Thesis and non-thesis Computer Science MSc routes with applicant-category deadlines."
+    },
+    {
+      "id": "psl-mon-master-m1",
+      "universityId": "psl-university",
+      "name": "PSL Master 1 programmes on Mon Master",
+      "description": "First-year master's programmes whose eligible applicants apply through France's national Mon Master platform."
+    },
+    {
+      "id": "toronto-computer-science-graduate",
+      "universityId": "university-of-toronto",
+      "name": "Toronto Computer Science graduate programmes",
+      "description": "Computer Science graduate programmes using the department's fall application cycle."
+    },
+    {
+      "id": "fudan-english-taught-international-postgraduate",
+      "universityId": "fudan-university",
+      "name": "Fudan English-taught international postgraduate programmes",
+      "description": "English-taught postgraduate programmes covered by Fudan's international-student admissions brochure and programme list."
     }
   ]
 }

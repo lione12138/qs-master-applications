@@ -104,13 +104,22 @@ Status: policy verification complete for all five institutions.
 
 ## Batch 6 · QS 26–30
 
-- University of Sydney
-- McGill University
-- PSL University
-- University of Toronto
-- Fudan University
-
-Toronto and Fudan still require a reviewed general graduate admissions entry.
+- University of Sydney — mixed postgraduate coursework policy and Master of
+  Computer Science added. Standard dates depend on semester and applicant
+  category, while course pages may override them or close early.
+- McGill University — programme-specific policy and thesis MSc in Computer
+  Science added. The programme publishes recurring September, December, and
+  February dates without an explicit cycle year.
+- PSL University — multi-platform Master 1 policy and Master Informatique
+  added. Its 17 February to 16 March 2026 Mon Master dates are retained in
+  verified cycle guidance; a formal window awaits a dedicated evidence
+  snapshot from the detailed calendar page.
+- University of Toronto — programme-specific SGS policy and Computer Science
+  MSc added. Fall 2027 is announced to open in October 2026, but the exact day
+  and deadline are not yet published.
+- Fudan University — mixed international postgraduate policy and the
+  English-taught Big Data and Data Science professional master's route added.
+  The official 2026 brochure provides two complete application phases.
 
 ## Per-batch completion gate
 

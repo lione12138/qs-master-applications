@@ -70,6 +70,66 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-fudan-english-taught-postgraduate-autumn-2026-phase-1-next-cycle",
+      "basedOnRecordId": "fudan-english-taught-postgraduate-autumn-2026-phase-1",
+      "universityId": "fudan-university",
+      "scopeType": "programme-group",
+      "scopeId": "fudan-english-taught-international-postgraduate",
+      "intake": "Autumn 2027",
+      "intakeDetails": {
+        "label": "Autumn 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Phase One",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-10-13",
+      "closesAt": "2026-12-12",
+      "applicationUrl": "https://istudent.fudan.edu.cn/apply",
+      "sourceUrl": "https://iso.fudan.edu.cn/_upload/article/files/e8/e8/fa7bfc45430499ddb9374a125a2c/b937538c-b8f5-4d26-b1c7-78ab2e0bdcea.pdf",
+      "sourceCycle": "Autumn 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-fudan-english-taught-postgraduate-autumn-2026-phase-2-next-cycle",
+      "basedOnRecordId": "fudan-english-taught-postgraduate-autumn-2026-phase-2",
+      "universityId": "fudan-university",
+      "scopeType": "programme-group",
+      "scopeId": "fudan-english-taught-international-postgraduate",
+      "intake": "Autumn 2027",
+      "intakeDetails": {
+        "label": "Autumn 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Phase Two",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-03-01",
+      "closesAt": "2027-03-31",
+      "applicationUrl": "https://istudent.fudan.edu.cn/apply",
+      "sourceUrl": "https://iso.fudan.edu.cn/_upload/article/files/e8/e8/fa7bfc45430499ddb9374a125a2c/b937538c-b8f5-4d26-b1c7-78ab2e0bdcea.pdf",
+      "sourceCycle": "Autumn 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-ntu-applied-ai-august-2026-next-cycle",
       "basedOnRecordId": "ntu-applied-ai-august-2026",
       "universityId": "nanyang-technological-university-singapore-ntu-singapore",
