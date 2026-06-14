@@ -16,10 +16,11 @@ def test_generate_top30_coverage(tmp_path) -> None:
     assert payload["batches"][0]["policiesVerified"] == 5
     assert payload["batches"][1]["policiesVerified"] == 5
     assert payload["batches"][2]["policiesVerified"] == 5
-    assert payload["summary"]["policiesVerified"] >= 15
-    assert payload["summary"]["universitiesWithPrograms"] >= 8
-    assert payload["summary"]["predictedWindows"] >= 9
-    assert payload["summary"]["verifiedWindows"] >= 9
+    assert payload["batches"][3]["policiesVerified"] == 5
+    assert payload["summary"]["policiesVerified"] >= 20
+    assert payload["summary"]["universitiesWithPrograms"] >= 13
+    assert payload["summary"]["predictedWindows"] >= 10
+    assert payload["summary"]["verifiedWindows"] >= 10
     assert json.loads(output.read_text(encoding="utf-8"))["summary"] == payload[
         "summary"
     ]

@@ -216,6 +216,81 @@
         "opensText": "15 September 2025 to 1 February 2026",
         "notes": "Penn Engineering's regular master's window is shared across its on-campus master's programmes."
       }
+    },
+    {
+      "universityId": "cornell-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Cornell's Graduate School supplies the central application, while graduate fields and professional programmes publish their own admission terms and deadlines.",
+      "sourceUrl": "https://gradschool.cornell.edu/admissions/application-steps/apply-now/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "dates-not-exact",
+        "opensText": "The central application generally reopens in early September 2026",
+        "notes": "Cornell gives only an approximate central opening. The Computer Science MEng publishes recurring February 1 and October 1 deadlines without an exact opening day for each intake."
+      }
+    },
+    {
+      "universityId": "tsinghua-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Tsinghua's international graduate application period generally runs from September to February, but departments and programmes define their own batches and deadlines.",
+      "sourceUrl": "https://yz.tsinghua.edu.cn/en/Admissions/How_to_Apply.htm",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "closed",
+        "opensText": "Programme-specific rounds within the September 2025 to February 2026 cycle",
+        "notes": "The Advanced Computing programme published an exact second-round window from 1 January to 27 February 2026."
+      }
+    },
+    {
+      "universityId": "university-of-california-berkeley-ucb",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UC Berkeley directs applicants to individual graduate programmes because requirements and deadlines differ. The MEng is offered once yearly for Fall, with department-specific instructions.",
+      "sourceUrl": "https://grad.berkeley.edu/admissions/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "dates-not-published",
+        "opensText": "Exact dates not yet published",
+        "notes": "The EECS MEng page still displays the closed Fall 2026 cycle and its 14 January 2026 deadline, but does not state the exact opening day."
+      }
+    },
+    {
+      "universityId": "the-university-of-melbourne",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Graduate coursework dates are published on individual course pages and may differ by intake and applicant type. Applicants may apply before the listed closing date while the course is accepting applications.",
+      "sourceUrl": "https://study.unimelb.edu.au/how-to-apply/graduate-coursework-study",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "open-with-closing-dates",
+        "opensText": "Applications can be submitted before each course closing date",
+        "notes": "The Master of Information Technology lists 30 November 2026 for the February 2027 intake and 31 May 2027 for the July 2027 intake, but no exact opening day."
+      }
+    },
+    {
+      "universityId": "the-university-of-new-south-wales",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UNSW publishes standard term deadlines for many undergraduate and postgraduate degrees, while faculties, high-demand programmes, applicant routes, and grouped offer rounds may use different dates.",
+      "sourceUrl": "https://www.unsw.edu.au/study/how-to-apply/application-deadline-dates",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "programme-and-applicant-specific",
+        "opensText": "Applications are accepted through the relevant UNSW or UAC portal",
+        "notes": "The published 2026 term table gives closing dates but not a precise opening day, and the Master of Information Technology is subject to grouped offer rounds and capacity."
+      }
     }
   ]
 }

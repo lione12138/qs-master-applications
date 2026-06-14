@@ -57,6 +57,36 @@
       "universityId": "university-of-pennsylvania",
       "name": "Penn Engineering master's programmes",
       "description": "On-campus master's programmes sharing Penn Engineering's published admissions timeline."
+    },
+    {
+      "id": "cornell-engineering-meng",
+      "universityId": "cornell-university",
+      "name": "Cornell Engineering MEng programmes",
+      "description": "Professional Master of Engineering programmes whose deadlines are published by their fields and departments."
+    },
+    {
+      "id": "tsinghua-international-computing",
+      "universityId": "tsinghua-university",
+      "name": "Tsinghua international computing programmes",
+      "description": "English-taught graduate computing programmes for international applicants."
+    },
+    {
+      "id": "berkeley-meng",
+      "universityId": "university-of-california-berkeley-ucb",
+      "name": "Berkeley Master of Engineering programmes",
+      "description": "One-year professional engineering master's programmes with department-specific admissions instructions."
+    },
+    {
+      "id": "melbourne-graduate-coursework",
+      "universityId": "the-university-of-melbourne",
+      "name": "Melbourne graduate coursework",
+      "description": "Graduate coursework programmes whose intake dates are published on individual course pages."
+    },
+    {
+      "id": "unsw-postgraduate-coursework",
+      "universityId": "the-university-of-new-south-wales",
+      "name": "UNSW postgraduate coursework",
+      "description": "Postgraduate coursework programmes using standard term dates or programme-specific exceptions."
     }
   ]
 }

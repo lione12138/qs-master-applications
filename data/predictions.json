@@ -130,6 +130,36 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-tsinghua-advanced-computing-autumn-2026-round-2-next-cycle",
+      "basedOnRecordId": "tsinghua-advanced-computing-autumn-2026-round-2",
+      "universityId": "tsinghua-university",
+      "scopeType": "programme",
+      "scopeId": "tsinghua-advanced-computing-master",
+      "intake": "Autumn 2027",
+      "intakeDetails": {
+        "label": "Autumn 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Second application round",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-01-01",
+      "closesAt": "2027-02-27",
+      "applicationUrl": "https://yzbm.tsinghua.edu.cn/intlLogin",
+      "sourceUrl": "https://ac.cs.tsinghua.edu.cn/application.html",
+      "sourceCycle": "Autumn 2026",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-ucl-advanced-materials-science-2026-visa-next-cycle",
       "basedOnRecordId": "ucl-advanced-materials-science-2026-visa",
       "universityId": "ucl-university-college-london",

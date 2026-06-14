@@ -73,11 +73,16 @@ Status: policy verification complete for all five institutions.
 
 ## Batch 4 · QS 16–20
 
-- Cornell University
-- Tsinghua University
-- University of California, Berkeley
-- University of Melbourne
-- University of New South Wales
+- Cornell University — policy and Computer Science MEng added; the central
+  application gives only an approximate opening period.
+- Tsinghua University — policy, Advanced Computing master's, and its exact
+  second-round 2026 window added.
+- University of California, Berkeley — policy and EECS MEng added; the
+  published Fall 2026 page omits the exact application opening day.
+- University of Melbourne — policy and Master of Information Technology
+  added; 2027 closing dates are published without an exact opening day.
+- University of New South Wales — mixed term/programme policy and Master of
+  Information Technology added; 2026 tables publish closing dates only.
 
 ## Batch 5 · QS 21–25
 
