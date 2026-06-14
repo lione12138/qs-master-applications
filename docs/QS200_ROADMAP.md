@@ -44,3 +44,21 @@ five institutions while preserving the same completion rules:
 - University of British Columbia — programme-specific policy and Computer
   Science MSc added. The next intake is not configured yet; the 15 December
   2025 previous-cycle deadline is retained only as a low-confidence reference.
+
+## Batch 9 · QS positions 41–45
+
+- Institut Polytechnique de Paris — mixed portal policy and Computer Science
+  master's programme added with complete first and second 2026/27 application
+  sessions. The conditional third session is documented but not generalized.
+- Northwestern University — programme-specific policy and Computer Science MS
+  added. The programme publishes an exact opening date and several review
+  milestones, but no unambiguous final closing date.
+- University of Queensland — applicant-category and semester-specific policy
+  plus Master of Data Science added. Exact 2027 deadlines are published, but
+  the opening date is not.
+- Hong Kong University of Science and Technology — rolling,
+  programme-specific policy and MSc in Information Technology added with three
+  2026 deadline rounds; the opening date is not published.
+- University of Michigan-Ann Arbor — fall-only programme policy and CSE MSE
+  added. The next cycle is expected to reopen around September, but its exact
+  opening date has not been announced.

@@ -130,6 +130,66 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-ip-paris-computer-science-2026-session-1-next-cycle",
+      "basedOnRecordId": "ip-paris-computer-science-2026-session-1",
+      "universityId": "institut-polytechnique-de-paris",
+      "scopeType": "programme-group",
+      "scopeId": "ip-paris-computer-science-masters",
+      "intake": "2027/28",
+      "intakeDetails": {
+        "label": "2027/28",
+        "cycleYear": 2027,
+        "academicYearEnd": 2028,
+        "term": "other",
+        "startMonth": null
+      },
+      "round": "IP Paris portal session 1",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-10-29",
+      "closesAt": "2027-01-08",
+      "applicationUrl": "https://candidatures.polytechnique.fr/",
+      "sourceUrl": "https://www.ip-paris.fr/en/education/useful-information/admissions",
+      "sourceCycle": "2026/27",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-ip-paris-computer-science-2026-session-2-next-cycle",
+      "basedOnRecordId": "ip-paris-computer-science-2026-session-2",
+      "universityId": "institut-polytechnique-de-paris",
+      "scopeType": "programme-group",
+      "scopeId": "ip-paris-computer-science-masters",
+      "intake": "2027/28",
+      "intakeDetails": {
+        "label": "2027/28",
+        "cycleYear": 2027,
+        "academicYearEnd": 2028,
+        "term": "other",
+        "startMonth": null
+      },
+      "round": "IP Paris portal session 2",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-01-09",
+      "closesAt": "2027-03-26",
+      "applicationUrl": "https://candidatures.polytechnique.fr/",
+      "sourceUrl": "https://www.ip-paris.fr/en/education/useful-information/admissions",
+      "sourceCycle": "2026/27",
+      "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-ntu-applied-ai-august-2026-next-cycle",
       "basedOnRecordId": "ntu-applied-ai-august-2026",
       "universityId": "nanyang-technological-university-singapore-ntu-singapore",

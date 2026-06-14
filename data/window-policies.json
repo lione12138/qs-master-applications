@@ -591,6 +591,81 @@
         "opensText": "Next exact dates are not configured; previous cycle deadline was 15 December 2025",
         "notes": "The current central MSc page says upcoming intake dates are not yet configured. The department records 15 December 2025 for September 2026 or January 2027 starts, so a similar mid-December deadline is only a low-confidence prior-cycle reference."
       }
+    },
+    {
+      "universityId": "institut-polytechnique-de-paris",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "IP Paris master's applicants use either the IP Paris portal or Mon Master according to programme and applicant profile. The IP Paris portal publishes common sessions, while some programmes may omit the third session.",
+      "sourceUrl": "https://www.ip-paris.fr/en/education/useful-information/admissions",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "closed",
+        "opensText": "29 October 2025-28 May 2026 across three sessions",
+        "notes": "The first two IP Paris portal sessions are common dated windows. The third session ran 27 March-28 May 2026 but is not represented as a general window because some programmes did not open for it."
+      }
+    },
+    {
+      "universityId": "northwestern-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Northwestern graduate programmes set their own deadlines. Computer Science admits MS students for fall only and uses several decision-review milestones followed by rolling review.",
+      "sourceUrl": "https://www.mccormick.northwestern.edu/computer-science/academics/graduate/admissions/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed-or-rolling-programme-specific",
+        "opensText": "Applications opened 29 September 2025",
+        "notes": "The CS page lists review milestones on 30 November, 31 December, and 28 February, followed by rolling review language. It does not state one unambiguous final closing date for the MS application."
+      }
+    },
+    {
+      "universityId": "the-university-of-queensland",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UQ coursework programmes publish intake-specific closing dates. Dates differ for domestic and international applicants and can vary by programme.",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-data-science-5660?year=2027",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Semester 1 or Semester 2, 2027",
+        "status": "deadline-only-applicant-category-specific",
+        "opensText": "Exact opening day not stated",
+        "notes": "For the Master of Data Science, international deadlines are 30 November 2026 for Semester 1 and 31 May 2027 for Semester 2. Domestic deadlines are 31 January and 30 June 2027."
+      }
+    },
+    {
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "HKUST taught postgraduate programmes publish programme-level rounds and use rolling admissions. Applicants should follow the dates on the selected programme page.",
+      "sourceUrl": "https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-it",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "Exact opening day not stated",
+        "notes": "The MSc in Information Technology lists three deadlines for local and non-local applicants: 1 November 2025, 1 January 2026, and 1 March 2026. The page describes admissions as rolling."
+      }
+    },
+    {
+      "universityId": "university-of-michigan-ann-arbor",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Michigan CSE admits graduate students for fall only. The application reopens around September and the master's deadline is set by the department.",
+      "sourceUrl": "https://cse.engin.umich.edu/academics/graduate/admissions/",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "prior-cycle-reference",
+        "opensText": "Expected around mid-September 2026; exact next-cycle date not published",
+        "notes": "The current page says applications reopen in mid-September and the master's deadline is 15 January. A similar September 2026-January 2027 period is only a prior-cycle reference until the new cycle is dated explicitly."
+      }
     }
   ]
 }

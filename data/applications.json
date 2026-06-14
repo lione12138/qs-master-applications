@@ -368,6 +368,54 @@
         "term": "spring",
         "startMonth": 3
       }
+    },
+    {
+      "id": "ip-paris-computer-science-2026-session-1",
+      "universityId": "institut-polytechnique-de-paris",
+      "scopeType": "programme-group",
+      "scopeId": "ip-paris-computer-science-masters",
+      "intake": "2026/27",
+      "round": "IP Paris portal session 1",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2025-10-29",
+      "closesAt": "2026-01-08",
+      "applicationUrl": "https://candidatures.polytechnique.fr/",
+      "sourceUrl": "https://www.ip-paris.fr/en/education/useful-information/admissions",
+      "verifiedAt": "2026-06-14",
+      "evidence": "IP Paris's official admissions page states that the first 2026/27 master's application session through the IP Paris portal ran from 29 October 2025 to 8 January 2026.",
+      "intakeDetails": {
+        "label": "2026/27",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ip-paris-computer-science-2026-session-2",
+      "universityId": "institut-polytechnique-de-paris",
+      "scopeType": "programme-group",
+      "scopeId": "ip-paris-computer-science-masters",
+      "intake": "2026/27",
+      "round": "IP Paris portal session 2",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-01-09",
+      "closesAt": "2026-03-26",
+      "applicationUrl": "https://candidatures.polytechnique.fr/",
+      "sourceUrl": "https://www.ip-paris.fr/en/education/useful-information/admissions",
+      "verifiedAt": "2026-06-14",
+      "evidence": "IP Paris's official admissions page states that the second 2026/27 master's application session through the IP Paris portal ran from 9 January to 26 March 2026.",
+      "intakeDetails": {
+        "label": "2026/27",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 9
+      }
     }
   ]
 }
