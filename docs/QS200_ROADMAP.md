@@ -98,3 +98,22 @@ five institutions while preserving the same completion rules:
 - New York University — Tandon programme-specific policy and Computer Science
   MS added. Fall milestones are published without a cycle-specific opening
   date, and the programme does not accept spring applications.
+
+## Batch 12 · QS positions 56–60
+
+- London School of Economics — programme-specific rolling policy and MSc Data
+  Science added. The programme is open with no fixed deadline and may close
+  when full, so no artificial closing date is recorded.
+- Kyoto University — Graduate School of Informatics policy and Data Science
+  master's course added with the complete 5–19 June 2026 application period
+  for April 2027 admission.
+- LMU Munich — the discontinued Data Science MSc was rejected as a target and
+  replaced by the current Statistics and Data Science MSc. Its recurring
+  semester dates are retained as guidance because the page does not state a
+  cycle year.
+- Universiti Malaya — central postgraduate policy and Applied Computing
+  master's added with the complete 9 February to 30 August 2026 window for
+  October 2026 coursework and mixed-mode admission.
+- KU Leuven — programme-specific policy and Master of Statistics and Data
+  Science added. Deadlines depend on nationality and programme in the official
+  application-window tool, so no single generalized date is recorded.

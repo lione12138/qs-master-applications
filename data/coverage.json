@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T09:36:14.847837+00:00",
+    "generatedAt": "2026-06-15T09:55:25.309721+00:00",
     "rankingScope": "QS World University Rankings 2026 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
   },
   "summary": {
     "targetUniversities": 200,
-    "entriesLocated": 121,
-    "curatedEntries": 57,
-    "policiesVerified": 55,
-    "cycleGuidanceAvailable": 53,
-    "broadMastersAvailability": 54,
+    "entriesLocated": 124,
+    "curatedEntries": 62,
+    "policiesVerified": 60,
+    "cycleGuidanceAvailable": 58,
+    "broadMastersAvailability": 59,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 48,
-    "universitiesWithWindows": 15,
-    "verifiedWindows": 20,
-    "universitiesWithPredictions": 15,
-    "predictedWindows": 20,
+    "universitiesWithPrograms": 53,
+    "universitiesWithWindows": 17,
+    "verifiedWindows": 22,
+    "universitiesWithPredictions": 17,
+    "predictedWindows": 22,
     "nextActions": {
-      "locate-official-entry": 79,
-      "verify-window-policy": 66,
+      "locate-official-entry": 76,
+      "verify-window-policy": 64,
       "select-target-programmes": 7,
-      "verify-exact-windows": 33,
-      "monitor-and-refresh": 15
+      "verify-exact-windows": 36,
+      "monitor-and-refresh": 17
     }
   },
   "batches": [
@@ -177,11 +177,11 @@
         60
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 2,
+      "predictedWindows": 2
     },
     {
       "batch": 13,
@@ -1867,16 +1867,21 @@
       "school": "London School of Economics and Political Science (LSE)",
       "country": "United Kingdom",
       "batch": 12,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-rolling-no-fixed-deadline",
+        "opensText": "Open; exact opening day not stated",
+        "notes": "The MSc Data Science page says applications are open and considered on a rolling basis with no fixed deadline. Separate funding deadlines apply."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "kyoto-university",
@@ -1886,16 +1891,21 @@
       "school": "Kyoto University",
       "country": "Japan",
       "batch": 12,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "April 2027",
+        "status": "announced",
+        "opensText": "5-19 June 2026",
+        "notes": "The Informatics guide gives a postal submission period of 5-19 June 2026; in-person submission is accepted on 19 June only."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "ludwig-maximilians-universit-t-m-nchen",
@@ -1905,16 +1915,21 @@
       "school": "Ludwig-Maximilians-Universität München",
       "country": "Germany",
       "batch": 12,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Winter or summer semester",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "1 April-15 May for winter; 2 October-15 November for summer",
+        "notes": "The programme page publishes recurring strict deadlines without attaching a year, so these remain guidance rather than a cycle-specific formal window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universiti-malaya-um",
@@ -1924,16 +1939,21 @@
       "school": "Universiti Malaya (UM)",
       "country": "Malaysia",
       "batch": 12,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "October 2026",
+        "status": "open",
+        "opensText": "9 February to 30 August 2026",
+        "notes": "The central calendar covers Malaysian and international applicants to coursework and mixed-mode master's and doctoral programmes."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "ku-leuven",
@@ -1943,16 +1963,21 @@
       "school": "KU Leuven",
       "country": "Belgium",
       "batch": 12,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "applicant-category-specific-tool",
+        "opensText": "Use the official application-window tool",
+        "notes": "The tool confirms that academic year 2026/27 starts on 16 September 2026, but a single deadline cannot be generalized across nationalities and programmes."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "korea-university",

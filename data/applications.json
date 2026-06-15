@@ -488,6 +488,54 @@
         "term": "fall",
         "startMonth": 9
       }
+    },
+    {
+      "id": "kyoto-informatics-masters-april-2027",
+      "universityId": "kyoto-university",
+      "scopeType": "programme-group",
+      "scopeId": "kyoto-informatics-masters",
+      "intake": "April 2027",
+      "round": "August entrance examination",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-06-05",
+      "closesAt": "2026-06-19",
+      "applicationUrl": "https://www.i.kyoto-u.ac.jp/en/admission/application/",
+      "sourceUrl": "https://www.i.kyoto-u.ac.jp/assets/pdf/admission/application/master-2027-4-en.pdf",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Kyoto University's Graduate School of Informatics April 2027 master's guide states that postal application materials are accepted from 5 June to 19 June 2026 and must arrive by 5:00 p.m.",
+      "intakeDetails": {
+        "label": "April 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "spring",
+        "startMonth": 4
+      }
+    },
+    {
+      "id": "um-coursework-postgraduate-october-2026",
+      "universityId": "universiti-malaya-um",
+      "scopeType": "programme-group",
+      "scopeId": "um-coursework-postgraduate",
+      "intake": "October 2026",
+      "round": "Coursework and mixed mode",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-02-09",
+      "closesAt": "2026-08-30",
+      "applicationUrl": "https://apply.um.edu.my",
+      "sourceUrl": "https://study.um.edu.my/how-to-apply",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Universiti Malaya's official application calendar lists 9 February to 30 August 2026 for Malaysian and international postgraduate coursework and mixed-mode applications for the October 2026 intake.",
+      "intakeDetails": {
+        "label": "October 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 10
+      }
     }
   ]
 }

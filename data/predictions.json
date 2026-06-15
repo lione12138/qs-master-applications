@@ -220,6 +220,36 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-kyoto-informatics-masters-april-2027-next-cycle",
+      "basedOnRecordId": "kyoto-informatics-masters-april-2027",
+      "universityId": "kyoto-university",
+      "scopeType": "programme-group",
+      "scopeId": "kyoto-informatics-masters",
+      "intake": "April 2028",
+      "intakeDetails": {
+        "label": "April 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": 4
+      },
+      "round": "August entrance examination",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-06-05",
+      "closesAt": "2027-06-19",
+      "applicationUrl": "https://www.i.kyoto-u.ac.jp/en/admission/application/",
+      "sourceUrl": "https://www.i.kyoto-u.ac.jp/assets/pdf/admission/application/master-2027-4-en.pdf",
+      "sourceCycle": "April 2027",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-ntu-applied-ai-august-2026-next-cycle",
       "basedOnRecordId": "ntu-applied-ai-august-2026",
       "universityId": "nanyang-technological-university-singapore-ntu-singapore",
@@ -483,6 +513,36 @@
       "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
       "sourceCycle": "September 2026",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-um-coursework-postgraduate-october-2026-next-cycle",
+      "basedOnRecordId": "um-coursework-postgraduate-october-2026",
+      "universityId": "universiti-malaya-um",
+      "scopeType": "programme-group",
+      "scopeId": "um-coursework-postgraduate",
+      "intake": "October 2027",
+      "intakeDetails": {
+        "label": "October 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": 10
+      },
+      "round": "Coursework and mixed mode",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-02-09",
+      "closesAt": "2027-08-30",
+      "applicationUrl": "https://apply.um.edu.my",
+      "sourceUrl": "https://study.um.edu.my/how-to-apply",
+      "sourceCycle": "October 2026",
+      "basedOnVerifiedAt": "2026-06-15",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,

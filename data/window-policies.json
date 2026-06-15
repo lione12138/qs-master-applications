@@ -816,6 +816,81 @@
         "opensText": "Exact opening day not stated",
         "notes": "Tandon lists 1 December for fall priority consideration and 15 March as the extended final on-campus MS deadline. Computer Science MS does not accept spring applications."
       }
+    },
+    {
+      "universityId": "london-school-of-economics-and-political-science-lse",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "LSE publishes availability and deadlines on each graduate programme page. Programmes may use rolling admissions and close when full.",
+      "sourceUrl": "https://www.lse.ac.uk/study-at-lse/graduate/msc-data-science",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-rolling-no-fixed-deadline",
+        "opensText": "Open; exact opening day not stated",
+        "notes": "The MSc Data Science page says applications are open and considered on a rolling basis with no fixed deadline. Separate funding deadlines apply."
+      }
+    },
+    {
+      "universityId": "kyoto-university",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Kyoto graduate schools publish separate annual entrance-examination guides. The Graduate School of Informatics guide covers multiple master's courses and intakes.",
+      "sourceUrl": "https://www.i.kyoto-u.ac.jp/en/admission/application/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "April 2027",
+        "status": "announced",
+        "opensText": "5-19 June 2026",
+        "notes": "The Informatics guide gives a postal submission period of 5-19 June 2026; in-person submission is accepted on 19 June only."
+      }
+    },
+    {
+      "universityId": "ludwig-maximilians-universit-t-m-nchen",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "LMU programmes set their own admissions calendars. The former MSc Data Science is discontinued; the current Statistics and Data Science MSc publishes semester-specific recurring dates.",
+      "sourceUrl": "https://www.stat.lmu.de/en/studies/interested-master/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Winter or summer semester",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "1 April-15 May for winter; 2 October-15 November for summer",
+        "notes": "The programme page publishes recurring strict deadlines without attaching a year, so these remain guidance rather than a cycle-specific formal window."
+      }
+    },
+    {
+      "universityId": "universiti-malaya-um",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UM publishes central intake periods by level, study mode, and programme category. Clinical, coursework, mixed-mode, research, and diploma routes can use different windows.",
+      "sourceUrl": "https://study.um.edu.my/how-to-apply",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "October 2026",
+        "status": "open",
+        "opensText": "9 February to 30 August 2026",
+        "notes": "The central calendar covers Malaysian and international applicants to coursework and mixed-mode master's and doctoral programmes."
+      }
+    },
+    {
+      "universityId": "ku-leuven",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "KU Leuven states that programmes have their own requirements and deadlines. Its application-window tool determines the applicable deadline from academic year, nationality, and programme.",
+      "sourceUrl": "https://icts.kuleuven.be/apps/tuitionfees/application-windows",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "applicant-category-specific-tool",
+        "opensText": "Use the official application-window tool",
+        "notes": "The tool confirms that academic year 2026/27 starts on 16 September 2026, but a single deadline cannot be generalized across nationalities and programmes."
+      }
     }
   ]
 }
