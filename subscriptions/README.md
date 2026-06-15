@@ -1,0 +1,91 @@
+# GradWindow email subscriptions
+
+This Worker provides privacy-preserving, double-opt-in email alerts for newly
+opened official application windows.
+
+## Privacy design
+
+- The public site sends email addresses directly to the Worker over HTTPS.
+- Email addresses never enter GitHub, static files, analytics, or browser storage.
+- D1 stores an AES-GCM encrypted address plus a keyed HMAC lookup value.
+- Confirmation tokens are stored only as SHA-256 hashes.
+- Unsubscribe URLs contain a keyed signature, not an email address.
+- Unsubscribing immediately removes the encrypted email value.
+- The database intentionally does not store subscriber IP addresses.
+- Resend open and click tracking must remain disabled.
+
+Cloudflare D1 also encrypts data at rest and in transit. Application-level
+encryption is retained as an additional control.
+
+## Requirements
+
+- A Cloudflare account with Workers, D1, and Turnstile.
+- Node.js 20 or newer and Wrangler.
+- A Resend account.
+- A domain you own and can verify with Resend. Production sending cannot use a
+  shared `github.io` or `workers.dev` hostname.
+
+The Cloudflare and Resend free plans are sufficient for an early-stage site.
+Resend's free tier currently limits sending to 100 emails per day.
+
+## Deploy
+
+1. Copy the example:
+
+   ```powershell
+   Copy-Item subscriptions/wrangler.toml.example subscriptions/wrangler.toml
+   ```
+
+2. Create D1 and put its ID in the copied configuration:
+
+   ```powershell
+   npx wrangler d1 create gradwindow-subscribers
+   npx wrangler d1 execute gradwindow-subscribers --remote --file subscriptions/schema.sql
+   ```
+
+3. Generate secrets locally:
+
+   ```powershell
+   python -c "import base64,secrets; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode().rstrip('='))"
+   python -c "import secrets; print(secrets.token_urlsafe(48))"
+   ```
+
+   Use the first output for `EMAIL_ENCRYPTION_KEY`. Run the second command
+   three times for `EMAIL_INDEX_KEY`, `TOKEN_SIGNING_KEY`, and `ADMIN_API_KEY`.
+
+4. Store secrets with Wrangler. Never commit their values:
+
+   ```powershell
+   npx wrangler secret put EMAIL_ENCRYPTION_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put EMAIL_INDEX_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put TOKEN_SIGNING_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put ADMIN_API_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put RESEND_API_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put TURNSTILE_SECRET_KEY --config subscriptions/wrangler.toml
+   ```
+
+5. Verify a sending subdomain in Resend, update `RESEND_FROM`, then deploy:
+
+   ```powershell
+   npx wrangler deploy --config subscriptions/wrangler.toml
+   ```
+
+6. Add GitHub repository variables:
+
+   - `GRADWINDOW_SUBSCRIBE_URL`: deployed Worker URL.
+   - `GRADWINDOW_TURNSTILE_SITE_KEY`: public Turnstile site key.
+
+7. Add the GitHub Actions secret `GRADWINDOW_NOTIFY_API_KEY` with the same
+   value as Worker `ADMIN_API_KEY`.
+
+The next successful site build publishes the configured form. Run the
+`Notify subscribers` workflow manually once for an end-to-end check.
+
+## Operational rules
+
+- Never print subscriber rows or decrypted addresses in logs.
+- Enable MFA and restrict Cloudflare and Resend account access.
+- Back up encryption keys in a password manager.
+- Update `privacy.html` with a private operator contact and jurisdiction before
+  accepting production subscriptions.
+- Review bounce and complaint webhooks before sending at larger volume.

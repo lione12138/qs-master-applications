@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T16:47:31.932367+00:00",
+    "generatedAt": "2026-06-15T20:10:52.360336+00:00",
     "rankingScope": "QS World University Rankings 2026 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
   },
   "summary": {
     "targetUniversities": 200,
-    "entriesLocated": 128,
-    "curatedEntries": 76,
-    "policiesVerified": 75,
-    "cycleGuidanceAvailable": 73,
-    "broadMastersAvailability": 74,
+    "entriesLocated": 130,
+    "curatedEntries": 81,
+    "policiesVerified": 80,
+    "cycleGuidanceAvailable": 78,
+    "broadMastersAvailability": 79,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 68,
-    "universitiesWithWindows": 21,
-    "verifiedWindows": 27,
-    "universitiesWithPredictions": 21,
-    "predictedWindows": 27,
+    "universitiesWithPrograms": 73,
+    "universitiesWithWindows": 23,
+    "verifiedWindows": 34,
+    "universitiesWithPredictions": 23,
+    "predictedWindows": 34,
     "nextActions": {
-      "locate-official-entry": 72,
-      "verify-window-policy": 53,
+      "locate-official-entry": 70,
+      "verify-window-policy": 50,
       "select-target-programmes": 7,
-      "verify-exact-windows": 47,
-      "monitor-and-refresh": 21
+      "verify-exact-windows": 50,
+      "monitor-and-refresh": 23
     }
   },
   "batches": [
@@ -229,11 +229,11 @@
         80
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 2,
+      "predictedWindows": 7
     },
     {
       "batch": 17,
@@ -2347,16 +2347,21 @@
       "school": "University of Birmingham",
       "country": "United Kingdom",
       "batch": 16,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026 / January 2027",
+        "status": "deadline-only",
+        "opensText": "September start deadline 28 August 2026; January start 18 December 2026; closes when full",
+        "notes": "The page states UK/non-visa deadlines of 28 August 2026 (September start) and 18 December 2026 (January start) and that applications close as soon as the programme is full. No exact opening date is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "the-university-of-western-australia",
@@ -2366,16 +2371,21 @@
       "school": "The University of Western Australia",
       "country": "Australia",
       "batch": 16,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Semester 1 and Semester 2",
+        "status": "dates-not-published",
+        "opensText": "Beginning-of-year and mid-year intakes; apply via UWA online application",
+        "notes": "The handbook lists beginning-of-year and mid-year commencement but no exact application opening or closing dates; coursework applications are assessed on a rolling basis."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "kth-royal-institute-of-technology",
@@ -2385,16 +2395,21 @@
       "school": "KTH Royal Institute of Technology",
       "country": "Sweden",
       "batch": 16,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "centralised-national",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2027",
+        "status": "announced",
+        "opensText": "Opens 16 October 2026; last day to apply 15 January 2027",
+        "notes": "The programme page states the Autumn 2027 round opens 16 October 2026 with 15 January 2027 as the last day to apply (documents/fee by 1 February, results 1 April). The complete opening-closing pair is recorded as an official future window."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-glasgow",
@@ -2404,16 +2419,21 @@
       "school": "University of Glasgow",
       "country": "United Kingdom",
       "batch": 16,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only-applicant-category-specific",
+        "opensText": "International/EU staged rounds Oct 2025 to Jul 2026; Home deadline 21 August 2026",
+        "notes": "International and EU applicants apply in six recorded rounds running from 1 October 2025 to 8 July 2026; home applicants have a 21 August 2026 deadline without a published opening date."
+      },
+      "programmeCount": 1,
+      "windowCount": 6,
+      "predictionCount": 6,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "ruprecht-karls-universit-t-heidelberg",
@@ -2423,16 +2443,21 @@
       "school": "Ruprecht-Karls-Universität Heidelberg",
       "country": "Germany",
       "batch": 16,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Winter and summer semester",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "Winter semester 1 August to 15 September (previous year); summer semester 1 February to 15 March",
+        "notes": "For access- and admission-restricted master's programmes the page lists application periods of 1 August to 15 September (of the previous year) and 1 February to 15 March, applying equally to German and international applicants. No cycle year is attached, so no formal dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-washington",

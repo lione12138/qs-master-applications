@@ -942,6 +942,118 @@ h1 em::after {
   line-height: 1.8;
 }
 
+.subscribe-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1.2fr);
+  gap: 72px;
+  padding: 80px clamp(24px, 6vw, 92px);
+  background: var(--white);
+}
+
+.subscribe-section h2 {
+  margin: 12px 0;
+  font-size: clamp(28px, 4vw, 48px);
+}
+
+.subscribe-section > div > p {
+  max-width: 600px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.subscribe-form {
+  display: grid;
+  gap: 12px;
+  align-self: center;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+}
+
+.subscribe-form > label:first-child {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.subscribe-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+.subscribe-row input {
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  color: var(--ink);
+  background: var(--white);
+  font: inherit;
+}
+
+.subscribe-row .primary-button {
+  border: 0;
+  cursor: pointer;
+}
+
+.subscribe-row .primary-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.consent-row {
+  display: flex;
+  gap: 9px;
+  align-items: start;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.consent-row input {
+  margin-top: 2px;
+}
+
+.subscribe-privacy,
+.subscribe-status {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.subscribe-privacy a {
+  color: var(--green);
+}
+
+.subscribe-status.error {
+  color: var(--red);
+}
+
+.subscribe-status.success {
+  color: var(--green);
+}
+
+.legal-page {
+  background: var(--paper);
+}
+
+.legal-content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 24px 100px;
+  line-height: 1.75;
+}
+
+.legal-content h1 {
+  font-size: clamp(34px, 6vw, 64px);
+}
+
+.legal-content h2 {
+  margin-top: 42px;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -1139,6 +1251,11 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .subscribe-section {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
   footer {
     align-items: start;
     flex-direction: column;
@@ -1197,5 +1314,9 @@ footer p {
 
   .rank-cell {
     width: auto;
+  }
+
+  .subscribe-row {
+    grid-template-columns: 1fr;
   }
 }

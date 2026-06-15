@@ -1,0 +1,17 @@
+name = "gradwindow-subscriptions"
+main = "worker.js"
+compatibility_date = "2026-06-15"
+
+[triggers]
+crons = ["31 3 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "gradwindow-subscribers"
+database_id = "replace-with-d1-database-id"
+
+[vars]
+ALLOWED_ORIGINS = "https://lione12138.github.io"
+PUBLIC_SITE_URL = "https://lione12138.github.io/qs-master-applications"
+API_BASE_URL = "https://gradwindow-subscriptions.your-account.workers.dev"
+RESEND_FROM = "GradWindow <alerts@updates.your-domain.example>"

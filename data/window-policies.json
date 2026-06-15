@@ -1116,6 +1116,81 @@
         "opensText": "Closing date 30 January 2026",
         "notes": "The programme page lists a 30 January 2026 closing date for the one-year full-time MSc but no exact application opening date."
       }
+    },
+    {
+      "universityId": "university-of-birmingham",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Birmingham publishes course-specific postgraduate taught deadlines for its September and January intakes. The Computer Science MSc page lists separate UK/non-visa deadlines per start and no application opening date, and applications close once the programme is full.",
+      "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/computer-science-and-data-science-courses/computer-science-msc",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "September 2026 / January 2027",
+        "status": "deadline-only",
+        "opensText": "September start deadline 28 August 2026; January start 18 December 2026; closes when full",
+        "notes": "The page states UK/non-visa deadlines of 28 August 2026 (September start) and 18 December 2026 (January start) and that applications close as soon as the programme is full. No exact opening date is published."
+      }
+    },
+    {
+      "universityId": "the-university-of-western-australia",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UWA coursework master's such as the Master of Information Technology admit at the beginning of the year and mid-year. The course handbook directs applicants to the Future Students site and online application without publishing exact opening or closing dates.",
+      "sourceUrl": "https://www.handbooks.uwa.edu.au/coursedetails?code=62510",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Semester 1 and Semester 2",
+        "status": "dates-not-published",
+        "opensText": "Beginning-of-year and mid-year intakes; apply via UWA online application",
+        "notes": "The handbook lists beginning-of-year and mid-year commencement but no exact application opening or closing dates; coursework applications are assessed on a rolling basis."
+      }
+    },
+    {
+      "universityId": "kth-royal-institute-of-technology",
+      "model": "centralised-national",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "KTH master's programmes admit for an August start through Sweden's national University Admissions system. The MSc Computer Science page publishes the autumn round opening and last day to apply for the next cycle.",
+      "sourceUrl": "https://www.kth.se/en/studies/master/computer-science/msc-computer-science-1.419974",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Autumn 2027",
+        "status": "announced",
+        "opensText": "Opens 16 October 2026; last day to apply 15 January 2027",
+        "notes": "The programme page states the Autumn 2027 round opens 16 October 2026 with 15 January 2027 as the last day to apply (documents/fee by 1 February, results 1 April). The complete opening-closing pair is recorded as an official future window."
+      }
+    },
+    {
+      "universityId": "university-of-glasgow",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Glasgow runs the MSc Computing Science with staged international/EU application rounds and a separate single home deadline. The six international/EU round windows are recorded individually; the home deadline has no corresponding published opening date.",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only-applicant-category-specific",
+        "opensText": "International/EU staged rounds Oct 2025 to Jul 2026; Home deadline 21 August 2026",
+        "notes": "International and EU applicants apply in six recorded rounds running from 1 October 2025 to 8 July 2026; home applicants have a 21 August 2026 deadline without a published opening date."
+      }
+    },
+    {
+      "universityId": "ruprecht-karls-universit-t-heidelberg",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Heidelberg's Master in Data and Computer Science is access- and admission-restricted and administered by the Faculty of Mathematics and Computer Science. The university deadline page lists recurring application periods for both intakes without a specific cycle year, applying equally to German and international applicants.",
+      "sourceUrl": "https://www.uni-heidelberg.de/en/study/management-of-studies/key-dates-deadlines/application-deadlines-for-the-1st-semester-of-the-masters-degree-programmes",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Winter and summer semester",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "Winter semester 1 August to 15 September (previous year); summer semester 1 February to 15 March",
+        "notes": "For access- and admission-restricted master's programmes the page lists application periods of 1 August to 15 September (of the previous year) and 1 February to 15 March, applying equally to German and international applicants. No cycle year is attached, so no formal dated window is recorded."
+      }
     }
   ]
 }

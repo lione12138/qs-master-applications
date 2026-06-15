@@ -21,7 +21,8 @@ def test_shift_helpers_handle_years_and_leap_days() -> None:
 def test_current_windows_generate_next_cycle_predictions(tmp_path) -> None:
     output = tmp_path / "predictions.json"
     payload = generate_predictions(output_path=output)
-    assert len(payload["predictions"]) == 27
+    applications = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))
+    assert len(payload["predictions"]) == len(applications["applications"])
     cambridge = next(
         item
         for item in payload["predictions"]
@@ -45,6 +46,14 @@ def test_current_windows_generate_next_cycle_predictions(tmp_path) -> None:
     assert tsinghua["opensAt"] == "2027-01-01"
     assert tsinghua["closesAt"] == "2027-02-27"
     assert tsinghua["confidence"] == "low"
+    kth = next(
+        item
+        for item in payload["predictions"]
+        if item["basedOnRecordId"] == "kth-computer-science-autumn-2027"
+    )
+    assert kth["intake"] == "Autumn 2028"
+    assert kth["opensAt"] == "2027-10-16"
+    assert kth["closesAt"] == "2028-01-15"
     assert payload["meta"]["official"] is False
 
 

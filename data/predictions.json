@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Estimated next-cycle application windows",
-    "generatedFromApplicationsUpdatedAt": "2026-06-14T00:00:00Z",
+    "generatedFromApplicationsUpdatedAt": "2026-06-15T00:00:00Z",
     "official": false,
     "methodology": "calendar-date-shift-plus-one-year",
     "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
@@ -272,6 +272,36 @@
       "applicationUrl": "https://graduate2.korea.ac.kr/admission/guide.html",
       "sourceUrl": "https://graduate2.korea.ac.kr/admission/schedule.html",
       "sourceCycle": "Fall 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-kth-computer-science-autumn-2027-next-cycle",
+      "basedOnRecordId": "kth-computer-science-autumn-2027",
+      "universityId": "kth-royal-institute-of-technology",
+      "scopeType": "programme",
+      "scopeId": "kth-computer-science-msc",
+      "intake": "Autumn 2028",
+      "intakeDetails": {
+        "label": "Autumn 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "National admissions round",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-16",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.universityadmissions.se/en/",
+      "sourceUrl": "https://www.kth.se/en/studies/master/computer-science/msc-computer-science-1.419974",
+      "sourceCycle": "Autumn 2027",
       "basedOnVerifiedAt": "2026-06-15",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
@@ -753,6 +783,186 @@
       "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
       "sourceCycle": "Michaelmas 2026",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-glasgow-computing-science-september-2026-round-1-next-cycle",
+      "basedOnRecordId": "glasgow-computing-science-september-2026-round-1",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International and EU round 1",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2026-10-01",
+      "closesAt": "2026-11-05",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-glasgow-computing-science-september-2026-round-2-next-cycle",
+      "basedOnRecordId": "glasgow-computing-science-september-2026-round-2",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International and EU round 2",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2026-11-06",
+      "closesAt": "2026-12-17",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-glasgow-computing-science-september-2026-round-3-next-cycle",
+      "basedOnRecordId": "glasgow-computing-science-september-2026-round-3",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International and EU round 3",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2026-12-18",
+      "closesAt": "2027-02-04",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-glasgow-computing-science-september-2026-round-4-next-cycle",
+      "basedOnRecordId": "glasgow-computing-science-september-2026-round-4",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International and EU round 4",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2027-02-05",
+      "closesAt": "2027-03-25",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-glasgow-computing-science-september-2026-round-5-next-cycle",
+      "basedOnRecordId": "glasgow-computing-science-september-2026-round-5",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International and EU round 5",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2027-03-26",
+      "closesAt": "2027-05-13",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-glasgow-computing-science-september-2026-round-6-next-cycle",
+      "basedOnRecordId": "glasgow-computing-science-september-2026-round-6",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International and EU round 6",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2027-05-14",
+      "closesAt": "2027-07-08",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,

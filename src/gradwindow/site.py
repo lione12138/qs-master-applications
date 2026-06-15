@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import json
 import os
 import re
 import shutil
@@ -24,11 +25,15 @@ from .paths import (
 
 PUBLIC_FILES = (
     "index.html",
+    "privacy.html",
     "app.js",
     "status.js",
     "intake-filter.js",
     "localization.js",
+    "i18n.js",
     "styles.css",
+    "og-image.png",
+    "favicon.svg",
 )
 DEFAULT_SITE_URL = "https://lione12138.github.io/qs-master-applications"
 CLOUDFLARE_ANALYTICS_TOKEN = "02939949076c423f953d11db0caade78"
@@ -57,6 +62,15 @@ def site_url() -> str:
 
 def build_site(output_dir: Path = SITE_DIR) -> Path:
     public_site_url = site_url()
+    public_config = {
+        "subscribeUrl": os.environ.get("GRADWINDOW_SUBSCRIBE_URL", "").rstrip(
+            "/"
+        ),
+        "turnstileSiteKey": os.environ.get(
+            "GRADWINDOW_TURNSTILE_SITE_KEY",
+            "",
+        ),
+    }
     output_dir.mkdir(parents=True, exist_ok=True)
     for child in output_dir.iterdir():
         if child.is_dir():
@@ -71,6 +85,9 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
         index_path.read_text(encoding="utf-8").replace(
             f"{DEFAULT_SITE_URL}/",
             f"{public_site_url}/",
+        ).replace(
+            "window.GRADWINDOW_CONFIG = {};",
+            f"window.GRADWINDOW_CONFIG = {json.dumps(public_config)};",
         ),
         encoding="utf-8",
     )
@@ -86,6 +103,7 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
     generated_urls = generate_index_pages(output_dir, public_site_url)
     sitemap_urls = [
         public_site_url,
+        f"{public_site_url}/privacy.html",
         f"{public_site_url}/sources.html",
         *generated_urls,
     ]

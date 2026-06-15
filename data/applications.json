@@ -2,7 +2,7 @@
   "meta": {
     "title": "Verified graduate application windows",
     "rankingEdition": "QS World University Rankings 2026",
-    "updatedAt": "2026-06-14T00:00:00Z",
+    "updatedAt": "2026-06-15T00:00:00Z",
     "demo": false,
     "disclaimer": "A window may apply to an institution, a programme group, or one programme. Every published date must be verified against an official university page and scoped explicitly."
   },
@@ -653,6 +653,174 @@
         "label": "Fall 2026",
         "cycleYear": 2026,
         "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "kth-computer-science-autumn-2027",
+      "universityId": "kth-royal-institute-of-technology",
+      "scopeType": "programme",
+      "scopeId": "kth-computer-science-msc",
+      "intake": "Autumn 2027",
+      "round": "National admissions round",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-10-16",
+      "closesAt": "2027-01-15",
+      "applicationUrl": "https://www.universityadmissions.se/en/",
+      "sourceUrl": "https://www.kth.se/en/studies/master/computer-science/msc-computer-science-1.419974",
+      "verifiedAt": "2026-06-15",
+      "evidence": "KTH's official MSc Computer Science page states that applications for studies starting in August 2027 open on 16 October 2026 and close on 15 January 2027.",
+      "intakeDetails": {
+        "label": "Autumn 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 8
+      }
+    },
+    {
+      "id": "glasgow-computing-science-september-2026-round-1",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2026",
+      "round": "International and EU round 1",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2025-10-01",
+      "closesAt": "2025-11-05",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Glasgow's official Computing Science MSc page lists international and EU round 1 from 1 October to 5 November 2025.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "glasgow-computing-science-september-2026-round-2",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2026",
+      "round": "International and EU round 2",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2025-11-06",
+      "closesAt": "2025-12-17",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Glasgow's official Computing Science MSc page lists international and EU round 2 from 6 November to 17 December 2025.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "glasgow-computing-science-september-2026-round-3",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2026",
+      "round": "International and EU round 3",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2025-12-18",
+      "closesAt": "2026-02-04",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Glasgow's official Computing Science MSc page lists international and EU round 3 from 18 December 2025 to 4 February 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "glasgow-computing-science-september-2026-round-4",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2026",
+      "round": "International and EU round 4",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2026-02-05",
+      "closesAt": "2026-03-25",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Glasgow's official Computing Science MSc page lists international and EU round 4 from 5 February to 25 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "glasgow-computing-science-september-2026-round-5",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2026",
+      "round": "International and EU round 5",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2026-03-26",
+      "closesAt": "2026-05-13",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Glasgow's official Computing Science MSc page lists international and EU round 5 from 26 March to 13 May 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "glasgow-computing-science-september-2026-round-6",
+      "universityId": "university-of-glasgow",
+      "scopeType": "programme",
+      "scopeId": "glasgow-computing-science-msc",
+      "intake": "September 2026",
+      "round": "International and EU round 6",
+      "applicantCategories": [
+        "international-and-eu"
+      ],
+      "opensAt": "2026-05-14",
+      "closesAt": "2026-07-08",
+      "applicationUrl": "https://uogapply.mycampus.gla.ac.uk/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Glasgow's official Computing Science MSc page lists international and EU round 6 from 14 May to 8 July 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": 2027,
         "term": "fall",
         "startMonth": 9
       }

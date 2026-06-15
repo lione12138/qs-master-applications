@@ -159,6 +159,18 @@ The static build emits university, country, and deadline-month index pages in
 addition to the JavaScript board, plus `sitemap.xml`, `robots.txt`, canonical
 links, and OpenGraph metadata.
 
+## Email subscriptions
+
+The public site remains static. Optional subscriptions are handled by a
+separate Cloudflare Worker under `subscriptions/`. Addresses are encrypted
+before D1 storage and are never included in repository data, GitHub Actions
+logs, analytics, or static artifacts. The scheduled notification workflow
+sends only public application-window metadata to the Worker; recipient lookup,
+decryption, deduplication, and delivery remain inside the Worker.
+
+Deployment and key-management instructions are in
+`subscriptions/README.md`.
+
 ## Operational limitations
 
 - Many universities publish dates only inside programme catalogues.

@@ -14,7 +14,11 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "status.js").exists()
     assert (tmp_path / "intake-filter.js").exists()
     assert (tmp_path / "localization.js").exists()
+    assert (tmp_path / "i18n.js").exists()
+    assert (tmp_path / "privacy.html").exists()
     assert (tmp_path / "styles.css").exists()
+    assert (tmp_path / "og-image.png").exists()
+    assert (tmp_path / "favicon.svg").exists()
     assert (tmp_path / ".nojekyll").exists()
     assert (tmp_path / "sources.html").exists()
     assert (tmp_path / "data" / "universities.json").exists()
@@ -60,6 +64,10 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="top100-toggle"' in index_html
     assert 'id="coverage-batches"' not in index_html
     assert 'lang="en"' in index_html
+    assert 'property="og:image"' in index_html
+    assert "og-image.png" in index_html
+    assert 'rel="modulepreload"' in index_html
+    assert 'application/ld+json' in index_html
     assert "Source code" in index_html
     assert "AGPL-3.0" in index_html
     assert "Data: CC BY-NC 4.0" in index_html
@@ -107,3 +115,21 @@ def test_build_site_uses_configured_public_url(tmp_path, monkeypatch) -> None:
         f'href="{public_url}/university/university-of-cambridge/"'
         in university_page
     )
+
+
+def test_build_site_injects_private_subscription_endpoint(
+    tmp_path,
+    monkeypatch,
+) -> None:
+    monkeypatch.setenv(
+        "GRADWINDOW_SUBSCRIBE_URL",
+        "https://subscriptions.example.workers.dev",
+    )
+    monkeypatch.setenv("GRADWINDOW_TURNSTILE_SITE_KEY", "public-site-key")
+
+    build_site(tmp_path)
+
+    index_html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    assert '"subscribeUrl": "https://subscriptions.example.workers.dev"' in index_html
+    assert '"turnstileSiteKey": "public-site-key"' in index_html
+    assert "EMAIL_ENCRYPTION_KEY" not in index_html

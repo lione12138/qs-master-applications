@@ -1,0 +1,32 @@
+name: Notify subscribers
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/applications.json"
+  schedule:
+    - cron: "47 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notify-subscribers
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send newly opened official windows
+        env:
+          GRADWINDOW_SUBSCRIBE_URL: ${{ vars.GRADWINDOW_SUBSCRIBE_URL }}
+          GRADWINDOW_NOTIFY_API_KEY: ${{ secrets.GRADWINDOW_NOTIFY_API_KEY }}
+        run: python scripts/notify_subscribers.py

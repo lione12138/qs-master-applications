@@ -169,3 +169,25 @@ five institutions while preserving the same completion rules:
   exact opening date is not published.
 - Trinity College Dublin — Computer Science - Data Science MSc policy added
   with its 30 January 2026 closing date. No exact opening date is stated.
+
+## QS positions 76–80
+
+- University of Birmingham — programme-specific Computer Science MSc policy
+  added. The course page publishes UK/non-visa deadlines of 28 August 2026
+  (September start) and 18 December 2026 (January start) and closes when full,
+  but no exact opening date is stated.
+- University of Western Australia — programme-specific coursework policy and
+  Master of Information Technology added. The handbook lists beginning-of-year
+  and mid-year intakes without exact opening or closing dates.
+- KTH Royal Institute of Technology — centralised Swedish admissions policy
+  and MSc Computer Science added. The programme page states a complete Autumn
+  2027 window opening 16 October 2026 and closing 15 January 2027; the official
+  future window and evidence snapshot are now included.
+- University of Glasgow — applicant-category MSc Computing Science policy
+  added. International and EU applicants apply in six rounds from October 2025
+  to July 2026; all six exact international/EU rounds are included. Home
+  applicants have a 21 August 2026 deadline but no published opening date.
+- Heidelberg University — programme-specific Data and Computer Science master's
+  policy added. The deadline page lists recurring 1 August–15 September and
+  1 February–15 March application periods without a cycle year, so no formal
+  dated window is recorded.
