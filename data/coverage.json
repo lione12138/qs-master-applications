@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T10:10:19.581465+00:00",
+    "generatedAt": "2026-06-15T16:25:33.513391+00:00",
     "rankingScope": "QS World University Rankings 2026 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -8,22 +8,22 @@
   "summary": {
     "targetUniversities": 200,
     "entriesLocated": 126,
-    "curatedEntries": 66,
-    "policiesVerified": 65,
-    "cycleGuidanceAvailable": 63,
-    "broadMastersAvailability": 64,
+    "curatedEntries": 71,
+    "policiesVerified": 70,
+    "cycleGuidanceAvailable": 68,
+    "broadMastersAvailability": 69,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 58,
-    "universitiesWithWindows": 19,
-    "verifiedWindows": 25,
-    "universitiesWithPredictions": 19,
-    "predictedWindows": 25,
+    "universitiesWithPrograms": 63,
+    "universitiesWithWindows": 21,
+    "verifiedWindows": 27,
+    "universitiesWithPredictions": 21,
+    "predictedWindows": 27,
     "nextActions": {
       "locate-official-entry": 74,
-      "verify-window-policy": 61,
+      "verify-window-policy": 56,
       "select-target-programmes": 7,
-      "verify-exact-windows": 39,
-      "monitor-and-refresh": 19
+      "verify-exact-windows": 42,
+      "monitor-and-refresh": 21
     }
   },
   "batches": [
@@ -204,10 +204,10 @@
       ],
       "universities": 5,
       "entriesLocated": 5,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 2,
+      "predictedWindows": 2
     },
     {
       "batch": 15,
@@ -2107,16 +2107,21 @@
       "school": "University of California, San Diego (UCSD)",
       "country": "United States of America",
       "batch": 14,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "3 September to 23 December 2025",
+        "notes": "The department states that Fall 2026 applications opened on 3 September 2025 and closed at 5:00 p.m. PST on 23 December 2025 after an extension."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "king-fahd-university-of-petroleum-and-minerals",
@@ -2126,16 +2131,21 @@
       "school": "King Fahd University of Petroleum & Minerals",
       "country": "Saudi Arabia",
       "batch": 14,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Upcoming cycle",
+        "status": "dates-not-exact",
+        "opensText": "Start application from the official Apply page",
+        "notes": "The listing asks applicants to note the upcoming cycle and start the application, but does not publish an opening and closing date pair."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-texas-at-austin",
@@ -2145,16 +2155,21 @@
       "school": "University of Texas at Austin",
       "country": "United States of America",
       "batch": 14,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "15 October to 15 December",
+        "notes": "The page lists an application opening on 15 October and deadline on 15 December, plus a recommendation deadline on 20 December, but does not attach a year."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "brown-university",
@@ -2164,16 +2179,21 @@
       "school": "Brown University",
       "country": "United States of America",
       "batch": 14,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "1 September 2025 to 23 January 2026",
+        "notes": "The CS master's page states that Fall 2026 applications were accepted from 1 September 2025 until the 23 January 2026 deadline."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "universit-paris-saclay",
@@ -2183,16 +2203,21 @@
       "school": "Université Paris-Saclay",
       "country": "France",
       "batch": 14,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "route-specific",
+        "opensText": "Use Mon Master calendar or programme-specific INCEPTION dates",
+        "notes": "The official page states that INCEPTION opening dates are specific to each programme and shown in each programme's application section."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-illinois-at-urbana-champaign",

@@ -107,3 +107,62 @@ def test_source_monitor_preserves_better_existing_evidence(
         workers=1,
     )
     assert existing_path.read_text(encoding="utf-8") == '{"quality": "rendered"}'
+
+
+def test_source_monitor_uses_matched_context_when_excerpt_misses_dates(
+    tmp_path,
+    monkeypatch,
+) -> None:
+    applications_path = tmp_path / "applications.json"
+    state_path = tmp_path / "state.json"
+    applications_path.write_text(
+        json.dumps(
+            {
+                "applications": [
+                    {
+                        "id": "context-window",
+                        "universityId": "u",
+                        "sourceUrl": "https://example.edu/admissions",
+                        "opensAt": "2025-09-03",
+                        "closesAt": "2025-12-23",
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(
+        source_monitor,
+        "check_university",
+        lambda *args, **kwargs: {
+            "url": "https://example.edu/admissions",
+            "checkedAt": "2026-06-15T00:00:00Z",
+            "status": "ok",
+            "changed": False,
+            "contentHash": "abc",
+            "evidenceContext": {
+                "excerpt": "",
+                "contentSelector": "article",
+                "matchedTextBefore": "Applications open for",
+                "matchedText": (
+                    "Fall admission from September 3, 2025 until "
+                    "December 23, 2025."
+                ),
+                "matchedTextAfter": "Admission is for fall quarter.",
+            },
+        },
+    )
+
+    source_monitor.monitor_application_sources(
+        applications_path,
+        state_path,
+        workers=1,
+    )
+
+    evidence = json.loads(
+        (tmp_path / "evidence" / "context-window.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    assert "September 3, 2025" in evidence["excerpt"]
+    assert "December 23, 2025" in evidence["excerpt"]

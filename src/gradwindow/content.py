@@ -92,7 +92,10 @@ def text_contains_target_date(text: str, target: date) -> bool:
     tokens = MONTH_TOKENS[target.month - 1]
     english_match = (
         str(target.year) in normalized
-        and re.search(rf"\b0?{target.day}\b", normalized)
+        and re.search(
+            rf"\b0?{target.day}(?:st|nd|rd|th)?\b",
+            normalized,
+        )
         and any(re.search(rf"\b{token}", normalized) for token in tokens)
     )
     chinese_match = bool(

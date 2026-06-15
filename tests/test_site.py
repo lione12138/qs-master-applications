@@ -78,3 +78,28 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "university-of-cambridge" in (
         tmp_path / "sitemap.xml"
     ).read_text(encoding="utf-8")
+
+
+def test_build_site_uses_configured_public_url(tmp_path, monkeypatch) -> None:
+    public_url = "https://gradwindow.pages.dev"
+    monkeypatch.setenv("GRADWINDOW_SITE_URL", public_url)
+
+    build_site(tmp_path)
+
+    index_html = (tmp_path / "index.html").read_text(encoding="utf-8")
+    sitemap = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
+    robots = (tmp_path / "robots.txt").read_text(encoding="utf-8")
+    university_page = (
+        tmp_path
+        / "university"
+        / "university-of-cambridge"
+        / "index.html"
+    ).read_text(encoding="utf-8")
+
+    assert f'href="{public_url}/"' in index_html
+    assert f"<loc>{public_url}</loc>" in sitemap
+    assert f"Sitemap: {public_url}/sitemap.xml" in robots
+    assert (
+        f'href="{public_url}/university/university-of-cambridge/"'
+        in university_page
+    )

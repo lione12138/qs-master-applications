@@ -966,6 +966,81 @@
         "opensText": "Exact opening day not stated",
         "notes": "The Master of Data Science page lists 8 December 2025 for Semester One 2026 and 8 June 2026 for Semester Two 2026."
       }
+    },
+    {
+      "universityId": "university-of-california-san-diego-ucsd",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UCSD CSE admits MS and PhD applicants for fall quarter only and publishes the annual graduate application window on the department admissions page.",
+      "sourceUrl": "https://cse.ucsd.edu/graduate/admissions",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "3 September to 23 December 2025",
+        "notes": "The department states that Fall 2026 applications opened on 3 September 2025 and closed at 5:00 p.m. PST on 23 December 2025 after an extension."
+      }
+    },
+    {
+      "universityId": "king-fahd-university-of-petroleum-and-minerals",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "KFUPM publishes project-based master's programme listings and directs applicants to its central study application flow. Exact dated windows were not present on the programme listing.",
+      "sourceUrl": "https://www.kfupm.edu.sa/study/graduate-programs-ms",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Upcoming cycle",
+        "status": "dates-not-exact",
+        "opensText": "Start application from the official Apply page",
+        "notes": "The listing asks applicants to note the upcoming cycle and start the application, but does not publish an opening and closing date pair."
+      }
+    },
+    {
+      "universityId": "university-of-texas-at-austin",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UT Austin Computer Science publishes department milestones for graduate applications. The page provides month/day milestones without a cycle year.",
+      "sourceUrl": "https://www.cs.utexas.edu/graduate/apply",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "15 October to 15 December",
+        "notes": "The page lists an application opening on 15 October and deadline on 15 December, plus a recommendation deadline on 20 December, but does not attach a year."
+      }
+    },
+    {
+      "universityId": "brown-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Brown CS publishes a programme-specific master's application period. Spring entry is limited to Brown undergraduates completing a fifth-year master's.",
+      "sourceUrl": "https://cs.brown.edu/degrees/masters/applications/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "1 September 2025 to 23 January 2026",
+        "notes": "The CS master's page states that Fall 2026 applications were accepted from 1 September 2025 until the 23 January 2026 deadline."
+      }
+    },
+    {
+      "universityId": "universit-paris-saclay",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Paris-Saclay master's applications use Mon Master for most M1 routes and the university INCEPTION platform for M2 and listed exceptions. Dates vary by route and applicant situation.",
+      "sourceUrl": "https://www.universite-paris-saclay.fr/admission/etre-candidat-un-master-paris-saclay",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "route-specific",
+        "opensText": "Use Mon Master calendar or programme-specific INCEPTION dates",
+        "notes": "The official page states that INCEPTION opening dates are specific to each programme and shown in each programme's application section."
+      }
     }
   ]
 }

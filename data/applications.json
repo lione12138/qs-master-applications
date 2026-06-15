@@ -608,6 +608,54 @@
         "term": "fall",
         "startMonth": 9
       }
+    },
+    {
+      "id": "ucsd-cse-graduate-fall-2026",
+      "universityId": "university-of-california-san-diego-ucsd",
+      "scopeType": "programme-group",
+      "scopeId": "ucsd-cse-graduate-admissions",
+      "intake": "Fall 2026",
+      "round": "Extended deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2025-09-03",
+      "closesAt": "2025-12-23",
+      "applicationUrl": "https://connect.grad.ucsd.edu/apply/",
+      "sourceUrl": "https://cse.ucsd.edu/graduate/admissions",
+      "verifiedAt": "2026-06-15",
+      "evidence": "UCSD CSE's official graduate admissions page states that the Fall 2026 application opened on 3 September 2025 and ran until the extended deadline of 23 December 2025 at 5:00 p.m. PST.",
+      "intakeDetails": {
+        "label": "Fall 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "brown-computer-science-scm-fall-2026",
+      "universityId": "brown-university",
+      "scopeType": "programme",
+      "scopeId": "brown-computer-science-scm",
+      "intake": "Fall 2026",
+      "round": "Regular deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2025-09-01",
+      "closesAt": "2026-01-23",
+      "applicationUrl": "https://apply.professional.brown.edu/apply",
+      "sourceUrl": "https://cs.brown.edu/degrees/masters/applications/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Brown CS states on its master's application page that Fall 2026 applications were accepted from 1 September 2025 until the application deadline of 23 January 2026.",
+      "intakeDetails": {
+        "label": "Fall 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
     }
   ]
 }

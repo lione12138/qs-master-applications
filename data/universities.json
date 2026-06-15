@@ -1511,7 +1511,7 @@
       "qsPosition": 66,
       "rankDisplay": "66",
       "school": "University of California, San Diego (UCSD)",
-      "schoolZh": "",
+      "schoolZh": "加利福尼亚大学圣迭戈分校",
       "country": "United States of America",
       "region": "Americas",
       "homepageUrl": "https://ucsd.edu",
@@ -1521,12 +1521,12 @@
       "rorId": "https://ror.org/0168r3w48",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://grad.ucsd.edu/admissions/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://cse.ucsd.edu/graduate/admissions",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 50,
-      "admissionsCandidateTitle": "Apply Now"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "king-fahd-university-of-petroleum-and-minerals",
@@ -1534,7 +1534,7 @@
       "qsPosition": 67,
       "rankDisplay": "67",
       "school": "King Fahd University of Petroleum & Minerals",
-      "schoolZh": "",
+      "schoolZh": "法赫德国王石油与矿业大学",
       "country": "Saudi Arabia",
       "region": "Asia",
       "homepageUrl": "https://www.kfupm.edu.sa",
@@ -1545,11 +1545,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": true,
       "admissionsUrl": "https://www.kfupm.edu.sa/study/graduate-programs-ms",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 9,
-      "admissionsCandidateTitle": "Master of Science (Project-Based)"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-texas-at-austin",
@@ -1557,7 +1557,7 @@
       "qsPosition": 68,
       "rankDisplay": "68",
       "school": "University of Texas at Austin",
-      "schoolZh": "",
+      "schoolZh": "得克萨斯大学奥斯汀分校",
       "country": "United States of America",
       "region": "Americas",
       "homepageUrl": "http://www.utexas.edu/",
@@ -1567,12 +1567,12 @@
       "rorId": "https://ror.org/00hj54h04",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://gradschool.utexas.edu/admissions",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.cs.utexas.edu/graduate/apply",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 39,
-      "admissionsCandidateTitle": "Admissions | Graduate School"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "brown-university",
@@ -1580,7 +1580,7 @@
       "qsPosition": 69,
       "rankDisplay": "69",
       "school": "Brown University",
-      "schoolZh": "",
+      "schoolZh": "布朗大学",
       "country": "United States of America",
       "region": "Americas",
       "homepageUrl": "https://www.brown.edu",
@@ -1590,12 +1590,12 @@
       "rorId": "https://ror.org/05gq02987",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.brown.edu/admission/graduate",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://cs.brown.edu/degrees/masters/applications/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 21,
-      "admissionsCandidateTitle": "Graduate Admission | Brown University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "universit-paris-saclay",
@@ -1603,7 +1603,7 @@
       "qsPosition": 70,
       "rankDisplay": "70",
       "school": "Université Paris-Saclay",
-      "schoolZh": "",
+      "schoolZh": "巴黎萨克雷大学",
       "country": "France",
       "region": "Europe",
       "homepageUrl": "http://www.universite-paris-saclay.fr/fr",
@@ -1613,12 +1613,12 @@
       "rorId": "https://ror.org/03xjwb503",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.universite-paris-saclay.fr/admission/etre-candidat-un-master-paris-saclay",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.universite-paris-saclay.fr/en/education/masters-degree/computer-science",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 20,
-      "admissionsCandidateTitle": "Être candidat à un Master Paris-Saclay | Université Paris-Saclay"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-illinois-at-urbana-champaign",

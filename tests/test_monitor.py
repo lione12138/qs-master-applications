@@ -74,6 +74,17 @@ def test_evidence_matching_supports_chinese_dates() -> None:
     )
 
 
+def test_evidence_matching_supports_english_ordinal_dates() -> None:
+    excerpt = (
+        "Applications run from September 3, 2025 "
+        "until December 23rd, 2025."
+    )
+    assert evidence_matches_target_dates(
+        excerpt,
+        ["2025-09-03", "2025-12-23"],
+    )
+
+
 def test_monitor_summary() -> None:
     summary = summarize_monitor_results(
         {

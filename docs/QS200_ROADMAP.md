@@ -135,3 +135,19 @@ five institutions while preserving the same completion rules:
 - University of Auckland — programme-specific Master of Data Science policy
   added. Semester closing dates are published, but the exact opening date is
   not stated.
+
+## Batch 14 · QS positions 66–70
+
+- UC San Diego — CSE graduate admissions policy and Computer Science MS added
+  with the complete 3 September to 23 December 2025 Fall 2026 window.
+- King Fahd University of Petroleum & Minerals — project-based master's
+  policy and Data Science & Analytics MS added. The catalogue lists programmes
+  and points to the application flow, but does not publish a dated window.
+- University of Texas at Austin — Computer Science graduate policy and MS
+  added. The department publishes recurring October and December milestones
+  without a cycle year.
+- Brown University — Computer Science master's policy and ScM added with the
+  complete 1 September 2025 to 23 January 2026 Fall 2026 application window.
+- Université Paris-Saclay — mixed Mon Master/INCEPTION policy and Computer
+  Science master's added. Dates are route-specific, so no generalized formal
+  window is recorded.

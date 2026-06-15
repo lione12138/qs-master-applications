@@ -107,9 +107,22 @@ def monitor_application_sources(
                 excerpt,
                 target_dates,
             ):
-                if evidence_path.exists():
+                context_excerpt = "\n".join(
+                    value
+                    for value in (
+                        context["matchedTextBefore"],
+                        context["matchedText"],
+                        context["matchedTextAfter"],
+                    )
+                    if value
+                )
+                if evidence_matches_target_dates(context_excerpt, target_dates):
+                    excerpt = context_excerpt
+                    context["excerpt"] = context_excerpt
+                elif evidence_path.exists():
                     continue
-                excerpt = ""
+                else:
+                    excerpt = ""
             write_json(
                 evidence_path,
                 {

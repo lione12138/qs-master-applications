@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import os
 import re
 import shutil
 from pathlib import Path
@@ -28,7 +29,7 @@ PUBLIC_FILES = (
     "intake-filter.js",
     "styles.css",
 )
-SITE_URL = "https://lione12138.github.io/qs-master-applications"
+DEFAULT_SITE_URL = "https://lione12138.github.io/qs-master-applications"
 CLOUDFLARE_ANALYTICS_TOKEN = "02939949076c423f953d11db0caade78"
 CLOUDFLARE_ANALYTICS = (
     '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
@@ -49,7 +50,12 @@ PUBLIC_DATA = (
 )
 
 
+def site_url() -> str:
+    return os.environ.get("GRADWINDOW_SITE_URL", DEFAULT_SITE_URL).rstrip("/")
+
+
 def build_site(output_dir: Path = SITE_DIR) -> Path:
+    public_site_url = site_url()
     output_dir.mkdir(parents=True, exist_ok=True)
     for child in output_dir.iterdir():
         if child.is_dir():
@@ -59,6 +65,14 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
 
     for filename in PUBLIC_FILES:
         shutil.copy2(ROOT / filename, output_dir / filename)
+    index_path = output_dir / "index.html"
+    index_path.write_text(
+        index_path.read_text(encoding="utf-8").replace(
+            f"{DEFAULT_SITE_URL}/",
+            f"{public_site_url}/",
+        ),
+        encoding="utf-8",
+    )
     data_dir = output_dir / "data"
     data_dir.mkdir()
     for source in PUBLIC_DATA:
@@ -68,13 +82,17 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
     (output_dir / "sources.html").write_text(
         render_sources_page(), encoding="utf-8"
     )
-    generated_urls = generate_index_pages(output_dir)
-    sitemap_urls = [SITE_URL, f"{SITE_URL}/sources.html", *generated_urls]
+    generated_urls = generate_index_pages(output_dir, public_site_url)
+    sitemap_urls = [
+        public_site_url,
+        f"{public_site_url}/sources.html",
+        *generated_urls,
+    ]
     (output_dir / "sitemap.xml").write_text(
         render_sitemap(sitemap_urls), encoding="utf-8"
     )
     (output_dir / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n",
+        f"User-agent: *\nAllow: /\nSitemap: {public_site_url}/sitemap.xml\n",
         encoding="utf-8",
     )
     return output_dir / "index.html"
@@ -85,7 +103,7 @@ def slugify(value: str) -> str:
     return slug or "other"
 
 
-def generate_index_pages(output_dir: Path) -> list[str]:
+def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
     universities = read_json(UNIVERSITIES_PATH)["universities"]
     applications = read_json(APPLICATIONS_PATH)["applications"]
     predictions = read_json(PREDICTIONS_PATH)["predictions"]
@@ -109,7 +127,7 @@ def generate_index_pages(output_dir: Path) -> list[str]:
             for item in predictions
             if item["universityId"] == university["id"]
         ]
-        canonical = f"{SITE_URL}/university/{university['id']}/"
+        canonical = f"{public_site_url}/university/{university['id']}/"
         body = (
             f"<p class=\"back\"><a href=\"../../index.html\">返回申请看板</a></p>"
             f"<p>QS {html.escape(university['rankDisplay'])} · "
@@ -165,7 +183,7 @@ def generate_index_pages(output_dir: Path) -> list[str]:
             f"{html.escape(item['school'])}</a></li>"
             for item in sorted(items, key=lambda value: value["qsPosition"])
         )
-        canonical = f"{SITE_URL}/country/{country_slug}/"
+        canonical = f"{public_site_url}/country/{country_slug}/"
         body = (
             '<p class="back"><a href="../../index.html">返回申请看板</a></p>'
             f"<p>共 {len(items)} 所 QS 前 200 大学。</p><ul>{rows}</ul>"
@@ -200,7 +218,7 @@ def generate_index_pages(output_dir: Path) -> list[str]:
                 items, key=lambda pair: (pair[0]["closesAt"], pair[0]["universityId"])
             )
         )
-        canonical = f"{SITE_URL}/deadline/{month}/"
+        canonical = f"{public_site_url}/deadline/{month}/"
         body = (
             '<p class="back"><a href="../../index.html">返回申请看板</a></p>'
             f"<ul>{rows}</ul>"
