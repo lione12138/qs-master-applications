@@ -1041,6 +1041,81 @@
         "opensText": "Use Mon Master calendar or programme-specific INCEPTION dates",
         "notes": "The official page states that INCEPTION opening dates are specific to each programme and shown in each programme's application section."
       }
+    },
+    {
+      "universityId": "university-of-illinois-at-urbana-champaign",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "The Siebel School publishes recurring degree-specific graduate deadlines. The page does not attach an application opening date or cycle year to the Computer Science MS deadline.",
+      "sourceUrl": "https://siebelschool.illinois.edu/admissions/graduate/application-deadlines",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall",
+        "status": "deadline-without-cycle-year",
+        "opensText": "Computer Science MS deadline: 1 December",
+        "notes": "The Computer Science MS is fall-only with a recurring 1 December deadline at 11:59 p.m. U.S. Central Time. No exact opening date is published."
+      }
+    },
+    {
+      "universityId": "lund-university",
+      "model": "centralised-national",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Lund's international master's programmes use Sweden's central University Admissions system. The selected programme page identifies the intake and whether applications are open but does not retain the completed opening and closing date pair.",
+      "sourceUrl": "https://www.lunduniversity.lu.se/lubas/i-uoh-lu-TAMSR",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "closed-dates-not-retained",
+        "opensText": "Closed for applications",
+        "notes": "The Machine Learning, Systems and Control programme starts on 31 August 2026 and is marked closed. Exact application dates are not displayed on the current programme page."
+      }
+    },
+    {
+      "universityId": "sorbonne-university-merged-from-paris-iv-and-upmc",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Sorbonne Computer Science master's applications are routed through Mon Master, Campus France, or eCandidat depending on nationality, residence, and target year.",
+      "sourceUrl": "https://sciences.sorbonne-universite.fr/formation-sciences/offre-de-formation/masters/master-informatique",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Next academic year",
+        "status": "route-specific-month-range",
+        "opensText": "Campus France applications: October to December",
+        "notes": "The page gives only a month range for Campus France applicants and directs other applicants to Mon Master or eCandidat, so no general exact window is recorded."
+      }
+    },
+    {
+      "universityId": "the-university-of-warwick",
+      "model": "mixed",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Warwick taught postgraduate applications use central guidance with course-level exceptions. The Computer Science MSc page states that 2026 applications are open and gives an on-time deadline but no exact opening day.",
+      "sourceUrl": "https://warwick.ac.uk/study/postgraduate/courses/msc-computer-science/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-date-not-exact",
+        "opensText": "Open now; on-time deadline 2 August 2026",
+        "notes": "Late applications may still be accepted, but Warwick cannot guarantee timely processing. The page does not state the exact date applications opened."
+      }
+    },
+    {
+      "universityId": "trinity-college-dublin-the-university-of-dublin",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Trinity publishes course-specific postgraduate closing dates and direct application links. The selected Data Science MSc page does not state an opening date.",
+      "sourceUrl": "https://www.tcd.ie/courses/postgraduate/courses/computer-science---data-science--mscpgraddip/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only",
+        "opensText": "Closing date 30 January 2026",
+        "notes": "The programme page lists a 30 January 2026 closing date for the one-year full-time MSc but no exact application opening date."
+      }
     }
   ]
 }

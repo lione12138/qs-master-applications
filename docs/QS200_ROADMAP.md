@@ -151,3 +151,21 @@ five institutions while preserving the same completion rules:
 - Université Paris-Saclay — mixed Mon Master/INCEPTION policy and Computer
   Science master's added. Dates are route-specific, so no generalized formal
   window is recorded.
+
+## QS positions 71–75
+
+- University of Illinois Urbana-Champaign — Siebel School graduate policy and
+  Computer Science MS added. The school publishes a recurring 1 December
+  deadline without a cycle year or exact opening date.
+- Lund University — centralised Swedish admissions policy and Machine
+  Learning, Systems and Control MSc added. The Autumn 2026 programme is marked
+  closed, but the completed date pair is no longer displayed.
+- Sorbonne University — route-specific Computer Science master's policy added.
+  Applicants use Mon Master, Campus France, or eCandidat depending on status;
+  the official page only gives an October-to-December month range for Campus
+  France applicants.
+- University of Warwick — Computer Science MSc policy added. September 2026
+  applications are open with an on-time deadline of 2 August 2026, but the
+  exact opening date is not published.
+- Trinity College Dublin — Computer Science - Data Science MSc policy added
+  with its 30 January 2026 closing date. No exact opening date is stated.

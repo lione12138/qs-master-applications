@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T16:25:33.513391+00:00",
+    "generatedAt": "2026-06-15T16:47:31.932367+00:00",
     "rankingScope": "QS World University Rankings 2026 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
   },
   "summary": {
     "targetUniversities": 200,
-    "entriesLocated": 126,
-    "curatedEntries": 71,
-    "policiesVerified": 70,
-    "cycleGuidanceAvailable": 68,
-    "broadMastersAvailability": 69,
+    "entriesLocated": 128,
+    "curatedEntries": 76,
+    "policiesVerified": 75,
+    "cycleGuidanceAvailable": 73,
+    "broadMastersAvailability": 74,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 63,
+    "universitiesWithPrograms": 68,
     "universitiesWithWindows": 21,
     "verifiedWindows": 27,
     "universitiesWithPredictions": 21,
     "predictedWindows": 27,
     "nextActions": {
-      "locate-official-entry": 74,
-      "verify-window-policy": 56,
+      "locate-official-entry": 72,
+      "verify-window-policy": 53,
       "select-target-programmes": 7,
-      "verify-exact-windows": 42,
+      "verify-exact-windows": 47,
       "monitor-and-refresh": 21
     }
   },
@@ -216,9 +216,9 @@
         75
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -2227,16 +2227,21 @@
       "school": "University of Illinois at Urbana-Champaign",
       "country": "United States of America",
       "batch": 15,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall",
+        "status": "deadline-without-cycle-year",
+        "opensText": "Computer Science MS deadline: 1 December",
+        "notes": "The Computer Science MS is fall-only with a recurring 1 December deadline at 11:59 p.m. U.S. Central Time. No exact opening date is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "lund-university",
@@ -2246,16 +2251,21 @@
       "school": "Lund University",
       "country": "Sweden",
       "batch": 15,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "centralised-national",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "closed-dates-not-retained",
+        "opensText": "Closed for applications",
+        "notes": "The Machine Learning, Systems and Control programme starts on 31 August 2026 and is marked closed. Exact application dates are not displayed on the current programme page."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "sorbonne-university-merged-from-paris-iv-and-upmc",
@@ -2265,16 +2275,21 @@
       "school": "Sorbonne University (merged from Paris IV & UPMC)",
       "country": "France",
       "batch": 15,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Next academic year",
+        "status": "route-specific-month-range",
+        "opensText": "Campus France applications: October to December",
+        "notes": "The page gives only a month range for Campus France applicants and directs other applicants to Mon Master or eCandidat, so no general exact window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "the-university-of-warwick",
@@ -2284,16 +2299,21 @@
       "school": "The University of Warwick",
       "country": "United Kingdom",
       "batch": 15,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-date-not-exact",
+        "opensText": "Open now; on-time deadline 2 August 2026",
+        "notes": "Late applications may still be accepted, but Warwick cannot guarantee timely processing. The page does not state the exact date applications opened."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "trinity-college-dublin-the-university-of-dublin",
@@ -2303,16 +2323,21 @@
       "school": "Trinity College Dublin, The University of Dublin",
       "country": "Ireland",
       "batch": 15,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only",
+        "opensText": "Closing date 30 January 2026",
+        "notes": "The programme page lists a 30 January 2026 closing date for the one-year full-time MSc but no exact application opening date."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-birmingham",
