@@ -54,6 +54,8 @@ jobs:
             data/evidence/
             data/coverage.json
             data/ops/
+            README.md
+            README.zh-CN.md
 
       - name: Run tests on the data review branch
         if: steps.data-pr.outputs.pull-request-number

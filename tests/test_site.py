@@ -10,6 +10,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert index.exists()
     assert (tmp_path / "app.js").exists()
     assert (tmp_path / "status.js").exists()
+    assert (tmp_path / "intake-filter.js").exists()
     assert (tmp_path / "styles.css").exists()
     assert (tmp_path / ".nojekyll").exists()
     assert (tmp_path / "sources.html").exists()
@@ -51,7 +52,11 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "来源与覆盖" in (tmp_path / "sources.html").read_text(encoding="utf-8")
     index_html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert 'data-status="predicted"' not in index_html
-    assert "明确标为非官方" in index_html
+    assert 'id="language-toggle"' in index_html
+    assert 'id="theme-toggle"' in index_html
+    assert 'id="top100-toggle"' in index_html
+    assert 'id="coverage-batches"' not in index_html
+    assert 'lang="en"' in index_html
     assert "university-of-cambridge" in (
         tmp_path / "sitemap.xml"
     ).read_text(encoding="utf-8")

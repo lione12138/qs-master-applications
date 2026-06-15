@@ -16,6 +16,7 @@ from .source_monitor import monitor_application_sources
 from .site import build_site
 from .validation import validate_data
 from .review import generate_review_outputs
+from .readme import generate_readmes
 from .schemas import export_schemas
 
 
@@ -50,6 +51,7 @@ def main() -> None:
     subparsers.add_parser(
         "export-schemas", help="Export Pydantic contracts as JSON Schema"
     )
+    subparsers.add_parser("readme", help="Generate English and Chinese result dashboards")
     approve = subparsers.add_parser(
         "approve-window", help="Promote a reviewed exact-window candidate"
     )
@@ -91,10 +93,14 @@ def main() -> None:
     elif args.command == "export-schemas":
         written = export_schemas()
         print(f"Wrote {len(written)} JSON Schema files.")
+    elif args.command == "readme":
+        written = generate_readmes()
+        print(f"Wrote README dashboards: {written[0].name}, {written[1].name}.")
     elif args.command == "approve-window":
         record = approve_window(args.candidate_id, args.reviewer)
         generate_predictions()
         coverage = generate_coverage()
+        generate_readmes()
         print(
             f"Approved {record['id']}; "
             f"{coverage['summary']['verifiedWindows']} verified windows tracked."
@@ -113,6 +119,7 @@ def main() -> None:
         generate_predictions()
         _validate_or_exit()
         coverage = generate_coverage()
+        generate_readmes()
         print(
             "Top-200 coverage: "
             f"{coverage['summary']['policiesVerified']}/200 policies, "

@@ -1,45 +1,50 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="按 QS 排名追踪全球大学硕士申请开放与截止时间。"
+      content="Track master's application opening dates and deadlines across QS Top 200 universities."
     />
     <link
       rel="canonical"
       href="https://lione12138.github.io/qs-master-applications/"
     />
-    <meta property="og:title" content="GradWindow · QS 200 硕士申请时间表" />
+    <meta property="og:title" content="GradWindow · QS Top 200 Master's Applications" />
     <meta
       property="og:description"
-      content="按 QS 排名追踪全球大学硕士申请开放与截止时间。"
+      content="Track master's application opening dates and deadlines across QS Top 200 universities."
     />
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
       content="https://lione12138.github.io/qs-master-applications/"
     />
-    <title>GradWindow · QS 200 硕士申请时间表</title>
+    <title>GradWindow · QS Top 200 Master's Applications</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="#" aria-label="GradWindow 首页">
+        <a class="brand" href="#" aria-label="GradWindow home">
           <span class="brand-mark">G</span>
           <span>GradWindow</span>
         </a>
-        <nav class="header-nav" aria-label="主导航">
-          <a href="#application-board">申请日历</a>
-          <a href="#methodology">数据说明</a>
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="#application-board" data-i18n="navTracker">Application tracker</a>
+          <a href="#methodology" data-i18n="navMethod">Methodology</a>
           <a
             class="github-link"
             href="./sources.html"
+            data-i18n="navSources"
           >
-            来源覆盖
+            Sources
           </a>
+          <div class="header-controls">
+            <button class="header-control" id="language-toggle" type="button" aria-label="Switch language">中文</button>
+            <button class="header-control" id="theme-toggle" type="button" aria-label="Switch color theme">Dark</button>
+          </div>
         </nav>
       </header>
 
@@ -48,19 +53,18 @@
           <div class="hero-copy">
             <div class="eyebrow">
               <span class="live-dot"></span>
-              每日监控全球名校申请窗口
+              <span data-i18n="eyebrow">Daily monitoring of global university application windows</span>
             </div>
-            <h1>别让心仪项目的<br /><em>截止日期</em>悄悄溜走</h1>
-            <p>
-              汇总 QS 前 200 大学硕士申请时间，按开放状态自动整理。
-              找到项目、记住日期、直接申请。
+            <h1 data-i18n-html="heroTitle">Never miss a<br /><em>master's deadline</em></h1>
+            <p data-i18n="heroDescription">
+              Track master's application periods across QS Top 200 universities, organised by current status.
             </p>
             <div class="hero-actions">
               <a class="primary-button" href="#application-board">
-                浏览申请窗口
+                <span data-i18n="browseWindows">Browse application windows</span>
                 <span aria-hidden="true">↓</span>
               </a>
-              <span class="update-note" id="updated-at">正在读取数据…</span>
+              <span class="update-note" id="updated-at" data-i18n="loadingData">Loading data…</span>
             </div>
           </div>
 
@@ -86,38 +90,38 @@
           </div>
         </section>
 
-        <section class="trust-strip" aria-label="产品特点">
-          <div><span>01</span> 官网来源</div>
-          <div><span>02</span> 每日检查</div>
-          <div><span>03</span> 一键加日历</div>
-          <div><span>04</span> QS 排名排序</div>
+        <section class="trust-strip" aria-label="Product features">
+          <div><span>01</span> <span data-i18n="featureOfficial">Official sources</span></div>
+          <div><span>02</span> <span data-i18n="featureDaily">Daily checks</span></div>
+          <div><span>03</span> <span data-i18n="featureCalendar">Add to calendar</span></div>
+          <div><span>04</span> <span data-i18n="featureRanked">QS-ranked</span></div>
         </section>
 
         <section class="board-section" id="application-board">
           <div class="section-heading">
             <div>
               <span class="section-kicker">APPLICATION TRACKER</span>
-              <h2>硕士申请窗口</h2>
+              <h2 data-i18n="trackerTitle">Master's application windows</h2>
             </div>
             <div class="summary-stats" aria-label="申请统计">
               <div>
                 <strong id="total-schools">0</strong>
-                <span>所大学</span>
+                <span data-i18n="universities">universities</span>
               </div>
               <div>
                 <strong id="total-records">0</strong>
-                <span>个官网窗口</span>
+                <span data-i18n="officialWindows">official windows</span>
               </div>
               <div>
                 <strong id="total-predictions">0</strong>
-                <span>个预测窗口</span>
+                <span data-i18n="estimatedWindows">estimated windows</span>
               </div>
             </div>
           </div>
 
           <div class="demo-banner" id="demo-banner" hidden>
-            <strong>正式数据规则</strong>
-            官网日期与历史参考严格分层；参考日期只是把最近一个已核验周期的同一日历日期平移一年，不是对学校真实日期的预测，不计入正式窗口，并会在新周期官网日期发布后自动替换。
+            <strong data-i18n="dataRules">Data policy</strong>
+            <span data-i18n="dataRulesText">Official dates and historical estimates are kept separate. Estimates shift the most recent verified cycle by one calendar year and never count as official windows.</span>
             <span id="monitor-summary"></span>
           </div>
 
@@ -125,37 +129,36 @@
             <div class="coverage-heading">
               <div>
                 <span class="section-kicker">QS TOP 200 DATA COVERAGE</span>
-                <h3>前200 数据建设进度</h3>
+                <h3 data-i18n="coverageTitle">QS Top 200 data coverage</h3>
               </div>
-              <p>入口、规则与精确日期分开统计，不用学校链接数量冒充日期覆盖率。</p>
+              <p data-i18n="coverageDescription">Admissions links, policies, programmes, and exact windows are measured separately.</p>
             </div>
             <div class="coverage-metrics">
               <div>
                 <strong id="coverage-entries">0/200</strong>
-                <span>已定位官方入口</span>
+                <span data-i18n="coverageEntries">official entries located</span>
               </div>
               <div>
                 <strong id="coverage-policies">0/200</strong>
-                <span>已核验日期规则</span>
+                <span data-i18n="coveragePolicies">date policies verified</span>
               </div>
               <div>
                 <strong id="coverage-programs">0/200</strong>
-                <span>已有代表项目</span>
+                <span data-i18n="coveragePrograms">with representative programmes</span>
               </div>
               <div>
                 <strong id="coverage-windows">0/200</strong>
-                <span>已有精确窗口</span>
+                <span data-i18n="coverageWindows">with exact windows</span>
               </div>
               <div>
                 <strong id="coverage-records">0</strong>
-                <span>正式日期记录</span>
+                <span data-i18n="coverageRecords">official date records</span>
               </div>
               <div>
                 <strong id="coverage-predictions">0</strong>
-                <span>历史周期预测</span>
+                <span data-i18n="coveragePredictions">historical estimates</span>
               </div>
             </div>
-            <div class="coverage-batches" id="coverage-batches"></div>
           </section>
 
           <div class="toolbar">
@@ -164,85 +167,86 @@
               <input
                 id="search-input"
                 type="search"
-                placeholder="搜索大学、项目或国家/地区"
+                placeholder="Search university, programme, or country"
+                data-i18n-placeholder="searchPlaceholder"
               />
             </label>
             <label class="select-wrap">
               <span class="sr-only">地区</span>
               <select id="region-filter">
-                <option value="all">所有地区</option>
+                <option value="all" data-i18n="allRegions">All regions</option>
               </select>
             </label>
             <label class="select-wrap">
               <span class="sr-only">入学季</span>
               <select id="intake-filter">
-                <option value="all">所有入学季</option>
+                <option value="all" data-i18n="allIntakes">All intakes</option>
               </select>
             </label>
             <button class="toolbar-button" id="favorites-toggle" type="button">
-              仅看收藏 <span id="favorite-count">0</span>
+              <span data-i18n="favoritesOnly">Favourites only</span> <span id="favorite-count">0</span>
             </button>
-            <button class="toolbar-button" id="top30-toggle" type="button">
-              仅看 QS 前30
+            <button class="toolbar-button" id="top100-toggle" type="button">
+              <span data-i18n="top100Only">QS Top 100 only</span>
             </button>
             <button class="toolbar-button" id="export-favorites" type="button">
-              导出收藏截止日
+              <span data-i18n="exportFavorites">Export favourite deadlines</span>
             </button>
           </div>
 
           <div class="status-tabs" role="tablist" aria-label="申请状态">
             <button class="status-tab active" data-status="all" role="tab">
-              全部 <span id="count-all">0</span>
+              <span data-i18n="statusAll">All</span> <span id="count-all">0</span>
             </button>
             <button class="status-tab" data-status="open" role="tab">
-              正在开放 <span id="count-open">0</span>
+              <span data-i18n="statusOpen">Open now</span> <span id="count-open">0</span>
             </button>
             <button class="status-tab" data-status="upcoming" role="tab">
-              即将开放 <span id="count-upcoming">0</span>
+              <span data-i18n="statusUpcoming">Opening soon</span> <span id="count-upcoming">0</span>
             </button>
             <button class="status-tab" data-status="future" role="tab">
-              未来开放 <span id="count-future">0</span>
+              <span data-i18n="statusFuture">Future</span> <span id="count-future">0</span>
             </button>
             <button class="status-tab" data-status="closed" role="tab">
-              已截止 <span id="count-closed">0</span>
+              <span data-i18n="statusClosed">Closed</span> <span id="count-closed">0</span>
             </button>
             <button class="status-tab" data-status="unknown" role="tab">
-              学校目录 <span id="count-unknown">0</span>
+              <span data-i18n="statusDirectory">University directory</span> <span id="count-unknown">0</span>
             </button>
           </div>
 
           <div id="application-groups" class="application-groups"></div>
           <div id="empty-state" class="empty-state" hidden>
-            <strong>没有匹配的申请窗口</strong>
-            <span>调整搜索词或筛选条件后再试。</span>
+            <strong data-i18n="emptyTitle">No matching application windows</strong>
+            <span data-i18n="emptyText">Adjust your search or filters and try again.</span>
           </div>
         </section>
 
         <section class="methodology" id="methodology">
           <div>
             <span class="section-kicker">HOW IT WORKS</span>
-            <h2>日期来自哪里？</h2>
+            <h2 data-i18n="methodTitle">Where do the dates come from?</h2>
           </div>
           <div class="method-grid">
             <article>
               <span>1</span>
-              <h3>锁定官网页面</h3>
-              <p>每条记录绑定学校、院系或项目的官方申请页面，而不是二手聚合信息。</p>
+              <h3 data-i18n="method1Title">Locate official pages</h3>
+              <p data-i18n="method1Text">Each record links to an official university, faculty, or programme admissions page.</p>
             </article>
             <article>
               <span>2</span>
-              <h3>每日差异检查</h3>
-              <p>自动任务检查页面变化；同一变化连续出现两次后进入人工审核队列。</p>
+              <h3 data-i18n="method2Title">Check changes daily</h3>
+              <p data-i18n="method2Text">Automated monitoring flags repeated page changes for human review.</p>
             </article>
             <article>
               <span>3</span>
-              <h3>生成周期预测</h3>
-              <p>下一周期尚无精确日期时，将最近一个官网周期平移一年并明确标为非官方。</p>
+              <h3 data-i18n="method3Title">Generate cycle estimates</h3>
+              <p data-i18n="method3Text">When the next cycle is unpublished, the latest verified dates are shifted by one year and marked unofficial.</p>
             </article>
             <article>
               <span>4</span>
-              <h3>官网自动替换</h3>
-              <p>新周期日期通过核验后，正式记录替代对应预测，预测从不进入正式统计。</p>
+              <h3 data-i18n="method4Title">Replace with official dates</h3>
+              <p data-i18n="method4Text">Verified new-cycle dates replace matching estimates automatically.</p>
             </article>
           </div>
         </section>
@@ -253,7 +257,7 @@
           <span class="brand-mark">G</span>
           <span>GradWindow</span>
         </div>
-        <p>申请日期可能随项目和申请人类别变化，请始终以学校官网为准。</p>
+        <p data-i18n="footerText">Application dates may vary by programme and applicant category. Always confirm on the official university website.</p>
       </footer>
     </div>
 
