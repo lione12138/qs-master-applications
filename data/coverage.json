@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T09:55:25.309721+00:00",
+    "generatedAt": "2026-06-15T10:10:19.581465+00:00",
     "rankingScope": "QS World University Rankings 2026 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
   },
   "summary": {
     "targetUniversities": 200,
-    "entriesLocated": 124,
-    "curatedEntries": 62,
-    "policiesVerified": 60,
-    "cycleGuidanceAvailable": 58,
-    "broadMastersAvailability": 59,
+    "entriesLocated": 126,
+    "curatedEntries": 66,
+    "policiesVerified": 65,
+    "cycleGuidanceAvailable": 63,
+    "broadMastersAvailability": 64,
     "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 53,
-    "universitiesWithWindows": 17,
-    "verifiedWindows": 22,
-    "universitiesWithPredictions": 17,
-    "predictedWindows": 22,
+    "universitiesWithPrograms": 58,
+    "universitiesWithWindows": 19,
+    "verifiedWindows": 25,
+    "universitiesWithPredictions": 19,
+    "predictedWindows": 25,
     "nextActions": {
-      "locate-official-entry": 76,
-      "verify-window-policy": 64,
+      "locate-official-entry": 74,
+      "verify-window-policy": 61,
       "select-target-programmes": 7,
-      "verify-exact-windows": 36,
-      "monitor-and-refresh": 17
+      "verify-exact-windows": 39,
+      "monitor-and-refresh": 19
     }
   },
   "batches": [
@@ -190,11 +190,11 @@
         65
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 2,
+      "predictedWindows": 3
     },
     {
       "batch": 14,
@@ -1987,16 +1987,21 @@
       "school": "Korea University",
       "country": "Republic of Korea",
       "batch": 13,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "3-13 March 2026",
+        "notes": "Online applications closed on 13 March, while supporting documents were accepted until 17 March 2026."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "duke-university",
@@ -2008,14 +2013,19 @@
       "batch": 13,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "open-month-only",
+        "opensText": "Applications will open in August 2026",
+        "notes": "The Computer Science MS deadline is 2 February, but Duke has not published the exact August opening day for the 2027 cycle."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "city-university-of-hong-kong",
@@ -2025,16 +2035,21 @@
       "school": "City University of Hong Kong",
       "country": "Hong Kong SAR, China",
       "batch": 13,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "not-yet-verified",
+        "opensText": "Exact next-cycle dates not verified",
+        "notes": "Keep the programme page under monitoring and use a targeted alternate runner if the cloud-IP challenge persists."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "national-taiwan-university-ntu",
@@ -2044,16 +2059,21 @@
       "school": "National Taiwan University (NTU)",
       "country": "Taiwan",
       "batch": 13,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "mixed",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "closed",
+        "opensText": "1 October-13 November 2025 and 1 December 2025-15 January 2026",
+        "notes": "The international admissions page publishes two complete September-entry rounds."
+      },
+      "programmeCount": 1,
+      "windowCount": 2,
+      "predictionCount": 2,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "the-university-of-auckland",
@@ -2063,16 +2083,21 @@
       "school": "The University of Auckland",
       "country": "New Zealand",
       "batch": 13,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "deadline-only",
+        "opensText": "Exact opening day not stated",
+        "notes": "The Master of Data Science page lists 8 December 2025 for Semester One 2026 and 8 June 2026 for Semester Two 2026."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-california-san-diego-ucsd",

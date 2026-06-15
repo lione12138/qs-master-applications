@@ -12,14 +12,14 @@ def test_current_public_data_is_valid() -> None:
     errors, summary = validate_data(UNIVERSITIES_PATH, APPLICATIONS_PATH)
     assert errors == []
     assert summary["universities"] == 200
-    assert summary["curatedAdmissions"] >= 60
-    assert summary["windowPolicies"] >= 60
-    assert summary["programs"] >= 58
-    assert summary["programmeGroups"] >= 54
+    assert summary["curatedAdmissions"] >= 65
+    assert summary["windowPolicies"] >= 65
+    assert summary["programs"] >= 63
+    assert summary["programmeGroups"] >= 59
     assert summary["applicantCategories"] >= 8
-    assert summary["verifiedWindows"] >= 22
-    assert summary["predictedWindows"] >= 22
-    assert summary["evidenceSnapshots"] >= 22
+    assert summary["verifiedWindows"] >= 25
+    assert summary["predictedWindows"] >= 25
+    assert summary["evidenceSnapshots"] >= 25
 
 
 def test_http_url_validation() -> None:

@@ -891,6 +891,81 @@
         "opensText": "Use the official application-window tool",
         "notes": "The tool confirms that academic year 2026/27 starts on 16 September 2026, but a single deadline cannot be generalized across nationalities and programmes."
       }
+    },
+    {
+      "universityId": "korea-university",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Korea University's Graduate School publishes a central semester schedule and separate programme eligibility or language requirements.",
+      "sourceUrl": "https://graduate2.korea.ac.kr/admission/schedule.html",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "3-13 March 2026",
+        "notes": "Online applications closed on 13 March, while supporting documents were accepted until 17 March 2026."
+      }
+    },
+    {
+      "universityId": "duke-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Duke Graduate School programmes publish their own deadlines. Computer Science MS accepts fall applications only.",
+      "sourceUrl": "https://gradschool.duke.edu/academics/programs-degrees/computer-science-ms/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall 2027",
+        "status": "open-month-only",
+        "opensText": "Applications will open in August 2026",
+        "notes": "The Computer Science MS deadline is 2 February, but Duke has not published the exact August opening day for the 2027 cycle."
+      }
+    },
+    {
+      "universityId": "city-university-of-hong-kong",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "CityU taught postgraduate programmes use programme-level pages and deadlines. The official site currently presents an Incapsula challenge to cloud-hosted requests.",
+      "sourceUrl": "https://www.cityu.edu.hk/pg/programme/p60",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "2027",
+        "status": "not-yet-verified",
+        "opensText": "Exact next-cycle dates not verified",
+        "notes": "Keep the programme page under monitoring and use a targeted alternate runner if the cloud-IP challenge persists."
+      }
+    },
+    {
+      "universityId": "national-taiwan-university-ntu",
+      "model": "mixed",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "NTU's Office of International Affairs publishes central international degree application rounds. Departments and graduate institutes add programme requirements.",
+      "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "closed",
+        "opensText": "1 October-13 November 2025 and 1 December 2025-15 January 2026",
+        "notes": "The international admissions page publishes two complete September-entry rounds."
+      }
+    },
+    {
+      "universityId": "the-university-of-auckland",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Auckland publishes closing dates on individual programme pages and may consider late applications if places remain.",
+      "sourceUrl": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/master-of-data-science-mdats.html",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "deadline-only",
+        "opensText": "Exact opening day not stated",
+        "notes": "The Master of Data Science page lists 8 December 2025 for Semester One 2026 and 8 June 2026 for Semester Two 2026."
+      }
     }
   ]
 }

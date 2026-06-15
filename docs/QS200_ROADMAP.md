@@ -117,3 +117,21 @@ five institutions while preserving the same completion rules:
 - KU Leuven — programme-specific policy and Master of Statistics and Data
   Science added. Deadlines depend on nationality and programme in the official
   application-window tool, so no single generalized date is recorded.
+
+## Batch 13 · QS positions 61–65
+
+- Korea University — central Graduate School policy and Computer Science and
+  Engineering master's added with the complete 3–13 March 2026 Fall
+  application period.
+- Duke University — fall-only Computer Science MS policy added. Fall 2027
+  applications will open in August 2026 and close on 2 February, but the exact
+  opening day is not yet published.
+- City University of Hong Kong — programme-level Computer Science MSc policy
+  added. The official programme page currently challenges cloud-hosted
+  requests, so no unverified next-cycle date is recorded.
+- National Taiwan University — central international degree policy and
+  Computer Science and Information Engineering master's added with both
+  complete September 2026 application rounds.
+- University of Auckland — programme-specific Master of Data Science policy
+  added. Semester closing dates are published, but the exact opening date is
+  not stated.

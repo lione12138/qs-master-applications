@@ -220,6 +220,36 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-korea-university-graduate-fall-2026-next-cycle",
+      "basedOnRecordId": "korea-university-graduate-fall-2026",
+      "universityId": "korea-university",
+      "scopeType": "programme-group",
+      "scopeId": "korea-university-general-graduate-admissions",
+      "intake": "Fall 2027",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Online application",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-03-03",
+      "closesAt": "2027-03-13",
+      "applicationUrl": "https://graduate2.korea.ac.kr/admission/guide.html",
+      "sourceUrl": "https://graduate2.korea.ac.kr/admission/schedule.html",
+      "sourceCycle": "Fall 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-kyoto-informatics-masters-april-2027-next-cycle",
       "basedOnRecordId": "kyoto-informatics-masters-april-2027",
       "universityId": "kyoto-university",
@@ -273,6 +303,66 @@
       "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/coursework",
       "sourceCycle": "August 2026",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-ntu-international-september-2026-round-1-next-cycle",
+      "basedOnRecordId": "ntu-international-september-2026-round-1",
+      "universityId": "national-taiwan-university-ntu",
+      "scopeType": "programme-group",
+      "scopeId": "ntu-international-degree-admissions",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International applications round 1",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-10-01",
+      "closesAt": "2026-11-13",
+      "applicationUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign",
+      "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-ntu-international-september-2026-round-2-next-cycle",
+      "basedOnRecordId": "ntu-international-september-2026-round-2",
+      "universityId": "national-taiwan-university-ntu",
+      "scopeType": "programme-group",
+      "scopeId": "ntu-international-degree-admissions",
+      "intake": "September 2027",
+      "intakeDetails": {
+        "label": "September 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International applications round 2",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-12-01",
+      "closesAt": "2027-01-15",
+      "applicationUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign",
+      "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+      "sourceCycle": "September 2026",
+      "basedOnVerifiedAt": "2026-06-15",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,

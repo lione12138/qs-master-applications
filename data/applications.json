@@ -536,6 +536,78 @@
         "term": "fall",
         "startMonth": 10
       }
+    },
+    {
+      "id": "korea-university-graduate-fall-2026",
+      "universityId": "korea-university",
+      "scopeType": "programme-group",
+      "scopeId": "korea-university-general-graduate-admissions",
+      "intake": "Fall 2026",
+      "round": "Online application",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-03-03",
+      "closesAt": "2026-03-13",
+      "applicationUrl": "https://graduate2.korea.ac.kr/admission/guide.html",
+      "sourceUrl": "https://graduate2.korea.ac.kr/admission/schedule.html",
+      "verifiedAt": "2026-06-15",
+      "evidence": "Korea University Graduate School's official Fall 2026 schedule states that online applications ran from 10:00 on 3 March to 17:00 on 13 March 2026.",
+      "intakeDetails": {
+        "label": "Fall 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ntu-international-september-2026-round-1",
+      "universityId": "national-taiwan-university-ntu",
+      "scopeType": "programme-group",
+      "scopeId": "ntu-international-degree-admissions",
+      "intake": "September 2026",
+      "round": "International applications round 1",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2025-10-01",
+      "closesAt": "2025-11-13",
+      "applicationUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign",
+      "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "NTU's official international degree admissions page states that the first September 2026 round ran from 11:00 on 1 October to 16:00 on 13 November 2025.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ntu-international-september-2026-round-2",
+      "universityId": "national-taiwan-university-ntu",
+      "scopeType": "programme-group",
+      "scopeId": "ntu-international-degree-admissions",
+      "intake": "September 2026",
+      "round": "International applications round 2",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2025-12-01",
+      "closesAt": "2026-01-15",
+      "applicationUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign",
+      "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+      "verifiedAt": "2026-06-15",
+      "evidence": "NTU's official international degree admissions page states that the second September 2026 round ran from 11:00 on 1 December 2025 to 16:00 on 15 January 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
     }
   ]
 }
