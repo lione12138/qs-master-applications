@@ -1,5 +1,9 @@
 # Data provenance
 
+GradWindow's original curation and annotations are licensed separately from
+the software. See [`DATA_LICENSE.md`](../DATA_LICENSE.md) for the applicable
+terms, attribution requirements, and third-party exclusions.
+
 ## Ranking
 
 - Edition: QS World University Rankings 2026

@@ -59,6 +59,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="top100-toggle"' in index_html
     assert 'id="coverage-batches"' not in index_html
     assert 'lang="en"' in index_html
+    assert "Source code" in index_html
+    assert "AGPL-3.0" in index_html
+    assert "Data: CC BY-NC 4.0" in index_html
     assert index_html.count(ANALYTICS_BEACON) == 1
     assert (tmp_path / "sources.html").read_text(
         encoding="utf-8"

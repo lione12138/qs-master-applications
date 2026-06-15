@@ -5,6 +5,8 @@
 
 [中文](README.zh-CN.md) · [Live website](https://lione12138.github.io/qs-master-applications/)
 
+**Licensing:** [Code](LICENSE) and [data](DATA_LICENSE.md) are licensed separately. Reuse of the curated admissions dataset requires attribution to GradWindow and is limited to noncommercial use under CC BY-NC 4.0. Official university pages remain the authoritative source.
+
 A QS Top 200 master's application tracker using official university sources. The tables below show only applications that are open now or scheduled to open within 30 days.
 
 Status date: **2026-06-15**

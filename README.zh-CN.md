@@ -5,6 +5,8 @@
 
 [English](README.md) · [Live website](https://lione12138.github.io/qs-master-applications/)
 
+**许可说明：**[代码](LICENSE)与[数据](DATA_LICENSE.md)采用不同许可证。复用 GradWindow 整理的申请数据集必须署名，并仅限 CC BY-NC 4.0 允许的非商业用途。大学官网始终是权威信息来源。
+
 基于大学官网数据的 QS 前 200 硕士申请追踪项目。下面只展示当前正在开放，以及未来 30 天内即将开放的申请窗口。
 
 状态日期：**2026-06-15**

@@ -195,6 +195,13 @@ def _render_readme(
 ) -> str:
     if language == "en":
         language_link = "[中文](README.zh-CN.md)"
+        license_notice = (
+            "**Licensing:** [Code](LICENSE) and [data](DATA_LICENSE.md) are "
+            "licensed separately. Reuse of the curated admissions dataset "
+            "requires attribution to GradWindow and is limited to "
+            "noncommercial use under CC BY-NC 4.0. Official university "
+            "pages remain the authoritative source."
+        )
         intro = (
             "A QS Top 200 master's application tracker using official "
             "university sources. The tables below show only applications "
@@ -210,6 +217,11 @@ def _render_readme(
         updated = f"Status date: **{today.isoformat()}**"
     else:
         language_link = "[English](README.md)"
+        license_notice = (
+            "**许可说明：**[代码](LICENSE)与[数据](DATA_LICENSE.md)采用不同"
+            "许可证。复用 GradWindow 整理的申请数据集必须署名，并仅限 "
+            "CC BY-NC 4.0 允许的非商业用途。大学官网始终是权威信息来源。"
+        )
         intro = (
             "基于大学官网数据的 QS 前 200 硕士申请追踪项目。下面只展示"
             "当前正在开放，以及未来 30 天内即将开放的申请窗口。"
@@ -228,6 +240,8 @@ def _render_readme(
 [![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)]({SITE_URL})
 
 {language_link} · [Live website]({SITE_URL})
+
+{license_notice}
 
 {intro}
 

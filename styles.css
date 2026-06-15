@@ -1004,6 +1004,19 @@ footer p {
   font-size: 11px;
 }
 
+.footer-copy {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.footer-legal {
+  font-size: 0.82rem;
+}
+
+.footer-legal a {
+  color: inherit;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
