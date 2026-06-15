@@ -4,6 +4,8 @@ import json
 
 from gradwindow.site import build_site
 
+ANALYTICS_BEACON = "https://static.cloudflareinsights.com/beacon.min.js"
+
 
 def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     index = build_site(tmp_path)
@@ -57,6 +59,22 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="top100-toggle"' in index_html
     assert 'id="coverage-batches"' not in index_html
     assert 'lang="en"' in index_html
+    assert index_html.count(ANALYTICS_BEACON) == 1
+    assert (tmp_path / "sources.html").read_text(
+        encoding="utf-8"
+    ).count(ANALYTICS_BEACON) == 1
+    assert (
+        tmp_path
+        / "university"
+        / "university-of-cambridge"
+        / "index.html"
+    ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
+    assert (
+        tmp_path / "country" / "united-kingdom" / "index.html"
+    ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
+    assert (
+        tmp_path / "deadline" / "2026-02" / "index.html"
+    ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
     assert "university-of-cambridge" in (
         tmp_path / "sitemap.xml"
     ).read_text(encoding="utf-8")

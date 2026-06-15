@@ -29,6 +29,12 @@ PUBLIC_FILES = (
     "styles.css",
 )
 SITE_URL = "https://lione12138.github.io/qs-master-applications"
+CLOUDFLARE_ANALYTICS_TOKEN = "02939949076c423f953d11db0caade78"
+CLOUDFLARE_ANALYTICS = (
+    '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
+    f"data-cf-beacon='{{\"token\":\"{CLOUDFLARE_ANALYTICS_TOKEN}\"}}'>"
+    "</script>"
+)
 PUBLIC_DATA = (
     UNIVERSITIES_PATH,
     APPLICATIONS_PATH,
@@ -283,7 +289,7 @@ def render_static_page(
     .back {{ margin-bottom: 28px; }}
   </style>
 </head>
-<body><main><h1>{escaped_title}</h1>{body}</main></body>
+<body><main><h1>{escaped_title}</h1>{body}</main>{CLOUDFLARE_ANALYTICS}</body>
 </html>
 """
 
@@ -354,6 +360,7 @@ def render_sources_page() -> str:
       </table>
     </div>
   </main>
+  {CLOUDFLARE_ANALYTICS}
 </body>
 </html>
 """
