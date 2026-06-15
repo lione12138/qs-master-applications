@@ -27,6 +27,7 @@ PUBLIC_FILES = (
     "app.js",
     "status.js",
     "intake-filter.js",
+    "localization.js",
     "styles.css",
 )
 DEFAULT_SITE_URL = "https://lione12138.github.io/qs-master-applications"

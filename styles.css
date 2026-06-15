@@ -710,6 +710,7 @@ h1 em::after {
   font-weight: 700;
   letter-spacing: 0.09em;
   text-align: left;
+  white-space: nowrap;
 }
 
 .application-table td {
@@ -762,6 +763,7 @@ h1 em::after {
 .date-primary {
   display: block;
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .date-secondary {
@@ -769,6 +771,13 @@ h1 em::after {
   margin-top: 3px;
   color: var(--muted);
   font-size: 10px;
+}
+
+.application-table th:nth-child(5),
+.application-table th:nth-child(6),
+.application-table td:nth-child(5),
+.application-table td:nth-child(6) {
+  min-width: 140px;
 }
 
 .applicant-category {

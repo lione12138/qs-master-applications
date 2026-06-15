@@ -4,6 +4,13 @@ import {
   compareIntakes,
   intakeLabel,
 } from "./intake-filter.js";
+import {
+  countryLabel,
+  programmeLabel,
+  regionLabel,
+  roundLabel,
+  schoolLabels,
+} from "./localization.js";
 
 const state = {
   data: [],
@@ -254,7 +261,7 @@ function deadlineNote(record, status) {
   if (days === 0) return t("dueToday");
   if (days === 1) return t("dueTomorrow");
   if (days > 1 && days <= 30) return `${days} ${t("daysLeft")}`;
-  return record.intake;
+  return intakeLabel(canonicalIntake(record), state.language);
 }
 
 const APPLICANT_CATEGORY_LABELS = {
@@ -390,14 +397,19 @@ function uniqueSorted(values) {
   return [...new Set(values)].sort((a, b) => a.localeCompare(b, "zh-CN"));
 }
 
-function populateSelect(elementId, values) {
+function populateSelect(elementId, values, labeler = (value) => value) {
   const select = document.getElementById(elementId);
+  const selected = select.value;
+  [...select.options].slice(1).forEach((option) => option.remove());
   values.forEach((value) => {
     const option = document.createElement("option");
     option.value = value;
-    option.textContent = value;
+    option.textContent = labeler(value);
     select.appendChild(option);
   });
+  select.value = [...select.options].some((option) => option.value === selected)
+    ? selected
+    : "all";
 }
 
 function populateIntakeSelect() {
@@ -482,18 +494,24 @@ function createRow(record, status) {
 
   const rank = makeElement("span", { className: "rank-cell", text: `#${record.qsRank}` });
   const school = document.createDocumentFragment();
+  const schoolText = schoolLabels(record, state.language);
   school.appendChild(
-    makeLink(record.school, record.applicationUrl, "school-link"),
+    makeLink(schoolText.primary, record.applicationUrl, "school-link"),
   );
   school.appendChild(
     makeElement("span", {
       className: "school-meta",
-      text: [record.schoolZh, record.country].filter(Boolean).join(" · "),
+      text: [
+        schoolText.secondary,
+        countryLabel(record.country, state.language),
+      ].filter(Boolean).join(" · "),
     }),
   );
+  const intake = intakeLabel(canonicalIntake(record), state.language);
+  const localizedRound = roundLabel(record.round, state.language);
   const programme = makeTextStack(
-    record.program,
-    `${record.intake}${record.round ? ` · ${record.round}` : ""}`,
+    programmeLabel(record.scopeId, record.program, state.language),
+    `${intake}${localizedRound ? ` · ${localizedRound}` : ""}`,
   );
   const source = document.createDocumentFragment();
   const predicted = record.dataStatus === "predicted";
@@ -721,7 +739,11 @@ function createUniversityGroup(universities) {
           ? t("openCandidate")
           : t("openApplication");
       const row = document.createElement("tr");
-      const school = makeTextStack(university.school, university.schoolZh);
+      const schoolText = schoolLabels(university, state.language);
+      const school = makeTextStack(
+        schoolText.primary,
+        schoolText.secondary,
+      );
       const admissions = directUrl
         ? makeLink(directLabel, directUrl, "school-link")
         : makeElement("span", {
@@ -739,7 +761,12 @@ function createUniversityGroup(universities) {
       row.append(
         makeCell(t("rank"), makeElement("span", { className: "rank-cell", text: rankLabel })),
         makeCell(t("university"), school),
-        makeCell(t("countries"), makeElement("span", { text: university.country })),
+        makeCell(
+          t("countries"),
+          makeElement("span", {
+            text: countryLabel(university.country, state.language),
+          }),
+        ),
         makeCell(t("mastersScope"), makeTextStack(mastersPrimary, mastersSecondary)),
         makeCell(t("entryStatus"), makeElement("span", { className: `source-badge ${statusClass}`, text: statusLabel })),
         makeCell(t("latestCheck"), makeElement("span", { className: `source-badge ${monitorClass}`, text: monitorLabel })),
@@ -892,6 +919,13 @@ function updateDataNotes() {
 function refreshLanguage() {
   localStorage.setItem("gradwindow:language", state.language);
   applyStaticTranslations();
+  populateSelect(
+    "region-filter",
+    uniqueSorted(
+      [...state.data, ...state.universities].map((record) => record.region),
+    ),
+    (region) => regionLabel(region, state.language),
+  );
   populateIntakeSelect();
   updateDataNotes();
   renderCoverage();
@@ -908,9 +942,10 @@ function setupHero() {
     .sort((a, b) => a.closesAt.localeCompare(b.closesAt))[0];
   if (!futureDeadline) {
     document.getElementById("hero-deadline-day").textContent = "200";
-    document.getElementById("hero-deadline-month").textContent = "SCHOOLS";
+    document.getElementById("hero-deadline-month").textContent =
+      state.language === "zh" ? "所学校" : "SCHOOLS";
     document.getElementById("hero-deadline-school").textContent =
-      "Official admissions directory";
+      state.language === "zh" ? "官方申请目录" : "Official admissions directory";
     return;
   }
   const parts = shortDateFormatter
@@ -920,7 +955,7 @@ function setupHero() {
   document.getElementById("hero-deadline-month").textContent =
     parts.month.toUpperCase();
   document.getElementById("hero-deadline-school").textContent =
-    futureDeadline.school;
+    schoolLabels(futureDeadline, state.language).primary;
 }
 
 function bindEvents() {
@@ -1118,6 +1153,7 @@ async function init() {
       uniqueSorted(
         [...state.data, ...state.universities].map((record) => record.region),
       ),
+      (region) => regionLabel(region, state.language),
     );
     const legacyIntake = state.intake;
     const matchingLegacyRecord = state.data.find(
