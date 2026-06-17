@@ -28,7 +28,7 @@ const state = {
   search: "",
   region: "all",
   intake: "all",
-  status: "all",
+  status: "open",
   favorites: new Set(),
   favoritesOnly: false,
   top100Only: false,
@@ -702,7 +702,8 @@ function renderCounts(records, universities) {
     counts[getStatus(record)] += 1;
   });
   Object.entries(counts).forEach(([status, count]) => {
-    document.getElementById(`count-${status}`).textContent = count;
+    const node = document.getElementById(`count-${status}`);
+    if (node) node.textContent = count;
   });
   return counts;
 }
@@ -711,16 +712,13 @@ function render() {
   const baseRecords = filteredRecords();
   const baseUniversities = filteredUniversities();
   const counts = renderCounts(baseRecords, baseUniversities);
-  const records =
-    state.status === "all"
-      ? baseRecords
-      : baseRecords.filter((record) => getStatus(record) === state.status);
+  const records = baseRecords.filter((record) => getStatus(record) === state.status);
   const container = document.getElementById("application-groups");
   const emptyState = document.getElementById("empty-state");
   container.replaceChildren();
 
   ["open", "upcoming", "future", "closed"].forEach((status) => {
-    if (state.status !== "all" && state.status !== status) return;
+    if (state.status !== status) return;
     const groupRecords = records
       .filter((record) => getStatus(record) === status)
       .sort((a, b) => a.qsRank - b.qsRank || a.closesAt.localeCompare(b.closesAt));
@@ -728,17 +726,13 @@ function render() {
       container.appendChild(createGroup(status, groupRecords));
     }
   });
-  if (
-    (state.status === "all" || state.status === "unknown") &&
-    baseUniversities.length
-  ) {
+  if (state.status === "unknown" && baseUniversities.length) {
     container.appendChild(createUniversityGroup([...baseUniversities]));
   }
 
   emptyState.hidden =
     records.length > 0 ||
-    ((state.status === "all" || state.status === "unknown") &&
-      baseUniversities.length > 0);
+    (state.status === "unknown" && baseUniversities.length > 0);
   document.getElementById("hero-open-count").textContent = counts.open;
   updateFavoriteControls();
 }
@@ -748,7 +742,7 @@ function syncUrl() {
   if (state.search) params.set("q", state.search);
   if (state.region !== "all") params.set("region", state.region);
   if (state.intake !== "all") params.set("intake", state.intake);
-  if (state.status !== "all") params.set("status", state.status);
+  if (state.status !== "open") params.set("status", state.status);
   if (state.top100Only) params.set("top", "100");
   history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`);
 }
@@ -758,7 +752,7 @@ function loadUrlState() {
   state.search = params.get("q") || "";
   state.region = params.get("region") || "all";
   state.intake = params.get("intake") || "all";
-  state.status = params.get("status") || "all";
+  state.status = params.get("status") || "open";
   state.top100Only = params.get("top") === "100";
 }
 
@@ -790,9 +784,11 @@ function applyStaticTranslations() {
   document.getElementById("language-toggle").textContent =
     state.language === "en" ? "中文" : "EN";
   document.getElementById("theme-toggle").textContent =
-    state.theme === "dark"
-      ? (state.language === "zh" ? "浅色" : "Light")
-      : (state.language === "zh" ? "深色" : "Dark");
+    state.theme === "dark" ? "☀" : "☾";
+  document.getElementById("theme-toggle").setAttribute(
+    "aria-label",
+    state.theme === "dark" ? t("switchToLight") : t("switchToDark"),
+  );
   document.title =
     state.language === "zh"
       ? "GradWindow · QS 200 硕士申请时间表"
@@ -804,10 +800,11 @@ function applyTheme() {
   localStorage.setItem("gradwindow:theme", state.theme);
   const button = document.getElementById("theme-toggle");
   if (button) {
-    button.textContent =
-      state.theme === "dark"
-        ? (state.language === "zh" ? "浅色" : "Light")
-        : (state.language === "zh" ? "深色" : "Dark");
+    button.textContent = state.theme === "dark" ? "☀" : "☾";
+    button.setAttribute(
+      "aria-label",
+      state.theme === "dark" ? t("switchToLight") : t("switchToDark"),
+    );
   }
 }
 
@@ -1153,14 +1150,13 @@ async function init() {
     }
     populateIntakeSelect();
     const allowedStatuses = new Set([
-      "all",
       "open",
       "upcoming",
       "future",
       "closed",
       "unknown",
     ]);
-    if (!allowedStatuses.has(state.status)) state.status = "all";
+    if (!allowedStatuses.has(state.status)) state.status = "open";
     if (
       state.region !== "all" &&
       ![...document.getElementById("region-filter").options].some(

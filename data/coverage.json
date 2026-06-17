@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T20:10:52.360336+00:00",
+    "generatedAt": "2026-06-17T08:41:12.861699+00:00",
     "rankingScope": "QS World University Rankings 2026 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
   },
   "summary": {
     "targetUniversities": 200,
-    "entriesLocated": 130,
-    "curatedEntries": 81,
-    "policiesVerified": 80,
-    "cycleGuidanceAvailable": 78,
-    "broadMastersAvailability": 79,
-    "limitedMastersAvailability": 1,
-    "universitiesWithPrograms": 73,
-    "universitiesWithWindows": 23,
-    "verifiedWindows": 34,
-    "universitiesWithPredictions": 23,
-    "predictedWindows": 34,
+    "entriesLocated": 177,
+    "curatedEntries": 169,
+    "policiesVerified": 169,
+    "cycleGuidanceAvailable": 167,
+    "broadMastersAvailability": 165,
+    "limitedMastersAvailability": 4,
+    "universitiesWithPrograms": 161,
+    "universitiesWithWindows": 33,
+    "verifiedWindows": 44,
+    "universitiesWithPredictions": 33,
+    "predictedWindows": 44,
     "nextActions": {
-      "locate-official-entry": 70,
-      "verify-window-policy": 50,
-      "select-target-programmes": 7,
-      "verify-exact-windows": 50,
-      "monitor-and-refresh": 23
+      "locate-official-entry": 23,
+      "verify-window-policy": 8,
+      "select-target-programmes": 8,
+      "verify-exact-windows": 128,
+      "monitor-and-refresh": 33
     }
   },
   "batches": [
@@ -242,11 +242,11 @@
         85
       ],
       "universities": 5,
-      "entriesLocated": 1,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 2,
+      "predictedWindows": 2
     },
     {
       "batch": 18,
@@ -255,9 +255,9 @@
         90
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -268,11 +268,11 @@
         95
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 20,
@@ -281,11 +281,11 @@
         100
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 3,
+      "policiesVerified": 2,
+      "universitiesWithPrograms": 2,
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 21,
@@ -294,11 +294,11 @@
         105
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 3,
+      "policiesVerified": 3,
+      "universitiesWithPrograms": 3,
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 22,
@@ -307,9 +307,9 @@
         110
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 4,
+      "policiesVerified": 3,
+      "universitiesWithPrograms": 2,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -320,11 +320,11 @@
         115
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 5,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
+      "universitiesWithWindows": 2,
+      "predictedWindows": 2
     },
     {
       "batch": 24,
@@ -333,11 +333,11 @@
         120
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 4,
+      "policiesVerified": 3,
+      "universitiesWithPrograms": 3,
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 25,
@@ -346,9 +346,9 @@
         125
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -359,9 +359,9 @@
         130
       ],
       "universities": 5,
-      "entriesLocated": 1,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 3,
+      "policiesVerified": 2,
+      "universitiesWithPrograms": 2,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -372,9 +372,9 @@
         135
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -385,9 +385,9 @@
         140
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 3,
+      "policiesVerified": 3,
+      "universitiesWithPrograms": 3,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -398,9 +398,9 @@
         145
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -411,9 +411,9 @@
         150
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -424,9 +424,9 @@
         155
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -437,9 +437,9 @@
         160
       ],
       "universities": 5,
-      "entriesLocated": 1,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 3,
+      "policiesVerified": 3,
+      "universitiesWithPrograms": 3,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -450,9 +450,9 @@
         165
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -463,11 +463,11 @@
         170
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 35,
@@ -476,9 +476,9 @@
         175
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 5,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -489,11 +489,11 @@
         180
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 37,
@@ -502,9 +502,9 @@
         185
       ],
       "universities": 5,
-      "entriesLocated": 0,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 2,
+      "policiesVerified": 2,
+      "universitiesWithPrograms": 2,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -515,9 +515,9 @@
         190
       ],
       "universities": 5,
-      "entriesLocated": 0,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -528,9 +528,9 @@
         195
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 4,
+      "policiesVerified": 4,
+      "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -541,9 +541,9 @@
         200
       ],
       "universities": 5,
-      "entriesLocated": 2,
-      "policiesVerified": 0,
-      "universitiesWithPrograms": 0,
+      "entriesLocated": 5,
+      "policiesVerified": 3,
+      "universitiesWithPrograms": 3,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     }
@@ -2467,16 +2467,21 @@
       "school": "University of Washington",
       "country": "United States of America",
       "batch": 17,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn, winter, and spring quarters",
+        "status": "recurring-deadlines-without-opening-date",
+        "opensText": "Applications are taken three times annually; deadlines are July 1, November 1, and February 1",
+        "notes": "For winter 2027 the page extends the November 1 deadline to Monday, 2 November. No exact opening date is stated, so no complete window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "adelaide-university",
@@ -2486,16 +2491,21 @@
       "school": "Adelaide University",
       "country": "Australia",
       "batch": 17,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "open-without-closing-date",
+        "opensText": "Applications for international students are open now for 2026",
+        "notes": "The page lists February and July starts and says international applications are open now, but no exact application opening and closing dates are provided."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "pennsylvania-state-university",
@@ -2505,16 +2515,21 @@
       "school": "Pennsylvania State University",
       "country": "United States of America",
       "batch": 17,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall and spring",
+        "status": "deadline-only",
+        "opensText": "Fall full-consideration deadline December 20; final fall cutoff April 15; spring deadline August 31",
+        "notes": "The one-year CSE Master of Engineering deadline is March 15. The page does not state exact application opening dates, so no complete window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universidad-de-buenos-aires",
@@ -2524,16 +2539,21 @@
       "school": "Universidad de Buenos Aires",
       "country": "Argentina",
       "batch": 17,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Ciclo Lectivo 2026",
+        "status": "closed",
+        "opensText": "New entrant registration 6-11 August 2025",
+        "notes": "The programme page states that 2026 registration has closed and publishes a tentative admission schedule; applicants with already approved leveling courses used 30 July-5 August 2025, while new entrants used 6-11 August 2025."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "tokyo-institute-of-technology",
@@ -2543,16 +2563,21 @@
       "school": "Tokyo Institute of Technology",
       "country": "Japan",
       "batch": 17,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "IGP(B) and IGP(C) application period 14 January-5 April 2026",
+        "notes": "Science Tokyo published separate IGP(B) and IGP(C) calls for Fall 2026 with the same application period; IGP(C) is recorded as the representative formal window."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-leeds",
@@ -2562,16 +2587,21 @@
       "school": "University of Leeds",
       "country": "United Kingdom",
       "batch": 18,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only",
+        "opensText": "International applicant deadline 11 September 2026; apply as early as possible",
+        "notes": "The official course page lists September 2026 as the start date and 11 September 2026 for international applicants, while directing applicants to apply early. No exact opening date is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-southampton",
@@ -2581,16 +2611,21 @@
       "school": "University of Southampton",
       "country": "United Kingdom",
       "batch": 18,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only-applicant-category-specific",
+        "opensText": "International deadline 19 August 2026; UK deadline 2 September 2026",
+        "notes": "The Computer Science MSc page lists a September 2026 start, an international deadline of 19 August 2026 at midday UK time, and a UK deadline of 2 September 2026 at midday UK time. No exact opening date is stated."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "boston-university",
@@ -2600,16 +2635,21 @@
       "school": "Boston University",
       "country": "United States of America",
       "batch": 18,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "deadline-only",
+        "opensText": "Priority deadline 15 January 2026; regular deadline 15 March 2026; late review continued after 15 March",
+        "notes": "The GRS MA/MS deadlines page lists Computer Science MS priority and regular deadlines of 15 January and 15 March for Fall 2026 and says applications received after 15 March continue to be reviewed. No exact opening date is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "freie-universit-t-berlin",
@@ -2619,16 +2659,21 @@
       "school": "Freie Universität Berlin",
       "country": "Germany",
       "batch": 18,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Winter semester 2026/27",
+        "status": "category-dependent-window",
+        "opensText": "Consecutive master applications open 20 April 2026; limited-admission deadline 31 May 2026; unrestricted-admission deadline 15 August 2026",
+        "notes": "The official deadline page gives 20 April to 31 May 2026 for limited-admission consecutive master programmes and 20 April to 15 August 2026 for unrestricted programmes. The Data Science page states the programme starts in winter semester and that admission status is determined each semester."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "purdue-university",
@@ -2638,16 +2683,21 @@
       "school": "Purdue University",
       "country": "United States of America",
       "batch": 18,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Spring 2026 / Fall 2026",
+        "status": "closed-deadline-only",
+        "opensText": "Spring 2026 deadline 1 October 2025; Fall 2026 deadline 1 December 2025",
+        "notes": "The Computer Science application steps page lists deadlines of 1 October 2025 for Spring 2026 and 1 December 2025 for Fall 2026, and states Fall 2026 applications are no longer being accepted. No exact opening date is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "the-university-of-osaka",
@@ -2657,16 +2707,21 @@
       "school": "The University of Osaka",
       "country": "Japan",
       "batch": 19,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "April 2027",
+        "status": "announced",
+        "opensText": "Special Selection in Summer for International Applicants main application acceptance period 22-26 June 2026",
+        "notes": "The 2027 application guide page links the official PDF for April 2027 master course admissions. The PDF states a pre-application screening period of 25-29 May 2026 and a main application acceptance period of 22-26 June 2026 for Special Selection in Summer for International Applicants."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "the-university-of-sheffield",
@@ -2676,16 +2731,21 @@
       "school": "The University of Sheffield",
       "country": "United Kingdom",
       "batch": 19,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-no-deadline-published",
+        "opensText": "Apply now for 2026 entry; no staged admissions process",
+        "notes": "The course page lists September 2026 entry and says applicants can apply through the usual postgraduate online form. It does not publish a final deadline or exact opening date."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "uppsala-university",
@@ -2695,16 +2755,21 @@
       "school": "Uppsala University",
       "country": "Sweden",
       "batch": 19,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "centralised-national",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "deadline-only",
+        "opensText": "Application deadline 15 January 2026; application code UU-M1160",
+        "notes": "The programme page lists the study period from 31 August 2026 to 4 June 2028 and an application deadline of 15 January 2026. It links to University Admissions for application but does not show an opening date on the programme page."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "durham-university",
@@ -2714,16 +2779,21 @@
       "school": "Durham University",
       "country": "United Kingdom",
       "batch": 19,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-no-deadline-published",
+        "opensText": "September 2026 start; apply through Durham postgraduate application portal",
+        "notes": "The official course page lists the MSc, department, and September 2026 start and links to the postgraduate application portal, but no exact application opening or closing date is published."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-alberta",
@@ -2733,16 +2803,21 @@
       "school": "University of Alberta",
       "country": "Canada",
       "batch": 19,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Next available graduate intake",
+        "status": "dates-not-captured",
+        "opensText": "Apply via Computing Science applications and admissions page",
+        "notes": "The official Computing Science page confirms M.Sc. graduate options and links to Apply Now, but exact opening and closing dates were not available from the accessible programme overview captured for this batch."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-technology-sydney",
@@ -2752,16 +2827,21 @@
       "school": "University of Technology Sydney",
       "country": "Australia",
       "batch": 20,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2027 / Spring 2026",
+        "status": "announced-applicant-category-specific",
+        "opensText": "Domestic postgraduate Autumn 2027 applications open 28 July 2026 and close 31 January 2027; international most-course deadlines are session-based",
+        "notes": "The central dates page states domestic postgraduate Autumn 2027 applications open on 28 July 2026 and close on 31 January 2027. It separately lists international postgraduate closing dates for most courses by session without giving matching opening dates."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "the-university-of-nottingham",
@@ -2828,16 +2908,21 @@
       "school": "University of Zurich (UZH)",
       "country": "Switzerland",
       "batch": 20,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall and spring semesters",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "Fall master applications 1 January-30 April; visa-requiring applicants 1 January-28 February; spring master applications 1 July-30 November; visa-requiring applicants 1-31 July",
+        "notes": "The page publishes recurring application windows by semester and applicant visa status, but it does not attach a cycle year to the ranges. No formal dated application record is created from these recurring windows."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-copenhagen",
@@ -2847,16 +2932,21 @@
       "school": "University of Copenhagen",
       "country": "Denmark",
       "batch": 21,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September and February starts",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "September start: EU/EEA/Swiss opens 16 January and closes 1 March; non-EU opens 15 November and closes 15 January. February legal-right route opens 15 August and closes 15 October.",
+        "notes": "The official programme page lists the opening dates, deadlines, and reply dates, and also shows Computer Science 2026 admission statistics. Because the application-date rows do not attach a calendar year to each opening date, no formal dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "pohang-university-of-science-and-technology-postech",
@@ -2866,16 +2956,21 @@
       "school": "Pohang University of Science And Technology (POSTECH)",
       "country": "Republic of Korea",
       "batch": 21,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026-27 academic year",
+        "status": "announced",
+        "opensText": "General admission first round application period 24 February-3 April 2026, 18:00 KST",
+        "notes": "The POSTECH graduate admissions homepage states the 2026-27 general admissions first round application period and directs applicants to the graduate admissions application menu."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "nanjing-university",
@@ -2904,16 +2999,21 @@
       "school": "Utrecht University",
       "country": "Netherlands",
       "batch": 21,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September and February starts",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "September start opens 1 October; scholarship deadline 1 February; non-EU deadline 1 April; EU deadline 1 June. February start opens 1 July; non-EU deadline 1 September; EU deadline 15 October.",
+        "notes": "The official non-Dutch-degree page lists these dates and states deadlines expire at 23:59 CET/CEST. Because no cycle year is attached, no formal dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "lomonosov-moscow-state-university",
@@ -2961,16 +3061,21 @@
       "school": "Technical University of Denmark",
       "country": "Denmark",
       "batch": 22,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2026 and Spring 2027",
+        "status": "announced-applicant-category-specific",
+        "opensText": "Autumn 2026 portal opens 1 December and national/EU/EEA deadline is 1 March 2026; Spring 2027 national/EU/EEA deadline is 15 October 2026",
+        "notes": "The central MSc page states the Autumn 2026 opening and national/EU/EEA deadline changes. It also states the Spring 2027 national/EU/EEA deadline and that non-EU deadlines are unchanged but must be checked under the detailed deadline pages."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universidade-de-s-o-paulo-usp",
@@ -2980,16 +3085,21 @@
       "school": "Universidade de São Paulo (USP)",
       "country": "Brazil",
       "batch": 22,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Next programme selection process",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should follow the programme admission-process instructions",
+        "notes": "The official IME page confirms the graduate Computer Science programme and directs applicants to the admission process page, but no exact opening or closing date was captured from the English page."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "tohoku-university",
@@ -2999,16 +3109,21 @@
       "school": "Tohoku University",
       "country": "Japan",
       "batch": 22,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Graduate-school-specific",
+        "status": "school-specific-dates",
+        "opensText": "Application qualifications, procedures, and application periods vary depending on each graduate school",
+        "notes": "The central page confirms graduate admission routes and explicitly says applicants should contact their desired graduate school for detailed information. No general computing-specific window is recorded from the central page."
+      },
       "programmeCount": 0,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "select-target-programmes"
     },
     {
       "universityId": "queen-mary-university-of-london-qmul",
@@ -3037,16 +3152,21 @@
       "school": "University of Wisconsin-Madison",
       "country": "United States of America",
       "batch": 23,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall",
+        "status": "deadline-without-cycle-year",
+        "opensText": "Traditional CS MS/PhD fall-only application deadline December 15",
+        "notes": "The page states the traditional CS MS/PhD programme is fall-only with a December 15 application deadline. No cycle year or exact opening date is shown."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "qatar-university",
@@ -3056,16 +3176,21 @@
       "school": "Qatar University",
       "country": "Qatar",
       "batch": 23,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "central",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "announced",
+        "opensText": "Graduate online admission opened 1 December 2025 and closed 25 February 2026",
+        "notes": "The Fall 2026 application timeline lists the opening date, closing date, document deadline, decision timing, and start of classes for graduate admission."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-st-andrews",
@@ -3075,16 +3200,21 @@
       "school": "University of St Andrews",
       "country": "United Kingdom",
       "batch": 23,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026 / January 2027",
+        "status": "deadline-only",
+        "opensText": "Deadline 6 August 2026 for September entry; 11 December 2026 for January 2027 entry",
+        "notes": "The official course page lists both application deadlines and entry points, but does not state the exact application opening date."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "aalto-university",
@@ -3094,16 +3224,21 @@
       "school": "Aalto University",
       "country": "Finland",
       "batch": 23,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "central",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2026 / Autumn 2027",
+        "status": "announced",
+        "opensText": "Autumn 2026 applications ran 1 December 2025 to 2 January 2026; Autumn 2027 announced for 7 December 2026 to 5 January 2027",
+        "notes": "The central page gives the full Autumn 2026 master's application period and announces the planned Autumn 2027 period. The Computer Science page also lists 1 December 2025 to 2 January 2026."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-california-davis",
@@ -3151,16 +3286,21 @@
       "school": "University of Helsinki",
       "country": "Finland",
       "batch": 24,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Autumn 2027",
+        "status": "announced",
+        "opensText": "Application period begins 5 January 2027 at 08:00 and ends 19 January 2027 at 15:00",
+        "notes": "The programme page states the exact application period and notes that there is only one intake per academic year."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-college-dublin",
@@ -3189,16 +3329,21 @@
       "school": "Leiden University",
       "country": "Netherlands",
       "batch": 24,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September and February starts",
+        "status": "recurring-deadlines-without-opening-date",
+        "opensText": "September start deadlines: 1 April for visa or residence-permit applicants, 15 May for applicants not needing a visa or residence permit. February start deadlines: 15 October and 15 November respectively.",
+        "notes": "The official page states deadlines expire at 23:59 CET and advises applying early, but it does not publish opening dates for the cycle."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "rice-university",
@@ -3208,16 +3353,21 @@
       "school": "Rice University",
       "country": "United States of America",
       "batch": 24,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Department-specific graduate admission",
+        "status": "department-specific-dates",
+        "opensText": "Applications generally open on or around September 1; exact deadlines are set by the programme or department.",
+        "notes": "The central official page is reliable for the process model but not enough to create a Computer Science-specific dated window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-oslo",
@@ -3227,16 +3377,21 @@
       "school": "University of Oslo",
       "country": "Norway",
       "batch": 25,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "August and January starts",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "Norway/Nordic August start opens 1 February and closes 15 April for most programmes; non-EU/EEA/Swiss applicants open 15 October and close 1 December for August start; EU/EEA/Swiss August start opens 1 February and closes 1 March.",
+        "notes": "The official central page gives the relevant recurring portal openings and deadlines by applicant category. No formal dated window is recorded because the page does not attach a year to the date ranges."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-waterloo",
@@ -3246,16 +3401,21 @@
       "school": "University of Waterloo",
       "country": "Canada",
       "batch": 25,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall, Winter, and Spring terms",
+        "status": "recurring-deadlines-without-opening-date",
+        "opensText": "Deadlines are 1 December for September admission, 1 June for January admission, and 1 October for May admission.",
+        "notes": "The programme page confirms the MMath, admit terms, and deadlines. No application opening dates or cycle years are published on the captured page."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "georgia-institute-of-technology",
@@ -3265,16 +3425,21 @@
       "school": "Georgia Institute of Technology",
       "country": "United States of America",
       "batch": 25,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall semester",
+        "status": "deadline-without-cycle-year",
+        "opensText": "Application deadline is 1 February for admission to the following fall semester.",
+        "notes": "The official MSCS page gives the annual fall-only deadline but no exact opening date or cycle year."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "indian-institute-of-technology-delhi-iitd",
@@ -3284,16 +3449,21 @@
       "school": "Indian Institute of Technology Delhi (IITD)",
       "country": "India",
       "batch": 25,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Postgraduate admission cycle",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should follow the official PG admissions page and relevant department/programme notices.",
+        "notes": "The current official page is a reliable entry point but did not expose a current complete computing master's application window in this environment."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "rmit-university",
@@ -3303,16 +3473,21 @@
       "school": "RMIT University",
       "country": "Australia",
       "batch": 25,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Semester 1 and Semester 2 intakes",
+        "status": "announced-deadlines-with-rolling-admission",
+        "opensText": "International Semester 2 2026 pages list postgraduate application deadlines by qualification; local Semester 2 2026 applications opened 10 March 2026 and most courses remain open until filled.",
+        "notes": "Because the captured pages combine broad qualification deadlines, rolling local admission, and course-specific exceptions, no formal programme-specific dated window is recorded yet."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "sungkyunkwan-university",
@@ -3360,16 +3535,21 @@
       "school": "Sapienza University of Rome",
       "country": "Italy",
       "batch": 26,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Academic year 2026 course catalogue",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should use the course catalogue enrolment section and Sapienza admissions procedures for exact dates.",
+        "notes": "The official catalogue page confirms the programme and access procedure, but the accessible text did not provide opening and closing dates for the admission cycle."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "indian-institute-of-technology-bombay-iitb",
@@ -3379,16 +3559,21 @@
       "school": "Indian Institute of Technology Bombay (IITB)",
       "country": "India",
       "batch": 26,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026-27 Autumn semester",
+        "status": "deadline-without-opening-date",
+        "opensText": "Last date to apply online without late fine is 10 April 2026.",
+        "notes": "The official Academic Office page confirms the 2026-27 M.Tech. admissions cycle and deadline. No formal dated application window is recorded because the opening date was not captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "humboldt-universit-t-zu-berlin",
@@ -3417,16 +3602,21 @@
       "school": "Aarhus University",
       "country": "Denmark",
       "batch": 27,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Summer and winter intakes",
+        "status": "recurring-dates-with-partial-opening-date",
+        "opensText": "Summer intake opens around 1 November; deadline is 15 January for non-EU applicants and 1 March for EU applicants. Winter intake opens in August 2026; deadline is 15 September for non-EU applicants and 15 October for EU applicants.",
+        "notes": "The official deadlines page provides applicant-category deadlines and one exact/approximate opening description, but the summer opening is approximate and not cycle-year-specific, so no formal window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-bath",
@@ -3436,16 +3626,21 @@
       "school": "University of Bath",
       "country": "United Kingdom",
       "batch": 27,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "application-open-without-deadline",
+        "opensText": "The course page has an active Apply to Bath link for September 2026 entry.",
+        "notes": "No closing date or exact application window was captured from the official course page."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-science-and-technology-of-china",
@@ -3474,16 +3669,21 @@
       "school": "Universiti Putra Malaysia (UPM)",
       "country": "Malaysia",
       "batch": 27,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Postgraduate admissions",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should follow UPM postgraduate how-to-apply and programme pages for exact dates.",
+        "notes": "The captured official page confirms programme availability but did not expose a current application window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universiti-sains-malaysia-usm",
@@ -3493,16 +3693,21 @@
       "school": "Universiti Sains Malaysia (USM)",
       "country": "Malaysia",
       "batch": 27,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Postgraduate admissions",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should use the USM postgraduate admission portal for application timing.",
+        "notes": "The captured official programme page lists the programmes and Apply Now link, but no opening or closing dates were captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universidad-nacional-aut-noma-de-m-xico-unam",
@@ -3531,16 +3736,21 @@
       "school": "Newcastle University",
       "country": "United Kingdom",
       "batch": 28,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "application-open-without-deadline",
+        "opensText": "The course page shows September 2026 entry and an Apply Online route.",
+        "notes": "Funding deadlines may be earlier, but no course application closing date was captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "alma-mater-studiorum-university-of-bologna",
@@ -3550,16 +3760,21 @@
       "school": "Alma Mater Studiorum - University of Bologna",
       "country": "Italy",
       "batch": 28,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Artificial Intelligence second-cycle degree",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should use the Admission section on the official course site for exact enrolment calls.",
+        "notes": "The captured accessible text confirmed the programme but exposed notice-board scholarship deadlines rather than admission-window dates."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "macquarie-university",
@@ -3588,16 +3803,21 @@
       "school": "Eindhoven University of Technology",
       "country": "Netherlands",
       "batch": 28,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026-2027 applications",
+        "status": "interactive-admission-flow",
+        "opensText": "The admission-and-enrollment page states the information applies to 2026-2027 applications, but exact deadlines are produced through an interactive applicant flow.",
+        "notes": "No complete static application window was captured from the official pages."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "erasmus-university-rotterdam",
@@ -3607,16 +3827,21 @@
       "school": "Erasmus University Rotterdam",
       "country": "Netherlands",
       "batch": 29,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "limited",
+      "cycleGuidance": {
+        "entry": "September start",
+        "status": "deadline-without-opening-date",
+        "opensText": "Application Deadline (EEA) 1 May",
+        "notes": "The programme page summary gives the EEA deadline and September start date, but no cycle year or opening date was captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-north-carolina-chapel-hill",
@@ -3626,16 +3851,21 @@
       "school": "University of North Carolina, Chapel Hill",
       "country": "United States of America",
       "batch": 29,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall, spring, and summer admissions",
+        "status": "central-limits-with-program-specific-deadlines",
+        "opensText": "Applications typically open in early August; Graduate School funding consideration date is 16 December 2025; no additional fall residential applications accepted after 9 June.",
+        "notes": "The official deadline page provides central constraints, but programme-specific Computer Science deadlines must be checked separately before creating a formal dated window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "king-saud-university",
@@ -3664,16 +3894,21 @@
       "school": "Texas A&M University",
       "country": "United States of America",
       "batch": 29,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Computer Science MS",
+        "status": "department-specific-dates",
+        "opensText": "Applicants should refer to the programme website and GraduateCAS process for exact deadlines.",
+        "notes": "The official MSCS page confirms the programme and application route, but no exact opening or closing date was captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "technische-universit-t-berlin",
@@ -3683,16 +3918,21 @@
       "school": "Technische Universität Berlin",
       "country": "Germany",
       "batch": 29,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Summer 2026 and Winter 2026/2027",
+        "status": "central-dates-programme-type-specific",
+        "opensText": "Summer 2026 master's: restricted 1 December 2025-15 January 2026; open admission 1 December 2025-28 February 2026. Winter 2026/2027 master's: German-language restricted 1 April-15 June 2026; English-language restricted 1 April-15 May 2026; open admission 1 June-31 August 2026.",
+        "notes": "The official dates page gives complete central windows, but the target programme's admission type must be confirmed before formal programme windows are created."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-southern-california",
@@ -3702,16 +3942,21 @@
       "school": "University of Southern California",
       "country": "United States of America",
       "batch": 30,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Spring and fall admission",
+        "status": "deadlines-without-opening-date",
+        "opensText": "Spring general deadline 15 September; fall scholarship consideration deadline 15 December and final deadline 15 January.",
+        "notes": "No cycle years or opening dates were captured, so no formal dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "stockholm-university",
@@ -3740,16 +3985,21 @@
       "school": "University of Groningen",
       "country": "Netherlands",
       "batch": 30,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2027",
+        "status": "deadline-without-opening-date",
+        "opensText": "Dutch, EU/EEA, and non-EU/EEA applicants: deadline 1 May 2027 for 1 September 2027 start.",
+        "notes": "The page states applications are evaluated on a continuous basis and applicants do not have to wait until the deadline, but it does not provide an exact opening date."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-liverpool",
@@ -3759,16 +4009,21 @@
       "school": "University of Liverpool",
       "country": "United Kingdom",
       "batch": 30,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "announced-deadlines-without-opening-date",
+        "opensText": "UK students apply by 11 September 2026; international students apply by 21 August 2026; course starts 28 September 2026.",
+        "notes": "The official course page gives closing dates by applicant category but not the application opening date."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-cape-town",
@@ -3778,16 +4033,21 @@
       "school": "University of Cape Town",
       "country": "South Africa",
       "batch": 30,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "deadline-with-partial-opening-month",
+        "opensText": "For Masters by Coursework and Dissertation, applications open April and close 30 September; applications for 2026 are now open and close 30 September 2025.",
+        "notes": "The page gives opening month and closing date, but not the exact opening day. The Masters by Dissertation route has no opening or closing dates."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "western-university",
@@ -3797,16 +4057,21 @@
       "school": "Western University",
       "country": "Canada",
       "batch": 31,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall September intake",
+        "status": "deadlines-without-opening-date",
+        "opensText": "Domestic applicants: 31 July; international applicants: 15 February. The department accepts new MSc students in the fall September term only.",
+        "notes": "The official page gives closing dates but not a cycle year or exact application opening date."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-vienna",
@@ -3816,16 +4081,21 @@
       "school": "University of Vienna",
       "country": "Austria",
       "batch": 31,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Computer Science MSc",
+        "status": "selection-procedure-dates-not-captured",
+        "opensText": "The programme page links to a selection procedure and the central master admissions page lists Computer Science as an English master with AV selection procedure.",
+        "notes": "No complete application-period dates were captured from the accessible official pages in this pass."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universiti-teknologi-malaysia-utm",
@@ -3835,16 +4105,21 @@
       "school": "Universiti Teknologi Malaysia (UTM)",
       "country": "Malaysia",
       "batch": 31,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Postgraduate study",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official postgraduate admission page exposes programme categories and application route but not exact intake opening or closing dates in the accessible text.",
+        "notes": "Keep monitoring UTM admission pages and faculty pages for intake-specific postgraduate deadlines."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "wageningen-university-and-research",
@@ -3854,16 +4129,21 @@
       "school": "Wageningen University & Research",
       "country": "Netherlands",
       "batch": 31,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "limited",
+      "cycleGuidance": {
+        "entry": "September and selected February starts",
+        "status": "deadlines-without-opening-date",
+        "opensText": "For September starts, NL/EU/EFTA students apply in Studielink by 15 June and submit WU documents by 1 July; non-EU/non-EFTA students apply in Studielink by 15 April and submit documents by 1 May. Applications for September 2026 are closed; the page offers notification for September 2027 opening.",
+        "notes": "The page gives exact deadlines and current September 2026 closed status, but not the exact September 2027 opening date."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-exeter",
@@ -3873,16 +4153,21 @@
       "school": "University of Exeter",
       "country": "United Kingdom",
       "batch": 31,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026/2027",
+        "status": "central-deadlines-with-limited-opening-date",
+        "opensText": "International applicants for 2026/2027 must apply by 23:59 Friday 11 September 2026 UK time; UK applicants by 23:59 Wednesday 16 September 2026. January 2027 start applications open Monday 2 March 2026 and close 23:59 Monday 4 January 2027.",
+        "notes": "The January opening and closing dates are central to January-start programmes; programme eligibility should be checked before creating a formal programme-specific window."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-geneva",
@@ -3892,16 +4177,21 @@
       "school": "University of Geneva",
       "country": "Switzerland",
       "batch": 32,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Faculty of Science master programmes",
+        "status": "dynamic-listing-dates-not-captured",
+        "opensText": "The official page links to UNIGE registration and important dates, but the accessible static text does not expose application opening or closing dates.",
+        "notes": "Keep monitoring the UNIGE science listing and central master programme portal for a directly readable Computer Science master admissions page."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "lancaster-university",
@@ -3911,16 +4201,21 @@
       "school": "Lancaster University",
       "country": "United Kingdom",
       "batch": 32,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026 and 2027 postgraduate entry",
+        "status": "application-route-without-deadline",
+        "opensText": "The page provides application links for 2026 entry and states that applications for 2027 entry will open in September 2026.",
+        "notes": "No Computer Science-specific deadline was captured from accessible official pages in this pass."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-basel",
@@ -3949,16 +4244,21 @@
       "school": "Hanyang University",
       "country": "Republic of Korea",
       "batch": 32,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "official-route-current-dates-not-captured",
+        "opensText": "The accessible English application schedule page shows an old 2021 spring/fall sample schedule and instructs international applicants to check Office of International Affairs admission notices for current announcements.",
+        "notes": "The programme route is reliable, but no current 2026/2027 application window was captured, so no formal dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-barcelona",
@@ -3989,14 +4289,19 @@
       "batch": 33,
       "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "decentralized-programme-deadlines",
+        "opensText": "Applicants should contact the department/programme of interest for deadline dates and admissions procedures.",
+        "notes": "The old CSE deep links currently resolve to a general department page in this environment, so no Computer Science-specific current window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "ghent-university",
@@ -4006,16 +4311,21 @@
       "school": "Ghent University",
       "country": "Belgium",
       "batch": 33,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026-2027",
+        "status": "programme-confirmed-deadline-table-not-captured",
+        "opensText": "The programme page includes an enrol link for the 2026-2027 Master of Science in Computer Science Engineering. Ghent's application page says complete files must be received by the application deadline.",
+        "notes": "No exact opening or closing date was captured from accessible official pages in this pass."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "king-abdul-aziz-university-kau",
@@ -4044,16 +4354,21 @@
       "school": "Nagoya University",
       "country": "Japan",
       "batch": 33,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "limited",
+      "cycleGuidance": {
+        "entry": "G30 graduate programmes",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official G30 graduate page lists English-taught graduate programmes with Master and Doctor routes.",
+        "notes": "The central master's page points to the G30 graduate site, but this pass did not capture current date ranges for applications."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "chalmers-university-of-technology",
@@ -4063,16 +4378,21 @@
       "school": "Chalmers University of Technology",
       "country": "Sweden",
       "batch": 33,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master's programmes",
+        "status": "approximate-application-period",
+        "opensText": "Application period: Mid-October - Mid-January.",
+        "notes": "The page provides month-level application-period guidance but no exact opening or closing dates, so no formal dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "al-farabi-kazakh-national-university",
@@ -4101,16 +4421,21 @@
       "school": "Washington University in St. Louis",
       "country": "United States of America",
       "batch": 34,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "CSE graduate programmes",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official page links to Graduate Admissions and Apply Now, but no exact application opening or closing dates were captured.",
+        "notes": "No formal dated window is recorded until WashU exposes current CSE graduate deadline dates in a readable official page."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-montreal",
@@ -4120,16 +4445,21 @@
       "school": "University of Montreal",
       "country": "Canada",
       "batch": 34,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Hiver 2027, Automne 2027, Hiver 2028",
+        "status": "programme-dated-windows",
+        "opensText": "Hiver 2027: applications from 1 February 2026 to 1 September 2026. Automne 2027: applications possible from 1 August 2026. Hiver 2028: applications possible from 1 February 2027.",
+        "notes": "The Hiver 2027 opening and closing dates are exact and recorded as a formal application window. Later intakes currently expose opening dates only in the captured text."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-york",
@@ -4139,16 +4469,21 @@
       "school": "University of York",
       "country": "United Kingdom",
       "batch": 34,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "programme-open-without-deadline",
+        "opensText": "The course page has an Apply for this course link for September 2026 entry but does not expose an application deadline in accessible text.",
+        "notes": "No formal dated window is recorded because no closing date was captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "hokkaido-university",
@@ -4158,16 +4493,21 @@
       "school": "Hokkaido University",
       "country": "Japan",
       "batch": 34,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "graduate-school-specific-dates",
+        "opensText": "Applicants should complete supervisor contact at least six months before intended enrolment and then check the relevant graduate school's website for how to apply.",
+        "notes": "The official central page is reliable route guidance, but no current Information Science and Technology window dates were captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "kyushu-university",
@@ -4177,16 +4517,21 @@
       "school": "Kyushu University",
       "country": "Japan",
       "batch": 35,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master's Program",
+        "status": "programme-route-without-current-dates",
+        "opensText": "The page links to ISEE master's admissions and includes 2026 notices about admission-process changes effective from AY 2027, but no exact current application opening or closing dates were captured.",
+        "notes": "No formal dated window is recorded until the current examination/application schedule is captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universitat-aut-noma-de-barcelona",
@@ -4215,16 +4560,21 @@
       "school": "Arizona State University",
       "country": "United States of America",
       "batch": 35,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026 and Spring 2027 graduate admission",
+        "status": "central-open-dates-programme-specific-deadlines",
+        "opensText": "Fall 2026 application opens 1 September 2025; Spring 2027 application opens 1 February 2026. Specific deadline information is programme-specific in Degree Search.",
+        "notes": "Engineering/SCAI programme pages returned 403 in this environment and the Degree Search Computer Science MS deep link did not resolve, so no Computer Science-specific formal window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "mcmaster-university",
@@ -4234,16 +4584,21 @@
       "school": "McMaster University",
       "country": "Canada",
       "batch": 35,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "applicant-category",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September entry",
+        "status": "deadlines-without-opening-date",
+        "opensText": "Computer Science MSc typical deadline: international applicants 28 February; Canadian/permanent resident applicants 31 July.",
+        "notes": "The page gives category-specific closing dates but no application opening dates or cycle year, so no formal dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universidad-de-chile",
@@ -4253,16 +4608,21 @@
       "school": "Universidad de Chile",
       "country": "Chile",
       "batch": 35,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Postgraduate catalogue",
+        "status": "programme-listing-without-dates",
+        "opensText": "The central postgraduate catalogue confirms computing-related master's routes but does not expose exact application window dates in accessible text.",
+        "notes": "A direct DCC programme path tested in this pass returned 404, so the catalogue is recorded as reliable programme presence only."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "national-tsing-hua-university",
@@ -4272,16 +4632,21 @@
       "school": "National Tsing Hua University",
       "country": "Taiwan",
       "batch": 36,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master's admissions",
+        "status": "central-route-without-dates",
+        "opensText": "The official admissions centre exposes master's admissions and international-student routes but no exact current application opening or closing dates were captured.",
+        "notes": "The Computer Science department page connection reset in this environment, so programme-level dates were not recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "khalifa-university-of-science-and-technology",
@@ -4291,16 +4656,21 @@
       "school": "Khalifa University of Science and Technology",
       "country": "United Arab Emirates",
       "batch": 36,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Postgraduate admissions",
+        "status": "closed-next-intake-not-announced",
+        "opensText": "The online application for admission is currently closed; applicants can create an account to receive notifications when the next intake opens.",
+        "notes": "No exact next intake opening or closing date was captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "tongji-university",
@@ -4329,16 +4699,21 @@
       "school": "University of California, Santa Barbara (UCSB)",
       "country": "United States of America",
       "batch": 36,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "programme-specific-deadlines",
+        "opensText": "Applicants must submit the online application by the department/programme deadline; fee waiver requests should be submitted at least two weeks before the application deadline.",
+        "notes": "Computer Science deep links tested in this pass returned 404, so no CS-specific dated window is recorded."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "indian-institute-of-technology-madras-iitm",
@@ -4348,16 +4723,21 @@
       "school": "Indian Institute of Technology Madras (IITM)",
       "country": "India",
       "batch": 36,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "M.Tech and M.A. Admissions 2026",
+        "status": "dated-window-closed",
+        "opensText": "Online application portal opened 28 March 2026 and closed 28 April 2026 at 11:59 PM; the page currently states registration is closed.",
+        "notes": "The exact 2026 application window is recorded as a formal verified window."
+      },
+      "programmeCount": 1,
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "cardiff-university",
@@ -4405,16 +4785,21 @@
       "school": "Curtin University",
       "country": "Australia",
       "batch": 37,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Postgraduate information technology",
+        "status": "programme-listing-without-dates",
+        "opensText": "The page links to application key dates and deadlines but does not expose exact application opening or closing dates in accessible text.",
+        "notes": "No formal dated window is recorded until programme-specific intake dates are captured."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-bern",
@@ -4443,16 +4828,21 @@
       "school": "University of Wollongong",
       "country": "Australia",
       "batch": 37,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master of Computer Science",
+        "status": "application-route-without-dates",
+        "opensText": "Applicants can apply directly to UOW and should check course entry requirements, intake dates, and closing dates before applying.",
+        "notes": "The accessible course page confirms the programme and application route but does not expose exact intake opening or closing dates."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "wuhan-university",
@@ -4462,16 +4852,21 @@
       "school": "Wuhan University",
       "country": "China (Mainland)",
       "batch": 38,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "School of Computer Science",
+        "status": "school-route-without-dates",
+        "opensText": "The official computer school page confirms the graduate education route but does not expose exact current application opening or closing dates in accessible text.",
+        "notes": "The international admissions path tested in this pass returned 404, so this is recorded as programme-location evidence only."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "tecnol-gico-de-monterrey-itesm",
@@ -4500,16 +4895,21 @@
       "school": "University Complutense Madrid",
       "country": "Spain",
       "batch": 38,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Faculty of Informatics master's programmes",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official Faculty of Informatics page lists master's programmes for the 2025/2026 and 2026/2027 cycles, but no exact application opening or closing dates were captured.",
+        "notes": "The central master's admissions URL tested in this pass returned 404."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universitas-indonesia",
@@ -4519,16 +4919,21 @@
       "school": "UNIVERSITAS INDONESIA",
       "country": "Indonesia",
       "batch": 38,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Magister Ilmu Komputer",
+        "status": "programme-and-portal-without-dates",
+        "opensText": "The programme page confirms the master's route and the SIMAK UI portal confirms 2026/2027 admissions activity, but exact programme opening or closing dates were not captured.",
+        "notes": "The application portal is recorded separately as the programme application URL."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "ohio-state-university",
@@ -4538,16 +4943,21 @@
       "school": "Ohio State University",
       "country": "United States of America",
       "batch": 38,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Computer Science and Engineering graduate programmes",
+        "status": "programme-route-without-dates",
+        "opensText": "The CSE page directs applicants to graduate admissions and the central programme search lists the MS route, but no exact current application opening or closing dates were captured.",
+        "notes": "Several CSE admissions deep links returned 404, so the stable graduate page and central programme search are retained."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "queen-s-university-ontario",
@@ -4557,16 +4967,21 @@
       "school": "Queen's University, Ontario",
       "country": "Canada",
       "batch": 39,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Graduate applications",
+        "status": "central-route-with-programme-specific-requirements",
+        "opensText": "The central page explains how to apply to graduate programmes and links to the online application, but no exact institution-wide opening or closing dates were captured.",
+        "notes": "Programme pages should be checked for individual admissions requirements and deadlines."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universit-catholique-de-louvain-ucl",
@@ -4595,16 +5010,21 @@
       "school": "Universität Hamburg",
       "country": "Germany",
       "batch": 39,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "centralized",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master's applications",
+        "status": "recurring-central-periods",
+        "opensText": "Application periods are 1 December to 15 January for summer semester, 1 May to 15 June for winter semester, and 15 February to 31 March for international master's programmes.",
+        "notes": "The official page gives stable month/day periods rather than a single dated 2026/2027 record, so no formal exact-year window is recorded in applications.json."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-reading",
@@ -4614,16 +5034,21 @@
       "school": "University of Reading",
       "country": "United Kingdom",
       "batch": 39,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master's application information",
+        "status": "central-guidance-with-recommended-deadlines",
+        "opensText": "For September admission, Reading recommends UK applicants apply by 1 August and international students requiring a visa apply by 1 July; programme-specific deadlines appear on course pages where applicable.",
+        "notes": "The page states applications may still be considered after the recommended dates, so these are not recorded as formal closing windows."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "vrije-universiteit-amsterdam",
@@ -4633,16 +5058,21 @@
       "school": "Vrije Universiteit Amsterdam",
       "country": "Netherlands",
       "batch": 39,
-      "entryStatus": "low-confidence",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Master's programmes",
+        "status": "central-programme-overview-without-dates",
+        "opensText": "The central master's overview and programme list are accessible, but exact application opening or closing dates were not captured in accessible text.",
+        "notes": "Several guessed application-deadline URLs returned 404, so programme-specific pages should be checked in a later quality pass."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "waseda-university",
@@ -4652,16 +5082,21 @@
       "school": "Waseda University",
       "country": "Japan",
       "batch": 40,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Graduate programmes",
+        "status": "central-graduate-route-without-dates",
+        "opensText": "The International Admissions Office graduate page links to graduate programme categories, but no exact institution-wide application opening or closing dates were captured.",
+        "notes": "The admissions homepage shows September 2026 entry application-guide news, but formal deadlines remain programme-specific."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "university-of-otago",
@@ -4690,16 +5125,21 @@
       "school": "Vienna University of Technology",
       "country": "Austria",
       "batch": 40,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "centralized",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Admission",
+        "status": "central-route-with-deadline-reference",
+        "opensText": "The central admission page instructs applicants to note admission deadlines and identifies the Admissions Office as the first point of contact, but exact dated master's windows were not captured in accessible text.",
+        "notes": "The master programmes page confirms TU Wien master's study routes; a later pass should target the admission-deadlines subpage."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "national-yang-ming-chiao-tung-university",
@@ -4709,16 +5149,21 @@
       "school": "National Yang Ming Chiao Tung University",
       "country": "Taiwan",
       "batch": 40,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "program-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "International degree admissions",
+        "status": "oia-admissions-route-without-dates",
+        "opensText": "The OIA admissions folder confirms the international degree-seeking admissions route, but no exact current application opening or closing dates were captured in accessible text.",
+        "notes": "Older guessed NYCU OIA short paths returned 404; the current OIA folder path is retained."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "queen-s-university-belfast",

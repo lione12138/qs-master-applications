@@ -1191,6 +1191,1341 @@
         "opensText": "Winter semester 1 August to 15 September (previous year); summer semester 1 February to 15 March",
         "notes": "For access- and admission-restricted master's programmes the page lists application periods of 1 August to 15 September (of the previous year) and 1 February to 15 March, applying equally to German and international applicants. No cycle year is attached, so no formal dated window is recorded."
       }
+    },
+    {
+      "universityId": "university-of-washington",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UW graduate admissions are programme-specific. The Allen School Professional Master's Program publishes three recurring quarter deadlines but does not publish a dated opening day.",
+      "sourceUrl": "https://www.cs.washington.edu/academics/graduate/pmp/admissions/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Autumn, winter, and spring quarters",
+        "status": "recurring-deadlines-without-opening-date",
+        "opensText": "Applications are taken three times annually; deadlines are July 1, November 1, and February 1",
+        "notes": "For winter 2027 the page extends the November 1 deadline to Monday, 2 November. No exact opening date is stated, so no complete window is recorded."
+      }
+    },
+    {
+      "universityId": "adelaide-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Adelaide University publishes programme-level postgraduate pages with start months and current application status. The Master of Computer Science page states international applications are open for 2026 but does not publish a closing date pair.",
+      "sourceUrl": "https://adelaide.edu.au/study/degrees/master-of-computer-science/int/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "open-without-closing-date",
+        "opensText": "Applications for international students are open now for 2026",
+        "notes": "The page lists February and July starts and says international applications are open now, but no exact application opening and closing dates are provided."
+      }
+    },
+    {
+      "universityId": "pennsylvania-state-university",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Penn State CSE publishes programme-level fall and spring admissions deadlines through the School of EECS and uses the Fox Graduate School application.",
+      "sourceUrl": "https://www.eecs.psu.edu/students/graduate/EECS-How-to-apply-CSE.aspx",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall and spring",
+        "status": "deadline-only",
+        "opensText": "Fall full-consideration deadline December 20; final fall cutoff April 15; spring deadline August 31",
+        "notes": "The one-year CSE Master of Engineering deadline is March 15. The page does not state exact application opening dates, so no complete window is recorded."
+      }
+    },
+    {
+      "universityId": "universidad-de-buenos-aires",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UBA Exactas lists postgraduate programmes centrally, while the selected data mining master's publishes its own admission and registration schedule.",
+      "sourceUrl": "https://exactas.uba.ar/ensenanza/carreras-de-posgrado/maestrias/",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Ciclo Lectivo 2026",
+        "status": "closed",
+        "opensText": "New entrant registration 6-11 August 2025",
+        "notes": "The programme page states that 2026 registration has closed and publishes a tentative admission schedule; applicants with already approved leveling courses used 30 July-5 August 2025, while new entrants used 6-11 August 2025."
+      }
+    },
+    {
+      "universityId": "tokyo-institute-of-technology",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Tokyo Institute of Technology is now part of Institute of Science Tokyo. Science and engineering graduate admissions use several International Graduate Program routes with route-specific calls.",
+      "sourceUrl": "https://admissions.isct.ac.jp/en/013/graduate/programs/science-and-engineering",
+      "verifiedAt": "2026-06-15",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "closed",
+        "opensText": "IGP(B) and IGP(C) application period 14 January-5 April 2026",
+        "notes": "Science Tokyo published separate IGP(B) and IGP(C) calls for Fall 2026 with the same application period; IGP(C) is recorded as the representative formal window."
+      }
+    },
+    {
+      "universityId": "university-of-leeds",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Leeds publishes course-level postgraduate taught application links and deadlines. The selected Advanced Computer Science MSc page gives the September 2026 start and international deadline but not an exact opening date.",
+      "sourceUrl": "https://courses.leeds.ac.uk/f753/advanced-computer-science-msc",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only",
+        "opensText": "International applicant deadline 11 September 2026; apply as early as possible",
+        "notes": "The official course page lists September 2026 as the start date and 11 September 2026 for international applicants, while directing applicants to apply early. No exact opening date is published."
+      }
+    },
+    {
+      "universityId": "university-of-southampton",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Southampton publishes course-level taught postgraduate deadlines with separate UK and international cutoffs. Applications can close early if places fill.",
+      "sourceUrl": "https://www.southampton.ac.uk/courses/computer-science-masters-msc",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-only-applicant-category-specific",
+        "opensText": "International deadline 19 August 2026; UK deadline 2 September 2026",
+        "notes": "The Computer Science MSc page lists a September 2026 start, an international deadline of 19 August 2026 at midday UK time, and a UK deadline of 2 September 2026 at midday UK time. No exact opening date is stated."
+      }
+    },
+    {
+      "universityId": "boston-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Boston University GRS publishes programme-specific MA/MS deadlines. The on-campus Computer Science MS has fall priority and regular deadlines but no exact application opening date.",
+      "sourceUrl": "https://www.bu.edu/cas/admissions/ma-ms/apply/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "deadline-only",
+        "opensText": "Priority deadline 15 January 2026; regular deadline 15 March 2026; late review continued after 15 March",
+        "notes": "The GRS MA/MS deadlines page lists Computer Science MS priority and regular deadlines of 15 January and 15 March for Fall 2026 and says applications received after 15 March continue to be reviewed. No exact opening date is published."
+      }
+    },
+    {
+      "universityId": "freie-universit-t-berlin",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Freie Universit?t Berlin lists Data Science as a winter-semester English-taught MSc and routes applicants through central consecutive master application periods. Admission-cap status is determined each semester, so the exact applicable category must be checked for the target cycle.",
+      "sourceUrl": "https://www.fu-berlin.de/en/studium/studienangebot/master/data-science/index.html",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Winter semester 2026/27",
+        "status": "category-dependent-window",
+        "opensText": "Consecutive master applications open 20 April 2026; limited-admission deadline 31 May 2026; unrestricted-admission deadline 15 August 2026",
+        "notes": "The official deadline page gives 20 April to 31 May 2026 for limited-admission consecutive master programmes and 20 April to 15 August 2026 for unrestricted programmes. The Data Science page states the programme starts in winter semester and that admission status is determined each semester."
+      }
+    },
+    {
+      "universityId": "purdue-university",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Purdue Computer Science publishes department-level MS and PhD deadlines for West Lafayette graduate admissions. The page provides deadlines but no application opening date.",
+      "sourceUrl": "https://www.cs.purdue.edu/graduate/admission/steps.html",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Spring 2026 / Fall 2026",
+        "status": "closed-deadline-only",
+        "opensText": "Spring 2026 deadline 1 October 2025; Fall 2026 deadline 1 December 2025",
+        "notes": "The Computer Science application steps page lists deadlines of 1 October 2025 for Spring 2026 and 1 December 2025 for Fall 2026, and states Fall 2026 applications are no longer being accepted. No exact opening date is published."
+      }
+    },
+    {
+      "universityId": "the-university-of-osaka",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "The University of Osaka Graduate School of Information Science and Technology publishes route-specific application guides for master course admissions. The representative international summer selection window is recorded for April 2027 admission.",
+      "sourceUrl": "https://www.ist.osaka-u.ac.jp/english/examinees/admission/guidelines2027.php",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "April 2027",
+        "status": "announced",
+        "opensText": "Special Selection in Summer for International Applicants main application acceptance period 22-26 June 2026",
+        "notes": "The 2027 application guide page links the official PDF for April 2027 master course admissions. The PDF states a pre-application screening period of 25-29 May 2026 and a main application acceptance period of 22-26 June 2026 for Special Selection in Summer for International Applicants."
+      }
+    },
+    {
+      "universityId": "the-university-of-sheffield",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Sheffield publishes course-level postgraduate taught pages and uses its Postgraduate Online Application Form. The selected Advanced Computer Science MSc page states that staged admissions are no longer used, but no exact opening or closing date is shown.",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-computer-science-msc",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-no-deadline-published",
+        "opensText": "Apply now for 2026 entry; no staged admissions process",
+        "notes": "The course page lists September 2026 entry and says applicants can apply through the usual postgraduate online form. It does not publish a final deadline or exact opening date."
+      }
+    },
+    {
+      "universityId": "uppsala-university",
+      "model": "centralised-national",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Uppsala English-taught master programmes use Sweden's central University Admissions process. The Computer Science programme page gives the application deadline and application code for Autumn 2026.",
+      "sourceUrl": "https://www.uu.se/en/study/programme/masters-programme-computer-science",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Autumn 2026",
+        "status": "deadline-only",
+        "opensText": "Application deadline 15 January 2026; application code UU-M1160",
+        "notes": "The programme page lists the study period from 31 August 2026 to 4 June 2028 and an application deadline of 15 January 2026. It links to University Admissions for application but does not show an opening date on the programme page."
+      }
+    },
+    {
+      "universityId": "durham-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Durham publishes course-level postgraduate taught pages and application links. The selected Scientific Computing and Data Analysis MSc page lists September 2026 start dates but no closing date.",
+      "sourceUrl": "https://www.durham.ac.uk/study/courses/scientific-computing-and-data-analysis-computer-vision-and-robotics-g5t509/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "open-no-deadline-published",
+        "opensText": "September 2026 start; apply through Durham postgraduate application portal",
+        "notes": "The official course page lists the MSc, department, and September 2026 start and links to the postgraduate application portal, but no exact application opening or closing date is published."
+      }
+    },
+    {
+      "universityId": "university-of-alberta",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Alberta Computing Science publishes graduate programme and admissions information through the department site, with M.Sc. options and an Apply Now route to the applications page. The accessible programme overview did not expose exact dated windows.",
+      "sourceUrl": "https://www.ualberta.ca/en/computing-science/graduate-studies/programs-and-admissions/index.html",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Next available graduate intake",
+        "status": "dates-not-captured",
+        "opensText": "Apply via Computing Science applications and admissions page",
+        "notes": "The official Computing Science page confirms M.Sc. graduate options and links to Apply Now, but exact opening and closing dates were not available from the accessible programme overview captured for this batch."
+      }
+    },
+    {
+      "universityId": "university-of-technology-sydney",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UTS publishes course-level postgraduate pages and a central application-dates page. The Master of Information Technology page lists Autumn and Spring 2026 plus Autumn 2027 intakes and links to the central dates table.",
+      "sourceUrl": "https://www.uts.edu.au/for-students/admissions-entry/application-dates",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Autumn 2027 / Spring 2026",
+        "status": "announced-applicant-category-specific",
+        "opensText": "Domestic postgraduate Autumn 2027 applications open 28 July 2026 and close 31 January 2027; international most-course deadlines are session-based",
+        "notes": "The central dates page states domestic postgraduate Autumn 2027 applications open on 28 July 2026 and close on 31 January 2027. It separately lists international postgraduate closing dates for most courses by session without giving matching opening dates."
+      }
+    },
+    {
+      "universityId": "university-of-zurich-uzh",
+      "model": "applicant-category",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UZH central master admissions use applicant-category and semester-specific deadlines. The deadlines page gives annual date ranges for fall and spring semester admissions and earlier deadlines for visa-requiring applicants.",
+      "sourceUrl": "https://www.uzh.ch/en/studies/application/deadlines.html",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall and spring semesters",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "Fall master applications 1 January-30 April; visa-requiring applicants 1 January-28 February; spring master applications 1 July-30 November; visa-requiring applicants 1-31 July",
+        "notes": "The page publishes recurring application windows by semester and applicant visa status, but it does not attach a cycle year to the ranges. No formal dated application record is created from these recurring windows."
+      }
+    },
+    {
+      "universityId": "utrecht-university",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Utrecht Computing Science is a selective master's programme. The non-Dutch-degree application page publishes application openings and passport-category deadlines for September and February starts, but the ranges are recurring and not tied to a cycle year.",
+      "sourceUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission/degree-from-a-non-dutch-university",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September and February starts",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "September start opens 1 October; scholarship deadline 1 February; non-EU deadline 1 April; EU deadline 1 June. February start opens 1 July; non-EU deadline 1 September; EU deadline 15 October.",
+        "notes": "The official non-Dutch-degree page lists these dates and states deadlines expire at 23:59 CET/CEST. Because no cycle year is attached, no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "university-of-copenhagen",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Copenhagen publishes programme-level Computer Science MSc deadlines split between EU/EEA/Swiss applicants and applicants from outside those areas. Dates are shown by study-start month but without an explicit application cycle year.",
+      "sourceUrl": "https://www.ku.dk/studies/masters/computer-science",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September and February starts",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "September start: EU/EEA/Swiss opens 16 January and closes 1 March; non-EU opens 15 November and closes 15 January. February legal-right route opens 15 August and closes 15 October.",
+        "notes": "The official programme page lists the opening dates, deadlines, and reply dates, and also shows Computer Science 2026 admission statistics. Because the application-date rows do not attach a calendar year to each opening date, no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "pohang-university-of-science-and-technology-postech",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "POSTECH uses central graduate admissions rounds for its general graduate school departments, with the admissions team page linking department information including computer engineering.",
+      "sourceUrl": "https://adm-g.postech.ac.kr/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "2026-27 academic year",
+        "status": "announced",
+        "opensText": "General admission first round application period 24 February-3 April 2026, 18:00 KST",
+        "notes": "The POSTECH graduate admissions homepage states the 2026-27 general admissions first round application period and directs applicants to the graduate admissions application menu."
+      }
+    },
+    {
+      "universityId": "technical-university-of-denmark",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "DTU publishes central MSc application procedures and deadlines, while programme pages such as Computer Science and Engineering identify the specific MSc route.",
+      "sourceUrl": "https://www.dtu.dk/english/education/graduate/admission-and-deadlines",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Autumn 2026 and Spring 2027",
+        "status": "announced-applicant-category-specific",
+        "opensText": "Autumn 2026 portal opens 1 December and national/EU/EEA deadline is 1 March 2026; Spring 2027 national/EU/EEA deadline is 15 October 2026",
+        "notes": "The central MSc page states the Autumn 2026 opening and national/EU/EEA deadline changes. It also states the Spring 2027 national/EU/EEA deadline and that non-EU deadlines are unchanged but must be checked under the detailed deadline pages."
+      }
+    },
+    {
+      "universityId": "universidade-de-s-o-paulo-usp",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "USP IME publishes a Graduate Program in Computer Science and directs applicants to programme-specific admission-process instructions. The captured English programme page does not expose a dated selection calendar.",
+      "sourceUrl": "https://www.ime.usp.br/en/graduate/computer-science/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Next programme selection process",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should follow the programme admission-process instructions",
+        "notes": "The official IME page confirms the graduate Computer Science programme and directs applicants to the admission process page, but no exact opening or closing date was captured from the English page."
+      }
+    },
+    {
+      "universityId": "tohoku-university",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Tohoku University central graduate admissions states that application qualifications, procedures, and application periods vary by graduate school. Applicants must contact or use the desired graduate school's information for exact dates.",
+      "sourceUrl": "https://www.tohoku.ac.jp/en/admissions/admission_graduate.html",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Graduate-school-specific",
+        "status": "school-specific-dates",
+        "opensText": "Application qualifications, procedures, and application periods vary depending on each graduate school",
+        "notes": "The central page confirms graduate admission routes and explicitly says applicants should contact their desired graduate school for detailed information. No general computing-specific window is recorded from the central page."
+      }
+    },
+    {
+      "universityId": "university-of-wisconsin-madison",
+      "model": "programme-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UW-Madison Computer Sciences publishes separate graduate programme deadlines. The traditional CS MS/PhD programme admits for fall only and lists a recurring December 15 deadline, but no exact opening date.",
+      "sourceUrl": "https://www.cs.wisc.edu/grad/programs/admissions/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall",
+        "status": "deadline-without-cycle-year",
+        "opensText": "Traditional CS MS/PhD fall-only application deadline December 15",
+        "notes": "The page states the traditional CS MS/PhD programme is fall-only with a December 15 application deadline. No cycle year or exact opening date is shown."
+      }
+    },
+    {
+      "universityId": "qatar-university",
+      "model": "central",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Qatar University publishes a central graduate application timeline by semester. Programme-specific requirements are listed separately, but the central timeline provides the opening and closing dates for graduate online admission.",
+      "sourceUrl": "https://www.qu.edu.qa/en-us/students/admission/graduate/Pages/application-timeline.aspx",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall 2026",
+        "status": "announced",
+        "opensText": "Graduate online admission opened 1 December 2025 and closed 25 February 2026",
+        "notes": "The Fall 2026 application timeline lists the opening date, closing date, document deadline, decision timing, and start of classes for graduate admission."
+      }
+    },
+    {
+      "universityId": "university-of-st-andrews",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "St Andrews publishes course-level postgraduate taught deadlines. The selected Computer Science MSc page gives separate September 2026 and January 2027 deadlines, but no exact opening date.",
+      "sourceUrl": "https://www.st-andrews.ac.uk/subjects/computer-science/computer-science-msc/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026 / January 2027",
+        "status": "deadline-only",
+        "opensText": "Deadline 6 August 2026 for September entry; 11 December 2026 for January 2027 entry",
+        "notes": "The official course page lists both application deadlines and entry points, but does not state the exact application opening date."
+      }
+    },
+    {
+      "universityId": "aalto-university",
+      "model": "central",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Aalto publishes a central annual application period for two-year master's programmes, while the Computer Science study-option page confirms that the programme uses the same 1 December 2025 to 2 January 2026 period.",
+      "sourceUrl": "https://www.aalto.fi/en/study-at-aalto/apply-to-masters-programmes",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Autumn 2026 / Autumn 2027",
+        "status": "announced",
+        "opensText": "Autumn 2026 applications ran 1 December 2025 to 2 January 2026; Autumn 2027 announced for 7 December 2026 to 5 January 2027",
+        "notes": "The central page gives the full Autumn 2026 master's application period and announces the planned Autumn 2027 period. The Computer Science page also lists 1 December 2025 to 2 January 2026."
+      }
+    },
+    {
+      "universityId": "university-of-helsinki",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Helsinki Computer Science master's programme page publishes a programme-level application period for the next annual intake, and the central admissions page confirms the same international master's application period.",
+      "sourceUrl": "https://www.helsinki.fi/en/degree-programmes/computer-science-masters-programme",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Autumn 2027",
+        "status": "announced",
+        "opensText": "Application period begins 5 January 2027 at 08:00 and ends 19 January 2027 at 15:00",
+        "notes": "The programme page states the exact application period and notes that there is only one intake per academic year."
+      }
+    },
+    {
+      "universityId": "leiden-university",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Leiden Computer Science MSc publishes deadlines by start month and visa/residence-permit category. The official deadlines page does not attach cycle years or opening dates to these recurring deadlines.",
+      "sourceUrl": "https://www.universiteitleiden.nl/en/education/study-programmes/master/computer-science/admission-and-application/application-deadlines",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September and February starts",
+        "status": "recurring-deadlines-without-opening-date",
+        "opensText": "September start deadlines: 1 April for visa or residence-permit applicants, 15 May for applicants not needing a visa or residence permit. February start deadlines: 15 October and 15 November respectively.",
+        "notes": "The official page states deadlines expire at 23:59 CET and advises applying early, but it does not publish opening dates for the cycle."
+      }
+    },
+    {
+      "universityId": "rice-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Rice central graduate admissions states that prospective graduate students apply through the department, each department handles its own deadlines, and applications generally open on or around September 1.",
+      "sourceUrl": "https://graduate.rice.edu/admissions/how-to-apply",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Department-specific graduate admission",
+        "status": "department-specific-dates",
+        "opensText": "Applications generally open on or around September 1; exact deadlines are set by the programme or department.",
+        "notes": "The central official page is reliable for the process model but not enough to create a Computer Science-specific dated window."
+      }
+    },
+    {
+      "universityId": "university-of-oslo",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UiO publishes programme-level informatics master's pages and a central master's admissions page with dates split by applicant residence/citizenship category. The dates are recurring and not tied to a cycle year.",
+      "sourceUrl": "https://www.uio.no/english/studies/admission/master/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "August and January starts",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "Norway/Nordic August start opens 1 February and closes 15 April for most programmes; non-EU/EEA/Swiss applicants open 15 October and close 1 December for August start; EU/EEA/Swiss August start opens 1 February and closes 1 March.",
+        "notes": "The official central page gives the relevant recurring portal openings and deadlines by applicant category. No formal dated window is recorded because the page does not attach a year to the date ranges."
+      }
+    },
+    {
+      "universityId": "university-of-waterloo",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Waterloo's official Future Graduate Students page for Computer Science MMath publishes term-specific application deadlines, but the deadlines are recurring and do not include exact opening dates.",
+      "sourceUrl": "https://uwaterloo.ca/future-graduate-students/programs/by-faculty/math/computer-science-master-math-mmath",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall, Winter, and Spring terms",
+        "status": "recurring-deadlines-without-opening-date",
+        "opensText": "Deadlines are 1 December for September admission, 1 June for January admission, and 1 October for May admission.",
+        "notes": "The programme page confirms the MMath, admit terms, and deadlines. No application opening dates or cycle years are published on the captured page."
+      }
+    },
+    {
+      "universityId": "georgia-institute-of-technology",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Georgia Tech College of Computing publishes the on-campus MS Computer Science admissions route and states that students are admitted once a year.",
+      "sourceUrl": "https://www.cc.gatech.edu/degree-programs/master-science-computer-science",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall semester",
+        "status": "deadline-without-cycle-year",
+        "opensText": "Application deadline is 1 February for admission to the following fall semester.",
+        "notes": "The official MSCS page gives the annual fall-only deadline but no exact opening date or cycle year."
+      }
+    },
+    {
+      "universityId": "indian-institute-of-technology-delhi-iitd",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "IIT Delhi's official postgraduate admissions page centralises PG admission notices and spot-round information for M.Tech. and related postgraduate routes. The captured page currently exposes 2025 notices rather than a current 2026 computing-specific window.",
+      "sourceUrl": "https://home.iitd.ac.in/pg-admissions.php",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Postgraduate admission cycle",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should follow the official PG admissions page and relevant department/programme notices.",
+        "notes": "The current official page is a reliable entry point but did not expose a current complete computing master's application window in this environment."
+      }
+    },
+    {
+      "universityId": "rmit-university",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "RMIT publishes the Master of Information Technology course page and separate local/international application-date pages. The captured dates are intake- and applicant-category-specific and many courses remain open until places are filled.",
+      "sourceUrl": "https://www.rmit.edu.au/study-with-us/international-students/apply-to-rmit-international-students/application-dates",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Semester 1 and Semester 2 intakes",
+        "status": "announced-deadlines-with-rolling-admission",
+        "opensText": "International Semester 2 2026 pages list postgraduate application deadlines by qualification; local Semester 2 2026 applications opened 10 March 2026 and most courses remain open until filled.",
+        "notes": "Because the captured pages combine broad qualification deadlines, rolling local admission, and course-specific exceptions, no formal programme-specific dated window is recorded yet."
+      }
+    },
+    {
+      "universityId": "sapienza-university-of-rome",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Sapienza's official course catalogue confirms the English-taught Computer Science master's degree, programme code 33508, and access procedure by verification of requirements and personal preparation. The captured page did not expose a complete dated enrolment window.",
+      "sourceUrl": "https://corsidilaurea.uniroma1.it/en/corso/2026/29932/home",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Academic year 2026 course catalogue",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should use the course catalogue enrolment section and Sapienza admissions procedures for exact dates.",
+        "notes": "The official catalogue page confirms the programme and access procedure, but the accessible text did not provide opening and closing dates for the admission cycle."
+      }
+    },
+    {
+      "universityId": "indian-institute-of-technology-bombay-iitb",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "IIT Bombay publishes an official M.Tech./M.Tech.+Ph.D. admissions page for the 2026-27 Autumn semester. The page states the application deadline without late fine, but the captured text does not provide the application opening date.",
+      "sourceUrl": "https://acad.iitb.ac.in/admissions/masters/mtech",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "2026-27 Autumn semester",
+        "status": "deadline-without-opening-date",
+        "opensText": "Last date to apply online without late fine is 10 April 2026.",
+        "notes": "The official Academic Office page confirms the 2026-27 M.Tech. admissions cycle and deadline. No formal dated application window is recorded because the opening date was not captured."
+      }
+    },
+    {
+      "universityId": "aarhus-university",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Aarhus University publishes a programme-level Computer Science master's page and a central master's deadlines page split by EU and non-EU applicant category.",
+      "sourceUrl": "https://masters.au.dk/deadlines-and-important-dates",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Summer and winter intakes",
+        "status": "recurring-dates-with-partial-opening-date",
+        "opensText": "Summer intake opens around 1 November; deadline is 15 January for non-EU applicants and 1 March for EU applicants. Winter intake opens in August 2026; deadline is 15 September for non-EU applicants and 15 October for EU applicants.",
+        "notes": "The official deadlines page provides applicant-category deadlines and one exact/approximate opening description, but the summer opening is approximate and not cycle-year-specific, so no formal window is recorded."
+      }
+    },
+    {
+      "universityId": "university-of-bath",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Bath publishes a Computer Science MSc course page for September 2026 entry with a direct application link. The accessible course page does not expose a fixed application deadline.",
+      "sourceUrl": "https://www.bath.ac.uk/courses/postgraduate-2026/taught-postgraduate-courses/msc-computer-science/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "application-open-without-deadline",
+        "opensText": "The course page has an active Apply to Bath link for September 2026 entry.",
+        "notes": "No closing date or exact application window was captured from the official course page."
+      }
+    },
+    {
+      "universityId": "universiti-putra-malaysia-upm",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UPM's official postgraduate page confirms postgraduate study options including the Faculty of Computer Science and Information Technology, with coursework and research postgraduate routes.",
+      "sourceUrl": "https://upm.edu.my/admission/programmes/postgraduate-76276",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Postgraduate admissions",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should follow UPM postgraduate how-to-apply and programme pages for exact dates.",
+        "notes": "The captured official page confirms programme availability but did not expose a current application window."
+      }
+    },
+    {
+      "universityId": "universiti-sains-malaysia-usm",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "USM's official postgraduate programme page lists School of Computer Sciences postgraduate routes including Master of Computer Science, Master of Data Science, Master of Digital Transformation, and MSc Computer Science by research.",
+      "sourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Postgraduate admissions",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should use the USM postgraduate admission portal for application timing.",
+        "notes": "The captured official programme page lists the programmes and Apply Now link, but no opening or closing dates were captured."
+      }
+    },
+    {
+      "universityId": "newcastle-university",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Newcastle publishes a course-level Cloud Computing MSc page with September 2026 entry and a direct application process. The captured course page does not expose a fixed closing date for course applications.",
+      "sourceUrl": "https://www.ncl.ac.uk/postgraduate/degrees/5056f/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "application-open-without-deadline",
+        "opensText": "The course page shows September 2026 entry and an Apply Online route.",
+        "notes": "Funding deadlines may be earlier, but no course application closing date was captured."
+      }
+    },
+    {
+      "universityId": "alma-mater-studiorum-university-of-bologna",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Bologna official course site confirms the English-taught second-cycle Artificial Intelligence degree, open access, and Computer Science and Engineering department ownership.",
+      "sourceUrl": "https://corsi.unibo.it/2cycle/artificial-intelligence",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Artificial Intelligence second-cycle degree",
+        "status": "dates-not-captured",
+        "opensText": "Applicants should use the Admission section on the official course site for exact enrolment calls.",
+        "notes": "The captured accessible text confirmed the programme but exposed notice-board scholarship deadlines rather than admission-window dates."
+      }
+    },
+    {
+      "universityId": "eindhoven-university-of-technology",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "TU/e publishes the Computer Science and Engineering master's page and a central admission-and-enrollment flow applying to 2026-2027 applications.",
+      "sourceUrl": "https://www.tue.nl/en/education/graduate-school/master-computer-science-and-engineering",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "2026-2027 applications",
+        "status": "interactive-admission-flow",
+        "opensText": "The admission-and-enrollment page states the information applies to 2026-2027 applications, but exact deadlines are produced through an interactive applicant flow.",
+        "notes": "No complete static application window was captured from the official pages."
+      }
+    },
+    {
+      "universityId": "erasmus-university-rotterdam",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "limited",
+      "notes": "Erasmus University Rotterdam publishes a Data Science and Marketing Analytics MSc specialisation with September start and an EEA application deadline. The captured summary did not expose the non-EEA deadline or application opening date.",
+      "sourceUrl": "https://www.eur.nl/en/master/data-science-and-marketing-analytics",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September start",
+        "status": "deadline-without-opening-date",
+        "opensText": "Application Deadline (EEA) 1 May",
+        "notes": "The programme page summary gives the EEA deadline and September start date, but no cycle year or opening date was captured."
+      }
+    },
+    {
+      "universityId": "university-of-north-carolina-chapel-hill",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UNC-Chapel Hill central graduate admissions states that applications typically open in early August and final deadlines vary by academic program.",
+      "sourceUrl": "https://gradschool.unc.edu/admissions/deadlines/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall, spring, and summer admissions",
+        "status": "central-limits-with-program-specific-deadlines",
+        "opensText": "Applications typically open in early August; Graduate School funding consideration date is 16 December 2025; no additional fall residential applications accepted after 9 June.",
+        "notes": "The official deadline page provides central constraints, but programme-specific Computer Science deadlines must be checked separately before creating a formal dated window."
+      }
+    },
+    {
+      "universityId": "texas-a-and-m-university",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Texas A&M publishes an official Computer Science MS page and a central graduate apply page. The central page states graduate admissions information and deadlines are specific to each college, school, and programme.",
+      "sourceUrl": "https://engineering.tamu.edu/cse/academics/degrees/graduate/ms-cs.html",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Computer Science MS",
+        "status": "department-specific-dates",
+        "opensText": "Applicants should refer to the programme website and GraduateCAS process for exact deadlines.",
+        "notes": "The official MSCS page confirms the programme and application route, but no exact opening or closing date was captured."
+      }
+    },
+    {
+      "universityId": "technische-universit-t-berlin",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "TU Berlin publishes central master's application dates by semester and admission type. A reliable Computer Science MSc programme page was not captured in this pass, so dates are recorded as policy guidance only.",
+      "sourceUrl": "https://www.tu.berlin/en/studying/applying-and-enrolling/dates-deadlines",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Summer 2026 and Winter 2026/2027",
+        "status": "central-dates-programme-type-specific",
+        "opensText": "Summer 2026 master's: restricted 1 December 2025-15 January 2026; open admission 1 December 2025-28 February 2026. Winter 2026/2027 master's: German-language restricted 1 April-15 June 2026; English-language restricted 1 April-15 May 2026; open admission 1 June-31 August 2026.",
+        "notes": "The official dates page gives complete central windows, but the target programme's admission type must be confirmed before formal programme windows are created."
+      }
+    },
+    {
+      "universityId": "university-of-southern-california",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "USC Viterbi publishes programme-level MS Computer Science deadlines for spring and fall admission. The captured page gives deadline dates but not application opening dates.",
+      "sourceUrl": "https://viterbigradadmission.usc.edu/programs/masters/msprograms/computer-science/ms-computer-science/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Spring and fall admission",
+        "status": "deadlines-without-opening-date",
+        "opensText": "Spring general deadline 15 September; fall scholarship consideration deadline 15 December and final deadline 15 January.",
+        "notes": "No cycle years or opening dates were captured, so no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "university-of-groningen",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Groningen Computing Science MSc page publishes September 2027 start deadlines for Dutch, EU/EEA, and non-EU/EEA applicants. Applications are evaluated continuously, but no opening date is stated.",
+      "sourceUrl": "https://www.rug.nl/masters/computing-science/?lang=en",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2027",
+        "status": "deadline-without-opening-date",
+        "opensText": "Dutch, EU/EEA, and non-EU/EEA applicants: deadline 1 May 2027 for 1 September 2027 start.",
+        "notes": "The page states applications are evaluated on a continuous basis and applicants do not have to wait until the deadline, but it does not provide an exact opening date."
+      }
+    },
+    {
+      "universityId": "university-of-liverpool",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Liverpool Computer Science MSc page publishes September 2026 start dates and separate UK and international application deadlines.",
+      "sourceUrl": "https://www.liverpool.ac.uk/courses/postgraduate-taught/computer-science-msc",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "announced-deadlines-without-opening-date",
+        "opensText": "UK students apply by 11 September 2026; international students apply by 21 August 2026; course starts 28 September 2026.",
+        "notes": "The official course page gives closing dates by applicant category but not the application opening date."
+      }
+    },
+    {
+      "universityId": "university-of-cape-town",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UCT's School of IT publishes Masters in Computer Science routes. The coursework-and-dissertation route has a fixed application period, while the dissertation-only route has no closing date.",
+      "sourceUrl": "https://sit.uct.ac.za/masters-computer-science",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "deadline-with-partial-opening-month",
+        "opensText": "For Masters by Coursework and Dissertation, applications open April and close 30 September; applications for 2026 are now open and close 30 September 2025.",
+        "notes": "The page gives opening month and closing date, but not the exact opening day. The Masters by Dissertation route has no opening or closing dates."
+      }
+    },
+    {
+      "universityId": "western-university",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Western University's Graduate and Postdoctoral Studies page confirms the Computer Science MSc, fall-only admission, and separate domestic and international deadlines.",
+      "sourceUrl": "https://grad.uwo.ca/admissions/programs/program.cfm?p=37",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall September intake",
+        "status": "deadlines-without-opening-date",
+        "opensText": "Domestic applicants: 31 July; international applicants: 15 February. The department accepts new MSc students in the fall September term only.",
+        "notes": "The official page gives closing dates but not a cycle year or exact application opening date."
+      }
+    },
+    {
+      "universityId": "university-of-vienna",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Vienna Computer Science master's page confirms an English-taught MSc with an admission selection procedure.",
+      "sourceUrl": "https://studieren.univie.ac.at/en/degree-programmes/master-programmes/computer-science-master/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Computer Science MSc",
+        "status": "selection-procedure-dates-not-captured",
+        "opensText": "The programme page links to a selection procedure and the central master admissions page lists Computer Science as an English master with AV selection procedure.",
+        "notes": "No complete application-period dates were captured from the accessible official pages in this pass."
+      }
+    },
+    {
+      "universityId": "universiti-teknologi-malaysia-utm",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UTM's official admission site lists postgraduate study for international and Malaysian applicants, including the Faculty of Computing and research, mixed-mode, and coursework master's routes.",
+      "sourceUrl": "https://admission.utm.my/international-postgraduate-study/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Postgraduate study",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official postgraduate admission page exposes programme categories and application route but not exact intake opening or closing dates in the accessible text.",
+        "notes": "Keep monitoring UTM admission pages and faculty pages for intake-specific postgraduate deadlines."
+      }
+    },
+    {
+      "universityId": "wageningen-university-and-research",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "limited",
+      "notes": "WUR publishes a Data Science for Food and Health MSc that accepts students with computer science, AI, data science, and related ICT backgrounds. The central master's application page provides applicant-category deadlines.",
+      "sourceUrl": "https://www.wur.nl/en/education/master/application-admission-masters/apply-masters-programme",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September and selected February starts",
+        "status": "deadlines-without-opening-date",
+        "opensText": "For September starts, NL/EU/EFTA students apply in Studielink by 15 June and submit WU documents by 1 July; non-EU/non-EFTA students apply in Studielink by 15 April and submit documents by 1 May. Applications for September 2026 are closed; the page offers notification for September 2027 opening.",
+        "notes": "The page gives exact deadlines and current September 2026 closed status, but not the exact September 2027 opening date."
+      }
+    },
+    {
+      "universityId": "university-of-exeter",
+      "model": "applicant-category",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "The University of Exeter publishes central master's application deadlines for 2026/2027, with different UK and international deadlines and a January-start window.",
+      "sourceUrl": "https://www.exeter.ac.uk/masters-degrees/apply/application-deadlines/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "2026/2027",
+        "status": "central-deadlines-with-limited-opening-date",
+        "opensText": "International applicants for 2026/2027 must apply by 23:59 Friday 11 September 2026 UK time; UK applicants by 23:59 Wednesday 16 September 2026. January 2027 start applications open Monday 2 March 2026 and close 23:59 Monday 4 January 2027.",
+        "notes": "The January opening and closing dates are central to January-start programmes; programme eligibility should be checked before creating a formal programme-specific window."
+      }
+    },
+    {
+      "universityId": "university-of-geneva",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "The UNIGE Faculty of Science page provides the official bachelor and master programme listing and links to Computer Science section navigation. Its dynamic programme cards require same-origin cookies, so no exact Computer Science master card or application dates were captured in this pass.",
+      "sourceUrl": "https://www.unige.ch/sciences/en/enseignements/formations/bachelor-master",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Faculty of Science master programmes",
+        "status": "dynamic-listing-dates-not-captured",
+        "opensText": "The official page links to UNIGE registration and important dates, but the accessible static text does not expose application opening or closing dates.",
+        "notes": "Keep monitoring the UNIGE science listing and central master programme portal for a directly readable Computer Science master admissions page."
+      }
+    },
+    {
+      "universityId": "lancaster-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Lancaster University publishes a postgraduate application page for master's and other postgraduate study. It directs applicants to course information pages for programme details and uses the postgraduate application portal for most programmes.",
+      "sourceUrl": "https://www.lancaster.ac.uk/study/postgraduate/applying-for-postgraduate-study/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "2026 and 2027 postgraduate entry",
+        "status": "application-route-without-deadline",
+        "opensText": "The page provides application links for 2026 entry and states that applications for 2027 entry will open in September 2026.",
+        "notes": "No Computer Science-specific deadline was captured from accessible official pages in this pass."
+      }
+    },
+    {
+      "universityId": "hanyang-university",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Hanyang Graduate School's official English department listing includes the Department of Computer Science, Artificial Intelligence, Data Science, and related graduate departments. The application schedule page points international applicants to the Office of International Affairs notices for current announcements.",
+      "sourceUrl": "https://www.grad.hanyang.ac.kr/eng/department/departmentintro.php",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "official-route-current-dates-not-captured",
+        "opensText": "The accessible English application schedule page shows an old 2021 spring/fall sample schedule and instructs international applicants to check Office of International Affairs admission notices for current announcements.",
+        "notes": "The programme route is reliable, but no current 2026/2027 application window was captured, so no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "michigan-state-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "MSU Graduate School states that graduate admissions are decentralized and applicants should contact the department or programme for requirements, deadline dates, admissions procedures, and other essential information.",
+      "sourceUrl": "https://grad.msu.edu/admissions/apply",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "decentralized-programme-deadlines",
+        "opensText": "Applicants should contact the department/programme of interest for deadline dates and admissions procedures.",
+        "notes": "The old CSE deep links currently resolve to a general department page in this environment, so no Computer Science-specific current window is recorded."
+      }
+    },
+    {
+      "universityId": "ghent-university",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Ghent University's study guide publishes the English-taught Master of Science in Computer Science Engineering for 2026-2027 with enrolment link. The central application page states that complete online applications and verified academic degrees must arrive before the relevant deadline, but the exact deadline table was not captured.",
+      "sourceUrl": "https://studiekiezer.ugent.be/2026/master-of-science-in-computer-science-engineering-en",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "2026-2027",
+        "status": "programme-confirmed-deadline-table-not-captured",
+        "opensText": "The programme page includes an enrol link for the 2026-2027 Master of Science in Computer Science Engineering. Ghent's application page says complete files must be received by the application deadline.",
+        "notes": "No exact opening or closing date was captured from accessible official pages in this pass."
+      }
+    },
+    {
+      "universityId": "nagoya-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "limited",
+      "notes": "Nagoya University publishes central master's programme information and Global 30 English-taught graduate programmes. The accessible G30 graduate list includes multiple English-taught engineering/science master's routes, but no current application-period dates were captured.",
+      "sourceUrl": "https://admissions.g30.nagoya-u.ac.jp/graduate/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "G30 graduate programmes",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official G30 graduate page lists English-taught graduate programmes with Master and Doctor routes.",
+        "notes": "The central master's page points to the G30 graduate site, but this pass did not capture current date ranges for applications."
+      }
+    },
+    {
+      "universityId": "chalmers-university-of-technology",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Chalmers publishes an official English-taught master's programme catalogue. The accessible page states that master's programmes are two years, taught in English, worth 120 ECTS credits, and that the application period runs from mid-October to mid-January.",
+      "sourceUrl": "https://www.chalmers.se/en/education/find-masters-programme/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Master's programmes",
+        "status": "approximate-application-period",
+        "opensText": "Application period: Mid-October - Mid-January.",
+        "notes": "The page provides month-level application-period guidance but no exact opening or closing dates, so no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "washington-university-in-st-louis",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "WashU Computer Science & Engineering publishes graduate programmes including MS in Computer Science, MS in Computer Engineering, MS in Cybersecurity Engineering, MEng in Computer Science & Engineering, and related certificates.",
+      "sourceUrl": "https://cse.wustl.edu/graduate/programs/Pages/default.aspx",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "CSE graduate programmes",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official page links to Graduate Admissions and Apply Now, but no exact application opening or closing dates were captured.",
+        "notes": "No formal dated window is recorded until WashU exposes current CSE graduate deadline dates in a readable official page."
+      }
+    },
+    {
+      "universityId": "university-of-montreal",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Université de Montréal publishes intake-specific application dates for the Maîtrise en informatique. The page lists Hiver 2027, Automne 2027, and Hiver 2028 intakes with opening guidance.",
+      "sourceUrl": "https://admission.umontreal.ca/programmes/maitrise-en-informatique/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Hiver 2027, Automne 2027, Hiver 2028",
+        "status": "programme-dated-windows",
+        "opensText": "Hiver 2027: applications from 1 February 2026 to 1 September 2026. Automne 2027: applications possible from 1 August 2026. Hiver 2028: applications possible from 1 February 2027.",
+        "notes": "The Hiver 2027 opening and closing dates are exact and recorded as a formal application window. Later intakes currently expose opening dates only in the captured text."
+      }
+    },
+    {
+      "universityId": "university-of-york",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of York publishes the Advanced Computer Science MSc for 2026/27 entry, September 2026 start, one year full-time, in the Department of Computer Science.",
+      "sourceUrl": "https://www.york.ac.uk/study/postgraduate-taught/courses/msc-advanced-computer-science/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "programme-open-without-deadline",
+        "opensText": "The course page has an Apply for this course link for September 2026 entry but does not expose an application deadline in accessible text.",
+        "notes": "No formal dated window is recorded because no closing date was captured."
+      }
+    },
+    {
+      "universityId": "hokkaido-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Hokkaido University's central graduate admissions overview explains that applicants must find and contact a supervisor, then check the target graduate school's website for application procedures. It lists Information Science and Technology among graduate schools.",
+      "sourceUrl": "https://www.global.hokudai.ac.jp/admissions/graduate-admissions-overview/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "graduate-school-specific-dates",
+        "opensText": "Applicants should complete supervisor contact at least six months before intended enrolment and then check the relevant graduate school's website for how to apply.",
+        "notes": "The official central page is reliable route guidance, but no current Information Science and Technology window dates were captured."
+      }
+    },
+    {
+      "universityId": "kyushu-university",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Kyushu University's Graduate School of Information Science and Electrical Engineering publishes a master's admissions route for Information Science and Technology and Electrical and Electronic Engineering.",
+      "sourceUrl": "https://www.isee.kyushu-u.ac.jp/e/admissions/master.html",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Master's Program",
+        "status": "programme-route-without-current-dates",
+        "opensText": "The page links to ISEE master's admissions and includes 2026 notices about admission-process changes effective from AY 2027, but no exact current application opening or closing dates were captured.",
+        "notes": "No formal dated window is recorded until the current examination/application schedule is captured."
+      }
+    },
+    {
+      "universityId": "arizona-state-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "ASU's graduate admission page states that each graduate programme has unique standards and that application deadlines are set and enforced by academic programme offices, with specific deadline information in Degree Search.",
+      "sourceUrl": "https://admission.asu.edu/graduate/apply",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Fall 2026 and Spring 2027 graduate admission",
+        "status": "central-open-dates-programme-specific-deadlines",
+        "opensText": "Fall 2026 application opens 1 September 2025; Spring 2027 application opens 1 February 2026. Specific deadline information is programme-specific in Degree Search.",
+        "notes": "Engineering/SCAI programme pages returned 403 in this environment and the Degree Search Computer Science MS deep link did not resolve, so no Computer Science-specific formal window is recorded."
+      }
+    },
+    {
+      "universityId": "mcmaster-university",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "McMaster University's Computing and Software graduate page publishes the Computer Science MSc with September typical entry and applicant-category deadlines.",
+      "sourceUrl": "https://gs.mcmaster.ca/program/computing-and-software/",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September entry",
+        "status": "deadlines-without-opening-date",
+        "opensText": "Computer Science MSc typical deadline: international applicants 28 February; Canadian/permanent resident applicants 31 July.",
+        "notes": "The page gives category-specific closing dates but no application opening dates or cycle year, so no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "universidad-de-chile",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Universidad de Chile's official postgraduate catalogue lists Magíster en Ciencias, mención Computación, Doctorado en Computación, and Magíster en Tecnologías de la Información.",
+      "sourceUrl": "https://www.uchile.cl/postgrados",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "Postgraduate catalogue",
+        "status": "programme-listing-without-dates",
+        "opensText": "The central postgraduate catalogue confirms computing-related master's routes but does not expose exact application window dates in accessible text.",
+        "notes": "A direct DCC programme path tested in this pass returned 404, so the catalogue is recorded as reliable programme presence only."
+      }
+    },
+    {
+      "universityId": "national-tsing-hua-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "NTHU's admissions centre lists master's admissions routes, including general exams, joint admissions, master's programmes, overseas student routes, and international student admissions.",
+      "sourceUrl": "https://admission.nthu.edu.tw/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Master's admissions",
+        "status": "central-route-without-dates",
+        "opensText": "The official admissions centre exposes master's admissions and international-student routes but no exact current application opening or closing dates were captured.",
+        "notes": "The Computer Science department page connection reset in this environment, so programme-level dates were not recorded."
+      }
+    },
+    {
+      "universityId": "khalifa-university-of-science-and-technology",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Khalifa University's postgraduate application portal states that online application for admission is currently closed and allows users to create an account for notifications when the next intake opens.",
+      "sourceUrl": "https://pgapply.ku.ac.ae/portal/pg_landing",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Postgraduate admissions",
+        "status": "closed-next-intake-not-announced",
+        "opensText": "The online application for admission is currently closed; applicants can create an account to receive notifications when the next intake opens.",
+        "notes": "No exact next intake opening or closing date was captured."
+      }
+    },
+    {
+      "universityId": "university-of-california-santa-barbara-ucsb",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "UCSB Graduate Division instructs applicants to complete and submit the online application by their department or programme's deadline and to check programme-specific requirements.",
+      "sourceUrl": "https://www.graddiv.ucsb.edu/how-apply",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Graduate admissions",
+        "status": "programme-specific-deadlines",
+        "opensText": "Applicants must submit the online application by the department/programme deadline; fee waiver requests should be submitted at least two weeks before the application deadline.",
+        "notes": "Computer Science deep links tested in this pass returned 404, so no CS-specific dated window is recorded."
+      }
+    },
+    {
+      "universityId": "indian-institute-of-technology-madras-iitm",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "IIT Madras publishes M.Tech and M.A. Admissions 2026 with M.Tech in Computer Science and Engineering listed under the Department of Computer Science and Engineering.",
+      "sourceUrl": "https://mtechadm.iitm.ac.in/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "M.Tech and M.A. Admissions 2026",
+        "status": "dated-window-closed",
+        "opensText": "Online application portal opened 28 March 2026 and closed 28 April 2026 at 11:59 PM; the page currently states registration is closed.",
+        "notes": "The exact 2026 application window is recorded as a formal verified window."
+      }
+    },
+    {
+      "universityId": "curtin-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Curtin University's official postgraduate information technology page lists Master of Computing (Computer Science), Master of Computing (Artificial Intelligence), Master of Computing (Cyber Security), Master of Artificial Intelligence, Master of Information Systems and Technology, and related postgraduate routes.",
+      "sourceUrl": "https://www.curtin.edu.au/study/study-areas/information-technology/postgraduate-information-technology/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Postgraduate information technology",
+        "status": "programme-listing-without-dates",
+        "opensText": "The page links to application key dates and deadlines but does not expose exact application opening or closing dates in accessible text.",
+        "notes": "No formal dated window is recorded until programme-specific intake dates are captured."
+      }
+    },
+    {
+      "universityId": "university-of-wollongong",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The University of Wollongong publishes a Master of Computer Science page with direct application guidance for domestic and international applicants.",
+      "sourceUrl": "https://www.uow.edu.au/study/courses/master-of-computer-science/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Master of Computer Science",
+        "status": "application-route-without-dates",
+        "opensText": "Applicants can apply directly to UOW and should check course entry requirements, intake dates, and closing dates before applying.",
+        "notes": "The accessible course page confirms the programme and application route but does not expose exact intake opening or closing dates."
+      }
+    },
+    {
+      "universityId": "wuhan-university",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Wuhan University's official School of Computer Science page exposes graduate education and international-student education navigation under the computing school.",
+      "sourceUrl": "https://cs.whu.edu.cn/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "School of Computer Science",
+        "status": "school-route-without-dates",
+        "opensText": "The official computer school page confirms the graduate education route but does not expose exact current application opening or closing dates in accessible text.",
+        "notes": "The international admissions path tested in this pass returned 404, so this is recorded as programme-location evidence only."
+      }
+    },
+    {
+      "universityId": "university-complutense-madrid",
+      "model": "program-specific",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "Universidad Complutense de Madrid's Faculty of Informatics master's page lists computing-related master's routes including Formal Methods in Computer Science and other informatics/engineering master's programmes.",
+      "sourceUrl": "https://informatica.ucm.es/master",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Faculty of Informatics master's programmes",
+        "status": "programme-listing-without-dates",
+        "opensText": "The official Faculty of Informatics page lists master's programmes for the 2025/2026 and 2026/2027 cycles, but no exact application opening or closing dates were captured.",
+        "notes": "The central master's admissions URL tested in this pass returned 404."
+      }
+    },
+    {
+      "universityId": "universitas-indonesia",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Universitas Indonesia Faculty of Computer Science publishes Magister Ilmu Komputer and Magister Teknologi Informasi postgraduate pages, and the SIMAK UI portal lists 2026/2027 admissions information.",
+      "sourceUrl": "https://cs.ui.ac.id/akademik/pascasarjana/magister-ilmu-komputer/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Magister Ilmu Komputer",
+        "status": "programme-and-portal-without-dates",
+        "opensText": "The programme page confirms the master's route and the SIMAK UI portal confirms 2026/2027 admissions activity, but exact programme opening or closing dates were not captured.",
+        "notes": "The application portal is recorded separately as the programme application URL."
+      }
+    },
+    {
+      "universityId": "ohio-state-university",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Ohio State University's Computer Science and Engineering graduate page confirms graduate study and the central Graduate and Professional Admissions programme search lists Computer Science and Engineering - Master of Science.",
+      "sourceUrl": "https://cse.osu.edu/graduate",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Computer Science and Engineering graduate programmes",
+        "status": "programme-route-without-dates",
+        "opensText": "The CSE page directs applicants to graduate admissions and the central programme search lists the MS route, but no exact current application opening or closing dates were captured.",
+        "notes": "Several CSE admissions deep links returned 404, so the stable graduate page and central programme search are retained."
+      }
+    },
+    {
+      "universityId": "queen-s-university-ontario",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Queen's University School of Graduate Studies and Postdoctoral Affairs publishes a central graduate application page and directs applicants to programme-specific requirements and the online application.",
+      "sourceUrl": "https://www.queensu.ca/grad-postdoc/grad-studies/apply",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Graduate applications",
+        "status": "central-route-with-programme-specific-requirements",
+        "opensText": "The central page explains how to apply to graduate programmes and links to the online application, but no exact institution-wide opening or closing dates were captured.",
+        "notes": "Programme pages should be checked for individual admissions requirements and deadlines."
+      }
+    },
+    {
+      "universityId": "universit-t-hamburg",
+      "model": "centralized",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Universität Hamburg publishes central master's application periods: summer semester 1 December to 15 January, winter semester 1 May to 15 June, and international master's programmes 15 February to 31 March.",
+      "sourceUrl": "https://www.uni-hamburg.de/en/campuscenter/bewerbung/master.html",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Master's applications",
+        "status": "recurring-central-periods",
+        "opensText": "Application periods are 1 December to 15 January for summer semester, 1 May to 15 June for winter semester, and 15 February to 31 March for international master's programmes.",
+        "notes": "The official page gives stable month/day periods rather than a single dated 2026/2027 record, so no formal exact-year window is recorded in applications.json."
+      }
+    },
+    {
+      "universityId": "university-of-reading",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "The University of Reading publishes central master's application information and says most master's programmes do not formally close, while some programmes specify deadlines on course pages.",
+      "sourceUrl": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/masters-how-to-apply",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Master's application information",
+        "status": "central-guidance-with-recommended-deadlines",
+        "opensText": "For September admission, Reading recommends UK applicants apply by 1 August and international students requiring a visa apply by 1 July; programme-specific deadlines appear on course pages where applicable.",
+        "notes": "The page states applications may still be considered after the recommended dates, so these are not recorded as formal closing windows."
+      }
+    },
+    {
+      "universityId": "vrije-universiteit-amsterdam",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Vrije Universiteit Amsterdam publishes a central master's programmes overview and related master study-choice route, but the current accessible pages did not expose central application deadlines.",
+      "sourceUrl": "https://vu.nl/en/education/master",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Master's programmes",
+        "status": "central-programme-overview-without-dates",
+        "opensText": "The central master's overview and programme list are accessible, but exact application opening or closing dates were not captured in accessible text.",
+        "notes": "Several guessed application-deadline URLs returned 404, so programme-specific pages should be checked in a later quality pass."
+      }
+    },
+    {
+      "universityId": "waseda-university",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Waseda University's International Admissions Office publishes a graduate programmes route covering Japanese-based and English-based graduate programmes plus special scholarship programmes.",
+      "sourceUrl": "https://www.waseda.jp/inst/admission/en/graduate/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Graduate programmes",
+        "status": "central-graduate-route-without-dates",
+        "opensText": "The International Admissions Office graduate page links to graduate programme categories, but no exact institution-wide application opening or closing dates were captured.",
+        "notes": "The admissions homepage shows September 2026 entry application-guide news, but formal deadlines remain programme-specific."
+      }
+    },
+    {
+      "universityId": "vienna-university-of-technology",
+      "model": "centralized",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "TU Wien publishes a central admission page for bachelor's, master's, and doctoral programmes and directs applicants to admission deadlines and the Admissions Office.",
+      "sourceUrl": "https://www.tuwien.at/en/studies/admission",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Admission",
+        "status": "central-route-with-deadline-reference",
+        "opensText": "The central admission page instructs applicants to note admission deadlines and identifies the Admissions Office as the first point of contact, but exact dated master's windows were not captured in accessible text.",
+        "notes": "The master programmes page confirms TU Wien master's study routes; a later pass should target the admission-deadlines subpage."
+      }
+    },
+    {
+      "universityId": "national-yang-ming-chiao-tung-university",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "NYCU's Office of International Affairs publishes a Degree-seeking Students section with International Students admissions, application announcements, application fees, and international admissions links.",
+      "sourceUrl": "https://oia.nycu.edu.tw/oia/en/app/folder/782",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "International degree admissions",
+        "status": "oia-admissions-route-without-dates",
+        "opensText": "The OIA admissions folder confirms the international degree-seeking admissions route, but no exact current application opening or closing dates were captured in accessible text.",
+        "notes": "Older guessed NYCU OIA short paths returned 404; the current OIA folder path is retained."
+      }
     }
   ]
 }

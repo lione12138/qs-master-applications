@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Canonical applicant categories referenced by official and predicted application windows.",
-    "updatedAt": "2026-06-14"
+    "updatedAt": "2026-06-16"
   },
   "categories": [
     {
@@ -57,6 +57,12 @@
       "labelZh": "国际及欧盟申请人",
       "labelEn": "International and EU applicants",
       "description": "Applicants using an application round shared by international and EU fee-status groups."
+    },
+    {
+      "id": "domestic-students",
+      "labelZh": "??/????",
+      "labelEn": "Domestic students",
+      "description": "Applicants using a university domestic-student admissions route."
     }
   ]
 }

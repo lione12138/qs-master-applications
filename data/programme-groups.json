@@ -447,6 +447,534 @@
       "universityId": "ruprecht-karls-universit-t-heidelberg",
       "name": "Heidelberg Data and Computer Science master's",
       "description": "Access- and admission-restricted Master of Science in Data and Computer Science taught in English."
+    },
+    {
+      "id": "uw-pmp-computer-science",
+      "universityId": "university-of-washington",
+      "name": "UW Allen School Professional Master's Program",
+      "description": "Part-time Professional Master's Program in Computer Science & Engineering with quarter-specific recurring deadlines."
+    },
+    {
+      "id": "adelaide-computer-science-master",
+      "universityId": "adelaide-university",
+      "name": "Adelaide Master of Computer Science",
+      "description": "Postgraduate Master of Computer Science admitting international students for February and July starts."
+    },
+    {
+      "id": "penn-state-cse-graduate",
+      "universityId": "pennsylvania-state-university",
+      "name": "Penn State Computer Science and Engineering graduate programmes",
+      "description": "Computer Science and Engineering M.S., M.Eng., and Ph.D. admissions through Penn State EECS and the Fox Graduate School."
+    },
+    {
+      "id": "uba-data-mining-master",
+      "universityId": "universidad-de-buenos-aires",
+      "name": "UBA Maestr?a en Explotaci?n de Datos y Descubrimiento del Conocimiento",
+      "description": "Data mining and knowledge discovery master's programme administered by UBA Exactas and the Department of Computer Science."
+    },
+    {
+      "id": "science-tokyo-international-graduate-program",
+      "universityId": "tokyo-institute-of-technology",
+      "name": "Science Tokyo International Graduate Program",
+      "description": "International Graduate Program routes for science and engineering graduate applicants at Institute of Science Tokyo."
+    },
+    {
+      "id": "leeds-advanced-computer-science-msc",
+      "universityId": "university-of-leeds",
+      "name": "Leeds Advanced Computer Science MSc",
+      "description": "Taught Advanced Computer Science master's using the University of Leeds course-level application timetable."
+    },
+    {
+      "id": "southampton-computer-science-msc",
+      "universityId": "university-of-southampton",
+      "name": "Southampton Computer Science MSc",
+      "description": "Taught Computer Science master's with separate UK and international course-level application deadlines."
+    },
+    {
+      "id": "bu-grs-computer-science-ms",
+      "universityId": "boston-university",
+      "name": "BU GRS Computer Science MS",
+      "description": "Graduate School of Arts and Sciences on-campus Computer Science MS admissions with priority and regular deadlines."
+    },
+    {
+      "id": "fu-berlin-data-science-master",
+      "universityId": "freie-universit-t-berlin",
+      "name": "Freie Universit?t Berlin Data Science MSc",
+      "description": "English-taught Data Science master's covered by Freie Universit?t Berlin consecutive master application periods."
+    },
+    {
+      "id": "purdue-computer-science-graduate",
+      "universityId": "purdue-university",
+      "name": "Purdue Computer Science graduate programme",
+      "description": "Computer Science MS and PhD admissions at Purdue West Lafayette using department-level application deadlines."
+    },
+    {
+      "id": "osaka-ist-master-admissions",
+      "universityId": "the-university-of-osaka",
+      "name": "Osaka IST master admissions",
+      "description": "Graduate School of Information Science and Technology master course admissions, including special selections for international applicants."
+    },
+    {
+      "id": "sheffield-advanced-computer-science-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Sheffield Advanced Computer Science MSc",
+      "description": "Advanced Computer Science MSc using Sheffield postgraduate taught application process."
+    },
+    {
+      "id": "uppsala-computer-science-master",
+      "universityId": "uppsala-university",
+      "name": "Uppsala Computer Science master's",
+      "description": "English-taught Master's Programme in Computer Science using Sweden's central University Admissions process."
+    },
+    {
+      "id": "durham-scda-computer-vision-robotics-msc",
+      "universityId": "durham-university",
+      "name": "Durham Scientific Computing and Data Analysis MSc",
+      "description": "Scientific Computing and Data Analysis (Computer Vision and Robotics) MSc with September intake."
+    },
+    {
+      "id": "ualberta-computing-science-graduate",
+      "universityId": "university-of-alberta",
+      "name": "Alberta Computing Science graduate programmes",
+      "description": "Computing Science M.Sc. and Ph.D. programmes administered by the Department of Computing Science and Faculty of Science."
+    },
+    {
+      "id": "uts-information-technology-master",
+      "universityId": "university-of-technology-sydney",
+      "name": "UTS Master of Information Technology",
+      "description": "Coursework Master of Information Technology with domestic and international applicant-category application dates."
+    },
+    {
+      "id": "uzh-informatics-master",
+      "universityId": "university-of-zurich-uzh",
+      "name": "UZH Informatics master admissions",
+      "description": "University of Zurich master admissions for informatics-related study programmes using central application windows."
+    },
+    {
+      "id": "utrecht-computing-science-master",
+      "universityId": "utrecht-university",
+      "name": "Utrecht Computing Science MSc",
+      "description": "Selective Computing Science master's using applicant-background and passport-category application deadlines."
+    },
+    {
+      "id": "ucph-computer-science-msc",
+      "universityId": "university-of-copenhagen",
+      "name": "UCPH Computer Science MSc",
+      "description": "University of Copenhagen Computer Science MSc with EU/EEA, Swiss, and non-EU applicant-category deadlines."
+    },
+    {
+      "id": "postech-graduate-general-admissions",
+      "universityId": "pohang-university-of-science-and-technology-postech",
+      "name": "POSTECH graduate general admissions",
+      "description": "POSTECH general graduate admissions rounds covering science and engineering departments including computer engineering."
+    },
+    {
+      "id": "dtu-computer-science-engineering-msc",
+      "universityId": "technical-university-of-denmark",
+      "name": "DTU Computer Science and Engineering MSc",
+      "description": "MSc in Computer Science and Engineering using DTU central MSc application deadlines."
+    },
+    {
+      "id": "usp-computer-science-graduate",
+      "universityId": "universidade-de-s-o-paulo-usp",
+      "name": "USP Computer Science graduate programme",
+      "description": "IME-USP graduate programme in Computer Science with programme-specific selection instructions."
+    },
+    {
+      "id": "uw-madison-computer-sciences-graduate",
+      "universityId": "university-of-wisconsin-madison",
+      "name": "UW-Madison Computer Sciences graduate programmes",
+      "description": "Computer Sciences traditional MS/PhD and related graduate programmes using department-level admissions deadlines."
+    },
+    {
+      "id": "qatar-university-graduate-admissions",
+      "universityId": "qatar-university",
+      "name": "Qatar University graduate admissions",
+      "description": "Central graduate admissions timeline for Qatar University graduate programmes."
+    },
+    {
+      "id": "st-andrews-computer-science-msc",
+      "universityId": "university-of-st-andrews",
+      "name": "St Andrews Computer Science MSc",
+      "description": "Computer Science MSc with September and January entry deadlines."
+    },
+    {
+      "id": "aalto-computer-science-msc",
+      "universityId": "aalto-university",
+      "name": "Aalto Computer Science MSc",
+      "description": "Two-year Master's in Computer Science using Aalto's central master's application period."
+    },
+    {
+      "id": "helsinki-computer-science-master",
+      "universityId": "university-of-helsinki",
+      "name": "Helsinki Computer Science master's",
+      "description": "University of Helsinki Computer Science master's programme with a published annual international master's application period."
+    },
+    {
+      "id": "leiden-computer-science-msc",
+      "universityId": "leiden-university",
+      "name": "Leiden Computer Science MSc",
+      "description": "Computer Science MSc with applicant-category application deadlines for September and February starts."
+    },
+    {
+      "id": "rice-graduate-admissions",
+      "universityId": "rice-university",
+      "name": "Rice graduate admissions",
+      "description": "Rice University graduate admissions where departments set exact graduate programme deadlines."
+    },
+    {
+      "id": "uio-informatics-programming-master",
+      "universityId": "university-of-oslo",
+      "name": "UiO Informatics: Programming and Systems Architecture",
+      "description": "University of Oslo informatics master's programme using applicant-category central master's application dates."
+    },
+    {
+      "id": "waterloo-computer-science-mmath",
+      "universityId": "university-of-waterloo",
+      "name": "Waterloo Computer Science MMath",
+      "description": "Research master's in Computer Science with term-specific application deadlines."
+    },
+    {
+      "id": "gatech-computer-science-ms",
+      "universityId": "georgia-institute-of-technology",
+      "name": "Georgia Tech MS Computer Science",
+      "description": "On-campus Master of Science in Computer Science with annual fall admission deadline."
+    },
+    {
+      "id": "iit-delhi-pg-admissions",
+      "universityId": "indian-institute-of-technology-delhi-iitd",
+      "name": "IIT Delhi postgraduate admissions",
+      "description": "Central IIT Delhi postgraduate admissions information covering M.Tech., M.S.(R), and PhD routes."
+    },
+    {
+      "id": "rmit-master-information-technology",
+      "universityId": "rmit-university",
+      "name": "RMIT Master of Information Technology",
+      "description": "Master of Information Technology with central local and international application-date policies."
+    },
+    {
+      "id": "sapienza-computer-science-master",
+      "universityId": "sapienza-university-of-rome",
+      "name": "Sapienza Computer Science master's",
+      "description": "English-taught Computer Science master's degree in Sapienza's official course catalogue."
+    },
+    {
+      "id": "iit-bombay-mtech-admissions",
+      "universityId": "indian-institute-of-technology-bombay-iitb",
+      "name": "IIT Bombay M.Tech admissions",
+      "description": "IIT Bombay M.Tech. and M.Tech.+Ph.D. admissions for the Autumn 2026-27 cycle."
+    },
+    {
+      "id": "aarhus-computer-science-master",
+      "universityId": "aarhus-university",
+      "name": "Aarhus Computer Science MSc",
+      "description": "Aarhus University English-taught Computer Science master's with central applicant-category deadlines."
+    },
+    {
+      "id": "bath-computer-science-msc",
+      "universityId": "university-of-bath",
+      "name": "Bath Computer Science MSc",
+      "description": "University of Bath Computer Science MSc for September 2026 entry."
+    },
+    {
+      "id": "upm-postgraduate-computer-science",
+      "universityId": "universiti-putra-malaysia-upm",
+      "name": "UPM postgraduate Computer Science routes",
+      "description": "UPM postgraduate programmes including Faculty of Computer Science and Information Technology coursework and research routes."
+    },
+    {
+      "id": "usm-computer-sciences-postgraduate",
+      "universityId": "universiti-sains-malaysia-usm",
+      "name": "USM School of Computer Sciences postgraduate programmes",
+      "description": "USM postgraduate programmes in Computer Science, Data Science, Digital Transformation, and related research routes."
+    },
+    {
+      "id": "newcastle-cloud-computing-msc",
+      "universityId": "newcastle-university",
+      "name": "Newcastle Cloud Computing MSc",
+      "description": "Newcastle University postgraduate taught Cloud Computing MSc using course-level application process."
+    },
+    {
+      "id": "bologna-artificial-intelligence-master",
+      "universityId": "alma-mater-studiorum-university-of-bologna",
+      "name": "University of Bologna Artificial Intelligence MSc",
+      "description": "English-taught second-cycle Artificial Intelligence degree in Bologna's official course site."
+    },
+    {
+      "id": "tue-computer-science-engineering-master",
+      "universityId": "eindhoven-university-of-technology",
+      "name": "TU/e Computer Science and Engineering MSc",
+      "description": "Eindhoven University of Technology Computer Science and Engineering master's programme."
+    },
+    {
+      "id": "erasmus-data-science-marketing-analytics",
+      "universityId": "erasmus-university-rotterdam",
+      "name": "Erasmus Data Science and Marketing Analytics MSc",
+      "description": "Erasmus University Rotterdam MSc specialisation combining data science, AI, marketing, and statistics."
+    },
+    {
+      "id": "unc-graduate-admissions",
+      "universityId": "university-of-north-carolina-chapel-hill",
+      "name": "UNC graduate admissions",
+      "description": "UNC-Chapel Hill central graduate admissions deadlines with programme-specific final deadlines."
+    },
+    {
+      "id": "texas-am-computer-science-ms",
+      "universityId": "texas-a-and-m-university",
+      "name": "Texas A&M Computer Science MS",
+      "description": "Texas A&M Computer Science and Engineering Master of Science in Computer Science."
+    },
+    {
+      "id": "tu-berlin-master-admissions",
+      "universityId": "technische-universit-t-berlin",
+      "name": "TU Berlin master's admissions",
+      "description": "TU Berlin central master's application dates and deadlines."
+    },
+    {
+      "id": "usc-computer-science-ms",
+      "universityId": "university-of-southern-california",
+      "name": "USC Computer Science MS",
+      "description": "USC Viterbi Master of Science in Computer Science with spring and fall deadlines."
+    },
+    {
+      "id": "groningen-computing-science-master",
+      "universityId": "university-of-groningen",
+      "name": "Groningen Computing Science MSc",
+      "description": "University of Groningen Computing Science MSc with published September-start deadlines."
+    },
+    {
+      "id": "liverpool-computer-science-msc",
+      "universityId": "university-of-liverpool",
+      "name": "Liverpool Computer Science MSc",
+      "description": "University of Liverpool Computer Science MSc with UK and international application deadlines."
+    },
+    {
+      "id": "uct-computer-science-masters",
+      "universityId": "university-of-cape-town",
+      "name": "UCT Masters in Computer Science",
+      "description": "University of Cape Town School of IT master's routes in Computer Science."
+    },
+    {
+      "id": "western-computer-science-msc",
+      "universityId": "western-university",
+      "name": "Western Computer Science MSc",
+      "description": "Western University Computer Science Master of Science route with fall-only intake."
+    },
+    {
+      "id": "vienna-computer-science-master",
+      "universityId": "university-of-vienna",
+      "name": "University of Vienna Computer Science MSc",
+      "description": "English-taught University of Vienna Computer Science master's programme with selection procedure."
+    },
+    {
+      "id": "utm-postgraduate-computing",
+      "universityId": "universiti-teknologi-malaysia-utm",
+      "name": "UTM postgraduate computing programmes",
+      "description": "UTM postgraduate study options through the Faculty of Computing and related postgraduate routes."
+    },
+    {
+      "id": "wur-data-science-food-health-master",
+      "universityId": "wageningen-university-and-research",
+      "name": "WUR Data Science for Food and Health MSc",
+      "description": "Wageningen University & Research master's programme combining data science with food and health domains."
+    },
+    {
+      "id": "exeter-masters-application-deadlines",
+      "universityId": "university-of-exeter",
+      "name": "Exeter master's application deadlines",
+      "description": "University of Exeter central master's application deadline policy for postgraduate taught programmes."
+    },
+    {
+      "id": "geneva-science-master-programmes",
+      "universityId": "university-of-geneva",
+      "name": "UNIGE Faculty of Science master programmes",
+      "description": "University of Geneva Faculty of Science bachelor and master programme listing with Computer Science section navigation."
+    },
+    {
+      "id": "lancaster-postgraduate-applications",
+      "universityId": "lancaster-university",
+      "name": "Lancaster postgraduate applications",
+      "description": "Lancaster University postgraduate application process and portal for master's and other postgraduate programmes."
+    },
+    {
+      "id": "hanyang-graduate-computer-science",
+      "universityId": "hanyang-university",
+      "name": "Hanyang Graduate School Computer Science",
+      "description": "Hanyang University Graduate School department listing and admissions schedule for graduate applicants."
+    },
+    {
+      "id": "msu-graduate-admissions",
+      "universityId": "michigan-state-university",
+      "name": "MSU graduate admissions",
+      "description": "Michigan State University Graduate School application route with programme-specific requirements and deadlines."
+    },
+    {
+      "id": "ghent-computer-science-engineering-master",
+      "universityId": "ghent-university",
+      "name": "Ghent Computer Science Engineering MSc",
+      "description": "Ghent University English-taught Master of Science in Computer Science Engineering."
+    },
+    {
+      "id": "nagoya-g30-graduate-programmes",
+      "universityId": "nagoya-university",
+      "name": "Nagoya G30 graduate programmes",
+      "description": "Nagoya University Global 30 English-taught graduate programmes and central master's programme listing."
+    },
+    {
+      "id": "chalmers-master-programmes",
+      "universityId": "chalmers-university-of-technology",
+      "name": "Chalmers master's programmes",
+      "description": "Chalmers University of Technology English-taught master's programme catalogue with central application-period guidance."
+    },
+    {
+      "id": "washu-cse-graduate-programmes",
+      "universityId": "washington-university-in-st-louis",
+      "name": "WashU CSE graduate programmes",
+      "description": "Washington University in St. Louis Computer Science & Engineering graduate programmes, including MS Computer Science."
+    },
+    {
+      "id": "umontreal-informatique-master",
+      "universityId": "university-of-montreal",
+      "name": "Université de Montréal Maîtrise en informatique",
+      "description": "Université de Montréal master's programme in computer science with intake-specific application dates."
+    },
+    {
+      "id": "york-advanced-computer-science-msc",
+      "universityId": "university-of-york",
+      "name": "York Advanced Computer Science MSc",
+      "description": "University of York Advanced Computer Science MSc for September 2026 entry."
+    },
+    {
+      "id": "hokkaido-graduate-admissions",
+      "universityId": "hokkaido-university",
+      "name": "Hokkaido graduate admissions",
+      "description": "Hokkaido University central graduate admissions overview with graduate-school-specific application steps."
+    },
+    {
+      "id": "kyushu-isee-master",
+      "universityId": "kyushu-university",
+      "name": "Kyushu ISEE master's admissions",
+      "description": "Kyushu University Graduate School of Information Science and Electrical Engineering master's admissions route."
+    },
+    {
+      "id": "asu-graduate-admissions",
+      "universityId": "arizona-state-university",
+      "name": "ASU graduate admissions",
+      "description": "Arizona State University central graduate application process with programme-specific deadlines."
+    },
+    {
+      "id": "mcmaster-computing-software-graduate",
+      "universityId": "mcmaster-university",
+      "name": "McMaster Computing and Software graduate programmes",
+      "description": "McMaster University Computing and Software graduate programmes including Computer Science MSc."
+    },
+    {
+      "id": "uchile-postgraduate-computing",
+      "universityId": "universidad-de-chile",
+      "name": "Universidad de Chile postgraduate computing programmes",
+      "description": "Universidad de Chile postgraduate catalogue with Magíster en Ciencias, mención Computación and related computing routes."
+    },
+    {
+      "id": "nthu-master-admissions",
+      "universityId": "national-tsing-hua-university",
+      "name": "NTHU master's admissions",
+      "description": "National Tsing Hua University admissions centre and international-student degree admissions route for master's applicants."
+    },
+    {
+      "id": "khalifa-postgraduate-admissions",
+      "universityId": "khalifa-university-of-science-and-technology",
+      "name": "Khalifa postgraduate admissions",
+      "description": "Khalifa University postgraduate admissions portal and postgraduate admissions route."
+    },
+    {
+      "id": "ucsb-graduate-admissions",
+      "universityId": "university-of-california-santa-barbara-ucsb",
+      "name": "UCSB graduate admissions",
+      "description": "UC Santa Barbara Graduate Division application checklist with programme-specific deadline guidance."
+    },
+    {
+      "id": "iitm-mtech-admissions",
+      "universityId": "indian-institute-of-technology-madras-iitm",
+      "name": "IIT Madras M.Tech admissions",
+      "description": "IIT Madras M.Tech and M.A. admissions, including Computer Science and Engineering M.Tech route."
+    },
+    {
+      "id": "curtin-postgraduate-information-technology",
+      "universityId": "curtin-university",
+      "name": "Curtin postgraduate information technology",
+      "description": "Curtin University postgraduate information technology area with computing, AI, cyber security, information systems, and predictive analytics master's routes."
+    },
+    {
+      "id": "wollongong-computer-science-master",
+      "universityId": "university-of-wollongong",
+      "name": "UOW Master of Computer Science",
+      "description": "University of Wollongong Master of Computer Science with direct application route."
+    },
+    {
+      "id": "wuhan-computer-school-graduate",
+      "universityId": "wuhan-university",
+      "name": "Wuhan Computer School graduate education",
+      "description": "Wuhan University Computer School official graduate education route for computing applicants."
+    },
+    {
+      "id": "ucm-faculty-informatics-master",
+      "universityId": "university-complutense-madrid",
+      "name": "UCM Faculty of Informatics master's programmes",
+      "description": "Universidad Complutense de Madrid Faculty of Informatics master's catalogue including computing-related master's routes."
+    },
+    {
+      "id": "ui-fasilkom-magister-ilmu-komputer",
+      "universityId": "universitas-indonesia",
+      "name": "UI Fasilkom Magister Ilmu Komputer",
+      "description": "Universitas Indonesia Faculty of Computer Science postgraduate route for Magister Ilmu Komputer and related computing master's study."
+    },
+    {
+      "id": "osu-cse-graduate",
+      "universityId": "ohio-state-university",
+      "name": "Ohio State CSE graduate programmes",
+      "description": "Ohio State University Computer Science and Engineering graduate programmes including the MS route."
+    },
+    {
+      "id": "queens-ontario-graduate-admissions",
+      "universityId": "queen-s-university-ontario",
+      "name": "Queen's Ontario graduate admissions",
+      "description": "Queen's University School of Graduate Studies and Postdoctoral Affairs central graduate application route."
+    },
+    {
+      "id": "hamburg-master-admissions",
+      "universityId": "universit-t-hamburg",
+      "name": "Universität Hamburg master's admissions",
+      "description": "University of Hamburg central master's application route with semester application periods."
+    },
+    {
+      "id": "reading-masters-admissions",
+      "universityId": "university-of-reading",
+      "name": "Reading master's admissions",
+      "description": "University of Reading central master's application information and online application route."
+    },
+    {
+      "id": "vu-amsterdam-master-admissions",
+      "universityId": "vrije-universiteit-amsterdam",
+      "name": "VU Amsterdam master's programmes",
+      "description": "Vrije Universiteit Amsterdam central master's programmes overview and study-choice route."
+    },
+    {
+      "id": "waseda-graduate-admissions",
+      "universityId": "waseda-university",
+      "name": "Waseda graduate admissions",
+      "description": "Waseda University International Admissions Office graduate programmes route for Japanese-based and English-based graduate programmes."
+    },
+    {
+      "id": "tuwien-master-admissions",
+      "universityId": "vienna-university-of-technology",
+      "name": "TU Wien master's admissions",
+      "description": "TU Wien central admission route for bachelor's, master's, and doctoral programmes."
+    },
+    {
+      "id": "nycu-international-degree-admissions",
+      "universityId": "national-yang-ming-chiao-tung-university",
+      "name": "NYCU international degree admissions",
+      "description": "National Yang Ming Chiao Tung University Office of International Affairs admissions route for international degree-seeking students."
     }
   ]
 }

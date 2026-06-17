@@ -191,3 +191,484 @@ five institutions while preserving the same completion rules:
   policy added. The deadline page lists recurring 1 August–15 September and
   1 February–15 March application periods without a cycle year, so no formal
   dated window is recorded.
+
+## QS positions 81–85
+
+- University of Washington — Allen School Professional Master's Program policy
+  added. The programme publishes recurring July, November, and February
+  quarter deadlines, including the winter 2027 extension to 2 November 2026,
+  but no exact application opening date is stated.
+- Adelaide University — Master of Computer Science policy added. International
+  applications for 2026 are open and February/July starts are listed, but the
+  programme page does not publish a complete opening and closing date pair.
+- Pennsylvania State University — Computer Science and Engineering graduate
+  policy added. Fall, spring, and one-year M.Eng. deadlines are published, but
+  no exact application opening dates are stated.
+- Universidad de Buenos Aires — Exactas postgraduate route and the Data Mining
+  master's added with the complete 6–11 August 2025 new-entrant registration
+  window for the 2026 academic cycle.
+- Tokyo Institute of Technology / Institute of Science Tokyo — science and
+  engineering International Graduate Program policy added. The IGP(C) Fall
+  2026 call is included with its complete 14 January to 5 April 2026
+  application period.
+
+## QS positions 86–90
+
+- University of Leeds — Advanced Computer Science MSc policy added. The
+  September 2026 course page gives an international applicant deadline of
+  11 September 2026 and advises early application, but does not publish the
+  exact opening date.
+- University of Southampton — Computer Science MSc policy added. The September
+  2026 course page gives separate international and UK deadlines of
+  19 August 2026 and 2 September 2026 at midday UK time; applications may close
+  early if places fill, and no exact opening date is published.
+- Boston University — GRS Computer Science MS policy added. Fall 2026 priority
+  and regular deadlines are 15 January and 15 March 2026, with later review
+  continuing after 15 March, but no exact opening date is stated.
+- Freie Universität Berlin — Data Science MSc policy added. The winter 2026/27
+  consecutive master's application period opens on 20 April 2026, but the final
+  deadline depends on whether the programme is classified as limited or
+  unrestricted admission for that semester.
+- Purdue University — Computer Science MS policy added. Spring 2026 and
+  Fall 2026 deadlines are published as 1 October 2025 and 1 December 2025, and
+  Fall 2026 is now closed; no exact opening date is published.
+
+## QS positions 91–95
+
+- The University of Osaka — Graduate School of Information Science and
+  Technology master's policy added. The April 2027 Special Selection in Summer
+  for International Applicants is included with its complete 22–26 June 2026
+  main application acceptance period.
+- University of Sheffield — Advanced Computer Science MSc policy added. The
+  September 2026 page says staged admissions are no longer used and applicants
+  can apply through the standard postgraduate form, but no exact closing date
+  or opening date is published.
+- Uppsala University — centralised Swedish admissions policy and Computer
+  Science master's added. The Autumn 2026 programme page lists a 15 January
+  2026 deadline and application code UU-M1160, but does not show the opening
+  date on the programme page.
+- Durham University — Scientific Computing and Data Analysis (Computer Vision
+  and Robotics) MSc policy added. The course page lists a September 2026 start
+  and application portal link, but no exact application dates.
+- University of Alberta — Computing Science M.Sc. policy added. The department
+  page confirms graduate programme options and Apply Now routing, but the
+  accessible page snapshot did not expose exact opening or closing dates.
+
+## QS positions 96–100
+
+- University of Technology Sydney — Master of Information Technology policy
+  added. The official application-dates page gives a complete domestic
+  postgraduate Autumn 2027 window opening 28 July 2026 and closing
+  31 January 2027; international dates are session-based closing dates without
+  matching opening dates.
+- University of Nottingham — not upgraded in this pass. The official page was
+  not reliably accessible from the current environment, so no unverified
+  programme or date was added.
+- Karlsruhe Institute of Technology — not upgraded in this pass. KIT official
+  pages could not be retrieved from the current environment, so no unverified
+  application dates were added.
+- Politecnico di Milano — not upgraded in this pass. The official application
+  deadline page could not be retrieved from the current environment, so no
+  unverified application dates were added.
+- University of Zurich — central master admissions policy added. UZH publishes
+  recurring fall and spring application ranges, including earlier windows for
+  visa-requiring applicants, but the page does not attach cycle years to those
+  ranges, so no formal dated window is recorded.
+
+## QS positions 101–105
+
+- University of Copenhagen — Computer Science MSc policy added. The programme
+  page publishes EU/EEA/Swiss and non-EU openings and deadlines for September
+  and February starts, but the date rows do not attach calendar years, so no
+  formal dated window is recorded.
+- POSTECH — central graduate admissions and Computer Engineering graduate
+  route added. The 2026-27 general admission first round is included with its
+  complete 24 February to 3 April 2026 application period.
+- Nanjing University — not upgraded in this pass. The international graduate
+  admissions pages could not be retrieved reliably from the current
+  environment, so no unverified dates were added.
+- Utrecht University — Computing Science MSc policy added. The non-Dutch
+  degree route publishes recurring September and February application openings
+  and passport-category deadlines, but does not attach cycle years, so no
+  formal dated window is recorded.
+- Lomonosov Moscow State University — not upgraded in this pass. No reliable
+  official master admissions source for the target computing route was
+  captured in the current environment.
+
+## QS positions 106–110
+
+- RWTH Aachen University — not upgraded in this pass. The previously guessed
+  master application path now returns an official 404, so no unverified dates
+  were added.
+- Technical University of Denmark — Computer Science and Engineering MSc
+  policy added. DTU's central MSc page states that Autumn 2026 opens on
+  1 December and that the national/EU/EEA deadline is 1 March 2026; it also
+  states the Spring 2027 national/EU/EEA deadline of 15 October 2026. No
+  formal window is recorded because the applicant category needs more precise
+  local modelling.
+- Universidade de São Paulo — IME Graduate Program in Computer Science added.
+  The official English page confirms the programme and points applicants to
+  admission-process instructions, but no dated selection calendar was captured.
+- Tohoku University — central graduate admissions policy added. The page states
+  that application procedures and periods vary by graduate school, so no
+  general computing-specific window is recorded.
+- Queen Mary University of London — not upgraded in this pass. The official
+  course pages are blocked by CloudFront from the current environment.
+
+## QS positions 111–115
+
+- University of Wisconsin-Madison — Computer Sciences traditional MS/PhD
+  policy added. The programme is fall-only with a recurring 15 December
+  deadline, but no exact opening date or cycle year is published.
+- Qatar University — central graduate admissions policy added with the complete
+  Fall 2026 graduate online application window from 1 December 2025 to
+  25 February 2026.
+- University of St Andrews — Computer Science MSc policy added. The course
+  page lists deadlines of 6 August 2026 for September entry and 11 December
+  2026 for January 2027 entry, but no exact opening date.
+- Aalto University — Computer Science MSc policy added with the complete
+  Autumn 2026 master's application period from 1 December 2025 to
+  2 January 2026. The central page also announces the Autumn 2027 period but
+  notes instructions may change.
+- UC Davis — not upgraded in this pass. The Computer Science graduate pages
+  are blocked by Cloudflare from the current environment.
+
+## QS positions 116–120
+
+- Pontificia Universidad Catolica de Chile — not upgraded in this pass. The
+  current environment did not capture a reliable official computing master's
+  admissions page.
+- University of Helsinki — Computer Science master's policy added with the
+  complete Autumn 2027 application period from 5 January 2027 to
+  19 January 2027.
+- University College Dublin — not upgraded in this pass. The official course
+  page is blocked by CloudFront from the current environment, so the existing
+  low-confidence postgraduate source remains unchanged.
+- Leiden University — Computer Science MSc policy added. The official page
+  publishes deadlines by start month and visa/residence-permit category, but
+  no opening date or cycle year is published.
+- Rice University — graduate admissions policy added. The central official
+  page states applications generally open around 1 September and exact
+  deadlines are department-specific, so no formal dated window is recorded.
+
+## QS positions 121–125
+
+- University of Oslo — Informatics: Programming and Systems Architecture
+  policy added. UiO publishes recurring central master's application dates by
+  applicant category, but without cycle years.
+- University of Waterloo — Computer Science MMath policy added. The official
+  programme page publishes recurring deadlines for September, January, and May
+  admission, but no exact opening dates or cycle years.
+- Georgia Institute of Technology — MS Computer Science policy added. The
+  official College of Computing page states fall-only admission with a
+  1 February deadline, but no opening date or cycle year.
+- IIT Delhi — postgraduate admissions entry added. The current official page
+  is reliable for PG notices, but the captured content exposes older 2025
+  notices rather than a current complete computing master's window.
+- RMIT University — Master of Information Technology policy added. RMIT's
+  local and international application-date pages are intake/category-specific
+  and include rolling admission, so no formal programme-specific window is
+  recorded yet.
+
+## QS positions 126–130
+
+- Sungkyunkwan University — not upgraded in this pass. The tested official
+  graduate-admissions paths returned 404 or otherwise did not expose a
+  reliable computing master's admissions source.
+- Universiti Kebangsaan Malaysia — not upgraded in this pass. The tested UKM
+  postgraduate and faculty pages returned 404 from the current environment.
+- Sapienza University of Rome — Computer Science master's policy added. The
+  official course catalogue confirms the English-taught master's and access
+  procedure, but no complete dated enrolment window was captured.
+- IIT Bombay — M.Tech./M.Tech.+Ph.D. admissions policy added for the
+  2026-27 Autumn cycle. The official Academic Office page states the
+  10 April 2026 deadline without late fine, but no opening date was captured.
+- Humboldt-Universität zu Berlin — not upgraded in this pass. Current
+  official-page candidates either returned bot/404 content or did not expose a
+  reliable Computer Science master's admissions page.
+
+## QS positions 131–135
+
+- Aarhus University — Computer Science master's policy added. The official
+  deadlines page publishes EU/non-EU deadlines for summer and winter intakes,
+  but the summer opening is approximate and not cycle-year-specific, so no
+  formal dated window is recorded.
+- University of Bath — Computer Science MSc policy added for September 2026
+  entry. The official course page has an active application link but no fixed
+  closing date was captured.
+- University of Science and Technology of China — not upgraded in this pass.
+  The accessible International College page was for undergraduate fellowship
+  admissions, not a reliable computing master's admissions source.
+- Universiti Putra Malaysia — postgraduate Computer Science policy added from
+  UPM's official postgraduate programmes page. No application window dates
+  were captured.
+- Universiti Sains Malaysia — School of Computer Sciences postgraduate policy
+  added from the official programme listing. No application window dates were
+  captured.
+
+## QS positions 136–140
+
+- UNAM — not upgraded in this pass. The accessible official page was for a
+  computing-related postgraduate/specialisation route rather than a reliable
+  target master's admissions source.
+- Newcastle University — Cloud Computing MSc policy added for September 2026
+  entry. The official course page has an Apply Online route but no fixed
+  course closing date was captured.
+- University of Bologna — Artificial Intelligence second-cycle degree policy
+  added. The official course site confirms the English-taught computing route,
+  but the accessible text did not expose admission-window dates.
+- Macquarie University — not upgraded in this pass. Official course and
+  application-date pages are blocked by Cloudflare from the current
+  environment.
+- Eindhoven University of Technology — Computer Science and Engineering MSc
+  policy added. The official admission-and-enrollment page is interactive and
+  did not expose a complete static window.
+
+## QS positions 141–145
+
+- Erasmus University Rotterdam — Data Science and Marketing Analytics MSc
+  policy added. The official page lists September start and EEA deadline
+  1 May, but no opening date or non-EEA deadline was captured.
+- UNC-Chapel Hill — central graduate admissions deadline policy added.
+  Applications typically open in early August and final deadlines vary by
+  programme; no Computer Science-specific window was captured.
+- King Saud University — not upgraded in this pass. Tested official graduate
+  and college pages returned 404 or JavaScript-only content.
+- Texas A&M University — Computer Science MS policy added. The official
+  programme page confirms the MSCS route, while deadlines are programme/
+  department-specific and were not captured.
+- TU Berlin — central master's dates policy added. The official dates page
+  provides Summer 2026 and Winter 2026/2027 application ranges by admission
+  type, but a reliable Computer Science MSc admission-type page was not
+  captured, so no formal programme window is recorded.
+
+## QS positions 146–150
+
+- University of Southern California — USC Viterbi Computer Science MS policy
+  added. The official page lists spring and fall deadlines, but no opening
+  dates or cycle years were captured.
+- Stockholm University — not upgraded in this pass. The accessible catalogue
+  page did not expose a reliable computing master's programme entry.
+- University of Groningen — Computing Science MSc policy added. The official
+  page lists 1 May 2027 deadlines for all applicant categories for a
+  1 September 2027 start, but no opening date.
+- University of Liverpool — Computer Science MSc policy added. The official
+  page lists September 2026 deadlines of 11 September 2026 for UK applicants
+  and 21 August 2026 for international applicants, but no opening date.
+- University of Cape Town — Masters in Computer Science policy added. The
+  coursework-and-dissertation route opens in April and closes 30 September,
+  with 2026 applications closing 30 September 2025; no exact opening day was
+  captured.
+
+## QS positions 151–155
+
+- Western University — Computer Science MSc policy added from the correct
+  Graduate and Postdoctoral Studies programme page. The page confirms fall-only
+  MSc admission and deadlines of 15 February for international applicants and
+  31 July for domestic applicants, but no opening date or cycle year.
+- University of Vienna — Computer Science MSc policy added. The official page
+  confirms the English-taught MSc and selection procedure; the central master's
+  page lists Computer Science as an English master with AV selection procedure,
+  but no complete application-period dates were captured.
+- Universiti Teknologi Malaysia — postgraduate computing policy added from the
+  official international postgraduate admission page. It confirms Faculty of
+  Computing postgraduate routes and study modes, but no intake-specific dates
+  were captured in accessible text.
+- Wageningen University & Research — Data Science for Food and Health MSc
+  policy added. The programme accepts data science/computer science backgrounds;
+  the central application page gives applicant-category deadlines and states
+  September 2026 applications are closed, but no exact September 2027 opening
+  date.
+- University of Exeter — central master's deadline policy added. The official
+  page gives 2026/2027 deadlines for UK and international applicants and a full
+  January 2027 central window, but the January window was not bound to a
+  computing-specific programme in this pass.
+
+## QS positions 156–160
+
+- University of Geneva — Faculty of Science master listing policy added. The
+  official page includes Computer Science section navigation and master
+  programme listing infrastructure, but the programme cards are dynamically
+  loaded behind same-origin cookie requirements, so no exact Computer Science
+  master dates were captured.
+- Lancaster University — postgraduate application policy added. The official
+  page confirms the application portal route for 2026 entry and states that
+  2027 entry applications will open in September 2026, but no
+  Computer Science-specific deadline was captured.
+- University of Basel — not upgraded in this pass. The official degree
+  programme page exposed Computer Science/Informatik at bachelor level and
+  central application/admission pages, but no reliable computing master's
+  admissions source was captured.
+- Hanyang University — Graduate School Computer Science policy added. The
+  official department listing includes Department of Computer Science and
+  related AI/Data Science departments; the English application schedule page
+  points current international applicants to OIA notices and only exposes an
+  old 2021 sample schedule, so no current window was recorded.
+- University of Barcelona — not upgraded in this pass. Official programme
+  pages under web.ub.edu returned 403 from the current environment, and search
+  did not expose a reliable readable computing master's admissions page.
+
+## QS positions 161–165
+
+- Michigan State University — central Graduate School application policy
+  added. MSU states graduate admissions are decentralized and applicants should
+  check the target department/programme for deadline dates; the old CSE deep
+  links currently resolve to a general department page, so no CS-specific
+  window was recorded.
+- Ghent University — Computer Science Engineering MSc policy added from the
+  official 2026-2027 study guide. The programme is English-taught, 120 credits,
+  and has an enrolment link; the exact application deadline table was not
+  captured.
+- King Abdul Aziz University — not upgraded in this pass. Official graduate
+  study pages were not reliably reachable from the current environment and no
+  readable computing master's admissions source was captured.
+- Nagoya University — G30 graduate programmes policy added. The official
+  central master's page points to G30 graduate programmes and the G30 page lists
+  English-taught master's/doctoral routes; no current application dates were
+  captured.
+- Chalmers University of Technology — master's programme catalogue policy
+  added. The official catalogue states that programmes are English-taught,
+  two-year 120 ECTS MSc routes and that the application period is
+  mid-October to mid-January; no exact dates were captured.
+
+## QS positions 166–170
+
+- Al-Farabi Kazakh National University — not upgraded in this pass. Official
+  English admission/programme paths tested from farabi.university returned 404,
+  and no reliable computing master's admissions source was captured.
+- Washington University in St. Louis — Computer Science & Engineering graduate
+  programmes policy added. The official CSE page lists MS in Computer Science
+  and related graduate routes, but no exact current application dates were
+  captured.
+- University of Montreal — Maîtrise en informatique policy and formal Hiver
+  2027 application window added. The official programme page lists applications
+  from 1 February 2026 to 1 September 2026 for Hiver 2027, which is currently
+  open as of 16 June 2026.
+- University of York — Advanced Computer Science MSc policy added for
+  September 2026 entry. The official course page has an Apply link but no
+  deadline in accessible text.
+- Hokkaido University — central graduate admissions policy added. The official
+  overview lists Information Science and Technology among graduate schools and
+  instructs applicants to check the target graduate school after supervisor
+  contact; no current programme window was captured.
+
+## QS positions 171–175
+
+- Kyushu University — Graduate School of Information Science and Electrical
+  Engineering master's policy added. The official ISEE page confirms the
+  master's route and 2026 notices about admission-process changes for AY 2027,
+  but no current exact application dates were captured.
+- Universitat Autónoma de Barcelona — not upgraded in this pass. The official
+  graduate catalogue page was readable, but it did not expose a reliable
+  computing master's programme page or application window in accessible text.
+- Arizona State University — central graduate admissions policy added. ASU
+  publishes Fall 2026 and Spring 2027 application opening dates, while
+  programme deadlines are set by academic programme offices; ASU engineering/
+  SCAI pages returned 403 and the Degree Search deep link did not resolve.
+- McMaster University — Computing and Software / Computer Science MSc policy
+  added. The official page gives September entry and deadlines of 28 February
+  for international applicants and 31 July for Canadian/permanent resident
+  applicants, but no opening dates.
+- Universidad de Chile — postgraduate computing catalogue policy added. The
+  official catalogue lists Magíster en Ciencias, mención Computación, Doctorado
+  en Computación, and related computing routes; no application-window dates were
+  captured.
+
+## QS positions 176–180
+
+- National Tsing Hua University — central master's admissions policy added.
+  The admissions centre lists master's and international-student routes, but the
+  Computer Science department page reset the connection and no exact current
+  dates were captured.
+- Khalifa University of Science and Technology — postgraduate admissions
+  portal policy added. The official portal states that online postgraduate
+  application is currently closed and lets users register for next-intake
+  notifications; no next window dates were captured.
+- Tongji University — not upgraded in this pass. The official international
+  student office homepage was readable, but the tested English graduate
+  admissions paths returned 404 and no reliable computing master's page was
+  captured.
+- UCSB — Graduate Division application policy added. UCSB instructs applicants
+  to submit by each programme's deadline; tested Computer Science deep links
+  returned 404, so no CS-specific window was recorded.
+- IIT Madras — M.Tech and M.A. Admissions 2026 policy and formal window added.
+  The official page lists Computer Science and Engineering M.Tech and gives the
+  online application period from 28 March 2026 to 28 April 2026; as of
+  17 June 2026 registration is closed.
+
+## QS positions 181–185
+
+- Cardiff University — not upgraded in this pass. Official postgraduate course
+  and application pages returned 403 from the current environment.
+- Emory University — not upgraded in this pass. The Laney Graduate School
+  admissions page was readable, but no reliable Computer Science master's
+  admissions page was captured.
+- Curtin University — postgraduate information technology policy added. The
+  official page lists Master of Computing (Computer Science), AI, cyber
+  security, information systems, and predictive analytics routes, but no exact
+  application dates were captured.
+- University of Bern — not upgraded in this pass. Tested official master,
+  application, computer science, and data science paths returned 404.
+- University of Wollongong — Master of Computer Science policy added. The
+  official page confirms the programme and direct application route; exact
+  intake closing dates were not exposed in accessible text.
+
+## QS positions 186–190
+
+- Wuhan University — School of Computer Science graduate route added. The
+  official computer school page exposes graduate education and international
+  education navigation, but the international admissions URL tested in this pass
+  returned 404 and no exact application dates were captured.
+- Tecnológico de Monterrey (ITESM) — not upgraded in this pass. The official
+  computer-science page returned 403 and the tested graduate-programmes URL
+  returned 404, so no reliable official graduate computing source was retained.
+- University Complutense Madrid — Faculty of Informatics master's policy added.
+  The official faculty page lists computing-related master's routes for current
+  cycles, but the central master's admission URL tested returned 404 and no
+  exact application dates were captured.
+- Universitas Indonesia — Fasilkom Magister Ilmu Komputer policy added. The
+  official programme page confirms the master's route and SIMAK UI shows
+  2026/2027 admissions activity; no programme-specific dates were captured.
+- Ohio State University — Computer Science and Engineering graduate policy
+  added. The official CSE graduate page and central programme search confirm
+  Computer Science and Engineering MS, but no exact application dates were
+  captured and several CSE admissions deep links returned 404.
+
+## QS positions 191–195
+
+- Queen's University, Ontario — central graduate admissions policy added. The
+  School of Graduate Studies and Postdoctoral Affairs explains how to apply and
+  links to the online application; deadlines remain programme-specific.
+- Université Catholique de Louvain — not upgraded in this pass. Official
+  English and French study/admission paths from uclouvain.be returned 503 in
+  the current environment, so no reliable source was retained.
+- Universität Hamburg — central master's admissions policy added. The official
+  master's application pages publish recurring application periods: 1 December
+  to 15 January for summer semester, 1 May to 15 June for winter semester, and
+  15 February to 31 March for international master's programmes.
+- University of Reading — master's application policy added. The official page
+  says most master's programmes do not formally close, some programmes use
+  course-page deadlines, and for September admission it recommends 1 August for
+  UK applicants and 1 July for international applicants requiring a visa.
+- Vrije Universiteit Amsterdam — central master's overview policy added. The
+  official master's overview and programme list are accessible, but guessed
+  application-deadline paths returned 404 and no exact dates were captured.
+
+## QS positions 196–200
+
+- Waseda University — International Admissions Office graduate policy added.
+  The official graduate page covers Japanese-based and English-based graduate
+  programmes, but exact institution-wide application dates were not captured.
+- University of Otago — not upgraded in this pass. Existing official master's
+  and postgraduate URLs returned 403 from the current environment, so the
+  previous low-confidence entry was not promoted.
+- TU Wien — central admission policy added. The official admission page covers
+  bachelor's, master's, and doctoral admission and points applicants to
+  admission deadlines; exact dated master's windows were not captured.
+- National Yang Ming Chiao Tung University — OIA international degree
+  admissions policy added. The current OIA folder structure exposes
+  Degree-seeking Students, International Students, Admissions, application
+  announcements, and application fees; no exact dates were captured.
+- Queen's University Belfast — not upgraded in this pass. Official postgraduate
+  taught, how-to-apply, and Graduate School pages returned 403 from the current
+  environment, so the previous low-confidence entry was not promoted.

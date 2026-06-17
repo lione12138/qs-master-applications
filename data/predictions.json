@@ -8,6 +8,36 @@
   },
   "predictions": [
     {
+      "id": "prediction-aalto-computer-science-autumn-2026-next-cycle",
+      "basedOnRecordId": "aalto-computer-science-autumn-2026",
+      "universityId": "aalto-university",
+      "scopeType": "programme",
+      "scopeId": "aalto-computer-science-msc",
+      "intake": "Autumn 2027",
+      "intakeDetails": {
+        "label": "Autumn 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Master's admissions",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-12-01",
+      "closesAt": "2027-01-02",
+      "applicationUrl": "https://www.aalto.fi/en/study-at-aalto/apply-to-masters-programmes",
+      "sourceUrl": "https://www.aalto.fi/en/study-options/computer-science-master-of-science-technology",
+      "sourceCycle": "Autumn 2026",
+      "basedOnVerifiedAt": "2026-06-16",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-brown-computer-science-scm-fall-2026-next-cycle",
       "basedOnRecordId": "brown-computer-science-scm-fall-2026",
       "universityId": "brown-university",
@@ -183,6 +213,36 @@
       "sourceUrl": "https://iso.fudan.edu.cn/_upload/article/files/e8/e8/fa7bfc45430499ddb9374a125a2c/b937538c-b8f5-4d26-b1c7-78ab2e0bdcea.pdf",
       "sourceCycle": "Autumn 2026",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-iitm-mtech-ma-2026-next-cycle",
+      "basedOnRecordId": "iitm-mtech-ma-2026",
+      "universityId": "indian-institute-of-technology-madras-iitm",
+      "scopeType": "programme-group",
+      "scopeId": "iitm-mtech-admissions",
+      "intake": "2027",
+      "intakeDetails": {
+        "label": "2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": null
+      },
+      "round": "M.Tech and M.A. Admissions",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-03-28",
+      "closesAt": "2027-04-28",
+      "applicationUrl": "https://mtechadm.iitm.ac.in/",
+      "sourceUrl": "https://mtechadm.iitm.ac.in/",
+      "sourceCycle": "2026",
+      "basedOnVerifiedAt": "2026-06-17",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,
@@ -460,6 +520,66 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-postech-general-graduate-2026-27-round-1-next-cycle",
+      "basedOnRecordId": "postech-general-graduate-2026-27-round-1",
+      "universityId": "pohang-university-of-science-and-technology-postech",
+      "scopeType": "programme-group",
+      "scopeId": "postech-graduate-general-admissions",
+      "intake": "2027-28 academic year",
+      "intakeDetails": {
+        "label": "2027-28 academic year",
+        "cycleYear": 2027,
+        "academicYearEnd": 2028,
+        "term": "other",
+        "startMonth": null
+      },
+      "round": "General admission first round",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-02-24",
+      "closesAt": "2027-04-03",
+      "applicationUrl": "https://adm-g.postech.ac.kr/",
+      "sourceUrl": "https://adm-g.postech.ac.kr/",
+      "sourceCycle": "2026-27 academic year",
+      "basedOnVerifiedAt": "2026-06-16",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-qatar-university-graduate-fall-2026-next-cycle",
+      "basedOnRecordId": "qatar-university-graduate-fall-2026",
+      "universityId": "qatar-university",
+      "scopeType": "programme-group",
+      "scopeId": "qatar-university-graduate-admissions",
+      "intake": "Fall 2027",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Graduate online admission",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-12-01",
+      "closesAt": "2027-02-25",
+      "applicationUrl": "https://www.qu.edu.qa/en-us/students/admission/graduate/Pages/default.aspx",
+      "sourceUrl": "https://www.qu.edu.qa/en-us/students/admission/graduate/Pages/application-timeline.aspx",
+      "sourceCycle": "Fall 2026",
+      "basedOnVerifiedAt": "2026-06-16",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-snu-international-graduate-spring-2027-next-cycle",
       "basedOnRecordId": "snu-international-graduate-spring-2027",
       "universityId": "seoul-national-university",
@@ -550,6 +670,36 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-osaka-ist-special-selection-summer-international-april-2027-next-cycle",
+      "basedOnRecordId": "osaka-ist-special-selection-summer-international-april-2027",
+      "universityId": "the-university-of-osaka",
+      "scopeType": "programme-group",
+      "scopeId": "osaka-ist-master-admissions",
+      "intake": "April 2028",
+      "intakeDetails": {
+        "label": "April 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": 4
+      },
+      "round": "Special Selection in Summer for International Applicants",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-06-22",
+      "closesAt": "2027-06-26",
+      "applicationUrl": "https://www.ist.osaka-u.ac.jp/english/examinees/admission/guidelines2027.php",
+      "sourceUrl": "https://www.ist.osaka-u.ac.jp/files/examinees/admission/2027/14_a_EN2027.pdf",
+      "sourceCycle": "April 2027",
+      "basedOnVerifiedAt": "2026-06-16",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-utokyo-computer-science-masters-ay2027-summer-next-cycle",
       "basedOnRecordId": "utokyo-computer-science-masters-ay2027-summer",
       "universityId": "the-university-of-tokyo",
@@ -573,6 +723,36 @@
       "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml",
       "sourceCycle": "Academic Year 2027",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-science-tokyo-igp-c-fall-2026-next-cycle",
+      "basedOnRecordId": "science-tokyo-igp-c-fall-2026",
+      "universityId": "tokyo-institute-of-technology",
+      "scopeType": "programme",
+      "scopeId": "science-tokyo-international-graduate-program-c",
+      "intake": "Fall 2027",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International Graduate Program (C)",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-01-14",
+      "closesAt": "2027-04-05",
+      "applicationUrl": "https://admissions.isct.ac.jp/en/013/graduate/programs/science-and-engineering/igp-c#top",
+      "sourceUrl": "https://admissions.isct.ac.jp/en/news/a3fx0r8iqg00",
+      "sourceCycle": "Fall 2026",
+      "basedOnVerifiedAt": "2026-06-15",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,
@@ -663,6 +843,36 @@
       "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
       "sourceCycle": "September 2026",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-uba-data-mining-2026-new-entrants-next-cycle",
+      "basedOnRecordId": "uba-data-mining-2026-new-entrants",
+      "universityId": "universidad-de-buenos-aires",
+      "scopeType": "programme",
+      "scopeId": "uba-data-mining-knowledge-discovery-master",
+      "intake": "Ciclo Lectivo 2027",
+      "intakeDetails": {
+        "label": "Ciclo Lectivo 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": null
+      },
+      "round": "New entrant registration",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2026-08-06",
+      "closesAt": "2026-08-11",
+      "applicationUrl": "https://datamining.dc.uba.ar/datamining/academico/",
+      "sourceUrl": "https://datamining.dc.uba.ar/datamining/academico/",
+      "sourceCycle": "Ciclo Lectivo 2026",
+      "basedOnVerifiedAt": "2026-06-15",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,
@@ -970,6 +1180,66 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-helsinki-computer-science-autumn-2027-next-cycle",
+      "basedOnRecordId": "helsinki-computer-science-autumn-2027",
+      "universityId": "university-of-helsinki",
+      "scopeType": "programme",
+      "scopeId": "helsinki-computer-science-master",
+      "intake": "Autumn 2028",
+      "intakeDetails": {
+        "label": "Autumn 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International master's application period",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2028-01-05",
+      "closesAt": "2028-01-19",
+      "applicationUrl": "https://www.helsinki.fi/en/admissions-and-education/apply-bachelors-and-masters-programmes",
+      "sourceUrl": "https://www.helsinki.fi/en/degree-programmes/computer-science-masters-programme",
+      "sourceCycle": "Autumn 2027",
+      "basedOnVerifiedAt": "2026-06-16",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-umontreal-maitrise-informatique-hiver-2027-next-cycle",
+      "basedOnRecordId": "umontreal-maitrise-informatique-hiver-2027",
+      "universityId": "university-of-montreal",
+      "scopeType": "programme",
+      "scopeId": "umontreal-maitrise-informatique",
+      "intake": "Hiver 2028",
+      "intakeDetails": {
+        "label": "Hiver 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "other",
+        "startMonth": null
+      },
+      "round": "Déposer la demande d'admission",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-02-01",
+      "closesAt": "2027-09-01",
+      "applicationUrl": "https://admission.umontreal.ca/programmes/maitrise-en-informatique/",
+      "sourceUrl": "https://admission.umontreal.ca/programmes/maitrise-en-informatique/",
+      "sourceCycle": "Hiver 2027",
+      "basedOnVerifiedAt": "2026-06-16",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-penn-engineering-masters-fall-2026-next-cycle",
       "basedOnRecordId": "penn-engineering-masters-fall-2026",
       "universityId": "university-of-pennsylvania",
@@ -993,6 +1263,36 @@
       "sourceUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
       "sourceCycle": "Fall 2026",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-uts-information-technology-autumn-2027-domestic-next-cycle",
+      "basedOnRecordId": "uts-information-technology-autumn-2027-domestic",
+      "universityId": "university-of-technology-sydney",
+      "scopeType": "programme",
+      "scopeId": "uts-information-technology-master",
+      "intake": "Autumn 2028",
+      "intakeDetails": {
+        "label": "Autumn 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Domestic postgraduate applications",
+      "applicantCategories": [
+        "domestic-students"
+      ],
+      "opensAt": "2027-07-28",
+      "closesAt": "2028-01-31",
+      "applicationUrl": "https://student-portal.uts.edu.au/",
+      "sourceUrl": "https://www.uts.edu.au/for-students/admissions-entry/application-dates",
+      "sourceCycle": "Autumn 2027",
+      "basedOnVerifiedAt": "2026-06-16",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,

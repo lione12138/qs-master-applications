@@ -1866,10 +1866,10 @@
       "rorId": "https://ror.org/00cvxb145",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.cs.washington.edu/academics/graduate/pmp/admissions/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -1889,10 +1889,10 @@
       "rorId": "https://ror.org/028g18b61",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://adelaide.edu.au/study/degrees/master-of-computer-science/int/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -1912,12 +1912,12 @@
       "rorId": "https://ror.org/04p491231",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.psu.edu/admission/graduate",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.eecs.psu.edu/students/graduate/EECS-How-to-apply-CSE.aspx",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 39,
-      "admissionsCandidateTitle": "Graduate AdmissionsnavSearch iconNittany Lion Shield Penn State Markmenu iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconexpand iconchevronRight iconchevronRightDouble iconchevronRightDouble iconNittany Lion Shield Penn State MarkPenn State Word Markinstagram iconfacebook iconlinkedIn iconyoutube icontiktok icon"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "universidad-de-buenos-aires",
@@ -1935,10 +1935,10 @@
       "rorId": "https://ror.org/0081fs513",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://exactas.uba.ar/ensenanza/carreras-de-posgrado/maestrias/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -1951,17 +1951,18 @@
       "schoolZh": "",
       "country": "Japan",
       "region": "Asia",
-      "homepageUrl": "http://www.titech.ac.jp/english/",
+      "homepageUrl": "https://www.isct.ac.jp/en",
       "officialDomains": [
-        "titech.ac.jp"
+        "titech.ac.jp",
+        "isct.ac.jp"
       ],
       "rorId": "https://ror.org/0112mx960",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://admissions.isct.ac.jp/en/013/graduate/programs/science-and-engineering",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -1981,12 +1982,12 @@
       "rorId": "https://ror.org/024mrxd33",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.leeds.ac.uk/postgraduate",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://courses.leeds.ac.uk/f753/advanced-computer-science-msc",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 10,
-      "admissionsCandidateTitle": "Masters courses | University of Leeds"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-southampton",
@@ -2004,11 +2005,11 @@
       "rorId": "https://ror.org/01ryk1543",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.southampton.ac.uk/courses/computer-science-masters-msc",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 17,
+      "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
     {
@@ -2027,12 +2028,12 @@
       "rorId": "https://ror.org/05qwgg493",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.bu.edu/grad/admission-funding/graduate-admission/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.bu.edu/cas/admissions/ma-ms/apply/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 21,
-      "admissionsCandidateTitle": "Graduate Admission | Graduate Education"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "freie-universit-t-berlin",
@@ -2050,10 +2051,10 @@
       "rorId": "https://ror.org/046ak2485",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.fu-berlin.de/en/studium/studienangebot/master/data-science/index.html",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2073,12 +2074,12 @@
       "rorId": "https://ror.org/05k0fdc49",
       "rorMatchScore": 0.87,
       "rorMatched": true,
-      "admissionsUrl": "https://www.purdue.edu/home/become-a-student/",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://www.cs.purdue.edu/graduate/admission/steps.html",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 4,
-      "admissionsCandidateTitle": "Purdue University Admissions - Become a Studentplus_iconplus_iconplus_iconplus_icon"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "the-university-of-osaka",
@@ -2096,10 +2097,10 @@
       "rorId": "https://ror.org/035t8zc32",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.ist.osaka-u.ac.jp/english/examinees/admission/guidelines2027.php",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2119,12 +2120,12 @@
       "rorId": "https://ror.org/05krs5044",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-computer-science-msc",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 29,
-      "admissionsCandidateTitle": "Applying essentials | Postgraduate study | The University of Sheffield"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "uppsala-university",
@@ -2142,10 +2143,10 @@
       "rorId": "https://ror.org/048a87296",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.uu.se/en/study/programme/masters-programme-computer-science",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "centralised-national",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2160,17 +2161,18 @@
       "region": "Europe",
       "homepageUrl": "https://www.dur.ac.uk/",
       "officialDomains": [
-        "dur.ac.uk"
+        "dur.ac.uk",
+        "durham.ac.uk"
       ],
       "rorId": "https://ror.org/01v29qb04",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.dur.ac.uk/study/postgraduate/",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://www.durham.ac.uk/study/courses/scientific-computing-and-data-analysis-computer-vision-and-robotics-g5t509/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 6,
-      "admissionsCandidateTitle": "Postgraduate - Durham University"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-alberta",
@@ -2188,12 +2190,12 @@
       "rorId": "https://ror.org/0160cpw27",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.ualberta.ca/en/graduate-studies/admissions-programs/apply/index.html",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.ualberta.ca/en/computing-science/graduate-studies/programs-and-admissions/index.html",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 32,
-      "admissionsCandidateTitle": "Apply to Study Here | Faculty of Graduate & Postdoctoral Studies"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-technology-sydney",
@@ -2211,12 +2213,12 @@
       "rorId": "https://ror.org/03f0f6041",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.uts.edu.au/research/graduate/future-research-students",
-      "admissionsDiscovery": "low-confidence",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 9,
-      "admissionsCandidateTitle": "Future research students"
+      "admissionsUrl": "https://www.uts.edu.au/study/find-a-course/master-information-technology",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "the-university-of-nottingham",
@@ -2303,10 +2305,10 @@
       "rorId": "https://ror.org/02crff812",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.uzh.ch/en/studies/application/master.html",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2326,12 +2328,12 @@
       "rorId": "https://ror.org/035b05819",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.ku.dk/admissions/postgraduate",
-      "admissionsDiscovery": "discovered",
-      "datePolicy": "program-specific",
+      "admissionsUrl": "https://www.ku.dk/studies/masters/computer-science",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 22,
-      "admissionsCandidateTitle": "Københavns Universitet - Københavns UniversitetIllustrationIllustrationIllustration"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "pohang-university-of-science-and-technology-postech",
@@ -2349,10 +2351,10 @@
       "rorId": "https://ror.org/04xysgw12",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://adm-g.postech.ac.kr/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2395,12 +2397,12 @@
       "rorId": "https://ror.org/04pp8hn57",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.uu.nl/masters",
-      "admissionsDiscovery": "low-confidence",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 4,
-      "admissionsCandidateTitle": "Masters - Universiteit Utrecht"
+      "admissionsUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "lomonosov-moscow-state-university",
@@ -2464,10 +2466,10 @@
       "rorId": "https://ror.org/04qtj9h94",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.dtu.dk/english/education/graduate/admission-and-deadlines",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2487,10 +2489,10 @@
       "rorId": "https://ror.org/036rp1748",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.ime.usp.br/en/graduate/computer-science/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2511,11 +2513,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": true,
       "admissionsUrl": "https://www.tohoku.ac.jp/en/admissions/admission_graduate.html",
-      "admissionsDiscovery": "discovered",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 39,
-      "admissionsCandidateTitle": "Graduate Admission | Tohoku University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "queen-mary-university-of-london-qmul",
@@ -2556,10 +2558,10 @@
       "rorId": "https://ror.org/01y2jtd41",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.cs.wisc.edu/grad/programs/admissions/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2579,10 +2581,10 @@
       "rorId": "https://ror.org/00yhnba62",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.qu.edu.qa/en-us/students/admission/graduate/Pages/application-timeline.aspx",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "central",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2602,12 +2604,12 @@
       "rorId": "https://ror.org/02wn5qz54",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.st-andrews.ac.uk/study/postgraduate/apply/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.st-andrews.ac.uk/subjects/computer-science/computer-science-msc/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 17,
-      "admissionsCandidateTitle": "Apply - Study at St Andrews - University of St Andrews"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "aalto-university",
@@ -2625,10 +2627,10 @@
       "rorId": "https://ror.org/020hwjq30",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.aalto.fi/en/study-options/computer-science-master-of-science-technology",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "central",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2694,12 +2696,12 @@
       "rorId": "https://ror.org/040af2s02",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.helsinki.fi/en/admissions-and-education/apply-bachelors-and-masters-programmes",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.helsinki.fi/en/degree-programmes/computer-science-masters-programme",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 31,
-      "admissionsCandidateTitle": "Apply to bachelor's and master's programmes | University of Helsinki"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-college-dublin",
@@ -2735,15 +2737,16 @@
       "region": "Europe",
       "homepageUrl": "http://www.leiden.edu/",
       "officialDomains": [
-        "leiden.edu"
+        "leiden.edu",
+        "universiteitleiden.nl"
       ],
       "rorId": "https://ror.org/027bh9e22",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.universiteitleiden.nl/en/education/study-programmes/master/computer-science/admission-and-application/application-deadlines",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2764,11 +2767,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": true,
       "admissionsUrl": "https://graduate.rice.edu/admissions/how-to-apply",
-      "admissionsDiscovery": "discovered",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 46,
-      "admissionsCandidateTitle": "How to Apply | Graduate and Postdoctoral Studies | Rice University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-oslo",
@@ -2786,10 +2789,10 @@
       "rorId": "https://ror.org/01xtthb56",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.uio.no/english/studies/programmes/informatics-programming-master/",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2809,12 +2812,12 @@
       "rorId": "https://ror.org/01aff2v68",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://uwaterloo.ca/future-graduate-students/",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://uwaterloo.ca/future-graduate-students/programs/by-faculty/math/computer-science-master-math-mmath",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 5,
-      "admissionsCandidateTitle": "Home | Future Graduate Students | University of WaterlooInstagramX (formerly Twitter)FacebookCampus mapInstagramLinkedInFacebookYouTubeOn It Check"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "georgia-institute-of-technology",
@@ -2832,10 +2835,10 @@
       "rorId": "https://ror.org/01zkghx44",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.cc.gatech.edu/degree-programs/master-science-computer-science",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2855,10 +2858,10 @@
       "rorId": "https://ror.org/049tgcd06",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://home.iitd.ac.in/pg-admissions.php",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2878,12 +2881,12 @@
       "rorId": "https://ror.org/04ttjf776",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.rmit.edu.au/study-with-us/levels-of-study/postgraduate-study",
-      "admissionsDiscovery": "low-confidence",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 6,
-      "admissionsCandidateTitle": "Postgraduate study - RMIT Universityarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow iconarrow icon"
+      "admissionsUrl": "https://www.rmit.edu.au/study-with-us/levels-of-study/postgraduate-study/masters-by-coursework/mc208",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "sungkyunkwan-university",
@@ -2948,10 +2951,10 @@
       "rorId": "https://ror.org/02be6w209",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://corsidilaurea.uniroma1.it/en/corso/2026/29932/home",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -2971,10 +2974,10 @@
       "rorId": "https://ror.org/02qyf5152",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://acad.iitb.ac.in/admissions/masters/mtech",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3017,10 +3020,10 @@
       "rorId": "https://ror.org/01aj84f44",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://masters.au.dk/computerscience",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3040,10 +3043,10 @@
       "rorId": "https://ror.org/002h8g185",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.bath.ac.uk/courses/postgraduate-2026/taught-postgraduate-courses/msc-computer-science/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3087,11 +3090,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": true,
       "admissionsUrl": "https://upm.edu.my/admission/programmes/postgraduate-76276",
-      "admissionsDiscovery": "discovered",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 22,
-      "admissionsCandidateTitle": "Postgraduate | Universiti Putra MalaysiaExpandExpandExpandExpandExpandExpandExpandExpandExpandExpandExpandToggle MenuExpandExpandExpandExpandExpandExpandExpandExpandExpandExpandExpand"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "universiti-sains-malaysia-usm",
@@ -3109,12 +3112,12 @@
       "rorId": "https://ror.org/02rgb2k63",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://admission.usm.my",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://admission.usm.my/index.php/postgraduate/programmes",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 22,
-      "admissionsCandidateTitle": "Admission USM - Postgraduate"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "universidad-nacional-aut-noma-de-m-xico-unam",
@@ -3155,12 +3158,12 @@
       "rorId": "https://ror.org/01kj2bm70",
       "rorMatchScore": 1.0,
       "rorMatched": false,
-      "admissionsUrl": "https://www.ncl.ac.uk/postgraduate-research/how-to-apply/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.ncl.ac.uk/postgraduate/degrees/5056f/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 17,
-      "admissionsCandidateTitle": "Apply for a Postgraduate Research Degree | Newcastle University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "alma-mater-studiorum-university-of-bologna",
@@ -3178,10 +3181,10 @@
       "rorId": "https://ror.org/01111rn36",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://corsi.unibo.it/2cycle/artificial-intelligence",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3224,12 +3227,12 @@
       "rorId": "https://ror.org/02c2kyt77",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.tue.nl/en/education/degree-programs/master-programs",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://www.tue.nl/en/education/graduate-school/master-computer-science-and-engineering",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 4,
-      "admissionsCandidateTitle": "Master programs"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "erasmus-university-rotterdam",
@@ -3247,10 +3250,10 @@
       "rorId": "https://ror.org/057w15z03",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.eur.nl/en/master/data-science-and-marketing-analytics",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3270,12 +3273,12 @@
       "rorId": "https://ror.org/0130frc33",
       "rorMatchScore": 0.95,
       "rorMatched": false,
-      "admissionsUrl": "https://www.unc.edu/story/graduate-and-professional-student-appreciation-week/",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://gradschool.unc.edu/admissions/deadlines/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 5,
-      "admissionsCandidateTitle": "Celebrating our graduate and professional students | UNC-Chapel Hill"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "king-saud-university",
@@ -3316,12 +3319,12 @@
       "rorId": "https://ror.org/01f5ytq51",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.tamu.edu/admissions/how-to-apply/apply-as-graduate.html",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://engineering.tamu.edu/cse/academics/degrees/graduate/ms-cs.html",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 32,
-      "admissionsCandidateTitle": "How to Apply to a Graduate Program | Texas A&M University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "technische-universit-t-berlin",
@@ -3339,10 +3342,10 @@
       "rorId": "https://ror.org/03v4gjf40",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.tu.berlin/en/studying/applying-and-enrolling/dates-deadlines",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3362,12 +3365,12 @@
       "rorId": "https://ror.org/03taz7m60",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://gradadm.usc.edu/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://viterbigradadmission.usc.edu/programs/masters/msprograms/computer-science/ms-computer-science/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 21,
-      "admissionsCandidateTitle": "Graduate Admission - Graduate AdmissionPause Background VideoPlay Background Video"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "stockholm-university",
@@ -3408,12 +3411,12 @@
       "rorId": "https://ror.org/012p63287",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.rug.nl/masters/",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://www.rug.nl/masters/computing-science/?lang=en",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 4,
-      "admissionsCandidateTitle": "Master en PhD opleidingen | Onderwijs | Rijksuniversiteit Groningen"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-liverpool",
@@ -3426,15 +3429,16 @@
       "region": "Europe",
       "homepageUrl": "http://www.liv.ac.uk/",
       "officialDomains": [
-        "liv.ac.uk"
+        "liv.ac.uk",
+        "liverpool.ac.uk"
       ],
       "rorId": "https://ror.org/04xs57h96",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.liverpool.ac.uk/courses/postgraduate-taught/computer-science-msc",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3454,10 +3458,10 @@
       "rorId": "https://ror.org/03p74gp79",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://sit.uct.ac.za/masters-computer-science",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3477,12 +3481,12 @@
       "rorId": "https://ror.org/05cgtjz78",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://grad.uwo.ca/admissions/programs/index.cfm",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://grad.uwo.ca/admissions/programs/program.cfm?p=37",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 21,
-      "admissionsCandidateTitle": "Explore Our Programs - Graduate and Postdoctoral Studies - Western University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-vienna",
@@ -3500,10 +3504,10 @@
       "rorId": "https://ror.org/03prydq77",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://studieren.univie.ac.at/en/degree-programmes/master-programmes/computer-science-master/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3523,12 +3527,12 @@
       "rorId": "https://ror.org/026w31v75",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://admission.utm.my/malaysian-postgraduate-study/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://admission.utm.my/international-postgraduate-study/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 22,
-      "admissionsCandidateTitle": "Postgraduate Study | Admission to UTM"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "wageningen-university-and-research",
@@ -3546,10 +3550,10 @@
       "rorId": "https://ror.org/04qw24q55",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "admissionsUrl": "https://www.wur.nl/en/education/master/masters-data-science-food-and-health",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3569,12 +3573,12 @@
       "rorId": "https://ror.org/03yghzc09",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.exeter.ac.uk/masters-degrees/",
-      "admissionsDiscovery": "low-confidence",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 4,
-      "admissionsCandidateTitle": "Masters Degrees and Courses | University of Exeter"
+      "admissionsUrl": "https://www.exeter.ac.uk/masters-degrees/apply/application-deadlines/",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-geneva",
@@ -3592,10 +3596,10 @@
       "rorId": "https://ror.org/01swzsf04",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.unige.ch/sciences/en/enseignements/formations/bachelor-master",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3616,11 +3620,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": true,
       "admissionsUrl": "https://www.lancaster.ac.uk/study/postgraduate/applying-for-postgraduate-study/",
-      "admissionsDiscovery": "discovered",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 17,
-      "admissionsCandidateTitle": "Applying for postgraduate study - Lancaster University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-basel",
@@ -3661,10 +3665,10 @@
       "rorId": "https://ror.org/046865y68",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.grad.hanyang.ac.kr/eng/entrance/calendar.php",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3707,7 +3711,7 @@
       "rorId": "https://ror.org/05hs6h993",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://grad.msu.edu/apply",
+      "admissionsUrl": "https://grad.msu.edu/admissions/apply",
       "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
@@ -3730,10 +3734,10 @@
       "rorId": "https://ror.org/00cv9y106",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://studiekiezer.ugent.be/2026/master-of-science-in-computer-science-engineering-en",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3771,17 +3775,18 @@
       "region": "Asia",
       "homepageUrl": "http://en.nagoya-u.ac.jp/",
       "officialDomains": [
-        "en.nagoya-u.ac.jp"
+        "en.nagoya-u.ac.jp",
+        "admissions.g30.nagoya-u.ac.jp"
       ],
       "rorId": "https://ror.org/04chrp450",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://en.nagoya-u.ac.jp/admissions/graduate/masters-programs/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://admissions.g30.nagoya-u.ac.jp/graduate/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 25,
-      "admissionsCandidateTitle": "Master’s programs | Admissions | Nagoya University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "chalmers-university-of-technology",
@@ -3800,11 +3805,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": true,
       "admissionsUrl": "https://www.chalmers.se/en/education/find-masters-programme/",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 4,
-      "admissionsCandidateTitle": "Find master's programme | Chalmers"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "al-farabi-kazakh-national-university",
@@ -3845,12 +3850,12 @@
       "rorId": "https://ror.org/01yc7t268",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://gme.wustl.edu/policies-procedures/",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://cse.wustl.edu/graduate/programs/Pages/default.aspx",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 5,
-      "admissionsCandidateTitle": "Policies & Procedures - Graduate Medical Education ConsortiumWashU Medicine"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "university-of-montreal",
@@ -3868,10 +3873,10 @@
       "rorId": "https://ror.org/0161xgx34",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://admission.umontreal.ca/programmes/maitrise-en-informatique/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -3891,12 +3896,12 @@
       "rorId": "https://ror.org/04m01e293",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.york.ac.uk/study/postgraduate/courses/all?mode=taught",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://www.york.ac.uk/study/postgraduate-taught/courses/msc-advanced-computer-science/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 10,
-      "admissionsCandidateTitle": "Postgraduate taught, University of York"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "hokkaido-university",
@@ -3915,11 +3920,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": true,
       "admissionsUrl": "https://www.global.hokudai.ac.jp/admissions/graduate-admissions-overview/",
-      "admissionsDiscovery": "discovered",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 39,
-      "admissionsCandidateTitle": "Graduate Admissions Overview – Hokkaido University"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "kyushu-university",
@@ -3937,12 +3942,12 @@
       "rorId": "https://ror.org/00p4k0j84",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.kyushu-u.ac.jp/en/admission/entrance/",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.isee.kyushu-u.ac.jp/e/admissions/master.html",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 39,
-      "admissionsCandidateTitle": "Graduate Admissions | Admissions | KYUSHU UNIVERSITY"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "universitat-aut-noma-de-barcelona",
@@ -3983,12 +3988,12 @@
       "rorId": "https://ror.org/03efmqc40",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://admission.asu.edu/apply/graduate",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://admission.asu.edu/graduate/apply",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 32,
-      "admissionsCandidateTitle": "Graduate student | Admission | ASU"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "mcmaster-university",
@@ -4006,12 +4011,12 @@
       "rorId": "https://ror.org/02fa3aq29",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://gs.mcmaster.ca/",
-      "admissionsDiscovery": "low-confidence",
-      "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 5,
-      "admissionsCandidateTitle": "School of Graduate Studies"
+      "admissionsUrl": "https://gs.mcmaster.ca/program/computing-and-software/",
+      "admissionsDiscovery": "curated",
+      "datePolicy": "applicant-category",
+      "monitorEnabled": true,
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "universidad-de-chile",
@@ -4029,10 +4034,10 @@
       "rorId": "https://ror.org/047gc3g35",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.uchile.cl/postgrados",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -4052,10 +4057,10 @@
       "rorId": "https://ror.org/00zdnkx70",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://admission.nthu.edu.tw/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -4076,11 +4081,11 @@
       "rorMatchScore": 1.0,
       "rorMatched": false,
       "admissionsUrl": "https://pgapply.ku.ac.ae/portal/pg_landing",
-      "admissionsDiscovery": "discovered",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 73,
-      "admissionsCandidateTitle": "Khalifa University Postgraduate Admissions"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "tongji-university",
@@ -4121,12 +4126,12 @@
       "rorId": "https://ror.org/02t274463",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.ucsb.edu/applying/graduate-admission",
-      "admissionsDiscovery": "discovered",
+      "admissionsUrl": "https://www.graddiv.ucsb.edu/how-apply",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
       "monitorEnabled": true,
-      "admissionsCandidateScore": 32,
-      "admissionsCandidateTitle": "Graduate Admission | UC Santa BarbaraUC Santa Barbara"
+      "admissionsCandidateScore": null,
+      "admissionsCandidateTitle": null
     },
     {
       "id": "indian-institute-of-technology-madras-iitm",
@@ -4144,10 +4149,10 @@
       "rorId": "https://ror.org/03v0r5n49",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://mtechadm.iitm.ac.in/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -4213,10 +4218,10 @@
       "rorId": "https://ror.org/02n415q13",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.curtin.edu.au/study/study-areas/information-technology/postgraduate-information-technology/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -4259,10 +4264,10 @@
       "rorId": "https://ror.org/00jtmb277",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.uow.edu.au/study/courses/master-of-computer-science/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
+      "monitorEnabled": true,
       "admissionsCandidateScore": null,
       "admissionsCandidateTitle": null
     },
@@ -4282,12 +4287,12 @@
       "rorId": "https://ror.org/033vjfk17",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://cs.whu.edu.cn/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 78,
+      "admissionsCandidateTitle": "?????????"
     },
     {
       "id": "tecnol-gico-de-monterrey-itesm",
@@ -4328,12 +4333,12 @@
       "rorId": "https://ror.org/02p0gd045",
       "rorMatchScore": 0.87,
       "rorMatched": false,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://informatica.ucm.es/master",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 82,
+      "admissionsCandidateTitle": "M?ster | Facultad de Inform?tica"
     },
     {
       "id": "universitas-indonesia",
@@ -4351,12 +4356,12 @@
       "rorId": "https://ror.org/0116zj450",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://cs.ui.ac.id/akademik/pascasarjana/magister-ilmu-komputer/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 88,
+      "admissionsCandidateTitle": "Magister Ilmu Komputer"
     },
     {
       "id": "ohio-state-university",
@@ -4374,12 +4379,12 @@
       "rorId": "https://ror.org/00rs6vg23",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://cse.osu.edu/graduate",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 86,
+      "admissionsCandidateTitle": "Graduate | Computer Science and Engineering"
     },
     {
       "id": "queen-s-university-ontario",
@@ -4397,12 +4402,12 @@
       "rorId": "https://ror.org/02y72wh86",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.queensu.ca/grad-postdoc/grad-studies/apply",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 86,
+      "admissionsCandidateTitle": "How to Apply | School of Graduate Studies and Postdoctoral Affairs"
     },
     {
       "id": "universit-catholique-de-louvain-ucl",
@@ -4443,12 +4448,12 @@
       "rorId": "https://ror.org/00g30e956",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.uni-hamburg.de/en/campuscenter/bewerbung/master.html",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 92,
+      "admissionsCandidateTitle": "Master's programs : UHH : University of Hamburg"
     },
     {
       "id": "university-of-reading",
@@ -4466,12 +4471,12 @@
       "rorId": "https://ror.org/05v62cm79",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://www.reading.ac.uk/ready-to-study/study/postgraduate-study",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://www.reading.ac.uk/ready-to-study/study/how-to-apply/masters-how-to-apply",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 6,
-      "admissionsCandidateTitle": "Postgraduate study"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 90,
+      "admissionsCandidateTitle": "Master's application information"
     },
     {
       "id": "vrije-universiteit-amsterdam",
@@ -4489,12 +4494,12 @@
       "rorId": "https://ror.org/008xxew50",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": "https://vu.nl/en/education/master/programmes?slug=masters",
-      "admissionsDiscovery": "low-confidence",
+      "admissionsUrl": "https://vu.nl/en/education/master",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": 4,
-      "admissionsCandidateTitle": "Overview (pre-)Masters's programmes - Vrije Universiteit Amsterdam"
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 78,
+      "admissionsCandidateTitle": "Master's programmes - Vrije Universiteit Amsterdam"
     },
     {
       "id": "waseda-university",
@@ -4512,12 +4517,12 @@
       "rorId": "https://ror.org/00ntfnx83",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.waseda.jp/inst/admission/en/graduate/",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 88,
+      "admissionsCandidateTitle": "Graduate Programs ? International Admissions Office, Waseda University"
     },
     {
       "id": "university-of-otago",
@@ -4558,12 +4563,12 @@
       "rorId": "https://ror.org/04d836q62",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://www.tuwien.at/en/studies/admission",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 88,
+      "admissionsCandidateTitle": "Admission | TU Wien"
     },
     {
       "id": "national-yang-ming-chiao-tung-university",
@@ -4581,12 +4586,12 @@
       "rorId": "https://ror.org/00se2k293",
       "rorMatchScore": 1.0,
       "rorMatched": true,
-      "admissionsUrl": null,
-      "admissionsDiscovery": "not-found",
+      "admissionsUrl": "https://oia.nycu.edu.tw/oia/en/app/folder/782",
+      "admissionsDiscovery": "curated",
       "datePolicy": "program-specific",
-      "monitorEnabled": false,
-      "admissionsCandidateScore": null,
-      "admissionsCandidateTitle": null
+      "monitorEnabled": true,
+      "admissionsCandidateScore": 84,
+      "admissionsCandidateTitle": "Admissions-NYCU Office of International Affairs"
     },
     {
       "id": "queen-s-university-belfast",

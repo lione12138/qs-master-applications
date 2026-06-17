@@ -83,6 +83,7 @@
         </a>
         <nav class="header-nav" aria-label="Main navigation">
           <a href="#application-board" data-i18n="navTracker">Application tracker</a>
+          <a class="subscribe-link" href="#subscribe" data-i18n="navSubscribe">Subscribe</a>
           <a href="#methodology" data-i18n="navMethod">Methodology</a>
           <a
             class="github-link"
@@ -93,7 +94,7 @@
           </a>
           <div class="header-controls">
             <button class="header-control" id="language-toggle" type="button" aria-label="Switch language">中文</button>
-            <button class="header-control" id="theme-toggle" type="button" aria-label="Switch color theme">Dark</button>
+            <button class="header-control icon-only-control" id="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
           </div>
         </nav>
       </header>
@@ -245,10 +246,7 @@
           </div>
 
           <div class="status-tabs" role="tablist" aria-label="申请状态">
-            <button class="status-tab active" data-status="all" role="tab">
-              <span data-i18n="statusAll">All</span> <span id="count-all">0</span>
-            </button>
-            <button class="status-tab" data-status="open" role="tab">
+            <button class="status-tab active" data-status="open" role="tab">
               <span data-i18n="statusOpen">Open now</span> <span id="count-open">0</span>
             </button>
             <button class="status-tab" data-status="upcoming" role="tab">
