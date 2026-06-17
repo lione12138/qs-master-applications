@@ -14,7 +14,7 @@ from .content import (
     evidence_context,
     extract_main_text,
 )
-from .http_client import FetchFailure, fetch_page
+from .http_client import DEFAULT_USER_AGENT, FetchFailure, fetch_page
 from .io import read_json, write_json
 from .paths import MONITOR_STATE_PATH, UNIVERSITIES_PATH
 
@@ -23,7 +23,7 @@ try:
 except ImportError:  # Compatibility for older local environments.
     from PyPDF2 import PdfReader
 
-USER_AGENT = "Mozilla/5.0 (compatible; GradWindowMonitor/1.0; daily admissions check)"
+USER_AGENT = DEFAULT_USER_AGENT
 TIMEOUT = 20
 FINGERPRINT_VERSION = 3
 

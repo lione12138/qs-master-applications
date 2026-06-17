@@ -12,6 +12,10 @@ from tenacity.wait import wait_exponential_jitter
 DEFAULT_TIMEOUT = 20.0
 DEFAULT_MAX_BYTES = 1_500_000
 MIN_HOST_INTERVAL = 0.15
+DEFAULT_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+)
 
 _rate_lock = threading.Lock()
 _host_locks: dict[str, threading.Lock] = {}
@@ -79,6 +83,9 @@ def _fetch_once(
             headers={
                 "User-Agent": user_agent,
                 "Accept": accept,
+                "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
+                "Cache-Control": "no-cache",
+                "Pragma": "no-cache",
             },
         ) as client:
             with client.stream("GET", url) as response:

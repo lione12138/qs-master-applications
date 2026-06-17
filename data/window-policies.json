@@ -20,19 +20,13 @@
       }
     },
     {
-      "universityId": "university-of-cambridge",
-      "model": "programme-specific",
-      "defaultScope": "programme",
+      "universityId": "imperial-college-london",
+      "model": "mixed",
+      "defaultScope": "programme-group",
       "mastersAvailability": "broad",
-      "notes": "The specific deadline depends on the course and on whether the applicant is applying for funding.",
-      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/application-process/application-deadlines",
-      "verifiedAt": "2026-06-14",
-      "cycleGuidance": {
-        "entry": "2026/27",
-        "status": "open-programme-specific",
-        "opensText": "Applications open; deadlines vary by course",
-        "notes": "Cambridge's directory is open for 2026/27, but each course has its own deadline and may close early."
-      }
+      "notes": "Many courses remain open until full; some departments use fixed application rounds shared by taught postgraduate courses.",
+      "sourceUrl": "https://www.imperial.ac.uk/study/apply/postgraduate-taught/application-process/deadlines/",
+      "verifiedAt": "2026-06-14"
     },
     {
       "universityId": "stanford-university",
@@ -80,13 +74,19 @@
       }
     },
     {
-      "universityId": "imperial-college-london",
-      "model": "mixed",
-      "defaultScope": "programme-group",
+      "universityId": "university-of-cambridge",
+      "model": "programme-specific",
+      "defaultScope": "programme",
       "mastersAvailability": "broad",
-      "notes": "Many courses remain open until full; some departments use fixed application rounds shared by taught postgraduate courses.",
-      "sourceUrl": "https://www.imperial.ac.uk/study/apply/postgraduate-taught/application-process/deadlines/",
-      "verifiedAt": "2026-06-14"
+      "notes": "The specific deadline depends on the course and on whether the applicant is applying for funding.",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/application-process/application-deadlines",
+      "verifiedAt": "2026-06-14",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "open-programme-specific",
+        "opensText": "Applications open; deadlines vary by course",
+        "notes": "Cambridge's directory is open for 2026/27, but each course has its own deadline and may close early."
+      }
     },
     {
       "universityId": "eth-zurich-swiss-federal-institute-of-technology",
@@ -1433,6 +1433,51 @@
       }
     },
     {
+      "universityId": "the-university-of-nottingham",
+      "model": "centralized",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "The University of Nottingham publishes central postgraduate application guidance with standard 2026/27 deadlines for postgraduate taught and research applicants.",
+      "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/how-to-apply/apply-online.aspx",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Applications for 2026/27 entry",
+        "status": "deadline-only-central-guidance",
+        "opensText": "Postgraduate taught courses starting 21 September 2026 list an international student deadline of 3 August 2026 and a UK student deadline of 24 August 2026; postgraduate research starting 1 October 2026 lists 17 August 2026 and 14 September 2026 respectively.",
+        "notes": "The page provides standard closing deadlines but not a precise application opening date, so no formal exact window is recorded."
+      }
+    },
+    {
+      "universityId": "karlsruhe-institute-of-technology-kit",
+      "model": "program-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "KIT's official Computer Science M.Sc. page gives application deadlines for German/EU and non-EU applicants for first semester and higher semester entry.",
+      "sourceUrl": "https://www.sle.kit.edu/english/vorstudium/master-computer-science.php",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Computer Science M.Sc.",
+        "status": "recurring-deadlines-without-opening-date",
+        "opensText": "The Computer Science M.Sc. page lists first-semester deadlines of 15 June for winter term and 15 January for summer term for both German/EU and non-EU nationals.",
+        "notes": "The page gives stable deadline month/day rules rather than exact application opening dates."
+      }
+    },
+    {
+      "universityId": "politecnico-di-milano",
+      "model": "centralized",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Politecnico di Milano's current prospective-students site publishes an admission route for Laurea Magistrale programmes equivalent to Master of Science for A.Y. 2026/2027.",
+      "sourceUrl": "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-magistrale",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Admission to Master of Science programmes A.Y. 2026/2027",
+        "status": "central-route-without-dates",
+        "opensText": "The current page confirms the Master of Science admissions route for A.Y. 2026/2027 and separates students with Italian and foreign qualifications, but exact application window dates were not captured in accessible text.",
+        "notes": "Older international-prospective-students URLs returned 404; the current prospective-students route is retained."
+      }
+    },
+    {
       "universityId": "university-of-zurich-uzh",
       "model": "applicant-category",
       "defaultScope": "programme-group",
@@ -1445,21 +1490,6 @@
         "status": "recurring-dates-without-cycle-year",
         "opensText": "Fall master applications 1 January-30 April; visa-requiring applicants 1 January-28 February; spring master applications 1 July-30 November; visa-requiring applicants 1-31 July",
         "notes": "The page publishes recurring application windows by semester and applicant visa status, but it does not attach a cycle year to the ranges. No formal dated application record is created from these recurring windows."
-      }
-    },
-    {
-      "universityId": "utrecht-university",
-      "model": "applicant-category",
-      "defaultScope": "programme",
-      "mastersAvailability": "broad",
-      "notes": "Utrecht Computing Science is a selective master's programme. The non-Dutch-degree application page publishes application openings and passport-category deadlines for September and February starts, but the ranges are recurring and not tied to a cycle year.",
-      "sourceUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission/degree-from-a-non-dutch-university",
-      "verifiedAt": "2026-06-16",
-      "cycleGuidance": {
-        "entry": "September and February starts",
-        "status": "recurring-dates-without-cycle-year",
-        "opensText": "September start opens 1 October; scholarship deadline 1 February; non-EU deadline 1 April; EU deadline 1 June. February start opens 1 July; non-EU deadline 1 September; EU deadline 15 October.",
-        "notes": "The official non-Dutch-degree page lists these dates and states deadlines expire at 23:59 CET/CEST. Because no cycle year is attached, no formal dated window is recorded."
       }
     },
     {
@@ -1490,6 +1520,66 @@
         "status": "announced",
         "opensText": "General admission first round application period 24 February-3 April 2026, 18:00 KST",
         "notes": "The POSTECH graduate admissions homepage states the 2026-27 general admissions first round application period and directs applicants to the graduate admissions application menu."
+      }
+    },
+    {
+      "universityId": "nanjing-university",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Nanjing University has an international student online service platform and a graduate school portal with admissions information; exact master application dates were not captured.",
+      "sourceUrl": "https://istudy.nju.edu.cn/en/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "International student online service platform",
+        "status": "central-route-without-dates",
+        "opensText": "The official online service platform and graduate school page are accessible, but exact current application opening or closing dates were not captured in accessible text.",
+        "notes": "This replaces the earlier not-found status caused by stale or unreliable guessed paths."
+      }
+    },
+    {
+      "universityId": "utrecht-university",
+      "model": "applicant-category",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "Utrecht Computing Science is a selective master's programme. The non-Dutch-degree application page publishes application openings and passport-category deadlines for September and February starts, but the ranges are recurring and not tied to a cycle year.",
+      "sourceUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission/degree-from-a-non-dutch-university",
+      "verifiedAt": "2026-06-16",
+      "cycleGuidance": {
+        "entry": "September and February starts",
+        "status": "recurring-dates-without-cycle-year",
+        "opensText": "September start opens 1 October; scholarship deadline 1 February; non-EU deadline 1 April; EU deadline 1 June. February start opens 1 July; non-EU deadline 1 September; EU deadline 15 October.",
+        "notes": "The official non-Dutch-degree page lists these dates and states deadlines expire at 23:59 CET/CEST. Because no cycle year is attached, no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "lomonosov-moscow-state-university",
+      "model": "centralized",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "The official Central Admissions Committee portal exposes MSU 2026 admission rules and central admissions materials. The static pass confirmed the official admissions entry but did not capture exact master application-window dates.",
+      "sourceUrl": "https://cpk.msu.ru/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "dates-not-exact",
+        "opensText": "2026 admission rules available on the central admissions portal",
+        "notes": "Use the Central Admissions Committee documents and selected programme/faculty page for exact graduate windows."
+      }
+    },
+    {
+      "universityId": "rheinisch-westf-lische-technische-hochschule-aachen",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "RWTH states that international applicant rules and deadlines can differ by target group, and the page explicitly covers eligibility for master courses of study. Exact programme windows were not captured in the static pass.",
+      "sourceUrl": "https://www.rwth-aachen.de/go/id/bxip/lidx/1",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific",
+        "opensText": "Deadlines depend on applicant group and selected course",
+        "notes": "Use the selected RWTH course page and applicant group guidance for exact master deadlines."
       }
     },
     {
@@ -1535,6 +1625,21 @@
         "status": "school-specific-dates",
         "opensText": "Application qualifications, procedures, and application periods vary depending on each graduate school",
         "notes": "The central page confirms graduate admission routes and explicitly says applicants should contact their desired graduate school for detailed information. No general computing-specific window is recorded from the central page."
+      }
+    },
+    {
+      "universityId": "queen-mary-university-of-london-qmul",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The official postgraduate taught page lists Queen Mary masters programmes starting in September 2026 and links applicants to how-to-apply and key-dates guidance. Exact programme deadlines were not captured in the static pass.",
+      "sourceUrl": "https://www.qmul.ac.uk/postgraduate/taught/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific",
+        "opensText": "Programme catalogue available for September 2026 start",
+        "notes": "Use the selected course page and Queen Mary key-dates guidance for exact application dates."
       }
     },
     {
@@ -1598,6 +1703,36 @@
       }
     },
     {
+      "universityId": "university-of-california-davis",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UC Davis graduate admissions is centralized as an entry point, while applicants apply through individual graduate programmes. The detailed graduate studies pages intermittently returned 403 from the current environment, so exact programme deadlines were not captured.",
+      "sourceUrl": "https://www.ucdavis.edu/admissions/graduate-school",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific",
+        "opensText": "Graduate admissions entry available; programme dates not captured",
+        "notes": "Use the selected UC Davis graduate programme page for exact application deadlines."
+      }
+    },
+    {
+      "universityId": "pontificia-universidad-cat-lica-de-chile",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Pontificia Universidad Cat?lica de Chile publishes a central Postgrado admissions page on admision.uc.cl.",
+      "sourceUrl": "https://admision.uc.cl/postgrado/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Postgrado",
+        "status": "central-route-without-dates",
+        "opensText": "The official postgraduate admissions route is accessible, but exact current application opening or closing dates were not captured in accessible text.",
+        "notes": "The earlier uc.cl/postgrado path returned 404; the current admision.uc.cl route is retained."
+      }
+    },
+    {
       "universityId": "university-of-helsinki",
       "model": "program-specific",
       "defaultScope": "programme",
@@ -1610,6 +1745,21 @@
         "status": "announced",
         "opensText": "Application period begins 5 January 2027 at 08:00 and ends 19 January 2027 at 15:00",
         "notes": "The programme page states the exact application period and notes that there is only one intake per academic year."
+      }
+    },
+    {
+      "universityId": "university-college-dublin",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "UCD Graduate Admissions exposes courses, entry requirements, how-to-apply, fees, funding, and graduate applicant guidance. The registry page states that most graduate taught and research applications are made direct to UCD. Exact course deadlines were not captured.",
+      "sourceUrl": "https://www.ucd.ie/graduateadmissions/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific",
+        "opensText": "Graduate admissions portal available; dates not captured",
+        "notes": "Use the selected UCD course catalogue entry for exact graduate application deadlines."
       }
     },
     {
@@ -1718,6 +1868,36 @@
       }
     },
     {
+      "universityId": "sungkyunkwan-university",
+      "model": "centralized",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "SKKU global admissions publishes graduate application guidance and Fall 2026 round notices for international graduate applicants.",
+      "sourceUrl": "https://admission-global.skku.edu/eng/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Graduate Admissions for Fall 2026 3rd Round",
+        "status": "dated-window-upcoming",
+        "opensText": "Application: 22 June 2026 10:00 to 1 July 2026 17:00 KST for Fall 2026 3rd round graduate admissions.",
+        "notes": "A formal exact window is recorded for the 3rd round."
+      }
+    },
+    {
+      "universityId": "universiti-kebangsaan-malaysia-ukm",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "UKM publishes postgraduate, master, doctorate, UKM International, and admission contact routes on its official postgraduate page.",
+      "sourceUrl": "https://www.ukm.my/portalukm/postgraduate/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Postgraduate admissions",
+        "status": "central-route-without-dates",
+        "opensText": "The official postgraduate page confirms admissions and contact routes but no exact current application opening or closing dates were captured.",
+        "notes": "The earlier guessed graduate-admission URL returned 404; the current portal page is retained."
+      }
+    },
+    {
       "universityId": "sapienza-university-of-rome",
       "model": "program-specific",
       "defaultScope": "programme",
@@ -1778,6 +1958,21 @@
       }
     },
     {
+      "universityId": "university-of-science-and-technology-of-china",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "USTC International College exposes Admissions, Postgraduate, Programs in Suzhou, and fellowship routes for international applicants.",
+      "sourceUrl": "https://ic.ustc.edu.cn/en/v7info.php?Nav_x=2",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "International College admissions",
+        "status": "central-route-without-dates",
+        "opensText": "The International College page confirms postgraduate admissions routes but exact current application opening or closing dates were not captured.",
+        "notes": "The graduate school Chinese portal is also accessible as a secondary source."
+      }
+    },
+    {
       "universityId": "universiti-putra-malaysia-upm",
       "model": "program-specific",
       "defaultScope": "programme-group",
@@ -1805,6 +2000,21 @@
         "status": "dates-not-captured",
         "opensText": "Applicants should use the USM postgraduate admission portal for application timing.",
         "notes": "The captured official programme page lists the programmes and Apply Now link, but no opening or closing dates were captured."
+      }
+    },
+    {
+      "universityId": "universidad-nacional-aut-noma-de-m-xico-unam",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "UNAM Posgrado publishes postgraduate academic offer routes for Maestr?a, Doctorado, Especializaci?n, and Educaci?n Continua.",
+      "sourceUrl": "https://www.posgrado.unam.mx/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Posgrado UNAM",
+        "status": "programme-catalogue-without-dates",
+        "opensText": "The official postgraduate portal confirms master and doctoral programme routes but no exact current application opening or closing dates were captured.",
+        "notes": "The guessed /admision/ path returned 404."
       }
     },
     {
@@ -1883,6 +2093,21 @@
       }
     },
     {
+      "universityId": "king-saud-university",
+      "model": "centralized",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "The official Deanship of Graduate Studies homepage exposes Admission Unit, Study Programs, Electronic Services, and graduate guidance navigation. Exact application-window dates were not captured in the static pass.",
+      "sourceUrl": "https://graduatestudies.ksu.edu.sa/en",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "dates-not-exact",
+        "opensText": "Graduate Studies portal available; dates not captured",
+        "notes": "Use the Deanship admission notices and programme pages for exact Saudi graduate application windows."
+      }
+    },
+    {
       "universityId": "texas-a-and-m-university",
       "model": "program-specific",
       "defaultScope": "programme",
@@ -1925,6 +2150,21 @@
         "status": "deadlines-without-opening-date",
         "opensText": "Spring general deadline 15 September; fall scholarship consideration deadline 15 December and final deadline 15 January.",
         "notes": "No cycle years or opening dates were captured, so no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "stockholm-university",
+      "model": "centralized",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Stockholm University publishes a central course catalogue with master programme filters, semester options, and how-to-apply navigation.",
+      "sourceUrl": "https://www.su.se/english/search-courses-and-programmes",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Course catalogue",
+        "status": "central-catalogue-without-dates",
+        "opensText": "The catalogue exposes master programme search and future semester options including Autumn 2026 and Spring 2027, but exact application opening or closing dates were not captured.",
+        "notes": "The earlier guessed apply-for-a-master URL returned 404."
       }
     },
     {
@@ -2078,6 +2318,21 @@
       }
     },
     {
+      "universityId": "university-of-basel",
+      "model": "centralized",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "The University of Basel central Application page links to master admission, application deadlines, and semester dates.",
+      "sourceUrl": "https://www.unibas.ch/en/Studies/Application-Admission/Application.html",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Application and admission",
+        "status": "central-route-with-deadline-links",
+        "opensText": "The application page exposes master admission and application-deadline navigation, but exact current master application dates were not captured in accessible text.",
+        "notes": "The earlier guessed Master.html path returned 404."
+      }
+    },
+    {
       "universityId": "hanyang-university",
       "model": "program-specific",
       "defaultScope": "programme",
@@ -2150,6 +2405,21 @@
         "status": "approximate-application-period",
         "opensText": "Application period: Mid-October - Mid-January.",
         "notes": "The page provides month-level application-period guidance but no exact opening or closing dates, so no formal dated window is recorded."
+      }
+    },
+    {
+      "universityId": "al-farabi-kazakh-national-university",
+      "model": "centralized",
+      "defaultScope": "programme-group",
+      "mastersAvailability": "broad",
+      "notes": "The official admissions portal exposes Admissions 2026 and separate Bachelor, Master, MBA, DBA, PhD, and foreign applicant routes. Exact master application-window dates were not captured in the static pass.",
+      "sourceUrl": "https://welcome.kaznu.kz/en/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026",
+        "status": "dates-not-exact",
+        "opensText": "Admissions 2026 portal is available",
+        "notes": "Use the Master's programme and foreign applicant routes for exact KazNU application windows."
       }
     },
     {
@@ -2228,6 +2498,21 @@
       }
     },
     {
+      "universityId": "universitat-aut-noma-de-barcelona",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The official UAB Graduate page states that it covers more than 400 master's degrees and graduate diplomas and lists University Master's Degrees by area. Older deep official-master paths returned 404, so exact application-window dates were not captured.",
+      "sourceUrl": "https://www.uab.cat/graduate/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific",
+        "opensText": "Graduate master catalogue available; dates not captured",
+        "notes": "Use the selected UAB official master page for exact admission windows."
+      }
+    },
+    {
       "universityId": "arizona-state-university",
       "model": "program-specific",
       "defaultScope": "programme-group",
@@ -2303,6 +2588,21 @@
       }
     },
     {
+      "universityId": "tongji-university",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Tongji University International Students Office publishes admissions, online application, scholarship, and announcement routes for international applicants.",
+      "sourceUrl": "https://study.tongji.edu.cn/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "International Students Office",
+        "status": "central-route-with-current-notices",
+        "opensText": "The International Students Office homepage shows admissions navigation, online application, scholarship routes, and 2026 fall-term notices, but exact master application window dates were not captured.",
+        "notes": "The guessed /Admissions.htm path returned 404, so the stable office homepage is retained."
+      }
+    },
+    {
       "universityId": "university-of-california-santa-barbara-ucsb",
       "model": "program-specific",
       "defaultScope": "programme-group",
@@ -2333,6 +2633,36 @@
       }
     },
     {
+      "universityId": "cardiff-university",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The official postgraduate taught catalogue exposes Cardiff master-level course routes. Applying pages intermittently returned 403 from the current environment, so exact application-window dates were not captured.",
+      "sourceUrl": "https://www.cardiff.ac.uk/study/postgraduate/taught",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific",
+        "opensText": "Course catalogue available; dates not captured",
+        "notes": "Use the selected Cardiff course page and postgraduate applying guidance for exact deadlines."
+      }
+    },
+    {
+      "universityId": "emory-university",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Emory University Laney Graduate School welcomes applications and states that it offers over 40 doctoral and master's programs across several disciplines.",
+      "sourceUrl": "https://www.gs.emory.edu/admissions/index.html",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Laney Graduate School admissions",
+        "status": "central-route-with-programme-specific-requirements",
+        "opensText": "The central Laney Graduate School admissions page links to application, programs, funding, and international applicant guidance, but exact programme deadlines were not captured.",
+        "notes": "This is promoted under the central graduate admissions standard; earlier CS-specific deep links returned 404."
+      }
+    },
+    {
       "universityId": "curtin-university",
       "model": "program-specific",
       "defaultScope": "programme-group",
@@ -2345,6 +2675,21 @@
         "status": "programme-listing-without-dates",
         "opensText": "The page links to application key dates and deadlines but does not expose exact application opening or closing dates in accessible text.",
         "notes": "No formal dated window is recorded until programme-specific intake dates are captured."
+      }
+    },
+    {
+      "universityId": "university-of-bern",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The official studies catalogue is reachable and is the current University of Bern degree-programmes entry point. Older master/admission/deadline paths returned 404, so exact master application-window dates were not captured.",
+      "sourceUrl": "https://www.unibe.ch/studies/programs/index_eng.html",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "dates-not-exact",
+        "opensText": "Degree programmes catalogue available; admission dates not captured",
+        "notes": "Use the selected University of Bern programme page for current admission and deadline details."
       }
     },
     {
@@ -2375,6 +2720,21 @@
         "status": "school-route-without-dates",
         "opensText": "The official computer school page confirms the graduate education route but does not expose exact current application opening or closing dates in accessible text.",
         "notes": "The international admissions path tested in this pass returned 404, so this is recorded as programme-location evidence only."
+      }
+    },
+    {
+      "universityId": "tecnol-gico-de-monterrey-itesm",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "broad",
+      "notes": "The official postgraduate portal exposes Doctorados, Maestr?as Presenciales, Maestr?as en L?nea, Especialidades, and Admisiones y Becas navigation. Exact master application-window dates were not captured in the static pass.",
+      "sourceUrl": "https://maestriasydiplomados.tec.mx/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "programme-specific",
+        "opensText": "Postgraduate portal available; dates not captured",
+        "notes": "Use the selected Tec master programme and Admisiones y Becas route for exact windows."
       }
     },
     {
@@ -2498,6 +2858,21 @@
       }
     },
     {
+      "universityId": "university-of-otago",
+      "model": "programme-specific",
+      "defaultScope": "programme",
+      "mastersAvailability": "limited",
+      "notes": "The official Otago masters page is reachable and covers research/thesis master degree study. Postgraduate apply and important-dates pages returned 403 from the current environment, so exact application-window dates were not captured.",
+      "sourceUrl": "https://www.otago.ac.nz/study/masters",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "2026/27",
+        "status": "dates-not-exact",
+        "opensText": "Masters study page available; application dates not captured",
+        "notes": "Use the selected Otago qualification page and postgraduate application route for exact dates."
+      }
+    },
+    {
       "universityId": "vienna-university-of-technology",
       "model": "centralized",
       "defaultScope": "institution",
@@ -2525,6 +2900,21 @@
         "status": "oia-admissions-route-without-dates",
         "opensText": "The OIA admissions folder confirms the international degree-seeking admissions route, but no exact current application opening or closing dates were captured in accessible text.",
         "notes": "Older guessed NYCU OIA short paths returned 404; the current OIA folder path is retained."
+      }
+    },
+    {
+      "universityId": "queen-s-university-belfast",
+      "model": "program-specific",
+      "defaultScope": "institution",
+      "mastersAvailability": "broad",
+      "notes": "Queen's University Belfast publishes an official Postgraduate Taught 2026 course catalogue.",
+      "sourceUrl": "https://www.qub.ac.uk/courses/postgraduate-taught/",
+      "verifiedAt": "2026-06-17",
+      "cycleGuidance": {
+        "entry": "Postgraduate Taught 2026",
+        "status": "course-catalogue-without-dates",
+        "opensText": "The official postgraduate taught 2026 catalogue is accessible, but exact application opening or closing dates were not captured in accessible text.",
+        "notes": "The earlier Graduate School and how-to-apply paths were stale or blocked; the current course catalogue is retained."
       }
     }
   ]

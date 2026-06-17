@@ -83,7 +83,9 @@
         </a>
         <nav class="header-nav" aria-label="Main navigation">
           <a href="#application-board" data-i18n="navTracker">Application tracker</a>
+          <a class="calendar-nav" href="./calendar.html" data-i18n="navCalendar">Calendar</a>
           <a class="subscribe-link" href="#subscribe" data-i18n="navSubscribe">Subscribe</a>
+          <a href="./contact.html" data-i18n="navContact">Contact</a>
           <a href="#methodology" data-i18n="navMethod">Methodology</a>
           <a
             class="github-link"
@@ -115,6 +117,7 @@
                 <span data-i18n="browseWindows">Browse application windows</span>
                 <span aria-hidden="true">↓</span>
               </a>
+              <span class="update-note update-schedule" data-i18n="updateSchedule">Updated daily at 8:00 AM Beijing time</span>
               <span class="update-note" id="updated-at" data-i18n="loadingData">Loading data…</span>
             </div>
           </div>
@@ -234,6 +237,14 @@
                 <option value="all" data-i18n="allIntakes">All intakes</option>
               </select>
             </label>
+            <label class="select-wrap">
+              <span class="sr-only" data-i18n="sortBy">Sort by</span>
+              <select id="sort-select">
+                <option value="rank" data-i18n="sortRank">QS rank</option>
+                <option value="opens" data-i18n="sortOpenDate">Opening date</option>
+                <option value="deadline" data-i18n="sortDeadline">Deadline</option>
+              </select>
+            </label>
             <button class="toolbar-button" id="favorites-toggle" type="button">
               <span data-i18n="favoritesOnly">Favourites only</span> <span id="favorite-count">0</span>
             </button>
@@ -257,6 +268,9 @@
             </button>
             <button class="status-tab" data-status="closed" role="tab">
               <span data-i18n="statusClosed">Closed</span> <span id="count-closed">0</span>
+            </button>
+            <button class="status-tab" data-status="exception" role="tab">
+              <span data-i18n="statusException">Needs manual check</span> <span id="count-exception">0</span>
             </button>
             <button class="status-tab" data-status="unknown" role="tab">
               <span data-i18n="statusDirectory">University directory</span> <span id="count-unknown">0</span>
@@ -295,6 +309,34 @@
               <span>4</span>
               <h3 data-i18n="method4Title">Replace with official dates</h3>
               <p data-i18n="method4Text">Verified new-cycle dates replace matching estimates automatically.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="qa-section" id="qa">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker" data-i18n="qaKicker">Q&A</span>
+              <h2 data-i18n="qaTitle">Questions about the data</h2>
+            </div>
+            <p data-i18n="qaIntro">A few notes to help interpret representative programmes, university-wide rules, and daily updates.</p>
+          </div>
+          <div class="qa-grid">
+            <article>
+              <h3 data-i18n="qaRepresentativeTitle">Why does a university show only one programme?</h3>
+              <p data-i18n="qaRepresentativeText">The table lists exact windows we have verified. For programme-specific universities such as UCL, one representative programme may appear while the school directory records the broader rule.</p>
+            </article>
+            <article>
+              <h3 data-i18n="qaUnifiedTitle">Does this mean the whole university uses that deadline?</h3>
+              <p data-i18n="qaUnifiedText">No. If the policy says programme-level deadlines, dates can differ by course, faculty, funding route, or visa status. Always open the course page before applying.</p>
+            </article>
+            <article>
+              <h3 data-i18n="qaAutoUpdateTitle">Will unified admission dates be added automatically?</h3>
+              <p data-i18n="qaAutoUpdateText">Daily checks flag changes on saved official pages. New dates become official records only after a reliable source or parser confirms the exact window.</p>
+            </article>
+            <article>
+              <h3 data-i18n="qaExceptionTitle">What does “Needs manual check” mean?</h3>
+              <p data-i18n="qaExceptionText">Those schools block automated access, return stale pages, or do not expose reliable dates in the current environment. You should verify them directly on the official site.</p>
             </article>
           </div>
         </section>

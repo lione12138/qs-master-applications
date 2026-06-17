@@ -18,13 +18,13 @@ sys_path = str(ROOT / "src")
 if sys_path not in sys.path:
     sys.path.insert(0, sys_path)
 
-from gradwindow.http_client import fetch_page
+from gradwindow.http_client import DEFAULT_USER_AGENT, fetch_page
 from gradwindow.io import read_json, write_json
 
 OUTPUT_PATH = ROOT / "data" / "universities.json"
 CACHE_PATH = ROOT / "data" / "ror-cache.json"
 ROR_API = "https://api.ror.org/v2/organizations"
-USER_AGENT = "GradWindow/1.0 (university admissions research)"
+USER_AGENT = DEFAULT_USER_AGENT
 
 OFFICIAL_SITE_OVERRIDES = {
     "PSL University": {

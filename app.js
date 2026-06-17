@@ -29,6 +29,7 @@ const state = {
   region: "all",
   intake: "all",
   status: "open",
+  sort: "rank",
   favorites: new Set(),
   favoritesOnly: false,
   top100Only: false,
@@ -49,6 +50,7 @@ function statusLabels() {
     upcoming: { title: t("upcomingTitle"), description: t("upcomingDescription") },
     future: { title: t("futureTitle"), description: t("futureDescription") },
     closed: { title: t("closedTitle"), description: t("closedDescription") },
+    exception: { title: t("exceptionTitle"), description: t("exceptionDescription") },
     unknown: { title: t("directoryTitle"), description: t("directoryDescription") },
   };
 }
@@ -76,6 +78,15 @@ function safeUrl(value) {
   } catch {
     return "";
   }
+}
+
+function acronym(value = "") {
+  return String(value)
+    .split(/[^A-Za-z0-9]+/)
+    .filter((word) => word && !["of", "the", "and"].includes(word.toLowerCase()))
+    .map((word) => word[0])
+    .join("")
+    .toLocaleLowerCase("zh-CN");
 }
 
 function makeElement(tag, options = {}) {
@@ -355,7 +366,10 @@ function filteredRecords() {
     const searchable = [
       record.school,
       record.schoolZh,
+      acronym(record.school),
       record.program,
+      record.universityId,
+      record.scopeId,
       record.country,
       record.region,
     ]
@@ -381,6 +395,8 @@ function filteredUniversities() {
     const searchable = [
       university.school,
       university.schoolZh,
+      acronym(university.school),
+      university.id,
       university.country,
       university.region,
     ]
@@ -394,6 +410,44 @@ function filteredUniversities() {
         state.favorites.has(favoriteKey("university", university.id)))
     );
   });
+}
+
+function compareRecords(a, b) {
+  const byRank = () => a.qsRank - b.qsRank || a.closesAt.localeCompare(b.closesAt);
+  if (state.sort === "opens") {
+    return (
+      a.opensAt.localeCompare(b.opensAt) ||
+      a.closesAt.localeCompare(b.closesAt) ||
+      a.qsRank - b.qsRank
+    );
+  }
+  if (state.sort === "deadline") {
+    return (
+      a.closesAt.localeCompare(b.closesAt) ||
+      a.opensAt.localeCompare(b.opensAt) ||
+      a.qsRank - b.qsRank
+    );
+  }
+  return byRank();
+}
+
+function hasActiveSearch() {
+  return state.search.trim().length > 0;
+}
+
+function activeNonStatusFilter() {
+  return (
+    hasActiveSearch() ||
+    state.region !== "all" ||
+    state.intake !== "all" ||
+    state.top100Only ||
+    state.favoritesOnly
+  );
+}
+
+function recordsForCurrentView(baseRecords) {
+  if (hasActiveSearch()) return baseRecords;
+  return baseRecords.filter((record) => getStatus(record) === state.status);
 }
 
 function createRow(record, status) {
@@ -602,6 +656,12 @@ function mastersAvailabilityDescription(university) {
   return [t("unverified"), t("inspectProgramme")];
 }
 
+function isExceptionUniversity(university) {
+  return ["locate-official-entry", "verify-window-policy"].includes(
+    university.coverage?.nextAction,
+  );
+}
+
 function renderCoverage() {
   if (!state.coverage) return;
   const summary = state.coverage.summary;
@@ -622,10 +682,10 @@ function renderCoverage() {
   document.getElementById("coverage-panel").hidden = false;
 }
 
-function createUniversityGroup(universities) {
-  const heading = statusLabels().unknown;
+function createUniversityGroup(universities, status = "unknown") {
+  const heading = statusLabels()[status];
   const { section, tbody } = createTableSection(
-    "unknown",
+    status,
     heading,
     `${universities.length} ${t("schools")}`,
     [
@@ -644,10 +704,7 @@ function createUniversityGroup(universities) {
         ? university.rankDisplay
         : `#${university.rankDisplay}`;
       const directUrl = university.admissionsUrl;
-      const directLabel =
-        university.admissionsDiscovery === "low-confidence"
-          ? t("openCandidate")
-          : t("openApplication");
+      const directLabel = t("applicationEntry");
       const row = document.createElement("tr");
       const schoolText = schoolLabels(university, state.language);
       const school = makeTextStack(
@@ -696,6 +753,7 @@ function renderCounts(records, universities) {
     upcoming: 0,
     future: 0,
     closed: 0,
+    exception: universities.filter(isExceptionUniversity).length,
     unknown: universities.length,
   };
   records.forEach((record) => {
@@ -712,27 +770,33 @@ function render() {
   const baseRecords = filteredRecords();
   const baseUniversities = filteredUniversities();
   const counts = renderCounts(baseRecords, baseUniversities);
-  const records = baseRecords.filter((record) => getStatus(record) === state.status);
+  const records = recordsForCurrentView(baseRecords);
+  const exceptionUniversities = baseUniversities.filter(isExceptionUniversity);
   const container = document.getElementById("application-groups");
   const emptyState = document.getElementById("empty-state");
   container.replaceChildren();
 
   ["open", "upcoming", "future", "closed"].forEach((status) => {
-    if (state.status !== status) return;
+    if (!hasActiveSearch() && state.status !== status) return;
     const groupRecords = records
       .filter((record) => getStatus(record) === status)
-      .sort((a, b) => a.qsRank - b.qsRank || a.closesAt.localeCompare(b.closesAt));
+      .sort(compareRecords);
     if (groupRecords.length) {
       container.appendChild(createGroup(status, groupRecords));
     }
   });
-  if (state.status === "unknown" && baseUniversities.length) {
+  if (state.status === "exception" && exceptionUniversities.length) {
+    container.appendChild(createUniversityGroup([...exceptionUniversities], "exception"));
+  }
+  if ((state.status === "unknown" || hasActiveSearch()) && baseUniversities.length) {
     container.appendChild(createUniversityGroup([...baseUniversities]));
   }
 
   emptyState.hidden =
+    !activeNonStatusFilter() ||
     records.length > 0 ||
-    (state.status === "unknown" && baseUniversities.length > 0);
+    (state.status === "exception" && exceptionUniversities.length > 0) ||
+    ((state.status === "unknown" || hasActiveSearch()) && baseUniversities.length > 0);
   document.getElementById("hero-open-count").textContent = counts.open;
   updateFavoriteControls();
 }
@@ -743,6 +807,7 @@ function syncUrl() {
   if (state.region !== "all") params.set("region", state.region);
   if (state.intake !== "all") params.set("intake", state.intake);
   if (state.status !== "open") params.set("status", state.status);
+  if (state.sort !== "rank") params.set("sort", state.sort);
   if (state.top100Only) params.set("top", "100");
   history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`);
 }
@@ -753,6 +818,9 @@ function loadUrlState() {
   state.region = params.get("region") || "all";
   state.intake = params.get("intake") || "all";
   state.status = params.get("status") || "open";
+  state.sort = ["rank", "opens", "deadline"].includes(params.get("sort"))
+    ? params.get("sort")
+    : "rank";
   state.top100Only = params.get("top") === "100";
 }
 
@@ -968,6 +1036,11 @@ function bindEvents() {
     syncUrl();
     render();
   });
+  document.getElementById("sort-select").addEventListener("change", (event) => {
+    state.sort = event.target.value;
+    syncUrl();
+    render();
+  });
   document.querySelectorAll(".status-tab").forEach((button) => {
     button.addEventListener("click", () => {
       state.status = button.dataset.status;
@@ -1154,6 +1227,7 @@ async function init() {
       "upcoming",
       "future",
       "closed",
+      "exception",
       "unknown",
     ]);
     if (!allowedStatuses.has(state.status)) state.status = "open";
@@ -1176,6 +1250,7 @@ async function init() {
     document.getElementById("search-input").value = state.search;
     document.getElementById("region-filter").value = state.region;
     document.getElementById("intake-filter").value = state.intake;
+    document.getElementById("sort-select").value = state.sort;
     document.querySelectorAll(".status-tab").forEach((tab) => {
       tab.classList.toggle("active", tab.dataset.status === state.status);
     });

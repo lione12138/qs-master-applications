@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact GradWindow for page improvements, data corrections, and feature requests."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="modulepreload" href="./contact.js" />
+    <link rel="modulepreload" href="./i18n.js" />
+    <title>GradWindow · Contact</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html" aria-label="GradWindow home">
+          <span class="brand-mark">G</span>
+          <span>GradWindow</span>
+        </a>
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="./index.html#application-board" data-i18n="navTracker">Application tracker</a>
+          <a class="calendar-nav" href="./calendar.html" data-i18n="navCalendar">Calendar</a>
+          <a class="subscribe-link" href="./index.html#subscribe" data-i18n="navSubscribe">Subscribe</a>
+          <a href="./contact.html" data-i18n="navContact">Contact</a>
+          <a
+            class="github-link"
+            href="https://github.com/lione12138/qs-master-applications"
+            data-i18n="navGithub"
+          >
+            GitHub
+          </a>
+          <div class="header-controls">
+            <button class="header-control" id="language-toggle" type="button" aria-label="Switch language">中文</button>
+            <button class="header-control icon-only-control" id="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="contact-page">
+          <div class="contact-copy">
+            <span class="section-kicker" data-i18n="contactKicker">CONTACT</span>
+            <h1 data-i18n="contactTitle">Send feedback or report an issue</h1>
+            <p data-i18n="contactIntro">
+              Found a missing deadline, stale page, or UI issue? Send an email and include the university or page you were viewing.
+            </p>
+            <p class="contact-email">
+              <span data-i18n="contactEmailLabel">Default email:</span>
+              <a href="mailto:lionel8888888@gmail.com">lionel8888888@gmail.com</a>
+            </p>
+          </div>
+
+          <form class="contact-form" action="mailto:lionel8888888@gmail.com" method="post" enctype="text/plain">
+            <label>
+              <span data-i18n="contactSubject">Subject</span>
+              <input
+                name="subject"
+                type="text"
+                maxlength="120"
+                required
+                data-i18n-placeholder="contactSubjectPlaceholder"
+                placeholder="GradWindow feedback"
+              />
+            </label>
+            <label>
+              <span data-i18n="contactMessage">Message</span>
+              <textarea
+                name="message"
+                rows="8"
+                required
+                data-i18n-placeholder="contactMessagePlaceholder"
+                placeholder="Describe the issue or suggestion..."
+              ></textarea>
+            </label>
+            <a
+              class="primary-button contact-mail-button"
+              href="mailto:lionel8888888@gmail.com?subject=GradWindow%20feedback"
+              data-i18n="contactButton"
+            >
+              Open email app
+            </a>
+            <p class="school-meta" data-i18n="contactNote">
+              The button opens your default email app. If it does not open, copy the email address above.
+            </p>
+          </form>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./contact.js"></script>
+  </body>
+</html>

@@ -672,3 +672,116 @@ five institutions while preserving the same completion rules:
 - Queen's University Belfast — not upgraded in this pass. Official postgraduate
   taught, how-to-apply, and Graduate School pages returned 403 from the current
   environment, so the previous low-confidence entry was not promoted.
+
+## Targeted quality pass — 2026-06-17
+
+- University of Nottingham — promoted from low-confidence to curated. The
+  official postgraduate apply page was reachable and gives standard 2026/27
+  postgraduate taught and postgraduate research deadlines by applicant category.
+- Karlsruhe Institute of Technology — promoted from not-found to curated. The
+  previous guessed central URLs were stale, but the current SLE master's
+  catalogue exposes the Computer Science M.Sc. page with winter/summer
+  application deadlines for German/EU and non-EU applicants.
+- Politecnico di Milano — promoted from not-found to curated. The previous
+  international-prospective-students URLs were stale; the current
+  prospective-students route exposes Admission to Laurea Magistrale / Master of
+  Science programmes for A.Y. 2026/2027.
+- RWTH Aachen, QMUL, UC Davis, UCD, Humboldt, Macquarie, and Cardiff were
+  rechecked but not promoted in this pass. RWTH's accessible guessed path
+  resolved to Bachelor admission rather than Master's admission; the others
+  were still blocked by 403 or anti-bot pages from the current environment.
+
+## Targeted quality pass 2 — 2026-06-17
+
+- Nanjing University — promoted from not-found to curated. The current
+  international student online service platform and graduate school portal are
+  reachable; no exact master window was captured.
+- Sungkyunkwan University — promoted from not-found to curated, with a formal
+  Fall 2026 3rd round graduate window added. SKKU Global Admissions lists
+  applications from 22 June 2026 at 10:00 to 1 July 2026 at 17:00 KST.
+- Universiti Kebangsaan Malaysia — promoted from not-found to curated. The
+  current UKM postgraduate portal exposes postgraduate/master/doctorate
+  admission routes and contacts; no exact dates were captured.
+- University of Science and Technology of China — promoted from not-found to
+  curated. The USTC International College page exposes Admissions,
+  Postgraduate, and fellowship routes; no exact dates were captured.
+- UNAM — promoted from not-found to curated. The Posgrado UNAM portal exposes
+  Maestría, Doctorado, Especialización, and continuing education routes; no
+  exact dates were captured.
+- Stockholm University — promoted from not-found to curated. The official
+  course catalogue exposes master programme search and application guidance
+  navigation; exact dates were not captured.
+- University of Basel — promoted from not-found to curated. The central
+  Application page exposes master admission and deadline navigation; exact
+  dates were not captured.
+- Queen's University Belfast — promoted from low-confidence to curated. The
+  official Postgraduate Taught 2026 course catalogue is reachable; exact dates
+  were not captured.
+- Barcelona, UAB, and Otago were rechecked but not promoted. Barcelona and
+  Otago still returned 403 from this environment; the tested UAB paths returned
+  404.
+
+## Targeted quality pass 3 — 2026-06-17
+
+- Emory University — promoted from not-found to curated under the central
+  graduate-admissions standard. The Laney Graduate School admissions page
+  confirms over 40 doctoral and master's programmes and links to application,
+  programme, funding, and international applicant guidance.
+- Pontificia Universidad Católica de Chile — promoted from not-found to
+  curated. The earlier uc.cl/postgrado path returned 404, while the current
+  admision.uc.cl/postgrado route is reachable.
+- Tongji University — promoted from not-found to curated. The International
+  Students Office homepage is reachable and exposes admissions, online
+  application, scholarship, and current 2026 fall-term notice navigation.
+- Cardiff, Macquarie, UCLouvain, KAU, Al-Farabi, and Tecnológico de Monterrey
+  were rechecked but not promoted in this pass due to 403, 503, DNS,
+  certificate-chain, or stale-path failures.
+
+## Targeted quality pass 4 — 2026-06-17
+
+- Queen Mary University of London — promoted from low-confidence to curated.
+  The current postgraduate taught programme catalogue is reachable and exposes
+  master's programmes for September 2026 entry plus how-to-apply/key-dates
+  navigation; exact programme deadlines were not captured.
+- King Saud University — promoted from not-found to curated. The Deanship of
+  Graduate Studies homepage is reachable and exposes Admission Unit, Study
+  Programs, and Electronic Services navigation; exact application-window dates
+  were not captured.
+- Lomonosov Moscow State University was rechecked but not promoted. The tested
+  official admissions and education routes return a Svelte shell without
+  admissions content in the static environment, so there is not enough reliable
+  evidence to mark a curated graduate admissions entry.
+- UC Davis, UCD, Humboldt, UAB, Otago, RWTH Aachen, Macquarie, Barcelona, KAU,
+  Cardiff, Bern, and Tecnológico de Monterrey remain blocked or stale from the
+  current static fetch environment because of 403, anti-bot pages, DNS, or 404
+  responses.
+
+## Targeted quality pass 5 — 2026-06-17
+
+- Lomonosov Moscow State University — promoted from not-found to curated using
+  the official Central Admissions Committee portal. The portal exposes 2026
+  admission-rule materials, but exact graduate/master window dates were not
+  captured.
+- RWTH Aachen University — promoted from not-found to curated using the
+  official international-applicant guidance page. The page explicitly covers
+  eligibility for master courses and applicant-group deadline differences; exact
+  programme windows were not captured.
+- Al-Farabi Kazakh National University — promoted from not-found to curated
+  using the official Admissions 2026 portal, which exposes Master's, MBA, DBA,
+  PhD, and foreign-applicant routes.
+- Cardiff University — promoted from not-found to curated using the official
+  postgraduate taught course catalogue. Applying pages are still intermittently
+  blocked by 403 from the current environment, so exact dates were not captured.
+- University of Bern — promoted from not-found to curated using the current
+  official Degree Programs & Courses catalogue. Older master/admission/deadline
+  paths returned 404.
+- Tecnológico de Monterrey — promoted from not-found to curated using the
+  official Posgrados y Educación Continua portal, which exposes Maestrías and
+  Admisiones y Becas navigation.
+- UC Davis, University College Dublin, Universitat Autònoma de Barcelona, and
+  University of Otago — window-policy gaps closed with official graduate/master
+  entry points. Each remains programme-specific or date-not-exact because exact
+  application-window dates were not available from reliable static sources.
+- Humboldt, Macquarie, University of Barcelona, King Abdul Aziz University, and
+  UCLouvain remain unresolved due to anti-bot, 403, DNS, or 503 failures from
+  the current environment.

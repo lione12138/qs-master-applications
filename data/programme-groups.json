@@ -545,16 +545,28 @@
       "description": "Coursework Master of Information Technology with domestic and international applicant-category application dates."
     },
     {
+      "id": "nottingham-postgraduate-admissions",
+      "universityId": "the-university-of-nottingham",
+      "name": "Nottingham postgraduate admissions",
+      "description": "University of Nottingham central postgraduate application route with standard postgraduate taught and research deadlines."
+    },
+    {
+      "id": "kit-computer-science-master",
+      "universityId": "karlsruhe-institute-of-technology-kit",
+      "name": "KIT Computer Science master's",
+      "description": "KIT Computer Science M.Sc. official programme page with applicant-category application deadlines."
+    },
+    {
+      "id": "polimi-laurea-magistrale-admissions",
+      "universityId": "politecnico-di-milano",
+      "name": "Polimi Laurea Magistrale admissions",
+      "description": "Politecnico di Milano admission route for Laurea Magistrale programmes equivalent to Master of Science."
+    },
+    {
       "id": "uzh-informatics-master",
       "universityId": "university-of-zurich-uzh",
       "name": "UZH Informatics master admissions",
       "description": "University of Zurich master admissions for informatics-related study programmes using central application windows."
-    },
-    {
-      "id": "utrecht-computing-science-master",
-      "universityId": "utrecht-university",
-      "name": "Utrecht Computing Science MSc",
-      "description": "Selective Computing Science master's using applicant-background and passport-category application deadlines."
     },
     {
       "id": "ucph-computer-science-msc",
@@ -569,6 +581,30 @@
       "description": "POSTECH general graduate admissions rounds covering science and engineering departments including computer engineering."
     },
     {
+      "id": "nanjing-international-student-admissions",
+      "universityId": "nanjing-university",
+      "name": "Nanjing international student admissions",
+      "description": "Nanjing University online service platform and graduate school admissions route for international and graduate applicants."
+    },
+    {
+      "id": "utrecht-computing-science-master",
+      "universityId": "utrecht-university",
+      "name": "Utrecht Computing Science MSc",
+      "description": "Selective Computing Science master's using applicant-background and passport-category application deadlines."
+    },
+    {
+      "id": "msu-central-admissions",
+      "universityId": "lomonosov-moscow-state-university",
+      "name": "Central Admissions Committee",
+      "description": "Official Lomonosov Moscow State University central admissions committee portal."
+    },
+    {
+      "id": "rwth-international-master-admissions",
+      "universityId": "rheinisch-westf-lische-technische-hochschule-aachen",
+      "name": "International applicant guidance",
+      "description": "Official RWTH Aachen guidance for international applicants, including master course eligibility."
+    },
+    {
       "id": "dtu-computer-science-engineering-msc",
       "universityId": "technical-university-of-denmark",
       "name": "DTU Computer Science and Engineering MSc",
@@ -579,6 +615,12 @@
       "universityId": "universidade-de-s-o-paulo-usp",
       "name": "USP Computer Science graduate programme",
       "description": "IME-USP graduate programme in Computer Science with programme-specific selection instructions."
+    },
+    {
+      "id": "qmul-postgraduate-taught",
+      "universityId": "queen-mary-university-of-london-qmul",
+      "name": "Postgraduate taught admissions",
+      "description": "Official Queen Mary postgraduate taught programme catalogue and admissions route."
     },
     {
       "id": "uw-madison-computer-sciences-graduate",
@@ -605,10 +647,28 @@
       "description": "Two-year Master's in Computer Science using Aalto's central master's application period."
     },
     {
+      "id": "uc-davis-graduate-admissions",
+      "universityId": "university-of-california-davis",
+      "name": "Graduate admissions",
+      "description": "Official UC Davis graduate admissions entry point."
+    },
+    {
+      "id": "puc-chile-postgrado-admissions",
+      "universityId": "pontificia-universidad-cat-lica-de-chile",
+      "name": "UC Chile postgraduate admissions",
+      "description": "Pontificia Universidad Cat?lica de Chile central postgraduate admissions route."
+    },
+    {
       "id": "helsinki-computer-science-master",
       "universityId": "university-of-helsinki",
       "name": "Helsinki Computer Science master's",
       "description": "University of Helsinki Computer Science master's programme with a published annual international master's application period."
+    },
+    {
+      "id": "ucd-graduate-admissions",
+      "universityId": "university-college-dublin",
+      "name": "Graduate admissions",
+      "description": "Official UCD Graduate Admissions portal."
     },
     {
       "id": "leiden-computer-science-msc",
@@ -653,6 +713,18 @@
       "description": "Master of Information Technology with central local and international application-date policies."
     },
     {
+      "id": "skku-global-graduate-admissions",
+      "universityId": "sungkyunkwan-university",
+      "name": "SKKU global graduate admissions",
+      "description": "Sungkyunkwan University global admissions route for international graduate applicants."
+    },
+    {
+      "id": "ukm-postgraduate-admissions",
+      "universityId": "universiti-kebangsaan-malaysia-ukm",
+      "name": "UKM postgraduate admissions",
+      "description": "Universiti Kebangsaan Malaysia postgraduate admissions and contact route for master and doctoral applicants."
+    },
+    {
       "id": "sapienza-computer-science-master",
       "universityId": "sapienza-university-of-rome",
       "name": "Sapienza Computer Science master's",
@@ -677,6 +749,12 @@
       "description": "University of Bath Computer Science MSc for September 2026 entry."
     },
     {
+      "id": "ustc-international-postgraduate-admissions",
+      "universityId": "university-of-science-and-technology-of-china",
+      "name": "USTC international postgraduate admissions",
+      "description": "USTC International College admissions route for postgraduate international applicants."
+    },
+    {
       "id": "upm-postgraduate-computer-science",
       "universityId": "universiti-putra-malaysia-upm",
       "name": "UPM postgraduate Computer Science routes",
@@ -687,6 +765,12 @@
       "universityId": "universiti-sains-malaysia-usm",
       "name": "USM School of Computer Sciences postgraduate programmes",
       "description": "USM postgraduate programmes in Computer Science, Data Science, Digital Transformation, and related research routes."
+    },
+    {
+      "id": "unam-posgrado-admissions",
+      "universityId": "universidad-nacional-aut-noma-de-m-xico-unam",
+      "name": "UNAM Posgrado admissions",
+      "description": "UNAM postgraduate portal and academic offer route for master and doctoral programmes."
     },
     {
       "id": "newcastle-cloud-computing-msc",
@@ -719,6 +803,12 @@
       "description": "UNC-Chapel Hill central graduate admissions deadlines with programme-specific final deadlines."
     },
     {
+      "id": "ksu-graduate-studies",
+      "universityId": "king-saud-university",
+      "name": "Deanship of Graduate Studies admissions",
+      "description": "Official King Saud University Deanship of Graduate Studies portal for admission and study programme guidance."
+    },
+    {
       "id": "texas-am-computer-science-ms",
       "universityId": "texas-a-and-m-university",
       "name": "Texas A&M Computer Science MS",
@@ -735,6 +825,12 @@
       "universityId": "university-of-southern-california",
       "name": "USC Computer Science MS",
       "description": "USC Viterbi Master of Science in Computer Science with spring and fall deadlines."
+    },
+    {
+      "id": "stockholm-course-catalogue",
+      "universityId": "stockholm-university",
+      "name": "Stockholm University course catalogue",
+      "description": "Stockholm University central course and programme catalogue with master programme search and application guidance."
     },
     {
       "id": "groningen-computing-science-master",
@@ -797,6 +893,12 @@
       "description": "Lancaster University postgraduate application process and portal for master's and other postgraduate programmes."
     },
     {
+      "id": "basel-master-application",
+      "universityId": "university-of-basel",
+      "name": "University of Basel master application",
+      "description": "University of Basel central application and admission route for master applicants."
+    },
+    {
       "id": "hanyang-graduate-computer-science",
       "universityId": "hanyang-university",
       "name": "Hanyang Graduate School Computer Science",
@@ -825,6 +927,12 @@
       "universityId": "chalmers-university-of-technology",
       "name": "Chalmers master's programmes",
       "description": "Chalmers University of Technology English-taught master's programme catalogue with central application-period guidance."
+    },
+    {
+      "id": "farabi-admissions",
+      "universityId": "al-farabi-kazakh-national-university",
+      "name": "Admissions 2026",
+      "description": "Official Al-Farabi Kazakh National University admissions portal."
     },
     {
       "id": "washu-cse-graduate-programmes",
@@ -857,6 +965,12 @@
       "description": "Kyushu University Graduate School of Information Science and Electrical Engineering master's admissions route."
     },
     {
+      "id": "uab-graduate-studies",
+      "universityId": "universitat-aut-noma-de-barcelona",
+      "name": "Graduate studies",
+      "description": "Official UAB graduate studies portal."
+    },
+    {
       "id": "asu-graduate-admissions",
       "universityId": "arizona-state-university",
       "name": "ASU graduate admissions",
@@ -887,6 +1001,12 @@
       "description": "Khalifa University postgraduate admissions portal and postgraduate admissions route."
     },
     {
+      "id": "tongji-international-student-admissions",
+      "universityId": "tongji-university",
+      "name": "Tongji international student admissions",
+      "description": "Tongji University International Students Office admissions and online application route."
+    },
+    {
       "id": "ucsb-graduate-admissions",
       "universityId": "university-of-california-santa-barbara-ucsb",
       "name": "UCSB graduate admissions",
@@ -899,10 +1019,28 @@
       "description": "IIT Madras M.Tech and M.A. admissions, including Computer Science and Engineering M.Tech route."
     },
     {
+      "id": "cardiff-postgraduate-taught",
+      "universityId": "cardiff-university",
+      "name": "Postgraduate taught courses",
+      "description": "Official Cardiff University postgraduate taught course catalogue."
+    },
+    {
+      "id": "emory-laney-graduate-admissions",
+      "universityId": "emory-university",
+      "name": "Emory Laney Graduate School admissions",
+      "description": "Emory University Laney Graduate School central admissions and funding route for doctoral and master's programmes."
+    },
+    {
       "id": "curtin-postgraduate-information-technology",
       "universityId": "curtin-university",
       "name": "Curtin postgraduate information technology",
       "description": "Curtin University postgraduate information technology area with computing, AI, cyber security, information systems, and predictive analytics master's routes."
+    },
+    {
+      "id": "bern-degree-programmes",
+      "universityId": "university-of-bern",
+      "name": "Degree programmes and courses",
+      "description": "Official University of Bern degree programmes and courses catalogue."
     },
     {
       "id": "wollongong-computer-science-master",
@@ -915,6 +1053,12 @@
       "universityId": "wuhan-university",
       "name": "Wuhan Computer School graduate education",
       "description": "Wuhan University Computer School official graduate education route for computing applicants."
+    },
+    {
+      "id": "tec-postgraduate-admissions",
+      "universityId": "tecnol-gico-de-monterrey-itesm",
+      "name": "Posgrados y Educaci?n Continua",
+      "description": "Official Tecnol?gico de Monterrey postgraduate and continuing education portal."
     },
     {
       "id": "ucm-faculty-informatics-master",
@@ -965,6 +1109,12 @@
       "description": "Waseda University International Admissions Office graduate programmes route for Japanese-based and English-based graduate programmes."
     },
     {
+      "id": "otago-masters",
+      "universityId": "university-of-otago",
+      "name": "Masters study",
+      "description": "Official University of Otago masters study entry point."
+    },
+    {
       "id": "tuwien-master-admissions",
       "universityId": "vienna-university-of-technology",
       "name": "TU Wien master's admissions",
@@ -975,6 +1125,12 @@
       "universityId": "national-yang-ming-chiao-tung-university",
       "name": "NYCU international degree admissions",
       "description": "National Yang Ming Chiao Tung University Office of International Affairs admissions route for international degree-seeking students."
+    },
+    {
+      "id": "qub-postgraduate-taught",
+      "universityId": "queen-s-university-belfast",
+      "name": "Queen's Belfast postgraduate taught courses",
+      "description": "Queen's University Belfast official postgraduate taught course catalogue for 2026 entry."
     }
   ]
 }

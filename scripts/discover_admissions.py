@@ -22,12 +22,12 @@ from gradwindow.discovery import (
     same_official_domain,
     score_candidate,
 )
-from gradwindow.http_client import fetch_page as fetch_http_page
+from gradwindow.http_client import DEFAULT_USER_AGENT, fetch_page as fetch_http_page
 from gradwindow.io import write_json
 
 DATA_PATH = ROOT / "data" / "universities.json"
 OVERRIDES_PATH = ROOT / "data" / "admissions-overrides.json"
-USER_AGENT = "Mozilla/5.0 (compatible; GradWindow/1.0; admissions research)"
+USER_AGENT = DEFAULT_USER_AGENT
 TIMEOUT = 15
 MAX_BYTES = 1_500_000
 

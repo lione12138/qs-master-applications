@@ -25,8 +25,12 @@ from .paths import (
 
 PUBLIC_FILES = (
     "index.html",
+    "calendar.html",
+    "contact.html",
     "privacy.html",
     "app.js",
+    "calendar.js",
+    "contact.js",
     "status.js",
     "intake-filter.js",
     "localization.js",
@@ -103,6 +107,8 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
     generated_urls = generate_index_pages(output_dir, public_site_url)
     sitemap_urls = [
         public_site_url,
+        f"{public_site_url}/calendar.html",
+        f"{public_site_url}/contact.html",
         f"{public_site_url}/privacy.html",
         f"{public_site_url}/sources.html",
         *generated_urls,

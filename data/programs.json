@@ -5,16 +5,6 @@
   },
   "programs": [
     {
-      "id": "cambridge-advanced-computer-science-mphil",
-      "universityId": "university-of-cambridge",
-      "name": "MPhil in Advanced Computer Science",
-      "degreeType": "MPhil",
-      "faculty": "Department of Computer Science and Technology",
-      "programmeGroupId": "cambridge-taught-masters",
-      "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
-      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs"
-    },
-    {
       "id": "cambridge-advanced-chemical-engineering-mphil",
       "universityId": "university-of-cambridge",
       "name": "MPhil in Advanced Chemical Engineering",
@@ -23,6 +13,16 @@
       "programmeGroupId": "cambridge-taught-masters",
       "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace",
       "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/egcempace"
+    },
+    {
+      "id": "cambridge-advanced-computer-science-mphil",
+      "universityId": "university-of-cambridge",
+      "name": "MPhil in Advanced Computer Science",
+      "degreeType": "MPhil",
+      "faculty": "Department of Computer Science and Technology",
+      "programmeGroupId": "cambridge-taught-masters",
+      "applicationUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory/cscsmpacs"
     },
     {
       "id": "eth-computer-science-msc",
@@ -45,6 +45,16 @@
       "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
     },
     {
+      "id": "eth-quantitative-finance-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Quantitative Finance",
+      "degreeType": "MSc",
+      "faculty": "ETH Zurich and University of Zurich",
+      "programmeGroupId": "eth-masters-programmes",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
       "id": "eth-robotics-systems-control-msc",
       "universityId": "eth-zurich-swiss-federal-institute-of-technology",
       "name": "MSc Robotics, Systems and Control",
@@ -60,16 +70,6 @@
       "name": "MSc Statistics",
       "degreeType": "MSc",
       "faculty": "ETH Zurich",
-      "programmeGroupId": "eth-masters-programmes",
-      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
-      "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
-    },
-    {
-      "id": "eth-quantitative-finance-msc",
-      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
-      "name": "MSc Quantitative Finance",
-      "degreeType": "MSc",
-      "faculty": "ETH Zurich and University of Zurich",
       "programmeGroupId": "eth-masters-programmes",
       "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
       "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
@@ -945,6 +945,36 @@
       "sourceUrl": "https://www.uts.edu.au/study/find-a-course/master-information-technology"
     },
     {
+      "id": "nottingham-postgraduate-programmes",
+      "universityId": "the-university-of-nottingham",
+      "name": "Postgraduate programmes",
+      "degreeType": "Master/Doctoral",
+      "faculty": "University of Nottingham",
+      "programmeGroupId": "nottingham-postgraduate-admissions",
+      "applicationUrl": "https://www.nottingham.ac.uk/pgstudy/how-to-apply/apply-online.aspx",
+      "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/how-to-apply/apply-online.aspx"
+    },
+    {
+      "id": "kit-computer-science-msc",
+      "universityId": "karlsruhe-institute-of-technology-kit",
+      "name": "Computer Science",
+      "degreeType": "M.Sc.",
+      "faculty": "Business Unit Studying and Teaching",
+      "programmeGroupId": "kit-computer-science-master",
+      "applicationUrl": "https://www.sle.kit.edu/english/vorstudium/master-computer-science.php",
+      "sourceUrl": "https://www.sle.kit.edu/english/vorstudium/master-computer-science.php"
+    },
+    {
+      "id": "polimi-laurea-magistrale-programmes",
+      "universityId": "politecnico-di-milano",
+      "name": "Laurea Magistrale programmes",
+      "degreeType": "Master of Science",
+      "faculty": "Politecnico di Milano",
+      "programmeGroupId": "polimi-laurea-magistrale-admissions",
+      "applicationUrl": "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-magistrale",
+      "sourceUrl": "https://www.polimi.it/en/prospective-students/how-to-apply/admission-to-laurea-magistrale"
+    },
+    {
       "id": "uzh-informatics-master",
       "universityId": "university-of-zurich-uzh",
       "name": "Master's programme in Informatics",
@@ -953,16 +983,6 @@
       "programmeGroupId": "uzh-informatics-master",
       "applicationUrl": "https://www.uzh.ch/en/studies/application/master.html",
       "sourceUrl": "https://www.uzh.ch/en/studies/application/master.html"
-    },
-    {
-      "id": "utrecht-computing-science-msc",
-      "universityId": "utrecht-university",
-      "name": "Computing Science MSc",
-      "degreeType": "MSc",
-      "faculty": "Faculty of Science",
-      "programmeGroupId": "utrecht-computing-science-master",
-      "applicationUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission/degree-from-a-non-dutch-university",
-      "sourceUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission"
     },
     {
       "id": "ucph-computer-science-msc",
@@ -985,6 +1005,46 @@
       "sourceUrl": "https://adm-g.postech.ac.kr/admission/gist/"
     },
     {
+      "id": "nanjing-graduate-admissions",
+      "universityId": "nanjing-university",
+      "name": "Graduate and international student admissions",
+      "degreeType": "Master/Doctoral",
+      "faculty": "Nanjing University",
+      "programmeGroupId": "nanjing-international-student-admissions",
+      "applicationUrl": "https://istudy.nju.edu.cn/en/",
+      "sourceUrl": "https://istudy.nju.edu.cn/en/"
+    },
+    {
+      "id": "utrecht-computing-science-msc",
+      "universityId": "utrecht-university",
+      "name": "Computing Science MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Science",
+      "programmeGroupId": "utrecht-computing-science-master",
+      "applicationUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission/degree-from-a-non-dutch-university",
+      "sourceUrl": "https://www.uu.nl/en/masters/computing-science/application-and-admission"
+    },
+    {
+      "id": "msu-graduate-admissions",
+      "universityId": "lomonosov-moscow-state-university",
+      "name": "Graduate admissions",
+      "degreeType": "Master",
+      "faculty": "Central Admissions Committee",
+      "programmeGroupId": "msu-central-admissions",
+      "applicationUrl": "https://cpk.msu.ru/",
+      "sourceUrl": "https://cpk.msu.ru/"
+    },
+    {
+      "id": "rwth-master-admissions",
+      "universityId": "rheinisch-westf-lische-technische-hochschule-aachen",
+      "name": "Master course admission guidance",
+      "degreeType": "Master",
+      "faculty": "International applicant guidance",
+      "programmeGroupId": "rwth-international-master-admissions",
+      "applicationUrl": "https://www.rwth-aachen.de/go/id/bxip/lidx/1",
+      "sourceUrl": "https://www.rwth-aachen.de/go/id/bxip/lidx/1"
+    },
+    {
       "id": "dtu-computer-science-engineering-msc",
       "universityId": "technical-university-of-denmark",
       "name": "MSc in Computer Science and Engineering",
@@ -1003,6 +1063,16 @@
       "programmeGroupId": "usp-computer-science-graduate",
       "applicationUrl": "https://www.ime.usp.br/en/graduate/computer-science/",
       "sourceUrl": "https://www.ime.usp.br/en/graduate/computer-science/"
+    },
+    {
+      "id": "qmul-postgraduate-taught-programmes",
+      "universityId": "queen-mary-university-of-london-qmul",
+      "name": "Postgraduate taught programmes",
+      "degreeType": "Master",
+      "faculty": "University-wide postgraduate taught catalogue",
+      "programmeGroupId": "qmul-postgraduate-taught",
+      "applicationUrl": "https://www.qmul.ac.uk/postgraduate/taught/",
+      "sourceUrl": "https://www.qmul.ac.uk/postgraduate/taught/"
     },
     {
       "id": "uw-madison-computer-sciences-ms-phd",
@@ -1045,6 +1115,26 @@
       "sourceUrl": "https://www.aalto.fi/en/study-options/computer-science-master-of-science-technology"
     },
     {
+      "id": "uc-davis-graduate-programmes",
+      "universityId": "university-of-california-davis",
+      "name": "Graduate programmes",
+      "degreeType": "Master",
+      "faculty": "Graduate admissions",
+      "programmeGroupId": "uc-davis-graduate-admissions",
+      "applicationUrl": "https://www.ucdavis.edu/admissions/graduate-school",
+      "sourceUrl": "https://www.ucdavis.edu/admissions/graduate-school"
+    },
+    {
+      "id": "puc-chile-postgrado-programmes",
+      "universityId": "pontificia-universidad-cat-lica-de-chile",
+      "name": "Postgraduate programmes",
+      "degreeType": "Mag?ster/Doctorado",
+      "faculty": "Pontificia Universidad Cat?lica de Chile",
+      "programmeGroupId": "puc-chile-postgrado-admissions",
+      "applicationUrl": "https://admision.uc.cl/postgrado/",
+      "sourceUrl": "https://admision.uc.cl/postgrado/"
+    },
+    {
       "id": "helsinki-computer-science-master",
       "universityId": "university-of-helsinki",
       "name": "Computer Science master's programme",
@@ -1053,6 +1143,16 @@
       "programmeGroupId": "helsinki-computer-science-master",
       "applicationUrl": "https://www.helsinki.fi/en/admissions-and-education/apply-bachelors-and-masters-programmes",
       "sourceUrl": "https://www.helsinki.fi/en/degree-programmes/computer-science-masters-programme"
+    },
+    {
+      "id": "ucd-graduate-programmes",
+      "universityId": "university-college-dublin",
+      "name": "Graduate taught and research programmes",
+      "degreeType": "Master",
+      "faculty": "Graduate admissions",
+      "programmeGroupId": "ucd-graduate-admissions",
+      "applicationUrl": "https://www.ucd.ie/graduateadmissions/",
+      "sourceUrl": "https://www.ucd.ie/graduateadmissions/"
     },
     {
       "id": "leiden-computer-science-msc",
@@ -1125,6 +1225,26 @@
       "sourceUrl": "https://www.rmit.edu.au/study-with-us/levels-of-study/postgraduate-study/masters-by-coursework/mc208"
     },
     {
+      "id": "skku-international-graduate-admissions",
+      "universityId": "sungkyunkwan-university",
+      "name": "Graduate admissions for international students",
+      "degreeType": "Master/Doctoral",
+      "faculty": "International Admissions",
+      "programmeGroupId": "skku-global-graduate-admissions",
+      "applicationUrl": "https://admission-global.skku.edu/eng/",
+      "sourceUrl": "https://admission-global.skku.edu/eng/"
+    },
+    {
+      "id": "ukm-postgraduate-programmes",
+      "universityId": "universiti-kebangsaan-malaysia-ukm",
+      "name": "Postgraduate programmes",
+      "degreeType": "Master/Doctoral",
+      "faculty": "Universiti Kebangsaan Malaysia",
+      "programmeGroupId": "ukm-postgraduate-admissions",
+      "applicationUrl": "https://www.ukm.my/portalukm/postgraduate/",
+      "sourceUrl": "https://www.ukm.my/portalukm/postgraduate/"
+    },
+    {
       "id": "sapienza-computer-science-master",
       "universityId": "sapienza-university-of-rome",
       "name": "Computer Science",
@@ -1165,6 +1285,16 @@
       "sourceUrl": "https://www.bath.ac.uk/courses/postgraduate-2026/taught-postgraduate-courses/msc-computer-science/"
     },
     {
+      "id": "ustc-international-postgraduate-programmes",
+      "universityId": "university-of-science-and-technology-of-china",
+      "name": "International postgraduate admissions",
+      "degreeType": "Master/Doctoral",
+      "faculty": "International College",
+      "programmeGroupId": "ustc-international-postgraduate-admissions",
+      "applicationUrl": "https://ic.ustc.edu.cn/en/v7info.php?Nav_x=2",
+      "sourceUrl": "https://ic.ustc.edu.cn/en/v7info.php?Nav_x=2"
+    },
+    {
       "id": "upm-postgraduate-computer-science",
       "universityId": "universiti-putra-malaysia-upm",
       "name": "Postgraduate Computer Science programmes",
@@ -1183,6 +1313,16 @@
       "programmeGroupId": "usm-computer-sciences-postgraduate",
       "applicationUrl": "https://onlineips.usm.my/admission",
       "sourceUrl": "https://admission.usm.my/index.php/postgraduate/programmes"
+    },
+    {
+      "id": "unam-posgrado-programmes",
+      "universityId": "universidad-nacional-aut-noma-de-m-xico-unam",
+      "name": "Posgrado programmes",
+      "degreeType": "Maestr?a/Doctorado",
+      "faculty": "UNAM Posgrado",
+      "programmeGroupId": "unam-posgrado-admissions",
+      "applicationUrl": "https://www.posgrado.unam.mx/",
+      "sourceUrl": "https://www.posgrado.unam.mx/"
     },
     {
       "id": "newcastle-cloud-computing-msc",
@@ -1235,6 +1375,16 @@
       "sourceUrl": "https://gradschool.unc.edu/admissions/deadlines/"
     },
     {
+      "id": "ksu-graduate-programmes",
+      "universityId": "king-saud-university",
+      "name": "Graduate study programmes",
+      "degreeType": "Master",
+      "faculty": "Deanship of Graduate Studies",
+      "programmeGroupId": "ksu-graduate-studies",
+      "applicationUrl": "https://graduatestudies.ksu.edu.sa/en",
+      "sourceUrl": "https://graduatestudies.ksu.edu.sa/en"
+    },
+    {
       "id": "texas-am-computer-science-ms",
       "universityId": "texas-a-and-m-university",
       "name": "Master of Science in Computer Science",
@@ -1263,6 +1413,16 @@
       "programmeGroupId": "usc-computer-science-ms",
       "applicationUrl": "https://gradadm.usc.edu/apply/",
       "sourceUrl": "https://viterbigradadmission.usc.edu/programs/masters/msprograms/computer-science/ms-computer-science/"
+    },
+    {
+      "id": "stockholm-master-programmes",
+      "universityId": "stockholm-university",
+      "name": "Master programmes",
+      "degreeType": "Master",
+      "faculty": "Stockholm University",
+      "programmeGroupId": "stockholm-course-catalogue",
+      "applicationUrl": "https://www.su.se/english/search-courses-and-programmes",
+      "sourceUrl": "https://www.su.se/english/search-courses-and-programmes"
     },
     {
       "id": "groningen-computing-science-master",
@@ -1365,6 +1525,16 @@
       "sourceUrl": "https://www.lancaster.ac.uk/study/postgraduate/applying-for-postgraduate-study/"
     },
     {
+      "id": "basel-master-programmes",
+      "universityId": "university-of-basel",
+      "name": "Master programmes",
+      "degreeType": "Master",
+      "faculty": "University of Basel",
+      "programmeGroupId": "basel-master-application",
+      "applicationUrl": "https://www.unibas.ch/en/Studies/Application-Admission/Application.html",
+      "sourceUrl": "https://www.unibas.ch/en/Studies/Application-Admission/Application.html"
+    },
+    {
       "id": "hanyang-department-computer-science",
       "universityId": "hanyang-university",
       "name": "Department of Computer Science",
@@ -1413,6 +1583,16 @@
       "programmeGroupId": "chalmers-master-programmes",
       "applicationUrl": "https://www.chalmers.se/en/education/find-masters-programme/",
       "sourceUrl": "https://www.chalmers.se/en/education/find-masters-programme/"
+    },
+    {
+      "id": "farabi-master-programmes",
+      "universityId": "al-farabi-kazakh-national-university",
+      "name": "Master's programme admissions",
+      "degreeType": "Master",
+      "faculty": "Admissions portal",
+      "programmeGroupId": "farabi-admissions",
+      "applicationUrl": "https://welcome.kaznu.kz/en/",
+      "sourceUrl": "https://welcome.kaznu.kz/en/"
     },
     {
       "id": "washu-computer-science-ms",
@@ -1465,6 +1645,16 @@
       "sourceUrl": "https://www.isee.kyushu-u.ac.jp/e/admissions/master.html"
     },
     {
+      "id": "uab-official-masters",
+      "universityId": "universitat-aut-noma-de-barcelona",
+      "name": "Official master's degrees",
+      "degreeType": "Master",
+      "faculty": "Graduate studies",
+      "programmeGroupId": "uab-graduate-studies",
+      "applicationUrl": "https://www.uab.cat/graduate/",
+      "sourceUrl": "https://www.uab.cat/graduate/"
+    },
+    {
       "id": "asu-graduate-admissions",
       "universityId": "arizona-state-university",
       "name": "Graduate programmes",
@@ -1515,6 +1705,16 @@
       "sourceUrl": "https://pgapply.ku.ac.ae/portal/pg_landing"
     },
     {
+      "id": "tongji-international-degree-programmes",
+      "universityId": "tongji-university",
+      "name": "International student admissions",
+      "degreeType": "Master/Doctoral",
+      "faculty": "International Students Office",
+      "programmeGroupId": "tongji-international-student-admissions",
+      "applicationUrl": "https://study.tongji.edu.cn/",
+      "sourceUrl": "https://study.tongji.edu.cn/"
+    },
+    {
       "id": "ucsb-graduate-admissions",
       "universityId": "university-of-california-santa-barbara-ucsb",
       "name": "Graduate admissions",
@@ -1535,6 +1735,26 @@
       "sourceUrl": "https://mtechadm.iitm.ac.in/"
     },
     {
+      "id": "cardiff-postgraduate-taught-programmes",
+      "universityId": "cardiff-university",
+      "name": "Postgraduate taught programmes",
+      "degreeType": "Master",
+      "faculty": "Postgraduate taught catalogue",
+      "programmeGroupId": "cardiff-postgraduate-taught",
+      "applicationUrl": "https://www.cardiff.ac.uk/study/postgraduate/taught",
+      "sourceUrl": "https://www.cardiff.ac.uk/study/postgraduate/taught"
+    },
+    {
+      "id": "emory-laney-graduate-programmes",
+      "universityId": "emory-university",
+      "name": "Graduate programmes",
+      "degreeType": "Master/Doctoral",
+      "faculty": "Laney Graduate School",
+      "programmeGroupId": "emory-laney-graduate-admissions",
+      "applicationUrl": "https://www.gs.emory.edu/admissions/index.html",
+      "sourceUrl": "https://www.gs.emory.edu/admissions/index.html"
+    },
+    {
       "id": "curtin-master-computing-computer-science",
       "universityId": "curtin-university",
       "name": "Master of Computing (Computer Science)",
@@ -1543,6 +1763,16 @@
       "programmeGroupId": "curtin-postgraduate-information-technology",
       "applicationUrl": "https://www.curtin.edu.au/study/study-areas/information-technology/postgraduate-information-technology/",
       "sourceUrl": "https://www.curtin.edu.au/study/study-areas/information-technology/postgraduate-information-technology/"
+    },
+    {
+      "id": "bern-master-programmes",
+      "universityId": "university-of-bern",
+      "name": "Master degree programmes",
+      "degreeType": "Master",
+      "faculty": "Degree programmes catalogue",
+      "programmeGroupId": "bern-degree-programmes",
+      "applicationUrl": "https://www.unibe.ch/studies/programs/index_eng.html",
+      "sourceUrl": "https://www.unibe.ch/studies/programs/index_eng.html"
     },
     {
       "id": "wollongong-master-computer-science",
@@ -1563,6 +1793,16 @@
       "programmeGroupId": "wuhan-computer-school-graduate",
       "applicationUrl": "https://cs.whu.edu.cn/",
       "sourceUrl": "https://cs.whu.edu.cn/"
+    },
+    {
+      "id": "tec-masters-programmes",
+      "universityId": "tecnol-gico-de-monterrey-itesm",
+      "name": "Maestr?as programmes",
+      "degreeType": "Master",
+      "faculty": "Postgraduate portal",
+      "programmeGroupId": "tec-postgraduate-admissions",
+      "applicationUrl": "https://maestriasydiplomados.tec.mx/",
+      "sourceUrl": "https://maestriasydiplomados.tec.mx/"
     },
     {
       "id": "ucm-informatics-master-programmes",
@@ -1645,6 +1885,16 @@
       "sourceUrl": "https://www.waseda.jp/inst/admission/en/graduate/"
     },
     {
+      "id": "otago-masters-programmes",
+      "universityId": "university-of-otago",
+      "name": "Masters programmes",
+      "degreeType": "Master",
+      "faculty": "Masters study",
+      "programmeGroupId": "otago-masters",
+      "applicationUrl": "https://www.otago.ac.nz/study/masters",
+      "sourceUrl": "https://www.otago.ac.nz/study/masters"
+    },
+    {
       "id": "tuwien-master-programmes",
       "universityId": "vienna-university-of-technology",
       "name": "Master programmes",
@@ -1663,6 +1913,16 @@
       "programmeGroupId": "nycu-international-degree-admissions",
       "applicationUrl": "https://oia.nycu.edu.tw/oia/en/app/folder/782",
       "sourceUrl": "https://oia.nycu.edu.tw/oia/en/app/folder/782"
+    },
+    {
+      "id": "qub-postgraduate-taught-programmes",
+      "universityId": "queen-s-university-belfast",
+      "name": "Postgraduate taught courses",
+      "degreeType": "Master",
+      "faculty": "Queen's University Belfast",
+      "programmeGroupId": "qub-postgraduate-taught",
+      "applicationUrl": "https://www.qub.ac.uk/courses/postgraduate-taught/",
+      "sourceUrl": "https://www.qub.ac.uk/courses/postgraduate-taught/"
     }
   ]
 }

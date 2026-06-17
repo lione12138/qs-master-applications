@@ -610,6 +610,36 @@
       "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
     },
     {
+      "id": "prediction-skku-graduate-fall-2026-round-3-next-cycle",
+      "basedOnRecordId": "skku-graduate-fall-2026-round-3",
+      "universityId": "sungkyunkwan-university",
+      "scopeType": "programme-group",
+      "scopeId": "skku-global-graduate-admissions",
+      "intake": "Fall 2027",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "3rd Round Graduate School Application for International Students",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-06-22",
+      "closesAt": "2027-07-01",
+      "applicationUrl": "https://admission-global.skku.edu/eng/",
+      "sourceUrl": "https://admission-global.skku.edu/eng/",
+      "sourceCycle": "Fall 2026",
+      "basedOnVerifiedAt": "2026-06-17",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
       "id": "prediction-cuhk-computer-science-msc-2026-next-cycle",
       "basedOnRecordId": "cuhk-computer-science-msc-2026",
       "universityId": "the-chinese-university-of-hong-kong",

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Monthly calendar view of QS Top 200 master's application opening dates and deadlines."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="modulepreload" href="./calendar.js" />
+    <link rel="modulepreload" href="./i18n.js" />
+    <link rel="modulepreload" href="./status.js" />
+    <link rel="modulepreload" href="./intake-filter.js" />
+    <link rel="modulepreload" href="./localization.js" />
+    <title>GradWindow · Application Calendar</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html" aria-label="GradWindow home">
+          <span class="brand-mark">G</span>
+          <span>GradWindow</span>
+        </a>
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="./index.html#application-board" data-i18n="navTracker">Application tracker</a>
+          <a class="calendar-nav" href="./calendar.html" data-i18n="navCalendar">Calendar</a>
+          <a class="subscribe-link" href="./index.html#subscribe" data-i18n="navSubscribe">Subscribe</a>
+          <a href="./contact.html" data-i18n="navContact">Contact</a>
+          <a
+            class="github-link"
+            href="https://github.com/lione12138/qs-master-applications"
+            data-i18n="navGithub"
+          >
+            GitHub
+          </a>
+          <div class="header-controls">
+            <button class="header-control" id="language-toggle" type="button" aria-label="Switch language">中文</button>
+            <button class="header-control icon-only-control" id="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="calendar-page">
+          <div class="calendar-page-heading">
+            <div>
+              <span class="section-kicker" data-i18n="calendarKicker">APPLICATION CALENDAR</span>
+              <h1 data-i18n="calendarPageTitle">Application calendar</h1>
+              <p data-i18n="calendarPageDescription">
+                Browse opening dates and deadlines as a real monthly calendar.
+              </p>
+            </div>
+            <a class="toolbar-button calendar-back-link" href="./index.html#application-board" data-i18n="calendarBack">Back to tracker</a>
+          </div>
+
+          <div class="calendar-page-toolbar">
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input
+                id="calendar-search"
+                type="search"
+                placeholder="Search university, programme, or country"
+                data-i18n-placeholder="searchPlaceholder"
+              />
+            </label>
+            <label class="select-wrap">
+              <span class="sr-only" data-i18n="calendarQsFilter">QS range</span>
+              <select id="calendar-qs">
+                <option value="30">QS Top 30</option>
+                <option value="50">QS Top 50</option>
+                <option value="100">QS Top 100</option>
+                <option value="150">QS Top 150</option>
+                <option value="200" selected>QS Top 200</option>
+              </select>
+            </label>
+            <label class="select-wrap">
+              <span class="sr-only" data-i18n="calendarStatusFilter">Status</span>
+              <select id="calendar-status">
+                <option value="all" data-i18n="calendarAllStatuses">All statuses</option>
+                <option value="open" data-i18n="statusOpen">Open now</option>
+                <option value="upcoming" data-i18n="statusUpcoming">Opening soon</option>
+                <option value="future" data-i18n="statusFuture">Future</option>
+                <option value="closed" data-i18n="statusClosed">Closed</option>
+              </select>
+            </label>
+          </div>
+
+          <section class="calendar-panel calendar-page-panel" aria-live="polite">
+            <div class="calendar-panel-header">
+              <div>
+                <span class="section-kicker" data-i18n="calendarAllEvents">All events</span>
+                <h2 id="calendar-month-label">--</h2>
+                <div class="calendar-legend">
+                  <span><i class="legend-dot open"></i><span data-i18n="calendarOpenLegend">Opening date</span></span>
+                  <span><i class="legend-dot deadline"></i><span data-i18n="calendarDeadlineLegend">Deadline</span></span>
+                </div>
+              </div>
+              <div class="calendar-controls">
+                <button class="icon-button" id="calendar-prev" type="button" aria-label="Previous month">‹</button>
+                <button class="toolbar-button" id="calendar-today" type="button" data-i18n="calendarToday">Today</button>
+                <button class="icon-button" id="calendar-next" type="button" aria-label="Next month">›</button>
+              </div>
+            </div>
+            <div class="calendar-weekdays" id="calendar-weekdays"></div>
+            <div class="calendar-grid" id="calendar-grid"></div>
+          </section>
+
+          <section class="calendar-month-list">
+            <div class="group-heading">
+              <h3 data-i18n="calendarMonthEvents">Events this month</h3>
+              <p id="calendar-result-count">0</p>
+            </div>
+            <div id="calendar-list" class="calendar-list"></div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="./calendar.js"></script>
+  </body>
+</html>
