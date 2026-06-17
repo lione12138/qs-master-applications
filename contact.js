@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js";
+import { I18N } from "./i18n.js?v=20260617-ui";
 
 const state = {
   language: "en",
@@ -12,10 +12,12 @@ function t(key) {
 function applyStaticTranslations() {
   document.documentElement.lang = state.language === "zh" ? "zh-CN" : "en";
   document.querySelectorAll("[data-i18n]").forEach((node) => {
-    node.textContent = t(node.dataset.i18n);
+    const translated = t(node.dataset.i18n);
+    if (translated !== node.dataset.i18n) node.textContent = translated;
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
-    node.placeholder = t(node.dataset.i18nPlaceholder);
+    const translated = t(node.dataset.i18nPlaceholder);
+    if (translated !== node.dataset.i18nPlaceholder) node.placeholder = translated;
   });
   document.getElementById("language-toggle").textContent =
     state.language === "en" ? "中文" : "EN";

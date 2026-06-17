@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js";
+import { I18N } from "./i18n.js?v=20260617-ui";
 import { getApplicationStatus } from "./status.js";
 import {
   canonicalIntake,
@@ -841,13 +841,16 @@ function updateFavoriteControls() {
 function applyStaticTranslations() {
   document.documentElement.lang = state.language === "zh" ? "zh-CN" : "en";
   document.querySelectorAll("[data-i18n]").forEach((node) => {
-    node.textContent = t(node.dataset.i18n);
+    const translated = t(node.dataset.i18n);
+    if (translated !== node.dataset.i18n) node.textContent = translated;
   });
   document.querySelectorAll("[data-i18n-html]").forEach((node) => {
-    node.innerHTML = t(node.dataset.i18nHtml);
+    const translated = t(node.dataset.i18nHtml);
+    if (translated !== node.dataset.i18nHtml) node.innerHTML = translated;
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
-    node.placeholder = t(node.dataset.i18nPlaceholder);
+    const translated = t(node.dataset.i18nPlaceholder);
+    if (translated !== node.dataset.i18nPlaceholder) node.placeholder = translated;
   });
   document.getElementById("language-toggle").textContent =
     state.language === "en" ? "中文" : "EN";
