@@ -13,6 +13,8 @@ import {
   schoolLabels,
 } from "./localization.js";
 
+const PAGE_SIZE = 20;
+
 const state = {
   data: [],
   universities: [],
@@ -37,6 +39,7 @@ const state = {
   theme: "light",
   monitorPayload: null,
   optionalFailureCount: 0,
+  pages: {},
 };
 
 
@@ -112,6 +115,10 @@ function makeLink(text, url, className = "") {
   link.target = "_blank";
   link.rel = "noreferrer";
   return link;
+}
+
+function resetPages() {
+  state.pages = {};
 }
 
 function makeTextStack(primary, secondary, primaryClass = "date-primary") {
@@ -345,6 +352,7 @@ function populateIntakeSelect() {
   const intakes = new Map();
   state.data.forEach((record) => {
     const intake = canonicalIntake(record);
+    if (intake.term === "academic") return;
     intakes.set(intake.key, intake);
   });
   [...intakes.values()].sort(compareIntakes).forEach((intake) => {
@@ -565,8 +573,61 @@ function createGroup(status, records) {
       t("dataSource"),
     ],
   );
-  records.forEach((record) => tbody.appendChild(createRow(record, status)));
+  const { items, start, end, total, page, totalPages } = paginate(status, records);
+  items.forEach((record) => tbody.appendChild(createRow(record, status)));
+  section.appendChild(
+    createPagination(status, { start, end, total, page, totalPages }),
+  );
   return section;
+}
+
+function paginate(key, items) {
+  const total = items.length;
+  const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
+  const page = Math.min(Math.max(state.pages[key] || 1, 1), totalPages);
+  state.pages[key] = page;
+  const startIndex = (page - 1) * PAGE_SIZE;
+  return {
+    items: items.slice(startIndex, startIndex + PAGE_SIZE),
+    start: total ? startIndex + 1 : 0,
+    end: Math.min(startIndex + PAGE_SIZE, total),
+    total,
+    page,
+    totalPages,
+  };
+}
+
+function createPagination(key, pagination) {
+  if (pagination.total <= PAGE_SIZE) return document.createDocumentFragment();
+  const wrapper = makeElement("div", { className: "table-pagination" });
+  const label = makeElement("span", {
+    className: "pagination-summary",
+    text: `${pagination.start}-${pagination.end} / ${pagination.total}`,
+  });
+  const previous = makeElement("button", {
+    className: "pagination-button",
+    text: "‹",
+    title: t("paginationPrevious"),
+  });
+  const next = makeElement("button", {
+    className: "pagination-button",
+    text: "›",
+    title: t("paginationNext"),
+  });
+  previous.type = "button";
+  next.type = "button";
+  previous.disabled = pagination.page <= 1;
+  next.disabled = pagination.page >= pagination.totalPages;
+  previous.addEventListener("click", () => {
+    state.pages[key] = Math.max(1, pagination.page - 1);
+    render();
+  });
+  next.addEventListener("click", () => {
+    state.pages[key] = Math.min(pagination.totalPages, pagination.page + 1);
+    render();
+  });
+  wrapper.append(label, previous, next);
+  return wrapper;
 }
 
 function createTableSection(status, heading, countLabel, columns, tableClass = "") {
@@ -657,8 +718,32 @@ function mastersAvailabilityDescription(university) {
 }
 
 function isExceptionUniversity(university) {
-  return ["locate-official-entry", "verify-window-policy"].includes(
-    university.coverage?.nextAction,
+  const nextAction = university.coverage?.nextAction;
+  const discovery = university.admissionsDiscovery;
+  const monitorStatusValue = university.monitor?.status;
+  const policyStatus = university.windowPolicy?.cycleGuidance?.status || "";
+  const policyText = [
+    university.windowPolicy?.notes,
+    university.windowPolicy?.cycleGuidance?.opensText,
+    university.windowPolicy?.cycleGuidance?.notes,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+  const manualPolicy =
+    /protected|manual|blocked|anti-bot|anubis/.test(
+      `${policyStatus} ${policyText}`.toLowerCase(),
+    ) ||
+    [
+      "official-entry-protected",
+      "dynamic-listing-dates-not-captured",
+      "official-route-current-dates-not-captured",
+    ].includes(policyStatus);
+  return (
+    ["locate-official-entry", "verify-window-policy"].includes(nextAction) ||
+    ["low-confidence", "not-found", "pending", "error"].includes(discovery) ||
+    ["blocked", "error", "http-error"].includes(monitorStatusValue) ||
+    manualPolicy
   );
 }
 
@@ -689,14 +774,23 @@ function createUniversityGroup(universities, status = "unknown") {
     heading,
     `${universities.length} ${t("schools")}`,
     [
-      t("rank"), t("university"), t("countries"), t("mastersScope"),
-      t("entryStatus"), t("latestCheck"), t("graduateApplication"),
-      t("universityWebsite"), t("dateNotes"),
+      t("rank"),
+      t("universityEntry"),
+      t("mastersScope"),
+      t("countries"),
+      t("entryStatus"),
+      t("latestCheck"),
+      t("graduateApplication"),
+      t("dateNotes"),
     ],
     "university-table",
   );
-  universities
-    .sort((a, b) => a.qsPosition - b.qsPosition)
+  const sortedUniversities = universities.sort((a, b) => a.qsPosition - b.qsPosition);
+  const { items, start, end, total, page, totalPages } = paginate(
+    status,
+    sortedUniversities,
+  );
+  items
     .forEach((university) => {
       const [statusLabel, statusClass] = directoryStatus(university);
       const [monitorLabel, monitorClass] = monitorStatus(university);
@@ -720,6 +814,9 @@ function createUniversityGroup(universities, status = "unknown") {
       const actions = document.createDocumentFragment();
       actions.appendChild(admissions);
       actions.appendChild(
+        makeLink(t("officialWebsite"), university.homepageUrl, "source-link"),
+      );
+      actions.appendChild(
         makeFavoriteButton(favoriteKey("university", university.id)),
       );
       const [policyPrimary, policySecondary] = policyDescription(university);
@@ -727,22 +824,24 @@ function createUniversityGroup(universities, status = "unknown") {
         mastersAvailabilityDescription(university);
       row.append(
         makeCell(t("rank"), makeElement("span", { className: "rank-cell", text: rankLabel })),
-        makeCell(t("university"), school),
+        makeCell(t("universityEntry"), school),
+        makeCell(t("mastersScope"), makeTextStack(mastersPrimary, mastersSecondary)),
         makeCell(
           t("countries"),
           makeElement("span", {
             text: countryLabel(university.country, state.language),
           }),
         ),
-        makeCell(t("mastersScope"), makeTextStack(mastersPrimary, mastersSecondary)),
         makeCell(t("entryStatus"), makeElement("span", { className: `source-badge ${statusClass}`, text: statusLabel })),
         makeCell(t("latestCheck"), makeElement("span", { className: `source-badge ${monitorClass}`, text: monitorLabel })),
         makeCell(t("graduateApplication"), actions),
-        makeCell(t("universityWebsite"), makeLink(t("officialWebsite"), university.homepageUrl, "source-link")),
-        makeCell(t("dateNotes"), makeTextStack(policyPrimary, policySecondary)),
+        makeCell(t("dateNotes"), makeTextStack(policyPrimary, policySecondary, "date-primary")),
       );
       tbody.appendChild(row);
     });
+  section.appendChild(
+    createPagination(status, { start, end, total, page, totalPages }),
+  );
   return section;
 }
 
@@ -1026,27 +1125,32 @@ function bindEvents() {
   });
   document.getElementById("search-input").addEventListener("input", (event) => {
     state.search = event.target.value;
+    resetPages();
     syncUrl();
     render();
   });
   document.getElementById("region-filter").addEventListener("change", (event) => {
     state.region = event.target.value;
+    resetPages();
     syncUrl();
     render();
   });
   document.getElementById("intake-filter").addEventListener("change", (event) => {
     state.intake = event.target.value;
+    resetPages();
     syncUrl();
     render();
   });
   document.getElementById("sort-select").addEventListener("change", (event) => {
     state.sort = event.target.value;
+    resetPages();
     syncUrl();
     render();
   });
   document.querySelectorAll(".status-tab").forEach((button) => {
     button.addEventListener("click", () => {
       state.status = button.dataset.status;
+      resetPages();
       syncUrl();
       document
         .querySelectorAll(".status-tab")
@@ -1056,10 +1160,12 @@ function bindEvents() {
   });
   document.getElementById("favorites-toggle").addEventListener("click", () => {
     state.favoritesOnly = !state.favoritesOnly;
+    resetPages();
     render();
   });
   document.getElementById("top100-toggle").addEventListener("click", () => {
     state.top100Only = !state.top100Only;
+    resetPages();
     syncUrl();
     render();
   });

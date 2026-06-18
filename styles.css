@@ -956,10 +956,51 @@ h1 em::after {
   border-radius: 9px;
 }
 
+.table-pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 12px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.pagination-summary {
+  margin-right: 4px;
+  font-weight: 600;
+}
+
+.pagination-button {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--green);
+  background: var(--white);
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.pagination-button:hover:not(:disabled) {
+  border-color: var(--green);
+  background: #f4f9f4;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
 .application-table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 900px;
+  table-layout: fixed;
+  min-width: 1120px;
 }
 
 .application-table th {
@@ -977,7 +1018,45 @@ h1 em::after {
   padding: 17px 16px;
   border-top: 1px solid #e7e9e5;
   font-size: 13px;
+  overflow-wrap: anywhere;
   vertical-align: middle;
+}
+
+.application-table th:nth-child(1),
+.application-table td:nth-child(1) {
+  width: 6%;
+}
+
+.application-table th:nth-child(2),
+.application-table td:nth-child(2) {
+  width: 18%;
+}
+
+.application-table th:nth-child(3),
+.application-table td:nth-child(3) {
+  width: 21%;
+}
+
+.application-table th:nth-child(4),
+.application-table td:nth-child(4) {
+  width: 11%;
+}
+
+.application-table th:nth-child(5),
+.application-table td:nth-child(5),
+.application-table th:nth-child(6),
+.application-table td:nth-child(6) {
+  width: 12%;
+}
+
+.application-table th:nth-child(7),
+.application-table td:nth-child(7) {
+  width: 13%;
+}
+
+.application-table th:nth-child(8),
+.application-table td:nth-child(8) {
+  width: 17%;
 }
 
 .application-table tbody tr:hover {
@@ -1031,13 +1110,6 @@ h1 em::after {
   margin-top: 3px;
   color: var(--muted);
   font-size: 10px;
-}
-
-.application-table th:nth-child(5),
-.application-table th:nth-child(6),
-.application-table td:nth-child(5),
-.application-table td:nth-child(6) {
-  min-width: 140px;
 }
 
 .applicant-category {
@@ -1101,6 +1173,18 @@ h1 em::after {
 
 .source-link:hover {
   color: var(--green);
+}
+
+.university-table td:nth-child(7) .school-link {
+  white-space: nowrap;
+}
+
+.university-table td:nth-child(7) .source-link {
+  margin-top: 6px;
+}
+
+.university-table td:nth-child(7) .favorite-button {
+  margin-top: 8px;
 }
 
 .source-badge {
@@ -1567,7 +1651,8 @@ footer {
 :root[data-theme="dark"] .toolbar-button,
 :root[data-theme="dark"] .table-wrap,
 :root[data-theme="dark"] .calendar-cell,
-:root[data-theme="dark"] .icon-button {
+:root[data-theme="dark"] .icon-button,
+:root[data-theme="dark"] .pagination-button {
   border-color: rgba(128, 217, 166, 0.16);
   background: #111d16;
 }
@@ -1601,7 +1686,8 @@ footer {
 
 :root[data-theme="dark"] .toolbar-button:hover,
 :root[data-theme="dark"] .toolbar-button.active,
-:root[data-theme="dark"] .icon-button:hover {
+:root[data-theme="dark"] .icon-button:hover,
+:root[data-theme="dark"] .pagination-button:hover:not(:disabled) {
   border-color: rgba(126, 221, 165, 0.38);
   color: #a7f3c2;
   background: #17261d;
