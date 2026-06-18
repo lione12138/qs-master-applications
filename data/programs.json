@@ -1,7 +1,8 @@
 {
   "meta": {
     "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
-    "updatedAt": "2026-06-14"
+    "updatedAt": "2026-06-14",
+    "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "programs": [
     {
@@ -1645,16 +1646,6 @@
       "sourceUrl": "https://www.isee.kyushu-u.ac.jp/e/admissions/master.html"
     },
     {
-      "id": "uab-official-masters",
-      "universityId": "universitat-aut-noma-de-barcelona",
-      "name": "Official master's degrees",
-      "degreeType": "Master",
-      "faculty": "Graduate studies",
-      "programmeGroupId": "uab-graduate-studies",
-      "applicationUrl": "https://www.uab.cat/graduate/",
-      "sourceUrl": "https://www.uab.cat/graduate/"
-    },
-    {
       "id": "asu-graduate-admissions",
       "universityId": "arizona-state-university",
       "name": "Graduate programmes",
@@ -1825,16 +1816,6 @@
       "sourceUrl": "https://cs.ui.ac.id/akademik/pascasarjana/magister-ilmu-komputer/"
     },
     {
-      "id": "osu-computer-science-engineering-ms",
-      "universityId": "ohio-state-university",
-      "name": "Computer Science and Engineering",
-      "degreeType": "MS",
-      "faculty": "Department of Computer Science and Engineering",
-      "programmeGroupId": "osu-cse-graduate",
-      "applicationUrl": "https://gpadmissions.osu.edu/programs/",
-      "sourceUrl": "https://cse.osu.edu/graduate"
-    },
-    {
       "id": "queens-ontario-graduate-programmes",
       "universityId": "queen-s-university-ontario",
       "name": "Graduate programmes",
@@ -1843,16 +1824,6 @@
       "programmeGroupId": "queens-ontario-graduate-admissions",
       "applicationUrl": "https://qservices.queensu.ca/apps/sgsapp",
       "sourceUrl": "https://www.queensu.ca/grad-postdoc/grad-studies/apply"
-    },
-    {
-      "id": "hamburg-master-programmes",
-      "universityId": "universit-t-hamburg",
-      "name": "Master's programmes",
-      "degreeType": "Master",
-      "faculty": "Universität Hamburg",
-      "programmeGroupId": "hamburg-master-admissions",
-      "applicationUrl": "https://www.uni-hamburg.de/en/campuscenter/bewerbung/master/online-bewerbung.html",
-      "sourceUrl": "https://www.uni-hamburg.de/en/campuscenter/bewerbung/master.html"
     },
     {
       "id": "reading-masters-programmes",
@@ -1873,16 +1844,6 @@
       "programmeGroupId": "vu-amsterdam-master-admissions",
       "applicationUrl": "https://vu.nl/en/education/master/programmes",
       "sourceUrl": "https://vu.nl/en/education/master"
-    },
-    {
-      "id": "waseda-graduate-programmes",
-      "universityId": "waseda-university",
-      "name": "Graduate programmes",
-      "degreeType": "Master/Doctoral",
-      "faculty": "International Admissions Office",
-      "programmeGroupId": "waseda-graduate-admissions",
-      "applicationUrl": "https://www.waseda.jp/inst/admission/en/graduate/",
-      "sourceUrl": "https://www.waseda.jp/inst/admission/en/graduate/"
     },
     {
       "id": "otago-masters-programmes",

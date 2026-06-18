@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import the first 200 institutions from the QS 2026 workbook and resolve ROR."""
+"""Import the first 200 institutions from a QS workbook and resolve ROR."""
 
 from __future__ import annotations
 
@@ -101,6 +101,16 @@ def main() -> int:
         action="store_true",
         help="Only import ranking rows; do not call the ROR API.",
     )
+    parser.add_argument(
+        "--ranking-edition",
+        default="QS World University Rankings",
+        help="Ranking edition label to store in universities.json.",
+    )
+    parser.add_argument(
+        "--ranking-published-at",
+        default="",
+        help="Official ranking publication date in YYYY-MM-DD format.",
+    )
     args = parser.parse_args()
 
     frame = pd.read_excel(args.workbook, sheet_name=0, dtype={"Rank": str})
@@ -171,8 +181,8 @@ def main() -> int:
 
     payload = {
         "meta": {
-            "rankingEdition": "QS World University Rankings 2026",
-            "rankingPublishedAt": "2025-06-19",
+            "rankingEdition": args.ranking_edition,
+            "rankingPublishedAt": args.ranking_published_at,
             "rankingSource": "https://www.topuniversities.com/world-university-rankings",
             "recordCount": len(universities),
             "selectionRule": "First 200 institutions in the published table; ties retain QS rank values.",

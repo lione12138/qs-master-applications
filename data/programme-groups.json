@@ -1,7 +1,8 @@
 {
   "meta": {
     "description": "Explicit programme groups used as inheritance and application-window scope targets.",
-    "updatedAt": "2026-06-14"
+    "updatedAt": "2026-06-14",
+    "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "groups": [
     {
@@ -965,12 +966,6 @@
       "description": "Kyushu University Graduate School of Information Science and Electrical Engineering master's admissions route."
     },
     {
-      "id": "uab-graduate-studies",
-      "universityId": "universitat-aut-noma-de-barcelona",
-      "name": "Graduate studies",
-      "description": "Official UAB graduate studies portal."
-    },
-    {
       "id": "asu-graduate-admissions",
       "universityId": "arizona-state-university",
       "name": "ASU graduate admissions",
@@ -1073,22 +1068,10 @@
       "description": "Universitas Indonesia Faculty of Computer Science postgraduate route for Magister Ilmu Komputer and related computing master's study."
     },
     {
-      "id": "osu-cse-graduate",
-      "universityId": "ohio-state-university",
-      "name": "Ohio State CSE graduate programmes",
-      "description": "Ohio State University Computer Science and Engineering graduate programmes including the MS route."
-    },
-    {
       "id": "queens-ontario-graduate-admissions",
       "universityId": "queen-s-university-ontario",
       "name": "Queen's Ontario graduate admissions",
       "description": "Queen's University School of Graduate Studies and Postdoctoral Affairs central graduate application route."
-    },
-    {
-      "id": "hamburg-master-admissions",
-      "universityId": "universit-t-hamburg",
-      "name": "Universität Hamburg master's admissions",
-      "description": "University of Hamburg central master's application route with semester application periods."
     },
     {
       "id": "reading-masters-admissions",
@@ -1101,12 +1084,6 @@
       "universityId": "vrije-universiteit-amsterdam",
       "name": "VU Amsterdam master's programmes",
       "description": "Vrije Universiteit Amsterdam central master's programmes overview and study-choice route."
-    },
-    {
-      "id": "waseda-graduate-admissions",
-      "universityId": "waseda-university",
-      "name": "Waseda graduate admissions",
-      "description": "Waseda University International Admissions Office graduate programmes route for Japanese-based and English-based graduate programmes."
     },
     {
       "id": "otago-masters",

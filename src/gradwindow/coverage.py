@@ -25,7 +25,8 @@ def generate_coverage(
     policies_path: Path = WINDOW_POLICIES_PATH,
     predictions_path: Path = PREDICTIONS_PATH,
 ) -> dict:
-    universities = read_json(universities_path)["universities"]
+    university_payload = read_json(universities_path)
+    universities = university_payload["universities"]
     applications = read_json(applications_path)["applications"]
     programs = read_json(programs_path)["programs"]
     policies = read_json(policies_path)["policies"]
@@ -154,7 +155,10 @@ def generate_coverage(
     payload = {
         "meta": {
             "generatedAt": datetime.now(timezone.utc).isoformat(),
-            "rankingScope": "QS World University Rankings 2026 top 200",
+            "rankingScope": (
+                f"{university_payload.get('meta', {}).get('rankingEdition', 'QS World University Rankings')} "
+                f"top {TOP_LIMIT}"
+            ),
             "batchSize": BATCH_SIZE,
             "definition": (
                 "Entry, policy, programme, and exact-window coverage are counted "

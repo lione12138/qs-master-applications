@@ -1,7 +1,8 @@
 {
   "meta": {
     "description": "Verified examples of how universities define graduate application periods. These describe granularity, not current application dates.",
-    "verifiedAt": "2026-06-14"
+    "verifiedAt": "2026-06-14",
+    "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "policies": [
     {
@@ -2498,21 +2499,6 @@
       }
     },
     {
-      "universityId": "universitat-aut-noma-de-barcelona",
-      "model": "programme-specific",
-      "defaultScope": "programme",
-      "mastersAvailability": "broad",
-      "notes": "The official UAB Graduate page states that it covers more than 400 master's degrees and graduate diplomas and lists University Master's Degrees by area. Older deep official-master paths returned 404, so exact application-window dates were not captured.",
-      "sourceUrl": "https://www.uab.cat/graduate/",
-      "verifiedAt": "2026-06-17",
-      "cycleGuidance": {
-        "entry": "2026/27",
-        "status": "programme-specific",
-        "opensText": "Graduate master catalogue available; dates not captured",
-        "notes": "Use the selected UAB official master page for exact admission windows."
-      }
-    },
-    {
       "universityId": "arizona-state-university",
       "model": "program-specific",
       "defaultScope": "programme-group",
@@ -2768,21 +2754,6 @@
       }
     },
     {
-      "universityId": "ohio-state-university",
-      "model": "program-specific",
-      "defaultScope": "programme",
-      "mastersAvailability": "broad",
-      "notes": "Ohio State University's Computer Science and Engineering graduate page confirms graduate study and the central Graduate and Professional Admissions programme search lists Computer Science and Engineering - Master of Science.",
-      "sourceUrl": "https://cse.osu.edu/graduate",
-      "verifiedAt": "2026-06-17",
-      "cycleGuidance": {
-        "entry": "Computer Science and Engineering graduate programmes",
-        "status": "programme-route-without-dates",
-        "opensText": "The CSE page directs applicants to graduate admissions and the central programme search lists the MS route, but no exact current application opening or closing dates were captured.",
-        "notes": "Several CSE admissions deep links returned 404, so the stable graduate page and central programme search are retained."
-      }
-    },
-    {
       "universityId": "queen-s-university-ontario",
       "model": "program-specific",
       "defaultScope": "institution",
@@ -2795,21 +2766,6 @@
         "status": "central-route-with-programme-specific-requirements",
         "opensText": "The central page explains how to apply to graduate programmes and links to the online application, but no exact institution-wide opening or closing dates were captured.",
         "notes": "Programme pages should be checked for individual admissions requirements and deadlines."
-      }
-    },
-    {
-      "universityId": "universit-t-hamburg",
-      "model": "centralized",
-      "defaultScope": "institution",
-      "mastersAvailability": "broad",
-      "notes": "Universität Hamburg publishes central master's application periods: summer semester 1 December to 15 January, winter semester 1 May to 15 June, and international master's programmes 15 February to 31 March.",
-      "sourceUrl": "https://www.uni-hamburg.de/en/campuscenter/bewerbung/master.html",
-      "verifiedAt": "2026-06-17",
-      "cycleGuidance": {
-        "entry": "Master's applications",
-        "status": "recurring-central-periods",
-        "opensText": "Application periods are 1 December to 15 January for summer semester, 1 May to 15 June for winter semester, and 15 February to 31 March for international master's programmes.",
-        "notes": "The official page gives stable month/day periods rather than a single dated 2026/2027 record, so no formal exact-year window is recorded in applications.json."
       }
     },
     {
@@ -2840,21 +2796,6 @@
         "status": "central-programme-overview-without-dates",
         "opensText": "The central master's overview and programme list are accessible, but exact application opening or closing dates were not captured in accessible text.",
         "notes": "Several guessed application-deadline URLs returned 404, so programme-specific pages should be checked in a later quality pass."
-      }
-    },
-    {
-      "universityId": "waseda-university",
-      "model": "program-specific",
-      "defaultScope": "institution",
-      "mastersAvailability": "broad",
-      "notes": "Waseda University's International Admissions Office publishes a graduate programmes route covering Japanese-based and English-based graduate programmes plus special scholarship programmes.",
-      "sourceUrl": "https://www.waseda.jp/inst/admission/en/graduate/",
-      "verifiedAt": "2026-06-17",
-      "cycleGuidance": {
-        "entry": "Graduate programmes",
-        "status": "central-graduate-route-without-dates",
-        "opensText": "The International Admissions Office graduate page links to graduate programme categories, but no exact institution-wide application opening or closing dates were captured.",
-        "notes": "The admissions homepage shows September 2026 entry application-guide news, but formal deadlines remain programme-specific."
       }
     },
     {

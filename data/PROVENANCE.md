@@ -6,13 +6,12 @@ terms, attribution requirements, and third-party exclusions.
 
 ## Ranking
 
-- Edition: QS World University Rankings 2026
+- Edition: QS World University Rankings 2027
 - Official ranking page: <https://www.topuniversities.com/world-university-rankings>
-- Official publication date: 2025-06-19
-- Parsed workbook source:
-  <https://github.com/olgagaffarova/QS-University-Rankings-2026>
-- Imported rows: first 200 institution records
-- Tie handling: retain the rank value published by QS
+- Official publication date: 2026-06-18
+- Parsed source: QS ranking page endpoint for node `4153156`
+- Imported rows: first 200 institution rows
+- Tie handling: retain the `rank_display` value published by QS
 
 ## Institution identities
 
