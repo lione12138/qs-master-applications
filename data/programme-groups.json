@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Explicit programme groups used as inheritance and application-window scope targets.",
-    "updatedAt": "2026-06-14",
+    "updatedAt": "2026-06-18",
     "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "groups": [
@@ -1108,6 +1108,30 @@
       "universityId": "queen-s-university-belfast",
       "name": "Queen's Belfast postgraduate taught courses",
       "description": "Queen's University Belfast official postgraduate taught course catalogue for 2026 entry."
+    },
+    {
+      "id": "kaist-international-graduate-admissions",
+      "universityId": "kaist",
+      "name": "KAIST international graduate admissions",
+      "description": "International graduate admission route for KAIST master's and doctoral applicants."
+    },
+    {
+      "id": "tu-dresden-graduate-admissions",
+      "universityId": "technische-universitat-dresden",
+      "name": "TU Dresden graduate admissions",
+      "description": "Graduate and master's application route via TU Dresden portals, uni-assist, and programme-specific deadlines."
+    },
+    {
+      "id": "hit-international-master-admissions",
+      "universityId": "harbin-institute-of-technology",
+      "name": "HIT international master admissions",
+      "description": "Harbin Institute of Technology international master's degree programmes."
+    },
+    {
+      "id": "ncku-international-degree-admissions",
+      "universityId": "national-cheng-kung-university-ncku",
+      "name": "NCKU international degree admissions",
+      "description": "NCKU international degree and dual-degree application route covering master's-level applicants where programmes are offered."
     }
   ]
 }

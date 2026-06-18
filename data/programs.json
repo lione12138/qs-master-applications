@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
-    "updatedAt": "2026-06-14",
+    "updatedAt": "2026-06-18",
     "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "programs": [
@@ -1884,6 +1884,46 @@
       "programmeGroupId": "qub-postgraduate-taught",
       "applicationUrl": "https://www.qub.ac.uk/courses/postgraduate-taught/",
       "sourceUrl": "https://www.qub.ac.uk/courses/postgraduate-taught/"
+    },
+    {
+      "id": "kaist-international-graduate-programmes",
+      "universityId": "kaist",
+      "name": "International graduate programmes",
+      "degreeType": "Master/Doctoral",
+      "faculty": "KAIST Office of Admissions",
+      "programmeGroupId": "kaist-international-graduate-admissions",
+      "applicationUrl": "https://admission.kaist.ac.kr/intl-graduate/Admission/Apply",
+      "sourceUrl": "https://admission.kaist.ac.kr/intl-graduate/Discover/DepartmentInfo"
+    },
+    {
+      "id": "tu-dresden-graduate-degree-programmes",
+      "universityId": "technische-universitat-dresden",
+      "name": "Graduate degree programmes",
+      "degreeType": "Master/Postgraduate",
+      "faculty": "TU Dresden",
+      "programmeGroupId": "tu-dresden-graduate-admissions",
+      "applicationUrl": "https://tu-dresden.de/studium/vor-dem-studium/bewerbung/online-bewerbung?set_language=en",
+      "sourceUrl": "https://tu-dresden.de/studium/vor-dem-studium/bewerbung?set_language=en"
+    },
+    {
+      "id": "hit-international-master-programmes",
+      "universityId": "harbin-institute-of-technology",
+      "name": "Master's degree programmes",
+      "degreeType": "Master",
+      "faculty": "College of International Education",
+      "programmeGroupId": "hit-international-master-admissions",
+      "applicationUrl": "https://hit.at0086.cn/StuApplication/Login.aspx",
+      "sourceUrl": "https://studyathit.hit.edu.cn/18359/list.htm"
+    },
+    {
+      "id": "ncku-international-degree-programmes",
+      "universityId": "national-cheng-kung-university-ncku",
+      "name": "International degree programmes",
+      "degreeType": "Bachelor/Master/Doctoral",
+      "faculty": "Office of International Affairs",
+      "programmeGroupId": "ncku-international-degree-admissions",
+      "applicationUrl": "https://management.oia.ncku.edu.tw/intladmission/index/index/applyIntladmissionSn/28",
+      "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-230753.php?Lang=en"
     }
   ]
 }

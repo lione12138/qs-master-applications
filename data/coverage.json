@@ -1,28 +1,28 @@
 {
   "meta": {
-    "generatedAt": "2026-06-18T07:14:58.542734+00:00",
+    "generatedAt": "2026-06-18T12:33:40.451795+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
   },
   "summary": {
     "targetUniversities": 200,
-    "entriesLocated": 192,
-    "curatedEntries": 191,
-    "policiesVerified": 191,
-    "cycleGuidanceAvailable": 189,
-    "broadMastersAvailability": 186,
+    "entriesLocated": 200,
+    "curatedEntries": 200,
+    "policiesVerified": 200,
+    "cycleGuidanceAvailable": 198,
+    "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
-    "universitiesWithPrograms": 183,
+    "universitiesWithPrograms": 187,
     "universitiesWithWindows": 34,
     "verifiedWindows": 45,
     "universitiesWithPredictions": 34,
     "predictedWindows": 45,
     "nextActions": {
-      "locate-official-entry": 8,
-      "verify-window-policy": 1,
-      "select-target-programmes": 8,
-      "verify-exact-windows": 149,
+      "locate-official-entry": 0,
+      "verify-window-policy": 0,
+      "select-target-programmes": 13,
+      "verify-exact-windows": 153,
       "monitor-and-refresh": 34
     }
   },
@@ -190,9 +190,9 @@
         65
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 4,
-      "universitiesWithPrograms": 4,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 1,
       "predictedWindows": 1
     },
@@ -359,8 +359,8 @@
         130
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 4,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
       "universitiesWithPrograms": 4,
       "universitiesWithWindows": 1,
       "predictedWindows": 1
@@ -386,7 +386,7 @@
       ],
       "universities": 5,
       "entriesLocated": 5,
-      "policiesVerified": 4,
+      "policiesVerified": 5,
       "universitiesWithPrograms": 4,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
@@ -450,8 +450,8 @@
         165
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 4,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
       "universitiesWithPrograms": 4,
       "universitiesWithWindows": 1,
       "predictedWindows": 1
@@ -502,9 +502,9 @@
         185
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 4,
-      "universitiesWithPrograms": 4,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -515,9 +515,9 @@
         190
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 4,
-      "universitiesWithPrograms": 4,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -528,9 +528,9 @@
         195
       ],
       "universities": 5,
-      "entriesLocated": 4,
-      "policiesVerified": 4,
-      "universitiesWithPrograms": 4,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
+      "universitiesWithPrograms": 5,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
     },
@@ -541,8 +541,8 @@
         200
       ],
       "universities": 5,
-      "entriesLocated": 3,
-      "policiesVerified": 3,
+      "entriesLocated": 5,
+      "policiesVerified": 5,
       "universitiesWithPrograms": 3,
       "universitiesWithWindows": 0,
       "predictedWindows": 0
@@ -1274,9 +1274,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "February or July intake",
-        "status": "open-programme-specific",
-        "opensText": "Direct applications are available; exact opening and closing dates are not stated",
-        "notes": "The Master of Artificial Intelligence lists February and July starts and links both intakes to the direct application route, without publishing a complete dated window."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1514,9 +1514,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Semester 1 or Semester 2, 2027",
-        "status": "deadline-only-applicant-category-specific",
-        "opensText": "Exact opening day not stated",
-        "notes": "For the Master of Data Science, international deadlines are 30 November 2026 for Semester 1 and 31 May 2027 for Semester 2. Domestic deadlines are 31 January and 30 June 2027."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1562,9 +1562,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall or Spring",
-        "status": "deadline-only-programme-specific",
-        "opensText": "Exact opening day not stated",
-        "notes": "The Computer Science MS FAQ lists January 15 as the fall priority deadline, February 15 as the fall final deadline, and October 15 as the spring deadline, without identifying the cycle year or opening day."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1610,9 +1610,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall 2026",
-        "status": "closed-or-rolling-programme-specific",
-        "opensText": "Applications opened 29 September 2025",
-        "notes": "The CS page lists review milestones on 30 November, 31 December, and 28 February, followed by rolling review language. It does not state one unambiguous final closing date for the MS application."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1634,9 +1634,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2027 or January 2028",
-        "status": "prior-cycle-reference",
-        "opensText": "Next exact dates are not configured; previous cycle deadline was 15 December 2025",
-        "notes": "The current central MSc page says upcoming intake dates are not yet configured. The department records 15 December 2025 for September 2026 or January 2027 starts, so a similar mid-December deadline is only a low-confidence prior-cycle reference."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1706,9 +1706,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall 2027",
-        "status": "prior-cycle-reference",
-        "opensText": "Usually mid-September; exact next-cycle opening day not published",
-        "notes": "The CS FAQ states that applications are submitted between mid-September and 15 December. The next cycle should be treated as a prior-cycle reference until exact dated guidance is published."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1754,9 +1754,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall 2027",
-        "status": "prior-cycle-reference",
-        "opensText": "Expected around mid-September 2026; exact next-cycle date not published",
-        "notes": "The current page says applications reopen in mid-September and the master's deadline is 15 January. A similar September 2026-January 2027 period is only a prior-cycle reference until the new cycle is dated explicitly."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1850,9 +1850,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall 2027",
-        "status": "announced",
-        "opensText": "9 September to 9 December 2026",
-        "notes": "Most SCS graduate programmes have an 18 November early deadline and a 9 December final deadline. MHCI and several MSE routes have stated exceptions."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 1,
@@ -1898,9 +1898,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "open-approximate-start",
-        "opensText": "Applications have been allocated continuously since September 2025; exact opening day not stated",
-        "notes": "The Computer Science conversion MSc closes on 27 August 2026 for overseas applicants and 21 September 2026 for home applicants, subject to earlier closure if full."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -1970,9 +1970,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September intake",
-        "status": "deadline-only-applicant-category-specific",
-        "opensText": "Exact opening day not stated",
-        "notes": "The joint Computer Science master's lists 1 June for Dutch-prior-education and EU/EEA applicants on the UvA page. VU publishes applicant-specific procedures for other international degrees."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2018,9 +2018,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "open-rolling-no-fixed-deadline",
-        "opensText": "Open; exact opening day not stated",
-        "notes": "The MSc Data Science page says applications are open and considered on a rolling basis with no fixed deadline. Separate funding deadlines apply."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2083,16 +2083,21 @@
       "school": "KAIST",
       "country": "South Korea",
       "batch": 13,
-      "entryStatus": "pending",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "institution-wide-international-graduate-cycle",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Spring 2027 / Fall 2027",
+        "status": "spring-exact-fall-tba",
+        "opensText": "Spring 2027: August 18, 2026; Fall 2027: TBA",
+        "notes": "The page also describes general fall admissions as early December-late December for early track and early March-late March for regular track."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "brown-university",
@@ -2109,9 +2114,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall 2026",
-        "status": "closed",
-        "opensText": "1 September 2025 to 23 January 2026",
-        "notes": "The CS master's page states that Fall 2026 applications were accepted from 1 September 2025 until the 23 January 2026 deadline."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 1,
@@ -2133,9 +2138,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "2026",
-        "status": "deadline-only",
-        "opensText": "Exact opening day not stated",
-        "notes": "The Master of Data Science page lists 8 December 2025 for Semester One 2026 and 8 June 2026 for Semester Two 2026."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2153,13 +2158,13 @@
       "entryStatus": "curated",
       "entryLocated": true,
       "policyStatus": "verified",
-      "policyModel": "mixed",
+      "policyModel": "programme-specific",
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "open-date-not-exact",
-        "opensText": "Open now; on-time deadline 2 August 2026",
-        "notes": "Late applications may still be accepted, but Warwick cannot guarantee timely processing. The page does not state the exact date applications opened."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2181,9 +2186,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026 / January 2027",
-        "status": "deadline-only",
-        "opensText": "September start deadline 28 August 2026; January start 18 December 2026; closes when full",
-        "notes": "The page states UK/non-visa deadlines of 28 August 2026 (September start) and 18 December 2026 (January start) and that applications close as soon as the programme is full. No exact opening date is published."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2205,9 +2210,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall 2027",
-        "status": "open-month-only",
-        "opensText": "Applications will open in August 2026",
-        "notes": "The Computer Science MS deadline is 2 February, but Duke has not published the exact August opening day for the 2027 cycle."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2253,9 +2258,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall",
-        "status": "recurring-dates-without-cycle-year",
-        "opensText": "15 October to 15 December",
-        "notes": "The page lists an application opening on 15 October and deadline on 15 December, plus a recommendation deadline on 20 December, but does not attach a year."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2301,9 +2306,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall",
-        "status": "deadline-without-cycle-year",
-        "opensText": "Computer Science MS deadline: 1 December",
-        "notes": "The Computer Science MS is fall-only with a recurring 1 December deadline at 11:59 p.m. U.S. Central Time. No exact opening date is published."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2325,9 +2330,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "deadline-only",
-        "opensText": "Closing date 30 January 2026",
-        "notes": "The programme page lists a 30 January 2026 closing date for the one-year full-time MSc but no exact application opening date."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2397,9 +2402,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "deadline-only",
-        "opensText": "International applicant deadline 11 September 2026; apply as early as possible",
-        "notes": "The official course page lists September 2026 as the start date and 11 September 2026 for international applicants, while directing applicants to apply early. No exact opening date is published."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2421,9 +2426,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "2026",
-        "status": "open-without-closing-date",
-        "opensText": "Applications for international students are open now for 2026",
-        "notes": "The page lists February and July starts and says international applications are open now, but no exact application opening and closing dates are provided."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2441,13 +2446,13 @@
       "entryStatus": "curated",
       "entryLocated": true,
       "policyStatus": "verified",
-      "policyModel": "applicant-category",
+      "policyModel": "programme-specific",
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "deadline-only-applicant-category-specific",
-        "opensText": "International/EU staged rounds Oct 2025 to Jul 2026; Home deadline 21 August 2026",
-        "notes": "International and EU applicants apply in six recorded rounds running from 1 October 2025 to 8 July 2026; home applicants have a 21 August 2026 deadline without a published opening date."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 6,
@@ -2469,9 +2474,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall 2026",
-        "status": "closed",
-        "opensText": "3 September to 23 December 2025",
-        "notes": "The department states that Fall 2026 applications opened on 3 September 2025 and closed at 5:00 p.m. PST on 23 December 2025 after an extension."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 1,
@@ -2493,9 +2498,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Autumn 2027",
-        "status": "announced",
-        "opensText": "Opens 16 October 2026; last day to apply 15 January 2027",
-        "notes": "The programme page states the Autumn 2027 round opens 16 October 2026 with 15 January 2027 as the last day to apply (documents/fee by 1 February, results 1 April). The complete opening-closing pair is recorded as an official future window."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 1,
@@ -2517,9 +2522,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "open-no-deadline-published",
-        "opensText": "Apply now for 2026 entry; no staged admissions process",
-        "notes": "The course page lists September 2026 entry and says applicants can apply through the usual postgraduate online form. It does not publish a final deadline or exact opening date."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2565,9 +2570,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "open-no-deadline-published",
-        "opensText": "September 2026 start; apply through Durham postgraduate application portal",
-        "notes": "The official course page lists the MSc, department, and September 2026 start and links to the postgraduate application portal, but no exact application opening or closing date is published."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2637,9 +2642,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Autumn 2027 / Spring 2026",
-        "status": "announced-applicant-category-specific",
-        "opensText": "Domestic postgraduate Autumn 2027 applications open 28 July 2026 and close 31 January 2027; international most-course deadlines are session-based",
-        "notes": "The central dates page states domestic postgraduate Autumn 2027 applications open on 28 July 2026 and close on 31 January 2027. It separately lists international postgraduate closing dates for most courses by session without giving matching opening dates."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 1,
@@ -2661,9 +2666,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Autumn 2026",
-        "status": "deadline-only",
-        "opensText": "Application deadline 15 January 2026; application code UU-M1160",
-        "notes": "The programme page lists the study period from 31 August 2026 to 4 June 2028 and an application deadline of 15 January 2026. It links to University Admissions for application but does not show an opening date on the programme page."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2709,9 +2714,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September and February starts",
-        "status": "recurring-dates-without-cycle-year",
-        "opensText": "September start: EU/EEA/Swiss opens 16 January and closes 1 March; non-EU opens 15 November and closes 15 January. February legal-right route opens 15 August and closes 15 October.",
-        "notes": "The official programme page lists the opening dates, deadlines, and reply dates, and also shows Computer Science 2026 admission statistics. Because the application-date rows do not attach a calendar year to each opening date, no formal dated window is recorded."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2733,9 +2738,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall and spring",
-        "status": "deadline-only",
-        "opensText": "Fall full-consideration deadline December 20; final fall cutoff April 15; spring deadline August 31",
-        "notes": "The one-year CSE Master of Engineering deadline is March 15. The page does not state exact application opening dates, so no complete window is recorded."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2757,9 +2762,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Autumn, winter, and spring quarters",
-        "status": "recurring-deadlines-without-opening-date",
-        "opensText": "Applications are taken three times annually; deadlines are July 1, November 1, and February 1",
-        "notes": "For winter 2027 the page extends the November 1 deadline to Monday, 2 November. No exact opening date is stated, so no complete window is recorded."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2829,9 +2834,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Next available graduate intake",
-        "status": "dates-not-captured",
-        "opensText": "Apply via Computing Science applications and admissions page",
-        "notes": "The official Computing Science page confirms M.Sc. graduate options and links to Apply Now, but exact opening and closing dates were not available from the accessible programme overview captured for this batch."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2901,9 +2906,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Winter semester 2026/27",
-        "status": "category-dependent-window",
-        "opensText": "Consecutive master applications open 20 April 2026; limited-admission deadline 31 May 2026; unrestricted-admission deadline 15 August 2026",
-        "notes": "The official deadline page gives 20 April to 31 May 2026 for limited-admission consecutive master programmes and 20 April to 15 August 2026 for unrestricted programmes. The Data Science page states the programme starts in winter semester and that admission status is determined each semester."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -2949,9 +2954,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Spring 2026 / Fall 2026",
-        "status": "closed-deadline-only",
-        "opensText": "Spring 2026 deadline 1 October 2025; Fall 2026 deadline 1 December 2025",
-        "notes": "The Computer Science application steps page lists deadlines of 1 October 2025 for Spring 2026 and 1 December 2025 for Fall 2026, and states Fall 2026 applications are no longer being accepted. No exact opening date is published."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3189,9 +3194,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Computer Science M.Sc.",
-        "status": "recurring-deadlines-without-opening-date",
-        "opensText": "The Computer Science M.Sc. page lists first-semester deadlines of 15 June for winter term and 15 January for summer term for both German/EU and non-EU nationals.",
-        "notes": "The page gives stable deadline month/day rules rather than exact application opening dates."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3237,9 +3242,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "deadline-only-applicant-category-specific",
-        "opensText": "International deadline 19 August 2026; UK deadline 2 September 2026",
-        "notes": "The Computer Science MSc page lists a September 2026 start, an international deadline of 19 August 2026 at midday UK time, and a UK deadline of 2 September 2026 at midday UK time. No exact opening date is stated."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3261,9 +3266,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall, Winter, and Spring terms",
-        "status": "recurring-deadlines-without-opening-date",
-        "opensText": "Deadlines are 1 December for September admission, 1 June for January admission, and 1 October for May admission.",
-        "notes": "The programme page confirms the MMath, admit terms, and deadlines. No application opening dates or cycle years are published on the captured page."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3285,9 +3290,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September and February starts",
-        "status": "recurring-dates-without-cycle-year",
-        "opensText": "September start opens 1 October; scholarship deadline 1 February; non-EU deadline 1 April; EU deadline 1 June. February start opens 1 July; non-EU deadline 1 September; EU deadline 15 October.",
-        "notes": "The official non-Dutch-degree page lists these dates and states deadlines expire at 23:59 CET/CEST. Because no cycle year is attached, no formal dated window is recorded."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3333,9 +3338,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026 / January 2027",
-        "status": "deadline-only",
-        "opensText": "Deadline 6 August 2026 for September entry; 11 December 2026 for January 2027 entry",
-        "notes": "The official course page lists both application deadlines and entry points, but does not state the exact application opening date."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3381,9 +3386,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September and February starts",
-        "status": "recurring-deadlines-without-opening-date",
-        "opensText": "September start deadlines: 1 April for visa or residence-permit applicants, 15 May for applicants not needing a visa or residence permit. February start deadlines: 15 October and 15 November respectively.",
-        "notes": "The official page states deadlines expire at 23:59 CET and advises applying early, but it does not publish opening dates for the cycle."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3477,9 +3482,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Artificial Intelligence second-cycle degree",
-        "status": "dates-not-captured",
-        "opensText": "Applicants should use the Admission section on the official course site for exact enrolment calls.",
-        "notes": "The captured accessible text confirmed the programme but exposed notice-board scholarship deadlines rather than admission-window dates."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3501,9 +3506,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Autumn 2027",
-        "status": "announced",
-        "opensText": "Application period begins 5 January 2027 at 08:00 and ends 19 January 2027 at 15:00",
-        "notes": "The programme page states the exact application period and notes that there is only one intake per academic year."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 1,
@@ -3525,9 +3530,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "application-open-without-deadline",
-        "opensText": "The course page has an active Apply to Bath link for September 2026 entry.",
-        "notes": "No closing date or exact application window was captured from the official course page."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3549,9 +3554,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Autumn 2026 / Autumn 2027",
-        "status": "announced",
-        "opensText": "Autumn 2026 applications ran 1 December 2025 to 2 January 2026; Autumn 2027 announced for 7 December 2026 to 5 January 2027",
-        "notes": "The central page gives the full Autumn 2026 master's application period and announces the planned Autumn 2027 period. The Computer Science page also lists 1 December 2025 to 2 January 2026."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 1,
@@ -3566,16 +3571,21 @@
       "school": "Macquarie University (Sydney, Australia)",
       "country": "Australia",
       "batch": 26,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026/2027",
+        "status": "course-and-study-period-specific",
+        "opensText": "Use the central How to apply route and calendar filters; exact application dates vary by course and study period.",
+        "notes": "The accessible official pages expose the application route and key-date calendar, but not a single institution-wide postgraduate deadline."
+      },
       "programmeCount": 0,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "select-target-programmes"
     },
     {
       "universityId": "aarhus-university",
@@ -3592,9 +3602,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Summer and winter intakes",
-        "status": "recurring-dates-with-partial-opening-date",
-        "opensText": "Summer intake opens around 1 November; deadline is 15 January for non-EU applicants and 1 March for EU applicants. Winter intake opens in August 2026; deadline is 15 September for non-EU applicants and 15 October for EU applicants.",
-        "notes": "The official deadlines page provides applicant-category deadlines and one exact/approximate opening description, but the summer opening is approximate and not cycle-year-specific, so no formal window is recorded."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3664,9 +3674,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "August and January starts",
-        "status": "recurring-dates-without-cycle-year",
-        "opensText": "Norway/Nordic August start opens 1 February and closes 15 April for most programmes; non-EU/EEA/Swiss applicants open 15 October and close 1 December for August start; EU/EEA/Swiss August start opens 1 February and closes 1 March.",
-        "notes": "The official central page gives the relevant recurring portal openings and deadlines by applicant category. No formal dated window is recorded because the page does not attach a year to the date ranges."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3688,9 +3698,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall",
-        "status": "deadline-without-cycle-year",
-        "opensText": "Traditional CS MS/PhD fall-only application deadline December 15",
-        "notes": "The page states the traditional CS MS/PhD programme is fall-only with a December 15 application deadline. No cycle year or exact opening date is shown."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3712,9 +3722,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Next programme selection process",
-        "status": "dates-not-captured",
-        "opensText": "Applicants should follow the programme admission-process instructions",
-        "notes": "The official IME page confirms the graduate Computer Science programme and directs applicants to the admission process page, but no exact opening or closing date was captured from the English page."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3856,9 +3866,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "announced-deadlines-without-opening-date",
-        "opensText": "UK students apply by 11 September 2026; international students apply by 21 August 2026; course starts 28 September 2026.",
-        "notes": "The official course page gives closing dates by applicant category but not the application opening date."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3873,16 +3883,21 @@
       "school": "Humboldt-Universität zu Berlin",
       "country": "Germany",
       "batch": 28,
-      "entryStatus": "discovered",
+      "entryStatus": "curated",
       "entryLocated": true,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026/2027",
+        "status": "official-entry-protected",
+        "opensText": "Official admission page exists, but deadline details require manual/browser verification because the current environment is blocked by Anubis.",
+        "notes": "Keep in the anomaly/manual-check bucket until a browser or alternate official source can verify exact master dates."
+      },
       "programmeCount": 0,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "verify-window-policy"
+      "nextAction": "select-target-programmes"
     },
     {
       "universityId": "university-of-vienna",
@@ -3899,9 +3914,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Computer Science MSc",
-        "status": "selection-procedure-dates-not-captured",
-        "opensText": "The programme page links to a selection procedure and the central master admissions page lists Computer Science as an English master with AV selection procedure.",
-        "notes": "No complete application-period dates were captured from the accessible official pages in this pass."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -3923,9 +3938,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Fall semester",
-        "status": "deadline-without-cycle-year",
-        "opensText": "Application deadline is 1 February for admission to the following fall semester.",
-        "notes": "The official MSCS page gives the annual fall-only deadline but no exact opening date or cycle year."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4067,9 +4082,9 @@
       "mastersAvailability": "limited",
       "cycleGuidance": {
         "entry": "September start",
-        "status": "deadline-without-opening-date",
-        "opensText": "Application Deadline (EEA) 1 May",
-        "notes": "The programme page summary gives the EEA deadline and September start date, but no cycle year or opening date was captured."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4115,9 +4130,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "2026-2027",
-        "status": "programme-confirmed-deadline-table-not-captured",
-        "opensText": "The programme page includes an enrol link for the 2026-2027 Master of Science in Computer Science Engineering. Ghent's application page says complete files must be received by the application deadline.",
-        "notes": "No exact opening or closing date was captured from accessible official pages in this pass."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4163,9 +4178,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "2026-2027 applications",
-        "status": "interactive-admission-flow",
-        "opensText": "The admission-and-enrollment page states the information applies to 2026-2027 applications, but exact deadlines are produced through an interactive applicant flow.",
-        "notes": "No complete static application window was captured from the official pages."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4187,9 +4202,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Spring and fall admission",
-        "status": "deadlines-without-opening-date",
-        "opensText": "Spring general deadline 15 September; fall scholarship consideration deadline 15 December and final deadline 15 January.",
-        "notes": "No cycle years or opening dates were captured, so no formal dated window is recorded."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4211,9 +4226,9 @@
       "mastersAvailability": "limited",
       "cycleGuidance": {
         "entry": "September and selected February starts",
-        "status": "deadlines-without-opening-date",
-        "opensText": "For September starts, NL/EU/EFTA students apply in Studielink by 15 June and submit WU documents by 1 July; non-EU/non-EFTA students apply in Studielink by 15 April and submit documents by 1 May. Applications for September 2026 are closed; the page offers notification for September 2027 opening.",
-        "notes": "The page gives exact deadlines and current September 2026 closed status, but not the exact September 2027 opening date."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4283,9 +4298,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2027",
-        "status": "deadline-without-opening-date",
-        "opensText": "Dutch, EU/EEA, and non-EU/EEA applicants: deadline 1 May 2027 for 1 September 2027 start.",
-        "notes": "The page states applications are evaluated on a continuous basis and applicants do not have to wait until the deadline, but it does not provide an exact opening date."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4379,9 +4394,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September 2026",
-        "status": "programme-open-without-deadline",
-        "opensText": "The course page has an Apply for this course link for September 2026 entry but does not expose an application deadline in accessible text.",
-        "notes": "No formal dated window is recorded because no closing date was captured."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4427,9 +4442,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "CSE graduate programmes",
-        "status": "programme-listing-without-dates",
-        "opensText": "The official page links to Graduate Admissions and Apply Now, but no exact application opening or closing dates were captured.",
-        "notes": "No formal dated window is recorded until WashU exposes current CSE graduate deadline dates in a readable official page."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4468,16 +4483,21 @@
       "school": "Universitat de Barcelona",
       "country": "Spain",
       "batch": 33,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026/2027",
+        "status": "programme-specific",
+        "opensText": "Use the master and postgraduate catalogue; exact dates are programme-specific unless UB publishes a central deadline page.",
+        "notes": "The official overview confirms broad master/postgraduate availability but not a unified application window."
+      },
       "programmeCount": 0,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "select-target-programmes"
     },
     {
       "universityId": "wuhan-university",
@@ -4494,9 +4514,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "School of Computer Science",
-        "status": "school-route-without-dates",
-        "opensText": "The official computer school page confirms the graduate education route but does not expose exact current application opening or closing dates in accessible text.",
-        "notes": "The international admissions path tested in this pass returned 404, so this is recorded as programme-location evidence only."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4566,9 +4586,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Computer Science MS",
-        "status": "department-specific-dates",
-        "opensText": "Applicants should refer to the programme website and GraduateCAS process for exact deadlines.",
-        "notes": "The official MSCS page confirms the programme and application route, but no exact opening or closing date was captured."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4710,9 +4730,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "September entry",
-        "status": "deadlines-without-opening-date",
-        "opensText": "Computer Science MSc typical deadline: international applicants 28 February; Canadian/permanent resident applicants 31 July.",
-        "notes": "The page gives category-specific closing dates but no application opening dates or cycle year, so no formal dated window is recorded."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4926,9 +4946,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "2026",
-        "status": "deadline-with-partial-opening-month",
-        "opensText": "For Masters by Coursework and Dissertation, applications open April and close 30 September; applications for 2026 are now open and close 30 September 2025.",
-        "notes": "The page gives opening month and closing date, but not the exact opening day. The Masters by Dissertation route has no opening or closing dates."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -4943,16 +4963,21 @@
       "school": "Technische Universität Dresden",
       "country": "Germany",
       "batch": 37,
-      "entryStatus": "pending",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Winter/Summer intakes",
+        "status": "programme-specific",
+        "opensText": "Concrete deadlines are listed per degree programme in SINS",
+        "notes": "The central deadlines page gives doctoral enrolment windows but not a universal master's deadline."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "universidad-de-chile",
@@ -5041,9 +5066,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Postgraduate information technology",
-        "status": "programme-listing-without-dates",
-        "opensText": "The page links to application key dates and deadlines but does not expose exact application opening or closing dates in accessible text.",
-        "notes": "No formal dated window is recorded until programme-specific intake dates are captured."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -5058,16 +5083,21 @@
       "school": "Harbin Institute of Technology",
       "country": "China (Mainland)",
       "batch": 38,
-      "entryStatus": "pending",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "institution-wide-international-master-deadline",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "September 2026",
+        "status": "deadline-exact-open-year-round",
+        "opensText": "Applications are open all year round; deadline May 31, 2026",
+        "notes": "No exact opensAt is recorded because the official page only says applications are open all year round."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "national-cheng-kung-university-ncku",
@@ -5077,16 +5107,21 @@
       "school": "National Cheng Kung University (NCKU)",
       "country": "Taiwan",
       "batch": 39,
-      "entryStatus": "pending",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
-      "programmeCount": 0,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "institution-wide-international-degree-cycle",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "Fall 2026 / Spring 2027",
+        "status": "dates-exact",
+        "opensText": "Fall 2026: December 20, 2025; Spring 2027: July 1, 2026",
+        "notes": "The schedule applies to international student degree and dual-degree admission applications."
+      },
+      "programmeCount": 1,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "vienna-university-of-technology",
@@ -5127,9 +5162,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Magister Ilmu Komputer",
-        "status": "programme-and-portal-without-dates",
-        "opensText": "The programme page confirms the master's route and the SIMAK UI portal confirms 2026/2027 admissions activity, but exact programme opening or closing dates were not captured.",
-        "notes": "The application portal is recorded separately as the programme application URL."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -5175,9 +5210,9 @@
       "mastersAvailability": "broad",
       "cycleGuidance": {
         "entry": "Master of Computer Science",
-        "status": "application-route-without-dates",
-        "opensText": "Applicants can apply directly to UOW and should check course entry requirements, intake dates, and closing dates before applying.",
-        "notes": "The accessible course page confirms the programme and application route but does not expose exact intake opening or closing dates."
+        "status": "programme-specific-or-central-route",
+        "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
+        "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 1,
       "windowCount": 0,
@@ -5192,16 +5227,21 @@
       "school": "Université catholique de Louvain (UCLouvain)",
       "country": "Belgium",
       "batch": 40,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "profile-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2025/2026",
+        "status": "profile-specific-deadlines",
+        "opensText": "General deadlines include 31 March 2025 for non-EU non-resident visa applicants, 13 September 2025 for eligible foreign diploma profiles, and 30 September 2025 for Belgian/eligible domestic profiles.",
+        "notes": "These are central profile-based deadlines from the official calendar; programme-level exceptions may still apply."
+      },
       "programmeCount": 0,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "select-target-programmes"
     },
     {
       "universityId": "university-of-reading",
@@ -5283,16 +5323,21 @@
       "school": "King Abdulaziz University (KAU)",
       "country": "Saudi Arabia",
       "batch": 40,
-      "entryStatus": "not-found",
-      "entryLocated": false,
-      "policyStatus": "pending",
-      "policyModel": null,
-      "mastersAvailability": "unverified",
-      "cycleGuidance": null,
+      "entryStatus": "curated",
+      "entryLocated": true,
+      "policyStatus": "verified",
+      "policyModel": "programme-specific",
+      "mastersAvailability": "broad",
+      "cycleGuidance": {
+        "entry": "2026/2027",
+        "status": "central-route-with-programme-specific-dates",
+        "opensText": "Use the central postgraduate admission page and admission portal; exact dates depend on admission route and programme group.",
+        "notes": "The official page was updated on 2026-06-15 and links to the postgraduate admission portal, guide, procedures, and conditions."
+      },
       "programmeCount": 0,
       "windowCount": 0,
       "predictionCount": 0,
-      "nextAction": "locate-official-entry"
+      "nextAction": "select-target-programmes"
     }
   ]
 }
