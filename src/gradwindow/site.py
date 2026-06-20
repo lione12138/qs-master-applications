@@ -27,10 +27,12 @@ PUBLIC_FILES = (
     "index.html",
     "calendar.html",
     "contact.html",
+    "roadmap.html",
     "privacy.html",
     "app.js",
     "calendar.js",
     "contact.js",
+    "roadmap.js",
     "status.js",
     "intake-filter.js",
     "localization.js",
@@ -57,6 +59,7 @@ PUBLIC_DATA = (
     WINDOW_POLICIES_PATH,
     COVERAGE_PATH,
     APPLICATION_SOURCE_STATE_PATH,
+    ROOT / "data" / "roadmap-proposals.json",
 )
 
 
@@ -74,6 +77,7 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
             "GRADWINDOW_TURNSTILE_SITE_KEY",
             "",
         ),
+        "roadmapUrl": os.environ.get("GRADWINDOW_ROADMAP_URL", "").rstrip("/"),
     }
     output_dir.mkdir(parents=True, exist_ok=True)
     for child in output_dir.iterdir():
@@ -84,17 +88,18 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
 
     for filename in PUBLIC_FILES:
         shutil.copy2(ROOT / filename, output_dir / filename)
-    index_path = output_dir / "index.html"
-    index_path.write_text(
-        index_path.read_text(encoding="utf-8").replace(
-            f"{DEFAULT_SITE_URL}/",
-            f"{public_site_url}/",
-        ).replace(
-            "window.GRADWINDOW_CONFIG = {};",
-            f"window.GRADWINDOW_CONFIG = {json.dumps(public_config)};",
-        ),
-        encoding="utf-8",
-    )
+    for page_name in ("index.html", "roadmap.html"):
+        page_path = output_dir / page_name
+        page_path.write_text(
+            page_path.read_text(encoding="utf-8").replace(
+                f"{DEFAULT_SITE_URL}/",
+                f"{public_site_url}/",
+            ).replace(
+                "window.GRADWINDOW_CONFIG = {};",
+                f"window.GRADWINDOW_CONFIG = {json.dumps(public_config)};",
+            ),
+            encoding="utf-8",
+        )
     data_dir = output_dir / "data"
     data_dir.mkdir()
     for source in PUBLIC_DATA:
@@ -109,6 +114,7 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
         public_site_url,
         f"{public_site_url}/calendar.html",
         f"{public_site_url}/contact.html",
+        f"{public_site_url}/roadmap.html",
         f"{public_site_url}/privacy.html",
         f"{public_site_url}/sources.html",
         *generated_urls,

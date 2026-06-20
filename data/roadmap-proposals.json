@@ -1,0 +1,43 @@
+{
+  "proposals": [
+    {
+      "id": "application-planner",
+      "title": {
+        "en": "Personal application planner",
+        "zh": "个人申请计划表"
+      },
+      "description": {
+        "en": "Turn saved programmes into a personal checklist with deadlines, materials, and progress.",
+        "zh": "把收藏项目整理成个人清单，统一跟踪截止日期、申请材料和完成进度。"
+      },
+      "status": "planned",
+      "progress": 15
+    },
+    {
+      "id": "programme-comparison",
+      "title": {
+        "en": "Programme comparison",
+        "zh": "项目对比"
+      },
+      "description": {
+        "en": "Compare saved programmes by application dates, location, applicant group, and source coverage.",
+        "zh": "按申请日期、地区、适用人群和来源覆盖情况对比收藏项目。"
+      },
+      "status": "research",
+      "progress": 5
+    },
+    {
+      "id": "deadline-reminders",
+      "title": {
+        "en": "Personal deadline reminders",
+        "zh": "个人截止日期提醒"
+      },
+      "description": {
+        "en": "Choose saved programmes and receive reminders before their verified deadlines.",
+        "zh": "选择收藏项目，在已核验截止日期前收到提醒。"
+      },
+      "status": "in_progress",
+      "progress": 35
+    }
+  ]
+}

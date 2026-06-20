@@ -2,7 +2,7 @@
 // English keys are the canonical fallback; see t() in app.js.
 export const I18N = {
   en: {
-    navTracker: "Application tracker", navCalendar: "Calendar", navSubscribe: "Subscribe", navContact: "Contact", navMethod: "Methodology", navSources: "Sources", navGithub: "GitHub",
+    navTracker: "Application tracker", navCalendar: "Calendar", navRoadmap: "Feature voting", navSubscribe: "Subscribe", navContact: "Contact", navMethod: "Methodology", navSources: "Sources", navGithub: "GitHub",
     eyebrow: "Daily monitoring of global university application windows",
     heroTitle: "Never miss a<br /><em>master's deadline</em>",
     heroDescription: "Track master's application periods across QS Top 200 universities, organised by current status.",
@@ -80,10 +80,15 @@ export const I18N = {
     contactEmailLabel: "Default email:", contactSubject: "Subject", contactSubjectPlaceholder: "GradWindow feedback",
     contactMessage: "Message", contactMessagePlaceholder: "Describe the issue or suggestion...",
     contactButton: "Open email app", contactNote: "The button opens your default email app. If it does not open, copy the email address above.",
+    roadmapKicker: "PRODUCT ROADMAP", roadmapTitle: "Help decide what GradWindow builds next", roadmapIntro: "Vote once for the ideas that would help your application process most. The highest-priority ideas are built first.", roadmapBack: "Back to tracker",
+    roadmapOwnerKicker: "GRADWINDOW IDEAS", roadmapOwnerTitle: "Ideas in the roadmap", roadmapOwnerDescription: "Your votes help decide the order of work.", roadmapVote: "Vote", roadmapVoted: "Voted", roadmapVotes: "votes",
+    roadmapStatusplanned: "Planned", roadmapStatusresearch: "Researching", roadmapStatusin_progress: "In progress", roadmapStatuscomplete: "Complete",
+    roadmapSubmitKicker: "OTHER IDEA", roadmapSubmitTitle: "Suggest something else", roadmapSubmitDescription: "Community ideas appear below after submission. Keep them concise and useful for other applicants.", roadmapIdeaLabel: "Your feature idea", roadmapIdeaPlaceholder: "For example, a materials checklist", roadmapDetailsLabel: "A short explanation", roadmapDetailsPlaceholder: "What problem would it solve?", roadmapSubmitButton: "Submit idea",
+    roadmapCommunityKicker: "COMMUNITY IDEAS", roadmapCommunityTitle: "Suggestions from other users", roadmapExpand: "Show suggestions", roadmapCollapse: "Hide suggestions", roadmapNoCommunity: "No suggestions yet", roadmapUnavailable: "Voting will be available once the public feedback service is connected.", roadmapAlreadyVoted: "You have already voted for this idea in this browser.", roadmapVoteError: "Your vote could not be saved. Please try again later.", roadmapSubmitSuccess: "Your suggestion is now visible in the community ideas section.", roadmapSubmitError: "Your suggestion could not be submitted. Please try again later.",
     switchToLight: "Switch to light mode", switchToDark: "Switch to dark mode",
   },
   zh: {
-    navTracker: "申请看板", navCalendar: "日历", navSubscribe: "订阅提醒", navContact: "联系", navMethod: "数据说明", navSources: "来源覆盖", navGithub: "GitHub",
+    navTracker: "申请看板", navCalendar: "日历", navRoadmap: "功能投票", navSubscribe: "订阅提醒", navContact: "联系", navMethod: "数据说明", navSources: "来源覆盖", navGithub: "GitHub",
     eyebrow: "每日监控全球名校申请窗口", heroTitle: "别让心仪项目的<br /><em>截止日期</em>悄悄溜走",
     heroDescription: "汇总 QS 前 200 大学硕士申请时间，按开放状态自动整理。找到项目、记住日期、直接申请。",
     browseWindows: "浏览申请窗口", loadingData: "正在读取数据…", updateSchedule: "每天早上北京时间八点更新",
@@ -155,6 +160,11 @@ export const I18N = {
     contactEmailLabel: "默认邮箱：", contactSubject: "主题", contactSubjectPlaceholder: "GradWindow 反馈",
     contactMessage: "内容", contactMessagePlaceholder: "描述你发现的问题或建议……",
     contactButton: "打开邮箱发送", contactNote: "按钮会打开默认邮件应用；如果没有打开，请复制上面的邮箱地址。",
+    roadmapKicker: "产品路线图", roadmapTitle: "一起决定 GradWindow 接下来优先做什么", roadmapIntro: "每个想法可以投一次票。票数与实际需求会共同决定功能的开发顺序。", roadmapBack: "返回申请看板",
+    roadmapOwnerKicker: "GRADWINDOW 的想法", roadmapOwnerTitle: "正在规划的功能", roadmapOwnerDescription: "你的投票会帮助确定后续优先级。", roadmapVote: "投票", roadmapVoted: "已投票", roadmapVotes: "票",
+    roadmapStatusplanned: "计划中", roadmapStatusresearch: "调研中", roadmapStatusin_progress: "开发中", roadmapStatuscomplete: "已完成",
+    roadmapSubmitKicker: "其他想法", roadmapSubmitTitle: "想要别的功能？", roadmapSubmitDescription: "提交后会显示在下方社区建议中，请尽量简洁并说明它能解决的问题。", roadmapIdeaLabel: "你的功能想法", roadmapIdeaPlaceholder: "例如：申请材料清单", roadmapDetailsLabel: "简短说明", roadmapDetailsPlaceholder: "它能解决什么问题？", roadmapSubmitButton: "提交想法",
+    roadmapCommunityKicker: "社区建议", roadmapCommunityTitle: "其他用户的建议", roadmapExpand: "展开建议", roadmapCollapse: "收起建议", roadmapNoCommunity: "暂时还没有社区建议", roadmapUnavailable: "投票服务接入后即可参与投票。", roadmapAlreadyVoted: "这个浏览器已经为该想法投过票。", roadmapVoteError: "投票暂时没有保存成功，请稍后重试。", roadmapSubmitSuccess: "你的建议已显示在社区建议区域。", roadmapSubmitError: "建议暂时没有提交成功，请稍后重试。",
     switchToLight: "切换到浅色模式", switchToDark: "切换到深色模式",
   },
 };

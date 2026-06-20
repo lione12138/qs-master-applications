@@ -64,6 +64,177 @@ async function verifyTurnstile(token, env) {
   return result.success === true;
 }
 
+function normalizeVisitorId(value) {
+  const visitorId = String(value || "").trim();
+  if (!/^[A-Za-z0-9-]{16,160}$/.test(visitorId)) {
+    throw new Error("invalid visitor");
+  }
+  return visitorId;
+}
+
+function normalizeProposalText(value, maxLength, required = true) {
+  const text = String(value || "")
+    .replace(/[\u0000-\u001f\u007f]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if ((required && text.length < 4) || text.length > maxLength) {
+    throw new Error("invalid proposal text");
+  }
+  return text;
+}
+
+async function consumeRoadmapRateLimit(env, scope, keyHash, maximum, windowMs) {
+  const bucket = Math.floor(Date.now() / windowMs);
+  const current = await env.DB.prepare(
+    `SELECT count FROM roadmap_rate_limits
+     WHERE scope = ?1 AND key_hash = ?2 AND bucket = ?3`,
+  ).bind(scope, keyHash, bucket).first();
+  if ((current?.count || 0) >= maximum) return false;
+  await env.DB.prepare(
+    `INSERT INTO roadmap_rate_limits (scope, key_hash, bucket, count, updated_at)
+     VALUES (?1, ?2, ?3, 1, ?4)
+     ON CONFLICT(scope, key_hash, bucket) DO UPDATE SET
+       count = count + 1,
+       updated_at = excluded.updated_at`,
+  ).bind(scope, keyHash, bucket, new Date().toISOString()).run();
+  return true;
+}
+
+async function roadmapIdentity(request, env, payload = {}) {
+  if (!env.ROADMAP_VOTER_HASH_KEY) throw new Error("roadmap unavailable");
+  const visitorId = normalizeVisitorId(
+    payload.visitorId || request.headers.get("X-GradWindow-Visitor"),
+  );
+  const visitorHash = await hmacHex(env.ROADMAP_VOTER_HASH_KEY, visitorId);
+  const ip = request.headers.get("CF-Connecting-IP") || "";
+  const ipHash = ip ? await hmacHex(env.ROADMAP_VOTER_HASH_KEY, ip) : "";
+  return { visitorHash, ipHash };
+}
+
+function roadmapProposal(row) {
+  return {
+    id: row.id,
+    source: row.source,
+    title: { en: row.title_en, zh: row.title_zh || row.title_en },
+    description: {
+      en: row.description_en || "",
+      zh: row.description_zh || row.description_en || "",
+    },
+    status: row.status || "planned",
+    progress: row.progress || 0,
+    votes: Number(row.votes || 0),
+    viewerVoted: Boolean(row.viewer_voted),
+  };
+}
+
+async function listRoadmap(request, env) {
+  let visitorHash = "";
+  try {
+    visitorHash = (await roadmapIdentity(request, env)).visitorHash;
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const rows = await env.DB.prepare(
+    `SELECT p.id, p.source, p.title_en, p.title_zh, p.description_en,
+            p.description_zh, p.status, p.progress,
+            COUNT(v.proposal_id) AS votes,
+            MAX(CASE WHEN v.visitor_hash = ?1 THEN 1 ELSE 0 END) AS viewer_voted
+       FROM roadmap_proposals p
+       LEFT JOIN roadmap_votes v ON v.proposal_id = p.id
+      WHERE p.hidden_at IS NULL
+      GROUP BY p.id
+      ORDER BY CASE p.source WHEN 'owner' THEN 0 ELSE 1 END,
+               votes DESC, p.created_at ASC`,
+  ).bind(visitorHash).all();
+  return jsonResponse(request, env, {
+    proposals: (rows.results || []).map(roadmapProposal),
+  });
+}
+
+async function voteForRoadmapProposal(request, env) {
+  if (!allowedOrigin(request.headers.get("Origin"), env.ALLOWED_ORIGINS)) {
+    return jsonResponse(request, env, { ok: false }, 403);
+  }
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const proposalId = String(payload.proposalId || "");
+  if (!/^[a-z0-9-]{3,100}$/.test(proposalId)) {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  let identity;
+  try {
+    identity = await roadmapIdentity(request, env, payload);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const [visitorAllowed, ipAllowed] = await Promise.all([
+    consumeRoadmapRateLimit(env, "vote-visitor", identity.visitorHash, 20, 60 * 60_000),
+    identity.ipHash
+      ? consumeRoadmapRateLimit(env, "vote-ip", identity.ipHash, 100, 60 * 60_000)
+      : true,
+  ]);
+  if (!visitorAllowed || !ipAllowed) return jsonResponse(request, env, { ok: false }, 429);
+  try {
+    await env.DB.prepare(
+      `INSERT INTO roadmap_votes (proposal_id, visitor_hash, created_at)
+       SELECT id, ?2, ?3 FROM roadmap_proposals
+        WHERE id = ?1 AND hidden_at IS NULL`,
+    ).bind(proposalId, identity.visitorHash, new Date().toISOString()).run();
+    const vote = await env.DB.prepare(
+      `SELECT 1 FROM roadmap_votes WHERE proposal_id = ?1 AND visitor_hash = ?2`,
+    ).bind(proposalId, identity.visitorHash).first();
+    if (!vote) return jsonResponse(request, env, { ok: false }, 404);
+  } catch {
+    return jsonResponse(request, env, { ok: false, duplicate: true }, 409);
+  }
+  return jsonResponse(request, env, { ok: true });
+}
+
+async function createRoadmapProposal(request, env) {
+  if (!allowedOrigin(request.headers.get("Origin"), env.ALLOWED_ORIGINS)) {
+    return jsonResponse(request, env, { ok: false }, 403);
+  }
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  if (!(await verifyTurnstile(payload.turnstileToken, env))) {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  let identity;
+  let title;
+  let description;
+  try {
+    identity = await roadmapIdentity(request, env, payload);
+    title = normalizeProposalText(payload.title, 100);
+    description = normalizeProposalText(payload.description, 400, false);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const [visitorAllowed, ipAllowed] = await Promise.all([
+    consumeRoadmapRateLimit(env, "proposal-visitor", identity.visitorHash, 3, 24 * 60 * 60_000),
+    identity.ipHash
+      ? consumeRoadmapRateLimit(env, "proposal-ip", identity.ipHash, 12, 24 * 60 * 60_000)
+      : true,
+  ]);
+  if (!visitorAllowed || !ipAllowed) return jsonResponse(request, env, { ok: false }, 429);
+  const id = `community-${crypto.randomUUID().replaceAll("-", "")}`;
+  const now = new Date().toISOString();
+  await env.DB.prepare(
+    `INSERT INTO roadmap_proposals (
+       id, source, title_en, title_zh, description_en, description_zh,
+       status, progress, created_at, hidden_at
+     ) VALUES (?1, 'community', ?2, ?2, ?3, ?3, 'planned', 0, ?4, NULL)`,
+  ).bind(id, title, description, now).run();
+  return jsonResponse(request, env, { ok: true, id });
+}
+
 async function sendEmail(env, { to, subject, html, text, headers = {} }) {
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -380,6 +551,15 @@ export default {
     }
     if (request.method === "GET" && url.pathname === "/health") {
       return new Response("ok");
+    }
+    if (request.method === "GET" && url.pathname === "/roadmap") {
+      return listRoadmap(request, env);
+    }
+    if (request.method === "POST" && url.pathname === "/roadmap/votes") {
+      return voteForRoadmapProposal(request, env);
+    }
+    if (request.method === "POST" && url.pathname === "/roadmap/proposals") {
+      return createRoadmapProposal(request, env);
     }
     if (request.method === "POST" && url.pathname === "/subscribe") {
       return subscribe(request, env);

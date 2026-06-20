@@ -51,7 +51,8 @@ Resend's free tier currently limits sending to 100 emails per day.
    ```
 
    Use the first output for `EMAIL_ENCRYPTION_KEY`. Run the second command
-   three times for `EMAIL_INDEX_KEY`, `TOKEN_SIGNING_KEY`, and `ADMIN_API_KEY`.
+   four times for `EMAIL_INDEX_KEY`, `TOKEN_SIGNING_KEY`, `ADMIN_API_KEY`, and
+   `ROADMAP_VOTER_HASH_KEY`.
 
 4. Store secrets with Wrangler. Never commit their values:
 
@@ -62,6 +63,7 @@ Resend's free tier currently limits sending to 100 emails per day.
    npx wrangler secret put ADMIN_API_KEY --config subscriptions/wrangler.toml
    npx wrangler secret put RESEND_API_KEY --config subscriptions/wrangler.toml
    npx wrangler secret put TURNSTILE_SECRET_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put ROADMAP_VOTER_HASH_KEY --config subscriptions/wrangler.toml
    ```
 
 5. Verify a sending subdomain in Resend, update `RESEND_FROM`, then deploy:
@@ -74,12 +76,35 @@ Resend's free tier currently limits sending to 100 emails per day.
 
    - `GRADWINDOW_SUBSCRIBE_URL`: deployed Worker URL.
    - `GRADWINDOW_TURNSTILE_SITE_KEY`: public Turnstile site key.
+   - `GRADWINDOW_ROADMAP_URL`: the same deployed Worker URL, enabling the
+     public feature-voting page.
 
 7. Add the GitHub Actions secret `GRADWINDOW_NOTIFY_API_KEY` with the same
    value as Worker `ADMIN_API_KEY`.
 
 The next successful site build publishes the configured form. Run the
 `Notify subscribers` workflow manually once for an end-to-end check.
+
+## Feature voting
+
+`/roadmap` serves the public roadmap API. It uses a random browser identifier
+stored by the website, then stores only an HMAC hash of that identifier in D1.
+The `roadmap_votes` primary key makes one browser identifier eligible for one
+vote per proposal. The Worker also hashes the request IP only for short-lived
+rate limiting; it never stores a raw IP address.
+
+Run the schema command in step 2 again after pulling this update. It is
+idempotent and adds the roadmap tables plus the initial GradWindow proposals.
+Owner proposals, status, and progress can be updated in D1 without a new site
+deployment, for example:
+
+```powershell
+npx wrangler d1 execute gradwindow-subscribers --remote --command "UPDATE roadmap_proposals SET progress = 60, status = 'in_progress' WHERE id = 'application-planner'"
+```
+
+Community suggestions are published immediately, intentionally shown in a
+collapsed section, and can be hidden by setting `hidden_at` to an ISO timestamp.
+Keep `TURNSTILE_SECRET_KEY` configured before enabling public submissions.
 
 ## Operational rules
 

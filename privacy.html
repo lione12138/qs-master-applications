@@ -10,7 +10,7 @@
     <main class="legal-content">
       <p><a href="./index.html">← GradWindow</a></p>
       <h1>Privacy Policy / 隐私政策</h1>
-      <p><strong>Effective date / 生效日期：</strong> 15 June 2026 / 2026年6月15日</p>
+      <p><strong>Effective date / 生效日期：</strong> 20 June 2026 / 2026年6月20日</p>
 
       <h2>Email alerts / 邮件提醒</h2>
       <p>
@@ -43,6 +43,31 @@
         处理邮箱地址。邮件打开和链接点击追踪必须保持关闭。
       </p>
 
+      <h2>Feature voting / 功能投票</h2>
+      <p>
+        The feature-voting page creates a random browser identifier. Before it
+        reaches the database, that identifier is transformed with a keyed,
+        irreversible hash. The hash is used only to enforce one vote per idea
+        from the same browser. No account, email address, or browser history is
+        required to vote.
+      </p>
+      <p>
+        功能投票页面会生成随机浏览器标识。该标识在写入数据库前会转换为带密钥的不可逆摘要，
+        仅用于限制同一浏览器对同一想法重复投票。投票不要求账号、邮箱或浏览历史。
+      </p>
+      <p>
+        To limit automated abuse, the Worker may derive a separate keyed hash
+        from the request IP address and retain only short-lived rate-limit
+        counters. Raw IP addresses are not stored by GradWindow. Community
+        suggestions are public after submission; do not include personal,
+        sensitive, or confidential information.
+      </p>
+      <p>
+        为限制自动化滥用，Worker 可能从请求 IP 地址生成另一份带密钥摘要，并仅保留短期的频率
+        限制计数。GradWindow 不保存原始 IP 地址。社区建议提交后会公开显示，请不要填写个人、
+        敏感或保密信息。
+      </p>
+
       <h2>Retention and deletion / 保留与删除</h2>
       <p>
         Unconfirmed subscriptions expire automatically. Unsubscribing disables
@@ -60,14 +85,15 @@
 
       <h2>What is not collected / 不收集的内容</h2>
       <p>
-        The subscription service does not intentionally store IP addresses,
-        browsing history, application choices, or university preferences.
+        GradWindow does not intentionally store raw IP addresses, browsing
+        history, application choices, or university preferences. The roadmap
+        service stores only the limited hashed identifiers described above.
         Cloudflare may process network metadata under its own terms to provide
         security and delivery.
       </p>
       <p>
-        订阅服务不会主动保存 IP 地址、浏览历史、申请选择或学校偏好。Cloudflare
-        可能依据其自身条款处理保障安全和传输所需的网络元数据。
+        GradWindow 不会主动保存原始 IP 地址、浏览历史、申请选择或学校偏好。路线图服务仅保存
+        上文说明的有限摘要标识。Cloudflare 可能依据其自身条款处理保障安全和传输所需的网络元数据。
       </p>
 
       <h2>Important / 重要说明</h2>

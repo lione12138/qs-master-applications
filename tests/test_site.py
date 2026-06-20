@@ -16,6 +16,8 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "localization.js").exists()
     assert (tmp_path / "i18n.js").exists()
     assert (tmp_path / "privacy.html").exists()
+    assert (tmp_path / "roadmap.html").exists()
+    assert (tmp_path / "roadmap.js").exists()
     assert (tmp_path / "styles.css").exists()
     assert (tmp_path / "og-image.png").exists()
     assert (tmp_path / "favicon.svg").exists()
@@ -28,6 +30,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "data" / "window-policies.json").exists()
     assert (tmp_path / "data" / "coverage.json").exists()
     assert (tmp_path / "data" / "application-source-state.json").exists()
+    assert (tmp_path / "data" / "roadmap-proposals.json").exists()
     assert (tmp_path / "data" / "predictions.json").exists()
     assert not (tmp_path / "scripts").exists()
     assert not (tmp_path / "data" / "ror-cache.json").exists()
@@ -90,6 +93,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "university-of-cambridge" in (
         tmp_path / "sitemap.xml"
     ).read_text(encoding="utf-8")
+    assert "roadmap.html" in (tmp_path / "sitemap.xml").read_text(
+        encoding="utf-8"
+    )
 
 
 def test_build_site_uses_configured_public_url(tmp_path, monkeypatch) -> None:
@@ -133,3 +139,16 @@ def test_build_site_injects_private_subscription_endpoint(
     assert '"subscribeUrl": "https://subscriptions.example.workers.dev"' in index_html
     assert '"turnstileSiteKey": "public-site-key"' in index_html
     assert "EMAIL_ENCRYPTION_KEY" not in index_html
+
+
+def test_build_site_injects_roadmap_endpoint_into_roadmap_page(
+    tmp_path,
+    monkeypatch,
+) -> None:
+    monkeypatch.setenv("GRADWINDOW_ROADMAP_URL", "https://api.example.workers.dev")
+
+    build_site(tmp_path)
+
+    roadmap_html = (tmp_path / "roadmap.html").read_text(encoding="utf-8")
+    assert '"roadmapUrl": "https://api.example.workers.dev"' in roadmap_html
+    assert "EMAIL_ENCRYPTION_KEY" not in roadmap_html
