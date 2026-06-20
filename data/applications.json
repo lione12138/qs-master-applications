@@ -2,7 +2,7 @@
   "meta": {
     "title": "Verified graduate application windows",
     "rankingEdition": "QS World University Rankings 2027",
-    "updatedAt": "2026-06-15T00:00:00Z",
+    "updatedAt": "2026-06-21T00:00:00Z",
     "demo": false,
     "disclaimer": "A window may apply to an institution, a programme group, or one programme. Every published date must be verified against an official university page and scoped explicitly.",
     "rankingPublishedAt": "2026-06-18"
@@ -30,6 +30,30 @@
         "academicYearEnd": null,
         "term": "michaelmas",
         "startMonth": 10
+      }
+    },
+    {
+      "id": "hanyang-international-graduate-fall-2026",
+      "universityId": "hanyang-university",
+      "scopeType": "programme-group",
+      "scopeId": "hanyang-graduate-computer-science",
+      "intake": "Fall 2026",
+      "round": "International student track",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2026-03-04",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://oia.hanyang.ac.kr/admission",
+      "sourceUrl": "https://oia.hanyang.ac.kr/files/attach/filebox/2026/02/24/9e341959d0a28e0c4ee5b3fb53ef287c.pdf",
+      "verifiedAt": "2026-06-21",
+      "evidence": "Hanyang University's official 2026 Fall international graduate admission guide lists online applications from 10:00 on 4 March to 17:00 on 27 March 2026, Korea Standard Time.",
+      "intakeDetails": {
+        "label": "Fall 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
       }
     },
     {

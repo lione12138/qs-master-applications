@@ -12,6 +12,7 @@ import {
   roundLabel,
   schoolLabels,
 } from "./localization.js";
+import { needsManualCheck } from "./exception-status.js";
 
 const PAGE_SIZE = 20;
 
@@ -718,33 +719,9 @@ function mastersAvailabilityDescription(university) {
 }
 
 function isExceptionUniversity(university) {
-  const nextAction = university.coverage?.nextAction;
-  const discovery = university.admissionsDiscovery;
-  const monitorStatusValue = university.monitor?.status;
-  const policyStatus = university.windowPolicy?.cycleGuidance?.status || "";
-  const policyText = [
-    university.windowPolicy?.notes,
-    university.windowPolicy?.cycleGuidance?.opensText,
-    university.windowPolicy?.cycleGuidance?.notes,
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-  const manualPolicy =
-    /protected|manual|blocked|anti-bot|anubis/.test(
-      `${policyStatus} ${policyText}`.toLowerCase(),
-    ) ||
-    [
-      "official-entry-protected",
-      "dynamic-listing-dates-not-captured",
-      "official-route-current-dates-not-captured",
-    ].includes(policyStatus);
-  return (
-    ["locate-official-entry", "verify-window-policy"].includes(nextAction) ||
-    ["low-confidence", "not-found", "pending", "error"].includes(discovery) ||
-    ["blocked", "error", "http-error"].includes(monitorStatusValue) ||
-    manualPolicy
-  );
+  // A blocked monitor request means the crawler was rejected, not that users
+  // lack a usable official route. Keep those universities in the directory.
+  return needsManualCheck(university);
 }
 
 function renderCoverage() {

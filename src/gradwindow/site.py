@@ -33,6 +33,7 @@ PUBLIC_FILES = (
     "calendar.js",
     "contact.js",
     "roadmap.js",
+    "exception-status.js",
     "status.js",
     "intake-filter.js",
     "localization.js",

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Estimated next-cycle application windows",
-    "generatedFromApplicationsUpdatedAt": "2026-06-15T00:00:00Z",
+    "generatedFromApplicationsUpdatedAt": "2026-06-21T00:00:00Z",
     "official": false,
     "methodology": "calendar-date-shift-plus-one-year",
     "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
@@ -213,6 +213,36 @@
       "sourceUrl": "https://iso.fudan.edu.cn/_upload/article/files/e8/e8/fa7bfc45430499ddb9374a125a2c/b937538c-b8f5-4d26-b1c7-78ab2e0bdcea.pdf",
       "sourceCycle": "Autumn 2026",
       "basedOnVerifiedAt": "2026-06-14",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-hanyang-international-graduate-fall-2026-next-cycle",
+      "basedOnRecordId": "hanyang-international-graduate-fall-2026",
+      "universityId": "hanyang-university",
+      "scopeType": "programme-group",
+      "scopeId": "hanyang-graduate-computer-science",
+      "intake": "Fall 2027",
+      "intakeDetails": {
+        "label": "Fall 2027",
+        "cycleYear": 2027,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "International student track",
+      "applicantCategories": [
+        "international-students"
+      ],
+      "opensAt": "2027-03-04",
+      "closesAt": "2027-03-27",
+      "applicationUrl": "https://oia.hanyang.ac.kr/admission",
+      "sourceUrl": "https://oia.hanyang.ac.kr/files/attach/filebox/2026/02/24/9e341959d0a28e0c4ee5b3fb53ef287c.pdf",
+      "sourceCycle": "Fall 2026",
+      "basedOnVerifiedAt": "2026-06-21",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,

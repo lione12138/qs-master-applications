@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-18T12:33:40.451795+00:00",
+    "generatedAt": "2026-06-20T22:42:52.805842+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -14,16 +14,16 @@
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
     "universitiesWithPrograms": 187,
-    "universitiesWithWindows": 34,
-    "verifiedWindows": 45,
-    "universitiesWithPredictions": 34,
-    "predictedWindows": 45,
+    "universitiesWithWindows": 35,
+    "verifiedWindows": 46,
+    "universitiesWithPredictions": 35,
+    "predictedWindows": 46,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
       "select-target-programmes": 13,
-      "verify-exact-windows": 153,
-      "monitor-and-refresh": 34
+      "verify-exact-windows": 152,
+      "monitor-and-refresh": 35
     }
   },
   "batches": [
@@ -427,8 +427,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 32,
@@ -4249,15 +4249,15 @@
       "policyModel": "program-specific",
       "mastersAvailability": "broad",
       "cycleGuidance": {
-        "entry": "Graduate admissions",
-        "status": "official-route-current-dates-not-captured",
-        "opensText": "The accessible English application schedule page shows an old 2021 spring/fall sample schedule and instructs international applicants to check Office of International Affairs admission notices for current announcements.",
-        "notes": "The programme route is reliable, but no current 2026/2027 application window was captured, so no formal dated window is recorded."
+        "entry": "Fall 2026 international graduate admissions",
+        "status": "official-window-captured",
+        "opensText": "The official guide states that online applications run from 10:00 on 4 March to 17:00 on 27 March 2026, Korea Standard Time.",
+        "notes": "This central international-student window applies to the graduate admissions route; individual departments may add eligibility or document requirements."
       },
       "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "nagoya-university",
@@ -4561,10 +4561,10 @@
       "policyModel": "program-specific",
       "mastersAvailability": "broad",
       "cycleGuidance": {
-        "entry": "Faculty of Science master programmes",
+        "entry": "UNIGE 2026-2027 registration conditions",
         "status": "dynamic-listing-dates-not-captured",
-        "opensText": "The official page links to UNIGE registration and important dates, but the accessible static text does not expose application opening or closing dates.",
-        "notes": "Keep monitoring the UNIGE science listing and central master programme portal for a directly readable Computer Science master admissions page."
+        "opensText": "The official registration system requires applicants to select their profile before showing conditions, application deadlines, and required documents.",
+        "notes": "Do not infer a universal date. The current official page says CUI bachelor and master enrollment is temporarily suspended while the programmes are revised; other master's routes may have applicant-specific dates."
       },
       "programmeCount": 1,
       "windowCount": 0,
