@@ -1,0 +1,48 @@
+name: Publish monitoring status
+
+on:
+  schedule:
+    # Run after the data-review workflow so the public status reflects a
+    # completed daily scan without publishing unreviewed deadline changes.
+    - cron: "47 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-monitor-status
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Check official entry pages
+        run: gradwindow pipeline --skip-build
+
+      - name: Publish completed-check status
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ops/monitor-state.json data/ops/application-source-state.json
+          if git diff --cached --quiet; then
+            echo "No monitoring-status changes to publish."
+            exit 0
+          fi
+          git commit -m "chore: publish daily monitoring status"
+          git push
