@@ -87,6 +87,79 @@ The next successful site build publishes the configured form. Run the
 
 ## Feature voting
 
+### Roadmap-only quick start
+
+The voting page can be deployed without accounts, a custom domain, or the
+email-alert service. You only need Cloudflare Workers, D1, Turnstile, and the
+two public GitHub Actions variables below.
+
+1. Install Node.js 20+ and authenticate Wrangler once:
+
+   ```powershell
+   npx wrangler login
+   ```
+
+2. Copy the Worker configuration and create the database:
+
+   ```powershell
+   Copy-Item subscriptions/wrangler.toml.example subscriptions/wrangler.toml
+   npx wrangler d1 create gradwindow-subscribers
+   ```
+
+   Copy the returned `database_id` into `subscriptions/wrangler.toml`.
+   Keep `ALLOWED_ORIGINS` as `https://lione12138.github.io` and
+   `PUBLIC_SITE_URL` as `https://lione12138.github.io/qs-master-applications`.
+
+3. Create a Turnstile widget in **Cloudflare Dashboard -> Turnstile**. Use the
+   managed widget type and add `lione12138.github.io` as its hostname. Keep the
+   site key for GitHub and the secret key for the Worker.
+
+4. Apply the schema and set the two Worker secrets required for public voting:
+
+   ```powershell
+   npx wrangler d1 execute gradwindow-subscribers --remote --file subscriptions/schema.sql --config subscriptions/wrangler.toml
+   python -c "import secrets; print(secrets.token_urlsafe(48))"
+   npx wrangler secret put ROADMAP_VOTER_HASH_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put TURNSTILE_SECRET_KEY --config subscriptions/wrangler.toml
+   ```
+
+   Paste the generated random value into the first secret prompt. Paste the
+   Turnstile secret key into the second. Do not commit `wrangler.toml` or either
+   secret.
+
+5. Deploy the Worker:
+
+   ```powershell
+   npx wrangler deploy --config subscriptions/wrangler.toml
+   ```
+
+   Wrangler prints a `https://...workers.dev` URL. This is the Worker URL.
+
+6. In **GitHub -> repository Settings -> Secrets and variables -> Actions ->
+   Variables**, add:
+
+   - `GRADWINDOW_ROADMAP_URL`: the Worker URL from step 5
+   - `GRADWINDOW_TURNSTILE_SITE_KEY`: the public site key from step 3
+
+   Both are repository variables, not GitHub secrets. Push to `main` or run the
+   `Tests` workflow manually. The successful build injects both values into the
+   GitHub Pages artifact.
+
+7. Check the Worker and then open `roadmap.html` on the live site:
+
+   ```powershell
+   Invoke-WebRequest https://YOUR-WORKER.workers.dev/health
+   ```
+
+   It should return `ok`. A vote should immediately update its count; a user
+   suggestion should appear in the collapsed community section.
+
+The Worker records an HMAC of a browser-local random identifier, not the raw
+identifier. A user can evade that by clearing browser storage or switching
+browsers, so it is paired with short-lived hashed-IP rate limits. It is a
+practical anti-abuse control for an anonymous public roadmap, not identity
+verification.
+
 `/roadmap` serves the public roadmap API. It uses a random browser identifier
 stored by the website, then stores only an HMAC hash of that identifier in D1.
 The `roadmap_votes` primary key makes one browser identifier eligible for one
@@ -99,7 +172,7 @@ Owner proposals, status, and progress can be updated in D1 without a new site
 deployment, for example:
 
 ```powershell
-npx wrangler d1 execute gradwindow-subscribers --remote --command "UPDATE roadmap_proposals SET progress = 60, status = 'in_progress' WHERE id = 'application-planner'"
+npx wrangler d1 execute gradwindow-subscribers --remote --command "UPDATE roadmap_proposals SET progress = 60, status = 'in_progress' WHERE id = 'account-login-and-favorites'"
 ```
 
 Community suggestions are published immediately, intentionally shown in a

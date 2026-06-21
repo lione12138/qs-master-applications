@@ -41,10 +41,10 @@ def test_roadmap_schema_enforces_one_vote_per_anonymous_visitor() -> None:
 
     connection.execute(
         """INSERT INTO roadmap_votes (proposal_id, visitor_hash, created_at)
-           VALUES ('application-planner', 'visitor-hash', '2026-06-20T00:00:00Z')"""
+           VALUES ('account-login-and-favorites', 'visitor-hash', '2026-06-20T00:00:00Z')"""
     )
     with pytest.raises(sqlite3.IntegrityError):
         connection.execute(
             """INSERT INTO roadmap_votes (proposal_id, visitor_hash, created_at)
-               VALUES ('application-planner', 'visitor-hash', '2026-06-20T00:01:00Z')"""
+               VALUES ('account-login-and-favorites', 'visitor-hash', '2026-06-20T00:01:00Z')"""
         )

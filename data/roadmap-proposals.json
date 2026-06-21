@@ -1,43 +1,43 @@
 {
   "proposals": [
     {
-      "id": "application-planner",
+      "id": "account-login-and-favorites",
       "title": {
-        "en": "Personal application planner",
-        "zh": "个人申请计划表"
+        "en": "Account login and synced favourites",
+        "zh": "个人注册登录与收藏"
       },
       "description": {
-        "en": "Turn saved programmes into a personal checklist with deadlines, materials, and progress.",
-        "zh": "把收藏项目整理成个人清单，统一跟踪截止日期、申请材料和完成进度。"
+        "en": "Create an account to save favourite universities and programmes, then access them across devices.",
+        "zh": "注册账号后收藏大学和项目，并在不同设备间同步查看。"
       },
       "status": "planned",
-      "progress": 15
+      "progress": 0
     },
     {
-      "id": "programme-comparison",
+      "id": "wechat-mini-program",
       "title": {
-        "en": "Programme comparison",
-        "zh": "项目对比"
+        "en": "WeChat Mini Program",
+        "zh": "微信小程序"
       },
       "description": {
-        "en": "Compare saved programmes by application dates, location, applicant group, and source coverage.",
-        "zh": "按申请日期、地区、适用人群和来源覆盖情况对比收藏项目。"
+        "en": "Bring application windows, saved schools, and deadline reminders into a lightweight WeChat experience.",
+        "zh": "将申请窗口、收藏学校和截止提醒带到更轻量的微信使用场景。"
       },
       "status": "research",
-      "progress": 5
+      "progress": 0
     },
     {
-      "id": "deadline-reminders",
+      "id": "mobile-app",
       "title": {
-        "en": "Personal deadline reminders",
-        "zh": "个人截止日期提醒"
+        "en": "Mobile app",
+        "zh": "手机 App"
       },
       "description": {
-        "en": "Choose saved programmes and receive reminders before their verified deadlines.",
-        "zh": "选择收藏项目，在已核验截止日期前收到提醒。"
+        "en": "Build a dedicated iOS and Android experience for quick browsing, saved items, and deadline notifications.",
+        "zh": "开发 iOS 和 Android 应用，支持快速浏览、收藏与截止日期通知。"
       },
-      "status": "in_progress",
-      "progress": 35
+      "status": "planned",
+      "progress": 0
     }
   ]
 }

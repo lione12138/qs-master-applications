@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js?v=20260617-ui";
+import { I18N } from "./i18n.js?v=20260621-rankings";
 import { getApplicationStatus } from "./status.js";
 import {
   canonicalIntake,
@@ -25,6 +25,9 @@ const state = {
   policies: [],
   coverage: null,
   sourceMonitor: {},
+  rankingPayload: { rankings: {} },
+  universityById: new Map(),
+  ranking: "qs",
   officialCount: 0,
   predictionCount: 0,
   meta: {},
@@ -351,7 +354,7 @@ function populateIntakeSelect() {
   select.appendChild(allOption);
 
   const intakes = new Map();
-  state.data.forEach((record) => {
+  recordsInSelectedRanking().forEach((record) => {
     const intake = canonicalIntake(record);
     if (intake.term === "academic") return;
     intakes.set(intake.key, intake);
@@ -369,9 +372,129 @@ function populateIntakeSelect() {
     : "all";
 }
 
+function selectedRankingDefinition() {
+  if (state.ranking === "qs") {
+    return {
+      id: "qs",
+      shortLabel: "QS",
+      available: true,
+      rows: state.universities.map((university) => ({
+        id: university.id,
+        universityId: university.id,
+        school: university.school,
+        schoolZh: university.schoolZh,
+        country: university.country,
+        region: university.region,
+        rankPosition: university.qsPosition,
+        rankDisplay: university.rankDisplay,
+        rankingOnly: false,
+      })),
+    };
+  }
+  const ranking = state.rankingPayload.rankings?.[state.ranking];
+  if (!ranking) {
+    return { id: state.ranking, available: false, rows: [] };
+  }
+  return { id: state.ranking, available: true, rows: [], ...ranking };
+}
+
+function selectedRankingRows() {
+  const ranking = selectedRankingDefinition();
+  return ranking.available === false ? [] : ranking.rows || [];
+}
+
+function selectedRankByUniversityId() {
+  return new Map(
+    selectedRankingRows()
+      .filter((row) => row.universityId)
+      .map((row) => [row.universityId, row]),
+  );
+}
+
+function selectedRankForUniversity(universityId) {
+  return selectedRankByUniversityId().get(universityId) || null;
+}
+
+function recordsInSelectedRanking() {
+  const rankedUniversityIds = new Set(
+    selectedRankingRows()
+      .map((row) => row.universityId)
+      .filter(Boolean),
+  );
+  return state.data.filter((record) => rankedUniversityIds.has(record.universityId));
+}
+
+function selectedDirectoryUniversities() {
+  return selectedRankingRows().map((rankingRow) => {
+    const university = rankingRow.universityId
+      ? state.universityById.get(rankingRow.universityId)
+      : null;
+    if (university) {
+      return {
+        ...university,
+        rankPosition: rankingRow.rankPosition,
+        rankDisplay: rankingRow.rankDisplay,
+        rankingSourceUrl: rankingRow.sourceUrl || "",
+        rankingOnly: false,
+      };
+    }
+    return {
+      id: `${state.ranking}:${rankingRow.id}`,
+      school: rankingRow.school,
+      schoolZh: rankingRow.schoolZh || "",
+      country: rankingRow.country,
+      region: rankingRow.region,
+      rankPosition: rankingRow.rankPosition,
+      rankDisplay: rankingRow.rankDisplay,
+      rankingSourceUrl: rankingRow.sourceUrl || "",
+      rankingOnly: true,
+      admissionsDiscovery: "ranking-only",
+      admissionsUrl: "",
+      homepageUrl: "",
+      monitor: {},
+      windowPolicy: null,
+      coverage: null,
+    };
+  });
+}
+
+function rankingShortLabel() {
+  return selectedRankingDefinition().shortLabel || "QS";
+}
+
+function rankColumnLabel() {
+  return `${rankingShortLabel()} ${t("rank")}`;
+}
+
+function formatRank(rankDisplay) {
+  return String(rankDisplay).startsWith("=") ? rankDisplay : `#${rankDisplay}`;
+}
+
+function refreshFilterOptions() {
+  populateSelect(
+    "region-filter",
+    uniqueSorted(
+      [...recordsInSelectedRanking(), ...selectedDirectoryUniversities()]
+        .map((record) => record.region)
+        .filter(Boolean),
+    ),
+    (region) => regionLabel(region, state.language),
+  );
+  populateIntakeSelect();
+}
+
+function updateRankingAvailability() {
+  const select = document.getElementById("ranking-filter");
+  [...select.options].forEach((option) => {
+    if (option.value === "qs") return;
+    const ranking = state.rankingPayload.rankings?.[option.value];
+    option.disabled = !ranking || ranking.available === false || !ranking.rows?.length;
+  });
+}
+
 function filteredRecords() {
   const query = state.search.trim().toLocaleLowerCase("zh-CN");
-  return state.data.filter((record) => {
+  return recordsInSelectedRanking().filter((record) => {
     const searchable = [
       record.school,
       record.schoolZh,
@@ -390,7 +513,8 @@ function filteredRecords() {
       (state.region === "all" || record.region === state.region) &&
       (state.intake === "all" ||
         canonicalIntake(record).key === state.intake) &&
-      (!state.top100Only || record.qsRank <= 100) &&
+      (!state.top100Only ||
+        (selectedRankForUniversity(record.universityId)?.rankPosition || 999) <= 100) &&
       (!state.favoritesOnly ||
         state.favorites.has(favoriteKey("window", record.id)))
     );
@@ -400,7 +524,7 @@ function filteredRecords() {
 function filteredUniversities() {
   const query = state.search.trim().toLocaleLowerCase("zh-CN");
   if (state.intake !== "all") return [];
-  return state.universities.filter((university) => {
+  return selectedDirectoryUniversities().filter((university) => {
     const searchable = [
       university.school,
       university.schoolZh,
@@ -414,7 +538,7 @@ function filteredUniversities() {
     return (
       (!query || searchable.includes(query)) &&
       (state.region === "all" || university.region === state.region) &&
-      (!state.top100Only || university.qsPosition <= 100) &&
+      (!state.top100Only || university.rankPosition <= 100) &&
       (!state.favoritesOnly ||
         state.favorites.has(favoriteKey("university", university.id)))
     );
@@ -422,19 +546,22 @@ function filteredUniversities() {
 }
 
 function compareRecords(a, b) {
-  const byRank = () => a.qsRank - b.qsRank || a.closesAt.localeCompare(b.closesAt);
+  const rankPosition = (record) =>
+    selectedRankForUniversity(record.universityId)?.rankPosition || 999;
+  const byRank = () =>
+    rankPosition(a) - rankPosition(b) || a.closesAt.localeCompare(b.closesAt);
   if (state.sort === "opens") {
     return (
       a.opensAt.localeCompare(b.opensAt) ||
       a.closesAt.localeCompare(b.closesAt) ||
-      a.qsRank - b.qsRank
+      rankPosition(a) - rankPosition(b)
     );
   }
   if (state.sort === "deadline") {
     return (
       a.closesAt.localeCompare(b.closesAt) ||
       a.opensAt.localeCompare(b.opensAt) ||
-      a.qsRank - b.qsRank
+      rankPosition(a) - rankPosition(b)
     );
   }
   return byRank();
@@ -447,6 +574,7 @@ function hasActiveSearch() {
 function activeNonStatusFilter() {
   return (
     hasActiveSearch() ||
+    state.ranking !== "qs" ||
     state.region !== "all" ||
     state.intake !== "all" ||
     state.top100Only ||
@@ -465,7 +593,12 @@ function createRow(record, status) {
   const deadlineClass =
     status === "open" && days >= 0 && days <= 14 ? "deadline-soon" : "";
 
-  const rank = makeElement("span", { className: "rank-cell", text: `#${record.qsRank}` });
+  const rank = makeElement("span", {
+    className: "rank-cell",
+    text: formatRank(
+      selectedRankForUniversity(record.universityId)?.rankDisplay || record.qsRank,
+    ),
+  });
   const school = document.createDocumentFragment();
   const schoolText = schoolLabels(record, state.language);
   school.appendChild(
@@ -564,7 +697,7 @@ function createGroup(status, records) {
     heading,
     `${records.length} ${t("windows")}`,
     [
-      t("rank"),
+      rankColumnLabel(),
       t("universityEntry"),
       t("programmeIntake"),
       t("applicantGroup"),
@@ -664,6 +797,7 @@ function createTableSection(status, heading, countLabel, columns, tableClass = "
 }
 
 function directoryStatus(university) {
+  if (university.rankingOnly) return [t("rankingOnly"), "homepage"];
   const status = university.admissionsDiscovery;
   if (status === "curated") return [t("curatedEntry"), "verified"];
   if (status === "discovered") return [t("discoveredEntry"), "discovered"];
@@ -672,6 +806,7 @@ function directoryStatus(university) {
 }
 
 function monitorStatus(university) {
+  if (university.rankingOnly) return [t("notMonitored"), "homepage"];
   const monitor = university.monitor || {};
   if (monitor.changed) return [t("pageChanged"), "candidate"];
   if (monitor.status === "ok") return [t("checkOk"), "verified"];
@@ -683,6 +818,9 @@ function monitorStatus(university) {
 }
 
 function policyDescription(university) {
+  if (university.rankingOnly) {
+    return [t("rankingDataOnly"), t("notInQsMonitor")];
+  }
   const policy = university.windowPolicy;
   if (!policy) return [t("policyPending"), t("checkProgramme")];
   const guidance = policy.cycleGuidance?.opensText;
@@ -710,6 +848,9 @@ function policyDescription(university) {
 }
 
 function mastersAvailabilityDescription(university) {
+  if (university.rankingOnly) {
+    return [t("unverified"), t("rankingOnlyMasters")];
+  }
   const availability = university.windowPolicy?.mastersAvailability;
   if (availability === "broad") return [t("broadMasters"), t("representativeAvailable")];
   if (availability === "limited") {
@@ -751,7 +892,7 @@ function createUniversityGroup(universities, status = "unknown") {
     heading,
     `${universities.length} ${t("schools")}`,
     [
-      t("rank"),
+      rankColumnLabel(),
       t("universityEntry"),
       t("mastersScope"),
       t("countries"),
@@ -762,7 +903,9 @@ function createUniversityGroup(universities, status = "unknown") {
     ],
     "university-table",
   );
-  const sortedUniversities = universities.sort((a, b) => a.qsPosition - b.qsPosition);
+  const sortedUniversities = universities.sort(
+    (a, b) => a.rankPosition - b.rankPosition || a.school.localeCompare(b.school),
+  );
   const { items, start, end, total, page, totalPages } = paginate(
     status,
     sortedUniversities,
@@ -771,9 +914,7 @@ function createUniversityGroup(universities, status = "unknown") {
     .forEach((university) => {
       const [statusLabel, statusClass] = directoryStatus(university);
       const [monitorLabel, monitorClass] = monitorStatus(university);
-      const rankLabel = university.rankDisplay.startsWith("=")
-        ? university.rankDisplay
-        : `#${university.rankDisplay}`;
+      const rankLabel = formatRank(university.rankDisplay);
       const directUrl = university.admissionsUrl;
       const directLabel = t("applicationEntry");
       const row = document.createElement("tr");
@@ -782,7 +923,9 @@ function createUniversityGroup(universities, status = "unknown") {
         schoolText.primary,
         schoolText.secondary,
       );
-      const admissions = directUrl
+      const admissions = university.rankingOnly
+        ? makeLink(t("rankingSource"), university.rankingSourceUrl, "source-link")
+        : directUrl
         ? makeLink(directLabel, directUrl, "school-link")
         : makeElement("span", {
             className: "school-meta",
@@ -790,9 +933,11 @@ function createUniversityGroup(universities, status = "unknown") {
           });
       const actions = document.createDocumentFragment();
       actions.appendChild(admissions);
-      actions.appendChild(
-        makeLink(t("officialWebsite"), university.homepageUrl, "source-link"),
-      );
+      if (!university.rankingOnly) {
+        actions.appendChild(
+          makeLink(t("officialWebsite"), university.homepageUrl, "source-link"),
+        );
+      }
       actions.appendChild(
         makeFavoriteButton(favoriteKey("university", university.id)),
       );
@@ -880,6 +1025,7 @@ function render() {
 function syncUrl() {
   const params = new URLSearchParams();
   if (state.search) params.set("q", state.search);
+  if (state.ranking !== "qs") params.set("ranking", state.ranking);
   if (state.region !== "all") params.set("region", state.region);
   if (state.intake !== "all") params.set("intake", state.intake);
   if (state.status !== "open") params.set("status", state.status);
@@ -891,6 +1037,7 @@ function syncUrl() {
 function loadUrlState() {
   const params = new URLSearchParams(location.search);
   state.search = params.get("q") || "";
+  state.ranking = params.get("ranking") || "qs";
   state.region = params.get("region") || "all";
   state.intake = params.get("intake") || "all";
   state.status = params.get("status") || "open";
@@ -1051,14 +1198,7 @@ function updateDataNotes() {
 function refreshLanguage() {
   localStorage.setItem("gradwindow:language", state.language);
   applyStaticTranslations();
-  populateSelect(
-    "region-filter",
-    uniqueSorted(
-      [...state.data, ...state.universities].map((record) => record.region),
-    ),
-    (region) => regionLabel(region, state.language),
-  );
-  populateIntakeSelect();
+  refreshFilterOptions();
   updateDataNotes();
   renderCoverage();
   setupHero();
@@ -1104,6 +1244,19 @@ function bindEvents() {
     state.search = event.target.value;
     resetPages();
     syncUrl();
+    render();
+  });
+  document.getElementById("ranking-filter").addEventListener("change", (event) => {
+    state.ranking = event.target.value;
+    state.status = state.ranking === "qs" ? "open" : "unknown";
+    state.region = "all";
+    state.intake = "all";
+    resetPages();
+    refreshFilterOptions();
+    syncUrl();
+    document.querySelectorAll(".status-tab").forEach((tab) => {
+      tab.classList.toggle("active", tab.dataset.status === state.status);
+    });
     render();
   });
   document.getElementById("region-filter").addEventListener("change", (event) => {
@@ -1190,6 +1343,7 @@ async function init() {
       sourceMonitorPayload,
       programmeGroupsPayload,
       applicantCategoriesPayload,
+      rankingsPayload,
     ] = await Promise.all([
       fetchRequiredJson("./data/applications.json"),
       fetchRequiredJson("./data/universities.json"),
@@ -1205,12 +1359,17 @@ async function init() {
       fetchOptionalJson("./data/applicant-categories.json", {
         categories: [],
       }),
+      fetchOptionalJson("./data/global-rankings.json", { rankings: {} }),
     ]);
     state.coverage = coveragePayload;
     state.monitorPayload = monitorPayload;
     state.optionalFailureCount = optionalFailures.length;
     state.sourceMonitor = sourceMonitorPayload.applications || {};
     state.universities = universityPayload.universities;
+    state.universityById = new Map(
+      state.universities.map((university) => [university.id, university]),
+    );
+    state.rankingPayload = rankingsPayload;
     state.programs = programsPayload.programs;
     state.programmeGroups = programmeGroupsPayload.groups || [];
     state.applicantCategoryLabels = Object.fromEntries(
@@ -1223,9 +1382,7 @@ async function init() {
       ]),
     );
     state.policies = policiesPayload.policies || [];
-    const universityById = new Map(
-      state.universities.map((university) => [university.id, university]),
-    );
+    const universityById = state.universityById;
     const programById = new Map(
       state.programs.map((program) => [program.id, program]),
     );
@@ -1292,14 +1449,16 @@ async function init() {
       state.favorites = new Set();
     }
     loadUrlState();
+    if (selectedRankingDefinition().available === false) state.ranking = "qs";
+    if (
+      state.ranking !== "qs" &&
+      !new URLSearchParams(location.search).has("status")
+    ) {
+      state.status = "unknown";
+    }
+    updateRankingAvailability();
 
-    populateSelect(
-      "region-filter",
-      uniqueSorted(
-        [...state.data, ...state.universities].map((record) => record.region),
-      ),
-      (region) => regionLabel(region, state.language),
-    );
+    refreshFilterOptions();
     const legacyIntake = state.intake;
     const matchingLegacyRecord = state.data.find(
       (record) => record.intake === legacyIntake,
@@ -1336,6 +1495,7 @@ async function init() {
     document.getElementById("search-input").value = state.search;
     document.getElementById("region-filter").value = state.region;
     document.getElementById("intake-filter").value = state.intake;
+    document.getElementById("ranking-filter").value = state.ranking;
     document.getElementById("sort-select").value = state.sort;
     document.querySelectorAll(".status-tab").forEach((tab) => {
       tab.classList.toggle("active", tab.dataset.status === state.status);

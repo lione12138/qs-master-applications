@@ -563,7 +563,7 @@ h1 em::after {
 
 .toolbar {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) 150px 150px 170px auto auto auto;
+  grid-template-columns: minmax(220px, 1fr) 180px 150px 150px 150px auto auto auto;
   gap: 12px;
   margin-top: 30px;
 }

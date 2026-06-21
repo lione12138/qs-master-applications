@@ -41,6 +41,7 @@ jobs:
         env:
           GRADWINDOW_SUBSCRIBE_URL: ${{ vars.GRADWINDOW_SUBSCRIBE_URL }}
           GRADWINDOW_TURNSTILE_SITE_KEY: ${{ vars.GRADWINDOW_TURNSTILE_SITE_KEY }}
+          GRADWINDOW_ROADMAP_URL: ${{ vars.GRADWINDOW_ROADMAP_URL }}
         run: gradwindow build-site
       - name: Upload site artifact
         uses: actions/upload-artifact@v7

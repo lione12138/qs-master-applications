@@ -70,28 +70,40 @@ CREATE INDEX IF NOT EXISTS idx_roadmap_proposals_visible
   ON roadmap_proposals(source, created_at)
   WHERE hidden_at IS NULL;
 
-INSERT OR IGNORE INTO roadmap_proposals (
+DELETE FROM roadmap_proposals
+WHERE source = 'owner'
+  AND id IN ('application-planner', 'programme-comparison', 'deadline-reminders');
+
+INSERT INTO roadmap_proposals (
   id, source, title_en, title_zh, description_en, description_zh,
   status, progress, created_at, hidden_at
 ) VALUES
   (
-    'application-planner', 'owner',
-    'Personal application planner', '个人申请计划表',
-    'Turn saved programmes into a personal checklist with deadlines, materials, and progress.',
-    '把收藏项目整理成个人清单，统一跟踪截止日期、申请材料和完成进度。',
-    'planned', 15, '2026-06-20T00:00:00Z', NULL
+    'account-login-and-favorites', 'owner',
+    'Account login and synced favourites', '个人注册登录与收藏',
+    'Create an account to save favourite universities and programmes, then access them across devices.',
+    '注册账号后收藏大学和项目，并在不同设备间同步查看。',
+    'planned', 0, '2026-06-21T00:00:00Z', NULL
   ),
   (
-    'programme-comparison', 'owner',
-    'Programme comparison', '项目对比',
-    'Compare saved programmes by application dates, location, applicant group, and source coverage.',
-    '按申请日期、地区、适用人群和来源覆盖情况对比收藏项目。',
-    'research', 5, '2026-06-20T00:00:00Z', NULL
+    'wechat-mini-program', 'owner',
+    'WeChat Mini Program', '微信小程序',
+    'Bring application windows, saved schools, and deadline reminders into a lightweight WeChat experience.',
+    '将申请窗口、收藏学校和截止提醒带到更轻量的微信使用场景。',
+    'research', 0, '2026-06-21T00:00:00Z', NULL
   ),
   (
-    'deadline-reminders', 'owner',
-    'Personal deadline reminders', '个人截止日期提醒',
-    'Choose saved programmes and receive reminders before their verified deadlines.',
-    '选择收藏项目，在已核验截止日期前收到提醒。',
-    'in_progress', 35, '2026-06-20T00:00:00Z', NULL
-  );
+    'mobile-app', 'owner',
+    'Mobile app', '手机 App',
+    'Build a dedicated iOS and Android experience for quick browsing, saved items, and deadline notifications.',
+    '开发 iOS 和 Android 应用，支持快速浏览、收藏与截止日期通知。',
+    'planned', 0, '2026-06-21T00:00:00Z', NULL
+  )
+ON CONFLICT(id) DO UPDATE SET
+  title_en = excluded.title_en,
+  title_zh = excluded.title_zh,
+  description_en = excluded.description_en,
+  description_zh = excluded.description_zh,
+  status = excluded.status,
+  progress = excluded.progress,
+  hidden_at = NULL;

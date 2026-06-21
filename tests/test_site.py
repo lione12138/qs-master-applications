@@ -29,6 +29,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "data" / "applicant-categories.json").exists()
     assert (tmp_path / "data" / "window-policies.json").exists()
     assert (tmp_path / "data" / "coverage.json").exists()
+    assert (tmp_path / "data" / "global-rankings.json").exists()
     assert (tmp_path / "data" / "application-source-state.json").exists()
     assert (tmp_path / "data" / "roadmap-proposals.json").exists()
     assert (tmp_path / "data" / "predictions.json").exists()
@@ -65,6 +66,7 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="language-toggle"' in index_html
     assert 'id="theme-toggle"' in index_html
     assert 'id="top100-toggle"' in index_html
+    assert 'id="ranking-filter"' in index_html
     assert 'id="coverage-batches"' not in index_html
     assert 'lang="en"' in index_html
     assert 'property="og:image"' in index_html

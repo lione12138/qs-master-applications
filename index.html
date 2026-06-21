@@ -19,7 +19,7 @@
 
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
     <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
-    <link rel="modulepreload" href="./app.js?v=20260617-ui" />
+    <link rel="modulepreload" href="./app.js?v=20260621-rankings" />
     <link rel="modulepreload" href="./i18n.js?v=20260617-ui" />
     <link rel="modulepreload" href="./status.js" />
     <link rel="modulepreload" href="./intake-filter.js" />
@@ -233,6 +233,15 @@
               />
             </label>
             <label class="select-wrap">
+              <span class="sr-only" data-i18n="rankingFilter">Ranking</span>
+              <select id="ranking-filter">
+                <option value="qs" data-i18n="rankingQs">QS World University Rankings 2027</option>
+                <option value="the" data-i18n="rankingThe">THE World University Rankings 2026</option>
+                <option value="arwu" data-i18n="rankingArwu">ARWU 2025</option>
+                <option value="usnews" disabled data-i18n="rankingUsnewsUnavailable">U.S. News (official data unavailable)</option>
+              </select>
+            </label>
+            <label class="select-wrap">
               <span class="sr-only">地区</span>
               <select id="region-filter">
                 <option value="all" data-i18n="allRegions">All regions</option>
@@ -411,7 +420,7 @@
       </footer>
     </div>
 
-    <script src="./app.js?v=20260617-ui" type="module"></script>
+    <script src="./app.js?v=20260621-rankings" type="module"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"02939949076c423f953d11db0caade78"}'></script>
   </body>
 </html>
