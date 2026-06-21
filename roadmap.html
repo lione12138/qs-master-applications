@@ -6,8 +6,8 @@
     <meta name="description" content="Vote on GradWindow feature ideas and suggest the next improvement." />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="modulepreload" href="./roadmap.js" />
-    <link rel="modulepreload" href="./i18n.js?v=20260617-ui" />
+    <link rel="modulepreload" href="./roadmap.js?v=20260621-cors" />
+    <link rel="modulepreload" href="./i18n.js?v=20260621-rankings" />
     <title>GradWindow · Feature voting</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -39,7 +39,7 @@
             <h1 data-i18n="roadmapTitle">Help decide what GradWindow builds next</h1>
             <p data-i18n="roadmapIntro">Vote once for the ideas that would help your application process most. The highest-priority ideas are built first.</p>
           </div>
-          <a class="toolbar-button roadmap-back" href="./index.html#application-board" data-i18n="roadmapBack">Back to tracker</a>
+          <a class="roadmap-back" href="./index.html#application-board" data-i18n="roadmapBack">Back to tracker</a>
         </section>
 
         <p class="roadmap-notice" id="roadmap-status" role="status" aria-live="polite"></p>
@@ -88,6 +88,6 @@
       </main>
     </div>
     <script>window.GRADWINDOW_CONFIG = {};</script>
-    <script type="module" src="./roadmap.js"></script>
+    <script type="module" src="./roadmap.js?v=20260621-cors"></script>
   </body>
 </html>

@@ -1545,6 +1545,33 @@ h1 em::after {
   margin: 18px 0 0;
 }
 
+.roadmap-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  color: var(--green-dark);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.roadmap-back::before {
+  content: "←";
+  font-size: 17px;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+
+.roadmap-back:hover {
+  color: var(--green);
+}
+
+.roadmap-back:hover::before {
+  transform: translateX(-3px);
+}
+
 .roadmap-notice {
   min-height: 24px;
   margin: 0 0 26px;

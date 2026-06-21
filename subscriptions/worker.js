@@ -23,7 +23,7 @@ function corsHeaders(request, env) {
   return origin
     ? {
         "Access-Control-Allow-Origin": origin,
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        "Access-Control-Allow-Headers": "Content-Type, Authorization, X-GradWindow-Visitor",
         "Access-Control-Allow-Methods": "POST, OPTIONS",
         Vary: "Origin",
       }
