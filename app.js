@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js?v=20260621-rankings";
+import { I18N } from "./i18n.js?v=20260622-i18n";
 import { getApplicationStatus } from "./status.js";
 import {
   canonicalIntake,
@@ -1074,6 +1074,12 @@ function applyStaticTranslations() {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     const translated = t(node.dataset.i18nPlaceholder);
     if (translated !== node.dataset.i18nPlaceholder) node.placeholder = translated;
+  });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    const translated = t(node.dataset.i18nAriaLabel);
+    if (translated !== node.dataset.i18nAriaLabel) {
+      node.setAttribute("aria-label", translated);
+    }
   });
   document.getElementById("language-toggle").textContent =
     state.language === "en" ? "中文" : "EN";

@@ -19,8 +19,8 @@
 
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
     <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
-    <link rel="modulepreload" href="./app.js?v=20260621-rankings" />
-    <link rel="modulepreload" href="./i18n.js?v=20260617-ui" />
+    <link rel="modulepreload" href="./app.js?v=20260622-i18n" />
+    <link rel="modulepreload" href="./i18n.js?v=20260622-i18n" />
     <link rel="modulepreload" href="./status.js" />
     <link rel="modulepreload" href="./intake-filter.js" />
     <link rel="modulepreload" href="./localization.js" />
@@ -133,7 +133,7 @@
             <div class="orbit orbit-one"></div>
             <div class="orbit orbit-two"></div>
             <div class="date-card date-card-main">
-              <span class="date-card-label">NEXT DEADLINE</span>
+              <span class="date-card-label" data-i18n="nextDeadline">NEXT DEADLINE</span>
               <strong id="hero-deadline-day">--</strong>
               <span id="hero-deadline-month">---</span>
               <div class="date-card-school" id="hero-deadline-school">
@@ -141,17 +141,17 @@
               </div>
             </div>
             <div class="mini-card mini-card-open">
-              <span>OPEN NOW</span>
+              <span data-i18n="openNow">OPEN NOW</span>
               <strong id="hero-open-count">0</strong>
             </div>
             <div class="mini-card mini-card-rank">
-              <span>QS RANK</span>
+              <span data-i18n="qsRankLabel">QS RANK</span>
               <strong>TOP 200</strong>
             </div>
           </div>
         </section>
 
-        <section class="trust-strip" aria-label="Product features">
+        <section class="trust-strip" aria-label="Product features" data-i18n-aria-label="productFeaturesLabel">
           <div><span>01</span> <span data-i18n="featureOfficial">Official sources</span></div>
           <div><span>02</span> <span data-i18n="featureDaily">Daily checks</span></div>
           <div><span>03</span> <span data-i18n="featureCalendar">Add to calendar</span></div>
@@ -161,10 +161,10 @@
         <section class="board-section" id="application-board">
           <div class="section-heading">
             <div>
-              <span class="section-kicker">APPLICATION TRACKER</span>
+              <span class="section-kicker" data-i18n="applicationTrackerKicker">APPLICATION TRACKER</span>
               <h2 data-i18n="trackerTitle">Master's application windows</h2>
             </div>
-            <div class="summary-stats" aria-label="申请统计">
+            <div class="summary-stats" aria-label="Application statistics" data-i18n-aria-label="applicationStatsLabel">
               <div>
                 <strong id="total-schools">0</strong>
                 <span data-i18n="universities">universities</span>
@@ -189,7 +189,7 @@
           <section class="coverage-panel" id="coverage-panel" hidden>
             <div class="coverage-heading">
               <div>
-                <span class="section-kicker">QS TOP 200 DATA COVERAGE</span>
+                <span class="section-kicker" data-i18n="coverageKicker">QS TOP 200 DATA COVERAGE</span>
                 <h3 data-i18n="coverageTitle">QS Top 200 data coverage</h3>
               </div>
               <p data-i18n="coverageDescription">Admissions links, policies, programmes, and exact windows are measured separately.</p>
@@ -242,13 +242,13 @@
               </select>
             </label>
             <label class="select-wrap">
-              <span class="sr-only">地区</span>
+              <span class="sr-only" data-i18n="regionFilterLabel">Region</span>
               <select id="region-filter">
                 <option value="all" data-i18n="allRegions">All regions</option>
               </select>
             </label>
             <label class="select-wrap">
-              <span class="sr-only">入学季</span>
+              <span class="sr-only" data-i18n="intakeFilterLabel">Intake</span>
               <select id="intake-filter">
                 <option value="all" data-i18n="allIntakes">All intakes</option>
               </select>
@@ -272,7 +272,7 @@
             </button>
           </div>
 
-          <div class="status-tabs" role="tablist" aria-label="申请状态">
+          <div class="status-tabs" role="tablist" aria-label="Application status" data-i18n-aria-label="statusTabsLabel">
             <button class="status-tab active" data-status="open" role="tab">
               <span data-i18n="statusOpen">Open now</span> <span id="count-open">0</span>
             </button>
@@ -302,7 +302,7 @@
 
         <section class="methodology" id="methodology">
           <div>
-            <span class="section-kicker">HOW IT WORKS</span>
+            <span class="section-kicker" data-i18n="methodologyKicker">HOW IT WORKS</span>
             <h2 data-i18n="methodTitle">Where do the dates come from?</h2>
           </div>
           <div class="method-grid">
@@ -410,17 +410,17 @@
           <p class="footer-legal">
             <a href="./privacy.html" data-i18n="privacyPolicy">Privacy policy</a>
             ·
-            <a href="https://github.com/lione12138/qs-master-applications">Source code</a>
+            <a href="https://github.com/lione12138/qs-master-applications" data-i18n="sourceCode">Source code</a>
             ·
             <a href="https://github.com/lione12138/qs-master-applications/blob/main/LICENSE">AGPL-3.0</a>
             ·
-            <a href="https://github.com/lione12138/qs-master-applications/blob/main/DATA_LICENSE.md">Data: CC BY-NC 4.0</a>
+            <a href="https://github.com/lione12138/qs-master-applications/blob/main/DATA_LICENSE.md" data-i18n="dataLicense">Data: CC BY-NC 4.0</a>
           </p>
         </div>
       </footer>
     </div>
 
-    <script src="./app.js?v=20260621-rankings" type="module"></script>
+    <script src="./app.js?v=20260622-i18n" type="module"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"02939949076c423f953d11db0caade78"}'></script>
   </body>
 </html>

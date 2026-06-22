@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js?v=20260617-ui";
+import { I18N } from "./i18n.js?v=20260622-i18n";
 
 const VISITOR_KEY = "gradwindow:roadmap-visitor";
 const state = {
@@ -34,6 +34,9 @@ function applyTranslations() {
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     node.placeholder = t(node.dataset.i18nPlaceholder);
+  });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    node.setAttribute("aria-label", t(node.dataset.i18nAriaLabel));
   });
   document.getElementById("language-toggle").textContent = state.language === "zh" ? "EN" : "中文";
   document.getElementById("theme-toggle").setAttribute("aria-label", t(state.theme === "dark" ? "switchToLight" : "switchToDark"));

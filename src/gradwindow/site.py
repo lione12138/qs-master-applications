@@ -168,27 +168,27 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         ]
         canonical = f"{public_site_url}/university/{university['id']}/"
         body = (
-            f"<p class=\"back\"><a href=\"../../index.html\">返回申请看板</a></p>"
+            f"<p class=\"back\"><a href=\"../../index.html\">Back to tracker</a></p>"
             f"<p>QS {html.escape(university['rankDisplay'])} · "
             f"{html.escape(university['country'])}</p>"
             f"<p><a href=\"{html.escape(university['homepageUrl'], quote=True)}\">"
-            "学校官网</a>"
+            "University website</a>"
             + (
                 f" · <a href=\"{html.escape(university['admissionsUrl'], quote=True)}\">"
-                "研究生申请入口</a>"
+                "Graduate application entry</a>"
                 if university.get("admissionsUrl")
                 else ""
             )
             + "</p>"
             + render_window_list(
                 official,
-                "官网核验窗口",
+                "Verified official windows",
                 program_names,
                 group_names,
             )
             + render_window_list(
                 estimated,
-                "下一周期日历平移参考",
+                "Next-cycle calendar-shift references",
                 program_names,
                 group_names,
                 predicted=True,
@@ -196,10 +196,11 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         )
         (university_dir / "index.html").write_text(
             render_static_page(
-                f"{university['school']} 硕士申请时间",
+                f"{university['school']} master's application dates",
                 (
-                    f"查看 {university['school']} 的官网核验硕士申请窗口、"
-                    "截止日期与下一周期非官方日历平移参考。"
+                    f"Browse verified master's application windows, deadlines, "
+                    f"and unofficial next-cycle calendar-shift references for "
+                    f"{university['school']}."
                 ),
                 body,
                 canonical,
@@ -224,13 +225,13 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         )
         canonical = f"{public_site_url}/country/{country_slug}/"
         body = (
-            '<p class="back"><a href="../../index.html">返回申请看板</a></p>'
-            f"<p>共 {len(items)} 所 QS 前 200 大学。</p><ul>{rows}</ul>"
+            '<p class="back"><a href="../../index.html">Back to tracker</a></p>'
+            f"<p>{len(items)} QS Top 200 universities.</p><ul>{rows}</ul>"
         )
         (country_dir / "index.html").write_text(
             render_static_page(
-                f"{country} QS 前 200 大学硕士申请",
-                f"{country} 的 QS 前 200 大学目录与硕士申请时间入口。",
+                f"QS Top 200 master's applications in {country}",
+                f"Directory of QS Top 200 universities in {country} with master's application links.",
                 body,
                 canonical,
             ),
@@ -252,20 +253,20 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
             f"<a href=\"../../university/{item['universityId']}/\">"
             f"{html.escape(university_names[item['universityId']])}</a>"
             f" · {html.escape(scope_name(item, program_names, group_names))}"
-            f"{' · 非官方日历平移参考' if predicted else ''}</li>"
+            f"{' · unofficial calendar-shift reference' if predicted else ''}</li>"
             for item, predicted in sorted(
                 items, key=lambda pair: (pair[0]["closesAt"], pair[0]["universityId"])
             )
         )
         canonical = f"{public_site_url}/deadline/{month}/"
         body = (
-            '<p class="back"><a href="../../index.html">返回申请看板</a></p>'
+            '<p class="back"><a href="../../index.html">Back to tracker</a></p>'
             f"<ul>{rows}</ul>"
         )
         (month_dir / "index.html").write_text(
             render_static_page(
-                f"{month} 硕士申请截止日期",
-                f"汇总 {month} 的官网核验硕士申请截止日期与非官方日历平移参考。",
+                f"{month} master's application deadlines",
+                f"Verified master's application deadlines and unofficial calendar-shift references for {month}.",
                 body,
                 canonical,
             ),
@@ -284,7 +285,7 @@ def scope_name(
         return program_names.get(item["scopeId"], item["scopeId"])
     if item["scopeType"] == "programme-group":
         return group_names.get(item["scopeId"], item["scopeId"])
-    return "学校级窗口"
+    return "Institution-level window"
 
 
 def render_window_list(
@@ -295,19 +296,19 @@ def render_window_list(
     predicted: bool = False,
 ) -> str:
     if not items:
-        return f"<section><h2>{html.escape(heading)}</h2><p>暂无记录。</p></section>"
+        return f"<section><h2>{html.escape(heading)}</h2><p>No records yet.</p></section>"
     rows = "".join(
         "<li>"
-        f"<strong>{html.escape(item['opensAt'])} 至 "
+        f"<strong>{html.escape(item['opensAt'])} to "
         f"{html.escape(item['closesAt'])}</strong><br>"
         f"{html.escape(scope_name(item, program_names, group_names))} · "
         f"{html.escape(item['intake'])}"
         + (
-            "<br><small>同日历日期平移一年，不代表学校实际发布日期。</small>"
+            "<br><small>Shifted by one calendar year; not an official published date.</small>"
             if predicted
             else ""
         )
-        + f"<br><a href=\"{html.escape(item['sourceUrl'], quote=True)}\">官网来源</a>"
+        + f"<br><a href=\"{html.escape(item['sourceUrl'], quote=True)}\">Official source</a>"
         "</li>"
         for item in sorted(items, key=lambda value: value["closesAt"])
     )
@@ -324,7 +325,7 @@ def render_static_page(
     escaped_description = html.escape(description, quote=True)
     escaped_canonical = html.escape(canonical, quote=True)
     return f"""<!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -371,9 +372,9 @@ def render_sources_page() -> str:
         monitor_item = monitor_entries.get(university["id"], {})
         admissions_url = university.get("admissionsUrl")
         admissions = (
-            f'<a href="{html.escape(admissions_url, quote=True)}">申请入口</a>'
+            f'<a href="{html.escape(admissions_url, quote=True)}">Application entry</a>'
             if admissions_url
-            else "未定位"
+            else "Not located"
         )
         rows.append(
             "<tr>"
@@ -387,11 +388,11 @@ def render_sources_page() -> str:
             "</tr>"
         )
     return f"""<!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>来源与覆盖 · GradWindow</title>
+  <title>Sources and coverage · GradWindow</title>
   <style>
     body {{ margin: 0; background: #f7f5ef; color: #17231d; font: 14px/1.6 system-ui, sans-serif; }}
     main {{ width: min(1180px, calc(100% - 32px)); margin: 48px auto; }}
@@ -407,12 +408,12 @@ def render_sources_page() -> str:
 </head>
 <body>
   <main>
-    <a class="back" href="index.html">← 返回申请雷达</a>
-    <h1>来源与覆盖</h1>
-    <p>完整公开 200 所大学的官网、申请入口发现状态与最近监控结果。</p>
+    <a class="back" href="index.html">← Back to tracker</a>
+    <h1>Sources and coverage</h1>
+    <p>Public list of all 200 universities, official websites, admissions-entry discovery status, and latest monitoring result.</p>
     <div class="table-wrap">
       <table>
-        <thead><tr><th>QS</th><th>大学</th><th>国家/地区</th><th>入口状态</th><th>申请页</th><th>监控</th></tr></thead>
+        <thead><tr><th>QS</th><th>University</th><th>Country/region</th><th>Entry status</th><th>Application page</th><th>Monitoring</th></tr></thead>
         <tbody>{''.join(rows)}</tbody>
       </table>
     </div>

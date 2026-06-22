@@ -58,10 +58,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
         (tmp_path / "data" / "universities.json").read_text(encoding="utf-8")
     )
     assert len(payload["universities"]) == 200
-    assert "Sources &amp; Coverage" not in (tmp_path / "sources.html").read_text(
-        encoding="utf-8"
-    )
-    assert "来源与覆盖" in (tmp_path / "sources.html").read_text(encoding="utf-8")
+    sources_html = (tmp_path / "sources.html").read_text(encoding="utf-8")
+    assert "Sources and coverage" in sources_html
+    assert 'lang="en"' in sources_html
     index_html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert 'data-status="predicted"' not in index_html
     assert 'id="language-toggle"' in index_html

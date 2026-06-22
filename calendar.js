@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js?v=20260617-ui";
+import { I18N } from "./i18n.js?v=20260622-i18n";
 import { getApplicationStatus } from "./status.js";
 import { canonicalIntake, intakeLabel } from "./intake-filter.js";
 import { countryLabel, programmeLabel, roundLabel, schoolLabels } from "./localization.js";
@@ -198,7 +198,7 @@ function renderList(records) {
     .filter((event) => monthStart(parseDate(event.date)).getTime() === state.month.getTime())
     .sort((a, b) => a.date.localeCompare(b.date) || a.record.qsRank - b.record.qsRank);
   document.getElementById("calendar-result-count").textContent =
-    `${events.length} ${state.language === "zh" ? "个事件" : "events"}`;
+    `${events.length} ${t("calendarEventsUnit")}`;
   const list = document.getElementById("calendar-list");
   if (!events.length) {
     list.replaceChildren(makeElement("div", { className: "empty-state compact", text: t("calendarNoEvents") }));
@@ -245,6 +245,12 @@ function applyStaticTranslations() {
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     const translated = t(node.dataset.i18nPlaceholder);
     if (translated !== node.dataset.i18nPlaceholder) node.placeholder = translated;
+  });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    const translated = t(node.dataset.i18nAriaLabel);
+    if (translated !== node.dataset.i18nAriaLabel) {
+      node.setAttribute("aria-label", translated);
+    }
   });
   document.getElementById("language-toggle").textContent =
     state.language === "en" ? "中文" : "EN";

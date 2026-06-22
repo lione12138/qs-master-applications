@@ -2,17 +2,20 @@ const COUNTRY_ZH = {
   Argentina: "阿根廷", Australia: "澳大利亚", Austria: "奥地利",
   Belgium: "比利时", Brazil: "巴西", Canada: "加拿大", Chile: "智利",
   "China (Mainland)": "中国大陆", Denmark: "丹麦", Finland: "芬兰",
-  France: "法国", Germany: "德国", "Hong Kong SAR, China": "中国香港",
+  France: "法国", Germany: "德国", "Hong Kong SAR": "中国香港",
+  "Hong Kong SAR, China": "中国香港",
   India: "印度", Indonesia: "印度尼西亚", Ireland: "爱尔兰",
   Italy: "意大利", Japan: "日本", Kazakhstan: "哈萨克斯坦",
   Malaysia: "马来西亚", Mexico: "墨西哥", Netherlands: "荷兰",
   "New Zealand": "新西兰", Norway: "挪威", Qatar: "卡塔尔",
-  "Republic of Korea": "韩国", "Russian Federation": "俄罗斯",
+  "Republic of Korea": "韩国", Russia: "俄罗斯",
+  "Russian Federation": "俄罗斯",
   "Saudi Arabia": "沙特阿拉伯", Singapore: "新加坡",
-  "South Africa": "南非", Spain: "西班牙", Sweden: "瑞典",
+  "South Africa": "南非", "South Korea": "韩国",
+  Spain: "西班牙", Sweden: "瑞典",
   Switzerland: "瑞士", Taiwan: "中国台湾",
   "United Arab Emirates": "阿联酋", "United Kingdom": "英国",
-  "United States of America": "美国",
+  "United States": "美国", "United States of America": "美国",
 };
 
 const REGION_ZH = {
@@ -80,8 +83,8 @@ export function schoolLabels(university, language = "en") {
   const english = university.school || "";
   const chinese = university.schoolZh || "";
   return language === "zh"
-    ? { primary: chinese || english, secondary: chinese ? english : "" }
-    : { primary: english, secondary: chinese };
+    ? { primary: chinese || english, secondary: "" }
+    : { primary: english, secondary: "" };
 }
 
 export function programmeLabel(scopeId, fallback, language = "en") {
