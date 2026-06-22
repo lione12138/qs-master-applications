@@ -416,6 +416,7 @@ function selectedRankForUniversity(universityId) {
 }
 
 function recordsInSelectedRanking() {
+  if (state.ranking !== "qs") return [];
   const rankedUniversityIds = new Set(
     selectedRankingRows()
       .map((row) => row.universityId)

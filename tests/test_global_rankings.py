@@ -24,3 +24,9 @@ def test_extended_rankings_keep_admissions_scope_separate() -> None:
         assert all(row["rankPosition"] <= 200 for row in rows)
         assert any(row["rankingOnly"] for row in rows)
         assert any(not row["rankingOnly"] for row in rows)
+
+
+def test_extended_ranking_views_do_not_reuse_qs_application_windows() -> None:
+    app_js = (ROOT / "app.js").read_text(encoding="utf-8")
+
+    assert 'if (state.ranking !== "qs") return [];' in app_js
