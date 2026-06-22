@@ -21,6 +21,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "styles.css").exists()
     assert (tmp_path / "og-image.png").exists()
     assert (tmp_path / "favicon.svg").exists()
+    assert (tmp_path / "CNAME").read_text(encoding="utf-8").strip() == "gradwindow.com"
     assert (tmp_path / ".nojekyll").exists()
     assert (tmp_path / "sources.html").exists()
     assert (tmp_path / "data" / "universities.json").exists()
@@ -98,6 +99,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "roadmap.html" in (tmp_path / "sitemap.xml").read_text(
         encoding="utf-8"
     )
+    contact_html = (tmp_path / "contact.html").read_text(encoding="utf-8")
+    assert 'action="mailto:' not in contact_html
+    assert 'id="contact-subject"' in contact_html
 
 
 def test_build_site_uses_configured_public_url(tmp_path, monkeypatch) -> None:

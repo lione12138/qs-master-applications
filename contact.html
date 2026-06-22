@@ -55,14 +55,14 @@
             </p>
           </div>
 
-          <form class="contact-form" action="mailto:lionel8888888@gmail.com" method="post" enctype="text/plain">
+          <div class="contact-form" id="contact-panel">
             <label>
               <span data-i18n="contactSubject">Subject</span>
               <input
+                id="contact-subject"
                 name="subject"
                 type="text"
                 maxlength="120"
-                required
                 data-i18n-placeholder="contactSubjectPlaceholder"
                 placeholder="GradWindow feedback"
               />
@@ -70,9 +70,9 @@
             <label>
               <span data-i18n="contactMessage">Message</span>
               <textarea
+                id="contact-message"
                 name="message"
                 rows="8"
-                required
                 data-i18n-placeholder="contactMessagePlaceholder"
                 placeholder="Describe the issue or suggestion..."
               ></textarea>
@@ -87,7 +87,7 @@
             <p class="school-meta" data-i18n="contactNote">
               The button opens your default email app. If it does not open, copy the email address above.
             </p>
-          </form>
+          </div>
         </section>
       </main>
     </div>

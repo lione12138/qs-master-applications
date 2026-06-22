@@ -25,6 +25,7 @@ from .paths import (
 )
 
 PUBLIC_FILES = (
+    "CNAME",
     "index.html",
     "calendar.html",
     "contact.html",
@@ -43,7 +44,8 @@ PUBLIC_FILES = (
     "og-image.png",
     "favicon.svg",
 )
-DEFAULT_SITE_URL = "https://lione12138.github.io/qs-master-applications"
+LEGACY_SITE_URL = "https://lione12138.github.io/qs-master-applications"
+DEFAULT_SITE_URL = "https://gradwindow.com"
 CLOUDFLARE_ANALYTICS_TOKEN = "02939949076c423f953d11db0caade78"
 CLOUDFLARE_ANALYTICS = (
     '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
@@ -95,6 +97,9 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
         page_path = output_dir / page_name
         page_path.write_text(
             page_path.read_text(encoding="utf-8").replace(
+                f"{LEGACY_SITE_URL}/",
+                f"{public_site_url}/",
+            ).replace(
                 f"{DEFAULT_SITE_URL}/",
                 f"{public_site_url}/",
             ).replace(

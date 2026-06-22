@@ -34,6 +34,17 @@ function applyTheme() {
   if (button) button.textContent = state.theme === "dark" ? "☀" : "☾";
 }
 
+function updateMailLink() {
+  const button = document.querySelector(".contact-mail-button");
+  const subject = document.getElementById("contact-subject")?.value.trim();
+  const message = document.getElementById("contact-message")?.value.trim();
+  if (!button) return;
+  const params = new URLSearchParams();
+  params.set("subject", subject || t("contactSubjectPlaceholder"));
+  if (message) params.set("body", message);
+  button.href = `mailto:lionel8888888@gmail.com?${params.toString()}`;
+}
+
 function init() {
   state.language = localStorage.getItem("gradwindow:language") === "zh" ? "zh" : "en";
   const savedTheme = localStorage.getItem("gradwindow:theme");
@@ -44,16 +55,20 @@ function init() {
       : "light";
   applyTheme();
   applyStaticTranslations();
+  updateMailLink();
 
   document.getElementById("language-toggle").addEventListener("click", () => {
     state.language = state.language === "en" ? "zh" : "en";
     localStorage.setItem("gradwindow:language", state.language);
     applyStaticTranslations();
+    updateMailLink();
   });
   document.getElementById("theme-toggle").addEventListener("click", () => {
     state.theme = state.theme === "dark" ? "light" : "dark";
     applyTheme();
   });
+  document.getElementById("contact-subject")?.addEventListener("input", updateMailLink);
+  document.getElementById("contact-message")?.addEventListener("input", updateMailLink);
 }
 
 init();
