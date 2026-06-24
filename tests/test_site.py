@@ -65,8 +65,10 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'data-status="predicted"' not in index_html
     assert 'id="language-toggle"' in index_html
     assert 'id="theme-toggle"' in index_html
-    assert 'id="top100-toggle"' in index_html
     assert 'id="ranking-filter"' in index_html
+    assert 'id="rank-range-filter"' in index_html
+    assert 'id="sort-select"' not in index_html
+    assert 'id="top100-toggle"' not in index_html
     assert 'id="coverage-batches"' not in index_html
     assert 'lang="en"' in index_html
     assert 'property="og:image"' in index_html
@@ -151,9 +153,14 @@ def test_build_site_injects_roadmap_endpoint_into_roadmap_page(
     monkeypatch,
 ) -> None:
     monkeypatch.setenv("GRADWINDOW_ROADMAP_URL", "https://api.example.workers.dev")
+    monkeypatch.setenv("GRADWINDOW_TURNSTILE_SITE_KEY", "public-site-key")
 
     build_site(tmp_path)
 
     roadmap_html = (tmp_path / "roadmap.html").read_text(encoding="utf-8")
+    roadmap_js = (tmp_path / "roadmap.js").read_text(encoding="utf-8")
     assert '"roadmapUrl": "https://api.example.workers.dev"' in roadmap_html
+    assert '"turnstileSiteKey": "public-site-key"' in roadmap_html
+    assert 'data-action", "turnstile-spin-v1"' in roadmap_js
+    assert "roadmapTurnstileError" in roadmap_js
     assert "EMAIL_ENCRYPTION_KEY" not in roadmap_html

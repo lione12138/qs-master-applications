@@ -15,7 +15,7 @@ from .paths import (
     UNIVERSITIES_PATH,
 )
 
-SITE_URL = "https://lione12138.github.io/qs-master-applications/"
+SITE_URL = "https://gradwindow.com/"
 README_PATH = ROOT / "README.md"
 README_ZH_PATH = ROOT / "README.zh-CN.md"
 

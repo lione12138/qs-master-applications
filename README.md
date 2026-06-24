@@ -1,9 +1,9 @@
 # GradWindow
 
 [![Tests](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml/badge.svg)](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml)
-[![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)](https://lione12138.github.io/qs-master-applications/)
+[![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)](https://gradwindow.com/)
 
-[中文](README.zh-CN.md) · [Live website](https://lione12138.github.io/qs-master-applications/)
+[中文](README.zh-CN.md) · [Live website](https://gradwindow.com/)
 
 **Licensing:** [Code](LICENSE) and [data](DATA_LICENSE.md) are licensed separately. Reuse of the curated admissions dataset requires attribution to GradWindow and is limited to noncommercial use under CC BY-NC 4.0. Official university pages remain the authoritative source.
 

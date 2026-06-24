@@ -1,9 +1,9 @@
 # GradWindow
 
 [![Tests](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml/badge.svg)](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml)
-[![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)](https://lione12138.github.io/qs-master-applications/)
+[![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)](https://gradwindow.com/)
 
-[English](README.md) · [Live website](https://lione12138.github.io/qs-master-applications/)
+[English](README.md) · [Live website](https://gradwindow.com/)
 
 **许可说明：**[代码](LICENSE)与[数据](DATA_LICENSE.md)采用不同许可证。复用 GradWindow 整理的申请数据集必须署名，并仅限 CC BY-NC 4.0 允许的非商业用途。大学官网始终是权威信息来源。
 

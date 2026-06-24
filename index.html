@@ -14,7 +14,7 @@
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link
       rel="canonical"
-      href="https://lione12138.github.io/qs-master-applications/"
+      href="https://gradwindow.com/"
     />
 
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
@@ -36,11 +36,11 @@
     <meta property="og:locale:alternate" content="zh_CN" />
     <meta
       property="og:url"
-      content="https://lione12138.github.io/qs-master-applications/"
+      content="https://gradwindow.com/"
     />
     <meta
       property="og:image"
-      content="https://lione12138.github.io/qs-master-applications/og-image.png"
+      content="https://gradwindow.com/og-image.png"
     />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -56,7 +56,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://lione12138.github.io/qs-master-applications/og-image.png"
+      content="https://gradwindow.com/og-image.png"
     />
 
     <script type="application/ld+json">
@@ -64,7 +64,7 @@
         "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "GradWindow",
-        "url": "https://lione12138.github.io/qs-master-applications/",
+        "url": "https://gradwindow.com/",
         "description": "Track master's application opening dates and deadlines across QS Top 200 universities.",
         "inLanguage": ["en", "zh-CN"]
       }
@@ -254,18 +254,17 @@
               </select>
             </label>
             <label class="select-wrap">
-              <span class="sr-only" data-i18n="sortBy">Sort by</span>
-              <select id="sort-select">
-                <option value="rank" data-i18n="sortRank">QS rank</option>
-                <option value="opens" data-i18n="sortOpenDate">Opening date</option>
-                <option value="deadline" data-i18n="sortDeadline">Deadline</option>
+              <span class="sr-only" data-i18n="rankRangeFilter">Rank range</span>
+              <select id="rank-range-filter">
+                <option value="30">QS Top 30</option>
+                <option value="50">QS Top 50</option>
+                <option value="100">QS Top 100</option>
+                <option value="150">QS Top 150</option>
+                <option value="200">QS Top 200</option>
               </select>
             </label>
             <button class="toolbar-button" id="favorites-toggle" type="button">
               <span data-i18n="favoritesOnly">Favourites only</span> <span id="favorite-count">0</span>
-            </button>
-            <button class="toolbar-button" id="top100-toggle" type="button">
-              <span data-i18n="top100Only">QS Top 100 only</span>
             </button>
             <button class="toolbar-button" id="export-favorites" type="button">
               <span data-i18n="exportFavorites">Export favourite deadlines</span>

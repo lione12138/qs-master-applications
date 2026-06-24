@@ -167,13 +167,22 @@ async function submitVote(proposalId) {
 function loadTurnstile() {
   const siteKey = state.config.turnstileSiteKey;
   if (!siteKey || document.querySelector("script[data-roadmap-turnstile]")) return;
+  window.gradwindowRoadmapTurnstileError = () => {
+    setStatus("roadmapTurnstileError", "error");
+  };
   const widget = makeElement("div", { className: "cf-turnstile" });
-  widget.dataset.sitekey = siteKey;
+  widget.setAttribute("data-sitekey", siteKey);
+  widget.setAttribute("data-action", "turnstile-spin-v1");
+  widget.setAttribute("data-theme", state.theme === "dark" ? "dark" : "light");
+  widget.setAttribute("data-error-callback", "gradwindowRoadmapTurnstileError");
+  widget.setAttribute("data-expired-callback", "gradwindowRoadmapTurnstileError");
+  widget.setAttribute("data-timeout-callback", "gradwindowRoadmapTurnstileError");
   document.getElementById("roadmap-turnstile").appendChild(widget);
   const script = document.createElement("script");
   script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js";
   script.async = true;
   script.defer = true;
+  script.onerror = () => setStatus("roadmapTurnstileError", "error");
   script.dataset.roadmapTurnstile = "true";
   document.head.appendChild(script);
 }

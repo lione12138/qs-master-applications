@@ -30,3 +30,12 @@ def test_extended_ranking_views_do_not_reuse_qs_application_windows() -> None:
     app_js = (ROOT / "app.js").read_text(encoding="utf-8")
 
     assert 'if (state.ranking !== "qs") return [];' in app_js
+
+
+def test_table_headers_own_application_sorting() -> None:
+    app_js = (ROOT / "app.js").read_text(encoding="utf-8")
+
+    assert '{ label: rankColumnLabel(), sort: "rank" }' in app_js
+    assert '{ label: t("opens"), sort: "opens" }' in app_js
+    assert '{ label: t("deadline"), sort: "deadline" }' in app_js
+    assert "table-sort-button" in app_js
