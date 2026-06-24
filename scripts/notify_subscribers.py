@@ -78,15 +78,24 @@ def notify(events: list[dict]) -> bool:
             headers={
                 "Authorization": f"Bearer {api_key}",
                 "Content-Type": "application/json",
+                "User-Agent": "GradWindow-GitHub-Actions/1.0",
             },
             method="POST",
         )
         try:
             with urlopen(request, timeout=45) as response:
                 result = json.loads(response.read().decode("utf-8"))
-        except (HTTPError, URLError, TimeoutError) as exc:
+        except HTTPError as exc:
+            response_body = exc.read().decode("utf-8", errors="replace")
             print(
-                f"Notification request failed: {type(exc).__name__}",
+                "Notification request failed: "
+                f"HTTP {exc.code} {exc.reason}; body={response_body[:1000]}",
+                file=sys.stderr,
+            )
+            raise SystemExit(1) from exc
+        except (URLError, TimeoutError) as exc:
+            print(
+                f"Notification request failed: {type(exc).__name__}: {exc}",
                 file=sys.stderr,
             )
             raise SystemExit(1) from exc
