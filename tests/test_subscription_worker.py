@@ -79,3 +79,35 @@ def test_roadmap_preflight_allows_anonymous_visitor_header() -> None:
     response = json.loads(result.stdout)
     assert response["status"] == 204
     assert "X-GradWindow-Visitor" in response["allowHeaders"]
+
+
+def test_worker_preflight_allows_comment_reads_and_writes() -> None:
+    node = shutil.which("node")
+    assert node is not None, "Node.js is required for subscription worker tests"
+    worker_uri = (
+        Path(__file__).parents[1] / "subscriptions" / "worker.js"
+    ).resolve().as_uri()
+    script = f"""
+      import worker from {json.dumps(worker_uri)};
+      const response = await worker.fetch(
+        new Request("https://worker.example/universities/ucl/comments", {{
+          method: "OPTIONS",
+          headers: {{ Origin: "https://gradwindow.com" }},
+        }}),
+        {{ ALLOWED_ORIGINS: "https://gradwindow.com" }},
+      );
+      console.log(JSON.stringify({{
+        status: response.status,
+        methods: response.headers.get("Access-Control-Allow-Methods"),
+      }}));
+    """
+    result = subprocess.run(
+        [node, "--input-type=module", "-e", script],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    response = json.loads(result.stdout)
+    assert response["status"] == 204
+    assert "GET" in response["methods"]
+    assert "POST" in response["methods"]

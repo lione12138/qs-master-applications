@@ -15,6 +15,7 @@ import {
 import { needsManualCheck } from "./exception-status.js";
 
 const PAGE_SIZE = 20;
+const VISITOR_KEY = "gradwindow:visitor";
 
 const state = {
   data: [],
@@ -44,6 +45,7 @@ const state = {
   monitorPayload: null,
   optionalFailureCount: 0,
   pages: {},
+  activeReviewUniversity: null,
 };
 
 
@@ -85,6 +87,22 @@ function safeUrl(value) {
   } catch {
     return "";
   }
+}
+
+function visitorId() {
+  let value = localStorage.getItem(VISITOR_KEY);
+  if (!value) {
+    value = crypto.randomUUID
+      ? crypto.randomUUID()
+      : `${Date.now()}-${crypto.getRandomValues(new Uint32Array(1))[0]}`;
+    localStorage.setItem(VISITOR_KEY, value);
+  }
+  return value;
+}
+
+function feedbackApiBase() {
+  const config = window.GRADWINDOW_CONFIG || {};
+  return String(config.roadmapUrl || config.subscribeUrl || "").replace(/\/$/, "");
 }
 
 function acronym(value = "") {
@@ -162,6 +180,17 @@ function makeFavoriteButton(key) {
   button.type = "button";
   button.setAttribute("aria-pressed", String(active));
   button.addEventListener("click", () => toggleFavorite(key));
+  return button;
+}
+
+function makeReviewButton(university) {
+  const button = makeElement("button", {
+    className: "icon-button review-button",
+    text: t("schoolReviews"),
+    title: t("openSchoolReviews"),
+  });
+  button.type = "button";
+  button.addEventListener("click", () => openUniversityReviews(university));
   return button;
 }
 
@@ -942,6 +971,7 @@ function createUniversityGroup(universities, status = "unknown") {
       t("latestCheck"),
       t("graduateApplication"),
       t("dateNotes"),
+      t("schoolReviews"),
     ],
     "university-table",
   );
@@ -1000,6 +1030,7 @@ function createUniversityGroup(universities, status = "unknown") {
         makeCell(t("latestCheck"), makeElement("span", { className: `source-badge ${monitorClass}`, text: monitorLabel })),
         makeCell(t("graduateApplication"), actions),
         makeCell(t("dateNotes"), makeTextStack(policyPrimary, policySecondary, "date-primary")),
+        makeCell(t("schoolReviews"), makeReviewButton(university)),
       );
       tbody.appendChild(row);
     });
@@ -1007,6 +1038,144 @@ function createUniversityGroup(universities, status = "unknown") {
     createPagination(status, { start, end, total, page, totalPages }),
   );
   return section;
+}
+
+function commentDateFormatter() {
+  return new Intl.DateTimeFormat(state.language === "zh" ? "zh-CN" : "en-GB", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+}
+
+function commentsEndpoint(universityId) {
+  const base = feedbackApiBase();
+  return base
+    ? `${base}/universities/${encodeURIComponent(universityId)}/comments`
+    : "";
+}
+
+function setReviewStatus(messageKey, tone = "") {
+  const status = document.getElementById("review-status");
+  if (!status) return;
+  status.className = `review-status ${tone}`;
+  status.textContent = messageKey ? t(messageKey) : "";
+}
+
+function renderComments(comments) {
+  const list = document.getElementById("review-list");
+  list.replaceChildren();
+  if (!comments.length) {
+    list.appendChild(
+      makeElement("p", { className: "review-empty", text: t("reviewNoComments") }),
+    );
+    return;
+  }
+  comments.forEach((comment) => {
+    const item = makeElement("article", { className: "review-item" });
+    const meta = makeElement("div", { className: "review-item-meta" });
+    meta.append(
+      makeElement("strong", { text: comment.author || t("reviewAnonymous") }),
+      makeElement("span", {
+        text: comment.createdAt
+          ? commentDateFormatter().format(new Date(comment.createdAt))
+          : "",
+      }),
+    );
+    item.append(
+      meta,
+      makeElement("p", { className: "review-item-body", text: comment.body || "" }),
+    );
+    list.appendChild(item);
+  });
+}
+
+async function loadUniversityComments(universityId) {
+  const endpoint = commentsEndpoint(universityId);
+  if (!endpoint) {
+    renderComments([]);
+    setReviewStatus("reviewUnavailable", "error");
+    return;
+  }
+  setReviewStatus("reviewLoading");
+  try {
+    const response = await fetch(endpoint, {
+      headers: { "X-GradWindow-Visitor": visitorId() },
+    });
+    if (!response.ok) throw new Error("comments unavailable");
+    const payload = await response.json();
+    renderComments(payload.comments || []);
+    setReviewStatus("");
+  } catch {
+    renderComments([]);
+    setReviewStatus("reviewLoadError", "error");
+  }
+}
+
+async function openUniversityReviews(university) {
+  state.activeReviewUniversity = university;
+  const panel = document.getElementById("review-panel");
+  const schoolText = schoolLabels(university, state.language);
+  document.getElementById("review-school-name").textContent = schoolText.primary;
+  document.getElementById("review-form").reset();
+  panel.hidden = false;
+  document.body.classList.add("review-open");
+  await loadUniversityComments(university.id);
+  document.getElementById("review-body").focus();
+}
+
+function closeUniversityReviews() {
+  document.getElementById("review-panel").hidden = true;
+  document.body.classList.remove("review-open");
+  state.activeReviewUniversity = null;
+  setReviewStatus("");
+}
+
+function setupReviewPanel() {
+  document.querySelectorAll("[data-review-close]").forEach((button) => {
+    button.addEventListener("click", closeUniversityReviews);
+  });
+  const form = document.getElementById("review-form");
+  if (!form || form.dataset.bound === "true") return;
+  form.dataset.bound = "true";
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const university = state.activeReviewUniversity;
+    const endpoint = university ? commentsEndpoint(university.id) : "";
+    if (!endpoint) {
+      setReviewStatus("reviewUnavailable", "error");
+      return;
+    }
+    const button = document.getElementById("review-submit");
+    button.disabled = true;
+    setReviewStatus("reviewSending");
+    try {
+      const response = await fetch(endpoint, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          author: document.getElementById("review-author").value.trim(),
+          body: document.getElementById("review-body").value.trim(),
+          visitorId: visitorId(),
+        }),
+      });
+      if (!response.ok) throw new Error("comment failed");
+      form.reset();
+      await loadUniversityComments(university.id);
+      setReviewStatus("reviewSubmitSuccess", "success");
+    } catch {
+      setReviewStatus("reviewSubmitError", "error");
+    } finally {
+      button.disabled = false;
+    }
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !document.getElementById("review-panel").hidden) {
+      closeUniversityReviews();
+    }
+  });
 }
 
 function renderCounts(records, universities) {
@@ -1557,6 +1726,7 @@ async function init() {
     setupHero();
     setupSubscription();
     bindEvents();
+    setupReviewPanel();
     render();
   } catch (error) {
     const errorState = makeElement("div", { className: "empty-state" });

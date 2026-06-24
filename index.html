@@ -299,6 +299,44 @@
           </div>
         </section>
 
+        <div class="review-panel" id="review-panel" hidden>
+          <button class="review-backdrop" type="button" data-review-close aria-label="Close reviews"></button>
+          <aside class="review-drawer" role="dialog" aria-modal="true" aria-labelledby="review-title">
+            <div class="review-header">
+              <div>
+                <span class="section-kicker" data-i18n="schoolReviewsKicker">SCHOOL REVIEWS</span>
+                <h2 id="review-title" data-i18n="schoolReviewsTitle">School comments</h2>
+                <p id="review-school-name" class="review-school-name"></p>
+              </div>
+              <button class="icon-button" type="button" data-review-close aria-label="Close reviews">×</button>
+            </div>
+            <div class="review-list" id="review-list"></div>
+            <form class="review-form" id="review-form">
+              <label for="review-author" data-i18n="reviewAuthorLabel">Name</label>
+              <input
+                id="review-author"
+                name="author"
+                maxlength="40"
+                data-i18n-placeholder="reviewAuthorPlaceholder"
+                placeholder="Anonymous"
+              />
+              <label for="review-body" data-i18n="reviewBodyLabel">Your comment</label>
+              <textarea
+                id="review-body"
+                name="body"
+                rows="5"
+                maxlength="800"
+                required
+                data-i18n-placeholder="reviewBodyPlaceholder"
+                placeholder="Share admissions, application, or school experience..."
+              ></textarea>
+              <button class="primary-button" id="review-submit" type="submit" data-i18n="reviewSubmitButton">Post comment</button>
+              <p class="review-status" id="review-status"></p>
+              <p class="review-note" data-i18n="reviewPublicNote">Comments are public. Do not post private contact details or sensitive information.</p>
+            </form>
+          </aside>
+        </div>
+
         <section class="methodology" id="methodology">
           <div>
             <span class="section-kicker" data-i18n="methodologyKicker">HOW IT WORKS</span>

@@ -48,3 +48,28 @@ def test_roadmap_schema_enforces_one_vote_per_anonymous_visitor() -> None:
             """INSERT INTO roadmap_votes (proposal_id, visitor_hash, created_at)
                VALUES ('account-login-and-favorites', 'visitor-hash', '2026-06-20T00:01:00Z')"""
         )
+
+
+def test_university_comments_schema_stores_public_comments() -> None:
+    schema = (
+        Path(__file__).parents[1] / "subscriptions" / "schema.sql"
+    ).read_text(encoding="utf-8")
+    connection = sqlite3.connect(":memory:")
+    connection.executescript(schema)
+
+    connection.execute(
+        """INSERT INTO university_comments (
+             id, university_id, visitor_hash, author, body, created_at
+           ) VALUES (
+             'comment-1', 'ucl-university-college-london',
+             'visitor-hash', 'Applicant', 'Useful admissions note.',
+             '2026-06-24T00:00:00Z'
+           )"""
+    )
+
+    row = connection.execute(
+        """SELECT author, body FROM university_comments
+           WHERE university_id = 'ucl-university-college-london'
+             AND hidden_at IS NULL"""
+    ).fetchone()
+    assert row == ("Applicant", "Useful admissions note.")

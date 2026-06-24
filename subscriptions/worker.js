@@ -24,7 +24,7 @@ function corsHeaders(request, env) {
     ? {
         "Access-Control-Allow-Origin": origin,
         "Access-Control-Allow-Headers": "Content-Type, Authorization, X-GradWindow-Visitor",
-        "Access-Control-Allow-Methods": "POST, OPTIONS",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
         Vary: "Origin",
       }
     : {};
@@ -79,6 +79,25 @@ function normalizeProposalText(value, maxLength, required = true) {
     .trim();
   if ((required && text.length < 4) || text.length > maxLength) {
     throw new Error("invalid proposal text");
+  }
+  return text;
+}
+
+function normalizeUniversityId(value) {
+  const universityId = String(value || "").trim();
+  if (!/^[a-z0-9-]{2,180}$/.test(universityId)) {
+    throw new Error("invalid university");
+  }
+  return universityId;
+}
+
+function normalizeCommentText(value, maxLength, required = true) {
+  const text = String(value || "")
+    .replace(/[\u0000-\u001f\u007f]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if ((required && text.length < 2) || text.length > maxLength) {
+    throw new Error("invalid comment text");
   }
   return text;
 }
@@ -233,6 +252,85 @@ async function createRoadmapProposal(request, env) {
      ) VALUES (?1, 'community', ?2, ?2, ?3, ?3, 'planned', 0, ?4, NULL)`,
   ).bind(id, title, description, now).run();
   return jsonResponse(request, env, { ok: true, id });
+}
+
+function universityComment(row) {
+  return {
+    id: row.id,
+    universityId: row.university_id,
+    author: row.author,
+    body: row.body,
+    createdAt: row.created_at,
+  };
+}
+
+async function listUniversityComments(request, env, universityId) {
+  let normalizedUniversityId;
+  try {
+    normalizedUniversityId = normalizeUniversityId(universityId);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const rows = await env.DB.prepare(
+    `SELECT id, university_id, author, body, created_at
+       FROM university_comments
+      WHERE university_id = ?1 AND hidden_at IS NULL
+      ORDER BY created_at DESC
+      LIMIT 80`,
+  ).bind(normalizedUniversityId).all();
+  return jsonResponse(request, env, {
+    comments: (rows.results || []).map(universityComment),
+  });
+}
+
+async function createUniversityComment(request, env, universityId) {
+  if (!allowedOrigin(request.headers.get("Origin"), env.ALLOWED_ORIGINS)) {
+    return jsonResponse(request, env, { ok: false }, 403);
+  }
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  let normalizedUniversityId;
+  let identity;
+  let author;
+  let body;
+  try {
+    normalizedUniversityId = normalizeUniversityId(universityId);
+    identity = await roadmapIdentity(request, env, payload);
+    author = normalizeCommentText(payload.author || "Anonymous", 40, false) || "Anonymous";
+    body = normalizeCommentText(payload.body, 800);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const [visitorAllowed, ipAllowed] = await Promise.all([
+    consumeRoadmapRateLimit(env, "comment-visitor", identity.visitorHash, 8, 60 * 60_000),
+    identity.ipHash
+      ? consumeRoadmapRateLimit(env, "comment-ip", identity.ipHash, 40, 60 * 60_000)
+      : true,
+  ]);
+  if (!visitorAllowed || !ipAllowed) {
+    return jsonResponse(request, env, { ok: false }, 429);
+  }
+  const id = `comment-${crypto.randomUUID().replaceAll("-", "")}`;
+  const now = new Date().toISOString();
+  await env.DB.prepare(
+    `INSERT INTO university_comments (
+       id, university_id, visitor_hash, author, body, created_at, hidden_at
+     ) VALUES (?1, ?2, ?3, ?4, ?5, ?6, NULL)`,
+  ).bind(id, normalizedUniversityId, identity.visitorHash, author, body, now).run();
+  return jsonResponse(request, env, {
+    ok: true,
+    comment: universityComment({
+      id,
+      university_id: normalizedUniversityId,
+      author,
+      body,
+      created_at: now,
+    }),
+  });
 }
 
 async function sendEmail(env, { to, subject, html, text, headers = {} }) {
@@ -543,6 +641,9 @@ async function cleanup(env) {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    const universityCommentsMatch = url.pathname.match(
+      /^\/universities\/([^/]+)\/comments$/,
+    );
     if (request.method === "OPTIONS") {
       return new Response(null, {
         status: 204,
@@ -560,6 +661,20 @@ export default {
     }
     if (request.method === "POST" && url.pathname === "/roadmap/proposals") {
       return createRoadmapProposal(request, env);
+    }
+    if (universityCommentsMatch && request.method === "GET") {
+      return listUniversityComments(
+        request,
+        env,
+        decodeURIComponent(universityCommentsMatch[1]),
+      );
+    }
+    if (universityCommentsMatch && request.method === "POST") {
+      return createUniversityComment(
+        request,
+        env,
+        decodeURIComponent(universityCommentsMatch[1]),
+      );
     }
     if (request.method === "POST" && url.pathname === "/subscribe") {
       return subscribe(request, env);

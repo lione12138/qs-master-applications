@@ -70,6 +70,20 @@ CREATE INDEX IF NOT EXISTS idx_roadmap_proposals_visible
   ON roadmap_proposals(source, created_at)
   WHERE hidden_at IS NULL;
 
+CREATE TABLE IF NOT EXISTS university_comments (
+  id TEXT PRIMARY KEY,
+  university_id TEXT NOT NULL,
+  visitor_hash TEXT NOT NULL,
+  author TEXT NOT NULL,
+  body TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  hidden_at TEXT
+);
+
+CREATE INDEX IF NOT EXISTS idx_university_comments_visible
+  ON university_comments(university_id, created_at)
+  WHERE hidden_at IS NULL;
+
 DELETE FROM roadmap_proposals
 WHERE source = 'owner'
   AND id IN ('application-planner', 'programme-comparison', 'deadline-reminders');
