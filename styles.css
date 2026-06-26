@@ -65,7 +65,7 @@ a {
 }
 
 .page-shell {
-  max-width: 1480px;
+  max-width: min(1920px, 100vw);
   min-height: 100vh;
   margin: 0 auto;
   overflow: hidden;
@@ -75,7 +75,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px clamp(24px, 5vw, 76px);
+  padding: 24px clamp(24px, 4vw, 72px);
 }
 
 .brand {
@@ -1000,7 +1000,7 @@ h1 em::after {
   width: 100%;
   border-collapse: collapse;
   table-layout: fixed;
-  min-width: 1260px;
+  min-width: 1380px;
 }
 
 .application-table th {
@@ -1054,17 +1054,17 @@ h1 em::after {
 
 .application-table:not(.university-table) th:nth-child(2),
 .application-table:not(.university-table) td:nth-child(2) {
-  width: 17%;
+  width: 18%;
 }
 
 .application-table:not(.university-table) th:nth-child(3),
 .application-table:not(.university-table) td:nth-child(3) {
-  width: 22%;
+  width: 24%;
 }
 
 .application-table:not(.university-table) th:nth-child(4),
 .application-table:not(.university-table) td:nth-child(4) {
-  width: 11%;
+  width: 10%;
 }
 
 .application-table:not(.university-table) th:nth-child(5),
@@ -1076,17 +1076,17 @@ h1 em::after {
 
 .application-table:not(.university-table) th:nth-child(7),
 .application-table:not(.university-table) td:nth-child(7) {
-  width: 10%;
+  width: 9%;
 }
 
 .application-table:not(.university-table) th:nth-child(8),
 .application-table:not(.university-table) td:nth-child(8) {
-  width: 7%;
+  width: 6%;
 }
 
 .application-table:not(.university-table) th:nth-child(9),
 .application-table:not(.university-table) td:nth-child(9) {
-  width: 6%;
+  width: 5%;
 }
 
 .university-table th:nth-child(1),
@@ -1096,7 +1096,7 @@ h1 em::after {
 
 .university-table th:nth-child(2),
 .university-table td:nth-child(2) {
-  width: 16%;
+  width: 18%;
 }
 
 .university-table th:nth-child(3),
@@ -1118,12 +1118,12 @@ h1 em::after {
 
 .university-table th:nth-child(7),
 .university-table td:nth-child(7) {
-  width: 12%;
+  width: 10%;
 }
 
 .university-table th:nth-child(8),
 .university-table td:nth-child(8) {
-  width: 16%;
+  width: 18%;
 }
 
 .university-table th:nth-child(9),
@@ -1151,6 +1151,16 @@ h1 em::after {
 
 .school-link:hover {
   color: var(--green);
+}
+
+.program-link {
+  color: var(--green-dark);
+  text-decoration: none;
+}
+
+.program-link:hover {
+  color: var(--green);
+  text-decoration: underline;
 }
 
 .school-link::after {
@@ -1212,6 +1222,7 @@ h1 em::after {
   display: inline-flex;
   min-width: 86px;
   height: 34px;
+  gap: 6px;
   align-items: center;
   justify-content: center;
   padding: 0 11px;
@@ -1224,6 +1235,35 @@ h1 em::after {
   font-weight: 700;
   list-style: none;
   white-space: nowrap;
+}
+
+.calendar-menu-icon {
+  position: relative;
+  display: none;
+  width: 15px;
+  height: 15px;
+  border: 1.7px solid currentColor;
+  border-radius: 3px;
+}
+
+.calendar-menu-icon::before {
+  position: absolute;
+  top: 3px;
+  left: -1.7px;
+  width: 15px;
+  border-top: 1.7px solid currentColor;
+  content: "";
+}
+
+.calendar-menu-icon::after {
+  position: absolute;
+  top: -4px;
+  left: 3px;
+  width: 7px;
+  height: 5px;
+  border-right: 1.7px solid currentColor;
+  border-left: 1.7px solid currentColor;
+  content: "";
 }
 
 .calendar-menu-trigger::-webkit-details-marker {
@@ -2637,6 +2677,15 @@ footer p {
 }
 
 @media (max-width: 720px) {
+  .page-shell {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    padding: 18px 18px;
+  }
+
   .header-nav {
     gap: 10px;
   }
@@ -2678,7 +2727,40 @@ footer p {
   }
 
   .toolbar {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .toolbar .search-box,
+  .toolbar label.select-wrap:nth-of-type(2),
+  .toolbar-button:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .search-box,
+  .select-wrap,
+  .toolbar-button {
+    min-height: 42px;
+    border-radius: 12px;
+  }
+
+  .search-box span {
+    padding-left: 13px;
+    font-size: 18px;
+  }
+
+  .search-box input,
+  .select-wrap select {
+    font-size: 12px;
+  }
+
+  .select-wrap select {
+    padding: 10px 12px;
+  }
+
+  .toolbar-button {
+    padding: 0 11px;
+    font-size: 11px;
   }
 
   .calendar-page-heading {
@@ -2808,24 +2890,36 @@ footer p {
   }
 
   .application-table tr {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     overflow: hidden;
     border: 1px solid var(--line);
-    border-radius: 9px;
+    border-radius: 16px;
     background: var(--white);
+    box-shadow: 0 14px 36px rgba(28, 54, 41, 0.08);
   }
 
   .application-table td {
     display: grid;
-    grid-template-columns: 94px minmax(0, 1fr);
-    gap: 12px;
-    padding: 11px 13px;
+    grid-template-columns: 78px minmax(0, 1fr);
+    gap: 10px;
+    align-items: start;
+    padding: 12px 14px;
     border-top: 1px solid #e7e9e5;
     font-size: 12px;
+    line-height: 1.55;
   }
 
   .application-table td:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 8px;
     border-top: 0;
+  }
+
+  .application-table td:first-child::before {
+    display: none;
   }
 
   .application-table td::before {
@@ -2838,6 +2932,212 @@ footer p {
 
   .rank-cell {
     width: auto;
+    font-size: 20px !important;
+  }
+
+  .calendar-menu-options {
+    right: auto;
+    left: 0;
+  }
+
+  .favorite-button,
+  .review-button,
+  .calendar-menu-trigger {
+    min-height: 36px;
+  }
+
+  .application-table:not(.university-table) tbody {
+    display: grid;
+    gap: 16px;
+  }
+
+  .application-table:not(.university-table) tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "school rank"
+      "program program"
+      "deadline deadline"
+      "applicant applicant"
+      "opens opens"
+      "calendar favorite"
+      "source source";
+    gap: 8px 12px;
+    margin-bottom: 0;
+    padding: 16px;
+  }
+
+  .application-table:not(.university-table) td {
+    display: block;
+    width: auto;
+    padding: 0;
+    border-top: 0;
+    font-size: 12px;
+  }
+
+  .application-table:not(.university-table) td::before {
+    display: none;
+  }
+
+  .application-table:not(.university-table) td:nth-child(1) {
+    grid-area: rank;
+    align-self: start;
+    justify-self: end;
+  }
+
+  .application-table:not(.university-table) td:nth-child(2) {
+    grid-area: school;
+    padding-right: 12px;
+  }
+
+  .application-table:not(.university-table) td:nth-child(3) {
+    grid-area: program;
+  }
+
+  .application-table:not(.university-table) td:nth-child(4) {
+    grid-area: applicant;
+  }
+
+  .application-table:not(.university-table) td:nth-child(5) {
+    grid-area: opens;
+  }
+
+  .application-table:not(.university-table) td:nth-child(6) {
+    grid-area: deadline;
+  }
+
+  .application-table:not(.university-table) td:nth-child(7) {
+    grid-area: calendar;
+  }
+
+  .application-table:not(.university-table) td:nth-child(8) {
+    grid-area: favorite;
+    justify-self: end;
+  }
+
+  .application-table:not(.university-table) td:nth-child(9) {
+    grid-area: source;
+  }
+
+  .application-table:not(.university-table) td:nth-child(5)::before,
+  .application-table:not(.university-table) td:nth-child(6)::before {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--muted);
+    content: attr(data-label);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  .application-table:not(.university-table) td:nth-child(5) {
+    color: var(--muted);
+  }
+
+  .application-table:not(.university-table) td:nth-child(5) .date-primary {
+    font-size: 13px;
+  }
+
+  .application-table:not(.university-table) td:nth-child(6) .date-primary {
+    color: var(--ink);
+    font-size: 24px;
+    letter-spacing: -0.03em;
+  }
+
+  .application-table:not(.university-table) td:nth-child(6) .deadline-soon {
+    color: var(--red);
+  }
+
+  .application-table:not(.university-table) .rank-cell {
+    width: auto;
+    font-size: 16px !important;
+  }
+
+  .application-table:not(.university-table) .school-link {
+    font-size: 15px;
+  }
+
+  .application-table:not(.university-table) .school-link::after {
+    display: none;
+  }
+
+  .application-table:not(.university-table) .program-link {
+    color: #0b5f8f;
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .application-table:not(.university-table) .applicant-category {
+    display: inline-flex;
+    width: fit-content;
+    max-width: 100%;
+    padding: 5px 8px;
+    border-radius: 999px;
+    color: var(--green);
+    background: var(--green-pale);
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .application-table:not(.university-table) td:nth-child(9) .source-link {
+    display: none;
+  }
+
+  .application-table:not(.university-table) td:nth-child(9) .source-badge {
+    margin-right: 6px;
+  }
+
+  .application-table:not(.university-table) td:nth-child(9) .date-secondary {
+    display: none;
+  }
+
+  .application-table:not(.university-table) .calendar-menu-trigger {
+    width: 38px;
+    min-width: 38px;
+    height: 36px;
+    min-height: 36px;
+    padding: 0;
+    border-radius: 10px;
+  }
+
+  .application-table:not(.university-table) .calendar-menu-icon {
+    display: block;
+  }
+
+  .application-table:not(.university-table) .calendar-menu-label,
+  .application-table:not(.university-table) .calendar-menu-trigger::after {
+    display: none;
+  }
+
+  .application-table:not(.university-table) .calendar-menu-options {
+    top: auto;
+    bottom: calc(100% + 6px);
+    left: 0;
+    min-width: 176px;
+  }
+
+  .application-table:not(.university-table) .favorite-button {
+    width: 38px;
+    min-width: 38px;
+    height: 36px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    color: transparent;
+    font-size: 0;
+  }
+
+  .application-table:not(.university-table) .favorite-button::before {
+    color: var(--green);
+    content: "☆";
+    font-size: 19px;
+    line-height: 1;
+  }
+
+  .application-table:not(.university-table) .favorite-button.active::before {
+    color: var(--white);
+    content: "★";
   }
 
   .subscribe-row {

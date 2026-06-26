@@ -182,6 +182,17 @@ function makeTextStack(primary, secondary, primaryClass = "date-primary") {
   return wrapper;
 }
 
+function makeLinkedTextStack(primary, url, secondary, primaryClass = "date-primary") {
+  const wrapper = document.createDocumentFragment();
+  wrapper.appendChild(makeLink(primary, url, primaryClass));
+  if (secondary) {
+    wrapper.appendChild(
+      makeElement("span", { className: "date-secondary", text: secondary }),
+    );
+  }
+  return wrapper;
+}
+
 function favoriteKey(type, id) {
   return `${type}:${id}`;
 }
@@ -542,17 +553,35 @@ function makeCalendarMenu(record) {
   const menu = makeElement("details", { className: "calendar-menu" });
   const summary = makeElement("summary", {
     className: "calendar-menu-trigger",
-    text: t("addCalendar"),
     title: t("calendarOptions"),
   });
+  summary.append(
+    makeElement("span", { className: "calendar-menu-icon" }),
+    makeElement("span", { className: "calendar-menu-label", text: t("addCalendar") }),
+  );
   const options = makeElement("div", { className: "calendar-menu-options" });
-  const apple = makeElement("button", {
+  const makeDownloadOption = (label) => {
+    const button = makeElement("button", {
+      className: "calendar-menu-item",
+      text: label,
+      title: t("downloadIcs"),
+    });
+    button.type = "button";
+    button.addEventListener("click", () => {
+      downloadIcs(record);
+      menu.open = false;
+    });
+    return button;
+  };
+  const apple = makeDownloadOption(t("appleCalendar"));
+  const android = makeDownloadOption(t("androidCalendar"));
+  const ics = makeElement("button", {
     className: "calendar-menu-item",
-    text: t("appleCalendar"),
+    text: t("downloadIcs"),
     title: t("downloadIcs"),
   });
-  apple.type = "button";
-  apple.addEventListener("click", () => {
+  ics.type = "button";
+  ics.addEventListener("click", () => {
     downloadIcs(record);
     menu.open = false;
   });
@@ -560,6 +589,8 @@ function makeCalendarMenu(record) {
     makeLink(t("googleCalendar"), googleCalendarUrl(record), "calendar-menu-item"),
     makeLink(t("outlookCalendar"), outlookCalendarUrl(record), "calendar-menu-item"),
     apple,
+    android,
+    ics,
   );
   menu.append(summary, options);
   return menu;
@@ -913,9 +944,11 @@ function createRow(record, status) {
   );
   const intake = intakeLabel(canonicalIntake(record), state.language);
   const localizedRound = roundLabel(record.round, state.language);
-  const programme = makeTextStack(
+  const programme = makeLinkedTextStack(
     programmeLabel(record.scopeId, record.program, state.language),
+    record.applicationUrl,
     `${intake}${localizedRound ? ` · ${localizedRound}` : ""}`,
+    "program-link date-primary",
   );
   const source = document.createDocumentFragment();
   const predicted = record.dataStatus === "predicted";
