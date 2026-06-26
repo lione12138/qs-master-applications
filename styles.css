@@ -167,9 +167,9 @@ a {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
-  min-height: 440px;
-  padding: 38px clamp(24px, 6vw, 92px) 44px;
+  grid-template-columns: minmax(0, 1.12fr) minmax(320px, 0.78fr);
+  min-height: 350px;
+  padding: 26px clamp(24px, 5vw, 82px) 28px;
 }
 
 .hero-copy {
@@ -206,8 +206,8 @@ a {
 
 h1 {
   max-width: 720px;
-  margin: 18px 0 16px;
-  font-size: clamp(42px, 5.3vw, 72px);
+  margin: 14px 0 12px;
+  font-size: clamp(40px, 4.6vw, 64px);
   font-weight: 600;
   letter-spacing: -0.055em;
   line-height: 1.04;
@@ -239,7 +239,7 @@ h1 em::after {
   margin: 0;
   color: var(--muted);
   font-size: 15px;
-  line-height: 1.7;
+  line-height: 1.55;
 }
 
 .hero-actions {
@@ -247,7 +247,7 @@ h1 em::after {
   flex-wrap: wrap;
   gap: 12px 20px;
   align-items: center;
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .primary-button {
@@ -275,15 +275,15 @@ h1 em::after {
 }
 
 .hero-disclaimer {
-  max-width: 690px;
-  margin-top: 18px;
-  padding: 14px 16px;
+  max-width: 620px;
+  margin-top: 14px;
+  padding: 12px 14px;
   border: 1px solid rgba(30, 101, 72, 0.14);
   border-radius: 14px;
   background: rgba(255, 254, 249, 0.68);
   color: var(--muted);
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.58;
 }
 
 .hero-disclaimer strong {
@@ -300,7 +300,7 @@ h1 em::after {
 
 .hero-visual {
   position: relative;
-  min-height: 350px;
+  min-height: 300px;
 }
 
 .hero-visual::before {
@@ -325,13 +325,13 @@ h1 em::after {
 }
 
 .orbit-one {
-  width: 360px;
-  height: 238px;
+  width: 320px;
+  height: 214px;
 }
 
 .orbit-two {
-  width: 252px;
-  height: 366px;
+  width: 226px;
+  height: 326px;
   transform: translate(-50%, -50%) rotate(48deg);
 }
 
@@ -344,9 +344,9 @@ h1 em::after {
 .date-card-main {
   top: 50%;
   left: 50%;
-  width: 190px;
-  min-height: 226px;
-  padding: 22px;
+  width: 170px;
+  min-height: 202px;
+  padding: 20px;
   border-radius: 12px;
   background: var(--white);
   transform: translate(-50%, -50%) rotate(-4deg);
@@ -366,7 +366,7 @@ h1 em::after {
   margin-top: 16px;
   color: var(--green);
   font-family: Georgia, serif;
-  font-size: 74px;
+  font-size: 64px;
   font-weight: 400;
   letter-spacing: -0.08em;
   line-height: 0.85;
@@ -389,7 +389,7 @@ h1 em::after {
 
 .mini-card {
   min-width: 125px;
-  padding: 14px;
+  padding: 12px;
   border-radius: 9px;
 }
 
@@ -400,7 +400,7 @@ h1 em::after {
 }
 
 .mini-card-open {
-  top: 18%;
+  top: 16%;
   right: 0;
   color: var(--white);
   background: var(--green);
@@ -421,7 +421,7 @@ h1 em::after {
 .trust-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 20px clamp(24px, 6vw, 92px);
+  padding: 14px clamp(24px, 5vw, 82px);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   color: var(--muted);
@@ -452,7 +452,7 @@ h1 em::after {
 }
 
 .board-section {
-  padding: 100px clamp(24px, 6vw, 92px);
+  padding: 56px clamp(24px, 5vw, 82px) 78px;
   background: var(--white);
 }
 
@@ -464,14 +464,14 @@ h1 em::after {
 
 .section-heading h2,
 .methodology h2 {
-  margin: 10px 0 0;
-  font-size: clamp(34px, 4vw, 52px);
+  margin: 8px 0 0;
+  font-size: clamp(32px, 3.4vw, 46px);
   letter-spacing: -0.04em;
 }
 
 .summary-stats {
   display: flex;
-  gap: 38px;
+  gap: 28px;
 }
 
 .summary-stats div {
@@ -481,7 +481,7 @@ h1 em::after {
 .summary-stats strong {
   color: var(--green);
   font-family: Georgia, serif;
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 400;
 }
 
@@ -491,7 +491,7 @@ h1 em::after {
 }
 
 .demo-banner {
-  margin-top: 30px;
+  margin-top: 22px;
   padding: 14px 18px;
   border: 1px solid #e7cf99;
   border-radius: 8px;
@@ -505,67 +505,11 @@ h1 em::after {
   margin-right: 10px;
 }
 
-.coverage-panel {
-  margin-top: 24px;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: #f8faf5;
-}
-
-.coverage-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-.coverage-heading h3 {
-  margin: 7px 0 0;
-  font-size: 22px;
-}
-
-.coverage-heading p {
-  max-width: 480px;
-  margin: 0;
-  color: var(--muted);
-  font-size: 12px;
-  line-height: 1.7;
-}
-
-.coverage-metrics {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.coverage-metrics div {
-  display: grid;
-  gap: 4px;
-  padding: 15px;
-  border: 1px solid #e2e8df;
-  border-radius: 8px;
-  background: var(--white);
-}
-
-.coverage-metrics strong {
-  color: var(--green);
-  font-family: Georgia, serif;
-  font-size: 25px;
-  font-weight: 400;
-}
-
-.coverage-metrics span {
-  color: var(--muted);
-  font-size: 10px;
-}
-
 .toolbar {
   display: grid;
   grid-template-columns: minmax(220px, 1fr) 220px 150px 150px 170px auto auto;
   gap: 12px;
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 .toolbar-button {
@@ -2351,7 +2295,6 @@ footer {
 
 :root[data-theme="dark"] .eyebrow,
 :root[data-theme="dark"] .demo-banner,
-:root[data-theme="dark"] .coverage-panel,
 :root[data-theme="dark"] .calendar-panel,
 :root[data-theme="dark"] .toolbar-button.active,
 :root[data-theme="dark"] .source-badge.homepage,
@@ -2389,12 +2332,6 @@ footer {
   outline: none;
 }
 
-:root[data-theme="dark"] .coverage-metrics div {
-  border-color: rgba(128, 217, 166, 0.18);
-  background: #101b15;
-}
-
-:root[data-theme="dark"] .coverage-metrics strong,
 :root[data-theme="dark"] .rank-cell {
   color: #91e5b5;
 }
@@ -2667,10 +2604,6 @@ footer p {
     grid-template-columns: minmax(220px, 1fr) repeat(3, 150px);
   }
 
-  .coverage-metrics {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .method-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2700,6 +2633,8 @@ footer p {
 
   .hero {
     min-height: auto;
+    padding-top: 30px;
+    padding-bottom: 28px;
   }
 
   .hero-actions {
@@ -2707,8 +2642,8 @@ footer p {
   }
 
   .hero-visual {
-    min-height: 420px;
-    transform: scale(0.86);
+    min-height: 300px;
+    transform: scale(0.78);
   }
 
   .trust-strip {
@@ -2771,16 +2706,6 @@ footer p {
   .calendar-page-toolbar,
   .calendar-list {
     grid-template-columns: 1fr;
-  }
-
-  .coverage-heading {
-    align-items: start;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .coverage-metrics {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .status-tabs {

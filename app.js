@@ -1212,23 +1212,8 @@ function isExceptionUniversity(university) {
 }
 
 function renderCoverage() {
-  if (!state.coverage) return;
-  const summary = state.coverage.summary;
-  const target = summary.targetUniversities;
-  document.getElementById("coverage-entries").textContent =
-    `${summary.entriesLocated}/${target}`;
-  document.getElementById("coverage-policies").textContent =
-    `${summary.policiesVerified}/${target}`;
-  document.getElementById("coverage-programs").textContent =
-    `${summary.universitiesWithPrograms}/${target}`;
-  document.getElementById("coverage-windows").textContent =
-    `${summary.universitiesWithWindows}/${target}`;
-  document.getElementById("coverage-records").textContent =
-    summary.verifiedWindows;
-  document.getElementById("coverage-predictions").textContent =
-    summary.predictedWindows;
-
-  document.getElementById("coverage-panel").hidden = false;
+  // Coverage remains available in data/coverage.json for development, but the
+  // public page no longer exposes the internal build-progress panel.
 }
 
 function createUniversityGroup(universities, status = "unknown") {
