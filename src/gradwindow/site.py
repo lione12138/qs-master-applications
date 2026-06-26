@@ -43,6 +43,7 @@ PUBLIC_FILES = (
     "styles.css",
     "og-image.png",
     "favicon.svg",
+    "cat-avatar.svg",
 )
 LEGACY_SITE_URL = "https://lione12138.github.io/qs-master-applications"
 DEFAULT_SITE_URL = "https://gradwindow.com"

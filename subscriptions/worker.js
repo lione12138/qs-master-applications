@@ -14,6 +14,8 @@ import {
 const JSON_HEADERS = { "Content-Type": "application/json; charset=utf-8" };
 const MAX_EVENTS = 20;
 const MAX_SENDS_PER_REQUEST = 80;
+const AUTH_CODE_TTL_MS = 10 * 60 * 1000;
+const AUTH_SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 
 function corsHeaders(request, env) {
   const origin = allowedOrigin(
@@ -24,7 +26,7 @@ function corsHeaders(request, env) {
     ? {
         "Access-Control-Allow-Origin": origin,
         "Access-Control-Allow-Headers": "Content-Type, Authorization, X-GradWindow-Visitor",
-        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+        "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, OPTIONS",
         Vary: "Origin",
       }
     : {};
@@ -100,6 +102,82 @@ function normalizeCommentText(value, maxLength, required = true) {
     throw new Error("invalid comment text");
   }
   return text;
+}
+
+function normalizeProfileText(value, maxLength) {
+  const text = String(value || "")
+    .replace(/[\u0000-\u001f\u007f]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  if (text.length > maxLength) throw new Error("invalid profile text");
+  return text;
+}
+
+function normalizeFavoriteKey(value) {
+  const itemKey = String(value || "").trim();
+  if (!/^(window|university):[A-Za-z0-9._:-]{2,220}$/.test(itemKey)) {
+    throw new Error("invalid favorite");
+  }
+  return itemKey;
+}
+
+function authSecret(env) {
+  return env.AUTH_SECRET_KEY || env.TOKEN_SIGNING_KEY || env.ROADMAP_VOTER_HASH_KEY;
+}
+
+function publicUser(row) {
+  return {
+    id: row.id,
+    displayName: row.display_name || "",
+    language: row.language || "en",
+    country: row.country || "",
+    targetIntake: row.target_intake || "",
+  };
+}
+
+function randomSixDigitCode() {
+  const value = crypto.getRandomValues(new Uint32Array(1))[0] % 1_000_000;
+  return String(value).padStart(6, "0");
+}
+
+async function authCodeEmail(language, code) {
+  if (language === "zh") {
+    return {
+      subject: "你的 GradWindow 登录验证码",
+      text: `你的 GradWindow 登录验证码是：${code}\n\n验证码 10 分钟内有效。如果不是你本人操作，请忽略本邮件。`,
+      html: `<p>你的 GradWindow 登录验证码是：</p>
+        <p style="font-size:28px;font-weight:700;letter-spacing:0.12em">${escapeHtml(code)}</p>
+        <p>验证码 10 分钟内有效。如果不是你本人操作，请忽略本邮件。</p>`,
+    };
+  }
+  return {
+    subject: "Your GradWindow login code",
+    text: `Your GradWindow login code is: ${code}\n\nThis code expires in 10 minutes. If you did not request it, ignore this email.`,
+    html: `<p>Your GradWindow login code is:</p>
+      <p style="font-size:28px;font-weight:700;letter-spacing:0.12em">${escapeHtml(code)}</p>
+      <p>This code expires in 10 minutes. If you did not request it, ignore this email.</p>`,
+  };
+}
+
+async function sessionUser(request, env) {
+  const header = request.headers.get("Authorization") || "";
+  const match = header.match(/^Bearer\s+(.+)$/i);
+  if (!match || !authSecret(env)) return null;
+  const sessionHash = await sha256Hex(match[1]);
+  const row = await env.DB.prepare(
+    `SELECT u.id, u.display_name, u.language, u.country, u.target_intake
+       FROM auth_sessions s
+       JOIN users u ON u.id = s.user_id
+      WHERE s.session_hash = ?1
+        AND s.expires_at > ?2`,
+  ).bind(sessionHash, new Date().toISOString()).first();
+  return row || null;
+}
+
+async function requireUser(request, env) {
+  const user = await sessionUser(request, env);
+  if (!user) return null;
+  return user;
 }
 
 async function consumeRoadmapRateLimit(env, scope, keyHash, maximum, windowMs) {
@@ -254,11 +332,264 @@ async function createRoadmapProposal(request, env) {
   return jsonResponse(request, env, { ok: true, id });
 }
 
+async function requestAuthCode(request, env) {
+  const origin = request.headers.get("Origin");
+  if (!allowedOrigin(origin, env.ALLOWED_ORIGINS)) {
+    return jsonResponse(request, env, { ok: false }, 403);
+  }
+  if (!authSecret(env)) return jsonResponse(request, env, { ok: false }, 503);
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  if (payload.turnstileToken && !(await verifyTurnstile(payload.turnstileToken, env))) {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  let email;
+  try {
+    email = normalizeEmail(payload.email);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const language = normalizeLanguage(payload.language);
+  const emailHash = await hmacHex(env.EMAIL_INDEX_KEY, email);
+  const ip = request.headers.get("CF-Connecting-IP") || "";
+  const ipHash = ip && env.ROADMAP_VOTER_HASH_KEY
+    ? await hmacHex(env.ROADMAP_VOTER_HASH_KEY, ip)
+    : "";
+  const [emailAllowed, ipAllowed] = await Promise.all([
+    consumeRoadmapRateLimit(env, "auth-email", emailHash, 5, 60 * 60_000),
+    ipHash ? consumeRoadmapRateLimit(env, "auth-ip", ipHash, 30, 60 * 60_000) : true,
+  ]);
+  if (!emailAllowed || !ipAllowed) {
+    return jsonResponse(request, env, { ok: false }, 429);
+  }
+  const recent = await env.DB.prepare(
+    `SELECT created_at FROM auth_login_codes
+      WHERE email_hash = ?1
+      ORDER BY created_at DESC
+      LIMIT 1`,
+  ).bind(emailHash).first();
+  if (recent?.created_at && Date.now() - new Date(recent.created_at).getTime() < 60_000) {
+    return jsonResponse(request, env, { ok: true });
+  }
+  const encrypted = await encryptEmail(email, env.EMAIL_ENCRYPTION_KEY);
+  const code = randomSixDigitCode();
+  const now = new Date();
+  const expires = new Date(now.getTime() + AUTH_CODE_TTL_MS);
+  const codeHash = await hmacHex(authSecret(env), `${emailHash}:${code}`);
+  await env.DB.prepare(
+    `INSERT INTO auth_login_codes (
+       id, email_hash, email_ciphertext, email_iv, language, code_hash,
+       expires_at, consumed_at, created_at
+     ) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, NULL, ?8)`,
+  ).bind(
+    `code-${crypto.randomUUID().replaceAll("-", "")}`,
+    emailHash,
+    encrypted.ciphertext,
+    encrypted.iv,
+    language,
+    codeHash,
+    expires.toISOString(),
+    now.toISOString(),
+  ).run();
+  await sendEmail(env, {
+    to: email,
+    ...(await authCodeEmail(language, code)),
+  });
+  return jsonResponse(request, env, { ok: true });
+}
+
+async function verifyAuthCode(request, env) {
+  const origin = request.headers.get("Origin");
+  if (!allowedOrigin(origin, env.ALLOWED_ORIGINS)) {
+    return jsonResponse(request, env, { ok: false }, 403);
+  }
+  if (!authSecret(env)) return jsonResponse(request, env, { ok: false }, 503);
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  let email;
+  const code = String(payload.code || "").replace(/\D/g, "");
+  if (code.length !== 6) return jsonResponse(request, env, { ok: false }, 400);
+  try {
+    email = normalizeEmail(payload.email);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const emailHash = await hmacHex(env.EMAIL_INDEX_KEY, email);
+  const codeHash = await hmacHex(authSecret(env), `${emailHash}:${code}`);
+  const now = new Date().toISOString();
+  const challenge = await env.DB.prepare(
+    `SELECT id, email_ciphertext, email_iv, language
+       FROM auth_login_codes
+      WHERE email_hash = ?1
+        AND code_hash = ?2
+        AND consumed_at IS NULL
+        AND expires_at > ?3
+      ORDER BY created_at DESC
+      LIMIT 1`,
+  ).bind(emailHash, codeHash, now).first();
+  if (!challenge) return jsonResponse(request, env, { ok: false }, 400);
+
+  const userId = `user-${crypto.randomUUID().replaceAll("-", "")}`;
+  await env.DB.prepare(
+    `INSERT INTO users (
+       id, email_hash, email_ciphertext, email_iv, display_name,
+       language, country, target_intake, created_at, updated_at
+     ) VALUES (?1, ?2, ?3, ?4, NULL, ?5, NULL, NULL, ?6, ?6)
+     ON CONFLICT(email_hash) DO UPDATE SET
+       email_ciphertext = excluded.email_ciphertext,
+       email_iv = excluded.email_iv,
+       language = excluded.language,
+       updated_at = excluded.updated_at`,
+  ).bind(
+    userId,
+    emailHash,
+    challenge.email_ciphertext,
+    challenge.email_iv,
+    challenge.language,
+    now,
+  ).run();
+  await env.DB.prepare(
+    `UPDATE auth_login_codes SET consumed_at = ?2 WHERE id = ?1`,
+  ).bind(challenge.id, now).run();
+  const user = await env.DB.prepare(
+    `SELECT id, display_name, language, country, target_intake
+       FROM users WHERE email_hash = ?1`,
+  ).bind(emailHash).first();
+  const token = randomToken(36);
+  await env.DB.prepare(
+    `INSERT INTO auth_sessions (session_hash, user_id, created_at, expires_at)
+     VALUES (?1, ?2, ?3, ?4)`,
+  ).bind(
+    await sha256Hex(token),
+    user.id,
+    now,
+    new Date(Date.now() + AUTH_SESSION_TTL_MS).toISOString(),
+  ).run();
+  const favorites = await listUserFavoriteKeys(env, user.id);
+  return jsonResponse(request, env, {
+    ok: true,
+    token,
+    user: publicUser(user),
+    favorites,
+  });
+}
+
+async function listUserFavoriteKeys(env, userId) {
+  const rows = await env.DB.prepare(
+    `SELECT item_key FROM user_favorites
+      WHERE user_id = ?1
+      ORDER BY created_at ASC`,
+  ).bind(userId).all();
+  return (rows.results || []).map((row) => row.item_key);
+}
+
+async function getMe(request, env) {
+  const user = await requireUser(request, env);
+  if (!user) return jsonResponse(request, env, { ok: false }, 401);
+  return jsonResponse(request, env, {
+    user: publicUser(user),
+    favorites: await listUserFavoriteKeys(env, user.id),
+  });
+}
+
+async function updateMe(request, env) {
+  const user = await requireUser(request, env);
+  if (!user) return jsonResponse(request, env, { ok: false }, 401);
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  let displayName;
+  let country;
+  let targetIntake;
+  try {
+    displayName = normalizeProfileText(payload.displayName, 60);
+    country = normalizeProfileText(payload.country, 80);
+    targetIntake = normalizeProfileText(payload.targetIntake, 80);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const language = normalizeLanguage(payload.language);
+  await env.DB.prepare(
+    `UPDATE users SET
+       display_name = ?2,
+       language = ?3,
+       country = ?4,
+       target_intake = ?5,
+       updated_at = ?6
+     WHERE id = ?1`,
+  ).bind(
+    user.id,
+    displayName || null,
+    language,
+    country || null,
+    targetIntake || null,
+    new Date().toISOString(),
+  ).run();
+  const updated = await env.DB.prepare(
+    `SELECT id, display_name, language, country, target_intake
+       FROM users WHERE id = ?1`,
+  ).bind(user.id).first();
+  return jsonResponse(request, env, { ok: true, user: publicUser(updated) });
+}
+
+async function updateMyFavorites(request, env) {
+  const user = await requireUser(request, env);
+  if (!user) return jsonResponse(request, env, { ok: false }, 401);
+  let payload;
+  try {
+    payload = await request.json();
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  let favorites;
+  try {
+    favorites = [...new Set((payload.favorites || []).map(normalizeFavoriteKey))].slice(0, 500);
+  } catch {
+    return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const now = new Date().toISOString();
+  const statements = [
+    env.DB.prepare("DELETE FROM user_favorites WHERE user_id = ?1").bind(user.id),
+    ...favorites.map((itemKey) =>
+      env.DB.prepare(
+        `INSERT INTO user_favorites (user_id, item_key, created_at)
+         VALUES (?1, ?2, ?3)`,
+      ).bind(user.id, itemKey, now),
+    ),
+  ];
+  await env.DB.batch(statements);
+  return jsonResponse(request, env, { ok: true, favorites });
+}
+
+async function logout(request, env) {
+  const header = request.headers.get("Authorization") || "";
+  const match = header.match(/^Bearer\s+(.+)$/i);
+  if (match) {
+    await env.DB.prepare(
+      "DELETE FROM auth_sessions WHERE session_hash = ?1",
+    ).bind(await sha256Hex(match[1])).run();
+  }
+  return jsonResponse(request, env, { ok: true });
+}
+
 function universityComment(row) {
+  const anonymous = row.author === "good people";
   return {
     id: row.id,
     universityId: row.university_id,
     author: row.author,
+    anonymous,
     body: row.body,
     createdAt: row.created_at,
   };
@@ -287,6 +618,8 @@ async function createUniversityComment(request, env, universityId) {
   if (!allowedOrigin(request.headers.get("Origin"), env.ALLOWED_ORIGINS)) {
     return jsonResponse(request, env, { ok: false }, 403);
   }
+  const user = await requireUser(request, env);
+  if (!user) return jsonResponse(request, env, { ok: false }, 401);
   let payload;
   try {
     payload = await request.json();
@@ -294,16 +627,25 @@ async function createUniversityComment(request, env, universityId) {
     return jsonResponse(request, env, { ok: false }, 400);
   }
   let normalizedUniversityId;
-  let identity;
   let author;
   let body;
   try {
     normalizedUniversityId = normalizeUniversityId(universityId);
-    identity = await roadmapIdentity(request, env, payload);
-    author = normalizeCommentText(payload.author || "Anonymous", 40, false) || "Anonymous";
+    author = payload.anonymous === true
+      ? "good people"
+      : normalizeCommentText(user.display_name || "", 40, false) ||
+        "GradWindow user";
     body = normalizeCommentText(payload.body, 800);
   } catch {
     return jsonResponse(request, env, { ok: false }, 400);
+  }
+  const identity = {
+    visitorHash: user.id,
+    ipHash: "",
+  };
+  if (env.ROADMAP_VOTER_HASH_KEY) {
+    const ip = request.headers.get("CF-Connecting-IP") || "";
+    identity.ipHash = ip ? await hmacHex(env.ROADMAP_VOTER_HASH_KEY, ip) : "";
   }
   const [visitorAllowed, ipAllowed] = await Promise.all([
     consumeRoadmapRateLimit(env, "comment-visitor", identity.visitorHash, 8, 60 * 60_000),
@@ -628,6 +970,14 @@ async function cleanup(env) {
   const staleUnsubscribed = new Date(now.getTime() - 30 * 86400_000).toISOString();
   await env.DB.batch([
     env.DB.prepare(
+      `DELETE FROM auth_login_codes
+       WHERE expires_at < ?1 OR consumed_at < ?1`,
+    ).bind(stalePending),
+    env.DB.prepare(
+      `DELETE FROM auth_sessions
+       WHERE expires_at < ?1`,
+    ).bind(now.toISOString()),
+    env.DB.prepare(
       `DELETE FROM subscribers
        WHERE status = 'pending' AND created_at < ?1`,
     ).bind(stalePending),
@@ -652,6 +1002,24 @@ export default {
     }
     if (request.method === "GET" && url.pathname === "/health") {
       return new Response("ok");
+    }
+    if (request.method === "POST" && url.pathname === "/auth/request") {
+      return requestAuthCode(request, env);
+    }
+    if (request.method === "POST" && url.pathname === "/auth/verify") {
+      return verifyAuthCode(request, env);
+    }
+    if (request.method === "POST" && url.pathname === "/auth/logout") {
+      return logout(request, env);
+    }
+    if (request.method === "GET" && url.pathname === "/me") {
+      return getMe(request, env);
+    }
+    if (request.method === "PATCH" && url.pathname === "/me") {
+      return updateMe(request, env);
+    }
+    if (request.method === "PUT" && url.pathname === "/me/favorites") {
+      return updateMyFavorites(request, env);
     }
     if (request.method === "GET" && url.pathname === "/roadmap") {
       return listRoadmap(request, env);

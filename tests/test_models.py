@@ -76,3 +76,39 @@ def test_university_model_does_not_treat_qs_rank_as_list_position() -> None:
     record["qsRank"] = 225
     parsed = University.model_validate(record)
     assert parsed.qs_rank == 225
+
+
+def test_qs_universities_have_chinese_names_for_search() -> None:
+    payload = json.loads(
+        (APPLICATIONS_PATH.parent / "universities.json").read_text(encoding="utf-8")
+    )
+    missing = [
+        university["id"]
+        for university in payload["universities"]
+        if not university.get("schoolZh")
+    ]
+    assert missing == []
+
+    aliases_by_id = {
+        university["id"]: university.get("schoolAliasesZh", [])
+        for university in payload["universities"]
+    }
+    assert "港大" in aliases_by_id["the-university-of-hong-kong"]
+    assert "宾大" in aliases_by_id["university-of-pennsylvania"]
+    assert "曼大" in aliases_by_id["the-university-of-manchester"]
+
+
+def test_global_rankings_have_chinese_names_for_search() -> None:
+    payload = json.loads(
+        (APPLICATIONS_PATH.parent / "global-rankings.json").read_text(
+            encoding="utf-8"
+        )
+    )
+    missing = []
+    for ranking_id, ranking in payload["rankings"].items():
+        missing.extend(
+            f"{ranking_id}:{row['school']}"
+            for row in ranking.get("rows", [])
+            if not row.get("schoolZh")
+        )
+    assert missing == []

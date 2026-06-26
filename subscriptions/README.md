@@ -1,7 +1,8 @@
 # GradWindow email subscriptions
 
 This Worker provides privacy-preserving, double-opt-in email alerts for newly
-opened official application windows.
+opened official application windows. It also backs the public roadmap, school
+comments, and the lightweight GradWindow account system.
 
 ## Privacy design
 
@@ -13,6 +14,10 @@ opened official application windows.
 - Unsubscribing immediately removes the encrypted email value.
 - The database intentionally does not store subscriber IP addresses.
 - Resend open and click tracking must remain disabled.
+- Accounts use short-lived email login codes and opaque session tokens. The
+  Worker stores session hashes, not raw session tokens.
+- School comments require a signed-in account. Public comments show the user's
+  display name, not their email address.
 
 Cloudflare D1 also encrypts data at rest and in transit. Application-level
 encryption is retained as an additional control.
@@ -51,8 +56,8 @@ Resend's free tier currently limits sending to 100 emails per day.
    ```
 
    Use the first output for `EMAIL_ENCRYPTION_KEY`. Run the second command
-   four times for `EMAIL_INDEX_KEY`, `TOKEN_SIGNING_KEY`, `ADMIN_API_KEY`, and
-   `ROADMAP_VOTER_HASH_KEY`.
+   five times for `EMAIL_INDEX_KEY`, `TOKEN_SIGNING_KEY`, `ADMIN_API_KEY`,
+   `ROADMAP_VOTER_HASH_KEY`, and `AUTH_SECRET_KEY`.
 
 4. Store secrets with Wrangler. Never commit their values:
 
@@ -64,6 +69,7 @@ Resend's free tier currently limits sending to 100 emails per day.
    npx wrangler secret put RESEND_API_KEY --config subscriptions/wrangler.toml
    npx wrangler secret put TURNSTILE_SECRET_KEY --config subscriptions/wrangler.toml
    npx wrangler secret put ROADMAP_VOTER_HASH_KEY --config subscriptions/wrangler.toml
+   npx wrangler secret put AUTH_SECRET_KEY --config subscriptions/wrangler.toml
    ```
 
 5. Verify a sending subdomain in Resend, update `RESEND_FROM`, then deploy:
@@ -167,7 +173,8 @@ vote per proposal. The Worker also hashes the request IP only for short-lived
 rate limiting; it never stores a raw IP address.
 
 Run the schema command in step 2 again after pulling this update. It is
-idempotent and adds the roadmap tables plus the initial GradWindow proposals.
+idempotent and adds the roadmap, account, session, favourite, and comment
+tables plus the initial GradWindow proposals.
 Owner proposals, status, and progress can be updated in D1 without a new site
 deployment, for example:
 
@@ -178,6 +185,31 @@ npx wrangler d1 execute gradwindow-subscribers --remote --command "UPDATE roadma
 Community suggestions are published immediately, intentionally shown in a
 collapsed section, and can be hidden by setting `hidden_at` to an ISO timestamp.
 Keep `TURNSTILE_SECRET_KEY` configured before enabling public submissions.
+
+## Accounts and comments
+
+Accounts are passwordless. A user enters an email address, receives a six-digit
+code, and the Worker returns an opaque session token after verification. The
+static site stores that token in browser local storage and sends it as a Bearer
+token to account-only endpoints.
+
+Account endpoints:
+
+- `POST /auth/request`: send an email login code.
+- `POST /auth/verify`: verify the code and create a 30-day session.
+- `POST /auth/logout`: revoke the current session.
+- `GET /me`: return the public profile and synced favourites.
+- `PATCH /me`: update display name, language, country/region, and target
+  intake.
+- `PUT /me/favorites`: replace the signed-in user's favourite item keys.
+
+School comments remain publicly readable, but posting now requires a valid
+session. Run the schema command again before deploying this Worker version:
+
+```powershell
+npx wrangler d1 execute gradwindow-subscribers --remote --file subscriptions/schema.sql --config subscriptions/wrangler.toml
+npx wrangler deploy --config subscriptions/wrangler.toml
+```
 
 ## Operational rules
 

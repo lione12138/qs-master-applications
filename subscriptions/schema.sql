@@ -18,6 +18,54 @@ CREATE UNIQUE INDEX IF NOT EXISTS idx_subscribers_confirmation
 CREATE INDEX IF NOT EXISTS idx_subscribers_status
   ON subscribers(status, confirmed_at);
 
+CREATE TABLE IF NOT EXISTS users (
+  id TEXT PRIMARY KEY,
+  email_hash TEXT NOT NULL UNIQUE,
+  email_ciphertext TEXT,
+  email_iv TEXT,
+  display_name TEXT,
+  language TEXT NOT NULL DEFAULT 'en',
+  country TEXT,
+  target_intake TEXT,
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS auth_login_codes (
+  id TEXT PRIMARY KEY,
+  email_hash TEXT NOT NULL,
+  email_ciphertext TEXT,
+  email_iv TEXT,
+  language TEXT NOT NULL DEFAULT 'en',
+  code_hash TEXT NOT NULL,
+  expires_at TEXT NOT NULL,
+  consumed_at TEXT,
+  created_at TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_auth_login_codes_lookup
+  ON auth_login_codes(email_hash, code_hash, expires_at)
+  WHERE consumed_at IS NULL;
+
+CREATE TABLE IF NOT EXISTS auth_sessions (
+  session_hash TEXT PRIMARY KEY,
+  user_id TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  expires_at TEXT NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_auth_sessions_user
+  ON auth_sessions(user_id, expires_at);
+
+CREATE TABLE IF NOT EXISTS user_favorites (
+  user_id TEXT NOT NULL,
+  item_key TEXT NOT NULL,
+  created_at TEXT NOT NULL,
+  PRIMARY KEY (user_id, item_key),
+  FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
 CREATE TABLE IF NOT EXISTS notification_events (
   event_key TEXT PRIMARY KEY,
   payload_json TEXT NOT NULL,

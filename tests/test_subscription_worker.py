@@ -111,3 +111,5 @@ def test_worker_preflight_allows_comment_reads_and_writes() -> None:
     assert response["status"] == 204
     assert "GET" in response["methods"]
     assert "POST" in response["methods"]
+    assert "PATCH" in response["methods"]
+    assert "PUT" in response["methods"]

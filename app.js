@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js?v=20260622-i18n";
+import { I18N } from "./i18n.js?v=20260626-calendar-menu";
 import { getApplicationStatus } from "./status.js";
 import {
   canonicalIntake,
@@ -16,6 +16,7 @@ import { needsManualCheck } from "./exception-status.js";
 
 const PAGE_SIZE = 20;
 const VISITOR_KEY = "gradwindow:visitor";
+const AUTH_TOKEN_KEY = "gradwindow:authToken";
 
 const state = {
   data: [],
@@ -46,6 +47,9 @@ const state = {
   optionalFailureCount: 0,
   pages: {},
   activeReviewUniversity: null,
+  authToken: "",
+  user: null,
+  favoriteSyncTimer: null,
 };
 
 
@@ -105,6 +109,30 @@ function feedbackApiBase() {
   return String(config.roadmapUrl || config.subscribeUrl || "").replace(/\/$/, "");
 }
 
+function authApiBase() {
+  return feedbackApiBase();
+}
+
+function authHeaders(includeJson = true) {
+  const headers = {};
+  if (includeJson) headers["Content-Type"] = "application/json";
+  if (state.authToken) headers.Authorization = `Bearer ${state.authToken}`;
+  return headers;
+}
+
+function setAuthStatus(message, kind = "") {
+  const status = document.getElementById("auth-status");
+  if (!status) return;
+  status.textContent = message || "";
+  status.className = `auth-status${kind ? ` ${kind}` : ""}`;
+}
+
+function saveAuthToken(token) {
+  state.authToken = token || "";
+  if (state.authToken) localStorage.setItem(AUTH_TOKEN_KEY, state.authToken);
+  else localStorage.removeItem(AUTH_TOKEN_KEY);
+}
+
 function acronym(value = "") {
   return String(value)
     .split(/[^A-Za-z0-9]+/)
@@ -161,6 +189,7 @@ function favoriteKey(type, id) {
 function saveFavorites() {
   localStorage.setItem("gradwindow:favorites", JSON.stringify([...state.favorites]));
   updateFavoriteControls();
+  scheduleFavoriteSync();
 }
 
 function toggleFavorite(key) {
@@ -181,6 +210,171 @@ function makeFavoriteButton(key) {
   button.setAttribute("aria-pressed", String(active));
   button.addEventListener("click", () => toggleFavorite(key));
   return button;
+}
+
+function updateAuthUi() {
+  const signedIn = Boolean(state.user);
+  const toggle = document.getElementById("auth-toggle");
+  if (toggle) {
+    toggle.textContent = signedIn
+      ? state.user.displayName || t("accountTitle")
+      : t("signIn");
+  }
+  const signedOut = document.getElementById("auth-signed-out");
+  const signedInPanel = document.getElementById("auth-signed-in");
+  if (signedOut) signedOut.hidden = signedIn;
+  if (signedInPanel) signedInPanel.hidden = !signedIn;
+  if (signedIn) {
+    document.getElementById("auth-user-name").textContent =
+      state.user.displayName || t("accountTitle");
+    document.getElementById("profile-name").value = state.user.displayName || "";
+    document.getElementById("profile-country").value = state.user.country || "";
+    document.getElementById("profile-intake").value = state.user.targetIntake || "";
+  }
+  updateReviewAuthState();
+}
+
+function openAuthPanel(message = "") {
+  const panel = document.getElementById("auth-panel");
+  if (!panel) return;
+  panel.hidden = false;
+  setAuthStatus(message);
+  updateAuthUi();
+  const email = document.getElementById("auth-email");
+  const profileName = document.getElementById("profile-name");
+  requestAnimationFrame(() => {
+    if (state.user) profileName?.focus();
+    else email?.focus();
+  });
+}
+
+function closeAuthPanel() {
+  const panel = document.getElementById("auth-panel");
+  if (panel) panel.hidden = true;
+}
+
+async function refreshMe() {
+  if (!state.authToken) return;
+  const base = authApiBase();
+  if (!base) return;
+  try {
+    const response = await fetch(`${base}/me`, {
+      headers: authHeaders(false),
+    });
+    if (!response.ok) throw new Error("auth expired");
+    const payload = await response.json();
+    state.user = payload.user || null;
+    const merged = new Set([
+      ...state.favorites,
+      ...((payload.favorites || []).filter(Boolean)),
+    ]);
+    state.favorites = merged;
+    localStorage.setItem("gradwindow:favorites", JSON.stringify([...merged]));
+    scheduleFavoriteSync();
+  } catch {
+    state.user = null;
+    saveAuthToken("");
+  }
+  updateAuthUi();
+  updateFavoriteControls();
+  render();
+}
+
+function scheduleFavoriteSync() {
+  if (!state.authToken || !state.user) return;
+  clearTimeout(state.favoriteSyncTimer);
+  state.favoriteSyncTimer = setTimeout(syncFavorites, 400);
+}
+
+async function syncFavorites() {
+  if (!state.authToken || !state.user) return;
+  const base = authApiBase();
+  if (!base) return;
+  try {
+    await fetch(`${base}/me/favorites`, {
+      method: "PUT",
+      headers: authHeaders(),
+      body: JSON.stringify({ favorites: [...state.favorites] }),
+    });
+  } catch {
+    // Keep local favourites; the next change or login refresh will retry.
+  }
+}
+
+async function requestLoginCode(email) {
+  const base = authApiBase();
+  if (!base) throw new Error("auth unavailable");
+  setAuthStatus(t("authSendingCode"));
+  const response = await fetch(`${base}/auth/request`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, language: state.language }),
+  });
+  if (!response.ok) throw new Error("login request failed");
+  setAuthStatus(t("authCodeSent"), "success");
+}
+
+async function verifyLoginCode(email, code) {
+  const base = authApiBase();
+  if (!base) throw new Error("auth unavailable");
+  setAuthStatus(t("authVerifying"));
+  const response = await fetch(`${base}/auth/verify`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email, code }),
+  });
+  if (!response.ok) throw new Error("login verify failed");
+  const payload = await response.json();
+  saveAuthToken(payload.token || "");
+  state.user = payload.user || null;
+  state.favorites = new Set([
+    ...state.favorites,
+    ...((payload.favorites || []).filter(Boolean)),
+  ]);
+  localStorage.setItem("gradwindow:favorites", JSON.stringify([...state.favorites]));
+  setAuthStatus(t("authSignedIn"), "success");
+  updateAuthUi();
+  updateFavoriteControls();
+  render();
+  scheduleFavoriteSync();
+}
+
+async function saveProfile() {
+  const base = authApiBase();
+  if (!base || !state.authToken) throw new Error("auth unavailable");
+  const response = await fetch(`${base}/me`, {
+    method: "PATCH",
+    headers: authHeaders(),
+    body: JSON.stringify({
+      displayName: document.getElementById("profile-name").value,
+      country: document.getElementById("profile-country").value,
+      targetIntake: document.getElementById("profile-intake").value,
+      language: state.language,
+    }),
+  });
+  if (!response.ok) throw new Error("profile failed");
+  const payload = await response.json();
+  state.user = payload.user || state.user;
+  setAuthStatus(t("authProfileSaved"), "success");
+  updateAuthUi();
+}
+
+async function signOut() {
+  const base = authApiBase();
+  if (base && state.authToken) {
+    try {
+      await fetch(`${base}/auth/logout`, {
+        method: "POST",
+        headers: authHeaders(false),
+      });
+    } catch {
+      // Local sign-out still clears the session from this browser.
+    }
+  }
+  state.user = null;
+  saveAuthToken("");
+  setAuthStatus("");
+  updateAuthUi();
 }
 
 function makeReviewButton(university) {
@@ -280,6 +474,32 @@ function googleCalendarUrl(record) {
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
 
+function outlookCalendarUrl(record) {
+  const start = `${record.closesAt}T00:00:00Z`;
+  const endDate = parseDate(record.closesAt);
+  endDate.setUTCDate(endDate.getUTCDate() + 1);
+  const end = `${endDate.toISOString().slice(0, 10)}T00:00:00Z`;
+  const prefix = record.dataStatus === "predicted" ? "[ESTIMATE] " : "";
+  const title = `${prefix}${record.school} ${record.program} application deadline`;
+  const body = [
+    record.dataStatus === "predicted"
+      ? "Unofficial calendar-date estimate. Confirm on the official website before applying."
+      : "",
+    `Application: ${record.applicationUrl}`,
+    `Source: ${record.sourceUrl}`,
+  ].filter(Boolean).join("\n");
+  const params = new URLSearchParams({
+    path: "/calendar/action/compose",
+    rru: "addevent",
+    startdt: start,
+    enddt: end,
+    subject: title,
+    body,
+    allday: "true",
+  });
+  return `https://outlook.live.com/calendar/0/deeplink/compose?${params.toString()}`;
+}
+
 function downloadIcs(record) {
   const start = record.closesAt.replaceAll("-", "");
   const endDate = parseDate(record.closesAt);
@@ -316,6 +536,33 @@ function downloadIcs(record) {
   anchor.click();
   anchor.remove();
   URL.revokeObjectURL(url);
+}
+
+function makeCalendarMenu(record) {
+  const menu = makeElement("details", { className: "calendar-menu" });
+  const summary = makeElement("summary", {
+    className: "calendar-menu-trigger",
+    text: t("addCalendar"),
+    title: t("calendarOptions"),
+  });
+  const options = makeElement("div", { className: "calendar-menu-options" });
+  const apple = makeElement("button", {
+    className: "calendar-menu-item",
+    text: t("appleCalendar"),
+    title: t("downloadIcs"),
+  });
+  apple.type = "button";
+  apple.addEventListener("click", () => {
+    downloadIcs(record);
+    menu.open = false;
+  });
+  options.append(
+    makeLink(t("googleCalendar"), googleCalendarUrl(record), "calendar-menu-item"),
+    makeLink(t("outlookCalendar"), outlookCalendarUrl(record), "calendar-menu-item"),
+    apple,
+  );
+  menu.append(summary, options);
+  return menu;
 }
 
 function downloadFavoriteCalendars() {
@@ -412,6 +659,7 @@ function selectedRankingDefinition() {
         universityId: university.id,
         school: university.school,
         schoolZh: university.schoolZh,
+        schoolAliasesZh: university.schoolAliasesZh || [],
         country: university.country,
         region: university.region,
         rankPosition: university.qsPosition,
@@ -472,6 +720,7 @@ function selectedDirectoryUniversities() {
       id: `${state.ranking}:${rankingRow.id}`,
       school: rankingRow.school,
       schoolZh: rankingRow.schoolZh || "",
+      schoolAliasesZh: rankingRow.schoolAliasesZh || [],
       country: rankingRow.country,
       region: rankingRow.region,
       rankPosition: rankingRow.rankPosition,
@@ -545,6 +794,7 @@ function filteredRecords() {
     const searchable = [
       record.school,
       record.schoolZh,
+      ...(record.schoolAliasesZh || []),
       acronym(record.school),
       record.program,
       record.universityId,
@@ -575,6 +825,7 @@ function filteredUniversities() {
     const searchable = [
       university.school,
       university.schoolZh,
+      ...(university.schoolAliasesZh || []),
       acronym(university.school),
       university.id,
       university.country,
@@ -693,19 +944,8 @@ function createRow(record, status) {
     deadlineNote(record, status),
     `date-primary ${deadlineClass}`.trim(),
   );
-  const calendar = makeElement("div", { className: "calendar-actions" });
-  calendar.appendChild(
-    makeLink("G", googleCalendarUrl(record), "icon-button"),
-  );
-  const ics = makeElement("button", {
-    className: "icon-button",
-    text: "ICS",
-    title: t("downloadIcs"),
-  });
-  ics.type = "button";
-  ics.addEventListener("click", () => downloadIcs(record));
-  calendar.appendChild(ics);
-  calendar.appendChild(makeFavoriteButton(favoriteKey("window", record.id)));
+  const calendar = makeCalendarMenu(record);
+  const favorite = makeFavoriteButton(favoriteKey("window", record.id));
 
   row.append(
     makeCell(t("rank"), rank),
@@ -727,6 +967,7 @@ function createRow(record, status) {
     ),
     makeCell(t("deadline"), deadline),
     makeCell(t("calendar"), calendar),
+    makeCell(t("favorite"), favorite),
     makeCell(t("source"), source),
   );
   return row;
@@ -751,6 +992,7 @@ function createGroup(status, records) {
       { label: t("opens"), sort: "opens" },
       { label: t("deadline"), sort: "deadline" },
       t("addCalendar"),
+      t("favorite"),
       t("dataSource"),
     ],
   );
@@ -1075,6 +1317,10 @@ function renderComments(comments) {
   }
   comments.forEach((comment) => {
     const item = makeElement("article", { className: "review-item" });
+    const avatar = makeElement("span", {
+      className: `review-avatar ${comment.anonymous ? "cat-avatar" : "user-avatar"}`,
+      text: comment.anonymous ? "" : acronym(comment.author || "G").slice(0, 2) || "G",
+    });
     const meta = makeElement("div", { className: "review-item-meta" });
     meta.append(
       makeElement("strong", { text: comment.author || t("reviewAnonymous") }),
@@ -1085,6 +1331,12 @@ function renderComments(comments) {
       }),
     );
     item.append(
+      avatar,
+      makeElement("div", {
+        className: "review-item-content",
+      }),
+    );
+    item.querySelector(".review-item-content").append(
       meta,
       makeElement("p", { className: "review-item-body", text: comment.body || "" }),
     );
@@ -1122,6 +1374,7 @@ async function openUniversityReviews(university) {
   document.getElementById("review-form").reset();
   panel.hidden = false;
   document.body.classList.add("review-open");
+  updateReviewAuthState();
   await loadUniversityComments(university.id);
   document.getElementById("review-body").focus();
 }
@@ -1133,6 +1386,25 @@ function closeUniversityReviews() {
   setReviewStatus("");
 }
 
+function updateReviewAuthState() {
+  const form = document.getElementById("review-form");
+  const author = document.getElementById("review-author");
+  const submit = document.getElementById("review-submit");
+  const anonymous = document.getElementById("review-anonymous");
+  if (!form || !submit) return;
+  const signedIn = Boolean(state.user);
+  if (author) {
+    author.disabled = true;
+    if (!signedIn) author.value = t("signIn");
+    else if (anonymous?.checked) author.value = "good people";
+    else author.value = state.user.displayName || t("accountTitle");
+  }
+  submit.textContent = signedIn ? t("reviewSubmitButton") : t("signIn");
+  if (!document.getElementById("review-panel")?.hidden && !signedIn) {
+    setReviewStatus("authRequiredForComments", "error");
+  }
+}
+
 function setupReviewPanel() {
   document.querySelectorAll("[data-review-close]").forEach((button) => {
     button.addEventListener("click", closeUniversityReviews);
@@ -1140,6 +1412,9 @@ function setupReviewPanel() {
   const form = document.getElementById("review-form");
   if (!form || form.dataset.bound === "true") return;
   form.dataset.bound = "true";
+  document
+    .getElementById("review-anonymous")
+    ?.addEventListener("change", updateReviewAuthState);
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     const university = state.activeReviewUniversity;
@@ -1148,21 +1423,26 @@ function setupReviewPanel() {
       setReviewStatus("reviewUnavailable", "error");
       return;
     }
+    if (!state.authToken || !state.user) {
+      openAuthPanel(t("authRequiredForComments"));
+      setReviewStatus("authRequiredForComments", "error");
+      return;
+    }
     const button = document.getElementById("review-submit");
     button.disabled = true;
     setReviewStatus("reviewSending");
     try {
       const response = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: authHeaders(),
         body: JSON.stringify({
-          author: document.getElementById("review-author").value.trim(),
           body: document.getElementById("review-body").value.trim(),
-          visitorId: visitorId(),
+          anonymous: document.getElementById("review-anonymous").checked,
         }),
       });
       if (!response.ok) throw new Error("comment failed");
       form.reset();
+      updateReviewAuthState();
       await loadUniversityComments(university.id);
       setReviewStatus("reviewSubmitSuccess", "success");
     } catch {
@@ -1302,6 +1582,7 @@ function applyStaticTranslations() {
     state.theme === "dark" ? t("switchToLight") : t("switchToDark"),
   );
   updateRankRangeOptions();
+  updateAuthUi();
   document.title =
     state.language === "zh"
       ? "GradWindow · QS 200 硕士申请时间表"
@@ -1329,6 +1610,7 @@ function loadTurnstile(siteKey) {
   if (!container) return;
   const widget = makeElement("div", { className: "cf-turnstile" });
   widget.dataset.sitekey = siteKey;
+  widget.dataset.action = "turnstile-spin-v1";
   widget.dataset.theme = state.theme === "dark" ? "dark" : "light";
   container.appendChild(widget);
   const script = document.createElement("script");
@@ -1337,6 +1619,64 @@ function loadTurnstile(siteKey) {
   script.defer = true;
   script.dataset.gradwindowTurnstile = "true";
   document.head.appendChild(script);
+}
+
+function setupAuthPanel() {
+  document.getElementById("auth-toggle")?.addEventListener("click", () => {
+    openAuthPanel();
+  });
+  document.querySelectorAll("[data-auth-close]").forEach((button) => {
+    button.addEventListener("click", closeAuthPanel);
+  });
+  document.getElementById("auth-request-form")?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const button = document.getElementById("auth-request-button");
+    const email = document.getElementById("auth-email").value.trim();
+    button.disabled = true;
+    try {
+      await requestLoginCode(email);
+      document.getElementById("auth-code").focus();
+    } catch {
+      setAuthStatus(t("authError"), "error");
+    } finally {
+      button.disabled = false;
+    }
+  });
+  document.getElementById("auth-verify-form")?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const button = document.getElementById("auth-verify-button");
+    const email = document.getElementById("auth-email").value.trim();
+    const code = document.getElementById("auth-code").value.trim();
+    button.disabled = true;
+    try {
+      await verifyLoginCode(email, code);
+    } catch {
+      setAuthStatus(t("authError"), "error");
+    } finally {
+      button.disabled = false;
+    }
+  });
+  document.getElementById("profile-form")?.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const button = document.getElementById("profile-save-button");
+    button.disabled = true;
+    try {
+      await saveProfile();
+    } catch {
+      setAuthStatus(t("authError"), "error");
+    } finally {
+      button.disabled = false;
+    }
+  });
+  document.getElementById("auth-logout-button")?.addEventListener("click", signOut);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !document.getElementById("auth-panel")?.hidden) {
+      closeAuthPanel();
+    }
+  });
+  state.authToken = localStorage.getItem(AUTH_TOKEN_KEY) || "";
+  updateAuthUi();
+  refreshMe();
 }
 
 function setupSubscription() {
@@ -1620,6 +1960,7 @@ async function init() {
           state.sourceMonitor[record.basedOnRecordId || record.id] || {},
         school: university.school || record.school || "",
         schoolZh: university.schoolZh || record.schoolZh || "",
+        schoolAliasesZh: university.schoolAliasesZh || record.schoolAliasesZh || [],
         qsRank: university.qsRank || record.qsRank || 999,
         country: university.country || record.country || "",
         region: university.region || record.region || "",
@@ -1726,6 +2067,7 @@ async function init() {
     setupHero();
     setupSubscription();
     bindEvents();
+    setupAuthPanel();
     setupReviewPanel();
     render();
   } catch (error) {

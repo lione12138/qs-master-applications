@@ -19,7 +19,7 @@
 
     <link rel="preconnect" href="https://static.cloudflareinsights.com" crossorigin />
     <link rel="dns-prefetch" href="https://static.cloudflareinsights.com" />
-    <link rel="modulepreload" href="./app.js?v=20260622-i18n" />
+    <link rel="modulepreload" href="./app.js?v=20260626-calendar-menu" />
     <link rel="modulepreload" href="./i18n.js?v=20260622-i18n" />
     <link rel="modulepreload" href="./status.js" />
     <link rel="modulepreload" href="./intake-filter.js" />
@@ -72,7 +72,7 @@
 
     <script>window.GRADWINDOW_CONFIG = {};</script>
     <title>GradWindow · QS Top 200 Master's Applications</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260626-calendar-menu" />
   </head>
   <body>
     <div class="page-shell">
@@ -96,11 +96,57 @@
             Sources
           </a>
           <div class="header-controls">
+            <button class="header-control auth-control" id="auth-toggle" type="button" data-i18n="signIn">Sign in</button>
             <button class="header-control" id="language-toggle" type="button" aria-label="Switch language">中文</button>
             <button class="header-control icon-only-control" id="theme-toggle" type="button" aria-label="Switch color theme">◐</button>
           </div>
         </nav>
       </header>
+
+      <div class="auth-panel" id="auth-panel" hidden>
+        <button class="auth-backdrop" type="button" data-auth-close aria-label="Close account panel"></button>
+        <section class="auth-card" role="dialog" aria-modal="true" aria-labelledby="auth-title">
+          <div class="auth-card-header">
+            <div>
+              <span class="section-kicker" data-i18n="accountKicker">ACCOUNT</span>
+              <h2 id="auth-title" data-i18n="accountTitle">Your GradWindow account</h2>
+            </div>
+            <button class="icon-button" type="button" data-auth-close aria-label="Close account panel">×</button>
+          </div>
+
+          <div class="auth-signed-out" id="auth-signed-out">
+            <p data-i18n="accountIntro">Sign in with an email code to sync favourites, keep a personal calendar, and comment on schools.</p>
+            <form class="auth-form" id="auth-request-form">
+              <label for="auth-email" data-i18n="authEmailLabel">Email address</label>
+              <input id="auth-email" type="email" autocomplete="email" required data-i18n-placeholder="emailPlaceholder" placeholder="you@example.com" />
+              <button class="primary-button" id="auth-request-button" type="submit" data-i18n="sendLoginCode">Send login code</button>
+            </form>
+            <form class="auth-form" id="auth-verify-form">
+              <label for="auth-code" data-i18n="authCodeLabel">Login code</label>
+              <input id="auth-code" inputmode="numeric" maxlength="6" autocomplete="one-time-code" data-i18n-placeholder="authCodePlaceholder" placeholder="6-digit code" />
+              <button class="primary-button" id="auth-verify-button" type="submit" data-i18n="verifyLoginCode">Sign in</button>
+            </form>
+          </div>
+
+          <div class="auth-signed-in" id="auth-signed-in" hidden>
+            <p class="auth-user-line">
+              <span data-i18n="signedInAs">Signed in</span>
+              <strong id="auth-user-name"></strong>
+            </p>
+            <form class="auth-form" id="profile-form">
+              <label for="profile-name" data-i18n="profileNameLabel">Display name</label>
+              <input id="profile-name" maxlength="60" data-i18n-placeholder="profileNamePlaceholder" placeholder="Shown on school comments" />
+              <label for="profile-country" data-i18n="profileCountryLabel">Country / region</label>
+              <input id="profile-country" maxlength="80" data-i18n-placeholder="profileCountryPlaceholder" placeholder="Optional" />
+              <label for="profile-intake" data-i18n="profileIntakeLabel">Target intake</label>
+              <input id="profile-intake" maxlength="80" data-i18n-placeholder="profileIntakePlaceholder" placeholder="e.g. Fall 2027" />
+              <button class="primary-button" id="profile-save-button" type="submit" data-i18n="saveProfile">Save profile</button>
+            </form>
+            <button class="toolbar-button" id="auth-logout-button" type="button" data-i18n="signOut">Sign out</button>
+          </div>
+          <p class="auth-status" id="auth-status" role="status" aria-live="polite"></p>
+        </section>
+      </div>
 
       <main>
         <section class="hero">
@@ -320,6 +366,10 @@
                 data-i18n-placeholder="reviewAuthorPlaceholder"
                 placeholder="Anonymous"
               />
+              <label class="review-anonymous-option">
+                <input id="review-anonymous" type="checkbox" />
+                <span data-i18n="reviewAnonymousMode">Post anonymously as good people</span>
+              </label>
               <label for="review-body" data-i18n="reviewBodyLabel">Your comment</label>
               <textarea
                 id="review-body"
@@ -457,7 +507,7 @@
       </footer>
     </div>
 
-    <script src="./app.js?v=20260622-i18n" type="module"></script>
+    <script src="./app.js?v=20260626-calendar-menu" type="module"></script>
     <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"02939949076c423f953d11db0caade78"}'></script>
   </body>
 </html>

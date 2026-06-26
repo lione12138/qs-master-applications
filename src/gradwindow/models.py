@@ -65,6 +65,7 @@ class University(DataModel):
     rank_display: str = Field(alias="rankDisplay")
     school: str
     school_zh: str = Field(alias="schoolZh")
+    school_aliases_zh: list[str] = Field(default_factory=list, alias="schoolAliasesZh")
     country: str
     region: str
     homepage_url: AnyHttpUrl = Field(alias="homepageUrl")

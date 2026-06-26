@@ -68,32 +68,59 @@
         敏感或保密信息。
       </p>
 
+      <h2>Accounts and school comments / 账号与学校评论</h2>
+      <p>
+        GradWindow accounts use email login codes instead of passwords. The
+        Worker stores an encrypted email address, a keyed lookup hash, session
+        hashes, optional profile fields such as display name, country/region,
+        and target intake, plus synced favourite item keys.
+      </p>
+      <p>
+        GradWindow 账号使用邮箱验证码登录，不保存密码。Worker 会保存加密邮箱、带密钥的
+        查询摘要、会话摘要、可选资料字段（例如显示名称、国家/地区、目标入学季）以及同步收藏项。
+      </p>
+      <p>
+        School comments are public. Posting a comment requires signing in, and
+        the public comment shows your display name rather than your email
+        address. If you choose anonymous display, the public comment uses the
+        name "good people" and the default avatar, but GradWindow still keeps
+        the account association for moderation and abuse prevention. Do not post
+        private contact details, confidential admissions information, or
+        sensitive personal data.
+      </p>
+      <p>
+        学校评论是公开内容。发表评论需要登录，公开显示的是你的显示名称而不是邮箱地址。
+        如果选择匿名展示，公开评论会显示为 “good people” 和默认头像，但 GradWindow
+        仍会保留账号关联用于审核和防滥用。请不要发布私人联系方式、保密申请信息或敏感个人数据。
+      </p>
+
       <h2>Retention and deletion / 保留与删除</h2>
       <p>
         Unconfirmed subscriptions expire automatically. Unsubscribing disables
         future alerts immediately and removes the encrypted email value.
         A non-reversible suppression record may be retained for up to 30 days,
-        then deleted. If you lose access to the unsubscribe link, open a GitHub
-        issue without including your email address and request private contact
-        instructions.
+        then deleted. Login codes expire automatically, and account sessions
+        expire after 30 days. Public comments may remain visible unless hidden
+        or deleted by the operator. If you need account deletion, use the
+        contact page and do not include private details in a public issue.
       </p>
       <p>
         未确认的订阅会自动过期。退订后将立即停止提醒并删除加密邮箱值；不可逆的抑制记录
-        最多保留 30 天后删除。如果无法使用退订链接，请在不公开邮箱地址的前提下创建
-        GitHub issue，并索取私下联系方法。
+        最多保留 30 天后删除。登录验证码会自动过期，账号会话 30 天后过期。公开评论可能
+        持续显示，除非由运营者隐藏或删除。如需删除账号，请使用联系页面，不要在公开 issue
+        中包含私人信息。
       </p>
 
       <h2>What is not collected / 不收集的内容</h2>
       <p>
-        GradWindow does not intentionally store raw IP addresses, browsing
-        history, application choices, or university preferences. The roadmap
-        service stores only the limited hashed identifiers described above.
-        Cloudflare may process network metadata under its own terms to provide
-        security and delivery.
+        GradWindow does not intentionally store raw IP addresses or browsing
+        history. If you sign in, synced favourites and comments are stored as
+        account data so the account features can work. Cloudflare may process
+        network metadata under its own terms to provide security and delivery.
       </p>
       <p>
-        GradWindow 不会主动保存原始 IP 地址、浏览历史、申请选择或学校偏好。路线图服务仅保存
-        上文说明的有限摘要标识。Cloudflare 可能依据其自身条款处理保障安全和传输所需的网络元数据。
+        GradWindow 不会主动保存原始 IP 地址或浏览历史。如果你登录，同步收藏和评论会作为账号
+        数据保存，以便账号功能正常运行。Cloudflare 可能依据其自身条款处理保障安全和传输所需的网络元数据。
       </p>
 
       <h2>Important / 重要说明</h2>
