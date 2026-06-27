@@ -993,44 +993,44 @@ h1 em::after {
 
 .application-table:not(.university-table) th:nth-child(1),
 .application-table:not(.university-table) td:nth-child(1) {
-  width: 5%;
+  width: 5.5%;
 }
 
 .application-table:not(.university-table) th:nth-child(2),
 .application-table:not(.university-table) td:nth-child(2) {
-  width: 18%;
+  width: 14.5%;
 }
 
 .application-table:not(.university-table) th:nth-child(3),
 .application-table:not(.university-table) td:nth-child(3) {
-  width: 24%;
+  width: 18%;
 }
 
 .application-table:not(.university-table) th:nth-child(4),
 .application-table:not(.university-table) td:nth-child(4) {
-  width: 10%;
+  width: 10.5%;
 }
 
 .application-table:not(.university-table) th:nth-child(5),
 .application-table:not(.university-table) td:nth-child(5),
 .application-table:not(.university-table) th:nth-child(6),
 .application-table:not(.university-table) td:nth-child(6) {
-  width: 11%;
+  width: 12%;
 }
 
 .application-table:not(.university-table) th:nth-child(7),
 .application-table:not(.university-table) td:nth-child(7) {
-  width: 9%;
+  width: 11%;
 }
 
 .application-table:not(.university-table) th:nth-child(8),
 .application-table:not(.university-table) td:nth-child(8) {
-  width: 6%;
+  width: 7%;
 }
 
 .application-table:not(.university-table) th:nth-child(9),
 .application-table:not(.university-table) td:nth-child(9) {
-  width: 5%;
+  width: 9.5%;
 }
 
 .university-table th:nth-child(1),
@@ -1089,8 +1089,11 @@ h1 em::after {
 .school-link {
   display: inline;
   font-weight: 700;
+  hyphens: auto;
+  line-height: 1.35;
   overflow-wrap: anywhere;
   text-decoration: none;
+  word-break: normal;
 }
 
 .school-link:hover {
@@ -1098,8 +1101,13 @@ h1 em::after {
 }
 
 .program-link {
+  display: inline;
   color: var(--green-dark);
+  hyphens: auto;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
   text-decoration: none;
+  word-break: normal;
 }
 
 .program-link:hover {
@@ -1119,17 +1127,21 @@ h1 em::after {
   margin-top: 4px;
   color: var(--muted);
   font-size: 11px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .program-cell {
-  max-width: 250px;
+  max-width: 220px;
 }
 
 .date-primary {
   display: block;
   font-weight: 600;
   line-height: 1.35;
+  hyphens: auto;
   overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .application-table td:nth-child(5) .date-primary,
@@ -1142,6 +1154,8 @@ h1 em::after {
   margin-top: 3px;
   color: var(--muted);
   font-size: 10px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .applicant-category {

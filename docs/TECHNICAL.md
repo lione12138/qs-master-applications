@@ -9,6 +9,7 @@ data/
   universities.json          QS top-200 institution directory
   programs.json              programme directory and inheritance targets
   programme-groups.json      validated programme-group scope registry
+  programme-translations.json cached Chinese programme/scope labels
   applicant-categories.json  canonical applicant category registry
   applications.json          verified scoped application windows
   predictions.json           generated non-official next-cycle estimates
@@ -129,6 +130,29 @@ date change becomes a pending item in `window-candidates.json` and must pass
 `approve-window` performs a full validation against a temporary proposed
 applications dataset before writing the approved record. Candidate and review
 files are never copied into `site/`.
+
+## Programme translations
+
+Programme and scope names are translated during data maintenance, not in the
+browser. The static site reads `data/programme-translations.json`; it never
+calls a translation API or exposes API keys. Manual translations take priority
+over generated entries.
+
+To fill missing Chinese labels with DeepSeek:
+
+```powershell
+$env:DEEPSEEK_API_KEY = "..."
+python scripts\update_programme_translations.py --limit 50
+```
+
+Use `--dry-run` to inspect pending scopes before spending API credits. The
+script only fills missing entries by default; add `--force` to regenerate
+non-manual entries.
+
+For scheduled automation, add `DEEPSEEK_API_KEY` as a GitHub Actions repository
+secret. The daily `update-data.yml` workflow will call the translation script
+after the admissions data pipeline and include `data/programme-translations.json`
+in the review pull request. Never commit the API key into the repository.
 
 ## Data contracts
 

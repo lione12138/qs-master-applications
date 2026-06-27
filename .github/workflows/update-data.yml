@@ -34,6 +34,17 @@ jobs:
       - name: Run daily pipeline
         run: gradwindow pipeline --skip-build
 
+      - name: Update programme translations
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+        run: |
+          if [ -z "$DEEPSEEK_API_KEY" ]; then
+            echo "DEEPSEEK_API_KEY is not configured; skipping programme translations."
+            exit 0
+          fi
+          python scripts/update_programme_translations.py
+
       - name: Open or update data review pull request
         id: data-pr
         uses: peter-evans/create-pull-request@v8
@@ -51,6 +62,7 @@ jobs:
           add-paths: |
             data/applications.json
             data/predictions.json
+            data/programme-translations.json
             data/evidence/
             data/coverage.json
             data/ops/

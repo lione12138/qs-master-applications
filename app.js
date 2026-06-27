@@ -8,9 +8,11 @@ import {
 import {
   countryLabel,
   programmeLabel,
+  programmeSearchTerms,
   regionLabel,
   roundLabel,
   schoolLabels,
+  setProgrammeTranslations,
 } from "./localization.js";
 import { needsManualCheck } from "./exception-status.js";
 
@@ -828,6 +830,7 @@ function filteredRecords() {
       ...(record.schoolAliasesZh || []),
       acronym(record.school),
       record.program,
+      ...programmeSearchTerms(record.scopeId, record.program),
       record.universityId,
       record.scopeId,
       record.country,
@@ -1917,6 +1920,7 @@ async function init() {
       programmeGroupsPayload,
       applicantCategoriesPayload,
       rankingsPayload,
+      programmeTranslationsPayload,
     ] = await Promise.all([
       fetchRequiredJson("./data/applications.json"),
       fetchRequiredJson("./data/universities.json"),
@@ -1933,7 +1937,11 @@ async function init() {
         categories: [],
       }),
       fetchOptionalJson("./data/global-rankings.json", { rankings: {} }),
+      fetchOptionalJson("./data/programme-translations.json", {
+        translations: {},
+      }),
     ]);
+    setProgrammeTranslations(programmeTranslationsPayload);
     state.coverage = coveragePayload;
     state.monitorPayload = monitorPayload;
     state.optionalFailureCount = optionalFailures.length;

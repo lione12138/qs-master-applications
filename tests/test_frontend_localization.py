@@ -14,10 +14,23 @@ def test_frontend_localizes_chinese_record_labels() -> None:
       import {{
         countryLabel,
         programmeLabel,
+        programmeSearchTerms,
         regionLabel,
         roundLabel,
         schoolLabels,
+        setProgrammeTranslations,
       }} from {json.dumps(module_uri)};
+      setProgrammeTranslations({{
+        translations: {{
+          "new-ai-programme": {{
+            zh: "人工智能硕士项目",
+            aliasesZh: ["AI 硕士"],
+          }},
+          "ucl-advanced-materials-science-msc": {{
+            zh: "高级材料科学硕士项目",
+          }},
+        }},
+      }});
       console.log(JSON.stringify({{
         country: countryLabel("United Kingdom", "zh"),
         countryUs: countryLabel("United States", "zh"),
@@ -31,6 +44,10 @@ def test_frontend_localizes_chinese_record_labels() -> None:
           "ucl-advanced-materials-science-msc",
           "Advanced Materials Science MSc",
           "zh",
+        ),
+        searchTerms: programmeSearchTerms(
+          "new-ai-programme",
+          "Artificial Intelligence MSc",
         ),
         round: roundLabel("Visa applicants", "zh"),
       }}));
@@ -50,7 +67,13 @@ def test_frontend_localizes_chinese_record_labels() -> None:
             "primary": "伦敦大学学院",
             "secondary": "",
         },
-        "programme": "高级材料科学理学硕士",
+        "programme": "高级材料科学硕士项目",
+        "searchTerms": [
+            "Artificial Intelligence MSc",
+            "人工智能硕士项目",
+            "AI 硕士",
+            "new-ai-programme",
+        ],
         "round": "需要学生签证申请人",
     }
 

@@ -1,7 +1,14 @@
 import { I18N } from "./i18n.js?v=20260622-i18n";
 import { getApplicationStatus } from "./status.js";
 import { canonicalIntake, intakeLabel } from "./intake-filter.js";
-import { countryLabel, programmeLabel, roundLabel, schoolLabels } from "./localization.js";
+import {
+  countryLabel,
+  programmeLabel,
+  programmeSearchTerms,
+  roundLabel,
+  schoolLabels,
+  setProgrammeTranslations,
+} from "./localization.js";
 
 const state = {
   records: [],
@@ -109,6 +116,7 @@ function filteredRecords() {
       record.schoolZh,
       acronym(record.school),
       record.program,
+      ...programmeSearchTerms(record.scopeId, record.program),
       record.universityId,
       record.scopeId,
       record.country,
@@ -315,6 +323,15 @@ async function fetchJson(path) {
   return response.json();
 }
 
+async function fetchOptionalJson(path, fallback) {
+  try {
+    return await fetchJson(path);
+  } catch (error) {
+    console.warn(`Optional data unavailable: ${path}`, error);
+    return fallback;
+  }
+}
+
 async function init() {
   state.language = localStorage.getItem("gradwindow:language") === "zh" ? "zh" : "en";
   const savedTheme = localStorage.getItem("gradwindow:theme");
@@ -326,13 +343,22 @@ async function init() {
   applyTheme();
   applyStaticTranslations();
 
-  const [applications, predictions, universities, programs, groups] = await Promise.all([
+  const [
+    applications,
+    predictions,
+    universities,
+    programs,
+    groups,
+    programmeTranslations,
+  ] = await Promise.all([
     fetchJson("./data/applications.json"),
     fetchJson("./data/predictions.json"),
     fetchJson("./data/universities.json"),
     fetchJson("./data/programs.json"),
     fetchJson("./data/programme-groups.json"),
+    fetchOptionalJson("./data/programme-translations.json", { translations: {} }),
   ]);
+  setProgrammeTranslations(programmeTranslations);
   const universityById = new Map(universities.universities.map((item) => [item.id, item]));
   const programById = new Map(programs.programs.map((item) => [item.id, item]));
   const groupById = new Map(groups.groups.map((item) => [item.id, item]));

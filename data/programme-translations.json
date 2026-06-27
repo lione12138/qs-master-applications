@@ -1,0 +1,161 @@
+{
+  "meta": {
+    "description": "Chinese programme and programme-group labels used by GradWindow. Manual labels override generated labels; generated labels are cached after review.",
+    "updatedAt": "2026-06-26",
+    "defaultLanguage": "zh",
+    "providers": ["manual", "deepseek", "rule"]
+  },
+  "translations": {
+    "aalto-computer-science-msc": {
+      "zh": "计算机科学硕士项目",
+      "source": "manual"
+    },
+    "brown-computer-science-scm": {
+      "zh": "计算机科学理学硕士",
+      "source": "manual"
+    },
+    "cambridge-advanced-chemical-engineering-mphil": {
+      "zh": "高级化学工程哲学硕士",
+      "source": "manual"
+    },
+    "cambridge-advanced-computer-science-mphil": {
+      "zh": "高级计算机科学哲学硕士",
+      "source": "manual"
+    },
+    "cmu-scs-graduate-programmes": {
+      "zh": "卡内基梅隆大学计算机科学学院研究生项目",
+      "source": "manual"
+    },
+    "cuhk-computer-science-msc": {
+      "zh": "计算机科学理学硕士",
+      "source": "manual"
+    },
+    "eth-zurich-swiss-federal-institute-of-technology": {
+      "zh": "学校级硕士申请窗口",
+      "source": "manual"
+    },
+    "fudan-english-taught-international-postgraduate": {
+      "zh": "复旦大学英文授课国际研究生项目",
+      "source": "manual"
+    },
+    "glasgow-computing-science-msc": {
+      "zh": "计算科学理学硕士",
+      "aliasesZh": ["计算机科学硕士"],
+      "source": "manual"
+    },
+    "hanyang-graduate-computer-science": {
+      "zh": "汉阳大学计算机科学研究生项目",
+      "source": "manual"
+    },
+    "helsinki-computer-science-master": {
+      "zh": "计算机科学硕士项目",
+      "source": "manual"
+    },
+    "iitm-mtech-admissions": {
+      "zh": "印度理工学院马德拉斯分校 M.Tech 招生",
+      "aliasesZh": ["IIT Madras M.Tech 招生"],
+      "source": "manual"
+    },
+    "ip-paris-computer-science-masters": {
+      "zh": "巴黎理工学院计算机科学硕士项目",
+      "source": "manual"
+    },
+    "korea-university-general-graduate-admissions": {
+      "zh": "高丽大学一般研究生院招生",
+      "source": "manual"
+    },
+    "kyoto-informatics-masters": {
+      "zh": "京都大学信息学研究科硕士项目",
+      "source": "manual"
+    },
+    "kth-computer-science-msc": {
+      "zh": "计算机科学理学硕士",
+      "source": "manual"
+    },
+    "ntu-applied-artificial-intelligence-mcomp": {
+      "zh": "应用人工智能计算机硕士",
+      "aliasesZh": ["人工智能硕士", "AI 计算机硕士"],
+      "source": "manual"
+    },
+    "ntu-international-degree-admissions": {
+      "zh": "台湾大学国际学位生招生",
+      "source": "manual"
+    },
+    "osaka-ist-master-admissions": {
+      "zh": "大阪大学信息科学与技术研究科硕士招生",
+      "source": "manual"
+    },
+    "penn-engineering-masters": {
+      "zh": "宾夕法尼亚大学工程学院硕士项目",
+      "source": "manual"
+    },
+    "pku-international-standard-graduate-admissions": {
+      "zh": "北京大学国际研究生常规招生",
+      "source": "manual"
+    },
+    "polyu-information-technology-msc": {
+      "zh": "信息技术理学硕士",
+      "source": "manual"
+    },
+    "postech-graduate-general-admissions": {
+      "zh": "浦项科技大学研究生常规招生",
+      "aliasesZh": ["POSTECH 研究生招生"],
+      "source": "manual"
+    },
+    "qatar-university-graduate-admissions": {
+      "zh": "卡塔尔大学研究生招生",
+      "source": "manual"
+    },
+    "science-tokyo-international-graduate-program-c": {
+      "zh": "国际研究生项目 C",
+      "source": "manual"
+    },
+    "skku-global-graduate-admissions": {
+      "zh": "成均馆大学国际研究生招生",
+      "aliasesZh": ["SKKU 国际研究生招生"],
+      "source": "manual"
+    },
+    "snu-international-graduate-admissions": {
+      "zh": "首尔大学国际研究生招生",
+      "source": "manual"
+    },
+    "tsinghua-advanced-computing-master": {
+      "zh": "高级计算硕士项目",
+      "source": "manual"
+    },
+    "uba-data-mining-knowledge-discovery-master": {
+      "zh": "数据挖掘与知识发现硕士",
+      "source": "manual"
+    },
+    "ucl-advanced-materials-science-msc": {
+      "zh": "高级材料科学理学硕士",
+      "source": "manual"
+    },
+    "ucsd-cse-graduate-admissions": {
+      "zh": "加州大学圣迭戈分校计算机系研究生招生",
+      "source": "manual"
+    },
+    "um-coursework-postgraduate": {
+      "zh": "马来亚大学授课型研究生项目",
+      "source": "manual"
+    },
+    "umontreal-maitrise-informatique": {
+      "zh": "计算机科学硕士",
+      "aliasesZh": ["信息学硕士"],
+      "source": "manual"
+    },
+    "uts-information-technology-master": {
+      "zh": "信息技术硕士",
+      "aliasesZh": ["悉尼科技大学信息技术硕士"],
+      "source": "manual"
+    },
+    "utokyo-computer-science-master": {
+      "zh": "计算机科学硕士项目",
+      "source": "manual"
+    },
+    "yonsei-international-graduate-admissions": {
+      "zh": "延世大学国际研究生招生",
+      "source": "manual"
+    }
+  }
+}

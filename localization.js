@@ -48,6 +48,24 @@ const PROGRAMME_ZH = {
   "yonsei-international-graduate-admissions": "延世大学国际研究生招生",
 };
 
+let PROGRAMME_TRANSLATIONS = {};
+
+export function setProgrammeTranslations(payload = {}) {
+  const entries = payload.translations || payload.items || {};
+  PROGRAMME_TRANSLATIONS = Object.fromEntries(
+    Object.entries(entries)
+      .map(([scopeId, value]) => {
+        const zh =
+          typeof value === "string"
+            ? value
+            : value?.zh || value?.labelZh || value?.titleZh || "";
+        const aliasesZh = Array.isArray(value?.aliasesZh) ? value.aliasesZh : [];
+        return [scopeId, { zh, aliasesZh }];
+      })
+      .filter(([, value]) => value.zh),
+  );
+}
+
 const ROUND_ZH = {
   "August entrance examination": "8 月入学考试",
   "Coursework and mixed mode": "授课型及混合模式",
@@ -88,7 +106,19 @@ export function schoolLabels(university, language = "en") {
 }
 
 export function programmeLabel(scopeId, fallback, language = "en") {
-  return language === "zh" ? PROGRAMME_ZH[scopeId] || fallback : fallback;
+  if (language !== "zh") return fallback;
+  return PROGRAMME_TRANSLATIONS[scopeId]?.zh || PROGRAMME_ZH[scopeId] || fallback;
+}
+
+export function programmeSearchTerms(scopeId, fallback) {
+  const dynamic = PROGRAMME_TRANSLATIONS[scopeId] || {};
+  return [
+    fallback,
+    dynamic.zh,
+    ...(dynamic.aliasesZh || []),
+    PROGRAMME_ZH[scopeId],
+    scopeId,
+  ].filter(Boolean);
 }
 
 export function roundLabel(round, language = "en") {
