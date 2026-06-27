@@ -456,6 +456,140 @@ h1 em::after {
   background: var(--white);
 }
 
+.mobile-dashboard-intro,
+.mobile-sort-controls,
+.mobile-bottom-nav {
+  display: none;
+}
+
+.mobile-card-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-card-actions .review-button {
+  display: none;
+}
+
+.window-detail-panel {
+  position: fixed;
+  z-index: 90;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 560px);
+}
+
+.window-detail-backdrop {
+  border: 0;
+  background: rgba(11, 20, 16, 0.48);
+}
+
+.window-detail-card {
+  overflow-y: auto;
+  padding: 24px;
+  background: var(--paper);
+  box-shadow: -18px 0 60px rgba(11, 20, 16, 0.18);
+}
+
+.window-detail-header,
+.window-detail-school-row,
+.window-detail-source-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.window-detail-header {
+  position: sticky;
+  z-index: 2;
+  top: -24px;
+  margin: -24px -24px 18px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  backdrop-filter: blur(16px);
+}
+
+.window-detail-header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.window-detail-heading,
+.window-detail-deadline,
+.window-detail-section {
+  margin-bottom: 12px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--white);
+}
+
+.window-detail-heading h2,
+.window-detail-section h3 {
+  margin: 0;
+}
+
+.window-detail-programme {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.window-detail-deadline {
+  border-color: #db7b68;
+  color: var(--red);
+  background: #fff0eb;
+}
+
+.window-detail-deadline span,
+.window-detail-deadline small {
+  display: block;
+}
+
+.window-detail-deadline strong {
+  display: block;
+  margin: 7px 0 4px;
+  font-size: 30px;
+  letter-spacing: -0.04em;
+}
+
+.window-detail-field {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7e9e5;
+  font-size: 12px;
+}
+
+.window-detail-field:last-child {
+  border-bottom: 0;
+}
+
+.window-detail-field span,
+.window-detail-section p {
+  color: var(--muted);
+}
+
+.window-detail-field strong {
+  max-width: 62%;
+  text-align: right;
+}
+
+.window-detail-source-link,
+.window-detail-reviews .review-button {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+body.window-detail-open {
+  overflow: hidden;
+}
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -3082,4 +3216,510 @@ footer p {
   .subscribe-row {
     grid-template-columns: 1fr;
   }
+
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom));
+    background: var(--paper);
+  }
+
+  .site-header {
+    position: sticky;
+    z-index: 40;
+    top: 0;
+    min-height: 64px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    background: color-mix(in srgb, var(--paper) 94%, transparent);
+    backdrop-filter: blur(16px);
+  }
+
+  .brand {
+    font-size: 16px;
+  }
+
+  .brand-mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .header-nav > a {
+    display: none !important;
+  }
+
+  .header-nav {
+    gap: 6px;
+  }
+
+  .header-controls {
+    gap: 5px;
+  }
+
+  .header-control {
+    min-width: 40px;
+    min-height: 40px;
+    padding: 0 10px;
+    font-size: 10px;
+  }
+
+  .auth-control {
+    max-width: 76px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .hero,
+  .trust-strip {
+    display: none;
+  }
+
+  .board-section {
+    padding: 20px 16px 36px;
+    background: var(--paper);
+  }
+
+  .board-section > .section-heading {
+    display: none;
+  }
+
+  .mobile-dashboard-intro {
+    display: block;
+  }
+
+  .mobile-dashboard-intro h2 {
+    max-width: 300px;
+    margin: 5px 0 6px;
+    font-size: 30px;
+    letter-spacing: -0.045em;
+    line-height: 1.08;
+  }
+
+  .mobile-dashboard-intro > p {
+    max-width: 340px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .mobile-summary-pills {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+  }
+
+  .mobile-summary-pills > span {
+    padding: 6px 10px;
+    border-radius: 999px;
+    color: var(--green-dark);
+    background: var(--green-pale);
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .mobile-deadline-alert {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 3px 12px;
+    margin-top: 14px;
+    padding: 12px 14px;
+    border: 1px solid #e19787;
+    border-radius: 14px;
+    color: var(--red);
+    background: #fff0eb;
+    text-decoration: none;
+  }
+
+  .mobile-deadline-alert > span,
+  .mobile-deadline-alert > small {
+    grid-column: 1 / -1;
+    font-size: 9px;
+  }
+
+  .mobile-deadline-alert > strong {
+    font-size: 14px;
+  }
+
+  .mobile-deadline-alert > b {
+    font-size: 14px;
+  }
+
+  .demo-banner {
+    display: none;
+  }
+
+  .toolbar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .toolbar .search-box {
+    grid-column: 1 / -1;
+  }
+
+  .toolbar .select-wrap {
+    grid-column: auto !important;
+  }
+
+  .toolbar #favorites-toggle,
+  .toolbar #export-favorites {
+    display: none;
+  }
+
+  .search-box,
+  .select-wrap {
+    min-height: 44px;
+    border-radius: 12px;
+  }
+
+  .mobile-sort-controls {
+    display: grid;
+    grid-template-columns: auto repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .mobile-sort-controls > span {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .mobile-sort-controls button {
+    min-height: 40px;
+    padding: 0 7px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    color: var(--muted);
+    background: var(--white);
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .mobile-sort-controls button.active {
+    border-color: var(--green);
+    color: var(--green);
+    background: var(--green-pale);
+  }
+
+  .status-tabs {
+    gap: 7px;
+    margin-top: 14px;
+    padding-bottom: 3px;
+    border-bottom: 0;
+    scrollbar-width: none;
+  }
+
+  .status-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .status-tab {
+    min-height: 40px;
+    padding: 0 11px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--white);
+    font-size: 10px;
+  }
+
+  .status-tab span {
+    min-width: 18px;
+    height: 18px;
+  }
+
+  .status-tab.active {
+    border-color: var(--green);
+    color: var(--white);
+    background: var(--green);
+  }
+
+  .status-tab.active::after {
+    display: none;
+  }
+
+  .application-groups {
+    gap: 22px;
+    margin-top: 18px;
+  }
+
+  .group-heading {
+    margin-bottom: 9px;
+  }
+
+  .group-heading h3 {
+    font-size: 14px;
+  }
+
+  .group-heading p {
+    max-width: 48%;
+    text-align: right;
+  }
+
+  .application-table:not(.university-table) tr.window-card-row {
+    position: relative;
+    grid-template-columns: minmax(0, 1fr) 44px 96px;
+    grid-template-areas:
+      "school school rank"
+      "program program program"
+      "deadline deadline deadline"
+      "source applicant applicant"
+      "opens opens opens"
+      "hint calendar favorite";
+    gap: 7px 10px;
+    padding: 14px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(28, 54, 41, 0.08);
+    cursor: pointer;
+  }
+
+  .application-table:not(.university-table) tr.window-card-row > td {
+    width: auto !important;
+    min-width: 0;
+    max-width: none;
+  }
+
+  .application-table:not(.university-table) tr.window-card-row:focus-visible {
+    outline: 3px solid color-mix(in srgb, var(--green) 28%, transparent);
+    outline-offset: 2px;
+  }
+
+  .application-table:not(.university-table) tr.window-card-row::after {
+    grid-area: hint;
+    align-self: center;
+    color: var(--muted);
+    content: attr(data-detail-hint);
+    font-size: 9px;
+  }
+
+  .application-table:not(.university-table) td:nth-child(1) {
+    grid-area: rank;
+  }
+
+  .application-table:not(.university-table) td:nth-child(2) {
+    grid-area: school;
+  }
+
+  .application-table:not(.university-table) td:nth-child(3) {
+    grid-area: program;
+  }
+
+  .application-table:not(.university-table) td:nth-child(4) {
+    grid-area: applicant;
+    justify-self: end;
+  }
+
+  .application-table:not(.university-table) td:nth-child(5) {
+    grid-area: opens;
+    display: flex;
+    gap: 7px;
+    align-items: baseline;
+    color: var(--muted);
+  }
+
+  .application-table:not(.university-table) td:nth-child(6) {
+    grid-area: deadline;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .application-table:not(.university-table) td:nth-child(7) {
+    grid-area: calendar;
+    justify-self: end;
+  }
+
+  .application-table:not(.university-table) td:nth-child(8) {
+    grid-area: favorite;
+    justify-self: end;
+  }
+
+  .application-table:not(.university-table) td:nth-child(9) {
+    grid-area: source;
+  }
+
+  .application-table:not(.university-table) td:nth-child(5)::before,
+  .application-table:not(.university-table) td:nth-child(6)::before {
+    display: none;
+  }
+
+  .application-table:not(.university-table) td:nth-child(5) .date-primary {
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .application-table:not(.university-table) td:nth-child(5) .date-secondary {
+    margin-top: 0;
+    font-size: 9px;
+  }
+
+  .application-table:not(.university-table) td:nth-child(6) .date-primary {
+    font-size: 23px;
+  }
+
+  .application-table:not(.university-table) td:nth-child(6) .date-secondary {
+    max-width: 90px;
+    margin: 0;
+    padding: 5px 8px;
+    border-radius: 999px;
+    color: var(--red);
+    background: #fff0eb;
+    font-size: 9px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .application-table:not(.university-table) .source-badge,
+  .application-table:not(.university-table) .applicant-category {
+    padding: 5px 8px;
+    font-size: 9px;
+  }
+
+  .application-table:not(.university-table) .calendar-menu-trigger,
+  .application-table:not(.university-table) .favorite-button,
+  .application-table:not(.university-table) .review-button {
+    width: 44px;
+    min-width: 44px;
+    height: 44px;
+    min-height: 44px;
+    border-radius: 12px;
+  }
+
+  .mobile-card-actions .review-button {
+    display: inline-grid;
+    overflow: hidden;
+    padding: 0;
+    color: transparent;
+    font-size: 0;
+  }
+
+  .mobile-card-actions .review-button::before {
+    width: 16px;
+    height: 13px;
+    border: 1.7px solid var(--green);
+    border-radius: 4px;
+    color: var(--green);
+    content: "";
+  }
+
+  .application-table:not(.university-table) .calendar-menu-options {
+    position: fixed;
+    z-index: 100;
+    right: 16px;
+    bottom: calc(84px + env(safe-area-inset-bottom));
+    left: 16px;
+    min-width: 0;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(11, 20, 16, 0.28);
+  }
+
+  .calendar-menu-item {
+    min-height: 48px;
+    padding: 13px 16px;
+  }
+
+  .mobile-bottom-nav {
+    position: fixed;
+    z-index: 60;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    min-height: calc(68px + env(safe-area-inset-bottom));
+    padding: 7px 10px env(safe-area-inset-bottom);
+    border-top: 1px solid var(--line);
+    background: color-mix(in srgb, var(--white) 94%, transparent);
+    backdrop-filter: blur(18px);
+  }
+
+  .mobile-bottom-nav button {
+    display: grid;
+    gap: 2px;
+    min-height: 54px;
+    place-items: center;
+    border: 0;
+    border-radius: 12px;
+    color: var(--muted);
+    background: transparent;
+  }
+
+  .mobile-bottom-nav button span {
+    font-size: 19px;
+    line-height: 1;
+  }
+
+  .mobile-bottom-nav button b {
+    font-size: 10px;
+  }
+
+  .mobile-bottom-nav button.active {
+    color: var(--green-dark);
+    background: var(--green-pale);
+  }
+
+  .window-detail-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .window-detail-backdrop {
+    display: none;
+  }
+
+  .window-detail-card {
+    width: 100%;
+    padding: 16px;
+    padding-bottom: calc(28px + env(safe-area-inset-bottom));
+  }
+
+  .window-detail-header {
+    top: -16px;
+    margin: -16px -16px 14px;
+    padding: 12px 16px;
+  }
+
+  .window-detail-header .calendar-menu-trigger,
+  .window-detail-header .favorite-button {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    overflow: hidden;
+    color: transparent;
+    font-size: 0;
+  }
+
+  .window-detail-header .calendar-menu-icon {
+    display: block;
+    color: var(--green);
+  }
+
+  .window-detail-header .calendar-menu-label,
+  .window-detail-header .calendar-menu-trigger::after {
+    display: none;
+  }
+
+  .window-detail-header .favorite-button::before {
+    color: var(--green);
+    content: "☆";
+    font-size: 19px;
+  }
+
+  .window-detail-header .favorite-button.active::before {
+    color: var(--white);
+    content: "★";
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+:root[data-theme="dark"] .mobile-deadline-alert,
+:root[data-theme="dark"] .window-detail-deadline,
+:root[data-theme="dark"] .application-table:not(.university-table) td:nth-child(6) .date-secondary {
+  background: #2d1c18;
 }

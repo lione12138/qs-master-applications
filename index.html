@@ -205,6 +205,22 @@
         </section>
 
         <section class="board-section" id="application-board">
+          <div class="mobile-dashboard-intro" aria-label="Deadline overview" data-i18n-aria-label="mobileDeadlineOverview">
+            <span class="section-kicker">DEADLINE RADAR</span>
+            <h2 data-i18n="mobileTrackerTitle">Check urgent deadlines first</h2>
+            <p data-i18n="mobileTrackerDescription">Search globally, filter precisely, and confirm every deadline on the official page.</p>
+            <div class="mobile-summary-pills">
+              <span><strong id="mobile-open-count">0</strong> <span data-i18n="statusOpen">Open now</span></span>
+              <span><strong id="mobile-upcoming-count">0</strong> <span data-i18n="statusUpcoming">Opening soon</span></span>
+            </div>
+            <a class="mobile-deadline-alert" id="mobile-deadline-link" href="#application-groups">
+              <span data-i18n="nextDeadline">NEXT DEADLINE</span>
+              <strong id="mobile-deadline-school">Loading</strong>
+              <b id="mobile-deadline-date">--</b>
+              <small id="mobile-deadline-note"></small>
+            </a>
+          </div>
+
           <div class="section-heading">
             <div>
               <span class="section-kicker" data-i18n="applicationTrackerKicker">APPLICATION TRACKER</span>
@@ -281,6 +297,13 @@
             </button>
           </div>
 
+          <div class="mobile-sort-controls" aria-label="Sort application windows" data-i18n-aria-label="mobileSortLabel">
+            <span data-i18n="mobileSortLabel">Sort</span>
+            <button class="active" type="button" data-mobile-sort="rank" data-i18n="rank">Rank</button>
+            <button type="button" data-mobile-sort="opens" data-i18n="opens">Opening date</button>
+            <button type="button" data-mobile-sort="deadline" data-i18n="deadline">Deadline</button>
+          </div>
+
           <div class="status-tabs" role="tablist" aria-label="Application status" data-i18n-aria-label="statusTabsLabel">
             <button class="status-tab active" data-status="open" role="tab">
               <span data-i18n="statusOpen">Open now</span> <span id="count-open">0</span>
@@ -349,6 +372,18 @@
               <p class="review-note" data-i18n="reviewPublicNote">Comments are public. Do not post private contact details or sensitive information.</p>
             </form>
           </aside>
+        </div>
+
+        <div class="window-detail-panel" id="window-detail-panel" hidden>
+          <button class="window-detail-backdrop" type="button" data-window-detail-close aria-label="Close application details"></button>
+          <article class="window-detail-card" role="dialog" aria-modal="true" aria-labelledby="window-detail-title">
+            <header class="window-detail-header">
+              <button class="icon-button" type="button" data-window-detail-close aria-label="Close application details">‹</button>
+              <strong data-i18n="mobileWindowDetails">Application details</strong>
+              <div class="window-detail-header-actions" id="window-detail-header-actions"></div>
+            </header>
+            <div class="window-detail-body" id="window-detail-body"></div>
+          </article>
         </div>
 
         <section class="methodology" id="methodology">
@@ -469,6 +504,13 @@
           </p>
         </div>
       </footer>
+
+      <nav class="mobile-bottom-nav" aria-label="Mobile navigation" data-i18n-aria-label="mobileNavigationLabel">
+        <button class="active" type="button" data-mobile-nav="home"><span aria-hidden="true">⌂</span><b data-i18n="mobileNavHome">Home</b></button>
+        <button type="button" data-mobile-nav="search"><span aria-hidden="true">⌕</span><b data-i18n="mobileNavSearch">Search</b></button>
+        <button type="button" data-mobile-nav="favorites"><span aria-hidden="true">☆</span><b data-i18n="mobileNavFavorites">Saved</b></button>
+        <button type="button" data-mobile-nav="profile"><span aria-hidden="true">♙</span><b data-i18n="mobileNavProfile">Me</b></button>
+      </nav>
     </div>
 
     <script src="./app.js?v=20260626-density" type="module"></script>

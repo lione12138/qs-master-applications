@@ -67,6 +67,10 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="theme-toggle"' in index_html
     assert 'id="ranking-filter"' in index_html
     assert 'id="rank-range-filter"' in index_html
+    assert 'class="mobile-dashboard-intro"' in index_html
+    assert 'class="mobile-sort-controls"' in index_html
+    assert 'id="window-detail-panel"' in index_html
+    assert 'class="mobile-bottom-nav"' in index_html
     assert 'id="sort-select"' not in index_html
     assert 'id="top100-toggle"' not in index_html
     assert 'id="coverage-batches"' not in index_html
@@ -79,6 +83,12 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "AGPL-3.0" in index_html
     assert "Data: CC BY-NC 4.0" in index_html
     assert index_html.count(ANALYTICS_BEACON) == 1
+    app_js = (tmp_path / "app.js").read_text(encoding="utf-8")
+    styles_css = (tmp_path / "styles.css").read_text(encoding="utf-8")
+    assert "openWindowDetail(record" in app_js
+    assert 'data-mobile-sort' in index_html
+    assert ".window-card-row" in styles_css
+    assert ".mobile-bottom-nav" in styles_css
     assert (tmp_path / "sources.html").read_text(
         encoding="utf-8"
     ).count(ANALYTICS_BEACON) == 1

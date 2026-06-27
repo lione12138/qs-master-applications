@@ -220,6 +220,7 @@ function makeFavoriteButton(key) {
     title: active ? t("removeFavorite") : t("favorite"),
   });
   button.type = "button";
+  button.dataset.favoriteKey = key;
   button.setAttribute("aria-pressed", String(active));
   button.addEventListener("click", () => toggleFavorite(key));
   return button;
@@ -598,6 +599,128 @@ function makeCalendarMenu(record) {
   return menu;
 }
 
+function closeWindowDetail() {
+  const panel = document.getElementById("window-detail-panel");
+  if (panel) panel.hidden = true;
+  document.body.classList.remove("window-detail-open");
+}
+
+function detailField(label, value) {
+  const row = makeElement("div", { className: "window-detail-field" });
+  row.append(
+    makeElement("span", { text: label }),
+    makeElement("strong", { text: value }),
+  );
+  return row;
+}
+
+function openWindowDetail(record, status = getStatus(record)) {
+  const panel = document.getElementById("window-detail-panel");
+  const body = document.getElementById("window-detail-body");
+  const actions = document.getElementById("window-detail-header-actions");
+  const university = state.universityById.get(record.universityId);
+  if (!panel || !body || !actions) return;
+
+  const schoolText = schoolLabels(record, state.language);
+  const intake = intakeLabel(canonicalIntake(record), state.language);
+  const localizedRound = roundLabel(record.round, state.language);
+  const programmeName = programmeLabel(
+    record.scopeId,
+    record.program,
+    state.language,
+  );
+  const [sourceStatus, sourceClass] = record.dataStatus === "predicted"
+    ? [t("estimateBadge"), "predicted"]
+    : sourceMonitorDescription(record);
+
+  const heading = makeElement("section", { className: "window-detail-heading" });
+  const schoolRow = makeElement("div", { className: "window-detail-school-row" });
+  schoolRow.append(
+    makeElement("h2", { text: schoolText.primary }),
+    makeElement("span", {
+      className: "rank-cell",
+      text: formatRank(
+        selectedRankForUniversity(record.universityId)?.rankDisplay || record.qsRank,
+      ),
+    }),
+  );
+  heading.append(
+    schoolRow,
+    makeElement("p", {
+      className: "school-meta",
+      text: [schoolText.secondary, countryLabel(record.country, state.language)]
+        .filter(Boolean)
+        .join(" · "),
+    }),
+    makeLink(programmeName, record.applicationUrl, "program-link window-detail-programme"),
+  );
+
+  const deadline = makeElement("section", { className: "window-detail-deadline" });
+  deadline.append(
+    makeElement("span", { text: t("deadline") }),
+    makeElement("strong", { text: formatDate(record.closesAt) }),
+    makeElement("small", { text: deadlineNote(record, status) }),
+  );
+
+  const info = makeElement("section", { className: "window-detail-section" });
+  info.append(
+    makeElement("h3", { text: t("mobileWindowDetails") }),
+    detailField(t("opens"), formatDate(record.opensAt)),
+    detailField(t("programmeIntake"), `${intake}${localizedRound ? ` · ${localizedRound}` : ""}`),
+    detailField(t("applicantGroup"), applicantCategoryText(record.applicantCategories)),
+    detailField(t("statusTabsLabel"), statusLabels()[status]?.title || status),
+  );
+
+  const source = makeElement("section", { className: "window-detail-section window-detail-source" });
+  const sourceHeader = makeElement("div", { className: "window-detail-source-header" });
+  sourceHeader.append(
+    makeElement("h3", { text: t("dataSource") }),
+    makeElement("span", { className: `source-badge ${sourceClass}`, text: sourceStatus }),
+  );
+  source.append(
+    sourceHeader,
+    makeElement("p", {
+      text: record.dataStatus === "predicted"
+        ? `${t("reference")} ${record.sourceCycle} · ${predictionConfidenceText(record)}`
+        : `${t("verifiedOn")} ${record.verifiedAt}`,
+    }),
+    makeLink(
+      record.dataStatus === "predicted" ? t("viewReference") : t("viewOfficial"),
+      record.sourceUrl,
+      "primary-button window-detail-source-link",
+    ),
+  );
+
+  if (university) {
+    const reviews = makeElement("section", { className: "window-detail-section window-detail-reviews" });
+    reviews.append(
+      makeElement("h3", { text: t("schoolReviewsTitle") }),
+      makeElement("p", { text: t("reviewPublicNote") }),
+      makeReviewButton(university),
+    );
+    body.replaceChildren(heading, deadline, info, source, reviews);
+  } else {
+    body.replaceChildren(heading, deadline, info, source);
+  }
+
+  actions.replaceChildren(
+    makeCalendarMenu(record),
+    makeFavoriteButton(favoriteKey("window", record.id)),
+  );
+  panel.hidden = false;
+  document.body.classList.add("window-detail-open");
+  panel.querySelector("[data-window-detail-close]")?.focus();
+}
+
+function setupWindowDetailPanel() {
+  document.querySelectorAll("[data-window-detail-close]").forEach((button) => {
+    button.addEventListener("click", closeWindowDetail);
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeWindowDetail();
+  });
+}
+
 function downloadFavoriteCalendars() {
   const records = state.data.filter((record) =>
     state.favorites.has(favoriteKey("window", record.id)),
@@ -921,6 +1044,9 @@ function recordsForCurrentView(baseRecords) {
 
 function createRow(record, status) {
   const row = document.createElement("tr");
+  row.className = "window-card-row";
+  row.tabIndex = 0;
+  row.dataset.detailHint = t("mobileCardHint");
   const days = daysUntil(record.closesAt);
   const deadlineClass =
     status === "open" && days >= 0 && days <= 14 ? "deadline-soon" : "";
@@ -982,6 +1108,23 @@ function createRow(record, status) {
   );
   const calendar = makeCalendarMenu(record);
   const favorite = makeFavoriteButton(favoriteKey("window", record.id));
+  const university = state.universityById.get(record.universityId);
+  const cardActions = makeElement("div", { className: "mobile-card-actions" });
+  cardActions.appendChild(favorite);
+  if (university) cardActions.appendChild(makeReviewButton(university));
+
+  const openDetails = (event) => {
+    if (!window.matchMedia("(max-width: 720px)").matches) return;
+    if (event.target.closest("a, button, details, input, select")) return;
+    openWindowDetail(record, status);
+  };
+  row.addEventListener("click", openDetails);
+  row.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      openDetails(event);
+    }
+  });
 
   row.append(
     makeCell(t("rank"), rank),
@@ -1003,7 +1146,7 @@ function createRow(record, status) {
     ),
     makeCell(t("deadline"), deadline),
     makeCell(t("calendar"), calendar),
-    makeCell(t("favorite"), favorite),
+    makeCell(t("favorite"), cardActions),
     makeCell(t("source"), source),
   );
   return row;
@@ -1496,6 +1639,10 @@ function renderCounts(records, universities) {
     const node = document.getElementById(`count-${status}`);
     if (node) node.textContent = count;
   });
+  const mobileOpen = document.getElementById("mobile-open-count");
+  const mobileUpcoming = document.getElementById("mobile-upcoming-count");
+  if (mobileOpen) mobileOpen.textContent = counts.open;
+  if (mobileUpcoming) mobileUpcoming.textContent = counts.upcoming;
   return counts;
 }
 
@@ -1531,6 +1678,9 @@ function render() {
     (state.status === "exception" && exceptionUniversities.length > 0) ||
     ((state.status === "unknown" || hasActiveSearch()) && baseUniversities.length > 0);
   document.getElementById("hero-open-count").textContent = counts.open;
+  document.querySelectorAll("[data-mobile-sort]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.mobileSort === state.sort);
+  });
   updateFavoriteControls();
 }
 
@@ -1572,6 +1722,13 @@ function updateFavoriteControls() {
   document.getElementById("export-favorites").disabled = !state.data.some(
     (record) => state.favorites.has(favoriteKey("window", record.id)),
   );
+  document.querySelectorAll(".favorite-button[data-favorite-key]").forEach((button) => {
+    const active = state.favorites.has(button.dataset.favoriteKey);
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+    button.textContent = active ? t("favorited") : t("favorite");
+    button.title = active ? t("removeFavorite") : t("favorite");
+  });
 }
 
 function applyStaticTranslations() {
@@ -1799,6 +1956,15 @@ function setupHero() {
       state.language === "zh" ? "所学校" : "SCHOOLS";
     document.getElementById("hero-deadline-school").textContent =
       state.language === "zh" ? "官方申请目录" : "Official admissions directory";
+    const mobileLink = document.getElementById("mobile-deadline-link");
+    if (mobileLink) mobileLink.removeAttribute("target");
+    const mobileSchool = document.getElementById("mobile-deadline-school");
+    const mobileDate = document.getElementById("mobile-deadline-date");
+    const mobileNote = document.getElementById("mobile-deadline-note");
+    if (mobileSchool) mobileSchool.textContent =
+      state.language === "zh" ? "官方申请目录" : "Official admissions directory";
+    if (mobileDate) mobileDate.textContent = "TOP 200";
+    if (mobileNote) mobileNote.textContent = "";
     return;
   }
   const parts = shortDateFormatter
@@ -1809,6 +1975,28 @@ function setupHero() {
     parts.month.toUpperCase();
   document.getElementById("hero-deadline-school").textContent =
     schoolLabels(futureDeadline, state.language).primary;
+  const mobileLink = document.getElementById("mobile-deadline-link");
+  const mobileSchool = document.getElementById("mobile-deadline-school");
+  const mobileDate = document.getElementById("mobile-deadline-date");
+  const mobileNote = document.getElementById("mobile-deadline-note");
+  if (mobileLink) {
+    mobileLink.href = safeUrl(futureDeadline.applicationUrl) || "#application-groups";
+    mobileLink.target = safeUrl(futureDeadline.applicationUrl) ? "_blank" : "";
+    mobileLink.rel = "noreferrer";
+  }
+  if (mobileSchool) mobileSchool.textContent =
+    schoolLabels(futureDeadline, state.language).primary;
+  if (mobileDate) mobileDate.textContent = formatDate(futureDeadline.closesAt);
+  if (mobileNote) mobileNote.textContent = deadlineNote(
+    futureDeadline,
+    getStatus(futureDeadline),
+  );
+}
+
+function setMobileNavActive(name) {
+  document.querySelectorAll("[data-mobile-nav]").forEach((button) => {
+    button.classList.toggle("active", button.dataset.mobileNav === name);
+  });
 }
 
 function bindEvents() {
@@ -1822,6 +2010,7 @@ function bindEvents() {
   });
   document.getElementById("search-input").addEventListener("input", (event) => {
     state.search = event.target.value;
+    setMobileNavActive("search");
     resetPages();
     syncUrl();
     render();
@@ -1878,6 +2067,46 @@ function bindEvents() {
   document
     .getElementById("export-favorites")
     .addEventListener("click", downloadFavoriteCalendars);
+
+  document.querySelectorAll("[data-mobile-sort]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.sort = button.dataset.mobileSort;
+      resetPages();
+      syncUrl();
+      render();
+    });
+  });
+
+  document.querySelectorAll("[data-mobile-nav]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const destination = button.dataset.mobileNav;
+      setMobileNavActive(destination);
+      if (destination === "home") {
+        state.search = "";
+        state.favoritesOnly = false;
+        state.status = "open";
+        document.getElementById("search-input").value = "";
+        document.querySelectorAll(".status-tab").forEach((tab) => {
+          tab.classList.toggle("active", tab.dataset.status === "open");
+        });
+        resetPages();
+        syncUrl();
+        render();
+        document.getElementById("application-board").scrollIntoView({ behavior: "smooth" });
+      } else if (destination === "search") {
+        document.getElementById("application-board").scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => document.getElementById("search-input")?.focus(), 250);
+      } else if (destination === "favorites") {
+        state.favoritesOnly = true;
+        resetPages();
+        syncUrl();
+        render();
+        document.getElementById("application-groups").scrollIntoView({ behavior: "smooth" });
+      } else if (destination === "profile") {
+        openAuthPanel();
+      }
+    });
+  });
 }
 
 async function init() {
@@ -2095,6 +2324,7 @@ async function init() {
     bindEvents();
     setupAuthPanel();
     setupReviewPanel();
+    setupWindowDetailPanel();
     render();
   } catch (error) {
     const errorState = makeElement("div", { className: "empty-state" });
