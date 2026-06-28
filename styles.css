@@ -769,7 +769,7 @@ body.window-detail-open {
 .hero h1 {
   max-width: 760px;
   margin-top: 12px;
-  font-size: clamp(42px, 4.2vw, 58px);
+  font-size: clamp(40px, 3.6vw, 50px);
   line-height: 1.02;
 }
 
@@ -816,7 +816,10 @@ body.window-detail-open {
 
 .hero-disclaimer {
   max-width: 660px;
+  padding: 10px 12px;
   border-radius: 11px;
+  font-size: 11px;
+  line-height: 1.45;
 }
 
 .hero-dashboard {
@@ -3651,9 +3654,7 @@ footer p {
   }
 
   .mobile-summary-pills {
-    display: flex;
-    gap: 8px;
-    margin-top: 12px;
+    display: none;
   }
 
   .mobile-summary-pills > span {
@@ -3860,8 +3861,7 @@ footer p {
       "school school rank"
       "program program program"
       "deadline deadline deadline"
-      "source applicant applicant"
-      "hint calendar favorite";
+      "source calendar favorite";
     gap: 6px 9px;
     padding: 12px;
     border-radius: 14px;
@@ -3881,11 +3881,7 @@ footer p {
   }
 
   .application-table:not(.university-table) tr.window-card-row::after {
-    grid-area: hint;
-    align-self: center;
-    color: var(--muted);
-    content: attr(data-detail-hint);
-    font-size: 8px;
+    display: none;
   }
 
   .application-table:not(.university-table) td:nth-child(1) {
@@ -3901,8 +3897,7 @@ footer p {
   }
 
   .application-table:not(.university-table) td:nth-child(4) {
-    grid-area: applicant;
-    justify-self: end;
+    display: none;
   }
 
   .application-table:not(.university-table) td:nth-child(5) {
@@ -3928,6 +3923,7 @@ footer p {
 
   .application-table:not(.university-table) td:nth-child(9) {
     grid-area: source;
+    align-self: center;
   }
 
   .application-table:not(.university-table) td:nth-child(5)::before,
@@ -3959,6 +3955,10 @@ footer p {
     font-size: 9px;
     font-weight: 700;
     text-align: center;
+  }
+
+  .application-table:not(.university-table) td:nth-child(3) .date-secondary {
+    display: none;
   }
 
   .application-table:not(.university-table) .source-badge,
