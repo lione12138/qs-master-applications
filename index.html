@@ -164,7 +164,7 @@
                 <span data-i18n="browseWindows">Browse application windows</span>
                 <span aria-hidden="true">↓</span>
               </a>
-              <a class="secondary-button" href="#application-board" data-hero-view="deadline" data-i18n="quickDeadline">Closing soon</a>
+              <a class="secondary-button" href="./roadmap.html" data-i18n="navRoadmap">Feature voting</a>
               <a class="secondary-button" href="./calendar.html" data-i18n="openCalendar">Open calendar</a>
               <span class="update-note update-schedule" data-i18n="updateSchedule">Updated daily at 8:00 AM Beijing time</span>
               <span class="update-note" id="updated-at" data-i18n="loadingData">Loading data…</span>
@@ -185,9 +185,9 @@
                 <small data-i18n="submittableWindows">submittable windows</small>
               </div>
               <div class="hero-metric-card urgent">
-                <span data-i18n="nextDeadline">NEXT DEADLINE</span>
-                <strong id="hero-deadline-countdown">--</strong>
-                <small id="hero-deadline-date">--</small>
+                <span data-i18n="statusException">Needs manual check</span>
+                <strong id="hero-exception-count">0</strong>
+                <small data-i18n="manualCheckSchools">schools requiring direct verification</small>
               </div>
               <div class="hero-metric-card">
                 <span data-i18n="statusUpcoming">Opening soon</span>
@@ -266,11 +266,6 @@
               <span data-i18n="quickViewDescription">Start with what is open or closing soon, then refine by ranking, region, and intake.</span>
             </div>
             <div class="quick-filter-controls">
-              <div class="quick-filter-shortcuts" aria-label="Quick views" data-i18n-aria-label="quickView">
-                <button class="quick-filter-button active" type="button" data-quick-view="open" data-i18n="statusOpen">Open now</button>
-                <button class="quick-filter-button" type="button" data-quick-view="deadline" data-i18n="quickDeadline">Closing soon</button>
-                <button class="quick-filter-button" type="button" data-quick-view="upcoming" data-i18n="statusUpcoming">Opening soon</button>
-              </div>
               <div class="toolbar">
                 <label class="search-box">
                   <span aria-hidden="true">⌕</span>
@@ -468,6 +463,22 @@
             <article>
               <h3 data-i18n="qaExceptionTitle">What does “Needs manual check” mean?</h3>
               <p data-i18n="qaExceptionText">Those schools block automated access, return stale pages, or do not expose reliable dates in the current environment. You should verify them directly on the official site.</p>
+            </article>
+            <article>
+              <h3 data-i18n="qaEstimateTitle">What does an estimated date mean?</h3>
+              <p data-i18n="qaEstimateText">An estimate shifts the latest verified cycle by one calendar year. It is a planning reference only and is never treated as an official application window.</p>
+            </article>
+            <article>
+              <h3 data-i18n="qaMultipleRowsTitle">Why can one university have several rows?</h3>
+              <p data-i18n="qaMultipleRowsText">Different programmes, applicant categories, visa routes, and admission rounds can use different dates. Each row represents one independently sourced window.</p>
+            </article>
+            <article>
+              <h3 data-i18n="qaCheckedTitle">Does “check passed” guarantee the date has not changed?</h3>
+              <p data-i18n="qaCheckedText">It means the monitored official page was reachable and no tracked change was detected. You should still confirm the programme page before submitting.</p>
+            </article>
+            <article>
+              <h3 data-i18n="qaRankingTitle">Why do the schools change when I switch rankings?</h3>
+              <p data-i18n="qaRankingText">QS is the default monitored dataset. THE and ARWU add institutions from their own top 200 lists, so those views can contain schools outside the QS directory.</p>
             </article>
           </div>
         </section>

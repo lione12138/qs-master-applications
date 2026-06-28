@@ -945,35 +945,7 @@ body.window-detail-open {
 }
 
 .quick-filter-controls {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  gap: 12px;
-  align-items: center;
-}
-
-.quick-filter-shortcuts {
-  display: flex;
-  gap: 7px;
-}
-
-.quick-filter-button {
-  min-height: 42px;
-  padding: 0 13px;
-  border: 1px solid var(--line);
-  border-radius: 9px;
-  color: var(--muted);
-  background: var(--paper);
-  cursor: pointer;
-  font-size: 10px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-.quick-filter-button:hover,
-.quick-filter-button.active {
-  border-color: var(--green);
-  color: var(--white);
-  background: var(--green);
+  display: block;
 }
 
 .quick-filter-panel .toolbar {
@@ -1012,20 +984,22 @@ body.window-detail-open {
 .status-tab {
   min-height: 34px;
   padding: 0 13px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--green-pale) 42%, var(--white));
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   font-size: 10px;
 }
 
 .status-tab.active {
-  border-color: var(--green);
-  color: var(--white);
-  background: var(--green);
+  color: var(--green);
+  background: transparent;
+  font-weight: 800;
 }
 
 .status-tab.active::after {
-  display: none;
+  display: block;
+  right: 8px;
+  left: 8px;
 }
 
 .status-tab span {
@@ -3090,9 +3064,6 @@ footer p {
     grid-template-columns: minmax(220px, 1fr) repeat(3, 150px);
   }
 
-  .quick-filter-shortcuts {
-    justify-content: flex-start;
-  }
 
   .methodology {
     grid-template-columns: 1fr;
@@ -3705,8 +3676,7 @@ footer p {
     box-shadow: none;
   }
 
-  .quick-filter-heading,
-  .quick-filter-shortcuts {
+  .quick-filter-heading {
     display: none;
   }
 

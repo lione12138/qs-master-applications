@@ -1636,9 +1636,11 @@ function renderCounts(records, universities) {
   const mobileOpen = document.getElementById("mobile-open-count");
   const mobileUpcoming = document.getElementById("mobile-upcoming-count");
   const heroUpcoming = document.getElementById("hero-upcoming-count");
+  const heroException = document.getElementById("hero-exception-count");
   if (mobileOpen) mobileOpen.textContent = counts.open;
   if (mobileUpcoming) mobileUpcoming.textContent = counts.upcoming;
   if (heroUpcoming) heroUpcoming.textContent = counts.upcoming;
+  if (heroException) heroException.textContent = counts.exception;
   return counts;
 }
 
@@ -1676,14 +1678,6 @@ function render() {
   document.getElementById("hero-open-count").textContent = counts.open;
   document.querySelectorAll("[data-mobile-sort]").forEach((button) => {
     button.classList.toggle("active", button.dataset.mobileSort === state.sort);
-  });
-  document.querySelectorAll("[data-quick-view]").forEach((button) => {
-    const view = button.dataset.quickView;
-    const active =
-      (view === "deadline" && state.status === "open" && state.sort === "deadline") ||
-      (view === "upcoming" && state.status === "upcoming") ||
-      (view === "open" && state.status === "open" && state.sort !== "deadline");
-    button.classList.toggle("active", active);
   });
   updateMobileFilterToggle();
   updateFavoriteControls();
@@ -1956,8 +1950,6 @@ function setupHero() {
     )
     .sort((a, b) => a.closesAt.localeCompare(b.closesAt))[0];
   if (!futureDeadline) {
-    document.getElementById("hero-deadline-countdown").textContent = "—";
-    document.getElementById("hero-deadline-date").textContent = "TOP 200";
     document.getElementById("hero-deadline-school").textContent =
       state.language === "zh" ? "官方申请目录" : "Official admissions directory";
     document.getElementById("hero-attention-badge").textContent = "—";
@@ -1974,9 +1966,6 @@ function setupHero() {
     return;
   }
   const note = deadlineNote(futureDeadline, getStatus(futureDeadline));
-  document.getElementById("hero-deadline-countdown").textContent = note;
-  document.getElementById("hero-deadline-date").textContent =
-    formatDate(futureDeadline.closesAt);
   document.getElementById("hero-deadline-school").textContent =
     schoolLabels(futureDeadline, state.language).primary;
   document.getElementById("hero-attention-badge").textContent = note;
@@ -2010,27 +1999,6 @@ function setMobileNavActive(name) {
   });
 }
 
-function applyQuickView(view) {
-  state.search = "";
-  document.getElementById("search-input").value = "";
-  if (view === "deadline") {
-    state.status = "open";
-    state.sort = "deadline";
-  } else if (view === "upcoming") {
-    state.status = "upcoming";
-    state.sort = "opens";
-  } else {
-    state.status = "open";
-    state.sort = "rank";
-  }
-  resetPages();
-  syncUrl();
-  document.querySelectorAll(".status-tab").forEach((tab) => {
-    tab.classList.toggle("active", tab.dataset.status === state.status);
-  });
-  render();
-}
-
 function updateMobileFilterToggle() {
   const toolbar = document.querySelector(".quick-filter-panel .toolbar");
   const button = document.getElementById("mobile-filter-toggle");
@@ -2055,12 +2023,6 @@ function bindEvents() {
   document.getElementById("theme-toggle").addEventListener("click", () => {
     state.theme = state.theme === "dark" ? "light" : "dark";
     applyTheme();
-  });
-  document.querySelectorAll("[data-quick-view]").forEach((button) => {
-    button.addEventListener("click", () => applyQuickView(button.dataset.quickView));
-  });
-  document.querySelectorAll("[data-hero-view]").forEach((button) => {
-    button.addEventListener("click", () => applyQuickView(button.dataset.heroView));
   });
   document.getElementById("mobile-filter-toggle").addEventListener("click", () => {
     document
