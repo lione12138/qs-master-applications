@@ -155,15 +155,17 @@
               <span class="live-dot"></span>
               <span data-i18n="eyebrow">Daily monitoring of global university application windows</span>
             </div>
-            <h1 data-i18n-html="heroTitle">Never miss a<br /><em>master's deadline</em></h1>
+            <h1 data-i18n-html="heroTitle">Master's application windows,<br /><em>clear at a glance</em></h1>
             <p data-i18n="heroDescription">
-              Track master's application periods across QS Top 200 universities, organised by current status.
+              Filter by ranking, region, application status, and deadline to quickly find programmes that are still open.
             </p>
             <div class="hero-actions">
               <a class="primary-button" href="#application-board">
                 <span data-i18n="browseWindows">Browse application windows</span>
                 <span aria-hidden="true">↓</span>
               </a>
+              <a class="secondary-button" href="#application-board" data-hero-view="deadline" data-i18n="quickDeadline">Closing soon</a>
+              <a class="secondary-button" href="./calendar.html" data-i18n="openCalendar">Open calendar</a>
               <span class="update-note update-schedule" data-i18n="updateSchedule">Updated daily at 8:00 AM Beijing time</span>
               <span class="update-note" id="updated-at" data-i18n="loadingData">Loading data…</span>
             </div>
@@ -175,25 +177,35 @@
             </div>
           </div>
 
-          <div class="hero-visual" aria-hidden="true">
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="date-card date-card-main">
-              <span class="date-card-label" data-i18n="nextDeadline">NEXT DEADLINE</span>
-              <strong id="hero-deadline-day">--</strong>
-              <span id="hero-deadline-month">---</span>
-              <div class="date-card-school" id="hero-deadline-school">
-                Loading
+          <div class="hero-dashboard" aria-label="Application overview" data-i18n-aria-label="heroOverviewLabel">
+            <div class="hero-metrics">
+              <div class="hero-metric-card">
+                <span data-i18n="statusOpen">Open now</span>
+                <strong id="hero-open-count">0</strong>
+                <small data-i18n="submittableWindows">submittable windows</small>
+              </div>
+              <div class="hero-metric-card urgent">
+                <span data-i18n="nextDeadline">NEXT DEADLINE</span>
+                <strong id="hero-deadline-countdown">--</strong>
+                <small id="hero-deadline-date">--</small>
+              </div>
+              <div class="hero-metric-card">
+                <span data-i18n="statusUpcoming">Opening soon</span>
+                <strong id="hero-upcoming-count">0</strong>
+                <small data-i18n="openingWithinThirtyDays">within 30 days</small>
               </div>
             </div>
-            <div class="mini-card mini-card-open">
-              <span data-i18n="openNow">OPEN NOW</span>
-              <strong id="hero-open-count">0</strong>
-            </div>
-            <div class="mini-card mini-card-rank">
-              <span data-i18n="qsRankLabel">QS RANK</span>
-              <strong>TOP 200</strong>
-            </div>
+            <a class="hero-attention-card" id="hero-deadline-link" href="#application-board">
+              <strong data-i18n="attentionToday">Needs your attention</strong>
+              <span class="hero-attention-row">
+                <b id="hero-attention-badge">--</b>
+                <span id="hero-deadline-school">Loading</span>
+              </span>
+              <span class="hero-attention-row secondary">
+                <b id="hero-attention-source" data-i18n="officialSource">Official source</b>
+                <span data-i18n="confirmOnOfficialPage">Confirm the deadline on the official page before applying</span>
+              </span>
+            </a>
           </div>
         </section>
 
@@ -248,53 +260,70 @@
             <span id="monitor-summary"></span>
           </div>
 
-          <div class="toolbar">
-            <label class="search-box">
-              <span aria-hidden="true">⌕</span>
-              <input
-                id="search-input"
-                type="search"
-                placeholder="Search university, programme, or country"
-                data-i18n-placeholder="searchPlaceholder"
-              />
-            </label>
-            <label class="select-wrap">
-              <span class="sr-only" data-i18n="rankingFilter">Ranking</span>
-              <select id="ranking-filter">
-                <option value="qs" data-i18n="rankingQs">QS World University Rankings 2027</option>
-                <option value="the" data-i18n="rankingThe">THE World University Rankings 2026</option>
-                <option value="arwu" data-i18n="rankingArwu">ARWU 2025</option>
-                <option value="usnews" disabled data-i18n="rankingUsnewsUnavailable">U.S. News (official data unavailable)</option>
-              </select>
-            </label>
-            <label class="select-wrap">
-              <span class="sr-only" data-i18n="regionFilterLabel">Region</span>
-              <select id="region-filter">
-                <option value="all" data-i18n="allRegions">All regions</option>
-              </select>
-            </label>
-            <label class="select-wrap">
-              <span class="sr-only" data-i18n="intakeFilterLabel">Intake</span>
-              <select id="intake-filter">
-                <option value="all" data-i18n="allIntakes">All intakes</option>
-              </select>
-            </label>
-            <label class="select-wrap">
-              <span class="sr-only" data-i18n="rankRangeFilter">Rank range</span>
-              <select id="rank-range-filter">
-                <option value="30">QS Top 30</option>
-                <option value="50">QS Top 50</option>
-                <option value="100">QS Top 100</option>
-                <option value="150">QS Top 150</option>
-                <option value="200">QS Top 200</option>
-              </select>
-            </label>
-            <button class="toolbar-button" id="favorites-toggle" type="button">
-              <span data-i18n="favoritesOnly">Favourites only</span> <span id="favorite-count">0</span>
-            </button>
-            <button class="toolbar-button" id="export-favorites" type="button">
-              <span data-i18n="exportFavorites">Export favourite deadlines</span>
-            </button>
+          <div class="quick-filter-panel">
+            <div class="quick-filter-heading">
+              <strong data-i18n="quickView">Quick view</strong>
+              <span data-i18n="quickViewDescription">Start with what is open or closing soon, then refine by ranking, region, and intake.</span>
+            </div>
+            <div class="quick-filter-controls">
+              <div class="quick-filter-shortcuts" aria-label="Quick views" data-i18n-aria-label="quickView">
+                <button class="quick-filter-button active" type="button" data-quick-view="open" data-i18n="statusOpen">Open now</button>
+                <button class="quick-filter-button" type="button" data-quick-view="deadline" data-i18n="quickDeadline">Closing soon</button>
+                <button class="quick-filter-button" type="button" data-quick-view="upcoming" data-i18n="statusUpcoming">Opening soon</button>
+              </div>
+              <div class="toolbar">
+                <label class="search-box">
+                  <span aria-hidden="true">⌕</span>
+                  <input
+                    id="search-input"
+                    type="search"
+                    placeholder="Search university, programme, or country"
+                    data-i18n-placeholder="searchPlaceholder"
+                  />
+                </label>
+                <button class="mobile-filter-toggle" id="mobile-filter-toggle" type="button" aria-expanded="false">
+                  <span aria-hidden="true">☷</span>
+                  <span id="mobile-filter-toggle-label" data-i18n="showFilters">Filters</span>
+                </button>
+                <label class="select-wrap advanced-filter-control">
+                  <span class="sr-only" data-i18n="rankingFilter">Ranking</span>
+                  <select id="ranking-filter">
+                    <option value="qs" data-i18n="rankingQs">QS World University Rankings 2027</option>
+                    <option value="the" data-i18n="rankingThe">THE World University Rankings 2026</option>
+                    <option value="arwu" data-i18n="rankingArwu">ARWU 2025</option>
+                    <option value="usnews" disabled data-i18n="rankingUsnewsUnavailable">U.S. News (official data unavailable)</option>
+                  </select>
+                </label>
+                <label class="select-wrap advanced-filter-control">
+                  <span class="sr-only" data-i18n="regionFilterLabel">Region</span>
+                  <select id="region-filter">
+                    <option value="all" data-i18n="allRegions">All regions</option>
+                  </select>
+                </label>
+                <label class="select-wrap advanced-filter-control">
+                  <span class="sr-only" data-i18n="intakeFilterLabel">Intake</span>
+                  <select id="intake-filter">
+                    <option value="all" data-i18n="allIntakes">All intakes</option>
+                  </select>
+                </label>
+                <label class="select-wrap advanced-filter-control">
+                  <span class="sr-only" data-i18n="rankRangeFilter">Rank range</span>
+                  <select id="rank-range-filter">
+                    <option value="30">QS Top 30</option>
+                    <option value="50">QS Top 50</option>
+                    <option value="100">QS Top 100</option>
+                    <option value="150">QS Top 150</option>
+                    <option value="200">QS Top 200</option>
+                  </select>
+                </label>
+                <button class="toolbar-button" id="favorites-toggle" type="button">
+                  <span data-i18n="favoritesOnly">Favourites only</span> <span id="favorite-count">0</span>
+                </button>
+                <button class="toolbar-button" id="export-favorites" type="button">
+                  <span data-i18n="exportFavorites">Export favourite deadlines</span>
+                </button>
+              </div>
+            </div>
           </div>
 
           <div class="mobile-sort-controls" aria-label="Sort application windows" data-i18n-aria-label="mobileSortLabel">

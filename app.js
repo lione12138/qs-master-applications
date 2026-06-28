@@ -76,12 +76,6 @@ function dateFormatter() {
   });
 }
 
-const shortDateFormatter = new Intl.DateTimeFormat("en-US", {
-  month: "short",
-  day: "2-digit",
-  timeZone: "UTC",
-});
-
 function parseDate(value) {
   return new Date(`${value}T00:00:00Z`);
 }
@@ -1641,8 +1635,10 @@ function renderCounts(records, universities) {
   });
   const mobileOpen = document.getElementById("mobile-open-count");
   const mobileUpcoming = document.getElementById("mobile-upcoming-count");
+  const heroUpcoming = document.getElementById("hero-upcoming-count");
   if (mobileOpen) mobileOpen.textContent = counts.open;
   if (mobileUpcoming) mobileUpcoming.textContent = counts.upcoming;
+  if (heroUpcoming) heroUpcoming.textContent = counts.upcoming;
   return counts;
 }
 
@@ -1681,6 +1677,15 @@ function render() {
   document.querySelectorAll("[data-mobile-sort]").forEach((button) => {
     button.classList.toggle("active", button.dataset.mobileSort === state.sort);
   });
+  document.querySelectorAll("[data-quick-view]").forEach((button) => {
+    const view = button.dataset.quickView;
+    const active =
+      (view === "deadline" && state.status === "open" && state.sort === "deadline") ||
+      (view === "upcoming" && state.status === "upcoming") ||
+      (view === "open" && state.status === "open" && state.sort !== "deadline");
+    button.classList.toggle("active", active);
+  });
+  updateMobileFilterToggle();
   updateFavoriteControls();
 }
 
@@ -1951,11 +1956,12 @@ function setupHero() {
     )
     .sort((a, b) => a.closesAt.localeCompare(b.closesAt))[0];
   if (!futureDeadline) {
-    document.getElementById("hero-deadline-day").textContent = "200";
-    document.getElementById("hero-deadline-month").textContent =
-      state.language === "zh" ? "所学校" : "SCHOOLS";
+    document.getElementById("hero-deadline-countdown").textContent = "—";
+    document.getElementById("hero-deadline-date").textContent = "TOP 200";
     document.getElementById("hero-deadline-school").textContent =
       state.language === "zh" ? "官方申请目录" : "Official admissions directory";
+    document.getElementById("hero-attention-badge").textContent = "—";
+    document.getElementById("hero-deadline-link").href = "#application-board";
     const mobileLink = document.getElementById("mobile-deadline-link");
     if (mobileLink) mobileLink.removeAttribute("target");
     const mobileSchool = document.getElementById("mobile-deadline-school");
@@ -1967,14 +1973,19 @@ function setupHero() {
     if (mobileNote) mobileNote.textContent = "";
     return;
   }
-  const parts = shortDateFormatter
-    .formatToParts(parseDate(futureDeadline.closesAt))
-    .reduce((result, part) => ({ ...result, [part.type]: part.value }), {});
-  document.getElementById("hero-deadline-day").textContent = parts.day;
-  document.getElementById("hero-deadline-month").textContent =
-    parts.month.toUpperCase();
+  const note = deadlineNote(futureDeadline, getStatus(futureDeadline));
+  document.getElementById("hero-deadline-countdown").textContent = note;
+  document.getElementById("hero-deadline-date").textContent =
+    formatDate(futureDeadline.closesAt);
   document.getElementById("hero-deadline-school").textContent =
     schoolLabels(futureDeadline, state.language).primary;
+  document.getElementById("hero-attention-badge").textContent = note;
+  document.getElementById("hero-attention-source").textContent =
+    sourceMonitorDescription(futureDeadline)[0];
+  const heroLink = document.getElementById("hero-deadline-link");
+  heroLink.href = safeUrl(futureDeadline.applicationUrl) || "#application-board";
+  heroLink.target = safeUrl(futureDeadline.applicationUrl) ? "_blank" : "";
+  heroLink.rel = "noreferrer";
   const mobileLink = document.getElementById("mobile-deadline-link");
   const mobileSchool = document.getElementById("mobile-deadline-school");
   const mobileDate = document.getElementById("mobile-deadline-date");
@@ -1999,6 +2010,43 @@ function setMobileNavActive(name) {
   });
 }
 
+function applyQuickView(view) {
+  state.search = "";
+  document.getElementById("search-input").value = "";
+  if (view === "deadline") {
+    state.status = "open";
+    state.sort = "deadline";
+  } else if (view === "upcoming") {
+    state.status = "upcoming";
+    state.sort = "opens";
+  } else {
+    state.status = "open";
+    state.sort = "rank";
+  }
+  resetPages();
+  syncUrl();
+  document.querySelectorAll(".status-tab").forEach((tab) => {
+    tab.classList.toggle("active", tab.dataset.status === state.status);
+  });
+  render();
+}
+
+function updateMobileFilterToggle() {
+  const toolbar = document.querySelector(".quick-filter-panel .toolbar");
+  const button = document.getElementById("mobile-filter-toggle");
+  const label = document.getElementById("mobile-filter-toggle-label");
+  if (!toolbar || !button || !label) return;
+  const expanded = toolbar.classList.contains("mobile-filters-open");
+  const hasAdvancedFilters =
+    state.ranking !== "qs" ||
+    state.region !== "all" ||
+    state.intake !== "all" ||
+    state.rankLimit !== "200";
+  button.setAttribute("aria-expanded", String(expanded));
+  button.classList.toggle("active", expanded || hasAdvancedFilters);
+  label.textContent = t(expanded ? "hideFilters" : "showFilters");
+}
+
 function bindEvents() {
   document.getElementById("language-toggle").addEventListener("click", () => {
     state.language = state.language === "en" ? "zh" : "en";
@@ -2007,6 +2055,18 @@ function bindEvents() {
   document.getElementById("theme-toggle").addEventListener("click", () => {
     state.theme = state.theme === "dark" ? "light" : "dark";
     applyTheme();
+  });
+  document.querySelectorAll("[data-quick-view]").forEach((button) => {
+    button.addEventListener("click", () => applyQuickView(button.dataset.quickView));
+  });
+  document.querySelectorAll("[data-hero-view]").forEach((button) => {
+    button.addEventListener("click", () => applyQuickView(button.dataset.heroView));
+  });
+  document.getElementById("mobile-filter-toggle").addEventListener("click", () => {
+    document
+      .querySelector(".quick-filter-panel .toolbar")
+      .classList.toggle("mobile-filters-open");
+    updateMobileFilterToggle();
   });
   document.getElementById("search-input").addEventListener("input", (event) => {
     state.search = event.target.value;
