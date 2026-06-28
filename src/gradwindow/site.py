@@ -95,7 +95,13 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
 
     for filename in PUBLIC_FILES:
         shutil.copy2(ROOT / filename, output_dir / filename)
-    for page_name in ("index.html", "roadmap.html"):
+    for page_name in (
+        "index.html",
+        "calendar.html",
+        "contact.html",
+        "roadmap.html",
+        "privacy.html",
+    ):
         page_path = output_dir / page_name
         page_path.write_text(
             page_path.read_text(encoding="utf-8").replace(
@@ -117,7 +123,7 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
 
     (output_dir / ".nojekyll").write_text("", encoding="utf-8")
     (output_dir / "sources.html").write_text(
-        render_sources_page(), encoding="utf-8"
+        render_sources_page(public_site_url), encoding="utf-8"
     )
     generated_urls = generate_index_pages(output_dir, public_site_url)
     sitemap_urls = [
@@ -206,6 +212,10 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
                 ),
                 body,
                 canonical,
+                [
+                    ("GradWindow", f"{public_site_url}/"),
+                    (university["school"], canonical),
+                ],
             ),
             encoding="utf-8",
         )
@@ -236,6 +246,10 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
                 f"Directory of QS Top 200 universities in {country} with master's application links.",
                 body,
                 canonical,
+                [
+                    ("GradWindow", f"{public_site_url}/"),
+                    (country, canonical),
+                ],
             ),
             encoding="utf-8",
         )
@@ -271,6 +285,10 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
                 f"Verified master's application deadlines and unofficial calendar-shift references for {month}.",
                 body,
                 canonical,
+                [
+                    ("GradWindow", f"{public_site_url}/"),
+                    (f"Deadlines in {month}", canonical),
+                ],
             ),
             encoding="utf-8",
         )
@@ -322,10 +340,47 @@ def render_static_page(
     description: str,
     body: str,
     canonical: str,
+    breadcrumbs: list[tuple[str, str]],
 ) -> str:
     escaped_title = html.escape(title)
     escaped_description = html.escape(description, quote=True)
     escaped_canonical = html.escape(canonical, quote=True)
+    public_site_url = canonical.split("/", 3)[:3]
+    public_site_url = "/".join(public_site_url)
+    social_image = f"{public_site_url}/og-image.png"
+    breadcrumb_schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": position,
+                "name": name,
+                "item": url,
+            }
+            for position, (name, url) in enumerate(breadcrumbs, start=1)
+        ],
+    }
+    web_page_schema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": title,
+        "description": description,
+        "url": canonical,
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "GradWindow",
+            "url": f"{public_site_url}/",
+        },
+    }
+    structured_data = json.dumps(
+        [web_page_schema, breadcrumb_schema],
+        ensure_ascii=False,
+    ).replace("</", "<\\/")
+    breadcrumb_links = "<span aria-hidden=\"true\">/</span>".join(
+        f'<a href="{html.escape(url, quote=True)}">{html.escape(name)}</a>'
+        for name, url in breadcrumbs
+    )
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -333,11 +388,23 @@ def render_static_page(
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{escaped_title} · GradWindow</title>
   <meta name="description" content="{escaped_description}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="{escaped_canonical}">
+  <link rel="icon" href="{public_site_url}/favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="{escaped_title} · GradWindow">
   <meta property="og:description" content="{escaped_description}">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GradWindow">
   <meta property="og:url" content="{escaped_canonical}">
+  <meta property="og:image" content="{social_image}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="GradWindow master's application deadline tracker">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{escaped_title} · GradWindow">
+  <meta name="twitter:description" content="{escaped_description}">
+  <meta name="twitter:image" content="{social_image}">
+  <script type="application/ld+json">{structured_data}</script>
   <style>
     body {{ margin: 0; background: #f7f5ef; color: #17231d; font: 16px/1.65 system-ui, sans-serif; }}
     main {{ width: min(820px, calc(100% - 32px)); margin: 48px auto; }}
@@ -347,9 +414,19 @@ def render_static_page(
     a {{ color: #1e6548; }}
     small {{ color: #68736d; }}
     .back {{ margin-bottom: 28px; }}
+    .breadcrumbs {{ display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; color: #68736d; font-size: 14px; }}
+    .site-links {{ display: flex; gap: 18px; flex-wrap: wrap; padding-top: 28px; margin-top: 42px; border-top: 1px solid #d9ddd7; font-size: 14px; }}
   </style>
 </head>
-<body><main><h1>{escaped_title}</h1>{body}</main>{CLOUDFLARE_ANALYTICS}</body>
+<body><main>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">{breadcrumb_links}</nav>
+  <h1>{escaped_title}</h1>{body}
+  <nav class="site-links" aria-label="GradWindow pages">
+    <a href="{public_site_url}/">Application tracker</a>
+    <a href="{public_site_url}/calendar.html">Application calendar</a>
+    <a href="{public_site_url}/sources.html">Sources and coverage</a>
+  </nav>
+</main>{CLOUDFLARE_ANALYTICS}</body>
 </html>
 """
 
@@ -365,7 +442,7 @@ def render_sitemap(urls: list[str]) -> str:
     )
 
 
-def render_sources_page() -> str:
+def render_sources_page(public_site_url: str) -> str:
     universities = read_json(UNIVERSITIES_PATH)["universities"]
     monitor = read_json(MONITOR_STATE_PATH, {"universities": {}})
     monitor_entries = monitor.get("universities", {})
@@ -389,12 +466,68 @@ def render_sources_page() -> str:
             f"<td>{html.escape(monitor_item.get('status', 'not-checked'))}</td>"
             "</tr>"
         )
+    title = "Sources and coverage · GradWindow"
+    description = (
+        "Review GradWindow's official university sources, graduate application "
+        "entry discovery status, and latest monitoring results for the QS Top 200."
+    )
+    canonical = f"{public_site_url}/sources.html"
+    structured_data = json.dumps(
+        [
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "name": "Sources and coverage",
+                "description": description,
+                "url": canonical,
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": "GradWindow",
+                    "url": f"{public_site_url}/",
+                },
+            },
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "GradWindow",
+                        "item": f"{public_site_url}/",
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Sources and coverage",
+                        "item": canonical,
+                    },
+                ],
+            },
+        ],
+        ensure_ascii=False,
+    ).replace("</", "<\\/")
     return f"""<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sources and coverage · GradWindow</title>
+  <title>{title}</title>
+  <meta name="description" content="{html.escape(description, quote=True)}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="{canonical}">
+  <link rel="icon" href="{public_site_url}/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="{title}">
+  <meta property="og:description" content="{html.escape(description, quote=True)}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GradWindow">
+  <meta property="og:url" content="{canonical}">
+  <meta property="og:image" content="{public_site_url}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{title}">
+  <meta name="twitter:description" content="{html.escape(description, quote=True)}">
+  <meta name="twitter:image" content="{public_site_url}/og-image.png">
+  <script type="application/ld+json">{structured_data}</script>
   <style>
     body {{ margin: 0; background: #f7f5ef; color: #17231d; font: 14px/1.6 system-ui, sans-serif; }}
     main {{ width: min(1180px, calc(100% - 32px)); margin: 48px auto; }}

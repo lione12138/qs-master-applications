@@ -61,6 +61,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     sources_html = (tmp_path / "sources.html").read_text(encoding="utf-8")
     assert "Sources and coverage" in sources_html
     assert 'lang="en"' in sources_html
+    assert 'rel="canonical" href="https://gradwindow.com/sources.html"' in sources_html
+    assert 'property="og:image"' in sources_html
+    assert '"@type": "BreadcrumbList"' in sources_html
     index_html = (tmp_path / "index.html").read_text(encoding="utf-8")
     assert 'data-status="predicted"' not in index_html
     assert 'id="language-toggle"' in index_html
@@ -81,6 +84,7 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'lang="en"' in index_html
     assert 'property="og:image"' in index_html
     assert "og-image.png" in index_html
+    assert 'name="robots" content="index, follow, max-image-preview:large"' in index_html
     assert 'rel="modulepreload"' in index_html
     assert 'application/ld+json' in index_html
     assert "Source code" in index_html
@@ -103,6 +107,16 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
         / "university-of-cambridge"
         / "index.html"
     ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
+    university_html = (
+        tmp_path
+        / "university"
+        / "university-of-cambridge"
+        / "index.html"
+    ).read_text(encoding="utf-8")
+    assert '"@type": "WebPage"' in university_html
+    assert '"@type": "BreadcrumbList"' in university_html
+    assert 'property="og:image"' in university_html
+    assert 'aria-label="GradWindow pages"' in university_html
     assert (
         tmp_path / "country" / "united-kingdom" / "index.html"
     ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
@@ -118,6 +132,16 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     contact_html = (tmp_path / "contact.html").read_text(encoding="utf-8")
     assert 'action="mailto:' not in contact_html
     assert 'id="contact-subject"' in contact_html
+    for page_name in (
+        "calendar.html",
+        "contact.html",
+        "roadmap.html",
+        "privacy.html",
+    ):
+        page_html = (tmp_path / page_name).read_text(encoding="utf-8")
+        assert 'rel="canonical"' in page_html
+        assert 'property="og:image"' in page_html
+        assert 'type="application/ld+json"' in page_html
 
 
 def test_build_site_uses_configured_public_url(tmp_path, monkeypatch) -> None:
@@ -143,6 +167,16 @@ def test_build_site_uses_configured_public_url(tmp_path, monkeypatch) -> None:
         f'href="{public_url}/university/university-of-cambridge/"'
         in university_page
     )
+    for page_name in (
+        "calendar.html",
+        "contact.html",
+        "roadmap.html",
+        "privacy.html",
+        "sources.html",
+    ):
+        page_html = (tmp_path / page_name).read_text(encoding="utf-8")
+        assert public_url in page_html
+        assert "https://gradwindow.com/" not in page_html
 
 
 def test_build_site_injects_private_subscription_endpoint(
