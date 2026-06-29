@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
-    "updatedAt": "2026-06-18",
+    "updatedAt": "2026-06-29",
     "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "programs": [
@@ -84,6 +84,96 @@
       "programmeGroupId": "ucl-graduate-taught",
       "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
       "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc"
+    },
+    {
+      "id": "ucl-computer-science-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Computer Science MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc"
+    },
+    {
+      "id": "ucl-data-science-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Data Science MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Mathematical and Physical Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc"
+    },
+    {
+      "id": "ucl-machine-learning-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Machine Learning MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc"
+    },
+    {
+      "id": "ucl-robotics-artificial-intelligence-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Robotics and Artificial Intelligence MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc"
+    },
+    {
+      "id": "ucl-software-systems-engineering-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Software Systems Engineering MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc"
+    },
+    {
+      "id": "ucl-computer-graphics-vision-imaging-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Computer Graphics, Vision and Imaging MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-graphics-vision-and-imaging-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-graphics-vision-and-imaging-msc"
+    },
+    {
+      "id": "ucl-data-science-machine-learning-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Data Science and Machine Learning MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc"
+    },
+    {
+      "id": "ucl-scientific-data-intensive-computing-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Scientific and Data Intensive Computing MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Mathematical and Physical Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc"
+    },
+    {
+      "id": "ucl-medical-robotics-artificial-intelligence-msc",
+      "universityId": "ucl-university-college-london",
+      "name": "Medical Robotics and Artificial Intelligence MSc",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering Sciences",
+      "programmeGroupId": "ucl-graduate-taught",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/medical-robotics-and-artificial-intelligence-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/medical-robotics-and-artificial-intelligence-msc"
     },
     {
       "id": "hku-computer-science-general-msc",

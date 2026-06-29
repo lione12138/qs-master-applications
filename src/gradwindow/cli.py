@@ -18,6 +18,8 @@ from .validation import validate_data
 from .review import generate_review_outputs
 from .readme import generate_readmes
 from .schemas import export_schemas
+from .programme_adapters.cuhk import CUHKAdapter
+from .programme_discovery import discover_programmes
 
 
 def main() -> None:
@@ -33,6 +35,16 @@ def main() -> None:
         "monitor-sources", help="Check exact application-window source pages"
     )
     source_monitor.add_argument("--workers", type=int, default=8)
+    programme_discovery = subparsers.add_parser(
+        "discover-programmes",
+        help="Discover new taught programmes from supported official catalogues",
+    )
+    programme_discovery.add_argument(
+        "--university",
+        choices=("cuhk",),
+        default="cuhk",
+    )
+    programme_discovery.add_argument("--dry-run", action="store_true")
     deadlines = subparsers.add_parser(
         "update-deadlines", help="Run configured programme parsers"
     )
@@ -70,6 +82,12 @@ def main() -> None:
         print_summary(monitor_universities(workers=args.workers))
     elif args.command == "monitor-sources":
         print_summary(monitor_application_sources(workers=args.workers))
+    elif args.command == "discover-programmes":
+        report = discover_programmes(
+            CUHKAdapter(),
+            dry_run=args.dry_run,
+        )
+        print(json.dumps(report, ensure_ascii=False))
     elif args.command == "update-deadlines":
         report = update_deadlines(dry_run=args.dry_run)
         print(json.dumps(report, ensure_ascii=False))
@@ -113,6 +131,8 @@ def main() -> None:
             print_summary(
                 monitor_application_sources(workers=max(1, args.workers // 2))
             )
+            discovery_report = discover_programmes(CUHKAdapter())
+            print(json.dumps(discovery_report, ensure_ascii=False))
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
             raise SystemExit(1)

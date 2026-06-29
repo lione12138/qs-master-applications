@@ -1,0 +1,1001 @@
+{
+  "meta": {
+    "updatedAt": "2026-06-29T10:11:30.147966+00:00",
+    "description": "Latest official programme-catalog discovery snapshots."
+  },
+  "universities": {
+    "the-chinese-university-of-hong-kong": {
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "checkedAt": "2026-06-29T10:11:30.147966+00:00",
+      "itemCount": 123,
+      "applicationOpensAt": "2025-09-01",
+      "catalogHash": "301ff0646d171c37bfb5def33d68ceddc9592622c59837a122ddf26831123678",
+      "programmes": {
+        "cuhk-accountancy-master": {
+          "name": "Master of Accountancy",
+          "degreeType": "Master",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "a8de0e558832b39c2f5b7be4acc69785ef8a1f72f4ec6d9cdf27b30764d57163"
+        },
+        "cuhk-accreditation-chemistry-msc": {
+          "name": "MSc in Accreditation Chemistry",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Chemistry",
+          "parseStatus": "parsed",
+          "deadlineHash": "9351281f3bf7ff614a597ad95e5a2133caa8cae4f3ed4b8495d1a6c9d782223d"
+        },
+        "cuhk-actuarial-science-and-insurance-analytics-msc": {
+          "name": "MSc in Actuarial Science and Insurance Analytics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "4c46ccb62cffb192ee078b29102ab3925aa3e52c4abb9c0b37da3f214dfa64ac"
+        },
+        "cuhk-advanced-materials-science-msc": {
+          "name": "MSc in Advanced Materials Science",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Materials Science and Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "1c69d161259d36c50b322676f214f6cd11333017fc4eefb9a18003ba21185ef4"
+        },
+        "cuhk-advanced-studies-in-statistics-and-data-science-msc": {
+          "name": "MSc in Advanced Studies in Statistics and Data Science",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Statistics",
+          "parseStatus": "parsed",
+          "deadlineHash": "60fee491d16d49c5bbe0d655fcf76759eccbffd069896da2270914e8f5ec708d"
+        },
+        "cuhk-advertising-mssc": {
+          "name": "MSSc in Advertising",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Communication",
+          "parseStatus": "parsed",
+          "deadlineHash": "b9349477ac0a5401083cc387868c362f0dc75b01e4f9c6cb44a00f10a4a59b43"
+        },
+        "cuhk-anthropology-ma": {
+          "name": "MA in Anthropology",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Anthropology",
+          "parseStatus": "parsed",
+          "deadlineHash": "c12055236ed8c881a85ab9d198f8f402f061169586b3f368a923486a374a163b"
+        },
+        "cuhk-architecture-master": {
+          "name": "Master of Architecture",
+          "degreeType": "Master",
+          "faculty": "Faculty of Social Science",
+          "department": "Architecture",
+          "parseStatus": "parsed",
+          "deadlineHash": "57f027f30751b221682d60748c32755c408942946288538d3d00ac915a274780"
+        },
+        "cuhk-artificial-intelligence-for-science-msc": {
+          "name": "MSc in Artificial Intelligence for Science",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "f0c24acb92ab8e787bafc98f8fcd701e6b0037bab29de1403238cc50d41916dc"
+        },
+        "cuhk-artificial-intelligence-msc": {
+          "name": "MSc in Artificial Intelligence",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "9665649ab9bba9714c204f798b4b6b4eca74a0047760330b30e378430b1dc3ec"
+        },
+        "cuhk-aviation-management-msc": {
+          "name": "MSc in Aviation Management",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "9351281f3bf7ff614a597ad95e5a2133caa8cae4f3ed4b8495d1a6c9d782223d"
+        },
+        "cuhk-biochemical-and-biomedical-sciences-msc": {
+          "name": "MSc in Biochemical and Biomedical Sciences",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Life Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "9351281f3bf7ff614a597ad95e5a2133caa8cae4f3ed4b8495d1a6c9d782223d"
+        },
+        "cuhk-biodiversity-environmental-management-sustainability-and-technology-msc": {
+          "name": "MSc in Biodiversity, Environmental Management, Sustainability and Technology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Life Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "f0c24acb92ab8e787bafc98f8fcd701e6b0037bab29de1403238cc50d41916dc"
+        },
+        "cuhk-biomedical-engineering-msc": {
+          "name": "MSc in Biomedical Engineering",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Biomedical Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "418b4b1626d0288d0d471ab2df36ce62350eb2c836e9412bf14fbb86f71c27db"
+        },
+        "cuhk-buddhist-studies-ma": {
+          "name": "MA in Buddhist Studies",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Religious Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "2989f066095c35d3650342a3848d0d3f28e29d01fbbc796fd49b96f7f6b87093"
+        },
+        "cuhk-business-analytics-msc": {
+          "name": "MSc in Business Analytics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "4c46ccb62cffb192ee078b29102ab3925aa3e52c4abb9c0b37da3f214dfa64ac"
+        },
+        "cuhk-cardiology-msc": {
+          "name": "MSc in Cardiology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Medical Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "dbeba647709a222cd7fd9ee4519cc3448af3b9fa61518f9400ab477964d3eac2"
+        },
+        "cuhk-chinese-art-history-ma": {
+          "name": "MA in Chinese Art History",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Fine Arts",
+          "parseStatus": "parsed",
+          "deadlineHash": "e659466448dc569226d79e1a2484cc1491ccae581a69c08eda361f7f2af64c66"
+        },
+        "cuhk-chinese-language-and-literature-ma": {
+          "name": "MA in Chinese Language and Literature",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Chinese Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "1054cd7e2d7d351120b7a7933b8b0c5b7cecc9ae6ec2ecc778efc17d15d71623"
+        },
+        "cuhk-chinese-language-education-ma": {
+          "name": "MA in Chinese Language Education",
+          "degreeType": "MA",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-chinese-linguistics-and-language-acquisition-ma": {
+          "name": "MA in Chinese Linguistics and Language Acquisition",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Linguistics",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-chinese-medicine-master": {
+          "name": "Master of Chinese Medicine",
+          "degreeType": "Master",
+          "faculty": "Faculty of Medicine",
+          "department": "Chinese Medicine",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-chinese-medicine-msc": {
+          "name": "MSc in Chinese Medicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Chinese Medicine",
+          "parseStatus": "parsed",
+          "deadlineHash": "9351281f3bf7ff614a597ad95e5a2133caa8cae4f3ed4b8495d1a6c9d782223d"
+        },
+        "cuhk-chinese-medicine-pharmacology-and-drug-development-msc": {
+          "name": "MSc in Chinese Medicine Pharmacology and Drug Development",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Chinese Medicine",
+          "parseStatus": "parsed",
+          "deadlineHash": "901090dbc70f37e5c6bbcc11af7bf15edf0970141569310650edc4b3d5648592"
+        },
+        "cuhk-chinese-studies-ma": {
+          "name": "MA in Chinese Studies",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "China Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-christian-studies-ma": {
+          "name": "MA in Christian Studies",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Theology",
+          "parseStatus": "parsed",
+          "deadlineHash": "1cdb8123eb93237e48c931d2658dd9b5f3101adde246cec9d84cf81754dd8d1c"
+        },
+        "cuhk-clinical-pharmacy-master": {
+          "name": "Master of Clinical Pharmacy",
+          "degreeType": "Master",
+          "faculty": "Faculty of Medicine",
+          "department": "Pharmacy",
+          "parseStatus": "parsed",
+          "deadlineHash": "6adaea0cba8ab1b7545a4a0a88d18b9c7cc05b9c40cc88a4de957b73fdc03e67"
+        },
+        "cuhk-clinical-psychology-mssc": {
+          "name": "MSSc in Clinical Psychology",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Psychology",
+          "parseStatus": "parsed",
+          "deadlineHash": "a2adc86626823654f62848ff1539c76318cd1ea60c7f1a8307ff70d03ab3ebfd"
+        },
+        "cuhk-comparative-and-public-history-ma": {
+          "name": "MA in Comparative and Public History",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "History",
+          "parseStatus": "parsed",
+          "deadlineHash": "d0de5a0abcc202ed11b1750f2f8db62145bf9c63aa5243312ec48178f9df593b"
+        },
+        "cuhk-computer-science-msc": {
+          "name": "MSc in Computer Science",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Computer Science and Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "f5732e4aee122af0592c93bda0c66d3cef49c1920bbe0955b0e30b92e666e8d5"
+        },
+        "cuhk-corporate-communication-mssc": {
+          "name": "MSSc in Corporate Communication",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Communication",
+          "parseStatus": "parsed",
+          "deadlineHash": "b9349477ac0a5401083cc387868c362f0dc75b01e4f9c6cb44a00f10a4a59b43"
+        },
+        "cuhk-cultural-management-ma": {
+          "name": "MA in Cultural Management",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Cultural Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-data-science-and-business-statistics-msc": {
+          "name": "MSc in Data Science and Business Statistics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Statistics",
+          "parseStatus": "parsed",
+          "deadlineHash": "60fee491d16d49c5bbe0d655fcf76759eccbffd069896da2270914e8f5ec708d"
+        },
+        "cuhk-divinity-master": {
+          "name": "Master of Divinity",
+          "degreeType": "Master",
+          "faculty": "Faculty of Arts",
+          "department": "Theology",
+          "parseStatus": "parsed",
+          "deadlineHash": "1cdb8123eb93237e48c931d2658dd9b5f3101adde246cec9d84cf81754dd8d1c"
+        },
+        "cuhk-dual-degree-msc-in-applied-economics-cuhk-and-ms-in-social-and-economic-policy-northwestern-university": {
+          "name": "Dual Degree - MSc in Applied Economics (CUHK) and MS in Social and Economic Policy (Northwestern University)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Economics",
+          "parseStatus": "parsed",
+          "deadlineHash": "05441bf93dc326fa31b7486855702a2abb3118a3d87f604d3b9bace75d0a4772"
+        },
+        "cuhk-e-commerce-and-logistics-technologies-msc": {
+          "name": "MSc in E-Commerce and Logistics Technologies",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Systems Engineering and Engineering Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "46e9154b18510478d3c19aa079ba1f4ce2169e87f6884ecb93c392b5aabd2d7d"
+        },
+        "cuhk-early-childhood-education-ma": {
+          "name": "MA in Early Childhood Education",
+          "degreeType": "MA",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-earth-and-environmental-analytics-for-sustainability-msc": {
+          "name": "MSc in Earth and Environmental Analytics for Sustainability",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Earth and Environmental Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "c2011bd465d5ce04b7c525631eeef6e442b19ad3c61af762c48427c2961af0f1"
+        },
+        "cuhk-economics-msc": {
+          "name": "MSc in Economics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Economics",
+          "parseStatus": "parsed",
+          "deadlineHash": "05441bf93dc326fa31b7486855702a2abb3118a3d87f604d3b9bace75d0a4772"
+        },
+        "cuhk-education-in-teaching-in-key-subject-areas-national-excellent-teacher-training-initiative-master": {
+          "name": "Master of Education in Teaching in Key Subject Areas (National Excellent Teacher Training Initiative)",
+          "degreeType": "Master",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-education-master": {
+          "name": "Master of Education",
+          "degreeType": "Master",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-electronic-engineering-msc": {
+          "name": "MSc in Electronic Engineering",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Electronic Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "23122681288f136458ce3eba38142999ccece917372a5a035e004f6a5ce30876"
+        },
+        "cuhk-english-applied-english-linguistics-ma": {
+          "name": "MA in English (Applied English Linguistics)",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "English",
+          "parseStatus": "parsed",
+          "deadlineHash": "37e142de32b5696d0ad4aba807b19e658054ce9e3c8abd0199bb4786d5f62be1"
+        },
+        "cuhk-english-language-teaching-ma": {
+          "name": "MA in English Language Teaching",
+          "degreeType": "MA",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-english-literary-studies-ma": {
+          "name": "MA in English (Literary Studies)",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "English",
+          "parseStatus": "parsed",
+          "deadlineHash": "37e142de32b5696d0ad4aba807b19e658054ce9e3c8abd0199bb4786d5f62be1"
+        },
+        "cuhk-environmental-information-health-and-public-management-msc": {
+          "name": "MSc in Environmental Information, Health and Public Management",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Social Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "ed87677b99b8d2d14c615fee35211d1375d2bd4493b0fb58a8a811c2beb71353"
+        },
+        "cuhk-epidemiology-and-biostatistics-msc": {
+          "name": "MSc in Epidemiology and Biostatistics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Public Health",
+          "parseStatus": "parsed",
+          "deadlineHash": "e44ce2ff2ab67c92a0fe6c20b8f453e438b6b9c9309e35dbdebc3cb16fb6c81d"
+        },
+        "cuhk-executive-mba": {
+          "name": "Executive MBA",
+          "degreeType": "MBA",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "9351281f3bf7ff614a597ad95e5a2133caa8cae4f3ed4b8495d1a6c9d782223d"
+        },
+        "cuhk-executive-mba-chinese": {
+          "name": "Executive MBA (Chinese)",
+          "degreeType": "MBA",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "62f73a8e634d57e8d452b18e9e866edfbdb6a4775ffec301fb78109ff8ff5ec0"
+        },
+        "cuhk-family-counselling-and-family-education-ma": {
+          "name": "MA in Family Counselling and Family Education",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Social Work",
+          "parseStatus": "parsed",
+          "deadlineHash": "9851cc9be5c09f602b340cf1c49789b2d8e3e8f313968fba261d9a84c625762c"
+        },
+        "cuhk-finance-mba": {
+          "name": "MBA in Finance",
+          "degreeType": "MBA",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "09e832c46e935058e7566d4c4aa878f5e43033363d10bfed2fe2902da946447d"
+        },
+        "cuhk-finance-msc": {
+          "name": "MSc in Finance",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "ed87677b99b8d2d14c615fee35211d1375d2bd4493b0fb58a8a811c2beb71353"
+        },
+        "cuhk-financial-technology-msc": {
+          "name": "MSc in Financial Technology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "3dce23ad0a8ae00f2b2d62cf2888e9f2cb9d2b61c3d3e9924ba1eae410280cfb"
+        },
+        "cuhk-fine-arts-ma": {
+          "name": "MA in Fine Arts",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Fine Arts",
+          "parseStatus": "parsed",
+          "deadlineHash": "e07ac622ba4ae809b96397303a1a198b51aebf710e9503a0b9ac41ef531de3ed"
+        },
+        "cuhk-gastroenterology-msc": {
+          "name": "MSc in Gastroenterology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Medical Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "f0c24acb92ab8e787bafc98f8fcd701e6b0037bab29de1403238cc50d41916dc"
+        },
+        "cuhk-gender-studies-inter-faculty-ma": {
+          "name": "MA in Gender Studies (Inter-Faculty)",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Gender Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "8e0f48283ab724fc07b3da3f535ce247343517bd7778491b9c52c6294c5d38f5"
+        },
+        "cuhk-gender-studies-ma": {
+          "name": "MA in Gender Studies",
+          "degreeType": "MA",
+          "faculty": "Faculty of Inter-Faculty",
+          "department": "Gender Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "8e0f48283ab724fc07b3da3f535ce247343517bd7778491b9c52c6294c5d38f5"
+        },
+        "cuhk-genomics-and-bioinformatics-msc": {
+          "name": "MSc in Genomics and Bioinformatics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Biomedical Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "9f4ec0a35d8e41eb73cc5f12ac50a8f20d6e91e2c8fb2e4900db2d646dff8778"
+        },
+        "cuhk-geoinformation-science-and-smart-cities-msc": {
+          "name": "MSc in GeoInformation Science and Smart Cities",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Geography and Resource Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "f0c24acb92ab8e787bafc98f8fcd701e6b0037bab29de1403238cc50d41916dc"
+        },
+        "cuhk-global-communication-ma": {
+          "name": "MA in Global Communication",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Communication",
+          "parseStatus": "parsed",
+          "deadlineHash": "b9349477ac0a5401083cc387868c362f0dc75b01e4f9c6cb44a00f10a4a59b43"
+        },
+        "cuhk-global-political-economy-mssc": {
+          "name": "MSSc in Global Political Economy",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Governance and Policy Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "f5732e4aee122af0592c93bda0c66d3cef49c1920bbe0955b0e30b92e666e8d5"
+        },
+        "cuhk-government-and-politics-greater-china-mssc": {
+          "name": "MSSc in Government and Politics (Greater China)",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Governance and Policy Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "6163cb2851b08816648a628073cdb31c2a58591979095a3c653b03ab1a0d53f1"
+        },
+        "cuhk-health-services-management-msc": {
+          "name": "MSc in Health Services Management",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Public Health",
+          "parseStatus": "parsed",
+          "deadlineHash": "b0fda4fcebeb0a6aebd8eb8a6e43a538e541cc6aa361092d064fe03a4caf6c27"
+        },
+        "cuhk-industrial-organizational-psychology-mssc": {
+          "name": "MSSc in Industrial-Organizational Psychology",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Psychology",
+          "parseStatus": "parsed",
+          "deadlineHash": "89e08b141d75ca91224a0a6a78b9be0781b1ac275699b3fd443717448244f296"
+        },
+        "cuhk-information-and-technology-management-part-time-mode-only-msc": {
+          "name": "MSc in Information and Technology Management (Part-time Mode Only)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "b68b605a56d5b89f4c8ec170710bfaa6e95fb1215fb01a9860ae5f474adb4bdc"
+        },
+        "cuhk-information-engineering-msc": {
+          "name": "MSc in Information Engineering",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Information Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "1594945cae794cff3d13912fcee5b3be12c5a63c56be0ea822596f97ccff2922"
+        },
+        "cuhk-information-science-and-technology-management-full-time-mode-only-msc": {
+          "name": "MSc in Information Science and Technology Management (Full-time Mode Only)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Information Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "4c46ccb62cffb192ee078b29102ab3925aa3e52c4abb9c0b37da3f214dfa64ac"
+        },
+        "cuhk-intercultural-studies-ma": {
+          "name": "MA in Intercultural Studies",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Cultural Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-japanese-studies-ma": {
+          "name": "MA in Japanese Studies",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Japanese Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "ccac3439a2570cf0f05babe4263266df71c821425667caef3ab6b8aa3b16e659"
+        },
+        "cuhk-journalism-ma": {
+          "name": "MA in Journalism",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Communication",
+          "parseStatus": "parsed",
+          "deadlineHash": "b9349477ac0a5401083cc387868c362f0dc75b01e4f9c6cb44a00f10a4a59b43"
+        },
+        "cuhk-landscape-architecture-msc": {
+          "name": "MSc in Landscape Architecture",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Architecture",
+          "parseStatus": "parsed",
+          "deadlineHash": "deb67f7128028de6366e8e7e589985af21c561fcc8dddc9fe77ed6e519158314"
+        },
+        "cuhk-laws-in-ai-law-master": {
+          "name": "Master of Laws in AI Law",
+          "degreeType": "Master",
+          "faculty": "Faculty of Law",
+          "department": "Law",
+          "parseStatus": "parsed",
+          "deadlineHash": "de6f9b70b0518f53e068d789e0e32592c26fd8bf9969286a683aadea57c746cd"
+        },
+        "cuhk-laws-in-chinese-business-law-master": {
+          "name": "Master of Laws in Chinese Business Law",
+          "degreeType": "Master",
+          "faculty": "Faculty of Law",
+          "department": "Law",
+          "parseStatus": "parsed",
+          "deadlineHash": "de6f9b70b0518f53e068d789e0e32592c26fd8bf9969286a683aadea57c746cd"
+        },
+        "cuhk-laws-in-common-law-master": {
+          "name": "Master of Laws in Common Law",
+          "degreeType": "Master",
+          "faculty": "Faculty of Law",
+          "department": "Law",
+          "parseStatus": "parsed",
+          "deadlineHash": "de6f9b70b0518f53e068d789e0e32592c26fd8bf9969286a683aadea57c746cd"
+        },
+        "cuhk-laws-in-energy-and-environmental-law-master": {
+          "name": "Master of Laws in Energy and Environmental Law",
+          "degreeType": "Master",
+          "faculty": "Faculty of Law",
+          "department": "Law",
+          "parseStatus": "parsed",
+          "deadlineHash": "de6f9b70b0518f53e068d789e0e32592c26fd8bf9969286a683aadea57c746cd"
+        },
+        "cuhk-laws-in-international-economic-law-master": {
+          "name": "Master of Laws in International Economic Law",
+          "degreeType": "Master",
+          "faculty": "Faculty of Law",
+          "department": "Law",
+          "parseStatus": "parsed",
+          "deadlineHash": "de6f9b70b0518f53e068d789e0e32592c26fd8bf9969286a683aadea57c746cd"
+        },
+        "cuhk-laws-in-legal-history-master": {
+          "name": "Master of Laws in Legal History",
+          "degreeType": "Master",
+          "faculty": "Faculty of Law",
+          "department": "Law",
+          "parseStatus": "parsed",
+          "deadlineHash": "de6f9b70b0518f53e068d789e0e32592c26fd8bf9969286a683aadea57c746cd"
+        },
+        "cuhk-leadership-for-experience-economy-msc": {
+          "name": "MSc in Leadership for Experience Economy",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "9351281f3bf7ff614a597ad95e5a2133caa8cae4f3ed4b8495d1a6c9d782223d"
+        },
+        "cuhk-linguistics-ma": {
+          "name": "MA in Linguistics",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Linguistics",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-management-msc": {
+          "name": "MSc in Management",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "4c46ccb62cffb192ee078b29102ab3925aa3e52c4abb9c0b37da3f214dfa64ac"
+        },
+        "cuhk-marketing-msc": {
+          "name": "MSc in Marketing",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "4c46ccb62cffb192ee078b29102ab3925aa3e52c4abb9c0b37da3f214dfa64ac"
+        },
+        "cuhk-mathematics-education-msc": {
+          "name": "MSc in Mathematics Education",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-mathematics-msc": {
+          "name": "MSc in Mathematics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Mathematics",
+          "parseStatus": "parsed",
+          "deadlineHash": "cc0ec2870b6d9277b346176c190381450a5b2d1f5618ef041841f299571a155c"
+        },
+        "cuhk-mba": {
+          "name": "MBA",
+          "degreeType": "MBA",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "e86c4a58a6690d465e6953c73188402c425f235fba963ddd31c4ee7c1385bc75"
+        },
+        "cuhk-mechanical-and-automation-engineering-msc": {
+          "name": "MSc in Mechanical and Automation Engineering",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Mechanical and Automation Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "f0c24acb92ab8e787bafc98f8fcd701e6b0037bab29de1403238cc50d41916dc"
+        },
+        "cuhk-medical-genetics-msc": {
+          "name": "MSc in Medical Genetics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Obstetrics and Gynaecology",
+          "parseStatus": "parsed",
+          "deadlineHash": "62f73a8e634d57e8d452b18e9e866edfbdb6a4775ffec301fb78109ff8ff5ec0"
+        },
+        "cuhk-microelectronics-and-integrated-circuits-msc": {
+          "name": "MSc in Microelectronics and Integrated Circuits",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Electronic Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "03763cff116350201ba938171efc990812edfb80ff5fcdaf71994ea7dd8d8725"
+        },
+        "cuhk-musculoskeletal-medicine-rehabilitation-and-geriatric-orthopaedics-msc": {
+          "name": "MSc in Musculoskeletal Medicine, Rehabilitation and Geriatric Orthopaedics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Orthopaedics and Traumatology",
+          "parseStatus": "parsed",
+          "deadlineHash": "c56c92f4e29b991a6f26648aa06e4642dbfb4b9965631e4b7e37c99429ea5b6d"
+        },
+        "cuhk-music-ma": {
+          "name": "MA in Music",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Music",
+          "parseStatus": "parsed",
+          "deadlineHash": "f276df2a342a9d82ad602c8f12d97c57bf3ce382bb2dadfdec983c17aaa8fb87"
+        },
+        "cuhk-new-media-msc": {
+          "name": "MSc in New Media",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Communication",
+          "parseStatus": "parsed",
+          "deadlineHash": "b9349477ac0a5401083cc387868c362f0dc75b01e4f9c6cb44a00f10a4a59b43"
+        },
+        "cuhk-nursing-master": {
+          "name": "Master of Nursing",
+          "degreeType": "Master",
+          "faculty": "Faculty of Medicine",
+          "department": "Nursing",
+          "parseStatus": "parsed",
+          "deadlineHash": "904cbc9526e96f54e2e5ed8fcb58896ac5039a5cb9e55f9e7cebca8298a69789"
+        },
+        "cuhk-nursing-science-pre-registration-master": {
+          "name": "Master of Nursing Science (Pre-registration)",
+          "degreeType": "Master",
+          "faculty": "Faculty of Medicine",
+          "department": "Nursing",
+          "parseStatus": "parsed",
+          "deadlineHash": "360f68a6b6c8a77c738d7e87eed20dbaa252e0b487b657ad0d6d3ecbda6d42e5"
+        },
+        "cuhk-nutrition-food-science-and-technology-msc": {
+          "name": "MSc in Nutrition, Food Science and Technology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Life Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "9351281f3bf7ff614a597ad95e5a2133caa8cae4f3ed4b8495d1a6c9d782223d"
+        },
+        "cuhk-philosophy-ma": {
+          "name": "MA in Philosophy",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Philosophy",
+          "parseStatus": "parsed",
+          "deadlineHash": "25bfd9f3bf62c96f62a74c23dba99b97db0c4ce94a683220c9795c0d0a01e248"
+        },
+        "cuhk-physics-msc": {
+          "name": "MSc in Physics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Physics",
+          "parseStatus": "parsed",
+          "deadlineHash": "1c69d161259d36c50b322676f214f6cd11333017fc4eefb9a18003ba21185ef4"
+        },
+        "cuhk-prehospital-and-emergency-care-msc": {
+          "name": "MSc in Prehospital and Emergency Care",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Surgery",
+          "parseStatus": "parsed",
+          "deadlineHash": "62f73a8e634d57e8d452b18e9e866edfbdb6a4775ffec301fb78109ff8ff5ec0"
+        },
+        "cuhk-professional-accountancy-offered-in-shanghai-executive-master": {
+          "name": "Executive Master of Professional Accountancy (offered in Shanghai)",
+          "degreeType": "Master",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cuhk-psychology-ma": {
+          "name": "MA in Psychology",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Psychology",
+          "parseStatus": "parsed",
+          "deadlineHash": "89e08b141d75ca91224a0a6a78b9be0781b1ac275699b3fd443717448244f296"
+        },
+        "cuhk-public-health-master": {
+          "name": "Master of Public Health",
+          "degreeType": "Master",
+          "faculty": "Faculty of Medicine",
+          "department": "Public Health",
+          "parseStatus": "parsed",
+          "deadlineHash": "e44ce2ff2ab67c92a0fe6c20b8f453e438b6b9c9309e35dbdebc3cb16fb6c81d"
+        },
+        "cuhk-public-policy-mssc": {
+          "name": "MSSc in Public Policy",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Governance and Policy Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "6163cb2851b08816648a628073cdb31c2a58591979095a3c653b03ab1a0d53f1"
+        },
+        "cuhk-real-estate-msc": {
+          "name": "MSc in Real Estate",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "4c46ccb62cffb192ee078b29102ab3925aa3e52c4abb9c0b37da3f214dfa64ac"
+        },
+        "cuhk-religious-studies-ma": {
+          "name": "MA in Religious Studies",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Religious Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "2989f066095c35d3650342a3848d0d3f28e29d01fbbc796fd49b96f7f6b87093"
+        },
+        "cuhk-reproductive-medicine-and-clinical-embryology-msc": {
+          "name": "MSc in Reproductive Medicine and Clinical Embryology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Obstetrics and Gynaecology",
+          "parseStatus": "parsed",
+          "deadlineHash": "62f73a8e634d57e8d452b18e9e866edfbdb6a4775ffec301fb78109ff8ff5ec0"
+        },
+        "cuhk-risk-management-science-and-data-analytics-msc": {
+          "name": "MSc in Risk Management Science and Data Analytics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Science",
+          "department": "Risk Management Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "60fee491d16d49c5bbe0d655fcf76759eccbffd069896da2270914e8f5ec708d"
+        },
+        "cuhk-robotics-msc": {
+          "name": "MSc in Robotics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Mechanical and Automation Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "f0c24acb92ab8e787bafc98f8fcd701e6b0037bab29de1403238cc50d41916dc"
+        },
+        "cuhk-school-guidance-and-counselling-ma": {
+          "name": "MA in School Guidance and Counselling",
+          "degreeType": "MA",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-school-improvement-and-leadership-ma": {
+          "name": "MA in School Improvement and Leadership",
+          "degreeType": "MA",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "9d13fb33b809541778fb3c068f16260171d7f945a9b10890f3468ddc42131d1e"
+        },
+        "cuhk-social-policy-ma": {
+          "name": "MA in Social Policy",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Social Work",
+          "parseStatus": "parsed",
+          "deadlineHash": "9851cc9be5c09f602b340cf1c49789b2d8e3e8f313968fba261d9a84c625762c"
+        },
+        "cuhk-social-service-management-ma": {
+          "name": "MA in Social Service Management",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Social Work",
+          "parseStatus": "parsed",
+          "deadlineHash": "9851cc9be5c09f602b340cf1c49789b2d8e3e8f313968fba261d9a84c625762c"
+        },
+        "cuhk-social-work-master": {
+          "name": "Master of Social Work",
+          "degreeType": "Master",
+          "faculty": "Faculty of Social Science",
+          "department": "Social Work",
+          "parseStatus": "parsed",
+          "deadlineHash": "9851cc9be5c09f602b340cf1c49789b2d8e3e8f313968fba261d9a84c625762c"
+        },
+        "cuhk-social-work-mssc": {
+          "name": "MSSc in Social Work",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Social Work",
+          "parseStatus": "parsed",
+          "deadlineHash": "9851cc9be5c09f602b340cf1c49789b2d8e3e8f313968fba261d9a84c625762c"
+        },
+        "cuhk-sociology-ma": {
+          "name": "MA in Sociology",
+          "degreeType": "MA",
+          "faculty": "Faculty of Social Science",
+          "department": "Sociology",
+          "parseStatus": "parsed",
+          "deadlineHash": "b6b9688b7c1d2818b021d0e7414414d4099b75f5a834a927f2084ca9c6a3e0da"
+        },
+        "cuhk-speech-language-pathology-msc": {
+          "name": "MSc in Speech-Language Pathology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Otorhinolaryngology and Communication Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "7c5a6c3420ae6ba00282a7c985a14e19c9e35702543bf587567e743cb0ab8037"
+        },
+        "cuhk-sports-medicine-and-health-science-msc": {
+          "name": "MSc in Sports Medicine and Health Science",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Orthopaedics and Traumatology",
+          "parseStatus": "parsed",
+          "deadlineHash": "c2011bd465d5ce04b7c525631eeef6e442b19ad3c61af762c48427c2961af0f1"
+        },
+        "cuhk-sports-science-and-physical-activity-msc": {
+          "name": "MSc in Sports Science and Physical Activity",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "9d13fb33b809541778fb3c068f16260171d7f945a9b10890f3468ddc42131d1e"
+        },
+        "cuhk-stroke-and-clinical-neurosciences-msc": {
+          "name": "MSc in Stroke and Clinical Neurosciences",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Medicine",
+          "department": "Medical Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "1fc0c67a3b0fc042463a48bb89d952884bc0686c5e353df4a4ba602f4c56c631"
+        },
+        "cuhk-sustainable-global-business-msc": {
+          "name": "MSc in Sustainable Global Business",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Business Administration",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "a8de0e558832b39c2f5b7be4acc69785ef8a1f72f4ec6d9cdf27b30764d57163"
+        },
+        "cuhk-sustainable-tourism-mssc": {
+          "name": "MSSc in Sustainable Tourism",
+          "degreeType": "MSSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Geography and Resource Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "f0c24acb92ab8e787bafc98f8fcd701e6b0037bab29de1403238cc50d41916dc"
+        },
+        "cuhk-sustainable-urban-planning-msc": {
+          "name": "MSc in Sustainable Urban Planning",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Geography and Resource Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "a14a723ce77a5b3a7234196cabb8630a1d78ac0beed2d3f16ea8123bd57c9cd4"
+        },
+        "cuhk-systems-engineering-and-engineering-management-msc": {
+          "name": "MSc in Systems Engineering and Engineering Management",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Engineering",
+          "department": "Systems Engineering and Engineering Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "7273322f709c03597f85663b6b8c7ed1d2c410682ebe72a788d456a839e13d86"
+        },
+        "cuhk-teaching-english-to-speakers-of-other-languages-ma": {
+          "name": "MA in Teaching English to Speakers of Other Languages",
+          "degreeType": "MA",
+          "faculty": "Faculty of Education",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "07c4e843cdc31803bb9c6bdb6c6c14c941045ae4a7310705ef82b713fb6121ed"
+        },
+        "cuhk-translation-ma": {
+          "name": "MA in Translation",
+          "degreeType": "MA",
+          "faculty": "Faculty of Arts",
+          "department": "Translation",
+          "parseStatus": "parsed",
+          "deadlineHash": "60fee491d16d49c5bbe0d655fcf76759eccbffd069896da2270914e8f5ec708d"
+        },
+        "cuhk-urban-design-msc": {
+          "name": "MSc in Urban Design",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Social Science",
+          "department": "Architecture",
+          "parseStatus": "parsed",
+          "deadlineHash": "54df5d6de7980f5c1f778733edc2d7c5f1d00fc959f3a2524844a1065b9a5fc2"
+        }
+      }
+    }
+  }
+}

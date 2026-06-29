@@ -22,6 +22,8 @@ data/
                               checks for published exact-window sources
     review-queue.json        internal findings awaiting review
     window-candidates.json   exact-window proposals awaiting approval
+    programme-candidates.json newly discovered programmes awaiting review
+    programme-catalog-state.json latest official catalogue snapshots
     reports/                 daily internal monitoring reports
   coverage.json              generated QS top-200 quality metrics
   sources.json               dedicated programme parser configuration
@@ -35,6 +37,8 @@ src/gradwindow/
   monitor.py                  low-frequency official-page monitoring
   deadlines.py                conservative programme date updates
   discovery.py                admissions-page classification rules
+  programme_discovery.py      programme catalogue diff and candidate queue
+  programme_adapters/         university-specific catalogue parsers
   site.py                     deployable static-site builder
 scripts/
   discover_admissions.py      maintenance discovery tool
@@ -108,6 +112,7 @@ site build.
 gradwindow validate
 gradwindow monitor
 gradwindow monitor-sources
+gradwindow discover-programmes --university cuhk --dry-run
 gradwindow update-deadlines --dry-run
 gradwindow predictions
 gradwindow migrate-intakes
@@ -126,6 +131,14 @@ matching prediction is removed automatically.
 Dedicated parsers never write directly to `applications.json`. A detected
 date change becomes a pending item in `window-candidates.json` and must pass
 `approve-window` before publication.
+
+Programme discovery follows the same trust boundary. Supported official
+catalogues are parsed into `programme-candidates.json`; discovery never writes
+to `programs.json` or `applications.json`. The CUHK adapter reads the Graduate
+School's taught-programme deadline catalogue, excludes non-master's awards,
+and applies a catalogue-size circuit breaker before updating its snapshot.
+Early-round deadlines that precede CUHK's shared commencement date retain a
+null opening date in the internal candidate and require manual review.
 
 `approve-window` performs a full validation against a temporary proposed
 applications dataset before writing the approved record. Candidate and review

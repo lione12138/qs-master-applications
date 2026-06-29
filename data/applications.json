@@ -2,7 +2,7 @@
   "meta": {
     "title": "Verified graduate application windows",
     "rankingEdition": "QS World University Rankings 2027",
-    "updatedAt": "2026-06-21T00:00:00Z",
+    "updatedAt": "2026-06-29T00:00:00Z",
     "demo": false,
     "disclaimer": "A window may apply to an institution, a programme group, or one programme. Every published date must be verified against an official university page and scoped explicitly.",
     "rankingPublishedAt": "2026-06-18"
@@ -170,6 +170,438 @@
       "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc",
       "verifiedAt": "2026-06-14",
       "evidence": "The official UCL programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026, closing at 5pm UK time.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-computer-science-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-computer-science-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Computer Science MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 27 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-computer-science-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-computer-science-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Computer Science MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-data-science-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-data-science-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Data Science MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 27 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-data-science-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-data-science-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Data Science MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-machine-learning-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-machine-learning-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Machine Learning MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 27 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-machine-learning-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-machine-learning-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/machine-learning-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Machine Learning MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-robotics-artificial-intelligence-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-robotics-artificial-intelligence-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Robotics and Artificial Intelligence MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 27 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-robotics-artificial-intelligence-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-robotics-artificial-intelligence-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Robotics and Artificial Intelligence MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-software-systems-engineering-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-software-systems-engineering-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Software Systems Engineering MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 27 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-software-systems-engineering-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-software-systems-engineering-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Software Systems Engineering MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-computer-graphics-vision-imaging-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-computer-graphics-vision-imaging-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-graphics-vision-and-imaging-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-graphics-vision-and-imaging-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Computer Graphics, Vision and Imaging MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 27 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-computer-graphics-vision-imaging-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-computer-graphics-vision-imaging-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-graphics-vision-and-imaging-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-graphics-vision-and-imaging-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Computer Graphics, Vision and Imaging MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-data-science-machine-learning-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-data-science-machine-learning-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-03-27",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Data Science and Machine Learning MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 27 March 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-data-science-machine-learning-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-data-science-machine-learning-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-and-machine-learning-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Data Science and Machine Learning MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-scientific-data-intensive-computing-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-scientific-data-intensive-computing-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-06-26",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Scientific and Data Intensive Computing MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 26 June 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-scientific-data-intensive-computing-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-scientific-data-intensive-computing-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Scientific and Data Intensive Computing MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-medical-robotics-artificial-intelligence-2026-visa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-medical-robotics-artificial-intelligence-msc",
+      "intake": "September 2026",
+      "round": "Visa applicants",
+      "applicantCategories": [
+        "requires-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-06-26",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/medical-robotics-and-artificial-intelligence-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/medical-robotics-and-artificial-intelligence-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Medical Robotics and Artificial Intelligence MSc programme page states that applications for applicants requiring a visa are accepted from 20 October 2025 to 26 June 2026.",
+      "intakeDetails": {
+        "label": "September 2026",
+        "cycleYear": 2026,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      }
+    },
+    {
+      "id": "ucl-medical-robotics-artificial-intelligence-2026-nonvisa",
+      "universityId": "ucl-university-college-london",
+      "scopeType": "programme",
+      "scopeId": "ucl-medical-robotics-artificial-intelligence-msc",
+      "intake": "September 2026",
+      "round": "Non-visa applicants",
+      "applicantCategories": [
+        "does-not-require-uk-study-visa"
+      ],
+      "opensAt": "2025-10-20",
+      "closesAt": "2026-08-28",
+      "applicationUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/medical-robotics-and-artificial-intelligence-msc",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/medical-robotics-and-artificial-intelligence-msc",
+      "verifiedAt": "2026-06-29",
+      "evidence": "The official UCL Medical Robotics and Artificial Intelligence MSc programme page states that applications for applicants not requiring a visa are accepted from 20 October 2025 to 28 August 2026.",
       "intakeDetails": {
         "label": "September 2026",
         "cycleYear": 2026,
