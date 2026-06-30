@@ -6,7 +6,6 @@ import vm from "node:vm";
 
 const root = path.resolve(import.meta.dirname, "..");
 const dataDir = path.join(root, "data");
-const outputPath = path.join(dataDir, "global-rankings.json");
 const universityPayload = JSON.parse(
   fs.readFileSync(path.join(dataDir, "universities.json"), "utf8"),
 );
@@ -23,6 +22,9 @@ const args = new Map(
     values[index + 1],
   ]),
 );
+const outputPath = args.get("--output")
+  ? path.resolve(args.get("--output"))
+  : path.join(dataDir, "global-rankings.json");
 
 function normalize(value = "") {
   return String(value)
@@ -32,6 +34,14 @@ function normalize(value = "") {
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/\([^)]*\)/g, " ")
     .replace(/\b(the|university|universitat|universite|universidad|universita|college|of|and)\b/g, " ")
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+function identityKey(value = "") {
+  return String(value)
+    .toLocaleLowerCase("en")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/[^a-z0-9]+/g, "");
 }
 
@@ -100,11 +110,11 @@ const regionByCountry = new Map([
 // Official publishers use different institutional names. These mappings are
 // deliberately small and explicit so a ranking-only record is preferred over
 // an unsafe automatic identity match.
-const aliases = new Map([
-  ["ludwigmaximiliansuniversitatmunchen", "ludwig-maximilians-university-munich"],
-  ["ludwigmaximiliansuniversitymunich", "ludwig-maximilians-university-munich"],
-  ["ecolepolytechniquefederaledelausanne", "epfl"],
-  ["swissfederalinstituteoftechnologylausanne", "epfl"],
+const aliasEntries = [
+  ["ludwigmaximiliansuniversitatmunchen", "ludwig-maximilians-universit-t-m-nchen"],
+  ["ludwigmaximiliansuniversitymunich", "ludwig-maximilians-universit-t-m-nchen"],
+  ["ecolepolytechniquefederaledelausanne", "cole-polytechnique-f-d-rale-de-lausanne"],
+  ["swissfederalinstituteoftechnologylausanne", "cole-polytechnique-f-d-rale-de-lausanne"],
   ["parissciencesetlettrespslresearchuniversityparis", "universite-psl"],
   ["psluniversity", "universite-psl"],
   ["unswsydney", "the-university-of-new-south-wales-unsw-sydney"],
@@ -116,16 +126,18 @@ const aliases = new Map([
   ["technischeuniversitatdresden", "tu-dresden"],
   ["freeuniversityberlin", "freie-universitat-berlin"],
   ["parissaclayuniversity", "universite-paris-saclay"],
-  ["universitycollegelondon", "ucl"],
-  ["universityofmunich", "ludwig-maximilians-university-munich"],
+  ["universitycollegelondon", "ucl-university-college-london"],
+  ["universityofmunich", "ludwig-maximilians-universit-t-m-nchen"],
   ["heidelberguniversity", "heidelberg-university"],
   ["nanyangtechnologicaluniversitysingapore", "nanyang-technological-university-ntu-singapore"],
+  ["nanyangtechnologicaluniversity", "nanyang-technological-university-singapore-ntu-singapore"],
   ["moscowstateuniversity", "lomonosov-moscow-state-university"],
   ["pennsylvaniastateuniversityuniversitypark", "pennsylvania-state-university"],
-  ["universityofbarcelona", "universitat-de-barcelona"],
-  ["universityofmontreal", "universite-de-montreal"],
-  ["universityofsopaulo", "universidade-de-sao-paulo"],
-  ["sao-paulo", "universidade-de-sao-paulo"],
+  ["universityofbarcelona", "university-of-barcelona"],
+  ["universityofmontreal", "university-of-montreal"],
+  ["universityofsaopaulo", "universidade-de-s-o-paulo-usp"],
+  ["universityofsopaulo", "universidade-de-s-o-paulo-usp"],
+  ["sao-paulo", "universidade-de-s-o-paulo-usp"],
   ["karolinskainstitutet", "karolinska-institutet"],
   ["universityofcalifornia,sanfrancisco", "university-of-california-san-francisco"],
   ["universityofcaliforniasanfrancisco", "university-of-california-san-francisco"],
@@ -151,7 +163,7 @@ const aliases = new Map([
   ["universityofwashingtonseattle", "university-of-washington"],
   ["universityofwisconsinmadison", "university-of-wisconsin-madison"],
   ["universityofnottinghamming", "university-of-nottingham"],
-  ["universitatmunchen", "ludwig-maximilians-university-munich"],
+  ["universitatmunchen", "ludwig-maximilians-universit-t-m-nchen"],
   ["katholiekeuniversiteitleuven", "ku-leuven"],
   ["universityofamsterdam", "university-of-amsterdam"],
   ["universityofzurich", "university-of-zurich"],
@@ -171,7 +183,10 @@ const aliases = new Map([
   ["universityofbristol", "university-of-bristol"],
   ["universityofedinburgh", "university-of-edinburgh"],
   ["universityofmanchester", "the-university-of-manchester"],
-]);
+];
+const aliases = new Map(
+  aliasEntries.map(([name, universityId]) => [identityKey(name), universityId]),
+);
 
 const universitiesByNormalizedName = new Map(
   universityPayload.universities.map((university) => [
@@ -185,7 +200,7 @@ const universitiesById = new Map(
 
 function resolveUniversity(name) {
   const normalized = normalize(name);
-  const matchedId = aliases.get(normalized);
+  const matchedId = aliases.get(identityKey(name));
   if (matchedId && universitiesById.has(matchedId)) return universitiesById.get(matchedId);
   return universitiesByNormalizedName.get(normalized) || null;
 }

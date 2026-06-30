@@ -2881,15 +2881,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-university-college-london",
-          "universityId": null,
-          "school": "University College London",
+          "id": "ucl-university-college-london",
+          "universityId": "ucl-university-college-london",
+          "school": "UCL",
           "schoolZh": "伦敦大学学院",
           "country": "United Kingdom",
           "region": "Europe",
           "rankPosition": 14,
           "rankDisplay": "14",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025",
           "schoolAliasesZh": [
             "UCL"
@@ -3288,15 +3288,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-university-of-munich",
-          "universityId": null,
-          "school": "University of Munich",
+          "id": "ludwig-maximilians-universit-t-m-nchen",
+          "universityId": "ludwig-maximilians-universit-t-m-nchen",
+          "school": "Ludwig-Maximilians-Universität München",
           "schoolZh": "慕尼黑大学",
           "country": "Germany",
           "region": "Europe",
           "rankPosition": 42,
           "rankDisplay": "42",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
@@ -3312,15 +3312,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-swiss-federal-institute-of-technology-lausanne",
-          "universityId": null,
-          "school": "Swiss Federal Institute of Technology Lausanne",
+          "id": "cole-polytechnique-f-d-rale-de-lausanne",
+          "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
+          "school": "EPFL – École polytechnique fédérale de Lausanne",
           "schoolZh": "洛桑联邦理工学院",
           "country": "Switzerland",
           "region": "Europe",
           "rankPosition": 44,
           "rankDisplay": "44",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
@@ -3911,15 +3911,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-nanyang-technological-university",
-          "universityId": null,
-          "school": "Nanyang Technological University",
+          "id": "nanyang-technological-university-singapore-ntu-singapore",
+          "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+          "school": "Nanyang Technological University, Singapore (NTU Singapore)",
           "schoolZh": "南洋理工大学",
           "country": "Singapore",
           "region": "Asia",
           "rankPosition": 88,
           "rankDisplay": "88",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025",
           "schoolAliasesZh": [
             "南洋理工",
@@ -4318,15 +4318,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-moscow-state-university",
-          "universityId": null,
-          "school": "Moscow State University",
+          "id": "lomonosov-moscow-state-university",
+          "universityId": "lomonosov-moscow-state-university",
+          "school": "Lomonosov Moscow State University",
           "schoolZh": "莫斯科国立大学",
           "country": "Russia",
           "region": "Europe",
           "rankPosition": 101,
           "rankDisplay": "101-150",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
@@ -4357,30 +4357,30 @@
           ]
         },
         {
-          "id": "arwu-pennsylvania-state-university-university-park",
-          "universityId": null,
-          "school": "Pennsylvania State University, University Park",
+          "id": "pennsylvania-state-university",
+          "universityId": "pennsylvania-state-university",
+          "school": "Pennsylvania State University",
           "schoolZh": "宾夕法尼亚州立大学",
           "country": "United States",
           "region": "Americas",
           "rankPosition": 101,
           "rankDisplay": "101-150",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025",
           "schoolAliasesZh": [
             "宾州州立"
           ]
         },
         {
-          "id": "arwu-purdue-university-west-lafayette",
-          "universityId": null,
-          "school": "Purdue University, West Lafayette",
+          "id": "purdue-university",
+          "universityId": "purdue-university",
+          "school": "Purdue University",
           "schoolZh": "普渡大学",
           "country": "United States",
           "region": "Americas",
           "rankPosition": 101,
           "rankDisplay": "101-150",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025",
           "schoolAliasesZh": [
             "普渡"
@@ -4680,15 +4680,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-university-of-sao-paulo",
-          "universityId": null,
-          "school": "University of Sao Paulo",
+          "id": "universidade-de-s-o-paulo-usp",
+          "universityId": "universidade-de-s-o-paulo-usp",
+          "school": "Universidade de São Paulo",
           "schoolZh": "圣保罗大学",
           "country": "Brazil",
           "region": "Americas",
           "rankPosition": 101,
           "rankDisplay": "101-150",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
@@ -5036,15 +5036,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-university-of-barcelona",
-          "universityId": null,
-          "school": "University of Barcelona",
+          "id": "university-of-barcelona",
+          "universityId": "university-of-barcelona",
+          "school": "Universitat de Barcelona",
           "schoolZh": "巴塞罗那大学",
           "country": "Spain",
           "region": "Europe",
           "rankPosition": 151,
           "rankDisplay": "151-200",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
@@ -5226,15 +5226,15 @@
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
-          "id": "arwu-university-of-montreal",
-          "universityId": null,
-          "school": "University of Montreal",
+          "id": "university-of-montreal",
+          "universityId": "university-of-montreal",
+          "school": "Université de Montréal",
           "schoolZh": "蒙特利尔大学",
           "country": "Canada",
           "region": "Americas",
           "rankPosition": 151,
           "rankDisplay": "151-200",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.shanghairanking.com/rankings/arwu/2025"
         },
         {
