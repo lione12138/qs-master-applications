@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 from gradwindow.site import build_site
 
@@ -51,6 +52,18 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     ).exists()
     assert (tmp_path / "country" / "united-kingdom" / "index.html").exists()
     assert (tmp_path / "deadline" / "2026-02" / "index.html").exists()
+
+
+def test_cloudflare_worker_build_has_a_static_assets_entrypoint() -> None:
+    config = json.loads(
+        (Path(__file__).resolve().parents[1] / "wrangler.jsonc").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert config["name"] == "qs-master-applications"
+    assert config["build"]["command"] == "python -m gradwindow.cli build-site"
+    assert config["assets"]["directory"] == "./site"
 
 
 def test_built_site_has_complete_directory(tmp_path) -> None:
