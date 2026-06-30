@@ -75,6 +75,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'class="mobile-sort-controls"' in index_html
     assert 'class="hero-dashboard"' in index_html
     assert 'class="quick-filter-panel"' in index_html
+    assert 'class="tracker-workspace"' in index_html
+    assert 'class="tracker-sidebar"' in index_html
+    assert 'class="tracker-results"' in index_html
     assert 'id="hero-exception-count"' in index_html
     assert 'id="mobile-filter-toggle"' in index_html
     assert 'id="window-detail-panel"' in index_html
@@ -102,6 +105,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert ".university-table tr.university-card-row" in styles_css
     assert 'body[data-view-status="unknown"] .mobile-sort-controls' in styles_css
     assert ".mobile-bottom-nav" in styles_css
+    assert "grid-template-columns: 268px minmax(0, 1fr)" in styles_css
+    assert ".tracker-results .application-table tbody tr" in styles_css
+    assert "height: 76px" in styles_css
     assert (tmp_path / "sources.html").read_text(
         encoding="utf-8"
     ).count(ANALYTICS_BEACON) == 1
