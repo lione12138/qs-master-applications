@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from pathlib import Path
 
 from gradwindow.site import build_site
 
@@ -13,6 +14,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "app.js").exists()
     assert (tmp_path / "status.js").exists()
     assert (tmp_path / "intake-filter.js").exists()
+    assert (tmp_path / "ranking-filter.js").exists()
     assert (tmp_path / "localization.js").exists()
     assert (tmp_path / "i18n.js").exists()
     assert (tmp_path / "privacy.html").exists()
@@ -52,6 +54,18 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "deadline" / "2026-02" / "index.html").exists()
 
 
+def test_cloudflare_worker_build_has_a_static_assets_entrypoint() -> None:
+    config = json.loads(
+        (Path(__file__).resolve().parents[1] / "wrangler.jsonc").read_text(
+            encoding="utf-8"
+        )
+    )
+
+    assert config["name"] == "qs-master-applications"
+    assert config["build"]["command"] == "python -m gradwindow.cli build-site"
+    assert config["assets"]["directory"] == "./site"
+
+
 def test_built_site_has_complete_directory(tmp_path) -> None:
     build_site(tmp_path)
     payload = json.loads(
@@ -74,6 +88,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'class="mobile-sort-controls"' in index_html
     assert 'class="hero-dashboard"' in index_html
     assert 'class="quick-filter-panel"' in index_html
+    assert 'class="tracker-workspace"' in index_html
+    assert 'class="tracker-sidebar"' in index_html
+    assert 'class="tracker-results"' in index_html
     assert 'id="hero-exception-count"' in index_html
     assert 'id="mobile-filter-toggle"' in index_html
     assert 'id="window-detail-panel"' in index_html
@@ -97,7 +114,13 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="hero-deadline-countdown"' not in index_html
     assert 'data-mobile-sort' in index_html
     assert ".window-card-row" in styles_css
+    assert 'row.className = "university-card-row"' in app_js
+    assert ".university-table tr.university-card-row" in styles_css
+    assert 'body[data-view-status="unknown"] .mobile-sort-controls' in styles_css
     assert ".mobile-bottom-nav" in styles_css
+    assert "grid-template-columns: 268px minmax(0, 1fr)" in styles_css
+    assert ".tracker-results .application-table tbody tr" in styles_css
+    assert "height: 76px" in styles_css
     assert (tmp_path / "sources.html").read_text(
         encoding="utf-8"
     ).count(ANALYTICS_BEACON) == 1

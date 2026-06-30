@@ -26,10 +26,12 @@ def test_extended_rankings_keep_admissions_scope_separate() -> None:
         assert any(not row["rankingOnly"] for row in rows)
 
 
-def test_extended_ranking_views_do_not_reuse_qs_application_windows() -> None:
+def test_extended_ranking_views_reuse_shared_application_windows() -> None:
     app_js = (ROOT / "app.js").read_text(encoding="utf-8")
 
-    assert 'if (state.ranking !== "qs") return [];' in app_js
+    assert 'if (state.ranking !== "qs") return [];' not in app_js
+    assert "filterRecordsToRanking(state.data, selectedRankingRows())" in app_js
+    assert 'state.status = state.ranking === "qs" ? "open" : "unknown";' not in app_js
 
 
 def test_table_headers_own_application_sorting() -> None:

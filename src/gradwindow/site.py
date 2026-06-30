@@ -38,6 +38,7 @@ PUBLIC_FILES = (
     "exception-status.js",
     "status.js",
     "intake-filter.js",
+    "ranking-filter.js",
     "localization.js",
     "i18n.js",
     "styles.css",

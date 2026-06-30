@@ -55,7 +55,8 @@ jobs:
           title: "data: review automated application-window refresh"
           body: |
             Automated daily refresh of monitoring state, parser candidates,
-            predictions, evidence snapshots, coverage, and review reports.
+            programme-discovery candidates, predictions, evidence snapshots,
+            coverage, and review reports.
 
             No parser candidate is promoted into `applications.json` without
             explicit maintainer approval.
@@ -82,6 +83,7 @@ jobs:
             const fs = require("fs");
             const queue = JSON.parse(fs.readFileSync("data/ops/review-queue.json", "utf8"));
             const candidates = JSON.parse(fs.readFileSync("data/ops/window-candidates.json", "utf8"));
+            const programmeCandidates = JSON.parse(fs.readFileSync("data/ops/programme-candidates.json", "utf8"));
             const universities = JSON.parse(fs.readFileSync("data/universities.json", "utf8"));
             const universityById = new Map(
               universities.universities.map(item => [item.id, item])
@@ -106,7 +108,20 @@ jobs:
                 reason: `Parser proposed ${item.record.opensAt} to ${item.record.closesAt}; manual approval required.`
               };
             });
-            const changes = [...monitorChanges, ...parserChanges];
+            const newProgrammes = programmeCandidates.items.filter(
+              item => item.type === "new-programme" &&
+                item.status === "pending" &&
+                item.detectedAt.startsWith(today)
+            ).map(item => {
+              const university = universityById.get(item.universityId) || {};
+              return {
+                qsRank: university.qsRank || "?",
+                school: university.school || item.universityId,
+                url: item.sourceUrl,
+                reason: `New programme discovered: ${item.programme.name}; ${item.windows.length} deadline candidate(s) require review.`
+              };
+            });
+            const changes = [...monitorChanges, ...parserChanges, ...newProgrammes];
             if (!changes.length) return;
 
             const marker = `<!-- gradwindow-review:${today} -->`;

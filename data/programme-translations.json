@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Chinese programme and programme-group labels used by GradWindow. Manual labels override generated labels; generated labels are cached after review.",
-    "updatedAt": "2026-06-26",
+    "updatedAt": "2026-06-29",
     "defaultLanguage": "zh",
     "providers": ["manual", "deepseek", "rule"]
   },
@@ -129,6 +129,42 @@
     },
     "ucl-advanced-materials-science-msc": {
       "zh": "高级材料科学理学硕士",
+      "source": "manual"
+    },
+    "ucl-computer-science-msc": {
+      "zh": "计算机科学理学硕士",
+      "source": "manual"
+    },
+    "ucl-data-science-msc": {
+      "zh": "数据科学理学硕士",
+      "source": "manual"
+    },
+    "ucl-machine-learning-msc": {
+      "zh": "机器学习理学硕士",
+      "source": "manual"
+    },
+    "ucl-robotics-artificial-intelligence-msc": {
+      "zh": "机器人与人工智能理学硕士",
+      "source": "manual"
+    },
+    "ucl-software-systems-engineering-msc": {
+      "zh": "软件系统工程理学硕士",
+      "source": "manual"
+    },
+    "ucl-computer-graphics-vision-imaging-msc": {
+      "zh": "计算机图形学、视觉与成像理学硕士",
+      "source": "manual"
+    },
+    "ucl-data-science-machine-learning-msc": {
+      "zh": "数据科学与机器学习理学硕士",
+      "source": "manual"
+    },
+    "ucl-scientific-data-intensive-computing-msc": {
+      "zh": "科学与数据密集型计算理学硕士",
+      "source": "manual"
+    },
+    "ucl-medical-robotics-artificial-intelligence-msc": {
+      "zh": "医疗机器人与人工智能理学硕士",
       "source": "manual"
     },
     "ucsd-cse-graduate-admissions": {

@@ -1,8 +1,29 @@
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[2]
+
+def _is_project_root(path: Path) -> bool:
+    return (path / "pyproject.toml").is_file() and (
+        path / "data" / "applications.json"
+    ).is_file()
+
+
+def _resolve_root() -> Path:
+    override = os.environ.get("GRADWINDOW_ROOT")
+    if override:
+        return Path(override).expanduser().resolve()
+
+    working_directory = Path.cwd().resolve()
+    for candidate in (working_directory, *working_directory.parents):
+        if _is_project_root(candidate):
+            return candidate
+
+    return Path(__file__).resolve().parents[2]
+
+
+ROOT = _resolve_root()
 DATA_DIR = ROOT / "data"
 EVIDENCE_DIR = DATA_DIR / "evidence"
 OPS_DIR = DATA_DIR / "ops"
@@ -25,3 +46,5 @@ COVERAGE_PATH = DATA_DIR / "coverage.json"
 GLOBAL_RANKINGS_PATH = DATA_DIR / "global-rankings.json"
 WINDOW_CANDIDATES_PATH = OPS_DIR / "window-candidates.json"
 APPLICATION_SOURCE_STATE_PATH = OPS_DIR / "application-source-state.json"
+PROGRAMME_CANDIDATES_PATH = OPS_DIR / "programme-candidates.json"
+PROGRAMME_CATALOG_STATE_PATH = OPS_DIR / "programme-catalog-state.json"

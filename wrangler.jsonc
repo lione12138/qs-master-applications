@@ -1,0 +1,13 @@
+{
+  "name": "qs-master-applications",
+  "compatibility_date": "2026-06-30",
+  "compatibility_flags": ["nodejs_compat"],
+  "build": {
+    "command": "python -m gradwindow.cli build-site"
+  },
+  "assets": {
+    "directory": "./site",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "none"
+  }
+}
