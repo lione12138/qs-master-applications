@@ -132,24 +132,40 @@ def discover_programmes(
             for item in items
         ),
         "programmesWithoutDeadlines": sum(
+            not programme.windows for programme in catalog.programmes
+        ),
+        "programmesNeedingReview": sum(
             programme.parse_status != "parsed" for programme in catalog.programmes
         ),
         "dryRun": dry_run,
     }
 
 
-def _candidate_record(adapter, programme, opens_at: str, detected_at: str) -> dict:
+def _candidate_record(
+    adapter,
+    programme,
+    shared_opens_at: str | None,
+    detected_at: str,
+) -> dict:
+    def opening_for(window) -> str | None:
+        opens_at = window.opens_at or shared_opens_at
+        return opens_at if opens_at and opens_at <= window.closes_at else None
+
     windows = [
         {
-            "intake": "September 2026",
+            "intake": adapter.intake,
             "round": window.round,
             "applicantCategories": window.applicant_categories,
-            "opensAt": opens_at if opens_at <= window.closes_at else None,
+            "opensAt": opening_for(window),
             "closesAt": window.closes_at,
         }
         for window in programme.windows
     ]
     has_unresolved_opening = any(window["opensAt"] is None for window in windows)
+    deadline_precedes_shared_opening = bool(
+        shared_opens_at
+        and any(window["closesAt"] < shared_opens_at for window in windows)
+    )
     return {
         "id": f"new-programme:{programme.id}",
         "type": "new-programme",
@@ -174,8 +190,15 @@ def _candidate_record(adapter, programme, opens_at: str, detected_at: str) -> di
             "No application deadline was parsed."
             if not windows
             else (
-                "An early deadline precedes the shared commencement date; "
-                "confirm the programme-specific opening date."
+                (
+                    "An early deadline precedes the shared commencement date; "
+                    "confirm the programme-specific opening date."
+                )
+                if deadline_precedes_shared_opening
+                else (
+                    "At least one opening date is not published as an exact date; "
+                    "confirm it on the programme page."
+                )
                 if has_unresolved_opening
                 else "Review the automatically discovered programme and application rounds."
             )

@@ -3975,6 +3975,195 @@ footer p {
     box-shadow: 0 20px 60px rgba(11, 20, 16, 0.28);
   }
 
+  body[data-view-status="exception"] .mobile-sort-controls,
+  body[data-view-status="unknown"] .mobile-sort-controls {
+    display: none;
+  }
+
+  .university-table tbody {
+    display: grid;
+    gap: 12px;
+  }
+
+  .university-table tr.university-card-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "school rank"
+      "country country"
+      "scope scope"
+      "notes notes"
+      "entry monitor"
+      "actions review";
+    gap: 7px 10px;
+    margin-bottom: 0;
+    padding: 14px;
+    overflow: visible;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: 0 10px 24px rgba(28, 54, 41, 0.07);
+  }
+
+  .university-table tr.university-card-row > td {
+    display: block;
+    width: auto;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .university-table tr.university-card-row > td::before {
+    display: none;
+  }
+
+  .university-table tr.university-card-row td:nth-child(1) {
+    grid-area: rank;
+    align-self: start;
+    justify-self: end;
+  }
+
+  .university-table tr.university-card-row td:nth-child(2) {
+    grid-area: school;
+    padding-right: 8px;
+  }
+
+  .university-table tr.university-card-row td:nth-child(2) .date-primary {
+    color: var(--ink);
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.3;
+  }
+
+  .university-table tr.university-card-row td:nth-child(3) {
+    grid-area: scope;
+  }
+
+  .university-table tr.university-card-row td:nth-child(4) {
+    grid-area: country;
+    color: var(--muted);
+    font-size: 10px;
+  }
+
+  .university-table tr.university-card-row td:nth-child(5) {
+    grid-area: entry;
+  }
+
+  .university-table tr.university-card-row td:nth-child(6) {
+    grid-area: monitor;
+    justify-self: end;
+  }
+
+  .university-table tr.university-card-row td:nth-child(7) {
+    grid-area: actions;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    padding-top: 2px;
+  }
+
+  .university-table tr.university-card-row td:nth-child(8) {
+    grid-area: notes;
+  }
+
+  .university-table tr.university-card-row td:nth-child(9) {
+    grid-area: review;
+    align-self: end;
+    justify-self: end;
+  }
+
+  .university-table tr.university-card-row td:nth-child(3),
+  .university-table tr.university-card-row td:nth-child(8) {
+    padding: 10px 11px;
+    border-radius: 10px;
+    background: var(--paper);
+  }
+
+  .university-table tr.university-card-row td:nth-child(3)::before,
+  .university-table tr.university-card-row td:nth-child(8)::before {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--muted);
+    content: attr(data-label);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .university-table tr.university-card-row td:nth-child(3) .date-primary,
+  .university-table tr.university-card-row td:nth-child(8) .date-primary {
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.4;
+  }
+
+  .university-table tr.university-card-row .date-secondary {
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 9px;
+    line-height: 1.45;
+  }
+
+  .university-table tr.university-card-row .source-badge {
+    padding: 4px 7px;
+    font-size: 8px;
+  }
+
+  .university-table tr.university-card-row td:nth-child(7) .school-link,
+  .university-table tr.university-card-row td:nth-child(7) .source-link {
+    display: inline-flex;
+    min-height: 36px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    color: var(--green);
+    background: var(--white);
+    font-size: 9px;
+    font-weight: 800;
+    text-decoration: none;
+  }
+
+  .university-table tr.university-card-row td:nth-child(7) .source-link,
+  .university-table tr.university-card-row td:nth-child(7) .favorite-button {
+    margin-top: 0;
+  }
+
+  .university-table tr.university-card-row .favorite-button,
+  .university-table tr.university-card-row .review-button {
+    width: 38px;
+    min-width: 38px;
+    height: 36px;
+    min-height: 36px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    color: transparent;
+    font-size: 0;
+  }
+
+  .university-table tr.university-card-row .favorite-button::before {
+    color: var(--green);
+    content: "☆";
+    font-size: 18px;
+  }
+
+  .university-table tr.university-card-row .favorite-button.active::before {
+    color: var(--white);
+    content: "★";
+  }
+
+  .university-table tr.university-card-row .review-button::before {
+    width: 15px;
+    height: 12px;
+    border: 1.6px solid var(--green);
+    border-radius: 4px;
+    content: "";
+  }
+
   .calendar-menu-item {
     min-height: 48px;
     padding: 13px 16px;

@@ -1,11 +1,12 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
 from datetime import datetime
 import re
 import unicodedata
 
 from bs4 import BeautifulSoup
+
+from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
 
 
 CATALOG_URL = "https://www.gs.cuhk.edu.hk/admissions/application-deadline"
@@ -28,37 +29,11 @@ OPEN_DATE_RE = re.compile(
 )
 
 
-@dataclass(slots=True)
-class DiscoveredWindow:
-    round: str
-    closes_at: str
-    applicant_categories: list[str] = field(default_factory=lambda: ["all"])
-
-
-@dataclass(slots=True)
-class DiscoveredProgramme:
-    id: str
-    name: str
-    degree_type: str
-    faculty: str
-    department: str
-    source_url: str
-    application_url: str
-    windows: list[DiscoveredWindow]
-    deadline_text: str
-    parse_status: str
-
-
-@dataclass(slots=True)
-class DiscoveredCatalog:
-    application_opens_at: str
-    programmes: list[DiscoveredProgramme]
-
-
 class CUHKAdapter:
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL
+    intake = "September 2026"
 
     def __init__(self, minimum_expected_programmes: int = 100) -> None:
         self.minimum_expected_programmes = minimum_expected_programmes

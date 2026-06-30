@@ -19,7 +19,14 @@ from .review import generate_review_outputs
 from .readme import generate_readmes
 from .schemas import export_schemas
 from .programme_adapters.cuhk import CUHKAdapter
+from .programme_adapters.mit import MITAdapter
 from .programme_discovery import discover_programmes
+
+
+PROGRAMME_ADAPTERS = {
+    "cuhk": CUHKAdapter,
+    "mit": MITAdapter,
+}
 
 
 def main() -> None:
@@ -41,7 +48,7 @@ def main() -> None:
     )
     programme_discovery.add_argument(
         "--university",
-        choices=("cuhk",),
+        choices=tuple(PROGRAMME_ADAPTERS),
         default="cuhk",
     )
     programme_discovery.add_argument("--dry-run", action="store_true")
@@ -84,7 +91,7 @@ def main() -> None:
         print_summary(monitor_application_sources(workers=args.workers))
     elif args.command == "discover-programmes":
         report = discover_programmes(
-            CUHKAdapter(),
+            PROGRAMME_ADAPTERS[args.university](),
             dry_run=args.dry_run,
         )
         print(json.dumps(report, ensure_ascii=False))
@@ -131,8 +138,9 @@ def main() -> None:
             print_summary(
                 monitor_application_sources(workers=max(1, args.workers // 2))
             )
-            discovery_report = discover_programmes(CUHKAdapter())
-            print(json.dumps(discovery_report, ensure_ascii=False))
+            for adapter_factory in PROGRAMME_ADAPTERS.values():
+                discovery_report = discover_programmes(adapter_factory())
+                print(json.dumps(discovery_report, ensure_ascii=False))
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
             raise SystemExit(1)

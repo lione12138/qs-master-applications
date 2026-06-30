@@ -15,6 +15,7 @@ import {
   setProgrammeTranslations,
 } from "./localization.js";
 import { needsManualCheck } from "./exception-status.js";
+import { filterRecordsToRanking } from "./ranking-filter.js";
 
 const PAGE_SIZE = 20;
 const VISITOR_KEY = "gradwindow:visitor";
@@ -843,13 +844,7 @@ function selectedRankForUniversity(universityId) {
 }
 
 function recordsInSelectedRanking() {
-  if (state.ranking !== "qs") return [];
-  const rankedUniversityIds = new Set(
-    selectedRankingRows()
-      .map((row) => row.universityId)
-      .filter(Boolean),
-  );
-  return state.data.filter((record) => rankedUniversityIds.has(record.universityId));
+  return filterRecordsToRanking(state.data, selectedRankingRows());
 }
 
 function selectedDirectoryUniversities() {
@@ -1390,6 +1385,7 @@ function createUniversityGroup(universities, status = "unknown") {
       const directUrl = university.admissionsUrl;
       const directLabel = t("applicationEntry");
       const row = document.createElement("tr");
+      row.className = "university-card-row";
       const schoolText = schoolLabels(university, state.language);
       const school = makeTextStack(
         schoolText.primary,
@@ -1652,6 +1648,7 @@ function render() {
   const exceptionUniversities = baseUniversities.filter(isExceptionUniversity);
   const container = document.getElementById("application-groups");
   const emptyState = document.getElementById("empty-state");
+  document.body.dataset.viewStatus = state.status;
   container.replaceChildren();
 
   ["open", "upcoming", "future", "closed"].forEach((status) => {
@@ -2039,7 +2036,6 @@ function bindEvents() {
   });
   document.getElementById("ranking-filter").addEventListener("change", (event) => {
     state.ranking = event.target.value;
-    state.status = state.ranking === "qs" ? "open" : "unknown";
     state.region = "all";
     state.intake = "all";
     if (state.ranking !== "qs") state.sort = "rank";
@@ -2283,12 +2279,6 @@ async function init() {
     }
     loadUrlState();
     if (selectedRankingDefinition().available === false) state.ranking = "qs";
-    if (
-      state.ranking !== "qs" &&
-      !new URLSearchParams(location.search).has("status")
-    ) {
-      state.status = "unknown";
-    }
     updateRankingAvailability();
 
     refreshFilterOptions();

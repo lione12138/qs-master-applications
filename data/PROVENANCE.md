@@ -15,10 +15,12 @@ terms, attribution requirements, and third-party exclusions.
 
 ## Extended ranking views
 
-QS remains the only ranking used for the monitored admissions dataset and the
-default view. Extended ranking lists are kept in `global-rankings.json`; they
+QS remains the default view and the original admissions-monitoring scope.
+Extended ranking rows reuse the same canonical university IDs, so an
+institution's existing admissions data is shown in QS, THE, or ARWU views
+whenever that institution appears in the selected ranking. Ranking-only rows
 do not imply that GradWindow has located an admissions page or application
-window for an institution outside the QS monitoring core.
+window for an institution outside the monitored university table.
 
 - THE World University Rankings 2026: official table at
   <https://www.timeshighereducation.com/world-university-rankings/2026/world-ranking>.

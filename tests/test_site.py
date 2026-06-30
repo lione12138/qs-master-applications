@@ -13,6 +13,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "app.js").exists()
     assert (tmp_path / "status.js").exists()
     assert (tmp_path / "intake-filter.js").exists()
+    assert (tmp_path / "ranking-filter.js").exists()
     assert (tmp_path / "localization.js").exists()
     assert (tmp_path / "i18n.js").exists()
     assert (tmp_path / "privacy.html").exists()
@@ -97,6 +98,9 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="hero-deadline-countdown"' not in index_html
     assert 'data-mobile-sort' in index_html
     assert ".window-card-row" in styles_css
+    assert 'row.className = "university-card-row"' in app_js
+    assert ".university-table tr.university-card-row" in styles_css
+    assert 'body[data-view-status="unknown"] .mobile-sort-controls' in styles_css
     assert ".mobile-bottom-nav" in styles_css
     assert (tmp_path / "sources.html").read_text(
         encoding="utf-8"
