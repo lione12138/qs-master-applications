@@ -504,30 +504,30 @@
           ]
         },
         {
-          "id": "the-lmu-munich",
-          "universityId": null,
-          "school": "LMU Munich",
+          "id": "ludwig-maximilians-universit-t-m-nchen",
+          "universityId": "ludwig-maximilians-universit-t-m-nchen",
+          "school": "Ludwig-Maximilians-Universität München",
           "schoolZh": "慕尼黑大学",
           "country": "Germany",
           "region": "Europe",
           "rankPosition": 34,
           "rankDisplay": "34",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/lmu-munich",
           "schoolAliasesZh": [
             "LMU"
           ]
         },
         {
-          "id": "the-ecole-polytechnique-federale-de-lausanne",
-          "universityId": null,
-          "school": "École Polytechnique Fédérale de Lausanne",
+          "id": "cole-polytechnique-f-d-rale-de-lausanne",
+          "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
+          "school": "EPFL – École polytechnique fédérale de Lausanne",
           "schoolZh": "洛桑联邦理工学院",
           "country": "Switzerland",
           "region": "Europe",
           "rankPosition": 35,
           "rankDisplay": "35",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/ecole-polytechnique-federale-de-lausanne"
         },
         {
@@ -641,15 +641,15 @@
           ]
         },
         {
-          "id": "the-university-of-illinois-at-urbana-champaign",
-          "universityId": null,
-          "school": "University of Illinois at Urbana-Champaign",
+          "id": "university-of-illinois-at-urbana-champaign",
+          "universityId": "university-of-illinois-at-urbana-champaign",
+          "school": "University of Illinois Urbana-Champaign",
           "schoolZh": "伊利诺伊大学厄巴纳-香槟分校",
           "country": "United States",
           "region": "Americas",
           "rankPosition": 41,
           "rankDisplay": "=41",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-illinois-urbana-champaign",
           "schoolAliasesZh": [
             "伊利诺伊香槟",
@@ -697,15 +697,15 @@
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-california-san-diego"
         },
         {
-          "id": "the-paris-sciences-et-lettres-psl-research-university-paris",
-          "universityId": null,
-          "school": "Paris Sciences et Lettres – PSL Research University Paris",
+          "id": "psl-university",
+          "universityId": "psl-university",
+          "school": "Université PSL",
           "schoolZh": "巴黎文理研究大学",
           "country": "France",
           "region": "Europe",
           "rankPosition": 48,
           "rankDisplay": "48",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/paris-sciences-et-lettres-psl-research-university-paris"
         },
         {
@@ -997,15 +997,15 @@
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/universite-paris-saclay"
         },
         {
-          "id": "the-korea-advanced-institute-of-science-and-technology-kaist",
-          "universityId": null,
-          "school": "Korea Advanced Institute of Science and Technology (KAIST)",
+          "id": "kaist",
+          "universityId": "kaist",
+          "school": "KAIST",
           "schoolZh": "韩国科学技术院",
           "country": "South Korea",
           "region": "Asia",
           "rankPosition": 70,
           "rankDisplay": "=70",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/korea-advanced-institute-science-and-technology-kaist",
           "schoolAliasesZh": [
             "KAIST"
@@ -1121,15 +1121,15 @@
           ]
         },
         {
-          "id": "the-unsw-sydney",
-          "universityId": null,
-          "school": "UNSW Sydney",
+          "id": "the-university-of-new-south-wales",
+          "universityId": "the-university-of-new-south-wales",
+          "school": "The University of New South Wales (UNSW Sydney)",
           "schoolZh": "新南威尔士大学",
           "country": "Australia",
           "region": "Oceania",
           "rankPosition": 79,
           "rankDisplay": "79",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/unsw-sydney",
           "schoolAliasesZh": [
             "新南威尔士",
@@ -1204,15 +1204,15 @@
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-glasgow"
         },
         {
-          "id": "the-purdue-university-west-lafayette",
-          "universityId": null,
-          "school": "Purdue University West Lafayette",
+          "id": "purdue-university",
+          "universityId": "purdue-university",
+          "school": "Purdue University",
           "schoolZh": "普渡大学",
           "country": "United States",
           "region": "Americas",
           "rankPosition": 85,
           "rankDisplay": "85",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/purdue-university-west-lafayette",
           "schoolAliasesZh": [
             "普渡"
@@ -1255,15 +1255,15 @@
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-minnesota"
         },
         {
-          "id": "the-humboldt-university-of-berlin",
-          "universityId": null,
-          "school": "Humboldt University of Berlin",
+          "id": "humboldt-universit-t-zu-berlin",
+          "universityId": "humboldt-universit-t-zu-berlin",
+          "school": "Humboldt-Universität zu Berlin",
           "schoolZh": "柏林洪堡大学",
           "country": "Germany",
           "region": "Europe",
           "rankPosition": 89,
           "rankDisplay": "89",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/humboldt-university-berlin"
         },
         {
@@ -1505,15 +1505,15 @@
           ]
         },
         {
-          "id": "the-penn-state-main-campus",
-          "universityId": null,
-          "school": "Penn State (Main campus)",
+          "id": "pennsylvania-state-university",
+          "universityId": "pennsylvania-state-university",
+          "school": "Pennsylvania State University",
           "schoolZh": "宾夕法尼亚州立大学",
           "country": "United States",
           "region": "Americas",
           "rankPosition": 108,
           "rankDisplay": "=108",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/penn-state-main-campus",
           "schoolAliasesZh": [
             "宾州州立"
@@ -1556,15 +1556,15 @@
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-massachusetts"
         },
         {
-          "id": "the-free-university-of-berlin",
-          "universityId": null,
-          "school": "Free University of Berlin",
+          "id": "freie-universit-t-berlin",
+          "universityId": "freie-universit-t-berlin",
+          "school": "Freie Universitaet Berlin",
           "schoolZh": "柏林自由大学",
           "country": "Germany",
           "region": "Europe",
           "rankPosition": 113,
           "rankDisplay": "=113",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/free-university-berlin"
         },
         {
@@ -1770,15 +1770,15 @@
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-southampton"
         },
         {
-          "id": "the-university-of-bologna",
-          "universityId": null,
-          "school": "University of Bologna",
+          "id": "alma-mater-studiorum-university-of-bologna",
+          "universityId": "alma-mater-studiorum-university-of-bologna",
+          "school": "Alma Mater Studiorum - Università di Bologna",
           "schoolZh": "博洛尼亚大学",
           "country": "Italy",
           "region": "Europe",
           "rankPosition": 130,
           "rankDisplay": "130",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-bologna"
         },
         {
@@ -1989,15 +1989,15 @@
           ]
         },
         {
-          "id": "the-university-of-barcelona",
-          "universityId": null,
-          "school": "University of Barcelona",
+          "id": "university-of-barcelona",
+          "universityId": "university-of-barcelona",
+          "school": "Universitat de Barcelona",
           "schoolZh": "巴塞罗那大学",
           "country": "Spain",
           "region": "Europe",
           "rankPosition": 145,
           "rankDisplay": "=145",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-barcelona"
         },
         {
@@ -2185,15 +2185,15 @@
           ]
         },
         {
-          "id": "the-technical-university-of-berlin",
-          "universityId": null,
-          "school": "Technical University of Berlin",
+          "id": "technische-universit-t-berlin",
+          "universityId": "technische-universit-t-berlin",
+          "school": "Technische Universität Berlin (TU Berlin)",
           "schoolZh": "柏林工业大学",
           "country": "Germany",
           "region": "Europe",
           "rankPosition": 160,
           "rankDisplay": "=160",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/technical-university-berlin"
         },
         {
@@ -2261,15 +2261,15 @@
           ]
         },
         {
-          "id": "the-karlsruhe-institute-of-technology",
-          "universityId": null,
-          "school": "Karlsruhe Institute of Technology",
+          "id": "karlsruhe-institute-of-technology-kit",
+          "universityId": "karlsruhe-institute-of-technology-kit",
+          "school": "KIT, Karlsruhe Institute of Technology",
           "schoolZh": "卡尔斯鲁厄理工学院",
           "country": "Germany",
           "region": "Europe",
           "rankPosition": 166,
           "rankDisplay": "=166",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/karlsruhe-institute-technology"
         },
         {
@@ -2345,15 +2345,15 @@
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/university-exeter"
         },
         {
-          "id": "the-trinity-college-dublin",
-          "universityId": null,
-          "school": "Trinity College Dublin",
+          "id": "trinity-college-dublin-the-university-of-dublin",
+          "universityId": "trinity-college-dublin-the-university-of-dublin",
+          "school": "Trinity College Dublin, The University of Dublin",
           "schoolZh": "都柏林圣三一大学",
           "country": "Ireland",
           "region": "Europe",
           "rankPosition": 173,
           "rankDisplay": "173",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/trinity-college-dublin",
           "schoolAliasesZh": [
             "圣三一",
@@ -2361,15 +2361,15 @@
           ]
         },
         {
-          "id": "the-tu-dresden",
-          "universityId": null,
-          "school": "TU Dresden",
+          "id": "technische-universitat-dresden",
+          "universityId": "technische-universitat-dresden",
+          "school": "Technische Universität Dresden",
           "schoolZh": "德累斯顿工业大学",
           "country": "Germany",
           "region": "Europe",
           "rankPosition": 174,
           "rankDisplay": "174",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/tu-dresden"
         },
         {
@@ -2479,15 +2479,15 @@
           ]
         },
         {
-          "id": "the-king-fahd-university-of-petroleum-and-minerals",
-          "universityId": null,
-          "school": "King Fahd University of Petroleum and Minerals",
+          "id": "king-fahd-university-of-petroleum-and-minerals",
+          "universityId": "king-fahd-university-of-petroleum-and-minerals",
+          "school": "KFUPM",
           "schoolZh": "法赫德国王石油与矿业大学",
           "country": "Saudi Arabia",
           "region": "Asia",
           "rankPosition": 184,
           "rankDisplay": "=184",
-          "rankingOnly": true,
+          "rankingOnly": false,
           "sourceUrl": "https://www.timeshighereducation.com/world-university-rankings/king-fahd-university-petroleum-and-minerals"
         },
         {

@@ -47,6 +47,36 @@ ARWU_SHARED_UNIVERSITIES = {
     "University of Montreal": "university-of-montreal",
 }
 
+THE_SHARED_UNIVERSITIES = {
+    "LMU Munich": "ludwig-maximilians-universit-t-m-nchen",
+    "École Polytechnique Fédérale de Lausanne": (
+        "cole-polytechnique-f-d-rale-de-lausanne"
+    ),
+    "University of Illinois at Urbana-Champaign": (
+        "university-of-illinois-at-urbana-champaign"
+    ),
+    "Paris Sciences et Lettres – PSL Research University Paris": "psl-university",
+    "Korea Advanced Institute of Science and Technology (KAIST)": "kaist",
+    "UNSW Sydney": "the-university-of-new-south-wales",
+    "Purdue University West Lafayette": "purdue-university",
+    "Humboldt University of Berlin": "humboldt-universit-t-zu-berlin",
+    "Penn State (Main campus)": "pennsylvania-state-university",
+    "Free University of Berlin": "freie-universit-t-berlin",
+    "University of Bologna": "alma-mater-studiorum-university-of-bologna",
+    "University of Barcelona": "university-of-barcelona",
+    "Technical University of Berlin": "technische-universit-t-berlin",
+    "Karlsruhe Institute of Technology": (
+        "karlsruhe-institute-of-technology-kit"
+    ),
+    "Trinity College Dublin": (
+        "trinity-college-dublin-the-university-of-dublin"
+    ),
+    "TU Dresden": "technische-universitat-dresden",
+    "King Fahd University of Petroleum and Minerals": (
+        "king-fahd-university-of-petroleum-and-minerals"
+    ),
+}
+
 
 def test_arwu_shared_schools_reuse_canonical_universities() -> None:
     payload = json.loads(
@@ -65,13 +95,39 @@ def test_arwu_shared_schools_reuse_canonical_universities() -> None:
         assert row["rankingOnly"] is False, arwu_name
 
 
-def test_ranking_importer_maps_shared_arwu_schools_to_canonical_universities(
+def test_the_shared_schools_reuse_canonical_universities() -> None:
+    payload = json.loads(
+        (ROOT / "data" / "global-rankings.json").read_text(encoding="utf-8")
+    )
+    rows = payload["rankings"]["the"]["rows"]
+
+    for the_name, university_id in THE_SHARED_UNIVERSITIES.items():
+        row = next(
+            item
+            for item in rows
+            if item["school"] in {the_name, university_id}
+            or item.get("universityId") == university_id
+        )
+        assert row["universityId"] == university_id, the_name
+        assert row["rankingOnly"] is False, the_name
+
+
+def test_ranking_importer_maps_shared_schools_to_canonical_universities(
     tmp_path: Path,
 ) -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for ranking importer tests"
 
     the_fixture = tmp_path / "the.html"
+    the_rows = [
+        {
+            "rank": str(index),
+            "name": school,
+            "location": "Fixture country",
+            "url": f"/fixture/{index}",
+        }
+        for index, school in enumerate(THE_SHARED_UNIVERSITIES, start=1)
+    ]
     the_fixture.write_text(
         '<script id="__NEXT_DATA__" type="application/json">'
         + json.dumps(
@@ -80,7 +136,7 @@ def test_ranking_importer_maps_shared_arwu_schools_to_canonical_universities(
                     "pageProps": {
                         "page": {
                             "rankingsTableConfig": {
-                                "rankingsData": {"data": []}
+                                "rankingsData": {"data": the_rows}
                             }
                         }
                     }
@@ -123,12 +179,17 @@ def test_ranking_importer_maps_shared_arwu_schools_to_canonical_universities(
         text=True,
     )
 
-    rows = json.loads(output.read_text(encoding="utf-8"))["rankings"]["arwu"][
-        "rows"
-    ]
-    rows_by_university = {row["universityId"]: row for row in rows}
+    rankings = json.loads(output.read_text(encoding="utf-8"))["rankings"]
+    arwu_by_university = {
+        row["universityId"]: row for row in rankings["arwu"]["rows"]
+    }
     for university_id in ARWU_SHARED_UNIVERSITIES.values():
-        assert rows_by_university[university_id]["rankingOnly"] is False
+        assert arwu_by_university[university_id]["rankingOnly"] is False
+    the_by_university = {
+        row["universityId"]: row for row in rankings["the"]["rows"]
+    }
+    for university_id in THE_SHARED_UNIVERSITIES.values():
+        assert the_by_university[university_id]["rankingOnly"] is False
 
 
 def test_extended_ranking_views_reuse_shared_application_windows() -> None:
