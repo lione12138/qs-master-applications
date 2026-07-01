@@ -1046,6 +1046,42 @@ body.window-detail-open {
   padding: 16px 14px;
 }
 
+.window-group-toggle {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 24px;
+  margin-top: 6px;
+  padding: 3px 8px;
+  border: 1px solid color-mix(in srgb, var(--green) 24%, var(--line));
+  border-radius: 999px;
+  color: var(--green);
+  background: color-mix(in srgb, var(--green-pale) 58%, var(--white));
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.window-group-toggle::after {
+  margin-left: 5px;
+  content: "⌄";
+  font-size: 11px;
+}
+
+.window-group-toggle[aria-expanded="true"]::after {
+  content: "⌃";
+}
+
+.window-group-toggle:hover {
+  border-color: var(--green);
+  background: var(--green-pale);
+}
+
+.window-group-child {
+  background: color-mix(in srgb, var(--green-pale) 18%, var(--white));
+}
+
 .table-pagination {
   padding: 12px 16px;
 }
@@ -1304,6 +1340,10 @@ body.window-detail-open {
 
   .tracker-results .application-table tbody tr {
     height: 76px;
+  }
+
+  .tracker-results .application-table tbody tr.window-group-parent {
+    height: 88px;
   }
 
   .tracker-results .date-primary,

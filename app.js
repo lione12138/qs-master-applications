@@ -16,6 +16,7 @@ import {
 } from "./localization.js";
 import { needsManualCheck } from "./exception-status.js";
 import { filterRecordsToRanking } from "./ranking-filter.js";
+import { groupEquivalentWindows } from "./window-grouping.js";
 
 const PAGE_SIZE = 20;
 const VISITOR_KEY = "gradwindow:visitor";
@@ -49,6 +50,7 @@ const state = {
   monitorPayload: null,
   optionalFailureCount: 0,
   pages: {},
+  expandedWindowGroups: new Set(),
   activeReviewUniversity: null,
   authToken: "",
   user: null,
@@ -166,6 +168,7 @@ function makeLink(text, url, className = "") {
 
 function resetPages() {
   state.pages = {};
+  state.expandedWindowGroups.clear();
 }
 
 function makeTextStack(primary, secondary, primaryClass = "date-primary") {
@@ -1031,7 +1034,7 @@ function recordsForCurrentView(baseRecords) {
   return baseRecords.filter((record) => getStatus(record) === state.status);
 }
 
-function createRow(record, status) {
+function createRow(record, status, windowGroup = null) {
   const row = document.createElement("tr");
   row.className = "window-card-row";
   row.tabIndex = 0;
@@ -1068,6 +1071,29 @@ function createRow(record, status) {
     `${intake}${localizedRound ? ` · ${localizedRound}` : ""}`,
     "program-link date-primary",
   );
+  if (windowGroup?.collapsible) {
+    row.classList.add("window-group-parent");
+    const expanded = state.expandedWindowGroups.has(windowGroup.key);
+    const hiddenCount = windowGroup.records.length - 1;
+    const toggle = makeElement("button", {
+      className: "window-group-toggle",
+      text: expanded
+        ? t("collapseSameDatePrograms")
+        : `${t("expandSameDatePrograms")} ${hiddenCount} ${t("moreProgrammes")}`,
+      title: expanded
+        ? t("collapseSameDatePrograms")
+        : `${t("expandSameDatePrograms")} ${hiddenCount} ${t("moreProgrammes")}`,
+    });
+    toggle.type = "button";
+    toggle.setAttribute("aria-expanded", String(expanded));
+    toggle.addEventListener("click", (event) => {
+      event.stopPropagation();
+      if (expanded) state.expandedWindowGroups.delete(windowGroup.key);
+      else state.expandedWindowGroups.add(windowGroup.key);
+      render();
+    });
+    programme.appendChild(toggle);
+  }
   const source = document.createDocumentFragment();
   const predicted = record.dataStatus === "predicted";
   const [sourceStatus, sourceClass] = predicted
@@ -1164,8 +1190,21 @@ function createGroup(status, records) {
       t("dataSource"),
     ],
   );
-  const { items, start, end, total, page, totalPages } = paginate(status, records);
-  items.forEach((record) => tbody.appendChild(createRow(record, status)));
+  const windowGroups = groupEquivalentWindows(records);
+  const { items, start, end, total, page, totalPages } = paginate(
+    status,
+    windowGroups,
+  );
+  items.forEach((windowGroup) => {
+    const [representative, ...additionalRecords] = windowGroup.records;
+    tbody.appendChild(createRow(representative, status, windowGroup));
+    if (!state.expandedWindowGroups.has(windowGroup.key)) return;
+    additionalRecords.forEach((record) => {
+      const row = createRow(record, status);
+      row.classList.add("window-group-child");
+      tbody.appendChild(row);
+    });
+  });
   section.appendChild(
     createPagination(status, { start, end, total, page, totalPages }),
   );

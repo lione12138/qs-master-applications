@@ -39,6 +39,7 @@ PUBLIC_FILES = (
     "status.js",
     "intake-filter.js",
     "ranking-filter.js",
+    "window-grouping.js",
     "localization.js",
     "i18n.js",
     "styles.css",

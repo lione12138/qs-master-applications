@@ -15,6 +15,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "status.js").exists()
     assert (tmp_path / "intake-filter.js").exists()
     assert (tmp_path / "ranking-filter.js").exists()
+    assert (tmp_path / "window-grouping.js").exists()
     assert (tmp_path / "localization.js").exists()
     assert (tmp_path / "i18n.js").exists()
     assert (tmp_path / "privacy.html").exists()
