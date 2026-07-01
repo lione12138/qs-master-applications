@@ -1947,10 +1947,11 @@ function setupHero() {
     )
     .sort((a, b) => a.closesAt.localeCompare(b.closesAt))[0];
   if (!futureDeadline) {
+    document.getElementById("hero-deadline-day").textContent = "200";
+    document.getElementById("hero-deadline-month").textContent =
+      state.language === "zh" ? "所学校" : "SCHOOLS";
     document.getElementById("hero-deadline-school").textContent =
       state.language === "zh" ? "官方申请目录" : "Official admissions directory";
-    document.getElementById("hero-attention-badge").textContent = "—";
-    document.getElementById("hero-deadline-link").href = "#application-board";
     const mobileLink = document.getElementById("mobile-deadline-link");
     if (mobileLink) mobileLink.removeAttribute("target");
     const mobileSchool = document.getElementById("mobile-deadline-school");
@@ -1962,16 +1963,17 @@ function setupHero() {
     if (mobileNote) mobileNote.textContent = "";
     return;
   }
-  const note = deadlineNote(futureDeadline, getStatus(futureDeadline));
+  const dateParts = new Intl.DateTimeFormat(
+    state.language === "zh" ? "zh-CN" : "en-GB",
+    { day: "2-digit", month: "short", timeZone: "UTC" },
+  )
+    .formatToParts(parseDate(futureDeadline.closesAt))
+    .reduce((result, part) => ({ ...result, [part.type]: part.value }), {});
+  document.getElementById("hero-deadline-day").textContent = dateParts.day;
+  document.getElementById("hero-deadline-month").textContent =
+    dateParts.month.toUpperCase();
   document.getElementById("hero-deadline-school").textContent =
     schoolLabels(futureDeadline, state.language).primary;
-  document.getElementById("hero-attention-badge").textContent = note;
-  document.getElementById("hero-attention-source").textContent =
-    sourceMonitorDescription(futureDeadline)[0];
-  const heroLink = document.getElementById("hero-deadline-link");
-  heroLink.href = safeUrl(futureDeadline.applicationUrl) || "#application-board";
-  heroLink.target = safeUrl(futureDeadline.applicationUrl) ? "_blank" : "";
-  heroLink.rel = "noreferrer";
   const mobileLink = document.getElementById("mobile-deadline-link");
   const mobileSchool = document.getElementById("mobile-deadline-school");
   const mobileDate = document.getElementById("mobile-deadline-date");
