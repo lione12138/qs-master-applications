@@ -86,12 +86,15 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'id="rank-range-filter"' in index_html
     assert 'class="mobile-dashboard-intro"' in index_html
     assert 'class="mobile-sort-controls"' in index_html
-    assert 'class="hero-dashboard"' in index_html
+    assert 'class="hero-visual"' in index_html
+    assert 'class="hero-dashboard"' not in index_html
     assert 'class="quick-filter-panel"' in index_html
     assert 'class="tracker-workspace"' in index_html
     assert 'class="tracker-sidebar"' in index_html
     assert 'class="tracker-results"' in index_html
-    assert 'id="hero-exception-count"' in index_html
+    assert 'id="hero-open-count"' in index_html
+    assert 'id="hero-deadline-day"' in index_html
+    assert 'id="hero-deadline-month"' in index_html
     assert 'id="mobile-filter-toggle"' in index_html
     assert 'id="window-detail-panel"' in index_html
     assert 'class="mobile-bottom-nav"' in index_html

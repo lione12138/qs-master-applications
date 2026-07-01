@@ -165,8 +165,6 @@
                 <span data-i18n="browseWindows">Browse application windows</span>
                 <span aria-hidden="true">↓</span>
               </a>
-              <a class="secondary-button" href="./roadmap.html" data-i18n="navRoadmap">Feature voting</a>
-              <a class="secondary-button" href="./calendar.html" data-i18n="openCalendar">Open calendar</a>
               <span class="update-note update-schedule" data-i18n="updateSchedule">Updated daily at 8:00 AM Beijing time</span>
               <span class="update-note" id="updated-at" data-i18n="loadingData">Loading data…</span>
             </div>
@@ -178,35 +176,23 @@
             </div>
           </div>
 
-          <div class="hero-dashboard" aria-label="Application overview" data-i18n-aria-label="heroOverviewLabel">
-            <div class="hero-metrics">
-              <div class="hero-metric-card">
-                <span data-i18n="statusOpen">Open now</span>
-                <strong id="hero-open-count">0</strong>
-                <small data-i18n="submittableWindows">submittable windows</small>
-              </div>
-              <div class="hero-metric-card urgent">
-                <span data-i18n="statusException">Needs manual check</span>
-                <strong id="hero-exception-count">0</strong>
-                <small data-i18n="manualCheckSchools">schools requiring direct verification</small>
-              </div>
-              <div class="hero-metric-card">
-                <span data-i18n="statusUpcoming">Opening soon</span>
-                <strong id="hero-upcoming-count">0</strong>
-                <small data-i18n="openingWithinThirtyDays">within 30 days</small>
-              </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="date-card date-card-main">
+              <span class="date-card-label" data-i18n="nextDeadline">NEXT DEADLINE</span>
+              <strong id="hero-deadline-day">--</strong>
+              <span id="hero-deadline-month">---</span>
+              <div class="date-card-school" id="hero-deadline-school">Loading</div>
             </div>
-            <a class="hero-attention-card" id="hero-deadline-link" href="#application-board">
-              <strong data-i18n="attentionToday">Needs your attention</strong>
-              <span class="hero-attention-row">
-                <b id="hero-attention-badge">--</b>
-                <span id="hero-deadline-school">Loading</span>
-              </span>
-              <span class="hero-attention-row secondary">
-                <b id="hero-attention-source" data-i18n="officialSource">Official source</b>
-                <span data-i18n="confirmOnOfficialPage">Confirm the deadline on the official page before applying</span>
-              </span>
-            </a>
+            <div class="mini-card mini-card-open">
+              <span data-i18n="openNow">OPEN NOW</span>
+              <strong id="hero-open-count">0</strong>
+            </div>
+            <div class="mini-card mini-card-rank">
+              <span data-i18n="qsRankLabel">QS RANK</span>
+              <strong>TOP 200</strong>
+            </div>
           </div>
         </section>
 
