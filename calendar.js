@@ -1,6 +1,7 @@
-import { I18N } from "./i18n.js?v=20260622-i18n";
+import { translate } from "./i18n.js?v=20260622-i18n";
 import { getApplicationStatus } from "./status.js";
 import { canonicalIntake, intakeLabel } from "./intake-filter.js";
+import { acronym, makeElement, makeLink, parseDate } from "./dom.js";
 import {
   countryLabel,
   programmeLabel,
@@ -21,7 +22,7 @@ const state = {
 };
 
 function t(key) {
-  return I18N[state.language][key] || I18N.en[key] || key;
+  return translate(state.language, key);
 }
 
 function todayUtc() {
@@ -29,16 +30,14 @@ function todayUtc() {
   return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
 }
 
-function parseDate(value) {
-  return new Date(`${value}T00:00:00Z`);
-}
-
 function monthStart(date = todayUtc()) {
   return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), 1));
 }
 
 function addMonths(date, offset) {
-  return new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + offset, 1));
+  return new Date(
+    Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + offset, 1),
+  );
 }
 
 function formatDate(value) {
@@ -63,42 +62,6 @@ function weekdayFormatter() {
     weekday: "short",
     timeZone: "UTC",
   });
-}
-
-function acronym(value = "") {
-  return String(value)
-    .split(/[^A-Za-z0-9]+/)
-    .filter((word) => word && !["of", "the", "and"].includes(word.toLowerCase()))
-    .map((word) => word[0])
-    .join("")
-    .toLocaleLowerCase("zh-CN");
-}
-
-function safeUrl(value) {
-  try {
-    const url = new URL(value, window.location.href);
-    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
-  } catch {
-    return "";
-  }
-}
-
-function makeElement(tag, options = {}) {
-  const node = document.createElement(tag);
-  if (options.className) node.className = options.className;
-  if (options.text !== undefined) node.textContent = String(options.text);
-  if (options.title) node.title = options.title;
-  return node;
-}
-
-function makeLink(text, url, className = "") {
-  const validUrl = safeUrl(url);
-  if (!validUrl) return makeElement("span", { className, text });
-  const link = makeElement("a", { className, text });
-  link.href = validUrl;
-  link.target = "_blank";
-  link.rel = "noreferrer";
-  return link;
 }
 
 function calendarEvents(records) {
@@ -126,7 +89,8 @@ function filteredRecords() {
       .toLocaleLowerCase("zh-CN");
     return (
       record.qsRank <= state.qsLimit &&
-      (state.status === "all" || getApplicationStatus(record) === state.status) &&
+      (state.status === "all" ||
+        getApplicationStatus(record) === state.status) &&
       (!query || searchable.includes(query))
     );
   });
@@ -137,7 +101,9 @@ function ensureCalendarMonth(records) {
   const nextEvent = calendarEvents(records)
     .filter((event) => parseDate(event.date) >= todayUtc())
     .sort((a, b) => a.date.localeCompare(b.date))[0];
-  state.month = nextEvent ? monthStart(parseDate(nextEvent.date)) : monthStart();
+  state.month = nextEvent
+    ? monthStart(parseDate(nextEvent.date))
+    : monthStart();
 }
 
 function eventLabel(event) {
@@ -146,7 +112,11 @@ function eventLabel(event) {
 }
 
 function makeCalendarEvent(event) {
-  const link = makeLink(eventLabel(event), event.record.applicationUrl, `calendar-event ${event.type}`);
+  const link = makeLink(
+    eventLabel(event),
+    event.record.applicationUrl,
+    `calendar-event ${event.type}`,
+  );
   link.title = [
     schoolLabels(event.record, state.language).primary,
     programmeLabel(event.record.scopeId, event.record.program, state.language),
@@ -156,7 +126,9 @@ function makeCalendarEvent(event) {
 
 function renderCalendar(records) {
   ensureCalendarMonth(records);
-  document.getElementById("calendar-month-label").textContent = formatMonth(state.month);
+  document.getElementById("calendar-month-label").textContent = formatMonth(
+    state.month,
+  );
 
   const weekdays = document.getElementById("calendar-weekdays");
   const formatter = weekdayFormatter();
@@ -164,17 +136,22 @@ function renderCalendar(records) {
   weekdays.replaceChildren(
     ...Array.from({ length: 7 }, (_, index) =>
       makeElement("span", {
-        text: formatter.format(new Date(weekStart.getTime() + index * 86_400_000)),
+        text: formatter.format(
+          new Date(weekStart.getTime() + index * 86_400_000),
+        ),
       }),
     ),
   );
 
   const monthIndex = state.month.getUTCMonth();
   const firstOffset = (state.month.getUTCDay() + 6) % 7;
-  const firstCell = new Date(Date.UTC(state.month.getUTCFullYear(), monthIndex, 1 - firstOffset));
+  const firstCell = new Date(
+    Date.UTC(state.month.getUTCFullYear(), monthIndex, 1 - firstOffset),
+  );
   const eventsByDate = new Map();
   calendarEvents(records).forEach((event) => {
-    if (monthStart(parseDate(event.date)).getTime() !== state.month.getTime()) return;
+    if (monthStart(parseDate(event.date)).getTime() !== state.month.getTime())
+      return;
     const events = eventsByDate.get(event.date) || [];
     events.push(event);
     eventsByDate.set(event.date, events);
@@ -187,14 +164,26 @@ function renderCalendar(records) {
     const cell = makeElement("div", {
       className: `calendar-cell${date.getUTCMonth() === monthIndex ? "" : " muted"}${key === todayKey ? " today" : ""}`,
     });
-    cell.appendChild(makeElement("span", { className: "calendar-day", text: date.getUTCDate() }));
+    cell.appendChild(
+      makeElement("span", {
+        className: "calendar-day",
+        text: date.getUTCDate(),
+      }),
+    );
     const events = (eventsByDate.get(key) || []).sort((a, b) => {
       if (a.type !== b.type) return a.type === "deadline" ? -1 : 1;
       return a.record.qsRank - b.record.qsRank;
     });
-    events.slice(0, 4).forEach((event) => cell.appendChild(makeCalendarEvent(event)));
+    events
+      .slice(0, 4)
+      .forEach((event) => cell.appendChild(makeCalendarEvent(event)));
     if (events.length > 4) {
-      cell.appendChild(makeElement("span", { className: "calendar-more", text: `+${events.length - 4} ${t("calendarMore")}` }));
+      cell.appendChild(
+        makeElement("span", {
+          className: "calendar-more",
+          text: `+${events.length - 4} ${t("calendarMore")}`,
+        }),
+      );
     }
     return cell;
   });
@@ -203,33 +192,55 @@ function renderCalendar(records) {
 
 function renderList(records) {
   const events = calendarEvents(records)
-    .filter((event) => monthStart(parseDate(event.date)).getTime() === state.month.getTime())
-    .sort((a, b) => a.date.localeCompare(b.date) || a.record.qsRank - b.record.qsRank);
+    .filter(
+      (event) =>
+        monthStart(parseDate(event.date)).getTime() === state.month.getTime(),
+    )
+    .sort(
+      (a, b) =>
+        a.date.localeCompare(b.date) || a.record.qsRank - b.record.qsRank,
+    );
   document.getElementById("calendar-result-count").textContent =
     `${events.length} ${t("calendarEventsUnit")}`;
   const list = document.getElementById("calendar-list");
   if (!events.length) {
-    list.replaceChildren(makeElement("div", { className: "empty-state compact", text: t("calendarNoEvents") }));
+    list.replaceChildren(
+      makeElement("div", {
+        className: "empty-state compact",
+        text: t("calendarNoEvents"),
+      }),
+    );
     return;
   }
   list.replaceChildren(
     ...events.map((event) => {
-      const card = makeElement("article", { className: `calendar-list-item ${event.type}` });
+      const card = makeElement("article", {
+        className: `calendar-list-item ${event.type}`,
+      });
       const school = schoolLabels(event.record, state.language);
       const intake = intakeLabel(canonicalIntake(event.record), state.language);
       const round = roundLabel(event.record.round, state.language);
       card.append(
-        makeElement("span", { className: "date-secondary", text: `${formatDate(event.date)} · QS #${event.record.qsRank}` }),
+        makeElement("span", {
+          className: "date-secondary",
+          text: `${formatDate(event.date)} · QS #${event.record.qsRank}`,
+        }),
         makeLink(eventLabel(event), event.record.applicationUrl, "school-link"),
         makeElement("span", {
           className: "school-meta",
           text: [
-            programmeLabel(event.record.scopeId, event.record.program, state.language),
+            programmeLabel(
+              event.record.scopeId,
+              event.record.program,
+              state.language,
+            ),
             intake,
             round,
             countryLabel(event.record.country, state.language),
             school.secondary,
-          ].filter(Boolean).join(" · "),
+          ]
+            .filter(Boolean)
+            .join(" · "),
         }),
       );
       return card;
@@ -252,7 +263,8 @@ function applyStaticTranslations() {
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     const translated = t(node.dataset.i18nPlaceholder);
-    if (translated !== node.dataset.i18nPlaceholder) node.placeholder = translated;
+    if (translated !== node.dataset.i18nPlaceholder)
+      node.placeholder = translated;
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
     const translated = t(node.dataset.i18nAriaLabel);
@@ -288,21 +300,25 @@ function bindEvents() {
     state.theme = state.theme === "dark" ? "light" : "dark";
     applyTheme();
   });
-  document.getElementById("calendar-search").addEventListener("input", (event) => {
-    state.search = event.target.value;
-    state.month = null;
-    render();
-  });
+  document
+    .getElementById("calendar-search")
+    .addEventListener("input", (event) => {
+      state.search = event.target.value;
+      state.month = null;
+      render();
+    });
   document.getElementById("calendar-qs").addEventListener("change", (event) => {
     state.qsLimit = Number(event.target.value);
     state.month = null;
     render();
   });
-  document.getElementById("calendar-status").addEventListener("change", (event) => {
-    state.status = event.target.value;
-    state.month = null;
-    render();
-  });
+  document
+    .getElementById("calendar-status")
+    .addEventListener("change", (event) => {
+      state.status = event.target.value;
+      state.month = null;
+      render();
+    });
   document.getElementById("calendar-prev").addEventListener("click", () => {
     state.month = addMonths(state.month || monthStart(), -1);
     render();
@@ -333,7 +349,8 @@ async function fetchOptionalJson(path, fallback) {
 }
 
 async function init() {
-  state.language = localStorage.getItem("gradwindow:language") === "zh" ? "zh" : "en";
+  state.language =
+    localStorage.getItem("gradwindow:language") === "zh" ? "zh" : "en";
   const savedTheme = localStorage.getItem("gradwindow:theme");
   state.theme = ["light", "dark"].includes(savedTheme)
     ? savedTheme
@@ -356,18 +373,26 @@ async function init() {
     fetchJson("./data/universities.json"),
     fetchJson("./data/programs.json"),
     fetchJson("./data/programme-groups.json"),
-    fetchOptionalJson("./data/programme-translations.json", { translations: {} }),
+    fetchOptionalJson("./data/programme-translations.json", {
+      translations: {},
+    }),
   ]);
   setProgrammeTranslations(programmeTranslations);
-  const universityById = new Map(universities.universities.map((item) => [item.id, item]));
+  const universityById = new Map(
+    universities.universities.map((item) => [item.id, item]),
+  );
   const programById = new Map(programs.programs.map((item) => [item.id, item]));
   const groupById = new Map(groups.groups.map((item) => [item.id, item]));
   const enrich = (record, dataStatus) => {
     const university = universityById.get(record.universityId) || {};
     const program =
-      record.scopeType === "programme" ? programById.get(record.scopeId) || {} : {};
+      record.scopeType === "programme"
+        ? programById.get(record.scopeId) || {}
+        : {};
     const group =
-      record.scopeType === "programme-group" ? groupById.get(record.scopeId) || {} : {};
+      record.scopeType === "programme-group"
+        ? groupById.get(record.scopeId) || {}
+        : {};
     return {
       ...record,
       dataStatus,
@@ -376,11 +401,7 @@ async function init() {
       qsRank: university.qsRank || record.qsRank || 999,
       country: university.country || record.country || "",
       region: university.region || record.region || "",
-      program:
-        program.name ||
-        group.name ||
-        record.program ||
-        record.scopeId,
+      program: program.name || group.name || record.program || record.scopeId,
     };
   };
   state.records = [
@@ -392,8 +413,10 @@ async function init() {
 }
 
 init().catch((error) => {
-  document.getElementById("calendar-grid").replaceChildren(
-    makeElement("div", { className: "empty-state", text: t("loadFailed") }),
-  );
+  document
+    .getElementById("calendar-grid")
+    .replaceChildren(
+      makeElement("div", { className: "empty-state", text: t("loadFailed") }),
+    );
   console.error(error);
 });

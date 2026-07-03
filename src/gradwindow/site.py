@@ -10,16 +10,16 @@ from pathlib import Path
 from .io import read_json
 from .paths import (
     APPLICANT_CATEGORIES_PATH,
-    APPLICATIONS_PATH,
     APPLICATION_SOURCE_STATE_PATH,
+    APPLICATIONS_PATH,
     COVERAGE_PATH,
     GLOBAL_RANKINGS_PATH,
     MONITOR_STATE_PATH,
     PREDICTIONS_PATH,
+    PROGRAMME_GROUPS_PATH,
+    PROGRAMS_PATH,
     ROOT,
     SITE_DIR,
-    PROGRAMS_PATH,
-    PROGRAMME_GROUPS_PATH,
     UNIVERSITIES_PATH,
     WINDOW_POLICIES_PATH,
 )
@@ -42,6 +42,12 @@ PUBLIC_FILES = (
     "window-grouping.js",
     "localization.js",
     "i18n.js",
+    "dom.js",
+    "state.js",
+    "strings.js",
+    "calendar-export.js",
+    "auth.js",
+    "review.js",
     "styles.css",
     "og-image.png",
     "favicon.svg",
@@ -52,7 +58,7 @@ DEFAULT_SITE_URL = "https://gradwindow.com"
 CLOUDFLARE_ANALYTICS_TOKEN = "02939949076c423f953d11db0caade78"
 CLOUDFLARE_ANALYTICS = (
     '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" '
-    f"data-cf-beacon='{{\"token\":\"{CLOUDFLARE_ANALYTICS_TOKEN}\"}}'>"
+    f'data-cf-beacon=\'{{"token":"{CLOUDFLARE_ANALYTICS_TOKEN}"}}\'>'
     "</script>"
 )
 PUBLIC_DATA = (
@@ -79,9 +85,7 @@ def site_url() -> str:
 def build_site(output_dir: Path = SITE_DIR) -> Path:
     public_site_url = site_url()
     public_config = {
-        "subscribeUrl": os.environ.get("GRADWINDOW_SUBSCRIBE_URL", "").rstrip(
-            "/"
-        ),
+        "subscribeUrl": os.environ.get("GRADWINDOW_SUBSCRIBE_URL", "").rstrip("/"),
         "turnstileSiteKey": os.environ.get(
             "GRADWINDOW_TURNSTILE_SITE_KEY",
             "",
@@ -106,13 +110,16 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
     ):
         page_path = output_dir / page_name
         page_path.write_text(
-            page_path.read_text(encoding="utf-8").replace(
+            page_path.read_text(encoding="utf-8")
+            .replace(
                 f"{LEGACY_SITE_URL}/",
                 f"{public_site_url}/",
-            ).replace(
+            )
+            .replace(
                 f"{DEFAULT_SITE_URL}/",
                 f"{public_site_url}/",
-            ).replace(
+            )
+            .replace(
                 "window.GRADWINDOW_CONFIG = {};",
                 f"window.GRADWINDOW_CONFIG = {json.dumps(public_config)};",
             ),
@@ -167,24 +174,20 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         university_dir = output_dir / "university" / university["id"]
         university_dir.mkdir(parents=True, exist_ok=True)
         official = [
-            item
-            for item in applications
-            if item["universityId"] == university["id"]
+            item for item in applications if item["universityId"] == university["id"]
         ]
         estimated = [
-            item
-            for item in predictions
-            if item["universityId"] == university["id"]
+            item for item in predictions if item["universityId"] == university["id"]
         ]
         canonical = f"{public_site_url}/university/{university['id']}/"
         body = (
-            f"<p class=\"back\"><a href=\"../../index.html\">Back to tracker</a></p>"
+            f'<p class="back"><a href="../../index.html">Back to tracker</a></p>'
             f"<p>QS {html.escape(university['rankDisplay'])} · "
             f"{html.escape(university['country'])}</p>"
-            f"<p><a href=\"{html.escape(university['homepageUrl'], quote=True)}\">"
+            f'<p><a href="{html.escape(university["homepageUrl"], quote=True)}">'
             "University website</a>"
             + (
-                f" · <a href=\"{html.escape(university['admissionsUrl'], quote=True)}\">"
+                f' · <a href="{html.escape(university["admissionsUrl"], quote=True)}">'
                 "Graduate application entry</a>"
                 if university.get("admissionsUrl")
                 else ""
@@ -233,7 +236,7 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         rows = "".join(
             "<li>"
             f"<strong>QS {html.escape(item['rankDisplay'])}</strong> "
-            f"<a href=\"../../university/{item['id']}/\">"
+            f'<a href="../../university/{item["id"]}/">'
             f"{html.escape(item['school'])}</a></li>"
             for item in sorted(items, key=lambda value: value["qsPosition"])
         )
@@ -268,7 +271,7 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         rows = "".join(
             "<li>"
             f"<strong>{html.escape(item['closesAt'])}</strong> "
-            f"<a href=\"../../university/{item['universityId']}/\">"
+            f'<a href="../../university/{item["universityId"]}/">'
             f"{html.escape(university_names[item['universityId']])}</a>"
             f" · {html.escape(scope_name(item, program_names, group_names))}"
             f"{' · unofficial calendar-shift reference' if predicted else ''}</li>"
@@ -318,7 +321,9 @@ def render_window_list(
     predicted: bool = False,
 ) -> str:
     if not items:
-        return f"<section><h2>{html.escape(heading)}</h2><p>No records yet.</p></section>"
+        return (
+            f"<section><h2>{html.escape(heading)}</h2><p>No records yet.</p></section>"
+        )
     rows = "".join(
         "<li>"
         f"<strong>{html.escape(item['opensAt'])} to "
@@ -330,7 +335,7 @@ def render_window_list(
             if predicted
             else ""
         )
-        + f"<br><a href=\"{html.escape(item['sourceUrl'], quote=True)}\">Official source</a>"
+        + f'<br><a href="{html.escape(item["sourceUrl"], quote=True)}">Official source</a>'
         "</li>"
         for item in sorted(items, key=lambda value: value["closesAt"])
     )
@@ -379,7 +384,7 @@ def render_static_page(
         [web_page_schema, breadcrumb_schema],
         ensure_ascii=False,
     ).replace("</", "<\\/")
-    breadcrumb_links = "<span aria-hidden=\"true\">/</span>".join(
+    breadcrumb_links = '<span aria-hidden="true">/</span>'.join(
         f'<a href="{html.escape(url, quote=True)}">{html.escape(name)}</a>'
         for name, url in breadcrumbs
     )
@@ -434,9 +439,7 @@ def render_static_page(
 
 
 def render_sitemap(urls: list[str]) -> str:
-    entries = "".join(
-        f"  <url><loc>{html.escape(url)}</loc></url>\n" for url in urls
-    )
+    entries = "".join(f"  <url><loc>{html.escape(url)}</loc></url>\n" for url in urls)
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -460,7 +463,7 @@ def render_sources_page(public_site_url: str) -> str:
         rows.append(
             "<tr>"
             f"<td>{html.escape(university['rankDisplay'])}</td>"
-            f"<td><a href=\"{html.escape(university['homepageUrl'], quote=True)}\">"
+            f'<td><a href="{html.escape(university["homepageUrl"], quote=True)}">'
             f"{html.escape(university['school'])}</a></td>"
             f"<td>{html.escape(university['country'])}</td>"
             f"<td>{html.escape(university['admissionsDiscovery'])}</td>"
@@ -551,7 +554,7 @@ def render_sources_page(public_site_url: str) -> str:
     <div class="table-wrap">
       <table>
         <thead><tr><th>QS</th><th>University</th><th>Country/region</th><th>Entry status</th><th>Application page</th><th>Monitoring</th></tr></thead>
-        <tbody>{''.join(rows)}</tbody>
+        <tbody>{"".join(rows)}</tbody>
       </table>
     </div>
   </main>

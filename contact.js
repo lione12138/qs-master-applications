@@ -1,4 +1,4 @@
-import { I18N } from "./i18n.js?v=20260622-i18n";
+import { translate } from "./i18n.js?v=20260622-i18n";
 
 const state = {
   language: "en",
@@ -6,7 +6,7 @@ const state = {
 };
 
 function t(key) {
-  return I18N[state.language][key] || I18N.en[key] || key;
+  return translate(state.language, key);
 }
 
 function applyStaticTranslations() {
@@ -17,7 +17,8 @@ function applyStaticTranslations() {
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     const translated = t(node.dataset.i18nPlaceholder);
-    if (translated !== node.dataset.i18nPlaceholder) node.placeholder = translated;
+    if (translated !== node.dataset.i18nPlaceholder)
+      node.placeholder = translated;
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
     const translated = t(node.dataset.i18nAriaLabel);
@@ -52,7 +53,8 @@ function updateMailLink() {
 }
 
 function init() {
-  state.language = localStorage.getItem("gradwindow:language") === "zh" ? "zh" : "en";
+  state.language =
+    localStorage.getItem("gradwindow:language") === "zh" ? "zh" : "en";
   const savedTheme = localStorage.getItem("gradwindow:theme");
   state.theme = ["light", "dark"].includes(savedTheme)
     ? savedTheme
@@ -73,8 +75,12 @@ function init() {
     state.theme = state.theme === "dark" ? "light" : "dark";
     applyTheme();
   });
-  document.getElementById("contact-subject")?.addEventListener("input", updateMailLink);
-  document.getElementById("contact-message")?.addEventListener("input", updateMailLink);
+  document
+    .getElementById("contact-subject")
+    ?.addEventListener("input", updateMailLink);
+  document
+    .getElementById("contact-message")
+    ?.addEventListener("input", updateMailLink);
 }
 
 init();

@@ -1,5 +1,20 @@
-import { I18N } from "./i18n.js?v=20260626-calendar-menu";
 import { getApplicationStatus } from "./status.js";
+import { state } from "./state.js";
+import { t } from "./strings.js";
+import { makeCalendarMenu } from "./calendar-export.js";
+import {
+  initAuth,
+  openAuthPanel,
+  scheduleFavoriteSync,
+  setupAuthPanel,
+  updateAuthUi,
+} from "./auth.js";
+import {
+  makeReviewButton,
+  setupReviewPanel,
+  updateReviewAuthState,
+} from "./review.js";
+import { acronym, makeElement, makeLink, parseDate, safeUrl } from "./dom.js";
 import {
   canonicalIntake,
   compareIntakes,
@@ -19,134 +34,34 @@ import { filterRecordsToRanking } from "./ranking-filter.js";
 import { groupEquivalentWindows } from "./window-grouping.js";
 
 const PAGE_SIZE = 20;
-const VISITOR_KEY = "gradwindow:visitor";
-const AUTH_TOKEN_KEY = "gradwindow:authToken";
-
-const state = {
-  data: [],
-  universities: [],
-  programs: [],
-  programmeGroups: [],
-  applicantCategoryLabels: {},
-  policies: [],
-  coverage: null,
-  sourceMonitor: {},
-  rankingPayload: { rankings: {} },
-  universityById: new Map(),
-  ranking: "qs",
-  officialCount: 0,
-  predictionCount: 0,
-  meta: {},
-  search: "",
-  region: "all",
-  intake: "all",
-  status: "open",
-  sort: "rank",
-  rankLimit: "200",
-  favorites: new Set(),
-  favoritesOnly: false,
-  language: "en",
-  theme: "light",
-  monitorPayload: null,
-  optionalFailureCount: 0,
-  pages: {},
-  expandedWindowGroups: new Set(),
-  activeReviewUniversity: null,
-  authToken: "",
-  user: null,
-  favoriteSyncTimer: null,
-};
-
-
-function t(key) {
-  return I18N[state.language][key] || I18N.en[key] || key;
-}
 
 function statusLabels() {
   return {
     open: { title: t("openTitle"), description: t("openDescription") },
-    upcoming: { title: t("upcomingTitle"), description: t("upcomingDescription") },
+    upcoming: {
+      title: t("upcomingTitle"),
+      description: t("upcomingDescription"),
+    },
     future: { title: t("futureTitle"), description: t("futureDescription") },
     closed: { title: t("closedTitle"), description: t("closedDescription") },
-    exception: { title: t("exceptionTitle"), description: t("exceptionDescription") },
-    unknown: { title: t("directoryTitle"), description: t("directoryDescription") },
+    exception: {
+      title: t("exceptionTitle"),
+      description: t("exceptionDescription"),
+    },
+    unknown: {
+      title: t("directoryTitle"),
+      description: t("directoryDescription"),
+    },
   };
 }
 
 function dateFormatter() {
   return new Intl.DateTimeFormat(state.language === "zh" ? "zh-CN" : "en-GB", {
-    year: "numeric", month: "short", day: "numeric", timeZone: "UTC",
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    timeZone: "UTC",
   });
-}
-
-function parseDate(value) {
-  return new Date(`${value}T00:00:00Z`);
-}
-
-function safeUrl(value) {
-  try {
-    const url = new URL(value, window.location.href);
-    return ["http:", "https:"].includes(url.protocol) ? url.href : "";
-  } catch {
-    return "";
-  }
-}
-
-function visitorId() {
-  let value = localStorage.getItem(VISITOR_KEY);
-  if (!value) {
-    value = crypto.randomUUID
-      ? crypto.randomUUID()
-      : `${Date.now()}-${crypto.getRandomValues(new Uint32Array(1))[0]}`;
-    localStorage.setItem(VISITOR_KEY, value);
-  }
-  return value;
-}
-
-function feedbackApiBase() {
-  const config = window.GRADWINDOW_CONFIG || {};
-  return String(config.roadmapUrl || config.subscribeUrl || "").replace(/\/$/, "");
-}
-
-function authApiBase() {
-  return feedbackApiBase();
-}
-
-function authHeaders(includeJson = true) {
-  const headers = {};
-  if (includeJson) headers["Content-Type"] = "application/json";
-  if (state.authToken) headers.Authorization = `Bearer ${state.authToken}`;
-  return headers;
-}
-
-function setAuthStatus(message, kind = "") {
-  const status = document.getElementById("auth-status");
-  if (!status) return;
-  status.textContent = message || "";
-  status.className = `auth-status${kind ? ` ${kind}` : ""}`;
-}
-
-function saveAuthToken(token) {
-  state.authToken = token || "";
-  if (state.authToken) localStorage.setItem(AUTH_TOKEN_KEY, state.authToken);
-  else localStorage.removeItem(AUTH_TOKEN_KEY);
-}
-
-function acronym(value = "") {
-  return String(value)
-    .split(/[^A-Za-z0-9]+/)
-    .filter((word) => word && !["of", "the", "and"].includes(word.toLowerCase()))
-    .map((word) => word[0])
-    .join("")
-    .toLocaleLowerCase("zh-CN");
-}
-
-function makeElement(tag, options = {}) {
-  const node = document.createElement(tag);
-  if (options.className) node.className = options.className;
-  if (options.text !== undefined) node.textContent = String(options.text);
-  if (options.title) node.title = options.title;
-  return node;
 }
 
 function makeCell(label, ...children) {
@@ -156,16 +71,6 @@ function makeCell(label, ...children) {
   return cell;
 }
 
-function makeLink(text, url, className = "") {
-  const validUrl = safeUrl(url);
-  if (!validUrl) return makeElement("span", { className, text });
-  const link = makeElement("a", { className, text });
-  link.href = validUrl;
-  link.target = "_blank";
-  link.rel = "noreferrer";
-  return link;
-}
-
 function resetPages() {
   state.pages = {};
   state.expandedWindowGroups.clear();
@@ -173,7 +78,9 @@ function resetPages() {
 
 function makeTextStack(primary, secondary, primaryClass = "date-primary") {
   const wrapper = document.createDocumentFragment();
-  wrapper.appendChild(makeElement("span", { className: primaryClass, text: primary }));
+  wrapper.appendChild(
+    makeElement("span", { className: primaryClass, text: primary }),
+  );
   if (secondary) {
     wrapper.appendChild(
       makeElement("span", { className: "date-secondary", text: secondary }),
@@ -182,7 +89,12 @@ function makeTextStack(primary, secondary, primaryClass = "date-primary") {
   return wrapper;
 }
 
-function makeLinkedTextStack(primary, url, secondary, primaryClass = "date-primary") {
+function makeLinkedTextStack(
+  primary,
+  url,
+  secondary,
+  primaryClass = "date-primary",
+) {
   const wrapper = document.createDocumentFragment();
   wrapper.appendChild(makeLink(primary, url, primaryClass));
   if (secondary) {
@@ -198,7 +110,10 @@ function favoriteKey(type, id) {
 }
 
 function saveFavorites() {
-  localStorage.setItem("gradwindow:favorites", JSON.stringify([...state.favorites]));
+  localStorage.setItem(
+    "gradwindow:favorites",
+    JSON.stringify([...state.favorites]),
+  );
   updateFavoriteControls();
   scheduleFavoriteSync();
 }
@@ -224,187 +139,9 @@ function makeFavoriteButton(key) {
   return button;
 }
 
-function updateAuthUi() {
-  const signedIn = Boolean(state.user);
-  const toggle = document.getElementById("auth-toggle");
-  if (toggle) {
-    toggle.textContent = signedIn
-      ? state.user.displayName || t("accountTitle")
-      : t("signIn");
-  }
-  const signedOut = document.getElementById("auth-signed-out");
-  const signedInPanel = document.getElementById("auth-signed-in");
-  if (signedOut) signedOut.hidden = signedIn;
-  if (signedInPanel) signedInPanel.hidden = !signedIn;
-  if (signedIn) {
-    document.getElementById("auth-user-name").textContent =
-      state.user.displayName || t("accountTitle");
-    document.getElementById("profile-name").value = state.user.displayName || "";
-    document.getElementById("profile-country").value = state.user.country || "";
-    document.getElementById("profile-intake").value = state.user.targetIntake || "";
-  }
-  updateReviewAuthState();
-}
-
-function openAuthPanel(message = "") {
-  const panel = document.getElementById("auth-panel");
-  if (!panel) return;
-  panel.hidden = false;
-  setAuthStatus(message);
-  updateAuthUi();
-  const email = document.getElementById("auth-email");
-  const profileName = document.getElementById("profile-name");
-  requestAnimationFrame(() => {
-    if (state.user) profileName?.focus();
-    else email?.focus();
-  });
-}
-
-function closeAuthPanel() {
-  const panel = document.getElementById("auth-panel");
-  if (panel) panel.hidden = true;
-}
-
-async function refreshMe() {
-  if (!state.authToken) return;
-  const base = authApiBase();
-  if (!base) return;
-  try {
-    const response = await fetch(`${base}/me`, {
-      headers: authHeaders(false),
-    });
-    if (!response.ok) throw new Error("auth expired");
-    const payload = await response.json();
-    state.user = payload.user || null;
-    const merged = new Set([
-      ...state.favorites,
-      ...((payload.favorites || []).filter(Boolean)),
-    ]);
-    state.favorites = merged;
-    localStorage.setItem("gradwindow:favorites", JSON.stringify([...merged]));
-    scheduleFavoriteSync();
-  } catch {
-    state.user = null;
-    saveAuthToken("");
-  }
-  updateAuthUi();
-  updateFavoriteControls();
-  render();
-}
-
-function scheduleFavoriteSync() {
-  if (!state.authToken || !state.user) return;
-  clearTimeout(state.favoriteSyncTimer);
-  state.favoriteSyncTimer = setTimeout(syncFavorites, 400);
-}
-
-async function syncFavorites() {
-  if (!state.authToken || !state.user) return;
-  const base = authApiBase();
-  if (!base) return;
-  try {
-    await fetch(`${base}/me/favorites`, {
-      method: "PUT",
-      headers: authHeaders(),
-      body: JSON.stringify({ favorites: [...state.favorites] }),
-    });
-  } catch {
-    // Keep local favourites; the next change or login refresh will retry.
-  }
-}
-
-async function requestLoginCode(email) {
-  const base = authApiBase();
-  if (!base) throw new Error("auth unavailable");
-  setAuthStatus(t("authSendingCode"));
-  const response = await fetch(`${base}/auth/request`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, language: state.language }),
-  });
-  if (!response.ok) throw new Error("login request failed");
-  setAuthStatus(t("authCodeSent"), "success");
-}
-
-async function verifyLoginCode(email, code) {
-  const base = authApiBase();
-  if (!base) throw new Error("auth unavailable");
-  setAuthStatus(t("authVerifying"));
-  const response = await fetch(`${base}/auth/verify`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ email, code }),
-  });
-  if (!response.ok) throw new Error("login verify failed");
-  const payload = await response.json();
-  saveAuthToken(payload.token || "");
-  state.user = payload.user || null;
-  state.favorites = new Set([
-    ...state.favorites,
-    ...((payload.favorites || []).filter(Boolean)),
-  ]);
-  localStorage.setItem("gradwindow:favorites", JSON.stringify([...state.favorites]));
-  setAuthStatus(t("authSignedIn"), "success");
-  updateAuthUi();
-  updateFavoriteControls();
-  render();
-  scheduleFavoriteSync();
-}
-
-async function saveProfile() {
-  const base = authApiBase();
-  if (!base || !state.authToken) throw new Error("auth unavailable");
-  const response = await fetch(`${base}/me`, {
-    method: "PATCH",
-    headers: authHeaders(),
-    body: JSON.stringify({
-      displayName: document.getElementById("profile-name").value,
-      country: document.getElementById("profile-country").value,
-      targetIntake: document.getElementById("profile-intake").value,
-      language: state.language,
-    }),
-  });
-  if (!response.ok) throw new Error("profile failed");
-  const payload = await response.json();
-  state.user = payload.user || state.user;
-  setAuthStatus(t("authProfileSaved"), "success");
-  updateAuthUi();
-}
-
-async function signOut() {
-  const base = authApiBase();
-  if (base && state.authToken) {
-    try {
-      await fetch(`${base}/auth/logout`, {
-        method: "POST",
-        headers: authHeaders(false),
-      });
-    } catch {
-      // Local sign-out still clears the session from this browser.
-    }
-  }
-  state.user = null;
-  saveAuthToken("");
-  setAuthStatus("");
-  updateAuthUi();
-}
-
-function makeReviewButton(university) {
-  const button = makeElement("button", {
-    className: "icon-button review-button",
-    text: t("schoolReviews"),
-    title: t("openSchoolReviews"),
-  });
-  button.type = "button";
-  button.addEventListener("click", () => openUniversityReviews(university));
-  return button;
-}
-
 function todayUtc() {
   const now = new Date();
-  return new Date(
-    Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()),
-  );
+  return new Date(Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()));
 }
 
 function getStatus(record, today = todayUtc()) {
@@ -433,12 +170,24 @@ function deadlineNote(record, status) {
 
 const APPLICANT_CATEGORY_LABELS = {
   all: { en: "All applicants", zh: "所有申请人" },
-  "international-bachelors": { en: "International bachelor's degree", zh: "境外本科申请人" },
+  "international-bachelors": {
+    en: "International bachelor's degree",
+    zh: "境外本科申请人",
+  },
   esop: { en: "ESOP scholarship applicants", zh: "ESOP 奖学金申请人" },
   "direct-doctorate": { en: "Direct doctorate applicants", zh: "直博申请人" },
-  "swiss-bachelors": { en: "Swiss bachelor's degree", zh: "瑞士高校本科申请人" },
-  "requires-uk-study-visa": { en: "UK Student visa required", zh: "需要英国学生签证" },
-  "does-not-require-uk-study-visa": { en: "No UK Student visa required", zh: "无需英国学生签证" },
+  "swiss-bachelors": {
+    en: "Swiss bachelor's degree",
+    zh: "瑞士高校本科申请人",
+  },
+  "requires-uk-study-visa": {
+    en: "UK Student visa required",
+    zh: "需要英国学生签证",
+  },
+  "does-not-require-uk-study-visa": {
+    en: "No UK Student visa required",
+    zh: "无需英国学生签证",
+  },
 };
 
 function applicantCategoryText(categories = []) {
@@ -461,140 +210,6 @@ function sourceMonitorDescription(record) {
     return [t("sourceError"), "homepage"];
   }
   return [t("sourceUnchecked"), "homepage"];
-}
-
-function googleCalendarUrl(record) {
-  const start = record.closesAt.replaceAll("-", "");
-  const endDate = parseDate(record.closesAt);
-  endDate.setUTCDate(endDate.getUTCDate() + 1);
-  const end = endDate.toISOString().slice(0, 10).replaceAll("-", "");
-  const prefix = record.dataStatus === "predicted" ? "[ESTIMATE] " : "";
-  const title = `${prefix}${record.school} ${record.program} application deadline`;
-  const details = [
-    record.dataStatus === "predicted"
-      ? "Unofficial calendar-date estimate. Confirm on the official website before applying."
-      : "",
-    `Application: ${record.applicationUrl}`,
-    `Source: ${record.sourceUrl}`,
-  ].filter(Boolean).join("\n");
-  const params = new URLSearchParams({
-    action: "TEMPLATE",
-    text: title,
-    dates: `${start}/${end}`,
-    details,
-  });
-  return `https://calendar.google.com/calendar/render?${params.toString()}`;
-}
-
-function outlookCalendarUrl(record) {
-  const start = `${record.closesAt}T00:00:00Z`;
-  const endDate = parseDate(record.closesAt);
-  endDate.setUTCDate(endDate.getUTCDate() + 1);
-  const end = `${endDate.toISOString().slice(0, 10)}T00:00:00Z`;
-  const prefix = record.dataStatus === "predicted" ? "[ESTIMATE] " : "";
-  const title = `${prefix}${record.school} ${record.program} application deadline`;
-  const body = [
-    record.dataStatus === "predicted"
-      ? "Unofficial calendar-date estimate. Confirm on the official website before applying."
-      : "",
-    `Application: ${record.applicationUrl}`,
-    `Source: ${record.sourceUrl}`,
-  ].filter(Boolean).join("\n");
-  const params = new URLSearchParams({
-    path: "/calendar/action/compose",
-    rru: "addevent",
-    startdt: start,
-    enddt: end,
-    subject: title,
-    body,
-    allday: "true",
-  });
-  return `https://outlook.live.com/calendar/0/deeplink/compose?${params.toString()}`;
-}
-
-function downloadIcs(record) {
-  const start = record.closesAt.replaceAll("-", "");
-  const endDate = parseDate(record.closesAt);
-  endDate.setUTCDate(endDate.getUTCDate() + 1);
-  const end = endDate.toISOString().slice(0, 10).replaceAll("-", "");
-  const escapeIcs = (value) =>
-    value
-      .replaceAll("\\", "\\\\")
-      .replaceAll("\n", "\\n")
-      .replaceAll(",", "\\,")
-      .replaceAll(";", "\\;");
-  const body = [
-    "BEGIN:VCALENDAR",
-    "VERSION:2.0",
-    "PRODID:-//GradWindow//Application Deadline//CN",
-    "BEGIN:VEVENT",
-    `UID:${record.id}@gradwindow`,
-    `DTSTAMP:${new Date().toISOString().replaceAll(/[-:]/g, "").split(".")[0]}Z`,
-    `DTSTART;VALUE=DATE:${start}`,
-    `DTEND;VALUE=DATE:${end}`,
-    `SUMMARY:${escapeIcs(`${record.dataStatus === "predicted" ? "[ESTIMATE] " : ""}${record.school} ${record.program} application deadline`)}`,
-    `DESCRIPTION:${escapeIcs(`${record.dataStatus === "predicted" ? "Unofficial calendar-date estimate. Confirm on the official website.\n" : ""}Application: ${record.applicationUrl}\nSource: ${record.sourceUrl}`)}`,
-    `URL:${record.applicationUrl}`,
-    "END:VEVENT",
-    "END:VCALENDAR",
-  ].join("\r\n");
-
-  const blob = new Blob([body], { type: "text/calendar;charset=utf-8" });
-  const url = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = `${record.id}-deadline.ics`;
-  document.body.appendChild(anchor);
-  anchor.click();
-  anchor.remove();
-  URL.revokeObjectURL(url);
-}
-
-function makeCalendarMenu(record) {
-  const menu = makeElement("details", { className: "calendar-menu" });
-  const summary = makeElement("summary", {
-    className: "calendar-menu-trigger",
-    title: t("calendarOptions"),
-  });
-  summary.append(
-    makeElement("span", { className: "calendar-menu-icon" }),
-    makeElement("span", { className: "calendar-menu-label", text: t("addCalendar") }),
-  );
-  const options = makeElement("div", { className: "calendar-menu-options" });
-  const makeDownloadOption = (label) => {
-    const button = makeElement("button", {
-      className: "calendar-menu-item",
-      text: label,
-      title: t("downloadIcs"),
-    });
-    button.type = "button";
-    button.addEventListener("click", () => {
-      downloadIcs(record);
-      menu.open = false;
-    });
-    return button;
-  };
-  const apple = makeDownloadOption(t("appleCalendar"));
-  const android = makeDownloadOption(t("androidCalendar"));
-  const ics = makeElement("button", {
-    className: "calendar-menu-item",
-    text: t("downloadIcs"),
-    title: t("downloadIcs"),
-  });
-  ics.type = "button";
-  ics.addEventListener("click", () => {
-    downloadIcs(record);
-    menu.open = false;
-  });
-  options.append(
-    makeLink(t("googleCalendar"), googleCalendarUrl(record), "calendar-menu-item"),
-    makeLink(t("outlookCalendar"), outlookCalendarUrl(record), "calendar-menu-item"),
-    apple,
-    android,
-    ics,
-  );
-  menu.append(summary, options);
-  return menu;
 }
 
 function closeWindowDetail() {
@@ -627,18 +242,24 @@ function openWindowDetail(record, status = getStatus(record)) {
     record.program,
     state.language,
   );
-  const [sourceStatus, sourceClass] = record.dataStatus === "predicted"
-    ? [t("estimateBadge"), "predicted"]
-    : sourceMonitorDescription(record);
+  const [sourceStatus, sourceClass] =
+    record.dataStatus === "predicted"
+      ? [t("estimateBadge"), "predicted"]
+      : sourceMonitorDescription(record);
 
-  const heading = makeElement("section", { className: "window-detail-heading" });
-  const schoolRow = makeElement("div", { className: "window-detail-school-row" });
+  const heading = makeElement("section", {
+    className: "window-detail-heading",
+  });
+  const schoolRow = makeElement("div", {
+    className: "window-detail-school-row",
+  });
   schoolRow.append(
     makeElement("h2", { text: schoolText.primary }),
     makeElement("span", {
       className: "rank-cell",
       text: formatRank(
-        selectedRankForUniversity(record.universityId)?.rankDisplay || record.qsRank,
+        selectedRankForUniversity(record.universityId)?.rankDisplay ||
+          record.qsRank,
       ),
     }),
   );
@@ -650,10 +271,16 @@ function openWindowDetail(record, status = getStatus(record)) {
         .filter(Boolean)
         .join(" · "),
     }),
-    makeLink(programmeName, record.applicationUrl, "program-link window-detail-programme"),
+    makeLink(
+      programmeName,
+      record.applicationUrl,
+      "program-link window-detail-programme",
+    ),
   );
 
-  const deadline = makeElement("section", { className: "window-detail-deadline" });
+  const deadline = makeElement("section", {
+    className: "window-detail-deadline",
+  });
   deadline.append(
     makeElement("span", { text: t("deadline") }),
     makeElement("strong", { text: formatDate(record.closesAt) }),
@@ -664,33 +291,51 @@ function openWindowDetail(record, status = getStatus(record)) {
   info.append(
     makeElement("h3", { text: t("mobileWindowDetails") }),
     detailField(t("opens"), formatDate(record.opensAt)),
-    detailField(t("programmeIntake"), `${intake}${localizedRound ? ` · ${localizedRound}` : ""}`),
-    detailField(t("applicantGroup"), applicantCategoryText(record.applicantCategories)),
+    detailField(
+      t("programmeIntake"),
+      `${intake}${localizedRound ? ` · ${localizedRound}` : ""}`,
+    ),
+    detailField(
+      t("applicantGroup"),
+      applicantCategoryText(record.applicantCategories),
+    ),
     detailField(t("statusTabsLabel"), statusLabels()[status]?.title || status),
   );
 
-  const source = makeElement("section", { className: "window-detail-section window-detail-source" });
-  const sourceHeader = makeElement("div", { className: "window-detail-source-header" });
+  const source = makeElement("section", {
+    className: "window-detail-section window-detail-source",
+  });
+  const sourceHeader = makeElement("div", {
+    className: "window-detail-source-header",
+  });
   sourceHeader.append(
     makeElement("h3", { text: t("dataSource") }),
-    makeElement("span", { className: `source-badge ${sourceClass}`, text: sourceStatus }),
+    makeElement("span", {
+      className: `source-badge ${sourceClass}`,
+      text: sourceStatus,
+    }),
   );
   source.append(
     sourceHeader,
     makeElement("p", {
-      text: record.dataStatus === "predicted"
-        ? `${t("reference")} ${record.sourceCycle} · ${predictionConfidenceText(record)}`
-        : `${t("verifiedOn")} ${record.verifiedAt}`,
+      text:
+        record.dataStatus === "predicted"
+          ? `${t("reference")} ${record.sourceCycle} · ${predictionConfidenceText(record)}`
+          : `${t("verifiedOn")} ${record.verifiedAt}`,
     }),
     makeLink(
-      record.dataStatus === "predicted" ? t("viewReference") : t("viewOfficial"),
+      record.dataStatus === "predicted"
+        ? t("viewReference")
+        : t("viewOfficial"),
       record.sourceUrl,
       "primary-button window-detail-source-link",
     ),
   );
 
   if (university) {
-    const reviews = makeElement("section", { className: "window-detail-section window-detail-reviews" });
+    const reviews = makeElement("section", {
+      className: "window-detail-section window-detail-reviews",
+    });
     reviews.append(
       makeElement("h3", { text: t("schoolReviewsTitle") }),
       makeElement("p", { text: t("reviewPublicNote") }),
@@ -795,9 +440,7 @@ function populateIntakeSelect() {
     option.textContent = intakeLabel(intake, state.language);
     select.appendChild(option);
   });
-  select.value = [...select.options].some(
-    (option) => option.value === selected,
-  )
+  select.value = [...select.options].some((option) => option.value === selected)
     ? selected
     : "all";
 }
@@ -894,7 +537,9 @@ function rankColumnLabel() {
 }
 
 function rankRangeLabel(limit) {
-  return t("rankRangeTop").replace("{ranking}", rankingShortLabel()).replace("{limit}", limit);
+  return t("rankRangeTop")
+    .replace("{ranking}", rankingShortLabel())
+    .replace("{limit}", limit);
 }
 
 function formatRank(rankDisplay) {
@@ -919,7 +564,8 @@ function updateRankingAvailability() {
   [...select.options].forEach((option) => {
     if (option.value === "qs") return;
     const ranking = state.rankingPayload.rankings?.[option.value];
-    option.disabled = !ranking || ranking.available === false || !ranking.rows?.length;
+    option.disabled =
+      !ranking || ranking.available === false || !ranking.rows?.length;
   });
 }
 
@@ -1046,7 +692,8 @@ function createRow(record, status, windowGroup = null) {
   const rank = makeElement("span", {
     className: "rank-cell",
     text: formatRank(
-      selectedRankForUniversity(record.universityId)?.rankDisplay || record.qsRank,
+      selectedRankForUniversity(record.universityId)?.rankDisplay ||
+        record.qsRank,
     ),
   });
   const school = document.createDocumentFragment();
@@ -1057,10 +704,9 @@ function createRow(record, status, windowGroup = null) {
   school.appendChild(
     makeElement("span", {
       className: "school-meta",
-      text: [
-        schoolText.secondary,
-        countryLabel(record.country, state.language),
-      ].filter(Boolean).join(" · "),
+      text: [schoolText.secondary, countryLabel(record.country, state.language)]
+        .filter(Boolean)
+        .join(" · "),
     }),
   );
   const intake = intakeLabel(canonicalIntake(record), state.language);
@@ -1168,7 +814,11 @@ function createRow(record, status, windowGroup = null) {
 }
 
 function predictionConfidenceText(record) {
-  const labels = { low: t("lowConfidence"), medium: t("mediumConfidence"), high: t("highConfidence") };
+  const labels = {
+    low: t("lowConfidence"),
+    medium: t("mediumConfidence"),
+    high: t("highConfidence"),
+  };
   return `${labels[record.confidence] || t("estimate")} · ${record.evidenceCycleCount} ${t("historicalCycles")}`;
 }
 
@@ -1260,7 +910,13 @@ function createPagination(key, pagination) {
   return wrapper;
 }
 
-function createTableSection(status, heading, countLabel, columns, tableClass = "") {
+function createTableSection(
+  status,
+  heading,
+  countLabel,
+  columns,
+  tableClass = "",
+) {
   const section = makeElement("section", { className: "application-group" });
   section.dataset.status = status;
 
@@ -1285,7 +941,8 @@ function createTableSection(status, heading, countLabel, columns, tableClass = "
     const th = document.createElement("th");
     if (typeof column === "object" && column.sort) {
       const button = makeElement("button", {
-        className: `table-sort-button ${state.sort === column.sort ? "active" : ""}`.trim(),
+        className:
+          `table-sort-button ${state.sort === column.sort ? "active" : ""}`.trim(),
       });
       button.type = "button";
       button.dataset.sort = column.sort;
@@ -1372,7 +1029,8 @@ function mastersAvailabilityDescription(university) {
     return [t("unverified"), t("rankingOnlyMasters")];
   }
   const availability = university.windowPolicy?.mastersAvailability;
-  if (availability === "broad") return [t("broadMasters"), t("representativeAvailable")];
+  if (availability === "broad")
+    return [t("broadMasters"), t("representativeAvailable")];
   if (availability === "limited") {
     return [t("limitedMasters"), t("someNotDirect")];
   }
@@ -1410,245 +1068,87 @@ function createUniversityGroup(universities, status = "unknown") {
     "university-table",
   );
   const sortedUniversities = universities.sort(
-    (a, b) => a.rankPosition - b.rankPosition || a.school.localeCompare(b.school),
+    (a, b) =>
+      a.rankPosition - b.rankPosition || a.school.localeCompare(b.school),
   );
   const { items, start, end, total, page, totalPages } = paginate(
     status,
     sortedUniversities,
   );
-  items
-    .forEach((university) => {
-      const [statusLabel, statusClass] = directoryStatus(university);
-      const [monitorLabel, monitorClass] = monitorStatus(university);
-      const rankLabel = formatRank(university.rankDisplay);
-      const directUrl = university.admissionsUrl;
-      const directLabel = t("applicationEntry");
-      const row = document.createElement("tr");
-      row.className = "university-card-row";
-      const schoolText = schoolLabels(university, state.language);
-      const school = makeTextStack(
-        schoolText.primary,
-        schoolText.secondary,
-      );
-      const admissions = university.rankingOnly
-        ? makeLink(t("rankingSource"), university.rankingSourceUrl, "source-link")
-        : directUrl
+  items.forEach((university) => {
+    const [statusLabel, statusClass] = directoryStatus(university);
+    const [monitorLabel, monitorClass] = monitorStatus(university);
+    const rankLabel = formatRank(university.rankDisplay);
+    const directUrl = university.admissionsUrl;
+    const directLabel = t("applicationEntry");
+    const row = document.createElement("tr");
+    row.className = "university-card-row";
+    const schoolText = schoolLabels(university, state.language);
+    const school = makeTextStack(schoolText.primary, schoolText.secondary);
+    const admissions = university.rankingOnly
+      ? makeLink(t("rankingSource"), university.rankingSourceUrl, "source-link")
+      : directUrl
         ? makeLink(directLabel, directUrl, "school-link")
         : makeElement("span", {
             className: "school-meta",
             text: t("programmeDirectoryRequired"),
           });
-      const actions = document.createDocumentFragment();
-      actions.appendChild(admissions);
-      if (!university.rankingOnly) {
-        actions.appendChild(
-          makeLink(t("officialWebsite"), university.homepageUrl, "source-link"),
-        );
-      }
+    const actions = document.createDocumentFragment();
+    actions.appendChild(admissions);
+    if (!university.rankingOnly) {
       actions.appendChild(
-        makeFavoriteButton(favoriteKey("university", university.id)),
+        makeLink(t("officialWebsite"), university.homepageUrl, "source-link"),
       );
-      const [policyPrimary, policySecondary] = policyDescription(university);
-      const [mastersPrimary, mastersSecondary] =
-        mastersAvailabilityDescription(university);
-      row.append(
-        makeCell(t("rank"), makeElement("span", { className: "rank-cell", text: rankLabel })),
-        makeCell(t("universityEntry"), school),
-        makeCell(t("mastersScope"), makeTextStack(mastersPrimary, mastersSecondary)),
-        makeCell(
-          t("countries"),
-          makeElement("span", {
-            text: countryLabel(university.country, state.language),
-          }),
-        ),
-        makeCell(t("entryStatus"), makeElement("span", { className: `source-badge ${statusClass}`, text: statusLabel })),
-        makeCell(t("latestCheck"), makeElement("span", { className: `source-badge ${monitorClass}`, text: monitorLabel })),
-        makeCell(t("graduateApplication"), actions),
-        makeCell(t("dateNotes"), makeTextStack(policyPrimary, policySecondary, "date-primary")),
-        makeCell(t("schoolReviews"), makeReviewButton(university)),
-      );
-      tbody.appendChild(row);
-    });
+    }
+    actions.appendChild(
+      makeFavoriteButton(favoriteKey("university", university.id)),
+    );
+    const [policyPrimary, policySecondary] = policyDescription(university);
+    const [mastersPrimary, mastersSecondary] =
+      mastersAvailabilityDescription(university);
+    row.append(
+      makeCell(
+        t("rank"),
+        makeElement("span", { className: "rank-cell", text: rankLabel }),
+      ),
+      makeCell(t("universityEntry"), school),
+      makeCell(
+        t("mastersScope"),
+        makeTextStack(mastersPrimary, mastersSecondary),
+      ),
+      makeCell(
+        t("countries"),
+        makeElement("span", {
+          text: countryLabel(university.country, state.language),
+        }),
+      ),
+      makeCell(
+        t("entryStatus"),
+        makeElement("span", {
+          className: `source-badge ${statusClass}`,
+          text: statusLabel,
+        }),
+      ),
+      makeCell(
+        t("latestCheck"),
+        makeElement("span", {
+          className: `source-badge ${monitorClass}`,
+          text: monitorLabel,
+        }),
+      ),
+      makeCell(t("graduateApplication"), actions),
+      makeCell(
+        t("dateNotes"),
+        makeTextStack(policyPrimary, policySecondary, "date-primary"),
+      ),
+      makeCell(t("schoolReviews"), makeReviewButton(university)),
+    );
+    tbody.appendChild(row);
+  });
   section.appendChild(
     createPagination(status, { start, end, total, page, totalPages }),
   );
   return section;
-}
-
-function commentDateFormatter() {
-  return new Intl.DateTimeFormat(state.language === "zh" ? "zh-CN" : "en-GB", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-}
-
-function commentsEndpoint(universityId) {
-  const base = feedbackApiBase();
-  return base
-    ? `${base}/universities/${encodeURIComponent(universityId)}/comments`
-    : "";
-}
-
-function setReviewStatus(messageKey, tone = "") {
-  const status = document.getElementById("review-status");
-  if (!status) return;
-  status.className = `review-status ${tone}`;
-  status.textContent = messageKey ? t(messageKey) : "";
-}
-
-function renderComments(comments) {
-  const list = document.getElementById("review-list");
-  list.replaceChildren();
-  if (!comments.length) {
-    list.appendChild(
-      makeElement("p", { className: "review-empty", text: t("reviewNoComments") }),
-    );
-    return;
-  }
-  comments.forEach((comment) => {
-    const item = makeElement("article", { className: "review-item" });
-    const avatar = makeElement("span", {
-      className: `review-avatar ${comment.anonymous ? "cat-avatar" : "user-avatar"}`,
-      text: comment.anonymous ? "" : acronym(comment.author || "G").slice(0, 2) || "G",
-    });
-    const meta = makeElement("div", { className: "review-item-meta" });
-    meta.append(
-      makeElement("strong", { text: comment.author || t("reviewAnonymous") }),
-      makeElement("span", {
-        text: comment.createdAt
-          ? commentDateFormatter().format(new Date(comment.createdAt))
-          : "",
-      }),
-    );
-    item.append(
-      avatar,
-      makeElement("div", {
-        className: "review-item-content",
-      }),
-    );
-    item.querySelector(".review-item-content").append(
-      meta,
-      makeElement("p", { className: "review-item-body", text: comment.body || "" }),
-    );
-    list.appendChild(item);
-  });
-}
-
-async function loadUniversityComments(universityId) {
-  const endpoint = commentsEndpoint(universityId);
-  if (!endpoint) {
-    renderComments([]);
-    setReviewStatus("reviewUnavailable", "error");
-    return;
-  }
-  setReviewStatus("reviewLoading");
-  try {
-    const response = await fetch(endpoint, {
-      headers: { "X-GradWindow-Visitor": visitorId() },
-    });
-    if (!response.ok) throw new Error("comments unavailable");
-    const payload = await response.json();
-    renderComments(payload.comments || []);
-    setReviewStatus("");
-  } catch {
-    renderComments([]);
-    setReviewStatus("reviewLoadError", "error");
-  }
-}
-
-async function openUniversityReviews(university) {
-  state.activeReviewUniversity = university;
-  const panel = document.getElementById("review-panel");
-  const schoolText = schoolLabels(university, state.language);
-  document.getElementById("review-school-name").textContent = schoolText.primary;
-  document.getElementById("review-form").reset();
-  panel.hidden = false;
-  document.body.classList.add("review-open");
-  updateReviewAuthState();
-  await loadUniversityComments(university.id);
-  document.getElementById("review-body").focus();
-}
-
-function closeUniversityReviews() {
-  document.getElementById("review-panel").hidden = true;
-  document.body.classList.remove("review-open");
-  state.activeReviewUniversity = null;
-  setReviewStatus("");
-}
-
-function updateReviewAuthState() {
-  const form = document.getElementById("review-form");
-  const author = document.getElementById("review-author");
-  const submit = document.getElementById("review-submit");
-  const anonymous = document.getElementById("review-anonymous");
-  if (!form || !submit) return;
-  const signedIn = Boolean(state.user);
-  if (author) {
-    author.disabled = true;
-    if (!signedIn) author.value = t("signIn");
-    else if (anonymous?.checked) author.value = "good people";
-    else author.value = state.user.displayName || t("accountTitle");
-  }
-  submit.textContent = signedIn ? t("reviewSubmitButton") : t("signIn");
-  if (!document.getElementById("review-panel")?.hidden && !signedIn) {
-    setReviewStatus("authRequiredForComments", "error");
-  }
-}
-
-function setupReviewPanel() {
-  document.querySelectorAll("[data-review-close]").forEach((button) => {
-    button.addEventListener("click", closeUniversityReviews);
-  });
-  const form = document.getElementById("review-form");
-  if (!form || form.dataset.bound === "true") return;
-  form.dataset.bound = "true";
-  document
-    .getElementById("review-anonymous")
-    ?.addEventListener("change", updateReviewAuthState);
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const university = state.activeReviewUniversity;
-    const endpoint = university ? commentsEndpoint(university.id) : "";
-    if (!endpoint) {
-      setReviewStatus("reviewUnavailable", "error");
-      return;
-    }
-    if (!state.authToken || !state.user) {
-      openAuthPanel(t("authRequiredForComments"));
-      setReviewStatus("authRequiredForComments", "error");
-      return;
-    }
-    const button = document.getElementById("review-submit");
-    button.disabled = true;
-    setReviewStatus("reviewSending");
-    try {
-      const response = await fetch(endpoint, {
-        method: "POST",
-        headers: authHeaders(),
-        body: JSON.stringify({
-          body: document.getElementById("review-body").value.trim(),
-          anonymous: document.getElementById("review-anonymous").checked,
-        }),
-      });
-      if (!response.ok) throw new Error("comment failed");
-      form.reset();
-      updateReviewAuthState();
-      await loadUniversityComments(university.id);
-      setReviewStatus("reviewSubmitSuccess", "success");
-    } catch {
-      setReviewStatus("reviewSubmitError", "error");
-    } finally {
-      button.disabled = false;
-    }
-  });
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !document.getElementById("review-panel").hidden) {
-      closeUniversityReviews();
-    }
-  });
 }
 
 function renderCounts(records, universities) {
@@ -1700,9 +1200,14 @@ function render() {
     }
   });
   if (state.status === "exception" && exceptionUniversities.length) {
-    container.appendChild(createUniversityGroup([...exceptionUniversities], "exception"));
+    container.appendChild(
+      createUniversityGroup([...exceptionUniversities], "exception"),
+    );
   }
-  if ((state.status === "unknown" || hasActiveSearch()) && baseUniversities.length) {
+  if (
+    (state.status === "unknown" || hasActiveSearch()) &&
+    baseUniversities.length
+  ) {
     container.appendChild(createUniversityGroup([...baseUniversities]));
   }
 
@@ -1710,7 +1215,8 @@ function render() {
     !activeNonStatusFilter() ||
     records.length > 0 ||
     (state.status === "exception" && exceptionUniversities.length > 0) ||
-    ((state.status === "unknown" || hasActiveSearch()) && baseUniversities.length > 0);
+    ((state.status === "unknown" || hasActiveSearch()) &&
+      baseUniversities.length > 0);
   document.getElementById("hero-open-count").textContent = counts.open;
   document.querySelectorAll("[data-mobile-sort]").forEach((button) => {
     button.classList.toggle("active", button.dataset.mobileSort === state.sort);
@@ -1728,7 +1234,11 @@ function syncUrl() {
   if (state.status !== "open") params.set("status", state.status);
   if (state.sort !== "rank") params.set("sort", state.sort);
   if (state.rankLimit !== "200") params.set("rank", state.rankLimit);
-  history.replaceState(null, "", `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`);
+  history.replaceState(
+    null,
+    "",
+    `${location.pathname}${params.size ? `?${params}` : ""}${location.hash}`,
+  );
 }
 
 function loadUrlState() {
@@ -1741,7 +1251,9 @@ function loadUrlState() {
   state.sort = ["rank", "opens", "deadline"].includes(params.get("sort"))
     ? params.get("sort")
     : "rank";
-  state.rankLimit = ["30", "50", "100", "150", "200"].includes(params.get("rank"))
+  state.rankLimit = ["30", "50", "100", "150", "200"].includes(
+    params.get("rank"),
+  )
     ? params.get("rank")
     : params.get("top") === "100"
       ? "100"
@@ -1757,13 +1269,15 @@ function updateFavoriteControls() {
   document.getElementById("export-favorites").disabled = !state.data.some(
     (record) => state.favorites.has(favoriteKey("window", record.id)),
   );
-  document.querySelectorAll(".favorite-button[data-favorite-key]").forEach((button) => {
-    const active = state.favorites.has(button.dataset.favoriteKey);
-    button.classList.toggle("active", active);
-    button.setAttribute("aria-pressed", String(active));
-    button.textContent = active ? t("favorited") : t("favorite");
-    button.title = active ? t("removeFavorite") : t("favorite");
-  });
+  document
+    .querySelectorAll(".favorite-button[data-favorite-key]")
+    .forEach((button) => {
+      const active = state.favorites.has(button.dataset.favoriteKey);
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+      button.textContent = active ? t("favorited") : t("favorite");
+      button.title = active ? t("removeFavorite") : t("favorite");
+    });
 }
 
 function applyStaticTranslations() {
@@ -1778,7 +1292,8 @@ function applyStaticTranslations() {
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     const translated = t(node.dataset.i18nPlaceholder);
-    if (translated !== node.dataset.i18nPlaceholder) node.placeholder = translated;
+    if (translated !== node.dataset.i18nPlaceholder)
+      node.placeholder = translated;
   });
   document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
     const translated = t(node.dataset.i18nAriaLabel);
@@ -1790,10 +1305,12 @@ function applyStaticTranslations() {
     state.language === "en" ? "中文" : "EN";
   document.getElementById("theme-toggle").textContent =
     state.theme === "dark" ? "☀" : "☾";
-  document.getElementById("theme-toggle").setAttribute(
-    "aria-label",
-    state.theme === "dark" ? t("switchToLight") : t("switchToDark"),
-  );
+  document
+    .getElementById("theme-toggle")
+    .setAttribute(
+      "aria-label",
+      state.theme === "dark" ? t("switchToLight") : t("switchToDark"),
+    );
   updateRankRangeOptions();
   updateAuthUi();
   document.title =
@@ -1816,7 +1333,7 @@ function applyTheme() {
 }
 
 function loadTurnstile(siteKey) {
-  if (!siteKey || document.querySelector('script[data-gradwindow-turnstile]')) {
+  if (!siteKey || document.querySelector("script[data-gradwindow-turnstile]")) {
     return;
   }
   const container = document.getElementById("turnstile-container");
@@ -1832,64 +1349,6 @@ function loadTurnstile(siteKey) {
   script.defer = true;
   script.dataset.gradwindowTurnstile = "true";
   document.head.appendChild(script);
-}
-
-function setupAuthPanel() {
-  document.getElementById("auth-toggle")?.addEventListener("click", () => {
-    openAuthPanel();
-  });
-  document.querySelectorAll("[data-auth-close]").forEach((button) => {
-    button.addEventListener("click", closeAuthPanel);
-  });
-  document.getElementById("auth-request-form")?.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const button = document.getElementById("auth-request-button");
-    const email = document.getElementById("auth-email").value.trim();
-    button.disabled = true;
-    try {
-      await requestLoginCode(email);
-      document.getElementById("auth-code").focus();
-    } catch {
-      setAuthStatus(t("authError"), "error");
-    } finally {
-      button.disabled = false;
-    }
-  });
-  document.getElementById("auth-verify-form")?.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const button = document.getElementById("auth-verify-button");
-    const email = document.getElementById("auth-email").value.trim();
-    const code = document.getElementById("auth-code").value.trim();
-    button.disabled = true;
-    try {
-      await verifyLoginCode(email, code);
-    } catch {
-      setAuthStatus(t("authError"), "error");
-    } finally {
-      button.disabled = false;
-    }
-  });
-  document.getElementById("profile-form")?.addEventListener("submit", async (event) => {
-    event.preventDefault();
-    const button = document.getElementById("profile-save-button");
-    button.disabled = true;
-    try {
-      await saveProfile();
-    } catch {
-      setAuthStatus(t("authError"), "error");
-    } finally {
-      button.disabled = false;
-    }
-  });
-  document.getElementById("auth-logout-button")?.addEventListener("click", signOut);
-  document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && !document.getElementById("auth-panel")?.hidden) {
-      closeAuthPanel();
-    }
-  });
-  state.authToken = localStorage.getItem(AUTH_TOKEN_KEY) || "";
-  updateAuthUi();
-  refreshMe();
 }
 
 function setupSubscription() {
@@ -1990,14 +1449,19 @@ function setupHero() {
     document.getElementById("hero-deadline-month").textContent =
       state.language === "zh" ? "所学校" : "SCHOOLS";
     document.getElementById("hero-deadline-school").textContent =
-      state.language === "zh" ? "官方申请目录" : "Official admissions directory";
+      state.language === "zh"
+        ? "官方申请目录"
+        : "Official admissions directory";
     const mobileLink = document.getElementById("mobile-deadline-link");
     if (mobileLink) mobileLink.removeAttribute("target");
     const mobileSchool = document.getElementById("mobile-deadline-school");
     const mobileDate = document.getElementById("mobile-deadline-date");
     const mobileNote = document.getElementById("mobile-deadline-note");
-    if (mobileSchool) mobileSchool.textContent =
-      state.language === "zh" ? "官方申请目录" : "Official admissions directory";
+    if (mobileSchool)
+      mobileSchool.textContent =
+        state.language === "zh"
+          ? "官方申请目录"
+          : "Official admissions directory";
     if (mobileDate) mobileDate.textContent = "TOP 200";
     if (mobileNote) mobileNote.textContent = "";
     return;
@@ -2011,24 +1475,31 @@ function setupHero() {
   document.getElementById("hero-deadline-day").textContent = dateParts.day;
   document.getElementById("hero-deadline-month").textContent =
     dateParts.month.toUpperCase();
-  document.getElementById("hero-deadline-school").textContent =
-    schoolLabels(futureDeadline, state.language).primary;
+  document.getElementById("hero-deadline-school").textContent = schoolLabels(
+    futureDeadline,
+    state.language,
+  ).primary;
   const mobileLink = document.getElementById("mobile-deadline-link");
   const mobileSchool = document.getElementById("mobile-deadline-school");
   const mobileDate = document.getElementById("mobile-deadline-date");
   const mobileNote = document.getElementById("mobile-deadline-note");
   if (mobileLink) {
-    mobileLink.href = safeUrl(futureDeadline.applicationUrl) || "#application-groups";
+    mobileLink.href =
+      safeUrl(futureDeadline.applicationUrl) || "#application-groups";
     mobileLink.target = safeUrl(futureDeadline.applicationUrl) ? "_blank" : "";
     mobileLink.rel = "noreferrer";
   }
-  if (mobileSchool) mobileSchool.textContent =
-    schoolLabels(futureDeadline, state.language).primary;
+  if (mobileSchool)
+    mobileSchool.textContent = schoolLabels(
+      futureDeadline,
+      state.language,
+    ).primary;
   if (mobileDate) mobileDate.textContent = formatDate(futureDeadline.closesAt);
-  if (mobileNote) mobileNote.textContent = deadlineNote(
-    futureDeadline,
-    getStatus(futureDeadline),
-  );
+  if (mobileNote)
+    mobileNote.textContent = deadlineNote(
+      futureDeadline,
+      getStatus(futureDeadline),
+    );
 }
 
 function setMobileNavActive(name) {
@@ -2062,12 +1533,14 @@ function bindEvents() {
     state.theme = state.theme === "dark" ? "light" : "dark";
     applyTheme();
   });
-  document.getElementById("mobile-filter-toggle").addEventListener("click", () => {
-    document
-      .querySelector(".quick-filter-panel .toolbar")
-      .classList.toggle("mobile-filters-open");
-    updateMobileFilterToggle();
-  });
+  document
+    .getElementById("mobile-filter-toggle")
+    .addEventListener("click", () => {
+      document
+        .querySelector(".quick-filter-panel .toolbar")
+        .classList.toggle("mobile-filters-open");
+      updateMobileFilterToggle();
+    });
   document.getElementById("search-input").addEventListener("input", (event) => {
     state.search = event.target.value;
     setMobileNavActive("search");
@@ -2075,38 +1548,46 @@ function bindEvents() {
     syncUrl();
     render();
   });
-  document.getElementById("ranking-filter").addEventListener("change", (event) => {
-    state.ranking = event.target.value;
-    state.region = "all";
-    state.intake = "all";
-    if (state.ranking !== "qs") state.sort = "rank";
-    resetPages();
-    refreshFilterOptions();
-    updateRankRangeOptions();
-    syncUrl();
-    document.querySelectorAll(".status-tab").forEach((tab) => {
-      tab.classList.toggle("active", tab.dataset.status === state.status);
+  document
+    .getElementById("ranking-filter")
+    .addEventListener("change", (event) => {
+      state.ranking = event.target.value;
+      state.region = "all";
+      state.intake = "all";
+      if (state.ranking !== "qs") state.sort = "rank";
+      resetPages();
+      refreshFilterOptions();
+      updateRankRangeOptions();
+      syncUrl();
+      document.querySelectorAll(".status-tab").forEach((tab) => {
+        tab.classList.toggle("active", tab.dataset.status === state.status);
+      });
+      render();
     });
-    render();
-  });
-  document.getElementById("region-filter").addEventListener("change", (event) => {
-    state.region = event.target.value;
-    resetPages();
-    syncUrl();
-    render();
-  });
-  document.getElementById("intake-filter").addEventListener("change", (event) => {
-    state.intake = event.target.value;
-    resetPages();
-    syncUrl();
-    render();
-  });
-  document.getElementById("rank-range-filter").addEventListener("change", (event) => {
-    state.rankLimit = event.target.value;
-    resetPages();
-    syncUrl();
-    render();
-  });
+  document
+    .getElementById("region-filter")
+    .addEventListener("change", (event) => {
+      state.region = event.target.value;
+      resetPages();
+      syncUrl();
+      render();
+    });
+  document
+    .getElementById("intake-filter")
+    .addEventListener("change", (event) => {
+      state.intake = event.target.value;
+      resetPages();
+      syncUrl();
+      render();
+    });
+  document
+    .getElementById("rank-range-filter")
+    .addEventListener("change", (event) => {
+      state.rankLimit = event.target.value;
+      resetPages();
+      syncUrl();
+      render();
+    });
   document.querySelectorAll(".status-tab").forEach((button) => {
     button.addEventListener("click", () => {
       state.status = button.dataset.status;
@@ -2151,16 +1632,22 @@ function bindEvents() {
         resetPages();
         syncUrl();
         render();
-        document.getElementById("application-board").scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById("application-board")
+          .scrollIntoView({ behavior: "smooth" });
       } else if (destination === "search") {
-        document.getElementById("application-board").scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById("application-board")
+          .scrollIntoView({ behavior: "smooth" });
         setTimeout(() => document.getElementById("search-input")?.focus(), 250);
       } else if (destination === "favorites") {
         state.favoritesOnly = true;
         resetPages();
         syncUrl();
         render();
-        document.getElementById("application-groups").scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById("application-groups")
+          .scrollIntoView({ behavior: "smooth" });
       } else if (destination === "profile") {
         openAuthPanel();
       }
@@ -2274,7 +1761,8 @@ async function init() {
           state.sourceMonitor[record.basedOnRecordId || record.id] || {},
         school: university.school || record.school || "",
         schoolZh: university.schoolZh || record.schoolZh || "",
-        schoolAliasesZh: university.schoolAliasesZh || record.schoolAliasesZh || [],
+        schoolAliasesZh:
+          university.schoolAliasesZh || record.schoolAliasesZh || [],
         qsRank: university.qsRank || record.qsRank || 999,
         country: university.country || record.country || "",
         region: university.region || record.region || "",
@@ -2282,7 +1770,9 @@ async function init() {
           program.name ||
           programmeGroup.name ||
           record.program ||
-          (record.scopeType === "institution" ? t("institutionWindow") : record.scopeId),
+          (record.scopeType === "institution"
+            ? t("institutionWindow")
+            : record.scopeId),
       };
     };
     const officialRecords = payload.applications.map((record) =>
@@ -2375,6 +1865,7 @@ async function init() {
     setupHero();
     setupSubscription();
     bindEvents();
+    initAuth({ render, updateFavoriteControls, updateReviewAuthState });
     setupAuthPanel();
     setupReviewPanel();
     setupWindowDetailPanel();
