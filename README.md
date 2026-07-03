@@ -9,7 +9,7 @@
 
 A QS Top 200 master's application tracker using official university sources. The tables below show only applications that are open now or scheduled to open within 30 days.
 
-Status date: **2026-06-29**
+Status date: **2026-07-01**
 
 > **Estimate** means the date is shifted from the latest verified cycle and is not an official forecast. Always confirm dates on the linked university source.
 
@@ -17,6 +17,7 @@ Status date: **2026-06-29**
 
 | QS | University | Programme / scope | Applicant category | Intake | Opens | Deadline | Data | Links |
 |---:|---|---|---|---|---|---|---|---|
+| 1 | Massachusetts Institute of Technology (MIT) | MIT-WHOI Joint Program in Oceanography / Applied Ocean Science and Engineering | All applicants | September 2027 | 2026-07-01 | 2026-10-01 | Official | [Apply](https://oge.mit.edu/programs/mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering/) · [Source](https://oge.mit.edu/graduate-admissions/programs/masters-degrees/) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Massachusetts%20Institute%20of%20Technology%20%28MIT%29%20MIT-WHOI%20Joint%20Program%20in%20Oceanography%20/%20Applied%20Ocean%20Science%20and%20Engineering%20application%20deadline&dates=20261001%2F20261002) |
 | =8 | UCL | Advanced Materials Science MSc | Applicants not requiring a UK Student visa | September 2026 | 2025-10-20 | 2026-08-28 | Official | [Apply](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc) · [Source](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Advanced%20Materials%20Science%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL | Computer Science MSc | Applicants not requiring a UK Student visa | September 2026 | 2025-10-20 | 2026-08-28 | Official | [Apply](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc) · [Source](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Computer%20Science%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL | Data Science MSc | Applicants not requiring a UK Student visa | September 2026 | 2025-10-20 | 2026-08-28 | Official | [Apply](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc) · [Source](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Data%20Science%20MSc%20application%20deadline&dates=20260828%2F20260829) |

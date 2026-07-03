@@ -9,7 +9,7 @@
 
 基于大学官网数据的 QS 前 200 硕士申请追踪项目。下面只展示当前正在开放，以及未来 30 天内即将开放的申请窗口。
 
-状态日期：**2026-06-29**
+状态日期：**2026-07-01**
 
 > **预测参考**表示日期由最近一个官网核验周期平移一年得到，不是学校官方预测。申请前请始终核对表格中的官网来源。
 
@@ -17,6 +17,7 @@
 
 | QS | 大学 | 项目 / 范围 | 申请人类别 | 入学季 | 开放日期 | 截止日期 | 数据类型 | 链接 |
 |---:|---|---|---|---|---|---|---|---|
+| 1 | Massachusetts Institute of Technology (MIT) / 麻省理工学院 | MIT-WHOI Joint Program in Oceanography / Applied Ocean Science and Engineering | 所有申请人 | September 2027 | 2026-07-01 | 2026-10-01 | 官网核验 | [申请](https://oge.mit.edu/programs/mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering/) · [来源](https://oge.mit.edu/graduate-admissions/programs/masters-degrees/) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Massachusetts%20Institute%20of%20Technology%20%28MIT%29%20MIT-WHOI%20Joint%20Program%20in%20Oceanography%20/%20Applied%20Ocean%20Science%20and%20Engineering%20application%20deadline&dates=20261001%2F20261002) |
 | =8 | UCL / 伦敦大学学院 | Advanced Materials Science MSc | 无需英国学生签证 | September 2026 | 2025-10-20 | 2026-08-28 | 官网核验 | [申请](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc) · [来源](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/advanced-materials-science-msc) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Advanced%20Materials%20Science%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL / 伦敦大学学院 | Computer Science MSc | 无需英国学生签证 | September 2026 | 2025-10-20 | 2026-08-28 | 官网核验 | [申请](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc) · [来源](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/computer-science-msc) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Computer%20Science%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL / 伦敦大学学院 | Data Science MSc | 无需英国学生签证 | September 2026 | 2025-10-20 | 2026-08-28 | 官网核验 | [申请](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc) · [来源](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/data-science-msc) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Data%20Science%20MSc%20application%20deadline&dates=20260828%2F20260829) |

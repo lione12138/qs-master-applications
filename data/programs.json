@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
-    "updatedAt": "2026-06-29",
+    "updatedAt": "2026-07-01",
     "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "programs": [
@@ -2014,6 +2014,195 @@
       "programmeGroupId": "ncku-international-degree-admissions",
       "applicationUrl": "https://management.oia.ncku.edu.tw/intladmission/index/index/applyIntladmissionSn/28",
       "sourceUrl": "https://oia.ncku.edu.tw/p/404-1032-230753.php?Lang=en"
+    },
+    {
+      "id": "mit-aeronautics-and-astronautics-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Aeronautics and Astronautics",
+      "degreeType": "Master",
+      "faculty": "Aeronautics and Astronautics",
+      "applicationUrl": "https://oge.mit.edu/programs/aeronautics-and-astronautics/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-architecture-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Architecture",
+      "degreeType": "Master",
+      "faculty": "Architecture",
+      "applicationUrl": "https://oge.mit.edu/programs/architecture/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-center-for-real-estate-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Center for Real Estate",
+      "degreeType": "Master",
+      "faculty": "Center for Real Estate",
+      "applicationUrl": "https://oge.mit.edu/programs/center-for-real-estate/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-chemical-engineering-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Chemical Engineering",
+      "degreeType": "Master",
+      "faculty": "Chemical Engineering",
+      "applicationUrl": "https://oge.mit.edu/programs/chemical-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-civil-and-environmental-engineering-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Civil and Environmental Engineering",
+      "degreeType": "Master",
+      "faculty": "Civil and Environmental Engineering",
+      "applicationUrl": "https://oge.mit.edu/programs/civil-and-environmental-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-data-economics-and-design-of-policy-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Data, Economics, and Design of Policy",
+      "degreeType": "Master",
+      "faculty": "Data, Economics, and Design of Policy",
+      "applicationUrl": "https://oge.mit.edu/programs/data-economics-and-development-policy/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-earth-atmospheric-and-planetary-sciences-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Earth, Atmospheric, and Planetary Sciences",
+      "degreeType": "Master",
+      "faculty": "Earth, Atmospheric, and Planetary Sciences",
+      "applicationUrl": "https://oge.mit.edu/programs/earth-atmospheric-and-planetary-sciences/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-materials-science-and-engineering-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Materials Science and Engineering",
+      "degreeType": "Master",
+      "faculty": "Materials Science and Engineering",
+      "applicationUrl": "https://oge.mit.edu/programs/materials-science-and-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-mechanical-engineering-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Mechanical Engineering",
+      "degreeType": "Master",
+      "faculty": "Mechanical Engineering",
+      "applicationUrl": "https://oge.mit.edu/programs/mechanical-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-media-arts-and-sciences-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Media Arts and Sciences",
+      "degreeType": "Master",
+      "faculty": "Media Arts and Sciences",
+      "applicationUrl": "https://oge.mit.edu/programs/media-arts-and-sciences/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-music-technology-and-computation-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Music Technology and Computation",
+      "degreeType": "Master",
+      "faculty": "Music Technology and Computation",
+      "applicationUrl": "https://oge.mit.edu/programs/music-technology-and-computation/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-nuclear-science-and-engineering-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Nuclear Science and Engineering",
+      "degreeType": "Master",
+      "faculty": "Nuclear Science and Engineering",
+      "applicationUrl": "https://oge.mit.edu/programs/nuclear-science-and-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-operations-research-center-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Operations Research Center",
+      "degreeType": "Master",
+      "faculty": "Operations Research Center",
+      "applicationUrl": "https://oge.mit.edu/programs/operations-research-center/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-political-science-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Political Science",
+      "degreeType": "Master",
+      "faculty": "Political Science",
+      "applicationUrl": "https://oge.mit.edu/programs/political-science/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-science-writing-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Science Writing",
+      "degreeType": "Master",
+      "faculty": "Science Writing",
+      "applicationUrl": "https://oge.mit.edu/programs/science-writing/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-supply-chain-management-blended-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Supply Chain Management Blended",
+      "degreeType": "Master",
+      "faculty": "Supply Chain Management Blended",
+      "applicationUrl": "https://oge.mit.edu/programs/supply-chain-management-blended/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-supply-chain-management-residential-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Supply Chain Management Residential",
+      "degreeType": "Master",
+      "faculty": "Supply Chain Management Residential",
+      "applicationUrl": "https://oge.mit.edu/programs/supply-chain-management-residential/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-technology-and-policy-program-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Technology and Policy Program",
+      "degreeType": "Master",
+      "faculty": "Technology and Policy Program",
+      "applicationUrl": "https://oge.mit.edu/programs/technology-and-policy-program/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-transportation-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Transportation",
+      "degreeType": "Master",
+      "faculty": "Transportation",
+      "applicationUrl": "https://oge.mit.edu/programs/transportation/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-urban-studies-and-planning-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "Urban Studies and Planning",
+      "degreeType": "Master",
+      "faculty": "Urban Studies and Planning",
+      "applicationUrl": "https://oge.mit.edu/programs/urban-studies-and-planning/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+    },
+    {
+      "id": "mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "name": "MIT-WHOI Joint Program in Oceanography / Applied Ocean Science and Engineering",
+      "degreeType": "Master",
+      "faculty": "MIT-WHOI Joint Program in Oceanography / Applied Ocean Science and Engineering",
+      "applicationUrl": "https://oge.mit.edu/programs/mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
     }
   ]
 }

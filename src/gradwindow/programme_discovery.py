@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
 import hashlib
 import json
+from collections.abc import Callable
+from datetime import datetime, timezone
 from pathlib import Path
-from typing import Callable
 
 from .http_client import DEFAULT_USER_AGENT, fetch_page
 from .io import read_json, write_json
@@ -29,7 +29,11 @@ def discover_programmes(
     dry_run: bool = False,
 ) -> dict:
     checked_at = datetime.now(timezone.utc).isoformat()
-    catalog = adapter.parse_catalog(fetcher(adapter.catalog_url))
+    parse_with_fetcher = getattr(adapter, "parse_catalog_from_fetcher", None)
+    if callable(parse_with_fetcher):
+        catalog = parse_with_fetcher(fetcher)
+    else:
+        catalog = adapter.parse_catalog(fetcher(adapter.catalog_url))
     programs_payload = read_json(programs_path)
     known_ids = {
         item["id"]
@@ -153,7 +157,7 @@ def _candidate_record(
 
     windows = [
         {
-            "intake": adapter.intake,
+            "intake": window.intake or adapter.intake,
             "round": window.round,
             "applicantCategories": window.applicant_categories,
             "opensAt": opening_for(window),

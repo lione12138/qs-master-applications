@@ -1,13 +1,12 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
 import re
 import unicodedata
+from datetime import datetime, timezone
 
 from bs4 import BeautifulSoup
 
 from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
-
 
 CATALOG_URL = "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
 UNIVERSITY_ID = "massachusetts-institute-of-technology-mit"
@@ -74,9 +73,7 @@ class MITAdapter:
                 opening=opening,
             )
             opens_at = (
-                _application_date(opening, self.intake_year - 1)
-                if opening
-                else None
+                _application_date(opening, self.intake_year - 1) if opening else None
             )
             windows.append(
                 DiscoveredWindow(
@@ -184,12 +181,12 @@ def _programme_id(name: str) -> str:
 
 
 def _slug(value: str) -> str:
-    ascii_value = unicodedata.normalize("NFKD", value).encode(
-        "ascii", "ignore"
-    ).decode("ascii")
-    return re.sub(
-        r"-+", "-", re.sub(r"[^a-z0-9]+", "-", ascii_value.lower())
-    ).strip("-")
+    ascii_value = (
+        unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
+    )
+    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", ascii_value.lower())).strip(
+        "-"
+    )
 
 
 def _normalise_text(value: str) -> str:

@@ -5,7 +5,6 @@ import pytest
 from gradwindow.programme_adapters.mit import MITAdapter
 from gradwindow.programme_discovery import discover_programmes
 
-
 MIT_HTML = """
 <html><body><table class="w-100">
   <thead><tr>
@@ -31,13 +30,17 @@ def test_mit_adapter_extracts_cycle_dates_and_multiple_rounds() -> None:
         intake_year=2027,
     ).parse_catalog(MIT_HTML)
 
-    architecture = next(item for item in catalog.programmes if "architecture" in item.id)
+    architecture = next(
+        item for item in catalog.programmes if "architecture" in item.id
+    )
     assert architecture.application_url.endswith("/architecture/")
     assert [(item.opens_at, item.closes_at) for item in architecture.windows] == [
         ("2026-10-01", "2027-01-07")
     ]
 
-    mba = next(item for item in catalog.programmes if item.name == "MIT Sloan MBA Program")
+    mba = next(
+        item for item in catalog.programmes if item.name == "MIT Sloan MBA Program"
+    )
     assert mba.degree_type == "MBA"
     assert mba.parse_status == "incomplete"
     assert [item.round for item in mba.windows] == ["Round 1", "Round 2", "Round 3"]
@@ -67,7 +70,7 @@ def test_mit_adapter_rejects_missing_or_implausibly_small_catalog() -> None:
 
     with pytest.raises(ValueError, match="catalog only contained"):
         MITAdapter(minimum_expected_programmes=25, intake_year=2027).parse_catalog(
-        MIT_HTML
+            MIT_HTML
         )
 
 
@@ -91,7 +94,11 @@ def test_mit_discovery_keeps_inexact_openings_for_review(tmp_path) -> None:
     import json
 
     candidates = json.loads(candidates_path.read_text(encoding="utf-8"))["items"]
-    mba = next(item for item in candidates if item["programme"]["id"] == "mit-sloan-mba-program-masters")
+    mba = next(
+        item
+        for item in candidates
+        if item["programme"]["id"] == "mit-sloan-mba-program-masters"
+    )
     assert {window["intake"] for window in mba["windows"]} == {"September 2027"}
     assert all(window["opensAt"] is None for window in mba["windows"])
     assert "not published as an exact date" in mba["reviewReason"]

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Estimated next-cycle application windows",
-    "generatedFromApplicationsUpdatedAt": "2026-06-29T00:00:00Z",
+    "generatedFromApplicationsUpdatedAt": "2026-07-01T00:00:00Z",
     "official": false,
     "methodology": "calendar-date-shift-plus-one-year",
     "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
@@ -423,6 +423,756 @@
       "sourceUrl": "https://www.i.kyoto-u.ac.jp/assets/pdf/admission/application/master-2027-4-en.pdf",
       "sourceCycle": "April 2027",
       "basedOnVerifiedAt": "2026-06-15",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters-2027-round-1-next-cycle",
+      "basedOnRecordId": "mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters-2027-round-1",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Round 1",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-07-01",
+      "closesAt": "2027-10-01",
+      "applicationUrl": "https://oge.mit.edu/programs/mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-supply-chain-management-residential-masters-2027-round-1-next-cycle",
+      "basedOnRecordId": "mit-supply-chain-management-residential-masters-2027-round-1",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-supply-chain-management-residential-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Round 1",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-03",
+      "closesAt": "2027-11-01",
+      "applicationUrl": "https://oge.mit.edu/programs/supply-chain-management-residential/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-aeronautics-and-astronautics-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-aeronautics-and-astronautics-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-aeronautics-and-astronautics-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-01",
+      "closesAt": "2027-12-01",
+      "applicationUrl": "https://oge.mit.edu/programs/aeronautics-and-astronautics/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-chemical-engineering-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-chemical-engineering-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-chemical-engineering-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-15",
+      "closesAt": "2027-12-01",
+      "applicationUrl": "https://oge.mit.edu/programs/chemical-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-materials-science-and-engineering-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-materials-science-and-engineering-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-materials-science-and-engineering-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-01",
+      "closesAt": "2027-12-01",
+      "applicationUrl": "https://oge.mit.edu/programs/materials-science-and-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters-2027-round-2-next-cycle",
+      "basedOnRecordId": "mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters-2027-round-2",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Round 2",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-01",
+      "closesAt": "2027-12-01",
+      "applicationUrl": "https://oge.mit.edu/programs/mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-civil-and-environmental-engineering-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-civil-and-environmental-engineering-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-civil-and-environmental-engineering-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-15",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/civil-and-environmental-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-earth-atmospheric-and-planetary-sciences-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-earth-atmospheric-and-planetary-sciences-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-earth-atmospheric-and-planetary-sciences-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-01",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/earth-atmospheric-and-planetary-sciences/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-mechanical-engineering-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-mechanical-engineering-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-mechanical-engineering-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-15",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/mechanical-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-media-arts-and-sciences-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-media-arts-and-sciences-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-media-arts-and-sciences-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-15",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/media-arts-and-sciences/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-nuclear-science-and-engineering-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-nuclear-science-and-engineering-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-nuclear-science-and-engineering-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-15",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/nuclear-science-and-engineering/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-operations-research-center-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-operations-research-center-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-operations-research-center-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-01",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/operations-research-center/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-political-science-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-political-science-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-political-science-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-01",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/political-science/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-technology-and-policy-program-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-technology-and-policy-program-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-technology-and-policy-program-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-15",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/technology-and-policy-program/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-transportation-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-transportation-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-transportation-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-15",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/transportation/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-urban-studies-and-planning-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-urban-studies-and-planning-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-urban-studies-and-planning-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-01",
+      "closesAt": "2027-12-15",
+      "applicationUrl": "https://oge.mit.edu/programs/urban-studies-and-planning/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-music-technology-and-computation-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-music-technology-and-computation-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-music-technology-and-computation-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-01",
+      "closesAt": "2027-12-22",
+      "applicationUrl": "https://oge.mit.edu/programs/music-technology-and-computation/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-architecture-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-architecture-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-architecture-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-01",
+      "closesAt": "2028-01-07",
+      "applicationUrl": "https://oge.mit.edu/programs/architecture/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-center-for-real-estate-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-center-for-real-estate-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-center-for-real-estate-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-01",
+      "closesAt": "2028-01-07",
+      "applicationUrl": "https://oge.mit.edu/programs/center-for-real-estate/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-supply-chain-management-blended-masters-2027-round-1-next-cycle",
+      "basedOnRecordId": "mit-supply-chain-management-blended-masters-2027-round-1",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-supply-chain-management-blended-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Round 1",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-03",
+      "closesAt": "2028-01-09",
+      "applicationUrl": "https://oge.mit.edu/programs/supply-chain-management-blended/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-data-economics-and-design-of-policy-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-data-economics-and-design-of-policy-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-data-economics-and-design-of-policy-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-11-01",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://oge.mit.edu/programs/data-economics-and-development-policy/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-science-writing-masters-2027-main-deadline-next-cycle",
+      "basedOnRecordId": "mit-science-writing-masters-2027-main-deadline",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-science-writing-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-01",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://oge.mit.edu/programs/science-writing/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-supply-chain-management-residential-masters-2027-round-2-next-cycle",
+      "basedOnRecordId": "mit-supply-chain-management-residential-masters-2027-round-2",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-supply-chain-management-residential-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Round 2",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-03",
+      "closesAt": "2028-01-31",
+      "applicationUrl": "https://oge.mit.edu/programs/supply-chain-management-residential/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-supply-chain-management-residential-masters-2027-round-3-next-cycle",
+      "basedOnRecordId": "mit-supply-chain-management-residential-masters-2027-round-3",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-supply-chain-management-residential-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Round 3",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-03",
+      "closesAt": "2028-03-31",
+      "applicationUrl": "https://oge.mit.edu/programs/supply-chain-management-residential/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-mit-supply-chain-management-blended-masters-2027-round-2-next-cycle",
+      "basedOnRecordId": "mit-supply-chain-management-blended-masters-2027-round-2",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "scopeType": "programme",
+      "scopeId": "mit-supply-chain-management-blended-masters",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Round 2",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-09-03",
+      "closesAt": "2028-06-19",
+      "applicationUrl": "https://oge.mit.edu/programs/supply-chain-management-blended/",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-01",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,

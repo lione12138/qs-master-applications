@@ -6,26 +6,31 @@ import sys
 from pathlib import Path
 
 from .approvals import approve_window
-from .deadlines import update_deadlines
 from .coverage import generate_coverage
-from .monitor import monitor_universities, print_summary
+from .deadlines import update_deadlines
 from .intakes import migrate_application_intakes
+from .monitor import monitor_universities, print_summary
 from .paths import APPLICATION_SOURCE_STATE_PATH, SITE_DIR
 from .predictions import generate_predictions
-from .source_monitor import monitor_application_sources
-from .site import build_site
-from .validation import validate_data
-from .review import generate_review_outputs
-from .readme import generate_readmes
-from .schemas import export_schemas
+from .programme_adapters.cambridge import CambridgeAdapter
 from .programme_adapters.cuhk import CUHKAdapter
+from .programme_adapters.glasgow import GlasgowAdapter
 from .programme_adapters.mit import MITAdapter
+from .programme_adapters.polyu import PolyUAdapter
 from .programme_discovery import discover_programmes
-
+from .readme import generate_readmes
+from .review import generate_review_outputs
+from .schemas import export_schemas
+from .site import build_site
+from .source_monitor import monitor_application_sources
+from .validation import validate_data
 
 PROGRAMME_ADAPTERS = {
+    "cambridge": CambridgeAdapter,
     "cuhk": CUHKAdapter,
+    "glasgow": GlasgowAdapter,
     "mit": MITAdapter,
+    "polyu": PolyUAdapter,
 }
 
 
@@ -70,7 +75,9 @@ def main() -> None:
     subparsers.add_parser(
         "export-schemas", help="Export Pydantic contracts as JSON Schema"
     )
-    subparsers.add_parser("readme", help="Generate English and Chinese result dashboards")
+    subparsers.add_parser(
+        "readme", help="Generate English and Chinese result dashboards"
+    )
     approve = subparsers.add_parser(
         "approve-window", help="Promote a reviewed exact-window candidate"
     )
@@ -106,15 +113,11 @@ def main() -> None:
         print(json.dumps(coverage["summary"], ensure_ascii=False))
     elif args.command == "predictions":
         predictions = generate_predictions()
-        print(
-            f"Wrote {len(predictions['predictions'])} non-official predictions."
-        )
+        print(f"Wrote {len(predictions['predictions'])} non-official predictions.")
     elif args.command == "migrate-intakes":
         payload = migrate_application_intakes()
         generate_predictions()
-        print(
-            f"Migrated {len(payload['applications'])} structured intake records."
-        )
+        print(f"Migrated {len(payload['applications'])} structured intake records.")
     elif args.command == "export-schemas":
         written = export_schemas()
         print(f"Wrote {len(written)} JSON Schema files.")

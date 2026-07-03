@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 import shutil
 import subprocess
-
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -37,4 +36,4 @@ def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
         text=True,
     )
 
-    assert json.loads(result.stdout) == {"the": 118, "arwu": 98}
+    assert json.loads(result.stdout) == {"the": 168, "arwu": 148}

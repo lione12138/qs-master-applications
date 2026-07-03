@@ -1,13 +1,12 @@
 from __future__ import annotations
 
-from datetime import datetime
 import re
 import unicodedata
+from datetime import datetime
 
 from bs4 import BeautifulSoup
 
 from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
-
 
 CATALOG_URL = "https://www.gs.cuhk.edu.hk/admissions/application-deadline"
 APPLICATION_URL = "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx"
@@ -58,15 +57,11 @@ class CUHKAdapter:
                 )
                 if department_node is None:
                     continue
-                department = _normalise_text(
-                    department_node.get_text(" ", strip=True)
-                )
+                department = _normalise_text(department_node.get_text(" ", strip=True))
                 content = division.select_one(":scope > .collapse-item-content")
                 if content is None:
                     continue
-                programmes.extend(
-                    self._parse_department(content, faculty, department)
-                )
+                programmes.extend(self._parse_department(content, faculty, department))
 
         unique = {item.id: item for item in programmes}
         programmes = sorted(unique.values(), key=lambda item: item.id)
@@ -129,7 +124,10 @@ def _parse_windows(node) -> list[DiscoveredWindow]:
     for raw_segment in node.stripped_strings:
         segment = _normalise_text(str(raw_segment))
         lowered = segment.lower()
-        if "applications submitted" in lowered or "applications may be submitted" in lowered:
+        if (
+            "applications submitted" in lowered
+            or "applications may be submitted" in lowered
+        ):
             continue
         match = DATE_RE.search(segment)
         if match is None:
@@ -212,9 +210,9 @@ def _programme_id(title: str) -> str:
 
 
 def _slug(value: str) -> str:
-    ascii_value = unicodedata.normalize("NFKD", value).encode(
-        "ascii", "ignore"
-    ).decode("ascii")
+    ascii_value = (
+        unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode("ascii")
+    )
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", ascii_value.lower())).strip(
         "-"
     )

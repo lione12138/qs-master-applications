@@ -7,7 +7,6 @@ import pytest
 from gradwindow.programme_adapters.cuhk import CUHKAdapter
 from gradwindow.programme_discovery import discover_programmes
 
-
 CUHK_HTML = """
 <html><body>
   <p>Application Commencement Date*: 1 September 2025 at 09:00 a.m.</p>
@@ -86,9 +85,7 @@ def test_cuhk_adapter_extracts_only_masters_and_deadline_rounds() -> None:
     ]
     assert ai.faculty == "Faculty of Engineering"
     assert ai.department == "Computer Science and Engineering"
-    accountancy = next(
-        item for item in catalog.programmes if "accountancy" in item.id
-    )
+    accountancy = next(item for item in catalog.programmes if "accountancy" in item.id)
     assert accountancy.windows == []
     assert accountancy.parse_status == "no-deadline"
 
