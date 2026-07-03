@@ -31,9 +31,7 @@ def test_http_url_validation() -> None:
 def test_validation_rejects_cross_university_programme_scope(tmp_path) -> None:
     payload = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))
     record = payload["applications"][0]
-    record["universityId"] = (
-        "eth-zurich-swiss-federal-institute-of-technology"
-    )
+    record["universityId"] = "eth-zurich-swiss-federal-institute-of-technology"
     applications_path = tmp_path / "applications.json"
     predictions_path = tmp_path / "predictions.json"
     applications_path.write_text(json.dumps(payload), encoding="utf-8")
@@ -43,7 +41,9 @@ def test_validation_rejects_cross_university_programme_scope(tmp_path) -> None:
         applications_path=applications_path,
         predictions_path=predictions_path,
     )
-    assert any("programme scope belongs to another university" in error for error in errors)
+    assert any(
+        "programme scope belongs to another university" in error for error in errors
+    )
 
 
 def test_validation_rejects_duplicate_semantic_window(tmp_path) -> None:
@@ -92,6 +92,5 @@ def test_validation_rejects_orphan_programme_group_scope(tmp_path) -> None:
         predictions_path=predictions_path,
     )
     assert any(
-        "programme-group scope references an unknown group" in error
-        for error in errors
+        "programme-group scope references an unknown group" in error for error in errors
     )

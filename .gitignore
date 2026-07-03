@@ -4,10 +4,12 @@ __pycache__/
 .idea/
 .vscode/
 .claude/
+.codex/
 data/ops/monitor-report.json
 .venv/
 .pytest_cache/
 *.egg-info/
+node_modules/
 site/
 .reference-research-school-radar/
 subscriptions/wrangler.toml

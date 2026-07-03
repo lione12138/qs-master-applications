@@ -1,17 +1,15 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 import shutil
 import subprocess
+from pathlib import Path
 
 
 def test_frontend_distinguishes_blocked_crawlers_from_manual_checks() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend exception tests"
-    module_uri = (
-        Path(__file__).parents[1] / "exception-status.js"
-    ).resolve().as_uri()
+    module_uri = (Path(__file__).parents[1] / "exception-status.js").resolve().as_uri()
     script = f"""
       import {{ needsManualCheck }} from {json.dumps(module_uri)};
       console.log(JSON.stringify({{

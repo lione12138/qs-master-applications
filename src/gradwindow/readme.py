@@ -9,8 +9,8 @@ from .paths import (
     APPLICANT_CATEGORIES_PATH,
     APPLICATIONS_PATH,
     PREDICTIONS_PATH,
-    PROGRAMS_PATH,
     PROGRAMME_GROUPS_PATH,
+    PROGRAMS_PATH,
     ROOT,
     UNIVERSITIES_PATH,
 )
@@ -43,9 +43,9 @@ def generate_readmes(today: date | None = None) -> tuple[Path, Path]:
     program_names = {item["id"]: item["name"] for item in programs}
     group_names = {item["id"]: item["name"] for item in groups}
     category_names = {item["id"]: item for item in categories}
-    records = [
-        {**item, "dataStatus": "official"} for item in applications
-    ] + [{**item, "dataStatus": "predicted"} for item in predictions]
+    records = [{**item, "dataStatus": "official"} for item in applications] + [
+        {**item, "dataStatus": "predicted"} for item in predictions
+    ]
     records.sort(
         key=lambda item: (
             university_by_id[item["universityId"]]["qsPosition"],
@@ -53,13 +53,9 @@ def generate_readmes(today: date | None = None) -> tuple[Path, Path]:
         )
     )
 
-    active = [
-        item for item in records if application_status(item, today) == "open"
-    ]
+    active = [item for item in records if application_status(item, today) == "open"]
     upcoming = [
-        item
-        for item in records
-        if application_status(item, today) == "upcoming"
+        item for item in records if application_status(item, today) == "upcoming"
     ]
     README_PATH.write_text(
         _render_readme(
@@ -108,9 +104,7 @@ def _calendar_url(item: dict, university: dict, programme: str) -> str:
     end = date.fromisoformat(item["closesAt"]).toordinal() + 1
     end_value = date.fromordinal(end).isoformat().replace("-", "")
     prefix = "[ESTIMATE] " if item["dataStatus"] == "predicted" else ""
-    title = quote(
-        f"{prefix}{university['school']} {programme} application deadline"
-    )
+    title = quote(f"{prefix}{university['school']} {programme} application deadline")
     return (
         "https://calendar.google.com/calendar/render?action=TEMPLATE"
         f"&text={title}&dates={start}%2F{end_value}"
@@ -134,10 +128,12 @@ def _table(
         empty = "_No matching windows today._"
         official = "Official"
         estimate = "Estimate"
-        links = lambda item, calendar: (
-            f"[Apply]({item['applicationUrl']}) · "
-            f"[Source]({item['sourceUrl']}) · [Calendar]({calendar})"
-        )
+
+        def links(item, calendar):
+            return (
+                f"[Apply]({item['applicationUrl']}) · "
+                f"[Source]({item['sourceUrl']}) · [Calendar]({calendar})"
+            )
     else:
         header = (
             "| QS | 大学 | 项目 / 范围 | 申请人类别 | 入学季 | 开放日期 | "
@@ -147,19 +143,22 @@ def _table(
         empty = "_今天没有符合条件的窗口。_"
         official = "官网核验"
         estimate = "预测参考"
-        links = lambda item, calendar: (
-            f"[申请]({item['applicationUrl']}) · "
-            f"[来源]({item['sourceUrl']}) · [日历]({calendar})"
-        )
+
+        def links(item, calendar):
+            return (
+                f"[申请]({item['applicationUrl']}) · "
+                f"[来源]({item['sourceUrl']}) · [日历]({calendar})"
+            )
+
     if not records:
         return empty
 
     rows = [header]
     for item in records:
         university = university_by_id[item["universityId"]]
-        programme = _scope_name(
-            item, program_names, group_names, language
-        ).replace("|", "\\|")
+        programme = _scope_name(item, program_names, group_names, language).replace(
+            "|", "\\|"
+        )
         university_name = (
             f"{university['school']} / {university['schoolZh']}"
             if language == "zh" and university.get("schoolZh")

@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+import re
 from calendar import monthrange
 from datetime import date
 from pathlib import Path
-import re
 
 from .intakes import intake_identity, parse_intake_details
 from .io import read_json, write_json
@@ -15,6 +15,8 @@ PREDICTION_DISCLAIMER = (
     "dates are moved forward exactly one calendar year. It is not a forecast "
     "of the university's actual dates; weekdays and policies may change."
 )
+
+
 def shift_date_one_year(value: str) -> str:
     original = date.fromisoformat(value)
     day = min(original.day, monthrange(original.year + 1, original.month)[1])
@@ -70,7 +72,7 @@ def prediction_confidence(history: list[dict]) -> tuple[str, str]:
         return "low", "Only one verified historical cycle is available."
     ordered = sorted(history, key=lambda item: (item["closesAt"], item["id"]))
     stable_pairs = 0
-    for previous, current in zip(ordered, ordered[1:]):
+    for previous, current in zip(ordered, ordered[1:], strict=False):
         if (
             shift_date_one_year(previous["opensAt"]) == current["opensAt"]
             and shift_date_one_year(previous["closesAt"]) == current["closesAt"]
@@ -137,9 +139,7 @@ def generate_predictions(
             "basedOnVerifiedAt": source["verifiedAt"],
             "confidence": confidence,
             "confidenceReason": confidence_reason,
-            "evidenceCycleCount": len(
-                history_by_signature[window_signature(source)]
-            ),
+            "evidenceCycleCount": len(history_by_signature[window_signature(source)]),
             "methodology": PREDICTION_METHOD,
             "disclaimer": PREDICTION_DISCLAIMER,
         }

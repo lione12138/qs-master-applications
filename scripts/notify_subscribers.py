@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import json
 import os
+import sys
 from datetime import date
 from pathlib import Path
-import sys
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -20,12 +20,10 @@ def read_json(name: str) -> dict:
 def current_open_events(today: date | None = None) -> list[dict]:
     today = today or date.today()
     universities = {
-        item["id"]: item
-        for item in read_json("universities.json")["universities"]
+        item["id"]: item for item in read_json("universities.json")["universities"]
     }
     programs = {
-        item["id"]: item["name"]
-        for item in read_json("programs.json")["programs"]
+        item["id"]: item["name"] for item in read_json("programs.json")["programs"]
     }
     groups = {
         item["id"]: item["name"]

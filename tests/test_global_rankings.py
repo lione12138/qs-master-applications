@@ -1,10 +1,9 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 import shutil
 import subprocess
-
+from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -38,9 +37,7 @@ ARWU_SHARED_UNIVERSITIES = {
         "nanyang-technological-university-singapore-ntu-singapore"
     ),
     "Moscow State University": "lomonosov-moscow-state-university",
-    "Pennsylvania State University, University Park": (
-        "pennsylvania-state-university"
-    ),
+    "Pennsylvania State University, University Park": ("pennsylvania-state-university"),
     "Purdue University, West Lafayette": "purdue-university",
     "University of Sao Paulo": "universidade-de-s-o-paulo-usp",
     "University of Barcelona": "university-of-barcelona",
@@ -65,12 +62,8 @@ THE_SHARED_UNIVERSITIES = {
     "University of Bologna": "alma-mater-studiorum-university-of-bologna",
     "University of Barcelona": "university-of-barcelona",
     "Technical University of Berlin": "technische-universit-t-berlin",
-    "Karlsruhe Institute of Technology": (
-        "karlsruhe-institute-of-technology-kit"
-    ),
-    "Trinity College Dublin": (
-        "trinity-college-dublin-the-university-of-dublin"
-    ),
+    "Karlsruhe Institute of Technology": ("karlsruhe-institute-of-technology-kit"),
+    "Trinity College Dublin": ("trinity-college-dublin-the-university-of-dublin"),
     "TU Dresden": "technische-universitat-dresden",
     "King Fahd University of Petroleum and Minerals": (
         "king-fahd-university-of-petroleum-and-minerals"
@@ -135,9 +128,7 @@ def test_ranking_importer_maps_shared_schools_to_canonical_universities(
                 "props": {
                     "pageProps": {
                         "page": {
-                            "rankingsTableConfig": {
-                                "rankingsData": {"data": the_rows}
-                            }
+                            "rankingsTableConfig": {"rankingsData": {"data": the_rows}}
                         }
                     }
                 }
@@ -180,14 +171,10 @@ def test_ranking_importer_maps_shared_schools_to_canonical_universities(
     )
 
     rankings = json.loads(output.read_text(encoding="utf-8"))["rankings"]
-    arwu_by_university = {
-        row["universityId"]: row for row in rankings["arwu"]["rows"]
-    }
+    arwu_by_university = {row["universityId"]: row for row in rankings["arwu"]["rows"]}
     for university_id in ARWU_SHARED_UNIVERSITIES.values():
         assert arwu_by_university[university_id]["rankingOnly"] is False
-    the_by_university = {
-        row["universityId"]: row for row in rankings["the"]["rows"]
-    }
+    the_by_university = {row["universityId"]: row for row in rankings["the"]["rows"]}
     for university_id in THE_SHARED_UNIVERSITIES.values():
         assert the_by_university[university_id]["rankingOnly"] is False
 

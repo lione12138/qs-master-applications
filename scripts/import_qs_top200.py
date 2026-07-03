@@ -162,7 +162,9 @@ def main() -> int:
                 "id": slugify(name),
                 "qsRank": rank,
                 "qsPosition": position,
-                "rankDisplay": f"={rank}" if position > 1 and rank == universities[-1]["qsRank"] else str(rank),
+                "rankDisplay": f"={rank}"
+                if position > 1 and rank == universities[-1]["qsRank"]
+                else str(rank),
                 "school": name,
                 "schoolZh": "",
                 "country": country,

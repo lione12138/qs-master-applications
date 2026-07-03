@@ -5,7 +5,6 @@ import re
 import unicodedata
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -398,10 +397,7 @@ def normalized_key(value: str) -> str:
     value = unicodedata.normalize("NFKD", value)
     value = "".join(ch for ch in value if not unicodedata.combining(ch))
     value = (
-        value.replace("–", " ")
-        .replace("—", " ")
-        .replace("-", " ")
-        .replace("'", " ")
+        value.replace("–", " ").replace("—", " ").replace("-", " ").replace("'", " ")
     )
     return re.sub(r"[^a-zA-Z0-9]+", " ", value).strip().lower()
 
@@ -444,10 +440,14 @@ def update_universities() -> dict[str, dict]:
             missing.append(uid)
 
         if uid in QS_ALIASES_ZH:
-            aliases = cleaned_aliases(university.get("schoolZh", ""), QS_ALIASES_ZH[uid])
+            aliases = cleaned_aliases(
+                university.get("schoolZh", ""), QS_ALIASES_ZH[uid]
+            )
             if aliases:
                 university.pop("schoolAliasesZh", None)
-                university.update(insert_after(university, "schoolZh", "schoolAliasesZh", aliases))
+                university.update(
+                    insert_after(university, "schoolZh", "schoolAliasesZh", aliases)
+                )
         else:
             university.pop("schoolAliasesZh", None)
         by_id[uid] = university
@@ -462,7 +462,9 @@ def update_universities() -> dict[str, dict]:
 def update_global_rankings(universities_by_id: dict[str, dict]) -> None:
     path = ROOT / "data" / "global-rankings.json"
     payload = load_json(path)
-    global_names = {normalized_key(key): value for key, value in GLOBAL_SCHOOL_ZH.items()}
+    global_names = {
+        normalized_key(key): value for key, value in GLOBAL_SCHOOL_ZH.items()
+    }
     global_aliases = {
         normalized_key(key): value for key, value in GLOBAL_ALIASES_ZH.items()
     }
@@ -470,7 +472,9 @@ def update_global_rankings(universities_by_id: dict[str, dict]) -> None:
 
     for ranking in payload["rankings"].values():
         for row in ranking.get("rows", []):
-            university = universities_by_id.get(row.get("universityId") or row.get("id"))
+            university = universities_by_id.get(
+                row.get("universityId") or row.get("id")
+            )
             norm = normalized_key(row.get("school", ""))
 
             if university and university.get("schoolZh"):
@@ -492,7 +496,9 @@ def update_global_rankings(universities_by_id: dict[str, dict]) -> None:
                 aliases = cleaned_aliases(row.get("schoolZh", ""), global_aliases[norm])
                 if aliases:
                     row.pop("schoolAliasesZh", None)
-                    row.update(insert_after(row, "schoolZh", "schoolAliasesZh", aliases))
+                    row.update(
+                        insert_after(row, "schoolZh", "schoolAliasesZh", aliases)
+                    )
 
             if not row.get("schoolZh"):
                 missing.append(row.get("school", ""))

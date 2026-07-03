@@ -14,7 +14,7 @@ class FakeClient:
     def __init__(self, **kwargs) -> None:
         self.kwargs = kwargs
 
-    def __enter__(self) -> "FakeClient":
+    def __enter__(self) -> FakeClient:
         return self
 
     def __exit__(self, *args) -> None:

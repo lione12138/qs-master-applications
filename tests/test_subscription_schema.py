@@ -1,13 +1,13 @@
-from pathlib import Path
 import sqlite3
+from pathlib import Path
 
 import pytest
 
 
 def test_subscription_schema_and_delivery_cascades() -> None:
-    schema = (
-        Path(__file__).parents[1] / "subscriptions" / "schema.sql"
-    ).read_text(encoding="utf-8")
+    schema = (Path(__file__).parents[1] / "subscriptions" / "schema.sql").read_text(
+        encoding="utf-8"
+    )
     connection = sqlite3.connect(":memory:")
     connection.execute("PRAGMA foreign_keys = ON")
     connection.executescript(schema)
@@ -25,16 +25,14 @@ def test_subscription_schema_and_delivery_cascades() -> None:
         """INSERT INTO deliveries (event_key, email_hash, sent_at)
            VALUES ('event', 'subscriber', '2026-06-15T00:00:00Z')"""
     )
-    connection.execute(
-        "DELETE FROM subscribers WHERE email_hash = 'subscriber'"
-    )
+    connection.execute("DELETE FROM subscribers WHERE email_hash = 'subscriber'")
     assert connection.execute("SELECT COUNT(*) FROM deliveries").fetchone()[0] == 0
 
 
 def test_roadmap_schema_enforces_one_vote_per_anonymous_visitor() -> None:
-    schema = (
-        Path(__file__).parents[1] / "subscriptions" / "schema.sql"
-    ).read_text(encoding="utf-8")
+    schema = (Path(__file__).parents[1] / "subscriptions" / "schema.sql").read_text(
+        encoding="utf-8"
+    )
     connection = sqlite3.connect(":memory:")
     connection.execute("PRAGMA foreign_keys = ON")
     connection.executescript(schema)
@@ -51,9 +49,9 @@ def test_roadmap_schema_enforces_one_vote_per_anonymous_visitor() -> None:
 
 
 def test_university_comments_schema_stores_public_comments() -> None:
-    schema = (
-        Path(__file__).parents[1] / "subscriptions" / "schema.sql"
-    ).read_text(encoding="utf-8")
+    schema = (Path(__file__).parents[1] / "subscriptions" / "schema.sql").read_text(
+        encoding="utf-8"
+    )
     connection = sqlite3.connect(":memory:")
     connection.executescript(schema)
 
@@ -76,9 +74,9 @@ def test_university_comments_schema_stores_public_comments() -> None:
 
 
 def test_user_favorites_are_owned_by_account() -> None:
-    schema = (
-        Path(__file__).parents[1] / "subscriptions" / "schema.sql"
-    ).read_text(encoding="utf-8")
+    schema = (Path(__file__).parents[1] / "subscriptions" / "schema.sql").read_text(
+        encoding="utf-8"
+    )
     connection = sqlite3.connect(":memory:")
     connection.execute("PRAGMA foreign_keys = ON")
     connection.executescript(schema)
@@ -101,9 +99,9 @@ def test_user_favorites_are_owned_by_account() -> None:
 
 
 def test_auth_session_points_to_user() -> None:
-    schema = (
-        Path(__file__).parents[1] / "subscriptions" / "schema.sql"
-    ).read_text(encoding="utf-8")
+    schema = (Path(__file__).parents[1] / "subscriptions" / "schema.sql").read_text(
+        encoding="utf-8"
+    )
     connection = sqlite3.connect(":memory:")
     connection.execute("PRAGMA foreign_keys = ON")
     connection.executescript(schema)

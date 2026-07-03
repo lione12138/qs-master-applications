@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from pathlib import Path
 import re
+from pathlib import Path
 from urllib.parse import urlparse
 
 from pydantic import BaseModel, ValidationError
@@ -24,8 +24,8 @@ from .paths import (
     APPLICATIONS_PATH,
     EVIDENCE_DIR,
     PREDICTIONS_PATH,
-    PROGRAMS_PATH,
     PROGRAMME_GROUPS_PATH,
+    PROGRAMS_PATH,
     SOURCES_PATH,
     UNIVERSITIES_PATH,
     WINDOW_POLICIES_PATH,
@@ -188,11 +188,8 @@ def validate_data(
             and groups_by_id[group_id]["universityId"] != item["universityId"]
         ):
             errors.append(f"{label}: programme group belongs to another university")
-        if (
-            item["universityId"] in university_domains
-            and not same_official_domain(
-                item["sourceUrl"], university_domains[item["universityId"]]
-            )
+        if item["universityId"] in university_domains and not same_official_domain(
+            item["sourceUrl"], university_domains[item["universityId"]]
         ):
             errors.append(f"{label}: sourceUrl is outside official domains")
 
@@ -211,15 +208,11 @@ def validate_data(
         if scope_type not in WINDOW_SCOPE_TYPES:
             errors.append(f"{label}: invalid scopeType")
         if scope_type == "institution" and scope_id != item["universityId"]:
-            errors.append(
-                f"{label}: institution scopeId must match universityId"
-            )
+            errors.append(f"{label}: institution scopeId must match universityId")
         if scope_type == "programme" and scope_id not in program_ids:
             errors.append(f"{label}: programme scope references an unknown programme")
         if scope_type == "programme-group" and scope_id not in group_ids:
-            errors.append(
-                f"{label}: programme-group scope references an unknown group"
-            )
+            errors.append(f"{label}: programme-group scope references an unknown group")
         if (
             scope_type == "programme"
             and scope_id in programs_by_id
@@ -234,19 +227,14 @@ def validate_data(
             errors.append(
                 f"{label}: programme-group scope belongs to another university"
             )
-        unknown_categories = sorted(
-            set(item["applicantCategories"]) - category_ids
-        )
+        unknown_categories = sorted(set(item["applicantCategories"]) - category_ids)
         if unknown_categories:
             errors.append(
                 f"{label}: unknown applicant categories: "
                 f"{', '.join(unknown_categories)}"
             )
-        if (
-            item["universityId"] in university_domains
-            and not same_official_domain(
-                item["sourceUrl"], university_domains[item["universityId"]]
-            )
+        if item["universityId"] in university_domains and not same_official_domain(
+            item["sourceUrl"], university_domains[item["universityId"]]
         ):
             errors.append(f"{label}: sourceUrl is outside official domains")
         application_key = official_cycle_key(item)
@@ -284,9 +272,7 @@ def validate_data(
                 errors.append(f"{label}: {field} must match its source window")
         if item["sourceCycle"] != source["intake"]:
             errors.append(f"{label}: sourceCycle must match its source intake")
-        unknown_categories = sorted(
-            set(item["applicantCategories"]) - category_ids
-        )
+        unknown_categories = sorted(set(item["applicantCategories"]) - category_ids)
         if unknown_categories:
             errors.append(
                 f"{label}: unknown applicant categories: "
@@ -295,9 +281,7 @@ def validate_data(
         if item["intake"] != shift_intake_one_year(source["intake"]):
             errors.append(f"{label}: intake is not a one-year shift")
         if item["basedOnVerifiedAt"] != source["verifiedAt"]:
-            errors.append(
-                f"{label}: basedOnVerifiedAt must match its source window"
-            )
+            errors.append(f"{label}: basedOnVerifiedAt must match its source window")
         if item["opensAt"] != shift_date_one_year(source["opensAt"]):
             errors.append(f"{label}: opensAt is not a one-year shift")
         if item["closesAt"] != shift_date_one_year(source["closesAt"]):

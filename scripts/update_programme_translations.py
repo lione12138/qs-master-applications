@@ -10,7 +10,6 @@ from typing import Any
 
 import httpx
 
-
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "data"
 TRANSLATIONS_PATH = DATA_DIR / "programme-translations.json"
@@ -49,8 +48,7 @@ def build_scope_catalog() -> dict[str, dict[str, str]]:
         for item in read_json(DATA_DIR / "universities.json")["universities"]
     }
     programs = {
-        item["id"]: item
-        for item in read_json(DATA_DIR / "programs.json")["programs"]
+        item["id"]: item for item in read_json(DATA_DIR / "programs.json")["programs"]
     }
     groups = {
         item["id"]: item
@@ -74,7 +72,9 @@ def build_scope_catalog() -> dict[str, dict[str, str]]:
             description = source.get("description", "")
             scope_type = "programme-group"
         else:
-            english = record.get("program") or "Institution-wide master's application window"
+            english = (
+                record.get("program") or "Institution-wide master's application window"
+            )
             description = "University-level graduate admissions scope."
             scope_type = "institution"
         catalog[scope_id] = {
@@ -176,10 +176,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Update cached Chinese programme translations with DeepSeek."
     )
-    parser.add_argument("--limit", type=int, default=0, help="Maximum scopes to translate")
+    parser.add_argument(
+        "--limit", type=int, default=0, help="Maximum scopes to translate"
+    )
     parser.add_argument("--batch-size", type=int, default=20)
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--force", action="store_true", help="Re-translate generated entries")
+    parser.add_argument(
+        "--force", action="store_true", help="Re-translate generated entries"
+    )
     parser.add_argument(
         "--include-manual",
         action="store_true",
@@ -208,7 +212,13 @@ def main() -> None:
         pending = pending[: args.limit]
 
     if args.dry_run:
-        print(json.dumps({"pending": len(pending), "items": pending}, ensure_ascii=False, indent=2))
+        print(
+            json.dumps(
+                {"pending": len(pending), "items": pending},
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
         return
     if not pending:
         print("No missing programme translations.")

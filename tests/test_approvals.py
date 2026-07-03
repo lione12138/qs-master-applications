@@ -54,8 +54,7 @@ def test_approve_window_promotes_valid_candidate(tmp_path) -> None:
     assert approved["id"] == "eth-example-2027"
     applications = json.loads(applications_path.read_text(encoding="utf-8"))
     assert any(
-        item["id"] == "eth-example-2027"
-        for item in applications["applications"]
+        item["id"] == "eth-example-2027" for item in applications["applications"]
     )
     candidates = json.loads(candidates_path.read_text(encoding="utf-8"))
     assert candidates["items"][0]["status"] == "approved"

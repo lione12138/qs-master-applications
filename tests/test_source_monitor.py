@@ -145,8 +145,7 @@ def test_source_monitor_uses_matched_context_when_excerpt_misses_dates(
                 "contentSelector": "article",
                 "matchedTextBefore": "Applications open for",
                 "matchedText": (
-                    "Fall admission from September 3, 2025 until "
-                    "December 23, 2025."
+                    "Fall admission from September 3, 2025 until December 23, 2025."
                 ),
                 "matchedTextAfter": "Admission is for fall quarter.",
             },
@@ -160,9 +159,7 @@ def test_source_monitor_uses_matched_context_when_excerpt_misses_dates(
     )
 
     evidence = json.loads(
-        (tmp_path / "evidence" / "context-window.json").read_text(
-            encoding="utf-8"
-        )
+        (tmp_path / "evidence" / "context-window.json").read_text(encoding="utf-8")
     )
     assert "September 3, 2025" in evidence["excerpt"]
     assert "December 23, 2025" in evidence["excerpt"]

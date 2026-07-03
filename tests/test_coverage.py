@@ -23,9 +23,9 @@ def test_generate_top200_coverage(tmp_path) -> None:
     assert payload["summary"]["universitiesWithPrograms"] >= 73
     assert payload["summary"]["predictedWindows"] >= 27
     assert payload["summary"]["verifiedWindows"] >= 27
-    assert json.loads(output.read_text(encoding="utf-8"))["summary"] == payload[
-        "summary"
-    ]
+    assert (
+        json.loads(output.read_text(encoding="utf-8"))["summary"] == payload["summary"]
+    )
 
 
 def test_coverage_next_action_is_progressive() -> None:

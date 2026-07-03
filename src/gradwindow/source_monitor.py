@@ -9,8 +9,8 @@ from .content import evidence_matches_target_dates
 from .io import read_json, write_json
 from .monitor import check_university, summarize_monitor_results
 from .paths import (
-    APPLICATIONS_PATH,
     APPLICATION_SOURCE_STATE_PATH,
+    APPLICATIONS_PATH,
     EVIDENCE_DIR,
 )
 
@@ -136,9 +136,7 @@ def monitor_application_sources(
                     "bytesRead": result.get("bytesRead"),
                     "truncated": result.get("truncated", False),
                     "excerpt": excerpt,
-                    "excerptHash": hashlib.sha256(
-                        excerpt.encode("utf-8")
-                    ).hexdigest(),
+                    "excerptHash": hashlib.sha256(excerpt.encode("utf-8")).hexdigest(),
                     "contentSelector": context["contentSelector"],
                     "matchedTextBefore": context["matchedTextBefore"],
                     "matchedText": context["matchedText"],

@@ -6,22 +6,27 @@ import json
 import pytest
 from pydantic import ValidationError
 
-from gradwindow.models import ApplicationWindow, EvidenceSnapshot, IntakeDetails, University
+from gradwindow.models import (
+    ApplicationWindow,
+    EvidenceSnapshot,
+    IntakeDetails,
+    University,
+)
 from gradwindow.paths import APPLICATIONS_PATH, EVIDENCE_DIR
 
 
 def test_application_model_accepts_current_record() -> None:
-    record = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))[
-        "applications"
-    ][0]
+    record = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))["applications"][
+        0
+    ]
     parsed = ApplicationWindow.model_validate(record)
     assert parsed.intake_details.cycle_year == 2026
 
 
 def test_application_model_rejects_unknown_fields() -> None:
-    record = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))[
-        "applications"
-    ][0]
+    record = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))["applications"][
+        0
+    ]
     invalid = copy.deepcopy(record)
     invalid["unreviewedFlag"] = True
     with pytest.raises(ValidationError, match="Extra inputs are not permitted"):
@@ -29,9 +34,9 @@ def test_application_model_rejects_unknown_fields() -> None:
 
 
 def test_application_model_rejects_path_like_id() -> None:
-    record = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))[
-        "applications"
-    ][0]
+    record = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))["applications"][
+        0
+    ]
     invalid = copy.deepcopy(record)
     invalid["id"] = "../outside"
     with pytest.raises(ValidationError, match="String should match pattern"):
@@ -100,9 +105,7 @@ def test_qs_universities_have_chinese_names_for_search() -> None:
 
 def test_global_rankings_have_chinese_names_for_search() -> None:
     payload = json.loads(
-        (APPLICATIONS_PATH.parent / "global-rankings.json").read_text(
-            encoding="utf-8"
-        )
+        (APPLICATIONS_PATH.parent / "global-rankings.json").read_text(encoding="utf-8")
     )
     missing = []
     for ranking_id, ranking in payload["rankings"].items():

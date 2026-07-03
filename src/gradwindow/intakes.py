@@ -36,9 +36,7 @@ def parse_intake_details(label: str) -> dict:
     academic_year_end = None
     if second:
         academic_year_end = (
-            int(second)
-            if len(second) == 4
-            else (cycle_year // 100) * 100 + int(second)
+            int(second) if len(second) == 4 else (cycle_year // 100) * 100 + int(second)
         )
 
     lowered = label.lower()

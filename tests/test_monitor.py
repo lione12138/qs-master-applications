@@ -1,5 +1,11 @@
 from __future__ import annotations
 
+from gradwindow.content import (
+    evidence_context,
+    evidence_excerpt,
+    evidence_matches_target_dates,
+)
+from gradwindow.http_client import FetchedPage
 from gradwindow.monitor import (
     content_fingerprint,
     evaluate_content_change,
@@ -7,12 +13,6 @@ from gradwindow.monitor import (
     previous_success_fields,
     summarize_monitor_results,
 )
-from gradwindow.content import (
-    evidence_context,
-    evidence_excerpt,
-    evidence_matches_target_dates,
-)
-from gradwindow.http_client import FetchedPage
 
 
 def test_fingerprint_ignores_scripts_comments_and_whitespace() -> None:
@@ -75,10 +75,7 @@ def test_evidence_matching_supports_chinese_dates() -> None:
 
 
 def test_evidence_matching_supports_english_ordinal_dates() -> None:
-    excerpt = (
-        "Applications run from September 3, 2025 "
-        "until December 23rd, 2025."
-    )
+    excerpt = "Applications run from September 3, 2025 until December 23rd, 2025."
     assert evidence_matches_target_dates(
         excerpt,
         ["2025-09-03", "2025-12-23"],

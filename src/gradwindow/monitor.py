@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import concurrent.futures
 import hashlib
-from io import BytesIO
 import json
 import re
 from datetime import datetime, timezone
+from io import BytesIO
 from pathlib import Path
 
 from .content import (
@@ -209,8 +209,7 @@ def monitor_universities(
                 results[university["id"]] = future.result()
             except Exception as exc:  # Keep one unusual site from aborting the scan.
                 results[university["id"]] = {
-                    "url": university.get("admissionsUrl")
-                    or university["homepageUrl"],
+                    "url": university.get("admissionsUrl") or university["homepageUrl"],
                     "checkedAt": datetime.now(timezone.utc).isoformat(),
                     "status": "error",
                     "message": str(exc)[:240],

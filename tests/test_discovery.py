@@ -17,9 +17,7 @@ def test_undergraduate_page_is_not_scored_as_graduate() -> None:
 
 
 def test_subdomain_is_accepted_as_official() -> None:
-    assert same_official_domain(
-        "https://grad.example.edu/admissions", ["example.edu"]
-    )
+    assert same_official_domain("https://grad.example.edu/admissions", ["example.edu"])
     assert not same_official_domain(
         "https://example.edu.fake-site.test/admissions", ["example.edu"]
     )

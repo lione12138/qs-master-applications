@@ -1,17 +1,17 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 import shutil
 import subprocess
+from pathlib import Path
 
 
 def test_subscription_core_normalizes_and_signs_without_exposing_email() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for subscription worker tests"
     module_uri = (
-        Path(__file__).parents[1] / "subscriptions" / "core.js"
-    ).resolve().as_uri()
+        (Path(__file__).parents[1] / "subscriptions" / "core.js").resolve().as_uri()
+    )
     script = f"""
       import {{
         bytesToBase64Url,
@@ -54,8 +54,8 @@ def test_roadmap_preflight_allows_anonymous_visitor_header() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for subscription worker tests"
     worker_uri = (
-        Path(__file__).parents[1] / "subscriptions" / "worker.js"
-    ).resolve().as_uri()
+        (Path(__file__).parents[1] / "subscriptions" / "worker.js").resolve().as_uri()
+    )
     script = f"""
       import worker from {json.dumps(worker_uri)};
       const response = await worker.fetch(
@@ -85,8 +85,8 @@ def test_worker_preflight_allows_comment_reads_and_writes() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for subscription worker tests"
     worker_uri = (
-        Path(__file__).parents[1] / "subscriptions" / "worker.js"
-    ).resolve().as_uri()
+        (Path(__file__).parents[1] / "subscriptions" / "worker.js").resolve().as_uri()
+    )
     script = f"""
       import worker from {json.dumps(worker_uri)};
       const response = await worker.fetch(

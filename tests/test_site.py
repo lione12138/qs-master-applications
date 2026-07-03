@@ -45,12 +45,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert not (tmp_path / "data" / "evidence").exists()
     assert (tmp_path / "sitemap.xml").exists()
     assert (tmp_path / "robots.txt").exists()
-    assert (
-        tmp_path
-        / "university"
-        / "university-of-cambridge"
-        / "index.html"
-    ).exists()
+    assert (tmp_path / "university" / "university-of-cambridge" / "index.html").exists()
     assert (tmp_path / "country" / "united-kingdom" / "index.html").exists()
     assert (tmp_path / "deadline" / "2026-02" / "index.html").exists()
 
@@ -105,9 +100,11 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'lang="en"' in index_html
     assert 'property="og:image"' in index_html
     assert "og-image.png" in index_html
-    assert 'name="robots" content="index, follow, max-image-preview:large"' in index_html
+    assert (
+        'name="robots" content="index, follow, max-image-preview:large"' in index_html
+    )
     assert 'rel="modulepreload"' in index_html
-    assert 'application/ld+json' in index_html
+    assert "application/ld+json" in index_html
     assert "Source code" in index_html
     assert "AGPL-3.0" in index_html
     assert "Data: CC BY-NC 4.0" in index_html
@@ -116,7 +113,7 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     styles_css = (tmp_path / "styles.css").read_text(encoding="utf-8")
     assert "openWindowDetail(record" in app_js
     assert 'id="hero-deadline-countdown"' not in index_html
-    assert 'data-mobile-sort' in index_html
+    assert "data-mobile-sort" in index_html
     assert ".window-card-row" in styles_css
     assert 'row.className = "university-card-row"' in app_js
     assert ".university-table tr.university-card-row" in styles_css
@@ -125,37 +122,29 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "grid-template-columns: 268px minmax(0, 1fr)" in styles_css
     assert ".tracker-results .application-table tbody tr" in styles_css
     assert "height: 76px" in styles_css
-    assert (tmp_path / "sources.html").read_text(
-        encoding="utf-8"
-    ).count(ANALYTICS_BEACON) == 1
+    assert (tmp_path / "sources.html").read_text(encoding="utf-8").count(
+        ANALYTICS_BEACON
+    ) == 1
     assert (
-        tmp_path
-        / "university"
-        / "university-of-cambridge"
-        / "index.html"
+        tmp_path / "university" / "university-of-cambridge" / "index.html"
     ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
     university_html = (
-        tmp_path
-        / "university"
-        / "university-of-cambridge"
-        / "index.html"
+        tmp_path / "university" / "university-of-cambridge" / "index.html"
     ).read_text(encoding="utf-8")
     assert '"@type": "WebPage"' in university_html
     assert '"@type": "BreadcrumbList"' in university_html
     assert 'property="og:image"' in university_html
     assert 'aria-label="GradWindow pages"' in university_html
-    assert (
-        tmp_path / "country" / "united-kingdom" / "index.html"
-    ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
-    assert (
-        tmp_path / "deadline" / "2026-02" / "index.html"
-    ).read_text(encoding="utf-8").count(ANALYTICS_BEACON) == 1
-    assert "university-of-cambridge" in (
-        tmp_path / "sitemap.xml"
-    ).read_text(encoding="utf-8")
-    assert "roadmap.html" in (tmp_path / "sitemap.xml").read_text(
+    assert (tmp_path / "country" / "united-kingdom" / "index.html").read_text(
+        encoding="utf-8"
+    ).count(ANALYTICS_BEACON) == 1
+    assert (tmp_path / "deadline" / "2026-02" / "index.html").read_text(
+        encoding="utf-8"
+    ).count(ANALYTICS_BEACON) == 1
+    assert "university-of-cambridge" in (tmp_path / "sitemap.xml").read_text(
         encoding="utf-8"
     )
+    assert "roadmap.html" in (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
     contact_html = (tmp_path / "contact.html").read_text(encoding="utf-8")
     assert 'action="mailto:' not in contact_html
     assert 'id="contact-subject"' in contact_html
@@ -181,19 +170,13 @@ def test_build_site_uses_configured_public_url(tmp_path, monkeypatch) -> None:
     sitemap = (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
     robots = (tmp_path / "robots.txt").read_text(encoding="utf-8")
     university_page = (
-        tmp_path
-        / "university"
-        / "university-of-cambridge"
-        / "index.html"
+        tmp_path / "university" / "university-of-cambridge" / "index.html"
     ).read_text(encoding="utf-8")
 
     assert f'href="{public_url}/"' in index_html
     assert f"<loc>{public_url}</loc>" in sitemap
     assert f"Sitemap: {public_url}/sitemap.xml" in robots
-    assert (
-        f'href="{public_url}/university/university-of-cambridge/"'
-        in university_page
-    )
+    assert f'href="{public_url}/university/university-of-cambridge/"' in university_page
     for page_name in (
         "calendar.html",
         "contact.html",

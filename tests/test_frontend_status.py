@@ -1,9 +1,9 @@
 from __future__ import annotations
 
 import json
-from pathlib import Path
 import shutil
 import subprocess
+from pathlib import Path
 
 
 def test_frontend_upcoming_window_has_thirty_day_boundary() -> None:

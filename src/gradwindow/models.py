@@ -1,8 +1,7 @@
 from __future__ import annotations
 
-from datetime import date
-from datetime import datetime
 import hashlib
+from datetime import date, datetime
 from typing import Literal
 
 from pydantic import (
@@ -45,12 +44,10 @@ class IntakeDetails(DataModel):
     start_month: int | None = Field(default=None, alias="startMonth", ge=1, le=12)
 
     @model_validator(mode="after")
-    def validate_academic_year(self) -> "IntakeDetails":
+    def validate_academic_year(self) -> IntakeDetails:
         if (
             self.academic_year_end is not None
-            and not self.cycle_year
-            <= self.academic_year_end
-            <= self.cycle_year + 2
+            and not self.cycle_year <= self.academic_year_end <= self.cycle_year + 2
         ):
             raise ValueError(
                 "academicYearEnd must be between cycleYear and cycleYear + 2"
@@ -77,12 +74,8 @@ class University(DataModel):
     admissions_discovery: DiscoveryState = Field(alias="admissionsDiscovery")
     date_policy: str = Field(alias="datePolicy")
     monitor_enabled: bool = Field(alias="monitorEnabled")
-    admissions_candidate_score: int | None = Field(
-        alias="admissionsCandidateScore"
-    )
-    admissions_candidate_title: str | None = Field(
-        alias="admissionsCandidateTitle"
-    )
+    admissions_candidate_score: int | None = Field(alias="admissionsCandidateScore")
+    admissions_candidate_title: str | None = Field(alias="admissionsCandidateTitle")
 
     @field_validator("official_domains")
     @classmethod
@@ -157,7 +150,7 @@ class ApplicationWindow(DataModel):
         return value
 
     @model_validator(mode="after")
-    def validate_window(self) -> "ApplicationWindow":
+    def validate_window(self) -> ApplicationWindow:
         if self.opens_at > self.closes_at:
             raise ValueError("opensAt is after closesAt")
         if self.intake_details.label != self.intake:
@@ -207,7 +200,7 @@ class Prediction(DataModel):
         return value
 
     @model_validator(mode="after")
-    def validate_prediction(self) -> "Prediction":
+    def validate_prediction(self) -> Prediction:
         if self.opens_at > self.closes_at:
             raise ValueError("opensAt is after closesAt")
         if self.intake_details.label != self.intake:
@@ -223,7 +216,7 @@ class ParserSource(DataModel):
     close_date_regex: str | None = Field(default=None, alias="closeDateRegex")
 
     @model_validator(mode="after")
-    def require_pattern(self) -> "ParserSource":
+    def require_pattern(self) -> ParserSource:
         if self.enabled and not (self.open_date_regex or self.close_date_regex):
             raise ValueError("enabled parser requires at least one date regex")
         return self
@@ -280,7 +273,7 @@ class EvidenceSnapshot(DataModel):
         return value
 
     @model_validator(mode="after")
-    def validate_excerpt_hash(self) -> "EvidenceSnapshot":
+    def validate_excerpt_hash(self) -> EvidenceSnapshot:
         if self.captured_at.tzinfo is None:
             raise ValueError("capturedAt must include a timezone")
         expected = hashlib.sha256(self.excerpt.encode("utf-8")).hexdigest()

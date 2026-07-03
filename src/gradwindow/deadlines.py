@@ -4,6 +4,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
+from .http_client import DEFAULT_USER_AGENT, FetchFailure, fetch_page
 from .io import read_json, write_json
 from .paths import (
     APPLICATIONS_PATH,
@@ -11,7 +12,6 @@ from .paths import (
     SOURCES_PATH,
     WINDOW_CANDIDATES_PATH,
 )
-from .http_client import DEFAULT_USER_AGENT, FetchFailure, fetch_page
 
 USER_AGENT = DEFAULT_USER_AGENT
 

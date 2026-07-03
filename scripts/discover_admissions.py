@@ -22,7 +22,8 @@ from gradwindow.discovery import (
     same_official_domain,
     score_candidate,
 )
-from gradwindow.http_client import DEFAULT_USER_AGENT, fetch_page as fetch_http_page
+from gradwindow.http_client import DEFAULT_USER_AGENT
+from gradwindow.http_client import fetch_page as fetch_http_page
 from gradwindow.io import write_json
 
 DATA_PATH = ROOT / "data" / "universities.json"
@@ -42,6 +43,7 @@ COMMON_PATHS = (
     "/admissions/postgraduate",
     "/masters",
 )
+
 
 class LinkParser(html.parser.HTMLParser):
     def __init__(self) -> None:
@@ -132,7 +134,11 @@ def discover(university: dict) -> dict:
             if score >= 8:
                 current = candidates.get(absolute)
                 if current is None or score > current["score"]:
-                    candidates[absolute] = {"url": absolute, "label": label.strip(), "score": score}
+                    candidates[absolute] = {
+                        "url": absolute,
+                        "label": label.strip(),
+                        "score": score,
+                    }
     except OSError:
         pass
 
@@ -140,9 +146,13 @@ def discover(university: dict) -> dict:
     base = f"{parsed_homepage.scheme or 'https'}://{parsed_homepage.netloc}"
     for path in COMMON_PATHS:
         url = urllib.parse.urljoin(base, path)
-        candidates.setdefault(url, {"url": url, "label": "", "score": score_candidate(url, "")})
+        candidates.setdefault(
+            url, {"url": url, "label": "", "score": score_candidate(url, "")}
+        )
 
-    ranked = sorted(candidates.values(), key=lambda item: item["score"], reverse=True)[:12]
+    ranked = sorted(candidates.values(), key=lambda item: item["score"], reverse=True)[
+        :12
+    ]
     checked = []
     for candidate in ranked:
         try:
@@ -199,7 +209,9 @@ def main() -> int:
         targets = targets[: args.limit]
 
     if not args.apply_overrides_only:
-        with concurrent.futures.ThreadPoolExecutor(max_workers=args.workers) as executor:
+        with concurrent.futures.ThreadPoolExecutor(
+            max_workers=args.workers
+        ) as executor:
             future_map = {executor.submit(discover, item): item for item in targets}
             completed = 0
             for future in concurrent.futures.as_completed(future_map):
@@ -209,12 +221,12 @@ def main() -> int:
                 except Exception as exc:  # One unusual site must not abort the batch.
                     result = {"status": "error", "message": str(exc)}
                 university["admissionsDiscovery"] = result["status"]
-                university["admissionsCandidateScore"] = result.get("score") or result.get(
-                    "candidate", {}
-                ).get("score")
-                university["admissionsCandidateTitle"] = result.get("title") or result.get(
-                    "candidate", {}
-                ).get("title")
+                university["admissionsCandidateScore"] = result.get(
+                    "score"
+                ) or result.get("candidate", {}).get("score")
+                university["admissionsCandidateTitle"] = result.get(
+                    "title"
+                ) or result.get("candidate", {}).get("title")
                 if result.get("url"):
                     university["admissionsUrl"] = result["url"]
                     university["monitorEnabled"] = True
@@ -244,7 +256,9 @@ def main() -> int:
 
     write_json(DATA_PATH, payload)
     discovered = sum(bool(item.get("admissionsUrl")) for item in universities)
-    print(f"Admissions candidates available for {discovered}/{len(universities)} institutions.")
+    print(
+        f"Admissions candidates available for {discovered}/{len(universities)} institutions."
+    )
     return 0
 
 

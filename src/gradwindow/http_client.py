@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 import threading
 import time
+from dataclasses import dataclass
 from urllib.parse import urlparse
 
 import httpx
@@ -147,6 +147,7 @@ def _fetch_once(
         ) from exc
     except httpx.HTTPError as exc:
         raise FetchFailure(str(exc), kind="client") from exc
+
 
 def fetch_page(
     url: str,

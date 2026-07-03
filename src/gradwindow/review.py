@@ -37,7 +37,9 @@ def generate_review_outputs(
         university = university_map[university_id]
         monitor_error_id = f"monitor-error:{university_id}"
         if result.get("changed"):
-            item_id = f"content-change:{university_id}:{result.get('contentHash', '')[:12]}"
+            item_id = (
+                f"content-change:{university_id}:{result.get('contentHash', '')[:12]}"
+            )
             review_item = existing_by_id.setdefault(
                 item_id,
                 {
@@ -124,9 +126,7 @@ def generate_review_outputs(
                     "reason": result.get("message")
                     or f"HTTP status {result.get('httpStatus', 'unknown')}",
                     "detectedAt": result["checkedAt"],
-                    "status": existing_by_id.get(error_id, {}).get(
-                        "status", "pending"
-                    ),
+                    "status": existing_by_id.get(error_id, {}).get("status", "pending"),
                 }
             else:
                 existing_by_id.pop(error_id, None)
@@ -159,9 +159,7 @@ def generate_review_outputs(
     }
     reports_dir.mkdir(parents=True, exist_ok=True)
     report_path = reports_dir / f"{date.today().isoformat()}.md"
-    report_path.write_text(
-        render_report(monitor, items, summary), encoding="utf-8"
-    )
+    report_path.write_text(render_report(monitor, items, summary), encoding="utf-8")
     return report_path, summary
 
 
@@ -179,14 +177,14 @@ def render_report(monitor: dict, items: list[dict], summary: dict[str, int]) -> 
 
 ## Monitor summary
 
-- Checked: {monitor_summary['total']}
-- Directly accessible: {monitor_summary['ok']}
-- Blocked: {monitor_summary['blocked']}
-- Errors: {monitor_summary['errors']}
-- Confirmed content changes: {monitor_summary['changed']}
-- Published-window source changes: {summary['windowSourceChanges']}
-- Published-window source errors: {summary['windowSourceErrors']}
-- Pending review items: {summary['pendingReview']}
+- Checked: {monitor_summary["total"]}
+- Directly accessible: {monitor_summary["ok"]}
+- Blocked: {monitor_summary["blocked"]}
+- Errors: {monitor_summary["errors"]}
+- Confirmed content changes: {monitor_summary["changed"]}
+- Published-window source changes: {summary["windowSourceChanges"]}
+- Published-window source errors: {summary["windowSourceErrors"]}
+- Pending review items: {summary["pendingReview"]}
 
 ## Review queue
 

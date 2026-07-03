@@ -10,6 +10,5 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from gradwindow.monitor import monitor_universities, print_summary
 
-
 if __name__ == "__main__":
     print_summary(monitor_universities())

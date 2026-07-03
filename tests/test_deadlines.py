@@ -17,14 +17,14 @@ def test_extract_iso_date_from_named_group() -> None:
 
 
 def test_extract_iso_date_returns_none_without_match() -> None:
-    assert extract_iso_date("<div>No date</div>", r"(?P<date>\d{4}-\d{2}-\d{2})") is None
+    assert (
+        extract_iso_date("<div>No date</div>", r"(?P<date>\d{4}-\d{2}-\d{2})") is None
+    )
 
 
 def test_extract_iso_date_rejects_invalid_date() -> None:
     with pytest.raises(ValueError):
-        extract_iso_date(
-            "<div>2027-19-99</div>", r"(?P<date>\d{4}-\d{2}-\d{2})"
-        )
+        extract_iso_date("<div>2027-19-99</div>", r"(?P<date>\d{4}-\d{2}-\d{2})")
 
 
 def test_parser_change_creates_candidate_without_mutating_official_data(
@@ -63,9 +63,7 @@ def test_parser_change_creates_candidate_without_mutating_official_data(
                         "enabled": True,
                         "recordId": "window-1",
                         "url": "https://example.edu/deadlines",
-                        "closeDateRegex": (
-                            r"Deadline:\s*(?P<date>\d{4}-\d{2}-\d{2})"
-                        ),
+                        "closeDateRegex": (r"Deadline:\s*(?P<date>\d{4}-\d{2}-\d{2})"),
                     }
                 ]
             }

@@ -151,18 +151,14 @@ def evidence_excerpt(
         if score:
             scored.append((score, index, target_match, semantic_match))
 
-    target_indexes = {
-        index for _, index, target, _ in scored if target
-    }
+    target_indexes = {index for _, index, target, _ in scored if target}
     semantic = [
         (score, index)
         for score, index, target, semantic_match in scored
         if not target and semantic_match and score >= 4
     ]
     selected_indexes = set(target_indexes)
-    selected_indexes.update(
-        index for _, index in sorted(semantic, reverse=True)[:3]
-    )
+    selected_indexes.update(index for _, index in sorted(semantic, reverse=True)[:3])
     if not selected_indexes:
         selected_indexes.update(
             index for _, index, _, _ in sorted(scored, reverse=True)[:5]
@@ -198,9 +194,7 @@ def evidence_context(
         "contentSelector": selector,
         "matchedTextBefore": lines[index - 1] if index > 0 else "",
         "matchedText": matched,
-        "matchedTextAfter": (
-            lines[index + 1] if 0 <= index < len(lines) - 1 else ""
-        ),
+        "matchedTextAfter": (lines[index + 1] if 0 <= index < len(lines) - 1 else ""),
     }
 
 

@@ -39,8 +39,7 @@ def test_current_windows_generate_next_cycle_predictions(tmp_path) -> None:
     tsinghua = next(
         item
         for item in payload["predictions"]
-        if item["basedOnRecordId"]
-        == "tsinghua-advanced-computing-autumn-2026-round-2"
+        if item["basedOnRecordId"] == "tsinghua-advanced-computing-autumn-2026-round-2"
     )
     assert tsinghua["intake"] == "Autumn 2027"
     assert tsinghua["opensAt"] == "2027-01-01"
@@ -95,8 +94,7 @@ def test_official_target_cycle_replaces_the_matching_prediction(tmp_path) -> Non
     ]
     assert matching_2027 == []
     assert any(
-        item["basedOnRecordId"] == official["id"]
-        and item["intake"] == "Fall 2028"
+        item["basedOnRecordId"] == official["id"] and item["intake"] == "Fall 2028"
         for item in payload["predictions"]
     )
 

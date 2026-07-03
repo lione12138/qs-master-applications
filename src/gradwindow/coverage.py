@@ -36,9 +36,7 @@ def generate_coverage(
         (item for item in universities if item["qsPosition"] <= TOP_LIMIT),
         key=lambda item: item["qsPosition"],
     )
-    policies_by_university = {
-        item["universityId"]: item for item in policies
-    }
+    policies_by_university = {item["universityId"]: item for item in policies}
     program_counts: dict[str, int] = {}
     for program in programs:
         program_counts[program["universityId"]] = (
@@ -114,9 +112,7 @@ def generate_coverage(
                 "universitiesWithWindows": sum(
                     row["windowCount"] > 0 for row in batch_rows
                 ),
-                "predictedWindows": sum(
-                    row["predictionCount"] for row in batch_rows
-                ),
+                "predictedWindows": sum(row["predictionCount"] for row in batch_rows),
             }
         )
 
@@ -124,9 +120,7 @@ def generate_coverage(
         "targetUniversities": len(rows),
         "entriesLocated": sum(row["entryLocated"] for row in rows),
         "curatedEntries": sum(row["entryStatus"] == "curated" for row in rows),
-        "policiesVerified": sum(
-            row["policyStatus"] == "verified" for row in rows
-        ),
+        "policiesVerified": sum(row["policyStatus"] == "verified" for row in rows),
         "cycleGuidanceAvailable": sum(bool(row["cycleGuidance"]) for row in rows),
         "broadMastersAvailability": sum(
             row["mastersAvailability"] == "broad" for row in rows
@@ -137,9 +131,7 @@ def generate_coverage(
         "universitiesWithPrograms": sum(row["programmeCount"] > 0 for row in rows),
         "universitiesWithWindows": sum(row["windowCount"] > 0 for row in rows),
         "verifiedWindows": sum(row["windowCount"] for row in rows),
-        "universitiesWithPredictions": sum(
-            row["predictionCount"] > 0 for row in rows
-        ),
+        "universitiesWithPredictions": sum(row["predictionCount"] > 0 for row in rows),
         "predictedWindows": sum(row["predictionCount"] for row in rows),
         "nextActions": {
             action: sum(row["nextAction"] == action for row in rows)

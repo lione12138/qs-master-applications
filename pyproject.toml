@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8.0"]
+dev = ["pytest>=8.0", "ruff>=0.14"]
 import = ["pandas>=2.0", "openpyxl>=3.1"]
 
 [project.scripts]
@@ -41,3 +41,18 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+extend-exclude = ["site", "data", "src/gradwindow.egg-info"]
+
+[tool.ruff.lint]
+# E501 (line length) is owned by the formatter; long data strings and URLs
+# are left intact rather than wrapped.
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Maintenance scripts bootstrap sys.path before importing project modules.
+"scripts/*" = ["E402"]

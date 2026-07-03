@@ -9,8 +9,7 @@ def main() -> None:
     site_url = os.environ.get("GRADWINDOW_SITE_URL")
     if not site_url:
         raise SystemExit(
-            "GRADWINDOW_SITE_URL is required, for example "
-            "https://gradwindow.pages.dev"
+            "GRADWINDOW_SITE_URL is required, for example https://gradwindow.pages.dev"
         )
 
     subprocess.run(

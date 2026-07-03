@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
 import copy
+from datetime import datetime, timezone
 from pathlib import Path
 
-from .io import read_json, write_json
 from .intakes import with_intake_details
+from .io import read_json, write_json
 from .paths import APPLICATIONS_PATH, PREDICTIONS_PATH, WINDOW_CANDIDATES_PATH
 from .predictions import generate_predictions
 from .validation import validate_data
@@ -19,7 +19,11 @@ def approve_window(
 ) -> dict:
     candidates = read_json(candidates_path)
     candidate = next(
-        (item for item in candidates.get("items", []) if item.get("id") == candidate_id),
+        (
+            item
+            for item in candidates.get("items", [])
+            if item.get("id") == candidate_id
+        ),
         None,
     )
     if candidate is None:
