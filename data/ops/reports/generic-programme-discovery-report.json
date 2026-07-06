@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-06T15:14:55.561624+00:00",
+    "updatedAt": "2026-07-06T15:20:26.202702+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
@@ -10,7 +10,8 @@
     "schoolsSucceeded": 5,
     "schoolsErrored": 5,
     "readyToApprove": 0,
-    "needsAdapter": 74,
+    "needsOpeningReview": 16,
+    "needsAdapter": 58,
     "comingSoonMonitor": 3
   },
   "results": [
@@ -18,7 +19,7 @@
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-06T15:14:55.561624+00:00",
+      "checkedAt": "2026-07-06T15:20:26.203699+00:00",
       "catalogProgrammes": 4,
       "knownProgrammes": 1,
       "newCandidates": 4,
@@ -59,7 +60,7 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-06T15:14:57.390585+00:00",
+      "checkedAt": "2026-07-06T15:20:29.323156+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -82,7 +83,7 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-06T15:15:01.715335+00:00",
+      "checkedAt": "2026-07-06T15:20:33.620329+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -96,7 +97,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-06T15:15:05.604844+00:00",
+      "checkedAt": "2026-07-06T15:20:37.475260+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -110,7 +111,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-06T15:15:11.132949+00:00",
+      "checkedAt": "2026-07-06T15:20:42.364510+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -132,6 +133,152 @@
   ],
   "classification": {
     "readyToApprove": [],
+    "needsOpeningReview": [
+      {
+        "id": "new-programme:bristol-ma-philosophy",
+        "universityId": "university-of-bristol",
+        "programmeName": "MA Philosophy",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-philosophy/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-ma-translation-and-intercultural-studies",
+        "universityId": "university-of-bristol",
+        "programmeName": "MA Translation and Intercultural Studies",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-translation-online/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-advanced-microelectronic-systems-engineering",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Advanced Microelectronic Systems Engineering",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-advanced-microelectronic-systems-engineering/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-applied-neuropsychology-online",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Applied Neuropsychology (Online)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-applied-neuropsychology-online/",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-cardiovascular-perfusion-online",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Cardiovascular Perfusion (Online)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-cardiovascular-perfusion-online/",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-clinical-perfusion-science",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Clinical Perfusion Science",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-clinical-perfusion-science/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-communication-networks-and-signal-processing",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Communication Networks and Signal Processing",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-communication-networks-and-signal-processing/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-composites-engineering",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Composites Engineering",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-advanced-composites/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-east-asian-development-and-the-global-economy",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc East Asian Development and the Global Economy",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-east-asian-development-and-the-global-economy/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-economics",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Economics",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-economics/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-economics-and-finance",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Economics and Finance",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-economics-and-finance/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-economics-finance-and-management",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Economics, Finance and Management",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-economics-finance-and-management/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-engineering-mathematics",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Engineering Mathematics",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-engineering-mathematics/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-engineering-with-management",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Engineering with Management",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-engineering-with-management/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-environmental-analytical-chemistry",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Environmental Analytical Chemistry",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-environmental-analytical-chemistry/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-global-banking-and-finance",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Global Banking and Finance",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-banking-regulation-and-financial-stability/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      }
+    ],
     "needsAdapter": [
       {
         "id": "new-programme:nottingham-accounting-and-finance-msc",
@@ -411,150 +558,6 @@
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-ma-philosophy",
-        "universityId": "university-of-bristol",
-        "programmeName": "MA Philosophy",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-philosophy/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-ma-translation-and-intercultural-studies",
-        "universityId": "university-of-bristol",
-        "programmeName": "MA Translation and Intercultural Studies",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-translation-online/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-advanced-microelectronic-systems-engineering",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Advanced Microelectronic Systems Engineering",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-advanced-microelectronic-systems-engineering/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-applied-neuropsychology-online",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Applied Neuropsychology (Online)",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-applied-neuropsychology-online/",
-        "windowCount": 1,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-cardiovascular-perfusion-online",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Cardiovascular Perfusion (Online)",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-cardiovascular-perfusion-online/",
-        "windowCount": 1,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-clinical-perfusion-science",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Clinical Perfusion Science",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-clinical-perfusion-science/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-communication-networks-and-signal-processing",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Communication Networks and Signal Processing",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-communication-networks-and-signal-processing/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-composites-engineering",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Composites Engineering",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-advanced-composites/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-east-asian-development-and-the-global-economy",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc East Asian Development and the Global Economy",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-east-asian-development-and-the-global-economy/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-economics",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Economics",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-economics/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-economics-and-finance",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Economics and Finance",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-economics-and-finance/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-economics-finance-and-management",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Economics, Finance and Management",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-economics-finance-and-management/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-engineering-mathematics",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Engineering Mathematics",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-engineering-mathematics/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-engineering-with-management",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Engineering with Management",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-engineering-with-management/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-environmental-analytical-chemistry",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Environmental Analytical Chemistry",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-environmental-analytical-chemistry/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
-      },
-      {
-        "id": "new-programme:bristol-msc-global-banking-and-finance",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Global Banking and Finance",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-banking-regulation-and-financial-stability/",
-        "windowCount": 2,
-        "parseStatus": "parsed",
-        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
       },
       {
         "id": "new-programme:bristol-taught-postgraduate-programme-ma-history-of-art-join-our-ma-history-of-art-programme-to-study-a-broad-range-of-art-periods-and-methodologies-with-opportunities-for-hands-on-curatorial-work-modes-of-study-full-time-awards-available-ma",

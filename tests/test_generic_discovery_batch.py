@@ -84,6 +84,7 @@ def test_inferred_opening_dates_still_require_review() -> None:
     buckets = classify_generic_candidates(candidates, {"example-university"})
 
     assert buckets["readyToApprove"] == []
-    assert [item["id"] for item in buckets["needsAdapter"]] == [
+    assert [item["id"] for item in buckets["needsOpeningReview"]] == [
         "new-programme:inferred"
     ]
+    assert buckets["needsAdapter"] == []
