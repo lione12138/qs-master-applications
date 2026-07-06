@@ -130,7 +130,7 @@ jobs:
 
       - name: Open issue for newly confirmed page changes
         if: github.event_name != 'push'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require("fs");
