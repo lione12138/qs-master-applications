@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-01T16:15:12.277185+00:00",
+    "generatedAt": "2026-07-06T01:13:07.478452+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -13,17 +13,17 @@
     "cycleGuidanceAvailable": 198,
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
-    "universitiesWithPrograms": 188,
-    "universitiesWithWindows": 36,
-    "verifiedWindows": 89,
-    "universitiesWithPredictions": 36,
-    "predictedWindows": 89,
+    "universitiesWithPrograms": 189,
+    "universitiesWithWindows": 37,
+    "verifiedWindows": 1124,
+    "universitiesWithPredictions": 37,
+    "predictedWindows": 1124,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
-      "select-target-programmes": 12,
+      "select-target-programmes": 11,
       "verify-exact-windows": 152,
-      "monitor-and-refresh": 36
+      "monitor-and-refresh": 37
     }
   },
   "batches": [
@@ -36,9 +36,9 @@
       "universities": 5,
       "entriesLocated": 5,
       "policiesVerified": 5,
-      "universitiesWithPrograms": 1,
-      "universitiesWithWindows": 1,
-      "predictedWindows": 25
+      "universitiesWithPrograms": 2,
+      "universitiesWithWindows": 2,
+      "predictedWindows": 535
     },
     {
       "batch": 2,
@@ -51,7 +51,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 3,
       "universitiesWithWindows": 3,
-      "predictedWindows": 24
+      "predictedWindows": 151
     },
     {
       "batch": 3,
@@ -77,7 +77,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 1,
-      "predictedWindows": 1
+      "predictedWindows": 220
     },
     {
       "batch": 5,
@@ -155,7 +155,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 1,
-      "predictedWindows": 1
+      "predictedWindows": 104
     },
     {
       "batch": 11,
@@ -233,7 +233,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 1,
-      "predictedWindows": 6
+      "predictedWindows": 82
     },
     {
       "batch": 17,
@@ -587,10 +587,10 @@
       "policyModel": "mixed",
       "mastersAvailability": "broad",
       "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "select-target-programmes"
+      "programmeCount": 116,
+      "windowCount": 510,
+      "predictionCount": 510,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "stanford-university",
@@ -683,9 +683,9 @@
         "opensText": "Applications open; deadlines vary by course",
         "notes": "Cambridge's directory is open for 2026/27, but each course has its own deadline and may close early."
       },
-      "programmeCount": 2,
-      "windowCount": 2,
-      "predictionCount": 2,
+      "programmeCount": 129,
+      "windowCount": 129,
+      "predictionCount": 129,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -966,9 +966,9 @@
         "opensText": "Applications commenced 1 September 2025 at 09:00 Hong Kong time",
         "notes": "The MSc in Computer Science closed on 31 January 2026. Other CUHK taught programmes use different rounds and deadlines."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 122,
+      "windowCount": 220,
+      "predictionCount": 220,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1734,9 +1734,9 @@
         "opensText": "2 July 2025 to 30 April 2026",
         "notes": "The MSc in Information Technology had early and main deadlines on 15 October 2025 and 15 January 2026, followed by an extended deadline on 30 April 2026."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 104,
+      "windowCount": 104,
+      "predictionCount": 104,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -2454,9 +2454,9 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 1,
-      "windowCount": 6,
-      "predictionCount": 6,
+      "programmeCount": 14,
+      "windowCount": 82,
+      "predictionCount": 82,
       "nextAction": "monitor-and-refresh"
     },
     {

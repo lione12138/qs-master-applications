@@ -1082,6 +1082,25 @@ body.window-detail-open {
   background: color-mix(in srgb, var(--green-pale) 18%, var(--white));
 }
 
+.university-group-parent {
+  background: color-mix(in srgb, var(--green-pale) 30%, var(--white));
+}
+
+.university-group-parent td {
+  border-top: 1px solid color-mix(in srgb, var(--green) 18%, var(--line));
+  border-bottom: 1px solid color-mix(in srgb, var(--green) 18%, var(--line));
+}
+
+.university-group-parent .school-link,
+.university-group-parent .program-link {
+  font-weight: 800;
+}
+
+.university-group-toggle {
+  margin-top: 8px;
+  background: var(--white);
+}
+
 .table-pagination {
   padding: 12px 16px;
 }

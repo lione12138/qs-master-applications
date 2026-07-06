@@ -30,6 +30,7 @@ export const state = {
   optionalFailureCount: 0,
   pages: {},
   expandedWindowGroups: new Set(),
+  expandedUniversityGroups: new Set(),
   activeReviewUniversity: null,
   authToken: "",
   user: null,

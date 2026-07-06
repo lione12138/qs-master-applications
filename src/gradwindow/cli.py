@@ -5,7 +5,7 @@ import json
 import sys
 from pathlib import Path
 
-from .approvals import approve_window
+from .approvals import approve_programme_candidates, approve_window
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
 from .intakes import migrate_application_intakes
@@ -15,8 +15,13 @@ from .predictions import generate_predictions
 from .programme_adapters.cambridge import CambridgeAdapter
 from .programme_adapters.cuhk import CUHKAdapter
 from .programme_adapters.glasgow import GlasgowAdapter
+from .programme_adapters.hku import HKUAdapter
+from .programme_adapters.hkust import HKUSTAdapter
+from .programme_adapters.imperial import ImperialAdapter
 from .programme_adapters.mit import MITAdapter
 from .programme_adapters.polyu import PolyUAdapter
+from .programme_adapters.static_catalog import StaticCatalogAdapter, StaticCatalogConfig
+from .programme_adapters.uq import UQAdapter
 from .programme_discovery import discover_programmes
 from .readme import generate_readmes
 from .review import generate_review_outputs
@@ -28,9 +33,36 @@ from .validation import validate_data
 PROGRAMME_ADAPTERS = {
     "cambridge": CambridgeAdapter,
     "cuhk": CUHKAdapter,
+    "edinburgh": lambda: StaticCatalogAdapter(
+        StaticCatalogConfig(
+            university_id="university-of-edinburgh",
+            school_prefix="edinburgh",
+            catalog_url="https://study.ed.ac.uk/programmes/postgraduate-taught-a-z",
+            link_path_contains="/programmes/postgraduate-taught/",
+            minimum_expected_programmes=150,
+            default_application_url="https://study.ed.ac.uk/postgraduate/applying",
+            default_intake="September 2026",
+        )
+    ),
     "glasgow": GlasgowAdapter,
+    "hku": HKUAdapter,
+    "hkust": HKUSTAdapter,
+    "imperial": ImperialAdapter,
+    "kcl": lambda: StaticCatalogAdapter(
+        StaticCatalogConfig(
+            university_id="king-s-college-london-kcl",
+            school_prefix="kcl",
+            catalog_url="https://www.kcl.ac.uk/study/postgraduate-taught/courses",
+            link_path_contains="/study/postgraduate-taught/courses/",
+            minimum_expected_programmes=10,
+            default_application_url="https://www.kcl.ac.uk/study/postgraduate-taught/how-to-apply",
+            default_intake="September 2026",
+        ),
+        detail_workers=1,
+    ),
     "mit": MITAdapter,
     "polyu": PolyUAdapter,
+    "uq": UQAdapter,
 }
 
 
@@ -53,7 +85,7 @@ def main() -> None:
     )
     programme_discovery.add_argument(
         "--university",
-        choices=tuple(PROGRAMME_ADAPTERS),
+        choices=("all", *tuple(PROGRAMME_ADAPTERS)),
         default="cuhk",
     )
     programme_discovery.add_argument("--dry-run", action="store_true")
@@ -83,6 +115,17 @@ def main() -> None:
     )
     approve.add_argument("candidate_id")
     approve.add_argument("--reviewer", required=True)
+    approve_programmes = subparsers.add_parser(
+        "approve-programmes",
+        help="Promote reviewed programme candidates with exact windows",
+    )
+    approve_programmes.add_argument("--university", required=True)
+    approve_programmes.add_argument("--reviewer", required=True)
+    approve_programmes.add_argument(
+        "--include-unparsed",
+        action="store_true",
+        help="Also promote candidates whose parseStatus is not parsed",
+    )
     args = parser.parse_args()
 
     if args.command == "validate":
@@ -97,10 +140,28 @@ def main() -> None:
     elif args.command == "monitor-sources":
         print_summary(monitor_application_sources(workers=args.workers))
     elif args.command == "discover-programmes":
-        report = discover_programmes(
-            PROGRAMME_ADAPTERS[args.university](),
-            dry_run=args.dry_run,
-        )
+        if args.university == "all":
+            report = []
+            for name, adapter_factory in PROGRAMME_ADAPTERS.items():
+                try:
+                    report.append(
+                        discover_programmes(adapter_factory(), dry_run=args.dry_run)
+                    )
+                except Exception as exc:
+                    report.append(
+                        {
+                            "status": "error",
+                            "adapter": name,
+                            "errorType": type(exc).__name__,
+                            "message": str(exc)[:240],
+                            "dryRun": args.dry_run,
+                        }
+                    )
+        else:
+            report = discover_programmes(
+                PROGRAMME_ADAPTERS[args.university](),
+                dry_run=args.dry_run,
+            )
         print(json.dumps(report, ensure_ascii=False))
     elif args.command == "update-deadlines":
         report = update_deadlines(dry_run=args.dry_run)
@@ -133,6 +194,24 @@ def main() -> None:
             f"Approved {record['id']}; "
             f"{coverage['summary']['verifiedWindows']} verified windows tracked."
         )
+    elif args.command == "approve-programmes":
+        if args.university == "all":
+            report = {
+                adapter_factory.university_id: approve_programme_candidates(
+                    university_id=adapter_factory.university_id,
+                    reviewer=args.reviewer,
+                    parsed_only=not args.include_unparsed,
+                )
+                for adapter_factory in PROGRAMME_ADAPTERS.values()
+            }
+        else:
+            report = approve_programme_candidates(
+                university_id=args.university,
+                reviewer=args.reviewer,
+                parsed_only=not args.include_unparsed,
+            )
+        generate_predictions()
+        print(json.dumps(report, ensure_ascii=False))
     elif args.command == "pipeline":
         generate_predictions()
         _validate_or_exit()

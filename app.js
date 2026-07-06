@@ -31,7 +31,10 @@ import {
 } from "./localization.js";
 import { needsManualCheck } from "./exception-status.js";
 import { filterRecordsToRanking } from "./ranking-filter.js";
-import { groupEquivalentWindows } from "./window-grouping.js";
+import {
+  groupEquivalentWindows,
+  groupWindowGroupsByUniversity,
+} from "./window-grouping.js";
 
 const PAGE_SIZE = 20;
 
@@ -74,6 +77,7 @@ function makeCell(label, ...children) {
 function resetPages() {
   state.pages = {};
   state.expandedWindowGroups.clear();
+  state.expandedUniversityGroups.clear();
 }
 
 function makeTextStack(primary, secondary, primaryClass = "date-primary") {
@@ -813,6 +817,116 @@ function createRow(record, status, windowGroup = null) {
   return row;
 }
 
+function windowCountText(count) {
+  return `${count} ${t("windows")}`;
+}
+
+function programmeCountText(count) {
+  return `${count} ${t("programmes")}`;
+}
+
+function createUniversityGroupRow(universityGroup, status) {
+  const representative = universityGroup.records[0];
+  const row = document.createElement("tr");
+  row.className = "window-card-row university-group-parent";
+  const expanded = state.expandedUniversityGroups.has(universityGroup.key);
+  const records = universityGroup.records;
+  const rank = makeElement("span", {
+    className: "rank-cell",
+    text: formatRank(
+      selectedRankForUniversity(representative.universityId)?.rankDisplay ||
+        representative.qsRank,
+    ),
+  });
+  const school = document.createDocumentFragment();
+  const schoolText = schoolLabels(representative, state.language);
+  school.appendChild(
+    makeLink(schoolText.primary, representative.applicationUrl, "school-link"),
+  );
+  school.appendChild(
+    makeElement("span", {
+      className: "school-meta",
+      text: [schoolText.secondary, countryLabel(representative.country, state.language)]
+        .filter(Boolean)
+        .join(" · "),
+    }),
+  );
+
+  const programmes = new Set(records.map((record) => record.scopeId));
+  const programmeSummary = makeTextStack(
+    t("schoolWindowGroup"),
+    `${programmeCountText(programmes.size)} · ${windowCountText(records.length)}`,
+    "program-link date-primary",
+  );
+  const toggle = makeElement("button", {
+    className: "window-group-toggle university-group-toggle",
+    text: expanded ? t("collapseSchoolWindows") : t("expandSchoolWindows"),
+    title: expanded ? t("collapseSchoolWindows") : t("expandSchoolWindows"),
+  });
+  toggle.type = "button";
+  toggle.setAttribute("aria-expanded", String(expanded));
+  toggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    if (expanded) state.expandedUniversityGroups.delete(universityGroup.key);
+    else state.expandedUniversityGroups.add(universityGroup.key);
+    render();
+  });
+  programmeSummary.appendChild(toggle);
+
+  const earliestOpen = records
+    .map((record) => record.opensAt)
+    .filter(Boolean)
+    .sort()[0];
+  const nearestDeadline = [...records].sort((a, b) =>
+    a.closesAt.localeCompare(b.closesAt),
+  )[0];
+  const source = makeElement("span", {
+    className: "source-badge discovered",
+    text: `${windowCountText(records.length)} · ${t("groupedBySchool")}`,
+  });
+
+  row.append(
+    makeCell(t("rank"), rank),
+    makeCell(t("university"), school),
+    makeCell(t("programme"), programmeSummary),
+    makeCell(
+      t("applicantGroup"),
+      makeElement("span", {
+        className: "applicant-category",
+        text: t("multipleApplicantGroups"),
+      }),
+    ),
+    makeCell(
+      t("opens"),
+      earliestOpen
+        ? makeTextStack(formatDate(earliestOpen), t("earliestOpening"))
+        : makeElement("span", { text: "—" }),
+    ),
+    makeCell(
+      t("deadline"),
+      makeTextStack(
+        formatDate(nearestDeadline.closesAt),
+        `${t("nextDeadline")} · ${deadlineNote(nearestDeadline, status)}`,
+      ),
+    ),
+    makeCell(t("calendar"), makeElement("span", { text: "—" })),
+    makeCell(t("favorite"), makeElement("span", { text: "—" })),
+    makeCell(t("source"), source),
+  );
+  return row;
+}
+
+function appendWindowGroupRows(tbody, windowGroup, status) {
+  const [representative, ...additionalRecords] = windowGroup.records;
+  tbody.appendChild(createRow(representative, status, windowGroup));
+  if (!state.expandedWindowGroups.has(windowGroup.key)) return;
+  additionalRecords.forEach((record) => {
+    const row = createRow(record, status);
+    row.classList.add("window-group-child");
+    tbody.appendChild(row);
+  });
+}
+
 function predictionConfidenceText(record) {
   const labels = {
     low: t("lowConfidence"),
@@ -841,18 +955,20 @@ function createGroup(status, records) {
     ],
   );
   const windowGroups = groupEquivalentWindows(records);
+  const universityGroups = groupWindowGroupsByUniversity(windowGroups);
   const { items, start, end, total, page, totalPages } = paginate(
     status,
-    windowGroups,
+    universityGroups,
   );
-  items.forEach((windowGroup) => {
-    const [representative, ...additionalRecords] = windowGroup.records;
-    tbody.appendChild(createRow(representative, status, windowGroup));
-    if (!state.expandedWindowGroups.has(windowGroup.key)) return;
-    additionalRecords.forEach((record) => {
-      const row = createRow(record, status);
-      row.classList.add("window-group-child");
-      tbody.appendChild(row);
+  items.forEach((universityGroup) => {
+    if (!universityGroup.collapsible) {
+      appendWindowGroupRows(tbody, universityGroup.windowGroups[0], status);
+      return;
+    }
+    tbody.appendChild(createUniversityGroupRow(universityGroup, status));
+    if (!state.expandedUniversityGroups.has(universityGroup.key)) return;
+    universityGroup.windowGroups.forEach((windowGroup) => {
+      appendWindowGroupRows(tbody, windowGroup, status);
     });
   });
   section.appendChild(

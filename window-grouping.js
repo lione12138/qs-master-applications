@@ -45,3 +45,43 @@ export function groupEquivalentWindows(records) {
 
   return groups;
 }
+
+export function groupWindowGroupsByUniversity(windowGroups) {
+  const groups = [];
+  const groupsByKey = new Map();
+
+  windowGroups.forEach((windowGroup, index) => {
+    const representative = windowGroup.records[0] || {};
+    const universityId = representative.universityId;
+    if (!universityId) {
+      groups.push({
+        key: `window-group:${windowGroup.key || index}`,
+        universityId: "",
+        records: windowGroup.records,
+        windowGroups: [windowGroup],
+        collapsible: false,
+      });
+      return;
+    }
+
+    const key = `university:${universityId}`;
+    let group = groupsByKey.get(key);
+    if (!group) {
+      group = {
+        key,
+        universityId,
+        records: [],
+        windowGroups: [],
+        collapsible: false,
+      };
+      groupsByKey.set(key, group);
+      groups.push(group);
+    }
+    group.records.push(...windowGroup.records);
+    group.windowGroups.push(windowGroup);
+    group.collapsible =
+      group.windowGroups.length > 1 || group.records.length > 1;
+  });
+
+  return groups;
+}

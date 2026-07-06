@@ -29,6 +29,9 @@ def test_frontend_localizes_chinese_record_labels() -> None:
           "ucl-advanced-materials-science-msc": {{
             zh: "高级材料科学硕士项目",
           }},
+          "mit-aeronautics-and-astronautics-masters": {{
+            zh: "航空航天硕士项目",
+          }},
         }},
       }});
       console.log(JSON.stringify({{
@@ -50,6 +53,12 @@ def test_frontend_localizes_chinese_record_labels() -> None:
           "Artificial Intelligence MSc",
         ),
         round: roundLabel("Visa applicants", "zh"),
+        mitProgramme: programmeLabel(
+          "mit-aeronautics-and-astronautics-masters",
+          "Aeronautics and Astronautics",
+          "zh",
+        ),
+        mitRound: roundLabel("Round 1", "zh"),
       }}));
     """
     result = subprocess.run(
@@ -75,6 +84,8 @@ def test_frontend_localizes_chinese_record_labels() -> None:
             "new-ai-programme",
         ],
         "round": "需要学生签证申请人",
+        "mitProgramme": "航空航天硕士项目",
+        "mitRound": "第一轮",
     }
 
 

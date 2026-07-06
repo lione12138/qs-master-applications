@@ -4,6 +4,20 @@ on:
   schedule:
     - cron: "17 4 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/applications.json"
+      - "data/predictions.json"
+      - "data/programs.json"
+      - "data/programme-groups.json"
+      - "data/programme-translations.json"
+      - "data/universities.json"
+      - "data/ops/programme-candidates.json"
+      - "scripts/update_programme_translations.py"
+      - "src/gradwindow/**"
+      - ".github/workflows/update-data.yml"
 
 permissions:
   actions: write

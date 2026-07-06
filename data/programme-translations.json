@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Chinese programme and programme-group labels used by GradWindow. Manual labels override generated labels; generated labels are cached after review.",
-    "updatedAt": "2026-06-29",
+    "updatedAt": "2026-07-05",
     "defaultLanguage": "zh",
     "providers": ["manual", "deepseek", "rule"]
   },
@@ -70,6 +70,97 @@
     },
     "kth-computer-science-msc": {
       "zh": "计算机科学理学硕士",
+      "source": "manual"
+    },
+    "mit-aeronautics-and-astronautics-masters": {
+      "zh": "航空航天硕士项目",
+      "aliasesZh": ["航空航天工程硕士"],
+      "source": "manual"
+    },
+    "mit-architecture-masters": {
+      "zh": "建筑学硕士项目",
+      "source": "manual"
+    },
+    "mit-center-for-real-estate-masters": {
+      "zh": "房地产中心硕士项目",
+      "aliasesZh": ["房地产硕士项目"],
+      "source": "manual"
+    },
+    "mit-chemical-engineering-masters": {
+      "zh": "化学工程硕士项目",
+      "source": "manual"
+    },
+    "mit-civil-and-environmental-engineering-masters": {
+      "zh": "土木与环境工程硕士项目",
+      "source": "manual"
+    },
+    "mit-data-economics-and-design-of-policy-masters": {
+      "zh": "数据、经济学与政策设计硕士项目",
+      "aliasesZh": ["数据经济学与政策设计硕士"],
+      "source": "manual"
+    },
+    "mit-earth-atmospheric-and-planetary-sciences-masters": {
+      "zh": "地球、大气与行星科学硕士项目",
+      "source": "manual"
+    },
+    "mit-materials-science-and-engineering-masters": {
+      "zh": "材料科学与工程硕士项目",
+      "source": "manual"
+    },
+    "mit-mechanical-engineering-masters": {
+      "zh": "机械工程硕士项目",
+      "source": "manual"
+    },
+    "mit-media-arts-and-sciences-masters": {
+      "zh": "媒体艺术与科学硕士项目",
+      "source": "manual"
+    },
+    "mit-music-technology-and-computation-masters": {
+      "zh": "音乐技术与计算硕士项目",
+      "source": "manual"
+    },
+    "mit-nuclear-science-and-engineering-masters": {
+      "zh": "核科学与工程硕士项目",
+      "source": "manual"
+    },
+    "mit-operations-research-center-masters": {
+      "zh": "运筹学中心硕士项目",
+      "aliasesZh": ["运筹学硕士项目"],
+      "source": "manual"
+    },
+    "mit-political-science-masters": {
+      "zh": "政治科学硕士项目",
+      "source": "manual"
+    },
+    "mit-science-writing-masters": {
+      "zh": "科学写作硕士项目",
+      "source": "manual"
+    },
+    "mit-supply-chain-management-blended-masters": {
+      "zh": "供应链管理混合制硕士项目",
+      "aliasesZh": ["供应链管理线上线下混合硕士"],
+      "source": "manual"
+    },
+    "mit-supply-chain-management-residential-masters": {
+      "zh": "供应链管理全日制硕士项目",
+      "aliasesZh": ["供应链管理校内硕士"],
+      "source": "manual"
+    },
+    "mit-technology-and-policy-program-masters": {
+      "zh": "技术与政策硕士项目",
+      "source": "manual"
+    },
+    "mit-transportation-masters": {
+      "zh": "交通运输硕士项目",
+      "source": "manual"
+    },
+    "mit-urban-studies-and-planning-masters": {
+      "zh": "城市研究与规划硕士项目",
+      "source": "manual"
+    },
+    "mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters": {
+      "zh": "MIT-WHOI 海洋学 / 应用海洋科学与工程联合硕士项目",
+      "aliasesZh": ["海洋学联合硕士", "应用海洋科学与工程联合硕士"],
       "source": "manual"
     },
     "ntu-applied-artificial-intelligence-mcomp": {
