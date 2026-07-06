@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-06T15:34:14.370824+00:00",
+    "updatedAt": "2026-07-06T20:56:12.851340+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
@@ -12,7 +12,7 @@
     "readyToApprove": 0,
     "needsOpeningReview": 0,
     "needsOpeningDate": 20,
-    "needsAdapter": 38,
+    "needsAdapter": 34,
     "comingSoonMonitor": 3
   },
   "results": [
@@ -20,7 +20,7 @@
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-06T15:34:14.370824+00:00",
+      "checkedAt": "2026-07-06T20:56:12.851340+00:00",
       "catalogProgrammes": 4,
       "knownProgrammes": 1,
       "newCandidates": 4,
@@ -61,13 +61,13 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-06T15:34:16.708137+00:00",
-      "catalogProgrammes": 20,
+      "checkedAt": "2026-07-06T20:56:14.799250+00:00",
+      "catalogProgrammes": 16,
       "knownProgrammes": 17,
-      "newCandidates": 4,
-      "pendingCandidates": 4,
-      "programmesWithoutDeadlines": 4,
-      "programmesNeedingReview": 4,
+      "newCandidates": 0,
+      "pendingCandidates": 0,
+      "programmesWithoutDeadlines": 0,
+      "programmesNeedingReview": 0,
       "dryRun": false,
       "batchStatus": "ok"
     },
@@ -84,7 +84,7 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-06T15:34:21.337214+00:00",
+      "checkedAt": "2026-07-06T20:56:19.621790+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -98,7 +98,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-06T15:34:25.335261+00:00",
+      "checkedAt": "2026-07-06T20:56:23.488884+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -112,7 +112,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-06T15:34:30.384951+00:00",
+      "checkedAt": "2026-07-06T20:56:29.042329+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -584,42 +584,6 @@
         "universityId": "the-university-of-sheffield",
         "programmeName": "Civil and Structural Engineering MSc",
         "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-find-a-programme",
-        "universityId": "university-of-bristol",
-        "programmeName": "Find a programme",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-black-humanities/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-taught-postgraduate-programme-ma-history-of-art-join-our-ma-history-of-art-programme-to-study-a-broad-range-of-art-periods-and-methodologies-with-opportunities-for-hands-on-curatorial-work-modes-of-study-full-time-awards-available-ma",
-        "universityId": "university-of-bristol",
-        "programmeName": "Taught postgraduate programme MA History of Art Join our MA History of Art programme to study a broad range of art periods and methodologies, with opportunities for hands-on curatorial work. Modes of study Full-time Awards available MA",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-history-of-art/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-taught-postgraduate-programme-msc-clinical-research-methods-and-evidence-based-medicine-modes-of-study-part-time-awards-available-msc",
-        "universityId": "university-of-bristol",
-        "programmeName": "Taught postgraduate programme MSc Clinical Research Methods and Evidence-Based Medicine Modes of study Part-time Awards available MSc",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-clinical-research-methods-and-evidence-based-medicine/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-taught-postgraduate-programme-msc-earthquake-engineering-and-infrastructure-resilience-study-at-the-university-of-bristol-and-become-a-leader-in-seismic-risk-assessment-and-disaster-management-access-state-of-the-art-facilities-and-field-trips-modes-of-study-full-time-awards-available-msc",
-        "universityId": "university-of-bristol",
-        "programmeName": "Taught postgraduate programme MSc Earthquake Engineering and Infrastructure Resilience Study at the University of Bristol and become a leader in seismic risk assessment and disaster management. Access state-of-the-art facilities and field trips. Modes of study Full-time Awards available MSc",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-earthquake-engineering-and-infrastructure-resilience/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."

@@ -37,7 +37,8 @@ REJECT_TERMS = re.compile(
 NAVIGATION_TERMS = re.compile(
     r"\b(contact us|fees?|funding|scholarships?|admissions?|how to apply|"
     r"student support|meet us|teaching and learning|entry requirements|"
-    r"courses for entry|courses at|course search|find a course|master(?:'|’)?s courses|"
+    r"courses for entry|courses at|course search|find a course|find a programme|"
+    r"master(?:'|’)?s courses|"
     r"taught master(?:'|’)?s(?: study)?|why manchester|"
     r"why (?:should i )?study|why study)\b",
     flags=re.IGNORECASE,
@@ -91,22 +92,18 @@ class GenericProgrammeAdapter:
             : self.config.max_detail_pages
         ]
 
-        def parse_one(programme: DiscoveredProgramme) -> DiscoveredProgramme:
+        def parse_one(programme: DiscoveredProgramme) -> DiscoveredProgramme | None:
             try:
                 return self._parse_detail(programme, fetcher(programme.source_url))
-            except Exception as exc:
-                return replace(
-                    programme,
-                    deadline_text=(
-                        "Programme was found by the generic official-site crawler, "
-                        f"but its detail page could not be fetched: "
-                        f"{type(exc).__name__}: {str(exc)[:180]}"
-                    ),
-                    parse_status="no-deadline",
-                )
+            except Exception:
+                return None
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-            detailed = list(executor.map(parse_one, programmes))
+            detailed = [
+                programme
+                for programme in executor.map(parse_one, programmes)
+                if programme is not None
+            ]
 
         if len(detailed) < self.config.minimum_expected_programmes:
             raise ValueError(
@@ -185,6 +182,10 @@ class GenericProgrammeAdapter:
     ) -> DiscoveredProgramme:
         soup = BeautifulSoup(html, "html.parser")
         title = _page_title(soup) or programme.name
+        if NAVIGATION_TERMS.search(title) or not _looks_like_degree_page(
+            programme.source_url, title
+        ):
+            raise ValueError(f"Detail page is not a programme page: {title}")
         degree_type = _degree_type(title) or programme.degree_type
         text = _normalise_text(soup.get_text(" ", strip=True))
         windows, excerpt = _parse_application_windows(

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-06T15:34:30.384951+00:00",
+    "updatedAt": "2026-07-06T20:56:29.042329+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -11744,7 +11744,7 @@
     },
     "university-of-chicago": {
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-06T15:34:14.370824+00:00",
+      "checkedAt": "2026-07-06T20:56:12.851340+00:00",
       "itemCount": 4,
       "applicationOpensAt": null,
       "catalogHash": "60d0a3a0f68ec7a67147760fead268f3301f908dc192ad939e798c192cdb6ecf",
@@ -11785,27 +11785,11 @@
     },
     "university-of-bristol": {
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-06T15:34:16.708137+00:00",
-      "itemCount": 20,
+      "checkedAt": "2026-07-06T20:56:14.799250+00:00",
+      "itemCount": 16,
       "applicationOpensAt": "2025-09-01",
-      "catalogHash": "9fc7e40ccbaa9f8cadcf72b4df8a8b0836979656ca8d11382fc902c595b3bc79",
+      "catalogHash": "9a634cce3f55cba0271f694358c721bef661064fcbaae7f6719725b7b7aa6ebe",
       "programmes": {
-        "bristol-find-a-programme": {
-          "name": "Find a programme",
-          "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-        },
-        "bristol-taught-postgraduate-programme-ma-history-of-art-join-our-ma-history-of-art-programme-to-study-a-broad-range-of-art-periods-and-methodologies-with-opportunities-for-hands-on-curatorial-work-modes-of-study-full-time-awards-available-ma": {
-          "name": "Taught postgraduate programme MA History of Art Join our MA History of Art programme to study a broad range of art periods and methodologies, with opportunities for hands-on curatorial work. Modes of study Full-time Awards available MA",
-          "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-        },
         "bristol-ma-philosophy": {
           "name": "MA Philosophy",
           "degreeType": "MA",
@@ -11870,14 +11854,6 @@
           "parseStatus": "parsed",
           "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
         },
-        "bristol-taught-postgraduate-programme-msc-clinical-research-methods-and-evidence-based-medicine-modes-of-study-part-time-awards-available-msc": {
-          "name": "Taught postgraduate programme MSc Clinical Research Methods and Evidence-Based Medicine Modes of study Part-time Awards available MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-        },
         "bristol-msc-communication-networks-and-signal-processing": {
           "name": "MSc Communication Networks and Signal Processing",
           "degreeType": "MSC",
@@ -11885,14 +11861,6 @@
           "department": "",
           "parseStatus": "parsed",
           "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
-        },
-        "bristol-taught-postgraduate-programme-msc-earthquake-engineering-and-infrastructure-resilience-study-at-the-university-of-bristol-and-become-a-leader-in-seismic-risk-assessment-and-disaster-management-access-state-of-the-art-facilities-and-field-trips-modes-of-study-full-time-awards-available-msc": {
-          "name": "Taught postgraduate programme MSc Earthquake Engineering and Infrastructure Resilience Study at the University of Bristol and become a leader in seismic risk assessment and disaster management. Access state-of-the-art facilities and field trips. Modes of study Full-time Awards available MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "bristol-msc-east-asian-development-and-the-global-economy": {
           "name": "MSc East Asian Development and the Global Economy",
@@ -11979,7 +11947,7 @@
     },
     "the-university-of-sheffield": {
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-06T15:34:21.337214+00:00",
+      "checkedAt": "2026-07-06T20:56:19.621790+00:00",
       "itemCount": 20,
       "applicationOpensAt": null,
       "catalogHash": "dbd2afc05f285458d3638a3c9cf91e85f5e80fa565a795db9cae7aea9e730bc7",
@@ -12148,7 +12116,7 @@
     },
     "university-of-southampton": {
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-06T15:34:25.335261+00:00",
+      "checkedAt": "2026-07-06T20:56:23.488884+00:00",
       "itemCount": 20,
       "applicationOpensAt": null,
       "catalogHash": "80a09b4c276c6d98fe3c260b5a276fb70b4183976d86351957adb0a00050eb34",
@@ -12317,7 +12285,7 @@
     },
     "the-university-of-nottingham": {
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-06T15:34:30.384951+00:00",
+      "checkedAt": "2026-07-06T20:56:29.042329+00:00",
       "itemCount": 14,
       "applicationOpensAt": null,
       "catalogHash": "68d35964774446bfeccbe9316e3ff8955ec1d2a45c78d935440ab4b255227a23",

@@ -14,6 +14,7 @@ CATALOG_HTML = """
       Master of Computer Science
     </a>
     <a href="/study/postgraduate/msc-data-science">MSc Data Science</a>
+    <a href="/study/postgraduate/master-of-stale-page">Master of Stale Page</a>
     <a href="/study/undergraduate/bachelor-of-science">Bachelor of Science</a>
     <a href="/study/masters/admissions">Master's admissions</a>
     <a href="/study/masters/fees-and-funding">Master's fees and funding</a>
@@ -66,7 +67,12 @@ def test_generic_adapter_follows_official_masters_links_and_extracts_dates() -> 
         "https://example.edu/study/postgraduate/msc-data-science": DATA_SCIENCE_HTML,
     }
 
-    catalog = adapter.parse_catalog_from_fetcher(lambda url: pages[url])
+    def fetcher(url: str) -> str:
+        if url.endswith("/master-of-stale-page"):
+            raise RuntimeError("HTTP 404")
+        return pages[url]
+
+    catalog = adapter.parse_catalog_from_fetcher(fetcher)
 
     assert [programme.id for programme in catalog.programmes] == [
         "example-master-of-computer-science",
