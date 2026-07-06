@@ -8,12 +8,15 @@ from pathlib import Path
 from .approvals import approve_programme_candidates, approve_window
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
+from .generic_discovery_batch import run_generic_discovery_batch
 from .intakes import migrate_application_intakes
+from .io import read_json
 from .monitor import monitor_universities, print_summary
-from .paths import APPLICATION_SOURCE_STATE_PATH, SITE_DIR
+from .paths import APPLICATION_SOURCE_STATE_PATH, SITE_DIR, UNIVERSITIES_PATH
 from .predictions import generate_predictions
 from .programme_adapters.cambridge import CambridgeAdapter
 from .programme_adapters.cuhk import CUHKAdapter
+from .programme_adapters.generic import GenericProgrammeAdapter, GenericProgrammeConfig
 from .programme_adapters.glasgow import GlasgowAdapter
 from .programme_adapters.hku import HKUAdapter
 from .programme_adapters.hkust import HKUSTAdapter
@@ -42,6 +45,7 @@ PROGRAMME_ADAPTERS = {
             minimum_expected_programmes=150,
             default_application_url="https://study.ed.ac.uk/postgraduate/applying",
             default_intake="September 2026",
+            default_application_opens_at="2025-10-01",
         )
     ),
     "glasgow": GlasgowAdapter,
@@ -89,6 +93,41 @@ def main() -> None:
         default="cuhk",
     )
     programme_discovery.add_argument("--dry-run", action="store_true")
+    generic_discovery = subparsers.add_parser(
+        "discover-generic-programmes",
+        help="Discover taught master's programmes from official seed pages",
+    )
+    generic_discovery.add_argument("--university", required=True)
+    generic_discovery.add_argument(
+        "--seed",
+        action="append",
+        help="Official catalogue or programme page URL. Can be repeated.",
+    )
+    generic_discovery.add_argument(
+        "--prefix",
+        help="Programme id prefix. Defaults to a slug derived from the university id.",
+    )
+    generic_discovery.add_argument("--default-intake", default="September 2026")
+    generic_discovery.add_argument("--default-application-opens-at")
+    generic_discovery.add_argument("--minimum-closes-at", default="2025-07-01")
+    generic_discovery.add_argument("--min-programmes", type=int, default=1)
+    generic_discovery.add_argument("--max-pages", type=int, default=25)
+    generic_discovery.add_argument("--dry-run", action="store_true")
+    generic_batch = subparsers.add_parser(
+        "discover-generic-batch",
+        help="Run configured generic programme discovery seed pages",
+    )
+    generic_batch.add_argument("--dry-run", action="store_true")
+    generic_batch.add_argument(
+        "--replace-existing",
+        action="store_true",
+        help="Remove pending candidates from this configured batch before rerunning.",
+    )
+    generic_batch.add_argument(
+        "--only",
+        action="append",
+        help="Limit to a university id or configured name. Can be repeated.",
+    )
     deadlines = subparsers.add_parser(
         "update-deadlines", help="Run configured programme parsers"
     )
@@ -163,6 +202,45 @@ def main() -> None:
                 dry_run=args.dry_run,
             )
         print(json.dumps(report, ensure_ascii=False))
+    elif args.command == "discover-generic-programmes":
+        university = _university_by_id(args.university)
+        seed_urls = tuple(
+            args.seed
+            or [
+                university.get("admissionsUrl")
+                or university.get("homepageUrl")
+                or "",
+            ]
+        )
+        adapter = GenericProgrammeAdapter(
+            GenericProgrammeConfig(
+                university_id=args.university,
+                school_prefix=args.prefix or _generic_prefix(args.university),
+                seed_urls=tuple(url for url in seed_urls if url),
+                official_domains=tuple(university.get("officialDomains", [])),
+                default_application_url=(
+                    university.get("admissionsUrl") or university.get("homepageUrl") or ""
+                ),
+                default_intake=args.default_intake,
+                default_application_opens_at=args.default_application_opens_at,
+                minimum_closes_at=args.minimum_closes_at,
+                minimum_expected_programmes=args.min_programmes,
+                max_detail_pages=args.max_pages,
+            )
+        )
+        print(
+            json.dumps(
+                discover_programmes(adapter, dry_run=args.dry_run),
+                ensure_ascii=False,
+            )
+        )
+    elif args.command == "discover-generic-batch":
+        report = run_generic_discovery_batch(
+            dry_run=args.dry_run,
+            replace_existing=args.replace_existing,
+            only=set(args.only) if args.only else None,
+        )
+        print(json.dumps(report["summary"], ensure_ascii=False))
     elif args.command == "update-deadlines":
         report = update_deadlines(dry_run=args.dry_run)
         print(json.dumps(report, ensure_ascii=False))
@@ -263,6 +341,20 @@ def _validate_or_exit() -> dict[str, int]:
         f"{summary['enabledParsers']} enabled parsers."
     )
     return summary
+
+
+def _university_by_id(university_id: str) -> dict:
+    universities = read_json(UNIVERSITIES_PATH).get("universities", [])
+    for university in universities:
+        if university.get("id") == university_id:
+            return university
+    raise SystemExit(f"Unknown university id: {university_id}")
+
+
+def _generic_prefix(university_id: str) -> str:
+    ignored = {"the", "university", "of", "and", "college", "institute"}
+    parts = [part for part in university_id.split("-") if part not in ignored]
+    return "-".join(parts[:3]) if parts else university_id.split("-", 1)[0]
 
 
 if __name__ == "__main__":

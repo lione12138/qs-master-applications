@@ -36,4 +36,4 @@ def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
         text=True,
     )
 
-    assert json.loads(result.stdout) == {"the": 2238, "arwu": 2218}
+    assert json.loads(result.stdout) == {"the": 3217, "arwu": 2979}

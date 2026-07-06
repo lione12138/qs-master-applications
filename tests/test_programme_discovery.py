@@ -126,11 +126,12 @@ def test_early_round_before_shared_commencement_requires_opening_review(
         {
             "intake": "September 2026",
             "round": "Early round",
-            "applicantCategories": ["all"],
-            "opensAt": None,
-            "closesAt": "2025-08-01",
-        }
-    ]
+                "applicantCategories": ["all"],
+                "opensAt": None,
+                "opensAtBasis": "missing",
+                "closesAt": "2025-08-01",
+            }
+        ]
     assert "programme-specific opening date" in accountancy["reviewReason"]
 
 

@@ -91,6 +91,7 @@ def discover_programmes(
                     [
                         {
                             "round": window.round,
+                            "opensAt": window.opens_at,
                             "closesAt": window.closes_at,
                             "applicantCategories": window.applicant_categories,
                         }
@@ -151,21 +152,33 @@ def _candidate_record(
     shared_opens_at: str | None,
     detected_at: str,
 ) -> dict:
-    def opening_for(window) -> str | None:
-        opens_at = window.opens_at or shared_opens_at
-        return opens_at if opens_at and opens_at <= window.closes_at else None
+    shared_opening_basis = getattr(adapter, "application_opens_at_basis", "official")
 
-    windows = [
-        {
-            "intake": window.intake or adapter.intake,
-            "round": window.round,
-            "applicantCategories": window.applicant_categories,
-            "opensAt": opening_for(window),
-            "closesAt": window.closes_at,
-        }
-        for window in programme.windows
-    ]
+    def opening_for(window) -> tuple[str | None, str]:
+        opens_at = window.opens_at or shared_opens_at
+        if not opens_at or opens_at > window.closes_at:
+            return None, "missing"
+        if window.opens_at:
+            return opens_at, "official"
+        return opens_at, shared_opening_basis
+
+    windows = []
+    for window in programme.windows:
+        opens_at, opens_at_basis = opening_for(window)
+        windows.append(
+            {
+                "intake": window.intake or adapter.intake,
+                "round": window.round,
+                "applicantCategories": window.applicant_categories,
+                "opensAt": opens_at,
+                "opensAtBasis": opens_at_basis,
+                "closesAt": window.closes_at,
+            }
+        )
     has_unresolved_opening = any(window["opensAt"] is None for window in windows)
+    has_inferred_opening = any(
+        window.get("opensAtBasis", "").startswith("inferred") for window in windows
+    )
     deadline_precedes_shared_opening = bool(
         shared_opens_at
         and any(window["closesAt"] < shared_opens_at for window in windows)
@@ -204,6 +217,11 @@ def _candidate_record(
                     "confirm it on the programme page."
                 )
                 if has_unresolved_opening
+                else (
+                    "Opening date uses a configured cycle default; review the "
+                    "officially parsed deadline before promotion."
+                )
+                if has_inferred_opening
                 else "Review the automatically discovered programme and application rounds."
             )
         ),

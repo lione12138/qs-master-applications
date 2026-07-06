@@ -100,7 +100,7 @@ def monitor_application_sources(
         if result["status"] == "ok":
             target_dates = [
                 value
-                for value in (record.get("opensAt"), record.get("closesAt"))
+                for value in _evidence_target_dates(record)
                 if value
             ]
             if target_dates and not evidence_matches_target_dates(
@@ -161,3 +161,9 @@ def monitor_application_sources(
         },
     )
     return summary
+
+
+def _evidence_target_dates(record: dict) -> tuple[str | None, ...]:
+    if "configured cycle-default opening date" in record.get("evidence", ""):
+        return (record.get("closesAt"),)
+    return (record.get("opensAt"), record.get("closesAt"))

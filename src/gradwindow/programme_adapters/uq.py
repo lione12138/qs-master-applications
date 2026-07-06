@@ -16,6 +16,7 @@ CATALOG_URL = "https://study.uq.edu.au/sitemap.xml"
 APPLICATION_URL = "https://apply.uq.edu.au/"
 BASE_URL = "https://study.uq.edu.au"
 INTAKE_YEAR = 2026
+APPLICATION_OPENS_AT = "2025-08-01"
 
 MONTHS = (
     "January|February|March|April|May|June|July|August|September|October|"
@@ -38,6 +39,7 @@ class UQAdapter:
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL
+    application_opens_at_basis = "inferred-cycle-default"
     intake = "Semester 1 2026"
 
     def __init__(
@@ -96,7 +98,7 @@ class UQAdapter:
             max_workers=self.detail_workers
         ) as executor:
             detailed = list(executor.map(parse_one, values))
-        return DiscoveredCatalog(application_opens_at=None, programmes=detailed)
+        return DiscoveredCatalog(application_opens_at=APPLICATION_OPENS_AT, programmes=detailed)
 
     def _parse_detail(
         self,
@@ -139,7 +141,7 @@ class UQAdapter:
             name=title,
             windows=_dedupe_windows(windows),
             deadline_text=" ".join(excerpts)[:1600] if excerpts else programme.deadline_text,
-            parse_status="incomplete" if windows else "no-deadline",
+            parse_status="parsed" if windows else "no-deadline",
         )
 
 

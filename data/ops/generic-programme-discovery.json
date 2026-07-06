@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "description": "Seed pages for the generic official-site programme discovery runner. These entries create review candidates, not published application windows.",
+    "updatedAt": "2026-07-06"
+  },
+  "schools": [
+    {
+      "name": "uchicago-data-science",
+      "universityId": "university-of-chicago",
+      "prefix": "uchicago",
+      "seedUrls": [
+        "https://datascience.uchicago.edu/education/masters-programs/"
+      ],
+      "defaultIntake": "Autumn 2027",
+      "maxDetailPages": 10,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "melbourne-graduate-coursework",
+      "universityId": "the-university-of-melbourne",
+      "prefix": "melbourne",
+      "seedUrls": [
+        "https://study.unimelb.edu.au/find/courses/graduate/"
+      ],
+      "defaultIntake": "Semester 1 2027",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "monash-postgraduate-courses",
+      "universityId": "monash-university",
+      "prefix": "monash",
+      "seedUrls": [
+        "https://www.monash.edu/study/courses/find-a-course"
+      ],
+      "defaultIntake": "Semester 1 2027",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "sydney-postgraduate-coursework",
+      "universityId": "the-university-of-sydney",
+      "prefix": "sydney",
+      "seedUrls": [
+        "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework"
+      ],
+      "defaultIntake": "Semester 1 2027",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "bristol-postgraduate-taught",
+      "universityId": "university-of-bristol",
+      "prefix": "bristol",
+      "seedUrls": [
+        "https://www.bristol.ac.uk/study/postgraduate/search/"
+      ],
+      "defaultIntake": "September 2026",
+      "defaultApplicationOpensAt": "2025-09-01",
+      "applicationOpensAtBasis": "inferred-month-default",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "manchester-masters-courses",
+      "universityId": "the-university-of-manchester",
+      "prefix": "manchester",
+      "seedUrls": [
+        "https://www.manchester.ac.uk/study/masters/courses/list/"
+      ],
+      "defaultIntake": "September 2026",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "sheffield-postgraduate-taught",
+      "universityId": "the-university-of-sheffield",
+      "prefix": "sheffield",
+      "seedUrls": [
+        "https://www.sheffield.ac.uk/postgraduate/taught/courses"
+      ],
+      "defaultIntake": "September 2026",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "southampton-postgraduate-taught",
+      "universityId": "university-of-southampton",
+      "prefix": "southampton",
+      "seedUrls": [
+        "https://www.southampton.ac.uk/courses/postgraduate-taught"
+      ],
+      "defaultIntake": "September 2026",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "nottingham-postgraduate-taught",
+      "universityId": "the-university-of-nottingham",
+      "prefix": "nottingham",
+      "seedUrls": [
+        "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught"
+      ],
+      "defaultIntake": "September 2026",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    },
+    {
+      "name": "birmingham-postgraduate-taught",
+      "universityId": "university-of-birmingham",
+      "prefix": "birmingham",
+      "seedUrls": [
+        "https://www.birmingham.ac.uk/study/postgraduate/courses/taught"
+      ],
+      "defaultIntake": "September 2026",
+      "maxDetailPages": 20,
+      "minimumExpected": 1,
+      "enabled": true
+    }
+  ]
+}

@@ -14,6 +14,7 @@ from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
 UNIVERSITY_ID = "the-university-of-hong-kong"
 CATALOG_URL = "https://portal.hku.hk/tpg-admissions/programme-listing"
 APPLICATION_URL = "https://portal.hku.hk/tpg-admissions/applying"
+APPLICATION_OPENS_AT = "2025-09-01"
 DETAIL_URL_TEMPLATE = (
     "https://portal.hku.hk/tpg-admissions/programme-details?"
     "programme={programme}&mode=FT"
@@ -43,6 +44,7 @@ class HKUAdapter:
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL
+    application_opens_at_basis = "inferred-cycle-default"
     intake = "September 2026"
 
     def __init__(
@@ -75,7 +77,7 @@ class HKUAdapter:
             max_workers=self.detail_workers
         ) as executor:
             detailed = list(executor.map(parse_one, programmes))
-        return DiscoveredCatalog(application_opens_at=None, programmes=detailed)
+        return DiscoveredCatalog(application_opens_at=APPLICATION_OPENS_AT, programmes=detailed)
 
     def _fetch_listing(self, fetcher) -> list[DiscoveredProgramme]:
         programmes: dict[str, DiscoveredProgramme] = {}
@@ -167,7 +169,7 @@ class HKUAdapter:
             programme,
             windows=windows,
             deadline_text=excerpt,
-            parse_status="incomplete",
+            parse_status="parsed",
         )
 
 

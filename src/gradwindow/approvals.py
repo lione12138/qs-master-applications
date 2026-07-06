@@ -2,9 +2,12 @@ from __future__ import annotations
 
 import copy
 from datetime import datetime, timezone
+import hashlib
 from pathlib import Path
 import re
+from uuid import uuid4
 
+from .evidence_store import write_evidence_snapshot
 from .intakes import with_intake_details
 from .io import read_json, write_json
 from .paths import (
@@ -67,11 +70,12 @@ def approve_window(
         "applications": proposed,
     }
 
+    suffix = uuid4().hex
     validation_path = applications_path.with_name(
-        f"{applications_path.stem}.validation.json"
+        f"{applications_path.stem}.validation.{suffix}.json"
     )
     predictions_validation_path = applications_path.with_name(
-        "predictions.validation.json"
+        f"predictions.validation.{suffix}.json"
     )
     write_json(validation_path, proposed_payload)
     try:
@@ -126,6 +130,7 @@ def approve_programme_candidates(
     verified_at = approved_at.date().isoformat()
     promoted_programmes = 0
     promoted_windows = 0
+    evidence_records: list[tuple[dict, dict]] = []
 
     for candidate in candidates.get("items", []):
         if candidate.get("type") != "new-programme":
@@ -179,6 +184,8 @@ def approve_programme_candidates(
                 }
             )
             applications_payload.setdefault("applications", []).append(record)
+            if applications_path == APPLICATIONS_PATH:
+                evidence_records.append((record, candidate))
             known_application_ids.add(record_id)
             promoted_windows += 1
         if len(exact_windows) == len(windows):
@@ -215,6 +222,8 @@ def approve_programme_candidates(
 
     write_json(programs_path, programs_payload)
     write_json(applications_path, applications_payload)
+    for record, candidate in evidence_records:
+        _write_programme_candidate_evidence(record, candidate, approved_at)
     candidates.setdefault("meta", {})["updatedAt"] = approved_at.isoformat()
     write_json(candidates_path, candidates)
     prediction_output = (
@@ -237,12 +246,15 @@ def _validate_programme_promotion(
     programs_payload: dict,
     applications_payload: dict,
 ) -> None:
-    validation_programs_path = PROGRAMS_PATH.with_name("programs.validation.json")
+    suffix = uuid4().hex
+    validation_programs_path = PROGRAMS_PATH.with_name(
+        f"programs.validation.{suffix}.json"
+    )
     validation_applications_path = APPLICATIONS_PATH.with_name(
-        "applications.validation.json"
+        f"applications.validation.{suffix}.json"
     )
     validation_predictions_path = APPLICATIONS_PATH.with_name(
-        "predictions.validation.json"
+        f"predictions.validation.{suffix}.json"
     )
     write_json(validation_programs_path, programs_payload)
     write_json(validation_applications_path, applications_payload)
@@ -272,10 +284,47 @@ def _programme_window_id(programme_id: str, window: dict) -> str:
 
 
 def _programme_window_evidence(programme_name: str, window: dict, source_url: str) -> str:
+    round_label = window.get("round") or "the application window"
+    opens_at_basis = window.get("opensAtBasis", "official")
+    if str(opens_at_basis).startswith("inferred"):
+        opening_text = (
+            f"uses {window['opensAt']} as the configured cycle-default opening date"
+        )
+    else:
+        opening_text = f"lists {round_label} opening on {window['opensAt']}"
     return (
-        f"The official programme page for {programme_name} lists "
-        f"{window.get('round') or 'the application window'} opening on "
-        f"{window['opensAt']} and closing on {window['closesAt']}. Source: {source_url}"
+        f"The official programme page for {programme_name} lists {round_label} "
+        f"closing on {window['closesAt']} and {opening_text}. "
+        f"Source: {source_url}"
+    )
+
+
+def _write_programme_candidate_evidence(
+    record: dict,
+    candidate: dict,
+    captured_at: datetime,
+) -> None:
+    excerpt = (candidate.get("evidenceExcerpt") or record["evidence"]).strip()
+    excerpt_hash = hashlib.sha256(excerpt.encode("utf-8")).hexdigest()
+    write_evidence_snapshot(
+        APPLICATIONS_PATH.parent / "evidence",
+        {
+            "recordId": record["id"],
+            "universityId": record["universityId"],
+            "sourceUrl": record["sourceUrl"],
+            "finalUrl": record["sourceUrl"],
+            "capturedAt": captured_at.isoformat(),
+            "contentHash": excerpt_hash,
+            "contentType": "text/plain; charset=utf-8",
+            "bytesRead": len(excerpt.encode("utf-8")),
+            "truncated": False,
+            "excerpt": excerpt,
+            "excerptHash": excerpt_hash,
+            "contentSelector": "programme-discovery-adapter",
+            "matchedTextBefore": "",
+            "matchedText": excerpt,
+            "matchedTextAfter": "",
+        },
     )
 
 

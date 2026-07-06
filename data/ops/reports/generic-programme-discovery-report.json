@@ -1,0 +1,833 @@
+{
+  "meta": {
+    "updatedAt": "2026-07-06T15:14:55.561624+00:00",
+    "dryRun": false,
+    "replaceExisting": true,
+    "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
+  },
+  "summary": {
+    "schoolsConfigured": 10,
+    "schoolsSucceeded": 5,
+    "schoolsErrored": 5,
+    "readyToApprove": 0,
+    "needsAdapter": 74,
+    "comingSoonMonitor": 3
+  },
+  "results": [
+    {
+      "status": "ok",
+      "universityId": "university-of-chicago",
+      "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
+      "checkedAt": "2026-07-06T15:14:55.561624+00:00",
+      "catalogProgrammes": 4,
+      "knownProgrammes": 1,
+      "newCandidates": 4,
+      "pendingCandidates": 4,
+      "programmesWithoutDeadlines": 4,
+      "programmesNeedingReview": 4,
+      "dryRun": false,
+      "batchStatus": "ok"
+    },
+    {
+      "batchStatus": "error",
+      "status": "error",
+      "universityId": "the-university-of-melbourne",
+      "sourceUrl": "https://study.unimelb.edu.au/find/courses/graduate/",
+      "errorType": "FetchFailure",
+      "message": "HTTP 403",
+      "dryRun": false
+    },
+    {
+      "batchStatus": "error",
+      "status": "error",
+      "universityId": "monash-university",
+      "sourceUrl": "https://www.monash.edu/study/courses/find-a-course",
+      "errorType": "FetchFailure",
+      "message": "HTTP 403",
+      "dryRun": false
+    },
+    {
+      "batchStatus": "error",
+      "status": "error",
+      "universityId": "the-university-of-sydney",
+      "sourceUrl": "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework",
+      "errorType": "ValueError",
+      "message": "Generic crawler for the-university-of-sydney found 0 candidate programmes; expected at least 1",
+      "dryRun": false
+    },
+    {
+      "status": "ok",
+      "universityId": "university-of-bristol",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
+      "checkedAt": "2026-07-06T15:14:57.390585+00:00",
+      "catalogProgrammes": 20,
+      "knownProgrammes": 1,
+      "newCandidates": 20,
+      "pendingCandidates": 20,
+      "programmesWithoutDeadlines": 4,
+      "programmesNeedingReview": 4,
+      "dryRun": false,
+      "batchStatus": "ok"
+    },
+    {
+      "batchStatus": "error",
+      "status": "error",
+      "universityId": "the-university-of-manchester",
+      "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/",
+      "errorType": "ValueError",
+      "message": "Generic crawler for the-university-of-manchester found 0 candidate programmes; expected at least 1",
+      "dryRun": false
+    },
+    {
+      "status": "ok",
+      "universityId": "the-university-of-sheffield",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
+      "checkedAt": "2026-07-06T15:15:01.715335+00:00",
+      "catalogProgrammes": 20,
+      "knownProgrammes": 1,
+      "newCandidates": 19,
+      "pendingCandidates": 19,
+      "programmesWithoutDeadlines": 20,
+      "programmesNeedingReview": 20,
+      "dryRun": false,
+      "batchStatus": "ok"
+    },
+    {
+      "status": "ok",
+      "universityId": "university-of-southampton",
+      "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
+      "checkedAt": "2026-07-06T15:15:05.604844+00:00",
+      "catalogProgrammes": 20,
+      "knownProgrammes": 1,
+      "newCandidates": 20,
+      "pendingCandidates": 20,
+      "programmesWithoutDeadlines": 0,
+      "programmesNeedingReview": 20,
+      "dryRun": false,
+      "batchStatus": "ok"
+    },
+    {
+      "status": "ok",
+      "universityId": "the-university-of-nottingham",
+      "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
+      "checkedAt": "2026-07-06T15:15:11.132949+00:00",
+      "catalogProgrammes": 14,
+      "knownProgrammes": 1,
+      "newCandidates": 14,
+      "pendingCandidates": 14,
+      "programmesWithoutDeadlines": 14,
+      "programmesNeedingReview": 14,
+      "dryRun": false,
+      "batchStatus": "ok"
+    },
+    {
+      "batchStatus": "error",
+      "status": "error",
+      "universityId": "university-of-birmingham",
+      "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/courses/taught",
+      "errorType": "FetchFailure",
+      "message": "HTTP 404",
+      "dryRun": false
+    }
+  ],
+  "classification": {
+    "readyToApprove": [],
+    "needsAdapter": [
+      {
+        "id": "new-programme:nottingham-accounting-and-finance-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Accounting and Finance MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/accounting-and-finance-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-additive-manufacturing-and-3d-printing-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Additive Manufacturing and 3D Printing MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/additive-manufacturing-and-3d-printing-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-advanced-building-performance-engineering-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Building Performance Engineering MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-building-performance-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-advanced-civil-engineering-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Civil Engineering MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-civil-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-advanced-electrical-and-electronic-engineering-with-extended-research-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Electrical and Electronic Engineering with Extended Research MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-electrical-and-electronic-engineering-with-extended-research-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-advanced-materials-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Materials MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-materials-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-ai-and-digital-chemistry-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "AI and Digital Chemistry MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/ai-and-digital-chemistry-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-animal-nutrition-msc-pgdip",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Animal Nutrition MSc/PGDip",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/animal-nutrition-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-applied-linguistics-and-english-language-teaching-ma",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Applied Linguistics and English Language Teaching MA",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-linguistics-and-english-language-teaching-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-applied-linguistics-ma",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Applied Linguistics MA",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-linguistics-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-applied-sport-and-exercise-medicine-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Applied Sport and Exercise Medicine MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-sport-and-exercise-medicine-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-advanced-mechanical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Advanced Mechanical Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-aerospace-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Aerospace Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-applied-linguistics-and-tesol-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Applied Linguistics and TESOL MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-applied-professional-studies-in-education-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Applied Professional Studies in Education MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-archaeology-and-heritage-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Archaeology and Heritage MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-architectural-design-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Architectural Design MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-artificial-intelligence-for-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Artificial Intelligence for Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-artificial-intelligence-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Artificial Intelligence MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-astrophysics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Astrophysics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-biodiversity-and-conservation-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biodiversity and Conservation MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-biological-and-bioprocess-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biological and Bioprocess Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-biomedical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biomedical Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-biomedical-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biomedical Science MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-business-analytics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business Analytics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-business-and-organisational-psychology-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business and Organisational Psychology MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-business-finance-and-economics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business Finance and Economics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-cancer-biology-and-therapeutics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Cancer Biology and Therapeutics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-chemistry-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Chemistry MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:sheffield-civil-and-structural-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Civil and Structural Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:bristol-find-a-programme",
+        "universityId": "university-of-bristol",
+        "programmeName": "Find a programme",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-black-humanities/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:bristol-ma-philosophy",
+        "universityId": "university-of-bristol",
+        "programmeName": "MA Philosophy",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-philosophy/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-ma-translation-and-intercultural-studies",
+        "universityId": "university-of-bristol",
+        "programmeName": "MA Translation and Intercultural Studies",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-translation-online/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-advanced-microelectronic-systems-engineering",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Advanced Microelectronic Systems Engineering",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-advanced-microelectronic-systems-engineering/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-applied-neuropsychology-online",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Applied Neuropsychology (Online)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-applied-neuropsychology-online/",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-cardiovascular-perfusion-online",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Cardiovascular Perfusion (Online)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-cardiovascular-perfusion-online/",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-clinical-perfusion-science",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Clinical Perfusion Science",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-clinical-perfusion-science/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-communication-networks-and-signal-processing",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Communication Networks and Signal Processing",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-communication-networks-and-signal-processing/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-composites-engineering",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Composites Engineering",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-advanced-composites/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-east-asian-development-and-the-global-economy",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc East Asian Development and the Global Economy",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-east-asian-development-and-the-global-economy/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-economics",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Economics",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-economics/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-economics-and-finance",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Economics and Finance",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-economics-and-finance/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-economics-finance-and-management",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Economics, Finance and Management",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-economics-finance-and-management/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-engineering-mathematics",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Engineering Mathematics",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-engineering-mathematics/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-engineering-with-management",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Engineering with Management",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-engineering-with-management/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-environmental-analytical-chemistry",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Environmental Analytical Chemistry",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-environmental-analytical-chemistry/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-global-banking-and-finance",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Global Banking and Finance",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-banking-regulation-and-financial-stability/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-taught-postgraduate-programme-ma-history-of-art-join-our-ma-history-of-art-programme-to-study-a-broad-range-of-art-periods-and-methodologies-with-opportunities-for-hands-on-curatorial-work-modes-of-study-full-time-awards-available-ma",
+        "universityId": "university-of-bristol",
+        "programmeName": "Taught postgraduate programme MA History of Art Join our MA History of Art programme to study a broad range of art periods and methodologies, with opportunities for hands-on curatorial work. Modes of study Full-time Awards available MA",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/ma-history-of-art/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:bristol-taught-postgraduate-programme-msc-clinical-research-methods-and-evidence-based-medicine-modes-of-study-part-time-awards-available-msc",
+        "universityId": "university-of-bristol",
+        "programmeName": "Taught postgraduate programme MSc Clinical Research Methods and Evidence-Based Medicine Modes of study Part-time Awards available MSc",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-clinical-research-methods-and-evidence-based-medicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:bristol-taught-postgraduate-programme-msc-earthquake-engineering-and-infrastructure-resilience-study-at-the-university-of-bristol-and-become-a-leader-in-seismic-risk-assessment-and-disaster-management-access-state-of-the-art-facilities-and-field-trips-modes-of-study-full-time-awards-available-msc",
+        "universityId": "university-of-bristol",
+        "programmeName": "Taught postgraduate programme MSc Earthquake Engineering and Infrastructure Resilience Study at the University of Bristol and become a leader in seismic risk assessment and disaster management. Access state-of-the-art facilities and field trips. Modes of study Full-time Awards available MSc",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-earthquake-engineering-and-infrastructure-resilience/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-briana-allen-med",
+        "universityId": "university-of-chicago",
+        "programmeName": "Briana Allen, MEd",
+        "sourceUrl": "https://datascience.uchicago.edu/people/briana-allen/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-elevate-your-expertise-in-data-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Elevate Your Expertise in Data Science",
+        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-masters-programs",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master’s Programs",
+        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-ms-in-data-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "MS in Data Science",
+        "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:southampton-applied-linguistics-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Applied Linguistics (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/applied-linguistics-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-arts-and-cultural-leadership-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Arts and Cultural Leadership (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/arts-cultural-leadership-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-communication-design-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Communication Design (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/communication-design-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-contemporary-curating-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Contemporary Curating (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/contemporary-curating-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-creative-writing-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Creative Writing (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/creative-writing-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-museums-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (Heritage and Museums) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-museums-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-public-history-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (Heritage and Public History) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-public-history-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-the-arts-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (Heritage and the Arts) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-the-arts-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-design-innovation-and-technology-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Design Innovation and Technology (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-design-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Design Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/design-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-digital-media-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Digital Media (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-media-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-eighteenth-century-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Eighteenth Century) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-eighteenth-century-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-nineteenth-century-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Nineteenth Century) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-nineteenth-century-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-postcolonial-and-world-literatures-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Postcolonial and World Literatures) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-postcolonial-world-literatures-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-twentieth-century-and-contemporary-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Twentieth Century and Contemporary) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-twentieth-century-contemporary-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-commercial-and-corporate-law-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Commercial and Corporate Law (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-commercial-corporate-law-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-law-and-human-rights-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Law and Human Rights (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-law-human-rights-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-laws-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "Laws (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/laws-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-law-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Law (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-law-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      }
+    ],
+    "comingSoonMonitor": [
+      {
+        "id": "new-programme:nottingham-advanced-chemical-engineering-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Chemical Engineering MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-chemical-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-advanced-clinical-practice-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Clinical Practice MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-clinical-practice-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-applied-translation-studies-ma",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Applied Translation Studies MA",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-translation-studies-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      }
+    ]
+  }
+}

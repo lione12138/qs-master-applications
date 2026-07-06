@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
-    "updatedAt": "2026-07-05",
+    "updatedAt": "2026-07-06",
     "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "programs": [
@@ -4265,6 +4265,276 @@
       "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm"
     },
     {
+      "id": "hkust-accounting-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Accounting",
+      "degreeType": "MSc",
+      "faculty": "Department of Accounting",
+      "applicationUrl": "https://msac.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-acct/"
+    },
+    {
+      "id": "hkust-aeronautical-engineering-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Aeronautical Engineering",
+      "degreeType": "MSc",
+      "faculty": "Department of Mechanical and Aerospace Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/ae",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ae/"
+    },
+    {
+      "id": "hkust-ai-and-entrepreneurship-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in AI and Entrepreneurship",
+      "degreeType": "MSc",
+      "faculty": "Department of Computer Science and Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/aie",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-aie/"
+    },
+    {
+      "id": "hkust-analytical-chemistry-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Analytical Chemistry",
+      "degreeType": "MSc",
+      "faculty": "Department of Chemistry",
+      "applicationUrl": "https://chem-msc.hkust.edu.hk/",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-anchem/"
+    },
+    {
+      "id": "hkust-artificial-intelligence-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Artificial Intelligence",
+      "degreeType": "MSc",
+      "faculty": "Department of Computer Science and Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/ai",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ai/"
+    },
+    {
+      "id": "hkust-arts-and-machine-creativity-ma",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Arts in Arts and Machine Creativity",
+      "degreeType": "MA",
+      "faculty": "Division of Arts and Machine Creativity, Academy of Interdisciplinary Studies",
+      "applicationUrl": "https://amc.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-amc/"
+    },
+    {
+      "id": "hkust-big-data-technology-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Big Data Technology",
+      "degreeType": "MSc",
+      "faculty": "Department of Computer Science and Engineering , School of Engineering Department of Mathematics , School of Science",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/bdt",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-bdt/"
+    },
+    {
+      "id": "hkust-biomolecular-engineering-and-health-informatics-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Biomolecular Engineering and Health Informatics",
+      "degreeType": "MSc",
+      "faculty": "Department of Chemical and Biological Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/behi",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-behi/"
+    },
+    {
+      "id": "hkust-biotechnology-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Biotechnology",
+      "degreeType": "MSc",
+      "faculty": "Division of Life Science",
+      "applicationUrl": "https://btec.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-biot/"
+    },
+    {
+      "id": "hkust-business-analytics-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Business Analytics",
+      "degreeType": "MSc",
+      "faculty": "Department of Information Systems, Business Statistics and Operations Management",
+      "applicationUrl": "https://msba.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ba/"
+    },
+    {
+      "id": "hkust-chemical-and-energy-engineering-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Chemical and Energy Engineering",
+      "degreeType": "MSc",
+      "faculty": "Department of Chemical and Biological Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/cee",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-cee/"
+    },
+    {
+      "id": "hkust-chinese-culture-ma",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Arts in Chinese Culture",
+      "degreeType": "MA",
+      "faculty": "Division of Humanities",
+      "applicationUrl": "https://shss.hkust.edu.hk/tpg/ccma/index",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-cc/"
+    },
+    {
+      "id": "hkust-data-driven-modeling-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Data-Driven Modeling",
+      "degreeType": "MSc",
+      "faculty": "Department of Physics",
+      "applicationUrl": "https://msdm.hkust.edu.hk/",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ddm/"
+    },
+    {
+      "id": "hkust-digital-and-sustainable-cities-master-of-engineering-in-digital-and-sustainable-cities-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Digital and Sustainable Cities Master of Engineering in Digital and Sustainable Cities",
+      "degreeType": "MSc",
+      "faculty": "Department of Civil and Environmental Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/disc",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-meng-disc/"
+    },
+    {
+      "id": "hkust-drug-regulatory-affairs-and-policy-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Drug Regulatory Affairs and Policy",
+      "degreeType": "MSc",
+      "faculty": "Division of Life Science",
+      "applicationUrl": "https://drap.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-drap/"
+    },
+    {
+      "id": "hkust-economics-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Economics",
+      "degreeType": "MSc",
+      "faculty": "Department of Economics",
+      "applicationUrl": "https://mscecon.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-econ/"
+    },
+    {
+      "id": "hkust-electronic-engineering-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Electronic Engineering",
+      "degreeType": "MSc",
+      "faculty": "Department of Electronic and Computer Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/eleg",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eleg/"
+    },
+    {
+      "id": "hkust-engineering-enterprise-management-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Engineering Enterprise Management",
+      "degreeType": "MSc",
+      "faculty": "Department of Industrial Engineering and Decision Analytics",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/eem",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-eem/"
+    },
+    {
+      "id": "hkust-entrepreneurial-leadership-in-biotechnology-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Entrepreneurial Leadership in Biotechnology",
+      "degreeType": "MSc",
+      "faculty": "Division of Life Science",
+      "applicationUrl": "https://elbt.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-elbt/"
+    },
+    {
+      "id": "hkust-environmental-health-and-safety-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Environmental Health and Safety",
+      "degreeType": "MSc",
+      "faculty": "Department of Ocean Science",
+      "applicationUrl": "https://ehs.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ehs/"
+    },
+    {
+      "id": "hkust-environmental-science-management-and-sustainability-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Environmental Science, Management and Sustainability",
+      "degreeType": "MSc",
+      "faculty": "Division of Environment and Sustainability",
+      "applicationUrl": "http://www.envr.ust.hk/programs/taught-postgraduate-program/msc-gd-in-evsm/program-objective.html",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-evsm/"
+    },
+    {
+      "id": "hkust-family-office-and-family-business-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Family Office and Family Business",
+      "degreeType": "MSc",
+      "faculty": "Department of Management",
+      "applicationUrl": "https://mscfofb.hkust.edu.hk/",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fofb/"
+    },
+    {
+      "id": "hkust-finance-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Finance",
+      "degreeType": "MSc",
+      "faculty": "Department of Finance",
+      "applicationUrl": "https://mfin.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fina/"
+    },
+    {
+      "id": "hkust-financial-mathematics-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Financial Mathematics",
+      "degreeType": "MSc",
+      "faculty": "Department of Mathematics",
+      "applicationUrl": "https://mafm.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mafm/"
+    },
+    {
+      "id": "hkust-financial-technology-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Financial Technology",
+      "degreeType": "MSc",
+      "faculty": "School of Engineering , School of Business and Management and School of Science",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/fintech",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-fintech/"
+    },
+    {
+      "id": "hkust-global-china-studies-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Global China Studies",
+      "degreeType": "MSc",
+      "faculty": "School of Humanities and Social Science",
+      "applicationUrl": "https://shss.hkust.edu.hk/tpg/mgcs/index",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gcs/"
+    },
+    {
+      "id": "hkust-global-marine-resources-management-dual-degrees-by-hkust-and-university-of-southampton-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Global Marine Resources Management (Dual degrees by HKUST and University of Southampton)",
+      "degreeType": "MSc",
+      "faculty": "Department of Ocean Science",
+      "applicationUrl": "http://mscgmrm.org/",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-gmrm/"
+    },
+    {
+      "id": "hkust-global-operations-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Global Operations",
+      "degreeType": "MSc",
+      "faculty": "Department of Information Systems, Business Statistics and Operation Management",
+      "applicationUrl": "https://msgo.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-go/"
+    },
+    {
+      "id": "hkust-information-and-cyber-security-management-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Information and Cyber Security Management",
+      "degreeType": "MSc",
+      "faculty": "Department of Information Systems, Business Statistics and Operations Management",
+      "applicationUrl": "https://mscicsm.hkust.edu.hk/",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-icsm/"
+    },
+    {
+      "id": "hkust-information-systems-management-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Information Systems Management",
+      "degreeType": "MSc",
+      "faculty": "Department of Information Systems, Business Statistics and Operations Management",
+      "applicationUrl": "https://mscism.hkust.edu.hk/",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ism/"
+    },
+    {
       "id": "hkust-information-technology-msc",
       "universityId": "the-hong-kong-university-of-science-and-technology",
       "name": "MSc in Information Technology",
@@ -4273,6 +4543,150 @@
       "programmeGroupId": "hkust-information-technology-taught-postgraduate",
       "applicationUrl": "https://fytgs.hkust.edu.hk/admissions/Admission-to-Postgraduate-Studies/apply-online",
       "sourceUrl": "https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-it"
+    },
+    {
+      "id": "hkust-integrated-circuits-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Integrated Circuits",
+      "degreeType": "MSc",
+      "faculty": "Department of Electronic and Computer Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/ic",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ic/"
+    },
+    {
+      "id": "hkust-intelligent-building-technology-and-management-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Intelligent Building Technology and Management",
+      "degreeType": "MSc",
+      "faculty": "Department of Mechanical and Aerospace Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/ibtm",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-ibtm/"
+    },
+    {
+      "id": "hkust-international-language-education-ma",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Arts in International Language Education",
+      "degreeType": "MA",
+      "faculty": "School of Humanities and Social Science",
+      "applicationUrl": "https://shss.hkust.edu.hk/tpg/maile/index",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/ma-ile/"
+    },
+    {
+      "id": "hkust-international-management-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in International Management",
+      "degreeType": "MSc",
+      "faculty": "School of Business and Management",
+      "applicationUrl": "https://mimt.hkust.edu.hk/",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-imt/"
+    },
+    {
+      "id": "hkust-marketing-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Marketing",
+      "degreeType": "MSc",
+      "faculty": "Department of Marketing",
+      "applicationUrl": "https://mscmark.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mark/"
+    },
+    {
+      "id": "hkust-master-of-public-management-mpm",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Public Management",
+      "degreeType": "MPM",
+      "faculty": "Division of Public Policy",
+      "applicationUrl": "https://ppol.hkust.edu.hk/mpm-program-overview",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpm/"
+    },
+    {
+      "id": "hkust-master-of-public-policy-mpp",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Public Policy",
+      "degreeType": "MPP",
+      "faculty": "Division of Public Policy",
+      "applicationUrl": "https://ppol.hkust.edu.hk/mpp-program-overview",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/mpp/"
+    },
+    {
+      "id": "hkust-materials-engineering-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Materials Engineering",
+      "degreeType": "MSc",
+      "faculty": "Department of Chemical and Biological Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/mate",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mate/"
+    },
+    {
+      "id": "hkust-mathematics-for-educators-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Mathematics for Educators",
+      "degreeType": "MSc",
+      "faculty": "Department of Mathematics",
+      "applicationUrl": "https://www.math.hkust.edu.hk/maed",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-maed/"
+    },
+    {
+      "id": "hkust-mechanical-engineering-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Mechanical Engineering",
+      "degreeType": "MSc",
+      "faculty": "Department of Mechanical and Aerospace Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/mech",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-mech/"
+    },
+    {
+      "id": "hkust-pgd-ma-sosc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Postgraduate Diploma in Social Science Master of Arts in Social Science",
+      "degreeType": "MA",
+      "faculty": "Division of Social Science",
+      "applicationUrl": "https://shss.hkust.edu.hk/tpg/mass/index",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-ma-sosc/"
+    },
+    {
+      "id": "hkust-pgd-msc-ciem",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Postgraduate Diploma in Civil Infrastructural Engineering and Management Master of Science in Civil Infrastructural Engineering and Management",
+      "degreeType": "MSc",
+      "faculty": "Department of Civil and Environmental Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/ciem",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-ciem/"
+    },
+    {
+      "id": "hkust-pgd-msc-evem",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Postgraduate Diploma in Environmental Engineering and Management Master of Science in Environmental Engineering and Management",
+      "degreeType": "MSc",
+      "faculty": "Department of Civil and Environmental Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/evem",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/pgd-msc-evem/"
+    },
+    {
+      "id": "hkust-physics-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Physics",
+      "degreeType": "MSc",
+      "faculty": "Department of Physics",
+      "applicationUrl": "https://msphy.hkust.edu.hk",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-phys/"
+    },
+    {
+      "id": "hkust-technology-leadership-and-entrepreneurship-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Technology Leadership and Entrepreneurship",
+      "degreeType": "MSc",
+      "faculty": "Division of Integrative Systems and Design , Academy of Interdisciplinary Studies School of Business and Management",
+      "applicationUrl": "https://isd.hkust.edu.hk/academics/msc-tle",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-tle/"
+    },
+    {
+      "id": "hkust-telecommunications-msc",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "name": "Master of Science in Telecommunications",
+      "degreeType": "MSc",
+      "faculty": "Department of Electronic and Computer Engineering",
+      "applicationUrl": "https://seng.hkust.edu.hk/msc/telc",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/2026-27/msc-telecom/"
     },
     {
       "id": "uva-vu-computer-science-msc",
@@ -4295,6 +4709,51 @@
       "sourceUrl": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/master-of-data-science-mdats.html"
     },
     {
+      "id": "hku-applied-linguistics-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in Applied Linguistics",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-applied-linguistics-arts&mode=FT"
+    },
+    {
+      "id": "hku-artificial-intelligence-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Artificial Intelligence",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Science",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-artificial-intelligence-sci&mode=FT"
+    },
+    {
+      "id": "hku-buddhist-studies-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Buddhist Studies",
+      "degreeType": "Master",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-buddhist-studies-arts&mode=FT"
+    },
+    {
+      "id": "hku-computer-science-cyber-security-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Computer Science - Cyber Security Stream",
+      "degreeType": "MSc",
+      "faculty": "School of Computing and Data Science",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-cyber-security-stream-cds&mode=FT"
+    },
+    {
+      "id": "hku-computer-science-financial-computing-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Computer Science - Financial Computing Stream",
+      "degreeType": "MSc",
+      "faculty": "School of Computing and Data Science",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-financial-computing-stream-cds&mode=FT"
+    },
+    {
       "id": "hku-computer-science-general-msc",
       "universityId": "the-university-of-hong-kong",
       "name": "Master of Science in Computer Science - General Stream",
@@ -4303,6 +4762,357 @@
       "programmeGroupId": "hku-computing-data-science-taught-postgraduate",
       "applicationUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-general-stream-cds&mode=full-time",
       "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-general-stream-cds&mode=full-time"
+    },
+    {
+      "id": "hku-computer-science-multimedia-computing-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Computer Science - Multimedia Computing Stream",
+      "degreeType": "MSc",
+      "faculty": "School of Computing and Data Science",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-multimedia-computing-stream-cds&mode=FT"
+    },
+    {
+      "id": "hku-data-science-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Data Science",
+      "degreeType": "Master",
+      "faculty": "School of Computing and Data Science",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-data-science-cds&mode=FT"
+    },
+    {
+      "id": "hku-electronic-commerce-and-internet-computing-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Electronic Commerce and Internet Computing",
+      "degreeType": "MSc",
+      "faculty": "School of Computing and Data Science",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-electronic-commerce-and-internet-computing-cds&mode=FT"
+    },
+    {
+      "id": "hku-engineering-building-services-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Building Services Engineering)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28building-services-engineering%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-civil-engineering-environmental-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Civil Engineering) - Environmental Engineering Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-environmental-engineering-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-civil-engineering-general-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Civil Engineering) - General Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-general-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-civil-engineering-geotechnical-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Civil Engineering) - Geotechnical Engineering Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-geotechnical-engineering-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-civil-engineering-structural-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Civil Engineering) - Structural Engineering Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-structural-engineering-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-electrical-and-electronic-engineering-communications-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - Communications Engineering Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-communications-engineering-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-electrical-and-electronic-engineering-general-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - General Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-general-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-electrical-and-electronic-engineering-power-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - Power Engineering Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-power-engineering-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-energy-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Energy Engineering)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28energy-engineering%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-industrial-engineering-and-logistics-management-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Industrial Engineering and Logistics Management)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28industrial-engineering-and-logistics-management%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-infrastructure-engineering-and-management-digital-infrastructure-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Infrastructure Engineering and Management) - Digital Infrastructure Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-digital-infrastructure-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-infrastructure-engineering-and-management-infrastructure-project-management-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Infrastructure Engineering and Management) - Infrastructure Project Management Stream",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-infrastructure-project-management-stream-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-innovative-design-and-technology-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Innovative Design and Technology)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28innovative-design-and-technology%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-integrated-circuits-and-electronic-systems-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Integrated Circuits and Electronic Systems)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28integrated-circuits-and-electronic-systems%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-low-altitude-technology-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Low-Altitude Technology)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28low-altitude-technology%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-mechanical-engineering-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Mechanical Engineering)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28mechanical-engineering%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-microelectronics-science-and-technology-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Microelectronics Science and Technology)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28microelectronics-science-and-technology%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-engineering-robotics-and-intelligent-systems-msc",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Science in Engineering (Robotics and Intelligent Systems)",
+      "degreeType": "MSc",
+      "faculty": "Faculty of Engineering",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28robotics-and-intelligent-systems%29-engg&mode=FT"
+    },
+    {
+      "id": "hku-fine-arts-in-the-field-of-creative-writing-in-english-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Fine Arts in the field of Creative Writing in English",
+      "degreeType": "Master",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-fine-arts-in-the-field-of-creative-writing-in-english-arts&mode=FT"
+    },
+    {
+      "id": "hku-master-of-public-health-mph",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Public Health",
+      "degreeType": "MPH",
+      "faculty": "LKS Faculty of Medicine",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-public-health-med&mode=FT"
+    },
+    {
+      "id": "hku-nursing-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Nursing",
+      "degreeType": "Master",
+      "faculty": "LKS Faculty of Medicine",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-nursing-med&mode=FT"
+    },
+    {
+      "id": "hku-social-sciences-in-the-field-of-behavioral-health-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Social Sciences in the field of Behavioral Health",
+      "degreeType": "Master",
+      "faculty": "Faculty of Social Sciences",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-behavioral-health-socsc&mode=FT"
+    },
+    {
+      "id": "hku-social-sciences-in-the-field-of-gerontology-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Social Sciences in the field of Gerontology",
+      "degreeType": "Master",
+      "faculty": "Faculty of Social Sciences",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-gerontology-socsc&mode=FT"
+    },
+    {
+      "id": "hku-social-sciences-in-the-field-of-nonprofit-management-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Social Sciences in the field of Nonprofit Management",
+      "degreeType": "Master",
+      "faculty": "Faculty of Social Sciences",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-nonprofit-management-socsc&mode=FT"
+    },
+    {
+      "id": "hku-social-sciences-in-the-field-of-population-and-policy-analysis-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Social Sciences in the field of Population and Policy Analysis",
+      "degreeType": "Master",
+      "faculty": "Faculty of Social Sciences",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-population-and-policy-analysis-socsc&mode=FT"
+    },
+    {
+      "id": "hku-social-sciences-in-the-field-of-psychology-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Social Sciences in the field of Psychology",
+      "degreeType": "Master",
+      "faculty": "Faculty of Social Sciences",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-psychology-socsc&mode=FT"
+    },
+    {
+      "id": "hku-social-sciences-in-the-field-of-social-data-analytics-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Social Sciences in the field of Social Data Analytics",
+      "degreeType": "Master",
+      "faculty": "Faculty of Social Sciences",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-social-data-analytics-socsc&mode=FT"
+    },
+    {
+      "id": "hku-social-work-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Social Work",
+      "degreeType": "Master",
+      "faculty": "Faculty of Social Sciences",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-work-socsc&mode=FT"
+    },
+    {
+      "id": "hku-statistics-master",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Statistics",
+      "degreeType": "Master",
+      "faculty": "School of Computing and Data Science",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-statistics-cds&mode=FT"
+    },
+    {
+      "id": "hku-the-field-of-chinese-historical-studies-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in the field of Chinese Historical Studies",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-historical-studies-arts&mode=FT"
+    },
+    {
+      "id": "hku-the-field-of-chinese-language-and-literature-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in the field of Chinese Language and Literature",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-language-and-literature-arts&mode=FT"
+    },
+    {
+      "id": "hku-the-field-of-creative-communications-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in the field of Creative Communications",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-creative-communications-arts&mode=FT"
+    },
+    {
+      "id": "hku-the-field-of-english-studies-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in the field of English Studies",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-english-studies-arts&mode=FT"
+    },
+    {
+      "id": "hku-the-field-of-literary-and-cultural-studies-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in the field of Literary and Cultural Studies",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-literary-and-cultural-studies-arts&mode=FT"
+    },
+    {
+      "id": "hku-the-field-of-philosophy-politics-and-economics-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in the field of Philosophy, Politics and Economics",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-philosophy%2C-politics-and-economics-arts&mode=FT"
+    },
+    {
+      "id": "hku-the-field-of-translation-ma",
+      "universityId": "the-university-of-hong-kong",
+      "name": "Master of Arts in the field of Translation",
+      "degreeType": "MA",
+      "faculty": "Faculty of Arts",
+      "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-translation-arts&mode=FT"
     },
     {
       "id": "manchester-advanced-computer-science-msc",
@@ -4355,6 +5165,276 @@
       "sourceUrl": "https://www.ist.osaka-u.ac.jp/english/examinees/admission/guidelines2027.php"
     },
     {
+      "id": "uq-agribusiness-master-5562",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Agribusiness",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-agribusiness-5562"
+    },
+    {
+      "id": "uq-agricultural-science-master-5564",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Agricultural Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-agricultural-science-5564"
+    },
+    {
+      "id": "uq-animal-science-master-5571",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Animal Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-animal-science-5571"
+    },
+    {
+      "id": "uq-applied-linguistics-master-5592",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Applied Linguistics",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-applied-linguistics-5592"
+    },
+    {
+      "id": "uq-architecture-master-5429",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Architecture",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-architecture-5429"
+    },
+    {
+      "id": "uq-arts-in-translation-and-interpreting-master-5752",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Arts in Translation and Interpreting",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-arts-translation-and-interpreting-5752"
+    },
+    {
+      "id": "uq-audiology-studies-master-5145",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Audiology Studies",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-audiology-studies-5145"
+    },
+    {
+      "id": "uq-bioengineering-professional-master-5761",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Bioengineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-bioengineering-professional-5761"
+    },
+    {
+      "id": "uq-bioinformatics-master-5755",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Bioinformatics",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-bioinformatics-5755"
+    },
+    {
+      "id": "uq-bioinformatics-research-extensive-master-5598",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Bioinformatics Research Extensive",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-bioinformatics-research-extensive-5598"
+    },
+    {
+      "id": "uq-biostatistics-master-5500",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Biostatistics",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-biostatistics-5500"
+    },
+    {
+      "id": "uq-biotechnology-master-5599",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Biotechnology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-biotechnology-5599"
+    },
+    {
+      "id": "uq-biotechnology-research-extensive-master-5627",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Biotechnology Research Extensive",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-biotechnology-research-extensive-5627"
+    },
+    {
+      "id": "uq-business-administration-master-5770",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Business Administration",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-business-administration-5770"
+    },
+    {
+      "id": "uq-business-analytics-master-5188",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Business Analytics",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-business-analytics-5188"
+    },
+    {
+      "id": "uq-business-master-5583",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Business",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-business-5583"
+    },
+    {
+      "id": "uq-business-psychology-master-5779",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Business Psychology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-business-psychology-5779"
+    },
+    {
+      "id": "uq-chemical-engineering-professional-master-5742",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Chemical Engineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-chemical-engineering-professional-5742"
+    },
+    {
+      "id": "uq-civil-engineering-professional-master-5743",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Civil Engineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-civil-engineering-professional-5743"
+    },
+    {
+      "id": "uq-clinical-neuropsychology-and-clinical-psychology-master-5766",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Clinical Neuropsychology and Clinical Psychology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-clinical-neuropsychology-and-clinical-psychology-5766"
+    },
+    {
+      "id": "uq-clinical-pharmacy-master-5718",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Clinical Pharmacy",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-clinical-pharmacy-5718"
+    },
+    {
+      "id": "uq-clinical-psychology-master-5164",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Clinical Psychology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-clinical-psychology-5164"
+    },
+    {
+      "id": "uq-commerce-master-5584",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Commerce",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-commerce-5584"
+    },
+    {
+      "id": "uq-communication-master-5651",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Communication",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-communication-5651"
+    },
+    {
+      "id": "uq-computer-science-management-master-5523",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Computer Science (Management)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-computer-science-management-5523"
+    },
+    {
+      "id": "uq-computer-science-master-5522",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Computer Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-computer-science-5522"
+    },
+    {
+      "id": "uq-conservation-biology-master-5551",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Conservation Biology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-conservation-biology-5551"
+    },
+    {
+      "id": "uq-conservation-science-master-5597",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Conservation Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-conservation-science-5597"
+    },
+    {
+      "id": "uq-counselling-master-5333",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Counselling",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-counselling-5333"
+    },
+    {
+      "id": "uq-cyber-security-master-5257",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Cyber Security",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-cyber-security-5257"
+    },
+    {
       "id": "uq-data-science-master",
       "universityId": "the-university-of-queensland",
       "name": "Master of Data Science",
@@ -4363,6 +5443,510 @@
       "programmeGroupId": "uq-data-science-coursework",
       "applicationUrl": "https://study.uq.edu.au/admissions/postgraduate-coursework/apply",
       "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-data-science-5660?year=2027"
+    },
+    {
+      "id": "uq-data-science-master-5660",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Data Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-data-science-5660"
+    },
+    {
+      "id": "uq-dietetics-studies-master-5768",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Dietetics Studies",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-dietetics-studies-5768"
+    },
+    {
+      "id": "uq-economics-master-5399",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Economics",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-economics-5399"
+    },
+    {
+      "id": "uq-educational-studies-master-5596",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Educational Studies",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-educational-studies-5596"
+    },
+    {
+      "id": "uq-electrical-engineering-professional-master-5744",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Electrical Engineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-electrical-engineering-professional-5744"
+    },
+    {
+      "id": "uq-engineering-science-management-master-5530",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Engineering Science (Management)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-engineering-science-management-5530"
+    },
+    {
+      "id": "uq-engineering-science-master-5528",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Engineering Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-engineering-science-5528"
+    },
+    {
+      "id": "uq-entrepreneurship-and-innovation-master-5690",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Entrepreneurship and Innovation",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-entrepreneurship-and-innovation-5690"
+    },
+    {
+      "id": "uq-environmental-health-sciences-master-5704",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Environmental Health Sciences",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-environmental-health-sciences-5704"
+    },
+    {
+      "id": "uq-environmental-management-master-5609",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Environmental Management",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-environmental-management-5609"
+    },
+    {
+      "id": "uq-epidemiology-master-5759",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Epidemiology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-epidemiology-5759"
+    },
+    {
+      "id": "uq-finance-and-investment-management-master-5765",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Finance and Investment Management",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-finance-and-investment-management-5765"
+    },
+    {
+      "id": "uq-financial-mathematics-master-5573",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Financial Mathematics",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-financial-mathematics-5573"
+    },
+    {
+      "id": "uq-food-science-and-technology-master-5576",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Food Science and Technology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-food-science-and-technology-5576"
+    },
+    {
+      "id": "uq-food-science-and-technology-research-extensive-master-5753",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Food Science and Technology Research Extensive",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-food-science-and-technology-research-extensive-5753"
+    },
+    {
+      "id": "uq-geographic-information-science-master-5610",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Geographic Information Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-geographic-information-science-5610"
+    },
+    {
+      "id": "uq-governance-and-public-policy-master-5607",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Governance and Public Policy",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-governance-and-public-policy-5607"
+    },
+    {
+      "id": "uq-information-technology-master-5581",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Information Technology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-information-technology-5581"
+    },
+    {
+      "id": "uq-interaction-design-master-5580",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Interaction Design",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-interaction-design-5580"
+    },
+    {
+      "id": "uq-international-economics-and-finance-master-5590",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of International Economics and Finance",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-international-economics-and-finance-5590"
+    },
+    {
+      "id": "uq-international-relations-master-5641",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of International Relations",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-international-relations-5641"
+    },
+    {
+      "id": "uq-laws-master-5591",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Laws",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-laws-5591"
+    },
+    {
+      "id": "uq-magnetic-resonance-technology-master-5193",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Magnetic Resonance Technology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-magnetic-resonance-technology-5193"
+    },
+    {
+      "id": "uq-materials-and-manufacturing-engineering-professional-master-5745",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Materials and Manufacturing Engineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-materials-and-manufacturing-engineering-professional-5745"
+    },
+    {
+      "id": "uq-mechanical-engineering-professional-master-5746",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Mechanical Engineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-mechanical-engineering-professional-5746"
+    },
+    {
+      "id": "uq-medicine-master-5398",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Medicine",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-medicine-5398"
+    },
+    {
+      "id": "uq-mental-health-master-5151",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Mental Health",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-mental-health-5151"
+    },
+    {
+      "id": "uq-molecular-biology-master-5600",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Molecular Biology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-molecular-biology-5600"
+    },
+    {
+      "id": "uq-molecular-biology-research-extensive-master-5625",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Molecular Biology Research Extensive",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-molecular-biology-research-extensive-5625"
+    },
+    {
+      "id": "uq-music-master-5368",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Music",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-music-5368"
+    },
+    {
+      "id": "uq-nurse-practitioner-master-5677",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Nurse Practitioner",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-nurse-practitioner-5677"
+    },
+    {
+      "id": "uq-nursing-graduate-entry-master-5776",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Nursing (Graduate Entry)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-nursing-graduate-entry-5776"
+    },
+    {
+      "id": "uq-occupational-health-and-safety-science-master-5558",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Occupational Health and Safety Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-occupational-health-and-safety-science-5558"
+    },
+    {
+      "id": "uq-occupational-hygiene-master-5738",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Occupational Hygiene",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-occupational-hygiene-5738"
+    },
+    {
+      "id": "uq-occupational-therapy-studies-master-5147",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Occupational Therapy Studies",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-occupational-therapy-studies-5147"
+    },
+    {
+      "id": "uq-organisational-psychology-master-5199",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Organisational Psychology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-organisational-psychology-5199"
+    },
+    {
+      "id": "uq-peace-and-conflict-studies-master-5646",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Peace and Conflict Studies",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-peace-and-conflict-studies-5646"
+    },
+    {
+      "id": "uq-pharmaceutical-industry-practice-master-5703",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Pharmaceutical Industry Practice",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-pharmaceutical-industry-practice-5703"
+    },
+    {
+      "id": "uq-physiotherapy-master-5221",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Physiotherapy",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-physiotherapy-5221"
+    },
+    {
+      "id": "uq-psychology-master-5666",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Psychology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-psychology-5666"
+    },
+    {
+      "id": "uq-public-health-master-5760",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Public Health",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-public-health-5760"
+    },
+    {
+      "id": "uq-quantum-technology-master-5711",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Quantum Technology",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-quantum-technology-5711"
+    },
+    {
+      "id": "uq-science-master-5712",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Science",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-science-5712"
+    },
+    {
+      "id": "uq-social-work-qualifying-master-5767",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Social Work (Qualifying)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-social-work-qualifying-5767"
+    },
+    {
+      "id": "uq-software-engineering-professional-master-5747",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Software Engineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-software-engineering-professional-5747"
+    },
+    {
+      "id": "uq-sports-coaching-master-5725",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Sports Coaching",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-sports-coaching-5725"
+    },
+    {
+      "id": "uq-sports-medicine-master-5420",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Sports Medicine",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-sports-medicine-5420"
+    },
+    {
+      "id": "uq-sustainable-energy-management-master-5708",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Sustainable Energy (Management)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-sustainable-energy-management-5708"
+    },
+    {
+      "id": "uq-sustainable-energy-master-5684",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Sustainable Energy",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-sustainable-energy-5684"
+    },
+    {
+      "id": "uq-teaching-primary-master-5556",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Teaching (Primary)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-teaching-primary-5556"
+    },
+    {
+      "id": "uq-teaching-secondary-master-5685",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Teaching (Secondary)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-teaching-secondary-5685"
+    },
+    {
+      "id": "uq-tourism-hotel-and-event-management-master-5585",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Tourism, Hotel and Event Management",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-tourism-hotel-and-event-management-5585"
+    },
+    {
+      "id": "uq-urban-development-and-design-master-5722",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Urban Development and Design",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-urban-development-and-design-5722"
+    },
+    {
+      "id": "uq-urban-planning-master-5782",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Urban Planning",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-urban-planning-5782"
+    },
+    {
+      "id": "uq-urban-water-engineering-professional-master-5748",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Urban Water Engineering (Professional)",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-urban-water-engineering-professional-5748"
+    },
+    {
+      "id": "uq-writing-editing-and-publishing-master-5681",
+      "universityId": "the-university-of-queensland",
+      "name": "Master of Writing, Editing and Publishing",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://apply.uq.edu.au/",
+      "sourceUrl": "https://study.uq.edu.au/study-options/programs/master-writing-editing-and-publishing-5681"
     },
     {
       "id": "sheffield-advanced-computer-science-msc",
@@ -5998,6 +7582,330 @@
       "sourceUrl": "https://www.ku.dk/studies/masters/computer-science"
     },
     {
+      "id": "edinburgh-accounting-and-financial-management-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Accounting and Financial Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1126-accounting-and-financial-management"
+    },
+    {
+      "id": "edinburgh-acoustics-and-music-technology-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Acoustics and Music Technology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/478-acoustics-and-music-technology"
+    },
+    {
+      "id": "edinburgh-advanced-chemical-engineering-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Advanced Chemical Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/913-advanced-chemical-engineering"
+    },
+    {
+      "id": "edinburgh-advanced-nursing-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Advanced Nursing",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/419-advanced-nursing"
+    },
+    {
+      "id": "edinburgh-advanced-power-engineering-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Advanced Power Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/960-advanced-power-engineering"
+    },
+    {
+      "id": "edinburgh-advanced-sustainable-design-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Advanced Sustainable Design",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/417-advanced-sustainable-design"
+    },
+    {
+      "id": "edinburgh-africa-and-international-development-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Africa and International Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/622-africa-and-international-development"
+    },
+    {
+      "id": "edinburgh-ai-for-business-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc AI for Business",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1138-ai-for-business"
+    },
+    {
+      "id": "edinburgh-analytical-chemistry-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Analytical Chemistry",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1004-analytical-chemistry"
+    },
+    {
+      "id": "edinburgh-ancient-history-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Ancient History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/917-ancient-history"
+    },
+    {
+      "id": "edinburgh-ancient-worlds-archaeology-and-classics-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Ancient Worlds (Archaeology and Classics) (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/986-ancient-worlds-archaeology-and-classics-online-learning"
+    },
+    {
+      "id": "edinburgh-applied-animal-behaviour-and-animal-welfare-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Applied Animal Behaviour and Animal Welfare",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/238-applied-animal-behaviour-and-animal-welfare"
+    },
+    {
+      "id": "edinburgh-applied-data-science-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Applied Data Science (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1149-applied-data-science-online-learning"
+    },
+    {
+      "id": "edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Applied Psychology (Healthcare) for Children and Young People",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people"
+    },
+    {
+      "id": "edinburgh-archaeology-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Archaeology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/34-archaeology"
+    },
+    {
+      "id": "edinburgh-architectural-and-urban-design-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Architectural and Urban Design",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/636-architectural-and-urban-design"
+    },
+    {
+      "id": "edinburgh-architectural-conservation-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Architectural Conservation",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/746-architectural-conservation"
+    },
+    {
+      "id": "edinburgh-artificial-intelligence-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Artificial Intelligence",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/107-artificial-intelligence"
+    },
+    {
+      "id": "edinburgh-banking-innovation-and-risk-analytics-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Banking Innovation and Risk Analytics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/756-banking-innovation-and-risk-analytics"
+    },
+    {
+      "id": "edinburgh-biblical-studies-mth-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Biblical Studies MTh,",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/57-biblical-studies"
+    },
+    {
+      "id": "edinburgh-biodiversity-and-taxonomy-of-plants-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Biodiversity and Taxonomy of Plants",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1-biodiversity-and-taxonomy-of-plants"
+    },
+    {
+      "id": "edinburgh-biodiversity-wildlife-and-ecosystem-health-online-learning-pgcert-pgdip-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Biodiversity, Wildlife and Ecosystem Health (Online Learning) PgCert, PgDip,",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/646-biodiversity-wildlife-and-ecosystem-health-online-learning"
+    },
+    {
+      "id": "edinburgh-buddhist-studies-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Buddhist Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1127-buddhist-studies"
+    },
+    {
+      "id": "edinburgh-business-administration-master",
+      "universityId": "university-of-edinburgh",
+      "name": "Master Business Administration,",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/267-business-administration-master-of"
+    },
+    {
+      "id": "edinburgh-business-analytics-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Business Analytics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/929-business-analytics"
+    },
+    {
+      "id": "edinburgh-cancer-biology-and-precision-oncology-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Cancer Biology and Precision Oncology (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1073-cancer-biology-and-precision-oncology-online-learning"
+    },
+    {
+      "id": "edinburgh-classical-art-and-archaeology-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Classical Art and Archaeology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/141-classical-art-and-archaeology"
+    },
+    {
+      "id": "edinburgh-classics-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Classics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/140-classics"
+    },
+    {
+      "id": "edinburgh-climate-change-finance-and-investment-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Climate Change Finance and Investment",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/671-climate-change-finance-and-investment"
+    },
+    {
+      "id": "edinburgh-clinical-anatomy-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Clinical Anatomy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1000-clinical-anatomy"
+    },
+    {
+      "id": "edinburgh-clinical-animal-behaviour-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Clinical Animal Behaviour (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/911-clinical-animal-behaviour-online-learning"
+    },
+    {
+      "id": "edinburgh-clinical-education-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Clinical Education (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/246-clinical-education-online-learning"
+    },
+    {
+      "id": "edinburgh-cognitive-science-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Cognitive Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/108-cognitive-science"
+    },
+    {
+      "id": "edinburgh-comparative-education-and-international-development-ceid-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Comparative Education and International Development (CEID)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1045-comparative-education-and-international-development-ceid"
+    },
+    {
+      "id": "edinburgh-comparative-literature-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Comparative Literature",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/173-comparative-literature"
+    },
+    {
+      "id": "edinburgh-composition-mmus",
+      "universityId": "university-of-edinburgh",
+      "name": "MMus Composition",
+      "degreeType": "MMus",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1095-composition"
+    },
+    {
       "id": "edinburgh-computer-science-msc",
       "universityId": "university-of-edinburgh",
       "name": "Computer Science MSc",
@@ -6006,6 +7914,879 @@
       "programmeGroupId": "edinburgh-informatics-taught-masters",
       "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
       "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/110-computer-science"
+    },
+    {
+      "id": "edinburgh-contemporary-art-theory-ma",
+      "universityId": "university-of-edinburgh",
+      "name": "MA Contemporary Art Theory",
+      "degreeType": "MA",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/748-contemporary-art-theory"
+    },
+    {
+      "id": "edinburgh-contemporary-history-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Contemporary History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/776-contemporary-history"
+    },
+    {
+      "id": "edinburgh-craft-ma",
+      "universityId": "university-of-edinburgh",
+      "name": "MA Craft",
+      "degreeType": "MA",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1131-craft"
+    },
+    {
+      "id": "edinburgh-criminology-and-criminal-justice-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Criminology and Criminal Justice",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/162-criminology-and-criminal-justice"
+    },
+    {
+      "id": "edinburgh-critical-care-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Critical Care (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/975-critical-care-online-learning"
+    },
+    {
+      "id": "edinburgh-cultural-heritage-futures-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Cultural Heritage Futures",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1106-cultural-heritage-futures"
+    },
+    {
+      "id": "edinburgh-cyber-security-privacy-and-trust-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Cyber Security, Privacy and Trust",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/971-cyber-security-privacy-and-trust"
+    },
+    {
+      "id": "edinburgh-dance-science-and-education-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Dance Science and Education",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/421-dance-science-and-education"
+    },
+    {
+      "id": "edinburgh-data-driven-breeding-and-genetics-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Data-Driven Breeding and Genetics (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1134-data-driven-breeding-and-genetics-online-learning"
+    },
+    {
+      "id": "edinburgh-data-inequality-and-society-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Data, Inequality and Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1059-data-inequality-and-society"
+    },
+    {
+      "id": "edinburgh-data-science-for-health-and-social-care-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Data Science for Health and Social Care (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1041-data-science-for-health-and-social-care-online-learning"
+    },
+    {
+      "id": "edinburgh-data-science-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Data Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/902-data-science"
+    },
+    {
+      "id": "edinburgh-data-science-technologies-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Data Science Technologies (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1136-data-science-technologies-online-learning"
+    },
+    {
+      "id": "edinburgh-design-informatics-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Design Informatics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/803-design-informatics"
+    },
+    {
+      "id": "edinburgh-digital-design-and-manufacture-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Digital Design and Manufacture",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1040-digital-design-and-manufacture"
+    },
+    {
+      "id": "edinburgh-digital-education-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Digital Education (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/106-digital-education-online-learning"
+    },
+    {
+      "id": "edinburgh-digital-sociology-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Digital Sociology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/936-digital-sociology"
+    },
+    {
+      "id": "edinburgh-east-asian-studies-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc East Asian Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1114-east-asian-studies"
+    },
+    {
+      "id": "edinburgh-education-futures-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Education Futures",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1061-education-futures"
+    },
+    {
+      "id": "edinburgh-education-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Education",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/98-education"
+    },
+    {
+      "id": "edinburgh-english-literature-literature-and-modernity-1900-to-the-present-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc English Literature: Literature and Modernity: 1900 to the Present",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/177-english-literature-literature-and-modernity-1900-to-the-present"
+    },
+    {
+      "id": "edinburgh-entrepreneurship-and-innovation-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Entrepreneurship and Innovation",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/897-entrepreneurship-and-innovation"
+    },
+    {
+      "id": "edinburgh-equine-science-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Equine Science (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/239-equine-science-online-learning"
+    },
+    {
+      "id": "edinburgh-film-exhibition-and-curation-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Film, Exhibition and Curation",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/658-film-exhibition-and-curation"
+    },
+    {
+      "id": "edinburgh-film-studies-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Film Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/179-film-studies"
+    },
+    {
+      "id": "edinburgh-finance-and-investment-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Finance and Investment",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1128-finance-and-investment"
+    },
+    {
+      "id": "edinburgh-finance-technology-and-policy-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Finance, Technology and Policy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/966-finance-technology-and-policy"
+    },
+    {
+      "id": "edinburgh-fire-engineering-science-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Fire Engineering Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1082-fire-engineering-science"
+    },
+    {
+      "id": "edinburgh-future-governance-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Future Governance",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1063-future-governance"
+    },
+    {
+      "id": "edinburgh-future-infrastructure-climate-change-and-sustainability-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Future Infrastructure, Climate Change and Sustainability",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1110-future-infrastructure-climate-change-and-sustainability"
+    },
+    {
+      "id": "edinburgh-geoenergy-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc GeoEnergy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/944-geoenergy"
+    },
+    {
+      "id": "edinburgh-global-challenges-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Challenges (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/923-global-challenges-online-learning"
+    },
+    {
+      "id": "edinburgh-global-environment-politics-and-society-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Environment, Politics and Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/811-global-environment-politics-and-society"
+    },
+    {
+      "id": "edinburgh-global-food-security-and-nutrition-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Food Security and Nutrition (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/959-global-food-security-and-nutrition-online-learning"
+    },
+    {
+      "id": "edinburgh-global-health-and-infectious-diseases-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Health and Infectious Diseases (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/413-global-health-and-infectious-diseases-online-learning"
+    },
+    {
+      "id": "edinburgh-global-health-policy-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Health Policy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/384-global-health-policy"
+    },
+    {
+      "id": "edinburgh-global-mental-health-and-society-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Mental Health and Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/991-global-mental-health-and-society"
+    },
+    {
+      "id": "edinburgh-global-premodern-art-history-heritage-and-curation-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Premodern Art: History, Heritage and Curation",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1037-global-premodern-art-history-heritage-and-curation"
+    },
+    {
+      "id": "edinburgh-global-strategy-and-sustainability-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Global Strategy and Sustainability",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1044-global-strategy-and-sustainability"
+    },
+    {
+      "id": "edinburgh-high-performance-computing-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc High Performance Computing (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/997-high-performance-computing-online-learning"
+    },
+    {
+      "id": "edinburgh-high-performance-computing-with-data-science-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc High Performance Computing with Data Science (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/996-high-performance-computing-with-data-science-online-learning"
+    },
+    {
+      "id": "edinburgh-history-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/616-history"
+    },
+    {
+      "id": "edinburgh-history-of-art-theory-and-display-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc History of Art, Theory and Display",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/41-history-of-art-theory-and-display"
+    },
+    {
+      "id": "edinburgh-history-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc History (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/816-history-online-learning"
+    },
+    {
+      "id": "edinburgh-human-anatomy-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Human Anatomy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/648-human-anatomy"
+    },
+    {
+      "id": "edinburgh-human-resource-management-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Human Resource Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/755-human-resource-management"
+    },
+    {
+      "id": "edinburgh-inclusive-education-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Inclusive Education",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/378-inclusive-education"
+    },
+    {
+      "id": "edinburgh-information-technology-law-online-learning-llm",
+      "universityId": "university-of-edinburgh",
+      "name": "LLM Information Technology Law (Online Learning)",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/502-information-technology-law-online-learning"
+    },
+    {
+      "id": "edinburgh-innovation-technology-and-the-law-online-learning-llm",
+      "universityId": "university-of-edinburgh",
+      "name": "LLM Innovation, Technology and the Law (Online Learning)",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/164-innovation-technology-and-the-law-online-learning"
+    },
+    {
+      "id": "edinburgh-intellectual-history-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Intellectual History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/374-intellectual-history"
+    },
+    {
+      "id": "edinburgh-interior-architectural-and-spatial-design-ma",
+      "universityId": "university-of-edinburgh",
+      "name": "MA Interior, Architectural and Spatial Design",
+      "degreeType": "MA",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/737-interior-architectural-and-spatial-design"
+    },
+    {
+      "id": "edinburgh-intermediality-literature-film-and-the-arts-in-dialogue-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Intermediality: Literature, Film and the Arts in Dialogue",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/987-intermediality-literature-film-and-the-arts-in-dialogue"
+    },
+    {
+      "id": "edinburgh-international-and-cross-cultural-counselling-studies-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc International and Cross-Cultural Counselling Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1113-international-and-cross-cultural-counselling-studies"
+    },
+    {
+      "id": "edinburgh-international-and-european-politics-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc International and European Politics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/303-international-and-european-politics"
+    },
+    {
+      "id": "edinburgh-international-animal-welfare-ethics-and-law-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc International Animal Welfare, Ethics and Law (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/788-international-animal-welfare-ethics-and-law-online-learning"
+    },
+    {
+      "id": "edinburgh-international-development-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc International Development (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/945-international-development-online-learning"
+    },
+    {
+      "id": "edinburgh-international-human-resource-management-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc International Human Resource Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/880-international-human-resource-management"
+    },
+    {
+      "id": "edinburgh-islamic-and-middle-eastern-studies-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Islamic and Middle Eastern Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/181-islamic-and-middle-eastern-studies"
+    },
+    {
+      "id": "edinburgh-landscape-and-wellbeing-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Landscape and Wellbeing",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/920-landscape-and-wellbeing"
+    },
+    {
+      "id": "edinburgh-language-and-intercultural-communication-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Language and Intercultural Communication",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1006-language-and-intercultural-communication"
+    },
+    {
+      "id": "edinburgh-language-education-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Language Education",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/285-language-education"
+    },
+    {
+      "id": "edinburgh-law-online-learning-llm",
+      "universityId": "university-of-edinburgh",
+      "name": "LLM Law (Online Learning)",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/767-law-online-learning"
+    },
+    {
+      "id": "edinburgh-management-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/277-management"
+    },
+    {
+      "id": "edinburgh-management-of-bioeconomy-innovation-and-governance-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Management of Bioeconomy, Innovation and Governance",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/769-management-of-bioeconomy-innovation-and-governance"
+    },
+    {
+      "id": "edinburgh-marketing-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Marketing",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/638-marketing"
+    },
+    {
+      "id": "edinburgh-materials-chemistry-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Materials Chemistry",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/448-materials-chemistry"
+    },
+    {
+      "id": "edinburgh-medical-anthropology-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Medical Anthropology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/299-medical-anthropology"
+    },
+    {
+      "id": "edinburgh-medical-law-and-ethics-online-learning-llm",
+      "universityId": "university-of-edinburgh",
+      "name": "LLM Medical Law and Ethics (Online Learning)",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/505-medical-law-and-ethics-online-learning"
+    },
+    {
+      "id": "edinburgh-medicinal-and-biological-chemistry-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Medicinal and Biological Chemistry",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/450-medicinal-and-biological-chemistry"
+    },
+    {
+      "id": "edinburgh-medieval-history-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Medieval History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/149-medieval-history"
+    },
+    {
+      "id": "edinburgh-mental-health-in-children-and-young-people-psychological-approaches-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Mental Health in Children and Young People: Psychological Approaches (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/841-mental-health-in-children-and-young-people-psychological"
+    },
+    {
+      "id": "edinburgh-modern-and-contemporary-art-history-curating-and-criticism-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Modern and Contemporary Art: History, Curating and Criticism",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/424-modern-and-contemporary-art-history-curating-and-criticism"
+    },
+    {
+      "id": "edinburgh-musicology-mmus",
+      "universityId": "university-of-edinburgh",
+      "name": "MMus Musicology",
+      "degreeType": "MMus",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/47-musicology"
+    },
+    {
+      "id": "edinburgh-narrative-futures-art-data-society-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Narrative Futures: Art, Data, Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1065-narrative-futures-art-data-society"
+    },
+    {
+      "id": "edinburgh-one-health-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc One Health (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/814-one-health-online-learning"
+    },
+    {
+      "id": "edinburgh-outdoor-and-environmental-education-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Outdoor and Environmental Education",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1133-outdoor-and-environmental-education"
+    },
+    {
+      "id": "edinburgh-physical-activity-for-health-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Physical Activity for Health",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/824-physical-activity-for-health"
+    },
+    {
+      "id": "edinburgh-planetary-health-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Planetary Health",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1086-planetary-health"
+    },
+    {
+      "id": "edinburgh-public-health-master",
+      "universityId": "university-of-edinburgh",
+      "name": "Master Public Health,",
+      "degreeType": "Master",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/203-public-health-master-of"
+    },
+    {
+      "id": "edinburgh-public-health-part-time-online-learning-mph",
+      "universityId": "university-of-edinburgh",
+      "name": "MPH Public Health (part-time) (Online Learning)",
+      "degreeType": "MPH",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/886-public-health-part-time-online-learning"
+    },
+    {
+      "id": "edinburgh-religion-and-literature-mth-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Religion and Literature MTh,",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1005-religion-and-literature"
+    },
+    {
+      "id": "edinburgh-religious-studies-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Religious Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/611-religious-studies"
+    },
+    {
+      "id": "edinburgh-science-and-religion-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Science and Religion",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/653-science-and-religion"
+    },
+    {
+      "id": "edinburgh-science-and-technology-in-society-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Science and Technology in Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/796-science-and-technology-in-society"
+    },
+    {
+      "id": "edinburgh-social-anthropology-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Social Anthropology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/310-social-anthropology"
+    },
+    {
+      "id": "edinburgh-social-justice-and-community-action-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Social Justice and Community Action (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/878-social-justice-and-community-action-online-learning"
+    },
+    {
+      "id": "edinburgh-social-research-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Social Research",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/313-social-research"
+    },
+    {
+      "id": "edinburgh-sociology-and-global-change-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Sociology and Global Change",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/643-sociology-and-global-change"
+    },
+    {
+      "id": "edinburgh-sport-and-performance-psychology-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Sport and Performance Psychology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/117-sport-and-performance-psychology"
+    },
+    {
+      "id": "edinburgh-sport-policy-management-and-international-development-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Sport Policy, Management and International Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/828-sport-policy-management-and-international-development"
+    },
+    {
+      "id": "edinburgh-strength-and-conditioning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Strength and Conditioning",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/127-strength-and-conditioning"
+    },
+    {
+      "id": "edinburgh-surgical-sciences-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Surgical Sciences (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/404-surgical-sciences-online-learning"
+    },
+    {
+      "id": "edinburgh-sustainable-lands-and-cities-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Sustainable Lands and Cities",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/1088-sustainable-lands-and-cities"
+    },
+    {
+      "id": "edinburgh-teaching-english-to-speakers-of-other-languages-tesol-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Teaching English to Speakers of Other Languages (TESOL)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/128-teaching-english-to-speakers-of-other-languages-tesol"
+    },
+    {
+      "id": "edinburgh-translation-studies-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Translation Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/251-translation-studies"
+    },
+    {
+      "id": "edinburgh-urban-strategies-and-design-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Urban Strategies and Design",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/822-urban-strategies-and-design"
+    },
+    {
+      "id": "edinburgh-veterinary-anaesthesia-and-analgesia-online-learning-msc",
+      "universityId": "university-of-edinburgh",
+      "name": "MSc Veterinary Anaesthesia and Analgesia (Online Learning)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://study.ed.ac.uk/postgraduate/applying",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/914-veterinary-anaesthesia-and-analgesia-online-learning"
     },
     {
       "id": "exeter-masters-deadline-policy",

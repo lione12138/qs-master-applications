@@ -52,13 +52,13 @@ def test_uq_adapter_discovers_master_programmes_from_sitemap() -> None:
 
     catalog = adapter.parse_catalog_from_fetcher(fetcher)
 
-    assert catalog.application_opens_at is None
+    assert catalog.application_opens_at == "2025-08-01"
     assert [item.id for item in catalog.programmes] == [
         "uq-information-technology-master-5581"
     ]
     programme = catalog.programmes[0]
     assert programme.name == "Master of Information Technology"
-    assert programme.parse_status == "incomplete"
+    assert programme.parse_status == "parsed"
     assert [(w.round, w.closes_at, w.applicant_categories, w.opens_at) for w in programme.windows] == [
         ("Semester 2", "2026-05-31", ["international-students"], None),
         ("Semester 1", "2025-11-30", ["international-students"], None),

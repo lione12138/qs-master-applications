@@ -28,6 +28,8 @@ class StaticCatalogConfig:
     minimum_expected_programmes: int
     default_application_url: str
     default_intake: str
+    default_application_opens_at: str | None = None
+    application_opens_at_basis: str = "inferred-cycle-default"
 
 
 class StaticCatalogAdapter:
@@ -40,6 +42,7 @@ class StaticCatalogAdapter:
         self.config = config
         self.university_id = config.university_id
         self.catalog_url = config.catalog_url
+        self.application_opens_at_basis = config.application_opens_at_basis
         self.intake = config.default_intake
         self.detail_workers = detail_workers
 
@@ -67,7 +70,10 @@ class StaticCatalogAdapter:
             max_workers=self.detail_workers
         ) as executor:
             programmes = list(executor.map(parse_one, catalog.programmes))
-        return DiscoveredCatalog(application_opens_at=None, programmes=programmes)
+        return DiscoveredCatalog(
+            application_opens_at=self.config.default_application_opens_at,
+            programmes=programmes,
+        )
 
     def parse_catalog(self, html: str) -> DiscoveredCatalog:
         soup = BeautifulSoup(html, "html.parser")
@@ -134,7 +140,9 @@ class StaticCatalogAdapter:
                 )
             ],
             deadline_text=excerpt,
-            parse_status="incomplete",
+            parse_status=(
+                "parsed" if self.config.default_application_opens_at else "incomplete"
+            ),
         )
 
 

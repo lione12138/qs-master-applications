@@ -48,3 +48,7 @@ WINDOW_CANDIDATES_PATH = OPS_DIR / "window-candidates.json"
 APPLICATION_SOURCE_STATE_PATH = OPS_DIR / "application-source-state.json"
 PROGRAMME_CANDIDATES_PATH = OPS_DIR / "programme-candidates.json"
 PROGRAMME_CATALOG_STATE_PATH = OPS_DIR / "programme-catalog-state.json"
+GENERIC_PROGRAMME_DISCOVERY_CONFIG_PATH = OPS_DIR / "generic-programme-discovery.json"
+GENERIC_PROGRAMME_DISCOVERY_REPORT_PATH = (
+    REPORTS_DIR / "generic-programme-discovery-report.json"
+)

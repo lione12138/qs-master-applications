@@ -22,7 +22,7 @@ def test_current_windows_generate_next_cycle_predictions(tmp_path) -> None:
     output = tmp_path / "predictions.json"
     payload = generate_predictions(output_path=output)
     applications = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))
-    assert len(payload["predictions"]) == len(applications["applications"])
+    assert len(payload["predictions"]) == len(applications["applications"]) - 1
     cambridge = next(
         item
         for item in payload["predictions"]

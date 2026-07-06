@@ -18,6 +18,7 @@ CATALOG_URL = (
     "degree%5B%5D=MPP&year=2026-27"
 )
 APPLICATION_URL = "https://fytgs.hkust.edu.hk/apply"
+APPLICATION_OPENS_AT = "2025-09-01"
 
 MONTHS = (
     "Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|"
@@ -35,6 +36,7 @@ class HKUSTAdapter:
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL
+    application_opens_at_basis = "inferred-cycle-default"
     intake = "September 2026"
 
     def __init__(
@@ -67,7 +69,7 @@ class HKUSTAdapter:
             max_workers=self.detail_workers
         ) as executor:
             detailed = list(executor.map(parse_one, programmes))
-        return DiscoveredCatalog(application_opens_at=None, programmes=detailed)
+        return DiscoveredCatalog(application_opens_at=APPLICATION_OPENS_AT, programmes=detailed)
 
     def parse_catalog(self, html: str) -> DiscoveredCatalog:
         soup = BeautifulSoup(html, "html.parser")
@@ -112,7 +114,7 @@ class HKUSTAdapter:
         degree_type = _degree_type(title) or programme.degree_type
         department = _extract_between(text, "Offering Unit", "Program Advisor") or ""
         website = _extract_between(text, "Website", "Enquiry")
-        application_url = website or programme.application_url
+        application_url = _normalise_url(website) or programme.application_url
         excerpt = _application_excerpt(text)
         windows = _parse_windows(excerpt)
         return replace(
@@ -125,7 +127,7 @@ class HKUSTAdapter:
             application_url=application_url,
             windows=windows,
             deadline_text=excerpt or programme.deadline_text,
-            parse_status="incomplete" if windows else "no-deadline",
+            parse_status="parsed" if windows else "no-deadline",
         )
 
 
@@ -251,3 +253,13 @@ def _slug(value: str) -> str:
 
 def _normalise_text(value: str) -> str:
     return " ".join(str(value).replace("\u00a0", " ").split())
+
+
+def _normalise_url(value: str | None) -> str | None:
+    if not value:
+        return None
+    if re.match(r"^https?://", value, flags=re.IGNORECASE):
+        return value
+    if "." in value and not value.startswith("/"):
+        return f"https://{value}"
+    return None

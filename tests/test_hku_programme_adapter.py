@@ -52,12 +52,12 @@ def test_hku_adapter_extracts_listing_and_deadline_rounds() -> None:
 
     catalog = adapter.parse_catalog_from_fetcher(fetcher)
 
-    assert catalog.application_opens_at is None
+    assert catalog.application_opens_at == "2025-09-01"
     assert [item.id for item in catalog.programmes] == ["hku-data-science-master"]
     programme = catalog.programmes[0]
     assert programme.degree_type == "Master"
     assert programme.faculty == "School of Computing and Data Science"
-    assert programme.parse_status == "incomplete"
+    assert programme.parse_status == "parsed"
     assert [(window.round, window.closes_at, window.opens_at) for window in programme.windows] == [
         ("Round 1 (Main)", "2025-12-01", None),
         ("Round 2 (Clearing)", "2026-03-31", None),

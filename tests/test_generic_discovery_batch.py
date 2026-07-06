@@ -1,0 +1,89 @@
+from __future__ import annotations
+
+from gradwindow.generic_discovery_batch import classify_generic_candidates
+
+
+def test_classify_generic_candidates_splits_review_buckets() -> None:
+    candidates = [
+        {
+            "id": "new-programme:ready",
+            "status": "pending",
+            "universityId": "example-university",
+            "programme": {"name": "MSc Ready"},
+            "windows": [
+                {
+                    "opensAt": "2026-09-01",
+                    "opensAtBasis": "official",
+                    "closesAt": "2027-01-14",
+                }
+            ],
+            "parseStatus": "parsed",
+            "reviewReason": "Review the automatically discovered programme.",
+        },
+        {
+            "id": "new-programme:adapter",
+            "status": "pending",
+            "universityId": "example-university",
+            "programme": {"name": "MSc Needs Adapter"},
+            "windows": [{"opensAt": None, "closesAt": "2027-01-14"}],
+            "parseStatus": "incomplete",
+            "reviewReason": "At least one opening date is not published.",
+        },
+        {
+            "id": "new-programme:coming-soon",
+            "status": "pending",
+            "universityId": "example-university",
+            "programme": {"name": "MSc Coming Soon"},
+            "windows": [],
+            "parseStatus": "no-deadline",
+            "reviewReason": "No application deadline was parsed.",
+            "evidenceExcerpt": "Applications will open soon.",
+        },
+        {
+            "id": "new-programme:ignored",
+            "status": "pending",
+            "universityId": "other-university",
+            "programme": {"name": "MSc Ignored"},
+            "windows": [],
+            "parseStatus": "no-deadline",
+        },
+    ]
+
+    buckets = classify_generic_candidates(candidates, {"example-university"})
+
+    assert [item["id"] for item in buckets["readyToApprove"]] == [
+        "new-programme:ready"
+    ]
+    assert [item["id"] for item in buckets["needsAdapter"]] == [
+        "new-programme:adapter"
+    ]
+    assert [item["id"] for item in buckets["comingSoonMonitor"]] == [
+        "new-programme:coming-soon"
+    ]
+
+
+def test_inferred_opening_dates_still_require_review() -> None:
+    candidates = [
+        {
+            "id": "new-programme:inferred",
+            "status": "pending",
+            "universityId": "example-university",
+            "programme": {"name": "MSc Inferred"},
+            "windows": [
+                {
+                    "opensAt": "2025-09-01",
+                    "opensAtBasis": "inferred-month-default",
+                    "closesAt": "2026-08-13",
+                }
+            ],
+            "parseStatus": "parsed",
+            "reviewReason": "Opening date uses a configured cycle default.",
+        }
+    ]
+
+    buckets = classify_generic_candidates(candidates, {"example-university"})
+
+    assert buckets["readyToApprove"] == []
+    assert [item["id"] for item in buckets["needsAdapter"]] == [
+        "new-programme:inferred"
+    ]

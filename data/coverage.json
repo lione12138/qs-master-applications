@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-06T01:13:07.478452+00:00",
+    "generatedAt": "2026-07-06T15:15:58.509144+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -14,16 +14,16 @@
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
     "universitiesWithPrograms": 189,
-    "universitiesWithWindows": 37,
-    "verifiedWindows": 1124,
-    "universitiesWithPredictions": 37,
-    "predictedWindows": 1124,
+    "universitiesWithWindows": 45,
+    "verifiedWindows": 1614,
+    "universitiesWithPredictions": 45,
+    "predictedWindows": 1613,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
       "select-target-programmes": 11,
-      "verify-exact-windows": 152,
-      "monitor-and-refresh": 37
+      "verify-exact-windows": 144,
+      "monitor-and-refresh": 45
     }
   },
   "batches": [
@@ -63,8 +63,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 4,
-      "predictedWindows": 4
+      "universitiesWithWindows": 5,
+      "predictedWindows": 93
     },
     {
       "batch": 4,
@@ -76,8 +76,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 1,
-      "predictedWindows": 220
+      "universitiesWithWindows": 2,
+      "predictedWindows": 222
     },
     {
       "batch": 5,
@@ -89,8 +89,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "universitiesWithWindows": 3,
+      "predictedWindows": 5
     },
     {
       "batch": 6,
@@ -115,8 +115,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 0,
-      "predictedWindows": 0
+      "universitiesWithWindows": 2,
+      "predictedWindows": 242
     },
     {
       "batch": 8,
@@ -141,8 +141,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 2,
-      "predictedWindows": 3
+      "universitiesWithWindows": 3,
+      "predictedWindows": 154
     },
     {
       "batch": 10,
@@ -798,10 +798,10 @@
         "opensText": "Check each programme page",
         "notes": "The MSc Computer Science page publishes main and clearing deadlines but does not expose an exact application opening date, so no complete calendar window is published."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 45,
+      "windowCount": 89,
+      "predictionCount": 89,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "nanyang-technological-university-singapore-ntu-singapore",
@@ -991,9 +991,9 @@
         "notes": "The published 2026 term table gives closing dates but not a precise opening day, and the Master of Information Technology is subject to grouped offer rounds and capacity."
       },
       "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "windowCount": 3,
+      "predictionCount": 2,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "johns-hopkins-university",
@@ -1039,9 +1039,9 @@
         "notes": "The EECS MEng page still displays the closed Fall 2026 cycle and its 14 January 2026 deadline, but does not state the exact opening day."
       },
       "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "windowCount": 1,
+      "predictionCount": 1,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
@@ -1063,9 +1063,9 @@
         "notes": "The official page states recurring month/day periods without binding them to a calendar year, so no exact calendar window is published."
       },
       "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "windowCount": 2,
+      "predictionCount": 2,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "the-university-of-melbourne",
@@ -1135,9 +1135,9 @@
         "notes": "The programme page publishes stable month/day periods without an explicit cycle year, so they are retained as recurring guidance rather than exact calendar records."
       },
       "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "windowCount": 2,
+      "predictionCount": 2,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "fudan-university",
@@ -1326,10 +1326,10 @@
         "opensText": "Exact opening day not stated",
         "notes": "The MSc in Information Technology lists three deadlines for local and non-local applicants: 1 November 2025, 1 January 2026, and 1 March 2026. The page describes admissions as rolling."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 47,
+      "windowCount": 109,
+      "predictionCount": 109,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "psl-university",
@@ -1374,10 +1374,10 @@
         "opensText": "Applications usually open in October 2026",
         "notes": "The Computer Science MSc is closed for September 2026 and lists a 31 March 2026 deadline. The exact next-cycle opening day and deadline are not yet published."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 134,
+      "windowCount": 133,
+      "predictionCount": 133,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "shanghai-jiao-tong-university",
@@ -1518,10 +1518,10 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 87,
+      "windowCount": 151,
+      "predictionCount": 151,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "yonsei-university",
