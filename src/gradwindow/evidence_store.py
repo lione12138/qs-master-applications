@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from pathlib import Path
 import threading
+from pathlib import Path
 from typing import Any
 
 from .io import read_json, write_json
@@ -72,7 +72,9 @@ def write_evidence_snapshots(
 ) -> None:
     snapshots_by_university: dict[str, list[dict[str, Any]]] = {}
     for snapshot in snapshots:
-        snapshots_by_university.setdefault(snapshot["universityId"], []).append(snapshot)
+        snapshots_by_university.setdefault(snapshot["universityId"], []).append(
+            snapshot
+        )
     for university_id, university_snapshots in snapshots_by_university.items():
         _write_university_evidence_snapshots(
             evidence_dir,

@@ -255,8 +255,7 @@ def _how_to_apply_excerpt(soup: BeautifulSoup) -> str:
         (
             node
             for node in soup.find_all(["h2", "h3"])
-            if "how to apply"
-            in _normalise_text(node.get_text(" ", strip=True)).lower()
+            if "how to apply" in _normalise_text(node.get_text(" ", strip=True)).lower()
         ),
         None,
     )

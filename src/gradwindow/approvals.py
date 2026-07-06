@@ -1,10 +1,10 @@
 from __future__ import annotations
 
 import copy
-from datetime import datetime, timezone
 import hashlib
-from pathlib import Path
 import re
+from datetime import datetime, timezone
+from pathlib import Path
 from uuid import uuid4
 
 from .evidence_store import write_evidence_snapshot
@@ -205,7 +205,9 @@ def approve_programme_candidates(
             "remainingPending": _pending_count(candidates, university_id),
         }
 
-    programs_payload["programs"].sort(key=lambda item: (item["universityId"], item["id"]))
+    programs_payload["programs"].sort(
+        key=lambda item: (item["universityId"], item["id"])
+    )
     applications_payload["applications"].sort(
         key=lambda item: (item["universityId"], item["closesAt"], item["id"])
     )
@@ -283,7 +285,9 @@ def _programme_window_id(programme_id: str, window: dict) -> str:
     return f"{programme_id}-{intake_year}-{_slug(window.get('round') or 'main')}"
 
 
-def _programme_window_evidence(programme_name: str, window: dict, source_url: str) -> str:
+def _programme_window_evidence(
+    programme_name: str, window: dict, source_url: str
+) -> str:
     round_label = window.get("round") or "the application window"
     opens_at_basis = window.get("opensAtBasis", "official")
     if str(opens_at_basis).startswith("inferred"):

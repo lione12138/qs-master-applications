@@ -99,11 +99,7 @@ def monitor_application_sources(
         result["universityId"] = record["universityId"]
         entries[record["id"]] = result
         if result["status"] == "ok":
-            target_dates = [
-                value
-                for value in _evidence_target_dates(record)
-                if value
-            ]
+            target_dates = [value for value in _evidence_target_dates(record) if value]
             if target_dates and not evidence_matches_target_dates(
                 excerpt,
                 target_dates,

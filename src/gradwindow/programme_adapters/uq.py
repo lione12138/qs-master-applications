@@ -98,7 +98,9 @@ class UQAdapter:
             max_workers=self.detail_workers
         ) as executor:
             detailed = list(executor.map(parse_one, values))
-        return DiscoveredCatalog(application_opens_at=APPLICATION_OPENS_AT, programmes=detailed)
+        return DiscoveredCatalog(
+            application_opens_at=APPLICATION_OPENS_AT, programmes=detailed
+        )
 
     def _parse_detail(
         self,
@@ -140,7 +142,9 @@ class UQAdapter:
             id=_programme_id(title, programme.source_url),
             name=title,
             windows=_dedupe_windows(windows),
-            deadline_text=" ".join(excerpts)[:1600] if excerpts else programme.deadline_text,
+            deadline_text=" ".join(excerpts)[:1600]
+            if excerpts
+            else programme.deadline_text,
             parse_status="parsed" if windows else "no-deadline",
         )
 
@@ -161,7 +165,12 @@ def _parse_closing_dates(text: str) -> list[tuple[str, str]]:
         )
         month = datetime_month(date_match.group("month"))
         day = int(date_match.group("day"))
-        windows.append((f"Semester {semester_match.group('semester')}", date(year, month, day).isoformat()))
+        windows.append(
+            (
+                f"Semester {semester_match.group('semester')}",
+                date(year, month, day).isoformat(),
+            )
+        )
     return windows
 
 

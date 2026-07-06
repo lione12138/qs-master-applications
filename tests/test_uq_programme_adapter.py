@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from gradwindow.programme_adapters.uq import UQAdapter
 
-
 SITEMAP_INDEX = """
 <sitemapindex>
   <sitemap><loc>https://study.uq.edu.au/sitemap.xml?page=1</loc></sitemap>
@@ -59,7 +58,10 @@ def test_uq_adapter_discovers_master_programmes_from_sitemap() -> None:
     programme = catalog.programmes[0]
     assert programme.name == "Master of Information Technology"
     assert programme.parse_status == "parsed"
-    assert [(w.round, w.closes_at, w.applicant_categories, w.opens_at) for w in programme.windows] == [
+    assert [
+        (w.round, w.closes_at, w.applicant_categories, w.opens_at)
+        for w in programme.windows
+    ] == [
         ("Semester 2", "2026-05-31", ["international-students"], None),
         ("Semester 1", "2025-11-30", ["international-students"], None),
         ("Semester 1", "2026-01-31", ["domestic-students"], None),

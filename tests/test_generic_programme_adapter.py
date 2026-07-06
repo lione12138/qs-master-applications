@@ -5,7 +5,6 @@ from gradwindow.programme_adapters.generic import (
     GenericProgrammeConfig,
 )
 
-
 CATALOG_HTML = """
 <html>
   <head><title>Graduate programmes</title></head>
@@ -80,14 +79,17 @@ def test_generic_adapter_follows_official_masters_links_and_extracts_dates() -> 
     ]
     computer_science = catalog.programmes[0]
     assert computer_science.parse_status == "parsed"
-    assert [(window.round, window.opens_at, window.closes_at) for window in computer_science.windows] == [
-        ("Application deadline", "2026-09-01", "2027-01-14")
-    ]
+    assert [
+        (window.round, window.opens_at, window.closes_at)
+        for window in computer_science.windows
+    ] == [("Application deadline", "2026-09-01", "2027-01-14")]
     assert computer_science.windows[0].intake == "Fall 2027"
     assert catalog.programmes[1].parse_status == "no-deadline"
 
 
-def test_generic_adapter_uses_configured_opening_date_when_page_only_has_deadline() -> None:
+def test_generic_adapter_uses_configured_opening_date_when_page_only_has_deadline() -> (
+    None
+):
     adapter = GenericProgrammeAdapter(
         GenericProgrammeConfig(
             university_id="example-university",
@@ -118,7 +120,9 @@ def test_generic_adapter_uses_configured_opening_date_when_page_only_has_deadlin
     assert catalog.programmes[0].windows[0].opens_at is None
 
 
-def test_generic_adapter_labels_applicant_specific_deadlines_and_ignores_old_dates() -> None:
+def test_generic_adapter_labels_applicant_specific_deadlines_and_ignores_old_dates() -> (
+    None
+):
     adapter = GenericProgrammeAdapter(
         GenericProgrammeConfig(
             university_id="example-university",

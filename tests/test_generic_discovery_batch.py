@@ -60,12 +60,8 @@ def test_classify_generic_candidates_splits_review_buckets() -> None:
 
     buckets = classify_generic_candidates(candidates, {"example-university"})
 
-    assert [item["id"] for item in buckets["readyToApprove"]] == [
-        "new-programme:ready"
-    ]
-    assert [item["id"] for item in buckets["needsAdapter"]] == [
-        "new-programme:adapter"
-    ]
+    assert [item["id"] for item in buckets["readyToApprove"]] == ["new-programme:ready"]
+    assert [item["id"] for item in buckets["needsAdapter"]] == ["new-programme:adapter"]
     assert [item["id"] for item in buckets["needsOpeningDate"]] == [
         "new-programme:opening-date"
     ]

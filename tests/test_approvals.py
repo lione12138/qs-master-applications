@@ -116,7 +116,9 @@ def test_approve_programme_candidates_promotes_parsed_windows(tmp_path) -> None:
     programs_path = tmp_path / "programs.json"
     applications_path = tmp_path / "applications.json"
     candidates_path = tmp_path / "programme-candidates.json"
-    programs_path.write_text(PROGRAMS_PATH.read_text(encoding="utf-8"), encoding="utf-8")
+    programs_path.write_text(
+        PROGRAMS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
+    )
     applications_path.write_text(
         APPLICATIONS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
     )

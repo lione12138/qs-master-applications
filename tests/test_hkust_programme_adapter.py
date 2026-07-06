@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from gradwindow.programme_adapters.hkust import HKUSTAdapter
 
-
 CATALOG_HTML = """
 <div>
   <a href="/pgprog/2026-27/msc-ai/">Computer Science and Engineering Artificial Intelligence MSc</a>
@@ -42,14 +41,19 @@ def test_hkust_adapter_extracts_catalog_and_deadline_candidates() -> None:
     catalog = adapter.parse_catalog_from_fetcher(fetcher)
 
     assert catalog.application_opens_at == "2025-09-01"
-    assert [item.id for item in catalog.programmes] == ["hkust-artificial-intelligence-msc"]
+    assert [item.id for item in catalog.programmes] == [
+        "hkust-artificial-intelligence-msc"
+    ]
     programme = catalog.programmes[0]
     assert programme.name == "Master of Science in Artificial Intelligence"
     assert programme.degree_type == "MSc"
     assert programme.faculty == "Department of Computer Science and Engineering"
     assert programme.application_url == "https://seng.hkust.edu.hk/msc/ai"
     assert programme.parse_status == "parsed"
-    assert [(w.round, w.closes_at, w.applicant_categories, w.opens_at) for w in programme.windows] == [
+    assert [
+        (w.round, w.closes_at, w.applicant_categories, w.opens_at)
+        for w in programme.windows
+    ] == [
         ("Round 1", "2025-11-01", ["international-students"], None),
         ("Round 2", "2026-01-01", ["international-students"], None),
         ("Round 3", "2026-03-01", ["international-students"], None),

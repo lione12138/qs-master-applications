@@ -77,7 +77,9 @@ class HKUAdapter:
             max_workers=self.detail_workers
         ) as executor:
             detailed = list(executor.map(parse_one, programmes))
-        return DiscoveredCatalog(application_opens_at=APPLICATION_OPENS_AT, programmes=detailed)
+        return DiscoveredCatalog(
+            application_opens_at=APPLICATION_OPENS_AT, programmes=detailed
+        )
 
     def _fetch_listing(self, fetcher) -> list[DiscoveredProgramme]:
         programmes: dict[str, DiscoveredProgramme] = {}
@@ -133,7 +135,9 @@ class HKUAdapter:
         programme: DiscoveredProgramme,
         html: str,
     ) -> DiscoveredProgramme:
-        text = _normalise_text(BeautifulSoup(html, "html.parser").get_text(" ", strip=True))
+        text = _normalise_text(
+            BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+        )
         lower = text.lower()
         if "programme not found" in lower:
             return programme

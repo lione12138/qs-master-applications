@@ -4,7 +4,6 @@ import json
 
 from gradwindow.programme_adapters.hku import HKUAdapter
 
-
 LISTING_PAYLOAD = {
     "data": [
         {
@@ -13,7 +12,9 @@ LISTING_PAYLOAD = {
                 "hkutgp_programmenameabbreviation": "MDASC",
                 "rootprogramme.hkutgp_name": {"Value": "master-of-data-science-cds"},
             },
-            "FormattedValues": {"hkutgp_facultyid": "School of Computing and Data Science"},
+            "FormattedValues": {
+                "hkutgp_facultyid": "School of Computing and Data Science"
+            },
         },
         {
             "Attributes": {
@@ -58,7 +59,10 @@ def test_hku_adapter_extracts_listing_and_deadline_rounds() -> None:
     assert programme.degree_type == "Master"
     assert programme.faculty == "School of Computing and Data Science"
     assert programme.parse_status == "parsed"
-    assert [(window.round, window.closes_at, window.opens_at) for window in programme.windows] == [
+    assert [
+        (window.round, window.closes_at, window.opens_at)
+        for window in programme.windows
+    ] == [
         ("Round 1 (Main)", "2025-12-01", None),
         ("Round 2 (Clearing)", "2026-03-31", None),
     ]

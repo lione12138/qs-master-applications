@@ -34,13 +34,18 @@ def run_generic_discovery_batch(
 ) -> dict[str, Any]:
     config = read_json(config_path)
     universities = {
-        item["id"]: item for item in read_json(UNIVERSITIES_PATH).get("universities", [])
+        item["id"]: item
+        for item in read_json(UNIVERSITIES_PATH).get("universities", [])
     }
     entries = [
         entry
         for entry in config.get("schools", [])
         if entry.get("enabled", True)
-        and (only is None or entry.get("universityId") in only or entry.get("name") in only)
+        and (
+            only is None
+            or entry.get("universityId") in only
+            or entry.get("name") in only
+        )
     ]
     if replace_existing and not dry_run:
         _remove_pending_batch_candidates(candidates_path, entries)
@@ -56,7 +61,8 @@ def run_generic_discovery_batch(
                     school_prefix=entry.get("prefix") or _generic_prefix(university_id),
                     seed_urls=tuple(entry["seedUrls"]),
                     official_domains=tuple(
-                        entry.get("officialDomains") or university.get("officialDomains", [])
+                        entry.get("officialDomains")
+                        or university.get("officialDomains", [])
                     ),
                     default_application_url=(
                         entry.get("applicationUrl")
@@ -109,8 +115,12 @@ def run_generic_discovery_batch(
         },
         "summary": {
             "schoolsConfigured": len(entries),
-            "schoolsSucceeded": sum(item.get("batchStatus") == "ok" for item in results),
-            "schoolsErrored": sum(item.get("batchStatus") == "error" for item in results),
+            "schoolsSucceeded": sum(
+                item.get("batchStatus") == "ok" for item in results
+            ),
+            "schoolsErrored": sum(
+                item.get("batchStatus") == "error" for item in results
+            ),
             "readyToApprove": len(classifications["readyToApprove"]),
             "needsOpeningReview": len(classifications["needsOpeningReview"]),
             "needsOpeningDate": len(classifications["needsOpeningDate"]),
@@ -129,7 +139,10 @@ def _remove_pending_batch_candidates(
     entries: list[dict[str, Any]],
 ) -> None:
     targets = {
-        (entry["universityId"], entry.get("prefix") or _generic_prefix(entry["universityId"]))
+        (
+            entry["universityId"],
+            entry.get("prefix") or _generic_prefix(entry["universityId"]),
+        )
         for entry in entries
     }
     payload = read_json(
@@ -212,21 +225,29 @@ def _candidate_summary(item: dict[str, Any]) -> dict[str, Any]:
 
 def _is_ready_to_approve(item: dict[str, Any]) -> bool:
     windows = item.get("windows", [])
-    return bool(windows) and item.get("parseStatus") == "parsed" and all(
-        window.get("opensAt")
-        and window.get("opensAtBasis") == "official"
-        and window.get("closesAt")
-        for window in windows
+    return (
+        bool(windows)
+        and item.get("parseStatus") == "parsed"
+        and all(
+            window.get("opensAt")
+            and window.get("opensAtBasis") == "official"
+            and window.get("closesAt")
+            for window in windows
+        )
     )
 
 
 def _needs_opening_review(item: dict[str, Any]) -> bool:
     windows = item.get("windows", [])
-    return bool(windows) and item.get("parseStatus") == "parsed" and all(
-        window.get("opensAt")
-        and str(window.get("opensAtBasis", "")).startswith("inferred")
-        and window.get("closesAt")
-        for window in windows
+    return (
+        bool(windows)
+        and item.get("parseStatus") == "parsed"
+        and all(
+            window.get("opensAt")
+            and str(window.get("opensAtBasis", "")).startswith("inferred")
+            and window.get("closesAt")
+            for window in windows
+        )
     )
 
 

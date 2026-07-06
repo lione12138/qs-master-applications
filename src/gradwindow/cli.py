@@ -207,9 +207,7 @@ def main() -> None:
         seed_urls = tuple(
             args.seed
             or [
-                university.get("admissionsUrl")
-                or university.get("homepageUrl")
-                or "",
+                university.get("admissionsUrl") or university.get("homepageUrl") or "",
             ]
         )
         adapter = GenericProgrammeAdapter(
@@ -219,7 +217,9 @@ def main() -> None:
                 seed_urls=tuple(url for url in seed_urls if url),
                 official_domains=tuple(university.get("officialDomains", [])),
                 default_application_url=(
-                    university.get("admissionsUrl") or university.get("homepageUrl") or ""
+                    university.get("admissionsUrl")
+                    or university.get("homepageUrl")
+                    or ""
                 ),
                 default_intake=args.default_intake,
                 default_application_opens_at=args.default_application_opens_at,

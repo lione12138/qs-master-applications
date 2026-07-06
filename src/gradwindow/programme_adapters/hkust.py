@@ -69,7 +69,9 @@ class HKUSTAdapter:
             max_workers=self.detail_workers
         ) as executor:
             detailed = list(executor.map(parse_one, programmes))
-        return DiscoveredCatalog(application_opens_at=APPLICATION_OPENS_AT, programmes=detailed)
+        return DiscoveredCatalog(
+            application_opens_at=APPLICATION_OPENS_AT, programmes=detailed
+        )
 
     def parse_catalog(self, html: str) -> DiscoveredCatalog:
         soup = BeautifulSoup(html, "html.parser")
@@ -109,8 +111,13 @@ class HKUSTAdapter:
         programme: DiscoveredProgramme,
         html: str,
     ) -> DiscoveredProgramme:
-        text = _normalise_text(BeautifulSoup(html, "html.parser").get_text(" ", strip=True))
-        title = _extract_between(text, "Award Title", "Award Title (Chinese)") or programme.name
+        text = _normalise_text(
+            BeautifulSoup(html, "html.parser").get_text(" ", strip=True)
+        )
+        title = (
+            _extract_between(text, "Award Title", "Award Title (Chinese)")
+            or programme.name
+        )
         degree_type = _degree_type(title) or programme.degree_type
         department = _extract_between(text, "Offering Unit", "Program Advisor") or ""
         website = _extract_between(text, "Website", "Enquiry")

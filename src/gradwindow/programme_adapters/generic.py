@@ -200,7 +200,11 @@ class GenericProgrammeAdapter:
             for window in windows
         )
         parse_status = (
-            "parsed" if has_opening_dates else "incomplete" if windows else "no-deadline"
+            "parsed"
+            if has_opening_dates
+            else "incomplete"
+            if windows
+            else "no-deadline"
         )
         return replace(
             programme,
@@ -238,7 +242,9 @@ def _candidate_title(label: str, url: str) -> str | None:
     if DEGREE_RE.search(label):
         return label
     path_slug = urlparse(url).path.rstrip("/").split("/")[-1]
-    title = " ".join(part.capitalize() for part in re.split(r"[-_]+", path_slug) if part)
+    title = " ".join(
+        part.capitalize() for part in re.split(r"[-_]+", path_slug) if part
+    )
     if DEGREE_RE.search(title):
         return title
     if re.search(r"\bmaster\b", path_slug, flags=re.IGNORECASE):
@@ -287,7 +293,11 @@ def _parse_application_windows(
             if date_value < minimum_closes_at:
                 continue
             applicant_label = _applicant_round_label_from_prefix(label_text)
-            round_label = applicant_label or _round_label_near(source_text) or "Application deadline"
+            round_label = (
+                applicant_label
+                or _round_label_near(source_text)
+                or "Application deadline"
+            )
             applicant_categories = _applicant_categories_for_label(applicant_label)
             key = (round_label, date_value)
             if key in seen:
@@ -372,7 +382,11 @@ def _opening_date_in_context(context: str) -> str | None:
             nearby = context[max(0, match.start() - 120) : match.end() + 120]
             if OPEN_TERMS.search(nearby):
                 try:
-                    return datetime.strptime(match.group(1), date_format).date().isoformat()
+                    return (
+                        datetime.strptime(match.group(1), date_format)
+                        .date()
+                        .isoformat()
+                    )
                 except ValueError:
                     continue
     return None
@@ -438,7 +452,11 @@ def _applicant_categories_near(text: str) -> list[str]:
 
 
 def _applicant_categories_for_label(label: str | None) -> list[str]:
-    if label in {"Overseas applicants", "International students", "International applicants"}:
+    if label in {
+        "Overseas applicants",
+        "International students",
+        "International applicants",
+    }:
         return ["international-students"]
     if label in {"Home applicants", "UK students"}:
         return ["domestic-students"]
