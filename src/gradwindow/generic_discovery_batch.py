@@ -113,6 +113,7 @@ def run_generic_discovery_batch(
             "schoolsErrored": sum(item.get("batchStatus") == "error" for item in results),
             "readyToApprove": len(classifications["readyToApprove"]),
             "needsOpeningReview": len(classifications["needsOpeningReview"]),
+            "needsOpeningDate": len(classifications["needsOpeningDate"]),
             "needsAdapter": len(classifications["needsAdapter"]),
             "comingSoonMonitor": len(classifications["comingSoonMonitor"]),
         },
@@ -171,6 +172,7 @@ def classify_generic_candidates(
     buckets: dict[str, list[dict[str, Any]]] = {
         "readyToApprove": [],
         "needsOpeningReview": [],
+        "needsOpeningDate": [],
         "needsAdapter": [],
         "comingSoonMonitor": [],
     }
@@ -184,6 +186,8 @@ def classify_generic_candidates(
             buckets["readyToApprove"].append(summary)
         elif _needs_opening_review(item):
             buckets["needsOpeningReview"].append(summary)
+        elif _needs_opening_date(item):
+            buckets["needsOpeningDate"].append(summary)
         elif _is_coming_soon(item):
             buckets["comingSoonMonitor"].append(summary)
         else:
@@ -223,6 +227,13 @@ def _needs_opening_review(item: dict[str, Any]) -> bool:
         and str(window.get("opensAtBasis", "")).startswith("inferred")
         and window.get("closesAt")
         for window in windows
+    )
+
+
+def _needs_opening_date(item: dict[str, Any]) -> bool:
+    windows = item.get("windows", [])
+    return bool(windows) and all(
+        not window.get("opensAt") and window.get("closesAt") for window in windows
     )
 
 

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-06T15:29:37.676506+00:00",
+    "updatedAt": "2026-07-06T15:34:14.370824+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
@@ -11,7 +11,8 @@
     "schoolsErrored": 5,
     "readyToApprove": 0,
     "needsOpeningReview": 0,
-    "needsAdapter": 58,
+    "needsOpeningDate": 20,
+    "needsAdapter": 38,
     "comingSoonMonitor": 3
   },
   "results": [
@@ -19,7 +20,7 @@
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-06T15:29:37.676506+00:00",
+      "checkedAt": "2026-07-06T15:34:14.370824+00:00",
       "catalogProgrammes": 4,
       "knownProgrammes": 1,
       "newCandidates": 4,
@@ -60,7 +61,7 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-06T15:29:39.854544+00:00",
+      "checkedAt": "2026-07-06T15:34:16.708137+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 17,
       "newCandidates": 4,
@@ -83,7 +84,7 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-06T15:29:44.854640+00:00",
+      "checkedAt": "2026-07-06T15:34:21.337214+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -97,7 +98,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-06T15:29:48.762776+00:00",
+      "checkedAt": "2026-07-06T15:34:25.335261+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -111,7 +112,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-06T15:30:01.148162+00:00",
+      "checkedAt": "2026-07-06T15:34:30.384951+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -134,6 +135,188 @@
   "classification": {
     "readyToApprove": [],
     "needsOpeningReview": [],
+    "needsOpeningDate": [
+      {
+        "id": "new-programme:southampton-applied-linguistics-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Applied Linguistics (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/applied-linguistics-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-arts-and-cultural-leadership-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Arts and Cultural Leadership (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/arts-cultural-leadership-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-communication-design-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Communication Design (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/communication-design-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-contemporary-curating-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Contemporary Curating (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/contemporary-curating-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-creative-writing-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Creative Writing (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/creative-writing-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-museums-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (Heritage and Museums) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-museums-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-public-history-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (Heritage and Public History) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-public-history-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-the-arts-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (Heritage and the Arts) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-the-arts-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cultural-heritage-studies-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cultural Heritage Studies (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-design-innovation-and-technology-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Design Innovation and Technology (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-design-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Design Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/design-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-digital-media-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Digital Media (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-media-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-eighteenth-century-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Eighteenth Century) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-eighteenth-century-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-nineteenth-century-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Nineteenth Century) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-nineteenth-century-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-postcolonial-and-world-literatures-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Postcolonial and World Literatures) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-postcolonial-world-literatures-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-english-literary-studies-twentieth-century-and-contemporary-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literary Studies (Twentieth Century and Contemporary) (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-twentieth-century-contemporary-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-commercial-and-corporate-law-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Commercial and Corporate Law (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-commercial-corporate-law-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-law-and-human-rights-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Law and Human Rights (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-law-human-rights-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-laws-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "Laws (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/laws-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-law-llm",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Law (LLM)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-law-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      }
+    ],
     "needsAdapter": [
       {
         "id": "new-programme:nottingham-accounting-and-finance-msc",
@@ -476,186 +659,6 @@
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:southampton-applied-linguistics-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Applied Linguistics (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/applied-linguistics-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-arts-and-cultural-leadership-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Arts and Cultural Leadership (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/arts-cultural-leadership-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-communication-design-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Communication Design (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/communication-design-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-contemporary-curating-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Contemporary Curating (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/contemporary-curating-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-creative-writing-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Creative Writing (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/creative-writing-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-museums-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Cultural Heritage Studies (Heritage and Museums) (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-museums-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-public-history-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Cultural Heritage Studies (Heritage and Public History) (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-public-history-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-cultural-heritage-studies-heritage-and-the-arts-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Cultural Heritage Studies (Heritage and the Arts) (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-the-arts-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-cultural-heritage-studies-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Cultural Heritage Studies (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-design-innovation-and-technology-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Design Innovation and Technology (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-design-management-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Design Management (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/design-management-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-digital-media-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "Digital Media (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-media-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-english-literary-studies-eighteenth-century-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "English Literary Studies (Eighteenth Century) (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-eighteenth-century-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-english-literary-studies-nineteenth-century-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "English Literary Studies (Nineteenth Century) (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-nineteenth-century-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-english-literary-studies-postcolonial-and-world-literatures-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "English Literary Studies (Postcolonial and World Literatures) (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-postcolonial-world-literatures-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-english-literary-studies-twentieth-century-and-contemporary-ma",
-        "universityId": "university-of-southampton",
-        "programmeName": "English Literary Studies (Twentieth Century and Contemporary) (MA)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-twentieth-century-contemporary-masters-ma",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-international-commercial-and-corporate-law-llm",
-        "universityId": "university-of-southampton",
-        "programmeName": "International Commercial and Corporate Law (LLM)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/international-commercial-corporate-law-masters-llm",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-international-law-and-human-rights-llm",
-        "universityId": "university-of-southampton",
-        "programmeName": "International Law and Human Rights (LLM)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/international-law-human-rights-masters-llm",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-laws-llm",
-        "universityId": "university-of-southampton",
-        "programmeName": "Laws (LLM)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/laws-masters-llm",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:southampton-maritime-law-llm",
-        "universityId": "university-of-southampton",
-        "programmeName": "Maritime Law (LLM)",
-        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-law-masters-llm",
-        "windowCount": 2,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       }
     ],
     "comingSoonMonitor": [

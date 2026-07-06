@@ -25,9 +25,9 @@ def test_classify_generic_candidates_splits_review_buckets() -> None:
             "status": "pending",
             "universityId": "example-university",
             "programme": {"name": "MSc Needs Adapter"},
-            "windows": [{"opensAt": None, "closesAt": "2027-01-14"}],
+            "windows": [{"opensAt": "2026-09-01", "closesAt": None}],
             "parseStatus": "incomplete",
-            "reviewReason": "At least one opening date is not published.",
+            "reviewReason": "The page structure needs a school-specific parser.",
         },
         {
             "id": "new-programme:coming-soon",
@@ -38,6 +38,15 @@ def test_classify_generic_candidates_splits_review_buckets() -> None:
             "parseStatus": "no-deadline",
             "reviewReason": "No application deadline was parsed.",
             "evidenceExcerpt": "Applications will open soon.",
+        },
+        {
+            "id": "new-programme:opening-date",
+            "status": "pending",
+            "universityId": "example-university",
+            "programme": {"name": "MSc Deadline Only"},
+            "windows": [{"opensAt": None, "closesAt": "2027-01-14"}],
+            "parseStatus": "incomplete",
+            "reviewReason": "At least one opening date is not published.",
         },
         {
             "id": "new-programme:ignored",
@@ -56,6 +65,9 @@ def test_classify_generic_candidates_splits_review_buckets() -> None:
     ]
     assert [item["id"] for item in buckets["needsAdapter"]] == [
         "new-programme:adapter"
+    ]
+    assert [item["id"] for item in buckets["needsOpeningDate"]] == [
+        "new-programme:opening-date"
     ]
     assert [item["id"] for item in buckets["comingSoonMonitor"]] == [
         "new-programme:coming-soon"
