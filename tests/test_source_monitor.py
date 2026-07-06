@@ -52,6 +52,7 @@ def test_source_monitor_fetches_duplicate_urls_once(tmp_path, monkeypatch) -> No
     evidence_bundle = json.loads(
         (tmp_path / "evidence" / "u.json").read_text(encoding="utf-8")
     )
+    assert set(evidence_bundle["snapshots"]) == {"one", "two"}
     evidence = evidence_bundle["snapshots"]["one"]
     assert evidence["excerpt"] == "Applications close 15 January 2027."
 

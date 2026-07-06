@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 from pathlib import Path
+import threading
 from typing import Any
 
 from .io import read_json, write_json
+
+_BUNDLE_LOCKS: dict[Path, threading.Lock] = {}
+_BUNDLE_LOCKS_GUARD = threading.Lock()
 
 
 def evidence_bundle_path(evidence_dir: Path, university_id: str) -> Path:
@@ -59,9 +63,44 @@ def evidence_snapshot_exists(
 
 
 def write_evidence_snapshot(evidence_dir: Path, snapshot: dict[str, Any]) -> None:
-    university_id = snapshot["universityId"]
-    record_id = snapshot["recordId"]
-    bundle = read_evidence_bundle(evidence_dir, university_id)
-    bundle["universityId"] = university_id
-    bundle.setdefault("snapshots", {})[record_id] = snapshot
-    write_json(evidence_bundle_path(evidence_dir, university_id), bundle)
+    write_evidence_snapshots(evidence_dir, [snapshot])
+
+
+def write_evidence_snapshots(
+    evidence_dir: Path,
+    snapshots: list[dict[str, Any]],
+) -> None:
+    snapshots_by_university: dict[str, list[dict[str, Any]]] = {}
+    for snapshot in snapshots:
+        snapshots_by_university.setdefault(snapshot["universityId"], []).append(snapshot)
+    for university_id, university_snapshots in snapshots_by_university.items():
+        _write_university_evidence_snapshots(
+            evidence_dir,
+            university_id,
+            university_snapshots,
+        )
+
+
+def _write_university_evidence_snapshots(
+    evidence_dir: Path,
+    university_id: str,
+    snapshots: list[dict[str, Any]],
+) -> None:
+    path = evidence_bundle_path(evidence_dir, university_id).resolve()
+    lock = _bundle_lock(path)
+    with lock:
+        bundle = read_evidence_bundle(evidence_dir, university_id)
+        bundle["universityId"] = university_id
+        bundle_snapshots = bundle.setdefault("snapshots", {})
+        for snapshot in snapshots:
+            bundle_snapshots[snapshot["recordId"]] = snapshot
+        write_json(evidence_bundle_path(evidence_dir, university_id), bundle)
+
+
+def _bundle_lock(path: Path) -> threading.Lock:
+    with _BUNDLE_LOCKS_GUARD:
+        lock = _BUNDLE_LOCKS.get(path)
+        if lock is None:
+            lock = threading.Lock()
+            _BUNDLE_LOCKS[path] = lock
+        return lock

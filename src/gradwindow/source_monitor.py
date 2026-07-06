@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .content import evidence_matches_target_dates
-from .evidence_store import evidence_snapshot_exists, write_evidence_snapshot
+from .evidence_store import evidence_snapshot_exists, write_evidence_snapshots
 from .io import read_json, write_json
 from .monitor import check_university, summarize_monitor_results
 from .paths import (
@@ -81,6 +81,7 @@ def monitor_application_sources(
                 }
 
     entries = {}
+    evidence_snapshots = []
     for record in applications:
         result = dict(results_by_url[record["sourceUrl"]])
         context = result.pop(
@@ -127,8 +128,7 @@ def monitor_application_sources(
                     continue
                 else:
                     excerpt = ""
-            write_evidence_snapshot(
-                evidence_dir,
+            evidence_snapshots.append(
                 {
                     "recordId": record["id"],
                     "universityId": record["universityId"],
@@ -145,10 +145,11 @@ def monitor_application_sources(
                     "matchedTextBefore": context["matchedTextBefore"],
                     "matchedText": context["matchedText"],
                     "matchedTextAfter": context["matchedTextAfter"],
-                },
+                }
             )
 
     summary = summarize_monitor_results(entries)
+    write_evidence_snapshots(evidence_dir, evidence_snapshots)
     write_json(
         state_path,
         {
