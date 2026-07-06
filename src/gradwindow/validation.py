@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 from pydantic import BaseModel, ValidationError
 
 from .discovery import same_official_domain
+from .evidence_store import read_evidence_snapshot
 from .io import read_json
 from .models import (
     ApplicantCategory,
@@ -296,11 +297,14 @@ def validate_data(
     evidence_count = 0
     if applications_path == APPLICATIONS_PATH:
         for item in applications:
-            evidence_path = evidence_dir / f"{item['id']}.json"
-            if not evidence_path.exists():
+            snapshot = read_evidence_snapshot(
+                evidence_dir,
+                item["universityId"],
+                item["id"],
+            )
+            if snapshot is None:
                 errors.append(f"{item['id']}: missing evidence snapshot")
                 continue
-            snapshot = read_json(evidence_path)
             if not validate_model(EvidenceSnapshot, snapshot, item["id"], errors):
                 continue
             evidence_count += 1

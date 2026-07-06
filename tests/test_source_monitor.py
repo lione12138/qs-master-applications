@@ -49,9 +49,10 @@ def test_source_monitor_fetches_duplicate_urls_once(tmp_path, monkeypatch) -> No
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert set(state["applications"]) == {"one", "two"}
     assert state["meta"]["uniqueSourcePages"] == 1
-    evidence = json.loads(
-        (tmp_path / "evidence" / "one.json").read_text(encoding="utf-8")
+    evidence_bundle = json.loads(
+        (tmp_path / "evidence" / "u.json").read_text(encoding="utf-8")
     )
+    evidence = evidence_bundle["snapshots"]["one"]
     assert evidence["excerpt"] == "Applications close 15 January 2027."
 
 
@@ -79,8 +80,18 @@ def test_source_monitor_preserves_better_existing_evidence(
         ),
         encoding="utf-8",
     )
-    existing_path = evidence_dir / "dynamic-window.json"
-    existing_path.write_text('{"quality": "rendered"}', encoding="utf-8")
+    existing_path = evidence_dir / "u.json"
+    existing_path.write_text(
+        json.dumps(
+            {
+                "universityId": "u",
+                "snapshots": {
+                    "dynamic-window": {"quality": "rendered"},
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
 
     monkeypatch.setattr(
         source_monitor,
@@ -106,7 +117,8 @@ def test_source_monitor_preserves_better_existing_evidence(
         evidence_dir=evidence_dir,
         workers=1,
     )
-    assert existing_path.read_text(encoding="utf-8") == '{"quality": "rendered"}'
+    evidence_bundle = json.loads(existing_path.read_text(encoding="utf-8"))
+    assert evidence_bundle["snapshots"]["dynamic-window"] == {"quality": "rendered"}
 
 
 def test_source_monitor_uses_matched_context_when_excerpt_misses_dates(
@@ -158,8 +170,9 @@ def test_source_monitor_uses_matched_context_when_excerpt_misses_dates(
         workers=1,
     )
 
-    evidence = json.loads(
-        (tmp_path / "evidence" / "context-window.json").read_text(encoding="utf-8")
+    evidence_bundle = json.loads(
+        (tmp_path / "evidence" / "u.json").read_text(encoding="utf-8")
     )
+    evidence = evidence_bundle["snapshots"]["context-window"]
     assert "September 3, 2025" in evidence["excerpt"]
     assert "December 23, 2025" in evidence["excerpt"]

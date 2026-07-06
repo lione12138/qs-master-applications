@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from .content import evidence_matches_target_dates
+from .evidence_store import evidence_snapshot_exists, write_evidence_snapshot
 from .io import read_json, write_json
 from .monitor import check_university, summarize_monitor_results
 from .paths import (
@@ -102,7 +103,6 @@ def monitor_application_sources(
                 for value in (record.get("opensAt"), record.get("closesAt"))
                 if value
             ]
-            evidence_path = evidence_dir / f"{record['id']}.json"
             if target_dates and not evidence_matches_target_dates(
                 excerpt,
                 target_dates,
@@ -119,12 +119,16 @@ def monitor_application_sources(
                 if evidence_matches_target_dates(context_excerpt, target_dates):
                     excerpt = context_excerpt
                     context["excerpt"] = context_excerpt
-                elif evidence_path.exists():
+                elif evidence_snapshot_exists(
+                    evidence_dir,
+                    record["universityId"],
+                    record["id"],
+                ):
                     continue
                 else:
                     excerpt = ""
-            write_json(
-                evidence_path,
+            write_evidence_snapshot(
+                evidence_dir,
                 {
                     "recordId": record["id"],
                     "universityId": record["universityId"],

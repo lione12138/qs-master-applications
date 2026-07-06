@@ -44,8 +44,9 @@ def test_application_model_rejects_path_like_id() -> None:
 
 
 def test_evidence_snapshot_accepts_current_record() -> None:
-    snapshot_path = next(EVIDENCE_DIR.glob("*.json"))
-    snapshot = json.loads(snapshot_path.read_text(encoding="utf-8"))
+    bundle_path = next(EVIDENCE_DIR.glob("*.json"))
+    bundle = json.loads(bundle_path.read_text(encoding="utf-8"))
+    snapshot = next(iter(bundle["snapshots"].values()))
     parsed = EvidenceSnapshot.model_validate(snapshot)
     assert parsed.captured_at.tzinfo is not None
 
