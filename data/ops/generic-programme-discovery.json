@@ -14,6 +14,7 @@
       "defaultIntake": "Autumn 2027",
       "maxDetailPages": 10,
       "minimumExpected": 1,
+      "followApplicationLinks": true,
       "enabled": true
     },
     {
@@ -64,6 +65,9 @@
       "applicationOpensAtBasis": "inferred-month-default",
       "maxDetailPages": 20,
       "minimumExpected": 1,
+      "excludeUrlPatterns": [
+        "/taught-2025/"
+      ],
       "enabled": true
     },
     {

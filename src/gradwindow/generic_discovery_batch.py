@@ -82,6 +82,10 @@ def run_generic_discovery_batch(
                     minimum_closes_at=entry.get("minimumClosesAt", "2025-07-01"),
                     minimum_expected_programmes=int(entry.get("minimumExpected", 1)),
                     max_detail_pages=int(entry.get("maxDetailPages", 25)),
+                    follow_application_links=bool(
+                        entry.get("followApplicationLinks", False)
+                    ),
+                    exclude_url_patterns=tuple(entry.get("excludeUrlPatterns", [])),
                 )
             )
             result = discover_programmes(

@@ -1,10 +1,304 @@
 {
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
-    "updatedAt": "2026-07-07T07:52:41.316264+00:00",
-    "lastBatchReplaceRemoved": 57
+    "updatedAt": "2026-07-07T08:16:42.037504+00:00",
+    "lastBatchReplaceRemoved": 56
   },
   "items": [
+    {
+      "id": "new-programme:bristol-msc-human-resource-management",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-human-resource-management/",
+      "programme": {
+        "id": "bristol-msc-human-resource-management",
+        "universityId": "university-of-bristol",
+        "name": "MSc Human Resource Management",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-human-resource-management/"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Overseas applicants",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-08-13"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Home applicants",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-09-10"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": " with real-world knowledge, networks and skills to succeed once you graduate. You’ll also benefit from access to a range of student services and other facilities at our vibrant Clifton Campus. Listen to the first episode of our Research Frontiers podcast - 'The future of work'. Key information Programme duration One year full-time. Start date September 2026 Application deadline Overseas applicants: 13 August 2026. Home applicants: 10 September 2026. Please note that due to high demand, some programmes may close earlier than advertised. Early applications are advised to avoid disappointment. Places are limited and allocated on a continuous basis from September 2025 until all places are filled. Delivery method On-Campus Location Temple Quarter (main location), Clifton campus Awards available MSc On-demand academic talks Hear directly from an academic giving you a deeper insight into this programme. Find out more Programme structure You will study core units throughout the programme, starting with core theories and concepts including employment relations, HRM in the global economy and the context of work in the 21st century. In term two, you will focus on the 'future(s)' and 'alternatives' to work and organisation, and engage in timely debates on what th orld knowledge, networks and skills to succeed once you graduate. You’ll also benefit from access to a range of student services and other facilities at our vibrant Clifton Campus. Listen to the first episode of our Research Frontiers podcast - 'The future of work'. Key information Programme duration One year full-time. Start "
+    },
+    {
+      "id": "new-programme:bristol-msc-immersive-technologies-virtual-and-augmented-reality",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-immersive-technologies-virtual-and-augmented-reality/",
+      "programme": {
+        "id": "bristol-msc-immersive-technologies-virtual-and-augmented-reality",
+        "universityId": "university-of-bristol",
+        "name": "MSc Immersive Technologies (Virtual and Augmented Reality)",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-immersive-technologies-virtual-and-augmented-reality/"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Overseas applicants",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-08-13"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Home applicants",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-09-10"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": ". This programme is linked with MA Immersive Arts (Virtual and Augmented Reality) Key information Programme duration Postgraduate Certificate: One year part-time. Postgraduate Diploma: One year full-time; Two years part-time. MSc: One year full-time; Two or three years part-time. Part-time study requires daytime weekday attendance. Start date September 2026 Application deadline Overseas applicants: 13 August 2026. Home applicants: 10 September 2026. Please note that due to high demand, some programmes may close earlier than advertised. Early applications are advised to avoid disappointment. Places are limited and allocated on a continuous basis from September 2025 until all places are filled. Delivery method On-Campus Location Temple Quarter (main location), Clifton campus Awards available MSc On-demand academic talks Hear directly from an academic giving you a deeper insight into this programme. Find out more Programme structure This master's degree consists of the following units: Introduction to Immersive Technologies and Arts. Virtual Environment Design. Immersive Interaction and Audio Design. Immersive Games Design and Production. Augmenting the Real World. Innovation and Entrepreneurship in the Immersive World. To complete your studies you will  amme is linked with MA Immersive Arts (Virtual and Augmented Reality) Key information Programme duration Postgraduate Certificate: One year part-time. Postgraduate Diploma: One year full-time; Two years part-time. MSc: One year full-time; Two or three years part-time. Part-time study requires daytime weekday attendance. Start "
+    },
+    {
+      "id": "new-programme:bristol-msc-management-csr-and-sustainability",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-csr-and-sustainability/",
+      "programme": {
+        "id": "bristol-msc-management-csr-and-sustainability",
+        "universityId": "university-of-bristol",
+        "name": "MSc Management (CSR and Sustainability)",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-csr-and-sustainability/"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Overseas applicants",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-08-13"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Home applicants",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-09-10"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "emple Quarter Enterprise Campus, where enhanced links with businesses will provide you with real-world knowledge, networks and skills to succeed once you graduate. You’ll also benefit from access to a range of student services and other facilities at our vibrant Clifton Campus. Key information Programme duration One year full-time. Start date September 2026 Application deadline Overseas applicants: 13 August 2026. Home applicants: 10 September 2026. Please note that due to high demand, some programmes may close earlier than advertised. Early applications are advised to avoid disappointment. Places are limited and allocated on a continuous basis from September 2025 until all places are filled. Delivery method On-Campus Location Temple Quarter (main location), Clifton campus Awards available MSc On-demand academic talks Hear directly from an academic giving you a deeper insight into this programme. Find out more Programme structure You will study five core units and a specialist unit, Corporate Social Responsibility and Sustainability. The core units include Management and Organisation; Strategy, Finance and Accounting for Management; Operations and Marketing Management; Management Research Methods; and Academic, Personal and Professional Development. Y r Enterprise Campus, where enhanced links with businesses will provide you with real-world knowledge, networks and skills to succeed once you graduate. You’ll also benefit from access to a range of student services and other facilities at our vibrant Clifton Campus. Key information Programme duration One year full-time. Start "
+    },
+    {
+      "id": "new-programme:bristol-msc-management-entrepreneurship-and-innovation",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-entrepreneurship-and-innovation/",
+      "programme": {
+        "id": "bristol-msc-management-entrepreneurship-and-innovation",
+        "universityId": "university-of-bristol",
+        "name": "MSc Management (Entrepreneurship and Innovation)",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-entrepreneurship-and-innovation/"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Overseas applicants",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-08-13"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Home applicants",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-09-10"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "emple Quarter Enterprise Campus, where enhanced links with businesses will provide you with real-world knowledge, networks and skills to succeed once you graduate. You’ll also benefit from access to a range of student services and other facilities at our vibrant Clifton Campus. Key information Programme duration One year full-time. Start date September 2026 Application deadline Overseas applicants: 13 August 2026. Home applicants: 10 September 2026. Please note that due to high demand, some programmes may close earlier than advertised. Early applications are advised to avoid disappointment. Places are limited and allocated on a continuous basis from September 2025 until all places are filled. Delivery method On-Campus Location Temple Quarter (main location), Clifton campus Awards available MSc On-demand academic talks Hear directly from an academic giving you a deeper insight into this programme. Find out more Programme structure You will study five core units worth a total of 90 credit points and your specialist unit, Entrepreneurship and Innovation, worth 30 credit points. The core units include Management and Organisation; Strategy, Finance and Accounting for Management; Operations and Marketing Management; Research Methods and Professional Develop r Enterprise Campus, where enhanced links with businesses will provide you with real-world knowledge, networks and skills to succeed once you graduate. You’ll also benefit from access to a range of student services and other facilities at our vibrant Clifton Campus. Key information Programme duration One year full-time. Start "
+    },
+    {
+      "id": "new-programme:bristol-msc-management-international-human-resource-management",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-international-human-resource-management/",
+      "programme": {
+        "id": "bristol-msc-management-international-human-resource-management",
+        "universityId": "university-of-bristol",
+        "name": "MSc Management (International Human Resource Management)",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-international-human-resource-management/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "sits New postgraduate students Study at Bristol International students Accommodation Students' Union Mumbai Enterprise Campus About Schools and faculties Research Business and partnerships News People Study at Bristol Current students Current staff Alumni Search Start searching Search Close search MSc Management (International Human Resource Management) MSc Apply now Online events MSc Management (International Human Resource Management) On this page Online events Apply now On this page Overview Structure Entry requirements Fees and funding Careers How to apply Contact Overview Our intensive one-year MSc Management with a specialism in International Human Resource Management (HRM) is for graduates from a wide range of subject backgrounds. It is not necessary to have any prior academic or practical experience in business or management. This programme is for students who aspire to management-level and leadership roles in international HRM within their chosen industry. Our MSc Management pathways provide an introduction to management, followed by a detailed exploration of a specific area of management theory and practice — in this case, human resource management in an international context. The programme attracts students from around the globe and y"
+    },
+    {
+      "id": "new-programme:bristol-msc-psychology-conversion",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-conversion/",
+      "programme": {
+        "id": "bristol-msc-psychology-conversion",
+        "universityId": "university-of-bristol",
+        "name": "MSc Psychology (Conversion)",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-conversion/"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Overseas applicants",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-08-13"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Home applicants",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-09-10"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "al psychologist, for example). This programme is available as an intercalated degree for current undergraduate medicine, dentistry or veterinary students from the University of Bristol. Find out more about our intercalated degrees and eligibility criteria . Key information Programme duration One year full-time; Two years part-time. Start date September 2026 Application deadline Overseas applicants: 13 August 2026. Home applicants: 10 September 2026. Please note that due to high demand, some programmes may close earlier than advertised. Early applications are advised to avoid disappointment. Places are limited and allocated on a continuous basis from September 2025 until all places are filled. Delivery method On-Campus Location Clifton campus Awards available MSc On-demand academic talks Hear directly from an academic giving you a deeper insight into this programme. Find out more Programme structure Visit our programme catalogue for full details of the structure and unit content for our MSc in Psychology (Conversion). World-leading research 5th The University of Bristol is ranked fifth for research in the UK ( Times Higher Education ). 94% 94% of our research assessed as world-leading or internationally excellent. Full REF 2021 results Entry requiremen ist, for example). This programme is available as an intercalated degree for current undergraduate medicine, dentistry or veterinary students from the University of Bristol. Find out more about our intercalated degrees and eligibility criteria . Key information Programme duration One year full-time; Two years part-time. Start "
+    },
+    {
+      "id": "new-programme:bristol-msc-psychology-of-education-bps",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-of-education-bps/",
+      "programme": {
+        "id": "bristol-msc-psychology-of-education-bps",
+        "universityId": "university-of-bristol",
+        "name": "MSc Psychology of Education BPS",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-of-education-bps/"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Overseas applicants",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-08-13"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Home applicants",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-month-default",
+          "closesAt": "2026-09-10"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "died previously, but may be interested in this programme because of its applied focus and relevance for pursuing professional training. The knowledge and skills you will obtain are desired by employers and relevant to a wide range of careers in which an understanding of human behaviour or research methods is relevant. Successful students will be eligible to apply for GBC with the British Psychological Society, and for further professional training accredited by the BPS. Key information Programme duration One year full-time; Two to three years part-time. Start date September 2026 Application deadline Overseas applicants: 13 August 2026. Home applicants: 10 September 2026. Please note that due to high demand, some programmes may close earlier than advertised. Early applications are advised to avoid disappointment. Places are limited and allocated on a continuous basis from September 2025 until all places are filled. Delivery method On-Campus Location Clifton campus Awards available MSc On-demand academic talks Hear directly from an academic giving you a deeper insight into this programme. Find out more Programme structure Visit our programme catalogue for full details of the structure and unit content for our MSc Psychology of Education (BPS). Wor ange of careers in which an understanding of human behaviour or research methods is relevant. Successful students will be eligible to apply for GBC with the British Psychological Society, and for further professional training accredited by the BPS. Key information Programme duration One year full-time; Two to three years part-time. "
+    },
+    {
+      "id": "new-programme:bristol-msc-scientific-computing-with-data-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-bristol",
+      "detectedAt": "2026-07-07T08:16:27.622180+00:00",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-scientific-computing-with-data-science/",
+      "programme": {
+        "id": "bristol-msc-scientific-computing-with-data-science",
+        "universityId": "university-of-bristol",
+        "name": "MSc Scientific Computing with Data Science",
+        "degreeType": "MSC",
+        "faculty": "",
+        "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-scientific-computing-with-data-science/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "ontact Overview Are you a recent graduate in the Physical Sciences or Life Sciences who would like to learn more about computing and how it is applied to advance scientific research? This programme will help you achieve your goals. You will get the opportunity to develop your skills in coding, machine learning and high-performance computing and learn how to apply these to cutting-edge computational problems drawn from across the sciences. The MSc in Scientific Computing with Data Science builds on the University of Bristol's unique strengths and facilities as a world-class centre for supercomputing , data science and data-intensive research. All schools in the Faculty of Science and Engineering are ranked in the top 10 for research in the UK (THE analysis of REF 2021) and Bristol is ranked in the top ten in the UK for Natural Sciences (QS 2025). Scientific computing is an interdisciplinary field that uses computer science, data science, artificial intelligence and digital technology to solve problems across a wide range of subject areas, including physics, chemistry, geographical sciences, earth sciences and biological sciences. Whatever your scientific background, this programme will train you in coding and data science, building on your core s"
+    },
     {
       "id": "new-programme:cambridge-ai-ethics-and-society-mst",
       "type": "new-programme",
@@ -24917,7 +25211,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/accounting-and-finance-msc",
       "programme": {
         "id": "nottingham-accounting-and-finance-msc",
@@ -24938,7 +25232,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/additive-manufacturing-and-3d-printing-msc",
       "programme": {
         "id": "nottingham-additive-manufacturing-and-3d-printing-msc",
@@ -24959,7 +25253,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-building-performance-engineering-msc",
       "programme": {
         "id": "nottingham-advanced-building-performance-engineering-msc",
@@ -24980,7 +25274,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-chemical-engineering-msc",
       "programme": {
         "id": "nottingham-advanced-chemical-engineering-msc",
@@ -25001,7 +25295,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-civil-engineering-msc",
       "programme": {
         "id": "nottingham-advanced-civil-engineering-msc",
@@ -25022,7 +25316,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-clinical-practice-msc",
       "programme": {
         "id": "nottingham-advanced-clinical-practice-msc",
@@ -25043,7 +25337,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-electrical-and-electronic-engineering-with-extended-research-msc",
       "programme": {
         "id": "nottingham-advanced-electrical-and-electronic-engineering-with-extended-research-msc",
@@ -25064,7 +25358,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-materials-msc",
       "programme": {
         "id": "nottingham-advanced-materials-msc",
@@ -25085,7 +25379,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/ai-and-digital-chemistry-msc",
       "programme": {
         "id": "nottingham-ai-and-digital-chemistry-msc",
@@ -25106,7 +25400,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/animal-nutrition-msc",
       "programme": {
         "id": "nottingham-animal-nutrition-msc-pgdip",
@@ -25127,7 +25421,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-linguistics-and-english-language-teaching-ma",
       "programme": {
         "id": "nottingham-applied-linguistics-and-english-language-teaching-ma",
@@ -25148,7 +25442,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-linguistics-ma",
       "programme": {
         "id": "nottingham-applied-linguistics-ma",
@@ -25169,7 +25463,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-sport-and-exercise-medicine-msc",
       "programme": {
         "id": "nottingham-applied-sport-and-exercise-medicine-msc",
@@ -25190,7 +25484,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-nottingham",
-      "detectedAt": "2026-07-07T07:52:41.316264+00:00",
+      "detectedAt": "2026-07-07T08:16:42.037504+00:00",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-translation-studies-ma",
       "programme": {
         "id": "nottingham-applied-translation-studies-ma",
@@ -25295,7 +25589,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc",
       "programme": {
         "id": "sheffield-advanced-mechanical-engineering-msc",
@@ -25327,7 +25621,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc",
       "programme": {
         "id": "sheffield-aerospace-engineering-msc",
@@ -25359,7 +25653,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma",
       "programme": {
         "id": "sheffield-applied-linguistics-and-tesol-ma",
@@ -25391,7 +25685,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma",
       "programme": {
         "id": "sheffield-applied-professional-studies-in-education-ma",
@@ -25423,7 +25717,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma",
       "programme": {
         "id": "sheffield-archaeology-and-heritage-ma",
@@ -25455,7 +25749,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma",
       "programme": {
         "id": "sheffield-architectural-design-ma",
@@ -25487,7 +25781,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc",
       "programme": {
         "id": "sheffield-artificial-intelligence-for-engineering-msc",
@@ -25519,7 +25813,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc",
       "programme": {
         "id": "sheffield-artificial-intelligence-msc",
@@ -25551,7 +25845,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc",
       "programme": {
         "id": "sheffield-astrophysics-msc",
@@ -25583,7 +25877,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc",
       "programme": {
         "id": "sheffield-biodiversity-and-conservation-msc",
@@ -25615,7 +25909,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc",
       "programme": {
         "id": "sheffield-biological-and-bioprocess-engineering-msc",
@@ -25647,7 +25941,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc",
       "programme": {
         "id": "sheffield-biomedical-engineering-msc",
@@ -25679,7 +25973,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc",
       "programme": {
         "id": "sheffield-biomedical-science-msc",
@@ -25711,7 +26005,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc",
       "programme": {
         "id": "sheffield-business-analytics-msc",
@@ -25743,7 +26037,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc",
       "programme": {
         "id": "sheffield-business-and-organisational-psychology-msc",
@@ -25775,7 +26069,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc",
       "programme": {
         "id": "sheffield-business-finance-and-economics-msc",
@@ -25807,7 +26101,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc",
       "programme": {
         "id": "sheffield-cancer-biology-and-therapeutics-msc",
@@ -25839,7 +26133,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc",
       "programme": {
         "id": "sheffield-chemistry-msc",
@@ -25871,7 +26165,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "the-university-of-sheffield",
-      "detectedAt": "2026-07-07T07:52:31.672923+00:00",
+      "detectedAt": "2026-07-07T08:16:31.703725+00:00",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc",
       "programme": {
         "id": "sheffield-civil-and-structural-engineering-msc",
@@ -25903,7 +26197,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/applied-linguistics-masters-ma",
       "programme": {
         "id": "southampton-applied-linguistics-ma",
@@ -25945,7 +26239,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/arts-cultural-leadership-masters-ma",
       "programme": {
         "id": "southampton-arts-and-cultural-leadership-ma",
@@ -25987,7 +26281,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/communication-design-masters-ma",
       "programme": {
         "id": "southampton-communication-design-ma",
@@ -26029,7 +26323,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/contemporary-curating-masters-ma",
       "programme": {
         "id": "southampton-contemporary-curating-ma",
@@ -26071,7 +26365,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/creative-writing-masters-ma",
       "programme": {
         "id": "southampton-creative-writing-ma",
@@ -26113,7 +26407,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-museums-masters-ma",
       "programme": {
         "id": "southampton-cultural-heritage-studies-heritage-and-museums-ma",
@@ -26155,7 +26449,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-public-history-masters-ma",
       "programme": {
         "id": "southampton-cultural-heritage-studies-heritage-and-public-history-ma",
@@ -26197,7 +26491,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-heritage-the-arts-masters-ma",
       "programme": {
         "id": "southampton-cultural-heritage-studies-heritage-and-the-arts-ma",
@@ -26239,7 +26533,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/cultural-heritage-studies-masters-ma",
       "programme": {
         "id": "southampton-cultural-heritage-studies-ma",
@@ -26281,7 +26575,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-ma",
       "programme": {
         "id": "southampton-design-innovation-and-technology-ma",
@@ -26323,7 +26617,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/design-management-masters-ma",
       "programme": {
         "id": "southampton-design-management-ma",
@@ -26365,7 +26659,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/digital-media-masters-ma",
       "programme": {
         "id": "southampton-digital-media-ma",
@@ -26407,7 +26701,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-eighteenth-century-masters-ma",
       "programme": {
         "id": "southampton-english-literary-studies-eighteenth-century-ma",
@@ -26449,7 +26743,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-nineteenth-century-masters-ma",
       "programme": {
         "id": "southampton-english-literary-studies-nineteenth-century-ma",
@@ -26491,7 +26785,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-postcolonial-world-literatures-masters-ma",
       "programme": {
         "id": "southampton-english-literary-studies-postcolonial-and-world-literatures-ma",
@@ -26533,7 +26827,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/english-literary-studies-twentieth-century-contemporary-masters-ma",
       "programme": {
         "id": "southampton-english-literary-studies-twentieth-century-and-contemporary-ma",
@@ -26575,7 +26869,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/international-commercial-corporate-law-masters-llm",
       "programme": {
         "id": "southampton-international-commercial-and-corporate-law-llm",
@@ -26617,7 +26911,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/international-law-human-rights-masters-llm",
       "programme": {
         "id": "southampton-international-law-and-human-rights-llm",
@@ -26659,7 +26953,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/laws-masters-llm",
       "programme": {
         "id": "southampton-laws-llm",
@@ -26701,7 +26995,7 @@
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-southampton",
-      "detectedAt": "2026-07-07T07:52:35.748968+00:00",
+      "detectedAt": "2026-07-07T08:16:35.538156+00:00",
       "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-law-masters-llm",
       "programme": {
         "id": "southampton-maritime-law-llm",
@@ -26739,37 +27033,16 @@
       "evidenceExcerpt": "luding eligibility and conditions. Other postgraduate funding options A variety of additional funding options may be available to help you pay for your master’s study. Both from the University and other organisations. Funding for EU and international students Find out about funding you could get as an international student . Careers and employability How to apply How to apply Use the blue 'apply for this course' button on this page to take you to our postgraduate admissions system. Create an account which gives you access to your own application portal. Search for the course you want to apply for. Complete the application form and upload any supporting documents. Submit your application. For further details of our admission process, read our step by step guide to postgraduate taught applications . Application deadlines UK students The deadline to apply for this course is Wednesday 2 September 2026, midday UK time. We advise applying early as applications may close before the expected deadline if places are filled. International students The deadline to apply for this course is Wednesday 19 August 2026, midday UK time. We advise applying early as applications may close before the expected deadline if places are filled. Application assessment fee  ility and conditions. Other postgraduate funding options A variety of additional funding options may be available to help you pay for your master’s study. Both from the University and other organisations. Funding for EU and international students Find out about funding you could get as an international student . Careers and employab"
     },
     {
-      "id": "new-programme:uchicago-briana-allen-med",
+      "id": "new-programme:uchicago-ms-in-applied-data-science",
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-chicago",
-      "detectedAt": "2026-07-07T07:52:23.988008+00:00",
-      "sourceUrl": "https://datascience.uchicago.edu/people/briana-allen/",
-      "programme": {
-        "id": "uchicago-briana-allen-med",
-        "universityId": "university-of-chicago",
-        "name": "Briana Allen, MEd",
-        "degreeType": "MED",
-        "faculty": "",
-        "applicationUrl": "https://grad.uchicago.edu/admissions/",
-        "sourceUrl": "https://datascience.uchicago.edu/people/briana-allen/"
-      },
-      "windows": [],
-      "parseStatus": "no-deadline",
-      "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": "Programme found by generic official-site crawler."
-    },
-    {
-      "id": "new-programme:uchicago-elevate-your-expertise-in-data-science",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "university-of-chicago",
-      "detectedAt": "2026-07-07T07:52:23.988008+00:00",
+      "detectedAt": "2026-07-07T08:16:23.794936+00:00",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
       "programme": {
-        "id": "uchicago-elevate-your-expertise-in-data-science",
+        "id": "uchicago-ms-in-applied-data-science",
         "universityId": "university-of-chicago",
-        "name": "Elevate Your Expertise in Data Science",
+        "name": "MS in Applied Data Science",
         "degreeType": "MS",
         "faculty": "",
         "applicationUrl": "https://grad.uchicago.edu/admissions/",
@@ -26778,35 +27051,14 @@
       "windows": [],
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": "h Site Search To search this site, enter a search term arrow-right-large Submit Elevate Your Expertise in Data Science The University of Chicago’s MS in Applied Data Science program equips you with in-demand expertise and an unparalleled network of global alumni. Learn how our curriculum, faculty, and career resources can help you achieve your goals. How to Apply Programs Choose from full- and part-time options in our In-Person and Online programs. In-Person Program The In-Person program, ideal for early career professionals, now includes a 2-year full-time option starting Autumn 2026—alongside the existing 12–15 month track for full- and part-time students. Learn More Online Program The same rigorous curriculum, faculty, and network as the in-person degree. Designed for working professionals with 2+ years of full-time experience. Learn More MBA/MS Program Differentiate yourself with a competitive joint degree with UChicago's Booth School of Business. Apply through Booth's admissions process. Learn More How to Apply You have questions; we have answers. Whether you are just beginning your search or are ready to apply, we are here to help you take the next step. How to Apply Industry Leading Faculty UChicago’s Master’s in Applied Data Science prog"
-    },
-    {
-      "id": "new-programme:uchicago-masters-programs",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "university-of-chicago",
-      "detectedAt": "2026-07-07T07:52:23.988008+00:00",
-      "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "programme": {
-        "id": "uchicago-masters-programs",
-        "universityId": "university-of-chicago",
-        "name": "Master’s Programs",
-        "degreeType": "Master",
-        "faculty": "",
-        "applicationUrl": "https://grad.uchicago.edu/admissions/",
-        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/"
-      },
-      "windows": [],
-      "parseStatus": "no-deadline",
-      "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": "Executive Director, MS Applied Data Science Program Greg Green is Senior Instructional Professor and Director of the MS in Applied Data Science Program at the University of Chicago, and Senior Director for Industrial Partnerships and Strategy at the Data Science Institute. Dr. Green helps the University of Chicago professional data science students learn to apply data science to solve complex industry problems with greater impact. Dr. Green is reshaping the content and approaches used to educate the next generation of professional data scientists at the University of Chicago. Additionally, Greg is designing new, creative offerings more deeply connected to MS and PhD research programs in Data Science, Computer Science, Statistics, and Financial Mathematics. New course offerings developed and launched since joining the University of Chicago include an innovative approach to “Leadership in Data Science and Artificial Intelligence”, “Consulting in Data Science” and “Your Career in Data Science”. Throughout his professional career, Greg has used his expertise in digital strategies, business analytics, and new product development to drive rapid revenue growth and accelerate business transformation. His previous work bringing innovation to an academic "
+      "evidenceExcerpt": "plying to the program. The In-Person and Online program admits full- and part-time students for entrance in the autumn quarter annually. The application portal* for 2027 entrance will open in September 2026. Only completed applications are sent for committee review. *The application portal may close early if the cohort is filled. Next Application Deadlines: Coming soon! Letters of Recommendation The MS in Applied Data Science program requires two letters of recommendation. We strongly recommend that at least one letter is written by someone such as a direct manager/supervisor or internship supervisor who can attest to skills you demonstrated or gained though a professional workplace experience (e.g., leadership, teamwork, collaboration, initiative, management, other). Note: Letters of recommendation can be uploaded after you submit your application. Recommended sources for letters of recommendation include: professors; supervisors or managers; professional mentors. We do not accept letters of recommendation from family members, friends, or peers. Candidate Statement The candidate statement is a key part of your application. The admissions committee pays careful attention to how you understand and present your aims and qualifications. The application w"
     },
     {
       "id": "new-programme:uchicago-ms-in-data-science",
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-chicago",
-      "detectedAt": "2026-07-07T07:52:23.988008+00:00",
+      "detectedAt": "2026-07-07T08:16:23.794936+00:00",
       "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
       "programme": {
         "id": "uchicago-ms-in-data-science",
@@ -26817,10 +27069,21 @@
         "applicationUrl": "https://grad.uchicago.edu/admissions/",
         "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/"
       },
-      "windows": [],
-      "parseStatus": "no-deadline",
-      "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": "MS in Data Science | CDS Skip to main content Academics PhD in Data Science MS in Data Science MS in Applied Data Science Undergraduate Program Course Info Important Dates: 2025-2026 Academic Year How to Apply Research Areas Artificial Intelligence Data, AI, and Society Data Systems Human-Centered Data Science Machine Learning & Statistics Theory Use-Inspired Data Science People Faculty Staff Students Events About Our History Leadership Diversity and Inclusion Contact Search Site Search To search this site, enter a search term arrow-right-large Submit Important Dates: 2025-2026 Academic Year Course Info How to Apply Frequently Asked Questions (FAQ) MS in Data Science PhD in Data Science Undergraduate Program Share Email page on Facebook (opens new window) Share page on X (opens new window) Email Page (opens new window) Academics MS in Data Science The MS in Data Science (MSDS) has been developed for students interested in pursuing a research career in data science with courses taught by faculty from the departments of Data Science, Statistics, Computer Science, and others across the universit"
+      "windows": [
+        {
+          "intake": "Autumn 2027",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-29"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": " needed to meet our English Language Proficiency Requirement Application Fee There is a $90.00 non-refundable application fee. For all questions regarding fee waivers, please refer to the Physical Sciences Division fee waiver policy . Standardized Test Scores The Physical Sciences Division (PSD) does not require the GRE or other standardized test scores for admission into the MSDS or PhD programs. Applicants may choose to submit scores if they have already completed a standardized exam but it is not required that you do so. For those who plan to submit the GRE, please be advised that it will only be considered valid if the exam was taken within five (5) years prior to the application deadline. The Educational Testing Service (ETS) institutional code for the University of Chicago is 1832. Application Deadlines Below are the deadlines for prospective students applying for our Fall 2027 quarter. Please note that we do not admit candidates in any other term beyond the Fall quarter. All application materials must be submitted by the dates below in order to be considered for admission. PhD in Data Science – December 16, 2026 MS in Data Science (MSDS) – January 29, 2027 CDS Committee on Data Science John Crerar Library Building 5730 South Ellis Avenue, Sui  or other standardized test scores for admission into the MSDS or PhD programs. Applicants may choose to submit scores if they have already completed a standardized exam but it is not required that you do so. For those who plan to submit the GRE, please be advised that it will only be considered valid if the exam was taken withi"
     },
     {
       "id": "new-programme:uq-philosophy-master-7500",

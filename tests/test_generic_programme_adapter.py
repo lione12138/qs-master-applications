@@ -16,6 +16,8 @@ CATALOG_HTML = """
     <a href="/study/postgraduate/master-of-stale-page">Master of Stale Page</a>
     <a href="/study/undergraduate/bachelor-of-science">Bachelor of Science</a>
     <a href="/study/masters/admissions">Master's admissions</a>
+    <a href="/study/masters/programs">Master's Programs</a>
+    <a href="/people/jane-doe">Jane Doe, MEd</a>
     <a href="/study/masters/fees-and-funding">Master's fees and funding</a>
     <a href="https://example.net/study/postgraduate/master-of-finance">
       Master of Finance
@@ -200,3 +202,49 @@ def test_generic_adapter_labels_applicant_specific_deadlines_and_ignores_old_dat
         ("Overseas applicants", ["international-students"], "2026-08-13"),
         ("Home applicants", ["domestic-students"], "2026-09-10"),
     ]
+
+
+def test_generic_adapter_can_follow_how_to_apply_links_for_deadlines() -> None:
+    adapter = GenericProgrammeAdapter(
+        GenericProgrammeConfig(
+            university_id="example-university",
+            school_prefix="example",
+            seed_urls=("https://example.edu/graduate/programmes",),
+            official_domains=("example.edu",),
+            default_application_url="https://example.edu/apply",
+            minimum_expected_programmes=1,
+            max_detail_pages=1,
+            follow_application_links=True,
+        )
+    )
+    detail_html = """
+    <html><body>
+      <h1>MS in Data Science</h1>
+      <a href="/how-to-apply/">How to Apply</a>
+    </body></html>
+    """
+    how_to_apply_html = """
+    <html><body>
+      <h1>How to Apply</h1>
+      <p>
+        Application deadlines for Fall 2027:
+        PhD in Data Science – December 16, 2026.
+        MS in Data Science (MSDS) – January 29, 2027.
+      </p>
+    </body></html>
+    """
+    pages = {
+        "https://example.edu/graduate/programmes": (
+            '<a href="/study/postgraduate/ms-data-science">MS in Data Science</a>'
+        ),
+        "https://example.edu/study/postgraduate/ms-data-science": detail_html,
+        "https://example.edu/how-to-apply/": how_to_apply_html,
+    }
+
+    catalog = adapter.parse_catalog_from_fetcher(lambda url: pages[url])
+
+    assert catalog.programmes[0].parse_status == "incomplete"
+    assert [
+        (window.round, window.opens_at, window.closes_at)
+        for window in catalog.programmes[0].windows
+    ] == [("Application deadline", None, "2027-01-29")]

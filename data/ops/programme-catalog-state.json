@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T07:52:41.316264+00:00",
+    "updatedAt": "2026-07-07T08:16:42.037504+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -11744,37 +11744,21 @@
     },
     "university-of-chicago": {
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T07:52:23.988008+00:00",
-      "itemCount": 4,
+      "checkedAt": "2026-07-07T08:16:23.794936+00:00",
+      "itemCount": 2,
       "applicationOpensAt": null,
-      "catalogHash": "60d0a3a0f68ec7a67147760fead268f3301f908dc192ad939e798c192cdb6ecf",
+      "catalogHash": "efc1313010c703efd9782d4a94f782aec9e4ae9e6574c89f4f30def5b33b23a6",
       "programmes": {
-        "uchicago-briana-allen-med": {
-          "name": "Briana Allen, MEd",
-          "degreeType": "MED",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-        },
-        "uchicago-masters-programs": {
-          "name": "Master’s Programs",
-          "degreeType": "Master",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
-        },
         "uchicago-ms-in-data-science": {
           "name": "MS in Data Science",
           "degreeType": "MS",
           "faculty": "",
           "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "parseStatus": "incomplete",
+          "deadlineHash": "50282b67ef4ba082c3bc4933368f6aaddf597cb1ef5402141e6f5951485be1d9"
         },
-        "uchicago-elevate-your-expertise-in-data-science": {
-          "name": "Elevate Your Expertise in Data Science",
+        "uchicago-ms-in-applied-data-science": {
+          "name": "MS in Applied Data Science",
           "degreeType": "MS",
           "faculty": "",
           "department": "",
@@ -11785,69 +11769,13 @@
     },
     "university-of-bristol": {
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T07:52:26.759305+00:00",
+      "checkedAt": "2026-07-07T08:16:27.622180+00:00",
       "itemCount": 16,
       "applicationOpensAt": "2025-09-01",
-      "catalogHash": "9a634cce3f55cba0271f694358c721bef661064fcbaae7f6719725b7b7aa6ebe",
+      "catalogHash": "fcf4f7c1b4bba77b0a00205f971e2318aa1dd8c8eac8ad080e336bc36e1f44e7",
       "programmes": {
-        "bristol-ma-philosophy": {
-          "name": "MA Philosophy",
-          "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
-        },
-        "bristol-ma-translation-and-intercultural-studies": {
-          "name": "MA Translation and Intercultural Studies",
-          "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
-        },
-        "bristol-msc-composites-engineering": {
-          "name": "MSc Composites Engineering",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
-        },
         "bristol-msc-advanced-microelectronic-systems-engineering": {
           "name": "MSc Advanced Microelectronic Systems Engineering",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
-        },
-        "bristol-msc-applied-neuropsychology-online": {
-          "name": "MSc Applied Neuropsychology (Online)",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d171959cb59004d0163539e8b63a00e5175fe3d20334472f13e460b25f18bfc2"
-        },
-        "bristol-msc-global-banking-and-finance": {
-          "name": "MSc Global Banking and Finance",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
-        },
-        "bristol-msc-cardiovascular-perfusion-online": {
-          "name": "MSc Cardiovascular Perfusion (Online)",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d171959cb59004d0163539e8b63a00e5175fe3d20334472f13e460b25f18bfc2"
-        },
-        "bristol-msc-clinical-perfusion-science": {
-          "name": "MSc Clinical Perfusion Science",
           "degreeType": "MSC",
           "faculty": "",
           "department": "",
@@ -11910,13 +11838,69 @@
           "parseStatus": "parsed",
           "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
         },
-        "bristol-msc-environmental-analytical-chemistry": {
-          "name": "MSc Environmental Analytical Chemistry",
+        "bristol-msc-human-resource-management": {
+          "name": "MSc Human Resource Management",
           "degreeType": "MSC",
           "faculty": "",
           "department": "",
           "parseStatus": "parsed",
           "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
+        },
+        "bristol-msc-immersive-technologies-virtual-and-augmented-reality": {
+          "name": "MSc Immersive Technologies (Virtual and Augmented Reality)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
+        },
+        "bristol-msc-management-csr-and-sustainability": {
+          "name": "MSc Management (CSR and Sustainability)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
+        },
+        "bristol-msc-management-entrepreneurship-and-innovation": {
+          "name": "MSc Management (Entrepreneurship and Innovation)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
+        },
+        "bristol-msc-management-international-human-resource-management": {
+          "name": "MSc Management (International Human Resource Management)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "bristol-msc-psychology-conversion": {
+          "name": "MSc Psychology (Conversion)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
+        },
+        "bristol-msc-psychology-of-education-bps": {
+          "name": "MSc Psychology of Education BPS",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "0f887619e0cd879d272cab0c018bf9dbb57dc02aaae9adfb0c834f5db68a4aad"
+        },
+        "bristol-msc-scientific-computing-with-data-science": {
+          "name": "MSc Scientific Computing with Data Science",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         }
       }
     },
@@ -11947,7 +11931,7 @@
     },
     "the-university-of-sheffield": {
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T07:52:31.672923+00:00",
+      "checkedAt": "2026-07-07T08:16:31.703725+00:00",
       "itemCount": 20,
       "applicationOpensAt": "2025-09-15",
       "catalogHash": "de7ff0e0bd0ebc9aa291794a10a18584ac10d5236b742153d574f3e90fb1599b",
@@ -12116,7 +12100,7 @@
     },
     "university-of-southampton": {
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T07:52:35.748968+00:00",
+      "checkedAt": "2026-07-07T08:16:35.538156+00:00",
       "itemCount": 20,
       "applicationOpensAt": null,
       "catalogHash": "80a09b4c276c6d98fe3c260b5a276fb70b4183976d86351957adb0a00050eb34",
@@ -12285,7 +12269,7 @@
     },
     "the-university-of-nottingham": {
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T07:52:41.316264+00:00",
+      "checkedAt": "2026-07-07T08:16:42.037504+00:00",
       "itemCount": 14,
       "applicationOpensAt": null,
       "catalogHash": "68d35964774446bfeccbe9316e3ff8955ec1d2a45c78d935440ab4b255227a23",

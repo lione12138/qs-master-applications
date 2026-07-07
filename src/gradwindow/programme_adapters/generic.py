@@ -25,6 +25,10 @@ APPLICATION_TERMS = re.compile(
     r"\b(application|apply|admission|deadline|closing date|due date)\b",
     flags=re.IGNORECASE,
 )
+APPLICATION_LINK_TERMS = re.compile(
+    r"\b(how to apply|apply|application deadlines?|deadlines?)\b",
+    flags=re.IGNORECASE,
+)
 OPEN_TERMS = re.compile(
     r"\b(open|opens|opening|available|portal)\b",
     flags=re.IGNORECASE,
@@ -39,6 +43,7 @@ NAVIGATION_TERMS = re.compile(
     r"student support|meet us|teaching and learning|entry requirements|"
     r"courses for entry|courses at|course search|find a course|find a programme|"
     r"master(?:'|’)?s courses|"
+    r"master(?:'|’)?s programs|"
     r"taught master(?:'|’)?s(?: study)?|why manchester|"
     r"why (?:should i )?study|why study)\b",
     flags=re.IGNORECASE,
@@ -60,6 +65,8 @@ class GenericProgrammeConfig:
     minimum_closes_at: str = "2025-07-01"
     minimum_expected_programmes: int = 1
     max_detail_pages: int = 25
+    follow_application_links: bool = False
+    exclude_url_patterns: tuple[str, ...] = ()
 
 
 class GenericProgrammeAdapter:
@@ -96,7 +103,8 @@ class GenericProgrammeAdapter:
 
         def parse_one(programme: DiscoveredProgramme) -> DiscoveredProgramme | None:
             try:
-                return self._parse_detail(programme, fetcher(programme.source_url))
+                html = fetcher(programme.source_url)
+                return self._parse_detail(programme, html, fetcher)
             except Exception:
                 return None
 
@@ -128,6 +136,8 @@ class GenericProgrammeAdapter:
         for link in soup.find_all("a", href=True):
             text = _normalise_text(link.get_text(" ", strip=True))
             href = urljoin(base_url, link["href"]).split("#", 1)[0]
+            if self._excluded_url(href):
+                continue
             if not same_official_domain(href, list(self.config.official_domains)):
                 continue
             score = _programme_link_score(href, text)
@@ -159,6 +169,8 @@ class GenericProgrammeAdapter:
     ) -> DiscoveredProgramme | None:
         soup = BeautifulSoup(html, "html.parser")
         title = _page_title(soup)
+        if self._excluded_url(url):
+            return None
         if title is None or _programme_link_score(url, title) < 8:
             return None
         if not _looks_like_degree_page(url, title):
@@ -181,15 +193,29 @@ class GenericProgrammeAdapter:
         self,
         programme: DiscoveredProgramme,
         html: str,
+        fetcher,
     ) -> DiscoveredProgramme:
         soup = BeautifulSoup(html, "html.parser")
-        title = _page_title(soup) or programme.name
+        raw_title = _page_title(soup) or programme.name
+        title = raw_title
+        if not DEGREE_RE.search(raw_title) and DEGREE_RE.search(programme.name):
+            title = programme.name
         if NAVIGATION_TERMS.search(title) or not _looks_like_degree_page(
             programme.source_url, title
         ):
             raise ValueError(f"Detail page is not a programme page: {title}")
         degree_type = _degree_type(title) or programme.degree_type
-        text = _normalise_text(soup.get_text(" ", strip=True))
+        text_parts = [_normalise_text(soup.get_text(" ", strip=True))]
+        if self.config.follow_application_links:
+            text_parts.extend(
+                _follow_application_link_texts(
+                    programme.source_url,
+                    soup,
+                    fetcher,
+                    self.config.official_domains,
+                )
+            )
+        text = " ".join(text_parts)
         windows, excerpt = _parse_application_windows(
             text,
             self.config.default_intake,
@@ -227,9 +253,16 @@ class GenericProgrammeAdapter:
             parse_status=parse_status,
         )
 
+    def _excluded_url(self, url: str) -> bool:
+        return any(
+            re.search(pattern, url) for pattern in self.config.exclude_url_patterns
+        )
+
 
 def _programme_link_score(url: str, label: str) -> int:
     text = f"{url} {label}".lower()
+    if re.search(r"/(people|staff|faculty|person)/", text):
+        return -100
     if REJECT_TERMS.search(text):
         return -100
     if NAVIGATION_TERMS.search(label):
@@ -253,14 +286,65 @@ def _candidate_title(label: str, url: str) -> str | None:
     if DEGREE_RE.search(label):
         return label
     path_slug = urlparse(url).path.rstrip("/").split("/")[-1]
-    title = " ".join(
-        part.capitalize() for part in re.split(r"[-_]+", path_slug) if part
-    )
+    title = _title_from_slug(path_slug)
     if DEGREE_RE.search(title):
         return title
     if re.search(r"\bmaster\b", path_slug, flags=re.IGNORECASE):
         return title
     return None
+
+
+def _title_from_slug(path_slug: str) -> str:
+    replacements = {
+        "ai": "AI",
+        "ma": "MA",
+        "mba": "MBA",
+        "med": "MEd",
+        "meng": "MEng",
+        "mres": "MRes",
+        "msc": "MSc",
+        "ms": "MS",
+        "phd": "PhD",
+    }
+    words = []
+    lowercase_words = {"and", "for", "in", "of", "the", "to", "with"}
+    for index, part in enumerate(re.split(r"[-_]+", path_slug)):
+        if not part:
+            continue
+        value = replacements.get(part.lower())
+        if value is None and index > 0 and part.lower() in lowercase_words:
+            value = part.lower()
+        words.append(value or part.capitalize())
+    return " ".join(words)
+
+
+def _follow_application_link_texts(
+    base_url: str,
+    soup: BeautifulSoup,
+    fetcher,
+    official_domains: tuple[str, ...],
+) -> list[str]:
+    texts = []
+    seen: set[str] = set()
+    for link in soup.find_all("a", href=True):
+        label = _normalise_text(link.get_text(" ", strip=True))
+        href = urljoin(base_url, link["href"]).split("#", 1)[0]
+        if href in seen or href == base_url:
+            continue
+        if not same_official_domain(href, list(official_domains)):
+            continue
+        if not APPLICATION_LINK_TERMS.search(f"{label} {href}"):
+            continue
+        seen.add(href)
+        try:
+            linked_html = fetcher(href)
+        except Exception:
+            continue
+        linked_soup = BeautifulSoup(linked_html, "html.parser")
+        texts.append(_normalise_text(linked_soup.get_text(" ", strip=True)))
+        if len(texts) >= 3:
+            break
+    return texts
 
 
 def _looks_like_degree_page(url: str, title: str) -> bool:
@@ -364,9 +448,12 @@ def _dates_in_context(context: str) -> list[tuple[str, str, str]]:
         for match in pattern.finditer(context):
             source = match.group(1)
             before_date = context[max(0, match.start() - 180) : match.start()]
+            short_prefix = before_date[-90:]
             local_nearby = context[max(0, match.start() - 70) : match.end() + 70]
             nearby = context[max(0, match.start() - 180) : match.end() + 180]
             if not APPLICATION_TERMS.search(nearby):
+                continue
+            if REJECT_TERMS.search(short_prefix) and not DEGREE_RE.search(short_prefix):
                 continue
             if OPEN_TERMS.search(before_date) and not re.search(
                 r"\b(deadline|closing|due|by|until)\b",

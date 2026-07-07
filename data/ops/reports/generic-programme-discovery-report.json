@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T07:52:23.988008+00:00",
+    "updatedAt": "2026-07-07T08:16:23.794936+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
@@ -10,10 +10,10 @@
     "schoolsSucceeded": 5,
     "schoolsErrored": 5,
     "readyToApprove": 19,
-    "needsOpeningReview": 0,
-    "needsOpeningDate": 20,
-    "needsAdapter": 4,
-    "comingSoonMonitor": 3,
+    "needsOpeningReview": 6,
+    "needsOpeningDate": 21,
+    "needsAdapter": 2,
+    "comingSoonMonitor": 4,
     "deadlineUnavailableMonitor": 11
   },
   "results": [
@@ -21,13 +21,13 @@
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T07:52:23.988008+00:00",
-      "catalogProgrammes": 4,
+      "checkedAt": "2026-07-07T08:16:23.794936+00:00",
+      "catalogProgrammes": 2,
       "knownProgrammes": 1,
-      "newCandidates": 4,
-      "pendingCandidates": 4,
-      "programmesWithoutDeadlines": 4,
-      "programmesNeedingReview": 4,
+      "newCandidates": 2,
+      "pendingCandidates": 2,
+      "programmesWithoutDeadlines": 1,
+      "programmesNeedingReview": 2,
       "dryRun": false,
       "batchStatus": "ok"
     },
@@ -62,13 +62,13 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T07:52:26.759305+00:00",
+      "checkedAt": "2026-07-07T08:16:27.622180+00:00",
       "catalogProgrammes": 16,
       "knownProgrammes": 17,
-      "newCandidates": 0,
-      "pendingCandidates": 0,
-      "programmesWithoutDeadlines": 0,
-      "programmesNeedingReview": 0,
+      "newCandidates": 8,
+      "pendingCandidates": 8,
+      "programmesWithoutDeadlines": 2,
+      "programmesNeedingReview": 2,
       "dryRun": false,
       "batchStatus": "ok"
     },
@@ -85,7 +85,7 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T07:52:31.672923+00:00",
+      "checkedAt": "2026-07-07T08:16:31.703725+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -99,7 +99,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T07:52:35.748968+00:00",
+      "checkedAt": "2026-07-07T08:16:35.538156+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -113,7 +113,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T07:52:41.316264+00:00",
+      "checkedAt": "2026-07-07T08:16:42.037504+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -307,8 +307,72 @@
         "reviewReason": "Review the automatically discovered programme and application rounds."
       }
     ],
-    "needsOpeningReview": [],
+    "needsOpeningReview": [
+      {
+        "id": "new-programme:bristol-msc-human-resource-management",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Human Resource Management",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-human-resource-management/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-immersive-technologies-virtual-and-augmented-reality",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Immersive Technologies (Virtual and Augmented Reality)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-immersive-technologies-virtual-and-augmented-reality/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-management-csr-and-sustainability",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Management (CSR and Sustainability)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-csr-and-sustainability/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-management-entrepreneurship-and-innovation",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Management (Entrepreneurship and Innovation)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-entrepreneurship-and-innovation/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-psychology-conversion",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Psychology (Conversion)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-conversion/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      },
+      {
+        "id": "new-programme:bristol-msc-psychology-of-education-bps",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Psychology of Education BPS",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-of-education-bps/",
+        "windowCount": 2,
+        "parseStatus": "parsed",
+        "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion."
+      }
+    ],
     "needsOpeningDate": [
+      {
+        "id": "new-programme:uchicago-ms-in-data-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "MS in Data Science",
+        "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
       {
         "id": "new-programme:southampton-applied-linguistics-ma",
         "universityId": "university-of-southampton",
@@ -492,37 +556,19 @@
     ],
     "needsAdapter": [
       {
-        "id": "new-programme:uchicago-briana-allen-med",
-        "universityId": "university-of-chicago",
-        "programmeName": "Briana Allen, MEd",
-        "sourceUrl": "https://datascience.uchicago.edu/people/briana-allen/",
+        "id": "new-programme:bristol-msc-management-international-human-resource-management",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Management (International Human Resource Management)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-international-human-resource-management/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
       },
       {
-        "id": "new-programme:uchicago-elevate-your-expertise-in-data-science",
-        "universityId": "university-of-chicago",
-        "programmeName": "Elevate Your Expertise in Data Science",
-        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:uchicago-masters-programs",
-        "universityId": "university-of-chicago",
-        "programmeName": "Master’s Programs",
-        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:uchicago-ms-in-data-science",
-        "universityId": "university-of-chicago",
-        "programmeName": "MS in Data Science",
-        "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
+        "id": "new-programme:bristol-msc-scientific-computing-with-data-science",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Scientific Computing with Data Science",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-scientific-computing-with-data-science/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
@@ -552,6 +598,15 @@
         "universityId": "the-university-of-nottingham",
         "programmeName": "Applied Translation Studies MA",
         "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-translation-studies-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-ms-in-applied-data-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "MS in Applied Data Science",
+        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
