@@ -86,6 +86,10 @@
         "https://www.sheffield.ac.uk/postgraduate/taught/courses"
       ],
       "defaultIntake": "September 2026",
+      "defaultApplicationOpensAt": "2025-09-15",
+      "applicationOpensAtBasis": "official",
+      "defaultApplicationClosesAt": "2026-09-04",
+      "defaultDeadlineEvidence": "University of Sheffield key dates and deadlines page for September 2026 entry: applications open Monday 15 September 2025 and applications close Friday 4 September 2026 (17:00 British Summer Time).",
       "maxDetailPages": 20,
       "minimumExpected": 1,
       "enabled": true
@@ -112,6 +116,7 @@
       "defaultIntake": "September 2026",
       "maxDetailPages": 20,
       "minimumExpected": 1,
+      "noDeadlineHandling": "monitor",
       "enabled": true
     },
     {

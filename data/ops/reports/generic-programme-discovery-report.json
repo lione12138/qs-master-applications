@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-06T20:56:12.851340+00:00",
+    "updatedAt": "2026-07-07T07:52:23.988008+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
@@ -9,18 +9,19 @@
     "schoolsConfigured": 10,
     "schoolsSucceeded": 5,
     "schoolsErrored": 5,
-    "readyToApprove": 0,
+    "readyToApprove": 19,
     "needsOpeningReview": 0,
     "needsOpeningDate": 20,
-    "needsAdapter": 34,
-    "comingSoonMonitor": 3
+    "needsAdapter": 4,
+    "comingSoonMonitor": 3,
+    "deadlineUnavailableMonitor": 11
   },
   "results": [
     {
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-06T20:56:12.851340+00:00",
+      "checkedAt": "2026-07-07T07:52:23.988008+00:00",
       "catalogProgrammes": 4,
       "knownProgrammes": 1,
       "newCandidates": 4,
@@ -61,7 +62,7 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-06T20:56:14.799250+00:00",
+      "checkedAt": "2026-07-07T07:52:26.759305+00:00",
       "catalogProgrammes": 16,
       "knownProgrammes": 17,
       "newCandidates": 0,
@@ -84,13 +85,13 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-06T20:56:19.621790+00:00",
+      "checkedAt": "2026-07-07T07:52:31.672923+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
       "pendingCandidates": 19,
-      "programmesWithoutDeadlines": 20,
-      "programmesNeedingReview": 20,
+      "programmesWithoutDeadlines": 0,
+      "programmesNeedingReview": 0,
       "dryRun": false,
       "batchStatus": "ok"
     },
@@ -98,7 +99,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-06T20:56:23.488884+00:00",
+      "checkedAt": "2026-07-07T07:52:35.748968+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -112,7 +113,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-06T20:56:29.042329+00:00",
+      "checkedAt": "2026-07-07T07:52:41.316264+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -133,7 +134,179 @@
     }
   ],
   "classification": {
-    "readyToApprove": [],
+    "readyToApprove": [
+      {
+        "id": "new-programme:sheffield-advanced-mechanical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Advanced Mechanical Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-aerospace-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Aerospace Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-applied-linguistics-and-tesol-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Applied Linguistics and TESOL MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-applied-professional-studies-in-education-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Applied Professional Studies in Education MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-archaeology-and-heritage-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Archaeology and Heritage MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-architectural-design-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Architectural Design MA",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-artificial-intelligence-for-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Artificial Intelligence for Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-artificial-intelligence-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Artificial Intelligence MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-astrophysics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Astrophysics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-biodiversity-and-conservation-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biodiversity and Conservation MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-biological-and-bioprocess-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biological and Bioprocess Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-biomedical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biomedical Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-biomedical-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biomedical Science MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-business-analytics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business Analytics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-business-and-organisational-psychology-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business and Organisational Psychology MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-business-finance-and-economics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business Finance and Economics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-cancer-biology-and-therapeutics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Cancer Biology and Therapeutics MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-chemistry-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Chemistry MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      },
+      {
+        "id": "new-programme:sheffield-civil-and-structural-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Civil and Structural Engineering MSc",
+        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc",
+        "windowCount": 1,
+        "parseStatus": "parsed",
+        "reviewReason": "Review the automatically discovered programme and application rounds."
+      }
+    ],
     "needsOpeningReview": [],
     "needsOpeningDate": [
       {
@@ -319,6 +492,73 @@
     ],
     "needsAdapter": [
       {
+        "id": "new-programme:uchicago-briana-allen-med",
+        "universityId": "university-of-chicago",
+        "programmeName": "Briana Allen, MEd",
+        "sourceUrl": "https://datascience.uchicago.edu/people/briana-allen/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-elevate-your-expertise-in-data-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Elevate Your Expertise in Data Science",
+        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-masters-programs",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master’s Programs",
+        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-ms-in-data-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "MS in Data Science",
+        "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      }
+    ],
+    "comingSoonMonitor": [
+      {
+        "id": "new-programme:nottingham-advanced-chemical-engineering-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Chemical Engineering MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-chemical-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-advanced-clinical-practice-msc",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Advanced Clinical Practice MSc",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-clinical-practice-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:nottingham-applied-translation-studies-ma",
+        "universityId": "the-university-of-nottingham",
+        "programmeName": "Applied Translation Studies MA",
+        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-translation-studies-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      }
+    ],
+    "deadlineUnavailableMonitor": [
+      {
         "id": "new-programme:nottingham-accounting-and-finance-msc",
         "universityId": "the-university-of-nottingham",
         "programmeName": "Accounting and Finance MSc",
@@ -413,242 +653,6 @@
         "universityId": "the-university-of-nottingham",
         "programmeName": "Applied Sport and Exercise Medicine MSc",
         "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-sport-and-exercise-medicine-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-advanced-mechanical-engineering-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Advanced Mechanical Engineering MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-aerospace-engineering-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Aerospace Engineering MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-applied-linguistics-and-tesol-ma",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Applied Linguistics and TESOL MA",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-applied-professional-studies-in-education-ma",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Applied Professional Studies in Education MA",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-archaeology-and-heritage-ma",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Archaeology and Heritage MA",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-architectural-design-ma",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Architectural Design MA",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-artificial-intelligence-for-engineering-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Artificial Intelligence for Engineering MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-artificial-intelligence-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Artificial Intelligence MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-astrophysics-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Astrophysics MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-biodiversity-and-conservation-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Biodiversity and Conservation MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-biological-and-bioprocess-engineering-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Biological and Bioprocess Engineering MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-biomedical-engineering-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Biomedical Engineering MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-biomedical-science-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Biomedical Science MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-business-analytics-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Business Analytics MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-business-and-organisational-psychology-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Business and Organisational Psychology MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-business-finance-and-economics-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Business Finance and Economics MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-cancer-biology-and-therapeutics-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Cancer Biology and Therapeutics MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-chemistry-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Chemistry MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:sheffield-civil-and-structural-engineering-msc",
-        "universityId": "the-university-of-sheffield",
-        "programmeName": "Civil and Structural Engineering MSc",
-        "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:uchicago-briana-allen-med",
-        "universityId": "university-of-chicago",
-        "programmeName": "Briana Allen, MEd",
-        "sourceUrl": "https://datascience.uchicago.edu/people/briana-allen/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:uchicago-elevate-your-expertise-in-data-science",
-        "universityId": "university-of-chicago",
-        "programmeName": "Elevate Your Expertise in Data Science",
-        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:uchicago-masters-programs",
-        "universityId": "university-of-chicago",
-        "programmeName": "Master’s Programs",
-        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:uchicago-ms-in-data-science",
-        "universityId": "university-of-chicago",
-        "programmeName": "MS in Data Science",
-        "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      }
-    ],
-    "comingSoonMonitor": [
-      {
-        "id": "new-programme:nottingham-advanced-chemical-engineering-msc",
-        "universityId": "the-university-of-nottingham",
-        "programmeName": "Advanced Chemical Engineering MSc",
-        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-chemical-engineering-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:nottingham-advanced-clinical-practice-msc",
-        "universityId": "the-university-of-nottingham",
-        "programmeName": "Advanced Clinical Practice MSc",
-        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-clinical-practice-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:nottingham-applied-translation-studies-ma",
-        "universityId": "the-university-of-nottingham",
-        "programmeName": "Applied Translation Studies MA",
-        "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-translation-studies-ma",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."

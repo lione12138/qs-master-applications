@@ -120,6 +120,48 @@ def test_generic_adapter_uses_configured_opening_date_when_page_only_has_deadlin
     assert catalog.programmes[0].windows[0].opens_at is None
 
 
+def test_generic_adapter_uses_configured_school_deadline_when_page_has_apply_status() -> (
+    None
+):
+    adapter = GenericProgrammeAdapter(
+        GenericProgrammeConfig(
+            university_id="example-university",
+            school_prefix="example",
+            seed_urls=("https://example.edu/graduate/programmes",),
+            official_domains=("example.edu",),
+            default_application_url="https://example.edu/apply",
+            default_intake="September 2026",
+            default_application_opens_at="2025-09-15",
+            default_application_closes_at="2026-09-04",
+            default_deadline_evidence=(
+                "Applications open 15 September 2025 and close 4 September 2026."
+            ),
+            minimum_expected_programmes=1,
+            max_detail_pages=1,
+        )
+    )
+    detail_html = """
+    <html><body>
+      <h1>Master of Computer Science</h1>
+      <p>Apply now for 2026 entry.</p>
+    </body></html>
+    """
+    pages = {
+        "https://example.edu/graduate/programmes": CATALOG_HTML,
+        "https://example.edu/study/postgraduate/master-of-computer-science": detail_html,
+    }
+
+    catalog = adapter.parse_catalog_from_fetcher(lambda url: pages[url])
+
+    assert catalog.application_opens_at == "2025-09-15"
+    assert catalog.programmes[0].parse_status == "parsed"
+    assert [
+        (window.round, window.opens_at, window.closes_at, window.intake)
+        for window in catalog.programmes[0].windows
+    ] == [("Application deadline", None, "2026-09-04", "September 2026")]
+    assert "4 September 2026" in catalog.programmes[0].deadline_text
+
+
 def test_generic_adapter_labels_applicant_specific_deadlines_and_ignores_old_dates() -> (
     None
 ):

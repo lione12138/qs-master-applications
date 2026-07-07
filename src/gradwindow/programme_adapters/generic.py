@@ -54,6 +54,8 @@ class GenericProgrammeConfig:
     default_application_url: str
     default_intake: str = "September 2026"
     default_application_opens_at: str | None = None
+    default_application_closes_at: str | None = None
+    default_deadline_evidence: str = ""
     application_opens_at_basis: str = "inferred-cycle-default"
     minimum_closes_at: str = "2025-07-01"
     minimum_expected_programmes: int = 1
@@ -193,6 +195,15 @@ class GenericProgrammeAdapter:
             self.config.default_intake,
             self.config.minimum_closes_at,
         )
+        if not windows and self.config.default_application_closes_at:
+            windows = [
+                DiscoveredWindow(
+                    round="Application deadline",
+                    closes_at=self.config.default_application_closes_at,
+                    intake=self.config.default_intake,
+                )
+            ]
+            excerpt = self.config.default_deadline_evidence
         if not excerpt:
             excerpt = _deadline_status_excerpt(text)
         has_opening_dates = bool(windows) and all(
@@ -332,7 +343,8 @@ def _deadline_status_excerpt(text: str) -> str:
     patterns = (
         re.compile(
             r"\b(coming soon|to be confirmed|tba|applications? (?:will )?open soon|"
-            r"applications? (?:will )?open)\b",
+            r"applications? (?:will )?open|you can still apply|"
+            r"applications? for 20\d{2}[/-]\d{2} entry)\b",
             flags=re.IGNORECASE,
         ),
         APPLICATION_TERMS,

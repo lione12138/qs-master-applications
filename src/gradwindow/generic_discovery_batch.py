@@ -72,6 +72,10 @@ def run_generic_discovery_batch(
                     ),
                     default_intake=entry.get("defaultIntake", "September 2026"),
                     default_application_opens_at=entry.get("defaultApplicationOpensAt"),
+                    default_application_closes_at=entry.get(
+                        "defaultApplicationClosesAt"
+                    ),
+                    default_deadline_evidence=entry.get("defaultDeadlineEvidence", ""),
                     application_opens_at_basis=entry.get(
                         "applicationOpensAtBasis", "inferred-cycle-default"
                     ),
@@ -102,6 +106,11 @@ def run_generic_discovery_batch(
     classifications = classify_generic_candidates(
         candidates,
         {entry["universityId"] for entry in entries},
+        deadline_unavailable_university_ids={
+            entry["universityId"]
+            for entry in entries
+            if entry.get("noDeadlineHandling") == "monitor"
+        },
     )
     report = {
         "meta": {
@@ -126,6 +135,9 @@ def run_generic_discovery_batch(
             "needsOpeningDate": len(classifications["needsOpeningDate"]),
             "needsAdapter": len(classifications["needsAdapter"]),
             "comingSoonMonitor": len(classifications["comingSoonMonitor"]),
+            "deadlineUnavailableMonitor": len(
+                classifications["deadlineUnavailableMonitor"]
+            ),
         },
         "results": results,
         "classification": classifications,
@@ -181,13 +193,17 @@ def _remove_pending_batch_candidates(
 def classify_generic_candidates(
     candidates: list[dict[str, Any]],
     university_ids: set[str],
+    *,
+    deadline_unavailable_university_ids: set[str] | None = None,
 ) -> dict[str, list[dict[str, Any]]]:
+    deadline_unavailable_university_ids = deadline_unavailable_university_ids or set()
     buckets: dict[str, list[dict[str, Any]]] = {
         "readyToApprove": [],
         "needsOpeningReview": [],
         "needsOpeningDate": [],
         "needsAdapter": [],
         "comingSoonMonitor": [],
+        "deadlineUnavailableMonitor": [],
     }
     for item in candidates:
         if item.get("universityId") not in university_ids:
@@ -203,6 +219,8 @@ def classify_generic_candidates(
             buckets["needsOpeningDate"].append(summary)
         elif _is_coming_soon(item):
             buckets["comingSoonMonitor"].append(summary)
+        elif _is_deadline_unavailable(item, deadline_unavailable_university_ids):
+            buckets["deadlineUnavailableMonitor"].append(summary)
         else:
             buckets["needsAdapter"].append(summary)
     for values in buckets.values():
@@ -266,6 +284,28 @@ def _is_coming_soon(item: dict[str, Any]) -> bool:
         for key in ("reviewReason", "evidenceExcerpt", "sourceUrl")
     ).lower()
     return any(marker in text for marker in COMING_SOON_REASONS)
+
+
+def _is_deadline_unavailable(
+    item: dict[str, Any],
+    deadline_unavailable_university_ids: set[str],
+) -> bool:
+    if item.get("windows"):
+        return False
+    if item.get("universityId") in deadline_unavailable_university_ids:
+        return True
+    text = " ".join(
+        str(item.get(key, ""))
+        for key in ("reviewReason", "evidenceExcerpt", "sourceUrl")
+    ).lower()
+    return any(
+        marker in text
+        for marker in (
+            "you can still apply",
+            "applications for 20",
+            "standard application deadlines",
+        )
+    )
 
 
 def _generic_prefix(university_id: str) -> str:

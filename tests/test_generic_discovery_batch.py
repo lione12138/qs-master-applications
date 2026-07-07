@@ -49,6 +49,16 @@ def test_classify_generic_candidates_splits_review_buckets() -> None:
             "reviewReason": "At least one opening date is not published.",
         },
         {
+            "id": "new-programme:deadline-unavailable",
+            "status": "pending",
+            "universityId": "example-university",
+            "programme": {"name": "MSc Active No Deadline"},
+            "windows": [],
+            "parseStatus": "no-deadline",
+            "reviewReason": "No application deadline was parsed.",
+            "evidenceExcerpt": "You can still apply for 2026-27 entry.",
+        },
+        {
             "id": "new-programme:ignored",
             "status": "pending",
             "universityId": "other-university",
@@ -67,6 +77,9 @@ def test_classify_generic_candidates_splits_review_buckets() -> None:
     ]
     assert [item["id"] for item in buckets["comingSoonMonitor"]] == [
         "new-programme:coming-soon"
+    ]
+    assert [item["id"] for item in buckets["deadlineUnavailableMonitor"]] == [
+        "new-programme:deadline-unavailable"
     ]
 
 
@@ -94,5 +107,31 @@ def test_inferred_opening_dates_still_require_review() -> None:
     assert buckets["readyToApprove"] == []
     assert [item["id"] for item in buckets["needsOpeningReview"]] == [
         "new-programme:inferred"
+    ]
+    assert buckets["needsAdapter"] == []
+
+
+def test_configured_no_deadline_schools_are_monitored() -> None:
+    candidates = [
+        {
+            "id": "new-programme:no-deadline",
+            "status": "pending",
+            "universityId": "example-university",
+            "programme": {"name": "MSc No Deadline"},
+            "windows": [],
+            "parseStatus": "no-deadline",
+            "reviewReason": "No application deadline was parsed.",
+            "evidenceExcerpt": "The generic scraper did not capture a useful excerpt.",
+        }
+    ]
+
+    buckets = classify_generic_candidates(
+        candidates,
+        {"example-university"},
+        deadline_unavailable_university_ids={"example-university"},
+    )
+
+    assert [item["id"] for item in buckets["deadlineUnavailableMonitor"]] == [
+        "new-programme:no-deadline"
     ]
     assert buckets["needsAdapter"] == []
