@@ -76,11 +76,12 @@
       "universityId": "the-university-of-manchester",
       "prefix": "manchester",
       "seedUrls": [
-        "https://www.manchester.ac.uk/study/masters/courses/list/"
+        "https://www.manchester.ac.uk/study/masters/courses/list/basic/"
       ],
       "defaultIntake": "September 2026",
       "maxDetailPages": 20,
       "minimumExpected": 1,
+      "noDeadlineHandling": "monitor",
       "enabled": true
     },
     {

@@ -1,27 +1,27 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T08:39:50.252330+00:00",
+    "updatedAt": "2026-07-07T08:49:09.862752+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
   },
   "summary": {
     "schoolsConfigured": 10,
-    "schoolsSucceeded": 6,
-    "schoolsErrored": 4,
+    "schoolsSucceeded": 7,
+    "schoolsErrored": 3,
     "readyToApprove": 19,
     "needsOpeningReview": 6,
-    "needsOpeningDate": 24,
+    "needsOpeningDate": 34,
     "needsAdapter": 0,
     "comingSoonMonitor": 4,
-    "deadlineUnavailableMonitor": 13
+    "deadlineUnavailableMonitor": 23
   },
   "results": [
     {
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T08:39:50.252330+00:00",
+      "checkedAt": "2026-07-07T08:49:09.863799+00:00",
       "catalogProgrammes": 2,
       "knownProgrammes": 1,
       "newCandidates": 2,
@@ -62,7 +62,7 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T08:39:53.364297+00:00",
+      "checkedAt": "2026-07-07T08:49:13.326150+00:00",
       "catalogProgrammes": 16,
       "knownProgrammes": 17,
       "newCandidates": 8,
@@ -73,19 +73,24 @@
       "batchStatus": "ok"
     },
     {
-      "batchStatus": "error",
-      "status": "error",
+      "status": "ok",
       "universityId": "the-university-of-manchester",
-      "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/",
-      "errorType": "ValueError",
-      "message": "Generic crawler for the-university-of-manchester found 0 candidate programmes; expected at least 1",
-      "dryRun": false
+      "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
+      "checkedAt": "2026-07-07T08:49:16.852627+00:00",
+      "catalogProgrammes": 20,
+      "knownProgrammes": 1,
+      "newCandidates": 20,
+      "pendingCandidates": 20,
+      "programmesWithoutDeadlines": 10,
+      "programmesNeedingReview": 20,
+      "dryRun": false,
+      "batchStatus": "ok"
     },
     {
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T08:39:58.190634+00:00",
+      "checkedAt": "2026-07-07T08:49:20.361207+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -99,7 +104,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T08:40:02.141073+00:00",
+      "checkedAt": "2026-07-07T08:49:24.180627+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -113,7 +118,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T08:40:07.615788+00:00",
+      "checkedAt": "2026-07-07T08:49:29.227339+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -127,7 +132,7 @@
       "status": "ok",
       "universityId": "university-of-birmingham",
       "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught",
-      "checkedAt": "2026-07-07T08:40:10.256268+00:00",
+      "checkedAt": "2026-07-07T08:49:31.935449+00:00",
       "catalogProgrammes": 3,
       "knownProgrammes": 1,
       "newCandidates": 3,
@@ -369,6 +374,96 @@
       }
     ],
     "needsOpeningDate": [
+      {
+        "id": "new-programme:manchester-analytical-chemistry-and-measurement-science-online-msc-pgdip-pgcert",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Analytical Chemistry and Measurement Science (online) MSc/PGDip/PGCert",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19383/msc-pgdip-pgcert-analytical-chemistry-and-measurement-science-online/",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-chemical-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Chemical Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07354/msc-advanced-chemical-engineering/",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-computer-science",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Computer Science",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21573/msc-advanced-computer-science/",
+        "windowCount": 8,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-control-and-systems-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Control and Systems Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04166/msc-advanced-control-and-systems-engineering/",
+        "windowCount": 8,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-control-and-systems-engineering-with-extended-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Control and Systems Engineering with Extended Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12729/msc-advanced-control-and-systems-engineering-with-extended-research/",
+        "windowCount": 8,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-engineering-materials",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Engineering Materials",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04169/msc-advanced-engineering-materials/",
+        "windowCount": 7,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-manufacturing-technology-systems-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Manufacturing Technology & Systems Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04172/msc-advanced-manufacturing-technology-and-systems-management/",
+        "windowCount": 6,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-process-integration-and-design",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Process Integration and Design",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09760/msc-advanced-process-integration-and-design/",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-aerospace-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Aerospace Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08025/msc-aerospace-engineering/",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-applied-mathematics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Applied Mathematics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09128/msc-applied-mathematics/",
+        "windowCount": 8,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
       {
         "id": "new-programme:birmingham-master-of-business-administration-full-time-uk",
         "universityId": "university-of-birmingham",
@@ -626,6 +721,96 @@
       }
     ],
     "deadlineUnavailableMonitor": [
+      {
+        "id": "new-programme:manchester-ma-anthropological-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Anthropological Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01086/ma-anthropological-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-accounting",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Accounting",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10867/msc-accounting/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-accounting-and-finance",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Accounting and Finance",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02061/msc-accounting-and-finance/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-adult-nursing",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Adult Nursing",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18749/msc-adult-nursing/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-clinical-optometric-practice",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Clinical Optometric Practice",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18940/msc-advanced-clinical-optometric-practice/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-clinical-practice-paediatrics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Clinical Practice (Paediatrics)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12526/msc-advanced-clinical-practice-paediatrics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-electrical-power-systems-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Electrical Power Systems Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09718/msc-advanced-electrical-power-systems-engineering/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-leadership-for-professional-practice-allied-health-profession",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Leadership for Professional Practice (Allied Health Profession)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12762/msc-advanced-leadership-for-professional-practice-allied-health-profession/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-leadership-for-professional-practice-nursing",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Leadership for Professional Practice (Nursing)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12148/msc-advanced-leadership-for-professional-practice-nursing/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-applied-ai-for-medical-imaging",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Applied AI for Medical Imaging",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21876/msc-applied-ai-for-medical-imaging/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
       {
         "id": "new-programme:nottingham-accounting-and-finance-msc",
         "universityId": "the-university-of-nottingham",

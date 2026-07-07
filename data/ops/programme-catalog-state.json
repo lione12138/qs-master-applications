@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T08:40:10.256268+00:00",
+    "updatedAt": "2026-07-07T08:49:31.935449+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -11744,7 +11744,7 @@
     },
     "university-of-chicago": {
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T08:39:50.252330+00:00",
+      "checkedAt": "2026-07-07T08:49:09.863799+00:00",
       "itemCount": 2,
       "applicationOpensAt": null,
       "catalogHash": "efc1313010c703efd9782d4a94f782aec9e4ae9e6574c89f4f30def5b33b23a6",
@@ -11769,7 +11769,7 @@
     },
     "university-of-bristol": {
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T08:39:53.364297+00:00",
+      "checkedAt": "2026-07-07T08:49:13.326150+00:00",
       "itemCount": 16,
       "applicationOpensAt": "2025-09-01",
       "catalogHash": "fcf4f7c1b4bba77b0a00205f971e2318aa1dd8c8eac8ad080e336bc36e1f44e7",
@@ -11905,33 +11905,177 @@
       }
     },
     "the-university-of-manchester": {
-      "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/",
-      "checkedAt": "2026-07-06T15:01:40.894017+00:00",
-      "itemCount": 2,
+      "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
+      "checkedAt": "2026-07-07T08:49:16.852627+00:00",
+      "itemCount": 20,
       "applicationOpensAt": null,
-      "catalogHash": "0ecff11d044aa0062440d55affc0006aed034e0bcd87bc88189e4481167c6d51",
+      "catalogHash": "f37bcb32f471bf6a766fb2be49f160b885ea674f90efe925fadbf62605ccaab7",
       "programmes": {
-        "manchester-taught-master-s-study-at-manchester": {
-          "name": "Taught master's study at Manchester",
-          "degreeType": "Master",
+        "manchester-msc-accounting-and-finance": {
+          "name": "MSc Accounting and Finance",
+          "degreeType": "MSC",
           "faculty": "",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
-        "manchester-why-study-for-your-masters-at-manchester": {
-          "name": "Why study for your master’s at Manchester?",
-          "degreeType": "Master",
+        "manchester-msc-accounting": {
+          "name": "MSc Accounting",
+          "degreeType": "MSC",
           "faculty": "",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-adult-nursing": {
+          "name": "MSc Adult Nursing",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-advanced-chemical-engineering": {
+          "name": "MSc Advanced Chemical Engineering",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e1dc752dbdc94c0a766a8a57389c64096a4638098bc06686574c7ed1d4bf6664"
+        },
+        "manchester-msc-advanced-clinical-optometric-practice": {
+          "name": "MSc Advanced Clinical Optometric Practice",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-advanced-clinical-practice-paediatrics": {
+          "name": "MSc Advanced Clinical Practice (Paediatrics)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-advanced-computer-science": {
+          "name": "MSc Advanced Computer Science",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "daddd533437f3aef38234abcf16a0091ca0787aa40fd873277beead3d4217c22"
+        },
+        "manchester-msc-advanced-control-and-systems-engineering": {
+          "name": "MSc Advanced Control and Systems Engineering",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0ad442ff0afa7dfeffafbd3da1248fc6eac58169a1d6d27f1ec8a036a435b550"
+        },
+        "manchester-msc-advanced-control-and-systems-engineering-with-extended-research": {
+          "name": "MSc Advanced Control and Systems Engineering with Extended Research",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0ad442ff0afa7dfeffafbd3da1248fc6eac58169a1d6d27f1ec8a036a435b550"
+        },
+        "manchester-msc-advanced-electrical-power-systems-engineering": {
+          "name": "MSc Advanced Electrical Power Systems Engineering",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-advanced-engineering-materials": {
+          "name": "MSc Advanced Engineering Materials",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "71a60e36b6364aa7e66c01321aaa440d03fa5843bd51f3e9bb98032a4a0b7382"
+        },
+        "manchester-msc-advanced-leadership-for-professional-practice-allied-health-profession": {
+          "name": "MSc Advanced Leadership for Professional Practice (Allied Health Profession)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-advanced-leadership-for-professional-practice-nursing": {
+          "name": "MSc Advanced Leadership for Professional Practice (Nursing)",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-advanced-manufacturing-technology-systems-management": {
+          "name": "MSc Advanced Manufacturing Technology & Systems Management",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1d4850d499326fa0394a095bfc551db4280b94f1c158e72e10e3de9e695036c7"
+        },
+        "manchester-msc-advanced-process-integration-and-design": {
+          "name": "MSc Advanced Process Integration and Design",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e1dc752dbdc94c0a766a8a57389c64096a4638098bc06686574c7ed1d4bf6664"
+        },
+        "manchester-msc-aerospace-engineering": {
+          "name": "MSc Aerospace Engineering",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e3d04ba1f7c214e2aa953b790b922b56661af7c32a457d014a7c1aac5abd62eb"
+        },
+        "manchester-analytical-chemistry-and-measurement-science-online-msc-pgdip-pgcert": {
+          "name": "Analytical Chemistry and Measurement Science (online) MSc/PGDip/PGCert",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ba6de6bf74eec2daef9c1e888ec992b70e00f3c0b27c4d16d522e7e56eae198b"
+        },
+        "manchester-ma-anthropological-research": {
+          "name": "MA Anthropological Research",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-applied-ai-for-medical-imaging": {
+          "name": "MSc Applied AI for Medical Imaging",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-applied-mathematics": {
+          "name": "MSc Applied Mathematics",
+          "degreeType": "MSC",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d685d5be4c9f322d57e89103fa1690ec92348e6a3de5bc417db020e2bdd282b2"
         }
       }
     },
     "the-university-of-sheffield": {
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T08:39:58.190634+00:00",
+      "checkedAt": "2026-07-07T08:49:20.361207+00:00",
       "itemCount": 20,
       "applicationOpensAt": "2025-09-15",
       "catalogHash": "de7ff0e0bd0ebc9aa291794a10a18584ac10d5236b742153d574f3e90fb1599b",
@@ -12100,7 +12244,7 @@
     },
     "university-of-southampton": {
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T08:40:02.141073+00:00",
+      "checkedAt": "2026-07-07T08:49:24.180627+00:00",
       "itemCount": 20,
       "applicationOpensAt": null,
       "catalogHash": "80a09b4c276c6d98fe3c260b5a276fb70b4183976d86351957adb0a00050eb34",
@@ -12269,7 +12413,7 @@
     },
     "the-university-of-nottingham": {
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T08:40:07.615788+00:00",
+      "checkedAt": "2026-07-07T08:49:29.227339+00:00",
       "itemCount": 14,
       "applicationOpensAt": null,
       "catalogHash": "68d35964774446bfeccbe9316e3ff8955ec1d2a45c78d935440ab4b255227a23",
@@ -12390,7 +12534,7 @@
     },
     "university-of-birmingham": {
       "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught",
-      "checkedAt": "2026-07-07T08:40:10.256268+00:00",
+      "checkedAt": "2026-07-07T08:49:31.935449+00:00",
       "itemCount": 3,
       "applicationOpensAt": null,
       "catalogHash": "5df50f5b1b856a67882d701dcf0c9dc2ca547e4ff40a3485b9e1cc86bc21e55c",
