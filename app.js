@@ -846,7 +846,10 @@ function createUniversityGroupRow(universityGroup, status) {
   school.appendChild(
     makeElement("span", {
       className: "school-meta",
-      text: [schoolText.secondary, countryLabel(representative.country, state.language)]
+      text: [
+        schoolText.secondary,
+        countryLabel(representative.country, state.language),
+      ]
         .filter(Boolean)
         .join(" · "),
     }),
@@ -906,7 +909,7 @@ function createUniversityGroupRow(universityGroup, status) {
       t("deadline"),
       makeTextStack(
         formatDate(nearestDeadline.closesAt),
-        `${t("nextDeadline")} · ${deadlineNote(nearestDeadline, status)}`,
+        `${t("nextDeadlineLabel")} · ${deadlineNote(nearestDeadline, status)}`,
       ),
     ),
     makeCell(t("calendar"), makeElement("span", { text: "—" })),

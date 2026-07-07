@@ -29,6 +29,13 @@
       "title": "Schoolzh",
       "type": "string"
     },
+    "schoolAliasesZh": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Schoolaliaseszh",
+      "type": "array"
+    },
     "country": {
       "title": "Country",
       "type": "string"
