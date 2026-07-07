@@ -52,3 +52,4 @@ GENERIC_PROGRAMME_DISCOVERY_CONFIG_PATH = OPS_DIR / "generic-programme-discovery
 GENERIC_PROGRAMME_DISCOVERY_REPORT_PATH = (
     REPORTS_DIR / "generic-programme-discovery-report.json"
 )
+GENERIC_SEED_DISCOVERY_REPORT_PATH = REPORTS_DIR / "generic-seed-discovery-report.json"

@@ -1,0 +1,2704 @@
+{
+  "meta": {
+    "updatedAt": "2026-07-07T09:02:19.269567+00:00",
+    "description": "Audit configured generic programme-discovery seed pages and recommend better official catalogue entry points.",
+    "maxCandidateSeeds": 12
+  },
+  "summary": {
+    "schoolsAudited": 10,
+    "keep": 7,
+    "replaceSeed": 0,
+    "manualReview": 1,
+    "markBlocked": 2,
+    "usable": 7,
+    "blockedByAccess": 2,
+    "jsHeavy": 0,
+    "noCandidates": 1
+  },
+  "results": [
+    {
+      "name": "uchicago-data-science",
+      "universityId": "university-of-chicago",
+      "currentSeedUrls": [
+        "https://datascience.uchicago.edu/education/masters-programs/"
+      ],
+      "recommendation": {
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://datascience.uchicago.edu/education/masters-programs/",
+        "programmeLinkCount": 2,
+        "reason": "Configured seed already exposes programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://datascience.uchicago.edu/education/masters-programs/",
+          "source": "configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Master’s Programs",
+          "htmlLength": 107415,
+          "programmeLinkCount": 2,
+          "programmeSamples": [
+            {
+              "id": "uchicago-ms-in-applied-data-science",
+              "name": "MS in Applied Data Science",
+              "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/"
+            },
+            {
+              "id": "uchicago-ms-data-science",
+              "name": "MS Data Science",
+              "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
+            "https://datascience.uchicago.edu/people/briana-allen/",
+            "https://datascience.uchicago.edu/news/pit-un-grant-supports-dsi-community-data-fellows-program/",
+            "https://datascience.uchicago.edu/education/masters-programs/online-program/"
+          ]
+        },
+        {
+          "url": "https://datascience.uchicago.edu/education/masters-programs/online-program/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Online Program",
+          "htmlLength": 144438,
+          "programmeLinkCount": 4,
+          "programmeSamples": [
+            {
+              "id": "uchicago-ms-in-applied-data-science",
+              "name": "MS in Applied Data Science",
+              "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/"
+            },
+            {
+              "id": "uchicago-explore-the-ms-ads-campus",
+              "name": "Explore the MS-ADS Campus",
+              "sourceUrl": "https://datascience.uchicago.edu/explore-the-ms-ads-campus/"
+            },
+            {
+              "id": "uchicago-masters-in-applied-data-science",
+              "name": "Master’s in Applied Data Science",
+              "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/"
+            },
+            {
+              "id": "uchicago-next-gen-nlp-llm-and-agentic-ai-in-practice",
+              "name": "Next-Gen NLP: LLM and Agentic AI in Practice",
+              "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/online-program/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/education/masters-programs/online-program/",
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
+            "https://datascience.uchicago.edu/education/masters-programs/in-person-program/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/capstone-projects/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/capstone-project-archive/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/course-progressions/"
+          ]
+        },
+        {
+          "url": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Elevate Your Expertise in Data Science",
+          "htmlLength": 113687,
+          "programmeLinkCount": 3,
+          "programmeSamples": [
+            {
+              "id": "uchicago-ms-in-applied-data-science",
+              "name": "MS in Applied Data Science",
+              "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/"
+            },
+            {
+              "id": "uchicago-applied-data-science-jun-17-2026-the-tools-languages-and-technologies-ive-actually-used-in-ms-ads",
+              "name": "Applied Data Science Jun 17, 2026 The Tools, Languages, and Technologies I’ve Actually Used in MS-ADS",
+              "sourceUrl": "https://datascience.uchicago.edu/news/the-tools-languages-and-technologies-ive-actually-used-in-ms-ads/"
+            },
+            {
+              "id": "uchicago-applied-data-science-jun-15-2026-meet-kyler-rosen-ms-in-applied-data-science-alumnus",
+              "name": "Applied Data Science Jun 15, 2026 Meet Kyler Rosen, MS in Applied Data Science Alumnus",
+              "sourceUrl": "https://datascience.uchicago.edu/news/meet-kyler-rosen-ms-in-applied-data-science-alumnus/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/in-person-program/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/online-program/%20",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/course-progressions/",
+            "https://datascience.uchicago.edu/education/masters-programs/in-person-program/",
+            "https://datascience.uchicago.edu/education/masters-programs/online-program/"
+          ]
+        },
+        {
+          "url": "https://datascience.uchicago.edu/news/pit-un-grant-supports-dsi-community-data-fellows-program/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "PIT-UN Grant Supports DSI Community Data Fellows Program",
+          "htmlLength": 101814,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "uchicago-master-of-science-in-computational-analysis-and-public-policy-mscapp",
+              "name": "Master of Science in Computational Analysis and Public Policy (MSCAPP)",
+              "sourceUrl": "https://harris.uchicago.edu/academics/degrees/ms-computational-analysis-public-policy-mscapp"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/news/pit-un-grant-supports-dsi-community-data-fellows-program/",
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://communityprograms.uchicago.edu/",
+            "https://datascience.uchicago.edu/outreach/community-data-fellows/program-details/",
+            "https://datascience.uchicago.edu/outreach/community-data-fellows/program-details/partners/"
+          ]
+        },
+        {
+          "url": "https://datascience.uchicago.edu/people/briana-allen/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Briana Allen, MEd",
+          "htmlLength": 96460,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "uchicago-masters-in-applied-data-science-autumn-2024",
+              "name": "Master’s in Applied Data Science Autumn 2024...",
+              "sourceUrl": "https://datascience.uchicago.edu/news/masters-in-applied-data-science-autumn-2024-capstone-showcase/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/instructors-staff/"
+          ]
+        },
+        {
+          "url": "https://datascience.uchicago.edu/education/summer-research-programs/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Summer Research Programs",
+          "htmlLength": 113181,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://datascience.uchicago.edu/news/dsi-celebrates-culmination-of-2024-summer-programs/",
+            "https://datascience.uchicago.edu/events/dsi-summer-programs-2024-final-symposium/"
+          ]
+        },
+        {
+          "url": "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "DSI Welcomes 48 Students to 2026 Summer Research Programs",
+          "htmlLength": 109597,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/news/2025-summer-research-symposium-caps-off-a-successful-year-of-dsi-summer-programs-in-chicago/",
+            "https://datascience.uchicago.edu/news/dsi-celebrates-culmination-of-2024-summer-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/course-progressions/",
+            "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/how-to-apply/",
+            "https://datascience.uchicago.edu/education/masters-programs/online-program/"
+          ]
+        },
+        {
+          "url": "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Postdoctoral Programs",
+          "htmlLength": 108078,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/",
+            "https://datascience.uchicago.edu/education/masters-programs/",
+            "https://datascience.uchicago.edu/education/summer-research-programs/",
+            "https://datascience.uchicago.edu/news/dsi-welcomes-48-students-to-2026-summer-research-programs/",
+            "https://aiscience.uchicago.edu/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/dsi-scholars/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars-in-data-science-2/2025-rising-stars/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars-in-data-science-2/2024-rising-stars/",
+            "https://datascience.uchicago.edu/research/postdoctoral-programs/rising-stars-in-data-science-2/2023-rising-stars/"
+          ]
+        },
+        {
+          "url": "https://www.uchicago.edu/study/postgraduate",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.uchicago.edu/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.uchicago.edu/study/postgraduate/subjects",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.uchicago.edu/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.uchicago.edu/study/postgraduate/taught/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        }
+      ]
+    },
+    {
+      "name": "melbourne-graduate-coursework",
+      "universityId": "the-university-of-melbourne",
+      "currentSeedUrls": [
+        "https://study.unimelb.edu.au/find/courses/graduate/"
+      ],
+      "recommendation": {
+        "action": "markBlocked",
+        "category": "blockedByAccess",
+        "seedUrl": null,
+        "programmeLinkCount": 0,
+        "reason": "All evaluated seeds are blocked by access controls."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://study.unimelb.edu.au/find/courses/graduate/",
+          "source": "configured",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/postgraduate/courses/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/courses/postgraduate-taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/masters",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/masters/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/masters/courses/list/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/masters/courses/list/basic/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/postgraduate",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/postgraduate/subjects",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.unimelb.edu.au/study/postgraduate/taught/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        }
+      ]
+    },
+    {
+      "name": "monash-postgraduate-courses",
+      "universityId": "monash-university",
+      "currentSeedUrls": [
+        "https://www.monash.edu/study/courses/find-a-course"
+      ],
+      "recommendation": {
+        "action": "markBlocked",
+        "category": "blockedByAccess",
+        "seedUrl": null,
+        "programmeLinkCount": 0,
+        "reason": "All evaluated seeds are blocked by access controls."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.monash.edu/study/courses/find-a-course",
+          "source": "configured",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/postgraduate/courses/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/courses/postgraduate-taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/masters",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/masters/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/masters/courses/list/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/masters/courses/list/basic/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/postgraduate",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/postgraduate/subjects",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.monash.edu/study/postgraduate/taught/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "blockedByAccess",
+          "errorType": "FetchFailure",
+          "message": "HTTP 403",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        }
+      ]
+    },
+    {
+      "name": "sydney-postgraduate-coursework",
+      "universityId": "the-university-of-sydney",
+      "currentSeedUrls": [
+        "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework"
+      ],
+      "recommendation": {
+        "action": "manualReview",
+        "category": "no-candidates",
+        "seedUrl": "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework",
+        "programmeLinkCount": 0,
+        "reason": "No evaluated seed produced enough programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework",
+          "source": "configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Course search - The University of Sydney",
+          "htmlLength": 39444,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/postgraduate/courses/taught",
+          "source": "heuristic",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Current students - The University of Sydney",
+          "htmlLength": 60884,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/courses/postgraduate-taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/masters",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/masters/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/masters/courses/list/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/masters/courses/list/basic/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/postgraduate",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/postgraduate/subjects",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sydney.edu.au/study/postgraduate/taught/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        }
+      ]
+    },
+    {
+      "name": "bristol-postgraduate-taught",
+      "universityId": "university-of-bristol",
+      "currentSeedUrls": [
+        "https://www.bristol.ac.uk/study/postgraduate/search/"
+      ],
+      "recommendation": {
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
+        "programmeLinkCount": 16,
+        "reason": "Configured seed already exposes programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/search/",
+          "source": "configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Find a programme",
+          "htmlLength": 373294,
+          "programmeLinkCount": 16,
+          "programmeSamples": [
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-advanced-microelectronic-systems-engineering-explore-the-msc-advanced-microelectronic-systems-engineering-at-bristol-focusing-on-digital-and-analogue-design-signal-processing-and-emerging-technologies-modes-of-study-full-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc Advanced Microelectronic Systems Engineering Explore the MSc Advanced Microelectronic Systems Engineering at Bristol, focusing on digital and analogue design, signal processing and emerging technologies. Modes of study Full-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-advanced-microelectronic-systems-engineering/"
+            },
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-communication-networks-and-signal-processing-explore-msc-communication-networks-and-signal-processing-at-bristol-focusing-on-network-architectures-optical-communications-and-wireless-access-modes-of-study-full-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc Communication Networks and Signal Processing Explore MSc Communication Networks and Signal Processing at Bristol, focusing on network architectures, optical communications and wireless access. Modes of study Full-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-communication-networks-and-signal-processing/"
+            },
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-east-asian-development-and-the-global-economy-find-out-about-the-university-of-bristol-s-msc-in-east-asian-development-and-the-global-economy-including-structure-and-career-prospects-modes-of-study-full-time-part-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc East Asian Development and the Global Economy Find out about the University of Bristol's MSc in East Asian Development and the Global Economy, including structure and career prospects. Modes of study Full-time, Part-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-east-asian-development-and-the-global-economy/"
+            },
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-economics-join-the-msc-economics-programme-at-bristol-to-develop-skills-in-economic-analysis-policy-making-and-research-study-at-a-top-10-uk-university-qs-2025-modes-of-study-full-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc Economics Join the MSc Economics programme at Bristol to develop skills in economic analysis, policy-making, and research. Study at a top 10 UK university (QS 2025). Modes of study Full-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-economics/"
+            },
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-economics-and-finance-join-the-msc-economics-and-finance-programme-at-bristol-to-develop-expertise-in-financial-markets-corporate-finance-and-economic-analysis-modes-of-study-full-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc Economics and Finance Join the MSc Economics and Finance programme at Bristol to develop expertise in financial markets, corporate finance and economic analysis. Modes of study Full-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-economics-and-finance/"
+            },
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-economics-finance-and-management-equip-yourself-with-practical-skills-in-economics-finance-and-management-ideal-for-careers-in-consultancy-banking-or-management-roles-modes-of-study-full-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc Economics, Finance and Management Equip yourself with practical skills in economics, finance, and management. Ideal for careers in consultancy, banking, or management roles. Modes of study Full-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-economics-finance-and-management/"
+            },
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-engineering-mathematics-apply-mathematical-and-engineering-principles-to-solve-real-world-problems-in-ai-medicine-and-sustainability-study-at-a-top-10-uk-university-qs-2025-modes-of-study-full-time-part-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc Engineering Mathematics Apply mathematical and engineering principles to solve real-world problems in AI, medicine, and sustainability. Study at a top 10 UK university (QS 2025). Modes of study Full-time, Part-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-engineering-mathematics/"
+            },
+            {
+              "id": "bristol-taught-postgraduate-programme-msc-engineering-with-management-explore-our-msc-engineering-with-management-programme-focusing-on-strategic-business-management-risk-analysis-and-sustainable-engineering-practices-modes-of-study-full-time-awards-available-msc",
+              "name": "Taught postgraduate programme MSc Engineering with Management Explore our MSc Engineering with Management programme, focusing on strategic business management, risk analysis and sustainable engineering practices. Modes of study Full-time Awards available MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-engineering-with-management/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/",
+            "https://www.bristol.ac.uk/study/postgraduate/research/",
+            "https://www.bristol.ac.uk/study/postgraduate/research-2025/composites-manufacture/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/llm-law---banking-and-finance-law/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught-2025/llm-law---banking-and-finance-law/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught-2025/llm-law---commercial-law/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/llm-law---commercial-law/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught-2025/llm-law---company-law-and-corporate-governance/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Study online",
+          "htmlLength": 78130,
+          "programmeLinkCount": 8,
+          "programmeSamples": [
+            {
+              "id": "bristol-applied-neuropsychology-msc",
+              "name": "Applied Neuropsychology MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-applied-neuropsychology-online/"
+            },
+            {
+              "id": "bristol-cardiovascular-perfusion-msc",
+              "name": "Cardiovascular Perfusion MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-cardiovascular-perfusion-online/"
+            },
+            {
+              "id": "bristol-translational-cardiovascular-medicine-msc-pg-cert-pgdip",
+              "name": "Translational Cardiovascular Medicine MSc / PG Cert / PGDip",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-translational-cardiovascular-medicine-online/"
+            },
+            {
+              "id": "bristol-clinical-neuropsychology-msc",
+              "name": "Clinical Neuropsychology MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-clinical-neuropsychology/"
+            },
+            {
+              "id": "bristol-clinical-perfusion-science-msc",
+              "name": "Clinical Perfusion Science MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-clinical-perfusion-science/"
+            },
+            {
+              "id": "bristol-dental-implantology-msc",
+              "name": "Dental Implantology MSc",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-dental-implantology/"
+            },
+            {
+              "id": "bristol-periodontology-msc-pgcert",
+              "name": "Periodontology MSc / PGCert",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-periodontology/"
+            },
+            {
+              "id": "bristol-reproduction-and-development-msc-pgdip-pgcert",
+              "name": "Reproduction and Development MSc / PGDip / PGCert",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-reproduction-and-development/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/",
+            "https://www.bristol.ac.uk/study/postgraduate/research/",
+            "https://online.bristol.ac.uk/",
+            "https://www.bristol.ac.uk/study/postgraduate/research/about-research-degrees/distance-learning/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/taught/llm-law---commercial-law/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "LLM Law - Commercial Law",
+          "htmlLength": 99795,
+          "programmeLinkCount": 2,
+          "programmeSamples": [
+            {
+              "id": "bristol-llm-law-commercial-law",
+              "name": "Llm Law Commercial Law",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/llm-law---commercial-law/"
+            },
+            {
+              "id": "bristol-llm-at-bristol-what-to-expect-and-how-it-can-shape-your-legal-career",
+              "name": "Llm At Bristol What to Expect and How It Can Shape Your Legal Career",
+              "sourceUrl": "https://lawstudent.blogs.bristol.ac.uk/2025/03/12/llm-at-bristol-what-to-expect-and-how-it-can-shape-your-legal-career/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/llm-law---commercial-law/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "LLM Law - Commercial Law",
+          "htmlLength": 99795,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "bristol-llm-at-bristol-what-to-expect-and-how-it-can-shape-your-legal-career",
+              "name": "Llm At Bristol What to Expect and How It Can Shape Your Legal Career",
+              "sourceUrl": "https://lawstudent.blogs.bristol.ac.uk/2025/03/12/llm-at-bristol-what-to-expect-and-how-it-can-shape-your-legal-career/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/taught/llm-law---banking-and-finance-law/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "LLM Law - Banking and Finance Law",
+          "htmlLength": 99469,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "bristol-llm-law-banking-and-finance-law",
+              "name": "Llm Law Banking and Finance Law",
+              "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/llm-law---banking-and-finance-law/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "http://bristol.ac.uk/study/postgraduate",
+          "source": "heuristic",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Find your programme",
+          "htmlLength": 88378,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "http://bristol.ac.uk/study/postgraduate/taught/",
+            "http://bristol.ac.uk/study/postgraduate/research/",
+            "http://bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "http://bristol.ac.uk/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://bristol.ac.uk/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Taught programmes",
+          "htmlLength": 74187,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "http://bristol.ac.uk/study/postgraduate/taught/",
+            "http://bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "http://bristol.ac.uk/study/postgraduate/research/",
+            "http://bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/search/?filterStudyType=Taught&page=1",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/research-2025/composites-manufacture/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Composites Manufacture",
+          "htmlLength": 96830,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/research/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Research programmes",
+          "htmlLength": 75285,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/study/postgraduate/research/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/",
+            "https://www.bristol.ac.uk/study/postgraduate/search/?filterStudyType=Research&page=1",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/llm-law---banking-and-finance-law/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "LLM Law - Banking and Finance Law",
+          "htmlLength": 99469,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/llm-law---company-law-and-corporate-governance/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "LLM Law - Company Law and Corporate Governance",
+          "htmlLength": 99506,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        },
+        {
+          "url": "https://www.bristol.ac.uk/study/postgraduate/taught/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Taught programmes",
+          "htmlLength": 74187,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.bristol.ac.uk/study/postgraduate/search/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/study-online/",
+            "https://www.bristol.ac.uk/study/postgraduate/taught/",
+            "https://www.bristol.ac.uk/study/postgraduate/research/",
+            "https://www.bristol.ac.uk/study/postgraduate/search/?filterStudyType=Taught&page=1",
+            "https://www.bristol.ac.uk/index/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "manchester-masters-courses",
+      "universityId": "the-university-of-manchester",
+      "currentSeedUrls": [
+        "https://www.manchester.ac.uk/study/masters/courses/list/basic/"
+      ],
+      "recommendation": {
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
+        "programmeLinkCount": 265,
+        "reason": "Configured seed already exposes programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
+          "source": "configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "A-Z list of master's courses for entry in 2026",
+          "htmlLength": 90139,
+          "programmeLinkCount": 265,
+          "programmeSamples": [
+            {
+              "id": "manchester-accounting-msc",
+              "name": "Accounting MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10867/msc-accounting/"
+            },
+            {
+              "id": "manchester-accounting-and-finance-msc",
+              "name": "Accounting and Finance MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02061/msc-accounting-and-finance/"
+            },
+            {
+              "id": "manchester-adult-nursing-msc",
+              "name": "Adult Nursing MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18749/msc-adult-nursing/"
+            },
+            {
+              "id": "manchester-advanced-chemical-engineering-msc",
+              "name": "Advanced Chemical Engineering MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07354/msc-advanced-chemical-engineering/"
+            },
+            {
+              "id": "manchester-advanced-clinical-optometric-practice-msc",
+              "name": "Advanced Clinical Optometric Practice MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18940/msc-advanced-clinical-optometric-practice/"
+            },
+            {
+              "id": "manchester-advanced-clinical-practice-paediatrics-msc",
+              "name": "Advanced Clinical Practice (Paediatrics) MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12526/msc-advanced-clinical-practice-paediatrics/"
+            },
+            {
+              "id": "manchester-advanced-computer-science-msc",
+              "name": "Advanced Computer Science MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21573/msc-advanced-computer-science/"
+            },
+            {
+              "id": "manchester-advanced-control-and-systems-engineering-msc",
+              "name": "Advanced Control and Systems Engineering MSc",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04166/msc-advanced-control-and-systems-engineering/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09289/pgce-primary-5-11-with-lead-programme-partners/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09322/pgce-secondary-business-education-14-19-with-lead-programme-partners/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/17843/pgce-secondary-economics-and-business-education-14-19-with-lead-programme-partners/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09324/pgce-secondary-english-with-lead-programme-partners/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/a-z/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "A–Z index",
+          "htmlLength": 103696,
+          "programmeLinkCount": 5,
+          "programmeSamples": [
+            {
+              "id": "manchester-applications-masters",
+              "name": "Applications, master’s",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/admissions/"
+            },
+            {
+              "id": "manchester-courses-postgraduate-taught-master-s",
+              "name": "Courses (postgraduate taught / master's)",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/"
+            },
+            {
+              "id": "manchester-masters-applications",
+              "name": "Master’s applications",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/admissions/"
+            },
+            {
+              "id": "manchester-masters",
+              "name": "master’s",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/fees-and-funding/"
+            },
+            {
+              "id": "manchester-mres-public-health-web-based-learning",
+              "name": "MRes Public Health Web Based Learning",
+              "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/05995/mres-public-health-web-based-learning/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "http://www.alc.manchester.ac.uk/subjects/american-studies/",
+            "http://www.alc.manchester.ac.uk/subjects/archaeology/",
+            "http://www.seed.manchester.ac.uk/subjects/architecture/",
+            "http://www.alc.manchester.ac.uk/subjects/arthistoryvisualstudies/",
+            "http://www.alc.manchester.ac.uk/subjects/chinese-studies/",
+            "http://www.alc.manchester.ac.uk/subjects/classicsancienthistory/"
+          ]
+        },
+        {
+          "url": "http://www.manchester.ac.uk/study/postgraduate",
+          "source": "heuristic",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Postgraduate study – master’s and research",
+          "htmlLength": 57907,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "http://www.manchester.ac.uk/study/masters/courses/",
+            "http://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "http://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "http://www.manchester.ac.uk/a-z/",
+            "http://www.manchester.ac.uk/study/masters/admissions/how-to-apply/"
+          ]
+        },
+        {
+          "url": "http://www.manchester.ac.uk/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.manchester.ac.uk/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/masters/courses/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Master's courses at The University of Manchester",
+          "htmlLength": 57574,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/masters/courses/list/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Master's courses for entry in 2026",
+          "htmlLength": 69767,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/basic/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/masters/courses/list/09289/pgce-primary-5-11-with-lead-programme-partners/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "js-heavy",
+          "title": "PGCE Primary 5-11 with Lead Programme Partners / Overview",
+          "htmlLength": 70862,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/masters/courses/list/09289/pgce-primary-5-11-with-lead-programme-partners/",
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/",
+            "https://www.humanities.manchester.ac.uk/education/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09289/pgce-primary-5-11-with-lead-programme-partners/all-content/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09289/pgce-primary-5-11-with-lead-programme-partners/overview/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09289/pgce-primary-5-11-with-lead-programme-partners/entry-requirements/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/masters/courses/list/09322/pgce-secondary-business-education-14-19-with-lead-programme-partners/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "js-heavy",
+          "title": "PGCE Secondary Business Education (14-19) with Lead Programme Partners / Overview",
+          "htmlLength": 73059,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/masters/courses/list/09322/pgce-secondary-business-education-14-19-with-lead-programme-partners/",
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/",
+            "https://www.humanities.manchester.ac.uk/education/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09322/pgce-secondary-business-education-14-19-with-lead-programme-partners/all-content/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09322/pgce-secondary-business-education-14-19-with-lead-programme-partners/overview/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09322/pgce-secondary-business-education-14-19-with-lead-programme-partners/entry-requirements/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/masters/courses/list/09324/pgce-secondary-english-with-lead-programme-partners/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "js-heavy",
+          "title": "PGCE Secondary English with Lead Programme Partners / Overview",
+          "htmlLength": 72333,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/masters/courses/list/09324/pgce-secondary-english-with-lead-programme-partners/",
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/",
+            "https://www.humanities.manchester.ac.uk/education/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09324/pgce-secondary-english-with-lead-programme-partners/all-content/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09324/pgce-secondary-english-with-lead-programme-partners/overview/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/09324/pgce-secondary-english-with-lead-programme-partners/entry-requirements/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/masters/courses/list/17843/pgce-secondary-economics-and-business-education-14-19-with-lead-programme-partners/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "js-heavy",
+          "title": "PGCE Secondary Economics and Business Education (14-19) with Lead Programme Partners / Overview",
+          "htmlLength": 71152,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/masters/courses/list/17843/pgce-secondary-economics-and-business-education-14-19-with-lead-programme-partners/",
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/",
+            "https://www.humanities.manchester.ac.uk/education/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/17843/pgce-secondary-economics-and-business-education-14-19-with-lead-programme-partners/all-content/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/17843/pgce-secondary-economics-and-business-education-14-19-with-lead-programme-partners/overview/",
+            "https://www.manchester.ac.uk/study/masters/courses/list/17843/pgce-secondary-economics-and-business-education-14-19-with-lead-programme-partners/entry-requirements/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Postgraduate research programmes at The University of Manchester",
+          "htmlLength": 61629,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/types/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/list/"
+          ]
+        },
+        {
+          "url": "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Research areas",
+          "htmlLength": 68319,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/",
+            "https://www.manchester.ac.uk/study/masters/courses/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/",
+            "https://www.manchester.ac.uk/a-z/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/types/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/list/",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/?code=AF",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/?code=EG",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/?code=AMP",
+            "https://www.manchester.ac.uk/study/postgraduate-research/programmes/research-areas/?code=MI"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "sheffield-postgraduate-taught",
+      "universityId": "the-university-of-sheffield",
+      "currentSeedUrls": [
+        "https://www.sheffield.ac.uk/postgraduate/taught/courses"
+      ],
+      "recommendation": {
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
+        "programmeLinkCount": 108,
+        "reason": "Configured seed already exposes programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
+          "source": "configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Postgraduate taught courses 2026-2027 | The University of Sheffield",
+          "htmlLength": 92180,
+          "programmeLinkCount": 108,
+          "programmeSamples": [
+            {
+              "id": "sheffield-advanced-computer-science-msc",
+              "name": "Advanced Computer Science MSc",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-computer-science-msc"
+            },
+            {
+              "id": "sheffield-advanced-mechanical-engineering-msc",
+              "name": "Advanced Mechanical Engineering MSc",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc"
+            },
+            {
+              "id": "sheffield-aerospace-engineering-msc",
+              "name": "Aerospace Engineering MSc",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc"
+            },
+            {
+              "id": "sheffield-applied-linguistics-and-tesol-ma",
+              "name": "Applied Linguistics and Tesol MA",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma"
+            },
+            {
+              "id": "sheffield-applied-professional-studies-education-ma",
+              "name": "Applied Professional Studies Education MA",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma"
+            },
+            {
+              "id": "sheffield-archaeology-and-heritage-ma",
+              "name": "Archaeology and Heritage MA",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma"
+            },
+            {
+              "id": "sheffield-architectural-design-ma",
+              "name": "Architectural Design MA",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma"
+            },
+            {
+              "id": "sheffield-artificial-intelligence-msc",
+              "name": "Artificial Intelligence MSc",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.sheffield.ac.uk/postgraduate/taught",
+            "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://www.sheffield.ac.uk/schools/programmes",
+            "https://www.sheffield.ac.uk/courses/subjects",
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/europubhealth-european-masters-programme-public-health-european-public-health-master",
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/law-graduate-programme-llb"
+          ]
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/europubhealth-european-masters-programme-public-health-european-public-health-master",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Europubhealth: European Masters Programme in Public Health European Public Health Master",
+          "htmlLength": 122819,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "sheffield-europubhealth-european-masters-programme-public-health-european-public-health-master",
+              "name": "Europubhealth European Masters Programme Public Health European Public Health Master",
+              "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/europubhealth-european-masters-programme-public-health-european-public-health-master"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/europubhealth-european-masters-programme-public-health-european-public-health-master",
+            "https://www.sheffield.ac.uk/postgraduate/taught",
+            "https://www.sheffield.ac.uk/courses/subjects",
+            "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://www.sheffield.ac.uk/schools/programmes",
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/home",
+            "https://www.sheffield.ac.uk/postgraduate/alumni-discount"
+          ]
+        },
+        {
+          "url": "https://usic.sheffield.ac.uk/programmes",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "University preparation programmes",
+          "htmlLength": 351691,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://usic.sheffield.ac.uk/programmes/international-foundation-year",
+            "https://usic.sheffield.ac.uk/programmes/international-year-one",
+            "https://usic.sheffield.ac.uk/programmes/pre-masters",
+            "https://usic.sheffield.ac.uk/programmes/pre-courses",
+            "https://usic.sheffield.ac.uk/programmes/subjects"
+          ]
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/courses/subjects",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Subject areas",
+          "htmlLength": 164421,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.sheffield.ac.uk/courses/subjects",
+            "https://www.sheffield.ac.uk/postgraduate/taught",
+            "https://usic.sheffield.ac.uk/",
+            "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://www.sheffield.ac.uk/schools/programmes",
+            "https://www.sheffield.ac.uk/courses/subjects/archaeology-heritage",
+            "https://www.sheffield.ac.uk/courses/subjects/architecture-landscape",
+            "https://www.sheffield.ac.uk/courses/subjects/artificial-intelligence-ai",
+            "https://www.sheffield.ac.uk/courses/subjects/biological-life-sciences"
+          ]
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/postgraduate/taught",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Postgraduate taught courses",
+          "htmlLength": 91979,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.sheffield.ac.uk/postgraduate/taught",
+            "https://www.sheffield.ac.uk/courses/subjects",
+            "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://www.sheffield.ac.uk/schools/programmes",
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026",
+            "https://www.sheffield.ac.uk/postgraduate/alumni-discount",
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/2025",
+            "https://www.sheffield.ac.uk/international/applying/pre-masters"
+          ]
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Applying essentials",
+          "htmlLength": 83561,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.sheffield.ac.uk/postgraduate/taught",
+            "https://www.sheffield.ac.uk/courses/subjects",
+            "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://www.sheffield.ac.uk/schools/programmes",
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/",
+            "https://www.sheffield.ac.uk/postgraduate/english-language",
+            "https://www.sheffield.ac.uk/postgraduate/deadlines"
+          ]
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/law-graduate-programme-llb",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Law (Graduate Programme) LLB",
+          "htmlLength": 165144,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/law-graduate-programme-llb",
+            "https://www.sheffield.ac.uk/postgraduate/taught",
+            "https://www.sheffield.ac.uk/courses/subjects",
+            "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://www.sheffield.ac.uk/schools/programmes",
+            "https://www.sheffield.ac.uk/postgraduate/taught/courses/home"
+          ]
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/schools/programmes",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Access to Sheffield Programmes",
+          "htmlLength": 73354,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.sheffield.ac.uk/schools/programmes",
+            "https://www.sheffield.ac.uk/schools/subject-sessions",
+            "https://www.sheffield.ac.uk/schools/programmes/years9-11",
+            "https://www.sheffield.ac.uk/schools/programmes/years12-13",
+            "https://www.sheffield.ac.uk/postgraduate/taught",
+            "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+            "https://usic.sheffield.ac.uk/programmes",
+            "https://www.sheffield.ac.uk/schools/programmes/skills-builder"
+          ]
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/study/postgraduate",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/study/postgraduate/subjects",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.sheffield.ac.uk/study/postgraduate/taught/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        }
+      ]
+    },
+    {
+      "name": "southampton-postgraduate-taught",
+      "universityId": "university-of-southampton",
+      "currentSeedUrls": [
+        "https://www.southampton.ac.uk/courses/postgraduate-taught"
+      ],
+      "recommendation": {
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
+        "programmeLinkCount": 234,
+        "reason": "Configured seed already exposes programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.southampton.ac.uk/courses/postgraduate-taught",
+          "source": "configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Course finder",
+          "htmlLength": 1487704,
+          "programmeLinkCount": 234,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            },
+            {
+              "id": "southampton-msc-accounting-and-finance-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Accounting and Finance Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-finance-masters-msc"
+            },
+            {
+              "id": "southampton-msc-accounting-and-management-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Accounting and Management Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-management-masters-msc"
+            },
+            {
+              "id": "southampton-meng-acoustical-engineering-typical-offer-aaa-ucas-course-code-h722-duration-4-years",
+              "name": "MEng Acoustical Engineering Typical offer: AAA UCAS course code: H722 Duration: 4 years",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/acoustical-engineering-degree-meng"
+            },
+            {
+              "id": "southampton-msc-acoustical-and-vibration-engineering-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Acoustical and Vibration Engineering Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/acoustical-vibration-engineering-masters-msc"
+            },
+            {
+              "id": "southampton-msc-actuarial-science-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Actuarial Science Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/actuarial-science-masters-msc"
+            },
+            {
+              "id": "southampton-msc-advanced-audiology-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Advanced Audiology Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-audiology-masters-msc"
+            },
+            {
+              "id": "southampton-mres-advanced-biological-sciences-typical-offer-2-2-degree-duration-1-year",
+              "name": "MRes Advanced Biological Sciences Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-biological-sciences-masters-mres"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses/environmental-spatial-design-ma",
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-degree-llb",
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-jd-pathway-degree-llb",
+            "https://www.southampton.ac.uk/courses/online-teaching-pgcert-1",
+            "https://www.southampton.ac.uk/courses"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/courses",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Course finder",
+          "htmlLength": 1487704,
+          "programmeLinkCount": 234,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            },
+            {
+              "id": "southampton-msc-accounting-and-finance-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Accounting and Finance Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-finance-masters-msc"
+            },
+            {
+              "id": "southampton-msc-accounting-and-management-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Accounting and Management Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-management-masters-msc"
+            },
+            {
+              "id": "southampton-meng-acoustical-engineering-typical-offer-aaa-ucas-course-code-h722-duration-4-years",
+              "name": "MEng Acoustical Engineering Typical offer: AAA UCAS course code: H722 Duration: 4 years",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/acoustical-engineering-degree-meng"
+            },
+            {
+              "id": "southampton-msc-acoustical-and-vibration-engineering-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Acoustical and Vibration Engineering Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/acoustical-vibration-engineering-masters-msc"
+            },
+            {
+              "id": "southampton-msc-actuarial-science-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Actuarial Science Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/actuarial-science-masters-msc"
+            },
+            {
+              "id": "southampton-msc-advanced-audiology-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Advanced Audiology Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-audiology-masters-msc"
+            },
+            {
+              "id": "southampton-mres-advanced-biological-sciences-typical-offer-2-2-degree-duration-1-year",
+              "name": "MRes Advanced Biological Sciences Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-biological-sciences-masters-mres"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses/environmental-spatial-design-ma",
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-degree-llb",
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-jd-pathway-degree-llb",
+            "https://www.southampton.ac.uk/courses/online-teaching-pgcert-1",
+            "https://www.southampton.ac.uk/courses"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/courses/postgraduate",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Course finder",
+          "htmlLength": 1487643,
+          "programmeLinkCount": 234,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            },
+            {
+              "id": "southampton-msc-accounting-and-finance-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Accounting and Finance Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-finance-masters-msc"
+            },
+            {
+              "id": "southampton-msc-accounting-and-management-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Accounting and Management Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-management-masters-msc"
+            },
+            {
+              "id": "southampton-meng-acoustical-engineering-typical-offer-aaa-ucas-course-code-h722-duration-4-years",
+              "name": "MEng Acoustical Engineering Typical offer: AAA UCAS course code: H722 Duration: 4 years",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/acoustical-engineering-degree-meng"
+            },
+            {
+              "id": "southampton-msc-acoustical-and-vibration-engineering-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Acoustical and Vibration Engineering Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/acoustical-vibration-engineering-masters-msc"
+            },
+            {
+              "id": "southampton-msc-actuarial-science-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Actuarial Science Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/actuarial-science-masters-msc"
+            },
+            {
+              "id": "southampton-msc-advanced-audiology-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Advanced Audiology Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-audiology-masters-msc"
+            },
+            {
+              "id": "southampton-mres-advanced-biological-sciences-typical-offer-2-2-degree-duration-1-year",
+              "name": "MRes Advanced Biological Sciences Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-biological-sciences-masters-mres"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses/environmental-spatial-design-ma",
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-degree-llb",
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-jd-pathway-degree-llb",
+            "https://www.southampton.ac.uk/courses/online-teaching-pgcert-1",
+            "https://www.southampton.ac.uk/courses"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/courses/environmental-spatial-design-ma",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Environmental and Spatial Design (MA)",
+          "htmlLength": 324348,
+          "programmeLinkCount": 18,
+          "programmeSamples": [
+            {
+              "id": "southampton-environmental-spatial-design-ma",
+              "name": "Environmental Spatial Design MA",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/environmental-spatial-design-ma"
+            },
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            },
+            {
+              "id": "southampton-ma-arts-and-cultural-leadership-typical-offer-2-2-degree-duration-1-year",
+              "name": "MA Arts and Cultural Leadership Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/arts-cultural-leadership-masters-ma"
+            },
+            {
+              "id": "southampton-ma-communication-design-typical-offer-2-2-degree-duration-1-year",
+              "name": "MA Communication Design Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/communication-design-masters-ma"
+            },
+            {
+              "id": "southampton-ma-contemporary-curating-typical-offer-2-2-degree-duration-1-year",
+              "name": "MA Contemporary Curating Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/contemporary-curating-masters-ma"
+            },
+            {
+              "id": "southampton-msc-creative-technologies-typical-offer-2-2-degree-duration-1-year",
+              "name": "MSc Creative Technologies Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/creative-technologies-masters-msc"
+            },
+            {
+              "id": "southampton-ma-design-innovation-and-technology-typical-offer-2-2-degree-duration-1-year",
+              "name": "MA Design Innovation and Technology Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-ma"
+            },
+            {
+              "id": "southampton-msc-design-innovation-and-technology-typical-offer-2-2-degree-duration-1-year",
+              "name": "MSc Design Innovation and Technology Typical offer: 2:2 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-msc"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses/environmental-spatial-design-ma",
+            "https://www.southampton.ac.uk/study/subjects/art-design-fashion",
+            "https://www.southampton.ac.uk/courses",
+            "https://www.southampton.ac.uk/study/subjects/acoustical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/aeronautical-astronautical-engineering"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/courses/online-teaching-pgcert-1",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Online Teaching (PGCert)",
+          "htmlLength": 323163,
+          "programmeLinkCount": 6,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            },
+            {
+              "id": "southampton-online-master-of-science-msc-in-education",
+              "name": "online Master of Science (MSc) in Education",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/education-online-masters-msc"
+            },
+            {
+              "id": "southampton-msc-education-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Education Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/education-masters-msc"
+            },
+            {
+              "id": "southampton-msc-education-online-typical-offer-2-1-degree-duration-2-to-3-years",
+              "name": "MSc Education (Online) Typical offer: 2:1 degree Duration: 2 to 3 years",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/education-online-masters-msc"
+            },
+            {
+              "id": "southampton-msc-education-management-and-leadership-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Education Management and Leadership Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/education-management-and-leadership-masters-msc"
+            },
+            {
+              "id": "southampton-msc-education-practice-and-innovation-typical-offer-2-1-degree-duration-1-year",
+              "name": "MSc Education Practice and Innovation Typical offer: 2:1 degree Duration: 1 year",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/education-practice-innovation-masters-msc"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses/online-teaching-pgcert-1",
+            "https://www.southampton.ac.uk/study/subjects/education",
+            "https://www.southampton.ac.uk/courses",
+            "https://www.southampton.ac.uk/study/subjects/acoustical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/aeronautical-astronautical-engineering"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/study/postgraduate-taught",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Postgraduate taught study",
+          "htmlLength": 295962,
+          "programmeLinkCount": 2,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            },
+            {
+              "id": "southampton-find-a-postgraduate-taught-course-browse-masters-pgdip-and-pgcert-courses-in-our-course-finder-filter-by-subject-area-to-compare-your-options-and-take-the-next-step",
+              "name": "Find a postgraduate taught course Browse master’s, PGDip and PGCert courses in our course finder. Filter by subject area to compare your options and take the next step.",
+              "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses",
+            "https://www.southampton.ac.uk/study/subjects/acoustical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/aeronautical-astronautical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/ageing-gerontology",
+            "https://www.southampton.ac.uk/study/subjects/archaeology"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/courses/law-accelerated-programme-degree-llb",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Law Accelerated Programme (LLB)",
+          "htmlLength": 386675,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-degree-llb",
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/study/subjects/law",
+            "https://www.southampton.ac.uk/study/pre-sessional",
+            "https://www.southampton.ac.uk/courses/2026-27/modules/laws2025",
+            "https://www.southampton.ac.uk/courses/2025-26/modules/laws2036"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/courses/law-accelerated-programme-jd-pathway-degree-llb",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Law Accelerated Programme JD Pathway (LLB)",
+          "htmlLength": 386534,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/courses/law-accelerated-programme-jd-pathway-degree-llb",
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/study/subjects/law",
+            "https://www.southampton.ac.uk/study/pre-sessional",
+            "https://www.southampton.ac.uk/courses/2026-27/modules/laws2025",
+            "https://www.southampton.ac.uk/courses/2026-27/modules/laws3153"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Pre-master's programmes for international students",
+          "htmlLength": 292356,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses",
+            "https://www.southampton.ac.uk/study/subjects/acoustical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/aeronautical-astronautical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/ageing-gerontology",
+            "https://www.southampton.ac.uk/study/subjects/archaeology"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Postgraduate taught applications",
+          "htmlLength": 310969,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/courses",
+            "https://www.southampton.ac.uk/courses/postgraduate?keyword_filter=",
+            "https://www.southampton.ac.uk/study/subjects/acoustical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/aeronautical-astronautical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/ageing-gerontology"
+          ]
+        },
+        {
+          "url": "https://www.southampton.ac.uk/study/subjects",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Find a subject",
+          "htmlLength": 512577,
+          "programmeLinkCount": 1,
+          "programmeSamples": [
+            {
+              "id": "southampton-online-master-s-degrees",
+              "name": "Online master's degrees",
+              "sourceUrl": "https://www.online.southampton.ac.uk/"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.southampton.ac.uk/study/subjects",
+            "https://www.southampton.ac.uk/study/postgraduate-taught",
+            "https://www.southampton.ac.uk/courses/postgraduate",
+            "https://www.southampton.ac.uk/courses/pre-masters-programmes",
+            "https://www.southampton.ac.uk/study/postgraduate-taught/apply",
+            "https://www.southampton.ac.uk/study/subjects/acoustical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/aeronautical-astronautical-engineering",
+            "https://www.southampton.ac.uk/study/subjects/ageing-gerontology",
+            "https://www.southampton.ac.uk/study/subjects/archaeology",
+            "https://www.southampton.ac.uk/study/subjects/art-design-fashion"
+          ]
+        },
+        {
+          "url": "http://www.southampton.ac.uk/study/postgraduate",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.southampton.ac.uk/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        }
+      ]
+    },
+    {
+      "name": "nottingham-postgraduate-taught",
+      "universityId": "the-university-of-nottingham",
+      "currentSeedUrls": [
+        "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught"
+      ],
+      "recommendation": {
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
+        "programmeLinkCount": 14,
+        "reason": "Configured seed already exposes programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
+          "source": "configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Postgraduate course search",
+          "htmlLength": 128958,
+          "programmeLinkCount": 14,
+          "programmeSamples": [
+            {
+              "id": "nottingham-accounting-and-finance-msc",
+              "name": "Accounting and Finance MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/accounting-and-finance-msc"
+            },
+            {
+              "id": "nottingham-additive-manufacturing-and-3d-printing-msc",
+              "name": "Additive Manufacturing and 3d Printing MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/additive-manufacturing-and-3d-printing-msc"
+            },
+            {
+              "id": "nottingham-advanced-building-performance-engineering-msc",
+              "name": "Advanced Building Performance Engineering MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-building-performance-engineering-msc"
+            },
+            {
+              "id": "nottingham-advanced-chemical-engineering-msc",
+              "name": "Advanced Chemical Engineering MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-chemical-engineering-msc"
+            },
+            {
+              "id": "nottingham-advanced-civil-engineering-msc",
+              "name": "Advanced Civil Engineering MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-civil-engineering-msc"
+            },
+            {
+              "id": "nottingham-advanced-clinical-practice-msc",
+              "name": "Advanced Clinical Practice MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-clinical-practice-msc"
+            },
+            {
+              "id": "nottingham-advanced-electrical-and-electronic-engineering-with-extended-research-msc",
+              "name": "Advanced Electrical and Electronic Engineering with Extended Research MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-electrical-and-electronic-engineering-with-extended-research-msc"
+            },
+            {
+              "id": "nottingham-advanced-materials-msc",
+              "name": "Advanced Materials MSc",
+              "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/advanced-materials-msc"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx",
+            "https://www.nottingham.ac.uk/Doctoral-Training-Centres/index.aspx"
+          ]
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/courses/postgraduate-taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/masters",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/masters/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/masters/courses/list/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/masters/courses/list/basic/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/postgraduate",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/postgraduate/subjects",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.nottingham.ac.uk/study/postgraduate/taught/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.nottingham.ac.uk/Doctoral-Training-Centres/index.aspx",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Doctoral training programmes - The University of Nottingham",
+          "htmlLength": 29577,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx",
+            "https://www.nottingham.ac.uk/doctoral-training-centres/why.aspx",
+            "https://www.nottingham.ac.uk/doctoral-training-centres/our-centres.aspx"
+          ]
+        },
+        {
+          "url": "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "A to Z index",
+          "htmlLength": 44862,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=A",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=B",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=C",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=D",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=E",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=F",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=G",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=H",
+            "https://www.nottingham.ac.uk/utilities/a-z/a-z.aspx?siteAZ_AtoZLetter=I"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "birmingham-postgraduate-taught",
+      "universityId": "university-of-birmingham",
+      "currentSeedUrls": [
+        "https://www.birmingham.ac.uk/study/postgraduate/taught"
+      ],
+      "recommendation": {
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught",
+        "programmeLinkCount": 3,
+        "reason": "Configured seed already exposes programme links."
+      },
+      "seedEvaluations": [
+        {
+          "url": "https://www.birmingham.ac.uk/study/postgraduate/taught",
+          "source": "configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Postgraduate taught study",
+          "htmlLength": 201946,
+          "programmeLinkCount": 3,
+          "programmeSamples": [
+            {
+              "id": "birmingham-msc-physiotherapy-pre-registration",
+              "name": "MSc Physiotherapy (Pre-registration)",
+              "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/sport-exercise/physio-pre-reg.aspx"
+            },
+            {
+              "id": "birmingham-msc-space-engineering",
+              "name": "MSc Space Engineering",
+              "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/metallurgy-materials/space-engineering.aspx"
+            },
+            {
+              "id": "birmingham-mba-full-time",
+              "name": "MBA (Full-time)",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba"
+          ]
+        },
+        {
+          "url": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Master of Business Administration (Full-time, UK)",
+          "htmlLength": 314532,
+          "programmeLinkCount": 9,
+          "programmeSamples": [
+            {
+              "id": "birmingham-mba",
+              "name": "MBA",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba"
+            },
+            {
+              "id": "birmingham-why-the-birmingham-mba",
+              "name": "Why the Birmingham MBA?",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba"
+            },
+            {
+              "id": "birmingham-mba-careers-support",
+              "name": "MBA Careers Support",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba"
+            },
+            {
+              "id": "birmingham-birmingham-mba-mailing-list",
+              "name": "Birmingham MBA Mailing List",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/campaigns/social-sciences/pg-mba/birmingham-mba-mailing-list"
+            },
+            {
+              "id": "birmingham-birmingham-mba-deloitte-consultancy-challenge",
+              "name": "Birmingham MBA Deloitte Consultancy Challenge",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/campaigns/social-sciences/birmingham-mba-deloitte-consultancy-challenge"
+            },
+            {
+              "id": "birmingham-sign-up-for-mba-updates",
+              "name": "Sign-up for MBA updates",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/campaigns/social-sciences/pg-mba/birmingham-mba-mailing-list"
+            },
+            {
+              "id": "birmingham-msc-ai-in-management",
+              "name": "MSc AI in Management",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/msc-ai-in-management"
+            },
+            {
+              "id": "birmingham-strategic-marketing-and-consulting-msc",
+              "name": "Strategic Marketing and Consulting MSc",
+              "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/marketing-courses/strategic-marketing-and-consulting-msc"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/msc-ai-in-management",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/marketing-courses/strategic-marketing-and-consulting-msc",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/accounting-and-finance-courses/msc-sustainable-finance"
+          ]
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/postgraduate/taught",
+          "source": "heuristic",
+          "status": "ok",
+          "classification": "usable",
+          "title": "Postgraduate taught study",
+          "htmlLength": 201946,
+          "programmeLinkCount": 3,
+          "programmeSamples": [
+            {
+              "id": "birmingham-msc-physiotherapy-pre-registration",
+              "name": "MSc Physiotherapy (Pre-registration)",
+              "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/sport-exercise/physio-pre-reg.aspx"
+            },
+            {
+              "id": "birmingham-msc-space-engineering",
+              "name": "MSc Space Engineering",
+              "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/metallurgy-materials/space-engineering.aspx"
+            },
+            {
+              "id": "birmingham-mba-full-time",
+              "name": "MBA (Full-time)",
+              "sourceUrl": "http://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba"
+            }
+          ],
+          "discoveredSeedUrls": [
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba"
+          ]
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/courses/postgraduate-taught",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/masters",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/masters/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/masters/courses/list/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/masters/courses/list/basic/",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/postgraduate",
+          "source": "heuristic",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Postgraduate study or research",
+          "htmlLength": 204047,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "http://www.birmingham.ac.uk/study/postgraduate/taught",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects"
+          ]
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/postgraduate/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/postgraduate/subjects",
+          "source": "heuristic",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Postgraduate subject areas",
+          "htmlLength": 240250,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/accounting-and-finance-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/aerospace-engineering-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/african-studies-and-anthropology-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/biosciences-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/chemical-engineering-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/chemistry-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/civil-engineering-courses",
+            "http://www.birmingham.ac.uk/study/postgraduate/subjects/classics-ancient-history-and-archaeology-courses"
+          ]
+        },
+        {
+          "url": "http://www.birmingham.ac.uk/study/postgraduate/taught/courses",
+          "source": "heuristic",
+          "status": "error",
+          "classification": "not-found",
+          "errorType": "FetchFailure",
+          "message": "HTTP 404",
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": []
+        },
+        {
+          "url": "https://www.birmingham.ac.uk/study/postgraduate/subjects",
+          "source": "linked-from-configured",
+          "status": "ok",
+          "classification": "no-candidates",
+          "title": "Postgraduate subject areas",
+          "htmlLength": 240250,
+          "programmeLinkCount": 0,
+          "programmeSamples": [],
+          "discoveredSeedUrls": [
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/accounting-and-finance-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/aerospace-engineering-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/african-studies-and-anthropology-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/biosciences-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/chemical-engineering-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/chemistry-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/civil-engineering-courses",
+            "https://www.birmingham.ac.uk/study/postgraduate/subjects/classics-ancient-history-and-archaeology-courses"
+          ]
+        }
+      ]
+    }
+  ]
+}

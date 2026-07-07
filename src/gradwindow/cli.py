@@ -9,6 +9,7 @@ from .approvals import approve_programme_candidates, approve_window
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
 from .generic_discovery_batch import run_generic_discovery_batch
+from .generic_seed_discovery import run_generic_seed_discovery
 from .intakes import migrate_application_intakes
 from .io import read_json
 from .monitor import monitor_universities, print_summary
@@ -128,6 +129,16 @@ def main() -> None:
         action="append",
         help="Limit to a university id or configured name. Can be repeated.",
     )
+    generic_seeds = subparsers.add_parser(
+        "discover-generic-seeds",
+        help="Audit configured generic discovery seeds and recommend replacements",
+    )
+    generic_seeds.add_argument(
+        "--only",
+        action="append",
+        help="Limit to a university id or configured name. Can be repeated.",
+    )
+    generic_seeds.add_argument("--max-candidate-seeds", type=int, default=12)
     deadlines = subparsers.add_parser(
         "update-deadlines", help="Run configured programme parsers"
     )
@@ -239,6 +250,12 @@ def main() -> None:
             dry_run=args.dry_run,
             replace_existing=args.replace_existing,
             only=set(args.only) if args.only else None,
+        )
+        print(json.dumps(report["summary"], ensure_ascii=False))
+    elif args.command == "discover-generic-seeds":
+        report = run_generic_seed_discovery(
+            only=set(args.only) if args.only else None,
+            max_candidate_seeds=args.max_candidate_seeds,
         )
         print(json.dumps(report["summary"], ensure_ascii=False))
     elif args.command == "update-deadlines":
