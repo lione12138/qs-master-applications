@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T08:16:23.794936+00:00",
+    "updatedAt": "2026-07-07T08:28:31.372150+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
@@ -12,16 +12,16 @@
     "readyToApprove": 19,
     "needsOpeningReview": 6,
     "needsOpeningDate": 21,
-    "needsAdapter": 2,
+    "needsAdapter": 0,
     "comingSoonMonitor": 4,
-    "deadlineUnavailableMonitor": 11
+    "deadlineUnavailableMonitor": 13
   },
   "results": [
     {
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T08:16:23.794936+00:00",
+      "checkedAt": "2026-07-07T08:28:31.372150+00:00",
       "catalogProgrammes": 2,
       "knownProgrammes": 1,
       "newCandidates": 2,
@@ -62,7 +62,7 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T08:16:27.622180+00:00",
+      "checkedAt": "2026-07-07T08:28:34.996928+00:00",
       "catalogProgrammes": 16,
       "knownProgrammes": 17,
       "newCandidates": 8,
@@ -85,7 +85,7 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T08:16:31.703725+00:00",
+      "checkedAt": "2026-07-07T08:28:38.739401+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -99,7 +99,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T08:16:35.538156+00:00",
+      "checkedAt": "2026-07-07T08:28:51.202173+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -113,7 +113,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T08:16:42.037504+00:00",
+      "checkedAt": "2026-07-07T08:28:56.704673+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -554,26 +554,7 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       }
     ],
-    "needsAdapter": [
-      {
-        "id": "new-programme:bristol-msc-management-international-human-resource-management",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Management (International Human Resource Management)",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-international-human-resource-management/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-msc-scientific-computing-with-data-science",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Scientific Computing with Data Science",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-scientific-computing-with-data-science/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      }
-    ],
+    "needsAdapter": [],
     "comingSoonMonitor": [
       {
         "id": "new-programme:nottingham-advanced-chemical-engineering-msc",
@@ -708,6 +689,24 @@
         "universityId": "the-university-of-nottingham",
         "programmeName": "Applied Sport and Exercise Medicine MSc",
         "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-sport-and-exercise-medicine-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:bristol-msc-management-international-human-resource-management",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Management (International Human Resource Management)",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-international-human-resource-management/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:bristol-msc-scientific-computing-with-data-science",
+        "universityId": "university-of-bristol",
+        "programmeName": "MSc Scientific Computing with Data Science",
+        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-scientific-computing-with-data-science/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
