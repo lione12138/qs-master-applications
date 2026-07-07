@@ -1,17 +1,17 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T08:28:31.372150+00:00",
+    "updatedAt": "2026-07-07T08:39:50.252330+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
   },
   "summary": {
     "schoolsConfigured": 10,
-    "schoolsSucceeded": 5,
-    "schoolsErrored": 5,
+    "schoolsSucceeded": 6,
+    "schoolsErrored": 4,
     "readyToApprove": 19,
     "needsOpeningReview": 6,
-    "needsOpeningDate": 21,
+    "needsOpeningDate": 24,
     "needsAdapter": 0,
     "comingSoonMonitor": 4,
     "deadlineUnavailableMonitor": 13
@@ -21,7 +21,7 @@
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T08:28:31.372150+00:00",
+      "checkedAt": "2026-07-07T08:39:50.252330+00:00",
       "catalogProgrammes": 2,
       "knownProgrammes": 1,
       "newCandidates": 2,
@@ -62,7 +62,7 @@
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T08:28:34.996928+00:00",
+      "checkedAt": "2026-07-07T08:39:53.364297+00:00",
       "catalogProgrammes": 16,
       "knownProgrammes": 17,
       "newCandidates": 8,
@@ -85,7 +85,7 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T08:28:38.739401+00:00",
+      "checkedAt": "2026-07-07T08:39:58.190634+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -99,7 +99,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T08:28:51.202173+00:00",
+      "checkedAt": "2026-07-07T08:40:02.141073+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -113,7 +113,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T08:28:56.704673+00:00",
+      "checkedAt": "2026-07-07T08:40:07.615788+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -124,13 +124,18 @@
       "batchStatus": "ok"
     },
     {
-      "batchStatus": "error",
-      "status": "error",
+      "status": "ok",
       "universityId": "university-of-birmingham",
-      "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/courses/taught",
-      "errorType": "FetchFailure",
-      "message": "HTTP 404",
-      "dryRun": false
+      "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught",
+      "checkedAt": "2026-07-07T08:40:10.256268+00:00",
+      "catalogProgrammes": 3,
+      "knownProgrammes": 1,
+      "newCandidates": 3,
+      "pendingCandidates": 3,
+      "programmesWithoutDeadlines": 0,
+      "programmesNeedingReview": 3,
+      "dryRun": false,
+      "batchStatus": "ok"
     }
   ],
   "classification": {
@@ -364,6 +369,33 @@
       }
     ],
     "needsOpeningDate": [
+      {
+        "id": "new-programme:birmingham-master-of-business-administration-full-time-uk",
+        "universityId": "university-of-birmingham",
+        "programmeName": "Master of Business Administration (Full-time, UK)",
+        "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:birmingham-physiotherapy-pre-registration-msc",
+        "universityId": "university-of-birmingham",
+        "programmeName": "Physiotherapy (pre-registration) MSc",
+        "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/sport-exercise/physio-pre-reg.aspx",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:birmingham-space-engineering-msc",
+        "universityId": "university-of-birmingham",
+        "programmeName": "Space Engineering MSc",
+        "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/metallurgy-materials/space-engineering.aspx",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
       {
         "id": "new-programme:uchicago-ms-in-data-science",
         "universityId": "university-of-chicago",

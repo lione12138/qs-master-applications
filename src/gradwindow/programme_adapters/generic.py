@@ -33,6 +33,13 @@ OPEN_TERMS = re.compile(
     r"\b(open|opens|opening|available|portal)\b",
     flags=re.IGNORECASE,
 )
+APPLICATION_OPEN_TERMS = re.compile(
+    r"\b(applications?|admissions?|application portal|portal)\b.{0,80}"
+    r"\b(open|opens|opening|available)\b|"
+    r"\b(open|opens|opening|available)\b.{0,80}"
+    r"\b(applications?|admissions?|application portal|portal)\b",
+    flags=re.IGNORECASE,
+)
 REJECT_TERMS = re.compile(
     r"\b(undergraduate|bachelor|phd|ph\.d|doctorate|doctoral|executive education|"
     r"short course|certificate|apprenticeship)\b",
@@ -453,6 +460,20 @@ def _dates_in_context(context: str) -> list[tuple[str, str, str]]:
             nearby = context[max(0, match.start() - 180) : match.end() + 180]
             if not APPLICATION_TERMS.search(nearby):
                 continue
+            if not re.search(
+                r"\b(application deadlines?|deadline|closing date|due date|"
+                r"applications? close|apply by|by)\b",
+                nearby,
+                flags=re.IGNORECASE,
+            ):
+                continue
+            if re.search(
+                r"\b(scholarships?|funding|loan|tuition fee discount|course structure|"
+                r"year\s+\d+|academic year)\b",
+                nearby,
+                flags=re.IGNORECASE,
+            ):
+                continue
             if REJECT_TERMS.search(short_prefix) and not DEGREE_RE.search(short_prefix):
                 continue
             if OPEN_TERMS.search(before_date) and not re.search(
@@ -479,7 +500,13 @@ def _opening_date_in_context(context: str) -> str | None:
     for date_format, pattern in DATE_PATTERNS:
         for match in pattern.finditer(context):
             nearby = context[max(0, match.start() - 120) : match.end() + 120]
-            if OPEN_TERMS.search(nearby):
+            if re.search(
+                r"\bopen\s+(day|days|event|events|evening|evenings|session|sessions)\b",
+                nearby,
+                flags=re.IGNORECASE,
+            ):
+                continue
+            if APPLICATION_OPEN_TERMS.search(nearby):
                 try:
                     return (
                         datetime.strptime(match.group(1), date_format)

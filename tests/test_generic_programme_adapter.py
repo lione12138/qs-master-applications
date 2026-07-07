@@ -122,6 +122,74 @@ def test_generic_adapter_uses_configured_opening_date_when_page_only_has_deadlin
     assert catalog.programmes[0].windows[0].opens_at is None
 
 
+def test_generic_adapter_does_not_treat_open_days_as_application_opening_dates() -> (
+    None
+):
+    adapter = GenericProgrammeAdapter(
+        GenericProgrammeConfig(
+            university_id="example-university",
+            school_prefix="example",
+            seed_urls=("https://example.edu/graduate/programmes",),
+            official_domains=("example.edu",),
+            default_application_url="https://example.edu/apply",
+            minimum_expected_programmes=1,
+            max_detail_pages=1,
+        )
+    )
+    detail_html = """
+    <html><body>
+      <h1>Master of Computer Science</h1>
+      <p>
+        Join our postgraduate open day on 31 July 2026.
+        Application deadline: 28 August 2026.
+      </p>
+    </body></html>
+    """
+    pages = {
+        "https://example.edu/graduate/programmes": CATALOG_HTML,
+        "https://example.edu/study/postgraduate/master-of-computer-science": detail_html,
+    }
+
+    catalog = adapter.parse_catalog_from_fetcher(lambda url: pages[url])
+
+    assert catalog.programmes[0].parse_status == "incomplete"
+    assert [
+        (window.opens_at, window.closes_at) for window in catalog.programmes[0].windows
+    ] == [(None, "2026-08-28")]
+
+
+def test_generic_adapter_ignores_scholarship_application_deadlines() -> None:
+    adapter = GenericProgrammeAdapter(
+        GenericProgrammeConfig(
+            university_id="example-university",
+            school_prefix="example",
+            seed_urls=("https://example.edu/graduate/programmes",),
+            official_domains=("example.edu",),
+            default_application_url="https://example.edu/apply",
+            minimum_expected_programmes=1,
+            max_detail_pages=1,
+        )
+    )
+    detail_html = """
+    <html><body>
+      <h1>Master of Computer Science</h1>
+      <p>
+        Scholarship information: £3,000 tuition fee discount.
+        Application deadline: 31 July 2026.
+      </p>
+    </body></html>
+    """
+    pages = {
+        "https://example.edu/graduate/programmes": CATALOG_HTML,
+        "https://example.edu/study/postgraduate/master-of-computer-science": detail_html,
+    }
+
+    catalog = adapter.parse_catalog_from_fetcher(lambda url: pages[url])
+
+    assert catalog.programmes[0].parse_status == "no-deadline"
+    assert catalog.programmes[0].windows == []
+
+
 def test_generic_adapter_uses_configured_school_deadline_when_page_has_apply_status() -> (
     None
 ):
