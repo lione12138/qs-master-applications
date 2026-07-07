@@ -24,6 +24,7 @@ from .programme_adapters.hkust import HKUSTAdapter
 from .programme_adapters.imperial import ImperialAdapter
 from .programme_adapters.mit import MITAdapter
 from .programme_adapters.polyu import PolyUAdapter
+from .programme_adapters.stanford import StanfordAdapter
 from .programme_adapters.static_catalog import StaticCatalogAdapter, StaticCatalogConfig
 from .programme_adapters.uq import UQAdapter
 from .programme_discovery import discover_programmes
@@ -67,6 +68,7 @@ PROGRAMME_ADAPTERS = {
     ),
     "mit": MITAdapter,
     "polyu": PolyUAdapter,
+    "stanford": StanfordAdapter,
     "uq": UQAdapter,
 }
 
