@@ -31,10 +31,7 @@ import {
 } from "./localization.js";
 import { needsManualCheck } from "./exception-status.js";
 import { filterRecordsToRanking } from "./ranking-filter.js";
-import {
-  groupEquivalentWindows,
-  groupWindowGroupsByUniversity,
-} from "./window-grouping.js";
+import { groupWindowRecordsForDisplay } from "./window-grouping.js";
 
 const PAGE_SIZE = 20;
 
@@ -957,8 +954,9 @@ function createGroup(status, records) {
       t("dataSource"),
     ],
   );
-  const windowGroups = groupEquivalentWindows(records);
-  const universityGroups = groupWindowGroupsByUniversity(windowGroups);
+  const universityGroups = groupWindowRecordsForDisplay(records, {
+    keyPrefix: status,
+  });
   const { items, start, end, total, page, totalPages } = paginate(
     status,
     universityGroups,

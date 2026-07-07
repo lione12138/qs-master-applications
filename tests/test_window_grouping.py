@@ -181,3 +181,73 @@ def test_university_groups_wrap_equivalent_window_groups() -> None:
             "collapsible": False,
         },
     ]
+
+
+def test_display_grouping_applies_to_every_status_bucket() -> None:
+    node = shutil.which("node")
+    assert node is not None, "Node.js is required for window grouping tests"
+    module_uri = (ROOT / "window-grouping.js").resolve().as_uri()
+    records_by_status = {
+        status: [
+            {
+                "id": f"{status}-mit-a",
+                "universityId": "mit",
+                "scopeType": "programme",
+                "scopeId": f"{status}-a",
+                "intake": "September 2027",
+                "applicantCategories": ["all"],
+                "opensAt": "2026-09-01",
+                "closesAt": "2026-12-01",
+                "dataStatus": "official",
+            },
+            {
+                "id": f"{status}-mit-b",
+                "universityId": "mit",
+                "scopeType": "programme",
+                "scopeId": f"{status}-b",
+                "intake": "September 2027",
+                "applicantCategories": ["all"],
+                "opensAt": "2026-09-15",
+                "closesAt": "2026-12-15",
+                "dataStatus": "official",
+            },
+        ]
+        for status in ("open", "upcoming", "future", "closed")
+    }
+    script = f"""
+      import {{ groupWindowRecordsForDisplay }} from {json.dumps(module_uri)};
+      const recordsByStatus = {json.dumps(records_by_status)};
+      const results = Object.fromEntries(
+        Object.entries(recordsByStatus).map(([status, records]) => {{
+          const groups = groupWindowRecordsForDisplay(records, {{
+            keyPrefix: status,
+          }});
+          return [status, groups.map((group) => ({{
+            key: group.key,
+            ids: group.records.map((record) => record.id),
+            windowGroupCount: group.windowGroups.length,
+            collapsible: group.collapsible,
+          }}))];
+        }})
+      );
+      console.log(JSON.stringify(results));
+    """
+
+    result = subprocess.run(
+        [node, "--input-type=module", "-e", script],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    groups_by_status = json.loads(result.stdout)
+
+    assert set(groups_by_status) == {"open", "upcoming", "future", "closed"}
+    for status, groups in groups_by_status.items():
+        assert groups == [
+            {
+                "key": f"{status}:university:mit",
+                "ids": [f"{status}-mit-a", f"{status}-mit-b"],
+                "windowGroupCount": 2,
+                "collapsible": True,
+            }
+        ]

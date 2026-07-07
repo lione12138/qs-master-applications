@@ -46,9 +46,10 @@ export function groupEquivalentWindows(records) {
   return groups;
 }
 
-export function groupWindowGroupsByUniversity(windowGroups) {
+export function groupWindowGroupsByUniversity(windowGroups, options = {}) {
   const groups = [];
   const groupsByKey = new Map();
+  const keyPrefix = options.keyPrefix ? `${options.keyPrefix}:` : "";
 
   windowGroups.forEach((windowGroup, index) => {
     const representative = windowGroup.records[0] || {};
@@ -64,7 +65,7 @@ export function groupWindowGroupsByUniversity(windowGroups) {
       return;
     }
 
-    const key = `university:${universityId}`;
+    const key = `${keyPrefix}university:${universityId}`;
     let group = groupsByKey.get(key);
     if (!group) {
       group = {
@@ -84,4 +85,11 @@ export function groupWindowGroupsByUniversity(windowGroups) {
   });
 
   return groups;
+}
+
+export function groupWindowRecordsForDisplay(records, options = {}) {
+  return groupWindowGroupsByUniversity(
+    groupEquivalentWindows(records),
+    options,
+  );
 }
