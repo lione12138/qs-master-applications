@@ -1,17 +1,18 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T08:49:09.862752+00:00",
+    "updatedAt": "2026-07-07T09:43:51.761509+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
   },
   "summary": {
     "schoolsConfigured": 10,
-    "schoolsSucceeded": 7,
-    "schoolsErrored": 3,
+    "schoolsSucceeded": 8,
+    "schoolsErrored": 0,
+    "schoolsSkipped": 2,
     "readyToApprove": 19,
     "needsOpeningReview": 6,
-    "needsOpeningDate": 34,
+    "needsOpeningDate": 54,
     "needsAdapter": 0,
     "comingSoonMonitor": 4,
     "deadlineUnavailableMonitor": 23
@@ -21,7 +22,7 @@
       "status": "ok",
       "universityId": "university-of-chicago",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T08:49:09.863799+00:00",
+      "checkedAt": "2026-07-07T09:43:51.762509+00:00",
       "catalogProgrammes": 2,
       "knownProgrammes": 1,
       "newCandidates": 2,
@@ -32,37 +33,40 @@
       "batchStatus": "ok"
     },
     {
-      "batchStatus": "error",
-      "status": "error",
+      "batchStatus": "skipped",
+      "status": "skipped",
       "universityId": "the-university-of-melbourne",
       "sourceUrl": "https://study.unimelb.edu.au/find/courses/graduate/",
-      "errorType": "FetchFailure",
-      "message": "HTTP 403",
+      "skipReason": "Official graduate course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
       "dryRun": false
     },
     {
-      "batchStatus": "error",
-      "status": "error",
+      "batchStatus": "skipped",
+      "status": "skipped",
       "universityId": "monash-university",
       "sourceUrl": "https://www.monash.edu/study/courses/find-a-course",
-      "errorType": "FetchFailure",
-      "message": "HTTP 403",
+      "skipReason": "Official course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
       "dryRun": false
     },
     {
-      "batchStatus": "error",
-      "status": "error",
+      "status": "ok",
       "universityId": "the-university-of-sydney",
-      "sourceUrl": "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework",
-      "errorType": "ValueError",
-      "message": "Generic crawler for the-university-of-sydney found 0 candidate programmes; expected at least 1",
-      "dryRun": false
+      "sourceUrl": "https://www.sydney.edu.au/courses/sitemap.xml",
+      "checkedAt": "2026-07-07T09:43:53.985812+00:00",
+      "catalogProgrammes": 20,
+      "knownProgrammes": 1,
+      "newCandidates": 20,
+      "pendingCandidates": 20,
+      "programmesWithoutDeadlines": 0,
+      "programmesNeedingReview": 20,
+      "dryRun": false,
+      "batchStatus": "ok"
     },
     {
       "status": "ok",
       "universityId": "university-of-bristol",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T08:49:13.326150+00:00",
+      "checkedAt": "2026-07-07T09:43:57.717885+00:00",
       "catalogProgrammes": 16,
       "knownProgrammes": 17,
       "newCandidates": 8,
@@ -76,7 +80,7 @@
       "status": "ok",
       "universityId": "the-university-of-manchester",
       "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
-      "checkedAt": "2026-07-07T08:49:16.852627+00:00",
+      "checkedAt": "2026-07-07T09:44:01.324250+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -90,7 +94,7 @@
       "status": "ok",
       "universityId": "the-university-of-sheffield",
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T08:49:20.361207+00:00",
+      "checkedAt": "2026-07-07T09:44:04.918019+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 19,
@@ -104,7 +108,7 @@
       "status": "ok",
       "universityId": "university-of-southampton",
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T08:49:24.180627+00:00",
+      "checkedAt": "2026-07-07T09:44:08.719629+00:00",
       "catalogProgrammes": 20,
       "knownProgrammes": 1,
       "newCandidates": 20,
@@ -118,7 +122,7 @@
       "status": "ok",
       "universityId": "the-university-of-nottingham",
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T08:49:29.227339+00:00",
+      "checkedAt": "2026-07-07T09:44:14.281228+00:00",
       "catalogProgrammes": 14,
       "knownProgrammes": 1,
       "newCandidates": 14,
@@ -132,7 +136,7 @@
       "status": "ok",
       "universityId": "university-of-birmingham",
       "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught",
-      "checkedAt": "2026-07-07T08:49:31.935449+00:00",
+      "checkedAt": "2026-07-07T09:44:17.056799+00:00",
       "catalogProgrammes": 3,
       "knownProgrammes": 1,
       "newCandidates": 3,
@@ -461,6 +465,186 @@
         "programmeName": "MSc Applied Mathematics",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09128/msc-applied-mathematics/",
         "windowCount": 8,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-executive-master-of-business-administration",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Executive Master of Business Administration",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/executive-master-of-business-administration.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-administrative-law-and-policy",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Administrative Law and Policy",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-administrative-law-and-policy.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-advanced-surgery-breast-surgery",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Advanced Surgery (Breast Surgery)",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-advanced-surgery-breast-surgery.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-agriculture-and-environment",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Agriculture and Environment",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-agriculture-and-environment.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-architecture",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Architecture",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-architecture.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-art-curating",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Art Curating",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-art-curating.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-bioethics",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Bioethics",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-bioethics.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-biomedical-science-genomics-and-precision-medicine",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Biomedical Science (Genomics and Precision Medicine)",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-biomedical-science-genomics-and-precision-medicine.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-biomedical-science-infection-and-immunity",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Biomedical Science (Infection and Immunity)",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-biomedical-science-infection-and-immunity.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-biostatistics",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Biostatistics",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-biostatistics.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-brain-and-mind-sciences",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Brain and Mind Sciences",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-brain-and-mind-sciences.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-building-performance-and-sustainable-design",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Building Performance and Sustainable Design",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-building-performance-and-sustainable-design.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-business-administration",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Business Administration",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-business-administration.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-business-administration-leadership-and-enterprise",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Business Administration (Leadership and Enterprise)",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-business-administration-leadership-and-enterprise.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-business-administration-technology-and-digital-strategy",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Business Administration (Technology and Digital Strategy)",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-business-administration-technology-and-digital-strategy.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-business-law",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Business Law",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-business-law.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-clinical-psychology",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Clinical Psychology",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-clinical-psychology.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-commerce",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Commerce",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-commerce0.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-commerce-extension",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Commerce (Extension)",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-commerce-extension.html",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:sydney-master-of-computer-science",
+        "universityId": "the-university-of-sydney",
+        "programmeName": "Master of Computer Science",
+        "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-computer-science.html",
+        "windowCount": 1,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },

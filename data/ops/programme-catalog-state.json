@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T08:49:31.935449+00:00",
+    "updatedAt": "2026-07-07T09:44:17.056799+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -11744,7 +11744,7 @@
     },
     "university-of-chicago": {
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
-      "checkedAt": "2026-07-07T08:49:09.863799+00:00",
+      "checkedAt": "2026-07-07T09:43:51.762509+00:00",
       "itemCount": 2,
       "applicationOpensAt": null,
       "catalogHash": "efc1313010c703efd9782d4a94f782aec9e4ae9e6574c89f4f30def5b33b23a6",
@@ -11769,7 +11769,7 @@
     },
     "university-of-bristol": {
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-07T08:49:13.326150+00:00",
+      "checkedAt": "2026-07-07T09:43:57.717885+00:00",
       "itemCount": 16,
       "applicationOpensAt": "2025-09-01",
       "catalogHash": "fcf4f7c1b4bba77b0a00205f971e2318aa1dd8c8eac8ad080e336bc36e1f44e7",
@@ -11906,7 +11906,7 @@
     },
     "the-university-of-manchester": {
       "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
-      "checkedAt": "2026-07-07T08:49:16.852627+00:00",
+      "checkedAt": "2026-07-07T09:44:01.324250+00:00",
       "itemCount": 20,
       "applicationOpensAt": null,
       "catalogHash": "f37bcb32f471bf6a766fb2be49f160b885ea674f90efe925fadbf62605ccaab7",
@@ -12075,7 +12075,7 @@
     },
     "the-university-of-sheffield": {
       "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-07T08:49:20.361207+00:00",
+      "checkedAt": "2026-07-07T09:44:04.918019+00:00",
       "itemCount": 20,
       "applicationOpensAt": "2025-09-15",
       "catalogHash": "de7ff0e0bd0ebc9aa291794a10a18584ac10d5236b742153d574f3e90fb1599b",
@@ -12244,7 +12244,7 @@
     },
     "university-of-southampton": {
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T08:49:24.180627+00:00",
+      "checkedAt": "2026-07-07T09:44:08.719629+00:00",
       "itemCount": 20,
       "applicationOpensAt": null,
       "catalogHash": "80a09b4c276c6d98fe3c260b5a276fb70b4183976d86351957adb0a00050eb34",
@@ -12413,7 +12413,7 @@
     },
     "the-university-of-nottingham": {
       "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/courses/courses.aspx?level=taught",
-      "checkedAt": "2026-07-07T08:49:29.227339+00:00",
+      "checkedAt": "2026-07-07T09:44:14.281228+00:00",
       "itemCount": 14,
       "applicationOpensAt": null,
       "catalogHash": "68d35964774446bfeccbe9316e3ff8955ec1d2a45c78d935440ab4b255227a23",
@@ -12534,7 +12534,7 @@
     },
     "university-of-birmingham": {
       "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught",
-      "checkedAt": "2026-07-07T08:49:31.935449+00:00",
+      "checkedAt": "2026-07-07T09:44:17.056799+00:00",
       "itemCount": 3,
       "applicationOpensAt": null,
       "catalogHash": "5df50f5b1b856a67882d701dcf0c9dc2ca547e4ff40a3485b9e1cc86bc21e55c",
@@ -12562,6 +12562,175 @@
           "department": "",
           "parseStatus": "incomplete",
           "deadlineHash": "0c6b19fdb3f2dcc2475052ce3ee14707fd092c61a67ba9fb6ea7da65e2e96ff9"
+        }
+      }
+    },
+    "the-university-of-sydney": {
+      "sourceUrl": "https://www.sydney.edu.au/courses/sitemap.xml",
+      "checkedAt": "2026-07-07T09:43:53.985812+00:00",
+      "itemCount": 20,
+      "applicationOpensAt": null,
+      "catalogHash": "78de351af741d0df0451de29ce70871a5be2c61f7b73eae02a17ff58ec2c7fb9",
+      "programmes": {
+        "sydney-executive-master-of-business-administration": {
+          "name": "Executive Master of Business Administration",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-administrative-law-and-policy": {
+          "name": "Master of Administrative Law and Policy",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-advanced-surgery-breast-surgery": {
+          "name": "Master of Advanced Surgery (Breast Surgery)",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-agriculture-and-environment": {
+          "name": "Master of Agriculture and Environment",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-architecture": {
+          "name": "Master of Architecture",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-art-curating": {
+          "name": "Master of Art Curating",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-bioethics": {
+          "name": "Master of Bioethics",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-biomedical-science-genomics-and-precision-medicine": {
+          "name": "Master of Biomedical Science (Genomics and Precision Medicine)",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-biomedical-science-infection-and-immunity": {
+          "name": "Master of Biomedical Science (Infection and Immunity)",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-biostatistics": {
+          "name": "Master of Biostatistics",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-brain-and-mind-sciences": {
+          "name": "Master of Brain and Mind Sciences",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-building-performance-and-sustainable-design": {
+          "name": "Master of Building Performance and Sustainable Design",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-business-administration": {
+          "name": "Master of Business Administration",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-business-administration-leadership-and-enterprise": {
+          "name": "Master of Business Administration (Leadership and Enterprise)",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-business-administration-technology-and-digital-strategy": {
+          "name": "Master of Business Administration (Technology and Digital Strategy)",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-business-law": {
+          "name": "Master of Business Law",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-clinical-psychology": {
+          "name": "Master of Clinical Psychology",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-commerce": {
+          "name": "Master of Commerce",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-commerce-extension": {
+          "name": "Master of Commerce (Extension)",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
+        },
+        "sydney-master-of-computer-science": {
+          "name": "Master of Computer Science",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f164a0548606d216393fbf92bc08798f53f7818d25f0e55e954a46a03382095b"
         }
       }
     }

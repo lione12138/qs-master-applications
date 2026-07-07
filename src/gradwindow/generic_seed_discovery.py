@@ -112,6 +112,36 @@ def audit_generic_seed_entry(
 ) -> dict[str, Any]:
     university_id = entry["universityId"]
     current_seed_urls = tuple(entry.get("seedUrls", []))
+    if entry.get("accessStatus") == "blocked":
+        return {
+            "name": entry.get("name"),
+            "universityId": university_id,
+            "currentSeedUrls": list(current_seed_urls),
+            "recommendation": {
+                "action": "markBlocked",
+                "category": "blockedByAccess",
+                "seedUrl": None,
+                "programmeLinkCount": 0,
+                "reason": entry.get(
+                    "accessReason", "Official catalogue is access-blocked."
+                ),
+            },
+            "seedEvaluations": [
+                {
+                    "url": seed_url,
+                    "source": "configured",
+                    "status": "skipped",
+                    "classification": "blockedByAccess",
+                    "message": entry.get(
+                        "accessReason", "Official catalogue is access-blocked."
+                    ),
+                    "programmeLinkCount": 0,
+                    "programmeSamples": [],
+                    "discoveredSeedUrls": [],
+                }
+                for seed_url in current_seed_urls
+            ],
+        }
     seed_sources: dict[str, str] = {
         seed_url: "configured" for seed_url in current_seed_urls
     }
@@ -190,7 +220,7 @@ def _evaluate_seed_url(
             "discoveredSeedUrls": [],
         }
 
-    soup = BeautifulSoup(html, "html.parser")
+    soup = _parse_soup(html)
     adapter = GenericProgrammeAdapter(
         GenericProgrammeConfig(
             university_id=entry["universityId"],
@@ -207,6 +237,7 @@ def _evaluate_seed_url(
             minimum_expected_programmes=int(entry.get("minimumExpected", 1)),
             max_detail_pages=int(entry.get("maxDetailPages", 25)),
             exclude_url_patterns=tuple(entry.get("excludeUrlPatterns", [])),
+            detail_url_replacements=_detail_url_replacements(entry),
         )
     )
     programmes = adapter._candidate_links(seed_url, html)
@@ -244,7 +275,7 @@ def _discover_seed_links(
     html: str,
     official_domains: tuple[str, ...],
 ) -> list[str]:
-    soup = BeautifulSoup(html, "html.parser")
+    soup = _parse_soup(html)
     urls: list[str] = []
     for link in soup.find_all("a", href=True):
         label = _normalise_text(link.get_text(" ", strip=True))
@@ -377,7 +408,24 @@ def _normalise_text(value: str) -> str:
     return re.sub(r"\s+", " ", value).strip()
 
 
+def _parse_soup(markup: str) -> BeautifulSoup:
+    stripped = markup.lstrip()
+    parser = (
+        "xml"
+        if stripped.startswith("<?xml") or stripped.startswith("<urlset")
+        else "html.parser"
+    )
+    return BeautifulSoup(markup, parser)
+
+
 def _generic_prefix(university_id: str) -> str:
     ignored = {"the", "university", "of", "and", "college", "institute"}
     parts = [part for part in university_id.split("-") if part not in ignored]
     return "-".join(parts[:3]) if parts else university_id.split("-", 1)[0]
+
+
+def _detail_url_replacements(entry: dict[str, Any]) -> tuple[tuple[str, str], ...]:
+    return tuple(
+        (rule["pattern"], rule["replacement"])
+        for rule in entry.get("detailUrlReplacements", [])
+    )

@@ -74,6 +74,7 @@ class GenericProgrammeConfig:
     max_detail_pages: int = 25
     follow_application_links: bool = False
     exclude_url_patterns: tuple[str, ...] = ()
+    detail_url_replacements: tuple[tuple[str, str], ...] = ()
 
 
 class GenericProgrammeAdapter:
@@ -138,43 +139,55 @@ class GenericProgrammeAdapter:
         base_url: str,
         html: str,
     ) -> list[DiscoveredProgramme]:
-        soup = BeautifulSoup(html, "html.parser")
+        soup = _parse_soup(html)
         programmes: dict[str, DiscoveredProgramme] = {}
         for link in soup.find_all("a", href=True):
             text = _normalise_text(link.get_text(" ", strip=True))
             href = urljoin(base_url, link["href"]).split("#", 1)[0]
-            if self._excluded_url(href):
-                continue
-            if not same_official_domain(href, list(self.config.official_domains)):
-                continue
-            score = _programme_link_score(href, text)
-            if score < 8:
-                continue
-            title = _candidate_title(text, href)
-            if not title:
-                continue
-            degree_type = _degree_type(title) or "Master"
-            programme_id = f"{self.config.school_prefix}-{_slug(title)}"
-            programmes[programme_id] = DiscoveredProgramme(
-                id=programme_id,
-                name=title,
-                degree_type=degree_type,
-                faculty="",
-                department="",
-                source_url=href,
-                application_url=self.config.default_application_url,
-                windows=[],
-                deadline_text="Programme found by generic official-site crawler.",
-                parse_status="no-deadline",
-            )
+            self._add_candidate(programmes, href, text)
+        for loc in soup.find_all("loc"):
+            href = _normalise_text(loc.get_text(" ", strip=True)).split("#", 1)[0]
+            self._add_candidate(programmes, href, "")
         return list(programmes.values())
+
+    def _add_candidate(
+        self,
+        programmes: dict[str, DiscoveredProgramme],
+        href: str,
+        text: str,
+    ) -> None:
+        href = self._detail_url(href)
+        if self._excluded_url(href):
+            return
+        if not same_official_domain(href, list(self.config.official_domains)):
+            return
+        score = _programme_link_score(href, text)
+        if score < 8:
+            return
+        title = _candidate_title(text, href)
+        if not title:
+            return
+        degree_type = _degree_type(title) or "Master"
+        programme_id = f"{self.config.school_prefix}-{_slug(title)}"
+        programmes[programme_id] = DiscoveredProgramme(
+            id=programme_id,
+            name=title,
+            degree_type=degree_type,
+            faculty="",
+            department="",
+            source_url=href,
+            application_url=self.config.default_application_url,
+            windows=[],
+            deadline_text="Programme found by generic official-site crawler.",
+            parse_status="no-deadline",
+        )
 
     def _programme_from_detail_page(
         self,
         url: str,
         html: str,
     ) -> DiscoveredProgramme | None:
-        soup = BeautifulSoup(html, "html.parser")
+        soup = _parse_soup(html)
         title = _page_title(soup)
         if self._excluded_url(url):
             return None
@@ -265,6 +278,12 @@ class GenericProgrammeAdapter:
             re.search(pattern, url) for pattern in self.config.exclude_url_patterns
         )
 
+    def _detail_url(self, url: str) -> str:
+        detail_url = url
+        for pattern, replacement in self.config.detail_url_replacements:
+            detail_url = re.sub(pattern, replacement, detail_url)
+        return detail_url
+
 
 def _programme_link_score(url: str, label: str) -> int:
     text = f"{url} {label}".lower()
@@ -302,6 +321,8 @@ def _candidate_title(label: str, url: str) -> str | None:
 
 
 def _title_from_slug(path_slug: str) -> str:
+    path_slug = re.sub(r"\.html?$", "", path_slug)
+    path_slug = re.sub(r"(?<=[a-z])0$", "", path_slug)
     replacements = {
         "ai": "AI",
         "ma": "MA",
@@ -323,6 +344,16 @@ def _title_from_slug(path_slug: str) -> str:
             value = part.lower()
         words.append(value or part.capitalize())
     return " ".join(words)
+
+
+def _parse_soup(markup: str) -> BeautifulSoup:
+    stripped = markup.lstrip()
+    parser = (
+        "xml"
+        if stripped.startswith("<?xml") or stripped.startswith("<urlset")
+        else "html.parser"
+    )
+    return BeautifulSoup(markup, parser)
 
 
 def _follow_application_link_texts(

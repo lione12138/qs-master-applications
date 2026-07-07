@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Seed pages for the generic official-site programme discovery runner. These entries create review candidates, not published application windows.",
-    "updatedAt": "2026-07-06"
+    "updatedAt": "2026-07-07"
   },
   "schools": [
     {
@@ -27,6 +27,8 @@
       "defaultIntake": "Semester 1 2027",
       "maxDetailPages": 20,
       "minimumExpected": 1,
+      "accessStatus": "blocked",
+      "accessReason": "Official graduate course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
       "enabled": true
     },
     {
@@ -39,6 +41,8 @@
       "defaultIntake": "Semester 1 2027",
       "maxDetailPages": 20,
       "minimumExpected": 1,
+      "accessStatus": "blocked",
+      "accessReason": "Official course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
       "enabled": true
     },
     {
@@ -46,11 +50,16 @@
       "universityId": "the-university-of-sydney",
       "prefix": "sydney",
       "seedUrls": [
-        "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework"
+        "https://www.sydney.edu.au/courses/sitemap.xml"
       ],
       "defaultIntake": "Semester 1 2027",
+      "defaultApplicationClosesAt": "2026-12-18",
+      "defaultDeadlineEvidence": "University of Sydney application dates page: postgraduate international applications generally close on 18 December of the year prior to Semester 1 commencement; domestic applications close on 31 January of the commencing year. Programme exceptions should be checked on individual course pages.",
       "maxDetailPages": 20,
       "minimumExpected": 1,
+      "excludeUrlPatterns": [
+        "/courses/courses/pr/"
+      ],
       "enabled": true
     },
     {

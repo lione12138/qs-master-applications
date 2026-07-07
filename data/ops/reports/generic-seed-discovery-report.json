@@ -1,19 +1,19 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T09:02:19.269567+00:00",
+    "updatedAt": "2026-07-07T09:42:47.161103+00:00",
     "description": "Audit configured generic programme-discovery seed pages and recommend better official catalogue entry points.",
     "maxCandidateSeeds": 12
   },
   "summary": {
     "schoolsAudited": 10,
-    "keep": 7,
+    "keep": 8,
     "replaceSeed": 0,
-    "manualReview": 1,
+    "manualReview": 0,
     "markBlocked": 2,
-    "usable": 7,
+    "usable": 8,
     "blockedByAccess": 2,
     "jsHeavy": 0,
-    "noCandidates": 1
+    "noCandidates": 0
   },
   "results": [
     {
@@ -320,137 +320,15 @@
         "category": "blockedByAccess",
         "seedUrl": null,
         "programmeLinkCount": 0,
-        "reason": "All evaluated seeds are blocked by access controls."
+        "reason": "Official graduate course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added."
       },
       "seedEvaluations": [
         {
           "url": "https://study.unimelb.edu.au/find/courses/graduate/",
           "source": "configured",
-          "status": "error",
+          "status": "skipped",
           "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/postgraduate/courses/taught",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/courses/postgraduate-taught",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/masters",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/masters/courses",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/masters/courses/list/",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/masters/courses/list/basic/",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/postgraduate",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/postgraduate/courses",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/postgraduate/subjects",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/postgraduate/taught",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.unimelb.edu.au/study/postgraduate/taught/courses",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
+          "message": "Official graduate course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": []
@@ -468,137 +346,15 @@
         "category": "blockedByAccess",
         "seedUrl": null,
         "programmeLinkCount": 0,
-        "reason": "All evaluated seeds are blocked by access controls."
+        "reason": "Official course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added."
       },
       "seedEvaluations": [
         {
           "url": "https://www.monash.edu/study/courses/find-a-course",
           "source": "configured",
-          "status": "error",
+          "status": "skipped",
           "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/postgraduate/courses/taught",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/courses/postgraduate-taught",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/masters",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/masters/courses",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/masters/courses/list/",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/masters/courses/list/basic/",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/postgraduate",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/postgraduate/courses",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/postgraduate/subjects",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/postgraduate/taught",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
-          "discoveredSeedUrls": []
-        },
-        {
-          "url": "https://www.monash.edu/study/postgraduate/taught/courses",
-          "source": "heuristic",
-          "status": "error",
-          "classification": "blockedByAccess",
-          "errorType": "FetchFailure",
-          "message": "HTTP 403",
+          "message": "Official course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": []
@@ -609,25 +365,66 @@
       "name": "sydney-postgraduate-coursework",
       "universityId": "the-university-of-sydney",
       "currentSeedUrls": [
-        "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework"
+        "https://www.sydney.edu.au/courses/sitemap.xml"
       ],
       "recommendation": {
-        "action": "manualReview",
-        "category": "no-candidates",
-        "seedUrl": "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework",
-        "programmeLinkCount": 0,
-        "reason": "No evaluated seed produced enough programme links."
+        "action": "keep",
+        "category": "usable",
+        "seedUrl": "https://www.sydney.edu.au/courses/sitemap.xml",
+        "programmeLinkCount": 172,
+        "reason": "Configured seed already exposes programme links."
       },
       "seedEvaluations": [
         {
-          "url": "https://www.sydney.edu.au/courses/search.html?type=Postgraduate%20coursework",
+          "url": "https://www.sydney.edu.au/courses/sitemap.xml",
           "source": "configured",
           "status": "ok",
-          "classification": "no-candidates",
-          "title": "Course search - The University of Sydney",
-          "htmlLength": 39444,
-          "programmeLinkCount": 0,
-          "programmeSamples": [],
+          "classification": "usable",
+          "title": "",
+          "htmlLength": 265729,
+          "programmeLinkCount": 172,
+          "programmeSamples": [
+            {
+              "id": "sydney-master-of-professional-engineering-accelerated-biomedical",
+              "name": "Master of Professional Engineering Accelerated Biomedical",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-professional-engineering-accelerated-biomedical.html"
+            },
+            {
+              "id": "sydney-master-of-administrative-law-and-policy",
+              "name": "Master of Administrative Law and Policy",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-administrative-law-and-policy.html"
+            },
+            {
+              "id": "sydney-master-of-architecture",
+              "name": "Master of Architecture",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-architecture.html"
+            },
+            {
+              "id": "sydney-master-of-biostatistics",
+              "name": "Master of Biostatistics",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-biostatistics.html"
+            },
+            {
+              "id": "sydney-master-of-brain-and-mind-sciences",
+              "name": "Master of Brain and Mind Sciences",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-brain-and-mind-sciences.html"
+            },
+            {
+              "id": "sydney-master-of-business-law",
+              "name": "Master of Business Law",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-business-law.html"
+            },
+            {
+              "id": "sydney-master-of-criminology",
+              "name": "Master of Criminology",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-criminology.html"
+            },
+            {
+              "id": "sydney-master-of-diagnostic-radiography",
+              "name": "Master of Diagnostic Radiography",
+              "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-diagnostic-radiography.html"
+            }
+          ],
           "discoveredSeedUrls": []
         },
         {
@@ -773,7 +570,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "Find a programme",
-          "htmlLength": 373294,
+          "htmlLength": 373412,
           "programmeLinkCount": 16,
           "programmeSamples": [
             {
@@ -836,7 +633,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "Study online",
-          "htmlLength": 78130,
+          "htmlLength": 78248,
           "programmeLinkCount": 8,
           "programmeSamples": [
             {
@@ -896,7 +693,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "LLM Law - Commercial Law",
-          "htmlLength": 99795,
+          "htmlLength": 99660,
           "programmeLinkCount": 2,
           "programmeSamples": [
             {
@@ -922,7 +719,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "LLM Law - Commercial Law",
-          "htmlLength": 99795,
+          "htmlLength": 99660,
           "programmeLinkCount": 1,
           "programmeSamples": [
             {
@@ -943,7 +740,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "LLM Law - Banking and Finance Law",
-          "htmlLength": 99469,
+          "htmlLength": 99334,
           "programmeLinkCount": 1,
           "programmeSamples": [
             {
@@ -964,7 +761,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Find your programme",
-          "htmlLength": 88378,
+          "htmlLength": 88243,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -993,7 +790,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Taught programmes",
-          "htmlLength": 74187,
+          "htmlLength": 74305,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -1013,7 +810,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Composites Manufacture",
-          "htmlLength": 96830,
+          "htmlLength": 96695,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -1028,7 +825,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Research programmes",
-          "htmlLength": 75285,
+          "htmlLength": 75403,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -1046,7 +843,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "LLM Law - Banking and Finance Law",
-          "htmlLength": 99469,
+          "htmlLength": 99334,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -1061,7 +858,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "LLM Law - Company Law and Corporate Governance",
-          "htmlLength": 99506,
+          "htmlLength": 99371,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -1076,7 +873,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Taught programmes",
-          "htmlLength": 74187,
+          "htmlLength": 74305,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -2232,7 +2029,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "Postgraduate course search",
-          "htmlLength": 128958,
+          "htmlLength": 128435,
           "programmeLinkCount": 14,
           "programmeSamples": [
             {
@@ -2450,7 +2247,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "Postgraduate taught study",
-          "htmlLength": 201946,
+          "htmlLength": 203256,
           "programmeLinkCount": 3,
           "programmeSamples": [
             {
@@ -2539,7 +2336,7 @@
           "status": "ok",
           "classification": "usable",
           "title": "Postgraduate taught study",
-          "htmlLength": 201946,
+          "htmlLength": 203256,
           "programmeLinkCount": 3,
           "programmeSamples": [
             {
@@ -2624,7 +2421,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Postgraduate study or research",
-          "htmlLength": 204047,
+          "htmlLength": 203119,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -2649,7 +2446,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Postgraduate subject areas",
-          "htmlLength": 240250,
+          "htmlLength": 241809,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [
@@ -2682,7 +2479,7 @@
           "status": "ok",
           "classification": "no-candidates",
           "title": "Postgraduate subject areas",
-          "htmlLength": 240250,
+          "htmlLength": 241809,
           "programmeLinkCount": 0,
           "programmeSamples": [],
           "discoveredSeedUrls": [

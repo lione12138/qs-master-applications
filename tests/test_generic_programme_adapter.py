@@ -316,3 +316,87 @@ def test_generic_adapter_can_follow_how_to_apply_links_for_deadlines() -> None:
         (window.round, window.opens_at, window.closes_at)
         for window in catalog.programmes[0].windows
     ] == [("Application deadline", None, "2027-01-29")]
+
+
+def test_generic_adapter_discovers_programmes_from_xml_sitemap() -> None:
+    adapter = GenericProgrammeAdapter(
+        GenericProgrammeConfig(
+            university_id="example-university",
+            school_prefix="example",
+            seed_urls=("https://example.edu/courses/sitemap.xml",),
+            official_domains=("example.edu",),
+            default_application_url="https://example.edu/apply",
+            default_application_closes_at="2026-12-18",
+            default_deadline_evidence=(
+                "Postgraduate applications close on 18 December 2026."
+            ),
+            minimum_expected_programmes=1,
+            max_detail_pages=1,
+        )
+    )
+    sitemap_xml = """
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+        <loc>https://example.edu/courses/courses/pc/master-of-commerce.html</loc>
+      </url>
+      <url>
+        <loc>https://example.edu/courses/courses/uc/bachelor-of-commerce.html</loc>
+      </url>
+    </urlset>
+    """
+    pages = {
+        "https://example.edu/courses/sitemap.xml": sitemap_xml,
+        "https://example.edu/courses/courses/pc/master-of-commerce.html": (
+            "<html><head><title>Master of Commerce</title></head>"
+            "<body><p>Apply now.</p></body></html>"
+        ),
+    }
+
+    catalog = adapter.parse_catalog_from_fetcher(lambda url: pages[url])
+
+    assert [programme.name for programme in catalog.programmes] == [
+        "Master of Commerce"
+    ]
+    assert catalog.programmes[0].windows[0].closes_at == "2026-12-18"
+
+
+def test_generic_adapter_applies_detail_url_replacements() -> None:
+    adapter = GenericProgrammeAdapter(
+        GenericProgrammeConfig(
+            university_id="example-university",
+            school_prefix="example",
+            seed_urls=("https://example.edu/courses/sitemap.xml",),
+            official_domains=("example.edu",),
+            default_application_url="https://example.edu/apply",
+            default_application_closes_at="2026-12-18",
+            default_deadline_evidence=(
+                "Postgraduate applications close on 18 December 2026."
+            ),
+            minimum_expected_programmes=1,
+            max_detail_pages=1,
+            detail_url_replacements=(
+                (r"(/courses/courses/pc/[^?#.]*[a-z])(\.html)$", r"\g<1>0\2"),
+            ),
+        )
+    )
+    sitemap_xml = """
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+        <loc>https://example.edu/courses/courses/pc/master-of-commerce.html</loc>
+      </url>
+    </urlset>
+    """
+    pages = {
+        "https://example.edu/courses/sitemap.xml": sitemap_xml,
+        "https://example.edu/courses/courses/pc/master-of-commerce0.html": (
+            "<html><head><title>Master of Commerce</title></head>"
+            "<body><p>Apply now.</p></body></html>"
+        ),
+    }
+
+    catalog = adapter.parse_catalog_from_fetcher(lambda url: pages[url])
+
+    assert catalog.programmes[0].source_url == (
+        "https://example.edu/courses/courses/pc/master-of-commerce0.html"
+    )
+    assert catalog.programmes[0].id == "example-master-of-commerce"

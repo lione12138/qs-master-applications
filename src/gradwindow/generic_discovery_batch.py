@@ -53,6 +53,20 @@ def run_generic_discovery_batch(
     results = []
     for entry in entries:
         university_id = entry["universityId"]
+        if entry.get("accessStatus") == "blocked":
+            results.append(
+                {
+                    "batchStatus": "skipped",
+                    "status": "skipped",
+                    "universityId": university_id,
+                    "sourceUrl": (entry.get("seedUrls") or [""])[0],
+                    "skipReason": entry.get(
+                        "accessReason", "Official catalogue is access-blocked."
+                    ),
+                    "dryRun": dry_run,
+                }
+            )
+            continue
         try:
             university = universities[university_id]
             adapter = GenericProgrammeAdapter(
@@ -86,6 +100,7 @@ def run_generic_discovery_batch(
                         entry.get("followApplicationLinks", False)
                     ),
                     exclude_url_patterns=tuple(entry.get("excludeUrlPatterns", [])),
+                    detail_url_replacements=_detail_url_replacements(entry),
                 )
             )
             result = discover_programmes(
@@ -133,6 +148,9 @@ def run_generic_discovery_batch(
             ),
             "schoolsErrored": sum(
                 item.get("batchStatus") == "error" for item in results
+            ),
+            "schoolsSkipped": sum(
+                item.get("batchStatus") == "skipped" for item in results
             ),
             "readyToApprove": len(classifications["readyToApprove"]),
             "needsOpeningReview": len(classifications["needsOpeningReview"]),
@@ -316,3 +334,10 @@ def _generic_prefix(university_id: str) -> str:
     ignored = {"the", "university", "of", "and", "college", "institute"}
     parts = [part for part in university_id.split("-") if part not in ignored]
     return "-".join(parts[:3]) if parts else university_id.split("-", 1)[0]
+
+
+def _detail_url_replacements(entry: dict[str, Any]) -> tuple[tuple[str, str], ...]:
+    return tuple(
+        (rule["pattern"], rule["replacement"])
+        for rule in entry.get("detailUrlReplacements", [])
+    )
