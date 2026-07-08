@@ -19,6 +19,7 @@ from .programme_adapters.cambridge import CambridgeAdapter
 from .programme_adapters.cuhk import CUHKAdapter
 from .programme_adapters.generic import GenericProgrammeAdapter, GenericProgrammeConfig
 from .programme_adapters.glasgow import GlasgowAdapter
+from .programme_adapters.harvard import HarvardAdapter
 from .programme_adapters.hku import HKUAdapter
 from .programme_adapters.hkust import HKUSTAdapter
 from .programme_adapters.imperial import ImperialAdapter
@@ -51,6 +52,7 @@ PROGRAMME_ADAPTERS = {
         )
     ),
     "glasgow": GlasgowAdapter,
+    "harvard": HarvardAdapter,
     "hku": HKUAdapter,
     "hkust": HKUSTAdapter,
     "imperial": ImperialAdapter,

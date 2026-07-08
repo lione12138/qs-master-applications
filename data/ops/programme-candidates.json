@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
-    "updatedAt": "2026-07-07T14:46:18.827071+00:00",
+    "updatedAt": "2026-07-07T15:44:51.145053+00:00",
     "lastBatchReplaceRemoved": 98
   },
   "items": [
@@ -19987,6 +19987,379 @@
       "parseStatus": "incomplete",
       "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
       "evidenceExcerpt": "Application deadlines International & EU applicants Due to demand for degree places on this programme, the University has an application process with application rounds which recognises that different geographical areas complete and submit their applications at different times of the year. This process aims to ensure fairness and equity to applicants from all geographic regions. Round 1 application dates: 1 October 2025 to 5 November 2025 All International and EU applications submitted within these dates will be reviewed with no priority given to any geographic region. You will receive our decision on your application by 16 January 2026. Round 2 application dates: 6 November 2025 to 17 December 2025 All International and EU applications submitted within these dates will be reviewed with no priority given to any geographic region. You will receive our decision on your application by 4 March 2026. Round 3 application dates: 18 December 2025 to 4 February 2026 Priority will be given to under-represented geographic regions. You will receive our decision on your application by 15 April 2026. Round 4 application dates: 5 February 2026 to 25 March 2026 Priority will be given to under-repr"
+    },
+    {
+      "id": "new-programme:harvard-computational-science-and-engineering-me",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/computational-science-and-engineering",
+      "programme": {
+        "id": "harvard-computational-science-and-engineering-me",
+        "universityId": "harvard-university",
+        "name": "ME Computational Science and Engineering",
+        "degreeType": "ME",
+        "faculty": "Engineering and Applied Sciences | Computational Science and Engineering",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/computational-science-and-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-01"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Computational Science and Engineering ME with a main application deadline of 2026-12-01. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-computational-science-and-engineering-sm",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/computational-science-and-engineering",
+      "programme": {
+        "id": "harvard-computational-science-and-engineering-sm",
+        "universityId": "harvard-university",
+        "name": "SM Computational Science and Engineering",
+        "degreeType": "SM",
+        "faculty": "Engineering and Applied Sciences | Computational Science and Engineering",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/computational-science-and-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-01"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Computational Science and Engineering SM with a main application deadline of 2026-12-01. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-data-science-sm",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/data-science",
+      "programme": {
+        "id": "harvard-data-science-sm",
+        "universityId": "harvard-university",
+        "name": "SM Data Science",
+        "degreeType": "SM",
+        "faculty": "Engineering and Applied Sciences | Data Science",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/data-science"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-01"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Data Science SM with a main application deadline of 2026-12-01. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-engineering-and-applied-sciences-me",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/engineering-and-applied-sciences",
+      "programme": {
+        "id": "harvard-engineering-and-applied-sciences-me",
+        "universityId": "harvard-university",
+        "name": "ME Engineering and Applied Sciences",
+        "degreeType": "ME",
+        "faculty": "Engineering and Applied Sciences",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/engineering-and-applied-sciences"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-01"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Engineering and Applied Sciences ME with a main application deadline of 2026-12-01. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-engineering-and-applied-sciences-sm",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/engineering-and-applied-sciences",
+      "programme": {
+        "id": "harvard-engineering-and-applied-sciences-sm",
+        "universityId": "harvard-university",
+        "name": "SM Engineering and Applied Sciences",
+        "degreeType": "SM",
+        "faculty": "Engineering and Applied Sciences",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/engineering-and-applied-sciences"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-01"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Engineering and Applied Sciences SM with a main application deadline of 2026-12-01. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-history-of-science-am",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/history-science",
+      "programme": {
+        "id": "harvard-history-of-science-am",
+        "universityId": "harvard-university",
+        "name": "AM History of Science",
+        "degreeType": "AM",
+        "faculty": "History of Science",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/history-science"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-01"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists History of Science AM with a main application deadline of 2026-12-01. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-middle-eastern-studies-am",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/middle-eastern-studies",
+      "programme": {
+        "id": "harvard-middle-eastern-studies-am",
+        "universityId": "harvard-university",
+        "name": "AM Middle Eastern Studies",
+        "degreeType": "AM",
+        "faculty": "Middle Eastern Studies",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/middle-eastern-studies"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-05"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Middle Eastern Studies AM with a main application deadline of 2027-01-05. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-ms-mba-sm",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/msmba",
+      "programme": {
+        "id": "harvard-ms-mba-sm",
+        "universityId": "harvard-university",
+        "name": "SM MS/MBA",
+        "degreeType": "SM",
+        "faculty": "MS/MBA",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/msmba"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "MS/MBA SM appears in the official Harvard Griffin GSAS program list, but no application-deadline date was published for that degree row."
+    },
+    {
+      "id": "new-programme:harvard-near-eastern-languages-and-civilizations-am",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/near-eastern-languages-and-civilizations",
+      "programme": {
+        "id": "harvard-near-eastern-languages-and-civilizations-am",
+        "universityId": "harvard-university",
+        "name": "AM Near Eastern Languages and Civilizations",
+        "degreeType": "AM",
+        "faculty": "Near Eastern Languages and Civilizations",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/near-eastern-languages-and-civilizations"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-15"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Near Eastern Languages and Civilizations AM with a main application deadline of 2026-12-15. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-regional-studieseast-asia-am",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/regional-studies-east-asia",
+      "programme": {
+        "id": "harvard-regional-studieseast-asia-am",
+        "universityId": "harvard-university",
+        "name": "AM Regional Studies–East Asia",
+        "degreeType": "AM",
+        "faculty": "Regional Studies–East Asia",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/regional-studies-east-asia"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-01"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Regional Studies–East Asia AM with a main application deadline of 2026-12-01. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-regional-studiesrussia-eastern-europe-and-central-asia-am",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/regional-studies-russia-eastern-europe-and-central-asia",
+      "programme": {
+        "id": "harvard-regional-studiesrussia-eastern-europe-and-central-asia-am",
+        "universityId": "harvard-university",
+        "name": "AM Regional Studies–Russia, Eastern Europe, and Central Asia",
+        "degreeType": "AM",
+        "faculty": "Regional Studies–Russia, Eastern Europe, and Central Asia",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/regional-studies-russia-eastern-europe-and-central-asia"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-05"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists Regional Studies–Russia, Eastern Europe, and Central Asia AM with a main application deadline of 2027-01-05. Applications for degree programs are available in September, but no exact opening date is published."
+    },
+    {
+      "id": "new-programme:harvard-south-asian-studies-am",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "harvard-university",
+      "detectedAt": "2026-07-07T15:44:51.145053+00:00",
+      "sourceUrl": "https://gsas.harvard.edu/program/south-asian-studies",
+      "programme": {
+        "id": "harvard-south-asian-studies-am",
+        "universityId": "harvard-university",
+        "name": "AM South Asian Studies",
+        "degreeType": "AM",
+        "faculty": "South Asian Studies",
+        "applicationUrl": "https://gsas.harvard.edu/apply",
+        "sourceUrl": "https://gsas.harvard.edu/program/south-asian-studies"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-15"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Harvard Griffin GSAS lists South Asian Studies AM with a main application deadline of 2026-12-15. Applications for degree programs are available in September, but no exact opening date is published."
     },
     {
       "id": "new-programme:hku-accounting-analytics-master",

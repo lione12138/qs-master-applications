@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T14:46:18.827071+00:00",
+    "updatedAt": "2026-07-07T15:44:51.145053+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -13108,6 +13108,111 @@
           "department": "Translational Research and Applied Medicine",
           "parseStatus": "incomplete",
           "deadlineHash": "bf04fc44cd3e994902bea308f990aea8c027f9ce84892912c18a3bc3d5579751"
+        }
+      }
+    },
+    "harvard-university": {
+      "sourceUrl": "https://gsas.harvard.edu/programs",
+      "checkedAt": "2026-07-07T15:44:51.145053+00:00",
+      "itemCount": 12,
+      "applicationOpensAt": null,
+      "catalogHash": "028ee8a8f3ca3759523d07147c5b0c49e5d6e86c373c75564bdda06221606147",
+      "programmes": {
+        "harvard-computational-science-and-engineering-me": {
+          "name": "ME Computational Science and Engineering",
+          "degreeType": "ME",
+          "faculty": "Engineering and Applied Sciences",
+          "department": "Computational Science and Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6071464f825a8c0ea5489674ca87637ecc6eeff1e6406f2248a0b2ddbfd552fe"
+        },
+        "harvard-computational-science-and-engineering-sm": {
+          "name": "SM Computational Science and Engineering",
+          "degreeType": "SM",
+          "faculty": "Engineering and Applied Sciences",
+          "department": "Computational Science and Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6071464f825a8c0ea5489674ca87637ecc6eeff1e6406f2248a0b2ddbfd552fe"
+        },
+        "harvard-data-science-sm": {
+          "name": "SM Data Science",
+          "degreeType": "SM",
+          "faculty": "Engineering and Applied Sciences",
+          "department": "Data Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6071464f825a8c0ea5489674ca87637ecc6eeff1e6406f2248a0b2ddbfd552fe"
+        },
+        "harvard-engineering-and-applied-sciences-me": {
+          "name": "ME Engineering and Applied Sciences",
+          "degreeType": "ME",
+          "faculty": "",
+          "department": "Engineering and Applied Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6071464f825a8c0ea5489674ca87637ecc6eeff1e6406f2248a0b2ddbfd552fe"
+        },
+        "harvard-engineering-and-applied-sciences-sm": {
+          "name": "SM Engineering and Applied Sciences",
+          "degreeType": "SM",
+          "faculty": "",
+          "department": "Engineering and Applied Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6071464f825a8c0ea5489674ca87637ecc6eeff1e6406f2248a0b2ddbfd552fe"
+        },
+        "harvard-history-of-science-am": {
+          "name": "AM History of Science",
+          "degreeType": "AM",
+          "faculty": "",
+          "department": "History of Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6071464f825a8c0ea5489674ca87637ecc6eeff1e6406f2248a0b2ddbfd552fe"
+        },
+        "harvard-middle-eastern-studies-am": {
+          "name": "AM Middle Eastern Studies",
+          "degreeType": "AM",
+          "faculty": "",
+          "department": "Middle Eastern Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8c156230813f5485a061c10c534e789caa6297b4a043a198475fe77083a5bbec"
+        },
+        "harvard-ms-mba-sm": {
+          "name": "SM MS/MBA",
+          "degreeType": "SM",
+          "faculty": "",
+          "department": "MS/MBA",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "harvard-near-eastern-languages-and-civilizations-am": {
+          "name": "AM Near Eastern Languages and Civilizations",
+          "degreeType": "AM",
+          "faculty": "",
+          "department": "Near Eastern Languages and Civilizations",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4037a62bac456431b59b3c43dfb0da70d4561e39fd783f1669cead29b110b37c"
+        },
+        "harvard-regional-studieseast-asia-am": {
+          "name": "AM Regional Studies–East Asia",
+          "degreeType": "AM",
+          "faculty": "",
+          "department": "Regional Studies–East Asia",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6071464f825a8c0ea5489674ca87637ecc6eeff1e6406f2248a0b2ddbfd552fe"
+        },
+        "harvard-regional-studiesrussia-eastern-europe-and-central-asia-am": {
+          "name": "AM Regional Studies–Russia, Eastern Europe, and Central Asia",
+          "degreeType": "AM",
+          "faculty": "",
+          "department": "Regional Studies–Russia, Eastern Europe, and Central Asia",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8c156230813f5485a061c10c534e789caa6297b4a043a198475fe77083a5bbec"
+        },
+        "harvard-south-asian-studies-am": {
+          "name": "AM South Asian Studies",
+          "degreeType": "AM",
+          "faculty": "",
+          "department": "South Asian Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4037a62bac456431b59b3c43dfb0da70d4561e39fd783f1669cead29b110b37c"
         }
       }
     }
