@@ -7,7 +7,7 @@ from dataclasses import dataclass, replace
 from datetime import datetime
 from urllib.parse import urljoin, urlparse
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, FeatureNotFound
 
 from ..discovery import same_official_domain
 from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
@@ -353,7 +353,12 @@ def _parse_soup(markup: str) -> BeautifulSoup:
         if stripped.startswith("<?xml") or stripped.startswith("<urlset")
         else "html.parser"
     )
-    return BeautifulSoup(markup, parser)
+    try:
+        return BeautifulSoup(markup, parser)
+    except FeatureNotFound:
+        if parser != "xml":
+            raise
+        return BeautifulSoup(markup, "html.parser")
 
 
 def _follow_application_link_texts(

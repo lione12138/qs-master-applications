@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+from bs4 import FeatureNotFound
+
+import gradwindow.programme_adapters.generic as generic_module
 from gradwindow.programme_adapters.generic import (
     GenericProgrammeAdapter,
     GenericProgrammeConfig,
@@ -400,3 +403,28 @@ def test_generic_adapter_applies_detail_url_replacements() -> None:
         "https://example.edu/courses/courses/pc/master-of-commerce0.html"
     )
     assert catalog.programmes[0].id == "example-master-of-commerce"
+
+
+def test_generic_sitemap_parser_falls_back_without_xml_parser(monkeypatch) -> None:
+    original_beautiful_soup = generic_module.BeautifulSoup
+
+    def beautiful_soup_without_xml(markup: str, parser: str):
+        if parser == "xml":
+            raise FeatureNotFound("xml parser unavailable")
+        return original_beautiful_soup(markup, parser)
+
+    monkeypatch.setattr(generic_module, "BeautifulSoup", beautiful_soup_without_xml)
+
+    soup = generic_module._parse_soup(
+        """
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <url>
+            <loc>https://example.edu/courses/master-of-commerce.html</loc>
+          </url>
+        </urlset>
+        """
+    )
+
+    assert soup.find("loc").get_text(strip=True) == (
+        "https://example.edu/courses/master-of-commerce.html"
+    )
