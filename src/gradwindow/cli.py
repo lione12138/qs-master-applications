@@ -319,8 +319,8 @@ def main() -> None:
             print_summary(
                 monitor_application_sources(workers=max(1, args.workers // 2))
             )
-            for adapter_factory in PROGRAMME_ADAPTERS.values():
-                discovery_report = discover_programmes(adapter_factory())
+            for name, adapter_factory in PROGRAMME_ADAPTERS.items():
+                discovery_report = _pipeline_discovery_report(name, adapter_factory)
                 print(json.dumps(discovery_report, ensure_ascii=False))
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
@@ -362,6 +362,22 @@ def _validate_or_exit() -> dict[str, int]:
         f"{summary['enabledParsers']} enabled parsers."
     )
     return summary
+
+
+def _pipeline_discovery_report(name: str, adapter_factory) -> dict:
+    adapter = adapter_factory()
+    try:
+        return discover_programmes(adapter)
+    except Exception as exc:
+        return {
+            "status": "error",
+            "adapter": name,
+            "universityId": adapter.university_id,
+            "sourceUrl": adapter.catalog_url,
+            "errorType": type(exc).__name__,
+            "message": str(exc)[:240],
+            "dryRun": False,
+        }
 
 
 def _university_by_id(university_id: str) -> dict:
