@@ -10,6 +10,7 @@ class DiscoveredWindow:
     applicant_categories: list[str] = field(default_factory=lambda: ["all"])
     opens_at: str | None = None
     intake: str | None = None
+    source_url: str | None = None
 
 
 @dataclass(slots=True)

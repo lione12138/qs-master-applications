@@ -27,6 +27,7 @@ def approve_window(
     candidates_path: Path = WINDOW_CANDIDATES_PATH,
     applications_path: Path = APPLICATIONS_PATH,
 ) -> dict:
+    approved_at = datetime.now(timezone.utc)
     candidates = read_json(candidates_path)
     candidate = next(
         (
@@ -46,7 +47,7 @@ def approve_window(
     if not isinstance(record, dict):
         raise ValueError(f"Candidate {candidate_id} has no application record")
     record = with_intake_details(record)
-    verified_at = datetime.now(timezone.utc).date().isoformat()
+    verified_at = approved_at.date().isoformat()
     record["verifiedAt"] = verified_at
     if candidate.get("type") == "parser-date-change":
         record["evidence"] = (
@@ -103,9 +104,11 @@ def approve_window(
         output_path=prediction_output,
         applications_path=applications_path,
     )
+    if applications_path == APPLICATIONS_PATH:
+        _write_window_candidate_evidence(record, candidate, approved_at)
     candidate["status"] = "approved"
     candidate["reviewedBy"] = reviewer
-    candidate["reviewedAt"] = datetime.now(timezone.utc).isoformat()
+    candidate["reviewedAt"] = approved_at.isoformat()
     write_json(candidates_path, candidates)
     return record
 
@@ -174,12 +177,12 @@ def approve_programme_candidates(
                     "opensAt": window["opensAt"],
                     "closesAt": window["closesAt"],
                     "applicationUrl": programme["applicationUrl"],
-                    "sourceUrl": programme["sourceUrl"],
+                    "sourceUrl": window.get("sourceUrl") or programme["sourceUrl"],
                     "verifiedAt": verified_at,
                     "evidence": _programme_window_evidence(
                         programme["name"],
                         window,
-                        programme["sourceUrl"],
+                        window.get("sourceUrl") or programme["sourceUrl"],
                     ),
                 }
             )
@@ -325,6 +328,42 @@ def _write_programme_candidate_evidence(
             "excerpt": excerpt,
             "excerptHash": excerpt_hash,
             "contentSelector": "programme-discovery-adapter",
+            "matchedTextBefore": "",
+            "matchedText": excerpt,
+            "matchedTextAfter": "",
+        },
+    )
+
+
+def _write_window_candidate_evidence(
+    record: dict,
+    candidate: dict,
+    captured_at: datetime,
+) -> None:
+    excerpt = (
+        candidate.get("evidenceExcerpt")
+        or record.get("evidence")
+        or (
+            f"Approved exact application window from {record['opensAt']} to "
+            f"{record['closesAt']}."
+        )
+    ).strip()
+    excerpt_hash = hashlib.sha256(excerpt.encode("utf-8")).hexdigest()
+    write_evidence_snapshot(
+        APPLICATIONS_PATH.parent / "evidence",
+        {
+            "recordId": record["id"],
+            "universityId": record["universityId"],
+            "sourceUrl": record["sourceUrl"],
+            "finalUrl": record["sourceUrl"],
+            "capturedAt": captured_at.isoformat(),
+            "contentHash": excerpt_hash,
+            "contentType": "text/plain; charset=utf-8",
+            "bytesRead": len(excerpt.encode("utf-8")),
+            "truncated": False,
+            "excerpt": excerpt,
+            "excerptHash": excerpt_hash,
+            "contentSelector": "window-approval-candidate",
             "matchedTextBefore": "",
             "matchedText": excerpt,
             "matchedTextAfter": "",

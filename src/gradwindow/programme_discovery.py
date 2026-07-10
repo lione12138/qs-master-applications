@@ -94,6 +94,7 @@ def discover_programmes(
                             "opensAt": window.opens_at,
                             "closesAt": window.closes_at,
                             "applicantCategories": window.applicant_categories,
+                            "sourceUrl": window.source_url,
                         }
                         for window in programme.windows
                     ],
@@ -173,6 +174,7 @@ def _candidate_record(
                 "opensAt": opens_at,
                 "opensAtBasis": opens_at_basis,
                 "closesAt": window.closes_at,
+                "sourceUrl": window.source_url or programme.source_url,
             }
         )
     has_unresolved_opening = any(window["opensAt"] is None for window in windows)

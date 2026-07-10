@@ -59,6 +59,18 @@
       "description": "Applicants using an application round shared by international and EU fee-status groups."
     },
     {
+      "id": "non-eu-efta",
+      "labelZh": "非欧盟/欧洲自贸区申请人",
+      "labelEn": "Non-EU/EFTA applicants",
+      "description": "Applicants who are outside the EU/EFTA admissions deadline category."
+    },
+    {
+      "id": "eu-efta",
+      "labelZh": "欧盟/欧洲自贸区申请人",
+      "labelEn": "EU/EFTA applicants",
+      "description": "Applicants using the EU/EFTA admissions deadline category."
+    },
+    {
       "id": "domestic-students",
       "labelZh": "本地/国内申请人",
       "labelEn": "Domestic students",

@@ -130,6 +130,7 @@ def test_early_round_before_shared_commencement_requires_opening_review(
             "opensAt": None,
             "opensAtBasis": "missing",
             "closesAt": "2025-08-01",
+            "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
         }
     ]
     assert "programme-specific opening date" in accountancy["reviewReason"]

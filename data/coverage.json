@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-10T16:15:10.395813+00:00",
+    "generatedAt": "2026-07-10T17:36:38.782835+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -14,16 +14,16 @@
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
     "universitiesWithPrograms": 189,
-    "universitiesWithWindows": 47,
-    "verifiedWindows": 2789,
-    "universitiesWithPredictions": 47,
-    "predictedWindows": 2788,
+    "universitiesWithWindows": 48,
+    "verifiedWindows": 2837,
+    "universitiesWithPredictions": 48,
+    "predictedWindows": 2836,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
       "select-target-programmes": 11,
-      "verify-exact-windows": 142,
-      "monitor-and-refresh": 47
+      "verify-exact-windows": 141,
+      "monitor-and-refresh": 48
     }
   },
   "batches": [
@@ -154,8 +154,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 1,
-      "predictedWindows": 104
+      "universitiesWithWindows": 2,
+      "predictedWindows": 152
     },
     {
       "batch": 11,
@@ -1686,10 +1686,10 @@
         "opensText": "Applications open 15 October",
         "notes": "Computer Science is in the selected-programme group with a 15 January deadline for non-EU/EFTA applicants. EU/EFTA applicants use the 1 April deadline. The page does not label these dates with a cycle year."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 37,
+      "windowCount": 48,
+      "predictionCount": 48,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-california-los-angeles-ucla",

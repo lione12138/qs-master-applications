@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Estimated next-cycle application windows",
-    "generatedFromApplicationsUpdatedAt": "2026-07-10T16:11:13.334153+00:00",
+    "generatedFromApplicationsUpdatedAt": "2026-07-10T17:24:33.076527+00:00",
     "official": false,
     "methodology": "calendar-date-shift-plus-one-year",
     "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
@@ -151,6 +151,1446 @@
       "sourceUrl": "https://www.epfl.ch/education/admission/admission-2/master-admission-criteria-application/",
       "sourceCycle": "September 2026",
       "basedOnVerifiedAt": "2026-07-06",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-aerospace-engineering-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-aerospace-engineering-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-aerospace-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-applied-mathematics-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-applied-mathematics-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-applied-mathematics-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-architecture-urbanism-and-building-sciences-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-architecture-urbanism-and-building-sciences-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-architecture-urbanism-and-building-sciences-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-computer-embedded-systems-engineering-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-computer-embedded-systems-engineering-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-computer-embedded-systems-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-computer-science-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-data-science-and-artificial-intelligence-technology-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-data-science-and-artificial-intelligence-technology-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-data-science-and-artificial-intelligence-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-design-for-interaction-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-design-for-interaction-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-design-for-interaction-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-electrical-engineering-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-electrical-engineering-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-electrical-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-integrated-product-design-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-integrated-product-design-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-integrated-product-design-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-management-of-technology-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-management-of-technology-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-management-of-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-strategic-product-design-msc-2027-non-eu-efta-early-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-strategic-product-design-msc-2027-non-eu-efta-early-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-strategic-product-design-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Non-EU/EFTA early MSc deadline",
+      "applicantCategories": [
+        "non-eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-01-15",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-aerospace-engineering-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-aerospace-engineering-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-aerospace-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-applied-geophysics-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-applied-geophysics-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-applied-geophysics-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-applied-mathematics-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-applied-mathematics-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-applied-mathematics-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-applied-physics-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-applied-physics-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-applied-physics-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-architecture-urbanism-and-building-sciences-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-architecture-urbanism-and-building-sciences-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-architecture-urbanism-and-building-sciences-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-biomedical-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-biomedical-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-biomedical-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-chemical-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-chemical-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-chemical-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-civil-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-civil-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-civil-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-complex-systems-engineering-and-management-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-complex-systems-engineering-and-management-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-complex-systems-engineering-and-management-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-computer-embedded-systems-engineering-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-computer-embedded-systems-engineering-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-computer-embedded-systems-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-computer-science-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-computer-science-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-computer-science-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-construction-management-and-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-construction-management-and-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-construction-management-and-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-data-science-and-artificial-intelligence-technology-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-data-science-and-artificial-intelligence-technology-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-data-science-and-artificial-intelligence-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-design-for-interaction-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-design-for-interaction-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-design-for-interaction-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-earth-climate-and-technology-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-earth-climate-and-technology-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-earth-climate-and-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-electrical-engineering-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-electrical-engineering-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-electrical-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-engineering-and-policy-analysis-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-engineering-and-policy-analysis-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-engineering-and-policy-analysis-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-environmental-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-environmental-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-environmental-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-geographical-information-management-and-applications-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-geographical-information-management-and-applications-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-geographical-information-management-and-applications-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-geomatics-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-geomatics-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-geomatics-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-industrial-ecology-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-industrial-ecology-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-industrial-ecology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-integrated-product-design-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-integrated-product-design-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-integrated-product-design-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-life-science-and-technology-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-life-science-and-technology-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-life-science-and-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-management-of-technology-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-management-of-technology-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-management-of-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-marine-technology-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-marine-technology-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-marine-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-materials-science-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-materials-science-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-materials-science-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-mechanical-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-mechanical-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-mechanical-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-metropolitan-analysis-design-and-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-metropolitan-analysis-design-and-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-metropolitan-analysis-design-and-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-nanobiology-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-nanobiology-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-nanobiology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-offshore-dredging-engineering-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-offshore-dredging-engineering-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-offshore-dredging-engineering-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-quantum-information-science-technology-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-quantum-information-science-technology-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-quantum-information-science-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-robotics-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-robotics-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-robotics-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-science-education-and-communication-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-science-education-and-communication-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-science-education-and-communication-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-strategic-product-design-msc-2027-eu-efta-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-strategic-product-design-msc-2027-eu-efta-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-strategic-product-design-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "EU/EFTA MSc deadline",
+      "applicantCategories": [
+        "eu-efta"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-sustainable-energy-technology-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-sustainable-energy-technology-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-sustainable-energy-technology-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-systems-control-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-systems-control-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-systems-control-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
+      "confidence": "low",
+      "confidenceReason": "Only one verified historical cycle is available.",
+      "evidenceCycleCount": 1,
+      "methodology": "calendar-date-shift-plus-one-year",
+      "disclaimer": "This is a non-official calendar-shift reference: the prior verified dates are moved forward exactly one calendar year. It is not a forecast of the university's actual dates; weekdays and policies may change."
+    },
+    {
+      "id": "prediction-tu-delft-transport-infrastructure-and-logistics-msc-2027-main-msc-deadline-next-cycle",
+      "basedOnRecordId": "tu-delft-transport-infrastructure-and-logistics-msc-2027-main-msc-deadline",
+      "universityId": "delft-university-of-technology",
+      "scopeType": "programme",
+      "scopeId": "tu-delft-transport-infrastructure-and-logistics-msc",
+      "intake": "September 2028",
+      "intakeDetails": {
+        "label": "September 2028",
+        "cycleYear": 2028,
+        "academicYearEnd": null,
+        "term": "fall",
+        "startMonth": 9
+      },
+      "round": "Main MSc deadline",
+      "applicantCategories": [
+        "all"
+      ],
+      "opensAt": "2027-10-15",
+      "closesAt": "2028-04-01",
+      "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+      "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+      "sourceCycle": "September 2027",
+      "basedOnVerifiedAt": "2026-07-10",
       "confidence": "low",
       "confidenceReason": "Only one verified historical cycle is available.",
       "evidenceCycleCount": 1,
