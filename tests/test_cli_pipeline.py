@@ -11,8 +11,9 @@ class FakeAdapter:
 
 
 def test_pipeline_discovery_report_returns_success_payload(monkeypatch) -> None:
-    def fake_discover(adapter):
+    def fake_discover(adapter, *, dry_run=False):
         assert isinstance(adapter, FakeAdapter)
+        assert dry_run is False
         return {"status": "ok", "catalogProgrammes": 3}
 
     monkeypatch.setattr(cli, "discover_programmes", fake_discover)
@@ -23,12 +24,13 @@ def test_pipeline_discovery_report_returns_success_payload(monkeypatch) -> None:
 
 
 def test_pipeline_discovery_report_converts_adapter_failure(monkeypatch) -> None:
-    def fake_discover(_adapter):
+    def fake_discover(_adapter, *, dry_run=False):
+        assert dry_run is True
         raise RuntimeError("HTTP 403")
 
     monkeypatch.setattr(cli, "discover_programmes", fake_discover)
 
-    report = cli._pipeline_discovery_report("example", FakeAdapter)
+    report = cli._pipeline_discovery_report("example", FakeAdapter, dry_run=True)
 
     assert report == {
         "status": "error",
@@ -37,6 +39,7 @@ def test_pipeline_discovery_report_converts_adapter_failure(monkeypatch) -> None
         "sourceUrl": "https://example.edu/programmes",
         "errorType": "RuntimeError",
         "message": "HTTP 403",
+        "dryRun": True,
     }
 
 

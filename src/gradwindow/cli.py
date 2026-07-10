@@ -204,20 +204,13 @@ def main() -> None:
         if args.university == "all":
             report = []
             for name, adapter_factory in PROGRAMME_ADAPTERS.items():
-                try:
-                    report.append(
-                        discover_programmes(adapter_factory(), dry_run=args.dry_run)
+                report.append(
+                    _pipeline_discovery_report(
+                        name,
+                        adapter_factory,
+                        dry_run=args.dry_run,
                     )
-                except Exception as exc:
-                    report.append(
-                        {
-                            "status": "error",
-                            "adapter": name,
-                            "errorType": type(exc).__name__,
-                            "message": str(exc)[:240],
-                            "dryRun": args.dry_run,
-                        }
-                    )
+                )
         else:
             report = discover_programmes(
                 PROGRAMME_ADAPTERS[args.university](),
@@ -367,11 +360,16 @@ def _validate_or_exit() -> dict[str, int]:
     return summary
 
 
-def _pipeline_discovery_report(name: str, adapter_factory) -> dict:
+def _pipeline_discovery_report(
+    name: str,
+    adapter_factory,
+    *,
+    dry_run: bool = False,
+) -> dict:
     adapter = None
     try:
         adapter = adapter_factory()
-        return discover_programmes(adapter)
+        return discover_programmes(adapter, dry_run=dry_run)
     except Exception as exc:
         return {
             "status": "error",
@@ -388,6 +386,7 @@ def _pipeline_discovery_report(name: str, adapter_factory) -> dict:
             ),
             "errorType": type(exc).__name__,
             "message": str(exc),
+            "dryRun": dry_run,
         }
 
 

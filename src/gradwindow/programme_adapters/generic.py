@@ -3,11 +3,12 @@ from __future__ import annotations
 import concurrent.futures
 import re
 import unicodedata
+import xml.etree.ElementTree as ET
 from dataclasses import dataclass, replace
 from datetime import datetime
 from urllib.parse import urljoin, urlparse
 
-from bs4 import BeautifulSoup, FeatureNotFound
+from bs4 import BeautifulSoup
 
 from ..discovery import same_official_domain
 from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
@@ -139,15 +140,18 @@ class GenericProgrammeAdapter:
         base_url: str,
         html: str,
     ) -> list[DiscoveredProgramme]:
-        soup = _parse_soup(html)
         programmes: dict[str, DiscoveredProgramme] = {}
+        for href in _sitemap_locations(html):
+            self._add_candidate(
+                programmes,
+                urljoin(base_url, href).split("#", 1)[0],
+                "",
+            )
+        soup = _parse_soup(html)
         for link in soup.find_all("a", href=True):
             text = _normalise_text(link.get_text(" ", strip=True))
             href = urljoin(base_url, link["href"]).split("#", 1)[0]
             self._add_candidate(programmes, href, text)
-        for loc in soup.find_all("loc"):
-            href = _normalise_text(loc.get_text(" ", strip=True)).split("#", 1)[0]
-            self._add_candidate(programmes, href, "")
         return list(programmes.values())
 
     def _add_candidate(
@@ -347,18 +351,33 @@ def _title_from_slug(path_slug: str) -> str:
 
 
 def _parse_soup(markup: str) -> BeautifulSoup:
+    return BeautifulSoup(markup, "html.parser")
+
+
+def _sitemap_locations(markup: str) -> list[str]:
     stripped = markup.lstrip()
-    parser = (
-        "xml"
-        if stripped.startswith("<?xml") or stripped.startswith("<urlset")
-        else "html.parser"
-    )
+    if not (
+        stripped.startswith("<?xml")
+        or stripped.startswith("<urlset")
+        or stripped.startswith("<sitemapindex")
+    ):
+        return []
     try:
-        return BeautifulSoup(markup, parser)
-    except FeatureNotFound:
-        if parser != "xml":
-            raise
-        return BeautifulSoup(markup, "html.parser")
+        root = ET.fromstring(markup)
+    except ET.ParseError:
+        return []
+    locations = []
+    for element in root.iter():
+        if _xml_local_name(element.tag) != "loc":
+            continue
+        location = _normalise_text(element.text or "")
+        if location:
+            locations.append(location)
+    return locations
+
+
+def _xml_local_name(tag: str) -> str:
+    return tag.rsplit("}", 1)[-1] if "}" in tag else tag
 
 
 def _follow_application_link_texts(
