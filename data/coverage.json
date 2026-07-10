@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-06T20:57:23.074698+00:00",
+    "generatedAt": "2026-07-10T16:15:10.395813+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -14,16 +14,16 @@
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
     "universitiesWithPrograms": 189,
-    "universitiesWithWindows": 46,
-    "verifiedWindows": 1644,
-    "universitiesWithPredictions": 46,
-    "predictedWindows": 1643,
+    "universitiesWithWindows": 47,
+    "verifiedWindows": 2789,
+    "universitiesWithPredictions": 47,
+    "predictedWindows": 2788,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
       "select-target-programmes": 11,
-      "verify-exact-windows": 143,
-      "monitor-and-refresh": 46
+      "verify-exact-windows": 142,
+      "monitor-and-refresh": 47
     }
   },
   "batches": [
@@ -51,7 +51,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 3,
       "universitiesWithWindows": 3,
-      "predictedWindows": 151
+      "predictedWindows": 233
     },
     {
       "batch": 3,
@@ -181,7 +181,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 2,
-      "predictedWindows": 31
+      "predictedWindows": 43
     },
     {
       "batch": 13,
@@ -233,7 +233,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 1,
-      "predictedWindows": 82
+      "predictedWindows": 1114
     },
     {
       "batch": 17,
@@ -245,8 +245,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 3,
-      "predictedWindows": 3
+      "universitiesWithWindows": 4,
+      "predictedWindows": 22
     },
     {
       "batch": 18,
@@ -731,9 +731,9 @@
         "opensText": "1–30 Nov 2025 or 1–30 Apr 2026",
         "notes": "The applicable window depends on the country of the applicant's Bachelor's degree and scholarship/direct-doctorate status."
       },
-      "programmeCount": 5,
-      "windowCount": 2,
-      "predictionCount": 2,
+      "programmeCount": 46,
+      "windowCount": 84,
+      "predictionCount": 84,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1902,9 +1902,9 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 17,
-      "windowCount": 30,
-      "predictionCount": 30,
+      "programmeCount": 23,
+      "windowCount": 42,
+      "predictionCount": 42,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -2454,9 +2454,9 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 14,
-      "windowCount": 82,
-      "predictionCount": 82,
+      "programmeCount": 197,
+      "windowCount": 1114,
+      "predictionCount": 1114,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -2526,10 +2526,10 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 20,
+      "windowCount": 19,
+      "predictionCount": 19,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "universidad-de-buenos-aires",

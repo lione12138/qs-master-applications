@@ -89,6 +89,8 @@ def test_official_target_cycle_replaces_the_matching_prediction(tmp_path) -> Non
         item
         for item in payload["predictions"]
         if item["universityId"] == source["universityId"]
+        and item["scopeType"] == source["scopeType"]
+        and item["scopeId"] == source["scopeId"]
         and item["round"] == source["round"]
         and item["intake"] == "Autumn 2027"
     ]

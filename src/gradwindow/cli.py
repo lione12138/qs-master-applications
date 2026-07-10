@@ -13,10 +13,16 @@ from .generic_seed_discovery import run_generic_seed_discovery
 from .intakes import migrate_application_intakes
 from .io import read_json
 from .monitor import monitor_universities, print_summary
-from .paths import APPLICATION_SOURCE_STATE_PATH, SITE_DIR, UNIVERSITIES_PATH
+from .paths import (
+    APPLICATION_SOURCE_STATE_PATH,
+    PROGRAMME_CANDIDATES_PATH,
+    SITE_DIR,
+    UNIVERSITIES_PATH,
+)
 from .predictions import generate_predictions
 from .programme_adapters.cambridge import CambridgeAdapter
 from .programme_adapters.cuhk import CUHKAdapter
+from .programme_adapters.eth import ETHAdapter
 from .programme_adapters.generic import GenericProgrammeAdapter, GenericProgrammeConfig
 from .programme_adapters.glasgow import GlasgowAdapter
 from .programme_adapters.harvard import HarvardAdapter
@@ -51,6 +57,7 @@ PROGRAMME_ADAPTERS = {
             default_application_opens_at="2025-10-01",
         )
     ),
+    "eth": ETHAdapter,
     "glasgow": GlasgowAdapter,
     "harvard": HarvardAdapter,
     "hku": HKUAdapter,
@@ -295,14 +302,10 @@ def main() -> None:
         )
     elif args.command == "approve-programmes":
         if args.university == "all":
-            report = {
-                adapter_factory.university_id: approve_programme_candidates(
-                    university_id=adapter_factory.university_id,
-                    reviewer=args.reviewer,
-                    parsed_only=not args.include_unparsed,
-                )
-                for adapter_factory in PROGRAMME_ADAPTERS.values()
-            }
+            report = _approve_all_programmes(
+                reviewer=args.reviewer,
+                parsed_only=not args.include_unparsed,
+            )
         else:
             report = approve_programme_candidates(
                 university_id=args.university,
@@ -319,8 +322,8 @@ def main() -> None:
             print_summary(
                 monitor_application_sources(workers=max(1, args.workers // 2))
             )
-            for adapter_factory in PROGRAMME_ADAPTERS.values():
-                discovery_report = discover_programmes(adapter_factory())
+            for name, adapter_factory in PROGRAMME_ADAPTERS.items():
+                discovery_report = _pipeline_discovery_report(name, adapter_factory)
                 print(json.dumps(discovery_report, ensure_ascii=False))
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
@@ -362,6 +365,54 @@ def _validate_or_exit() -> dict[str, int]:
         f"{summary['enabledParsers']} enabled parsers."
     )
     return summary
+
+
+def _pipeline_discovery_report(name: str, adapter_factory) -> dict:
+    adapter = None
+    try:
+        adapter = adapter_factory()
+        return discover_programmes(adapter)
+    except Exception as exc:
+        return {
+            "status": "error",
+            "adapter": name,
+            "universityId": getattr(
+                adapter,
+                "university_id",
+                getattr(adapter_factory, "university_id", None),
+            ),
+            "sourceUrl": getattr(
+                adapter,
+                "catalog_url",
+                getattr(adapter_factory, "catalog_url", None),
+            ),
+            "errorType": type(exc).__name__,
+            "message": str(exc),
+        }
+
+
+def _approve_all_programmes(*, reviewer: str, parsed_only: bool) -> dict:
+    report = {}
+    for university_id in _pending_programme_candidate_university_ids():
+        report[university_id] = approve_programme_candidates(
+            university_id=university_id,
+            reviewer=reviewer,
+            parsed_only=parsed_only,
+        )
+    return report
+
+
+def _pending_programme_candidate_university_ids() -> list[str]:
+    candidates = read_json(PROGRAMME_CANDIDATES_PATH, {"items": []})
+    return sorted(
+        {
+            item["universityId"]
+            for item in candidates.get("items", [])
+            if item.get("type") == "new-programme"
+            and item.get("status", "pending") == "pending"
+            and item.get("universityId")
+        }
+    )
 
 
 def _university_by_id(university_id: str) -> dict:

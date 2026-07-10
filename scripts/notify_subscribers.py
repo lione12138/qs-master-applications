@@ -90,15 +90,16 @@ def notify(events: list[dict]) -> bool:
                 f"HTTP {exc.code} {exc.reason}; body={response_body[:1000]}",
                 file=sys.stderr,
             )
-            raise SystemExit(1) from exc
+            return False
         except (URLError, TimeoutError) as exc:
             print(
                 f"Notification request failed: {type(exc).__name__}: {exc}",
                 file=sys.stderr,
             )
-            raise SystemExit(1) from exc
+            return False
         if not result.get("ok"):
-            raise SystemExit("Notification service rejected the request.")
+            print("Notification service rejected the request.", file=sys.stderr)
+            return False
         total_sent += result.get("sent", 0)
         total_failed += result.get("failed", 0)
     print(

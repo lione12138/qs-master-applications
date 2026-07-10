@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
-    "updatedAt": "2026-07-06",
+    "updatedAt": "2026-07-10",
     "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "programs": [
@@ -236,6 +236,132 @@
       "sourceUrl": "https://www.eur.nl/en/master/data-science-and-marketing-analytics"
     },
     {
+      "id": "eth-agricultural-sciences-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Agricultural Sciences",
+      "degreeType": "MSc",
+      "faculty": "System-oriented Natural Sciences | Agricultural Sciences",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/systemorientierte-wissenschaften/MSc-Agricultural-Sciences-Appendix.pdf"
+    },
+    {
+      "id": "eth-applied-mathematics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Applied Mathematics",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Applied Mathematics",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Mathematics-Appendix.pdf"
+    },
+    {
+      "id": "eth-architecture-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Architecture",
+      "degreeType": "MSc",
+      "faculty": "Architecture and Civil Engineering | Architecture",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/arch-baug/MSc-Architecture-Appendix.pdf"
+    },
+    {
+      "id": "eth-atmospheric-and-climate-science-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Atmospheric and Climate Science",
+      "degreeType": "MSc",
+      "faculty": "System-oriented Natural Sciences | Atmospheric and Climate Science",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/systemorientierte-wissenschaften/MSc-Atmospheric-Climate-Science-Appendix.pdf"
+    },
+    {
+      "id": "eth-biochemistry-chemical-biology-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Biochemistry – Chemical Biology",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Biochemistry – Chemical Biology",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Biochemistry-Appendix.pdf"
+    },
+    {
+      "id": "eth-biology-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Biology",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Biology",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Biology-Appendix.pdf"
+    },
+    {
+      "id": "eth-biomedical-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Biomedical Engineering",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Biomedical Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-Biomedical-Engineering-Appendix.pdf"
+    },
+    {
+      "id": "eth-biotechnology-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Biotechnology",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Biotechnology",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Biotechnology-Appendix.pdf"
+    },
+    {
+      "id": "eth-chemical-and-bioengineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Chemical and Bioengineering",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Chemical and Bioengineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Chemical-Bioengineering-Appendix.pdf"
+    },
+    {
+      "id": "eth-chemistry-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Chemistry",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Chemistry",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Chemistry-Appendix.pdf"
+    },
+    {
+      "id": "eth-civil-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Civil Engineering",
+      "degreeType": "MSc",
+      "faculty": "Architecture and Civil Engineering | Civil Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/arch-baug/MSc-Civil-Engineering-Appendix.pdf"
+    },
+    {
+      "id": "eth-comparative-and-international-studies-ma",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MA Comparative and International Studies",
+      "degreeType": "MA",
+      "faculty": "Management and Social Sciences | Comparative and International Studies",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/management-sozialwissenschaften/MA-CIS-Appendix.pdf"
+    },
+    {
+      "id": "eth-computational-biology-and-bioinformatics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Computational Biology and Bioinformatics",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Computational Biology and Bioinformatics",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-CBB-Appendix.pdf"
+    },
+    {
+      "id": "eth-computational-science-and-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Computational Science and Engineering",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Computational Science and Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Computational-Science-Engineering-Appendix.pdf"
+    },
+    {
       "id": "eth-computer-science-msc",
       "universityId": "eth-zurich-swiss-federal-institute-of-technology",
       "name": "MSc Computer Science",
@@ -244,6 +370,15 @@
       "programmeGroupId": "eth-masters-programmes",
       "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
       "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
+      "id": "eth-cyber-security-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Cyber Security",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Cyber Security",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc%20Cyber%20Security%20Appendix_Regulations.pdf"
     },
     {
       "id": "eth-data-science-msc",
@@ -256,6 +391,204 @@
       "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
     },
     {
+      "id": "eth-earth-sciences-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Earth Sciences",
+      "degreeType": "MSc",
+      "faculty": "System-oriented Natural Sciences | Earth Sciences",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/systemorientierte-wissenschaften/MSc-Earth-Sciences-Appendix.pdf"
+    },
+    {
+      "id": "eth-electrical-engineering-and-information-technology-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Electrical Engineering and Information Technology",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Electrical Engineering and Information Technology",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-ETIT-Appendix.pdf"
+    },
+    {
+      "id": "eth-energy-science-and-technology-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Energy Science and Technology",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Energy Science and Technology",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-Energy-Science-Technology-Appendix.pdf"
+    },
+    {
+      "id": "eth-environmental-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Environmental Engineering",
+      "degreeType": "MSc",
+      "faculty": "Architecture and Civil Engineering | Environmental Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/arch-baug/MSc-Environmental-Engineering-Appendix.pdf"
+    },
+    {
+      "id": "eth-environmental-sciences-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Environmental Sciences",
+      "degreeType": "MSc",
+      "faculty": "System-oriented Natural Sciences | Environmental Sciences",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/systemorientierte-wissenschaften/MSc-Environmental-Sciences-Appendix.pdf"
+    },
+    {
+      "id": "eth-food-science-and-nutrition-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Food Science and Nutrition",
+      "degreeType": "MSc",
+      "faculty": "System-oriented Natural Sciences | Food Science and Nutrition",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/systemorientierte-wissenschaften/MSc-Food-Science-Appendix.pdf"
+    },
+    {
+      "id": "eth-geomatics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Geomatics",
+      "degreeType": "MSc",
+      "faculty": "Architecture and Civil Engineering | Geomatics",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/arch-baug/MSc-Geomatics-Appendix.pdf"
+    },
+    {
+      "id": "eth-health-sciences-and-technology-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Health Sciences and Technology",
+      "degreeType": "MSc",
+      "faculty": "System-oriented Natural Sciences | Health Sciences and Technology",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/systemorientierte-wissenschaften/MSc-HST-Appendix.pdf"
+    },
+    {
+      "id": "eth-high-energy-physics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc High Energy Physics",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | High Energy Physics",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-High-Energy-Physics-Appendix.pdf"
+    },
+    {
+      "id": "eth-history-and-philosophy-of-knowledge-ma",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MA History and Philosophy of Knowledge",
+      "degreeType": "MA",
+      "faculty": "Management and Social Sciences | History and Philosophy of Knowledge",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/management-sozialwissenschaften/GPW-MA-Appendix.pdf"
+    },
+    {
+      "id": "eth-integrated-building-systems-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Integrated Building Systems",
+      "degreeType": "MSc",
+      "faculty": "Architecture and Civil Engineering | Integrated Building Systems",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/arch-baug/MSc-IBS-Appendix.pdf"
+    },
+    {
+      "id": "eth-interdisciplinary-sciences-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Interdisciplinary Sciences",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Interdisciplinary Sciences",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Interdisciplinary-Sciences-Appendix.pdf"
+    },
+    {
+      "id": "eth-landscape-architecture-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Landscape Architecture",
+      "degreeType": "MSc",
+      "faculty": "Architecture and Civil Engineering | Landscape Architecture",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/arch-baug/MSc_LArch_Appendix.pdf"
+    },
+    {
+      "id": "eth-management-technology-and-economics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Management, Technology, and Economics",
+      "degreeType": "MSc",
+      "faculty": "Management and Social Sciences | Management, Technology, and Economics",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/management-sozialwissenschaften/MSc-MTEC-Appendix.pdf"
+    },
+    {
+      "id": "eth-materials-science-and-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Materials Science and Engineering",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Materials Science and Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc_Materials%20Science%20and%20Engineering_Appendix.pdf"
+    },
+    {
+      "id": "eth-mathematics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Mathematics",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Mathematics",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Mathematics-Appendix.pdf"
+    },
+    {
+      "id": "eth-mechanical-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Mechanical Engineering",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Mechanical Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-Mechanical-Engineering-Appendix.pdf"
+    },
+    {
+      "id": "eth-nuclear-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Nuclear Engineering",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Nuclear Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-Nuclear-Engineering-Appendix.pdf"
+    },
+    {
+      "id": "eth-pharmaceutical-sciences-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Pharmaceutical Sciences",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Pharmaceutical Sciences",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-PharmSci-Appendix.pdf"
+    },
+    {
+      "id": "eth-pharmacy-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Pharmacy",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Pharmacy",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Pharmacy-Appendix.pdf"
+    },
+    {
+      "id": "eth-physics-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Physics",
+      "degreeType": "MSc",
+      "faculty": "Natural Sciences and Mathematics | Physics",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/naturwissenschaften/MSc-Physics-Appendix.pdf"
+    },
+    {
+      "id": "eth-process-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Process Engineering",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Process Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-Process-Engineering-Appendix.pdf"
+    },
+    {
       "id": "eth-quantitative-finance-msc",
       "universityId": "eth-zurich-swiss-federal-institute-of-technology",
       "name": "MSc Quantitative Finance",
@@ -266,6 +599,15 @@
       "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
     },
     {
+      "id": "eth-quantum-engineering-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Quantum Engineering",
+      "degreeType": "MSc",
+      "faculty": "Engineering Sciences | Natural Sciences and Mathematics | Quantum Engineering",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/ingenieurwissenschaften/MSc-QuantumEngineering-Appendix.pdf"
+    },
+    {
       "id": "eth-robotics-systems-control-msc",
       "universityId": "eth-zurich-swiss-federal-institute-of-technology",
       "name": "MSc Robotics, Systems and Control",
@@ -274,6 +616,33 @@
       "programmeGroupId": "eth-masters-programmes",
       "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
       "sourceUrl": "https://ethz.ch/en/studies/master/degree-programmes.html"
+    },
+    {
+      "id": "eth-science-technology-and-policy-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Science, Technology and Policy",
+      "degreeType": "MSc",
+      "faculty": "Management and Social Sciences | Science, Technology and Policy",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/management-sozialwissenschaften/STP-Appendix.pdf"
+    },
+    {
+      "id": "eth-space-systems-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Space Systems",
+      "degreeType": "MSc",
+      "faculty": "System-oriented Natural Sciences | Space Systems",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/systemorientierte-wissenschaften/MSc-SpaceSystems-Appendix.pdf"
+    },
+    {
+      "id": "eth-spatial-development-and-infrastructure-systems-msc",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "name": "MSc Spatial Development and Infrastructure Systems",
+      "degreeType": "MSc",
+      "faculty": "Architecture and Civil Engineering | Spatial Development and Infrastructure Systems",
+      "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+      "sourceUrl": "https://ethz.ch/content/dam/ethz/common/docs/master-profile/englisch/arch-baug/MSc-Spacial-Development-Appendix.pdf"
     },
     {
       "id": "eth-statistics-msc",
@@ -5959,6 +6328,177 @@
       "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-computer-science-msc"
     },
     {
+      "id": "sheffield-advanced-mechanical-engineering-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Advanced Mechanical Engineering MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc"
+    },
+    {
+      "id": "sheffield-aerospace-engineering-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Aerospace Engineering MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc"
+    },
+    {
+      "id": "sheffield-applied-linguistics-and-tesol-ma",
+      "universityId": "the-university-of-sheffield",
+      "name": "Applied Linguistics and TESOL MA",
+      "degreeType": "MA",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma"
+    },
+    {
+      "id": "sheffield-applied-professional-studies-in-education-ma",
+      "universityId": "the-university-of-sheffield",
+      "name": "Applied Professional Studies in Education MA",
+      "degreeType": "MA",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma"
+    },
+    {
+      "id": "sheffield-archaeology-and-heritage-ma",
+      "universityId": "the-university-of-sheffield",
+      "name": "Archaeology and Heritage MA",
+      "degreeType": "MA",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma"
+    },
+    {
+      "id": "sheffield-architectural-design-ma",
+      "universityId": "the-university-of-sheffield",
+      "name": "Architectural Design MA",
+      "degreeType": "MA",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma"
+    },
+    {
+      "id": "sheffield-artificial-intelligence-for-engineering-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Artificial Intelligence for Engineering MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc"
+    },
+    {
+      "id": "sheffield-artificial-intelligence-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Artificial Intelligence MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc"
+    },
+    {
+      "id": "sheffield-astrophysics-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Astrophysics MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc"
+    },
+    {
+      "id": "sheffield-biodiversity-and-conservation-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Biodiversity and Conservation MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc"
+    },
+    {
+      "id": "sheffield-biological-and-bioprocess-engineering-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Biological and Bioprocess Engineering MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc"
+    },
+    {
+      "id": "sheffield-biomedical-engineering-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Biomedical Engineering MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc"
+    },
+    {
+      "id": "sheffield-biomedical-science-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Biomedical Science MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc"
+    },
+    {
+      "id": "sheffield-business-analytics-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Business Analytics MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc"
+    },
+    {
+      "id": "sheffield-business-and-organisational-psychology-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Business and Organisational Psychology MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc"
+    },
+    {
+      "id": "sheffield-business-finance-and-economics-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Business Finance and Economics MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc"
+    },
+    {
+      "id": "sheffield-cancer-biology-and-therapeutics-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Cancer Biology and Therapeutics MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc"
+    },
+    {
+      "id": "sheffield-chemistry-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Chemistry MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc"
+    },
+    {
+      "id": "sheffield-civil-and-structural-engineering-msc",
+      "universityId": "the-university-of-sheffield",
+      "name": "Civil and Structural Engineering MSc",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.sheffield.ac.uk/postgraduate/taught/apply",
+      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc"
+    },
+    {
       "id": "sydney-computer-science-master",
       "universityId": "the-university-of-sydney",
       "name": "Master of Computer Science",
@@ -6471,6 +7011,60 @@
       "faculty": "",
       "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught-2025/msc-banking-regulation-and-financial-stability/"
+    },
+    {
+      "id": "bristol-msc-human-resource-management",
+      "universityId": "university-of-bristol",
+      "name": "MSc Human Resource Management",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-human-resource-management/"
+    },
+    {
+      "id": "bristol-msc-immersive-technologies-virtual-and-augmented-reality",
+      "universityId": "university-of-bristol",
+      "name": "MSc Immersive Technologies (Virtual and Augmented Reality)",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-immersive-technologies-virtual-and-augmented-reality/"
+    },
+    {
+      "id": "bristol-msc-management-csr-and-sustainability",
+      "universityId": "university-of-bristol",
+      "name": "MSc Management (CSR and Sustainability)",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-csr-and-sustainability/"
+    },
+    {
+      "id": "bristol-msc-management-entrepreneurship-and-innovation",
+      "universityId": "university-of-bristol",
+      "name": "MSc Management (Entrepreneurship and Innovation)",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-entrepreneurship-and-innovation/"
+    },
+    {
+      "id": "bristol-msc-psychology-conversion",
+      "universityId": "university-of-bristol",
+      "name": "MSc Psychology (Conversion)",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-conversion/"
+    },
+    {
+      "id": "bristol-msc-psychology-of-education-bps",
+      "universityId": "university-of-bristol",
+      "name": "MSc Psychology of Education BPS",
+      "degreeType": "MSC",
+      "faculty": "",
+      "applicationUrl": "https://www.bristol.ac.uk/study/postgraduate/apply/",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-psychology-of-education-bps/"
     },
     {
       "id": "ubc-computer-science-msc",
@@ -8953,6 +9547,114 @@
       "sourceUrl": "https://www.unige.ch/sciences/en/enseignements/formations/bachelor-master"
     },
     {
+      "id": "glasgow-adult-learning-community-development-youth-work-med",
+      "universityId": "university-of-glasgow",
+      "name": "MEd Adult Learning, Community Development & Youth Work",
+      "degreeType": "MEd",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/adult-learning-community-development-youth-work/"
+    },
+    {
+      "id": "glasgow-advanced-functional-materials-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Advanced Functional Materials",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/advanced-functional-materials/"
+    },
+    {
+      "id": "glasgow-advanced-imaging-sensing-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Advanced Imaging & Sensing",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/advanced-imaging-sensing/"
+    },
+    {
+      "id": "glasgow-advanced-statistics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Advanced Statistics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/advanced-statistics/"
+    },
+    {
+      "id": "glasgow-aerospace-engineering-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Aerospace Engineering & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/aerospace-engineering-management/"
+    },
+    {
+      "id": "glasgow-aerospace-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Aerospace Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/aerospace-engineering/"
+    },
+    {
+      "id": "glasgow-ai-in-education-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc AI in Education",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/ai-in-education/"
+    },
+    {
+      "id": "glasgow-ancient-cultures-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Ancient Cultures",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/ancient-cultures/"
+    },
+    {
+      "id": "glasgow-animal-welfare-science-ethics-law-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Animal Welfare Science, Ethics & Law",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/animal-welfare-science/"
+    },
+    {
+      "id": "glasgow-applied-conservation-science-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Applied Conservation Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/applied-conservation-science/"
+    },
+    {
+      "id": "glasgow-applied-linguistics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Applied Linguistics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/applied-linguistics/"
+    },
+    {
+      "id": "glasgow-archaeology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Archaeology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/archaeology/"
+    },
+    {
       "id": "glasgow-archives-records-information-management-msc",
       "universityId": "university-of-glasgow",
       "name": "MSc Archives, Records, & Information Management",
@@ -8971,6 +9673,276 @@
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/dress-textile-histories/"
     },
     {
+      "id": "glasgow-art-history-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt Art History",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/art-history/"
+    },
+    {
+      "id": "glasgow-art-history-technical-art-history-making-meaning-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt Art History: Technical Art History, Making & Meaning",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/technical-art-history/"
+    },
+    {
+      "id": "glasgow-astrophysics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Astrophysics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/astrophysics/"
+    },
+    {
+      "id": "glasgow-behavioural-science-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Behavioural Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/behavioural-science/"
+    },
+    {
+      "id": "glasgow-bioinformatics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Bioinformatics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/bioinformatics/"
+    },
+    {
+      "id": "glasgow-biomedical-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Biomedical Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/biomedical-engineering/"
+    },
+    {
+      "id": "glasgow-biomedical-sciences-mres",
+      "universityId": "university-of-glasgow",
+      "name": "MRes Biomedical Sciences",
+      "degreeType": "MRes",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/biomedical-sciences-mres/"
+    },
+    {
+      "id": "glasgow-biomedical-sciences-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Biomedical Sciences",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/biomedical-science-msc/"
+    },
+    {
+      "id": "glasgow-biotechnology-industrial-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Biotechnology, Industrial",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/industrial-biotechnology/"
+    },
+    {
+      "id": "glasgow-biotechnology-industrial-with-industry-training-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Biotechnology, Industrial (with Industry Training)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/industrial-biotechnology-with-industry-training/"
+    },
+    {
+      "id": "glasgow-biotechnology-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Biotechnology & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/biotechnology-management/"
+    },
+    {
+      "id": "glasgow-biotechnology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Biotechnology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/biotechnology/"
+    },
+    {
+      "id": "glasgow-business-analytics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Business Analytics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/business-analytics/"
+    },
+    {
+      "id": "glasgow-cancer-research-precision-oncology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Cancer Research & Precision Oncology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/cancer-research-precision-oncology/"
+    },
+    {
+      "id": "glasgow-cancer-research-with-specialism-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Cancer Research (with specialism)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/cancer-research-with-specialism/"
+    },
+    {
+      "id": "glasgow-cardiovascular-metabolic-disease-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Cardiovascular & Metabolic Disease",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/cardiovascular-metabolic-disease/"
+    },
+    {
+      "id": "glasgow-chemistry-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Chemistry",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/chemistry/"
+    },
+    {
+      "id": "glasgow-chemistry-with-medicinal-chemistry-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Chemistry with Medicinal Chemistry",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/chemistry-medicinal-chemistry/"
+    },
+    {
+      "id": "glasgow-children-s-literature-literacies-med",
+      "universityId": "university-of-glasgow",
+      "name": "MEd Children's Literature & Literacies",
+      "degreeType": "MEd",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/childrens-literature-literacies/"
+    },
+    {
+      "id": "glasgow-city-planning-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc City Planning",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/city-planning/"
+    },
+    {
+      "id": "glasgow-city-planning-real-estate-development-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc City Planning & Real Estate Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/city-planning-real-estate-development/"
+    },
+    {
+      "id": "glasgow-civil-engineering-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Civil Engineering & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/civil-engineering-management/"
+    },
+    {
+      "id": "glasgow-civil-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Civil Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/civil-engineering/"
+    },
+    {
+      "id": "glasgow-classics-ancient-history-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Classics & Ancient History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/classics/"
+    },
+    {
+      "id": "glasgow-climate-environmental-science-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Climate & Environmental Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/climateenvironmentalscience/"
+    },
+    {
+      "id": "glasgow-climate-law-justice-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM Climate Law & Justice",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/climate-law-justice/"
+    },
+    {
+      "id": "glasgow-clinical-trials-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Clinical Trials",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/clinical-trials/"
+    },
+    {
+      "id": "glasgow-comparative-literature-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt Comparative Literature",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/comparativeliterature/"
+    },
+    {
+      "id": "glasgow-computational-geoscience-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Computational Geoscience",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computational-geoscience/"
+    },
+    {
+      "id": "glasgow-computer-systems-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Computer Systems Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computersystemsengineering/"
+    },
+    {
       "id": "glasgow-computing-science-msc",
       "universityId": "university-of-glasgow",
       "name": "MSc Computing Science",
@@ -8981,6 +9953,24 @@
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/computingscience/"
     },
     {
+      "id": "glasgow-corporate-finance-banking-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Corporate Finance & Banking",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/corporate-finance-banking/"
+    },
+    {
+      "id": "glasgow-corporate-financial-law-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM Corporate & Financial Law",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/corporate-financial-law/"
+    },
+    {
       "id": "glasgow-creative-industries-cultural-policy-msc",
       "universityId": "university-of-glasgow",
       "name": "MSc Creative Industries & Cultural Policy",
@@ -8988,6 +9978,15 @@
       "faculty": "",
       "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/creative-industries-cultural-policy/"
+    },
+    {
+      "id": "glasgow-creative-sound-design-audiovisual-media-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Creative Sound Design & Audiovisual Media",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/creative-sound-design-audiovisual-media/"
     },
     {
       "id": "glasgow-creative-writing-mlitt",
@@ -9008,6 +10007,105 @@
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/creativewritingdistancelearning/"
     },
     {
+      "id": "glasgow-criminology-criminal-justice-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Criminology & Criminal Justice",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/criminology-criminal-justice/"
+    },
+    {
+      "id": "glasgow-cybersecurity-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Cybersecurity",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/cybersecurity/"
+    },
+    {
+      "id": "glasgow-data-analytics-for-economics-finance-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Data Analytics for Economics & Finance",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/dataanalyticsforeconomicsfinance/"
+    },
+    {
+      "id": "glasgow-data-science-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Data Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/datascience/"
+    },
+    {
+      "id": "glasgow-digital-humanities-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Digital Humanities",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/digital-humanities/"
+    },
+    {
+      "id": "glasgow-digital-society-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Digital Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/digitalsociety/"
+    },
+    {
+      "id": "glasgow-earth-futures-environments-communities-relationships-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Earth Futures: Environments, Communities, Relationships",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/earth-futures/"
+    },
+    {
+      "id": "glasgow-ecology-environmental-biology-mres",
+      "universityId": "university-of-glasgow",
+      "name": "MRes Ecology & Environmental Biology",
+      "degreeType": "MRes",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/ecologyenvironmentalbiology/"
+    },
+    {
+      "id": "glasgow-ecology-epidemiology-data-science-for-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Ecology & Epidemiology, Data Science for",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/data-science-for-ecology-epidemiology/"
+    },
+    {
+      "id": "glasgow-economic-development-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Economic Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/economic-development/"
+    },
+    {
+      "id": "glasgow-economics-international-banking-finance-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Economics, International Banking & Finance",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/economicsinternationalbankingfinance/"
+    },
+    {
       "id": "glasgow-economics-mres",
       "universityId": "university-of-glasgow",
       "name": "MRes Economics",
@@ -9015,6 +10113,123 @@
       "faculty": "",
       "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/economicsmres/"
+    },
+    {
+      "id": "glasgow-economics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Economics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/economics-msc/"
+    },
+    {
+      "id": "glasgow-education-public-policy-equity-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Education, Public Policy & Equity",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/educationpublicpolicyequity/"
+    },
+    {
+      "id": "glasgow-educational-studies-med",
+      "universityId": "university-of-glasgow",
+      "name": "MEd Educational Studies",
+      "degreeType": "MEd",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/educationalstudiesmed/"
+    },
+    {
+      "id": "glasgow-educational-studies-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Educational Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/educationalstudiesmsc/"
+    },
+    {
+      "id": "glasgow-electronics-electrical-engineering-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Electronics & Electrical Engineering & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/electronicselectricalengineeringmanagement/"
+    },
+    {
+      "id": "glasgow-electronics-electrical-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Electronics & Electrical Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/electronicselectricalengineering/"
+    },
+    {
+      "id": "glasgow-electronics-photonics-manufacturing-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Electronics & Photonics Manufacturing",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/electronicsmanufacturing/"
+    },
+    {
+      "id": "glasgow-english-language-linguistics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc English Language & Linguistics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/englishlanguagelinguistics/"
+    },
+    {
+      "id": "glasgow-english-literature-fantasy-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt English Literature: Fantasy",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/fantasy/"
+    },
+    {
+      "id": "glasgow-english-literature-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt English Literature",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/englishliterature/"
+    },
+    {
+      "id": "glasgow-english-literature-modernities-literature-culture-theory-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt English Literature: Modernities - Literature, Culture, Theory",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/modernities/"
+    },
+    {
+      "id": "glasgow-environment-sustainable-development-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Environment & Sustainable Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/environmentsustainabledevelopment/"
+    },
+    {
+      "id": "glasgow-epidemiology-of-infectious-diseases-antimicrobial-resistance-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Epidemiology of Infectious Diseases & Antimicrobial Resistance",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/infectiousdiseasesantimicrobialresistance/"
     },
     {
       "id": "glasgow-film-curation-msc",
@@ -9044,6 +10259,591 @@
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/filmmaking/"
     },
     {
+      "id": "glasgow-finance-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Finance & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/financemanagement/"
+    },
+    {
+      "id": "glasgow-financial-economics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Financial Economics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/financialeconomics/"
+    },
+    {
+      "id": "glasgow-financial-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Financial Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/financial-engineering/"
+    },
+    {
+      "id": "glasgow-financial-risk-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Financial Risk Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/financialriskmanagement/"
+    },
+    {
+      "id": "glasgow-financial-technology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Financial Technology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/financialtechnology/"
+    },
+    {
+      "id": "glasgow-food-security-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Food Security",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/foodsecurity/"
+    },
+    {
+      "id": "glasgow-gender-history-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Gender History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/genderhistory/"
+    },
+    {
+      "id": "glasgow-genetics-medical-genomics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Genetics, Medical & Genomics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/medical-genetics-genomics/"
+    },
+    {
+      "id": "glasgow-geoinformation-technology-cartography-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Geoinformation Technology & Cartography",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/geoinformation-technology-cartography/"
+    },
+    {
+      "id": "glasgow-geoinformation-technology-cartography-with-work-placement-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Geoinformation Technology & Cartography with Work Placement",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/geoinformation-technology-cartography-placement/"
+    },
+    {
+      "id": "glasgow-geomatics-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Geomatics & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/geomaticsmanagement/"
+    },
+    {
+      "id": "glasgow-geospatial-data-science-ai-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Geospatial Data Science & AI",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/geospatial-data-science-modelling/"
+    },
+    {
+      "id": "glasgow-geospatial-mapping-sciences-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Geospatial & Mapping Sciences",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/geospatial-mapping-sciences/"
+    },
+    {
+      "id": "glasgow-global-communications-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global Communications",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/global-communications/"
+    },
+    {
+      "id": "glasgow-global-cultural-enterprise-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global Cultural Enterprise",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/global-cultural-enterprise/"
+    },
+    {
+      "id": "glasgow-global-development-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/global-development/"
+    },
+    {
+      "id": "glasgow-global-economy-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global Economy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/globaleconomy/"
+    },
+    {
+      "id": "glasgow-global-health-policy-society-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global Health Policy & Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/global-health-policy-society/"
+    },
+    {
+      "id": "glasgow-global-history-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/globalhistory/"
+    },
+    {
+      "id": "glasgow-global-mental-health-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global Mental Health",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/globalmentalhealth/"
+    },
+    {
+      "id": "glasgow-global-security-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Global Security",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/globalsecurity/"
+    },
+    {
+      "id": "glasgow-health-care-advanced-practice-in-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Health Care, Advanced Practice in",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/health-care/"
+    },
+    {
+      "id": "glasgow-health-services-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Health Services Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/healthservicemanagement/"
+    },
+    {
+      "id": "glasgow-history-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/history/"
+    },
+    {
+      "id": "glasgow-human-computer-interaction-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Human Computer Interaction",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/human-computer-interaction/"
+    },
+    {
+      "id": "glasgow-human-geography-critical-research-encounters-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Human Geography: Critical Research Encounters",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/human-geography/"
+    },
+    {
+      "id": "glasgow-human-rights-international-politics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Human Rights & International Politics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/humanrightsinternationalpolitics/"
+    },
+    {
+      "id": "glasgow-human-rights-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM Human Rights",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/human-rights/"
+    },
+    {
+      "id": "glasgow-immunology-inflammatory-disease-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Immunology & Inflammatory Disease",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/immunologyinflammatorydisease/"
+    },
+    {
+      "id": "glasgow-inclusive-education-research-policy-practice-med",
+      "universityId": "university-of-glasgow",
+      "name": "MEd Inclusive Education: Research, Policy & Practice",
+      "degreeType": "MEd",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/inclusiveeducationresearchpolicypracticemed/"
+    },
+    {
+      "id": "glasgow-infection-biology-with-specialisms-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Infection Biology (with specialisms)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/infectionbiologywithspecialisms/"
+    },
+    {
+      "id": "glasgow-information-technology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Information Technology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/informationtechnology/"
+    },
+    {
+      "id": "glasgow-integrative-neuroscience-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Integrative Neuroscience",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/integrative-neuroscience/"
+    },
+    {
+      "id": "glasgow-intellectual-property-the-digital-economy-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM Intellectual Property & the Digital Economy",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/intellectualproperty/"
+    },
+    {
+      "id": "glasgow-international-accounting-financial-management-macc",
+      "universityId": "university-of-glasgow",
+      "name": "MAcc International Accounting & Financial Management",
+      "degreeType": "MAcc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalaccountingfinancialmanagement/"
+    },
+    {
+      "id": "glasgow-international-business-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc International Business",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalbusiness/"
+    },
+    {
+      "id": "glasgow-international-commercial-law-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM International Commercial Law",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalcommerciallaw/"
+    },
+    {
+      "id": "glasgow-international-competition-law-policy-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM International Competition Law & Policy",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalcompetitionlawpolicy/"
+    },
+    {
+      "id": "glasgow-international-economic-law-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM International Economic Law",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationaleconomiclaw/"
+    },
+    {
+      "id": "glasgow-international-finance-mfin",
+      "universityId": "university-of-glasgow",
+      "name": "MFin International Finance",
+      "degreeType": "MFin",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalfinance/"
+    },
+    {
+      "id": "glasgow-international-financial-analysis-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc International Financial Analysis",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalfinancialanalysis/"
+    },
+    {
+      "id": "glasgow-international-human-resource-management-development-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc International Human Resource Management & Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalhumanresourcemanagementdevelopment/"
+    },
+    {
+      "id": "glasgow-international-law-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM International Law",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationallaw/"
+    },
+    {
+      "id": "glasgow-international-law-security-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM International Law & Security",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/international-law-security/"
+    },
+    {
+      "id": "glasgow-international-management-design-innovation-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc International Management & Design Innovation",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/international-management-design-innovation/"
+    },
+    {
+      "id": "glasgow-international-relations-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc International Relations",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalrelations/"
+    },
+    {
+      "id": "glasgow-international-strategic-marketing-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc International Strategic Marketing",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/internationalstrategicmarketing/"
+    },
+    {
+      "id": "glasgow-investment-banking-finance-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Investment Banking & Finance",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/investmentbankingfinance/"
+    },
+    {
+      "id": "glasgow-land-hydrographic-surveying-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Land & Hydrographic Surveying",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/landhydrographicsurveying/"
+    },
+    {
+      "id": "glasgow-land-hydrographic-surveying-with-work-placement-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Land & Hydrographic Surveying with Work Placement",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/landhydrographicsurveyingworkplacement/"
+    },
+    {
+      "id": "glasgow-law-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM Law",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/law/"
+    },
+    {
+      "id": "glasgow-library-information-studies-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Library & Information Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/library-information-studies/"
+    },
+    {
+      "id": "glasgow-management-mres",
+      "universityId": "university-of-glasgow",
+      "name": "MRes Management",
+      "degreeType": "MRes",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/managementmres/"
+    },
+    {
+      "id": "glasgow-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/managementmsc/"
+    },
+    {
+      "id": "glasgow-management-sustainable-tourism-dumfries-campus-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Management & Sustainable Tourism (Dumfries campus)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/managementsustainabletourism/"
+    },
+    {
+      "id": "glasgow-management-with-enterprise-business-growth-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Management with Enterprise & Business Growth",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/managementwithenterprise/"
+    },
+    {
+      "id": "glasgow-management-with-human-resources-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Management with Human Resources",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/managementwithhumanresources/"
+    },
+    {
+      "id": "glasgow-management-with-marketing-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Management with Marketing",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/management-with-marketing/"
+    },
+    {
+      "id": "glasgow-material-culture-artefact-studies-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Material Culture & Artefact Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/materialcultureartefactstudies/"
+    },
+    {
+      "id": "glasgow-mathematics-applied-mathematics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Mathematics / Applied Mathematics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/mathematicsappliedmathematics/"
+    },
+    {
+      "id": "glasgow-mechanical-engineering-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Mechanical Engineering & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/mechanicalengineeringmanagement/"
+    },
+    {
+      "id": "glasgow-mechanical-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Mechanical Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/mechanicalengineering/"
+    },
+    {
+      "id": "glasgow-mechatronics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Mechatronics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/mechatronics/"
+    },
+    {
+      "id": "glasgow-media-communications-international-journalism-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Media, Communications & International Journalism",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/mediacommunicationsinternationaljournalism/"
+    },
+    {
+      "id": "glasgow-media-culture-society-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Media, Culture & Society",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/mediaculturesociety/"
+    },
+    {
       "id": "glasgow-media-management-msc",
       "universityId": "university-of-glasgow",
       "name": "MSc Media Management",
@@ -9051,6 +10851,51 @@
       "faculty": "",
       "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/mediamanagement/"
+    },
+    {
+      "id": "glasgow-medical-devices-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Medical Devices Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/medicaldevicesengineering/"
+    },
+    {
+      "id": "glasgow-medieval-history-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Medieval History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/medievalhistory/"
+    },
+    {
+      "id": "glasgow-medtech-innovation-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc MedTech Innovation",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/medtech-innovation/"
+    },
+    {
+      "id": "glasgow-modern-history-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Modern History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/modernhistory/"
+    },
+    {
+      "id": "glasgow-museum-education-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Museum Education",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/museumeducation/"
     },
     {
       "id": "glasgow-music-industries-msc",
@@ -9071,6 +10916,222 @@
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/musicology/"
     },
     {
+      "id": "glasgow-nanoscience-nanotechnology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Nanoscience & Nanotechnology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/nanosciencenanotechnology/"
+    },
+    {
+      "id": "glasgow-nuclear-environmental-physics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Nuclear & Environmental Physics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/nuclearenvironmentalphysics/"
+    },
+    {
+      "id": "glasgow-nursing-science-advanced-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Nursing Science, Advanced",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/advanced-nursing-sciences/"
+    },
+    {
+      "id": "glasgow-nutrition-human-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Nutrition, Human",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/humannutrition/"
+    },
+    {
+      "id": "glasgow-oral-sciences-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Oral Sciences",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/oralsciences/"
+    },
+    {
+      "id": "glasgow-pharmacology-clinical-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Pharmacology, Clinical",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/clinicalpharmacology/"
+    },
+    {
+      "id": "glasgow-philosophy-conversion-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Philosophy (Conversion)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/philosophyconversion/"
+    },
+    {
+      "id": "glasgow-philosophy-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Philosophy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/philosophy/"
+    },
+    {
+      "id": "glasgow-philosophy-of-mind-psychology-conversion-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Philosophy of Mind & Psychology (Conversion)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/philosophy-of-mind-psychology-conversion/"
+    },
+    {
+      "id": "glasgow-philosophy-of-mind-psychology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Philosophy of Mind & Psychology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/philosophyofmindpsychology/"
+    },
+    {
+      "id": "glasgow-playwriting-dramaturgy-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt Playwriting & Dramaturgy",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/playwritingdramaturgy/"
+    },
+    {
+      "id": "glasgow-political-communication-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Political Communication",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/politicalcommunication/"
+    },
+    {
+      "id": "glasgow-precision-medicine-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Precision Medicine",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/precision-medicine/"
+    },
+    {
+      "id": "glasgow-psychological-science-conversion-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Psychological Science (conversion)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/psychologicalscienceconversion/"
+    },
+    {
+      "id": "glasgow-psychological-studies-conversion-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Psychological Studies (conversion)",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/psychologicalstudiesconversion/"
+    },
+    {
+      "id": "glasgow-public-health-mph",
+      "universityId": "university-of-glasgow",
+      "name": "MPH Public Health",
+      "degreeType": "MPH",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/publichealth/"
+    },
+    {
+      "id": "glasgow-public-policy-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Public Policy & Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/publicpolicymanagement/"
+    },
+    {
+      "id": "glasgow-public-policy-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Public Policy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/public-policy/"
+    },
+    {
+      "id": "glasgow-quantum-technology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Quantum Technology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/quantumtechnology/"
+    },
+    {
+      "id": "glasgow-real-estate-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Real Estate",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/realestate/"
+    },
+    {
+      "id": "glasgow-robotics-ai-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Robotics & AI",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/roboticsai/"
+    },
+    {
+      "id": "glasgow-russian-east-european-eurasian-studies-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Russian, East European & Eurasian Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/russiancentraleasteuropeanstudiesmsc/"
+    },
+    {
+      "id": "glasgow-science-communications-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Science Communications",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/science-communications/"
+    },
+    {
+      "id": "glasgow-scottish-history-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Scottish History",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/scottishhistory/"
+    },
+    {
       "id": "glasgow-sensor-imaging-systems-msc",
       "universityId": "university-of-glasgow",
       "name": "MSc Sensor & Imaging Systems",
@@ -9078,6 +11139,186 @@
       "faculty": "",
       "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
       "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/sensor-imaging-systems/"
+    },
+    {
+      "id": "glasgow-social-science-research-methods-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Social Science Research Methods",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/social-science-research-methods/"
+    },
+    {
+      "id": "glasgow-sociology-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Sociology",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/sociology/"
+    },
+    {
+      "id": "glasgow-software-development-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Software Development",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/softwaredevelopment/"
+    },
+    {
+      "id": "glasgow-space-science-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Space Science",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/space-science/"
+    },
+    {
+      "id": "glasgow-statistics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Statistics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/statistics/"
+    },
+    {
+      "id": "glasgow-stem-cell-engineering-for-regenerative-medicine-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Stem Cell Engineering for Regenerative Medicine",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/stemcellengineering/"
+    },
+    {
+      "id": "glasgow-structural-engineering-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Structural Engineering",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/structuralengineering/"
+    },
+    {
+      "id": "glasgow-sustainability-corporate-governance-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Sustainability & Corporate Governance",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/sustainability-corporate-governance/"
+    },
+    {
+      "id": "glasgow-sustainable-energy-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Sustainable Energy",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/sustainableenergy/"
+    },
+    {
+      "id": "glasgow-sustainable-water-management-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Sustainable Water Management",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/sustainablewaterenvironments/"
+    },
+    {
+      "id": "glasgow-technology-law-regulation-llm",
+      "universityId": "university-of-glasgow",
+      "name": "LLM Technology Law & Regulation",
+      "degreeType": "LLM",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/technology-law-regulation/"
+    },
+    {
+      "id": "glasgow-tesol-teaching-of-english-to-speakers-of-other-languages-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc TESOL: Teaching of English to Speakers of Other Languages",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/tesolmsc/"
+    },
+    {
+      "id": "glasgow-theatre-performance-practices-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt Theatre & Performance Practices",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/theatrepractices/"
+    },
+    {
+      "id": "glasgow-theatre-studies-mlitt",
+      "universityId": "university-of-glasgow",
+      "name": "MLitt Theatre Studies",
+      "degreeType": "MLitt",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/theatrestudies/"
+    },
+    {
+      "id": "glasgow-theoretical-physics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Theoretical Physics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/theoreticalphysics/"
+    },
+    {
+      "id": "glasgow-translation-intercultural-communication-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Translation & Intercultural Communication",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/translation-intercultural-communication/"
+    },
+    {
+      "id": "glasgow-urban-analytics-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Urban Analytics",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/urbananalytics/"
+    },
+    {
+      "id": "glasgow-urban-transport-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Urban Transport",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/urbantransport/"
+    },
+    {
+      "id": "glasgow-war-studies-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc War Studies",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/warstudies/"
+    },
+    {
+      "id": "glasgow-wealth-management-private-equity-msc",
+      "universityId": "university-of-glasgow",
+      "name": "MSc Wealth Management & Private Equity",
+      "degreeType": "MSc",
+      "faculty": "",
+      "applicationUrl": "https://www.gla.ac.uk/postgraduate/apply/",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/wealth-management-private-equity/"
     },
     {
       "id": "groningen-computing-science-master",

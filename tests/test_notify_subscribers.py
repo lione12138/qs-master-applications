@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import importlib.util
 from datetime import date
+from io import BytesIO
 from pathlib import Path
+from urllib.error import HTTPError
 
 
 def load_module():
@@ -24,3 +26,41 @@ def test_current_open_events_only_returns_official_open_windows() -> None:
     assert "kth-computer-science-autumn-2027" not in ids
     assert "snu-international-graduate-spring-2027" not in ids
     assert all(event["applicationUrl"].startswith("https://") for event in events)
+
+
+def test_notify_http_error_is_reported_without_failing_job(
+    monkeypatch,
+    capsys,
+) -> None:
+    module = load_module()
+    monkeypatch.setenv("GRADWINDOW_SUBSCRIBE_URL", "https://notify.example")
+    monkeypatch.setenv("GRADWINDOW_NOTIFY_API_KEY", "bad-key")
+
+    def fake_urlopen(_request, timeout):
+        assert timeout == 45
+        raise HTTPError(
+            "https://notify.example/admin/notify",
+            401,
+            "Unauthorized",
+            {},
+            BytesIO(b'{"ok":false}'),
+        )
+
+    monkeypatch.setattr(module, "urlopen", fake_urlopen)
+
+    ok = module.notify(
+        [
+            {
+                "id": "window-1",
+                "school": "Example University",
+                "program": "MSc Example",
+                "opensAt": "2026-07-01",
+                "closesAt": "2026-07-31",
+                "applicationUrl": "https://example.edu/apply",
+                "sourceUrl": "https://example.edu/source",
+            }
+        ]
+    )
+
+    assert ok is False
+    assert "HTTP 401 Unauthorized" in capsys.readouterr().err

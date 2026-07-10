@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-07T15:44:51.145053+00:00",
+    "updatedAt": "2026-07-08T06:36:09.250065+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -13213,6 +13213,375 @@
           "department": "South Asian Studies",
           "parseStatus": "incomplete",
           "deadlineHash": "4037a62bac456431b59b3c43dfb0da70d4561e39fd783f1669cead29b110b37c"
+        }
+      }
+    },
+    "eth-zurich-swiss-federal-institute-of-technology": {
+      "sourceUrl": "https://ethz.ch/en/studies/master/application/profile-requirements.html",
+      "checkedAt": "2026-07-08T06:36:09.250065+00:00",
+      "itemCount": 45,
+      "applicationOpensAt": null,
+      "catalogHash": "d5e117f2e2ba4bd01122101c9ee1d8b48159a1d4a2de33d3e273c365afe8cb00",
+      "programmes": {
+        "eth-agricultural-sciences-msc": {
+          "name": "MSc Agricultural Sciences",
+          "degreeType": "MSc",
+          "faculty": "System-oriented Natural Sciences",
+          "department": "Agricultural Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-applied-mathematics-msc": {
+          "name": "MSc Applied Mathematics",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Applied Mathematics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-architecture-msc": {
+          "name": "MSc Architecture",
+          "degreeType": "MSc",
+          "faculty": "Architecture and Civil Engineering",
+          "department": "Architecture",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-atmospheric-and-climate-science-msc": {
+          "name": "MSc Atmospheric and Climate Science",
+          "degreeType": "MSc",
+          "faculty": "System-oriented Natural Sciences",
+          "department": "Atmospheric and Climate Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-biochemistry-chemical-biology-msc": {
+          "name": "MSc Biochemistry – Chemical Biology",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Biochemistry – Chemical Biology",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-biology-msc": {
+          "name": "MSc Biology",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Biology",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-biomedical-engineering-msc": {
+          "name": "MSc Biomedical Engineering",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Biomedical Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-biotechnology-msc": {
+          "name": "MSc Biotechnology",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Biotechnology",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-chemical-and-bioengineering-msc": {
+          "name": "MSc Chemical and Bioengineering",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Chemical and Bioengineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-chemistry-msc": {
+          "name": "MSc Chemistry",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Chemistry",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-civil-engineering-msc": {
+          "name": "MSc Civil Engineering",
+          "degreeType": "MSc",
+          "faculty": "Architecture and Civil Engineering",
+          "department": "Civil Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-comparative-and-international-studies-ma": {
+          "name": "MA Comparative and International Studies",
+          "degreeType": "MA",
+          "faculty": "Management and Social Sciences",
+          "department": "Comparative and International Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-computational-biology-and-bioinformatics-msc": {
+          "name": "MSc Computational Biology and Bioinformatics",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Computational Biology and Bioinformatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-computational-science-and-engineering-msc": {
+          "name": "MSc Computational Science and Engineering",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Computational Science and Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-computer-science-msc": {
+          "name": "MSc Computer Science",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Computer Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-cyber-security-msc": {
+          "name": "MSc Cyber Security",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Cyber Security",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-data-science-msc": {
+          "name": "MSc Data Science",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Data Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-earth-sciences-msc": {
+          "name": "MSc Earth Sciences",
+          "degreeType": "MSc",
+          "faculty": "System-oriented Natural Sciences",
+          "department": "Earth Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-electrical-engineering-and-information-technology-msc": {
+          "name": "MSc Electrical Engineering and Information Technology",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Electrical Engineering and Information Technology",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-energy-science-and-technology-msc": {
+          "name": "MSc Energy Science and Technology",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Energy Science and Technology",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-environmental-engineering-msc": {
+          "name": "MSc Environmental Engineering",
+          "degreeType": "MSc",
+          "faculty": "Architecture and Civil Engineering",
+          "department": "Environmental Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-environmental-sciences-msc": {
+          "name": "MSc Environmental Sciences",
+          "degreeType": "MSc",
+          "faculty": "System-oriented Natural Sciences",
+          "department": "Environmental Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-food-science-and-nutrition-msc": {
+          "name": "MSc Food Science and Nutrition",
+          "degreeType": "MSc",
+          "faculty": "System-oriented Natural Sciences",
+          "department": "Food Science and Nutrition",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-geomatics-msc": {
+          "name": "MSc Geomatics",
+          "degreeType": "MSc",
+          "faculty": "Architecture and Civil Engineering",
+          "department": "Geomatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-health-sciences-and-technology-msc": {
+          "name": "MSc Health Sciences and Technology",
+          "degreeType": "MSc",
+          "faculty": "System-oriented Natural Sciences",
+          "department": "Health Sciences and Technology",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-high-energy-physics-msc": {
+          "name": "MSc High Energy Physics",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "High Energy Physics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-history-and-philosophy-of-knowledge-ma": {
+          "name": "MA History and Philosophy of Knowledge",
+          "degreeType": "MA",
+          "faculty": "Management and Social Sciences",
+          "department": "History and Philosophy of Knowledge",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-integrated-building-systems-msc": {
+          "name": "MSc Integrated Building Systems",
+          "degreeType": "MSc",
+          "faculty": "Architecture and Civil Engineering",
+          "department": "Integrated Building Systems",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-interdisciplinary-sciences-msc": {
+          "name": "MSc Interdisciplinary Sciences",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Interdisciplinary Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-landscape-architecture-msc": {
+          "name": "MSc Landscape Architecture",
+          "degreeType": "MSc",
+          "faculty": "Architecture and Civil Engineering",
+          "department": "Landscape Architecture",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-management-technology-and-economics-msc": {
+          "name": "MSc Management, Technology, and Economics",
+          "degreeType": "MSc",
+          "faculty": "Management and Social Sciences",
+          "department": "Management, Technology, and Economics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-materials-science-and-engineering-msc": {
+          "name": "MSc Materials Science and Engineering",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Materials Science and Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-mathematics-msc": {
+          "name": "MSc Mathematics",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Mathematics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-mechanical-engineering-msc": {
+          "name": "MSc Mechanical Engineering",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Mechanical Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-nuclear-engineering-msc": {
+          "name": "MSc Nuclear Engineering",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Nuclear Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-pharmaceutical-sciences-msc": {
+          "name": "MSc Pharmaceutical Sciences",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Pharmaceutical Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-pharmacy-msc": {
+          "name": "MSc Pharmacy",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Pharmacy",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-physics-msc": {
+          "name": "MSc Physics",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Physics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-process-engineering-msc": {
+          "name": "MSc Process Engineering",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Process Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-quantum-engineering-msc": {
+          "name": "MSc Quantum Engineering",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences | Natural Sciences and Mathematics",
+          "department": "Quantum Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-robotics-systems-control-msc": {
+          "name": "MSc Robotics, Systems and Control",
+          "degreeType": "MSc",
+          "faculty": "Engineering Sciences",
+          "department": "Robotics, Systems and Control",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-science-technology-and-policy-msc": {
+          "name": "MSc Science, Technology and Policy",
+          "degreeType": "MSc",
+          "faculty": "Management and Social Sciences",
+          "department": "Science, Technology and Policy",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-space-systems-msc": {
+          "name": "MSc Space Systems",
+          "degreeType": "MSc",
+          "faculty": "System-oriented Natural Sciences",
+          "department": "Space Systems",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-spatial-development-and-infrastructure-systems-msc": {
+          "name": "MSc Spatial Development and Infrastructure Systems",
+          "degreeType": "MSc",
+          "faculty": "Architecture and Civil Engineering",
+          "department": "Spatial Development and Infrastructure Systems",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
+        },
+        "eth-statistics-msc": {
+          "name": "MSc Statistics",
+          "degreeType": "MSc",
+          "faculty": "Natural Sciences and Mathematics",
+          "department": "Statistics",
+          "parseStatus": "parsed",
+          "deadlineHash": "2d6a24c002efaeed1194f07260aa373c6f668e361432738b5565ebf1c66acb95"
         }
       }
     }
