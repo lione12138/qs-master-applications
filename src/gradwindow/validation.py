@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 from pydantic import BaseModel, ValidationError
 
 from .discovery import same_official_domain
-from .evidence_store import read_evidence_snapshot
+from .evidence_store import read_evidence_bundle, read_evidence_snapshot
 from .io import read_json
 from .models import (
     ApplicantCategory,
@@ -296,11 +296,18 @@ def validate_data(
 
     evidence_count = 0
     if applications_path == APPLICATIONS_PATH:
+        evidence_bundles: dict[str, dict] = {}
         for item in applications:
+            university_id = item["universityId"]
+            bundle = evidence_bundles.get(university_id)
+            if bundle is None:
+                bundle = read_evidence_bundle(evidence_dir, university_id)
+                evidence_bundles[university_id] = bundle
             snapshot = read_evidence_snapshot(
                 evidence_dir,
-                item["universityId"],
+                university_id,
                 item["id"],
+                bundle=bundle,
             )
             if snapshot is None:
                 errors.append(f"{item['id']}: missing evidence snapshot")
@@ -366,5 +373,9 @@ def validate_data(
         "windowPolicies": len(policies),
         "predictedWindows": len(predictions),
         "evidenceSnapshots": evidence_count,
+        "legacyConfiguredOpeningWindows": sum(
+            "configured cycle-default opening date" in item.get("evidence", "")
+            for item in applications
+        ),
     }
     return errors, summary

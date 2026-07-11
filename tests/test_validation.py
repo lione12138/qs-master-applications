@@ -3,6 +3,8 @@ from __future__ import annotations
 import copy
 import json
 
+import gradwindow.evidence_store as evidence_store
+import gradwindow.validation as validation
 from gradwindow.paths import APPLICATIONS_PATH, UNIVERSITIES_PATH
 from gradwindow.predictions import generate_predictions
 from gradwindow.validation import valid_http_url, validate_data
@@ -20,12 +22,41 @@ def test_current_public_data_is_valid() -> None:
     assert summary["verifiedWindows"] >= 27
     assert summary["predictedWindows"] >= 27
     assert summary["evidenceSnapshots"] >= 27
+    assert summary["legacyConfiguredOpeningWindows"] == sum(
+        "configured cycle-default opening date" in item.get("evidence", "")
+        for item in json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))[
+            "applications"
+        ]
+    )
 
 
 def test_http_url_validation() -> None:
     assert valid_http_url("https://example.edu/admissions")
     assert not valid_http_url("javascript:alert(1)")
     assert not valid_http_url("")
+
+
+def test_validation_reads_each_university_evidence_bundle_once(monkeypatch) -> None:
+    applications = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))[
+        "applications"
+    ]
+    expected_universities = {item["universityId"] for item in applications}
+    original_read = evidence_store.read_evidence_bundle
+    calls: list[str] = []
+
+    def tracked_read(evidence_dir, university_id):
+        calls.append(university_id)
+        return original_read(evidence_dir, university_id)
+
+    monkeypatch.setattr(evidence_store, "read_evidence_bundle", tracked_read)
+    monkeypatch.setattr(validation, "read_evidence_bundle", tracked_read)
+
+    errors, summary = validate_data()
+
+    assert errors == []
+    assert summary["evidenceSnapshots"] == len(applications)
+    assert len(calls) == len(expected_universities)
+    assert set(calls) == expected_universities
 
 
 def test_validation_rejects_cross_university_programme_scope(tmp_path) -> None:

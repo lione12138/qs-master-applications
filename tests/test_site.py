@@ -3,9 +3,45 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import pytest
+
+import gradwindow.site as site
+from gradwindow.paths import SITE_DIR
 from gradwindow.site import build_site
 
 ANALYTICS_BEACON = "https://static.cloudflareinsights.com/beacon.min.js"
+
+
+@pytest.mark.parametrize("target_name", ["root", "ancestor", "src", "data"])
+def test_build_site_rejects_dangerous_output_paths(
+    tmp_path,
+    monkeypatch,
+    target_name,
+) -> None:
+    project_root = tmp_path / "project"
+    project_root.mkdir()
+    fake_site_dir = project_root / "site"
+    targets = {
+        "root": project_root,
+        "ancestor": tmp_path,
+        "src": project_root / "src",
+        "data": project_root / "data",
+    }
+    target = targets[target_name]
+    target.mkdir(parents=True, exist_ok=True)
+    marker = target / "must-not-be-deleted.txt"
+    marker.write_text("source data", encoding="utf-8")
+    monkeypatch.setattr(site, "ROOT", project_root)
+    monkeypatch.setattr(site, "SITE_DIR", fake_site_dir)
+
+    with pytest.raises(ValueError, match="Refusing to build"):
+        build_site(target)
+
+    assert marker.read_text(encoding="utf-8") == "source data"
+
+
+def test_build_site_accepts_default_site_directory() -> None:
+    assert site._safe_build_output_dir(SITE_DIR) == SITE_DIR.resolve()
 
 
 def test_build_site_only_publishes_public_assets(tmp_path) -> None:

@@ -42,8 +42,11 @@ def read_evidence_snapshot(
     evidence_dir: Path,
     university_id: str,
     record_id: str,
+    *,
+    bundle: dict[str, Any] | None = None,
 ) -> dict[str, Any] | None:
-    bundle = read_evidence_bundle(evidence_dir, university_id)
+    if bundle is None:
+        bundle = read_evidence_bundle(evidence_dir, university_id)
     snapshot = bundle.get("snapshots", {}).get(record_id)
     if snapshot is not None:
         return snapshot

@@ -145,6 +145,7 @@ def test_approve_programme_candidates_promotes_parsed_windows(tmp_path) -> None:
                 "round": "Round 2",
                 "applicantCategories": ["all"],
                 "opensAt": "2025-09-29",
+                "opensAtBasis": "official",
                 "closesAt": "2026-01-07",
             }
         ],
@@ -181,3 +182,90 @@ def test_approve_programme_candidates_promotes_parsed_windows(tmp_path) -> None:
     assert window["intakeDetails"]["cycleYear"] == 2026
     candidates = json.loads(candidates_path.read_text(encoding="utf-8"))["items"]
     assert candidates[0]["status"] == "approved"
+
+
+def test_approve_programme_candidates_rejects_inferred_opening(tmp_path) -> None:
+    programs_path = tmp_path / "programs.json"
+    applications_path = tmp_path / "applications.json"
+    candidates_path = tmp_path / "programme-candidates.json"
+    programs_path.write_text(
+        PROGRAMS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
+    )
+    applications_path.write_text(
+        APPLICATIONS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
+    )
+    candidates_path.write_text(
+        json.dumps(
+            {
+                "items": [
+                    {
+                        "id": "new-programme:inferred-example",
+                        "type": "new-programme",
+                        "status": "pending",
+                        "universityId": "imperial-college-london",
+                        "programme": {
+                            "id": "inferred-example",
+                            "universityId": "imperial-college-london",
+                            "name": "MSc Inferred Example",
+                            "degreeType": "MSc",
+                            "faculty": "",
+                            "applicationUrl": "https://www.imperial.ac.uk/study/",
+                            "sourceUrl": "https://www.imperial.ac.uk/study/",
+                        },
+                        "windows": [
+                            {
+                                "intake": "September 2027",
+                                "round": "Main",
+                                "applicantCategories": ["all"],
+                                "opensAt": "2026-10-01",
+                                "opensAtBasis": "inferred-cycle-default",
+                                "closesAt": "2027-01-01",
+                            }
+                        ],
+                        "parseStatus": "parsed",
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    report = approve_programme_candidates(
+        university_id="imperial-college-london",
+        reviewer="test-reviewer",
+        candidates_path=candidates_path,
+        programs_path=programs_path,
+        applications_path=applications_path,
+    )
+
+    assert report["promotedProgrammes"] == 0
+    assert report["promotedWindows"] == 0
+    assert report["remainingPending"] == 1
+
+
+def test_approve_window_rejects_non_official_opening_basis(tmp_path) -> None:
+    candidates_path = tmp_path / "window-candidates.json"
+    candidates_path.write_text(
+        json.dumps(
+            {
+                "items": [
+                    {
+                        "id": "adapter-window:inferred",
+                        "type": "adapter-new-window",
+                        "status": "pending",
+                        "openingBasis": "inferred-cycle-default",
+                        "record": {},
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    with pytest.raises(ValueError, match="official opening date"):
+        approve_window(
+            "adapter-window:inferred",
+            "test-reviewer",
+            candidates_path,
+            APPLICATIONS_PATH,
+        )

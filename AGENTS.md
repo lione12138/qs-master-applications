@@ -214,6 +214,15 @@ Expected pattern:
 5. Run `ruff check .`, `pytest`, `gradwindow validate`, and
    `gradwindow build-site`.
 
+Discovery also revisits programmes already present in `data/programs.json`.
+Official new intake cycles and official date changes become pending records in
+`data/ops/window-candidates.json`. Do not add a second, adapter-specific update
+path for known programmes.
+
+An exact-looking configured default is still inferred. Batch promotion requires
+`opensAtBasis: "official"`; do not weaken this guard to make an adapter's output
+approve successfully.
+
 Prefer a generic seed when the official catalogue is simple and stable. Use a
 dedicated adapter when deadlines are encoded in unusual JSON, PDFs, dynamic
 pages, school-level rules, or applicant-specific rules.

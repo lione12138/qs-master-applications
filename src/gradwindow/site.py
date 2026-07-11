@@ -82,7 +82,29 @@ def site_url() -> str:
     return os.environ.get("GRADWINDOW_SITE_URL", DEFAULT_SITE_URL).rstrip("/")
 
 
+def _safe_build_output_dir(output_dir: Path) -> Path:
+    resolved_output = output_dir.expanduser().resolve()
+    resolved_root = ROOT.resolve()
+    resolved_site = SITE_DIR.resolve()
+
+    if resolved_output == resolved_root or resolved_root.is_relative_to(
+        resolved_output
+    ):
+        raise ValueError(
+            f"Refusing to build into project root or its ancestor: {resolved_output}"
+        )
+    if resolved_output.is_relative_to(resolved_root) and not (
+        resolved_output == resolved_site
+        or resolved_output.is_relative_to(resolved_site)
+    ):
+        raise ValueError(
+            f"Refusing to build over project source files: {resolved_output}"
+        )
+    return resolved_output
+
+
 def build_site(output_dir: Path = SITE_DIR) -> Path:
+    output_dir = _safe_build_output_dir(output_dir)
     public_site_url = site_url()
     public_config = {
         "subscribeUrl": os.environ.get("GRADWINDOW_SUBSCRIBE_URL", "").rstrip("/"),

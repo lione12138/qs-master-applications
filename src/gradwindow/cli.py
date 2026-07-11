@@ -357,7 +357,8 @@ def _validate_or_exit() -> dict[str, int]:
         f"{summary['verifiedWindows']} verified windows with "
         f"{summary['predictedWindows']} next-cycle predictions and "
         f"{summary['evidenceSnapshots']} evidence snapshots; "
-        f"{summary['enabledParsers']} enabled parsers."
+        f"{summary['enabledParsers']} enabled parsers; "
+        f"{summary['legacyConfiguredOpeningWindows']} legacy configured openings."
     )
     return summary
 

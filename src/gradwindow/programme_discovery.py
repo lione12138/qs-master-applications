@@ -9,10 +9,14 @@ from pathlib import Path
 from .http_client import DEFAULT_USER_AGENT, fetch_page
 from .io import read_json, write_json
 from .paths import (
+    APPLICATIONS_PATH,
     PROGRAMME_CANDIDATES_PATH,
     PROGRAMME_CATALOG_STATE_PATH,
     PROGRAMS_PATH,
+    WINDOW_CANDIDATES_PATH,
 )
+from .predictions import official_cycle_key
+from .programme_windows import known_programme_window_candidates
 
 
 def fetch_catalog(url: str) -> str:
@@ -23,7 +27,9 @@ def discover_programmes(
     adapter,
     *,
     programs_path: Path = PROGRAMS_PATH,
+    applications_path: Path = APPLICATIONS_PATH,
     candidates_path: Path = PROGRAMME_CANDIDATES_PATH,
+    window_candidates_path: Path | None = None,
     state_path: Path = PROGRAMME_CATALOG_STATE_PATH,
     fetcher: Callable[[str], str] = fetch_catalog,
     dry_run: bool = False,
@@ -35,11 +41,12 @@ def discover_programmes(
     else:
         catalog = adapter.parse_catalog(fetcher(adapter.catalog_url))
     programs_payload = read_json(programs_path)
-    known_ids = {
-        item["id"]
+    known_programmes = {
+        item["id"]: item
         for item in programs_payload.get("programs", [])
         if item.get("universityId") == adapter.university_id
     }
+    known_ids = set(known_programmes)
     candidates_payload = read_json(
         candidates_path,
         {
@@ -53,9 +60,66 @@ def discover_programmes(
         },
     )
     existing = {item["id"]: item for item in candidates_payload.get("items", [])}
+    if window_candidates_path is None:
+        window_candidates_path = (
+            WINDOW_CANDIDATES_PATH
+            if candidates_path == PROGRAMME_CANDIDATES_PATH
+            else candidates_path.with_name("window-candidates.json")
+        )
+    applications = read_json(applications_path, {"applications": []}).get(
+        "applications", []
+    )
+    window_candidates_payload = read_json(
+        window_candidates_path,
+        {
+            "meta": {
+                "description": (
+                    "Internal exact-window candidates awaiting manual review. "
+                    "This file is never published to the static site."
+                )
+            },
+            "items": [],
+        },
+    )
+    existing_window_candidates = {
+        item["id"]: item for item in window_candidates_payload.get("items", [])
+    }
+    original_window_candidate_items = window_candidates_payload.get("items", [])
+    applications_by_cycle = {
+        official_cycle_key(item): item
+        for item in applications
+        if item.get("universityId") == adapter.university_id
+    }
+    application_ids = {item["id"] for item in applications}
     created = 0
+    created_window_candidates = 0
+    changed_window_candidates = 0
     for programme in catalog.programmes:
         if programme.id in known_ids:
+            for candidate in known_programme_window_candidates(
+                adapter,
+                programme,
+                known_programmes[programme.id],
+                catalog.application_opens_at,
+                applications_by_cycle,
+                application_ids,
+                checked_at,
+            ):
+                previous = existing_window_candidates.get(candidate["id"])
+                if previous is not None:
+                    candidate["status"] = previous.get("status", "pending")
+                    candidate["detectedAt"] = previous.get("detectedAt", checked_at)
+                    candidate["record"]["verifiedAt"] = previous.get("record", {}).get(
+                        "verifiedAt", candidate["record"]["verifiedAt"]
+                    )
+                    for key in ("reviewedAt", "reviewedBy", "reviewNotes"):
+                        if key in previous:
+                            candidate[key] = previous[key]
+                else:
+                    created_window_candidates += 1
+                    if candidate["type"] == "adapter-window-change":
+                        changed_window_candidates += 1
+                existing_window_candidates[candidate["id"]] = candidate
             continue
         candidate_id = f"new-programme:{programme.id}"
         previous = existing.get(candidate_id)
@@ -122,6 +186,14 @@ def discover_programmes(
         candidates_payload["items"] = items
         candidates_payload.setdefault("meta", {})["updatedAt"] = checked_at
         write_json(candidates_path, candidates_payload)
+        window_candidate_items = sorted(
+            existing_window_candidates.values(),
+            key=lambda item: (item.get("status") != "pending", item["id"]),
+        )
+        if window_candidate_items != original_window_candidate_items:
+            window_candidates_payload["items"] = window_candidate_items
+            window_candidates_payload.setdefault("meta", {})["updatedAt"] = checked_at
+            write_json(window_candidates_path, window_candidates_payload)
         write_json(state_path, state_payload)
 
     return {
@@ -132,6 +204,13 @@ def discover_programmes(
         "catalogProgrammes": len(catalog.programmes),
         "knownProgrammes": len(known_ids),
         "newCandidates": created,
+        "newWindowCandidates": created_window_candidates,
+        "changedWindowCandidates": changed_window_candidates,
+        "pendingWindowCandidates": sum(
+            item.get("status", "pending") == "pending"
+            and item.get("universityId") == adapter.university_id
+            for item in existing_window_candidates.values()
+        ),
         "pendingCandidates": sum(
             item.get("status", "pending") == "pending"
             and item.get("universityId") == adapter.university_id

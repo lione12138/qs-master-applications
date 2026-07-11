@@ -4,6 +4,11 @@ import json
 
 import pytest
 
+from gradwindow.programme_adapters.base import (
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 from gradwindow.programme_adapters.cuhk import CUHKAdapter
 from gradwindow.programme_discovery import discover_programmes
 
@@ -140,7 +145,9 @@ def test_discovery_creates_candidates_without_mutating_programmes(
     tmp_path,
 ) -> None:
     programs_path = tmp_path / "programs.json"
+    applications_path = tmp_path / "applications.json"
     candidates_path = tmp_path / "programme-candidates.json"
+    window_candidates_path = tmp_path / "window-candidates.json"
     state_path = tmp_path / "programme-catalog-state.json"
     programs = {
         "programs": [
@@ -156,12 +163,17 @@ def test_discovery_creates_candidates_without_mutating_programmes(
         ]
     }
     programs_path.write_text(json.dumps(programs), encoding="utf-8")
+    applications_path.write_text(
+        json.dumps({"meta": {}, "applications": []}), encoding="utf-8"
+    )
     adapter = CUHKAdapter(minimum_expected_programmes=1)
 
     report = discover_programmes(
         adapter,
         programs_path=programs_path,
+        applications_path=applications_path,
         candidates_path=candidates_path,
+        window_candidates_path=window_candidates_path,
         state_path=state_path,
         fetcher=lambda url: CUHK_HTML,
     )
@@ -169,6 +181,8 @@ def test_discovery_creates_candidates_without_mutating_programmes(
     assert report["status"] == "ok"
     assert report["catalogProgrammes"] == 3
     assert report["newCandidates"] == 2
+    assert report["newWindowCandidates"] == 1
+    assert report["changedWindowCandidates"] == 0
     assert json.loads(programs_path.read_text(encoding="utf-8")) == programs
     candidates = json.loads(candidates_path.read_text(encoding="utf-8"))["items"]
     assert [item["programme"]["id"] for item in candidates] == [
@@ -177,16 +191,182 @@ def test_discovery_creates_candidates_without_mutating_programmes(
     ]
     assert candidates[0]["windows"][0]["opensAt"] == "2025-09-01"
     assert candidates[1]["reviewReason"] == "No application deadline was parsed."
+    window_candidates = json.loads(window_candidates_path.read_text(encoding="utf-8"))[
+        "items"
+    ]
+    assert len(window_candidates) == 1
+    assert window_candidates[0]["type"] == "adapter-new-window"
+    assert window_candidates[0]["openingBasis"] == "official"
+    assert window_candidates[0]["record"]["scopeId"] == "cuhk-computer-science-msc"
+    assert window_candidates[0]["record"]["opensAt"] == "2025-09-01"
+    assert window_candidates[0]["record"]["closesAt"] == "2026-01-31"
     state = json.loads(state_path.read_text(encoding="utf-8"))
     assert state["universities"][adapter.university_id]["itemCount"] == 3
 
     repeated = discover_programmes(
         adapter,
         programs_path=programs_path,
+        applications_path=applications_path,
         candidates_path=candidates_path,
+        window_candidates_path=window_candidates_path,
         state_path=state_path,
         fetcher=lambda url: CUHK_HTML,
     )
 
     assert repeated["newCandidates"] == 0
     assert repeated["pendingCandidates"] == 2
+    assert repeated["newWindowCandidates"] == 0
+    assert repeated["pendingWindowCandidates"] == 1
+
+
+def test_known_programme_window_change_becomes_review_candidate(tmp_path) -> None:
+    programs_path = tmp_path / "programs.json"
+    applications_path = tmp_path / "applications.json"
+    candidates_path = tmp_path / "programme-candidates.json"
+    window_candidates_path = tmp_path / "window-candidates.json"
+    state_path = tmp_path / "programme-catalog-state.json"
+    programs_path.write_text(
+        json.dumps(
+            {
+                "programs": [
+                    {
+                        "id": "cuhk-computer-science-msc",
+                        "universityId": "the-chinese-university-of-hong-kong",
+                        "name": "MSc in Computer Science",
+                        "degreeType": "MSc",
+                        "faculty": "Computer Science and Engineering",
+                        "applicationUrl": "https://www.gs.cuhk.edu.hk/admissions/",
+                        "sourceUrl": (
+                            "https://www.gs.cuhk.edu.hk/admissions/application-deadline"
+                        ),
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    applications_path.write_text(
+        json.dumps(
+            {
+                "applications": [
+                    {
+                        "id": "cuhk-computer-science-msc-2026-main",
+                        "universityId": "the-chinese-university-of-hong-kong",
+                        "scopeType": "programme",
+                        "scopeId": "cuhk-computer-science-msc",
+                        "intake": "September 2026",
+                        "intakeDetails": {
+                            "label": "September 2026",
+                            "cycleYear": 2026,
+                            "term": "fall",
+                            "startMonth": 9,
+                        },
+                        "round": "Main application period",
+                        "applicantCategories": ["all"],
+                        "opensAt": "2025-09-01",
+                        "closesAt": "2026-01-15",
+                        "applicationUrl": "https://www.gs.cuhk.edu.hk/admissions/",
+                        "sourceUrl": (
+                            "https://www.gs.cuhk.edu.hk/admissions/application-deadline"
+                        ),
+                        "verifiedAt": "2025-10-01",
+                        "evidence": "Previous official deadline.",
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    report = discover_programmes(
+        CUHKAdapter(minimum_expected_programmes=1),
+        programs_path=programs_path,
+        applications_path=applications_path,
+        candidates_path=candidates_path,
+        window_candidates_path=window_candidates_path,
+        state_path=state_path,
+        fetcher=lambda url: CUHK_HTML,
+    )
+
+    assert report["changedWindowCandidates"] == 1
+    candidate = json.loads(window_candidates_path.read_text(encoding="utf-8"))["items"][
+        0
+    ]
+    assert candidate["type"] == "adapter-window-change"
+    assert candidate["record"]["id"] == "cuhk-computer-science-msc-2026-main"
+    assert candidate["changes"]["closesAt"] == {
+        "previous": "2026-01-15",
+        "observed": "2026-01-31",
+    }
+
+
+def test_known_programme_inferred_opening_does_not_create_window_candidate(
+    tmp_path,
+) -> None:
+    class InferredOpeningAdapter:
+        university_id = "example-university"
+        catalog_url = "https://example.edu/programmes"
+        intake = "September 2027"
+        application_opens_at_basis = "inferred-cycle-default"
+
+        def parse_catalog(self, _html):
+            return DiscoveredCatalog(
+                application_opens_at="2026-10-01",
+                programmes=[
+                    DiscoveredProgramme(
+                        id="example-msc",
+                        name="Example MSc",
+                        degree_type="MSc",
+                        faculty="",
+                        department="",
+                        source_url="https://example.edu/programmes/example",
+                        application_url="https://example.edu/apply",
+                        windows=[
+                            DiscoveredWindow(
+                                round="Main",
+                                closes_at="2027-01-31",
+                            )
+                        ],
+                        deadline_text="Applications close on 31 January 2027.",
+                        parse_status="parsed",
+                    )
+                ],
+            )
+
+    programs_path = tmp_path / "programs.json"
+    applications_path = tmp_path / "applications.json"
+    candidates_path = tmp_path / "programme-candidates.json"
+    window_candidates_path = tmp_path / "window-candidates.json"
+    state_path = tmp_path / "programme-catalog-state.json"
+    programs_path.write_text(
+        json.dumps(
+            {
+                "programs": [
+                    {
+                        "id": "example-msc",
+                        "universityId": "example-university",
+                        "name": "Example MSc",
+                        "degreeType": "MSc",
+                        "faculty": "",
+                        "applicationUrl": "https://example.edu/apply",
+                        "sourceUrl": "https://example.edu/programmes/example",
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    applications_path.write_text(json.dumps({"applications": []}), encoding="utf-8")
+
+    report = discover_programmes(
+        InferredOpeningAdapter(),
+        programs_path=programs_path,
+        applications_path=applications_path,
+        candidates_path=candidates_path,
+        window_candidates_path=window_candidates_path,
+        state_path=state_path,
+        fetcher=lambda url: "<html></html>",
+    )
+
+    assert report["newWindowCandidates"] == 0
+    assert not window_candidates_path.exists()

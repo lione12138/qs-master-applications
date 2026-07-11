@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import copy
 import hashlib
-import re
 from datetime import datetime, timezone
 from pathlib import Path
 from uuid import uuid4
@@ -18,6 +17,7 @@ from .paths import (
     WINDOW_CANDIDATES_PATH,
 )
 from .predictions import generate_predictions
+from .programme_windows import has_official_exact_window, programme_window_record_id
 from .validation import validate_data
 
 
@@ -46,6 +46,11 @@ def approve_window(
     record = copy.deepcopy(candidate.get("record"))
     if not isinstance(record, dict):
         raise ValueError(f"Candidate {candidate_id} has no application record")
+    opening_basis = candidate.get("openingBasis")
+    if opening_basis is not None and opening_basis != "official":
+        raise ValueError(
+            f"Candidate {candidate_id} does not have an official opening date"
+        )
     record = with_intake_details(record)
     verified_at = approved_at.date().isoformat()
     record["verifiedAt"] = verified_at
@@ -144,9 +149,7 @@ def approve_programme_candidates(
             continue
         windows = candidate.get("windows") or []
         exact_windows = [
-            window
-            for window in windows
-            if window.get("opensAt") and window.get("closesAt")
+            window for window in windows if has_official_exact_window(window)
         ]
         if parsed_only and candidate.get("parseStatus") != "parsed":
             continue
@@ -162,7 +165,11 @@ def approve_programme_candidates(
             known_program_ids.add(programme_id)
             promoted_programmes += 1
         for window in exact_windows:
-            record_id = _programme_window_id(programme_id, window)
+            record_id = programme_window_record_id(
+                programme_id,
+                window,
+                existing_ids=known_application_ids,
+            )
             if record_id in known_application_ids:
                 continue
             record = with_intake_details(
@@ -197,8 +204,9 @@ def approve_programme_candidates(
             candidate["reviewedAt"] = approved_at.isoformat()
         else:
             candidate["reviewNotes"] = (
-                "Exact windows were promoted, but at least one window is missing "
-                "an opening or closing date and still needs review."
+                "Official exact windows were promoted, but at least one window "
+                "is missing an official opening or closing date and still needs "
+                "review."
             )
 
     if promoted_windows == 0:
@@ -281,11 +289,6 @@ def _validate_programme_promotion(
         raise ValueError(
             "Programme candidate promotion failed validation: " + "; ".join(errors)
         )
-
-
-def _programme_window_id(programme_id: str, window: dict) -> str:
-    intake_year = _intake_year(window.get("intake", "")) or window["closesAt"][:4]
-    return f"{programme_id}-{intake_year}-{_slug(window.get('round') or 'main')}"
 
 
 def _programme_window_evidence(
@@ -375,15 +378,6 @@ def _dedupe_faculty(value: str) -> str:
     parts = [part.strip() for part in value.split("|") if part.strip()]
     deduped = list(dict.fromkeys(parts))
     return " | ".join(deduped)
-
-
-def _intake_year(value: str) -> str | None:
-    match = re.search(r"\b(20\d{2})\b", value)
-    return match.group(1) if match else None
-
-
-def _slug(value: str) -> str:
-    return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", value.lower())).strip("-")
 
 
 def _pending_count(candidates: dict, university_id: str) -> int:

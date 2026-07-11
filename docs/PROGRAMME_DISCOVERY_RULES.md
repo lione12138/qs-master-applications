@@ -13,12 +13,16 @@ windows.
 4. Visit programme detail pages when the catalogue does not publish exact
    opening and closing dates.
 5. Parse only exact application windows with both `opensAt` and `closesAt`.
-6. Write all discoveries to `data/ops/programme-candidates.json`.
-7. Promote only reviewed candidates with exact windows into:
+6. Diff adapter observations against both the programme catalogue and existing
+   official application cycles.
+7. Write new programmes to `data/ops/programme-candidates.json`; write new
+   official cycles or changed official dates for known programmes to
+   `data/ops/window-candidates.json`.
+8. Promote only reviewed candidates with exact, officially sourced windows into:
    - `data/programs.json`
    - `data/applications.json`
    - `data/evidence/*.json`
-8. Keep no-deadline, rolling-admission, and incomplete-opening candidates in
+9. Keep no-deadline, rolling-admission, and incomplete-opening candidates in
    ops data until a human confirms the official interpretation.
 
 ## Search rules
@@ -103,12 +107,15 @@ Do not publish as official windows:
 
 ### 6. Candidate statuses
 
-- `parsed`: exact programme window(s) with opening and closing dates.
+- `parsed`: exact programme window(s) with opening and closing dates. The
+  opening date still carries an independent `opensAtBasis` provenance value.
 - `incomplete`: deadline is exact but opening date or applicant scope needs
   review.
 - `no-deadline`: programme exists, but no exact application window was found.
 
-Only `parsed` candidates should be batch-promoted by default.
+Only `parsed` windows whose `opensAtBasis` is exactly `official` may be
+batch-promoted. A configured or inferred exact-looking date remains a review
+observation and must not cross the publication boundary.
 
 ### 7. Promotion rule
 
@@ -121,8 +128,15 @@ python -m gradwindow.cli approve-programmes \
 ```
 
 This promotes only pending `new-programme` candidates with `parseStatus:
-parsed`, creates programme-scoped application windows, marks candidates as
-approved, and regenerates predictions.
+parsed` and officially sourced exact openings, creates programme-scoped
+application windows, marks fully promoted candidates as approved, and
+regenerates predictions.
+
+Dedicated and generic adapters also revisit programmes that already exist in
+`data/programs.json`. A newly observed official intake cycle becomes an
+`adapter-new-window` candidate; an official date change for an existing cycle
+becomes an `adapter-window-change` candidate. Both use the normal
+`approve-window` command and never write directly to `data/applications.json`.
 
 After promotion, run:
 

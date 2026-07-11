@@ -140,6 +140,17 @@ and applies a catalogue-size circuit breaker before updating its snapshot.
 Early-round deadlines that precede CUHK's shared commencement date retain a
 null opening date in the internal candidate and require manual review.
 
+Adapter observations are also diffed against known programme application
+cycles. Exact official openings for a new intake and official changes to an
+existing cycle are written to `window-candidates.json`. Shared defaults marked
+as inferred are not eligible for automatic promotion, even when they happen to
+look like complete ISO dates.
+
+Validation reports historical records whose evidence still says
+`configured cycle-default opening date` as `legacyConfiguredOpeningWindows`.
+This is a migration counter, not permission to create more inferred official
+windows.
+
 `approve-window` performs a full validation against a temporary proposed
 applications dataset before writing the approved record. Candidate and review
 files are never copied into `site/`.
@@ -160,12 +171,15 @@ python scripts\update_programme_translations.py --limit 50
 
 Use `--dry-run` to inspect pending scopes before spending API credits. The
 script only fills missing entries by default; add `--force` to regenerate
-non-manual entries.
+non-manual entries. Successful API batches are checkpointed atomically, so a
+later rate-limit or response error does not discard earlier translations.
 
 For scheduled automation, add `DEEPSEEK_API_KEY` as a GitHub Actions repository
 secret. The daily `update-data.yml` workflow will call the translation script
 after the admissions data pipeline and include `data/programme-translations.json`
-in the review pull request. Never commit the API key into the repository.
+in the review pull request. Translation is optional: an API failure is reported
+as a workflow warning but does not suppress an otherwise valid data-review pull
+request. Never commit the API key into the repository.
 
 ## Data contracts
 
