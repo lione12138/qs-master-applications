@@ -30,10 +30,18 @@ import {
   setProgrammeTranslations,
 } from "./localization.js";
 import { needsManualCheck } from "./exception-status.js";
-import { filterRecordsToRanking } from "./ranking-filter.js";
+import {
+  createRankingIndex,
+  filterRecordsToRanking,
+} from "./ranking-filter.js";
 import { groupWindowRecordsForDisplay } from "./window-grouping.js";
 
 const PAGE_SIZE = 20;
+const dateFormatters = new Map();
+const deadlineDatePartsFormatters = new Map();
+const recordSearchTextCache = new WeakMap();
+const recordIntakeCache = new WeakMap();
+let selectedRankingCache = null;
 
 function statusLabels() {
   return {
@@ -56,12 +64,34 @@ function statusLabels() {
 }
 
 function dateFormatter() {
-  return new Intl.DateTimeFormat(state.language === "zh" ? "zh-CN" : "en-GB", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    timeZone: "UTC",
-  });
+  const locale = state.language === "zh" ? "zh-CN" : "en-GB";
+  if (!dateFormatters.has(locale)) {
+    dateFormatters.set(
+      locale,
+      new Intl.DateTimeFormat(locale, {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+        timeZone: "UTC",
+      }),
+    );
+  }
+  return dateFormatters.get(locale);
+}
+
+function deadlineDatePartsFormatter() {
+  const locale = state.language === "zh" ? "zh-CN" : "en-GB";
+  if (!deadlineDatePartsFormatters.has(locale)) {
+    deadlineDatePartsFormatters.set(
+      locale,
+      new Intl.DateTimeFormat(locale, {
+        day: "2-digit",
+        month: "short",
+        timeZone: "UTC",
+      }),
+    );
+  }
+  return deadlineDatePartsFormatters.get(locale);
 }
 
 function makeCell(label, ...children) {
@@ -157,6 +187,13 @@ function formatDate(value) {
   return dateFormatter().format(parseDate(value));
 }
 
+function recordIntake(record) {
+  if (!recordIntakeCache.has(record)) {
+    recordIntakeCache.set(record, canonicalIntake(record));
+  }
+  return recordIntakeCache.get(record);
+}
+
 function deadlineNote(record, status) {
   if (record.dataStatus === "predicted") {
     return `${t("calendarShift")} · ${t("basedOn")} ${record.sourceCycle}`;
@@ -166,7 +203,7 @@ function deadlineNote(record, status) {
   if (days === 0) return t("dueToday");
   if (days === 1) return t("dueTomorrow");
   if (days > 1 && days <= 30) return `${days} ${t("daysLeft")}`;
-  return intakeLabel(canonicalIntake(record), state.language);
+  return intakeLabel(recordIntake(record), state.language);
 }
 
 const APPLICANT_CATEGORY_LABELS = {
@@ -236,7 +273,7 @@ function openWindowDetail(record, status = getStatus(record)) {
   if (!panel || !body || !actions) return;
 
   const schoolText = schoolLabels(record, state.language);
-  const intake = intakeLabel(canonicalIntake(record), state.language);
+  const intake = intakeLabel(recordIntake(record), state.language);
   const localizedRound = roundLabel(record.round, state.language);
   const programmeName = programmeLabel(
     record.scopeId,
@@ -431,7 +468,7 @@ function populateIntakeSelect() {
 
   const intakes = new Map();
   recordsInSelectedRanking().forEach((record) => {
-    const intake = canonicalIntake(record);
+    const intake = recordIntake(record);
     if (intake.term === "academic") return;
     intakes.set(intake.key, intake);
   });
@@ -446,7 +483,7 @@ function populateIntakeSelect() {
     : "all";
 }
 
-function selectedRankingDefinition() {
+function buildSelectedRankingDefinition() {
   if (state.ranking === "qs") {
     return {
       id: "qs",
@@ -473,17 +510,36 @@ function selectedRankingDefinition() {
   return { id: state.ranking, available: true, rows: [], ...ranking };
 }
 
+function selectedRankingContext() {
+  if (
+    selectedRankingCache?.ranking === state.ranking &&
+    selectedRankingCache.universities === state.universities &&
+    selectedRankingCache.rankingPayload === state.rankingPayload
+  ) {
+    return selectedRankingCache;
+  }
+  const definition = buildSelectedRankingDefinition();
+  const rows = definition.available === false ? [] : definition.rows || [];
+  selectedRankingCache = {
+    ranking: state.ranking,
+    universities: state.universities,
+    rankingPayload: state.rankingPayload,
+    definition,
+    index: createRankingIndex(rows),
+  };
+  return selectedRankingCache;
+}
+
+function selectedRankingDefinition() {
+  return selectedRankingContext().definition;
+}
+
 function selectedRankingRows() {
-  const ranking = selectedRankingDefinition();
-  return ranking.available === false ? [] : ranking.rows || [];
+  return selectedRankingContext().index.rows;
 }
 
 function selectedRankByUniversityId() {
-  return new Map(
-    selectedRankingRows()
-      .filter((row) => row.universityId)
-      .map((row) => [row.universityId, row]),
-  );
+  return selectedRankingContext().index.byUniversityId;
 }
 
 function selectedRankForUniversity(universityId) {
@@ -491,7 +547,16 @@ function selectedRankForUniversity(universityId) {
 }
 
 function recordsInSelectedRanking() {
-  return filterRecordsToRanking(state.data, selectedRankingRows());
+  const context = selectedRankingContext();
+  if (context.recordsSource !== state.data) {
+    context.recordsSource = state.data;
+    context.records = filterRecordsToRanking(
+      state.data,
+      context.index.rows,
+      context.index.universityIds,
+    );
+  }
+  return context.records;
 }
 
 function selectedDirectoryUniversities() {
@@ -583,29 +648,36 @@ function updateRankRangeOptions() {
     : "200";
 }
 
+function recordSearchText(record) {
+  if (!recordSearchTextCache.has(record)) {
+    recordSearchTextCache.set(
+      record,
+      [
+        record.school,
+        record.schoolZh,
+        ...(record.schoolAliasesZh || []),
+        acronym(record.school),
+        record.program,
+        ...programmeSearchTerms(record.scopeId, record.program),
+        record.universityId,
+        record.scopeId,
+        record.country,
+        record.region,
+      ]
+        .join(" ")
+        .toLocaleLowerCase("zh-CN"),
+    );
+  }
+  return recordSearchTextCache.get(record);
+}
+
 function filteredRecords() {
   const query = state.search.trim().toLocaleLowerCase("zh-CN");
   return recordsInSelectedRanking().filter((record) => {
-    const searchable = [
-      record.school,
-      record.schoolZh,
-      ...(record.schoolAliasesZh || []),
-      acronym(record.school),
-      record.program,
-      ...programmeSearchTerms(record.scopeId, record.program),
-      record.universityId,
-      record.scopeId,
-      record.country,
-      record.region,
-    ]
-      .join(" ")
-      .toLocaleLowerCase("zh-CN");
-
     return (
-      (!query || searchable.includes(query)) &&
+      (!query || recordSearchText(record).includes(query)) &&
       (state.region === "all" || record.region === state.region) &&
-      (state.intake === "all" ||
-        canonicalIntake(record).key === state.intake) &&
+      (state.intake === "all" || recordIntake(record).key === state.intake) &&
       (selectedRankForUniversity(record.universityId)?.rankPosition || 999) <=
         Number(state.rankLimit) &&
       (!state.favoritesOnly ||
@@ -710,7 +782,7 @@ function createRow(record, status, windowGroup = null) {
         .join(" · "),
     }),
   );
-  const intake = intakeLabel(canonicalIntake(record), state.language);
+  const intake = intakeLabel(recordIntake(record), state.language);
   const localizedRound = roundLabel(record.round, state.language);
   const programme = makeLinkedTextStack(
     programmeLabel(record.scopeId, record.program, state.language),
@@ -1583,10 +1655,7 @@ function setupHero() {
     if (mobileNote) mobileNote.textContent = "";
     return;
   }
-  const dateParts = new Intl.DateTimeFormat(
-    state.language === "zh" ? "zh-CN" : "en-GB",
-    { day: "2-digit", month: "short", timeZone: "UTC" },
-  )
+  const dateParts = deadlineDatePartsFormatter()
     .formatToParts(parseDate(futureDeadline.closesAt))
     .reduce((result, part) => ({ ...result, [part.type]: part.value }), {});
   document.getElementById("hero-deadline-day").textContent = dateParts.day;
@@ -1935,7 +2004,7 @@ async function init() {
       (record) => record.intake === legacyIntake,
     );
     if (matchingLegacyRecord) {
-      state.intake = canonicalIntake(matchingLegacyRecord).key;
+      state.intake = recordIntake(matchingLegacyRecord).key;
     }
     populateIntakeSelect();
     const allowedStatuses = new Set([

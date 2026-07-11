@@ -17,7 +17,7 @@ def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
     rankings_uri = (ROOT / "data" / "global-rankings.json").resolve().as_uri()
     script = f"""
       import fs from "node:fs";
-      import {{ filterRecordsToRanking }} from {json.dumps(module_uri)};
+      import {{ createRankingIndex, filterRecordsToRanking }} from {json.dumps(module_uri)};
       const load = (url) => JSON.parse(fs.readFileSync(new URL(url), "utf8"));
       const records = [
         ...load({json.dumps(applications_uri)}).applications,
@@ -37,3 +37,48 @@ def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
     )
 
     assert json.loads(result.stdout) == {"the": 5663, "arwu": 5425}
+
+
+def test_frontend_ranking_index_reuses_rank_and_membership_lookups() -> None:
+    node = shutil.which("node")
+    assert node is not None, "Node.js is required for frontend ranking tests"
+    module_uri = (ROOT / "ranking-filter.js").resolve().as_uri()
+    script = f"""
+      import {{ createRankingIndex, filterRecordsToRanking }} from {json.dumps(module_uri)};
+      const rows = [
+        {{ universityId: "ucl", rankPosition: 9, rankDisplay: "=9" }},
+        {{ universityId: "mit", rankPosition: 1, rankDisplay: "1" }},
+        {{ id: "ranking-only", rankPosition: 2, rankDisplay: "2" }},
+      ];
+      const index = createRankingIndex(rows);
+      const records = [
+        {{ id: "ucl-window", universityId: "ucl" }},
+        {{ id: "mit-window", universityId: "mit" }},
+        {{ id: "other-window", universityId: "other" }},
+      ];
+      console.log(JSON.stringify({{
+        sameRows: index.rows === rows,
+        uclRank: index.byUniversityId.get("ucl").rankDisplay,
+        missingRank: index.byUniversityId.has("ranking-only"),
+        universityIds: [...index.universityIds].sort(),
+        filteredIds: filterRecordsToRanking(
+          records,
+          index.rows,
+          index.universityIds,
+        ).map((record) => record.id),
+      }}));
+    """
+    result = subprocess.run(
+        [node, "--input-type=module", "-e", script],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+    assert json.loads(result.stdout) == {
+        "sameRows": True,
+        "uclRank": "=9",
+        "missingRank": False,
+        "universityIds": ["mit", "ucl"],
+        "filteredIds": ["ucl-window", "mit-window"],
+    }
