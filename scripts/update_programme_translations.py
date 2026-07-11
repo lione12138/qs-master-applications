@@ -4,6 +4,8 @@ import argparse
 import json
 import os
 import re
+import sys
+import time
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -11,21 +13,27 @@ from typing import Any
 import httpx
 
 ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+if str(SRC) not in sys.path:
+    sys.path.insert(0, str(SRC))
+
+from gradwindow.io import read_json, write_json
+
 DATA_DIR = ROOT / "data"
 TRANSLATIONS_PATH = DATA_DIR / "programme-translations.json"
 DEFAULT_MODEL = "deepseek-v4-flash"
 DEFAULT_BASE_URL = "https://api.deepseek.com"
+DEFAULT_MAX_ATTEMPTS = 3
+MAX_ERROR_BODY_LENGTH = 800
+RETRYABLE_STATUS_CODES = {408, 409, 425, 429, 500, 502, 503, 504}
 
 
-def read_json(path: Path) -> dict[str, Any]:
-    return json.loads(path.read_text(encoding="utf-8"))
+class TranslationAPIError(RuntimeError):
+    """A sanitized, actionable DeepSeek request failure."""
 
 
-def write_json(path: Path, payload: dict[str, Any]) -> None:
-    path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
+class TranslationResponseError(ValueError):
+    """A DeepSeek response that cannot safely update the translation cache."""
 
 
 def load_translation_payload() -> dict[str, Any]:
@@ -112,6 +120,155 @@ def strip_json_fence(text: str) -> str:
     return cleaned
 
 
+def _request_payload(
+    *,
+    model: str,
+    system: str,
+    user: dict[str, Any],
+    compatibility_mode: bool,
+) -> dict[str, Any]:
+    payload: dict[str, Any] = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
+        ],
+        "stream": False,
+        "temperature": 0.2,
+        "max_tokens": 6000,
+    }
+    if not compatibility_mode:
+        payload.update(
+            {
+                "thinking": {"type": "disabled"},
+                "response_format": {"type": "json_object"},
+            }
+        )
+    return payload
+
+
+def _sanitized_error_body(response: httpx.Response, api_key: str) -> str:
+    try:
+        body = response.text
+    except Exception:  # pragma: no cover - defensive for unusual transports
+        body = ""
+    if api_key:
+        body = body.replace(api_key, "[redacted]")
+    body = re.sub(r"(?i)bearer\s+[^\s,;\"']+", "Bearer [redacted]", body)
+    return " ".join(body.split())[:MAX_ERROR_BODY_LENGTH]
+
+
+def _retry_delay(response: httpx.Response | None, attempt: int) -> float:
+    if response is not None:
+        retry_after = response.headers.get("Retry-After", "").strip()
+        try:
+            return min(max(float(retry_after), 0.0), 30.0)
+        except ValueError:
+            pass
+    return min(2 ** (attempt - 1), 8)
+
+
+def _post_translation_request(
+    *,
+    api_key: str,
+    base_url: str,
+    payload: dict[str, Any],
+    timeout: float,
+    max_attempts: int,
+) -> httpx.Response:
+    endpoint = f"{base_url.rstrip('/')}/chat/completions"
+    last_error: Exception | None = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            response = httpx.post(
+                endpoint,
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json",
+                },
+                json=payload,
+                timeout=timeout,
+            )
+        except httpx.RequestError as exc:
+            last_error = exc
+            if attempt == max_attempts:
+                break
+            time.sleep(_retry_delay(None, attempt))
+            continue
+
+        if response.status_code in RETRYABLE_STATUS_CODES:
+            if attempt == max_attempts:
+                body = _sanitized_error_body(response, api_key)
+                detail = f"; body={body}" if body else ""
+                raise TranslationAPIError(
+                    "DeepSeek request exhausted "
+                    f"{max_attempts} attempt(s): HTTP {response.status_code}{detail}"
+                )
+            time.sleep(_retry_delay(response, attempt))
+            continue
+        return response
+
+    error_type = type(last_error).__name__ if last_error else "RequestError"
+    raise TranslationAPIError(
+        "DeepSeek request exhausted "
+        f"{max_attempts} attempt(s): {error_type}. "
+        "Check network access and DEEPSEEK_BASE_URL."
+    ) from last_error
+
+
+def _completion_response(
+    *,
+    api_key: str,
+    base_url: str,
+    model: str,
+    system: str,
+    user: dict[str, Any],
+    timeout: float,
+    max_attempts: int,
+) -> httpx.Response:
+    response = _post_translation_request(
+        api_key=api_key,
+        base_url=base_url,
+        payload=_request_payload(
+            model=model,
+            system=system,
+            user=user,
+            compatibility_mode=False,
+        ),
+        timeout=timeout,
+        max_attempts=max_attempts,
+    )
+    if response.status_code == 400:
+        print(
+            "DeepSeek may have rejected optional thinking/JSON-output parameters; "
+            "retrying this batch in compatibility mode.",
+            file=sys.stderr,
+        )
+        response = _post_translation_request(
+            api_key=api_key,
+            base_url=base_url,
+            payload=_request_payload(
+                model=model,
+                system=system,
+                user=user,
+                compatibility_mode=True,
+            ),
+            timeout=timeout,
+            max_attempts=max_attempts,
+        )
+
+    if response.is_error:
+        body = _sanitized_error_body(response, api_key)
+        detail = f"; body={body}" if body else ""
+        fallback = (
+            " after compatibility fallback" if response.status_code == 400 else ""
+        )
+        raise TranslationAPIError(
+            f"DeepSeek returned HTTP {response.status_code}{fallback}{detail}"
+        )
+    return response
+
+
 def translate_batch(
     rows: list[dict[str, str]],
     *,
@@ -119,6 +276,7 @@ def translate_batch(
     base_url: str,
     model: str,
     timeout: float,
+    max_attempts: int = DEFAULT_MAX_ATTEMPTS,
 ) -> dict[str, dict[str, Any]]:
     system = (
         "You translate university master's admissions programme/scope labels "
@@ -142,34 +300,134 @@ def translate_batch(
         ],
         "items": rows,
     }
-    response = httpx.post(
-        f"{base_url.rstrip('/')}/chat/completions",
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        json={
-            "model": model,
-            "messages": [
-                {"role": "system", "content": system},
-                {"role": "user", "content": json.dumps(user, ensure_ascii=False)},
-            ],
-            "stream": False,
-            "thinking": {"type": "disabled"},
-            "temperature": 0.2,
-            "max_tokens": 6000,
-            "response_format": {"type": "json_object"},
-        },
+    response = _completion_response(
+        api_key=api_key,
+        base_url=base_url,
+        model=model,
+        system=system,
+        user=user,
         timeout=timeout,
+        max_attempts=max_attempts,
     )
-    response.raise_for_status()
-    content = response.json()["choices"][0]["message"]["content"]
-    parsed = json.loads(strip_json_fence(content))
-    return {
+    try:
+        content = response.json()["choices"][0]["message"]["content"]
+        if not isinstance(content, str):
+            raise TypeError("completion content is not text")
+        parsed = json.loads(strip_json_fence(content))
+    except (KeyError, IndexError, TypeError, json.JSONDecodeError) as exc:
+        raise TranslationResponseError(
+            "DeepSeek returned an invalid completion payload; no checkpoint was written."
+        ) from exc
+    if not isinstance(parsed, dict):
+        raise TranslationResponseError(
+            "DeepSeek returned JSON that was not an object; no checkpoint was written."
+        )
+
+    expected_ids = {row["id"] for row in rows}
+    translated = {
         scope_id: value
         for scope_id, value in parsed.items()
-        if isinstance(value, dict) and value.get("zh")
+        if scope_id in expected_ids
+        and isinstance(value, dict)
+        and isinstance(value.get("zh"), str)
+        and value["zh"].strip()
     }
+    missing_ids = sorted(expected_ids - translated.keys())
+    if missing_ids:
+        preview = ", ".join(missing_ids[:5])
+        suffix = "..." if len(missing_ids) > 5 else ""
+        raise TranslationResponseError(
+            "DeepSeek omitted or returned invalid translations for "
+            f"{len(missing_ids)} item(s): {preview}{suffix}. "
+            "No checkpoint was written for this batch."
+        )
+    return translated
+
+
+def update_translations(
+    *,
+    limit: int = 0,
+    batch_size: int = 20,
+    dry_run: bool = False,
+    force: bool = False,
+    include_manual: bool = False,
+    model: str | None = None,
+    base_url: str | None = None,
+    timeout: float = 60.0,
+    max_attempts: int = DEFAULT_MAX_ATTEMPTS,
+    api_key: str | None = None,
+) -> int:
+    if batch_size < 1:
+        raise ValueError("batch_size must be at least 1")
+    if max_attempts < 1:
+        raise ValueError("max_attempts must be at least 1")
+
+    model = model or os.environ.get("DEEPSEEK_MODEL") or DEFAULT_MODEL
+    base_url = base_url or os.environ.get("DEEPSEEK_BASE_URL") or DEFAULT_BASE_URL
+    payload = load_translation_payload()
+    translations = payload.setdefault("translations", {})
+    catalog = build_scope_catalog()
+    pending = [
+        item
+        for scope_id, item in catalog.items()
+        if needs_translation(scope_id, translations, force, include_manual)
+    ]
+    if limit:
+        pending = pending[:limit]
+
+    if dry_run:
+        print(
+            json.dumps(
+                {"pending": len(pending), "items": pending},
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
+        return 0
+    if not pending:
+        print("No missing programme translations.")
+        return 0
+
+    api_key = api_key or os.environ.get("DEEPSEEK_API_KEY")
+    if not api_key:
+        raise SystemExit("Set DEEPSEEK_API_KEY before running this script.")
+
+    translated_count = 0
+    for start in range(0, len(pending), batch_size):
+        batch = pending[start : start + batch_size]
+        translated = translate_batch(
+            batch,
+            api_key=api_key,
+            base_url=base_url,
+            model=model,
+            timeout=timeout,
+            max_attempts=max_attempts,
+        )
+        for scope_id, value in translated.items():
+            aliases = value.get("aliasesZh", [])
+            if not isinstance(aliases, list):
+                aliases = []
+            translations[scope_id] = {
+                "zh": value["zh"].strip(),
+                "aliasesZh": [
+                    alias.strip()
+                    for alias in aliases
+                    if isinstance(alias, str) and alias.strip()
+                ],
+                "source": "deepseek",
+                "model": model,
+                "updatedAt": date.today().isoformat(),
+            }
+        translated_count += len(translated)
+        payload.setdefault("meta", {})["updatedAt"] = date.today().isoformat()
+        write_json(TRANSLATIONS_PATH, payload)
+        print(
+            f"Translated and checkpointed "
+            f"{min(start + len(batch), len(pending))}/{len(pending)}"
+        )
+
+    print(f"Wrote {TRANSLATIONS_PATH.relative_to(ROOT)}")
+    return translated_count
 
 
 def main() -> None:
@@ -191,69 +449,29 @@ def main() -> None:
     )
     parser.add_argument(
         "--model",
-        default=os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL),
+        default=os.environ.get("DEEPSEEK_MODEL") or DEFAULT_MODEL,
     )
     parser.add_argument(
         "--base-url",
-        default=os.environ.get("DEEPSEEK_BASE_URL", DEFAULT_BASE_URL),
+        default=os.environ.get("DEEPSEEK_BASE_URL") or DEFAULT_BASE_URL,
     )
     parser.add_argument("--timeout", type=float, default=60.0)
+    parser.add_argument("--max-attempts", type=int, default=DEFAULT_MAX_ATTEMPTS)
     args = parser.parse_args()
-
-    payload = load_translation_payload()
-    translations = payload.setdefault("translations", {})
-    catalog = build_scope_catalog()
-    pending = [
-        item
-        for scope_id, item in catalog.items()
-        if needs_translation(scope_id, translations, args.force, args.include_manual)
-    ]
-    if args.limit:
-        pending = pending[: args.limit]
-
-    if args.dry_run:
-        print(
-            json.dumps(
-                {"pending": len(pending), "items": pending},
-                ensure_ascii=False,
-                indent=2,
-            )
-        )
-        return
-    if not pending:
-        print("No missing programme translations.")
-        return
-
-    api_key = os.environ.get("DEEPSEEK_API_KEY")
-    if not api_key:
-        raise SystemExit("Set DEEPSEEK_API_KEY before running this script.")
-
-    for start in range(0, len(pending), args.batch_size):
-        batch = pending[start : start + args.batch_size]
-        translated = translate_batch(
-            batch,
-            api_key=api_key,
-            base_url=args.base_url,
+    try:
+        update_translations(
+            limit=args.limit,
+            batch_size=args.batch_size,
+            dry_run=args.dry_run,
+            force=args.force,
+            include_manual=args.include_manual,
             model=args.model,
+            base_url=args.base_url,
             timeout=args.timeout,
+            max_attempts=args.max_attempts,
         )
-        for scope_id, value in translated.items():
-            translations[scope_id] = {
-                "zh": value["zh"].strip(),
-                "aliasesZh": [
-                    alias.strip()
-                    for alias in value.get("aliasesZh", [])
-                    if isinstance(alias, str) and alias.strip()
-                ],
-                "source": "deepseek",
-                "model": args.model,
-                "updatedAt": date.today().isoformat(),
-            }
-        print(f"Translated {min(start + len(batch), len(pending))}/{len(pending)}")
-
-    payload.setdefault("meta", {})["updatedAt"] = date.today().isoformat()
-    write_json(TRANSLATIONS_PATH, payload)
-    print(f"Wrote {TRANSLATIONS_PATH.relative_to(ROOT)}")
+    except (TranslationAPIError, TranslationResponseError, ValueError) as exc:
+        raise SystemExit(f"Programme translation update failed: {exc}") from exc
 
 
 if __name__ == "__main__":

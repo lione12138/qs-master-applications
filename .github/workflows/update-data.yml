@@ -58,6 +58,8 @@ jobs:
 
       - name: Update programme translations
         if: github.event_name != 'push'
+        id: programme_translations
+        continue-on-error: true
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
@@ -67,6 +69,19 @@ jobs:
             exit 0
           fi
           python scripts/update_programme_translations.py
+
+      - name: Report programme translation failure
+        if: >-
+          github.event_name != 'push' &&
+          steps.programme_translations.outcome == 'failure'
+        run: |
+          echo "::warning title=Programme translation update failed::The data pipeline succeeded, but DeepSeek translation failed. Successfully checkpointed batches will still be included in the data review pull request."
+          {
+            echo "### Programme translation warning"
+            echo ""
+            echo "The application-data pipeline succeeded, but the optional DeepSeek translation step failed."
+            echo "Successfully checkpointed translation batches are preserved and the data review pull request will still be created."
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Open or update data review pull request
         if: github.event_name != 'push'

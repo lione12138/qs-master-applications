@@ -32,7 +32,10 @@ jobs:
         run: pip install -e ".[dev]"
 
       - name: Check official entry pages
-        run: gradwindow pipeline --skip-build
+        run: |
+          gradwindow validate
+          gradwindow monitor --workers 16
+          gradwindow monitor-sources --workers 8
 
       - name: Publish completed-check status
         id: publish
