@@ -26,3 +26,24 @@ export function getApplicationStatus(
   const daysToOpen = Math.ceil((opens - today) / DAY_MS);
   return daysToOpen <= upcomingWindowDays ? "upcoming" : "future";
 }
+
+export function countUniversitiesByStatus(
+  records,
+  statusForRecord = getApplicationStatus,
+) {
+  const universityIds = {
+    open: new Set(),
+    upcoming: new Set(),
+    future: new Set(),
+    closed: new Set(),
+  };
+  records.forEach((record) => {
+    const status = statusForRecord(record);
+    if (record.universityId && universityIds[status]) {
+      universityIds[status].add(record.universityId);
+    }
+  });
+  return Object.fromEntries(
+    Object.entries(universityIds).map(([status, ids]) => [status, ids.size]),
+  );
+}

@@ -50,3 +50,37 @@ def test_frontend_upcoming_window_has_thirty_day_boundary() -> None:
         "predictedWithin30": "upcoming",
         "predictedFuture": "future",
     }
+
+
+def test_status_counts_unique_universities_in_each_bucket() -> None:
+    node = shutil.which("node")
+    assert node is not None, "Node.js is required for frontend status tests"
+    module_uri = (Path(__file__).parents[1] / "status.js").resolve().as_uri()
+    script = f"""
+      import {{ countUniversitiesByStatus }} from {json.dumps(module_uri)};
+      const records = [
+        {{ id: "ucl-a", universityId: "ucl", status: "open" }},
+        {{ id: "ucl-b", universityId: "ucl", status: "open" }},
+        {{ id: "mit-a", universityId: "mit", status: "open" }},
+        {{ id: "mit-future", universityId: "mit", status: "future" }},
+        {{ id: "cuhk-upcoming", universityId: "cuhk", status: "upcoming" }},
+        {{ id: "closed", universityId: "glasgow", status: "closed" }},
+        {{ id: "missing-school", status: "open" }},
+      ];
+      console.log(JSON.stringify(
+        countUniversitiesByStatus(records, (record) => record.status)
+      ));
+    """
+    result = subprocess.run(
+        [node, "--input-type=module", "-e", script],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+
+    assert json.loads(result.stdout) == {
+        "open": 2,
+        "upcoming": 1,
+        "future": 1,
+        "closed": 1,
+    }

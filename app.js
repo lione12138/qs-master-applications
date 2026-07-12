@@ -1,4 +1,4 @@
-import { getApplicationStatus } from "./status.js";
+import { countUniversitiesByStatus, getApplicationStatus } from "./status.js";
 import { state } from "./state.js";
 import { t } from "./strings.js";
 import { makeCalendarMenu } from "./calendar-export.js";
@@ -1341,18 +1341,17 @@ function createUniversityGroup(universities, status = "unknown") {
 }
 
 function renderCounts(records, universities) {
+  const applicationCounts = countUniversitiesByStatus(records, getStatus);
+  const allUniversityIds = new Set([
+    ...records.map((record) => record.universityId).filter(Boolean),
+    ...universities.map((university) => university.id).filter(Boolean),
+  ]);
   const counts = {
-    all: records.length + universities.length,
-    open: 0,
-    upcoming: 0,
-    future: 0,
-    closed: 0,
+    all: allUniversityIds.size,
+    ...applicationCounts,
     exception: universities.filter(isExceptionUniversity).length,
     unknown: universities.length,
   };
-  records.forEach((record) => {
-    counts[getStatus(record)] += 1;
-  });
   Object.entries(counts).forEach(([status, count]) => {
     const node = document.getElementById(`count-${status}`);
     if (node) node.textContent = count;
