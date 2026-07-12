@@ -34,6 +34,7 @@ from .programme_adapters.mit import MITAdapter
 from .programme_adapters.polyu import PolyUAdapter
 from .programme_adapters.stanford import StanfordAdapter
 from .programme_adapters.static_catalog import StaticCatalogAdapter, StaticCatalogConfig
+from .programme_adapters.sydney import SydneyAdapter
 from .programme_adapters.tudelft import TUDelftAdapter
 from .programme_adapters.uq import UQAdapter
 from .programme_discovery import discover_programmes
@@ -69,6 +70,7 @@ PROGRAMME_ADAPTERS = {
     "mit": MITAdapter,
     "polyu": PolyUAdapter,
     "stanford": StanfordAdapter,
+    "sydney": SydneyAdapter,
     "tudelft": TUDelftAdapter,
     "uq": UQAdapter,
 }
