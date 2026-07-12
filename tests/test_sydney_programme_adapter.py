@@ -19,8 +19,11 @@ DATES = """
 """
 
 DATA_SCIENCE = """
-<html><head><meta name="course:faculty" content="Faculty of Engineering" /></head>
-<body><h1>Master of Data Science</h1><p>For domestic students</p>
+<html><head>
+  <meta property="og:title" content="Master of Data Science | The University of Sydney" />
+  <meta name="course:faculty" content="Faculty of Engineering" />
+</head>
+<body><h1>Course details</h1><p>For domestic students</p>
 <h2>Course-specific dates</h2>
 <p>2027 Start year (February intake) applications due 30 November 2026.</p>
 </body></html>

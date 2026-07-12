@@ -199,12 +199,7 @@ def _parse_detail(
     html: str,
 ) -> DiscoveredProgramme:
     soup = BeautifulSoup(html, "html.parser")
-    heading = soup.find("h1")
-    title = (
-        _normalise_text(heading.get_text(" ", strip=True))
-        if heading
-        else programme.name
-    )
+    title = _page_title(soup) or programme.name
     text = _normalise_text(soup.get_text(" ", strip=True))
     specific_windows = _specific_deadlines(text, programme.source_url)
     faculty = _meta_content(soup, "course:faculty")
@@ -218,6 +213,28 @@ def _parse_detail(
         ),
         parse_status="incomplete",
     )
+
+
+def _page_title(soup: BeautifulSoup) -> str | None:
+    candidates: list[str] = []
+    heading = soup.find("h1")
+    if heading is not None:
+        candidates.append(_normalise_text(heading.get_text(" ", strip=True)))
+    meta = soup.find("meta", property="og:title")
+    if meta and meta.get("content"):
+        candidates.append(_normalise_text(str(meta["content"])))
+    if soup.title:
+        candidates.append(_normalise_text(soup.title.get_text(" ", strip=True)))
+    for candidate in candidates:
+        candidate = re.split(
+            r"\s+[|–-]\s+(?:The )?University of Sydney",
+            candidate,
+            maxsplit=1,
+            flags=re.I,
+        )[0]
+        if re.search(r"\b(?:Executive\s+)?Master\b", candidate, re.I):
+            return candidate
+    return None
 
 
 def _specific_deadlines(text: str, source_url: str) -> list[DiscoveredWindow]:
