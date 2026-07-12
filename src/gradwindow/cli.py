@@ -29,6 +29,7 @@ from .programme_adapters.harvard import HarvardAdapter
 from .programme_adapters.hku import HKUAdapter
 from .programme_adapters.hkust import HKUSTAdapter
 from .programme_adapters.imperial import ImperialAdapter
+from .programme_adapters.kcl import KCLAdapter
 from .programme_adapters.mit import MITAdapter
 from .programme_adapters.polyu import PolyUAdapter
 from .programme_adapters.stanford import StanfordAdapter
@@ -64,18 +65,7 @@ PROGRAMME_ADAPTERS = {
     "hku": HKUAdapter,
     "hkust": HKUSTAdapter,
     "imperial": ImperialAdapter,
-    "kcl": lambda: StaticCatalogAdapter(
-        StaticCatalogConfig(
-            university_id="king-s-college-london-kcl",
-            school_prefix="kcl",
-            catalog_url="https://www.kcl.ac.uk/study/postgraduate-taught/courses",
-            link_path_contains="/study/postgraduate-taught/courses/",
-            minimum_expected_programmes=10,
-            default_application_url="https://www.kcl.ac.uk/study/postgraduate-taught/how-to-apply",
-            default_intake="September 2026",
-        ),
-        detail_workers=1,
-    ),
+    "kcl": KCLAdapter,
     "mit": MITAdapter,
     "polyu": PolyUAdapter,
     "stanford": StanfordAdapter,

@@ -1,0 +1,68 @@
+name: Discover programmes for one university
+
+on:
+  workflow_dispatch:
+    inputs:
+      university:
+        description: Programme adapter to run
+        required: true
+        type: choice
+        options:
+          - cambridge
+          - cuhk
+          - edinburgh
+          - eth
+          - glasgow
+          - harvard
+          - hku
+          - hkust
+          - imperial
+          - kcl
+          - mit
+          - polyu
+          - stanford
+          - tudelft
+          - uq
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: programme-discovery-${{ inputs.university }}
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Run selected programme adapter
+        run: gradwindow discover-programmes --university "${{ inputs.university }}"
+      - name: Validate discovery outputs
+        run: |
+          gradwindow validate
+          pytest -q
+      - name: Open or update programme discovery pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "data: refresh ${{ inputs.university }} programme discovery"
+          branch: automation/programme-discovery-${{ inputs.university }}
+          delete-branch: true
+          title: "data: review ${{ inputs.university }} programme discovery"
+          body: |
+            Runs the selected official programme adapter and updates its
+            programme candidates, exact-window candidates, and catalogue state.
+
+            Discovery outputs remain operational review data. No application
+            window is promoted into the published table by this workflow.
+          add-paths: |
+            data/ops/programme-candidates.json
+            data/ops/window-candidates.json
+            data/ops/programme-catalog-state.json
