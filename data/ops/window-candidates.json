@@ -1,34 +1,9 @@
 {
   "meta": {
     "description": "Internal exact-window candidates awaiting manual review. This file is never published to the static site.",
-    "updatedAt": "2026-07-10T17:20:00Z"
+    "updatedAt": "2026-07-12T15:36:17.748317+00:00"
   },
   "items": [
-    {
-      "id": "tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline",
-      "type": "manual-exact-window",
-      "status": "approved",
-      "universityId": "delft-university-of-technology",
-      "record": {
-        "id": "tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline",
-        "universityId": "delft-university-of-technology",
-        "scopeType": "programme",
-        "scopeId": "tu-delft-computer-science-msc",
-        "intake": "September 2027",
-        "round": "Non-EU/EFTA early MSc deadline",
-        "applicantCategories": [
-          "non-eu-efta"
-        ],
-        "opensAt": "2026-10-15",
-        "closesAt": "2027-01-15",
-        "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
-        "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
-        "verifiedAt": "2026-07-10",
-        "evidence": "TU Delft's official Dates & Deadlines page lists MSc applications opening on 15 October and a 15 January Non-EU/EFTA deadline for Computer Science. Recorded for September 2027: 2026-10-15 to 2027-01-15."
-      },
-      "reviewedBy": "codex",
-      "reviewedAt": "2026-07-10T17:24:30.725083+00:00"
-    },
     {
       "id": "tu-delft-computer-science-msc-2027-eu-efta-msc-deadline",
       "type": "manual-exact-window",
@@ -53,6 +28,31 @@
       },
       "reviewedBy": "codex",
       "reviewedAt": "2026-07-10T17:24:34.071237+00:00"
+    },
+    {
+      "id": "tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline",
+      "type": "manual-exact-window",
+      "status": "approved",
+      "universityId": "delft-university-of-technology",
+      "record": {
+        "id": "tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline",
+        "universityId": "delft-university-of-technology",
+        "scopeType": "programme",
+        "scopeId": "tu-delft-computer-science-msc",
+        "intake": "September 2027",
+        "round": "Non-EU/EFTA early MSc deadline",
+        "applicantCategories": [
+          "non-eu-efta"
+        ],
+        "opensAt": "2026-10-15",
+        "closesAt": "2027-01-15",
+        "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
+        "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
+        "verifiedAt": "2026-07-10",
+        "evidence": "TU Delft's official Dates & Deadlines page lists MSc applications opening on 15 October and a 15 January Non-EU/EFTA deadline for Computer Science. Recorded for September 2027: 2026-10-15 to 2027-01-15."
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-10T17:24:30.725083+00:00"
     }
   ]
 }
