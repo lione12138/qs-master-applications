@@ -120,9 +120,12 @@ class KCLAdapter:
         root_locations = _xml_locations(root_xml)
         root_name = _xml_root_name(root_xml)
         course_urls = _filter_course_urls(root_locations)
+        postgraduate_samples = [
+            url for url in root_locations if "postgraduate" in url.lower()
+        ][:8]
         self.sitemap_diagnostics = (
             f"root={root_name}, rootLocations={len(root_locations)}, "
-            f"sample={root_locations[:3]}"
+            f"sample={root_locations[:3]}, postgraduateSample={postgraduate_samples}"
         )
         if course_urls:
             return course_urls
