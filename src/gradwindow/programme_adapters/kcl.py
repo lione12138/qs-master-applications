@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 import concurrent.futures
+import json
 import re
 import unicodedata
 from collections.abc import Callable, Iterable
 from dataclasses import replace
 from datetime import datetime
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import urlencode, urljoin, urlsplit, urlunsplit
 from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
@@ -45,6 +46,11 @@ ALL_FINAL_DEADLINE_RE = re.compile(
 )
 INTAKE_RE = re.compile(
     r"(?P<term>January|September)\s+(?P<year>20\d{2})\s+intake", re.I
+)
+STARTUP_SCRIPT_RE = re.compile(r"startup-[^/]+\.js$")
+DELIVERY_TOKEN_RE = re.compile(r'accessToken:\s*"(?P<token>[^"]+)"')
+DELIVERY_API_RE = re.compile(
+    r'api:\s*"https://api-"\s*\+\s*alias\s*\+\s*"\.cloud\.contensis\.com"'
 )
 
 
@@ -151,31 +157,52 @@ class KCLAdapter:
     def _catalogue_page_urls(self, fetcher: Callable[[str], str]) -> list[str]:
         html = fetcher(self.catalog_url)
         soup = BeautifulSoup(html, "html.parser")
-        course_urls = _filter_course_urls(
+        page_urls = _filter_course_urls(
             link.get("href", "") for link in soup.find_all("a", href=True)
         )
-        pager = [
-            {
-                "tag": item.name,
-                "text": _normalise_text(item.get_text(" ", strip=True)),
-                "attrs": {
-                    key: value
-                    for key, value in item.attrs.items()
-                    if key in {"href", "class", "id", "name", "value"}
-                    or key.startswith("data-")
-                },
-            }
-            for item in soup.find_all(["a", "button"])
-            if _normalise_text(item.get_text(" ", strip=True))
-            in {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Next"}
-        ][:12]
-        scripts = [script.get("src") for script in soup.find_all("script", src=True)][
-            -8:
-        ]
-        self.sitemap_diagnostics += (
-            f"; catalogueLinks={len(course_urls)}, pager={pager}, scripts={scripts}"
+        startup_src = next(
+            (
+                script.get("src", "")
+                for script in soup.find_all("script", src=True)
+                if STARTUP_SCRIPT_RE.search(script.get("src", ""))
+            ),
+            "",
         )
-        return course_urls
+        if not startup_src:
+            self.sitemap_diagnostics += (
+                f"; catalogueLinks={len(page_urls)}, startupScript=missing"
+            )
+            return page_urls
+
+        startup_url = urljoin(self.catalog_url, startup_src)
+        startup_script = fetcher(startup_url)
+        token_match = DELIVERY_TOKEN_RE.search(startup_script)
+        if token_match is None or DELIVERY_API_RE.search(startup_script) is None:
+            self.sitemap_diagnostics += (
+                f"; catalogueLinks={len(page_urls)}, deliveryConfig=missing"
+            )
+            return page_urls
+
+        api_url = "https://api-kcl.cloud.contensis.com/api/delivery/projects/website/"
+        api_url += "contentTypes/postgraduateCourse/entries?"
+        api_url += urlencode(
+            {
+                "pageSize": 500,
+                "versionStatus": "published",
+                "language": "en-GB",
+                "fields": "sys,entryTitle",
+                "accessToken": token_match.group("token"),
+            }
+        )
+        payload = json.loads(fetcher(api_url))
+        api_urls = _filter_course_urls(
+            item.get("sys", {}).get("uri", "") for item in payload.get("items", [])
+        )
+        self.sitemap_diagnostics += (
+            f"; catalogueLinks={len(page_urls)}, apiTotal={payload.get('totalCount')}, "
+            f"apiCourseLinks={len(api_urls)}"
+        )
+        return api_urls or page_urls
 
 
 def _xml_locations(payload: str) -> list[str]:

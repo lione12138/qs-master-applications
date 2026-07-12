@@ -1,6 +1,8 @@
 from __future__ import annotations
 
-from gradwindow.programme_adapters.kcl import SITEMAP_URL, KCLAdapter
+import json
+
+from gradwindow.programme_adapters.kcl import CATALOG_URL, SITEMAP_URL, KCLAdapter
 
 SITEMAP_INDEX = """<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -115,3 +117,60 @@ def test_kcl_adapter_keeps_failed_detail_pages_as_no_deadline_candidates() -> No
     assert programme.parse_status == "no-deadline"
     assert programme.windows == []
     assert "temporary block" in programme.deadline_text
+
+
+def test_kcl_adapter_uses_dynamic_delivery_catalogue_when_sitemap_is_stale() -> None:
+    adapter = KCLAdapter(minimum_expected_programmes=2, detail_workers=1)
+    stale_sitemap = """<urlset><url><loc>https://www.kcl.ac.uk/study-legacy/postgraduate/</loc></url></urlset>"""
+    catalogue_html = """
+    <html><body>
+      <script src="/_assets/static/startup-1.23.0.js"></script>
+      <a href="/study/postgraduate-taught/courses/clinical-pharmacology-msc">Clinical Pharmacology</a>
+    </body></html>
+    """
+    startup_script = """
+    var alias = "kcl";
+    var config = {api: "https://api-" + alias + ".cloud.contensis.com"};
+    context.DELIVERY_API_CONFIG = {accessToken: "public-browser-token"};
+    """
+    api_payload = json.dumps(
+        {
+            "totalCount": 2,
+            "items": [
+                {
+                    "sys": {
+                        "uri": "/study/postgraduate-taught/courses/clinical-pharmacology-msc"
+                    }
+                },
+                {
+                    "sys": {
+                        "uri": "/study/postgraduate-taught/courses/artificial-intelligence-msc"
+                    }
+                },
+            ],
+        }
+    )
+
+    def fetcher(url: str) -> str:
+        if url == SITEMAP_URL:
+            return stale_sitemap
+        if url == CATALOG_URL:
+            return catalogue_html
+        if url.endswith("startup-1.23.0.js"):
+            return startup_script
+        if "api-kcl.cloud.contensis.com" in url:
+            assert "accessToken=public-browser-token" in url
+            return api_payload
+        if "clinical-pharmacology-msc/requirements" in url:
+            return CLINICAL_PHARMACOLOGY
+        if "artificial-intelligence-msc/requirements" in url:
+            raise RuntimeError("not available")
+        raise AssertionError(url)
+
+    catalogue = adapter.parse_catalog_from_fetcher(fetcher)
+
+    assert [programme.id for programme in catalogue.programmes] == [
+        "kcl-artificial-intelligence-msc",
+        "kcl-clinical-pharmacology-msc",
+    ]
+    assert "apiTotal=2" in adapter.sitemap_diagnostics
