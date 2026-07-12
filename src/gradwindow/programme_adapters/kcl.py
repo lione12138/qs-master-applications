@@ -61,6 +61,7 @@ class KCLAdapter:
     ) -> None:
         self.minimum_expected_programmes = minimum_expected_programmes
         self.detail_workers = detail_workers
+        self.sitemap_diagnostics = "not inspected"
 
     def parse_catalog_from_fetcher(
         self,
@@ -71,7 +72,8 @@ class KCLAdapter:
             raise ValueError(
                 "King's College London sitemap only contained "
                 f"{len(course_urls)} postgraduate taught master's course URLs; "
-                f"expected at least {self.minimum_expected_programmes}"
+                f"expected at least {self.minimum_expected_programmes}. "
+                f"Sitemap diagnostics: {self.sitemap_diagnostics}"
             )
 
         def parse_one(course_url: str) -> DiscoveredProgramme | None:
@@ -116,20 +118,31 @@ class KCLAdapter:
     def _course_urls(self, fetcher: Callable[[str], str]) -> list[str]:
         root_xml = fetcher(self.catalog_url)
         root_locations = _xml_locations(root_xml)
+        root_name = _xml_root_name(root_xml)
         course_urls = _filter_course_urls(root_locations)
+        self.sitemap_diagnostics = (
+            f"root={root_name}, rootLocations={len(root_locations)}, "
+            f"sample={root_locations[:3]}"
+        )
         if course_urls:
             return course_urls
 
-        if _xml_root_name(root_xml) != "sitemapindex":
+        if root_name != "sitemapindex":
             return []
         sitemap_urls = root_locations
         with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
-            child_payloads = executor.map(fetcher, sitemap_urls)
-        return _filter_course_urls(
+            child_payloads = list(executor.map(fetcher, sitemap_urls))
+        child_locations = [
             location
             for payload in child_payloads
             for location in _xml_locations(payload)
+        ]
+        self.sitemap_diagnostics = (
+            f"root={root_name}, rootLocations={len(root_locations)}, "
+            f"childDocuments={len(child_payloads)}, "
+            f"childLocations={len(child_locations)}, sample={child_locations[:3]}"
         )
+        return _filter_course_urls(child_locations)
 
 
 def _xml_locations(payload: str) -> list[str]:
