@@ -280,6 +280,27 @@ const aliasEntries = [
   ["universityofedinburgh", "university-of-edinburgh"],
   ["universityofmanchester", "the-university-of-manchester"],
   ["koreaadvancedinstituteofscienceandtechnologykaist", "kaist"],
+  ["universityofqueenslandaustralia", "the-university-of-queensland"],
+  [
+    "universityofnorthcarolinachapelhill",
+    "university-of-north-carolina-chapel-hill",
+  ],
+  ["universityoftexasaustin", "university-of-texas-at-austin"],
+  [
+    "universityofsciencetechnologyofchinacas",
+    "university-of-science-and-technology-of-china",
+  ],
+  ["freieuniversitatberlin", "freie-universit-t-berlin"],
+  [
+    "ecolepolytechniquefederaleoflausanne",
+    "cole-polytechnique-f-d-rale-de-lausanne",
+  ],
+  ["pslresearchuniversitypariscomue", "psl-university"],
+  [
+    "wageningenuniversityandresearchcenter",
+    "wageningen-university-and-research",
+  ],
+  ["arizonastateuniversitytempe", "arizona-state-university"],
   ["pennstatemaincampus", "pennsylvania-state-university"],
   ["technicaluniversityofberlin", "technische-universit-t-berlin"],
   ["karlsruheinstituteoftechnology", "karlsruhe-institute-of-technology-kit"],
