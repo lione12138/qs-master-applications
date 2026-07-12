@@ -20,7 +20,15 @@ from .programme_windows import known_programme_window_candidates
 
 
 def fetch_catalog(url: str) -> str:
-    return fetch_page(url, user_agent=DEFAULT_USER_AGENT, timeout=30).body
+    return fetch_page(
+        url,
+        user_agent=DEFAULT_USER_AGENT,
+        timeout=30,
+        accept=(
+            "text/html,application/xhtml+xml,application/xml;q=0.9,"
+            "text/xml;q=0.8,*/*;q=0.7"
+        ),
+    ).body
 
 
 def discover_programmes(
