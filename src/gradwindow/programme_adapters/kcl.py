@@ -15,6 +15,7 @@ from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
 
 UNIVERSITY_ID = "king-s-college-london-kcl"
 SITEMAP_URL = "https://www.kcl.ac.uk/sitemap.xml"
+CATALOG_URL = "https://www.kcl.ac.uk/study/postgraduate-taught/courses"
 APPLICATION_URL = "https://www.kcl.ac.uk/study/postgraduate-taught/how-to-apply"
 DEFAULT_INTAKE = "September 2026"
 COURSE_PATH_RE = re.compile(
@@ -49,7 +50,7 @@ INTAKE_RE = re.compile(
 
 class KCLAdapter:
     university_id = UNIVERSITY_ID
-    catalog_url = SITEMAP_URL
+    catalog_url = CATALOG_URL
     application_url = APPLICATION_URL
     intake = DEFAULT_INTAKE
     application_opens_at_basis = "missing"
@@ -116,7 +117,7 @@ class KCLAdapter:
         return DiscoveredCatalog(application_opens_at=None, programmes=programmes)
 
     def _course_urls(self, fetcher: Callable[[str], str]) -> list[str]:
-        root_xml = fetcher(self.catalog_url)
+        root_xml = fetcher(SITEMAP_URL)
         root_locations = _xml_locations(root_xml)
         root_name = _xml_root_name(root_xml)
         course_urls = _filter_course_urls(root_locations)
@@ -131,7 +132,7 @@ class KCLAdapter:
             return course_urls
 
         if root_name != "sitemapindex":
-            return []
+            return self._catalogue_page_urls(fetcher)
         sitemap_urls = root_locations
         with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
             child_payloads = list(executor.map(fetcher, sitemap_urls))
@@ -146,6 +147,35 @@ class KCLAdapter:
             f"childLocations={len(child_locations)}, sample={child_locations[:3]}"
         )
         return _filter_course_urls(child_locations)
+
+    def _catalogue_page_urls(self, fetcher: Callable[[str], str]) -> list[str]:
+        html = fetcher(self.catalog_url)
+        soup = BeautifulSoup(html, "html.parser")
+        course_urls = _filter_course_urls(
+            link.get("href", "") for link in soup.find_all("a", href=True)
+        )
+        pager = [
+            {
+                "tag": item.name,
+                "text": _normalise_text(item.get_text(" ", strip=True)),
+                "attrs": {
+                    key: value
+                    for key, value in item.attrs.items()
+                    if key in {"href", "class", "id", "name", "value"}
+                    or key.startswith("data-")
+                },
+            }
+            for item in soup.find_all(["a", "button"])
+            if _normalise_text(item.get_text(" ", strip=True))
+            in {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Next"}
+        ][:12]
+        scripts = [script.get("src") for script in soup.find_all("script", src=True)][
+            -8:
+        ]
+        self.sitemap_diagnostics += (
+            f"; catalogueLinks={len(course_urls)}, pager={pager}, scripts={scripts}"
+        )
+        return course_urls
 
 
 def _xml_locations(payload: str) -> list[str]:
