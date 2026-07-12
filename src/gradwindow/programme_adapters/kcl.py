@@ -69,6 +69,7 @@ class KCLAdapter:
         self.minimum_expected_programmes = minimum_expected_programmes
         self.detail_workers = detail_workers
         self.sitemap_diagnostics = "not inspected"
+        self.catalogue_titles: dict[str, str] = {}
 
     def parse_catalog_from_fetcher(
         self,
@@ -87,10 +88,16 @@ class KCLAdapter:
             requirements_url = f"{course_url.rstrip('/')}/requirements"
             try:
                 return _parse_programme(
-                    course_url, requirements_url, fetcher(requirements_url)
+                    course_url,
+                    requirements_url,
+                    fetcher(requirements_url),
+                    catalogue_title=self.catalogue_titles.get(course_url, ""),
                 )
             except Exception as exc:
-                fallback = _programme_from_slug(course_url)
+                fallback = _programme_from_slug(
+                    course_url,
+                    catalogue_title=self.catalogue_titles.get(course_url, ""),
+                )
                 if fallback is None:
                     return None
                 return replace(
@@ -195,9 +202,16 @@ class KCLAdapter:
             }
         )
         payload = json.loads(fetcher(api_url))
-        api_urls = _filter_course_urls(
-            item.get("sys", {}).get("uri", "") for item in payload.get("items", [])
-        )
+        api_entries = {
+            _absolute_course_url(item.get("sys", {}).get("uri", "")): _normalise_text(
+                item.get("entryTitle", "")
+            )
+            for item in payload.get("items", [])
+        }
+        api_urls = _filter_course_urls(api_entries)
+        self.catalogue_titles = {
+            url: api_entries[url] for url in api_urls if api_entries.get(url)
+        }
         self.sitemap_diagnostics += (
             f"; catalogueLinks={len(page_urls)}, apiTotal={payload.get('totalCount')}, "
             f"apiCourseLinks={len(api_urls)}"
@@ -241,16 +255,38 @@ def _filter_course_urls(urls: Iterable[str]) -> list[str]:
     return sorted(courses)
 
 
+def _absolute_course_url(url: str) -> str:
+    parts = urlsplit(url)
+    return urlunsplit(
+        (
+            parts.scheme or "https",
+            parts.netloc or "www.kcl.ac.uk",
+            parts.path.rstrip("/"),
+            "",
+            "",
+        )
+    )
+
+
 def _parse_programme(
     course_url: str,
     requirements_url: str,
     html: str,
+    *,
+    catalogue_title: str = "",
 ) -> DiscoveredProgramme | None:
     soup = BeautifulSoup(html, "html.parser")
     title = _programme_title(soup)
     degree_match = MASTER_DEGREE_RE.search(title)
     if degree_match is None:
-        return _programme_from_slug(course_url)
+        slug = urlsplit(course_url).path.rstrip("/").rsplit("/", 1)[-1]
+        degree_match = MASTER_DEGREE_RE.search(slug.replace("-", " "))
+        if degree_match is None:
+            return None
+        base_title = catalogue_title or title
+        if not base_title or "King's College London" in base_title:
+            return _programme_from_slug(course_url, catalogue_title=catalogue_title)
+        title = f"{base_title} {_canonical_degree(degree_match.group('degree'))}"
     degree_type = _canonical_degree(degree_match.group("degree"))
     windows, excerpt = _parse_deadlines(soup, requirements_url)
     faculty, department = _taught_in(soup)
@@ -269,20 +305,30 @@ def _parse_programme(
     )
 
 
-def _programme_from_slug(course_url: str) -> DiscoveredProgramme | None:
+def _programme_from_slug(
+    course_url: str,
+    *,
+    catalogue_title: str = "",
+) -> DiscoveredProgramme | None:
     slug = urlsplit(course_url).path.rstrip("/").rsplit("/", 1)[-1]
     degree_match = MASTER_DEGREE_RE.search(slug.replace("-", " "))
     if degree_match is None:
         return None
-    words = slug.replace("-", " ")
-    title = " ".join(
-        word.upper() if MASTER_DEGREE_RE.fullmatch(word) else word.title()
-        for word in words.split()
-    )
+    degree_type = _canonical_degree(degree_match.group("degree"))
+    if catalogue_title:
+        title = f"{catalogue_title} {degree_type}"
+    else:
+        words = slug.replace("-", " ")
+        title = " ".join(
+            _canonical_degree(word)
+            if MASTER_DEGREE_RE.fullmatch(word)
+            else word.title()
+            for word in words.split()
+        )
     return DiscoveredProgramme(
         id=f"kcl-{_slug(title)}",
         name=title,
-        degree_type=_canonical_degree(degree_match.group("degree")),
+        degree_type=degree_type,
         faculty="",
         department="",
         source_url=f"{course_url.rstrip('/')}/requirements",

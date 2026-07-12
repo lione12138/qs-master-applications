@@ -140,12 +140,14 @@ def test_kcl_adapter_uses_dynamic_delivery_catalogue_when_sitemap_is_stale() -> 
                 {
                     "sys": {
                         "uri": "/study/postgraduate-taught/courses/clinical-pharmacology-msc"
-                    }
+                    },
+                    "entryTitle": "Clinical Pharmacology",
                 },
                 {
                     "sys": {
                         "uri": "/study/postgraduate-taught/courses/artificial-intelligence-msc"
-                    }
+                    },
+                    "entryTitle": "Artificial Intelligence",
                 },
             ],
         }
@@ -172,5 +174,9 @@ def test_kcl_adapter_uses_dynamic_delivery_catalogue_when_sitemap_is_stale() -> 
     assert [programme.id for programme in catalogue.programmes] == [
         "kcl-artificial-intelligence-msc",
         "kcl-clinical-pharmacology-msc",
+    ]
+    assert [programme.name for programme in catalogue.programmes] == [
+        "Artificial Intelligence MSc",
+        "Clinical Pharmacology MSc",
     ]
     assert "apiTotal=2" in adapter.sitemap_diagnostics
