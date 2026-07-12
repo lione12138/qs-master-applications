@@ -20,14 +20,16 @@ const USNEWS_URL =
 const USNEWS_EDITION = "2026-2027";
 
 const args = new Map(
-  process.argv.slice(2).map((value, index, values) => [
-    value,
-    values[index + 1],
-  ]),
+  process.argv
+    .slice(2)
+    .map((value, index, values) => [value, values[index + 1]]),
 );
 const outputPath = args.get("--output")
   ? path.resolve(args.get("--output"))
   : path.join(dataDir, "global-rankings.json");
+const existingOutput = fs.existsSync(outputPath)
+  ? JSON.parse(fs.readFileSync(outputPath, "utf8"))
+  : { rankings: {} };
 
 function normalize(value = "") {
   return String(value)
@@ -36,7 +38,10 @@ function normalize(value = "") {
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/\([^)]*\)/g, " ")
-    .replace(/\b(the|university|universitat|universite|universidad|universita|college|of|and)\b/g, " ")
+    .replace(
+      /\b(the|university|universitat|universite|universidad|universita|college|of|and)\b/g,
+      " ",
+    )
     .replace(/[^a-z0-9]+/g, "");
 }
 
@@ -71,7 +76,9 @@ function todayInBeijing() {
     day: "2-digit",
   }).formatToParts(new Date());
   const values = Object.fromEntries(
-    parts.filter((part) => part.type !== "literal").map((part) => [part.type, part.value]),
+    parts
+      .filter((part) => part.type !== "literal")
+      .map((part) => [part.type, part.value]),
   );
   return `${values.year}-${values.month}-${values.day}`;
 }
@@ -92,41 +99,92 @@ const countryAliases = new Map([
 ]);
 
 const regionByCountry = new Map([
-  ["Argentina", "Americas"], ["Australia", "Oceania"], ["Austria", "Europe"],
-  ["Belgium", "Europe"], ["Brazil", "Americas"], ["Canada", "Americas"],
-  ["Chile", "Americas"], ["China", "Asia"], ["Colombia", "Americas"],
-  ["Czech Republic", "Europe"], ["Denmark", "Europe"], ["Egypt", "Africa"],
-  ["Estonia", "Europe"], ["Finland", "Europe"], ["France", "Europe"],
-  ["Germany", "Europe"], ["Greece", "Europe"], ["Hong Kong", "Asia"],
-  ["Hungary", "Europe"], ["India", "Asia"], ["Indonesia", "Asia"],
-  ["Iran", "Asia"], ["Ireland", "Europe"], ["Israel", "Asia"], ["Italy", "Europe"],
-  ["Japan", "Asia"], ["Malaysia", "Asia"], ["Mexico", "Americas"],
-  ["Netherlands", "Europe"], ["New Zealand", "Oceania"], ["Norway", "Europe"],
-  ["Pakistan", "Asia"], ["Poland", "Europe"], ["Portugal", "Europe"],
-  ["Russia", "Europe"], ["Saudi Arabia", "Asia"], ["Singapore", "Asia"],
-  ["South Africa", "Africa"], ["South Korea", "Asia"], ["Spain", "Europe"],
-  ["Sweden", "Europe"], ["Switzerland", "Europe"], ["Taiwan", "Asia"],
-  ["Thailand", "Asia"], ["Turkey", "Asia"], ["United Arab Emirates", "Asia"],
-  ["United Kingdom", "Europe"], ["United States", "Americas"], ["Vietnam", "Asia"],
+  ["Argentina", "Americas"],
+  ["Australia", "Oceania"],
+  ["Austria", "Europe"],
+  ["Belgium", "Europe"],
+  ["Brazil", "Americas"],
+  ["Canada", "Americas"],
+  ["Chile", "Americas"],
+  ["China", "Asia"],
+  ["Colombia", "Americas"],
+  ["Czech Republic", "Europe"],
+  ["Denmark", "Europe"],
+  ["Egypt", "Africa"],
+  ["Estonia", "Europe"],
+  ["Finland", "Europe"],
+  ["France", "Europe"],
+  ["Germany", "Europe"],
+  ["Greece", "Europe"],
+  ["Hong Kong", "Asia"],
+  ["Hungary", "Europe"],
+  ["India", "Asia"],
+  ["Indonesia", "Asia"],
+  ["Iran", "Asia"],
+  ["Ireland", "Europe"],
+  ["Israel", "Asia"],
+  ["Italy", "Europe"],
+  ["Japan", "Asia"],
+  ["Malaysia", "Asia"],
+  ["Mexico", "Americas"],
+  ["Netherlands", "Europe"],
+  ["New Zealand", "Oceania"],
+  ["Norway", "Europe"],
+  ["Pakistan", "Asia"],
+  ["Poland", "Europe"],
+  ["Portugal", "Europe"],
+  ["Russia", "Europe"],
+  ["Saudi Arabia", "Asia"],
+  ["Singapore", "Asia"],
+  ["South Africa", "Africa"],
+  ["South Korea", "Asia"],
+  ["Spain", "Europe"],
+  ["Sweden", "Europe"],
+  ["Switzerland", "Europe"],
+  ["Taiwan", "Asia"],
+  ["Thailand", "Asia"],
+  ["Turkey", "Asia"],
+  ["United Arab Emirates", "Asia"],
+  ["United Kingdom", "Europe"],
+  ["United States", "Americas"],
+  ["Vietnam", "Asia"],
 ]);
 
 // Official publishers use different institutional names. These mappings are
 // deliberately small and explicit so a ranking-only record is preferred over
 // an unsafe automatic identity match.
 const aliasEntries = [
-  ["ludwigmaximiliansuniversitatmunchen", "ludwig-maximilians-universit-t-m-nchen"],
-  ["ludwigmaximiliansuniversitymunich", "ludwig-maximilians-universit-t-m-nchen"],
-  ["ecolepolytechniquefederaledelausanne", "cole-polytechnique-f-d-rale-de-lausanne"],
-  ["swissfederalinstituteoftechnologylausanne", "cole-polytechnique-f-d-rale-de-lausanne"],
+  [
+    "ludwigmaximiliansuniversitatmunchen",
+    "ludwig-maximilians-universit-t-m-nchen",
+  ],
+  [
+    "ludwigmaximiliansuniversitymunich",
+    "ludwig-maximilians-universit-t-m-nchen",
+  ],
+  [
+    "ecolepolytechniquefederaledelausanne",
+    "cole-polytechnique-f-d-rale-de-lausanne",
+  ],
+  [
+    "swissfederalinstituteoftechnologylausanne",
+    "cole-polytechnique-f-d-rale-de-lausanne",
+  ],
   ["parissciencesetlettrespslresearchuniversityparis", "psl-university"],
   ["psluniversity", "psl-university"],
   ["unswsydney", "the-university-of-new-south-wales"],
   ["purdueuniversitywestlafayette", "purdue-university"],
   ["purdueuniversitywestlafayettein", "purdue-university"],
   ["humboldtuniversityofberlin", "humboldt-universit-t-zu-berlin"],
-  ["almatersstudiorumuniversitadibologna", "alma-mater-studiorum-university-of-bologna"],
+  [
+    "almatersstudiorumuniversitadibologna",
+    "alma-mater-studiorum-university-of-bologna",
+  ],
   ["universityofbologna", "alma-mater-studiorum-university-of-bologna"],
-  ["trinitycollegedublintheuniversityofdublin", "trinity-college-dublin-the-university-of-dublin"],
+  [
+    "trinitycollegedublintheuniversityofdublin",
+    "trinity-college-dublin-the-university-of-dublin",
+  ],
   ["trinitycollegedublin", "trinity-college-dublin-the-university-of-dublin"],
   ["technischeuniversitatdresden", "technische-universitat-dresden"],
   ["tudresden", "technische-universitat-dresden"],
@@ -137,30 +195,60 @@ const aliasEntries = [
   ["lmumunich", "ludwig-maximilians-universit-t-m-nchen"],
   ["universityofmunich", "ludwig-maximilians-universit-t-m-nchen"],
   ["heidelberguniversity", "heidelberg-university"],
-  ["nanyangtechnologicaluniversitysingapore", "nanyang-technological-university-singapore-ntu-singapore"],
-  ["nanyangtechnologicaluniversity", "nanyang-technological-university-singapore-ntu-singapore"],
+  [
+    "nanyangtechnologicaluniversitysingapore",
+    "nanyang-technological-university-singapore-ntu-singapore",
+  ],
+  [
+    "nanyangtechnologicaluniversity",
+    "nanyang-technological-university-singapore-ntu-singapore",
+  ],
   ["moscowstateuniversity", "lomonosov-moscow-state-university"],
-  ["pennsylvaniastateuniversityuniversitypark", "pennsylvania-state-university"],
+  [
+    "pennsylvaniastateuniversityuniversitypark",
+    "pennsylvania-state-university",
+  ],
   ["universityofbarcelona", "university-of-barcelona"],
   ["universityofmontreal", "university-of-montreal"],
   ["universityofsaopaulo", "universidade-de-s-o-paulo-usp"],
   ["universityofsopaulo", "universidade-de-s-o-paulo-usp"],
   ["sao-paulo", "universidade-de-s-o-paulo-usp"],
   ["karolinskainstitutet", "karolinska-institutet"],
-  ["universityofcalifornia,sanfrancisco", "university-of-california-san-francisco"],
-  ["universityofcaliforniasanfrancisco", "university-of-california-san-francisco"],
+  [
+    "universityofcalifornia,sanfrancisco",
+    "university-of-california-san-francisco",
+  ],
+  [
+    "universityofcaliforniasanfrancisco",
+    "university-of-california-san-francisco",
+  ],
   ["universityofcaliforniasan-diego", "university-of-california-san-diego"],
   ["universityofcaliforniasandiego", "university-of-california-san-diego"],
   ["universityofcalifornialosangeles", "university-of-california-los-angeles"],
   ["universityofcaliforniaberkeley", "university-of-california-berkeley"],
   ["universityofcaliforniadavies", "university-of-california-davis"],
   ["universityofcaliforniadavis", "university-of-california-davis"],
-  ["universityofcaliforniasanta-barbara", "university-of-california-santa-barbara"],
-  ["universityofcaliforniasantabarbara", "university-of-california-santa-barbara"],
+  [
+    "universityofcaliforniasanta-barbara",
+    "university-of-california-santa-barbara",
+  ],
+  [
+    "universityofcaliforniasantabarbara",
+    "university-of-california-santa-barbara",
+  ],
   ["universityofcaliforniairvine", "university-of-california-irvine"],
-  ["universityofillinoisurbanachampaign", "university-of-illinois-at-urbana-champaign"],
-  ["universityofillinoisaturbanachampaign", "university-of-illinois-at-urbana-champaign"],
-  ["universityofillinoisatchampaign", "university-of-illinois-at-urbana-champaign"],
+  [
+    "universityofillinoisurbanachampaign",
+    "university-of-illinois-at-urbana-champaign",
+  ],
+  [
+    "universityofillinoisaturbanachampaign",
+    "university-of-illinois-at-urbana-champaign",
+  ],
+  [
+    "universityofillinoisatchampaign",
+    "university-of-illinois-at-urbana-champaign",
+  ],
   ["texasamuniversity", "texas-a-and-m-university"],
   ["texasamuniversitycollegestation", "texas-a-and-m-university"],
   ["theohiostateuniversity", "ohio-state-university"],
@@ -195,7 +283,10 @@ const aliasEntries = [
   ["pennstatemaincampus", "pennsylvania-state-university"],
   ["technicaluniversityofberlin", "technische-universit-t-berlin"],
   ["karlsruheinstituteoftechnology", "karlsruhe-institute-of-technology-kit"],
-  ["kingfahduniversityofpetroleumandminerals", "king-fahd-university-of-petroleum-and-minerals"],
+  [
+    "kingfahduniversityofpetroleumandminerals",
+    "king-fahd-university-of-petroleum-and-minerals",
+  ],
 ];
 const aliases = new Map(
   aliasEntries.map(([name, universityId]) => [identityKey(name), universityId]),
@@ -208,13 +299,17 @@ const universitiesByNormalizedName = new Map(
   ]),
 );
 const universitiesById = new Map(
-  universityPayload.universities.map((university) => [university.id, university]),
+  universityPayload.universities.map((university) => [
+    university.id,
+    university,
+  ]),
 );
 
 function resolveUniversity(name) {
   const normalized = normalize(name);
   const matchedId = aliases.get(identityKey(name));
-  if (matchedId && universitiesById.has(matchedId)) return universitiesById.get(matchedId);
+  if (matchedId && universitiesById.has(matchedId))
+    return universitiesById.get(matchedId);
   return universitiesByNormalizedName.get(normalized) || null;
 }
 
@@ -270,7 +365,9 @@ function parseUsNews(payloads) {
 async function sourceUsNewsPages() {
   const fixturePath = args.get("--usnews-json");
   if (fixturePath) {
-    const fixture = JSON.parse(fs.readFileSync(path.resolve(fixturePath), "utf8"));
+    const fixture = JSON.parse(
+      fs.readFileSync(path.resolve(fixturePath), "utf8"),
+    );
     return Array.isArray(fixture) ? fixture : fixture.pages || [fixture];
   }
 
@@ -296,7 +393,8 @@ function parseThe(html) {
   const marker = '<script id="__NEXT_DATA__" type="application/json">';
   const start = html.indexOf(marker);
   const end = html.indexOf("</script>", start);
-  if (start < 0 || end < 0) throw new Error("THE ranking payload was not found");
+  if (start < 0 || end < 0)
+    throw new Error("THE ranking payload was not found");
   const payload = JSON.parse(html.slice(html.indexOf(">", start) + 1, end));
   return payload.props.pageProps.page.rankingsTableConfig.rankingsData.data
     .filter((row) => rankStart(row.rank) <= 200)
@@ -318,7 +416,8 @@ function parseArwu(payloadText) {
   vm.createContext(context);
   vm.runInContext(payloadText, context);
   const rows = captured?.payload?.data?.[0]?.filterList;
-  if (!Array.isArray(rows)) throw new Error("ARWU ranking payload was not found");
+  if (!Array.isArray(rows))
+    throw new Error("ARWU ranking payload was not found");
   return rows
     .filter((row) => rankStart(row.ranking) <= 200)
     .map((row) => ({
@@ -352,67 +451,102 @@ function buildRows(rows, rankingId, sourceUrl) {
   });
 }
 
-const [theHtml, arwuPayload, usNewsResult] = await Promise.all([
-  sourceText(THE_URL, "--the-html"),
-  sourceText(ARWU_PAYLOAD_URL, "--arwu-payload"),
+const [theResult, arwuResult, usNewsResult] = await Promise.all([
+  sourceText(THE_URL, "--the-html")
+    .then((text) => ({ text }))
+    .catch((error) => ({ error })),
+  sourceText(ARWU_PAYLOAD_URL, "--arwu-payload")
+    .then((text) => ({ text }))
+    .catch((error) => ({ error })),
   sourceUsNewsPages()
     .then((pages) => ({ pages }))
     .catch((error) => ({ error })),
 ]);
-const theRows = buildRows(parseThe(theHtml), "the", THE_URL);
-const arwuRows = buildRows(parseArwu(arwuPayload), "arwu", ARWU_URL);
+const theRows = theResult.text
+  ? buildRows(parseThe(theResult.text), "the", THE_URL)
+  : null;
+const arwuRows = arwuResult.text
+  ? buildRows(parseArwu(arwuResult.text), "arwu", ARWU_URL)
+  : null;
 const usNewsRows = usNewsResult.pages
   ? buildRows(parseUsNews(usNewsResult.pages), "usnews", USNEWS_URL)
-  : [];
+  : null;
+
+function preservedRanking(rankingId, error) {
+  const existing = existingOutput.rankings?.[rankingId];
+  if (existing) {
+    console.warn(
+      `${rankingId}: preserving existing rows because refresh failed: ${error.message}`,
+    );
+    return existing;
+  }
+  return {
+    available: false,
+    rowCount: 0,
+    rows: [],
+    unavailableReason: `Official ranking data could not be fetched: ${error.message}`,
+  };
+}
 
 const output = {
   meta: {
     generatedAt: todayInBeijing(),
     selectionPolicy:
       "All institutions whose published rank starts at 200 or above are retained; tied and banded ranks are preserved.",
-    note:
-      "QS remains the admissions-monitoring core. Ranking-only institutions are not represented as monitored admissions data.",
+    note: "QS remains the admissions-monitoring core. Ranking-only institutions are not represented as monitored admissions data.",
   },
   rankings: {
-    the: {
-      label: "Times Higher Education World University Rankings",
-      shortLabel: "THE",
-      edition: "2026",
-      sourceUrl: THE_URL,
-      rowCount: theRows.length,
-      rows: theRows,
-    },
-    arwu: {
-      label: "Academic Ranking of World Universities",
-      shortLabel: "ARWU (ShanghaiRanking)",
-      edition: "2025",
-      sourceUrl: ARWU_URL,
-      rowCount: arwuRows.length,
-      rows: arwuRows,
-    },
-    usnews: {
-      label: "U.S. News Best Global Universities",
-      shortLabel: "U.S. News",
-      edition: USNEWS_EDITION,
-      sourceUrl: USNEWS_URL,
-      rowCount: usNewsRows.length,
-      rows: usNewsRows,
-      available: usNewsRows.length > 0,
-      ...(usNewsRows.length
-        ? {}
-        : {
-            unavailableReason: usNewsResult.error
-              ? `Official U.S. News data could not be fetched: ${usNewsResult.error.message}`
-              : "The official U.S. News response did not contain ranked rows.",
-          }),
-    },
+    the: theRows
+      ? {
+          label: "Times Higher Education World University Rankings",
+          shortLabel: "THE",
+          edition: "2026",
+          sourceUrl: THE_URL,
+          rowCount: theRows.length,
+          rows: theRows,
+        }
+      : preservedRanking("the", theResult.error),
+    arwu: arwuRows
+      ? {
+          label: "Academic Ranking of World Universities",
+          shortLabel: "ARWU (ShanghaiRanking)",
+          edition: "2025",
+          sourceUrl: ARWU_URL,
+          rowCount: arwuRows.length,
+          rows: arwuRows,
+        }
+      : preservedRanking("arwu", arwuResult.error),
+    usnews: usNewsRows
+      ? {
+          label: "U.S. News Best Global Universities",
+          shortLabel: "U.S. News",
+          edition: USNEWS_EDITION,
+          sourceUrl: USNEWS_URL,
+          rowCount: usNewsRows.length,
+          rows: usNewsRows,
+          available: usNewsRows.length > 0,
+          ...(usNewsRows.length
+            ? {}
+            : {
+                unavailableReason:
+                  "The official U.S. News response did not contain ranked rows.",
+              }),
+        }
+      : preservedRanking("usnews", usNewsResult.error),
   },
 };
 
 fs.writeFileSync(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 console.log(`Wrote ${outputPath}`);
-console.log(`THE: ${theRows.length} rows (${theRows.filter((row) => row.rankingOnly).length} ranking-only)`);
-console.log(`ARWU: ${arwuRows.length} rows (${arwuRows.filter((row) => row.rankingOnly).length} ranking-only)`);
+const outputTheRows = output.rankings.the.rows || [];
+const outputArwuRows = output.rankings.arwu.rows || [];
+const outputUsNewsRows = output.rankings.usnews.rows || [];
 console.log(
-  `U.S. News: ${usNewsRows.length} rows (${usNewsRows.filter((row) => row.rankingOnly).length} ranking-only)`,
+  `THE: ${outputTheRows.length} rows (${outputTheRows.filter((row) => row.rankingOnly).length} ranking-only)`,
+);
+console.log(
+  `ARWU: ${outputArwuRows.length} rows (${outputArwuRows.filter((row) => row.rankingOnly).length} ranking-only)`,
+);
+console.log(
+  `U.S. News: ${outputUsNewsRows.length} rows (${outputUsNewsRows.filter((row) => row.rankingOnly).length} ranking-only)`,
 );
