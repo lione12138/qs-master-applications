@@ -1,0 +1,52 @@
+name: Refresh global rankings
+
+on:
+  schedule:
+    - cron: "37 5 20 6 *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-global-rankings
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install tooling
+        run: |
+          npm ci
+          pip install -e ".[dev]"
+      - name: Import official global rankings
+        run: node scripts/import_global_rankings.mjs
+      - name: Validate imported rankings
+        run: |
+          pytest -q tests/test_global_rankings.py tests/test_frontend_rankings.py
+          gradwindow validate
+          gradwindow build-site --output /tmp/gradwindow-site
+      - name: Open or update ranking data review pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "data: refresh global rankings"
+          branch: automation/global-rankings
+          delete-branch: true
+          title: "data: review global ranking refresh"
+          body: |
+            Refreshes THE, ARWU, and U.S. News ranking views from their official
+            publisher endpoints. Ranking rows continue to reuse the canonical
+            university table where identities match.
+          add-paths: |
+            data/global-rankings.json

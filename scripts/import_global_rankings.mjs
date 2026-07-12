@@ -15,6 +15,9 @@ const THE_URL =
 const ARWU_URL = "https://www.shanghairanking.com/rankings/arwu/2025";
 const ARWU_PAYLOAD_URL =
   "https://www.shanghairanking.com/_nuxt/static/1779447311/rankings/arwu/2025/payload.js";
+const USNEWS_URL =
+  "https://www.usnews.com/education/best-global-universities/search";
+const USNEWS_EDITION = "2026-2027";
 
 const args = new Map(
   process.argv.slice(2).map((value, index, values) => [
@@ -225,6 +228,70 @@ async function sourceText(url, argumentName) {
   return response.text();
 }
 
+async function sourceJson(url) {
+  const response = await fetch(url, {
+    headers: {
+      Accept: "application/json",
+      "User-Agent": "GradWindow ranking importer/1.0",
+    },
+  });
+  if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+  return response.json();
+}
+
+function usNewsRank(item) {
+  const rank = (item.ranks || []).find(
+    (candidate) =>
+      candidate.is_ranked !== false &&
+      String(candidate.label || "").includes("Best Global Universities"),
+  );
+  if (!rank) return null;
+  const position = rankStart(rank.value);
+  if (!Number.isFinite(position)) return null;
+  return {
+    position,
+    display: rank.is_tied ? `=${position}` : String(position),
+  };
+}
+
+function parseUsNews(payloads) {
+  return payloads
+    .flatMap((payload) => payload.items || [])
+    .map((item) => ({ item, rank: usNewsRank(item) }))
+    .filter(({ rank }) => rank && rank.position <= 200)
+    .map(({ item, rank }) => ({
+      name: item.name,
+      rankDisplay: rank.display,
+      country: item.country_name,
+      sourceUrl: item.url || USNEWS_URL,
+    }));
+}
+
+async function sourceUsNewsPages() {
+  const fixturePath = args.get("--usnews-json");
+  if (fixturePath) {
+    const fixture = JSON.parse(fs.readFileSync(path.resolve(fixturePath), "utf8"));
+    return Array.isArray(fixture) ? fixture : fixture.pages || [fixture];
+  }
+
+  const pages = [];
+  let page = 1;
+  let totalPages = 1;
+  while (page <= totalPages) {
+    const payload = await sourceJson(`${USNEWS_URL}?format=json&page=${page}`);
+    pages.push(payload);
+    totalPages = Number(payload.total_pages) || page;
+    const positions = (payload.items || [])
+      .map((item) => usNewsRank(item)?.position)
+      .filter(Number.isFinite);
+    // Fetch the first page wholly beyond 200 so ties at rank 200 that spill
+    // onto the next page are retained.
+    if (!positions.length || Math.min(...positions) > 200) break;
+    page += 1;
+  }
+  return pages;
+}
+
 function parseThe(html) {
   const marker = '<script id="__NEXT_DATA__" type="application/json">';
   const start = html.indexOf(marker);
@@ -285,12 +352,18 @@ function buildRows(rows, rankingId, sourceUrl) {
   });
 }
 
-const [theHtml, arwuPayload] = await Promise.all([
+const [theHtml, arwuPayload, usNewsResult] = await Promise.all([
   sourceText(THE_URL, "--the-html"),
   sourceText(ARWU_PAYLOAD_URL, "--arwu-payload"),
+  sourceUsNewsPages()
+    .then((pages) => ({ pages }))
+    .catch((error) => ({ error })),
 ]);
 const theRows = buildRows(parseThe(theHtml), "the", THE_URL);
 const arwuRows = buildRows(parseArwu(arwuPayload), "arwu", ARWU_URL);
+const usNewsRows = usNewsResult.pages
+  ? buildRows(parseUsNews(usNewsResult.pages), "usnews", USNEWS_URL)
+  : [];
 
 const output = {
   meta: {
@@ -320,9 +393,18 @@ const output = {
     usnews: {
       label: "U.S. News Best Global Universities",
       shortLabel: "U.S. News",
-      available: false,
-      unavailableReason:
-        "The official ranking page was not reliably accessible from the importer; no unverified substitute is published.",
+      edition: USNEWS_EDITION,
+      sourceUrl: USNEWS_URL,
+      rowCount: usNewsRows.length,
+      rows: usNewsRows,
+      available: usNewsRows.length > 0,
+      ...(usNewsRows.length
+        ? {}
+        : {
+            unavailableReason: usNewsResult.error
+              ? `Official U.S. News data could not be fetched: ${usNewsResult.error.message}`
+              : "The official U.S. News response did not contain ranked rows.",
+          }),
     },
   },
 };
@@ -331,3 +413,6 @@ fs.writeFileSync(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 console.log(`Wrote ${outputPath}`);
 console.log(`THE: ${theRows.length} rows (${theRows.filter((row) => row.rankingOnly).length} ranking-only)`);
 console.log(`ARWU: ${arwuRows.length} rows (${arwuRows.filter((row) => row.rankingOnly).length} ranking-only)`);
+console.log(
+  `U.S. News: ${usNewsRows.length} rows (${usNewsRows.filter((row) => row.rankingOnly).length} ranking-only)`,
+);

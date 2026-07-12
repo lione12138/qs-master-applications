@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import shutil
 import subprocess
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,8 +14,13 @@ def test_extended_rankings_keep_admissions_scope_separate() -> None:
         (ROOT / "data" / "global-rankings.json").read_text(encoding="utf-8")
     )
 
-    assert payload["meta"]["generatedAt"] == "2026-06-21"
-    assert payload["rankings"]["usnews"]["available"] is False
+    date.fromisoformat(payload["meta"]["generatedAt"])
+    usnews = payload["rankings"]["usnews"]
+    if usnews["available"]:
+        assert usnews["rowCount"] == len(usnews["rows"])
+        assert usnews["rows"]
+    else:
+        assert usnews["unavailableReason"]
 
     for ranking_id, expected_count in (("the", 201), ("arwu", 200)):
         ranking = payload["rankings"][ranking_id]
@@ -152,6 +158,56 @@ def test_ranking_importer_maps_shared_schools_to_canonical_universities(
         + ");",
         encoding="utf-8",
     )
+    usnews_fixture = tmp_path / "usnews.json"
+    usnews_fixture.write_text(
+        json.dumps(
+            {
+                "total_pages": 1,
+                "items": [
+                    {
+                        "name": "University College London",
+                        "country_name": "United Kingdom",
+                        "url": "https://www.usnews.com/education/best-global-universities/university-college-london-500237",
+                        "ranks": [
+                            {
+                                "value": "9",
+                                "is_tied": False,
+                                "is_ranked": True,
+                                "label": "Best Global Universities",
+                            }
+                        ],
+                    },
+                    {
+                        "name": "Fixture University",
+                        "country_name": "Canada",
+                        "url": "https://www.usnews.com/fixture",
+                        "ranks": [
+                            {
+                                "value": "200",
+                                "is_tied": True,
+                                "is_ranked": True,
+                                "label": "Best Global Universities",
+                            }
+                        ],
+                    },
+                    {
+                        "name": "Outside Top 200",
+                        "country_name": "Canada",
+                        "url": "https://www.usnews.com/outside",
+                        "ranks": [
+                            {
+                                "value": "201",
+                                "is_tied": False,
+                                "is_ranked": True,
+                                "label": "Best Global Universities",
+                            }
+                        ],
+                    },
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
     output = tmp_path / "global-rankings.json"
 
     subprocess.run(
@@ -162,6 +218,8 @@ def test_ranking_importer_maps_shared_schools_to_canonical_universities(
             str(the_fixture),
             "--arwu-payload",
             str(arwu_fixture),
+            "--usnews-json",
+            str(usnews_fixture),
             "--output",
             str(output),
         ],
@@ -177,6 +235,12 @@ def test_ranking_importer_maps_shared_schools_to_canonical_universities(
     the_by_university = {row["universityId"]: row for row in rankings["the"]["rows"]}
     for university_id in THE_SHARED_UNIVERSITIES.values():
         assert the_by_university[university_id]["rankingOnly"] is False
+    usnews = rankings["usnews"]
+    assert usnews["available"] is True
+    assert usnews["edition"] == "2026-2027"
+    assert usnews["rowCount"] == 2
+    assert usnews["rows"][0]["universityId"] == "ucl-university-college-london"
+    assert usnews["rows"][1]["rankDisplay"] == "=200"
 
 
 def test_extended_ranking_views_reuse_shared_application_windows() -> None:
