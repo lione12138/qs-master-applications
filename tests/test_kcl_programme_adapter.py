@@ -49,6 +49,16 @@ ADVANCED_CLINICAL_PRACTICE = """
 </body></html>
 """
 
+SINGLE_FACULTY = """
+<html><head><title>Accounting &amp; Finance - Entry Requirements | King's College London</title></head>
+<body>
+  <div class="FacultiesAndDepartmentsstyled__FacultiesAndDepartmentsStyled-sc-test">
+    <h2>Taught in</h2><a>King’s Business School</a>
+  </div>
+  <footer><a>Degree courses Footer navigation link</a></footer>
+</body></html>
+"""
+
 
 def test_kcl_adapter_reads_sitemap_and_course_specific_deadlines() -> None:
     adapter = KCLAdapter(minimum_expected_programmes=2, detail_workers=1)
@@ -180,3 +190,20 @@ def test_kcl_adapter_uses_dynamic_delivery_catalogue_when_sitemap_is_stale() -> 
         "Clinical Pharmacology MSc",
     ]
     assert "apiTotal=2" in adapter.sitemap_diagnostics
+
+
+def test_kcl_adapter_does_not_treat_footer_links_as_departments() -> None:
+    adapter = KCLAdapter(minimum_expected_programmes=1, detail_workers=1)
+    sitemap = """<urlset><url><loc>https://www.kcl.ac.uk/study/postgraduate-taught/courses/accounting-finance-msc</loc></url></urlset>"""
+
+    def fetcher(url: str) -> str:
+        if url == SITEMAP_URL:
+            return sitemap
+        if url.endswith("/requirements"):
+            return SINGLE_FACULTY
+        raise AssertionError(url)
+
+    programme = adapter.parse_catalog_from_fetcher(fetcher).programmes[0]
+
+    assert programme.faculty == "King’s Business School"
+    assert programme.department == ""

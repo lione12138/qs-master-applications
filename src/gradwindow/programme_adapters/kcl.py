@@ -434,8 +434,21 @@ def _taught_in(soup: BeautifulSoup) -> tuple[str, str]:
     )
     if heading is None:
         return "", ""
+    section = heading.find_parent(
+        "div", class_=re.compile(r"FacultiesAndDepartmentsstyled__")
+    )
+    if section is not None:
+        names = list(
+            dict.fromkeys(
+                name
+                for link in section.find_all("a")
+                if (name := _normalise_text(link.get_text(" ", strip=True)))
+            )
+        )
+        return tuple((names + ["", ""])[:2])
+
     names = []
-    for item in heading.find_all_next(["a", "h3"]):
+    for item in heading.find_all_next(["a", "h2", "h3"]):
         if (
             item.name in {"h2", "h3"}
             and item is not heading
