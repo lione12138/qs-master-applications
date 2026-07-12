@@ -120,9 +120,9 @@ class KCLAdapter:
         if course_urls:
             return course_urls
 
-        sitemap_urls = [
-            url for url in root_locations if urlsplit(url).path.endswith(".xml")
-        ]
+        if _xml_root_name(root_xml) != "sitemapindex":
+            return []
+        sitemap_urls = root_locations
         with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
             child_payloads = executor.map(fetcher, sitemap_urls)
         return _filter_course_urls(
@@ -139,6 +139,10 @@ def _xml_locations(payload: str) -> list[str]:
         for node in root.iter()
         if node.tag.rsplit("}", 1)[-1].lower() == "loc" and (node.text or "").strip()
     ]
+
+
+def _xml_root_name(payload: str) -> str:
+    return ElementTree.fromstring(payload).tag.rsplit("}", 1)[-1].lower()
 
 
 def _filter_course_urls(urls: Iterable[str]) -> list[str]:

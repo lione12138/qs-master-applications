@@ -4,7 +4,7 @@ from gradwindow.programme_adapters.kcl import SITEMAP_URL, KCLAdapter
 
 SITEMAP_INDEX = """<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap><loc>https://www.kcl.ac.uk/sitemaps/study.xml</loc></sitemap>
+  <sitemap><loc>https://www.kcl.ac.uk/sitemaps/study</loc></sitemap>
 </sitemapindex>
 """
 
@@ -54,7 +54,7 @@ def test_kcl_adapter_reads_sitemap_and_course_specific_deadlines() -> None:
     def fetcher(url: str) -> str:
         if url == SITEMAP_URL:
             return SITEMAP_INDEX
-        if url.endswith("study.xml"):
+        if url.endswith("/study"):
             return STUDY_SITEMAP
         if "clinical-pharmacology-msc/requirements" in url:
             return CLINICAL_PHARMACOLOGY
