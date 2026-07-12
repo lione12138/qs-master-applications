@@ -32,6 +32,8 @@ jobs:
           pip install -e ".[dev]"
       - name: Import official global rankings
         run: node scripts/import_global_rankings.mjs
+      - name: Apply localized school names
+        run: python scripts/update_localized_school_names.py
       - name: Validate imported rankings
         run: |
           pytest -q tests/test_global_rankings.py tests/test_frontend_rankings.py
