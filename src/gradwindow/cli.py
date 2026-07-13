@@ -31,6 +31,7 @@ from .programme_adapters.hkust import HKUSTAdapter
 from .programme_adapters.imperial import ImperialAdapter
 from .programme_adapters.kcl import KCLAdapter
 from .programme_adapters.mit import MITAdapter
+from .programme_adapters.monash import MonashAdapter
 from .programme_adapters.polyu import PolyUAdapter
 from .programme_adapters.stanford import StanfordAdapter
 from .programme_adapters.static_catalog import StaticCatalogAdapter, StaticCatalogConfig
@@ -68,6 +69,7 @@ PROGRAMME_ADAPTERS = {
     "imperial": ImperialAdapter,
     "kcl": KCLAdapter,
     "mit": MITAdapter,
+    "monash": MonashAdapter,
     "polyu": PolyUAdapter,
     "stanford": StanfordAdapter,
     "sydney": SydneyAdapter,
