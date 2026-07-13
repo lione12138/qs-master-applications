@@ -757,6 +757,11 @@ def _error_report(
     exc: Exception,
     dry_run: bool,
 ) -> dict[str, Any]:
+    message = str(exc)
+    if isinstance(exc, httpx.HTTPStatusError):
+        response_body = " ".join(exc.response.text.split())[:500]
+        if response_body:
+            message = f"{message}; responseBody={response_body}"
     return {
         "status": "error",
         "universityId": config.university_id,
@@ -764,7 +769,7 @@ def _error_report(
         "assistedDiscovery": True,
         "stage": stage,
         "errorType": type(exc).__name__,
-        "message": str(exc)[:400],
+        "message": message[:900],
         "dryRun": dry_run,
     }
 

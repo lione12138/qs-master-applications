@@ -285,6 +285,32 @@ def test_assisted_discovery_reports_search_errors_without_crashing_batch() -> No
     assert report["errorType"] == "RuntimeError"
 
 
+def test_assisted_discovery_reports_http_error_body_without_credentials() -> None:
+    request = httpx.Request("GET", "https://api.search.brave.com/search")
+    response = httpx.Response(
+        422,
+        request=request,
+        json={"type": "validation_error", "detail": "invalid subscription plan"},
+    )
+
+    def failing_searcher(_query: str, _count: int) -> list[SearchResult]:
+        raise httpx.HTTPStatusError(
+            "unprocessable request",
+            request=request,
+            response=response,
+        )
+
+    report = run_assisted_discovery(
+        _config(),
+        dry_run=True,
+        searcher=failing_searcher,
+        extractor=lambda _config, _documents: {"programmes": []},
+    )
+
+    assert report["status"] == "error"
+    assert '"detail":"invalidsubscriptionplan"' in report["message"].replace(" ", "")
+
+
 def test_assisted_discovery_runs_search_retrieval_extraction_and_candidate_flow() -> (
     None
 ):
