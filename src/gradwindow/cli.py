@@ -37,6 +37,7 @@ from .programme_adapters.kcl import KCLAdapter
 from .programme_adapters.melbourne import MelbourneAdapter
 from .programme_adapters.mit import MITAdapter
 from .programme_adapters.monash import MonashAdapter
+from .programme_adapters.oxford import OxfordAdapter
 from .programme_adapters.polyu import PolyUAdapter
 from .programme_adapters.stanford import StanfordAdapter
 from .programme_adapters.static_catalog import StaticCatalogAdapter, StaticCatalogConfig
@@ -76,6 +77,7 @@ PROGRAMME_ADAPTERS = {
     "melbourne": MelbourneAdapter,
     "mit": MITAdapter,
     "monash": MonashAdapter,
+    "oxford": OxfordAdapter,
     "polyu": PolyUAdapter,
     "stanford": StanfordAdapter,
     "sydney": SydneyAdapter,

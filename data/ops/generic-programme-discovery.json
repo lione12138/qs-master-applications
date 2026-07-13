@@ -1,9 +1,33 @@
 {
   "meta": {
     "description": "Seed pages for the generic official-site programme discovery runner. These entries create review candidates, not published application windows.",
-    "updatedAt": "2026-07-07"
+    "updatedAt": "2026-07-14"
   },
   "schools": [
+    {
+      "name": "oxford-graduate-taught",
+      "universityId": "university-of-oxford",
+      "prefix": "oxford",
+      "seedUrls": [
+        "https://www.ox.ac.uk/admissions/graduate/courses/courses-a-z-listing",
+        "https://www.ox.ac.uk/admissions/graduate/courses/open-courses"
+      ],
+      "officialDomains": [
+        "ox.ac.uk"
+      ],
+      "applicationUrl": "https://www.ox.ac.uk/admissions/graduate/application-guide/starting-your-application/your-application-account",
+      "defaultIntake": "2027-28",
+      "minimumExpected": 125,
+      "maxDetailPages": 20,
+      "noDeadlineHandling": "monitor",
+      "accessStatus": "blocked",
+      "accessReason": "The central Oxford graduate course catalogue returns a Cloudflare HTTP 403 challenge to direct GitHub-runner requests. The dedicated Oxford adapter provides strict catalogue and course-page parsing when full official HTML is available; assisted official-domain discovery monitors indexed official pages without promoting snippet dates.",
+      "assistedDiscovery": {
+        "enabled": true,
+        "maxResults": 20
+      },
+      "enabled": true
+    },
     {
       "name": "uchicago-data-science",
       "universityId": "university-of-chicago",

@@ -18,8 +18,10 @@ on:
           - hkust
           - imperial
           - kcl
+          - melbourne
           - mit
           - monash
+          - oxford
           - polyu
           - stanford
           - sydney
@@ -46,7 +48,17 @@ jobs:
       - name: Install
         run: pip install -e ".[dev]"
       - name: Run selected programme adapter
+        if: inputs.university != 'oxford'
         run: gradwindow discover-programmes --university "${{ inputs.university }}"
+      - name: Run Oxford assisted official-domain discovery
+        if: inputs.university == 'oxford'
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_BROWSER_API_TOKEN: ${{ secrets.CLOUDFLARE_BROWSER_API_TOKEN }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: gradwindow discover-assisted --university university-of-oxford
       - name: Validate discovery outputs
         run: |
           gradwindow validate
