@@ -254,7 +254,7 @@ def test_brave_search_retries_without_optional_extra_snippets(monkeypatch) -> No
     assert [result.title for result in results] == ["MSc Data Science"]
     assert calls[0][2]["extra_snippets"] == "true"
     assert "extra_snippets" not in calls[1][2]
-    assert calls[1][2]["count"] == 20
+    assert calls[1][2]["count"] == 10
 
 
 def test_assisted_discovery_only_requires_deepseek_credentials(

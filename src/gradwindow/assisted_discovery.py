@@ -26,6 +26,7 @@ DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 CLOUDFLARE_API_BASE = "https://api.cloudflare.com/client/v4"
 DEFAULT_DEEPSEEK_MODEL = "deepseek-v4-flash"
 MAX_SEARCH_RESULTS = 12
+BRAVE_SAFE_PAGE_SIZE = 10
 MAX_DOCUMENT_CHARS = 12_000
 MAX_PROMPT_CHARS = 80_000
 
@@ -203,7 +204,11 @@ class BraveSearcher:
         }
         params = {
             "q": query,
-            "count": min(20, max(1, count)),
+            # Brave documents a maximum of 20, but some active subscription
+            # tiers reject counts above 10 with HTTP 422. Multiple queries are
+            # already merged below, so a conservative page size preserves the
+            # configured overall result limit without making the run brittle.
+            "count": min(BRAVE_SAFE_PAGE_SIZE, max(1, count)),
             "search_lang": "en",
             "safesearch": "strict",
             "extra_snippets": "true",
@@ -414,8 +419,8 @@ def _search_official_sources(
         query
         for domain in config.official_domains
         for query in (
-            f"site:{domain} master's postgraduate programmes {intake_years}",
-            f"site:{domain} master's application opens deadline {intake_years}",
+            f"site:{domain} masters postgraduate programmes {intake_years}",
+            f"site:{domain} masters application opens deadline {intake_years}",
         )
     )
     results: dict[str, SearchResult] = {
