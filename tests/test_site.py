@@ -133,6 +133,10 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert 'class="tracker-workspace"' in index_html
     assert 'class="tracker-sidebar"' in index_html
     assert 'class="tracker-results"' in index_html
+    assert 'id="results-toolbar"' in index_html
+    assert 'id="active-filter-chips"' in index_html
+    assert 'id="expand-visible-groups"' in index_html
+    assert 'id="collapse-visible-groups"' in index_html
     assert 'id="hero-open-count"' in index_html
     assert 'id="hero-deadline-day"' in index_html
     assert 'id="hero-deadline-month"' in index_html
@@ -170,7 +174,11 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "school-group-summary" in app_js
     assert "university-group-parent--" in app_js
     assert "university-group-child--first" in app_js
+    assert "function updateResultsToolbar" in app_js
+    assert 'tab.setAttribute("aria-selected", String(active))' in app_js
+    assert "function setVisibleUniversityGroups" in app_js
     assert ".university-group-parent--expanded" in styles_css
+    assert ".results-toolbar" in styles_css
     assert "tr.university-group-child" in styles_css
     assert (tmp_path / "sources.html").read_text(encoding="utf-8").count(
         ANALYTICS_BEACON

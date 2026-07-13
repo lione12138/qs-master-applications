@@ -341,6 +341,21 @@
             </button>
           </div>
 
+          <div class="results-toolbar" id="results-toolbar" aria-live="polite">
+            <div class="results-context">
+              <div class="results-counts">
+                <strong id="results-school-count">0 universities</strong>
+                <span aria-hidden="true">·</span>
+                <span id="results-window-count">0 windows</span>
+              </div>
+              <div class="active-filter-chips" id="active-filter-chips"></div>
+            </div>
+            <div class="group-view-actions" id="group-view-actions" hidden>
+              <button id="expand-visible-groups" type="button" data-i18n="expandVisibleSchools">Expand schools on this page</button>
+              <button id="collapse-visible-groups" type="button" data-i18n="collapseVisibleSchools">Collapse all</button>
+            </div>
+          </div>
+
           <div id="application-groups" class="application-groups"></div>
           <div id="empty-state" class="empty-state" hidden>
             <strong data-i18n="emptyTitle">No matching application windows</strong>

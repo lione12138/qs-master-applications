@@ -748,6 +748,179 @@ function activeNonStatusFilter() {
   );
 }
 
+function localizedCount(count, labelKey) {
+  return state.language === "zh"
+    ? `${count}${t(labelKey)}`
+    : `${count} ${t(labelKey)}`;
+}
+
+function syncFilterInputs() {
+  document.getElementById("search-input").value = state.search;
+  document.getElementById("ranking-filter").value = state.ranking;
+  refreshFilterOptions();
+  document.getElementById("region-filter").value = state.region;
+  document.getElementById("intake-filter").value = state.intake;
+  updateRankRangeOptions();
+}
+
+function resetFilter(filter) {
+  if (filter === "search") state.search = "";
+  if (filter === "ranking") {
+    state.ranking = "qs";
+    state.region = "all";
+    state.intake = "all";
+  }
+  if (filter === "region") state.region = "all";
+  if (filter === "intake") state.intake = "all";
+  if (filter === "rankLimit") state.rankLimit = "200";
+  if (filter === "favorites") state.favoritesOnly = false;
+  syncFilterInputs();
+  resetPages();
+  syncUrl();
+  render();
+}
+
+function clearFilters() {
+  state.search = "";
+  state.ranking = "qs";
+  state.region = "all";
+  state.intake = "all";
+  state.rankLimit = "200";
+  state.favoritesOnly = false;
+  syncFilterInputs();
+  resetPages();
+  syncUrl();
+  render();
+}
+
+function activeFilterItems() {
+  const items = [];
+  if (state.search.trim()) {
+    items.push({
+      key: "search",
+      label: `${t("searchFilterChip")}: ${state.search.trim()}`,
+    });
+  }
+  if (state.ranking !== "qs") {
+    items.push({
+      key: "ranking",
+      label:
+        document.getElementById("ranking-filter").selectedOptions[0]
+          ?.textContent || rankingShortLabel(),
+    });
+  }
+  if (state.region !== "all") {
+    items.push({
+      key: "region",
+      label: regionLabel(state.region, state.language),
+    });
+  }
+  if (state.intake !== "all") {
+    items.push({
+      key: "intake",
+      label:
+        document.getElementById("intake-filter").selectedOptions[0]
+          ?.textContent || state.intake,
+    });
+  }
+  if (state.rankLimit !== "200") {
+    items.push({ key: "rankLimit", label: rankRangeLabel(state.rankLimit) });
+  }
+  if (state.favoritesOnly) {
+    items.push({ key: "favorites", label: t("favoritesOnly") });
+  }
+  return items;
+}
+
+function makeFilterChip(item) {
+  const button = makeElement("button", {
+    className: "active-filter-chip",
+    title: `${t("clearFilters")}: ${item.label}`,
+  });
+  button.type = "button";
+  button.append(
+    makeElement("span", { text: item.label }),
+    makeElement("span", { className: "active-filter-chip-remove", text: "×" }),
+  );
+  button.addEventListener("click", () => resetFilter(item.key));
+  return button;
+}
+
+function updateResultsToolbar(records, universities, exceptionUniversities) {
+  const universityIds = new Set(
+    records.map((record) => record.universityId).filter(Boolean),
+  );
+  if (state.status === "exception") {
+    exceptionUniversities.forEach((university) =>
+      universityIds.add(university.id),
+    );
+  }
+  if (state.status === "unknown" || hasActiveSearch()) {
+    universities.forEach((university) => universityIds.add(university.id));
+  }
+  document.getElementById("results-school-count").textContent = localizedCount(
+    universityIds.size,
+    "universitiesShown",
+  );
+  document.getElementById("results-window-count").textContent = windowCountText(
+    records.length,
+  );
+
+  const chipContainer = document.getElementById("active-filter-chips");
+  const filters = activeFilterItems();
+  chipContainer.replaceChildren(...filters.map(makeFilterChip));
+  if (filters.length) {
+    const clearButton = makeElement("button", {
+      className: "clear-filter-button",
+      text: t("clearFilters"),
+    });
+    clearButton.type = "button";
+    clearButton.addEventListener("click", clearFilters);
+    chipContainer.appendChild(clearButton);
+    chipContainer.setAttribute("aria-label", t("activeFilters"));
+  } else {
+    chipContainer.removeAttribute("aria-label");
+  }
+
+  const groupRows = [
+    ...document.querySelectorAll(".university-group-parent[data-group-key]"),
+  ];
+  const groupActions = document.getElementById("group-view-actions");
+  groupActions.hidden = groupRows.length === 0;
+  if (groupRows.length) {
+    const expandedCount = groupRows.filter(
+      (row) => row.dataset.groupState === "expanded",
+    ).length;
+    document.getElementById("expand-visible-groups").disabled =
+      expandedCount === groupRows.length;
+    document.getElementById("collapse-visible-groups").disabled =
+      expandedCount === 0;
+  }
+}
+
+function setVisibleUniversityGroups(expanded) {
+  document
+    .querySelectorAll(".university-group-parent[data-group-key]")
+    .forEach((row) => {
+      if (expanded) state.expandedUniversityGroups.add(row.dataset.groupKey);
+      else state.expandedUniversityGroups.delete(row.dataset.groupKey);
+    });
+  render();
+}
+
+function updateStatusTabs(focusStatus = "") {
+  document.querySelectorAll(".status-tab").forEach((tab) => {
+    const active = tab.dataset.status === state.status;
+    tab.classList.toggle("active", active);
+    tab.setAttribute("aria-selected", String(active));
+    tab.tabIndex = active ? 0 : -1;
+    if (focusStatus && tab.dataset.status === focusStatus) {
+      tab.focus();
+      tab.scrollIntoView({ block: "nearest", inline: "center" });
+    }
+  });
+}
+
 function recordsForCurrentView(baseRecords) {
   if (hasActiveSearch()) return baseRecords;
   return baseRecords.filter((record) => getStatus(record) === state.status);
@@ -901,6 +1074,7 @@ function createUniversityGroupRow(universityGroup, status) {
   row.className = `window-card-row university-group-parent university-group-parent--${
     expanded ? "expanded" : "collapsed"
   }`;
+  row.dataset.groupKey = universityGroup.key;
   row.dataset.groupState = expanded ? "expanded" : "collapsed";
   const records = universityGroup.records;
   const rank = makeElement("span", {
@@ -1473,6 +1647,8 @@ function render() {
   document.querySelectorAll("[data-mobile-sort]").forEach((button) => {
     button.classList.toggle("active", button.dataset.mobileSort === state.sort);
   });
+  updateResultsToolbar(records, baseUniversities, exceptionUniversities);
+  updateStatusTabs();
   updateMobileFilterToggle();
   updateFavoriteControls();
 }
@@ -1808,9 +1984,7 @@ function bindEvents() {
       refreshFilterOptions();
       updateRankRangeOptions();
       syncUrl();
-      document.querySelectorAll(".status-tab").forEach((tab) => {
-        tab.classList.toggle("active", tab.dataset.status === state.status);
-      });
+      updateStatusTabs();
       render();
     });
   document
@@ -1842,12 +2016,38 @@ function bindEvents() {
       state.status = button.dataset.status;
       resetPages();
       syncUrl();
-      document
-        .querySelectorAll(".status-tab")
-        .forEach((tab) => tab.classList.toggle("active", tab === button));
+      updateStatusTabs();
       render();
     });
+    button.addEventListener("keydown", (event) => {
+      if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+        return;
+      }
+      event.preventDefault();
+      const tabs = [...document.querySelectorAll(".status-tab")];
+      const currentIndex = tabs.indexOf(button);
+      const nextIndex =
+        event.key === "Home"
+          ? 0
+          : event.key === "End"
+            ? tabs.length - 1
+            : (currentIndex +
+                (event.key === "ArrowRight" ? 1 : -1) +
+                tabs.length) %
+              tabs.length;
+      state.status = tabs[nextIndex].dataset.status;
+      resetPages();
+      syncUrl();
+      render();
+      updateStatusTabs(state.status);
+    });
   });
+  document
+    .getElementById("expand-visible-groups")
+    .addEventListener("click", () => setVisibleUniversityGroups(true));
+  document
+    .getElementById("collapse-visible-groups")
+    .addEventListener("click", () => setVisibleUniversityGroups(false));
   document.getElementById("favorites-toggle").addEventListener("click", () => {
     state.favoritesOnly = !state.favoritesOnly;
     resetPages();
@@ -1875,9 +2075,7 @@ function bindEvents() {
         state.favoritesOnly = false;
         state.status = "open";
         document.getElementById("search-input").value = "";
-        document.querySelectorAll(".status-tab").forEach((tab) => {
-          tab.classList.toggle("active", tab.dataset.status === "open");
-        });
+        updateStatusTabs();
         resetPages();
         syncUrl();
         render();
@@ -2100,9 +2298,7 @@ async function init() {
     document.getElementById("intake-filter").value = state.intake;
     document.getElementById("ranking-filter").value = state.ranking;
     updateRankRangeOptions();
-    document.querySelectorAll(".status-tab").forEach((tab) => {
-      tab.classList.toggle("active", tab.dataset.status === state.status);
-    });
+    updateStatusTabs();
     const schoolCount = state.universities.length;
     document.getElementById("total-schools").textContent = schoolCount;
     document.getElementById("total-records").textContent = state.officialCount;
