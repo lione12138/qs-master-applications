@@ -1,44 +1,51 @@
 from __future__ import annotations
 
-from gradwindow.programme_adapters.monash import CATALOG_URL, MonashAdapter
+from gradwindow.programme_adapters.monash import (
+    CATALOG_URL,
+    MARKETING_PROBE_URL,
+    MonashAdapter,
+)
 
-SITEMAP = """<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.monash.edu/study/courses/find-a-course/business-analytics-b6022</loc></url>
-  <url><loc>https://www.monash.edu/study/courses/find-a-course/bioinformatics-m6049</loc></url>
-  <url><loc>https://www.monash.edu/study/courses/find-a-course/computer-science-c2001</loc></url>
-</urlset>
-"""
+SITEMAP_INDEX = """<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap><loc>https://handbook.monash.edu/sitemap/courses.xml</loc></sitemap>
+</sitemapindex>"""
 
-BUSINESS_ANALYTICS = """
-<html><head><meta property="og:title" content="Business Analytics - B6022 - Study at Monash" /></head>
-<body><h1>Business Analytics - B6022</h1><p>Master's degree</p>
-<p>The Master of Business Analytics is designed for flexibility.</p>
-<h3>Semester one (February)</h3><p>2027 intake:</p>
-<ul><li>Round 1 applications close 30 July 2026</li>
-<li>Round 2 applications close 30 September 2026</li></ul>
-</body></html>
-"""
+COURSE_SITEMAP = """<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>https://handbook.monash.edu/2026/courses/B6022</loc></url>
+<url><loc>https://handbook.monash.edu/2026/courses/M6049</loc></url>
+<url><loc>https://handbook.monash.edu/2026/courses/C2001</loc></url>
+</urlset>"""
 
-BIOINFORMATICS = """
-<html><head><meta property="og:title" content="Bioinformatics - M6049 - Study at Monash" /></head>
-<body><h1>Bioinformatics - M6049</h1><p>Master's degree</p>
-<p>The Master of Bioinformatics equips you with advanced computational knowledge.</p>
-<h3>Making the application</h3><p>Apply directly to Monash using course code M6049.</p>
-</body></html>
-"""
+BUSINESS_HANDBOOK = """<html><head><title>B6022 - Master of Business Analytics - Monash University</title></head>
+<body><p>Managing faculty: Faculty of Business and Economics Credit points: 96</p>
+<p>Monash course type: Masters degree (Coursework)</p></body></html>"""
+
+BIOINFORMATICS_HANDBOOK = """<html><head><title>M6049 - Master of Bioinformatics - Monash University</title></head>
+<body><p>Managing faculty: Faculty of Medicine, Nursing and Health Sciences Credit points: 96</p>
+<p>Monash course type: Masters degree (Coursework)</p></body></html>"""
+
+BUSINESS_MARKETING = """<html><body><p>2027 intake:</p>
+<h3>Semester one (February)</h3>
+<p>Round 1 applications close 30 July 2026.</p>
+<p>Round 2 applications close 30 September 2026.</p></body></html>"""
 
 
-def test_monash_adapter_discovers_confirmed_masters_and_exact_rounds() -> None:
+def test_monash_adapter_uses_handbook_catalogue_and_optional_marketing_dates() -> None:
     adapter = MonashAdapter(minimum_expected_programmes=2, detail_workers=1)
 
     def fetcher(url: str) -> str:
         if url == CATALOG_URL:
-            return SITEMAP
-        if url.endswith("business-analytics-b6022"):
-            return BUSINESS_ANALYTICS
+            return SITEMAP_INDEX
+        if url.endswith("courses.xml"):
+            return COURSE_SITEMAP
+        if url.endswith("/B6022"):
+            return BUSINESS_HANDBOOK
+        if url.endswith("/M6049"):
+            return BIOINFORMATICS_HANDBOOK
+        if url == MARKETING_PROBE_URL:
+            return BUSINESS_MARKETING
         if url.endswith("bioinformatics-m6049"):
-            return BIOINFORMATICS
+            raise RuntimeError("marketing site blocked")
         raise AssertionError(url)
 
     catalog = adapter.parse_catalog_from_fetcher(fetcher)
@@ -49,7 +56,7 @@ def test_monash_adapter_discovers_confirmed_masters_and_exact_rounds() -> None:
         "monash-master-of-business-analytics-b6022",
     ]
     analytics = catalog.programmes[1]
-    assert analytics.name == "Master of Business Analytics"
+    assert analytics.faculty == "Faculty of Business and Economics"
     assert analytics.parse_status == "incomplete"
     assert [
         (window.round, window.closes_at, window.intake, window.opens_at)

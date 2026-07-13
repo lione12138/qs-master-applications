@@ -4,8 +4,8 @@ import concurrent.futures
 import re
 import unicodedata
 from collections.abc import Callable
+from dataclasses import replace
 from datetime import date, datetime
-from urllib.parse import urlsplit
 from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
@@ -13,16 +13,14 @@ from bs4 import BeautifulSoup
 from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
 
 UNIVERSITY_ID = "monash-university"
-CATALOG_URL = "https://www.monash.edu/sitemap.xml"
+CATALOG_URL = "https://handbook.monash.edu/sitemap.xml"
 APPLICATION_URL = "https://www.monash.edu/admissions/apply/international-pg"
-DEFAULT_INTAKE = "Semester 1 2027"
-COURSE_PATH_RE = re.compile(
-    r"^/study/courses/find-a-course/(?P<slug>[^/]+)-(?P<code>[a-zA-Z]\d{4})/?$"
+HANDBOOK_COURSE_RE = re.compile(
+    r"^https://handbook\.monash\.edu/2026/courses/(?P<code>[A-Za-z]6\d{3})/?$"
 )
-MASTER_MARKER_RE = re.compile(r"\bMaster(?:'s|’s) degree\b", re.I)
-MASTER_NAME_RE = re.compile(
-    r"\b(?:The\s+)?(?P<name>Master of [A-Z][^.\n]{2,120}?)\s+"
-    r"(?:is|offers|provides|equips|prepares|has)\b"
+MASTER_TITLE_RE = re.compile(
+    r"^(?P<code>[A-Za-z]6\d{3})\s+-\s+(?P<title>Master(?:'s)?\s+of\s+.+?)\s+-\s+Monash University$",
+    re.I,
 )
 DEADLINE_RE = re.compile(
     r"(?P<round>(?:Round\s+\d+|timely|final)?\s*applications?)\s+"
@@ -37,6 +35,9 @@ OPENING_RE = re.compile(
     r"September|October|November|December)\s+20\d{2})",
     re.I,
 )
+MARKETING_PROBE_URL = (
+    "https://www.monash.edu/study/courses/find-a-course/business-analytics-b6022"
+)
 
 
 class MonashAdapter:
@@ -47,7 +48,7 @@ class MonashAdapter:
 
     def __init__(
         self,
-        minimum_expected_programmes: int = 50,
+        minimum_expected_programmes: int = 90,
         *,
         detail_workers: int = 10,
     ) -> None:
@@ -59,12 +60,33 @@ class MonashAdapter:
         self,
         fetcher: Callable[[str], str],
     ) -> DiscoveredCatalog:
-        urls = _candidate_urls(fetcher(self.catalog_url))
-        self.catalogue_diagnostics = f"candidate6000CourseUrls={len(urls)}"
+        sitemap_urls = _sitemap_locations(fetcher(self.catalog_url))
 
-        def parse_one(url: str) -> DiscoveredProgramme | None:
+        def fetch_sitemap(url: str) -> str:
             try:
-                return _parse_programme(url, fetcher(url))
+                return fetcher(url)
+            except Exception:
+                return ""
+
+        with concurrent.futures.ThreadPoolExecutor(max_workers=6) as executor:
+            sitemap_payloads = list(executor.map(fetch_sitemap, sitemap_urls))
+        handbook_urls = sorted(
+            {
+                url
+                for payload in sitemap_payloads
+                for url in _sitemap_locations(payload)
+                if HANDBOOK_COURSE_RE.match(url)
+            }
+        )
+        self.catalogue_diagnostics = (
+            f"childSitemaps={len(sitemap_urls)}, "
+            f"readableSitemaps={sum(bool(item) for item in sitemap_payloads)}, "
+            f"handbook6000Courses={len(handbook_urls)}"
+        )
+
+        def parse_handbook(url: str) -> DiscoveredProgramme | None:
+            try:
+                return _parse_handbook_programme(url, fetcher(url))
             except Exception:
                 return None
 
@@ -73,7 +95,7 @@ class MonashAdapter:
         ) as executor:
             programmes = [
                 programme
-                for programme in executor.map(parse_one, urls)
+                for programme in executor.map(parse_handbook, handbook_urls)
                 if programme is not None
             ]
         programmes = sorted(
@@ -82,109 +104,141 @@ class MonashAdapter:
         )
         if len(programmes) < self.minimum_expected_programmes:
             raise ValueError(
-                "Monash official sitemap/detail pages only produced "
+                "Monash Handbook only produced "
                 f"{len(programmes)} master's programmes; expected at least "
                 f"{self.minimum_expected_programmes}. "
                 f"Diagnostics: {self.catalogue_diagnostics}"
             )
-        self.catalogue_diagnostics += f", confirmedMasters={len(programmes)}"
+
+        marketing_probe = None
+        try:
+            marketing_probe = fetcher(MARKETING_PROBE_URL)
+        except Exception:
+            pass
+        if marketing_probe:
+            probe_id = "monash-master-of-business-analytics-b6022"
+
+            def add_marketing(programme: DiscoveredProgramme) -> DiscoveredProgramme:
+                try:
+                    html = (
+                        marketing_probe
+                        if programme.id == probe_id
+                        else fetcher(programme.source_url)
+                    )
+                    return _add_marketing_deadlines(programme, html)
+                except Exception:
+                    return programme
+
+            with concurrent.futures.ThreadPoolExecutor(
+                max_workers=self.detail_workers
+            ) as executor:
+                programmes = list(executor.map(add_marketing, programmes))
+        self.catalogue_diagnostics += (
+            f", confirmedMasters={len(programmes)}, "
+            f"marketingPages={'available' if marketing_probe else 'blocked'}"
+        )
         return DiscoveredCatalog(application_opens_at=None, programmes=programmes)
 
 
-def _candidate_urls(xml: str) -> list[str]:
+def _sitemap_locations(xml: str) -> list[str]:
+    if not xml.strip():
+        return []
     root = ElementTree.fromstring(xml)
-    urls: set[str] = set()
-    for node in root.iter():
-        if (
-            node.tag.rsplit("}", 1)[-1].lower() != "loc"
-            or not (node.text or "").strip()
-        ):
-            continue
-        url = (node.text or "").strip().split("?", 1)[0].rstrip("/")
-        match = COURSE_PATH_RE.match(urlsplit(url).path)
-        if match is None or int(match.group("code")[1:]) < 6000:
-            continue
-        urls.add(url)
-    return sorted(urls)
+    return [
+        (node.text or "").strip().split("?", 1)[0].rstrip("/")
+        for node in root.iter()
+        if node.tag.rsplit("}", 1)[-1].lower() == "loc" and (node.text or "").strip()
+    ]
 
 
-def _parse_programme(url: str, html: str) -> DiscoveredProgramme | None:
+def _parse_handbook_programme(
+    handbook_url: str,
+    html: str,
+) -> DiscoveredProgramme | None:
     soup = BeautifulSoup(html, "html.parser")
+    title_text = _normalise_text(
+        soup.title.get_text(" ", strip=True) if soup.title else ""
+    )
+    title_match = MASTER_TITLE_RE.match(title_text)
+    if title_match is None:
+        return None
+    title = title_match.group("title").replace("Master's of", "Master of")
+    code = title_match.group("code").upper()
     text = _normalise_text(soup.get_text(" ", strip=True))
-    if MASTER_MARKER_RE.search(text) is None:
+    if not re.search(r"Monash course type:\s+Masters? degree", text, re.I):
         return None
-    path_match = COURSE_PATH_RE.match(urlsplit(url).path)
-    if path_match is None:
-        return None
-    code = path_match.group("code").upper()
-    title = _programme_name(soup, text, path_match.group("slug"))
-    windows = _parse_windows(text, url)
-    faculty = _faculty(soup, text)
+    faculty_match = re.search(
+        r"Managing faculty:\s*(?P<faculty>.+?)\s+(?:Credit points:|Full time duration:)",
+        text,
+        re.I,
+    )
+    marketing_url = _marketing_url(title, code)
     return DiscoveredProgramme(
         id=f"monash-{_slug(title)}-{code.lower()}",
         name=title,
         degree_type="Master",
-        faculty=faculty,
-        department="",
-        source_url=url,
-        application_url=APPLICATION_URL,
-        windows=windows,
-        deadline_text=(
-            _deadline_excerpt(text)
-            if windows
-            else (
-                "Official Monash course page confirms this master's degree, but "
-                "does not publish an exact application deadline."
-            )
+        faculty=(
+            _normalise_text(faculty_match.group("faculty")) if faculty_match else ""
         ),
-        parse_status="incomplete" if windows else "no-deadline",
+        department="",
+        source_url=marketing_url,
+        application_url=APPLICATION_URL,
+        windows=[],
+        deadline_text=(
+            "Official Monash Handbook confirms this coursework master's course. "
+            "No exact application deadline was available from the admissions page."
+        ),
+        parse_status="no-deadline",
     )
 
 
-def _programme_name(soup: BeautifulSoup, text: str, slug: str) -> str:
-    name_match = MASTER_NAME_RE.search(text)
-    if name_match is not None:
-        return _clean_name(name_match.group("name"))
-    meta = soup.find("meta", property="og:title")
-    candidates = []
-    if meta and meta.get("content"):
-        candidates.append(str(meta["content"]))
-    heading = soup.find("h1")
-    if heading is not None:
-        candidates.append(heading.get_text(" ", strip=True))
-    for candidate in candidates:
-        candidate = re.split(r"\s+[-|]\s+", _normalise_text(candidate), maxsplit=1)[0]
-        candidate = re.sub(r"\s+[A-Z]\d{4}$", "", candidate).strip()
-        if candidate:
-            if candidate.lower().startswith("master"):
-                return _clean_name(candidate)
-            return f"Master of {candidate}"
-    fallback = re.sub(r"-[a-z]\d{4}$", "", slug, flags=re.I)
-    return "Master of " + _title_from_slug(fallback)
+def _marketing_url(title: str, code: str) -> str:
+    base = re.sub(r"^Master(?:'s)?\s+of\s+", "", title, flags=re.I)
+    return (
+        "https://www.monash.edu/study/courses/find-a-course/"
+        f"{_slug(base)}-{code.lower()}"
+    )
 
 
-def _parse_windows(text: str, source_url: str) -> list[DiscoveredWindow]:
+def _add_marketing_deadlines(
+    programme: DiscoveredProgramme,
+    html: str,
+) -> DiscoveredProgramme:
+    soup = BeautifulSoup(html, "html.parser")
+    text = _normalise_text(soup.get_text(" ", strip=True))
     opening_match = OPENING_RE.search(text)
     opens_at = _date(opening_match.group("date")) if opening_match else None
     windows: list[DiscoveredWindow] = []
     for match in DEADLINE_RE.finditer(text):
         context = text[max(0, match.start() - 260) : match.end() + 80]
-        intake = _intake(context)
-        round_label = _normalise_text(match.group("round")).capitalize()
         windows.append(
             DiscoveredWindow(
-                round=round_label,
+                round=_normalise_text(match.group("round")).capitalize(),
                 applicant_categories=["all"],
                 opens_at=opens_at,
                 closes_at=_date(match.group("date")),
-                intake=intake,
-                source_url=source_url,
+                intake=_intake(context),
+                source_url=programme.source_url,
             )
         )
-    unique: dict[tuple[str, str], DiscoveredWindow] = {}
-    for window in windows:
-        unique[(window.round, window.closes_at)] = window
-    return sorted(unique.values(), key=lambda item: item.closes_at)
+    unique = {(window.round, window.closes_at): window for window in windows}
+    windows = sorted(unique.values(), key=lambda item: item.closes_at)
+    if not windows:
+        return programme
+    first_match = DEADLINE_RE.search(text)
+    excerpt = (
+        text[max(0, first_match.start() - 220) : first_match.end() + 180]
+        if first_match
+        else programme.deadline_text
+    )
+    return replace(
+        programme,
+        windows=windows,
+        deadline_text=excerpt[:1200],
+        parse_status="parsed"
+        if all(item.opens_at for item in windows)
+        else "incomplete",
+    )
 
 
 def _intake(context: str) -> str:
@@ -197,41 +251,9 @@ def _intake(context: str) -> str:
     return f"Semester 1 {year}"
 
 
-def _faculty(soup: BeautifulSoup, text: str) -> str:
-    for key in ("course:faculty", "faculty"):
-        meta = soup.find("meta", attrs={"name": key})
-        if meta and meta.get("content"):
-            return _normalise_text(str(meta["content"]))
-    match = re.search(
-        r"Managing faculty\s+([^|]{3,100}?)(?:\s+Study|\s+Contact|$)", text, re.I
-    )
-    return _normalise_text(match.group(1)) if match else ""
-
-
-def _deadline_excerpt(text: str) -> str:
-    match = DEADLINE_RE.search(text)
-    if match is None:
-        return "Exact course-specific application deadline found."
-    return text[max(0, match.start() - 220) : match.end() + 180][:1200]
-
-
 def _date(value: str) -> str:
     parsed = datetime.strptime(value.title(), "%d %B %Y")
     return date(parsed.year, parsed.month, parsed.day).isoformat()
-
-
-def _clean_name(value: str) -> str:
-    return re.sub(r"\s+", " ", value).strip(" .,:;-")
-
-
-def _title_from_slug(value: str) -> str:
-    lowercase = {"and", "for", "in", "of", "the", "to", "with"}
-    words = []
-    for index, word in enumerate(value.split("-")):
-        words.append(
-            word.lower() if index and word.lower() in lowercase else word.capitalize()
-        )
-    return " ".join(words)
 
 
 def _slug(value: str) -> str:
