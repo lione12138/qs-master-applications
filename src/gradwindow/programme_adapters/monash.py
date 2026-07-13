@@ -165,8 +165,6 @@ def _parse_handbook_programme(
     title = title_match.group("title").replace("Master's of", "Master of")
     code = title_match.group("code").upper()
     text = _normalise_text(soup.get_text(" ", strip=True))
-    if not re.search(r"Monash course type:\s+Masters? degree", text, re.I):
-        return None
     faculty_match = re.search(
         r"Managing faculty:\s*(?P<faculty>.+?)\s+(?:Credit points:|Full time duration:)",
         text,
