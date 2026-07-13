@@ -208,7 +208,8 @@ See `docs/assisted-discovery.md`.
 
 Dedicated adapters live in `src/gradwindow/programme_adapters/`. Existing
 examples include `mit.py`, `cuhk.py`, `polyu.py`, `cambridge.py`,
-`glasgow.py`, `imperial.py`, `hku.py`, `hkust.py`, and `uq.py`.
+`glasgow.py`, `imperial.py`, `hku.py`, `hkust.py`, `melbourne.py`, `monash.py`,
+`sydney.py`, and `uq.py`.
 
 Expected pattern:
 

@@ -28,7 +28,7 @@
       "maxDetailPages": 20,
       "minimumExpected": 1,
       "accessStatus": "blocked",
-      "accessReason": "Official graduate course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
+      "accessReason": "The public graduate course finder returns HTTP 403 to GitHub runners. The dedicated Melbourne adapter now uses the official Handbook origin for complete taught-master discovery, while assisted official-domain search continues to monitor course-level application dates.",
       "assistedDiscovery": {
         "enabled": true,
         "maxResults": 12
