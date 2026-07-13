@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 
 import gradwindow.site as site
-from gradwindow.paths import SITE_DIR
+from gradwindow.paths import ROOT, SITE_DIR, WEB_DIR
 from gradwindow.site import build_site
 
 ANALYTICS_BEACON = "https://static.cloudflareinsights.com/beacon.min.js"
@@ -42,6 +42,15 @@ def test_build_site_rejects_dangerous_output_paths(
 
 def test_build_site_accepts_default_site_directory() -> None:
     assert site._safe_build_output_dir(SITE_DIR) == SITE_DIR.resolve()
+
+
+def test_frontend_sources_are_grouped_outside_repository_root() -> None:
+    assert (WEB_DIR / "index.html").exists()
+    assert (WEB_DIR / "app.js").exists()
+    assert (WEB_DIR / "styles.css").exists()
+    assert not (ROOT / "index.html").exists()
+    assert not (ROOT / "app.js").exists()
+    assert not (ROOT / "styles.css").exists()
 
 
 def test_build_site_only_publishes_public_assets(tmp_path) -> None:

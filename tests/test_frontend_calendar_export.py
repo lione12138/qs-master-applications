@@ -5,7 +5,9 @@ import shutil
 import subprocess
 from pathlib import Path
 
-MODULE_URI = (Path(__file__).parents[1] / "calendar-export.js").resolve().as_uri()
+MODULE_URI = (
+    (Path(__file__).parents[1] / "web" / "calendar-export.js").resolve().as_uri()
+)
 
 RECORD = {
     "id": "test-data-science-msc-fall-2026",

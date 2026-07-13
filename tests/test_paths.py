@@ -20,4 +20,5 @@ def test_installed_cli_resolves_data_from_repository_working_directory(
     namespace = runpy.run_path(str(installed_module))
 
     assert namespace["ROOT"] == ROOT
+    assert namespace["WEB_DIR"] == ROOT / "web"
     assert namespace["APPLICATIONS_PATH"] == ROOT / "data" / "applications.json"

@@ -138,16 +138,16 @@ Implementation checklist:
 
 ## Frontend workflow
 
-Edit root source files, then rebuild `site/`.
+Edit source files under `web/`, then rebuild `site/`.
 
 Common files:
 
-- `app.js`
-- `styles.css`
-- `i18n.js`
-- `window-grouping.js`
-- `ranking-filter.js`
-- `index.html`
+- `web/app.js`
+- `web/styles.css`
+- `web/i18n.js`
+- `web/window-grouping.js`
+- `web/ranking-filter.js`
+- `web/index.html`
 
 The QS/THE/ARWU ranking selectors should display different ranking attributes
 from the same canonical university dataset. Do not split them into separate
@@ -209,4 +209,3 @@ End with:
 - exact commit commands if the agent could not commit.
 
 Keep handoffs short and factual.
-

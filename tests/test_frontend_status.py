@@ -9,7 +9,7 @@ from pathlib import Path
 def test_frontend_upcoming_window_has_thirty_day_boundary() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend status tests"
-    module_uri = (Path(__file__).parents[1] / "status.js").resolve().as_uri()
+    module_uri = (Path(__file__).parents[1] / "web" / "status.js").resolve().as_uri()
     script = f"""
       import {{ getApplicationStatus }} from {json.dumps(module_uri)};
       const today = new Date("2026-06-14T00:00:00Z");
@@ -55,7 +55,7 @@ def test_frontend_upcoming_window_has_thirty_day_boundary() -> None:
 def test_status_counts_unique_universities_in_each_bucket() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend status tests"
-    module_uri = (Path(__file__).parents[1] / "status.js").resolve().as_uri()
+    module_uri = (Path(__file__).parents[1] / "web" / "status.js").resolve().as_uri()
     script = f"""
       import {{ countUniversitiesByStatus }} from {json.dumps(module_uri)};
       const records = [

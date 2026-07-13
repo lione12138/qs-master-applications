@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend ranking tests"
-    module_uri = (ROOT / "ranking-filter.js").resolve().as_uri()
+    module_uri = (ROOT / "web" / "ranking-filter.js").resolve().as_uri()
     applications_uri = (ROOT / "data" / "applications.json").resolve().as_uri()
     predictions_uri = (ROOT / "data" / "predictions.json").resolve().as_uri()
     rankings_uri = (ROOT / "data" / "global-rankings.json").resolve().as_uri()
@@ -42,7 +42,7 @@ def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
 def test_frontend_ranking_index_reuses_rank_and_membership_lookups() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend ranking tests"
-    module_uri = (ROOT / "ranking-filter.js").resolve().as_uri()
+    module_uri = (ROOT / "web" / "ranking-filter.js").resolve().as_uri()
     script = f"""
       import {{ createRankingIndex, filterRecordsToRanking }} from {json.dumps(module_uri)};
       const rows = [

@@ -9,7 +9,9 @@ from pathlib import Path
 def test_frontend_groups_equivalent_fall_intakes() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend intake tests"
-    module_uri = (Path(__file__).parents[1] / "intake-filter.js").resolve().as_uri()
+    module_uri = (
+        (Path(__file__).parents[1] / "web" / "intake-filter.js").resolve().as_uri()
+    )
     script = f"""
       import {{ canonicalIntake, intakeLabel }} from {json.dumps(module_uri)};
       const examples = [

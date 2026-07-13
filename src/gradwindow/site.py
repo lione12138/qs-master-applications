@@ -21,6 +21,7 @@ from .paths import (
     ROOT,
     SITE_DIR,
     UNIVERSITIES_PATH,
+    WEB_DIR,
     WINDOW_POLICIES_PATH,
 )
 
@@ -122,7 +123,7 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
             child.unlink()
 
     for filename in PUBLIC_FILES:
-        shutil.copy2(ROOT / filename, output_dir / filename)
+        shutil.copy2(WEB_DIR / filename, output_dir / filename)
     for page_name in (
         "index.html",
         "calendar.html",

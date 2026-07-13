@@ -25,6 +25,7 @@ def _resolve_root() -> Path:
 
 ROOT = _resolve_root()
 DATA_DIR = ROOT / "data"
+WEB_DIR = ROOT / "web"
 EVIDENCE_DIR = DATA_DIR / "evidence"
 OPS_DIR = DATA_DIR / "ops"
 REPORTS_DIR = OPS_DIR / "reports"

@@ -22,8 +22,8 @@ published deadline.
     adapters.
   - `generic_seed_discovery.py` and `generic_discovery_batch.py` audit and run
     generic programme discovery.
-- Root frontend files — static app source (`index.html`, `app.js`,
-  `styles.css`, `i18n.js`, `ranking-filter.js`, `window-grouping.js`, etc.).
+- `web/` — static frontend source (`index.html`, `app.js`, `styles.css`,
+  `i18n.js`, `ranking-filter.js`, `window-grouping.js`, etc.).
 - `site/` — generated deployable site. Do not hand-edit it; regenerate with
   `build-site`.
 - `data/` — public and generated datasets.
@@ -248,14 +248,14 @@ coverage is expected.
 
 ### Frontend changes
 
-Edit the root source files, not `site/`:
+Edit the source files under `web/`, not `site/`:
 
-- `index.html`
-- `app.js`
-- `styles.css`
-- `i18n.js`
-- supporting modules such as `window-grouping.js`, `ranking-filter.js`,
-  `state.js`, `review.js`, `roadmap.js`
+- `web/index.html`
+- `web/app.js`
+- `web/styles.css`
+- `web/i18n.js`
+- supporting modules such as `web/window-grouping.js`,
+  `web/ranking-filter.js`, `web/state.js`, `web/review.js`, `web/roadmap.js`
 
 Then run:
 

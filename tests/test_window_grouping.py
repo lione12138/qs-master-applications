@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_equivalent_programme_windows_group_without_merging_distinct_rules() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for window grouping tests"
-    module_uri = (ROOT / "window-grouping.js").resolve().as_uri()
+    module_uri = (ROOT / "web" / "window-grouping.js").resolve().as_uri()
     records = [
         {
             "id": "ucl-a",
@@ -109,7 +109,7 @@ def test_equivalent_programme_windows_group_without_merging_distinct_rules() -> 
 def test_university_groups_wrap_equivalent_window_groups() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for window grouping tests"
-    module_uri = (ROOT / "window-grouping.js").resolve().as_uri()
+    module_uri = (ROOT / "web" / "window-grouping.js").resolve().as_uri()
     records = [
         {
             "id": "mit-a",
@@ -186,7 +186,7 @@ def test_university_groups_wrap_equivalent_window_groups() -> None:
 def test_display_grouping_applies_to_every_status_bucket() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for window grouping tests"
-    module_uri = (ROOT / "window-grouping.js").resolve().as_uri()
+    module_uri = (ROOT / "web" / "window-grouping.js").resolve().as_uri()
     records_by_status = {
         status: [
             {

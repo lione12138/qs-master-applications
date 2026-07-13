@@ -9,7 +9,9 @@ from pathlib import Path
 def test_frontend_localizes_chinese_record_labels() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend localization tests"
-    module_uri = (Path(__file__).parents[1] / "localization.js").resolve().as_uri()
+    module_uri = (
+        (Path(__file__).parents[1] / "web" / "localization.js").resolve().as_uri()
+    )
     script = f"""
       import {{
         countryLabel,
@@ -92,7 +94,9 @@ def test_frontend_localizes_chinese_record_labels() -> None:
 def test_frontend_english_mode_does_not_show_chinese_school_alias() -> None:
     node = shutil.which("node")
     assert node is not None, "Node.js is required for frontend localization tests"
-    module_uri = (Path(__file__).parents[1] / "localization.js").resolve().as_uri()
+    module_uri = (
+        (Path(__file__).parents[1] / "web" / "localization.js").resolve().as_uri()
+    )
     script = f"""
       import {{ schoolLabels }} from {json.dumps(module_uri)};
       console.log(JSON.stringify(schoolLabels({{

@@ -5,7 +5,7 @@ import shutil
 import subprocess
 from pathlib import Path
 
-MODULE_URI = (Path(__file__).parents[1] / "dom.js").resolve().as_uri()
+MODULE_URI = (Path(__file__).parents[1] / "web" / "dom.js").resolve().as_uri()
 
 
 def run_node(script: str) -> dict:

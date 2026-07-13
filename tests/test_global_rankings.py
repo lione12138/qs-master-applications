@@ -244,7 +244,7 @@ def test_ranking_importer_maps_shared_schools_to_canonical_universities(
 
 
 def test_extended_ranking_views_reuse_shared_application_windows() -> None:
-    app_js = (ROOT / "app.js").read_text(encoding="utf-8")
+    app_js = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
 
     assert 'if (state.ranking !== "qs") return [];' not in app_js
     assert "selectedRankingCache?.ranking === state.ranking" in app_js
@@ -254,7 +254,7 @@ def test_extended_ranking_views_reuse_shared_application_windows() -> None:
 
 
 def test_table_headers_own_application_sorting() -> None:
-    app_js = (ROOT / "app.js").read_text(encoding="utf-8")
+    app_js = (ROOT / "web" / "app.js").read_text(encoding="utf-8")
 
     assert '{ label: rankColumnLabel(), sort: "rank" }' in app_js
     assert '{ label: t("opens"), sort: "opens" }' in app_js
