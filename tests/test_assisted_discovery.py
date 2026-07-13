@@ -1,7 +1,11 @@
 from __future__ import annotations
 
+import httpx
+
+import gradwindow.assisted_discovery as assisted_discovery
 from gradwindow.assisted_discovery import (
     AssistedDiscoveryConfig,
+    BraveSearcher,
     RetrievedDocument,
     SearchResult,
     _search_official_sources,
@@ -211,10 +215,46 @@ def test_official_search_filters_third_party_results_and_deduplicates() -> None:
     results = _search_official_sources(_config(), searcher)
 
     assert len(calls) == 2
+    assert calls[0][0].startswith("site:example.edu ")
+    assert "(site:" not in calls[0][0]
     assert [result.url for result in results] == [
         "https://example.edu/postgraduate",
         "https://example.edu/programmes/msc-data-science",
     ]
+
+
+def test_brave_search_retries_without_optional_extra_snippets(monkeypatch) -> None:
+    calls = []
+
+    def fake_get(url, *, headers, params, timeout):
+        calls.append((url, headers, dict(params), timeout))
+        request = httpx.Request("GET", url, params=params)
+        if len(calls) == 1:
+            return httpx.Response(422, request=request, json={"message": "invalid"})
+        return httpx.Response(
+            200,
+            request=request,
+            json={
+                "web": {
+                    "results": [
+                        {
+                            "title": "MSc Data Science",
+                            "url": "https://example.edu/msc-data-science",
+                            "description": "Official programme",
+                        }
+                    ]
+                }
+            },
+        )
+
+    monkeypatch.setattr(assisted_discovery.httpx, "get", fake_get)
+
+    results = BraveSearcher("secret").search("site:example.edu MSc", 20)
+
+    assert [result.title for result in results] == ["MSc Data Science"]
+    assert calls[0][2]["extra_snippets"] == "true"
+    assert "extra_snippets" not in calls[1][2]
+    assert calls[1][2]["count"] == 20
 
 
 def test_assisted_discovery_only_requires_deepseek_credentials(

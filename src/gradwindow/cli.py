@@ -292,6 +292,8 @@ def main() -> None:
             dry_run=args.dry_run,
         )
         print(json.dumps(report, ensure_ascii=False))
+        if report.get("status") == "error":
+            raise SystemExit(1)
     elif args.command == "update-deadlines":
         report = update_deadlines(dry_run=args.dry_run)
         print(json.dumps(report, ensure_ascii=False))

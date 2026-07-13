@@ -197,21 +197,34 @@ class BraveSearcher:
         return cls(os.environ["BRAVE_SEARCH_API_KEY"])
 
     def search(self, query: str, count: int) -> list[SearchResult]:
+        headers = {
+            "Accept": "application/json",
+            "X-Subscription-Token": self.api_key,
+        }
+        params = {
+            "q": query,
+            "count": min(20, max(1, count)),
+            "search_lang": "en",
+            "safesearch": "strict",
+            "extra_snippets": "true",
+        }
         response = httpx.get(
             BRAVE_SEARCH_URL,
-            headers={
-                "Accept": "application/json",
-                "X-Subscription-Token": self.api_key,
-            },
-            params={
-                "q": query,
-                "count": min(20, max(1, count)),
-                "search_lang": "en",
-                "safesearch": "strict",
-                "extra_snippets": "true",
-            },
+            headers=headers,
+            params=params,
             timeout=self.timeout,
         )
+        if response.status_code == 422:
+            # Some Brave subscription tiers reject the optional extra-snippets
+            # parameter. Retry the same official-domain query without it rather
+            # than losing the entire school's discovery run.
+            params.pop("extra_snippets")
+            response = httpx.get(
+                BRAVE_SEARCH_URL,
+                headers=headers,
+                params=params,
+                timeout=self.timeout,
+            )
         response.raise_for_status()
         payload = response.json()
         return [
@@ -396,11 +409,14 @@ def _search_official_sources(
     config: AssistedDiscoveryConfig,
     searcher: Callable[[str, int], list[SearchResult]],
 ) -> list[SearchResult]:
-    domains = " OR ".join(f"site:{domain}" for domain in config.official_domains)
     intake_years = " ".join(sorted(set(re.findall(r"20\d{2}", config.default_intake))))
-    queries = (
-        f"({domains}) master's postgraduate programmes {intake_years}",
-        f"({domains}) master's application opens deadline {intake_years}",
+    queries = tuple(
+        query
+        for domain in config.official_domains
+        for query in (
+            f"site:{domain} master's postgraduate programmes {intake_years}",
+            f"site:{domain} master's application opens deadline {intake_years}",
+        )
     )
     results: dict[str, SearchResult] = {
         seed_url.split("#", 1)[0]: SearchResult(
