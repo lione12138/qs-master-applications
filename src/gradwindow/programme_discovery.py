@@ -272,7 +272,7 @@ def _candidate_record(
         shared_opens_at
         and any(window["closesAt"] < shared_opens_at for window in windows)
     )
-    return {
+    candidate = {
         "id": f"new-programme:{programme.id}",
         "type": "new-programme",
         "status": "pending",
@@ -316,6 +316,13 @@ def _candidate_record(
         ),
         "evidenceExcerpt": programme.deadline_text,
     }
+    if programme.retrieval_method or programme.evidence_quality:
+        candidate["discoveryEvidence"] = {
+            "retrievalMethod": programme.retrieval_method,
+            "evidenceQuality": programme.evidence_quality,
+            "documentHash": programme.evidence_document_hash,
+        }
+    return candidate
 
 
 def _hash(value: str) -> str:

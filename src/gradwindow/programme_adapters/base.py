@@ -25,6 +25,9 @@ class DiscoveredProgramme:
     windows: list[DiscoveredWindow]
     deadline_text: str
     parse_status: str
+    retrieval_method: str | None = None
+    evidence_quality: str | None = None
+    evidence_document_hash: str | None = None
 
 
 @dataclass(slots=True)

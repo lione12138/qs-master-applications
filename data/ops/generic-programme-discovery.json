@@ -29,6 +29,10 @@
       "minimumExpected": 1,
       "accessStatus": "blocked",
       "accessReason": "Official graduate course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
+      "assistedDiscovery": {
+        "enabled": true,
+        "maxResults": 12
+      },
       "enabled": true
     },
     {
@@ -43,6 +47,10 @@
       "minimumExpected": 1,
       "accessStatus": "blocked",
       "accessReason": "Official course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
+      "assistedDiscovery": {
+        "enabled": true,
+        "maxResults": 12
+      },
       "enabled": true
     },
     {

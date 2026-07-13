@@ -197,6 +197,13 @@ If a school blocks automated access, mark the config with
 `accessStatus: "blocked"` and an `accessReason` rather than leaving the batch in
 a permanent error state.
 
+Blocked schools can opt into the assisted official-domain fallback with
+`assistedDiscovery.enabled`. It uses Brave Search for official URL discovery,
+optional Cloudflare Browser Rendering for page retrieval, and DeepSeek for
+structured extraction. Search snippets may create programme-only candidates,
+but exact dates require official full text and deterministic evidence checks.
+See `docs/assisted-discovery.md`.
+
 ### Add a dedicated programme adapter
 
 Dedicated adapters live in `src/gradwindow/programme_adapters/`. Existing

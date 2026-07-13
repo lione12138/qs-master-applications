@@ -4,6 +4,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from .assisted_discovery import (
+    AssistedDiscoveryConfig,
+    run_assisted_discovery,
+)
+from .http_client import FetchFailure
 from .io import read_json, write_json
 from .paths import (
     GENERIC_PROGRAMME_DISCOVERY_CONFIG_PATH,
@@ -54,18 +59,17 @@ def run_generic_discovery_batch(
     for entry in entries:
         university_id = entry["universityId"]
         if entry.get("accessStatus") == "blocked":
-            results.append(
-                {
-                    "batchStatus": "skipped",
-                    "status": "skipped",
-                    "universityId": university_id,
-                    "sourceUrl": (entry.get("seedUrls") or [""])[0],
-                    "skipReason": entry.get(
-                        "accessReason", "Official catalogue is access-blocked."
-                    ),
-                    "dryRun": dry_run,
-                }
-            )
+            if entry.get("assistedDiscovery", {}).get("enabled", False):
+                result = run_assisted_discovery_entry(
+                    entry,
+                    universities[university_id],
+                    candidates_path=candidates_path,
+                    dry_run=dry_run,
+                )
+                result["batchStatus"] = _assisted_batch_status(result)
+            else:
+                result = _blocked_skip_report(entry, dry_run)
+            results.append(result)
             continue
         try:
             university = universities[university_id]
@@ -110,15 +114,28 @@ def run_generic_discovery_batch(
             )
             result["batchStatus"] = "ok"
         except Exception as exc:
-            result = {
-                "batchStatus": "error",
-                "status": "error",
-                "universityId": university_id,
-                "sourceUrl": (entry.get("seedUrls") or [""])[0],
-                "errorType": type(exc).__name__,
-                "message": str(exc)[:400],
-                "dryRun": dry_run,
-            }
+            if _should_use_assisted_fallback(entry, exc):
+                result = run_assisted_discovery_entry(
+                    entry,
+                    universities[university_id],
+                    candidates_path=candidates_path,
+                    dry_run=dry_run,
+                )
+                result["batchStatus"] = _assisted_batch_status(result)
+                result["directFetchError"] = {
+                    "errorType": type(exc).__name__,
+                    "message": str(exc)[:400],
+                }
+            else:
+                result = {
+                    "batchStatus": "error",
+                    "status": "error",
+                    "universityId": university_id,
+                    "sourceUrl": (entry.get("seedUrls") or [""])[0],
+                    "errorType": type(exc).__name__,
+                    "message": str(exc)[:400],
+                    "dryRun": dry_run,
+                }
         results.append(result)
 
     candidates = read_json(candidates_path, {"items": []}).get("items", [])
@@ -152,6 +169,9 @@ def run_generic_discovery_batch(
             "schoolsSkipped": sum(
                 item.get("batchStatus") == "skipped" for item in results
             ),
+            "schoolsAssisted": sum(
+                bool(item.get("assistedDiscovery")) for item in results
+            ),
             "readyToApprove": len(classifications["readyToApprove"]),
             "needsOpeningReview": len(classifications["needsOpeningReview"]),
             "needsOpeningDate": len(classifications["needsOpeningDate"]),
@@ -166,6 +186,72 @@ def run_generic_discovery_batch(
     }
     write_json(report_path, report)
     return report
+
+
+def run_assisted_discovery_entry(
+    entry: dict[str, Any],
+    university: dict[str, Any],
+    *,
+    candidates_path: Path = PROGRAMME_CANDIDATES_PATH,
+    dry_run: bool = False,
+    **kwargs,
+) -> dict[str, Any]:
+    config = AssistedDiscoveryConfig(
+        university_id=entry["universityId"],
+        university_name=university.get("school") or entry.get("name") or "University",
+        school_prefix=entry.get("prefix") or _generic_prefix(entry["universityId"]),
+        seed_urls=tuple(entry.get("seedUrls") or (university.get("admissionsUrl"),)),
+        official_domains=tuple(
+            entry.get("officialDomains") or university.get("officialDomains", [])
+        ),
+        default_application_url=(
+            entry.get("applicationUrl")
+            or university.get("admissionsUrl")
+            or university.get("homepageUrl")
+            or ""
+        ),
+        default_intake=entry.get("defaultIntake", "September 2026"),
+        minimum_closes_at=entry.get("minimumClosesAt", "2025-07-01"),
+        max_results=int(entry.get("assistedDiscovery", {}).get("maxResults", 12)),
+    )
+    return run_assisted_discovery(
+        config,
+        candidates_path=candidates_path,
+        dry_run=dry_run,
+        **kwargs,
+    )
+
+
+def _should_use_assisted_fallback(entry: dict[str, Any], exc: Exception) -> bool:
+    assisted = entry.get("assistedDiscovery", {})
+    if not assisted.get("enabled", False):
+        return False
+    return not isinstance(exc, FetchFailure) or exc.kind in {
+        "blocked",
+        "network",
+        "rate-limited",
+    }
+
+
+def _assisted_batch_status(result: dict[str, Any]) -> str:
+    if result.get("status") == "ok":
+        return "ok"
+    if result.get("status") == "error":
+        return "error"
+    return "skipped"
+
+
+def _blocked_skip_report(entry: dict[str, Any], dry_run: bool) -> dict[str, Any]:
+    return {
+        "batchStatus": "skipped",
+        "status": "skipped",
+        "universityId": entry["universityId"],
+        "sourceUrl": (entry.get("seedUrls") or [""])[0],
+        "skipReason": entry.get(
+            "accessReason", "Official catalogue is access-blocked."
+        ),
+        "dryRun": dry_run,
+    }
 
 
 def _remove_pending_batch_candidates(

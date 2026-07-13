@@ -8,13 +8,17 @@ from pathlib import Path
 from .approvals import approve_programme_candidates, approve_window
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
-from .generic_discovery_batch import run_generic_discovery_batch
+from .generic_discovery_batch import (
+    run_assisted_discovery_entry,
+    run_generic_discovery_batch,
+)
 from .generic_seed_discovery import run_generic_seed_discovery
 from .intakes import migrate_application_intakes
 from .io import read_json
 from .monitor import monitor_universities, print_summary
 from .paths import (
     APPLICATION_SOURCE_STATE_PATH,
+    GENERIC_PROGRAMME_DISCOVERY_CONFIG_PATH,
     PROGRAMME_CANDIDATES_PATH,
     SITE_DIR,
     UNIVERSITIES_PATH,
@@ -146,6 +150,12 @@ def main() -> None:
         help="Limit to a university id or configured name. Can be repeated.",
     )
     generic_seeds.add_argument("--max-candidate-seeds", type=int, default=12)
+    assisted_discovery = subparsers.add_parser(
+        "discover-assisted",
+        help="Search official domains and use DeepSeek to extract review candidates",
+    )
+    assisted_discovery.add_argument("--university", required=True)
+    assisted_discovery.add_argument("--dry-run", action="store_true")
     deadlines = subparsers.add_parser(
         "update-deadlines", help="Run configured programme parsers"
     )
@@ -258,6 +268,26 @@ def main() -> None:
             max_candidate_seeds=args.max_candidate_seeds,
         )
         print(json.dumps(report["summary"], ensure_ascii=False))
+    elif args.command == "discover-assisted":
+        config = read_json(GENERIC_PROGRAMME_DISCOVERY_CONFIG_PATH)
+        entry = next(
+            (
+                item
+                for item in config.get("schools", [])
+                if args.university in {item.get("universityId"), item.get("name")}
+            ),
+            None,
+        )
+        if entry is None:
+            raise SystemExit(
+                f"No generic discovery entry configured for {args.university}"
+            )
+        report = run_assisted_discovery_entry(
+            entry,
+            _university_by_id(entry["universityId"]),
+            dry_run=args.dry_run,
+        )
+        print(json.dumps(report, ensure_ascii=False))
     elif args.command == "update-deadlines":
         report = update_deadlines(dry_run=args.dry_run)
         print(json.dumps(report, ensure_ascii=False))
@@ -314,6 +344,8 @@ def main() -> None:
             for name, adapter_factory in PROGRAMME_ADAPTERS.items():
                 discovery_report = _pipeline_discovery_report(name, adapter_factory)
                 print(json.dumps(discovery_report, ensure_ascii=False))
+            generic_report = run_generic_discovery_batch()
+            print(json.dumps(generic_report["summary"], ensure_ascii=False))
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
             raise SystemExit(1)
