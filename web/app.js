@@ -897,8 +897,11 @@ function programmeCountText(count) {
 function createUniversityGroupRow(universityGroup, status) {
   const representative = universityGroup.records[0];
   const row = document.createElement("tr");
-  row.className = "window-card-row university-group-parent";
   const expanded = state.expandedUniversityGroups.has(universityGroup.key);
+  row.className = `window-card-row university-group-parent university-group-parent--${
+    expanded ? "expanded" : "collapsed"
+  }`;
+  row.dataset.groupState = expanded ? "expanded" : "collapsed";
   const records = universityGroup.records;
   const rank = makeElement("span", {
     className: "rank-cell",
@@ -925,25 +928,68 @@ function createUniversityGroupRow(universityGroup, status) {
   );
 
   const programmes = new Set(records.map((record) => record.scopeId));
-  const programmeSummary = makeTextStack(
-    t("schoolWindowGroup"),
-    `${programmeCountText(programmes.size)} · ${windowCountText(records.length)}`,
-    "program-link date-primary",
+  const programmeSummary = makeElement("div", {
+    className: "school-group-summary",
+  });
+  const summaryHeading = makeElement("div", {
+    className: "school-group-summary-heading",
+  });
+  summaryHeading.append(
+    makeElement("span", {
+      className: "school-group-kicker",
+      text: t("schoolWindowGroup"),
+    }),
+    makeElement("span", {
+      className: "school-group-state",
+      text: expanded ? t("schoolGroupExpanded") : t("schoolGroupCollapsed"),
+    }),
+  );
+  const summaryCounts = makeElement("div", {
+    className: "school-group-counts",
+  });
+  summaryCounts.append(
+    makeElement("strong", {
+      className: "school-group-programme-count",
+      text: programmeCountText(programmes.size),
+    }),
+    makeElement("span", {
+      className: "school-group-window-count",
+      text: windowCountText(records.length),
+    }),
   );
   const toggle = makeElement("button", {
     className: "window-group-toggle university-group-toggle",
-    text: expanded ? t("collapseSchoolWindows") : t("expandSchoolWindows"),
-    title: expanded ? t("collapseSchoolWindows") : t("expandSchoolWindows"),
+    title: expanded
+      ? t("collapseSchoolWindows")
+      : `${t("expandSchoolWindows")} ${programmeCountText(programmes.size)}`,
   });
   toggle.type = "button";
   toggle.setAttribute("aria-expanded", String(expanded));
-  toggle.addEventListener("click", (event) => {
-    event.stopPropagation();
+  toggle.append(
+    makeElement("span", {
+      text: expanded
+        ? t("collapseSchoolWindows")
+        : `${t("expandSchoolWindows")} ${programmeCountText(programmes.size)}`,
+    }),
+    makeElement("span", {
+      className: "school-group-chevron",
+      text: "›",
+    }),
+  );
+  const toggleGroup = () => {
     if (expanded) state.expandedUniversityGroups.delete(universityGroup.key);
     else state.expandedUniversityGroups.add(universityGroup.key);
     render();
+  };
+  toggle.addEventListener("click", (event) => {
+    event.stopPropagation();
+    toggleGroup();
   });
-  programmeSummary.appendChild(toggle);
+  programmeSummary.append(summaryHeading, summaryCounts, toggle);
+  row.addEventListener("click", (event) => {
+    if (event.target.closest("a, button")) return;
+    toggleGroup();
+  });
 
   const earliestOpen = records
     .map((record) => record.opensAt)
@@ -953,7 +999,7 @@ function createUniversityGroupRow(universityGroup, status) {
     a.closesAt.localeCompare(b.closesAt),
   )[0];
   const source = makeElement("span", {
-    className: "source-badge discovered",
+    className: "source-badge discovered school-group-source",
     text: `${windowCountText(records.length)} · ${t("groupedBySchool")}`,
   });
 
@@ -988,13 +1034,27 @@ function createUniversityGroupRow(universityGroup, status) {
   return row;
 }
 
-function appendWindowGroupRows(tbody, windowGroup, status) {
+function markUniversityGroupChild(row, universityGroup) {
+  if (!universityGroup) return;
+  row.classList.add("university-group-child");
+  row.dataset.universityGroup = universityGroup.universityId;
+}
+
+function appendWindowGroupRows(
+  tbody,
+  windowGroup,
+  status,
+  universityGroup = null,
+) {
   const [representative, ...additionalRecords] = windowGroup.records;
-  tbody.appendChild(createRow(representative, status, windowGroup));
+  const representativeRow = createRow(representative, status, windowGroup);
+  markUniversityGroupChild(representativeRow, universityGroup);
+  tbody.appendChild(representativeRow);
   if (!state.expandedWindowGroups.has(windowGroup.key)) return;
   additionalRecords.forEach((record) => {
     const row = createRow(record, status);
     row.classList.add("window-group-child");
+    markUniversityGroupChild(row, universityGroup);
     tbody.appendChild(row);
   });
 }
@@ -1040,9 +1100,13 @@ function createGroup(status, records) {
     }
     tbody.appendChild(createUniversityGroupRow(universityGroup, status));
     if (!state.expandedUniversityGroups.has(universityGroup.key)) return;
+    const childStart = tbody.children.length;
     universityGroup.windowGroups.forEach((windowGroup) => {
-      appendWindowGroupRows(tbody, windowGroup, status);
+      appendWindowGroupRows(tbody, windowGroup, status, universityGroup);
     });
+    const childRows = [...tbody.children].slice(childStart);
+    childRows.at(0)?.classList.add("university-group-child--first");
+    childRows.at(-1)?.classList.add("university-group-child--last");
   });
   section.appendChild(
     createPagination(status, { start, end, total, page, totalPages }),

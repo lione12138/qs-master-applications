@@ -167,6 +167,11 @@ def test_built_site_has_complete_directory(tmp_path) -> None:
     assert "grid-template-columns: 268px minmax(0, 1fr)" in styles_css
     assert ".tracker-results .application-table tbody tr" in styles_css
     assert "height: 76px" in styles_css
+    assert "school-group-summary" in app_js
+    assert "university-group-parent--" in app_js
+    assert "university-group-child--first" in app_js
+    assert ".university-group-parent--expanded" in styles_css
+    assert "tr.university-group-child" in styles_css
     assert (tmp_path / "sources.html").read_text(encoding="utf-8").count(
         ANALYTICS_BEACON
     ) == 1

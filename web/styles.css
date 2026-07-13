@@ -1049,6 +1049,7 @@ body.window-detail-open {
 .window-group-toggle {
   display: inline-flex;
   align-items: center;
+  gap: 4px;
   width: fit-content;
   min-height: 24px;
   margin-top: 6px;
@@ -1079,26 +1080,159 @@ body.window-detail-open {
 }
 
 .window-group-child {
-  background: color-mix(in srgb, var(--green-pale) 18%, var(--white));
+  background: color-mix(in srgb, var(--green-pale) 12%, var(--white));
 }
 
 .university-group-parent {
-  background: color-mix(in srgb, var(--green-pale) 30%, var(--white));
+  position: relative;
+  background: color-mix(in srgb, var(--green-pale) 66%, var(--white));
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    box-shadow 160ms ease;
 }
 
 .university-group-parent td {
-  border-top: 1px solid color-mix(in srgb, var(--green) 18%, var(--line));
-  border-bottom: 1px solid color-mix(in srgb, var(--green) 18%, var(--line));
+  border-top: 1px solid color-mix(in srgb, var(--green) 34%, var(--line));
+  border-bottom: 1px solid color-mix(in srgb, var(--green) 34%, var(--line));
+}
+
+.university-group-parent td:first-child {
+  box-shadow: inset 4px 0 0 var(--green);
+}
+
+.university-group-parent:hover {
+  background: color-mix(in srgb, var(--green-pale) 82%, var(--white));
+}
+
+.university-group-parent--expanded {
+  background: color-mix(in srgb, var(--green-pale) 86%, var(--white));
+}
+
+.university-group-parent--expanded td {
+  border-bottom-color: color-mix(in srgb, var(--green) 48%, var(--line));
 }
 
 .university-group-parent .school-link,
-.university-group-parent .program-link {
+.university-group-parent .school-group-kicker {
   font-weight: 800;
 }
 
-.university-group-toggle {
-  margin-top: 8px;
+.school-group-summary {
+  display: grid;
+  gap: 5px;
+  min-width: 180px;
+}
+
+.school-group-summary-heading,
+.school-group-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 8px;
+  align-items: center;
+}
+
+.school-group-kicker {
+  color: var(--green-dark);
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.school-group-state {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  min-height: 19px;
+  padding: 2px 7px;
+  border-radius: 999px;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--white) 76%, transparent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.school-group-state::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #8b9890;
+  content: "";
+}
+
+.university-group-parent--expanded .school-group-state {
+  color: var(--green-dark);
   background: var(--white);
+}
+
+.university-group-parent--expanded .school-group-state::before {
+  background: var(--green);
+}
+
+.school-group-programme-count {
+  color: var(--ink);
+  font-size: 11px;
+}
+
+.school-group-window-count {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.university-group-toggle {
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 30px;
+  margin-top: 3px;
+  padding: 5px 10px 5px 12px;
+  border-color: var(--green);
+  border-radius: 8px;
+  color: var(--white);
+  background: var(--green);
+  box-shadow: 0 5px 12px rgba(12, 103, 72, 0.13);
+}
+
+.university-group-toggle::after {
+  display: none;
+}
+
+.university-group-toggle:hover {
+  color: var(--white);
+  background: var(--green-dark);
+}
+
+.school-group-chevron {
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  font-size: 16px;
+  line-height: 1;
+  transform: rotate(90deg);
+  transition: transform 160ms ease;
+}
+
+.university-group-toggle[aria-expanded="true"] .school-group-chevron {
+  transform: rotate(-90deg);
+}
+
+.university-group-child td:first-child {
+  position: relative;
+  box-shadow: inset 4px 0 0 color-mix(in srgb, var(--green) 26%, var(--line));
+}
+
+.university-group-child td:first-child::after {
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 7px;
+  height: 1px;
+  background: color-mix(in srgb, var(--green) 40%, var(--line));
+  content: "";
+}
+
+.university-group-child--last td {
+  border-bottom-color: color-mix(in srgb, var(--green) 30%, var(--line));
 }
 
 .table-pagination {
@@ -3182,6 +3316,45 @@ footer {
   background: #101b15;
 }
 
+:root[data-theme="dark"] .application-table tbody tr.university-group-parent {
+  background: #17291e;
+}
+
+:root[data-theme="dark"]
+  .application-table
+  tbody
+  tr.university-group-parent--expanded {
+  background: #1b3023;
+}
+
+:root[data-theme="dark"] .university-group-parent td {
+  border-color: rgba(126, 221, 165, 0.28);
+}
+
+:root[data-theme="dark"] .school-group-state {
+  color: #a6b5ab;
+  background: rgba(8, 17, 13, 0.46);
+}
+
+:root[data-theme="dark"] .school-group-kicker,
+:root[data-theme="dark"] .university-group-parent--expanded .school-group-state {
+  color: #a7f3c2;
+}
+
+:root[data-theme="dark"] .university-group-parent--expanded .school-group-state {
+  background: rgba(8, 17, 13, 0.56);
+}
+
+:root[data-theme="dark"] .university-group-toggle {
+  color: #08110d;
+  background: #7edda5;
+}
+
+:root[data-theme="dark"] .university-group-toggle:hover {
+  color: #08110d;
+  background: #9be8bd;
+}
+
 :root[data-theme="dark"] thead,
 :root[data-theme="dark"] th {
   background: #15231b;
@@ -4246,6 +4419,105 @@ footer p {
   .application-table:not(.university-table) td:nth-child(9) {
     grid-area: source;
     align-self: center;
+  }
+
+  .application-table:not(.university-table) tr.university-group-parent {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "school rank"
+      "program program"
+      "deadline deadline";
+    gap: 10px 12px;
+    padding: 14px;
+    overflow: visible;
+    border: 1.5px solid color-mix(in srgb, var(--green) 42%, var(--line));
+    background: color-mix(in srgb, var(--green-pale) 78%, var(--white));
+    box-shadow: 0 12px 30px rgba(12, 103, 72, 0.1);
+  }
+
+  .application-table:not(.university-table)
+    tr.university-group-parent--expanded {
+    border-color: var(--green);
+    background: color-mix(in srgb, var(--green-pale) 92%, var(--white));
+  }
+
+  .application-table:not(.university-table)
+    tr.university-group-parent
+    > td {
+    box-shadow: none;
+  }
+
+  .application-table:not(.university-table)
+    tr.university-group-parent
+    td:nth-child(4),
+  .application-table:not(.university-table)
+    tr.university-group-parent
+    td:nth-child(5),
+  .application-table:not(.university-table)
+    tr.university-group-parent
+    td:nth-child(7),
+  .application-table:not(.university-table)
+    tr.university-group-parent
+    td:nth-child(8),
+  .application-table:not(.university-table)
+    tr.university-group-parent
+    td:nth-child(9) {
+    display: none;
+  }
+
+  .application-table:not(.university-table)
+    tr.university-group-parent
+    td:nth-child(6) {
+    display: flex;
+    padding-top: 10px;
+    border-top: 1px solid color-mix(in srgb, var(--green) 20%, var(--line));
+  }
+
+  .application-table:not(.university-table) .school-group-summary {
+    gap: 8px;
+  }
+
+  .application-table:not(.university-table) .school-group-kicker {
+    font-size: 13px;
+  }
+
+  .application-table:not(.university-table) .school-group-counts {
+    gap: 7px 10px;
+  }
+
+  .application-table:not(.university-table) .university-group-toggle {
+    width: 100%;
+    min-height: 42px;
+    margin-top: 2px;
+    padding: 8px 10px 8px 13px;
+    border-radius: 11px;
+    font-size: 11px;
+  }
+
+  .application-table:not(.university-table) tr.university-group-child {
+    width: calc(100% - 12px);
+    margin-left: 12px;
+    border-left: 3px solid color-mix(in srgb, var(--green) 36%, var(--line));
+  }
+
+  .application-table:not(.university-table)
+    tr.university-group-child.window-group-child {
+    width: calc(100% - 24px);
+    margin-left: 24px;
+    border-left-color: color-mix(in srgb, var(--green) 20%, var(--line));
+    background: color-mix(in srgb, var(--green-pale) 16%, var(--white));
+  }
+
+  .application-table:not(.university-table)
+    tr.university-group-child
+    td:first-child {
+    box-shadow: none;
+  }
+
+  .application-table:not(.university-table)
+    tr.university-group-child
+    td:first-child::after {
+    display: none;
   }
 
   .application-table:not(.university-table) td:nth-child(5)::before,
