@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 from collections.abc import Callable
+from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
 
@@ -83,10 +84,11 @@ class CaltechAdapter(BaseProgrammeAdapter):
 
 
 def _option_urls(xml: str) -> dict[str, str]:
-    soup = BeautifulSoup(xml, "xml")
     urls = {}
-    for node in soup.find_all("loc"):
-        url = node.get_text(strip=True)
+    for node in ElementTree.fromstring(xml).iter():
+        if not node.tag.endswith("loc"):
+            continue
+        url = (node.text or "").strip()
         if not url.startswith(CATALOG_PREFIX):
             continue
         path = url.removeprefix(CATALOG_PREFIX)
