@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+import json
+
 import gradwindow.generic_discovery_batch as generic_discovery_batch
 from gradwindow.generic_discovery_batch import (
     classify_generic_candidates,
+    refresh_generic_discovery_report,
     run_assisted_discovery_entry,
 )
 
@@ -173,3 +176,72 @@ def test_configured_no_deadline_schools_are_monitored() -> None:
         "new-programme:no-deadline"
     ]
     assert buckets["needsAdapter"] == []
+
+
+def test_refresh_report_reclassifies_current_pending_candidates(tmp_path) -> None:
+    config_path = tmp_path / "config.json"
+    candidates_path = tmp_path / "candidates.json"
+    report_path = tmp_path / "report.json"
+    config_path.write_text(
+        json.dumps(
+            {
+                "schools": [
+                    {
+                        "universityId": "example-university",
+                        "enabled": True,
+                        "noDeadlineHandling": "monitor",
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    candidates_path.write_text(
+        json.dumps(
+            {
+                "items": [
+                    {
+                        "id": "new-programme:already-approved",
+                        "status": "approved",
+                        "universityId": "example-university",
+                        "programme": {"name": "MSc Approved"},
+                        "windows": [],
+                        "parseStatus": "parsed",
+                    },
+                    {
+                        "id": "new-programme:monitor",
+                        "status": "pending",
+                        "universityId": "example-university",
+                        "programme": {"name": "MSc Monitor"},
+                        "windows": [],
+                        "parseStatus": "no-deadline",
+                        "reviewReason": "No application deadline was parsed.",
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    report_path.write_text(
+        json.dumps(
+            {
+                "meta": {"updatedAt": "stale"},
+                "summary": {"readyToApprove": 19},
+                "results": [{"universityId": "example-university"}],
+                "classification": {"readyToApprove": [{"id": "stale"}]},
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    report = refresh_generic_discovery_report(
+        config_path=config_path,
+        report_path=report_path,
+        candidates_path=candidates_path,
+    )
+
+    assert report["summary"]["readyToApprove"] == 0
+    assert report["summary"]["deadlineUnavailableMonitor"] == 1
+    assert report["classification"]["readyToApprove"] == []
+    assert report["results"] == [{"universityId": "example-university"}]
+    assert report["meta"]["classificationRefreshedFromCandidates"] is True

@@ -9,6 +9,7 @@ from .approvals import approve_programme_candidates, approve_window
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
 from .generic_discovery_batch import (
+    refresh_generic_discovery_report,
     run_assisted_discovery_entry,
     run_generic_discovery_batch,
 )
@@ -37,6 +38,7 @@ from .programme_adapters.kcl import KCLAdapter
 from .programme_adapters.melbourne import MelbourneAdapter
 from .programme_adapters.mit import MITAdapter
 from .programme_adapters.monash import MonashAdapter
+from .programme_adapters.nus import NUSAdapter
 from .programme_adapters.oxford import OxfordAdapter
 from .programme_adapters.polyu import PolyUAdapter
 from .programme_adapters.stanford import StanfordAdapter
@@ -77,6 +79,7 @@ PROGRAMME_ADAPTERS = {
     "melbourne": MelbourneAdapter,
     "mit": MITAdapter,
     "monash": MonashAdapter,
+    "nus": NUSAdapter,
     "oxford": OxfordAdapter,
     "polyu": PolyUAdapter,
     "stanford": StanfordAdapter,
@@ -154,6 +157,10 @@ def main() -> None:
         help="Limit to a university id or configured name. Can be repeated.",
     )
     generic_seeds.add_argument("--max-candidate-seeds", type=int, default=12)
+    subparsers.add_parser(
+        "refresh-generic-report",
+        help="Refresh generic discovery review buckets without network requests",
+    )
     assisted_discovery = subparsers.add_parser(
         "discover-assisted",
         help="Search official domains and use DeepSeek to extract review candidates",
@@ -337,8 +344,12 @@ def main() -> None:
                 reviewer=args.reviewer,
                 parsed_only=not args.include_unparsed,
             )
+        refresh_generic_discovery_report()
         generate_predictions()
         print(json.dumps(report, ensure_ascii=False))
+    elif args.command == "refresh-generic-report":
+        report = refresh_generic_discovery_report()
+        print(json.dumps(report["summary"], ensure_ascii=False))
     elif args.command == "pipeline":
         generate_predictions()
         _validate_or_exit()

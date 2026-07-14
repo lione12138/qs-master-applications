@@ -188,6 +188,55 @@ def run_generic_discovery_batch(
     return report
 
 
+def refresh_generic_discovery_report(
+    *,
+    config_path: Path = GENERIC_PROGRAMME_DISCOVERY_CONFIG_PATH,
+    report_path: Path = GENERIC_PROGRAMME_DISCOVERY_REPORT_PATH,
+    candidates_path: Path = PROGRAMME_CANDIDATES_PATH,
+) -> dict[str, Any]:
+    """Refresh review buckets without fetching any university pages."""
+    config = read_json(config_path)
+    entries = [
+        entry for entry in config.get("schools", []) if entry.get("enabled", True)
+    ]
+    candidates = read_json(candidates_path, {"items": []}).get("items", [])
+    classifications = classify_generic_candidates(
+        candidates,
+        {entry["universityId"] for entry in entries},
+        deadline_unavailable_university_ids={
+            entry["universityId"]
+            for entry in entries
+            if entry.get("noDeadlineHandling") == "monitor"
+        },
+    )
+    report = read_json(
+        report_path,
+        {
+            "meta": {},
+            "summary": {
+                "schoolsConfigured": len(entries),
+                "schoolsSucceeded": 0,
+                "schoolsErrored": 0,
+                "schoolsSkipped": 0,
+                "schoolsAssisted": 0,
+            },
+            "results": [],
+        },
+    )
+    report.setdefault("meta", {}).update(
+        {
+            "updatedAt": datetime.now(timezone.utc).isoformat(),
+            "classificationRefreshedFromCandidates": True,
+        }
+    )
+    report.setdefault("summary", {})["schoolsConfigured"] = len(entries)
+    for bucket, values in classifications.items():
+        report["summary"][bucket] = len(values)
+    report["classification"] = classifications
+    write_json(report_path, report)
+    return report
+
+
 def run_assisted_discovery_entry(
     entry: dict[str, Any],
     university: dict[str, Any],
