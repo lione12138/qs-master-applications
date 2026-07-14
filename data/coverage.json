@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-14T18:24:26.267972+00:00",
+    "generatedAt": "2026-07-14T19:09:22.921854+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -14,16 +14,16 @@
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
     "universitiesWithPrograms": 190,
-    "universitiesWithWindows": 50,
-    "verifiedWindows": 2970,
-    "universitiesWithPredictions": 50,
-    "predictedWindows": 2954,
+    "universitiesWithWindows": 49,
+    "verifiedWindows": 2928,
+    "universitiesWithPredictions": 49,
+    "predictedWindows": 2912,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
       "select-target-programmes": 10,
-      "verify-exact-windows": 140,
-      "monitor-and-refresh": 50
+      "verify-exact-windows": 141,
+      "monitor-and-refresh": 49
     }
   },
   "batches": [
@@ -180,8 +180,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 2,
-      "predictedWindows": 43
+      "universitiesWithWindows": 1,
+      "predictedWindows": 1
     },
     {
       "batch": 13,
@@ -1903,9 +1903,9 @@
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 23,
-      "windowCount": 42,
-      "predictionCount": 42,
-      "nextAction": "monitor-and-refresh"
+      "windowCount": 0,
+      "predictionCount": 0,
+      "nextAction": "verify-exact-windows"
     },
     {
       "universityId": "new-york-university-nyu",

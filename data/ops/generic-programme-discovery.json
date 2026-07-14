@@ -105,15 +105,13 @@
         "https://www.bristol.ac.uk/study/postgraduate/search/"
       ],
       "defaultIntake": "September 2026",
-      "defaultApplicationOpensAt": "2025-09-01",
-      "applicationOpensAtBasis": "inferred-month-default",
       "maxDetailPages": 20,
       "minimumExpected": 1,
       "excludeUrlPatterns": [
         "/taught-2025/"
       ],
       "noDeadlineHandling": "monitor",
-      "enabled": true
+      "enabled": false
     },
     {
       "name": "manchester-masters-courses",

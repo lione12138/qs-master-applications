@@ -16,7 +16,10 @@ from .paths import (
     WINDOW_CANDIDATES_PATH,
 )
 from .predictions import official_cycle_key
-from .programme_windows import known_programme_window_candidates
+from .programme_windows import (
+    has_official_exact_window,
+    known_programme_window_candidates,
+)
 
 
 def fetch_catalog(url: str) -> str:
@@ -107,6 +110,7 @@ def discover_programmes(
     }
     application_ids = {item["id"] for item in applications}
     created = 0
+    created_guidance_candidates = 0
     created_window_candidates = 0
     changed_window_candidates = 0
     for programme in catalog.programmes:
@@ -135,6 +139,23 @@ def discover_programmes(
                     if candidate["type"] == "adapter-window-change":
                         changed_window_candidates += 1
                 existing_window_candidates[candidate["id"]] = candidate
+            guidance = _known_programme_guidance_candidate(
+                adapter,
+                programme,
+                catalog.application_opens_at,
+                checked_at,
+            )
+            if guidance is not None:
+                previous = existing.get(guidance["id"])
+                if previous is None:
+                    created_guidance_candidates += 1
+                else:
+                    guidance["status"] = previous.get("status", "pending")
+                    guidance["detectedAt"] = previous.get("detectedAt", checked_at)
+                    for key in ("reviewedAt", "reviewedBy", "reviewNotes"):
+                        if key in previous:
+                            guidance[key] = previous[key]
+                existing[guidance["id"]] = guidance
             continue
         candidate_id = f"new-programme:{programme.id}"
         previous = existing.get(candidate_id)
@@ -219,6 +240,7 @@ def discover_programmes(
         "catalogProgrammes": len(catalog.programmes),
         "knownProgrammes": len(known_ids),
         "newCandidates": created,
+        "newGuidanceCandidates": created_guidance_candidates,
         "newWindowCandidates": created_window_candidates,
         "changedWindowCandidates": changed_window_candidates,
         "pendingWindowCandidates": sum(
@@ -231,6 +253,12 @@ def discover_programmes(
             and item.get("universityId") == adapter.university_id
             for item in items
         ),
+        "pendingGuidanceCandidates": sum(
+            item.get("status", "pending") == "pending"
+            and item.get("universityId") == adapter.university_id
+            and item.get("type") == "known-programme-window-guidance"
+            for item in items
+        ),
         "programmesWithoutDeadlines": sum(
             not programme.windows for programme in catalog.programmes
         ),
@@ -239,6 +267,31 @@ def discover_programmes(
         ),
         "dryRun": dry_run,
     }
+
+
+def _known_programme_guidance_candidate(
+    adapter,
+    programme,
+    shared_opens_at: str | None,
+    detected_at: str,
+) -> dict | None:
+    candidate = _candidate_record(
+        adapter,
+        programme,
+        shared_opens_at,
+        detected_at,
+    )
+    unresolved_windows = [
+        window
+        for window in candidate["windows"]
+        if not has_official_exact_window(window)
+    ]
+    if candidate["windows"] and not unresolved_windows:
+        return None
+    candidate["id"] = f"known-programme-guidance:{programme.id}"
+    candidate["type"] = "known-programme-window-guidance"
+    candidate["windows"] = unresolved_windows
+    return candidate
 
 
 def _candidate_record(

@@ -297,6 +297,92 @@ def test_dedicated_adapter_can_replace_stale_pending_candidates(tmp_path) -> Non
     }
 
 
+def test_known_programme_missing_opening_stays_in_guidance_queue(tmp_path) -> None:
+    class GuidanceAdapter:
+        university_id = "example-university"
+        catalog_url = "https://example.edu/programmes"
+        intake = "September 2027"
+        application_opens_at_basis = "missing"
+        replace_pending_candidates = True
+
+        def parse_catalog(self, _html):
+            return DiscoveredCatalog(
+                application_opens_at=None,
+                programmes=[
+                    DiscoveredProgramme(
+                        id="example-known-msc",
+                        name="Known MSc",
+                        degree_type="MSc",
+                        faculty="Example Faculty",
+                        department="",
+                        source_url="https://example.edu/programmes/known",
+                        application_url="https://example.edu/apply",
+                        windows=[
+                            DiscoveredWindow(
+                                round="Final deadline",
+                                closes_at="2027-08-01",
+                            )
+                        ],
+                        deadline_text="Applications close on 1 August 2027.",
+                        parse_status="incomplete",
+                    )
+                ],
+            )
+
+    programs_path = tmp_path / "programs.json"
+    applications_path = tmp_path / "applications.json"
+    candidates_path = tmp_path / "programme-candidates.json"
+    window_candidates_path = tmp_path / "window-candidates.json"
+    state_path = tmp_path / "programme-catalog-state.json"
+    programs_path.write_text(
+        json.dumps(
+            {
+                "programs": [
+                    {
+                        "id": "example-known-msc",
+                        "universityId": "example-university",
+                        "name": "Known MSc",
+                        "degreeType": "MSc",
+                        "faculty": "Example Faculty",
+                        "applicationUrl": "https://example.edu/apply",
+                        "sourceUrl": "https://example.edu/programmes/known",
+                    }
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    applications_path.write_text(json.dumps({"applications": []}), encoding="utf-8")
+
+    report = discover_programmes(
+        GuidanceAdapter(),
+        programs_path=programs_path,
+        applications_path=applications_path,
+        candidates_path=candidates_path,
+        window_candidates_path=window_candidates_path,
+        state_path=state_path,
+        fetcher=lambda _: "",
+    )
+
+    candidate = json.loads(candidates_path.read_text(encoding="utf-8"))["items"][0]
+    assert report["newCandidates"] == 0
+    assert report["newGuidanceCandidates"] == 1
+    assert report["pendingGuidanceCandidates"] == 1
+    assert candidate["id"] == "known-programme-guidance:example-known-msc"
+    assert candidate["type"] == "known-programme-window-guidance"
+    assert candidate["windows"] == [
+        {
+            "intake": "September 2027",
+            "round": "Final deadline",
+            "applicantCategories": ["all"],
+            "opensAt": None,
+            "opensAtBasis": "missing",
+            "closesAt": "2027-08-01",
+            "sourceUrl": "https://example.edu/programmes/known",
+        }
+    ]
+
+
 def test_known_programme_window_change_becomes_review_candidate(tmp_path) -> None:
     programs_path = tmp_path / "programs.json"
     applications_path = tmp_path / "applications.json"

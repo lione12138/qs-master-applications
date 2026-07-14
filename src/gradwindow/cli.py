@@ -25,6 +25,7 @@ from .paths import (
     UNIVERSITIES_PATH,
 )
 from .predictions import generate_predictions
+from .programme_adapters.bristol import BristolAdapter
 from .programme_adapters.cambridge import CambridgeAdapter
 from .programme_adapters.cuhk import CUHKAdapter
 from .programme_adapters.edinburgh import EdinburghAdapter
@@ -56,6 +57,7 @@ from .source_monitor import monitor_application_sources
 from .validation import validate_data
 
 PROGRAMME_ADAPTERS = {
+    "bristol": BristolAdapter,
     "cambridge": CambridgeAdapter,
     "cuhk": CUHKAdapter,
     "edinburgh": EdinburghAdapter,

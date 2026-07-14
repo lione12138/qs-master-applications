@@ -1,13 +1,13 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T15:31:26.549034+00:00",
+    "updatedAt": "2026-07-14T19:07:20.520051+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed.",
     "classificationRefreshedFromCandidates": true
   },
   "summary": {
-    "schoolsConfigured": 11,
+    "schoolsConfigured": 10,
     "schoolsSucceeded": 8,
     "schoolsErrored": 0,
     "schoolsSkipped": 2,
@@ -16,7 +16,7 @@
     "needsOpeningDate": 289,
     "needsAdapter": 381,
     "comingSoonMonitor": 4,
-    "deadlineUnavailableMonitor": 174
+    "deadlineUnavailableMonitor": 172
   },
   "results": [
     {
@@ -7759,24 +7759,6 @@
         "universityId": "the-university-of-nottingham",
         "programmeName": "Applied Sport and Exercise Medicine MSc",
         "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-sport-and-exercise-medicine-msc",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-msc-management-international-human-resource-management",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Management (International Human Resource Management)",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-management-international-human-resource-management/",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:bristol-msc-scientific-computing-with-data-science",
-        "universityId": "university-of-bristol",
-        "programmeName": "MSc Scientific Computing with Data Science",
-        "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/taught/msc-scientific-computing-with-data-science/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
