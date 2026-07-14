@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import os
+import re
 from collections.abc import Callable
 from dataclasses import dataclass
 
@@ -89,7 +90,10 @@ class SerperSearcher:
 
     def search(self, query: str, count: int) -> list[SearchResult]:
         payload = {
-            "q": query,
+            # Serper's free tier rejects advanced `site:` query patterns. Keep
+            # the domain as a normal search term; the caller still enforces the
+            # official-domain allowlist on every returned URL.
+            "q": re.sub(r"(?i)\bsite:([^\s]+)", r"\1", query).strip(),
             "num": max(1, min(count, 100)),
             "gl": "us",
             "hl": "en",

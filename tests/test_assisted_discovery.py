@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from dataclasses import replace
 
 import httpx
@@ -288,7 +289,7 @@ def test_serper_search_maps_official_web_results(monkeypatch) -> None:
     assert calls[0][0] == "https://google.serper.dev/search"
     assert calls[0][1]["X-API-KEY"] == "secret"
     assert calls[0][2] == {
-        "q": "site:example.edu MSc",
+        "q": "example.edu MSc",
         "num": 12,
         "gl": "us",
         "hl": "en",
@@ -440,22 +441,20 @@ def test_standard_search_falls_back_to_brave_when_serper_fails(monkeypatch) -> N
 
     assert report["searchProvider"] == "brave"
     assert report["searchResults"] == 2
-    assert report["searchErrors"] == [
-        {
+    assert len(report["searchErrors"]) == 2
+    for error in report["searchErrors"]:
+        assert {
+            key: error[key]
+            for key in ("provider", "errorType", "statusCode", "message")
+        } == {
             "provider": "serper",
             "errorType": "HTTPStatusError",
             "statusCode": 400,
             "message": "Serper rejected the request",
-            "responseBody": '{"message": "Invalid search request"}',
-        },
-        {
-            "provider": "serper",
-            "errorType": "HTTPStatusError",
-            "statusCode": 400,
-            "message": "Serper rejected the request",
-            "responseBody": '{"message": "Invalid search request"}',
-        },
-    ]
+        }
+        assert json.loads(error["responseBody"]) == {
+            "message": "Invalid search request"
+        }
 
 
 def test_assisted_discovery_skips_llm_for_irrelevant_documents() -> None:
