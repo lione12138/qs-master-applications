@@ -213,6 +213,9 @@ def run_assisted_discovery_entry(
         default_intake=entry.get("defaultIntake", "September 2026"),
         minimum_closes_at=entry.get("minimumClosesAt", "2025-07-01"),
         max_results=int(entry.get("assistedDiscovery", {}).get("maxResults", 12)),
+        search_priority=str(
+            entry.get("assistedDiscovery", {}).get("searchPriority", "normal")
+        ),
     )
     return run_assisted_discovery(
         config,

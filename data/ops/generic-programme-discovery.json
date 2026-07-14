@@ -24,7 +24,8 @@
       "accessReason": "The central Oxford graduate course catalogue returns a Cloudflare HTTP 403 challenge to direct GitHub-runner requests. The dedicated Oxford adapter provides strict catalogue and course-page parsing when full official HTML is available; assisted official-domain discovery monitors indexed official pages without promoting snippet dates.",
       "assistedDiscovery": {
         "enabled": true,
-        "maxResults": 20
+        "maxResults": 20,
+        "searchPriority": "high"
       },
       "enabled": true
     },
@@ -55,7 +56,8 @@
       "accessReason": "The public graduate course finder returns HTTP 403 to GitHub runners. The dedicated Melbourne adapter now uses the official Handbook origin for complete taught-master discovery, while assisted official-domain search continues to monitor course-level application dates.",
       "assistedDiscovery": {
         "enabled": true,
-        "maxResults": 12
+        "maxResults": 12,
+        "searchPriority": "high"
       },
       "enabled": true
     },
@@ -73,7 +75,8 @@
       "accessReason": "Official course finder returned HTTP 403 during seed audit; keep out of automated generic batch until an accessible endpoint or bespoke adapter is added.",
       "assistedDiscovery": {
         "enabled": true,
-        "maxResults": 12
+        "maxResults": 12,
+        "searchPriority": "high"
       },
       "enabled": true
     },

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from dataclasses import replace
+
 import httpx
 
 import gradwindow.assisted_discovery as assisted_discovery
@@ -8,6 +10,7 @@ from gradwindow.assisted_discovery import (
     BraveSearcher,
     RetrievedDocument,
     SearchResult,
+    SerperSearcher,
     _search_official_sources,
     _validated_catalog,
     run_assisted_discovery,
@@ -255,6 +258,207 @@ def test_brave_search_retries_without_optional_extra_snippets(monkeypatch) -> No
     assert calls[0][2]["extra_snippets"] == "true"
     assert "extra_snippets" not in calls[1][2]
     assert calls[1][2]["count"] == 10
+
+
+def test_serper_search_maps_official_web_results(monkeypatch) -> None:
+    calls = []
+
+    def fake_post(url, *, headers, json, timeout):
+        calls.append((url, headers, json, timeout))
+        request = httpx.Request("POST", url, json=json)
+        return httpx.Response(
+            200,
+            request=request,
+            json={
+                "organic": [
+                    {
+                        "title": "MSc Data Science",
+                        "link": "https://example.edu/msc-data-science",
+                        "snippet": "Official programme",
+                    }
+                ]
+            },
+        )
+
+    monkeypatch.setattr(assisted_discovery.httpx, "post", fake_post)
+
+    results = SerperSearcher("secret").search("site:example.edu MSc", 12)
+
+    assert [result.title for result in results] == ["MSc Data Science"]
+    assert calls[0][0] == "https://google.serper.dev/search"
+    assert calls[0][1]["X-API-KEY"] == "secret"
+    assert calls[0][2] == {
+        "q": "site:example.edu MSc",
+        "num": 12,
+        "gl": "us",
+        "hl": "en",
+    }
+
+
+def test_serper_searcher_accepts_repository_secret_name(monkeypatch) -> None:
+    monkeypatch.delenv("SERPER_API_KEY", raising=False)
+    monkeypatch.setenv("SERPER_SEARCH_API_KEY", "repository-secret")
+
+    assert SerperSearcher.from_environment().api_key == "repository-secret"
+
+
+def test_assisted_discovery_uses_serper_as_the_default_search(monkeypatch) -> None:
+    calls = []
+    monkeypatch.setenv("SERPER_API_KEY", "serper-secret")
+    monkeypatch.setenv("BRAVE_SEARCH_API_KEY", "brave-secret")
+
+    def serper_search(_self, query: str, _count: int) -> list[SearchResult]:
+        calls.append(("serper", query))
+        return []
+
+    def brave_search(_self, query: str, _count: int) -> list[SearchResult]:
+        calls.append(("brave", query))
+        return []
+
+    monkeypatch.setattr(SerperSearcher, "search", serper_search)
+    monkeypatch.setattr(BraveSearcher, "search", brave_search)
+
+    report = run_assisted_discovery(
+        _config(),
+        dry_run=True,
+        page_loader=lambda result: RetrievedDocument(
+            id="doc-seed",
+            title=result.title,
+            url=result.url,
+            content="Official postgraduate catalogue",
+            retrieval_method="direct-http",
+            evidence_quality="official-fulltext",
+        ),
+        extractor=lambda _config, _documents: {"programmes": []},
+    )
+
+    assert report["searchProvider"] == "serper"
+    assert calls
+    assert {provider for provider, _query in calls} == {"serper"}
+
+
+def test_high_priority_assisted_discovery_merges_serper_and_brave(
+    monkeypatch,
+) -> None:
+    calls = []
+    monkeypatch.setenv("SERPER_API_KEY", "serper-secret")
+    monkeypatch.setenv("BRAVE_SEARCH_API_KEY", "brave-secret")
+
+    def serper_search(_self, query: str, _count: int) -> list[SearchResult]:
+        calls.append(("serper", query))
+        return [
+            SearchResult(
+                title="MSc Data Science",
+                url="https://example.edu/programmes/data-science",
+                description="Serper result",
+            )
+        ]
+
+    def brave_search(_self, query: str, _count: int) -> list[SearchResult]:
+        calls.append(("brave", query))
+        return [
+            SearchResult(
+                title="MSc Data Science",
+                url="https://example.edu/programmes/data-science#apply",
+                description="Duplicate Brave result",
+            ),
+            SearchResult(
+                title="MSc Statistics",
+                url="https://example.edu/programmes/statistics",
+                description="Brave-only result",
+            ),
+        ]
+
+    monkeypatch.setattr(SerperSearcher, "search", serper_search)
+    monkeypatch.setattr(BraveSearcher, "search", brave_search)
+
+    report = run_assisted_discovery(
+        replace(_config(), search_priority="high"),
+        dry_run=True,
+        page_loader=lambda result: RetrievedDocument(
+            id="doc-" + result.url.rsplit("/", 1)[-1],
+            title=result.title,
+            url=result.url,
+            content=result.title,
+            retrieval_method="direct-http",
+            evidence_quality="official-fulltext",
+        ),
+        extractor=lambda _config, _documents: {"programmes": []},
+    )
+
+    assert report["searchProvider"] == "serper+brave"
+    assert report["searchResults"] == 3
+    assert report["searchUsage"] == {
+        "serper": {"queries": 2, "results": 2, "errors": 0},
+        "brave": {"queries": 2, "results": 4, "errors": 0},
+    }
+    assert {provider for provider, _query in calls} == {"serper", "brave"}
+
+
+def test_standard_search_falls_back_to_brave_when_serper_fails(monkeypatch) -> None:
+    monkeypatch.setenv("SERPER_API_KEY", "serper-secret")
+    monkeypatch.setenv("BRAVE_SEARCH_API_KEY", "brave-secret")
+
+    def serper_search(_self, _query: str, _count: int) -> list[SearchResult]:
+        raise httpx.TimeoutException("Serper timeout")
+
+    def brave_search(_self, _query: str, _count: int) -> list[SearchResult]:
+        return [
+            SearchResult(
+                title="MSc Data Science",
+                url="https://example.edu/programmes/data-science",
+                description="Brave fallback result",
+            )
+        ]
+
+    monkeypatch.setattr(SerperSearcher, "search", serper_search)
+    monkeypatch.setattr(BraveSearcher, "search", brave_search)
+
+    report = run_assisted_discovery(
+        _config(),
+        dry_run=True,
+        page_loader=lambda result: RetrievedDocument(
+            id="doc-" + result.url.rsplit("/", 1)[-1],
+            title=result.title,
+            url=result.url,
+            content=result.title,
+            retrieval_method="direct-http",
+            evidence_quality="official-fulltext",
+        ),
+        extractor=lambda _config, _documents: {"programmes": []},
+    )
+
+    assert report["searchProvider"] == "brave"
+    assert report["searchResults"] == 2
+
+
+def test_assisted_discovery_skips_llm_for_irrelevant_documents() -> None:
+    extractor_called = False
+
+    def extractor(_config, _documents):
+        nonlocal extractor_called
+        extractor_called = True
+        return {"programmes": []}
+
+    report = run_assisted_discovery(
+        _config(),
+        dry_run=True,
+        searcher=lambda _query, _count: [],
+        page_loader=lambda _result: RetrievedDocument(
+            id="doc-campus-map",
+            title="Campus map",
+            url="https://example.edu/postgraduate",
+            content="Parking, transport, cafés and visitor directions.",
+            retrieval_method="direct-http",
+            evidence_quality="official-fulltext",
+        ),
+        extractor=extractor,
+    )
+
+    assert report["status"] == "no-relevant-documents"
+    assert report["documentsConsidered"] == 1
+    assert report["documentsSelected"] == 0
+    assert extractor_called is False
 
 
 def test_assisted_discovery_only_requires_deepseek_credentials(

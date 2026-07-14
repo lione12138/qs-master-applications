@@ -20,13 +20,17 @@ from .programme_adapters.base import (
     DiscoveredWindow,
 )
 from .programme_discovery import discover_programmes
+from .search_providers import (
+    BraveSearcher,  # noqa: F401 - retained as a compatibility re-export
+    SearchResult,  # noqa: F401 - retained as a compatibility re-export
+    SerperSearcher,  # noqa: F401 - retained as a compatibility re-export
+    search_router_from_environment,
+)
 
-BRAVE_SEARCH_URL = "https://api.search.brave.com/res/v1/web/search"
 DEEPSEEK_BASE_URL = "https://api.deepseek.com"
 CLOUDFLARE_API_BASE = "https://api.cloudflare.com/client/v4"
 DEFAULT_DEEPSEEK_MODEL = "deepseek-v4-flash"
 MAX_SEARCH_RESULTS = 12
-BRAVE_SAFE_PAGE_SIZE = 10
 MAX_DOCUMENT_CHARS = 12_000
 MAX_PROMPT_CHARS = 80_000
 
@@ -57,14 +61,12 @@ _NAVIGATION_PROGRAMME_RE = re.compile(
     r"how to apply|application deadlines?|graduate admissions?)$",
     flags=re.IGNORECASE,
 )
-
-
-@dataclass(frozen=True, slots=True)
-class SearchResult:
-    title: str
-    url: str
-    description: str
-    extra_snippets: tuple[str, ...] = ()
+_RELEVANT_DOCUMENT_RE = re.compile(
+    r"\b(master(?:'s)?|msc|mres|mphil|meng|llm|mba|mph|mpp|mpa|"
+    r"postgraduate|graduate|programme|program|course|admission|application|"
+    r"deadline|closing date)\b",
+    flags=re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True, slots=True)
@@ -88,6 +90,7 @@ class AssistedDiscoveryConfig:
     default_intake: str
     minimum_closes_at: str = "2025-07-01"
     max_results: int = MAX_SEARCH_RESULTS
+    search_priority: str = "normal"
 
 
 class AssistedCatalogAdapter:
@@ -123,13 +126,12 @@ def run_assisted_discovery(
         return _skipped_report(config, missing)
 
     search_provider = "injected"
+    search_usage: dict[str, dict[str, int]] = {}
+    search_router = None
     if searcher is None:
-        if os.environ.get("BRAVE_SEARCH_API_KEY"):
-            searcher = BraveSearcher.from_environment().search
-            search_provider = "brave"
-        else:
-            searcher = _no_search_results
-            search_provider = "configured-seeds-only"
+        search_router = search_router_from_environment(config.search_priority)
+        searcher = search_router.search
+        search_provider = search_router.provider_label
     page_loader = (
         page_loader or AssistedPageLoader.from_environment(config.official_domains).load
     )
@@ -139,18 +141,38 @@ def run_assisted_discovery(
         results = _search_official_sources(config, searcher)
     except Exception as exc:
         return _error_report(config, "search", exc, dry_run)
+    if search_router is not None:
+        search_provider = search_router.provider_label
+        search_usage = search_router.usage
     try:
-        documents = [page_loader(result) for result in results]
+        retrieved_documents = [page_loader(result) for result in results]
     except Exception as exc:
         return _error_report(config, "retrieval", exc, dry_run)
-    if not documents:
+    if not retrieved_documents:
         return {
             "status": "no-results",
             "universityId": config.university_id,
             "sourceUrl": config.seed_urls[0],
             "searchProvider": search_provider,
+            "searchUsage": search_usage,
             "searchResults": 0,
             "documents": [],
+            "documentsConsidered": 0,
+            "documentsSelected": 0,
+            "dryRun": dry_run,
+        }
+    documents = _select_relevant_documents(retrieved_documents)
+    if not documents:
+        return {
+            "status": "no-relevant-documents",
+            "universityId": config.university_id,
+            "sourceUrl": config.seed_urls[0],
+            "searchProvider": search_provider,
+            "searchUsage": search_usage,
+            "searchResults": len(results),
+            "documents": _document_report(retrieved_documents),
+            "documentsConsidered": len(retrieved_documents),
+            "documentsSelected": 0,
             "dryRun": dry_run,
         }
 
@@ -165,8 +187,11 @@ def run_assisted_discovery(
             "universityId": config.university_id,
             "sourceUrl": config.seed_urls[0],
             "searchProvider": search_provider,
+            "searchUsage": search_usage,
             "searchResults": len(results),
             "documents": _document_report(documents),
+            "documentsConsidered": len(retrieved_documents),
+            "documentsSelected": len(documents),
             "validation": validation,
             "dryRun": dry_run,
         }
@@ -180,72 +205,15 @@ def run_assisted_discovery(
         {
             "assistedDiscovery": True,
             "searchProvider": search_provider,
+            "searchUsage": search_usage,
             "searchResults": len(results),
             "documents": _document_report(documents),
+            "documentsConsidered": len(retrieved_documents),
+            "documentsSelected": len(documents),
             "validation": validation,
         }
     )
     return report
-
-
-class BraveSearcher:
-    def __init__(self, api_key: str, *, timeout: float = 30) -> None:
-        self.api_key = api_key
-        self.timeout = timeout
-
-    @classmethod
-    def from_environment(cls) -> BraveSearcher:
-        return cls(os.environ["BRAVE_SEARCH_API_KEY"])
-
-    def search(self, query: str, count: int) -> list[SearchResult]:
-        headers = {
-            "Accept": "application/json",
-            "X-Subscription-Token": self.api_key,
-        }
-        params = {
-            "q": query,
-            # Brave documents a maximum of 20, but some active subscription
-            # tiers reject counts above 10 with HTTP 422. Multiple queries are
-            # already merged below, so a conservative page size preserves the
-            # configured overall result limit without making the run brittle.
-            "count": min(BRAVE_SAFE_PAGE_SIZE, max(1, count)),
-            "search_lang": "en",
-            "safesearch": "strict",
-            "extra_snippets": "true",
-        }
-        response = httpx.get(
-            BRAVE_SEARCH_URL,
-            headers=headers,
-            params=params,
-            timeout=self.timeout,
-        )
-        if response.status_code == 422:
-            # Some Brave subscription tiers reject the optional extra-snippets
-            # parameter. Retry the same official-domain query without it rather
-            # than losing the entire school's discovery run.
-            params.pop("extra_snippets")
-            response = httpx.get(
-                BRAVE_SEARCH_URL,
-                headers=headers,
-                params=params,
-                timeout=self.timeout,
-            )
-        response.raise_for_status()
-        payload = response.json()
-        return [
-            SearchResult(
-                title=str(item.get("title", "")).strip(),
-                url=str(item.get("url", "")).strip(),
-                description=str(item.get("description", "")).strip(),
-                extra_snippets=tuple(
-                    str(value).strip()
-                    for value in item.get("extra_snippets", [])
-                    if str(value).strip()
-                ),
-            )
-            for item in payload.get("web", {}).get("results", [])
-            if item.get("url")
-        ]
 
 
 class CloudflareBrowserClient:
@@ -772,6 +740,16 @@ def _error_report(
         "message": message[:900],
         "dryRun": dry_run,
     }
+
+
+def _select_relevant_documents(
+    documents: list[RetrievedDocument],
+) -> list[RetrievedDocument]:
+    return [
+        document
+        for document in documents
+        if _RELEVANT_DOCUMENT_RE.search(f"{document.title} {document.content}")
+    ]
 
 
 def _document_report(documents: list[RetrievedDocument]) -> list[dict[str, str]]:

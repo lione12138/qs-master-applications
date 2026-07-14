@@ -1,6 +1,44 @@
 from __future__ import annotations
 
-from gradwindow.generic_discovery_batch import classify_generic_candidates
+import gradwindow.generic_discovery_batch as generic_discovery_batch
+from gradwindow.generic_discovery_batch import (
+    classify_generic_candidates,
+    run_assisted_discovery_entry,
+)
+
+
+def test_assisted_entry_passes_configured_search_priority(monkeypatch) -> None:
+    captured = {}
+
+    def fake_run(config, **_kwargs):
+        captured["config"] = config
+        return {"status": "no-results"}
+
+    monkeypatch.setattr(
+        generic_discovery_batch,
+        "run_assisted_discovery",
+        fake_run,
+    )
+
+    run_assisted_discovery_entry(
+        {
+            "universityId": "example-university",
+            "seedUrls": ["https://example.edu/postgraduate"],
+            "officialDomains": ["example.edu"],
+            "assistedDiscovery": {
+                "enabled": True,
+                "maxResults": 12,
+                "searchPriority": "high",
+            },
+        },
+        {
+            "school": "Example University",
+            "admissionsUrl": "https://example.edu/postgraduate",
+        },
+        dry_run=True,
+    )
+
+    assert captured["config"].search_priority == "high"
 
 
 def test_classify_generic_candidates_splits_review_buckets() -> None:

@@ -6,13 +6,16 @@ coverage without treating model output as official evidence.
 
 ## Retrieval flow
 
-1. Brave Search queries are restricted to the university's configured official
-   domains.
-2. Each official result is fetched directly. If that fails and Cloudflare
+1. Configured university catalogue and admissions URLs are always included as
+   the primary discovery sources.
+2. Serper searches the university's configured official domains when an API key
+   is available. Brave is retained as an independent-index fallback. Entries
+   marked `searchPriority: "high"` merge both providers when both are configured.
+3. Each official result is fetched directly. If that fails and Cloudflare
    Browser Rendering is configured, GradWindow requests a rendered Markdown
    copy.
-3. DeepSeek extracts programme and application-window candidates as JSON.
-4. Deterministic validation checks every URL, programme name, evidence quote,
+4. DeepSeek extracts programme and application-window candidates as JSON.
+5. Deterministic validation checks every URL, programme name, evidence quote,
    and exact date before the normal candidate writer runs.
 
 Search snippets can create a no-deadline programme candidate, but dates from a
@@ -32,21 +35,33 @@ Enable the fallback for a school in
   "accessStatus": "blocked",
   "assistedDiscovery": {
     "enabled": true,
-    "maxResults": 12
+    "maxResults": 12,
+    "searchPriority": "high"
   }
 }
 ```
+
+`searchPriority` defaults to `normal`:
+
+- `normal` — use Serper when configured, otherwise Brave. If the selected
+  provider fails, try the other configured provider.
+- `high` — query and merge both configured providers, deduplicating canonical
+  URLs before retrieval.
 
 Required GitHub Actions secret:
 
 - `DEEPSEEK_API_KEY`
 
-Recommended search secret:
+Recommended primary search secret:
+
+- `SERPER_SEARCH_API_KEY` (`SERPER_API_KEY` is also accepted locally)
+
+Optional independent-index fallback secret:
 
 - `BRAVE_SEARCH_API_KEY`
 
-Without Brave Search, the fallback still attempts every configured official
-seed URL, but it cannot discover additional indexed pages.
+Without either search secret, the fallback still attempts every configured
+official seed URL, but it cannot discover additional indexed pages.
 
 Optional Browser Rendering secrets:
 
@@ -75,3 +90,13 @@ gradwindow discover-generic-batch --replace-existing
 
 The scheduled `pipeline` command also runs the generic batch. Missing optional
 credentials result in a recorded `skipped` status instead of a failed workflow.
+
+## Cost and trust gates
+
+- Normal catalogue discovery does not call a search API when a dedicated or
+  generic adapter can read the configured official pages directly.
+- Search providers discover URLs only. Third-party domains are discarded and
+  search snippets can never provide publishable dates.
+- Direct HTTP retrieval is attempted before Browser Rendering.
+- DeepSeek receives only the bounded official-domain documents selected by the
+  assisted path. Deterministic evidence validation remains authoritative.

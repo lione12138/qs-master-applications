@@ -198,8 +198,10 @@ If a school blocks automated access, mark the config with
 a permanent error state.
 
 Blocked schools can opt into the assisted official-domain fallback with
-`assistedDiscovery.enabled`. It uses Brave Search for official URL discovery,
-optional Cloudflare Browser Rendering for page retrieval, and DeepSeek for
+`assistedDiscovery.enabled`. It uses Serper as the primary official-domain
+search provider and Brave as an optional independent-index fallback. High
+priority entries can merge both providers. Optional Cloudflare Browser
+Rendering handles blocked page retrieval, and DeepSeek performs bounded
 structured extraction. Search snippets may create programme-only candidates,
 but exact dates require official full text and deterministic evidence checks.
 See `docs/assisted-discovery.md`.
