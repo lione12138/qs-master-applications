@@ -24,9 +24,19 @@ def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
         ...load({json.dumps(predictions_uri)}).predictions,
       ];
       const rankings = load({json.dumps(rankings_uri)}).rankings;
+      const expectedCount = (rows) => {{
+        const ids = new Set(rows.map((row) => row.universityId).filter(Boolean));
+        return records.filter((record) => ids.has(record.universityId)).length;
+      }};
+      const theRecords = filterRecordsToRanking(records, rankings.the.rows);
+      const arwuRecords = filterRecordsToRanking(records, rankings.arwu.rows);
       console.log(JSON.stringify({{
-        the: filterRecordsToRanking(records, rankings.the.rows).length,
-        arwu: filterRecordsToRanking(records, rankings.arwu.rows).length,
+        the: theRecords.length,
+        expectedThe: expectedCount(rankings.the.rows),
+        arwu: arwuRecords.length,
+        expectedArwu: expectedCount(rankings.arwu.rows),
+        nusInThe: theRecords.some((record) => record.universityId === "national-university-of-singapore-nus"),
+        nusInArwu: arwuRecords.some((record) => record.universityId === "national-university-of-singapore-nus"),
       }}));
     """
     result = subprocess.run(
@@ -36,7 +46,11 @@ def test_frontend_joins_application_windows_to_each_selected_ranking() -> None:
         text=True,
     )
 
-    assert json.loads(result.stdout) == {"the": 5663, "arwu": 5425}
+    counts = json.loads(result.stdout)
+    assert counts["the"] == counts["expectedThe"]
+    assert counts["arwu"] == counts["expectedArwu"]
+    assert counts["nusInThe"] is True
+    assert counts["nusInArwu"] is True
 
 
 def test_frontend_ranking_index_reuses_rank_and_membership_lookups() -> None:

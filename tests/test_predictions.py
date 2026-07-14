@@ -6,8 +6,10 @@ import json
 from gradwindow.paths import APPLICATIONS_PATH
 from gradwindow.predictions import (
     generate_predictions,
+    official_cycle_key,
     shift_date_one_year,
     shift_intake_one_year,
+    window_signature,
 )
 
 
@@ -22,7 +24,29 @@ def test_current_windows_generate_next_cycle_predictions(tmp_path) -> None:
     output = tmp_path / "predictions.json"
     payload = generate_predictions(output_path=output)
     applications = json.loads(APPLICATIONS_PATH.read_text(encoding="utf-8"))
-    assert len(payload["predictions"]) == len(applications["applications"]) - 1
+    latest_by_signature = {}
+    for item in applications["applications"]:
+        signature = window_signature(item)
+        current = latest_by_signature.get(signature)
+        if current is None or (
+            item["closesAt"],
+            item["verifiedAt"],
+            item["id"],
+        ) > (
+            current["closesAt"],
+            current["verifiedAt"],
+            current["id"],
+        ):
+            latest_by_signature[signature] = item
+    official_keys = {official_cycle_key(item) for item in applications["applications"]}
+    expected_sources = {
+        item["id"]
+        for signature, item in latest_by_signature.items()
+        if (*signature, shift_intake_one_year(item["intake"])) not in official_keys
+    }
+    assert {item["basedOnRecordId"] for item in payload["predictions"]} == (
+        expected_sources
+    )
     cambridge = next(
         item
         for item in payload["predictions"]
