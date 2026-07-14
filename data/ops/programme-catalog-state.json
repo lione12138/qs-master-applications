@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-13T17:14:04.509844+00:00",
+    "updatedAt": "2026-07-14T03:14:35.526337+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -19530,6 +19530,31 @@
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    },
+    "university-of-oxford": {
+      "sourceUrl": "https://www.ox.ac.uk/admissions/graduate/courses/courses-a-z-listing",
+      "checkedAt": "2026-07-14T03:14:35.526337+00:00",
+      "itemCount": 2,
+      "applicationOpensAt": null,
+      "catalogHash": "c37e061f1a6473bf774d1a714bfa2c736f8b625a38ed2cd2016ae2a2d8e47ceb",
+      "programmes": {
+        "oxford-mphil-in-english-studies-medieval-period": {
+          "name": "MPhil in English Studies (Medieval Period)",
+          "degreeType": "MPhil",
+          "faculty": "English",
+          "department": "Faculty of English",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "oxford-oxford-1-1-mba": {
+          "name": "Oxford 1+1 MBA",
+          "degreeType": "MBA",
+          "faculty": "Saïd Business School",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2d87b8ef19411f0f9ba092466161abbe3001d534f06c5c0e744672f5ffb1c469"
         }
       }
     }
