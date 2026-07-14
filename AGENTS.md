@@ -211,18 +211,88 @@ See `docs/assisted-discovery.md`.
 Dedicated adapters live in `src/gradwindow/programme_adapters/`. Existing
 examples include `mit.py`, `cuhk.py`, `polyu.py`, `cambridge.py`,
 `glasgow.py`, `imperial.py`, `hku.py`, `hkust.py`, `melbourne.py`, `monash.py`,
-`oxford.py`, `sydney.py`, and `uq.py`.
+`nus.py`, `oxford.py`, `sydney.py`, and `uq.py`.
 
-Expected pattern:
+#### Definition of done
 
-1. Read official catalogue/admissions pages.
-2. Implement parsing into `DiscoveredCatalog`, `DiscoveredProgramme`, and
+Treat a school adapter as three explicit phases. Report the completed phase
+accurately; do not call a catalogue-only integration a finished school adapter.
+
+1. **Catalogue discovery** — the official source produces a plausibly complete,
+   deduplicated set of master's programmes with official programme and
+   application URLs.
+2. **Window discovery** — official programme-, faculty-, or school-level sources
+   are systematically checked for exact application opening and closing dates.
+   If the university does not publish exact dates, record that limitation and
+   place the programmes in the appropriate monitor/review bucket.
+3. **Integration** — candidates and state are generated, translations are
+   queued when needed, validation/build checks pass, and the change is pushed
+   with green CI.
+
+Phase 1 may still be useful, but describe it as "catalogue discovery complete;
+application-window discovery pending." A programme count with zero exact
+windows is not a completed deadline adapter unless the official sources have
+been checked and the no-deadline policy is documented.
+
+#### Efficient investigation order
+
+Use the cheapest deterministic source first. Escalate only when the preceding
+step cannot provide the required data:
+
+1. Check existing generic discovery configuration, university records, and
+   similar adapters.
+2. Fetch the official HTML directly and inspect links, forms, embedded JSON,
+   JSON-LD, sitemaps, RSS feeds, downloadable CSV/JSON, and PDFs.
+3. Inspect only the relevant first-party JavaScript bundle for named API calls
+   or public data endpoints. Prefer a stable public JSON/API endpoint over
+   browser automation.
+4. Use Browser/Playwright only when the data genuinely requires client-side
+   execution or an authenticated/interactive flow.
+5. Use assisted search/LLM extraction only as a bounded fallback for discovery;
+   exact dates still require official full text and deterministic checks.
+
+When a central catalogue lacks deadlines, group its programme detail URLs by
+domain/faculty and test one representative page per group. Implement shared
+faculty/domain rules before considering per-programme logic.
+
+Apply a stop-loss: if one approach produces no new evidence after roughly ten
+minutes, record the blocker and change strategy instead of repeatedly retrying
+the same page or tool.
+
+#### Implementation sequence
+
+1. Define the expected catalogue count, deadline source, and completion phase
+   before writing code.
+2. Build a small fixture containing two or three representative official
+   records and write focused parser tests.
+3. Implement parsing into `DiscoveredCatalog`, `DiscoveredProgramme`, and
    `DiscoveredWindow`.
-3. Add focused tests under `tests/`.
-4. Ensure the adapter only creates candidates unless an explicit approval
+4. Run focused tests and a `--dry-run`; inspect counts, a few sample records,
+   duplicate IDs, missing URLs, and window evidence.
+5. Only after the dry run is credible, write operational candidate/state files.
+   Do not generate thousands of JSON lines merely to debug the parser.
+6. Ensure the adapter only creates candidates unless an explicit approval
    command promotes them.
-5. Run `ruff check .`, `pytest`, `gradwindow validate`, and
-   `gradwindow build-site`.
+7. Keep unrelated cleanup or report improvements in a separate commit so they
+   cannot delay or obscure the adapter change.
+8. Run `ruff check .`, `ruff format --check .`, focused tests, full `pytest`,
+   `gradwindow validate`, frontend lint/format checks when relevant, and a site
+   build to a temporary output directory when the public site should not change.
+
+Keep repository searches scoped. Prefer commands such as:
+
+```powershell
+rg "search term" src tests .github web
+```
+
+Do not run broad recursive searches from the repository root when `site/`,
+`data/evidence/`, virtual environments, caches, or generated operational JSON
+could be traversed. Add explicit paths or exclusions.
+
+Before pushing, fetch and rebase onto the latest remote `main`, because scheduled
+monitoring workflows may have advanced it. If HTTPS connections reset, retry
+Git operations with `-c http.version=HTTP/1.1` before changing remotes or using
+more invasive workarounds.
 
 Discovery also revisits programmes already present in `data/programs.json`.
 Official new intake cycles and official date changes become pending records in

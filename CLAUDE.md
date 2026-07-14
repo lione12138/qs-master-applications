@@ -119,6 +119,11 @@ Classify outcomes pragmatically:
 
 ## Dedicated adapter workflow
 
+The detailed, mandatory workflow and definition of done are in the
+`Add a dedicated programme adapter` section of `AGENTS.md`. In particular, keep
+catalogue discovery, application-window discovery, and final integration as
+separate completion phases. Never describe phase 1 as a finished school adapter.
+
 Use a dedicated adapter when:
 
 - the catalogue is dynamic or hidden behind official JSON;
@@ -129,12 +134,14 @@ Use a dedicated adapter when:
 
 Implementation checklist:
 
-1. Add or update an adapter under `src/gradwindow/programme_adapters/`.
-2. Parse into `DiscoveredCatalog`, `DiscoveredProgramme`, and
-   `DiscoveredWindow`.
-3. Add tests under `tests/`.
-4. Ensure adapter output remains candidate/review-oriented.
-5. Run ruff, pytest, validate, and build-site.
+1. Try direct official HTML/API/sitemap/PDF inspection before browser or LLM
+   fallbacks.
+2. Add fixture-based focused tests before generating operational JSON.
+3. Add or update an adapter under `src/gradwindow/programme_adapters/` and run a
+   dry run before writing candidates.
+4. Ensure adapter output remains candidate/review-oriented and exact windows
+   have deterministic official evidence.
+5. Run ruff, pytest, validate, and build-site; then fetch/rebase before pushing.
 
 ## Frontend workflow
 
