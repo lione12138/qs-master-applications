@@ -150,6 +150,7 @@
     {
       "name": "southampton-postgraduate-taught",
       "universityId": "university-of-southampton",
+      "discoveryRole": "fallback",
       "prefix": "southampton",
       "seedUrls": [
         "https://www.southampton.ac.uk/courses/postgraduate-taught"

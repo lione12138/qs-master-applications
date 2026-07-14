@@ -218,8 +218,8 @@ See `docs/assisted-discovery.md`.
 Dedicated adapters live in `src/gradwindow/programme_adapters/`. Existing
 examples include `birmingham.py`, `bristol.py`, `mit.py`, `cuhk.py`, `polyu.py`,
 `cambridge.py`, `edinburgh.py`, `glasgow.py`, `imperial.py`, `hku.py`, `hkust.py`,
-`melbourne.py`, `monash.py`, `manchester.py`, `nus.py`, `oxford.py`, `sydney.py`,
-and `uq.py`.
+`melbourne.py`, `monash.py`, `manchester.py`, `nus.py`, `oxford.py`,
+`southampton.py`, `sydney.py`, and `uq.py`.
 
 Register each dedicated adapter exactly once in
 `programme_adapters/registry.py`; the CLI and manual Actions workflow derive

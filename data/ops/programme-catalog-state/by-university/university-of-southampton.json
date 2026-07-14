@@ -2,42 +2,130 @@
   "universities": {
     "university-of-southampton": {
       "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
-      "checkedAt": "2026-07-07T09:44:08.719629+00:00",
-      "itemCount": 20,
+      "checkedAt": "2026-07-14T22:17:38.421794+00:00",
+      "itemCount": 201,
       "applicationOpensAt": null,
-      "catalogHash": "80a09b4c276c6d98fe3c260b5a276fb70b4183976d86351957adb0a00050eb34",
+      "catalogHash": "e12653cae53d5c69b0ed337047535f83913ab6ec5dd6bf480df552a850c4ffee",
       "programmes": {
-        "southampton-international-commercial-and-corporate-law-llm": {
-          "name": "International Commercial and Corporate Law (LLM)",
-          "degreeType": "LLM",
+        "southampton-accounting-and-finance-msc": {
+          "name": "Accounting and Finance (MSc)",
+          "degreeType": "MSc",
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "1c001bd5383f038ebab8004d9f4443810ac15bc73f8eb11ddde2507484ef339f"
+          "deadlineHash": "2c503c6bc198fcfdb40e5ed89b79cb1e8f1d75f178c63fbbb1ed2b185099bf29"
         },
-        "southampton-international-law-and-human-rights-llm": {
-          "name": "International Law and Human Rights (LLM)",
-          "degreeType": "LLM",
+        "southampton-accounting-and-management-msc": {
+          "name": "Accounting and Management (MSc)",
+          "degreeType": "MSc",
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "1c001bd5383f038ebab8004d9f4443810ac15bc73f8eb11ddde2507484ef339f"
+          "deadlineHash": "8544591fbbf1fe00e394165a634535252bdc6d8f540846bef5cfe8e97182a3d9"
         },
-        "southampton-laws-llm": {
-          "name": "Laws (LLM)",
-          "degreeType": "LLM",
+        "southampton-acoustical-and-vibration-engineering-msc": {
+          "name": "Acoustical and Vibration Engineering (MSc)",
+          "degreeType": "MSc",
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "1c001bd5383f038ebab8004d9f4443810ac15bc73f8eb11ddde2507484ef339f"
+          "deadlineHash": "1af87b665f97b919d18c08f65a987b7d8251a2d6f44ad2ae83b204fe8efcadd4"
         },
-        "southampton-maritime-law-llm": {
-          "name": "Maritime Law (LLM)",
-          "degreeType": "LLM",
+        "southampton-actuarial-science-msc": {
+          "name": "Actuarial Science (MSc)",
+          "degreeType": "MSc",
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "1c001bd5383f038ebab8004d9f4443810ac15bc73f8eb11ddde2507484ef339f"
+          "deadlineHash": "e47bf290a0d4d246e9b8460bac8fec09a2b96131ac766fc48d134ff8d2a80358"
+        },
+        "southampton-advanced-audiology-msc": {
+          "name": "Advanced Audiology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "66ab975c8ada12e5423b611da4632991fa998c29a1bc59cbd68daddfcecaafb3"
+        },
+        "southampton-advanced-biological-sciences-mres": {
+          "name": "Advanced Biological Sciences (MRes)",
+          "degreeType": "MRes",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a5411fded2a8c29f9c77aa3a4a625f3561f9147f1879bf60fddd54f6974d8e27"
+        },
+        "southampton-advanced-chemical-engineering-msc": {
+          "name": "Advanced Chemical Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8e0bb28ab95e8c816ef51be80c0fbca8080849a4f09fd6ed220b809bbfa6f377"
+        },
+        "southampton-advanced-clinical-practice-advanced-allied-health-practitioner-msc": {
+          "name": "Advanced Clinical Practice (Advanced Allied Health Practitioner) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0e797e1e5120a8cda79bfef1a0a70f9d4d95d8debe8f95cc01d8a9ff32b0f827"
+        },
+        "southampton-advanced-clinical-practice-advanced-critical-care-practitioner-msc": {
+          "name": "Advanced Clinical Practice (Advanced Critical Care Practitioner) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "28c39712cb8b3662b279fdad766318a7b7710ba8e9a4fa59edb24425213732f1"
+        },
+        "southampton-advanced-clinical-practice-advanced-neonatal-nurse-practitioner-msc": {
+          "name": "Advanced Clinical Practice (Advanced Neonatal Nurse Practitioner) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b472f9fe98c6a37f6c21f5a6c5807dc8b38b780fcb531ba7507356f9abec04f1"
+        },
+        "southampton-advanced-clinical-practice-advanced-nurse-practitioner-msc": {
+          "name": "Advanced Clinical Practice (Advanced Nurse Practitioner) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8849199d7f4bb667e6f4286970216264a42337a8d7465e6f0525747b3923cb24"
+        },
+        "southampton-aerodynamics-and-computation-msc": {
+          "name": "Aerodynamics and Computation (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6855322171c2a673df1f6152943b5e9f43e85d9808ca9b1ba6789b4d5b8ceda4"
+        },
+        "southampton-allergy-msc": {
+          "name": "Allergy (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7053a6cb5be40e068d391a78bbb6f33309a271b75e4a7120fff17c5642054f12"
+        },
+        "southampton-amputation-and-prosthetic-rehabilitation-msc": {
+          "name": "Amputation and Prosthetic Rehabilitation (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "aa833eefc985c18a8a6eadcacf561485c6a8c2d8e24e5725c6efa115ad85ac65"
+        },
+        "southampton-applied-coastal-and-offshore-geoscience-msc": {
+          "name": "Applied Coastal and Offshore Geoscience (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e10cce0758e5cf7747ef8b3cb9dbbebe15742fcf5649d56a987228503302e7df"
         },
         "southampton-applied-linguistics-ma": {
           "name": "Applied Linguistics (MA)",
@@ -45,7 +133,47 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "017cfbafb3455e87fcce99e791ff900955d26c53887cd2c0cf29cb3e85f8e73e"
+        },
+        "southampton-applied-statistics-msc": {
+          "name": "Applied Statistics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1f903b12e5df084b8dafc89928e21c8d7ad00aaff9aceec66af95174815d6e10"
+        },
+        "southampton-archaeology-bioarchaeology-msc": {
+          "name": "Archaeology Bioarchaeology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "cf383eade1cf1cdb8204e9a83fe7efa0d9c7484b87ec609874fe9de4adf5741b"
+        },
+        "southampton-archaeology-msc": {
+          "name": "Archaeology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3eed559212f1f60eeaf79f60e142664de2cc81b771057d2e1ae6ecdc883817d6"
+        },
+        "southampton-archaeology-palaeoanthropology-msc": {
+          "name": "Archaeology Palaeoanthropology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bf24429a64f20c4256add8a66c7e9768c917ecdf33e5915b873cd9a051556b67"
+        },
+        "southampton-artificial-intelligence-msc": {
+          "name": "Artificial Intelligence (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "37677ec44dc34e17fc75214a23706f02e32236a0745c0f945da6f21f6e6eb6d3"
         },
         "southampton-arts-and-cultural-leadership-ma": {
           "name": "Arts and Cultural Leadership (MA)",
@@ -53,7 +181,143 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "dc4ed453df8a91c6c58d08e7f34277f28c7e803f57a65d3f708127a9a24ce6de"
+        },
+        "southampton-audiology-with-clinical-placement-msc": {
+          "name": "Audiology with Clinical Placement (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bc660f6162b308ba277f1b94b0684a08a042506b2b446879a67112ac223d3faf"
+        },
+        "southampton-banking-and-finance-msc": {
+          "name": "Banking and Finance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "abefbfc1df5f974340765a8e72232f77f336cb183ce402bb094a097969b5bba0"
+        },
+        "southampton-big-data-biology-mres": {
+          "name": "Big Data Biology (MRes)",
+          "degreeType": "MRes",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "34d1dd50b17267869b30e7472020ad610e3eb7d965dd76019a34c280f3913340"
+        },
+        "southampton-biodiversity-and-conservation-msc": {
+          "name": "Biodiversity and Conservation (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c7f8045c6be34799652c7b96b720aeceae288b37bcdd8ade3e7af8e4a811ea57"
+        },
+        "southampton-biomedical-engineering-msc": {
+          "name": "Biomedical Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2fe67e03d2f37851c8ec176ad651d52842d463a9fb771c0b0eafe89f929dc0f3"
+        },
+        "southampton-biomedical-sciences-by-research-msc": {
+          "name": "Biomedical Sciences by Research (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "53aa236e6f9a39e2768782093eb6c587096d98c5199a30898bb9b84a9c3c0820"
+        },
+        "southampton-business-analytics-and-finance-msc": {
+          "name": "Business Analytics and Finance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f8d16d590a421f80a37b5b77ed41abe74155ec03450197c7e9676b966d47e868"
+        },
+        "southampton-business-analytics-and-management-science-msc": {
+          "name": "Business Analytics and Management Science (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "236299b9ce876f38dd2a68899616c98bd79f88968e027db75dc4b17dc5c8eb63"
+        },
+        "southampton-business-and-heritage-management-msc": {
+          "name": "Business and Heritage Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c228921a21b5e372533d442f51c308f851c1b55e213f204a15a49e7e92ebe140"
+        },
+        "southampton-business-strategy-and-innovation-management-msc": {
+          "name": "Business Strategy and Innovation Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2a0359d02b621d31ebcacf1add8e2a1615e2b9a60a2ed68762f2c5327a9c94a2"
+        },
+        "southampton-cancer-biology-and-immunology-msc": {
+          "name": "Cancer Biology and Immunology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a1b79980710ee468c5ae48e24387166d103d2b6796adea46aacfc7c4af68d78e"
+        },
+        "southampton-chemistry-by-research-msc": {
+          "name": "Chemistry by Research (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f7d3f1ed94991afbdacda32568ad7932e9573756bd26071a6f91b5397eb66d4"
+        },
+        "southampton-chemistry-msc": {
+          "name": "Chemistry (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7458db5c033f22a8f16d7908e2680f204cf7f70ae7aedbd88595d4ecebc89570"
+        },
+        "southampton-civil-engineering-msc": {
+          "name": "Civil Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1832e63421dba734288ef5b59ea5be2ba09c8be0065303a14d27c4a02523980d"
+        },
+        "southampton-clinical-and-health-research-mres": {
+          "name": "Clinical and Health Research (MRes)",
+          "degreeType": "MRes",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "415c1bc6d0c8fb65f590ef23049a8a75bac8361bcc4187ad53e184d620be2528"
+        },
+        "southampton-clinical-exercise-physiology-msc": {
+          "name": "Clinical Exercise Physiology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5b5622c626aa4f24b770e9f1101a6892658ca11872efda962169a1b4588196a1"
+        },
+        "southampton-clinical-psychology-msc": {
+          "name": "Clinical Psychology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "07089a576c763f3a56e406ca3d0543b4dcc05cfe77767dccc0eeb39b32a83e61"
         },
         "southampton-communication-design-ma": {
           "name": "Communication Design (MA)",
@@ -61,7 +325,23 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "233fd497ab7e1d1fb369787db9438748fd8cbab08f6206f7c8e84e79a3147d46"
+          "deadlineHash": "826d45b6e5b5e0e80b82eb286312f907b1d0b7f28e3e2583e1bbbf06ad555bee"
+        },
+        "southampton-computational-engineering-design-advanced-mechanical-engineering-science-msc": {
+          "name": "Computational Engineering Design (Advanced Mechanical Engineering Science) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c1802d0a29f6e03fb79e114b15ec7702cb90d12c819de9ae00a84772828ea887"
+        },
+        "southampton-computer-science-msc": {
+          "name": "Computer Science (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4a6e0b438450565fb44e63b0e08ccc7af64f5acdc30c8a082d5e2344d65297a7"
         },
         "southampton-contemporary-curating-ma": {
           "name": "Contemporary Curating (MA)",
@@ -69,7 +349,15 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "233fd497ab7e1d1fb369787db9438748fd8cbab08f6206f7c8e84e79a3147d46"
+          "deadlineHash": "246515dab94287d729c2f987e0713ac0a254de8aee931ccd37fc1ffe422ebba7"
+        },
+        "southampton-creative-technologies-msc": {
+          "name": "Creative Technologies (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "139f06650d140ecb287b2502e5da9f3ae12bc61ae93db38d7ab770332f864769"
         },
         "southampton-creative-writing-ma": {
           "name": "Creative Writing (MA)",
@@ -77,7 +365,7 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "069634eb14d5940368a13e32444e96c25da6873886794960335aff2f3a768ad3"
         },
         "southampton-cultural-heritage-studies-heritage-and-museums-ma": {
           "name": "Cultural Heritage Studies (Heritage and Museums) (MA)",
@@ -85,7 +373,7 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "8755d2aebf3174d5279ceb0fefdb179e6891861e707c0e48439e1553477b7d98"
         },
         "southampton-cultural-heritage-studies-heritage-and-public-history-ma": {
           "name": "Cultural Heritage Studies (Heritage and Public History) (MA)",
@@ -93,7 +381,7 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "81ae126e1a89c98db7189845750d4c90d65ab08086a8e5a3cfcac19f003241c5"
         },
         "southampton-cultural-heritage-studies-heritage-and-the-arts-ma": {
           "name": "Cultural Heritage Studies (Heritage and the Arts) (MA)",
@@ -101,7 +389,7 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "bda6b3f341ffb27352c1c92903c120660e21b945eec2d2eeceaacbece2861861"
         },
         "southampton-cultural-heritage-studies-ma": {
           "name": "Cultural Heritage Studies (MA)",
@@ -109,7 +397,31 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "148ac20fa203f1c2b6ed1385fac5aca083b28231afcba6a70078d65f1b6926a1"
+        },
+        "southampton-cyber-security-msc": {
+          "name": "Cyber Security (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b84d10a1afb9e11fd1d171e53b8f00d8d2967223167814e268c4d1794146b949"
+        },
+        "southampton-data-and-decision-analytics-msc": {
+          "name": "Data and Decision Analytics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6422ef717b2d754c73ce81887519c93629676a3a25cf1e6b89be1e9f956055d3"
+        },
+        "southampton-data-science-msc": {
+          "name": "Data Science (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c5199eb8ff3f9a31db39701d6c9b740175c406a74a08ed29c7a8504204fb5fdf"
         },
         "southampton-design-innovation-and-technology-ma": {
           "name": "Design Innovation and Technology (MA)",
@@ -117,7 +429,15 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "cb95777b75e086b141dfba5dbf55ae3730c4330e1f0abca666f363531e93f197"
+        },
+        "southampton-design-innovation-and-technology-msc": {
+          "name": "Design Innovation and Technology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e801e7f9a37b220f6aab6d4301338c9edf09c253b52a237f46dcc9f14e574971"
         },
         "southampton-design-management-ma": {
           "name": "Design Management (MA)",
@@ -125,7 +445,39 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "b56007ca5ff8006cc2a98e125a5cc294f68c54356712bb5ae471b2f0e2f45c5e"
+        },
+        "southampton-digital-business-msc": {
+          "name": "Digital Business (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ecd5e43d3bfaa7df32edaad747cf08e9c744558b04275a49e709d13df0d0bdf0"
+        },
+        "southampton-digital-chemistry-msc": {
+          "name": "Digital Chemistry (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "184593c04c7acd5abe500c9403fb6ea630ff241a90fe7c4be446ad33d49fb476"
+        },
+        "southampton-digital-humanities-data-science-msc": {
+          "name": "Digital Humanities (Data Science) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "304565c628e21b132277abe951d1659fdde31567f142504bebdb3346c49a7256"
+        },
+        "southampton-digital-marketing-msc": {
+          "name": "Digital Marketing (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d244f082d6af8f72e9fcad51c753a217892cac05399d9b4bfe9da8479ce91b2c"
         },
         "southampton-digital-media-ma": {
           "name": "Digital Media (MA)",
@@ -133,7 +485,119 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "233fd497ab7e1d1fb369787db9438748fd8cbab08f6206f7c8e84e79a3147d46"
+          "deadlineHash": "561aff0fefa96f104fee03c86a8afa6fbd8b50a1e1f88304249b30c1ce3d4f27"
+        },
+        "southampton-digital-strategy-and-information-systems-msc": {
+          "name": "Digital Strategy and Information Systems (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9f649294709b8211cd88d3a53709e15580d3b9dbeb745312590fe5f2c5893b9e"
+        },
+        "southampton-e-textiles-and-wearable-technologies-msc": {
+          "name": "E-textiles and Wearable Technologies (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ffbb752f55272be5998e40cef49a67af2c4f8d9da6402ceeb9438e0158307ffd"
+        },
+        "southampton-economics-mres": {
+          "name": "Economics (MRes)",
+          "degreeType": "MRes",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5990983ba1f052759209fe986c289cdf045aab36b2bd4d737d5b3512ea982218"
+        },
+        "southampton-economics-msc": {
+          "name": "Economics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "91116b28ab6ceca74e41920a4b06d7306b8a5f459975b6b128669cc19bbe2b09"
+        },
+        "southampton-education-management-and-leadership-msc": {
+          "name": "Education Management and Leadership (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3df0d4b00a437f032789552fb73f1bebceca547dd7478c64f53369ddfc050c10"
+        },
+        "southampton-education-msc": {
+          "name": "Education (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4e5a1039552cf266aee45e7fa098bcd95d3a0166dacd3d3fe6229e9b2aae5114"
+        },
+        "southampton-education-online-msc": {
+          "name": "Education (Online) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4428668cc226864e2763476781f08c6639ded1e0aef1a65e35d1ca7e06f5a10e"
+        },
+        "southampton-education-practice-and-innovation-msc": {
+          "name": "Education Practice and Innovation (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ba6be7a902adc1b1ee49cdb343961f37ce70d0c21b81980b9067ea275b0b83a3"
+        },
+        "southampton-electrical-power-systems-msc": {
+          "name": "Electrical Power Systems (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4fbe70ea591ae0fdfa165eabac5a92224381f49d5304ad44e869c17bde09e715"
+        },
+        "southampton-electrochemistry-and-battery-technologies-msc": {
+          "name": "Electrochemistry and Battery Technologies (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f856484dd9f453a69c1009000eb196a9fdeed4adb9d4fb3ea8a5761b02babaea"
+        },
+        "southampton-electronic-engineering-msc": {
+          "name": "Electronic Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "09db99dfca7e5c597a5331dba198afec2742bbd9045c26627a29ed9a75e4b5d6"
+        },
+        "southampton-energy-and-sustainability-energy-environment-and-buildings-msc": {
+          "name": "Energy and Sustainability: Energy, Environment and Buildings (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dff97a5137934753c1c5481e4f867f13db81938b28c2ebb8cd5f12196ef2ef81"
+        },
+        "southampton-energy-and-sustainability-energy-resources-and-climate-change-msc": {
+          "name": "Energy and Sustainability: Energy, Resources and Climate Change (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "691c4cc7cf626de22c38bb8c140ae11d8d28bfce8288e92c4bcefa88c5fda1da"
+        },
+        "southampton-engineering-materials-advanced-mechanical-engineering-science-msc": {
+          "name": "Engineering Materials (Advanced Mechanical Engineering Science) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "807eb9daa285a2588c07fe7bc7e1bbb9679f19b0e225f860b1dbc080a3bb6279"
         },
         "southampton-english-literary-studies-eighteenth-century-ma": {
           "name": "English Literary Studies (Eighteenth Century) (MA)",
@@ -141,7 +605,7 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "64ab4cf0081a235d7217a60dc2377947c4d813504ad19166e250c685305cf8b5"
         },
         "southampton-english-literary-studies-nineteenth-century-ma": {
           "name": "English Literary Studies (Nineteenth Century) (MA)",
@@ -149,7 +613,7 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "0d7d848d7420147ec1ec79d5ba09553852d23ad41e12113a2b7cf889351f2347"
         },
         "southampton-english-literary-studies-postcolonial-and-world-literatures-ma": {
           "name": "English Literary Studies (Postcolonial and World Literatures) (MA)",
@@ -157,7 +621,7 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "7c134f31549041403d5a4854730046a18f0aa3e958afda7e00f21d0d816b0c0b"
         },
         "southampton-english-literary-studies-twentieth-century-and-contemporary-ma": {
           "name": "English Literary Studies (Twentieth Century and Contemporary) (MA)",
@@ -165,7 +629,991 @@
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "c6e62a8ecfba05661ad28ffeea938cd7e72c9aa2f43e5999ee9b56915a3f98af"
+          "deadlineHash": "f93ca027a8e50b561bfc9bfaed0e779eef7aae73c219152fd8345811464731be"
+        },
+        "southampton-english-literature-ma": {
+          "name": "English Literature (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2a2df90c962cd0040d3b95500c27e70a4cb7675df09241181f118d49bea09054"
+        },
+        "southampton-environmental-and-spatial-design-ma": {
+          "name": "Environmental and Spatial Design (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "southampton-environmental-consultancy-msc": {
+          "name": "Environmental Consultancy (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f09af21338fff15d10b11c797ba733702c6a2d9aaec9472d087ee663b14b36c1"
+        },
+        "southampton-environmental-monitoring-and-assessment-msc": {
+          "name": "Environmental Monitoring and Assessment (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "337dd1a8d6c0a7a9032ea8c685c5a4426b3a84d4e2ad52e7ef3244146b42a4a2"
+        },
+        "southampton-environmental-pollution-control-msc": {
+          "name": "Environmental Pollution Control (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6234b90f68f9392e3d7762170f4dfa4a7ea3ff7fc0dd90c19a1b9057273144fe"
+        },
+        "southampton-european-master-s-in-embedded-computing-systems-msc": {
+          "name": "European Master's in Embedded Computing Systems (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "southampton-evolution-from-the-galapagos-to-the-21st-century-mres": {
+          "name": "Evolution: From the Galapagos to the 21st Century (MRes)",
+          "degreeType": "MRes",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f7844b228492b5f5cb520a35eb60ac9200bcdd316a6288fb09318c85d210791f"
+        },
+        "southampton-fashion-design-ma": {
+          "name": "Fashion Design (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0df47af91c590f4bfb2b8d3a148824bb2d6b75063ee2f35bfad8eab1cdaf624d"
+        },
+        "southampton-fashion-management-ma": {
+          "name": "Fashion Management (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fc9d2f602c0f3f6b299d93ae1baa422e598a33ed57444b3d742b39520e04b830"
+        },
+        "southampton-fashion-marketing-and-branding-ma": {
+          "name": "Fashion Marketing and Branding (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4ea221c085fecae5952945d9100547e89a0faaecfab6a4a4e5fe2fb341a9fe1d"
+        },
+        "southampton-film-and-cultural-management-ma": {
+          "name": "Film and Cultural Management (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5a4d439ec1accbaf51829a0251761482840f7bf4baa917f5bc19d2b2b9df5f64"
+        },
+        "southampton-film-studies-ma": {
+          "name": "Film Studies (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b450702215bfea2af44cca57b3a6deb4ad1a8388acb7fce76c6b732e5ceba021"
+        },
+        "southampton-finance-and-econometrics-msc": {
+          "name": "Finance and Econometrics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f094140454a7f721308109e00c2599c461bcb103d6ef1309ea359bdfebf36d7e"
+        },
+        "southampton-finance-and-economics-msc": {
+          "name": "Finance and Economics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "443bdee2b792104becf39b7bb03131e233305d929e8ba1f09c33257048addbec"
+        },
+        "southampton-finance-and-investment-msc": {
+          "name": "Finance and Investment (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d6b86f34bd054aacf39b7f46381f862f2de69544df4fdd246761f7ac3713186c"
+        },
+        "southampton-finance-msc": {
+          "name": "Finance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dfdbeaeefc0e0d6a951a463bcf39d0d1cd21cf3fe211bb58713edc440fb4e5ae"
+        },
+        "southampton-financial-technology-fintech-and-ai-msc": {
+          "name": "Financial Technology (FinTech) and AI (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "94abe9cc3d6c3b9e46011f1889ceca730f4753a5745004c0edfab5fae4160bc8"
+        },
+        "southampton-fine-art-ma": {
+          "name": "Fine Art (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "313cbfe5062372cc9b5dfc42a5fd11ca9c52327e292a00e07b6ee7c2a29ccdb8"
+        },
+        "southampton-genomics-msc": {
+          "name": "Genomics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "64556e459bfb120847af0156d8559755344f9b7f8257bbbb2d345986f05c18d6"
+        },
+        "southampton-geographical-information-systems-and-remote-sensing-msc": {
+          "name": "Geographical Information Systems and Remote Sensing (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2898ba0628be6b7798938047c50f8f92066ad767933435cdacd81e93704912c6"
+        },
+        "southampton-geophysics-msc": {
+          "name": "Geophysics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bbe24988f31bfa2f5f9412bf7d51a1fd6a5e9385d2e459f794de1186c7cb416b"
+        },
+        "southampton-gerontology-distance-learning-msc": {
+          "name": "Gerontology (Distance Learning) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "aa1d2f154a65299c91a108e5a8bfa51e50b86e6b01326259da1c0f832f63a18c"
+        },
+        "southampton-gerontology-msc": {
+          "name": "Gerontology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "173ed4aa15c794a7d75c5e3cb3a428028aaffe2e8c1dea7e1a82004c427dac76"
+        },
+        "southampton-gerontology-research-msc": {
+          "name": "Gerontology: Research (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "93e2d44b1307107d93f8a40a00426d608a7440695c8f81fa25accde07057b8fd"
+        },
+        "southampton-global-advertising-and-branding-ma": {
+          "name": "Global Advertising and Branding (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "38c24ce0c19459eb560348698c532eddbca2ed51b9f8b0a1c4b77d42ff7c0aab"
+        },
+        "southampton-global-ageing-and-policy-distance-learning-msc": {
+          "name": "Global Ageing and Policy (Distance Learning) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "38689de3dc0e912e5f846699f223bc3c8e710c65e7254cf1025d57b327e6dafc"
+        },
+        "southampton-global-business-ethics-and-philosophy-of-management-ma": {
+          "name": "Global Business Ethics and Philosophy of Management (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3836241e4680da7720fc70d559d9f70fd10f5b6cb75e5af402bf3df000a9994c"
+        },
+        "southampton-global-challenges-history-policy-and-practice-ma": {
+          "name": "Global Challenges - History, Policy and Practice (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "089df6befc22509332f2db283b1373a3212bf8f6640919fe8da6028e4459b03e"
+        },
+        "southampton-global-executive-master-of-business-administration-mba": {
+          "name": "Global Executive Master of Business Administration (MBA)",
+          "degreeType": "MBA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f63740d907841a8c5f066986b84938d232b45ced77354ac866a1c3e222d04f65"
+        },
+        "southampton-global-health-msc": {
+          "name": "Global Health (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "73c38690c8ff6835e6014ea207333bb84876b0030f1c49260dff6d1205cd14cd"
+        },
+        "southampton-global-marine-resource-management-msc": {
+          "name": "Global Marine Resource Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "southampton-global-media-and-publishing-management-ma": {
+          "name": "Global Media and Publishing Management (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9613db5816b1ddfdcd4cc371bb29938c7bb45265ba45a203c99b884d1620dbbe"
+        },
+        "southampton-global-sociology-challenges-interventions-and-action-msc": {
+          "name": "Global Sociology: Challenges, Interventions and Action (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "09dd2982dc7eb4287a2a363c857e172f1496e0aa6e5dbdb53e8740159ee2a1ee"
+        },
+        "southampton-health-psychology-msc": {
+          "name": "Health Psychology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8eb9340a4a0a9a3ee51a4027082c0926ebe24fe2989744e54fbc7cdbcca6c208"
+        },
+        "southampton-higher-archaeological-practice-msc": {
+          "name": "Higher Archaeological Practice (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fc8170e8616c1cdcd6d121f6e4680ef08617e6747ab9cbda20bcb7fdfc0a3049"
+        },
+        "southampton-history-ma": {
+          "name": "History (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ba1e139bca896f4dcc729191af88f4d082cf9834c6b3fcedd5f62051920288ce"
+        },
+        "southampton-holocaust-history-experience-heritage-ma": {
+          "name": "Holocaust: History, Experience, Heritage (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0c98b0c44e00979471968a94c544191b2ce264eadd40f738cbb6e6a326336f72"
+        },
+        "southampton-human-factors-and-ergonomics-msc": {
+          "name": "Human Factors and Ergonomics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d3b57c7d49ac2509f6986531b106e8810d3dcb5cedf33ffab18da61e88fe812f"
+        },
+        "southampton-human-resource-management-msc": {
+          "name": "Human Resource Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4d4fe28901ec0f0eb0fc54a13732a3b431a4831d1a20f5d412018446b3467cc2"
+        },
+        "southampton-international-accounting-and-governance-msc": {
+          "name": "International Accounting and Governance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ab2b8c3eb20e1d92515fcb2ab1ea9688a131651fb7466efddd35239967b9fc67"
+        },
+        "southampton-international-accounting-and-sustainability-msc": {
+          "name": "International Accounting and Sustainability (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "16f26aaedae9c6bd2f8c290d9474f8e07cc62987477af4931a31c65bcbe74503"
+        },
+        "southampton-international-commercial-and-corporate-law-llm": {
+          "name": "International Commercial and Corporate Law (LLM)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1295445b31fd972e65b45fb05074a77c1bbda4942329bbc86f37b8eec4ca3c80"
+        },
+        "southampton-international-criminology-and-criminal-justice-msc": {
+          "name": "International Criminology and Criminal Justice (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3e61d3ae0ac40768ed1079c0c8cab62062a9b5558ba2757ddaa302026dd9cfd9"
+        },
+        "southampton-international-entrepreneurship-and-management-msc": {
+          "name": "International Entrepreneurship and Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a700d3145bebc2290d361f955b21e61b6b465870cb3ef946c2578c3a900ac038"
+        },
+        "southampton-international-law-and-human-rights-llm": {
+          "name": "International Law and Human Rights (LLM)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1ef4ea16d2facd61d22b780f3727f586534385af84b63e8e6609bff22cbb3c9f"
+        },
+        "southampton-international-management-msc": {
+          "name": "International Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dfe4b9de3fdc94e31bf625fc1816836e13ac5a47f9a5d6743a92a4d20fc0d8e9"
+        },
+        "southampton-international-music-management-ma": {
+          "name": "International Music Management (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ff36beda7bcc3f22522f091a16e789d42da22ba850ad52ff32ab8ba6adf5eef5"
+        },
+        "southampton-international-security-and-risk-msc": {
+          "name": "International Security and Risk (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2047447e230da3e11a677932029d449f90d8ed97b0e38970ca5d5cba03d3e4c0"
+        },
+        "southampton-internet-of-things-msc": {
+          "name": "Internet of Things (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e25bc810e93cc46d83014cc0f0c8846f9bc0ff3d4045dc8a40f3b4d19eb9b61e"
+        },
+        "southampton-languages-and-cultures-ma": {
+          "name": "Languages and Cultures (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9cbee29e057a4c0dc75ed46ade4365bbb4f3e112f11bd32879a734f7de282c80"
+        },
+        "southampton-laws-llm": {
+          "name": "Laws (LLM)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3c4769fd38098363d8278731a22a9c31c7192e9f994461af9b7fa88e59e89f1f"
+        },
+        "southampton-leadership-and-management-in-health-and-social-care-msc": {
+          "name": "Leadership and Management in Health and Social Care (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3a95ef7d35bd8e676a6461e6d1c1ee5d7ade67f3707d72708a360eca904f32d5"
+        },
+        "southampton-logistics-and-supply-chain-analytics-msc": {
+          "name": "Logistics and Supply Chain Analytics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "077ac108d1c5aa9f124e41aaa41bb4cb678ceab1a5362373099f3cc2bbedb1d5"
+        },
+        "southampton-luxury-brand-management-ma": {
+          "name": "Luxury Brand Management (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "edce8ac792074e45b571b78ab4fbca49128fc974bcb540cbc2cc7be73c1a3f72"
+        },
+        "southampton-machine-learning-msc": {
+          "name": "Machine Learning (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bd501d5b80d9e38acf4d14b20538407dc86c86cbba0783196b0692d464bbab44"
+        },
+        "southampton-management-and-artificial-intelligence-msc": {
+          "name": "Management and Artificial Intelligence (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5c0fd1289acfa13745c51c869112c2d26bd0e23475e3d5e8185059215f48b49e"
+        },
+        "southampton-management-msc": {
+          "name": "Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "534ce969d5ab87012c56a875899cb9c57bbd0a2326b437c859bbc541fb6bd52b"
+        },
+        "southampton-marine-environment-and-resources-msc": {
+          "name": "Marine Environment and Resources (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "southampton-maritime-archaeology-msc": {
+          "name": "Maritime Archaeology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a9ba43bcd9e7b314e638430e989062b4219c424dd59daef758d842f5807af9af"
+        },
+        "southampton-maritime-engineering-science-advanced-computational-engineering-msc": {
+          "name": "Maritime Engineering Science: Advanced Computational Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "660d3bdaafda1e6bfa374497e81021dcd19d00833f9c08b367a21ea815183412"
+        },
+        "southampton-maritime-engineering-science-marine-engineering-and-autonomy-msc": {
+          "name": "Maritime Engineering Science: Marine Engineering and Autonomy (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "08ac39515ddf58e621377b7f388b4e633cebc85f8629ee0fdfda1bee9009fa29"
+        },
+        "southampton-maritime-engineering-science-naval-architecture-msc": {
+          "name": "Maritime Engineering Science: Naval Architecture (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "db75e3e4b6ad7c7179ee49945632019cd4390bb6ce9ecc3b57bd7ef052bd3a10"
+        },
+        "southampton-maritime-engineering-science-ocean-energy-offshore-engineering-msc": {
+          "name": "Maritime Engineering Science: Ocean Energy & Offshore Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b7bc3e18c0ac9d1357a8a6d4fa82e38e065fa559c5627a5349b66fdfa47febe6"
+        },
+        "southampton-maritime-engineering-science-yacht-and-high-performance-craft-msc": {
+          "name": "Maritime Engineering Science: Yacht and High-performance Craft (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ce3a4599156f0b324eb319036e9a8a6c0f43c044517a1ceab0f5f25a48efd849"
+        },
+        "southampton-maritime-law-llm": {
+          "name": "Maritime Law (LLM)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a615713a0cda05b449905d0d3d5e92261c10d8b67d5dcd1978149d8095d1f53c"
+        },
+        "southampton-marketing-analytics-msc": {
+          "name": "Marketing Analytics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dde8f5403b20794abe953a336656d71df306d8dcd7cd9c517789931f7e862295"
+        },
+        "southampton-marketing-management-msc": {
+          "name": "Marketing Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "754a2f166a036f27b7f06e0a1f907c1452d902984200ad3f77efd1f837a1e115"
+        },
+        "southampton-mba-master-of-business-administration-mba": {
+          "name": "MBA Master of Business Administration (MBA)",
+          "degreeType": "MBA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2b5bc3ed2b519beccdb655f33101b97bed7707ccad09ea2b23d6003c2ac4d786"
+        },
+        "southampton-mechatronics-advanced-mechanical-engineering-science-msc": {
+          "name": "Mechatronics (Advanced Mechanical Engineering Science) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ee6ebc974d7dc2b53d97c42c5bca17f323acc9d4a097eac3bd4659233fcc2b82"
+        },
+        "southampton-medical-technology-innovation-and-design-msc": {
+          "name": "Medical Technology, Innovation and Design (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3403e3831ee6f81acf04aa1e4497212b4ef775365ada5e119ecc0517d699b90d"
+        },
+        "southampton-micro-and-nanotechnology-msc": {
+          "name": "Micro and Nanotechnology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4247ad5c6f11d9f475216a7a317fde972bb698e744f6e9a490dc61c91ac9693e"
+        },
+        "southampton-microelectronics-systems-design-msc": {
+          "name": "Microelectronics Systems Design (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2a31b8b0c341e7cd881647b287620493369c2a3d73127d2f7580e3b7a2a6df19"
+        },
+        "southampton-mobile-communications-and-smart-networking-msc": {
+          "name": "Mobile Communications and Smart Networking (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "de5ef1ab7fc7ccb6ae688cbfd8b684c49318eb600eff67146071b522f2caaf59"
+        },
+        "southampton-music-composition-mmus": {
+          "name": "Music (Composition) (MMus)",
+          "degreeType": "MMus",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "428441b80f9eda565604a6783a604f3f41c90cd2cd8ddbbb338f72aa2835baf4"
+        },
+        "southampton-music-education-mmus": {
+          "name": "Music (Education) (MMus)",
+          "degreeType": "MMus",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "08594b385e7b066b9b00f18d5512dd7671948784b70cecae56ad597364ed45db"
+        },
+        "southampton-music-musicology-mmus": {
+          "name": "Music (Musicology) (MMus)",
+          "degreeType": "MMus",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "85d120ae74613c759f20fe82fb5dbc0c44c74aa260674a8f67d0221b9e59fbc4"
+        },
+        "southampton-music-performance-mmus": {
+          "name": "Music (Performance) (MMus)",
+          "degreeType": "MMus",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "30e920bcfc0e1c5cd01198dba182bbf36c55b77f427f74e6a552fc949c490d79"
+        },
+        "southampton-neonatology-msc": {
+          "name": "Neonatology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c059e72fb4fc1438dbb3e6895be7b62224a7c82e6eb446067bac3380238a60da"
+        },
+        "southampton-nursing-adult-msc": {
+          "name": "Nursing: Adult (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0a7a94ba8cabbc458daf33e5858dfb87f892e2e31735f91051717df2e929d454"
+        },
+        "southampton-nursing-child-msc": {
+          "name": "Nursing: Child (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "41bd84c0a1847da2d80e254c8ecce07e1aa14303d58e8910c5f269a42f67520e"
+        },
+        "southampton-nursing-mental-health-msc": {
+          "name": "Nursing: Mental Health (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "13d5eb4b7008312f7747aa054d1d336aa2948192a3dc79a7e3c16346b1d7697b"
+        },
+        "southampton-nursing-studies-msc": {
+          "name": "Nursing Studies (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ff1923a9578dbe34b519b8c5e513bcb91515503c0e17794cd12d07268f103186"
+        },
+        "southampton-ocean-and-earth-science-by-research-msc": {
+          "name": "Ocean and Earth Science by Research (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9ff92687eac812fdf687f8af703983d7b2296410631a0c851ee8c7a4314e3ecb"
+        },
+        "southampton-oceanography-msc": {
+          "name": "Oceanography (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f23abe382109f6dfdb5ad499d80e383fc018f84a53c6391cf2c90bac3615a64a"
+        },
+        "southampton-operational-research-and-data-science-msc": {
+          "name": "Operational Research and Data Science (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5da3e70f6ea7784e3315a417dc0c6bd69f69289d533004666f078db06e4026f3"
+        },
+        "southampton-operational-research-and-finance-msc": {
+          "name": "Operational Research and Finance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "db51d556243975be46b33f73e2d80ac10293aa3998dd0c445567b9bfc01955da"
+        },
+        "southampton-optical-engineering-msc": {
+          "name": "Optical Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d647e67414a84399c3587aaba4a848ec971b81915994cf8e6b02f91491e7fc66"
+        },
+        "southampton-philosophy-ma": {
+          "name": "Philosophy (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "540d2af550cea1647c751b10d1f7a484b1bc7a511bf4c80a49ab04df1aa9ff9e"
+        },
+        "southampton-politics-msc": {
+          "name": "Politics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f090f959c71aa0ee99861627975d658c7aec07b3e9a8f8070db26e6c37e1e81c"
+        },
+        "southampton-professional-practice-in-health-sciences-msc": {
+          "name": "Professional Practice in Health Sciences (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "92e06a9bf762ff4cac1544ca8e755ecac7397b6fa0fd4f9f94ce61008aa3c846"
+        },
+        "southampton-project-management-msc": {
+          "name": "Project Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6dba94b4e6752588a784d69be79e2de254ea8ffeb3729b1198886f83f63610ff"
+        },
+        "southampton-propulsion-and-engine-systems-engineering-advanced-mechanical-engineering-science-msc": {
+          "name": "Propulsion and Engine Systems Engineering (Advanced Mechanical Engineering Science) (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "eb710cae069810bbfe782037b3660bd438e6bf44ce3b9e4829dee980d4dc54a2"
+        },
+        "southampton-psychology-cognitive-psychology-msc": {
+          "name": "Psychology: Cognitive Psychology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "56ae96960c31d2358e7de8c9b8518e652dcc17906759bf9db8423b83cc639e08"
+        },
+        "southampton-psychology-msc": {
+          "name": "Psychology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2f543ec45e2bde52cada0a6389f7f707322147fb220d4d100908b87063b87278"
+        },
+        "southampton-psychology-research-methods-msc": {
+          "name": "Psychology: Research Methods (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "990c53510ff34d570a9b2c367e29c10e2ecfd87de8a4147735e0177de91b2152"
+        },
+        "southampton-psychology-social-psychology-msc": {
+          "name": "Psychology: Social Psychology (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "08232b120a2369c03fb0e301be04cd6b2e402fa31bda81598ccd4d92c1971c5c"
+        },
+        "southampton-public-administration-mpa": {
+          "name": "Public Administration (MPA)",
+          "degreeType": "MPA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9caae7ede6fbf41e2ec119d6734b1c49cd56a86d3fbd065838a6cbe84aec1111"
+        },
+        "southampton-public-health-mph": {
+          "name": "Public Health (MPH)",
+          "degreeType": "MPH",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6613b080c16358a0a276305fab25d79c7a4e7dac6fa861e6b569ffd0c87c6391"
+        },
+        "southampton-race-car-aerodynamics-msc": {
+          "name": "Race Car Aerodynamics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7899a54238ffc4fbcfcb3c580c92662a0fa4ca9ded3fdadcbd3373fb089db7d0"
+        },
+        "southampton-risk-and-finance-msc": {
+          "name": "Risk and Finance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "744059644116a256869c009c9b30a42901a2ab95511b2e9450e7d56d8333915f"
+        },
+        "southampton-risk-management-msc": {
+          "name": "Risk Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b22654f127d68449e6d76cd9f1a01347897d870bf5ddd0ef63299440fbe686cd"
+        },
+        "southampton-robotics-and-autonomous-systems-msc": {
+          "name": "Robotics and Autonomous Systems (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7866edaf1227da71d21a04cd4036aabfad340cec16971ad461568bd2205acf6c"
+        },
+        "southampton-shipping-finance-msc": {
+          "name": "Shipping Finance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "21c7192c77b4471a29636dcf0377b4d29f3469d627877f0a07aa177a35b124f4"
+        },
+        "southampton-social-research-methods-with-applied-statistics-msc": {
+          "name": "Social Research Methods with Applied Statistics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "15846d4dda9e5029e4a4a1c10779aabaa2d7c898d81014716f00264d7cc3df16"
+        },
+        "southampton-social-research-methods-with-demography-msc": {
+          "name": "Social Research Methods with Demography (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "84e8952260a83fca472656df22cd128237b9aff4c3cf7cc49a064a6e29c32842"
+        },
+        "southampton-software-engineering-msc": {
+          "name": "Software Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "90e1a50ae464389b11aab185ffaed3eade9a01179f9bcc8e0132bdeb68a74d54"
+        },
+        "southampton-space-systems-engineering-msc": {
+          "name": "Space Systems Engineering (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1de0215c7c5f6fd5cdefb3781455594add5da19d8a1a0a0b44678c3dea8095f4"
+        },
+        "southampton-statistics-msc": {
+          "name": "Statistics (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "87434c1dcc217f6958d20ccc0fa26c346f66973a3dc2c5d9fb16c22e345403ad"
+        },
+        "southampton-statistics-with-applications-in-medicine-msc": {
+          "name": "Statistics with Applications in Medicine (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a7128307030d7ae9753af2e0e0eb8184af85826030252233f9df042dedfed288"
+        },
+        "southampton-strategic-operations-and-supply-chain-management-msc": {
+          "name": "Strategic Operations and Supply Chain Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "77ddb70422b10e1a3340d5a33747a86231f14884f4771e7ce875024c51d02a3b"
+        },
+        "southampton-sustainability-msc": {
+          "name": "Sustainability (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c875c0cdcf4cd439d4e0f8a8d8f1bdc50223055a7bd90eaeb57395a4996e8191"
+        },
+        "southampton-sustainable-energy-technologies-msc": {
+          "name": "Sustainable Energy Technologies (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c5624315a41a61fab964c738bb1f39ef4317372d8df26cafddc7c1d55651cc50"
+        },
+        "southampton-sustainable-finance-msc": {
+          "name": "Sustainable Finance (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "865875c42049bc942516079bb159918f58ecc517f6aa3ecaad3b3120106d938a"
+        },
+        "southampton-systems-control-and-signal-processing-msc": {
+          "name": "Systems, Control and Signal Processing (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b1c7b74c32e03ca21268546b084f3237e8c83c443a68a6ec7123c89ee1ab830a"
+        },
+        "southampton-tesol-for-experienced-teachers-ma": {
+          "name": "TESOL for Experienced Teachers (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ba902377594a989d879ef8957754af342301ae3ee3594203d03864233b5dc436"
+        },
+        "southampton-tesol-ma": {
+          "name": "TESOL (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ebf9364ae65fdc9aeb0406bdbea91fde11b42bed835a7206213a5f260c21de08"
+        },
+        "southampton-textile-design-ma": {
+          "name": "Textile Design (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "64afa475951374bf68f4d1d3787d879685403ff432a5db198be6e7ff8110f534"
+        },
+        "southampton-translation-technology-digital-communication-ma": {
+          "name": "Translation Technology & Digital Communication (MA)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "cb448f27c619a4c760480793ed4acc0523a44e2a6cd54f534d1e222fb11f2328"
+        },
+        "southampton-transportation-planning-and-engineering-behaviour-msc": {
+          "name": "Transportation Planning and Engineering: Behaviour (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "32ea546ee763a3f9d4f14e221a8f10874345ee006a724022b7f65d3e303d2c52"
+        },
+        "southampton-transportation-planning-and-engineering-infrastructure-msc": {
+          "name": "Transportation Planning and Engineering: Infrastructure (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4d5443b8dd94319d325e7a9e1a6ae85161f843396682545ab28dec7ed5bcc6b4"
+        },
+        "southampton-transportation-planning-and-engineering-operations-msc": {
+          "name": "Transportation Planning and Engineering: Operations (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e33db4f7c27215c0556fca85b26ab158f705c8fdcc5956a11e91964825ccff48"
+        },
+        "southampton-water-resources-management-msc": {
+          "name": "Water Resources Management (MSc)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c5a65377b29a68fc5342028600dded002ad5339b51038e08ca4c22c6179d13c0"
+        },
+        "southampton-wildlife-conservation-mres": {
+          "name": "Wildlife Conservation (MRes)",
+          "degreeType": "MRes",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "80928e44b9274776778a42caa599573a46c36d32ba77a7e488ca3f4d84987cb8"
         }
       }
     }
