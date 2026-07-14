@@ -219,6 +219,84 @@ def test_discovery_creates_candidates_without_mutating_programmes(
     assert repeated["pendingWindowCandidates"] == 1
 
 
+def test_dedicated_adapter_can_replace_stale_pending_candidates(tmp_path) -> None:
+    class ReplacingAdapter:
+        university_id = "example-university"
+        catalog_url = "https://example.edu/programmes"
+        intake = "September 2027"
+        application_opens_at_basis = "missing"
+        replace_pending_candidates = True
+
+        def parse_catalog(self, _html):
+            return DiscoveredCatalog(
+                application_opens_at=None,
+                programmes=[
+                    DiscoveredProgramme(
+                        id="example-current-msc",
+                        name="Current MSc",
+                        degree_type="MSc",
+                        faculty="",
+                        department="",
+                        source_url="https://example.edu/programmes/current",
+                        application_url="https://example.edu/apply",
+                        windows=[],
+                        deadline_text="No exact deadline published.",
+                        parse_status="no-deadline",
+                    )
+                ],
+            )
+
+    programs_path = tmp_path / "programs.json"
+    candidates_path = tmp_path / "programme-candidates.json"
+    state_path = tmp_path / "programme-catalog-state.json"
+    programs_path.write_text(json.dumps({"programs": []}), encoding="utf-8")
+    candidates_path.write_text(
+        json.dumps(
+            {
+                "items": [
+                    {
+                        "id": "new-programme:example-stale-msc",
+                        "type": "new-programme",
+                        "universityId": "example-university",
+                        "status": "pending",
+                    },
+                    {
+                        "id": "new-programme:example-reviewed-msc",
+                        "type": "new-programme",
+                        "universityId": "example-university",
+                        "status": "approved",
+                    },
+                    {
+                        "id": "new-programme:other-msc",
+                        "type": "new-programme",
+                        "universityId": "other-university",
+                        "status": "pending",
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    discover_programmes(
+        ReplacingAdapter(),
+        programs_path=programs_path,
+        candidates_path=candidates_path,
+        state_path=state_path,
+        fetcher=lambda url: "",
+    )
+
+    candidate_ids = {
+        item["id"]
+        for item in json.loads(candidates_path.read_text(encoding="utf-8"))["items"]
+    }
+    assert candidate_ids == {
+        "new-programme:example-current-msc",
+        "new-programme:example-reviewed-msc",
+        "new-programme:other-msc",
+    }
+
+
 def test_known_programme_window_change_becomes_review_candidate(tmp_path) -> None:
     programs_path = tmp_path / "programs.json"
     applications_path = tmp_path / "applications.json"

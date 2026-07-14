@@ -35,6 +35,7 @@ from .programme_adapters.hku import HKUAdapter
 from .programme_adapters.hkust import HKUSTAdapter
 from .programme_adapters.imperial import ImperialAdapter
 from .programme_adapters.kcl import KCLAdapter
+from .programme_adapters.manchester import ManchesterAdapter
 from .programme_adapters.melbourne import MelbourneAdapter
 from .programme_adapters.mit import MITAdapter
 from .programme_adapters.monash import MonashAdapter
@@ -77,6 +78,7 @@ PROGRAMME_ADAPTERS = {
     "imperial": ImperialAdapter,
     "kcl": KCLAdapter,
     "melbourne": MelbourneAdapter,
+    "manchester": ManchesterAdapter,
     "mit": MITAdapter,
     "monash": MonashAdapter,
     "nus": NUSAdapter,

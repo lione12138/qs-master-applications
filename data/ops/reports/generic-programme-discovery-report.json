@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T09:09:10.856030+00:00",
+    "updatedAt": "2026-07-14T15:31:26.549034+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed.",
@@ -13,10 +13,10 @@
     "schoolsSkipped": 2,
     "readyToApprove": 0,
     "needsOpeningReview": 0,
-    "needsOpeningDate": 205,
+    "needsOpeningDate": 289,
     "needsAdapter": 381,
     "comingSoonMonitor": 4,
-    "deadlineUnavailableMonitor": 24
+    "deadlineUnavailableMonitor": 174
   },
   "results": [
     {
@@ -153,20 +153,254 @@
     "needsOpeningReview": [],
     "needsOpeningDate": [
       {
-        "id": "new-programme:manchester-analytical-chemistry-and-measurement-science-online-msc-pgdip-pgcert",
+        "id": "new-programme:manchester-llm-corporate-governance",
         "universityId": "the-university-of-manchester",
-        "programmeName": "Analytical Chemistry and Measurement Science (online) MSc/PGDip/PGCert",
-        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19383/msc-pgdip-pgcert-analytical-chemistry-and-measurement-science-online/",
-        "windowCount": 2,
+        "programmeName": "LLM Corporate Governance",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/05861/llm-corporate-governance/",
+        "windowCount": 4,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
-        "id": "new-programme:manchester-msc-advanced-chemical-engineering",
+        "id": "new-programme:manchester-llm-intellectual-property-law",
         "universityId": "the-university-of-manchester",
-        "programmeName": "MSc Advanced Chemical Engineering",
-        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07354/msc-advanced-chemical-engineering/",
-        "windowCount": 1,
+        "programmeName": "LLM Intellectual Property Law",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01061/llm-intellectual-property-law/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-llm-international-business-and-commercial-law",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "LLM International Business and Commercial Law",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07991/llm-international-business-and-commercial-law/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-llm-international-economic-law",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "LLM International Economic Law",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18222/llm-international-economic-law/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-llm-international-financial-law",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "LLM International Financial Law",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01060/llm-international-financial-law/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-llm-law",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "LLM Law",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08446/llm-law/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-llm-public-international-law",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "LLM Public International Law",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09644/llm-public-international-law/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-llm-security-and-international-law",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "LLM Security and International Law",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09658/llm-security-and-international-law/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-art-gallery-and-museum-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Art Gallery and Museum Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01100/ma-art-gallery-and-museum-studies/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-arts-management-policy-and-practice",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Arts Management, Policy and Practice",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08035/ma-arts-management-policy-and-practice/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-creative-and-cultural-industries",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Creative and Cultural Industries",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20176/ma-creative-and-cultural-industries/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-digital-media-culture-and-society",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Digital Media, Culture and Society",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20641/ma-digital-media-culture-and-society/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-digital-technologies-communication-and-education",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Digital Technologies, Communication and Education",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07022/ma-digital-technologies-communication-and-education/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-economics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Economics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08084/ma-economics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-educational-leadership",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Educational Leadership",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08289/ma-educational-leadership/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-humanitarianism-and-conflict-response",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Humanitarianism and Conflict Response",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08264/ma-humanitarianism-and-conflict-response/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-intercultural-communication",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Intercultural Communication",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08815/ma-intercultural-communication/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-education",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Education",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/13005/ma-international-education/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-education-curriculum-and-pedagogy",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Education (Curriculum and Pedagogy)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21191/ma-international-education-curriculum-and-pedagogy/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-education-equity-diversity-and-inclusion",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Education (Equity, Diversity and Inclusion)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/13007/ma-international-education-equity-diversity-and-inclusion/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-education-higher-education",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Education (Higher Education)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/13008/ma-international-education-higher-education/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-education-tesol",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Education (TESOL)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/13009/ma-international-education-tesol/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-political-economy-standard",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Political Economy (Standard)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10876/ma-international-political-economy-standard/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-relations-standard",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Relations (Standard)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10872/ma-international-relations-standard/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-political-economy-standard-route",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Political Economy (Standard Route)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06969/ma-political-economy-standard-route/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-translation-and-interpreting-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Translation and Interpreting Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07006/ma-translation-and-interpreting-studies/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-ma-visual-anthropology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Visual Anthropology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10029/ma-visual-anthropology/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-med-psychology-of-education",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MEd Psychology of Education",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01527/med-psychology-of-education/",
+        "windowCount": 4,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -175,7 +409,7 @@
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Advanced Computer Science",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21573/msc-advanced-computer-science/",
-        "windowCount": 8,
+        "windowCount": 4,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -184,7 +418,7 @@
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Advanced Control and Systems Engineering",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04166/msc-advanced-control-and-systems-engineering/",
-        "windowCount": 8,
+        "windowCount": 4,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -193,7 +427,7 @@
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Advanced Control and Systems Engineering with Extended Research",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12729/msc-advanced-control-and-systems-engineering-with-extended-research/",
-        "windowCount": 8,
+        "windowCount": 4,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -202,7 +436,7 @@
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Advanced Engineering Materials",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04169/msc-advanced-engineering-materials/",
-        "windowCount": 7,
+        "windowCount": 4,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -211,16 +445,7 @@
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Advanced Manufacturing Technology & Systems Management",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04172/msc-advanced-manufacturing-technology-and-systems-management/",
-        "windowCount": 6,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:manchester-msc-advanced-process-integration-and-design",
-        "universityId": "the-university-of-manchester",
-        "programmeName": "MSc Advanced Process Integration and Design",
-        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09760/msc-advanced-process-integration-and-design/",
-        "windowCount": 1,
+        "windowCount": 3,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -238,7 +463,538 @@
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Applied Mathematics",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09128/msc-applied-mathematics/",
-        "windowCount": 8,
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-artificial-intelligence",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Artificial Intelligence",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21574/msc-artificial-intelligence/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-biomaterials",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Biomaterials",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08839/msc-biomaterials/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-climate-change-science-society-and-solutions",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Climate Change: Science, Society and Solutions",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20311/msc-climate-change-science-society-and-solutions/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-clin-fixed-and-removable-prosthodontics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc (Clin) Fixed and Removable Prosthodontics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07770/msc-clin-fixed-and-removable-prosthodontics/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-clin-oral-and-maxillofacial-surgery",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc (Clin) Oral and Maxillofacial Surgery",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07776/msc-clin-oral-and-maxillofacial-surgery/",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-clinical-dentistry-paediatric-dentistry",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Clinical Dentistry (Paediatric Dentistry)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11762/msc-clinical-dentistry-paediatric-dentistry/",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-commercial-project-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Commercial Project Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04201/msc-commercial-project-management/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-communications-and-signal-processing",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Communications and Signal Processing",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12034/msc-communications-and-signal-processing/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-communications-and-signal-processing-with-extended-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Communications and Signal Processing with Extended Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12727/msc-communications-and-signal-processing-with-extended-research/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-construction-project-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Construction Project Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04218/msc-construction-project-management/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-cyber-security",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Cyber Security",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21575/msc-cyber-security/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-data-science-business-and-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Data Science (Business and Management)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11426/msc-data-science-business-and-management/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-data-science-computer-science-data-informatics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Data Science (Computer Science Data Informatics)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11552/msc-data-science-computer-science-data-informatics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-data-science-earth-and-environmental-analytics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Data Science (Earth and Environmental Analytics)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18096/msc-data-science-earth-and-environmental-analytics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-data-science-mathematics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Data Science (Mathematics)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11428/msc-data-science-mathematics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-data-science-social-analytics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Data Science (Social Analytics)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11424/msc-data-science-social-analytics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-data-science-urban-analytics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Data Science (Urban Analytics)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11425/msc-data-science-urban-analytics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-development-economics-and-policy",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Development Economics and Policy",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06012/msc-development-economics-and-policy/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-development-finance",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Development Finance",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06537/msc-development-finance/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-economics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Economics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01380/msc-economics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-economics-and-data-science",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Economics and Data Science",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21299/msc-economics-and-data-science/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-engineering-project-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Engineering Project Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04259/msc-engineering-project-management/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-environmental-governance",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Environmental Governance",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06967/msc-environmental-governance/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-financial-economics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Financial Economics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07946/msc-financial-economics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-fixed-and-removable-prosthodontics-dental-specialties",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Fixed and Removable Prosthodontics (Dental Specialties)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02149/msc-fixed-and-removable-prosthodontics-dental-specialties/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-geographical-information-science",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Geographical Information Science",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07053/msc-geographical-information-science/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-development-development-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Development (Development Management)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20472/msc-global-development-development-management/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-development-globalisation-trade-industry",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Development (Globalisation, Trade & Industry)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20490/msc-global-development-globalisation-trade-and-industry/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-human-resource-development-international-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Human Resource Development (International Development)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07862/msc-human-resource-development-international-development/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-human-resource-management-international-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Human Resource Management (International Development)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07866/msc-human-resource-management-international-development/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-international-development-public-policy-and-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc International Development: Public Policy and Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01211/msc-international-development-public-policy-and-management/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-international-disaster-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc International Disaster Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09910/msc-international-disaster-management/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-international-fashion-marketing",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc International Fashion Marketing",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09907/msc-international-fashion-marketing/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-international-fashion-retailing",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc International Fashion Retailing",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04317/msc-international-fashion-retailing/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-international-fashion-retailing-entrepreneurship-and-innovation",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc International Fashion Retailing (Entrepreneurship and Innovation)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18728/msc-international-fashion-retailing-entrepreneurship-and-innovation/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-machine-learning",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Machine Learning",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21576/msc-machine-learning/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-management-and-implementation-of-development-projects",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Management and Implementation of Development Projects",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02242/msc-management-and-implementation-of-development-projects/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-management-and-information-systems-change-and-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Management and Information Systems: Change and Development",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01388/msc-management-and-information-systems-change-and-development/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-management-of-projects",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Management of Projects",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04332/msc-management-of-projects/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-materials-engineering-for-sustainability-in-demanding-environments",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Materials Engineering for Sustainability in Demanding Environments",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21734/msc-materials-engineering-for-sustainability-in-demanding-environments/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-mathematical-finance",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Mathematical Finance",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02250/msc-mathematical-finance/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-mechanical-engineering-design",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Mechanical Engineering Design",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04342/msc-mechanical-engineering-design/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-nanomaterials",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Nanomaterials",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11998/msc-nanomaterials/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-organisational-change-and-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Organisational Change and Development",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02303/msc-organisational-change-and-development/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-pgdip-oral-and-maxillofacial-surgery-dental-specialties",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc/PGDip Oral and Maxillofacial Surgery (Dental Specialties)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02152/msc-pgdip-oral-and-maxillofacial-surgery-dental-specialties/",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-polymer-materials-science-and-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Polymer Materials Science and Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04380/msc-polymer-materials-science-and-engineering/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-pure-mathematics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Pure Mathematics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12519/msc-pure-mathematics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-pure-mathematics-and-mathematical-logic",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Pure Mathematics and Mathematical Logic",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09110/msc-pure-mathematics-and-mathematical-logic/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-real-estate-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Real Estate Development",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09632/msc-real-estate-development/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-real-estate-finance-and-investment",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Real Estate Finance and Investment",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21405/msc-real-estate-finance-and-investment/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-robotics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Robotics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20967/msc-robotics/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-robotics-with-extended-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Robotics with Extended Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21031/msc-robotics-with-extended-research/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-social-research-methods-and-statistics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Social Research Methods and Statistics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07982/msc-social-research-methods-and-statistics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-statistics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Statistics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02362/msc-statistics/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-structural-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Structural Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/04410/msc-structural-engineering/",
+        "windowCount": 3,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-textile-technology-technical-textiles",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Textile Technology (Technical Textiles)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08611/msc-textile-technology-technical-textiles/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-urban-design-and-international-planning",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Urban Design and International Planning",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09915/msc-urban-design-and-international-planning/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-msc-urban-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Urban Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20299/msc-urban-studies/",
+        "windowCount": 4,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:manchester-pollution-and-environmental-control-online-msc",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Pollution and Environmental Control (online) MSc",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21020/msc-pollution-and-environmental-control-online/",
+        "windowCount": 1,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -5469,6 +6225,51 @@
     ],
     "deadlineUnavailableMonitor": [
       {
+        "id": "new-programme:manchester-analytical-chemistry-and-measurement-science-online-msc-pgdip-pgcert",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Analytical Chemistry and Measurement Science (online) MSc/PGDip/PGCert",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19383/msc-pgdip-pgcert-analytical-chemistry-and-measurement-science-online/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-data-analytics-and-social-statistics-online-msc",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Data Analytics and Social Statistics (online) MSc",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20191/msc-data-analytics-and-social-statistics-online/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-educational-leadership-in-practice-ma",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Educational Leadership in Practice MA",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12465/ma-educational-leadership-in-practice/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-healthcare-ethics-and-law-online-ma",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Healthcare Ethics and Law (online) MA",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01203/ma-healthcare-ethics-and-law-online/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-international-commercial-and-technology-law-online-llm",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "International Commercial and Technology Law (online) LLM",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20501/llm-international-commercial-and-technology-law-online/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
         "id": "new-programme:manchester-ma-anthropological-research",
         "universityId": "the-university-of-manchester",
         "programmeName": "MA Anthropological Research",
@@ -5478,19 +6279,460 @@
         "reviewReason": "No application deadline was parsed."
       },
       {
-        "id": "new-programme:manchester-msc-accounting",
+        "id": "new-programme:manchester-ma-architecture-and-adaptive-reuse",
         "universityId": "the-university-of-manchester",
-        "programmeName": "MSc Accounting",
-        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10867/msc-accounting/",
+        "programmeName": "MA Architecture and Adaptive Reuse",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20076/ma-architecture-and-adaptive-reuse/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
       },
       {
-        "id": "new-programme:manchester-msc-accounting-and-finance",
+        "id": "new-programme:manchester-ma-architecture-and-urbanism",
         "universityId": "the-university-of-manchester",
-        "programmeName": "MSc Accounting and Finance",
-        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02061/msc-accounting-and-finance/",
+        "programmeName": "MA Architecture and Urbanism",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07785/ma-architecture-and-urbanism/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-classics-and-ancient-history",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Classics and Ancient History",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07915/ma-classics-and-ancient-history/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-creative-writing",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Creative Writing",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01125/ma-creative-writing/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-criminology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Criminology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09778/ma-criminology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-education-for-a-sustainable-environment",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Education for a Sustainable Environment",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20017/ma-education-for-a-sustainable-environment/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-egyptology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Egyptology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12560/ma-egyptology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-english-literature-and-american-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA English Literature and American Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11541/ma-english-literature-and-american-studies/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-film-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Film Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10153/ma-film-studies/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-global-heritage-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Global Heritage Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21805/ma-global-heritage-management/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-governance-politics-and-policy",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Governance, Politics and Policy",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21884/ma-governance-politics-and-policy/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-governance-politics-and-policy-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Governance, Politics and Policy (Research)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21888/ma-governance-politics-and-policy-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-history",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA History",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01197/ma-history/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-history-of-science-technology-and-medicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA History of Science, Technology and Medicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21319/ma-history-of-science-technology-and-medicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-human-rights-law-political-science-pathway-research-route",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Human Rights - Law/Political Science Pathway (Research Route)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06158/ma-human-rights-law-political-science-pathway-research-route/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-human-rights-law-political-science-pathway-standard-route",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Human Rights - Law/Political Science Pathway (Standard Route)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06160/ma-human-rights-law-political-science-pathway-standard-route/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-human-rights-political-science-research-route",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Human Rights - Political Science (Research Route)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06159/ma-human-rights-political-science-research-route/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-human-rights-political-science-standard-route",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Human Rights - Political Science (Standard Route)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01362/ma-human-rights-political-science-standard-route/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-political-economy-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Political Economy (Research)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10877/ma-international-political-economy-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-international-relations-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA International Relations (Research)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10873/ma-international-relations-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-library-and-archive-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Library and Archive Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20436/ma-library-and-archive-studies/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-linguistics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Linguistics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01233/ma-linguistics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-modern-and-contemporary-literature",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Modern and Contemporary Literature",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11543/ma-modern-and-contemporary-literature/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-modern-languages-and-cultures",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Modern Languages and Cultures",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11966/ma-modern-languages-and-cultures/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-peace-and-conflict-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Peace and Conflict Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09784/ma-peace-and-conflict-studies/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-pgdip-gender-sexuality-and-culture",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA/PGDip Gender, Sexuality and Culture",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01167/ma-pgdip-gender-sexuality-and-culture/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-philosophy",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Philosophy",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10048/ma-philosophy/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-playwriting",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Playwriting",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12563/ma-playwriting/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-political-economy-research-route",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Political Economy (Research Route)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07048/ma-political-economy-research-route/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-politics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Politics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01177/ma-politics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-politics-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Politics (Research)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21881/ma-politics-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-screenwriting",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Screenwriting",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09832/ma-screenwriting/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-social-anthropology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Social Anthropology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01311/ma-social-anthropology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-social-work",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Social Work",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01315/ma-social-work/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-sociology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA Sociology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01317/ma-sociology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-ma-tesol",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MA TESOL",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01367/ma-tesol/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-march-architecture",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MArch Architecture",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09342/march-architecture/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mba-global-executive-mba-overview",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MBA Global Executive MBA / Overview",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19377/mba-global-executive-mba/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mba-manchester-full-time-mba-overview",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MBA Manchester Full-Time MBA / Overview",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/01039/mba-manchester-full-time-mba/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mba-manchester-global-mba-overview",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MBA Manchester Global MBA / Overview",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08504/mba-manchester-global-mba/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mclin-res-clinical-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MClin Res Clinical Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08175/mclin-res-clinical-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mental-health-and-wellbeing-in-education-msc",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Mental Health and Wellbeing in Education MSc",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21795/msc-mental-health-and-wellbeing-in-education/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mla-master-of-landscape-architecture",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MLA Master of Landscape Architecture",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19210/mla-master-of-landscape-architecture/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mph-master-of-public-health-on-campus",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MPH Master of Public Health (on campus)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21021/mph-master-of-public-health-on-campus/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mph-public-health-online",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MPH Public Health (Online)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/06002/mph-public-health-online/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mres-cognitive-neuroscience-and-neuropsychology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MRes Cognitive Neuroscience and Neuropsychology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18907/mres-cognitive-neuroscience-and-neuropsychology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mres-criminology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MRes Criminology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09782/mres-criminology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mres-experimental-psychology-with-data-science",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MRes Experimental Psychology with Data Science",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18906/mres-experimental-psychology-with-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mres-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MRes Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02059/mres-management/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mres-pgdip-pgcert-health-and-social-care",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MRes/PGDip/PGCert Health and Social Care",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08181/mres-pgdip-pgcert-health-and-social-care/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-mres-public-health",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MRes Public Health",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/05995/mres-public-health/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
@@ -5500,6 +6742,15 @@
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Adult Nursing",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18749/msc-adult-nursing/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-advanced-chemical-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Chemical Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07354/msc-advanced-chemical-engineering/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."
@@ -5550,10 +6801,865 @@
         "reviewReason": "No application deadline was parsed."
       },
       {
+        "id": "new-programme:manchester-msc-advanced-process-integration-and-design",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Advanced Process Integration and Design",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09760/msc-advanced-process-integration-and-design/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
         "id": "new-programme:manchester-msc-applied-ai-for-medical-imaging",
         "universityId": "the-university-of-manchester",
         "programmeName": "MSc Applied AI for Medical Imaging",
         "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21876/msc-applied-ai-for-medical-imaging/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-audiology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Audiology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21448/msc-audiology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-biochemistry",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Biochemistry",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08171/msc-biochemistry/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-bioinformatics-and-systems-biology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Bioinformatics and Systems Biology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08854/msc-bioinformatics-and-systems-biology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-biological-sciences",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Biological Sciences",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02036/msc-biological-sciences/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-biotechnology-and-enterprise",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Biotechnology and Enterprise",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07778/msc-biotechnology-and-enterprise/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-cancer-research-and-molecular-biomedicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Cancer Research and Molecular Biomedicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08861/msc-cancer-research-and-molecular-biomedicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-cardiovascular-health-and-disease-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Cardiovascular Health and Disease (Research)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19771/msc-cardiovascular-health-and-disease-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-cell-biology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Cell Biology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08168/msc-cell-biology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-chemistry",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Chemistry",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08492/msc-chemistry/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-clin-endodontics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc (Clin) Endodontics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07772/msc-clin-endodontics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-clin-orthodontics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc (Clin) Orthodontics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07773/msc-clin-orthodontics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-clin-periodontology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc (Clin) Periodontology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08444/msc-clin-periodontology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-clinical-and-health-psychology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Clinical and Health Psychology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08070/msc-clinical-and-health-psychology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-clinical-biochemistry",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Clinical Biochemistry",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02113/msc-clinical-biochemistry/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-clinical-immunology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Clinical Immunology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09859/msc-clinical-immunology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-computational-and-corpus-linguistics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Computational and Corpus Linguistics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21198/msc-computational-and-corpus-linguistics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-computer-aided-drug-discovery-for-cancer-therapeutics",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Computer-Aided Drug Discovery for Cancer Therapeutics",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21890/msc-computer-aided-drug-discovery-for-cancer-therapeutics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-developmental-biology-and-stem-cells-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Developmental Biology and Stem Cells (Research)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21620/msc-msc-medical-science-development-and-stem-cells-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-digital-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Digital Development",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19200/msc-digital-development/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-electrical-power-systems-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Electrical Power Systems Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07875/msc-electrical-power-systems-engineering/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-endodontics-dental-specialties",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Endodontics (Dental Specialties)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02147/msc-endodontics-dental-specialties/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-environmental-impact-assessment-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Environmental Impact Assessment & Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09424/msc-environmental-impact-assessment-and-management/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-environmental-monitoring-modelling-and-reconstruction",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Environmental Monitoring, Modelling and Reconstruction",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02180/msc-environmental-monitoring-modelling-and-reconstruction/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-financial-crime-and-compliance-in-digital-societies-top-up",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Financial Crime and Compliance in Digital Societies (top-up)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18646/msc-financial-crime-and-compliance-in-digital-societies-top-up-blended-learning/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-financial-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Financial Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21681/msc-financial-management/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-forensic-psychology-and-mental-health",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Forensic Psychology and Mental Health",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09847/msc-forensic-psychology-and-mental-health/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-genomic-medicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Genomic Medicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10140/msc-genomic-medicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-geoscience-for-sustainable-energy",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Geoscience for Sustainable Energy",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19005/msc-geoscience-for-sustainable-energy/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Development",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20470/msc-global-development/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-development-environment-and-climate-change",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Development (Environment and Climate Change)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20488/msc-global-development-environment-and-climate-change/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-development-migration-mobility-displacement",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Development (Migration, Mobility & Displacement)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20492/msc-global-development-migration-mobility-and-displacement/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-development-politics-governance-and-development-policy",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Development (Politics, Governance and Development Policy)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20494/msc-global-development-politics-governance-and-development-policy/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-development-poverty-and-inequality",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Development (Poverty and Inequality)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20496/msc-global-development-poverty-and-inequality/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-health",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Health",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12666/msc-global-health/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-health-disaster-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Health (Disaster Management)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21349/msc-global-health-disaster-management/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-health-emergency-medical-response",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Health (Emergency Medical Response)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21347/msc-global-health-emergency-medical-response/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-health-humanitarian-response",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Health (Humanitarian Response)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21351/msc-global-health-humanitarian-response/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-global-urban-development-and-planning",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Global Urban Development and Planning",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08212/msc-global-urban-development-and-planning/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-green-infrastructure",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Green Infrastructure",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18589/msc-green-infrastructure/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-health-data-science",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Health Data Science",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10076/msc-health-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-health-psychology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Health Psychology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10060/msc-health-psychology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-immunology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Immunology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21758/msc-immunology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-infection-biology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Infection Biology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18915/msc-infection-biology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-international-disaster-management-and-humanitarian-response-january-intake",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc International Disaster Management and Humanitarian Response - January Intake",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18347/msc-international-disaster-management-and-humanitarian-response-january-intake/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-international-disaster-management-and-humanitarian-response-september-intake",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc International Disaster Management and Humanitarian Response - September Intake",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18346/msc-international-disaster-management-and-humanitarian-response-september-intake/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-investigative-ophthalmology-and-vision-science",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Investigative Ophthalmology and Vision Science",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08335/msc-investigative-ophthalmology-and-vision-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-medical-and-molecular-virology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Medical and Molecular Virology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18112/msc-medical-and-molecular-virology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-medical-microbiology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Medical Microbiology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08939/msc-medical-microbiology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-medical-physics-in-cancer-radiation-therapy",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Medical Physics in Cancer Radiation Therapy",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21394/msc-medical-physics-in-cancer-radiation-therapy/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-model-based-drug-development-pharmacokinetic-and-pharmacodynamic-modelling",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Model-based Drug Development - Pharmacokinetic and Pharmacodynamic Modelling",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08749/msc-model-based-drug-development-pharmacokinetic-and-pharmacodynamic-modelling/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-molecular-pathology-of-cancer",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Molecular Pathology of Cancer",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21321/msc-molecular-pathology-of-cancer/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-nanomedicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Nanomedicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21719/msc-nanomedicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-nature-recovery-restoration-and-rewilding",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Nature Recovery, Restoration and Rewilding",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21491/msc-nature-recovery-restoration-and-rewilding/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-neuroimaging-for-clinical-cognitive-neuroscience",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Neuroimaging for Clinical & Cognitive Neuroscience",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09754/msc-neuroimaging-for-clinical-and-cognitive-neuroscience/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-neuroscience",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Neuroscience",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/08173/msc-neuroscience/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-nuclear-science-and-technology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Nuclear Science and Technology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02275/msc-nuclear-science-and-technology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-occupational-hygiene",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Occupational Hygiene",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07884/msc-occupational-hygiene/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-occupational-medicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Occupational Medicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/07886/msc-occupational-medicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-oncology-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Oncology Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21322/msc-oncology-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-petroleum-geoscience",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Petroleum Geoscience",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19721/msc-petroleum-geoscience/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-pgdip-deaf-education",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc/PGDip Deaf Education",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11972/msc-pgdip-deaf-education/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-pgdip-pgcert-health-informatics-ucl-uom-joint-award",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc/PGDip/PGCert Health Informatics (UCL/UoM Joint Award)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12478/msc-pgdip-pgcert-health-informatics-ucl-uom-joint-award/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-pgdip-pgcert-humanitarian-practice",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc/PGDip/PGCert Humanitarian Practice",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11956/msc-pgdip-pgcert-humanitarian-practice/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-pharmaceutical-technology-and-quality-assurance",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Pharmaceutical Technology and Quality Assurance",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09912/msc-pharmaceutical-technology-and-quality-assurance/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-physician-associate-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Physician Associate Studies",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21593/msc-physician-associate-studies/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-planning",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Planning",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09421/msc-planning/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-pollution-and-environmental-control",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Pollution and Environmental Control",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02325/msc-pollution-and-environmental-control/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-precision-medicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Precision Medicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/13018/msc-precision-medicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-real-estate",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Real Estate",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10005/msc-real-estate-online/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-renewable-energy-and-clean-technology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Renewable Energy and Clean Technology",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09009/msc-renewable-energy-and-clean-technology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-renewable-energy-and-clean-technology-with-extended-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Renewable Energy and Clean Technology with Extended Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12728/msc-renewable-energy-and-clean-technology-with-extended-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-reproduction-and-pregnancy-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Reproduction and Pregnancy (Research)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21621/msc-reproduction-and-pregnancy-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-research-methods-with-education",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Research Methods with Education",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11841/msc-research-methods-with-education/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-research-methods-with-human-geography",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Research Methods with Human Geography",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11843/msc-research-methods-with-human-geography/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-research-methods-with-international-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Research Methods with International Development",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11845/msc-research-methods-with-international-development/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-research-methods-with-planning-and-environmental-management",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Research Methods with Planning and Environmental Management",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/11847/msc-research-methods-with-planning-and-environmental-management/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-science-and-health-communication",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Science and Health Communication",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18658/msc-science-and-health-communication/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-skin-ageing-and-aesthetic-medicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Skin Ageing and Aesthetic Medicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09805/msc-skin-ageing-and-aesthetic-medicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-social-network-analysis",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Social Network Analysis",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18274/msc-social-network-analysis/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-social-research-methods-and-statistics-with-computational-social-science",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Social Research Methods and Statistics with Computational Social Science",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21638/msc-social-research-methods-and-statistics-with-computational-social-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-social-research-methods-and-statistics-with-demography",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Social Research Methods and Statistics with Demography",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21639/msc-social-research-methods-and-statistics-with-demography/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-sociological-research",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Sociological Research",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/02356/msc-sociological-research/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-specialist-practice-cancer",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Specialist Practice (Cancer)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10985/msc-specialist-practice-cancer/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-subsurface-energy-engineering",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Subsurface Energy Engineering",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/12561/msc-subsurface-energy-engineering/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-tissue-engineering-for-regenerative-medicine",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Tissue Engineering for Regenerative Medicine",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/18797/msc-tissue-engineering-for-regenerative-medicine/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-transport-and-urban-planning",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Transport and Urban Planning",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/21554/msc-transport-and-urban-planning/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-msc-urban-regeneration-and-development",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MSc Urban Regeneration and Development",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/09505/msc-urban-regeneration-and-development/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-musm-composition-electroacoustic-music-and-interactive-media",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MusM Composition (Electroacoustic Music and Interactive Media)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10164/musm-composition-electroacoustic-music-and-interactive-media/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-musm-composition-instrumental-and-vocal-music",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MusM Composition (Instrumental and Vocal music)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10163/musm-composition-instrumental-and-vocal-music/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-musm-music-ethnomusicology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MusM Music (Ethnomusicology)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10159/musm-music-ethnomusicology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-musm-music-musicology",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MusM Music (Musicology)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/10158/musm-music-musicology/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-musm-music-performance-studies",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "MusM Music (Performance Studies)",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20871/musm-music-performance-studies/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-sustainable-electrical-power-systems-engineering-online-msc-pgdip-pgcert",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Sustainable Electrical Power Systems Engineering (online) MSc/PGDip/PGCert",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/20892/msc-pgdip-pgcert-sustainable-electrical-power-systems-engineering-online/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:manchester-transformative-oncology-msc",
+        "universityId": "the-university-of-manchester",
+        "programmeName": "Transformative Oncology MSc",
+        "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/19218/msc-transformative-oncology/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."

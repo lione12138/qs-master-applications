@@ -211,7 +211,7 @@ See `docs/assisted-discovery.md`.
 Dedicated adapters live in `src/gradwindow/programme_adapters/`. Existing
 examples include `mit.py`, `cuhk.py`, `polyu.py`, `cambridge.py`,
 `glasgow.py`, `imperial.py`, `hku.py`, `hkust.py`, `melbourne.py`, `monash.py`,
-`nus.py`, `oxford.py`, `sydney.py`, and `uq.py`.
+`manchester.py`, `nus.py`, `oxford.py`, `sydney.py`, and `uq.py`.
 
 #### Definition of done
 

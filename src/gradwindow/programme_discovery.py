@@ -68,6 +68,13 @@ def discover_programmes(
         },
     )
     existing = {item["id"]: item for item in candidates_payload.get("items", [])}
+    if getattr(adapter, "replace_pending_candidates", False):
+        existing = {
+            candidate_id: item
+            for candidate_id, item in existing.items()
+            if item.get("universityId") != adapter.university_id
+            or item.get("status", "pending") != "pending"
+        }
     if window_candidates_path is None:
         window_candidates_path = (
             WINDOW_CANDIDATES_PATH

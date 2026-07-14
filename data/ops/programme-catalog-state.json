@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T09:07:10.236473+00:00",
+    "updatedAt": "2026-07-14T15:28:10.660364+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -11906,170 +11906,2186 @@
     },
     "the-university-of-manchester": {
       "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
-      "checkedAt": "2026-07-07T09:44:01.324250+00:00",
-      "itemCount": 20,
+      "checkedAt": "2026-07-14T15:28:10.660364+00:00",
+      "itemCount": 272,
       "applicationOpensAt": null,
-      "catalogHash": "f37bcb32f471bf6a766fb2be49f160b885ea674f90efe925fadbf62605ccaab7",
+      "catalogHash": "bfb400dbcbd1770b70a3c911d50934c45fdb469557569caeeabcd2f24dc5b601",
       "programmes": {
         "manchester-msc-accounting-and-finance": {
           "name": "MSc Accounting and Finance",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
           "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
         },
         "manchester-msc-accounting": {
           "name": "MSc Accounting",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
           "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
         },
         "manchester-msc-adult-nursing": {
           "name": "MSc Adult Nursing",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-advanced-chemical-engineering": {
           "name": "MSc Advanced Chemical Engineering",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "incomplete",
-          "deadlineHash": "e1dc752dbdc94c0a766a8a57389c64096a4638098bc06686574c7ed1d4bf6664"
+          "degreeType": "MSc",
+          "faculty": "Department of Chemical Engineering",
+          "department": "Department of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-advanced-clinical-optometric-practice": {
           "name": "MSc Advanced Clinical Optometric Practice",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-advanced-clinical-practice-paediatrics": {
           "name": "MSc Advanced Clinical Practice (Paediatrics)",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-advanced-computer-science": {
           "name": "MSc Advanced Computer Science",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Department of Computer Science",
+          "department": "Department of Computer Science",
           "parseStatus": "incomplete",
-          "deadlineHash": "daddd533437f3aef38234abcf16a0091ca0787aa40fd873277beead3d4217c22"
+          "deadlineHash": "45b41d7416ad7357183b6339caf910abbf871946eb89bfd9d539b0a964e6c3ad"
         },
         "manchester-msc-advanced-control-and-systems-engineering": {
           "name": "MSc Advanced Control and Systems Engineering",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
           "parseStatus": "incomplete",
-          "deadlineHash": "0ad442ff0afa7dfeffafbd3da1248fc6eac58169a1d6d27f1ec8a036a435b550"
+          "deadlineHash": "f3c9a82c44973a228d0813fda41ec20b0433d46a6514989a0fb54b3abf8bd067"
         },
         "manchester-msc-advanced-control-and-systems-engineering-with-extended-research": {
           "name": "MSc Advanced Control and Systems Engineering with Extended Research",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
           "parseStatus": "incomplete",
-          "deadlineHash": "0ad442ff0afa7dfeffafbd3da1248fc6eac58169a1d6d27f1ec8a036a435b550"
+          "deadlineHash": "d20147aa5dacfe34b7561014388d353fcd57edd762366eac33082cb1266cd41c"
         },
         "manchester-msc-advanced-electrical-power-systems-engineering": {
           "name": "MSc Advanced Electrical Power Systems Engineering",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-advanced-engineering-materials": {
           "name": "MSc Advanced Engineering Materials",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
           "parseStatus": "incomplete",
-          "deadlineHash": "71a60e36b6364aa7e66c01321aaa440d03fa5843bd51f3e9bb98032a4a0b7382"
+          "deadlineHash": "89f13141dfbbf0618f5f0f3e9cf93a46a3c2e2695f6125b9b1db9d7d7277d5c2"
         },
         "manchester-msc-advanced-leadership-for-professional-practice-allied-health-profession": {
           "name": "MSc Advanced Leadership for Professional Practice (Allied Health Profession)",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-advanced-leadership-for-professional-practice-nursing": {
           "name": "MSc Advanced Leadership for Professional Practice (Nursing)",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-advanced-manufacturing-technology-systems-management": {
           "name": "MSc Advanced Manufacturing Technology & Systems Management",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Department of Mechanical and Aerospace Engineering",
+          "department": "Department of Mechanical and Aerospace Engineering",
           "parseStatus": "incomplete",
-          "deadlineHash": "1d4850d499326fa0394a095bfc551db4280b94f1c158e72e10e3de9e695036c7"
+          "deadlineHash": "fe65cbc5f7cad8b486f7d0cedaa95b1f08cbc621da05dcf8a65be051343c4852"
         },
         "manchester-msc-advanced-process-integration-and-design": {
           "name": "MSc Advanced Process Integration and Design",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "incomplete",
-          "deadlineHash": "e1dc752dbdc94c0a766a8a57389c64096a4638098bc06686574c7ed1d4bf6664"
+          "degreeType": "MSc",
+          "faculty": "Department of Chemical Engineering",
+          "department": "Department of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-aerospace-engineering": {
           "name": "MSc Aerospace Engineering",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Department of Mechanical and Aerospace Engineering",
+          "department": "Department of Mechanical and Aerospace Engineering",
           "parseStatus": "incomplete",
-          "deadlineHash": "e3d04ba1f7c214e2aa953b790b922b56661af7c32a457d014a7c1aac5abd62eb"
+          "deadlineHash": "6463917687dcb9eea3eacffb1ea19ce573020ea296b8bf78b5ab5112d17e4936"
         },
         "manchester-analytical-chemistry-and-measurement-science-online-msc-pgdip-pgcert": {
           "name": "Analytical Chemistry and Measurement Science (online) MSc/PGDip/PGCert",
-          "degreeType": "MSC",
+          "degreeType": "MSc",
           "faculty": "",
           "department": "",
-          "parseStatus": "incomplete",
-          "deadlineHash": "ba6de6bf74eec2daef9c1e888ec992b70e00f3c0b27c4d16d522e7e56eae198b"
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-ma-anthropological-research": {
           "name": "MA Anthropological Research",
           "degreeType": "MA",
-          "faculty": "",
+          "faculty": "School of Social Sciences",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-applied-ai-for-medical-imaging": {
           "name": "MSc Applied AI for Medical Imaging",
-          "degreeType": "MSC",
-          "faculty": "",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
           "department": "",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "manchester-msc-applied-mathematics": {
           "name": "MSc Applied Mathematics",
-          "degreeType": "MSC",
+          "degreeType": "MSc",
+          "faculty": "Department of Mathematics",
+          "department": "Department of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e582131e1654db89cf0d9441cbd49d87af268d35f74d84d85d619a8f3209e115"
+        },
+        "manchester-ma-architecture-and-adaptive-reuse": {
+          "name": "MA Architecture and Adaptive Reuse",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-architecture-and-urbanism": {
+          "name": "MA Architecture and Urbanism",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-march-architecture": {
+          "name": "MArch Architecture",
+          "degreeType": "MArch",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-art-gallery-and-museum-studies": {
+          "name": "MA Art Gallery and Museum Studies",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0328688243958dc29b848933c7c0de8d6e70f9570b4bb4441dadffcef0778bc2"
+        },
+        "manchester-msc-artificial-intelligence": {
+          "name": "MSc Artificial Intelligence",
+          "degreeType": "MSc",
+          "faculty": "Department of Computer Science",
+          "department": "Department of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dbdf133be61251482d897a7fcebae6ba9ab5cd2e903612c359d55343902186fc"
+        },
+        "manchester-ma-arts-management-policy-and-practice": {
+          "name": "MA Arts Management, Policy and Practice",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c6e0ef2d21e41bfa1e86b546b5f3afacefe5a8717415d3c747ab5dfd80f71622"
+        },
+        "manchester-msc-audiology": {
+          "name": "MSc Audiology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-biochemistry": {
+          "name": "MSc Biochemistry",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-bioinformatics-and-systems-biology": {
+          "name": "MSc Bioinformatics and Systems Biology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-biological-sciences": {
+          "name": "MSc Biological Sciences",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-biomaterials": {
+          "name": "MSc Biomaterials",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fcc7bd0620f26036aac2004acbd9cfc2ee729695ebdd06435d92357b26fffb10"
+        },
+        "manchester-msc-biotechnology-and-enterprise": {
+          "name": "MSc Biotechnology and Enterprise",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-business-analysis-and-strategic-management": {
+          "name": "MSc Business Analysis and Strategic Management",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-business-analytics-and-artificial-intelligence": {
+          "name": "MSc Business Analytics and Artificial Intelligence",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-business-psychology": {
+          "name": "MSc Business Psychology",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-cancer-research-and-molecular-biomedicine": {
+          "name": "MSc Cancer Research and Molecular Biomedicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-cardiovascular-health-and-disease-research": {
+          "name": "MSc Cardiovascular Health and Disease (Research)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-cell-biology": {
+          "name": "MSc Cell Biology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-chemistry": {
+          "name": "MSc Chemistry",
+          "degreeType": "MSc",
+          "faculty": "Department of Chemistry",
+          "department": "Department of Chemistry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-classics-and-ancient-history": {
+          "name": "MA Classics and Ancient History",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-climate-change-science-society-and-solutions": {
+          "name": "MSc Climate Change: Science, Society and Solutions",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3d03ca0b160c0a4e7639bdd8ba8d99d280940891fd88db1df5fbd258c0961c0a"
+        },
+        "manchester-msc-clinical-and-health-psychology": {
+          "name": "MSc Clinical and Health Psychology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-clinical-biochemistry": {
+          "name": "MSc Clinical Biochemistry",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-clinical-dentistry-paediatric-dentistry": {
+          "name": "MSc Clinical Dentistry (Paediatric Dentistry)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7cc2fa88bbf3e6f1eee4fa17529f6c91fe94c5540de2e5f54ba9174e5ce80393"
+        },
+        "manchester-msc-clinical-immunology": {
+          "name": "MSc Clinical Immunology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mclin-res-clinical-research": {
+          "name": "MClin Res Clinical Research",
+          "degreeType": "MClin Res",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mres-cognitive-neuroscience-and-neuropsychology": {
+          "name": "MRes Cognitive Neuroscience and Neuropsychology",
+          "degreeType": "MRes",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-commercial-project-management": {
+          "name": "MSc Commercial Project Management",
+          "degreeType": "MSc",
+          "faculty": "Department of Civil Engineering and Management",
+          "department": "Department of Civil Engineering and Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "309c9eb54804930f27de57867da810291af2913a1ec2d5cd1625b4455bf1b200"
+        },
+        "manchester-msc-communications-and-signal-processing": {
+          "name": "MSc Communications and Signal Processing",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "200060462740f40caee62dea9bf9216e7157d1dc7e58aa6b6afb10b1051233d0"
+        },
+        "manchester-msc-communications-and-signal-processing-with-extended-research": {
+          "name": "MSc Communications and Signal Processing with Extended Research",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1ec5f78bd18c9ab522cc75e6b5c2ce04ba8ef23a60607afd35afaf2b43f6a355"
+        },
+        "manchester-musm-composition-electroacoustic-music-and-interactive-media": {
+          "name": "MusM Composition (Electroacoustic Music and Interactive Media)",
+          "degreeType": "MusM",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-musm-composition-instrumental-and-vocal-music": {
+          "name": "MusM Composition (Instrumental and Vocal music)",
+          "degreeType": "MusM",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-computational-and-corpus-linguistics": {
+          "name": "MSc Computational and Corpus Linguistics",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-computer-aided-drug-discovery-for-cancer-therapeutics": {
+          "name": "MSc Computer-Aided Drug Discovery for Cancer Therapeutics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-construction-project-management": {
+          "name": "MSc Construction Project Management",
+          "degreeType": "MSc",
+          "faculty": "Department of Civil Engineering and Management",
+          "department": "Department of Civil Engineering and Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d4163490f441bb1ebe329dd4df5de91969803e733dd066b9ccb48ee848686b8c"
+        },
+        "manchester-llm-corporate-governance": {
+          "name": "LLM Corporate Governance",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1848f0dc48a4204e036cd14c325c5e2aa0648d9f81704ebacbaeef052b5b9260"
+        },
+        "manchester-ma-creative-and-cultural-industries": {
+          "name": "MA Creative and Cultural Industries",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6a07af3dbec7506db53efe7298fb3bcb003e914c3d6d15ddb2c4f25f8715349f"
+        },
+        "manchester-ma-creative-writing": {
+          "name": "MA Creative Writing",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-criminology": {
+          "name": "MA Criminology",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mres-criminology": {
+          "name": "MRes Criminology",
+          "degreeType": "MRes",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-cyber-security": {
+          "name": "MSc Cyber Security",
+          "degreeType": "MSc",
+          "faculty": "Department of Computer Science",
+          "department": "Department of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "99aa325d8f1b8d12a40e58e0745682724363f820c15eab1a6055a5948578a645"
+        },
+        "manchester-data-analytics-and-social-statistics-online-msc": {
+          "name": "Data Analytics and Social Statistics (online) MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-data-science-business-and-management": {
+          "name": "MSc Data Science (Business and Management)",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5e302aa31625ceb984df242c3353356a2b993341c84ab07064fefb26e048e5a7"
+        },
+        "manchester-msc-data-science-computer-science-data-informatics": {
+          "name": "MSc Data Science (Computer Science Data Informatics)",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "943d8195e283ce4fa3245faeb687c8c3af17a4c94c84e46f552edaf176f6091a"
+        },
+        "manchester-msc-data-science-earth-and-environmental-analytics": {
+          "name": "MSc Data Science (Earth and Environmental Analytics)",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "efff5e35bd96d3ae926f2af66ad4bd40ecb46d997014e32af92a8f1cd8820021"
+        },
+        "manchester-msc-data-science-mathematics": {
+          "name": "MSc Data Science (Mathematics)",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d108fa3fcc56215f421cafe2d2e7b409fc944ec6478fc126b18a9c9402361b2f"
+        },
+        "manchester-msc-data-science-social-analytics": {
+          "name": "MSc Data Science (Social Analytics)",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ef57249a422a154dbe8ebe048a74ea28350bcb9674af9898edce368ea2fe9da6"
+        },
+        "manchester-msc-data-science-urban-analytics": {
+          "name": "MSc Data Science (Urban Analytics)",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5a882627cf4e3e145392171ca622d49860052cd0db2f721c475f7d0c56a9541d"
+        },
+        "manchester-msc-pgdip-deaf-education": {
+          "name": "MSc/PGDip Deaf Education",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-development-economics-and-policy": {
+          "name": "MSc Development Economics and Policy",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ed3ed06b7a7630ac01ad262f29db902825cb31717d418c5b7e2cb5a909c64855"
+        },
+        "manchester-msc-development-finance": {
+          "name": "MSc Development Finance",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f1fce6786df47b1a1971376f071a3dafe8d251032260222f02f8e34c835b6fba"
+        },
+        "manchester-msc-digital-development": {
+          "name": "MSc Digital Development",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-digital-marketing": {
+          "name": "MSc Digital Marketing",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-ma-digital-media-culture-and-society": {
+          "name": "MA Digital Media, Culture and Society",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "cffb8204bd500ae001727cb756d0a0ffa8707575afc11ed1b6d23aaaeacf028c"
+        },
+        "manchester-ma-digital-technologies-communication-and-education": {
+          "name": "MA Digital Technologies, Communication and Education",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c3be1b412560901ee8d9b8a2ec56570809429896416b4139bd07f22cd97f7e1a"
+        },
+        "manchester-msc-digital-transformation": {
+          "name": "MSc Digital Transformation",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-economics-and-data-science": {
+          "name": "MSc Economics and Data Science",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6c560f43b75169458cd05be72abc6568681281b92301c17ddca0b47cb09c517b"
+        },
+        "manchester-ma-economics": {
+          "name": "MA Economics",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e19424b0b92d42b5e6cc81a90b6803da03d440eec3ccb7c02f04662da70bafc3"
+        },
+        "manchester-msc-economics": {
+          "name": "MSc Economics",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0e47b9191e213aad72e0b1ca88207d6a1445e655caa17e4de020847fee356d53"
+        },
+        "manchester-ma-education-for-a-sustainable-environment": {
+          "name": "MA Education for a Sustainable Environment",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-educational-leadership-in-practice-ma": {
+          "name": "Educational Leadership in Practice MA",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-educational-leadership": {
+          "name": "MA Educational Leadership",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f893ce740d0884f3b9abeb9baae0ef4c8ca720878baaa25e469e66702e190aee"
+        },
+        "manchester-ma-egyptology": {
+          "name": "MA Egyptology",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-electrical-power-systems-engineering": {
+          "name": "MSc Electrical Power Systems Engineering",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-endodontics-dental-specialties": {
+          "name": "MSc Endodontics (Dental Specialties)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-clin-endodontics": {
+          "name": "MSc (Clin) Endodontics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-engineering-project-management": {
+          "name": "MSc Engineering Project Management",
+          "degreeType": "MSc",
+          "faculty": "Department of Civil Engineering and Management",
+          "department": "Department of Civil Engineering and Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "63ecefe01f851e69877d968297feae51c25b311a7c4dcb21ed9689b5894f3a90"
+        },
+        "manchester-ma-english-literature-and-american-studies": {
+          "name": "MA English Literature and American Studies",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-environmental-governance": {
+          "name": "MSc Environmental Governance",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ba2447ba37bbd3a43654f0ed8ee3df63580bcf087de2385992612f5a7b03b53d"
+        },
+        "manchester-msc-environmental-impact-assessment-management": {
+          "name": "MSc Environmental Impact Assessment & Management",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-environmental-monitoring-modelling-and-reconstruction": {
+          "name": "MSc Environmental Monitoring, Modelling and Reconstruction",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mres-experimental-psychology-with-data-science": {
+          "name": "MRes Experimental Psychology with Data Science",
+          "degreeType": "MRes",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-film-studies": {
+          "name": "MA Film Studies",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-finance": {
+          "name": "MSc Finance",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-financial-crime-and-compliance-in-digital-societies-top-up": {
+          "name": "MSc Financial Crime and Compliance in Digital Societies (top-up)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-financial-economics": {
+          "name": "MSc Financial Economics",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d2d6207237b9eca651e2db1d47caeb3c92d87ce39a8e387cc491a7bc87fad5e3"
+        },
+        "manchester-msc-financial-management": {
+          "name": "MSc Financial Management",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-fixed-and-removable-prosthodontics-dental-specialties": {
+          "name": "MSc Fixed and Removable Prosthodontics (Dental Specialties)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a7a9051572676c34c22bee78511881800475ee7e3796b70f182e873225613486"
+        },
+        "manchester-msc-clin-fixed-and-removable-prosthodontics": {
+          "name": "MSc (Clin) Fixed and Removable Prosthodontics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c7eadf4bf55001704bf680609ba638a1c55810bca618b32e63dcc2fc409bd5b0"
+        },
+        "manchester-msc-forensic-psychology-and-mental-health": {
+          "name": "MSc Forensic Psychology and Mental Health",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-pgdip-gender-sexuality-and-culture": {
+          "name": "MA/PGDip Gender, Sexuality and Culture",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-genomic-medicine": {
+          "name": "MSc Genomic Medicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-geographical-information-science": {
+          "name": "MSc Geographical Information Science",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "78d78fa2a039d6c483be0ca7b468da62666e7af31caf95da86ee0c61b10a636c"
+        },
+        "manchester-msc-geoscience-for-sustainable-energy": {
+          "name": "MSc Geoscience for Sustainable Energy",
+          "degreeType": "MSc",
+          "faculty": "Department of Earth and Environmental Sciences",
+          "department": "Department of Earth and Environmental Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-development-development-management": {
+          "name": "MSc Global Development (Development Management)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6c40165adeed88a8e9072c5cf89d2a29219fbc23ca4e2f68f1798cae96943452"
+        },
+        "manchester-msc-global-development-environment-and-climate-change": {
+          "name": "MSc Global Development (Environment and Climate Change)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-development-globalisation-trade-industry": {
+          "name": "MSc Global Development (Globalisation, Trade & Industry)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ba81e8ed982cdd773a96e54fc4e9e601f83cc63a7d0c63b28afce81113c3e6d4"
+        },
+        "manchester-msc-global-development-migration-mobility-displacement": {
+          "name": "MSc Global Development (Migration, Mobility & Displacement)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-development": {
+          "name": "MSc Global Development",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-development-politics-governance-and-development-policy": {
+          "name": "MSc Global Development (Politics, Governance and Development Policy)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-development-poverty-and-inequality": {
+          "name": "MSc Global Development (Poverty and Inequality)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mba-global-executive-mba-overview": {
+          "name": "MBA Global Executive MBA / Overview",
+          "degreeType": "MBA",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-health-disaster-management": {
+          "name": "MSc Global Health (Disaster Management)",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-health-emergency-medical-response": {
+          "name": "MSc Global Health (Emergency Medical Response)",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-health-humanitarian-response": {
+          "name": "MSc Global Health (Humanitarian Response)",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-health": {
+          "name": "MSc Global Health",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-global-heritage-management": {
+          "name": "MA Global Heritage Management",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-global-urban-development-and-planning": {
+          "name": "MSc Global Urban Development and Planning",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-governance-politics-and-policy": {
+          "name": "MA Governance, Politics and Policy",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-governance-politics-and-policy-research": {
+          "name": "MA Governance, Politics and Policy (Research)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-green-infrastructure": {
+          "name": "MSc Green Infrastructure",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mres-pgdip-pgcert-health-and-social-care": {
+          "name": "MRes/PGDip/PGCert Health and Social Care",
+          "degreeType": "MRes",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-health-data-science": {
+          "name": "MSc Health Data Science",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-pgdip-pgcert-health-informatics-ucl-uom-joint-award": {
+          "name": "MSc/PGDip/PGCert Health Informatics (UCL/UoM Joint Award)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-health-psychology": {
+          "name": "MSc Health Psychology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-healthcare-ethics-and-law-online-ma": {
+          "name": "Healthcare Ethics and Law (online) MA",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-history": {
+          "name": "MA History",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-history-of-science-technology-and-medicine": {
+          "name": "MA History of Science, Technology and Medicine",
+          "degreeType": "MA",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-human-resource-development-international-development": {
+          "name": "MSc Human Resource Development (International Development)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "71f728964c5eeeac4612ecad7dfb141a11ae77aa0dc1c992905999fe2aba21c1"
+        },
+        "manchester-msc-human-resource-management-and-industrial-relations": {
+          "name": "MSc Human Resource Management and Industrial Relations",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-human-resource-management-international-development": {
+          "name": "MSc Human Resource Management (International Development)",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d6305918b0545e17a56db5a45ab0f43a86fb63c18e46cfe5a94f2c81fe907559"
+        },
+        "manchester-ma-human-rights-law-political-science-pathway-research-route": {
+          "name": "MA Human Rights - Law/Political Science Pathway (Research Route)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-human-rights-law-political-science-pathway-standard-route": {
+          "name": "MA Human Rights - Law/Political Science Pathway (Standard Route)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-human-rights-political-science-research-route": {
+          "name": "MA Human Rights - Political Science (Research Route)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-human-rights-political-science-standard-route": {
+          "name": "MA Human Rights - Political Science (Standard Route)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-pgdip-pgcert-humanitarian-practice": {
+          "name": "MSc/PGDip/PGCert Humanitarian Practice",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-humanitarianism-and-conflict-response": {
+          "name": "MA Humanitarianism and Conflict Response",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9b4d667173c8d3860a1f23504f3fc24c899442b5c15cad6116a9250a7c3f14bd"
+        },
+        "manchester-msc-immunology": {
+          "name": "MSc Immunology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-infection-biology": {
+          "name": "MSc Infection Biology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-innovation-management-and-entrepreneurship": {
+          "name": "MSc Innovation Management and Entrepreneurship",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-llm-intellectual-property-law": {
+          "name": "LLM Intellectual Property Law",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "950dce6bc3c22ba6b1bc6ec50cf0b9bd189a18eb638c47d991c56459b53e1efa"
+        },
+        "manchester-ma-intercultural-communication": {
+          "name": "MA Intercultural Communication",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0e342c24c5952466c971ccee9497b613aaf86d1893710360c0c5ad66209b6820"
+        },
+        "manchester-llm-international-business-and-commercial-law": {
+          "name": "LLM International Business and Commercial Law",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c8068158fe1264bab51e58bb27c4fc67ed9496852443eeb2b94dfd9177a82386"
+        },
+        "manchester-msc-international-business-and-management": {
+          "name": "MSc International Business and Management",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-international-commercial-and-technology-law-online-llm": {
+          "name": "International Commercial and Technology Law (online) LLM",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-international-development-public-policy-and-management": {
+          "name": "MSc International Development: Public Policy and Management",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7433871db16415300784676dc3df53e7060070cc3306b2484cee09a932b61e4a"
+        },
+        "manchester-msc-international-disaster-management-and-humanitarian-response-january-intake": {
+          "name": "MSc International Disaster Management and Humanitarian Response - January Intake",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-international-disaster-management-and-humanitarian-response-september-intake": {
+          "name": "MSc International Disaster Management and Humanitarian Response - September Intake",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-international-disaster-management": {
+          "name": "MSc International Disaster Management",
+          "degreeType": "MSc",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2fa5065185d7d5afb1e399bbfb0a2d32f7a2cf9ef562d58d6bec43544523e1e5"
+        },
+        "manchester-llm-international-economic-law": {
+          "name": "LLM International Economic Law",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ed323a8bca7730d6a7cbcadf7813f647ff8145fd6759914a5de399855b465dfe"
+        },
+        "manchester-ma-international-education-curriculum-and-pedagogy": {
+          "name": "MA International Education (Curriculum and Pedagogy)",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6e8c2008285fb7f664e77d322c64200560e68793439d92941ddb49fa36fcb978"
+        },
+        "manchester-ma-international-education-equity-diversity-and-inclusion": {
+          "name": "MA International Education (Equity, Diversity and Inclusion)",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0d9cca71214d3f511192f62f1990962152871bb0bac8033f85cc65bc8539af1f"
+        },
+        "manchester-ma-international-education-higher-education": {
+          "name": "MA International Education (Higher Education)",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bd0536ab62ad9e105b77329163a3e9b0a72b7e25b700ded7be83f0380e2bc59e"
+        },
+        "manchester-ma-international-education": {
+          "name": "MA International Education",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c0d7cd18a9293e08713ff944b4ca44091fa93e5321a50d5ebdddcfe56dc6f675"
+        },
+        "manchester-ma-international-education-tesol": {
+          "name": "MA International Education (TESOL)",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9cedeb539717eb9d2119ec4d7840e93fe7b0f8d9a341bdc263ddd3de7063f1e2"
+        },
+        "manchester-msc-international-fashion-marketing": {
+          "name": "MSc International Fashion Marketing",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ce27da0b14fb4190e5d793d50c035268b5beb16e517059ad52744a6c4ea96deb"
+        },
+        "manchester-msc-international-fashion-retailing-entrepreneurship-and-innovation": {
+          "name": "MSc International Fashion Retailing (Entrepreneurship and Innovation)",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7f55678c75f0decf7abbb5c2ce4be694c3d96a9fc962105612879a032144f18c"
+        },
+        "manchester-msc-international-fashion-retailing": {
+          "name": "MSc International Fashion Retailing",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8d50989e949eed6848cecc2eea5f94dfe2fb7b184b628e672f88dc7e30b6d66d"
+        },
+        "manchester-llm-international-financial-law": {
+          "name": "LLM International Financial Law",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "63ac30544574dc94bb86ef985a2263bd1d6044081e144b7f92923c484cda8e23"
+        },
+        "manchester-msc-international-human-resource-management-and-comparative-industrial-relations": {
+          "name": "MSc International Human Resource Management and Comparative Industrial Relations",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-ma-international-political-economy-research": {
+          "name": "MA International Political Economy (Research)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-international-political-economy-standard": {
+          "name": "MA International Political Economy (Standard)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a02f955c054cdae39a414e7751b303ab460d2d00fa0a920bdd20573d5323838a"
+        },
+        "manchester-ma-international-relations-research": {
+          "name": "MA International Relations (Research)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-international-relations-standard": {
+          "name": "MA International Relations (Standard)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3b2d8563a8fd5946d51e5b9a09945708f9c30d62a11362c28288348a3273ee8a"
+        },
+        "manchester-msc-investigative-ophthalmology-and-vision-science": {
+          "name": "MSc Investigative Ophthalmology and Vision Science",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-llm-law": {
+          "name": "LLM Law",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0fbc0c266cd5f67da4d090ed718ae0278ab4b6bf23f137c38ab8d6ca260158a5"
+        },
+        "manchester-ma-library-and-archive-studies": {
+          "name": "MA Library and Archive Studies",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-linguistics": {
+          "name": "MA Linguistics",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-machine-learning": {
+          "name": "MSc Machine Learning",
+          "degreeType": "MSc",
+          "faculty": "Department of Computer Science",
+          "department": "Department of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9bdd641b7645682e0be64ab0e6d59867a549060de9c3f9944f273eb33be88063"
+        },
+        "manchester-msc-management-and-implementation-of-development-projects": {
+          "name": "MSc Management and Implementation of Development Projects",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c4f16ae6e6f8543daa3ec6bcb2588003c51451de858ac1fc55ce6760ad69e25a"
+        },
+        "manchester-msc-management-and-information-systems-change-and-development": {
+          "name": "MSc Management and Information Systems: Change and Development",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "90be44cd2cab294fa44ba2926212f5622d941606ab49d3364772549e50f94e60"
+        },
+        "manchester-mres-management": {
+          "name": "MRes Management",
+          "degreeType": "MRes",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-management": {
+          "name": "MSc Management",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-management-of-projects": {
+          "name": "MSc Management of Projects",
+          "degreeType": "MSc",
+          "faculty": "Department of Civil Engineering and Management",
+          "department": "Department of Civil Engineering and Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "118f3038298abf7b844e85aa7a26c46b0af8488e0ec21e81b9ec8ed9123e5d0d"
+        },
+        "manchester-mba-manchester-full-time-mba-overview": {
+          "name": "MBA Manchester Full-Time MBA / Overview",
+          "degreeType": "MBA",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mba-manchester-global-mba-overview": {
+          "name": "MBA Manchester Global MBA / Overview",
+          "degreeType": "MBA",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-marketing": {
+          "name": "MSc Marketing",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-mla-master-of-landscape-architecture": {
+          "name": "MLA Master of Landscape Architecture",
+          "degreeType": "Master",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mph-master-of-public-health-on-campus": {
+          "name": "MPH Master of Public Health (on campus)",
+          "degreeType": "MPH",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-materials-engineering-for-sustainability-in-demanding-environments": {
+          "name": "MSc Materials Engineering for Sustainability in Demanding Environments",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "83edc1cb4e995d0cf3ba00a6579d652b350326f909d56ce28a8e70c96499677c"
+        },
+        "manchester-msc-mathematical-finance": {
+          "name": "MSc Mathematical Finance",
+          "degreeType": "MSc",
+          "faculty": "Department of Mathematics",
+          "department": "Department of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3d531cd22d2677dca6aa2a1b9cb70c0e67f7020e988c2315d654d6640dc46e81"
+        },
+        "manchester-msc-mechanical-engineering-design": {
+          "name": "MSc Mechanical Engineering Design",
+          "degreeType": "MSc",
+          "faculty": "Department of Mechanical and Aerospace Engineering",
+          "department": "Department of Mechanical and Aerospace Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4728cd1a327496a69d8b5d094e5dd24b1391056ea723049c15ea2b96f76f5b63"
+        },
+        "manchester-msc-medical-and-molecular-virology": {
+          "name": "MSc Medical and Molecular Virology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-medical-microbiology": {
+          "name": "MSc Medical Microbiology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-medical-physics-in-cancer-radiation-therapy": {
+          "name": "MSc Medical Physics in Cancer Radiation Therapy",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mental-health-and-wellbeing-in-education-msc": {
+          "name": "Mental Health and Wellbeing in Education MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-model-based-drug-development-pharmacokinetic-and-pharmacodynamic-modelling": {
+          "name": "MSc Model-based Drug Development - Pharmacokinetic and Pharmacodynamic Modelling",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-modern-and-contemporary-literature": {
+          "name": "MA Modern and Contemporary Literature",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-modern-languages-and-cultures": {
+          "name": "MA Modern Languages and Cultures",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-molecular-pathology-of-cancer": {
+          "name": "MSc Molecular Pathology of Cancer",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-developmental-biology-and-stem-cells-research": {
+          "name": "MSc Developmental Biology and Stem Cells (Research)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-musm-music-ethnomusicology": {
+          "name": "MusM Music (Ethnomusicology)",
+          "degreeType": "MusM",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-musm-music-musicology": {
+          "name": "MusM Music (Musicology)",
+          "degreeType": "MusM",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-musm-music-performance-studies": {
+          "name": "MusM Music (Performance Studies)",
+          "degreeType": "MusM",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-nanomaterials": {
+          "name": "MSc Nanomaterials",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9c02a10504093d8e7812f0f88c3ba8392a41c24dffbef31d7c4c4f90d8c38e42"
+        },
+        "manchester-msc-nanomedicine": {
+          "name": "MSc Nanomedicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-nature-recovery-restoration-and-rewilding": {
+          "name": "MSc Nature Recovery, Restoration and Rewilding",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-neuroimaging-for-clinical-cognitive-neuroscience": {
+          "name": "MSc Neuroimaging for Clinical & Cognitive Neuroscience",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-neuroscience": {
+          "name": "MSc Neuroscience",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-nuclear-science-and-technology": {
+          "name": "MSc Nuclear Science and Technology",
+          "degreeType": "MSc",
+          "faculty": "Department of Physics & Astronomy",
+          "department": "Department of Physics & Astronomy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-occupational-hygiene": {
+          "name": "MSc Occupational Hygiene",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-occupational-medicine": {
+          "name": "MSc Occupational Medicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-oncology-research": {
+          "name": "MSc Oncology Research",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-operations-project-and-supply-chain-management": {
+          "name": "MSc Operations, Project and Supply Chain Management",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-pgdip-oral-and-maxillofacial-surgery-dental-specialties": {
+          "name": "MSc/PGDip Oral and Maxillofacial Surgery (Dental Specialties)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a41e0da561577c6235c2f16d9ae27bc1576bd47dccf5639afb577291997faf52"
+        },
+        "manchester-msc-clin-oral-and-maxillofacial-surgery": {
+          "name": "MSc (Clin) Oral and Maxillofacial Surgery",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "28897750a1217e1b21f763007147ed46d98debc602bd252fc16a7924b712359f"
+        },
+        "manchester-msc-organisational-change-and-development": {
+          "name": "MSc Organisational Change and Development",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a24907940f88be9206e102deb984b81428e64ad0fcf7beff9d2dbd3757909a1a"
+        },
+        "manchester-msc-organisational-psychology": {
+          "name": "MSc Organisational Psychology",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-clin-orthodontics": {
+          "name": "MSc (Clin) Orthodontics",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-peace-and-conflict-studies": {
+          "name": "MA Peace and Conflict Studies",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-clin-periodontology": {
+          "name": "MSc (Clin) Periodontology",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-petroleum-geoscience": {
+          "name": "MSc Petroleum Geoscience",
+          "degreeType": "MSc",
+          "faculty": "Department of Earth and Environmental Sciences",
+          "department": "Department of Earth and Environmental Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-pharmaceutical-technology-and-quality-assurance": {
+          "name": "MSc Pharmaceutical Technology and Quality Assurance",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-philosophy": {
+          "name": "MA Philosophy",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-physician-associate-studies": {
+          "name": "MSc Physician Associate Studies",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-planning": {
+          "name": "MSc Planning",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-playwriting": {
+          "name": "MA Playwriting",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-political-economy-research-route": {
+          "name": "MA Political Economy (Research Route)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-political-economy-standard-route": {
+          "name": "MA Political Economy (Standard Route)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2e22e640d8db0148908a5d8846942a1d5c88c9d932c7f7a46fcafe318c7b925e"
+        },
+        "manchester-ma-politics": {
+          "name": "MA Politics",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-politics-research": {
+          "name": "MA Politics (Research)",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-pollution-and-environmental-control": {
+          "name": "MSc Pollution and Environmental Control",
+          "degreeType": "MSc",
+          "faculty": "Department of Earth and Environmental Sciences",
+          "department": "Department of Earth and Environmental Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-pollution-and-environmental-control-online-msc": {
+          "name": "Pollution and Environmental Control (online) MSc",
+          "degreeType": "MSc",
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "d685d5be4c9f322d57e89103fa1690ec92348e6a3de5bc417db020e2bdd282b2"
+          "deadlineHash": "b6fc9f30faf3ee866fefbb1d8d3689e0d8de669e31a2b9305c8558345b6d546b"
+        },
+        "manchester-msc-polymer-materials-science-and-engineering": {
+          "name": "MSc Polymer Materials Science and Engineering",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5fb0d014601be1b4da9e7a28f3832509cd46e4c1498d4996461a3906f258c8ee"
+        },
+        "manchester-msc-precision-medicine": {
+          "name": "MSc Precision Medicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-med-psychology-of-education": {
+          "name": "MEd Psychology of Education",
+          "degreeType": "MEd",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "44bc6d0dbf859db3d3d9d604d2b8e0b7b814480130d9cb6a1f715fd9f495d503"
+        },
+        "manchester-mres-public-health": {
+          "name": "MRes Public Health",
+          "degreeType": "MRes",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-mph-public-health-online": {
+          "name": "MPH Public Health (Online)",
+          "degreeType": "MPH",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-llm-public-international-law": {
+          "name": "LLM Public International Law",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c76ae59c4b88c469ca0792f6304e515721bde33e751a073f2c14aa7d96a68c0b"
+        },
+        "manchester-msc-pure-mathematics-and-mathematical-logic": {
+          "name": "MSc Pure Mathematics and Mathematical Logic",
+          "degreeType": "MSc",
+          "faculty": "Department of Mathematics",
+          "department": "Department of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b40e40c7f0f3a96cb4d300d36783fc03fb13469dac3b1f860415e538f4481bb7"
+        },
+        "manchester-msc-pure-mathematics": {
+          "name": "MSc Pure Mathematics",
+          "degreeType": "MSc",
+          "faculty": "Department of Mathematics",
+          "department": "Department of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "61d102cbf9a7f14619196fecf41924e925396b34b155a73febee6dd1ec009866"
+        },
+        "manchester-msc-quantitative-finance": {
+          "name": "MSc Quantitative Finance",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-msc-real-estate-development": {
+          "name": "MSc Real Estate Development",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d9de3f04d4e27a034acae52cfe47804ab411ac2b20523848889117dab900b54e"
+        },
+        "manchester-msc-real-estate-finance-and-investment": {
+          "name": "MSc Real Estate Finance and Investment",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a238db54f1072ebd616392fb4894e338191a34252b285599a20005ed2c7da228"
+        },
+        "manchester-msc-real-estate": {
+          "name": "MSc Real Estate",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-renewable-energy-and-clean-technology": {
+          "name": "MSc Renewable Energy and Clean Technology",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-renewable-energy-and-clean-technology-with-extended-research": {
+          "name": "MSc Renewable Energy and Clean Technology with Extended Research",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-reproduction-and-pregnancy-research": {
+          "name": "MSc Reproduction and Pregnancy (Research)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-research-methods-with-education": {
+          "name": "MSc Research Methods with Education",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-research-methods-with-human-geography": {
+          "name": "MSc Research Methods with Human Geography",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-research-methods-with-international-development": {
+          "name": "MSc Research Methods with International Development",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-research-methods-with-planning-and-environmental-management": {
+          "name": "MSc Research Methods with Planning and Environmental Management",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-robotics": {
+          "name": "MSc Robotics",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1235e6199adc67793a0cd188ece5c6e6636955f3f8d598ed838bd28720733e36"
+        },
+        "manchester-msc-robotics-with-extended-research": {
+          "name": "MSc Robotics with Extended Research",
+          "degreeType": "MSc",
+          "faculty": "Department of Electrical & Electronic Engineering",
+          "department": "Department of Electrical & Electronic Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3fd6c77589ca8f624c6a8fa2ad8eaed4d3dd2fda408ab9e84af60ac01ecb7f94"
+        },
+        "manchester-msc-science-and-health-communication": {
+          "name": "MSc Science and Health Communication",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-screenwriting": {
+          "name": "MA Screenwriting",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-llm-security-and-international-law": {
+          "name": "LLM Security and International Law",
+          "degreeType": "LLM",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a4be1da71cd5a25d3e8db16c820045a7602bc8e134f75e2a87a81d13aa63a6da"
+        },
+        "manchester-msc-skin-ageing-and-aesthetic-medicine": {
+          "name": "MSc Skin Ageing and Aesthetic Medicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-social-anthropology": {
+          "name": "MA Social Anthropology",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-social-network-analysis": {
+          "name": "MSc Social Network Analysis",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-social-research-methods-and-statistics": {
+          "name": "MSc Social Research Methods and Statistics",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c9cdfb9bedc87a0691b70b3b5bbb4605b647c19e04365d38140d1e9a45511270"
+        },
+        "manchester-msc-social-research-methods-and-statistics-with-computational-social-science": {
+          "name": "MSc Social Research Methods and Statistics with Computational Social Science",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-social-research-methods-and-statistics-with-demography": {
+          "name": "MSc Social Research Methods and Statistics with Demography",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-social-work": {
+          "name": "MA Social Work",
+          "degreeType": "MA",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-sociological-research": {
+          "name": "MSc Sociological Research",
+          "degreeType": "MSc",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-sociology": {
+          "name": "MA Sociology",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-specialist-practice-cancer": {
+          "name": "MSc Specialist Practice (Cancer)",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-statistics": {
+          "name": "MSc Statistics",
+          "degreeType": "MSc",
+          "faculty": "Department of Mathematics",
+          "department": "Department of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6fa8a3209d8d77a14da6522e92c143caf57ce6fcd597b4eb9098083392cce090"
+        },
+        "manchester-msc-structural-engineering": {
+          "name": "MSc Structural Engineering",
+          "degreeType": "MSc",
+          "faculty": "Department of Civil Engineering and Management",
+          "department": "Department of Civil Engineering and Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5632a312b074066423a2732c4c36fdf98a9774c21b9e13bb2af1d20a353aaa30"
+        },
+        "manchester-msc-subsurface-energy-engineering": {
+          "name": "MSc Subsurface Energy Engineering",
+          "degreeType": "MSc",
+          "faculty": "Department of Chemical Engineering",
+          "department": "Department of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-sustainable-business": {
+          "name": "MSc Sustainable Business",
+          "degreeType": "MSc",
+          "faculty": "Alliance Manchester Business School",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "65af533dbb59d5cb5dc8fe9fc5bff31c7d908537f3f1ecd2b3723e9fc963a7c5"
+        },
+        "manchester-sustainable-electrical-power-systems-engineering-online-msc-pgdip-pgcert": {
+          "name": "Sustainable Electrical Power Systems Engineering (online) MSc/PGDip/PGCert",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-tesol": {
+          "name": "MA TESOL",
+          "degreeType": "MA",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-textile-technology-technical-textiles": {
+          "name": "MSc Textile Technology (Technical Textiles)",
+          "degreeType": "MSc",
+          "faculty": "Department of Materials",
+          "department": "Department of Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e45c1bf7e500be9254a2b8814ef8cf8c14c8761b3373754e3ba6d3758640a0bb"
+        },
+        "manchester-msc-tissue-engineering-for-regenerative-medicine": {
+          "name": "MSc Tissue Engineering for Regenerative Medicine",
+          "degreeType": "MSc",
+          "faculty": "Faculty of Biology, Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-transformative-oncology-msc": {
+          "name": "Transformative Oncology MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-ma-translation-and-interpreting-studies": {
+          "name": "MA Translation and Interpreting Studies",
+          "degreeType": "MA",
+          "faculty": "School of Arts, Languages and Cultures",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "38a239bbad5fe7ece600e9c28637efd21900b1ba376140665018dcdab0d8b36e"
+        },
+        "manchester-msc-transport-and-urban-planning": {
+          "name": "MSc Transport and Urban Planning",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-urban-design-and-international-planning": {
+          "name": "MSc Urban Design and International Planning",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dc6be019293f46e32ab7d03d85c4f75d41bb93cf44462d7186c30cbe3d387b3a"
+        },
+        "manchester-msc-urban-regeneration-and-development": {
+          "name": "MSc Urban Regeneration and Development",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "manchester-msc-urban-studies": {
+          "name": "MSc Urban Studies",
+          "degreeType": "MSc",
+          "faculty": "School of Environment, Education and Development",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bd9808d92b365ca5b5f1dd1c75ccc47a09cfe13f74a793bae8c9f1a316da8443"
+        },
+        "manchester-ma-visual-anthropology": {
+          "name": "MA Visual Anthropology",
+          "degreeType": "MA",
+          "faculty": "School of Social Sciences",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4301c7be2e35b03d20564fb14276f726a79283af459aca30de170af6be953004"
         }
       }
     },
