@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-10T17:36:38.782835+00:00",
+    "generatedAt": "2026-07-14T18:24:26.267972+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -13,17 +13,17 @@
     "cycleGuidanceAvailable": 198,
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
-    "universitiesWithPrograms": 189,
-    "universitiesWithWindows": 48,
-    "verifiedWindows": 2837,
-    "universitiesWithPredictions": 48,
-    "predictedWindows": 2836,
+    "universitiesWithPrograms": 190,
+    "universitiesWithWindows": 50,
+    "verifiedWindows": 2970,
+    "universitiesWithPredictions": 50,
+    "predictedWindows": 2954,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
-      "select-target-programmes": 11,
-      "verify-exact-windows": 141,
-      "monitor-and-refresh": 48
+      "select-target-programmes": 10,
+      "verify-exact-windows": 140,
+      "monitor-and-refresh": 50
     }
   },
   "batches": [
@@ -49,9 +49,9 @@
       "universities": 5,
       "entriesLocated": 5,
       "policiesVerified": 5,
-      "universitiesWithPrograms": 3,
-      "universitiesWithWindows": 3,
-      "predictedWindows": 233
+      "universitiesWithPrograms": 4,
+      "universitiesWithWindows": 4,
+      "predictedWindows": 279
     },
     {
       "batch": 3,
@@ -128,8 +128,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 2,
-      "predictedWindows": 2
+      "universitiesWithWindows": 3,
+      "predictedWindows": 74
     },
     {
       "batch": 9,
@@ -774,10 +774,10 @@
       "policyModel": "programme-specific",
       "mastersAvailability": "broad",
       "cycleGuidance": null,
-      "programmeCount": 0,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "select-target-programmes"
+      "programmeCount": 45,
+      "windowCount": 60,
+      "predictionCount": 46,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "the-university-of-hong-kong",
@@ -1375,7 +1375,7 @@
         "notes": "The Computer Science MSc is closed for September 2026 and lists a 31 March 2026 deadline. The exact next-cycle opening day and deadline are not yet published."
       },
       "programmeCount": 134,
-      "windowCount": 133,
+      "windowCount": 134,
       "predictionCount": 133,
       "nextAction": "monitor-and-refresh"
     },
@@ -1494,10 +1494,10 @@
         "opensText": "Exact opening day not stated",
         "notes": "Advanced Computer Science lists 7 November 2025, 2 January 2026, 27 February 2026, and 22 May 2026 selection deadlines. Later applications depend on availability."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 19,
+      "windowCount": 72,
+      "predictionCount": 72,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "the-university-of-queensland",

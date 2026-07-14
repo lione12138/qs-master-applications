@@ -1,9 +1,46 @@
 {
   "meta": {
     "description": "Internal exact-window candidates awaiting manual review. This file is never published to the static site.",
-    "updatedAt": "2026-07-12T15:36:17.748317+00:00"
+    "updatedAt": "2026-07-14T18:21:45.060199+00:00"
   },
   "items": [
+    {
+      "id": "adapter-window:edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc-2027-main-application-deadline:2026-06-17:2026-07-08",
+      "type": "adapter-new-window",
+      "status": "approved",
+      "universityId": "university-of-edinburgh",
+      "detectedAt": "2026-07-14T18:21:45.060199+00:00",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
+      "openingBasis": "official",
+      "record": {
+        "id": "edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc-2027-main-application-deadline",
+        "universityId": "university-of-edinburgh",
+        "scopeType": "programme",
+        "scopeId": "edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc",
+        "intake": "February 2027",
+        "round": "Main application deadline",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2026-06-17",
+        "closesAt": "2026-07-08",
+        "applicationUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
+        "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
+        "verifiedAt": "2026-07-14",
+        "evidence": "The official programme adapter observed MSc Applied Psychology (Healthcare) for Children and Young People opening on 2026-06-17 and closing on 2026-07-08. Source: https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
+        "intakeDetails": {
+          "label": "February 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "other",
+          "startMonth": 2
+        }
+      },
+      "changes": {},
+      "evidenceExcerpt": "When to apply Applications open Application deadline 17 June 2026 8 July 2026",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-14T18:24:24.867760+00:00"
+    },
     {
       "id": "tu-delft-computer-science-msc-2027-eu-efta-msc-deadline",
       "type": "manual-exact-window",

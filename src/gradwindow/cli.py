@@ -27,6 +27,7 @@ from .paths import (
 from .predictions import generate_predictions
 from .programme_adapters.cambridge import CambridgeAdapter
 from .programme_adapters.cuhk import CUHKAdapter
+from .programme_adapters.edinburgh import EdinburghAdapter
 from .programme_adapters.eth import ETHAdapter
 from .programme_adapters.generic import GenericProgrammeAdapter, GenericProgrammeConfig
 from .programme_adapters.glasgow import GlasgowAdapter
@@ -43,7 +44,6 @@ from .programme_adapters.nus import NUSAdapter
 from .programme_adapters.oxford import OxfordAdapter
 from .programme_adapters.polyu import PolyUAdapter
 from .programme_adapters.stanford import StanfordAdapter
-from .programme_adapters.static_catalog import StaticCatalogAdapter, StaticCatalogConfig
 from .programme_adapters.sydney import SydneyAdapter
 from .programme_adapters.tudelft import TUDelftAdapter
 from .programme_adapters.uq import UQAdapter
@@ -58,18 +58,7 @@ from .validation import validate_data
 PROGRAMME_ADAPTERS = {
     "cambridge": CambridgeAdapter,
     "cuhk": CUHKAdapter,
-    "edinburgh": lambda: StaticCatalogAdapter(
-        StaticCatalogConfig(
-            university_id="university-of-edinburgh",
-            school_prefix="edinburgh",
-            catalog_url="https://study.ed.ac.uk/programmes/postgraduate-taught-a-z",
-            link_path_contains="/programmes/postgraduate-taught/",
-            minimum_expected_programmes=150,
-            default_application_url="https://study.ed.ac.uk/postgraduate/applying",
-            default_intake="September 2026",
-            default_application_opens_at="2025-10-01",
-        )
-    ),
+    "edinburgh": EdinburghAdapter,
     "eth": ETHAdapter,
     "glasgow": GlasgowAdapter,
     "harvard": HarvardAdapter,

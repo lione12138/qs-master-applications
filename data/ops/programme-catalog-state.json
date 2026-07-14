@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T15:28:10.660364+00:00",
+    "updatedAt": "2026-07-14T18:21:45.060199+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -7363,121 +7363,129 @@
       }
     },
     "university-of-edinburgh": {
-      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught-a-z",
-      "checkedAt": "2026-07-06T13:50:26.034242+00:00",
-      "itemCount": 254,
-      "applicationOpensAt": "2025-10-01",
-      "catalogHash": "56aaf1a716b3ab36aeb2b9fd937a33508eb81e2ba4d540ce3c0fba74ab7cf705",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught",
+      "checkedAt": "2026-07-14T18:21:45.060199+00:00",
+      "itemCount": 261,
+      "applicationOpensAt": null,
+      "catalogHash": "2f06c8afb3f90dbfdf6daf48128f5818786c933a77eea64ccde0ca4b2e267bf4",
       "programmes": {
         "edinburgh-accounting-and-financial-management-msc": {
           "name": "MSc Accounting and Financial Management",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "92f12736a147b203e0d928429f073e64d53ba73e1cbca18f78cecb37740fe928"
         },
         "edinburgh-acoustics-and-music-technology-msc": {
           "name": "MSc Acoustics and Music Technology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b11ed5cd4ec145110d077aba85dd8eab30740577da2ade74cd0ca8f194b01f61"
         },
         "edinburgh-advanced-chemical-engineering-msc": {
           "name": "MSc Advanced Chemical Engineering",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9f01d1a9957053025c9fa590bb2df14e3a7b30b02aa6b512a6de7a5c23f2c5b2"
+        },
+        "edinburgh-advanced-clinical-practice-online-learning-mvetsci": {
+          "name": "MVetSci Advanced Clinical Practice (Online Learning)",
+          "degreeType": "MVetSci",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f474e00c044b75de26fc83db9cd333078c47969f4028c9582ce21fe2e62ffa77"
         },
         "edinburgh-advanced-nursing-msc": {
           "name": "MSc Advanced Nursing",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "283bdecc595000e611784539958a558dc0c16b9766245309867814389670be3c"
         },
         "edinburgh-advanced-power-engineering-msc": {
           "name": "MSc Advanced Power Engineering",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "45c93d1a3ce8f648f81361ba9436614533ac35e050bff1fbf7594e006d228d40"
         },
         "edinburgh-advanced-sustainable-design-msc": {
           "name": "MSc Advanced Sustainable Design",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "1925928b5e46ebe22eb919f895e2f2f22497e60dd18cc6f63d4ea383c6f61094"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8d13e3939cf1d8713724f5b8347a281b35bcd9e5a8be7603d4a0717f00103203"
         },
         "edinburgh-africa-and-international-development-msc": {
           "name": "MSc Africa and International Development",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "55d8a01d1e095b2c2e7f66a76e7217a41be3d9aea086f75a14f7d9e536ba3538"
         },
         "edinburgh-ai-for-business-msc": {
           "name": "MSc AI for Business",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0c280ff03b19fac850dd1996c79387ae1ccbad9ab296a7ebd29bbfa1b492aed4"
         },
         "edinburgh-analytical-chemistry-msc": {
           "name": "MSc Analytical Chemistry",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Chemistry",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3712449bc84000318dcd77181f0bf58ae9a5b99e4225a1c6aba8f042dc4f4626"
         },
         "edinburgh-ancient-history-msc": {
           "name": "MSc Ancient History",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "45ddbd4121fce0b2cd44eb63bc3f880ef208a7fc4e9e67fbbb32a21ab323fcbc"
         },
         "edinburgh-ancient-worlds-archaeology-and-classics-online-learning-msc": {
           "name": "MSc Ancient Worlds (Archaeology and Classics) (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "30580707c150a3cad65a1c2000fff15dead9da18275771031e5a2052842f451a"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f73fa1233efecb6cafa21f4c2a287975b294aef4ef97faddde9f3cb43a917fbe"
         },
         "edinburgh-animal-breeding-and-genetics-msc": {
           "name": "MSc Animal Breeding and Genetics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7032c21465f620f70cb6cf5d10be7adccae5d5f412fee65890d2f0d477d0e147"
         },
         "edinburgh-applied-animal-behaviour-and-animal-welfare-msc": {
           "name": "MSc Applied Animal Behaviour and Animal Welfare",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "aa6d51197351d98e6b1fff052a5f002453917a8c4f19acd9289d8b0fee4b0fce"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5b33d3fada172f56e851a49c9356d8757b9136c65ae0cb18fddc9150ca2e6d31"
         },
         "edinburgh-applied-conservation-genetics-with-wildlife-forensics-online-learning-msc": {
           "name": "MSc Applied Conservation Genetics with Wildlife Forensics (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
@@ -7486,1918 +7494,1966 @@
           "degreeType": "MSc",
           "faculty": "",
           "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "5b7a8d2a2df8871f5f556baead60845f42e563e784d4da0d1f72259b30603348"
+          "parseStatus": "incomplete",
+          "deadlineHash": "d47b4f5a5f9cf7da736ff014daaf1eea200ccd10505889bc6c5f31af0097250d"
         },
         "edinburgh-applied-linguistics-msc": {
           "name": "MSc Applied Linguistics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc": {
           "name": "MSc Applied Psychology (Healthcare) for Children and Young People",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
           "parseStatus": "parsed",
-          "deadlineHash": "7d434ca76f6d38bc1c371f51169e04e5b792646cb68f2d558b5832ee2b6cbd19"
+          "deadlineHash": "acc6574c2e7750fed164e18e953204c37fbd3835953166828e1ddc7acecdfba9"
         },
         "edinburgh-archaeology-msc": {
           "name": "MSc Archaeology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7356659e03ced483c61f9a253f5058b5077925f8f8769a5aa6a789101034716c"
         },
         "edinburgh-architectural-and-urban-design-msc": {
           "name": "MSc Architectural and Urban Design",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7528ddd8dfcf0f01dfce2d6c61a3f5461c14fb4b0ebed0cd0b0dce841502ac8e"
         },
         "edinburgh-architectural-conservation-msc": {
           "name": "MSc Architectural Conservation",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bce0c76c56affdb82f273ec2e0e067b1b7bb741f1ffd647ef541cd2b17202e98"
         },
         "edinburgh-architecture-landscape-and-environment-msc": {
           "name": "MSc Architecture, Landscape and Environment",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-architecture-master": {
           "name": "Master Architecture,",
           "degreeType": "Master",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "077f860b3a97763cee93a31509ca8e43cf13d9303beef5a8dd6f1b996673c57d"
         },
         "edinburgh-artificial-intelligence-msc": {
           "name": "MSc Artificial Intelligence",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "a44eae4e841b38544512bf21f9ce7817134f1c4101e6cc0114c73c8b310e4e53"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dc6a7e37a0d8c1cab8a677277c9ef5165c494ad5347a63606cd391c1a5bfca99"
         },
         "edinburgh-astrobiology-and-planetary-sciences-msc": {
           "name": "MSc Astrobiology and Planetary Sciences",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Physics and Astronomy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f6016e29b53f980fd4f5aa15a34664caee6df56406b7fb4cbd133e694efb612a"
         },
         "edinburgh-banking-innovation-and-risk-analytics-msc": {
           "name": "MSc Banking Innovation and Risk Analytics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6ed5b48f06704335406b14ceb4a9bc67bf0d86d16d9c98a278182b2c65a357e5"
         },
         "edinburgh-biblical-studies-mth-msc": {
           "name": "MSc Biblical Studies MTh,",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Divinity",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c618f0fc8d1932f1e48b3bf00366ea50f10cb1e371c8f23e9db8b692b36bf18c"
         },
         "edinburgh-biochemistry-msc": {
           "name": "MSc Biochemistry",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "68e6a53f83171fc9df46b2db5abd16e919b0f25368fcb06aceddee39949a41f9"
         },
         "edinburgh-biodiversity-and-taxonomy-of-plants-msc": {
           "name": "MSc Biodiversity and Taxonomy of Plants",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e88f3eb8fe22cad5665cf545aed002d214a96468588895db54d02bc1b7273c0c"
         },
         "edinburgh-biodiversity-wildlife-and-ecosystem-health-online-learning-pgcert-pgdip-msc": {
           "name": "MSc Biodiversity, Wildlife and Ecosystem Health (Online Learning) PgCert, PgDip,",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "647622c40f125434114b2da1f5739dd3cf84d1537f061e58fedd500bcb54d4c7"
         },
         "edinburgh-bioinformatics-msc": {
           "name": "MSc Bioinformatics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f3133aa7272cceb610cf6de035994a458effbf989348661087cad96216a0394c"
         },
         "edinburgh-biomedical-engineering-msc": {
           "name": "MSc Biomedical Engineering",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-biotechnology-msc": {
           "name": "MSc Biotechnology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d0c89391ce68d0fc9902c5eee2860bd70f0f187cabb303c8eb84fe2cceb5ea36"
         },
         "edinburgh-buddhist-studies-msc": {
           "name": "MSc Buddhist Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Divinity",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d8ff9831cfa7f3ca70abc9cf2f30d9f1c0d6583e813d8df74584e587ea50660b"
         },
         "edinburgh-business-administration-master": {
           "name": "Master Business Administration,",
           "degreeType": "Master",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a952ec95dfe7767c7ab603a9679717b24f72a9ffc1c15aea95fa4e482677c0f3"
+        },
+        "edinburgh-business-administration-online-learning-master": {
+          "name": "Master Business Administration, (Online Learning)",
+          "degreeType": "Master",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bad5a1110bcdb9a3890f091ff6e246aabaab54796d19b6bd2c6b49e04e66bfd3"
         },
         "edinburgh-business-analytics-msc": {
           "name": "MSc Business Analytics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9a640c70b11fb15f076a6b9e2a093e8c16a3eac96bc16275896a5545d2950960"
         },
         "edinburgh-cancer-biology-and-precision-oncology-online-learning-msc": {
           "name": "MSc Cancer Biology and Precision Oncology (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "980980786c7daaf9c267d98448848269aff21b9108b93573b5eab6f3335a95e6"
         },
         "edinburgh-circular-economy-msc": {
           "name": "MSc Circular Economy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "01fc6d0947135feb42c9e5b02c39af1e2b8975f6ac3adf10f6b479fd763348b4"
         },
         "edinburgh-classical-art-and-archaeology-msc": {
           "name": "MSc Classical Art and Archaeology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b11022786612d476a5ac4e08f45ea74c6f73977dfd6916cd23da2fe670f91a6b"
         },
         "edinburgh-classics-msc": {
           "name": "MSc Classics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "46e716ee06bf75895803a038909ba9556fc7b0bd51bf358bcfdffd54cfc9b971"
         },
         "edinburgh-climate-change-finance-and-investment-msc": {
           "name": "MSc Climate Change Finance and Investment",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fb4790a00b0b376b35f5906fff39caf74339fa7dbd2bb29c05026f7c29020414"
         },
         "edinburgh-climate-change-management-msc": {
           "name": "MSc Climate Change Management",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4c10befe9649cb2f9744fc6376cb05a2e92f88aa66a780010ae2aef86239040a"
         },
         "edinburgh-climate-change-management-online-learning-msc": {
           "name": "MSc Climate Change Management (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "46cb0bab340f74dbf52cadafc13e42adec8bf24b8f0e97959b98874278a0d604"
         },
         "edinburgh-clinical-anatomy-msc": {
           "name": "MSc Clinical Anatomy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "cf7d8a429a3e7f1953648ad011c8c7f8b1a2477c08591f97abba96352736e11d"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9116f9d238ccc7326c0b78bda7664c206ce1f077d47e7ab752dbc7edc5049330"
         },
         "edinburgh-clinical-animal-behaviour-online-learning-msc": {
           "name": "MSc Clinical Animal Behaviour (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "6f693a9d32200d8497754b90e8406b24f4d724e3f29991e3ff3e035bcb27cc3b"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6889ff3ca8d3d883c47ab0e30bcb89558bca30d19cc306314998245e73392cd5"
         },
         "edinburgh-clinical-education-online-learning-msc": {
           "name": "MSc Clinical Education (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "4136528f2522bd1491f1c73cd27e76dd4d15f8d3e7bc8856707e0866867c260f"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9108d8178f558d3c738e9fcbc7563165965f156ff533172abf5e7ddc8c2ffec1"
         },
         "edinburgh-clinical-management-of-pain-online-learning-msc": {
           "name": "MSc Clinical Management of Pain (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-clinical-microbiology-and-infectious-diseases-online-learning-msc": {
           "name": "MSc Clinical Microbiology and Infectious Diseases (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-clinical-trials-online-learning-msc": {
           "name": "MSc Clinical Trials (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-cognitive-science-msc": {
           "name": "MSc Cognitive Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "a44eae4e841b38544512bf21f9ce7817134f1c4101e6cc0114c73c8b310e4e53"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0405d1cb5dc6e1c56f7fddf469e7dfa5dfe72255dea688e5506b7c3214ca2f61"
         },
         "edinburgh-commercial-law-llm": {
           "name": "LLM Commercial Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4a6657ea43e0b64ea645be369e7360849c763d9de79568d7b3bfd85cac5b5769"
         },
         "edinburgh-comparative-education-and-international-development-ceid-msc": {
           "name": "MSc Comparative Education and International Development (CEID)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ed804d205c668a67e5e18cbf09f035c3bf39abacc03bdb83f15e286ab5753795"
         },
         "edinburgh-comparative-literature-msc": {
           "name": "MSc Comparative Literature",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8cff2b5eaa22f1d7c831433811e07ea99651c4a476669bbf37fafa1c04c2f456"
         },
         "edinburgh-comparative-private-law-llm": {
           "name": "LLM Comparative Private Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7c7d7c93dc90b3a2902295708f42232d16ed375893df35e46bcdfaaf04369eba"
         },
         "edinburgh-comparative-public-policy-msc": {
           "name": "MSc Comparative Public Policy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9ca93904281be7730136e160582116f7b4a804bbc9dd599b297b94cb4ddc9671"
         },
         "edinburgh-composition-mmus": {
           "name": "MMus Composition",
           "degreeType": "MMus",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "1925928b5e46ebe22eb919f895e2f2f22497e60dd18cc6f63d4ea383c6f61094"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7270f71b9ff914adc5b6d716e1122caf13e6e2bfb483a9aa89839787e9fabdb8"
         },
         "edinburgh-computational-applied-mathematics-msc": {
           "name": "MSc Computational Applied Mathematics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8a8a6b07684d7349ddf5e2c9a769f9a32a0cf660e997fbbf4b632aaa5db66c53"
         },
         "edinburgh-computational-mathematical-finance-msc": {
           "name": "MSc Computational Mathematical Finance",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8c43c223b68acda80ea94b48c70f8e028e0187fe6fb644a3903918ee97e3396e"
         },
         "edinburgh-computer-science-msc": {
           "name": "MSc Computer Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "a44eae4e841b38544512bf21f9ce7817134f1c4101e6cc0114c73c8b310e4e53"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2c1aa83af210b817d972a44a1dc74c34430c8a4757fa8f8cd6b5817cd382f120"
+        },
+        "edinburgh-conflict-security-and-development-msc": {
+          "name": "MSc Conflict, Security and Development",
+          "degreeType": "MSc",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c96c87b8f42edb4aefa6243922de5397a9708cf185684d35c202f0883b9d8307"
+        },
+        "edinburgh-conservation-medicine-online-learning-mvetsci": {
+          "name": "MVetSci Conservation Medicine (Online Learning)",
+          "degreeType": "MVetSci",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e6d91e19d626b093c01195f238784021b291e7a1213ba9567abd67aa60e557f9"
         },
         "edinburgh-contemporary-art-practice-ma": {
           "name": "MA Contemporary Art Practice",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f7dda9dc6bf9391dfaf9611b459c27578457536ba2b20ec34ce81c550c826375"
         },
         "edinburgh-contemporary-art-theory-ma": {
           "name": "MA Contemporary Art Theory",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "64673ec7022358d9003e1e0d480487d7a2bc1537d761ada36c00c19078de50c9"
         },
         "edinburgh-contemporary-history-msc": {
           "name": "MSc Contemporary History",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7e8ed85e09637fd01292d917481a792455337c8f6d615d17e4e815ca4f0c48d3"
         },
         "edinburgh-corporate-law-llm": {
           "name": "LLM Corporate Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3ddb40814bf54bb6320f173f18d34f87ebe113d6b4f6404f79f18d5a667633a6"
+        },
+        "edinburgh-counselling-interpersonal-dialogue-mcouns": {
+          "name": "MCouns Counselling (Interpersonal Dialogue)",
+          "degreeType": "MCouns",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "90a01878a041342e7d804e207a9568c4ea4077f298b2344597f3cd369628848e"
+        },
+        "edinburgh-counselling-mcouns": {
+          "name": "MCouns Counselling",
+          "degreeType": "MCouns",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "58fdffb0710eb8d70a20a3406c14edd175afd640bb87ef8e6bb8faab5c22324a"
         },
         "edinburgh-counselling-studies-msc": {
           "name": "MSc Counselling Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "35a3235d8b649ebf426c857b2ba57dfb0275d7683d69d8d7447fe9fd5656c3e1"
         },
         "edinburgh-craft-ma": {
           "name": "MA Craft",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b9c8f8688e1a2916e910f78cbe174b877fdd4142651dc980a457f1f3d490c8e6"
         },
         "edinburgh-creative-industries-msc": {
           "name": "MSc Creative Industries",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8a8a6813a6359a364d119fcc785e103dc119d9fe114192c5507857d6ed4ba6bf"
         },
         "edinburgh-creative-writing-msc": {
           "name": "MSc Creative Writing",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6982853edf52665c6683c3154ce413f07b7843593d98995272d658809fb31771"
         },
         "edinburgh-criminal-law-and-criminal-justice-llm": {
           "name": "LLM Criminal Law and Criminal Justice",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6d4f64e6d27efbc4b5223da91c6965e33891c5b0ea5758d73ed7e3080c3d95b4"
         },
         "edinburgh-criminology-and-criminal-justice-msc": {
           "name": "MSc Criminology and Criminal Justice",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "247bb22be18a95ad8398a59d181030444e5f2c94d96ee79e186bb63685f3af95"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f2ad1d1972a5ba2a03004e1fb39b7cb9f4b036adae7f7fef7f90fd53ace5e6c2"
         },
         "edinburgh-critical-care-online-learning-msc": {
           "name": "MSc Critical Care (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b3fb7aa8521028f29cee5012fc7238bf32c599bd487e3109f402261b04d64be7"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "311b9d0371c014b4689eca18da0bcab6b2f8d5a19cec950824297cbea0f30714"
         },
         "edinburgh-cultural-heritage-futures-msc": {
           "name": "MSc Cultural Heritage Futures",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ffc2e0d53e863cbd40d529896d8f7fdbe00fb36edb2672fecb1d753343f044bb"
         },
         "edinburgh-cyber-security-privacy-and-trust-msc": {
           "name": "MSc Cyber Security, Privacy and Trust",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "a44eae4e841b38544512bf21f9ce7817134f1c4101e6cc0114c73c8b310e4e53"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5c0c641a7ef303f5069c257410e32fd4bd61fcde184f2294314a5c7f17e5d393"
         },
         "edinburgh-dance-science-and-education-msc": {
           "name": "MSc Dance Science and Education",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "887a759844c9a8a958522cbd85fa380abe421549d394bfaeabe52d547f59ebe6"
         },
         "edinburgh-data-and-artificial-intelligence-ethics-msc": {
           "name": "MSc Data and Artificial Intelligence Ethics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9091a47f3e03cc9e72f897f13f1c3ab08d05f9d0b3001d5c047d84b1ac563f2d"
         },
         "edinburgh-data-and-decision-analytics-online-learning-msc": {
           "name": "MSc Data and Decision Analytics (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-data-driven-breeding-and-genetics-online-learning-msc": {
           "name": "MSc Data-Driven Breeding and Genetics (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6c088fe3dc6664b61992b61f2f592ace244682c98136c391ab9fba42a3445127"
         },
         "edinburgh-data-inequality-and-society-msc": {
           "name": "MSc Data, Inequality and Society",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c909bf4155f626429ef72255e9a42d37e108c972a83384fb3cc2a1df64fa355e"
         },
         "edinburgh-data-science-for-biology-msc": {
           "name": "MSc Data Science for Biology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f02021fd3c492b8552a759f9fb32836bb24e113ae32d070c5cf3a53bc520b4bc"
         },
         "edinburgh-data-science-for-health-and-social-care-online-learning-msc": {
           "name": "MSc Data Science for Health and Social Care (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "38731aaacd7eb1cb271b11190f0d8a0eac4a833e87ab9d5ae2e4abb4f87d9548"
         },
         "edinburgh-data-science-msc": {
           "name": "MSc Data Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "a44eae4e841b38544512bf21f9ce7817134f1c4101e6cc0114c73c8b310e4e53"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "042ead179312ef3e181e0b0e3c82314cbaab93dbdea4236c84b7ceb53260a8f2"
         },
         "edinburgh-data-science-technologies-online-learning-msc": {
           "name": "MSc Data Science Technologies (Online Learning)",
           "degreeType": "MSc",
           "faculty": "",
           "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "5b7a8d2a2df8871f5f556baead60845f42e563e784d4da0d1f72259b30603348"
+          "parseStatus": "incomplete",
+          "deadlineHash": "4ce25badbd1a2c194af2dd1987454e1a04cc94bdbe7a84f4d255411b98708af1"
         },
         "edinburgh-design-and-digital-media-msc": {
           "name": "MSc Design and Digital Media",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6027e77bbd0e64b8c486d03dc3b2ab8492cc7a2bfad274a6fb1bee1ff69b6ba2"
         },
         "edinburgh-design-for-change-ma": {
           "name": "MA Design for Change",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "95121305ab4a61e03f66c85d84fba25d078f3321db7f98a8e81af2470019bffd"
         },
         "edinburgh-design-informatics-ma": {
           "name": "MA Design Informatics",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "513b69c6df6f99b990e4d7d1b860b1bb6580558bf913ef265330c3f32cae5e96"
         },
         "edinburgh-design-informatics-msc": {
           "name": "MSc Design Informatics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "88a94e2a747392c040f52b1f2f7a84e9bcfede6ad548d008276bd3d5acd28f2f"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f330c03d73ba93a152b6ecbedf0d9cbcf322285fbfa2a30d451c832fe19daf2c"
         },
         "edinburgh-developmental-linguistics-msc": {
           "name": "MSc Developmental Linguistics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-developmental-science-msc": {
           "name": "MSc Developmental Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-digital-design-and-manufacture-msc": {
           "name": "MSc Digital Design and Manufacture",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ef1a78f722ce18281e482974629172f1b44e43da0010d776ad122c1a1ab2c377"
         },
         "edinburgh-digital-education-online-learning-msc": {
           "name": "MSc Digital Education (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "6cf2453682a9762e59b491f6a377452bf37dea943a2fe06e4877e66768f39bc1"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e5894aa652910a92374ae8e036ab8b9cd15869370ec78004025342dd75109ecf"
         },
         "edinburgh-digital-sociology-msc": {
           "name": "MSc Digital Sociology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0ab21e6165de4037057253d2ef4804f859de6451969e4288e23c6dd064264355"
         },
         "edinburgh-drug-discovery-and-translational-biology-msc": {
           "name": "MSc Drug Discovery and Translational Biology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f8a4a030d914254b6c234ff02be67de72318f1b313c531789b34085147311bfb"
         },
         "edinburgh-east-asian-studies-msc": {
           "name": "MSc East Asian Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "19475c7a2ca880c7d7ba493ba7a24434e10e521c1cad35cc870bb1a44d96b5f2"
         },
         "edinburgh-ecological-economics-msc": {
           "name": "MSc Ecological Economics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dfd59a0ed59cf423d4dbfc7295e23d455026d4bd084022aee099b2709c817a17"
         },
         "edinburgh-ecology-evolution-and-biodiversity-msc": {
           "name": "MSc Ecology, Evolution and Biodiversity",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "afef016b81f269cc04549f0d016148560a192caa7045fcb15fa8c53e8b76c6f2"
         },
         "edinburgh-economics-economics-econometrics-economics-finance-msc": {
           "name": "MSc Economics / Economics (Econometrics) / Economics (Finance)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Economics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "258d44d5399ab2d8f2a438d3597bc6b27df71ec3ef1efca006e5a32ad461b90d"
         },
         "edinburgh-education-futures-msc": {
           "name": "MSc Education Futures",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f48dff355561e49b0adaf6409d3f7e3fdb6ce55fa7decc93785ea944732443f2"
         },
         "edinburgh-education-msc": {
           "name": "MSc Education",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7ab13707466e6432fb525daf0a6efd9f58c17854a7719cc23e2eeccc0917cf9f"
         },
         "edinburgh-electrical-power-engineering-msc": {
           "name": "MSc Electrical Power Engineering",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5abb780c29d18a186aab8a5f33e3f1e8129bedd33b2aec7f66d6a8ca8a8a048c"
         },
         "edinburgh-electronics-msc": {
           "name": "MSc Electronics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4cc8cff2cd2fdde341b4ed1c920bda16bfa56bffd95123e36c85673d0f8e7dcc"
         },
         "edinburgh-energy-society-and-sustainability-msc": {
           "name": "MSc Energy, Society and Sustainability",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "89b1db3f87dfae943b874d87cf618620b019527444266d742b787ed9e3d66018"
         },
         "edinburgh-english-language-msc": {
           "name": "MSc English Language",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-english-literature-literature-and-modernity-1900-to-the-present-msc": {
           "name": "MSc English Literature: Literature and Modernity: 1900 to the Present",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d3ab6d67427ffc3a85e681c700c3128e2bb08d76379f8f0f4ed33cfec84840cc"
         },
         "edinburgh-english-literature-literature-and-society-enlightenment-romantic-and-victorian-msc": {
           "name": "MSc English Literature: Literature and Society: Enlightenment, Romantic and Victorian",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "919f0185f90bfce5e2ab3723ae8734e8c1b82bcdfe4ac47590058991eb7874f1"
         },
         "edinburgh-entrepreneurship-and-innovation-msc": {
           "name": "MSc Entrepreneurship and Innovation",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "04d483a72e52a969b9022f81e9a4ee6eb2ef48e362d34752d416ae5c66aff61b"
         },
         "edinburgh-environment-and-development-msc": {
           "name": "MSc Environment and Development",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "60856479ac22bc0dd9f30c87e600db736541287bddc4f8c076e3608649d1041a"
         },
         "edinburgh-environment-culture-and-society-msc": {
           "name": "MSc Environment, Culture and Society",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "44b790755da899f4cab29ce2874922c2f7a9dc99b8a86aa58821fa1593f32dc2"
         },
         "edinburgh-environmental-protection-and-management-msc": {
           "name": "MSc Environmental Protection and Management",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f41648493b4ad1f975146649a911be10fd252b2867b5d96615511c3cc7a41f1f"
         },
         "edinburgh-environmental-sustainability-msc": {
           "name": "MSc Environmental Sustainability",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "11d7ddca7611352568e1e981af8908d3f419003d569beb5c4e78213de95a057e"
         },
         "edinburgh-epidemiology-online-learning-msc": {
           "name": "MSc Epidemiology (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-epistemology-ethics-and-mind-online-learning-msc": {
           "name": "MSc Epistemology, Ethics and Mind (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-equine-science-online-learning-msc": {
           "name": "MSc Equine Science (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "425d981bec6201bc11e8b6dc96873d55548c3c6d615ffdbec5ed9968ba95f90c"
         },
         "edinburgh-european-law-llm": {
           "name": "LLM European Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9b8d84de8ed84ac14ef4d7be590b0f388606f723a0a06afccff8b9631dc16227"
         },
         "edinburgh-evolution-of-language-and-cognition-msc": {
           "name": "MSc Evolution of Language and Cognition",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-evolutionary-genetics-msc": {
           "name": "MSc Evolutionary Genetics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "080779054c2c14ac0330d58ebca797eb6573b98efe22b21c2ba8acedc24e0329"
+        },
+        "edinburgh-film-art-mfa": {
+          "name": "MFA Film Art",
+          "degreeType": "MFA",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6e34fe1b289e0903b9c2a179109807395d7f745724382aa770e6beb53303496a"
         },
         "edinburgh-film-directing-ma": {
           "name": "MA Film Directing",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "237cc780ec069541679dbab9040837f4b686ba828cfa30d4cc359feb86a24b09"
         },
         "edinburgh-film-exhibition-and-curation-msc": {
           "name": "MSc Film, Exhibition and Curation",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ed56d8aa317e44606407d46cf9d9b184764ea1b174c3bdda428257fc1e741816"
         },
         "edinburgh-film-studies-msc": {
           "name": "MSc Film Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "eee72ac02588cf8380a329423b48a8b28fe3da03bdb3168dd57610a83815a5ce"
         },
         "edinburgh-finance-and-investment-msc": {
           "name": "MSc Finance and Investment",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "52ec690fe10bef41c78310d0ab97561f4ade173fecdfbfa9dc1c392c43ec071a"
         },
         "edinburgh-finance-technology-and-policy-msc": {
           "name": "MSc Finance, Technology and Policy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "934f09759222c812f3cdc10f311936c1d6584ec16008a19d3d02ad434c39a486"
         },
         "edinburgh-financial-modelling-and-optimization-msc": {
           "name": "MSc Financial Modelling and Optimization",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f4c085b819bf5626e4a7b168ce1ff3053dea5b7e215c2cd745947d96306c1378"
         },
         "edinburgh-fire-engineering-science-msc": {
           "name": "MSc Fire Engineering Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "5b7a8d2a2df8871f5f556baead60845f42e563e784d4da0d1f72259b30603348"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3694056f3ce44f456b593435aebff38c033e8538038b875dfd0046d5b8874ed8"
         },
         "edinburgh-food-security-msc": {
           "name": "MSc Food Security",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "70496b2febe84ad55c0dbb7e0d593d19aaf82948e7a3cf90e555655dda26eca7"
         },
         "edinburgh-future-governance-msc": {
           "name": "MSc Future Governance",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0951a3d97b7e4f482d591835c28fd5f3d8b4ac7c56607ab03f215d626964279b"
         },
         "edinburgh-future-infrastructure-climate-change-and-sustainability-msc": {
           "name": "MSc Future Infrastructure, Climate Change and Sustainability",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3f469725b767a7a8854476bac218a323c01be079ff025bc6b5da27f3c5e64a96"
         },
         "edinburgh-geoenergy-msc": {
           "name": "MSc GeoEnergy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "374663db637cb2f90d8c03d304f4f7011e8491efc7f6b927c9b4ff8303fcde69"
         },
         "edinburgh-geographical-information-science-and-earth-observation-msc": {
           "name": "MSc Geographical Information Science and Earth Observation",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4380a70f869e3d3f6723edbe44cc5a3fe63d96cf7209adb16c8f9731588209e3"
         },
         "edinburgh-global-challenges-online-learning-msc": {
           "name": "MSc Global Challenges (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b15f04010dd3660d0df87b4f50c6c419d90cee413961e5604254d27f83355367"
         },
         "edinburgh-global-crime-justice-and-security-msc": {
           "name": "MSc Global Crime, Justice and Security",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e9575fecbd8d36c84da39bcf8c711375a148548a5834cadb0e60ff5ee9445b91"
         },
         "edinburgh-global-environment-and-climate-change-law-llm": {
           "name": "LLM Global Environment and Climate Change Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ac11b44f7f72a4209832f22c2dd168b667e545d73fa29008fd28a6ff61223260"
         },
         "edinburgh-global-environment-politics-and-society-msc": {
           "name": "MSc Global Environment, Politics and Society",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7018d938d2e7233927bd52d84526e059170e97a83116477eae7ab9148c425a8d"
         },
         "edinburgh-global-food-security-and-nutrition-online-learning-msc": {
           "name": "MSc Global Food Security and Nutrition (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f829fa3c5e618ba75887eaa38927314dbd924b9ddf2347352395ba747b78e5df"
         },
         "edinburgh-global-health-and-infectious-diseases-online-learning-msc": {
           "name": "MSc Global Health and Infectious Diseases (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "79a6325809f877b99a807d25e3dc101a34f420755e2f4b29aa12aae87f4d72f9"
         },
         "edinburgh-global-health-policy-msc": {
           "name": "MSc Global Health Policy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fd1ead2610472f3623495067be7d49b38f7be98560cf2c34cc0435431bf0b98c"
         },
         "edinburgh-global-mental-health-and-society-msc": {
           "name": "MSc Global Mental Health and Society",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f32aba78fefa12c556034f0db2c7ee100f704e00c02f8c8b8c5f32e67ecfd0ff"
         },
         "edinburgh-global-premodern-art-history-heritage-and-curation-msc": {
           "name": "MSc Global Premodern Art: History, Heritage and Curation",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "1925928b5e46ebe22eb919f895e2f2f22497e60dd18cc6f63d4ea383c6f61094"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3f9ecf75eb042464e680ef636e72016424027c294afe6de7d2fdb3322123bc93"
         },
         "edinburgh-global-strategy-and-sustainability-msc": {
           "name": "MSc Global Strategy and Sustainability",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d8f479e88e327963d6911f9fc5d87fa30ad24f760fa2994ea97326f28157d1e4"
         },
         "edinburgh-graphic-design-ma": {
           "name": "MA Graphic Design",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "88635a17d2c9a3abaa145496f9ce46df1650f7d81b1f4a9591d872e7f4a6e086"
         },
         "edinburgh-high-performance-computing-msc": {
           "name": "MSc High Performance Computing",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e6898f643772b26206a4a3dfb51aa94c8b4aac3d94676605f3a89f51efb8caef"
         },
         "edinburgh-high-performance-computing-online-learning-msc": {
           "name": "MSc High Performance Computing (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "27659f4236e6823d3ed30b21b7e16166c65f72e8db41cfb4c3ffa55eaea43b48"
         },
         "edinburgh-high-performance-computing-with-data-science-msc": {
           "name": "MSc High Performance Computing with Data Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e3571d430f48444cc88288eb7a48cbd022cee89e22484fbf0e5ef07dd35d2d38"
         },
         "edinburgh-high-performance-computing-with-data-science-online-learning-msc": {
           "name": "MSc High Performance Computing with Data Science (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "64b96dc695e318a7df90af386c0afac4a366981816f6588491eb0ef0ad292423"
         },
         "edinburgh-history-msc": {
           "name": "MSc History",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fdf04de5169b937ed556a6555413eb1737fc936694fdef8b7ddd27e23c2ff119"
         },
         "edinburgh-history-of-art-theory-and-display-msc": {
           "name": "MSc History of Art, Theory and Display",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "1925928b5e46ebe22eb919f895e2f2f22497e60dd18cc6f63d4ea383c6f61094"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "289b5771398c9ebe093eb1103abab3b2cfb44c697e5fd56433359e7928f04240"
         },
         "edinburgh-history-online-learning-msc": {
           "name": "MSc History (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "cf7d8a429a3e7f1953648ad011c8c7f8b1a2477c08591f97abba96352736e11d"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "052c5062a3d6b2ff931d8d6e86b5846640b0ae03d12678c3926871a84273e1ca"
         },
         "edinburgh-human-anatomy-msc": {
           "name": "MSc Human Anatomy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "cf7d8a429a3e7f1953648ad011c8c7f8b1a2477c08591f97abba96352736e11d"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7651e1b295a5b111748de6acfdfe858c9e8ad8a24b3e130c83dbda8ea31f9d7b"
         },
         "edinburgh-human-cognitive-neuropsychology-msc": {
           "name": "MSc Human Cognitive Neuropsychology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-human-complex-trait-genetics-msc": {
           "name": "MSc Human Complex Trait Genetics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8db99c6facba3df39bdd03bb8a115b4ff64b35d43076fee91a368c9a6e0f5ab7"
         },
         "edinburgh-human-osteoarchaeology-msc": {
           "name": "MSc Human Osteoarchaeology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8513cb93b7fbd5e41638158819223d60e58725cfd0a44112bf6ee770d7bdbc23"
         },
         "edinburgh-human-resource-management-msc": {
           "name": "MSc Human Resource Management",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6eee3774b9276bce373541ac3695959af4894f2e9c16280da4d6040b12f92bbf"
         },
         "edinburgh-human-rights-llm": {
           "name": "LLM Human Rights",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "129f1fe6324cf2256d33b0e0150ece4ab51c3c2037a8646d512195b376b6def2"
         },
         "edinburgh-illustration-ma": {
           "name": "MA Illustration",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3ecfc97b40b2acad01593fe5b85dc4e301279e1b242810673c068faf1979ec31"
         },
         "edinburgh-imaging-vision-and-high-performance-computing-msc": {
           "name": "MSc Imaging, Vision and High Performance Computing",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Science and Engineering",
+          "department": "School of Informatics",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-inclusive-education-msc": {
           "name": "MSc Inclusive Education",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "2c822b55a56cfdb5c49261cb7b2990365c921cad204a8e3b276fbfb72f715fca"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "352942927aa206ace927029ea17e94f103734d4c1fe879634d5b36923bfef583"
         },
         "edinburgh-information-technology-law-online-learning-llm": {
           "name": "LLM Information Technology Law (Online Learning)",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "930910c69bcad2da5ab09a0eede2b5ad2d82a5754adfaf7512c55cb073a340f8"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4e6f95fdfa8ad84939530b4cbd9938f74cb215f727bb5b2f0239b8c2418f49ef"
         },
         "edinburgh-innovation-technology-and-the-law-llm": {
           "name": "LLM Innovation, Technology and the Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d1d880dabe3ddd3abf073e6fdfcec658f6101e4aefab1db2ef4c283819ed18ef"
         },
         "edinburgh-innovation-technology-and-the-law-online-learning-llm": {
           "name": "LLM Innovation, Technology and the Law (Online Learning)",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "930910c69bcad2da5ab09a0eede2b5ad2d82a5754adfaf7512c55cb073a340f8"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "af05dbd8dae02d4169e6ba416d4120739f3732bee576e0fba2d91ffc72a3dc8b"
         },
         "edinburgh-intellectual-history-msc": {
           "name": "MSc Intellectual History",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "dd89b0504b1a18c1b6626f5b40db6b4a54da9b22f21a799c89534ef9901a3ffc"
         },
         "edinburgh-intellectual-property-law-llm": {
           "name": "LLM Intellectual Property Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d6c067419d55810c02b200f67d961b9d58a8d2a0eb1a6ede799f59e4f527cf9c"
         },
         "edinburgh-interior-architectural-and-spatial-design-ma": {
           "name": "MA Interior, Architectural and Spatial Design",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9b12e073b696501ffe8ec1e675c5ce6892a432e2ccd1bad950016706506a24c4"
         },
         "edinburgh-intermediality-literature-film-and-the-arts-in-dialogue-msc": {
           "name": "MSc Intermediality: Literature, Film and the Arts in Dialogue",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "86dd082c7f913d65195c7ca7d3317e8fad4c5b8b9d35e60027747adc84acbdc6"
         },
         "edinburgh-internal-medicine-online-learning-msc": {
           "name": "MSc Internal Medicine (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-international-and-cross-cultural-counselling-studies-msc": {
           "name": "MSc International and Cross-Cultural Counselling Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "979eed331998e10913cedc625fab1aaade7b8d7e35906c792c69b5419cb3c1ce"
         },
         "edinburgh-international-and-european-politics-msc": {
           "name": "MSc International and European Politics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "be7e8e688bf7d4dd6af525cbbd6d04ae3eca36847fc36a7e2da220b7fb567e17"
         },
         "edinburgh-international-animal-health-online-learning-msc": {
           "name": "MSc International Animal Health (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-international-animal-welfare-ethics-and-law-online-learning-msc": {
           "name": "MSc International Animal Welfare, Ethics and Law (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "be4024894bbed1f025963f8fafa0ecc00da35a06d5b57e597eebf1b2231396a0"
         },
         "edinburgh-international-banking-law-and-finance-llm": {
           "name": "LLM International Banking Law and Finance",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8c63593b16c10140e52d7fe57b910aa15b99b20ccf5bdd2afc2b543e45e76826"
         },
         "edinburgh-international-commercial-law-and-practice-online-learning-llm": {
           "name": "LLM International Commercial Law and Practice (Online Learning)",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-international-development-msc": {
           "name": "MSc International Development",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7dae8db360f710d547668bb99119150f4fef01b5e5f0a87db9ae909ce02a6bd5"
         },
         "edinburgh-international-development-online-learning-msc": {
           "name": "MSc International Development (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "97a870382d4a1a56a7a0dd2bc9b0d5c1fd4ad73c386ba112eec043a7e2901b7d"
         },
         "edinburgh-international-economic-law-llm": {
           "name": "LLM International Economic Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "772c8506fa3102ecef4c9fdd5085acab7df68cabd8262d9fe3cbe32d30c648a8"
         },
         "edinburgh-international-human-resource-management-msc": {
           "name": "MSc International Human Resource Management",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c3387cde20732ce3257bc58b44382a2070ac3fa156a6a64835fbbdd34fc6c7e8"
         },
         "edinburgh-international-law-llm": {
           "name": "LLM International Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5a34f9f501b0b7242a1591994f04ff835eceeae0c79e0d4b2af88fc52f022145"
         },
         "edinburgh-international-master": {
           "name": "Master International",
           "degreeType": "Master",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-international-relations-msc": {
           "name": "MSc International Relations",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d1ebde08540bbdde44e30f36b93967d9e0a697d650ece34e7ec9ea8a4af2e207"
         },
         "edinburgh-islamic-and-middle-eastern-studies-msc": {
           "name": "MSc Islamic and Middle Eastern Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b55077ffcc8359157111cd163500fc51539c1abcc60ceed2107522bf6e0d4914"
         },
         "edinburgh-landscape-and-wellbeing-msc": {
           "name": "MSc Landscape and Wellbeing",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "073e63526edea269ebd4d36b8e328754b5f1fbac73cb4c697d33e3476466749e"
         },
         "edinburgh-language-and-intercultural-communication-msc": {
           "name": "MSc Language and Intercultural Communication",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d2085a1b13ea4d06d53d3785b673bc9d8281fd44d477fbf85d06853a7cfd0f87"
         },
         "edinburgh-language-education-msc": {
           "name": "MSc Language Education",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "69d40353866b515a84dc7b231e1f76ab04253420c1ae89189eafc99ecfde5725"
         },
         "edinburgh-law-llm": {
           "name": "LLM Law",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c5b080c025f78cea5727dd3a5139b33520d1a2105347b416d894db257ca1a3cf"
         },
         "edinburgh-law-online-learning-llm": {
           "name": "LLM Law (Online Learning)",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "930910c69bcad2da5ab09a0eede2b5ad2d82a5754adfaf7512c55cb073a340f8"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "24cccb4d71f800c68663dea348b4bc72cf43a890bcf056b780054e22ae3ab30c"
         },
         "edinburgh-leadership-and-learning-med": {
           "name": "MEd Leadership and Learning",
           "degreeType": "MEd",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-linguistics-msc": {
           "name": "MSc Linguistics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-management-msc": {
           "name": "MSc Management",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2baa4944c3fd905479582e918b521fca16422a431dd0088a5181c5d96597047f"
         },
         "edinburgh-management-of-bioeconomy-innovation-and-governance-msc": {
           "name": "MSc Management of Bioeconomy, Innovation and Governance",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2ace919f59bd10225e13085dfff6c4c71f61f011d0e569226c397a9a7a24d0eb"
         },
         "edinburgh-marine-systems-and-policies-msc": {
           "name": "MSc Marine Systems and Policies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of GeoSciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e4a052d2ff0e9e849845fed8a893b6e3514bde9b8cae6436e92948f6edd549e2"
         },
         "edinburgh-marketing-msc": {
           "name": "MSc Marketing",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "b0044ee305080104fb793557b779dd9e23c241b23f06d3eee997b4b85014af45"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e0ae9fa05887a7444fa31f8af26f25f94c3a2059da549d497b3d3b13ba3845c2"
         },
         "edinburgh-materials-chemistry-msc": {
           "name": "MSc Materials Chemistry",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Chemistry",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7ce3cbdc20633b29ef20a88426e16472e8bae6edd03a692f1ded59665d90e930"
         },
         "edinburgh-mathematical-economics-and-econometrics-msc": {
           "name": "MSc Mathematical Economics and Econometrics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Economics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "db47448200e626ee43e9b04fdae2363166a7e99f0db1de6dccd626b33f6faf3b"
         },
         "edinburgh-mathematical-physics-msc": {
           "name": "MSc Mathematical Physics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Physics and Astronomy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d947276d6f451ae7881b65253ac612760574999ce1e43b9624ade4f8be18ec69"
         },
         "edinburgh-medical-anthropology-msc": {
           "name": "MSc Medical Anthropology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a1344c4fadd966ad911360ddde61760ef861f6cc76445211e0d294c081341cba"
         },
         "edinburgh-medical-law-and-ethics-llm": {
           "name": "LLM Medical Law and Ethics",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "51de9bc16f7708d471e764dfd83c03bc2564753a3766948c75f2197bc886aee4"
         },
         "edinburgh-medical-law-and-ethics-online-learning-llm": {
           "name": "LLM Medical Law and Ethics (Online Learning)",
           "degreeType": "LLM",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "930910c69bcad2da5ab09a0eede2b5ad2d82a5754adfaf7512c55cb073a340f8"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "81800ed73a1659b9817d2d861fe5bfc28404887a796171954422ada27ca146f1"
         },
         "edinburgh-medicinal-and-biological-chemistry-msc": {
           "name": "MSc Medicinal and Biological Chemistry",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Chemistry",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1497015618958bf62741b69b92ba1875b73a5050cc450b956765154e090be903"
         },
         "edinburgh-medieval-history-msc": {
           "name": "MSc Medieval History",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "a9655688714b797783c5ebc077e84fcfd3b3358c0b4eae1b939686a3f0a2aca1"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of History, Classics and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "995644afae7fe029aaae62fa077913e557e942f07062537db6066742545d93b6"
         },
         "edinburgh-mental-health-in-children-and-young-people-psychological-approaches-msc": {
           "name": "MSc Mental Health in Children and Young People: Psychological Approaches",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6aaa7cfb5541a969b47838f3d6b083f7b6028283e9050df574b023716aec6193"
         },
         "edinburgh-mental-health-in-children-and-young-people-psychological-approaches-online-learning-msc": {
           "name": "MSc Mental Health in Children and Young People: Psychological Approaches (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e7eebf45cccd2c1655005fb6ef29599275bb8a484ed85c775a60938a20111df1"
         },
         "edinburgh-mind-language-and-embodied-cognition-msc": {
           "name": "MSc Mind, Language and Embodied Cognition",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-modern-and-contemporary-art-history-curating-and-criticism-msc": {
           "name": "MSc Modern and Contemporary Art: History, Curating and Criticism",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "34349b68424a4cd6e279f6f878b327df74c623114ee987d250ccde15278fb637"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f06c09c2e33a48c2aa347f74d2cdfa9b2a9f2b417f7e286153437bc7c80911f0"
         },
         "edinburgh-musicology-mmus": {
           "name": "MMus Musicology",
           "degreeType": "MMus",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "1925928b5e46ebe22eb919f895e2f2f22497e60dd18cc6f63d4ea383c6f61094"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "381321b43ab9e205d4b7c35246ab1cdd89ebb3a60901b339750fde446f85009b"
         },
         "edinburgh-narrative-futures-art-data-society-msc": {
           "name": "MSc Narrative Futures: Art, Data, Society",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c0b95a464f31902380e465720a0b51dc5fe81104dcefc1dd2cfc35335b52abd4"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "73f6320c687109b4873b12933968f6a372d5e1b8190bb4b63ed4bab931abed9e"
         },
         "edinburgh-one-health-online-learning-msc": {
           "name": "MSc One Health (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f4195e85f12c867039f94189f3289a744acc692cac5fd9ea76da8b8b83509e45"
         },
         "edinburgh-operational-research-msc": {
           "name": "MSc Operational Research",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "292ccefcbf14584936725593c37b1bdc3614fe202350a52be3e574c124635875"
         },
         "edinburgh-operational-research-with-computational-optimization-msc": {
           "name": "MSc Operational Research with Computational Optimization",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2d7f5eace62953145dc612f0a0b5c43b6d0f8c49ff1e1726a139c7e8b058c033"
         },
         "edinburgh-operational-research-with-data-science-msc": {
           "name": "MSc Operational Research with Data Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3619be8807f1f9e9efc2afbc3706631b2d32ea1a38310d4287fdbd4982f969ea"
         },
         "edinburgh-operational-research-with-risk-msc": {
           "name": "MSc Operational Research with Risk",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "925486a66ee4fc096949fa478a8eb2a3444f98cad660162e61078e2f66617235"
         },
         "edinburgh-outdoor-and-environmental-education-msc": {
           "name": "MSc Outdoor and Environmental Education",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8a0623f35c84233f35755b3dc1675d0cde5ad746cfbb9df6623ac47daa5ad18e"
         },
         "edinburgh-paediatric-emergency-medicine-online-learning-msc": {
           "name": "MSc Paediatric Emergency Medicine (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-particle-and-nuclear-physics-msc": {
           "name": "MSc Particle and Nuclear Physics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Physics and Astronomy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4a43c36731cfee660c37fe7ef3c92e6bc00f78a280fbbcbbb110d3105bdc1f35"
         },
         "edinburgh-patient-safety-and-clinical-human-factors-online-learning-msc": {
           "name": "MSc Patient Safety and Clinical Human Factors (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-philosophy-msc": {
           "name": "MSc Philosophy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-philosophy-science-and-religion-online-learning-msc": {
           "name": "MSc Philosophy, Science and Religion (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Divinity",
+          "parseStatus": "incomplete",
+          "deadlineHash": "463c3409a0339053421c0dfee20a810bf9b7f3c49f99139e75fad6d2c55a04fc"
         },
         "edinburgh-physical-activity-for-health-msc": {
           "name": "MSc Physical Activity for Health",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7984b1315403fadc696c384ed04a6ddce5fcbd9a9a2b5c4ca4e1058e86be3e2a"
         },
         "edinburgh-planetary-health-msc": {
           "name": "MSc Planetary Health",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2a7df32c1bd9564dc6f5adbc20c90b5eacc9a32c0fe37d654e2654c8936f1cdb"
         },
         "edinburgh-primary-care-ophthalmology-online-learning-msc": {
           "name": "MSc Primary Care Ophthalmology (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-psychological-research-msc": {
           "name": "MSc Psychological Research",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-psychological-therapies-msc": {
           "name": "MSc Psychological Therapies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3800fdafea5cb1b08f587d8e00a0d2c38253ebb21eca56ae83125b2ae5e234f5"
         },
         "edinburgh-psychology-of-individual-differences-msc": {
           "name": "MSc Psychology of Individual Differences",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-psychology-of-language-msc": {
           "name": "MSc Psychology of Language",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-psychology-of-mental-health-conversion-msc": {
           "name": "MSc Psychology of Mental Health (Conversion)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Health in Social Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c9a6ed6ed68d96c9be7ff6c2880ce0a3d0fad9818a6df72c381d7b3b7339bf8e"
         },
         "edinburgh-public-health-master": {
           "name": "Master Public Health,",
           "degreeType": "Master",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5c1673baf87ecd42fbcc4692165efa5fe739556bef91fc181a37331ec594bda9"
         },
         "edinburgh-public-health-part-time-online-learning-mph": {
           "name": "MPH Public Health (part-time) (Online Learning)",
           "degreeType": "MPH",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6761075fdd9cc921a9b6f6349c293a71d1e985f1e025d252df697747dce7af0f"
         },
         "edinburgh-public-policy-msc": {
           "name": "MSc Public Policy",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bd3cbf2fb04cd7c047c50f056d8a9386e60b3d4d1aa743cff1476505a2a99678"
         },
         "edinburgh-quantitative-genetics-and-genome-analysis-msc": {
           "name": "MSc Quantitative Genetics and Genome Analysis",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ddb141433ed0e9f0db0305ecc33e8501e2feedc2397a998853fd2ac9ed909cd0"
         },
         "edinburgh-religion-and-literature-mth-msc": {
           "name": "MSc Religion and Literature MTh,",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Divinity",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7af322915b1b35182dbe7ada5f8b502ffd38f54232d1214e228cbe4652fe05a6"
         },
         "edinburgh-religious-studies-msc": {
           "name": "MSc Religious Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Divinity",
+          "parseStatus": "incomplete",
+          "deadlineHash": "344aaee9c6c0c2e8efe413396ed09236ffa93d7b92bd033d6472cda6f09b0aef"
         },
         "edinburgh-science-and-religion-msc": {
           "name": "MSc Science and Religion",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "c5e483faa9dcc0f7606ea0aebb76c965103e355a79ea6fefbd320dc9d0ce75fe"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Divinity",
+          "parseStatus": "incomplete",
+          "deadlineHash": "71c27d517038a1d1aeda24ba87c478ada7c8a0261b690b73fb416cb22887bf2c"
         },
         "edinburgh-science-and-technology-in-society-msc": {
           "name": "MSc Science and Technology in Society",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "67b66d2282e12bf63fbca5e547edc0784d6bba0938baa6aaff1101a2f02d115a"
         },
         "edinburgh-science-communication-and-public-engagement-msc": {
           "name": "MSc Science Communication and Public Engagement",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-science-communication-and-public-engagement-online-learning-msc": {
           "name": "MSc Science Communication and Public Engagement (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-sensor-and-imaging-systems-msc": {
           "name": "MSc Sensor and Imaging Systems",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-service-management-and-design-msc": {
           "name": "MSc Service Management and Design",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4a2881c712c44712f41b444ff0aa1f3b562bca4a70435f0b0d18326c00e79301"
         },
         "edinburgh-signal-processing-and-communications-msc": {
           "name": "MSc Signal Processing and Communications",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "626623c9705f6f24f505a285d8ce9cbac360d4132d40437b5cf60648a49272f2"
         },
         "edinburgh-social-anthropology-msc": {
           "name": "MSc Social Anthropology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a718c4c5be8967f872e78f9d285ad5655587f5fa89bc93ede8e4a62f9170c751"
         },
         "edinburgh-social-justice-and-community-action-online-learning-msc": {
           "name": "MSc Social Justice and Community Action (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "2c822b55a56cfdb5c49261cb7b2990365c921cad204a8e3b276fbfb72f715fca"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "eebee7e1707573f275ff703023a5a04d11a09f78c2074b272dd7d1635773a652"
         },
         "edinburgh-social-psychology-msc": {
           "name": "MSc Social Psychology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "edinburgh-social-research-msc": {
           "name": "MSc Social Research",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "39f512593f2f3fe31eb66d324d459cc454ed046fcb31da517ad12d95c18a569a"
         },
         "edinburgh-social-work-master": {
           "name": "Master Social Work,",
           "degreeType": "Master",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "58d50c8c7d5c614bd0dc065419b56b5a9f7a370f6d1bc1cac47e7a8ec618c9d6"
         },
         "edinburgh-sociology-and-global-change-msc": {
           "name": "MSc Sociology and Global Change",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Social and Political Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f7752ff76aa8bd8a2be1fb12d286dbbb7cde08dbd8ffb4389d55c0a10cb10cb0"
         },
         "edinburgh-sound-design-msc": {
           "name": "MSc Sound Design",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0b46c00cc1af67d3849f0016f13abd4bb84824870ccc28b81ff63014537d041d"
         },
         "edinburgh-speech-and-language-processing-msc": {
           "name": "MSc Speech and Language Processing",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Philosophy, Psychology and Language Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1704b0026190f047fa79052365423a08418748e570cac15c0b00d4152113e3ec"
         },
         "edinburgh-sport-and-performance-psychology-msc": {
           "name": "MSc Sport and Performance Psychology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8ead73f7fe63d095a2a43a227189120e2d16c1fee0d7e1ca6a1f9d54e870539f"
         },
         "edinburgh-sport-policy-management-and-international-development-msc": {
           "name": "MSc Sport Policy, Management and International Development",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5f395bd2c24c855616e6860214c9e457066629232253ba9da36adceaa8f1c398"
         },
         "edinburgh-statistics-and-operational-research-msc": {
           "name": "MSc Statistics and Operational Research",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bdc1822c81795ff2cc5fa1d95f5da87477b7e11cbcf52a08ef852ec7be85e0e0"
         },
         "edinburgh-statistics-with-data-science-msc": {
           "name": "MSc Statistics with Data Science",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "18fa671aba81a6e0d80f301d342a93dadc7de63d5fb4e9547b8aab5d35b7794a"
         },
         "edinburgh-strength-and-conditioning-msc": {
           "name": "MSc Strength and Conditioning",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8aa7bf959e1f2c4910e11df3ed35877b67ee51700593b17ba83b59f547620cae"
         },
         "edinburgh-surgical-sciences-online-learning-msc": {
           "name": "MSc Surgical Sciences (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "816b7e3f08d020c41f885d66aaece2c446716558bc040ea2495329516768ddd3"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Edinburgh Medical School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "abad770ec7acf5418a297378a8c37054c0b2df14974d1470a1cc9c21688c68b6"
         },
         "edinburgh-sustainable-energy-systems-msc": {
           "name": "MSc Sustainable Energy Systems",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a1e9dcb81407d352cff692bdfbf0820ada1a3c1c36ece2793e72c425648f4f66"
         },
         "edinburgh-sustainable-lands-and-cities-msc": {
           "name": "MSc Sustainable Lands and Cities",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh Futures Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "90dd27a1275b43648d1e0694c31e0457625767692b369da8a094172fad98e677"
         },
         "edinburgh-synthetic-biology-and-biotechnology-msc": {
           "name": "MSc Synthetic Biology and Biotechnology",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Biological Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "275632e8230a0e0ea6dc63af181e3deaacbe721a229f0f347c715d2393dd35ff"
         },
         "edinburgh-teaching-english-to-speakers-of-other-languages-tesol-msc": {
           "name": "MSc Teaching English to Speakers of Other Languages (TESOL)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Moray House School of Education and Sport",
+          "parseStatus": "incomplete",
+          "deadlineHash": "eff8d81770a6f6f6f7a142bf2cdace5310fc48d925978ce991b22f752c0ea87d"
         },
         "edinburgh-theoretical-physics-msc": {
           "name": "MSc Theoretical Physics",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "College of Science and Engineering",
+          "department": "School of Physics and Astronomy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6f20959d373250382add6a3efd229730144b3b1bc08bdf9a08d7ee55d581c2c6"
         },
         "edinburgh-translation-studies-msc": {
           "name": "MSc Translation Studies",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "d686e03696985127df07f43fd7f36f7ac90cc9b286ea015edc1b3f9f7414e57b"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Literatures, Languages and Cultures",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f8bde31eab2c34200768ce9e3e65f0c4d050bf4846727ac69a9fcce382f1b2fa"
         },
         "edinburgh-urban-strategies-and-design-msc": {
           "name": "MSc Urban Strategies and Design",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "1925928b5e46ebe22eb919f895e2f2f22497e60dd18cc6f63d4ea383c6f61094"
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "Edinburgh College of Art",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a8a39bbd1ba826f1988dcb1ba6271595d7209fa83b52a4626fd84856356d54a5"
         },
         "edinburgh-veterinary-anaesthesia-and-analgesia-online-learning-msc": {
           "name": "MSc Veterinary Anaesthesia and Analgesia (Online Learning)",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "609687eac36ba36af2730424a05d57a9ed33eadd1bc8ef191aa3ba72e45d0983"
+          "faculty": "College of Medicine and Veterinary Medicine",
+          "department": "Royal (Dick) School of Veterinary Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3cccca91279b21b9654c0ebb0fa0f73ad30d0cd348f1b7eea2c7c1b99274c624"
         },
         "edinburgh-world-christianity-msc": {
           "name": "MSc World Christianity",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "College of Arts, Humanities and Social Sciences",
+          "department": "School of Divinity",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         }
