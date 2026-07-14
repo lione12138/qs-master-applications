@@ -20,6 +20,7 @@ from .manchester import ManchesterAdapter
 from .melbourne import MelbourneAdapter
 from .mit import MITAdapter
 from .monash import MonashAdapter
+from .ntu import NTUAdapter
 from .nus import NUSAdapter
 from .oxford import OxfordAdapter
 from .polyu import PolyUAdapter
@@ -49,6 +50,7 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "manchester": ManchesterAdapter,
     "mit": MITAdapter,
     "monash": MonashAdapter,
+    "ntu": NTUAdapter,
     "nus": NUSAdapter,
     "oxford": OxfordAdapter,
     "polyu": PolyUAdapter,

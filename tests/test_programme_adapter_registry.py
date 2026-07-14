@@ -9,12 +9,13 @@ from gradwindow.programme_adapters.registry import PROGRAMME_ADAPTERS
 
 
 def test_registry_is_the_complete_unique_source_of_dedicated_adapters() -> None:
-    assert len(PROGRAMME_ADAPTERS) == 25
+    assert len(PROGRAMME_ADAPTERS) == 26
     assert set(PROGRAMME_ADAPTERS) >= {
         "birmingham",
         "bristol",
         "caltech",
         "manchester",
+        "ntu",
         "nus",
         "southampton",
     }
