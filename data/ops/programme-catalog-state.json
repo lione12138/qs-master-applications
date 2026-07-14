@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T19:05:09.917759+00:00",
+    "updatedAt": "2026-07-14T20:03:29.327396+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "universities": {
@@ -15645,35 +15645,2499 @@
       }
     },
     "university-of-birmingham": {
-      "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught",
-      "checkedAt": "2026-07-07T09:44:17.056799+00:00",
-      "itemCount": 3,
+      "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught/course-search",
+      "checkedAt": "2026-07-14T20:03:29.327396+00:00",
+      "itemCount": 311,
       "applicationOpensAt": null,
-      "catalogHash": "5df50f5b1b856a67882d701dcf0c9dc2ca547e4ff40a3485b9e1cc86bc21e55c",
+      "catalogHash": "1f833f8f77845c8c22b6d2fd3bc8bf433ffbce4d0f601bad75d2b07831600fad",
       "programmes": {
-        "birmingham-master-of-business-administration-full-time-uk": {
-          "name": "Master of Business Administration (Full-time, UK)",
+        "birmingham-accounting-and-finance-msc-dubai": {
+          "name": "Accounting and Finance MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-advanced-chemical-engineering-masters-msc-pgdip": {
+          "name": "Advanced Chemical Engineering Masters/MSc/PGDip",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4991d11a764c5c2b9ffe7f37e331b99d529ce7a6065284dda1dea9e3cb41f44c"
+        },
+        "birmingham-advanced-clinical-pharmacy-practice-international-msc": {
+          "name": "Advanced Clinical Pharmacy Practice (International) MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "249248d174de4ee8264b850da3156a598a380cbe418549babe48dee118e3632d"
+        },
+        "birmingham-advanced-clinical-practice-advanced-critical-care-practitioner-degree-apprenticeship": {
+          "name": "Advanced Clinical Practice (Advanced Critical Care Practitioner) Degree Apprenticeship",
           "degreeType": "Master",
           "faculty": "",
           "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-advanced-clinical-practice-midwifery-degree-apprenticeship": {
+          "name": "Advanced Clinical Practice (Midwifery) (Degree Apprenticeship)",
+          "degreeType": "Master",
+          "faculty": "School of Nursing and Midwifery",
+          "department": "School of Nursing and Midwifery",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-advanced-clinical-practice-msc-degree-apprenticeship": {
+          "name": "Advanced Clinical Practice MSc (Degree Apprenticeship)",
+          "degreeType": "MSc",
+          "faculty": "School of Nursing and Midwifery",
+          "department": "School of Nursing and Midwifery",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-advanced-computer-science-msc": {
+          "name": "Advanced Computer Science MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
           "parseStatus": "incomplete",
-          "deadlineHash": "0c6b19fdb3f2dcc2475052ce3ee14707fd092c61a67ba9fb6ea7da65e2e96ff9"
+          "deadlineHash": "2832407ef21f2acfc2d968420b15ca9a7b29bb496e22f600b3ecbe91261606e3"
+        },
+        "birmingham-advanced-engineering-management-artificial-intelligence-ai-and-automation": {
+          "name": "Advanced Engineering Management - Artificial Intelligence (AI) and Automation",
+          "degreeType": "Master",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "109d9ed2089e629fd5adea9c2253b560a26de8e312bad4ff1a549142a79330d4"
+        },
+        "birmingham-advanced-engineering-management-construction-management-msc": {
+          "name": "Advanced Engineering Management - Construction Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "192d6af9e9605a6196e076b7f5df3f034cfe2e08ae84997f59e3e8dee02bcc7c"
+        },
+        "birmingham-advanced-engineering-management-highways-msc": {
+          "name": "Advanced Engineering Management - Highways MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7db4e52b67686f3f016596a313d627a096e4a186a241dd41eda95e7d681c2f1c"
+        },
+        "birmingham-advanced-engineering-management-msc": {
+          "name": "Advanced Engineering Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4126ed9be54bb5f0acb55a22a7fe9d3f70faef430595739624d31c3966cc051d"
+        },
+        "birmingham-advanced-engineering-management-msc-dubai": {
+          "name": "Advanced Engineering Management MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-advanced-engineering-management-operations-management-msc": {
+          "name": "Advanced Engineering Management - Operations Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-advanced-engineering-management-project-management-msc": {
+          "name": "Advanced Engineering Management - Project Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d5d919d14e55cd873a103cabc5dbaf5c7f151b909d8109e2d8c3216461afa09c"
+        },
+        "birmingham-advanced-engineering-management-systems-management-msc": {
+          "name": "Advanced Engineering Management - Systems Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1c6b7fa5daf84b13c823294b752551a603c70f6e2c63356e945c29e13450e96e"
+        },
+        "birmingham-advanced-mechanical-engineering-msc": {
+          "name": "Advanced Mechanical Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Mechanical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e525c11656a4d3290c5a0b3fc495bd41e481fc0567175494501cbe7517397843"
+        },
+        "birmingham-advancing-nursing-science-msc": {
+          "name": "Advancing Nursing Science MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0e16bc2a9af3e7471f9f75c74c6042382a761152de86f258202801556b35378f"
+        },
+        "birmingham-air-pollution-management-and-control-msc-diploma": {
+          "name": "Air Pollution Management and Control MSc/Diploma",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9edc0c92aee37a54e82c3bc7656b329fb352f275695264ae0ea65516593ebe64"
+        },
+        "birmingham-applications-of-data-science-msc": {
+          "name": "Applications of Data Science MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c64f7cf165b594092b548139c9453a36b679976bde21e764f344ea3d47480f98"
+        },
+        "birmingham-applied-linguistics-ma-online": {
+          "name": "Applied Linguistics MA (Online)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Linguistics and Communication",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-applied-mathematics-mres": {
+          "name": "Applied Mathematics MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-applied-mathematics-msc": {
+          "name": "Applied Mathematics MSc",
+          "degreeType": "MSc",
+          "faculty": "School of Mathematics",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3f647d32467d9ed2544b6085407e8ecbf53e26772a652b751e666deac60a432c"
+        },
+        "birmingham-applied-meteorology-and-climatology-msc": {
+          "name": "Applied Meteorology and Climatology MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fae4f3fbf7aca85ff68d03ad0fef13eed81bfcd7a144cfbc222485f1d9e18710"
+        },
+        "birmingham-artificial-intelligence-ai-and-machine-learning-msc": {
+          "name": "Artificial Intelligence (AI) and Machine Learning MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0962c9dccacf54f38a3105ef7b3580ec584a376541c4b49e26630364a5067885"
+        },
+        "birmingham-artificial-intelligence-ai-and-machine-learning-msc-dubai": {
+          "name": "Artificial Intelligence (AI) and Machine Learning MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-artificial-intelligence-ai-msc": {
+          "name": "Artificial Intelligence (AI) MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7aaefda20155e2cd4b5f821d76a2b38628a5206c3417aafdc3d621a66ddb0b64"
+        },
+        "birmingham-artificial-intelligence-and-computer-science-msc-pgdip-dubai": {
+          "name": "Artificial Intelligence and Computer Science MSc/PGDip (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-artificial-intelligence-implementation-healthcare-msc": {
+          "name": "Artificial Intelligence Implementation (Healthcare) - MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b85c8409f4a226ffa8c4e9565a9f516eaa884af20affc367678164f490aa3e51"
+        },
+        "birmingham-atmospheric-sciences-and-air-pollution-phd-with-integrated-study": {
+          "name": "Atmospheric Sciences and Air Pollution PhD with Integrated Study",
+          "degreeType": "Master",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-bioinformatics-j-bji-msc": {
+          "name": "Bioinformatics (J-BJI) MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8a263fba9d386fc5c7a125b0c1e9d6b7ec5d1eed62d29761d1264344e275eeff"
+        },
+        "birmingham-bioinformatics-msc-diploma-certificate": {
+          "name": "Bioinformatics MSc/Diploma/Certificate",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4df06739f155d72cc69663c3640abfb6942e06357ddb004fb10d460d05122a48"
+        },
+        "birmingham-bioinformatics-msc-dubai": {
+          "name": "Bioinformatics MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-bioinformatics-msc-online": {
+          "name": "Bioinformatics MSc (Online)",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Cancer and Genomic Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-biomedical-innovation-msc-diploma": {
+          "name": "Biomedical Innovation MSc/Diploma",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Metabolism and Systems Research",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7a888cc111f7bd469ff47c4dff208a689901a110208eeba9ef972a5008080869"
+        },
+        "birmingham-biomedical-research-mres": {
+          "name": "Biomedical Research MRes",
+          "degreeType": "MRes",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "cc0d8308b1f935a29882787ad0f3a03a559dcacaa16c54fcc8feeca0569516b7"
+        },
+        "birmingham-biomedical-sciences-msc": {
+          "name": "Biomedical Sciences MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "713269cb2af3f8ac147ff115a464676b1fb87a040a869e61843b367a62e749e4"
+        },
+        "birmingham-cancer-sciences-mres": {
+          "name": "Cancer Sciences MRes",
+          "degreeType": "MRes",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Cancer and Genomic Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "932f1f747d5cab430effd1dd71c3a291ff6d02d901937ec2982d98d9a93598ac"
+        },
+        "birmingham-character-education-ma": {
+          "name": "Character Education MA",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5d8673af23a7337bcd22bdf1605b30d8e5a08643061755569cd19e9b3bd9017d"
+        },
+        "birmingham-chartered-town-planner-level-7-degree-apprenticeship": {
+          "name": "Chartered Town Planner Level 7 Degree Apprenticeship",
+          "degreeType": "Master",
+          "faculty": "Life and Environmental Sciences",
+          "department": "Centre for Urban and Regional Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-chemical-engineering-science-mres": {
+          "name": "Chemical Engineering Science MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-civil-engineering-and-management-msc": {
+          "name": "Civil Engineering and Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Civil Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3ebad3dd834c54c740f4f91ab776b5f21d9529ac92c6e8683ed9e7a807563621"
+        },
+        "birmingham-civil-engineering-msc": {
+          "name": "Civil Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Civil Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6f79ba1c643c3cf774881e2ad53634aa4124996a9348b3953294a29ae0be2fb1"
+        },
+        "birmingham-clinical-health-research-mres": {
+          "name": "Clinical Health Research MRes",
+          "degreeType": "MRes",
+          "faculty": "Life and Environmental Sciences",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "db9ef14047072b05827675afdd588952da18e9ce66bb24895d390383117e0eef"
+        },
+        "birmingham-clinical-neuropsychiatry-msc-pgdip-pgcert": {
+          "name": "Clinical Neuropsychiatry MSc/PGDip/PGCert",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "25c7e2b0b96a5d17b34b251a47294349ec5750a17da38adfa8546f1617a2c351"
+        },
+        "birmingham-clinical-oncology-msc-pgdip": {
+          "name": "Clinical Oncology MSc/PGDip",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Cancer and Genomic Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "df5387a958efe2d3ca9d78f151b39d41cb7910158b6653bd4dc0fe429d2fd9c4"
+        },
+        "birmingham-clinical-research-academic-clinical-fellows-acf-framework-mres-pgdip-pgcert": {
+          "name": "Clinical Research - Academic Clinical Fellows (ACF) Framework MRes/PGDip/PGCert",
+          "degreeType": "MRes",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-clinical-trials-msc-diploma-certificate": {
+          "name": "Clinical Trials - MSc/Diploma/Certificate",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Cancer and Genomic Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7e8ef017cd3fc3421548c99b3c38a0309c832c01c5d88b0f25789b00e44f47ed"
+        },
+        "birmingham-cognitive-neuroimaging-and-data-science-msc": {
+          "name": "Cognitive Neuroimaging and Data Science MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "129133694a13f89981fbb664b987ae0990b2536177e0dbf6704a7af6d83beeb9"
+        },
+        "birmingham-communications-engineering-msc": {
+          "name": "Communications Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Electronic, Electrical and Systems Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "edd5598af3e00e9e577e9ad14c3e392b887d9e4a0a949c01143e8cd3df7a572c"
+        },
+        "birmingham-computer-science-msc": {
+          "name": "Computer Science MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "41dbbefac936e329e13600a249bcec9f515138cb70c87d3f3b7b5bbe8289640b"
+        },
+        "birmingham-computer-science-msc-pgdip-dubai": {
+          "name": "Computer Science MSc/PGDip (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-construction-management-msc-dubai-campus": {
+          "name": "Construction Management MSc (Dubai campus)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-cyber-security-msc": {
+          "name": "Cyber Security MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0f1fa817f63dd405d6f16368ec15bf186899c9a95e3d3b50082132bb57469704"
+        },
+        "birmingham-cyber-security-msc-dubai": {
+          "name": "Cyber Security MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-data-science-msc": {
+          "name": "Data Science MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e0b66a063282a621b7a39bdb44bb69a2e46b5d349a7464ecaa7e247e0ded58a1"
+        },
+        "birmingham-data-science-msc-dubai": {
+          "name": "Data Science MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-deaf-education": {
+          "name": "Deaf Education",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "36ff3c5029ef8843d62494d881b0add2b49b5016fd1a27c50adadda96dddfa6c"
+        },
+        "birmingham-dental-materials-science-msc-diploma-certificate": {
+          "name": "Dental Materials Science MSc/Diploma/Certificate",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "11976f4d1af1893059c8ead8390c9e560c67af3fb4086a6c2aca6c87569bd40e"
+        },
+        "birmingham-developmental-science-and-neurodiversity-msc": {
+          "name": "Developmental Science and Neurodiversity MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "86df94a297a6ef2fa8cbe154c0837af3d09d96d27ca9e50a1e5e76111d14027b"
+        },
+        "birmingham-dyslexia-and-literacy-difficulties": {
+          "name": "Dyslexia and Literacy Difficulties",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "75a378f01e5933263d9805b04cb53e483d727ffb21cee6bdb1309a128f200da6"
+        },
+        "birmingham-education-for-health-professionals-med-pgdip-pgcert": {
+          "name": "Education for Health Professionals - MEd/PGDip/PGCert",
+          "degreeType": "MEd",
+          "faculty": "Medicine and Health",
+          "department": "Graduate School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e76ef2c4cf05d3c0019027aed988c1c4cd1f315f4c6f8fed438541d5cefe3f25"
+        },
+        "birmingham-education-leadership-ma-dubai": {
+          "name": "Education Leadership, MA (Dubai)",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-electrical-power-systems-msc": {
+          "name": "Electrical Power Systems MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Electronic, Electrical and Systems Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-electrical-power-systems-with-advanced-research-msc": {
+          "name": "Electrical Power Systems with Advanced Research MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Electronic, Electrical and Systems Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f5d6eebe116c0fdac5b0d6235468bc6eb0ecc9890bdb1cb66b8efaf133cd08de"
+        },
+        "birmingham-electronic-and-computer-engineering-msc": {
+          "name": "Electronic and Computer Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Electronic, Electrical and Systems Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b1d1cc99339c12305d3f41b83e9feafc090a5e65bc111f04a3fc002dcadee816"
+        },
+        "birmingham-endodontics-msc": {
+          "name": "Endodontics MSc",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "School of Dentistry",
+          "parseStatus": "incomplete",
+          "deadlineHash": "47ac8c6f8b837930a71eb36fc893d3035634dffbd9e391ba25ea9660fecdface"
+        },
+        "birmingham-environmental-and-energy-law-llm-online": {
+          "name": "Environmental and Energy Law LLM (Online)",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-environmental-health-msc": {
+          "name": "Environmental Health MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5badb94af939fbe5aa9944dad03556b47b989e1d84a3033d83af75e6e6bb4cd7"
+        },
+        "birmingham-exercise-and-sport-sciences-mres": {
+          "name": "Exercise and Sport Sciences MRes",
+          "degreeType": "MRes",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-financial-data-science-msc": {
+          "name": "Financial Data Science MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ecd6cbbf3627ec1e391a6a814dc96cd2d6a102ba853ef47ba61818a811047d5f"
+        },
+        "birmingham-financial-data-science-msc-dubai": {
+          "name": "Financial Data Science MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-financial-engineering-msc": {
+          "name": "Financial Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b99ca77949ebcf6d2512241f09a5bf6c59e5a88c61fad850c8f1fbd7106004cd"
+        },
+        "birmingham-financial-management-msc-dubai": {
+          "name": "Financial Management MSc Dubai",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-food-safety-hygiene-and-management-msc-pg-diploma-pg-certificate": {
+          "name": "Food Safety, Hygiene and Management MSc/PG Diploma/PG Certificate",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c1933dcb19919d5e4a371ed867ae2774fa3a6bf21944e0235c493cd13fa46c55"
+        },
+        "birmingham-gender-and-sexuality-ma": {
+          "name": "Gender and Sexuality MA",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "366b2d75f955f5b177a6136b95e5336575fa65fddb695fe6abfb3a750a074e8d"
+        },
+        "birmingham-genomic-medicine-msc-diploma-certificate": {
+          "name": "Genomic Medicine - MSc/Diploma/Certificate",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Cancer and Genomic Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4b57787d4b23d92f50b2d77f84cf81c71bab8ef410572f472a934baa5a8d585b"
+        },
+        "birmingham-geotechnical-engineering-msc": {
+          "name": "Geotechnical Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Civil Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8150dd15b4140e06ec26806adf27e270bd9017a6edc6d96c4cfdf61380482328"
+        },
+        "birmingham-global-energy-technologies-and-systems-msc": {
+          "name": "Global Energy Technologies and Systems MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9288f639e9261b9ff3cdb781e78e7d843abd819c288fd5c96eaf0cd2ca1b177a"
+        },
+        "birmingham-global-health-msc": {
+          "name": "Global Health MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "693e2841c570466647f654cdffdafea0629af8356f01dc1d2ce183c3881e69e2"
+        },
+        "birmingham-health-care-policy-and-management-msc": {
+          "name": "Health Care Policy and Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Health Services Management Centre",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fceeb5b19b7a37365865d69730524b27f3459800067ee78387b9b885df472b57"
+        },
+        "birmingham-health-data-science-j-bji-msc": {
+          "name": "Health Data Science (J-BJI) MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b6b6f31786caa409cdec19278b113501a7c1d0385160b76dd77545b7bbdde596"
+        },
+        "birmingham-health-data-science-msc-dubai": {
+          "name": "Health Data Science MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Graduate School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-health-data-science-msc-pgdip-pgcert": {
+          "name": "Health Data Science MSc/PGDip/PGCert",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Cancer and Genomic Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bb5880afadd00c1dd394e4dda41b2d7d3ec93cff0d1561b93a59bf76383c49aa"
+        },
+        "birmingham-health-economics-and-econometrics-msc-pgdip": {
+          "name": "Health Economics and Econometrics MSc/PGDip",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Applied Health Research",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ea9ffe9f9b739eb04b98bfba151e9b5db95d7ab9c547cab65eddbda229579fb6"
+        },
+        "birmingham-health-economics-and-health-policy-msc-pgdip": {
+          "name": "Health Economics and Health Policy MSc/PGDip",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Applied Health Research",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0110f63818e166862fe78350fe84d02acde2b22d2669408642c15eff8dbc309d"
+        },
+        "birmingham-health-research-methods-msc-pgdip-pgcert": {
+          "name": "Health Research Methods - MSc/PGDip/PGCert",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Applied Health Research",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b8d3f238794100349ae4061408676f5845aca53de410909c017ba1ba895a69fd"
+        },
+        "birmingham-health-safety-and-environment-management-msc-diploma": {
+          "name": "Health, Safety and Environment Management MSc/Diploma",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "Medicine and Health",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6e96b538f734d244425befc937a88f6e5c0b266e5633327bb7e82f915d3ae75a"
+        },
+        "birmingham-history-ma-by-distance-learning": {
+          "name": "History MA by distance learning",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "78e4570b9217bcbf77097c22ee738f5224bab65771659c37a1b9ba4d2649522e"
+        },
+        "birmingham-human-computer-interaction-msc": {
+          "name": "Human Computer Interaction MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "aadad28b25654571eebeaa0be5f08a8de8107442701f4710f37d621fa5cd7346"
+        },
+        "birmingham-human-resource-management-msc-dubai": {
+          "name": "Human Resource Management MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-hydrogen-fuel-cells-and-their-applications-mres": {
+          "name": "Hydrogen, Fuel Cells and their Applications MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-hydrogeology-msc": {
+          "name": "Hydrogeology MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7fa8ae7ad3207e4a6831a616c58591b0bf4fec0193b192ec81ab908ca523b3e6"
+        },
+        "birmingham-immunology-and-immunotherapy-msc": {
+          "name": "Immunology and Immunotherapy MSc",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Immunology and Immunotherapy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3fcea755922344df0786c4e4a49ab9df175806baaba95adf94a33fd5888791eb"
+        },
+        "birmingham-industrial-project-management-msc": {
+          "name": "Industrial Project Management MSc",
+          "degreeType": "MSc",
+          "faculty": "School of Chemical Engineering",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-international-business-msc-dubai": {
+          "name": "International Business MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-international-clinical-pharmacy-msc": {
+          "name": "International Clinical Pharmacy MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "444f220e9e01e2759d910f13f60d01096985740dde86624fdf3ea18a8f29d538"
+        },
+        "birmingham-international-population-health-management-msc": {
+          "name": "International Population Health Management - MSc",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6bd5d0161dd55e7800afb0611c69fc0ade1075cfa147b9f4aa3eb68c88fd2a1a"
+        },
+        "birmingham-joint-masters-data-science-and-ai": {
+          "name": "Joint Masters Data Science and AI",
+          "degreeType": "Master",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-joint-masters-sustainable-energy-systems": {
+          "name": "Joint Masters Sustainable Energy Systems",
+          "degreeType": "Master",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-llm-commercial-banking-and-finance-law": {
+          "name": "LLM Commercial, Banking and Finance Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "357ba64e502a9df62ec88bae83444ee4f5340050d61df8bd69d5ab47e228f52f"
+        },
+        "birmingham-llm-commercial-law": {
+          "name": "LLM Commercial Law",
+          "degreeType": "LLM",
+          "faculty": "Birmingham Law School",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7bde4c5aea5619b610bcebe2c6db6e2a333957f88bd22c2ae3cf0a2c07ead9c6"
+        },
+        "birmingham-llm-criminal-law-and-criminal-justice": {
+          "name": "LLM Criminal Law and Criminal Justice",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7c0d7a877a9268bd8907d0c4497409682d915b88bf3f3e7124df2ce5570338e2"
+        },
+        "birmingham-llm-energy-and-environmental-law-dubai": {
+          "name": "LLM Energy and Environmental Law (Dubai)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-llm-environmental-social-and-governance-law-and-policy": {
+          "name": "LLM Environmental, Social and Governance Law, and Policy",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8dc3e13ef785e45b1b58c9692b71a7dd96c2b04a4319d0534f947bc05178d6c3"
+        },
+        "birmingham-llm-general-dubai": {
+          "name": "LLM General (Dubai)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-llm-general-law": {
+          "name": "LLM General Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "03ef9c70ef6c0747689285c1cf16d79d0a94e4fd470c48e82697403a7d23fe22"
+        },
+        "birmingham-llm-global-energy-and-environmental-law": {
+          "name": "LLM Global Energy and Environmental Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b56e1805b81439b7c08131f34c9049f58898da6e669eb971f4f7d260e5c50374"
+        },
+        "birmingham-llm-human-rights-law": {
+          "name": "LLM Human Rights Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fefeb1c254dc64b5ef37f5699e08c34ade93e4b37ad2d5060dd1c08544aa10d7"
+        },
+        "birmingham-llm-intellectual-property-law": {
+          "name": "LLM Intellectual Property Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6c475f5e0cc2d9eab5170152a83998243e4e23270563b573db9292b67806be75"
+        },
+        "birmingham-llm-international-business-law": {
+          "name": "LLM International Business Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c14b8bb0c7c78403b0f0a40ca87047a6f969398b2b45c4a1ffa1367be05482ad"
+        },
+        "birmingham-llm-international-commercial-law": {
+          "name": "LLM International Commercial Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f945c7a984ad424509cb8505c792a401a7613b2db9abe83d0538cab3ce96f959"
+        },
+        "birmingham-llm-international-commercial-law-dubai": {
+          "name": "LLM International Commercial Law (Dubai)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-llm-international-criminal-law-and-justice": {
+          "name": "LLM International Criminal Law and Justice",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "041b5b9b63a5ed0d747dfae642da840829428096c15e82de3658edea0a96afde"
+        },
+        "birmingham-llm-international-dispute-resolution-dubai": {
+          "name": "LLM International Dispute Resolution (Dubai)",
+          "degreeType": "LLM",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-llm-international-disputes-law": {
+          "name": "LLM International Disputes Law",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f70a76511716109c29bfc9c6bf9d72b4ed477473b76156a8113f3ee12cad7603"
+        },
+        "birmingham-llm-international-human-rights": {
+          "name": "LLM International Human Rights",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c6172d5ac16c46ad3d398dde49cd3f7082dfccb657a722539f62f3c3274ad30f"
+        },
+        "birmingham-llm-international-law-and-security": {
+          "name": "LLM International Law and Security",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "da7f8daa805869094807800145e41f0caad0664c4d069a5d7a8940f396b34c81"
+        },
+        "birmingham-llm-law-and-social-justice": {
+          "name": "LLM Law and Social Justice",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e30a4d758743daeaffcb438feb68013e661a1e1a7cd541da82c52dd4536cbd70"
+        },
+        "birmingham-llm-law-data-and-technology": {
+          "name": "LLM Law, Data and Technology",
+          "degreeType": "LLM",
+          "faculty": "Arts and Law",
+          "department": "Birmingham Law School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "551986a782e1e0cd98c240652eeb40dbcdc8568a47881fbfcb6b37636e99b0a0"
+        },
+        "birmingham-m-a-taught-educational-leadership-and-management": {
+          "name": "M.A. (Taught) Educational Leadership and Management",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-africa-and-development": {
+          "name": "MA Africa and Development",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of African Studies and Anthropology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-antiquity-classics-and-ancient-history-pathway": {
+          "name": "MA Antiquity: Classics and Ancient History pathway",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Classics, Ancient History and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "cd69f724c3d1b9c1fa65788943c93caf32365e69266511e793ca236cb68e62a9"
+        },
+        "birmingham-ma-applied-linguistics": {
+          "name": "MA Applied Linguistics",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Linguistics and Communication",
+          "parseStatus": "incomplete",
+          "deadlineHash": "db2ec585b42b9600083d312782e1297955aa4dc87ff2000f902169d624da99e8"
+        },
+        "birmingham-ma-applied-linguistics-with-tesol": {
+          "name": "MA Applied Linguistics with TESOL",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Linguistics and Communication",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b489a519025e8a49e34667e0a9f1c582fb2cff784b5b5bc730f02e083e994a2b"
+        },
+        "birmingham-ma-art-history-and-curating": {
+          "name": "MA Art History and Curating",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Art History, Curating and Visual Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "40d3f7afd79b889a9576af4a88a27481fbf2e996809efd6f790c111dc43d7aea"
+        },
+        "birmingham-ma-comparative-literature-and-critical-theories": {
+          "name": "MA Comparative Literature and Critical Theories",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Modern Languages",
+          "parseStatus": "incomplete",
+          "deadlineHash": "888fb97aed56606f7dd38eb78c4f28b35c99279b40311e5ce3b809fa585044ec"
+        },
+        "birmingham-ma-creative-writing": {
+          "name": "MA Creative Writing",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Film and Creative Writing",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3e4e8e6da4fae4cd80b09bece1e52aa2a237588fe3a0065060849c8c69987655"
+        },
+        "birmingham-ma-digital-media-and-communications": {
+          "name": "MA Digital Media and Communications",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of English Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-digital-media-and-communications-dubai": {
+          "name": "MA Digital Media and Communications (Dubai)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of English Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-digital-media-and-creative-industries": {
+          "name": "MA Digital Media and Creative Industries",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of English Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-diploma-philosophy-of-religion-and-ethics": {
+          "name": "MA/Diploma Philosophy of Religion and Ethics",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Theology and Religion",
+          "parseStatus": "incomplete",
+          "deadlineHash": "884489ea0f017b62841e7d7a443fc80074cc0e4c5612ec2a1891ea1dda134cb7"
+        },
+        "birmingham-ma-education": {
+          "name": "MA Education",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-education-learning-and-teaching-dubai": {
+          "name": "MA Education (Learning and Teaching) Dubai",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-english-literature": {
+          "name": "MA English Literature",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of English Literature",
+          "parseStatus": "incomplete",
+          "deadlineHash": "156f49c97a5032d932302b9fd102849925b6f825c2ef7e68761388d3f97c0efd"
+        },
+        "birmingham-ma-film-and-television-industries-and-cultures": {
+          "name": "MA Film and Television: Industries and Cultures",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Film and Creative Writing",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-film-and-television-research-and-production": {
+          "name": "MA Film and Television: Research and Production",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Film and Creative Writing",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b57dea95b1c678ef5d80d58180170507c976c5556a95be4fd7282ef1d7cc289c"
+        },
+        "birmingham-ma-global-conflict-and-cooperation": {
+          "name": "MA Global Conflict and Cooperation",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Government",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a668fc8d9111391ba5fcfac69be6ea6b47f6f818bd62d7e89925becbdaeef934"
+        },
+        "birmingham-ma-global-criminology-and-criminal-justice": {
+          "name": "MA Global Criminology and Criminal Justice",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c04eb0d1cf4ebe34335742427deaf666abd146b832f38407901a9b19daba25ef"
+        },
+        "birmingham-ma-history-global-history": {
+          "name": "MA History (Global History)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f645ea1d4474c3147362f5a0cef5a593e39aaf36716dc911c17a61ab1ac9851f"
+        },
+        "birmingham-ma-history-medieval-and-early-modern-history": {
+          "name": "MA History (Medieval and Early Modern History)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7ee9c32378c4511a3ffbd10672fb03c58f7a1818f92ab94d21e20daab36bf4ed"
+        },
+        "birmingham-ma-history-modern-and-contemporary-history": {
+          "name": "MA History (Modern and Contemporary History)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5937e1adbd54054b290744021fa7dbff6a4b710731dd9c568753cd5a624ab19d"
+        },
+        "birmingham-ma-history-of-art": {
+          "name": "MA History of Art",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Art History, Curating and Visual Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c2c8225221857158cc4339e5831f7cfa949c0bb7070ee9fd23453e0b59c592d6"
+        },
+        "birmingham-ma-in-english-chinese-interpreting-with-translation": {
+          "name": "MA in English-Chinese Interpreting with Translation",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Modern Languages",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-inclusion-autism-adults-online": {
+          "name": "MA Inclusion: Autism Adults (Online)",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "43118f2157f98ea36da620b58c2f7b2b1f7ae637594ccbf992ba24ea2d60bf60"
+        },
+        "birmingham-ma-inclusion-autism-children-online": {
+          "name": "MA Inclusion: Autism Children (Online)",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5cb9b1c140937cf1ea2c50a0e9e8fe7d5b4b6185d6fb21d83ac5c690c78a3e59"
+        },
+        "birmingham-ma-inclusion-social-emotional-and-behavioural-difficulties": {
+          "name": "MA Inclusion (Social, Emotional and Behavioural Difficulties)",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8e5911b577e467127d8d108942524af9a6bb866c1f669fe08d28735f4fb7d7a9"
+        },
+        "birmingham-ma-inclusion-special-educational-needs": {
+          "name": "MA Inclusion (Special Educational Needs)",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "0382fc7347d94d9ccddb405846e9e43e659633676f9e41db553a82c3653e3b47"
+        },
+        "birmingham-ma-international-heritage-management": {
+          "name": "MA International Heritage Management",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "International Centre for Heritage",
+          "parseStatus": "incomplete",
+          "deadlineHash": "25caa41ae042792394ddcaae267295940c48281f932360c3b597ed9a099041be"
+        },
+        "birmingham-ma-international-heritage-management-by-distance-learning": {
+          "name": "MA International Heritage Management by distance learning",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "International Centre for Heritage",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9a09e14d4fcbe0a8cb70b27da9f01c94980762154827b8099391ecaa53be5cb3"
+        },
+        "birmingham-ma-international-law-ethics-and-politics": {
+          "name": "MA International Law, Ethics and Politics",
+          "degreeType": "MA",
+          "faculty": "Birmingham Law School",
+          "department": "Department of Political Science and International Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "defd12583a410f07066f66c1e7fb930df9c337910a65179ffb2362f4cc7364b7"
+        },
+        "birmingham-ma-islamic-studies": {
+          "name": "MA Islamic Studies",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Theology and Religion",
+          "parseStatus": "incomplete",
+          "deadlineHash": "46d9f20edb16c767e5086c858cbd2771a0a302aa3c6577b7921c129dd526d964"
+        },
+        "birmingham-ma-language-culture-and-communication": {
+          "name": "MA Language, Culture and Communication",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Linguistics and Communication",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9dbb45d79e1b2f1c93a6aede2dcb0933e165b94c6bd78d1c2fb281a0925343e8"
+        },
+        "birmingham-ma-military-history-by-distance-learning": {
+          "name": "MA Military History by distance learning",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "42263e79d50a2b6b19b0ca9e18f381a407eca614413379f6100ccc2f546a8770"
+        },
+        "birmingham-ma-music-composition-pathway": {
+          "name": "MA Music: Composition pathway",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Music",
+          "parseStatus": "incomplete",
+          "deadlineHash": "43d7714ed0b96088280911618227ee53c6378d7c1992c6f35a37d85683e0e95d"
+        },
+        "birmingham-ma-music-musicology-and-sound-studies-pathway": {
+          "name": "MA Music: Musicology and Sound Studies pathway",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Music",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9c23ef6a33e475710a954e4fd280ea1c7cc7b568290b4193257d3dfe5b10ff5c"
+        },
+        "birmingham-ma-music-with-performance-performance-pathway": {
+          "name": "MA Music (with Performance): Performance pathway",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Music",
+          "parseStatus": "incomplete",
+          "deadlineHash": "deb5229fdf1d48ecd1217a781c6d5f24f150d58fb2303ce6304eb5c535df3f48"
+        },
+        "birmingham-ma-pgcert-education-inclusion-and-special-educational-needs-dubai": {
+          "name": "MA/ PGCert Education (Inclusion and Special Educational Needs) Dubai",
+          "degreeType": "MA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-pgdip-global-public-policy": {
+          "name": "MA/PGDip Global Public Policy",
+          "degreeType": "MA",
+          "faculty": "Department of Management",
+          "department": "Health Services Management Centre",
+          "parseStatus": "incomplete",
+          "deadlineHash": "630d99f1062b58ed1106d475b5f67564257bdc780c59facd7f79bd6c4a6cb457"
+        },
+        "birmingham-ma-pgdip-international-political-economy": {
+          "name": "MA/PGDip International Political Economy",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "Department of Political Science and International Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "926ef5d0303b3390958d232583f3d64dd09442820a81dd5521e94bbe039f9b98"
+        },
+        "birmingham-ma-pgdip-international-relations": {
+          "name": "MA/PGDip International Relations",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "Department of Political Science and International Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "678ea368adcab28df84358e4c8b3179cb02dcdabc6a2375173bfc5399bb03c1c"
+        },
+        "birmingham-ma-pgdip-international-security": {
+          "name": "MA/PGDip International Security",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "Department of Political Science and International Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "b86211465ffb613955ac1de13732b341b7ce68c8f3b1e74ed919b3eb2dbade57"
+        },
+        "birmingham-ma-pgdip-pgcert-history": {
+          "name": "MA/PGDip/PGCert History",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "09b9deaba01676869afaa97664bebbe769bb620721c532e9d0e2533b6341e8c7"
+        },
+        "birmingham-ma-pgdip-pgcert-history-and-politics": {
+          "name": "MA/PGDip/PGCert History and Politics",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c45e5556b8112f984bb713aa750968d204e5b3ecc03e37179dc546fd095307a9"
+        },
+        "birmingham-ma-pgdip-politics": {
+          "name": "MA/PGDip Politics",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "Department of Political Science and International Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "810a26797323b8096135ec9148d9a236b72a2d96fd45573962e530e27c80791b"
+        },
+        "birmingham-ma-philosophy": {
+          "name": "MA Philosophy",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Philosophy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "68f633ad2f217571293491ae1de2fbe41c485739ef78774a4173090050ee30d5"
+        },
+        "birmingham-ma-philosophy-of-religion-and-ethics-distance-learning": {
+          "name": "MA Philosophy of Religion and Ethics (Distance Learning)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Theology and Religion",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6a25f4d3551bd8573183ff5c82638074e259e5bcc90284fe2c0f2fb6acf46f69"
+        },
+        "birmingham-ma-religion-politics-and-society": {
+          "name": "MA Religion, Politics and Society",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Theology and Religion",
+          "parseStatus": "incomplete",
+          "deadlineHash": "00a4228fde59186abb2922c9397be7ea9d44102b36009dca39008cb3e6d1575f"
+        },
+        "birmingham-ma-shakespeare-and-creativity": {
+          "name": "MA Shakespeare and Creativity",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Shakespeare Institute",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-shakespeare-campus": {
+          "name": "MA Shakespeare Campus",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Shakespeare Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8dd5094add8cb32e44df548c7cf13e30d8299a48a897f85d66be951b7aad5caf"
+        },
+        "birmingham-ma-shakespeare-distance-learning": {
+          "name": "MA Shakespeare Distance Learning",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Shakespeare Institute",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8fa4b907d387f4e3af6c7904747c2347d6759aea42c67605f56b63806ac3f78b"
+        },
+        "birmingham-ma-social-policy": {
+          "name": "MA Social Policy",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "Department of Social Policy, Sociology and Criminology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9d3325209ddfca697947221cdb94a0f1ab32bc94b49b4f8d660c5e40bebc14ad"
+        },
+        "birmingham-ma-social-work": {
+          "name": "MA Social Work",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "Department of Social Work and Social Care",
+          "parseStatus": "incomplete",
+          "deadlineHash": "82e5660f5e43bde673be8ab2ad971cb2d87b4d37cbaa7064242d844043bd78d2"
+        },
+        "birmingham-ma-sociology": {
+          "name": "MA Sociology",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "Department of Social Policy, Sociology and Criminology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c0ceb2ba9636551e3a0b81d548ea1dc5cd3a71b53e0cb45cbf3a648be8d05554"
+        },
+        "birmingham-ma-teaching-english-to-speakers-of-other-languages-tesol": {
+          "name": "MA Teaching English to Speakers of Other Languages (TESOL)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Linguistics and Communication",
+          "parseStatus": "incomplete",
+          "deadlineHash": "17406fc8f7a5863e1d2660ea151fce67e3aff538cd3b3392a90046e56d478c8d"
+        },
+        "birmingham-ma-teaching-studies": {
+          "name": "MA Teaching Studies",
+          "degreeType": "MA",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ed4d8d0192e9e5f2a8906f878923ac5f2c2fecada9e02cb4337036c70d142260"
+        },
+        "birmingham-ma-theology-and-religion": {
+          "name": "MA Theology and Religion",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Theology and Religion",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3caeef5bfcfe42d1921c115a3eb46857b76ac34433f5567266c7545db557fd03"
+        },
+        "birmingham-ma-translation-studies": {
+          "name": "MA Translation Studies",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Modern Languages",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-ma-translation-studies-online": {
+          "name": "MA Translation Studies (Online)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Modern Languages",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-management-mathematics-mres": {
+          "name": "Management Mathematics MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mandatory-qualification-for-teachers-of-children-and-young-people-with-vision-impairments": {
+          "name": "Mandatory Qualification for Teachers of Children and Young People with Vision Impairments",
+          "degreeType": "Master",
+          "faculty": "School of Education",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3330deb7a1a0e33ebed4fcb92da4ab762dfa254aab79f59b3d3289fad0f114a9"
+        },
+        "birmingham-manipulative-physiotherapy-msc-pgdip": {
+          "name": "Manipulative Physiotherapy MSc/PGDiP",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a2ae34095268655ed10f13a43db1ca43261c85ad115651eec51737377bcbac56"
+        },
+        "birmingham-marketing-msc-dubai": {
+          "name": "Marketing MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Marketing",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-master-of-business-administration-dubai": {
+          "name": "Master of Business Administration (Dubai)",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-master-of-business-administration-full-time-uk": {
+          "name": "MBA Full-time",
+          "degreeType": "MBA",
+          "faculty": "Social Sciences",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4be79480b590686bf774b341029d27b69f14bc720fcb92fb9ff12272e0c9c3bb"
+        },
+        "birmingham-masters-in-public-administration-human-resources": {
+          "name": "Masters in Public Administration (Human Resources)",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "Department of International Development",
+          "parseStatus": "incomplete",
+          "deadlineHash": "95fcfb2c043b25cad3842e2c4a0b147aca5ce57fe3333ae9a437278c045df59d"
+        },
+        "birmingham-masters-in-public-administration-mpa": {
+          "name": "Masters in Public Administration (MPA)",
+          "degreeType": "MPA",
+          "faculty": "Social Sciences",
+          "department": "Department of Public Administration and Policy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-masters-of-public-administration-mpa-online": {
+          "name": "Masters of Public Administration MPA (Online)",
+          "degreeType": "MPA",
+          "faculty": "Social Sciences",
+          "department": "Department of Public Administration and Policy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-materials-in-fusion-energy-mres": {
+          "name": "Materials in Fusion Energy MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Metallurgy and Materials",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-materials-science-and-engineering-msc": {
+          "name": "Materials Science and Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Metallurgy and Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ba30af7ff9bf20586f40c5e4d4157b897391590f80abab8149c93beefb2e6d9b"
+        },
+        "birmingham-mathematical-finance-msc": {
+          "name": "Mathematical Finance MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "The Department of Economics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "22a295308008741c044e5c26f3cf659766f485eb40855d053e9157ac4a79e01b"
+        },
+        "birmingham-mathematics-operational-research-statistics-and-econometrics-morse-msc": {
+          "name": "Mathematics, Operational Research, Statistics and Econometrics (MORSE) MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3d878c88e327ab897d449ef712e5cccbadd69dab103c20279ef93795fe2cb829"
+        },
+        "birmingham-mba-clinical-leadership-online": {
+          "name": "MBA Clinical Leadership (Online)",
+          "degreeType": "MBA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mba-engineering-leadership-online": {
+          "name": "MBA Engineering Leadership (Online)",
+          "degreeType": "MBA",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mba-executive-uk": {
+          "name": "MBA Executive UK",
+          "degreeType": "MBA",
+          "faculty": "Social Sciences",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mba-online": {
+          "name": "MBA (Online)",
+          "degreeType": "MBA",
+          "faculty": "Social Sciences",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mba-singapore": {
+          "name": "MBA Singapore",
+          "degreeType": "MBA",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mental-health-msc-online": {
+          "name": "Mental Health MSc (Online)",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mental-health-youth-interdisciplinary-msc": {
+          "name": "Mental Health (Youth/Interdisciplinary) MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "239bb6511533248ad2293793513befa47d0b3ff7d97e040ff87d8bab62efe55a"
+        },
+        "birmingham-microbiology-and-infection-msc": {
+          "name": "Microbiology and Infection MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Biosciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3e3f566ba95fa47d4b9c0ca31ab1fedfeafece9507185ca9b0feec518bfb4679"
+        },
+        "birmingham-microbiology-and-infection-msc-dubai": {
+          "name": "Microbiology and Infection MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Biosciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-midwifery-msc": {
+          "name": "Midwifery MSc",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "School of Nursing and Midwifery",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-molecular-and-cellular-biology-mres": {
+          "name": "Molecular and Cellular Biology MRes",
+          "degreeType": "MRes",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Biosciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "df005f9b186eec176e31d3d2d8aeb80bb579660b3c2c458fadbde3e3692383b0"
+        },
+        "birmingham-molecular-biotechnology-msc": {
+          "name": "Molecular Biotechnology MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Biosciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6a0f751b14a5a23e5e704af7c310e464fcf71ce74d2e9f6e69b2aff02371345e"
+        },
+        "birmingham-molecular-mechanistic-toxicology-mres": {
+          "name": "Molecular Mechanistic Toxicology MRes",
+          "degreeType": "MRes",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Biosciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mpa-faith-based-leadership": {
+          "name": "MPA Faith-Based Leadership",
+          "degreeType": "MPA",
+          "faculty": "Arts and Law",
+          "department": "Department of Theology and Religion",
+          "parseStatus": "incomplete",
+          "deadlineHash": "de360914c239350c5a8f028c8d8ccf61d5f905d11b652841a335d523fbe2437d"
+        },
+        "birmingham-mpa-public-administration-finance": {
+          "name": "MPA Public Administration (Finance)",
+          "degreeType": "MPA",
+          "faculty": "Social Sciences",
+          "department": "Department of International Development",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8e190677c17b10b04520b3ffc9c0df421d721efcde6587b6381020a7792d235a"
+        },
+        "birmingham-mres-archaeology": {
+          "name": "MRes Archaeology",
+          "degreeType": "MRes",
+          "faculty": "Arts and Law",
+          "department": "Department of Classics, Ancient History and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5a35097ecb8f59581ba13e8b56fd26ddff4f2fd9410c9ef53e5ebcd0c45ef6d1"
+        },
+        "birmingham-mres-classics-and-ancient-history": {
+          "name": "MRes Classics and Ancient History",
+          "degreeType": "MRes",
+          "faculty": "Arts and Law",
+          "department": "Department of Classics, Ancient History and Archaeology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e77415c70d4acdb5867a054ef50324e69c5c03b2eef1a1d9c04164a4e04b2353"
+        },
+        "birmingham-mres-environmental-and-biological-nanoscience": {
+          "name": "MRes Environmental and Biological Nanoscience",
+          "degreeType": "MRes",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-mres-history-of-art": {
+          "name": "MRes History of Art",
+          "degreeType": "MRes",
+          "faculty": "Arts and Law",
+          "department": "Department of Art History, Curating and Visual Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ca0f4d1b9aeaf3689276512bf0cff7879aef869cacf14a9e6868c8dd4e23c201"
+        },
+        "birmingham-mres-history-on-campus": {
+          "name": "MRes History (on campus)",
+          "degreeType": "MRes",
+          "faculty": "Arts and Law",
+          "department": "Department of History",
+          "parseStatus": "incomplete",
+          "deadlineHash": "597fab63cd746f2ef261ffc4f4ef68f4cea3ac651e0caab497a84d87d87711a7"
+        },
+        "birmingham-mres-interdisciplinary-study": {
+          "name": "MRes Interdisciplinary Study",
+          "degreeType": "MRes",
+          "faculty": "Arts and Law",
+          "department": "Life and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1d17044b4c7b12fd471032ce93f2437fbb9b5d8dca5c8f352fffbadc1b79612b"
+        },
+        "birmingham-mres-philosophy": {
+          "name": "MRes Philosophy",
+          "degreeType": "MRes",
+          "faculty": "Arts and Law",
+          "department": "Department of Philosophy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "046a822724238974449a2e8574e3970ae701b80be84e99de18f57c056603c7a5"
+        },
+        "birmingham-mres-sexuality-and-gender-studies": {
+          "name": "MRes Sexuality and Gender Studies",
+          "degreeType": "MRes",
+          "faculty": "School of Languages, Cultures, Art History and Music",
+          "department": "Department of Modern Languages",
+          "parseStatus": "incomplete",
+          "deadlineHash": "47cf87addc2a990eab7f7af00aa211875ec52e71dd0b58f477fec76a3fcf6879"
+        },
+        "birmingham-msc-accounting-and-finance": {
+          "name": "MSc Accounting and Finance",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "79cfd02fa4738ab211fa61e753699f01622166c9c1befaad4c6bd7cd51799e38"
+        },
+        "birmingham-msc-advanced-clinical-practice-musculoskeletal-physiotherapy-degree-apprenticeship": {
+          "name": "MSc Advanced Clinical Practice (Musculoskeletal Physiotherapy) Degree Apprenticeship",
+          "degreeType": "MSc",
+          "faculty": "School of Nursing and Midwifery",
+          "department": "School of Nursing and Midwifery",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-ai-and-government": {
+          "name": "MSc AI and Government",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "School of Government",
+          "parseStatus": "incomplete",
+          "deadlineHash": "940cc9027449bc44c7a5ea116d3b45c20a474db469952e1e7e78e2ea0f72dbf4"
+        },
+        "birmingham-msc-ai-and-government-dubai": {
+          "name": "MSc AI and Government (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "School of Government",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-ai-and-sustainable-development": {
+          "name": "MSc AI and Sustainable Development",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "School of Government",
+          "parseStatus": "incomplete",
+          "deadlineHash": "ee1ec04d1d0e4482a8af6ca585a487409d362d19189f1047f033540d5d818fa4"
+        },
+        "birmingham-msc-ai-in-management": {
+          "name": "MSc AI in Management",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7630f26448b05e30e3c9d1c03c26153135e793c4fd536eec7ed14be7e9c5a58e"
+        },
+        "birmingham-msc-business-analytics": {
+          "name": "MSc Business Analytics",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1a675ee2706e5d2629cccc253c18e2366854254baf1308ff5c87e1b95045fb75"
+        },
+        "birmingham-msc-climate-change-adaptation-and-policy": {
+          "name": "MSc Climate Change, Adaptation and Policy",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e02d2977b61f8b6775ba2d4f54482a102410d13235a541889abc11f23dd4f3e2"
+        },
+        "birmingham-msc-clinical-exercise-physiology": {
+          "name": "MSc Clinical Exercise Physiology",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f04c2fadb9b5dd21933cc9188515055ae56dc1df11efbede124871030c7afcb2"
+        },
+        "birmingham-msc-clinical-psychology": {
+          "name": "MSc Clinical Psychology",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-conflict-security-and-development": {
+          "name": "MSc Conflict, Security and Development",
+          "degreeType": "MSc",
+          "faculty": "Department of Political Science and International Studies",
+          "department": "Department of Political Science and International Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9c2ac4ef803f0a05913dd83f341f00eaacaedac1d3f85c64785286e1c4c83bec"
+        },
+        "birmingham-msc-development-policy-and-politics": {
+          "name": "MSc Development, Policy and Politics",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Political Science and International Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8a84eac87ecf014f03360697a172fc61da0717ff5e34362043b593d5629451c5"
+        },
+        "birmingham-msc-economics": {
+          "name": "MSc Economics",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "The Department of Economics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a3a6b83f583c65751ffb849d498b61311ddc1c89b634b1e6a9d69006fbc20208"
+        },
+        "birmingham-msc-economics-ai-and-data-science": {
+          "name": "MSc Economics, AI and Data Science",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "21acae4b013c58a475e957f62921568b5a601355fb8713e04d3746012dba8757"
+        },
+        "birmingham-msc-environment-development-and-politics": {
+          "name": "MSc Environment, Development and Politics",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of International Development",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f6c936216be15fb6c3c7f0079eba27959644a25c4efc5d9b207c8cb7415b36a3"
+        },
+        "birmingham-msc-financial-economics": {
+          "name": "MSc Financial Economics",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "The Department of Economics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e4dd906864e9307ad2cb344aec8a5c976d17713c2f756cd8b233e0497cd80a56"
+        },
+        "birmingham-msc-financial-management": {
+          "name": "MSc Financial Management",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-financial-technology": {
+          "name": "MSc Financial Technology",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e5f3c52f5a8e8c00b2ef8057ace943b7892d42170dad4bbb3346790a851d9f6f"
+        },
+        "birmingham-msc-global-ethics-and-justice": {
+          "name": "MSc Global Ethics and Justice",
+          "degreeType": "MSc",
+          "faculty": "Arts and Law",
+          "department": "Department of Philosophy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2810f1754bb4d1ff7b9df6bf55959322ceb07e5a7a93920817330d4e4afb4683"
+        },
+        "birmingham-msc-global-ethics-and-justice-distance-learning": {
+          "name": "MSc Global Ethics and Justice (Distance learning)",
+          "degreeType": "MSc",
+          "faculty": "Arts and Law",
+          "department": "Department of Philosophy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a4329e6f0bc7febc88ad120c19f99e2e6034a32e01443356b87248af60156009"
+        },
+        "birmingham-msc-global-health-system-leadership": {
+          "name": "MSc Global Health System Leadership",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Health Services Management Centre",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-high-performance-sport": {
+          "name": "MSc High Performance Sport",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "27d600bf278b01d2cdfdd8b5d763f1610c65e02e5a97d41666c73de7d4933d6f"
+        },
+        "birmingham-msc-human-resource-management": {
+          "name": "MSc Human Resource Management",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-international-business": {
+          "name": "MSc International Business",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-international-business-online": {
+          "name": "MSc International Business (Online)",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-international-development": {
+          "name": "MSc International Development",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of International Development",
+          "parseStatus": "incomplete",
+          "deadlineHash": "1169e371c0739b5cc8a6d1cd52eabfc2bb6dda354d7829dc5564049f25977cbc"
+        },
+        "birmingham-msc-investments": {
+          "name": "MSc Investments",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f4afdb7c11b572a3e4b423175ed96194f3cd3c62d2a04280d0dd46b59ec41e9d"
+        },
+        "birmingham-msc-management": {
+          "name": "MSc Management",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Management",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4995ea26671e7f1669ac34a99df6e5e3fb3b567a7cf2f6aa58311d2b62ccc250"
+        },
+        "birmingham-msc-marketing": {
+          "name": "MSc Marketing",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Marketing",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-mental-wellbeing": {
+          "name": "MSc Mental Wellbeing",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-money-banking-and-finance": {
+          "name": "MSc Money, Banking and Finance",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "The Department of Economics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "15ed3b0f7aa18c3ae56090632111ab55087198871ad6f378aa3ef0f34cbe7824"
+        },
+        "birmingham-msc-pgdip-pgcert-public-management-and-leadership-blended": {
+          "name": "MSc (PGDip, PGCert) Public Management and Leadership Blended",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Public Administration and Policy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "adf48b45bed2a1a69b48eaa23aee5d7a51abd9c1a8a1100beb07539842e5c78e"
+        },
+        "birmingham-msc-pgdip-systems-thinking-and-leadership-practitioner": {
+          "name": "MSc/PGDip Systems Thinking and Leadership Practitioner",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Social Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-philosophy-mental-health-and-psychology": {
+          "name": "MSc Philosophy, Mental Health and Psychology",
+          "degreeType": "MSc",
+          "faculty": "Arts and Law",
+          "department": "Department of Philosophy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "65499092cf04110ff07d20ab43f0d8bccc8efa2815e65b7508eda616d562eca8"
+        },
+        "birmingham-msc-physician-associate-studies": {
+          "name": "MSc Physician Associate Studies",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Medicine and Health",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-poverty-inequality-and-development": {
+          "name": "MSc Poverty, Inequality and Development",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of International Development",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4a2d8be14a7dba8f564e19660cf4834c22447eb43fa86da5ba80da8a3896ba08"
+        },
+        "birmingham-msc-public-management": {
+          "name": "MSc Public Management",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Public Administration and Policy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-sport-data-science-and-ai": {
+          "name": "MSc Sport Data Science and AI",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d1c229376553f5e935fa568a041478e788659bf36584fe660bb479fb2f56fff7"
+        },
+        "birmingham-msc-strategic-marketing-and-consulting": {
+          "name": "MSc Strategic Marketing and Consulting",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Department of Marketing",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4b387bffdacc17776e99bff8871d1a672c2933a1dd2f97141cda22fc1adf3830"
+        },
+        "birmingham-msc-supply-chain-management": {
+          "name": "MSc Supply Chain Management",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5b0d8c80a3230088b7b815f17227cf29f073dc28de873b0bb8c1f0f6888af747"
+        },
+        "birmingham-msc-sustainable-finance": {
+          "name": "MSc Sustainable Finance",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "The Department of Finance",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c6f0db6b9ed16cd5a7c3171d92d115f13eb16ea487830f4feadb1ecce76ed1b0"
+        },
+        "birmingham-msc-sustainable-innovation-and-entrepreneurship": {
+          "name": "MSc Sustainable Innovation and Entrepreneurship",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "incomplete",
+          "deadlineHash": "6379af677c1f29590b68800fd142e8a2c110eb429938a6a688188f332685096b"
+        },
+        "birmingham-msc-sustainable-innovation-and-entrepreneurship-dubai": {
+          "name": "MSc Sustainable Innovation and Entrepreneurship (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-sustainable-transport-planning": {
+          "name": "MSc Sustainable Transport Planning",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2b52193f0d88a46bc0b4897d6e4c263c18d23e1378e6996476a85c96300193d9"
+        },
+        "birmingham-msc-sustainable-urban-design-dubai": {
+          "name": "MSc Sustainable Urban Design (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Postgraduate",
+          "department": "Centre for Urban and Regional Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-sustainable-urban-planning-and-design": {
+          "name": "MSc Sustainable Urban Planning and Design",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "8309e69e6569fb3f8f80e8b325bb232e92d5ddd22941abd1068cf2c0f95815fb"
+        },
+        "birmingham-msc-tesol-education": {
+          "name": "MSc TESOL Education",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3a58516382a3a97149b995013fc1bcc2847462463d80d79d1085ba589b547230"
+        },
+        "birmingham-msc-urban-analytics-and-ai-for-planners-dubai": {
+          "name": "MSc Urban Analytics and AI for Planners (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Postgraduate",
+          "department": "Centre for Urban and Regional Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-msc-urban-planning-and-regional-development-dubai": {
+          "name": "MSc Urban Planning and Regional Development (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "Centre for Urban and Regional Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-musculoskeletal-physiotherapy-msc-pgdip-dubai": {
+          "name": "Musculoskeletal Physiotherapy MSc/PGDip (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-natural-computation-mres": {
+          "name": "Natural Computation MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-nuclear-decommissioning-and-waste-management-msc": {
+          "name": "Nuclear Decommissioning and Waste Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Physics and Astronomy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3eec2a7f85f26f0bdddf4ec2f0f2b921578c4487cf337e633df5adcfa969bedb"
+        },
+        "birmingham-nursing-msc": {
+          "name": "Nursing MSc",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "School of Nursing and Midwifery",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-phd-mphil-health-services-management": {
+          "name": "PhD/MPhil Health Services Management",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "Health Services Management Centre",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-phd-mphil-social-policy-sociology-and-criminology": {
+          "name": "PhD/MPhil Social Policy, Sociology and Criminology",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "Health Services Management Centre",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-phd-social-work-and-social-care": {
+          "name": "PhD Social Work and Social Care",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "Department of Social Work and Social Care",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-physician-associate-studies-msc-top-up-online": {
+          "name": "Physician Associate Studies MSc (top up) Online",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5ca612c202e9d08280288f9420e1bb225be6e1061be2dbba4fb0848a3e591a9f"
+        },
+        "birmingham-physics-and-technology-of-nuclear-reactors-msc": {
+          "name": "Physics and Technology of Nuclear Reactors MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Physics and Astronomy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "52e9336c4de3f3169a3ea04e09f77de25c64d52febf1ac29d8283a24014431ce"
         },
         "birmingham-physiotherapy-pre-registration-msc": {
           "name": "Physiotherapy (pre-registration) MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
           "parseStatus": "incomplete",
-          "deadlineHash": "0c6b19fdb3f2dcc2475052ce3ee14707fd092c61a67ba9fb6ea7da65e2e96ff9"
+          "deadlineHash": "a26cb8d96fbd0469293109256a06ceed0b2812384c71ee52ab355a20af112baa"
+        },
+        "birmingham-psychology-conversion-msc": {
+          "name": "Psychology (Conversion) MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7591ef1a3f6c9203cc38b40eabb191e9d9f826ac7fc83c0b5d3c204daff6a980"
+        },
+        "birmingham-psychology-msc": {
+          "name": "Psychology MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Psychology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "997a3e0c6e81c314b74bf6042b0e45871e5df5f8bf43e0b678dd702da9236f42"
+        },
+        "birmingham-public-and-environmental-health-sciences-msc": {
+          "name": "Public and Environmental Health Sciences MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "eaa0120452f3574f642bcc916b2fa085c031788af430103e5ee79b34289f221b"
+        },
+        "birmingham-public-health-dubai-mph-diploma-certificate": {
+          "name": "Public Health (Dubai) MPH/Diploma/Certificate",
+          "degreeType": "MPH",
+          "faculty": "Medicine and Health",
+          "department": "Graduate School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-public-health-mph-pgdip-pgcert": {
+          "name": "Public Health MPH/PGDip/PGCert",
+          "degreeType": "MPH",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Applied Health Research",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2dad0f084e561190b48f1783c0f16c48ad3bc0b07c5dbeee9489cbad69ce02b2"
+        },
+        "birmingham-pure-mathematics-mres": {
+          "name": "Pure Mathematics MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-railway-safety-and-control-systems-msc-diploma-certificate": {
+          "name": "Railway Safety and Control Systems MSc/Diploma/Certificate",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Civil Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "2346bc203db17c547f8ee7fe8ede27fa9dca66beb0f18006aca709546d928501"
+        },
+        "birmingham-railway-systems-engineering-and-integration-msc": {
+          "name": "Railway Systems Engineering and Integration MSc",
+          "degreeType": "MSc",
+          "faculty": "Department of Civil Engineering",
+          "department": "Department of Electronic, Electrical and Systems Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "94a3e104f06f0454dc8f4e7244696fd9d93bb4dd8814844fccd9d800a2cbab15"
+        },
+        "birmingham-railway-systems-engineering-and-integration-msc-pgdip-dubai": {
+          "name": "Railway Systems Engineering and Integration MSc/PGDip (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-railway-systems-integration-mres": {
+          "name": "Railway Systems Integration MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Civil Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-renewable-energy-engineering-msc-dubai": {
+          "name": "Renewable Energy Engineering MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-research-in-human-geography-msc": {
+          "name": "Research in Human Geography MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "9d273a9275930b0f2a22d7e2281133e49f66fd53e1178515d384e9bcc3d3ed3f"
+        },
+        "birmingham-respiratory-medicine-msc-pgdip-pgcert": {
+          "name": "Respiratory Medicine - MSc/PGDip/PGCert",
+          "degreeType": "MSc",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Applied Health Research",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c4abb01a647cee9f8b42960aee30ec6c16dc460a8588db5d58964fc487011d0d"
+        },
+        "birmingham-restorative-dentistry-online": {
+          "name": "Restorative Dentistry (Online)",
+          "degreeType": "Master",
+          "faculty": "Medicine and Health",
+          "department": "Institute of Clinical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fa5c7e7cd9879da429ab459ba27c0c696fb6d9a4957aa46a0f37a11e86b45e2f"
+        },
+        "birmingham-river-environments-and-their-management-msc": {
+          "name": "River Environments and their Management MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Geography, Earth and Environmental Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "57464f62d1a6c7fac8fb137898eb27300910190513df4e24df13a2a1e7bbd274"
+        },
+        "birmingham-robotics-msc": {
+          "name": "Robotics MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Mechanical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f3535ad505d2e7c9e2e416014e2ab9bc1a02b85e4b65ae33a1ff33a3f141e80b"
+        },
+        "birmingham-science-and-engineering-of-materials-mres": {
+          "name": "Science and Engineering of Materials MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Metallurgy and Materials",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "birmingham-space-engineering-msc": {
           "name": "Space Engineering MSc",
-          "degreeType": "MSC",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Metallurgy and Materials",
+          "parseStatus": "incomplete",
+          "deadlineHash": "7ee0263b1a43403d48e6b9a5b5185606ac3dfc7f29d20e4aa4f6439aea2c2c13"
+        },
+        "birmingham-spinal-pain-mres": {
+          "name": "Spinal Pain MRes",
+          "degreeType": "MRes",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-sport-and-exercise-medicine-msc-pgdip": {
+          "name": "Sport and Exercise Medicine MSc/PGDip",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-sport-business-management-and-leadership-msc": {
+          "name": "Sport Business, Management and Leadership, MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a16b73b62be40d2f4d1c8237dad9bda3cbe6a3279ff66a2ad38581738110c8c6"
+        },
+        "birmingham-sports-and-exercise-medicine-msc-pgdip": {
+          "name": "Sports and Exercise Medicine MSc/PgDiP",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Sport, Exercise and Rehabilitation Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "45fe296cb15025a3cf45d2f0a2e9977d649e5c38f620a729cf929680320c7bb4"
+        },
+        "birmingham-statistical-data-science-j-bji-msc": {
+          "name": "Statistical Data Science (J-BJI) MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "80ea6d4588a0e9122dcafa56b2b81bcfef6b36d30c4bf0048028729ce80bdd1a"
+        },
+        "birmingham-statistical-data-science-msc": {
+          "name": "Statistical Data Science MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "494280ed038ae2d94dc0b97095d891eea173f9692b54710671429e8896a82193"
+        },
+        "birmingham-statistics-mres": {
+          "name": "Statistics MRes",
+          "degreeType": "MRes",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-statistics-msc": {
+          "name": "Statistics MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Mathematics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "fdd02c808a9fd6ceab9fccec365ef6194fdbc3cc228e1c3eb5d6aff76841ab21"
+        },
+        "birmingham-structural-engineering-msc-diploma": {
+          "name": "Structural Engineering MSc/Diploma",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "Department of Civil Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f66f14a6d6ff43b9b9f97e1748e6ab427d0b827ce198fa6955c7cd29970c1e35"
+        },
+        "birmingham-supply-chain-management-msc-dubai": {
+          "name": "Supply Chain Management MSc (Dubai)",
+          "degreeType": "MSc",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-sustainable-chemistry-msc": {
+          "name": "Sustainable Chemistry MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemistry",
+          "parseStatus": "incomplete",
+          "deadlineHash": "a4495b681d4ca7e7ce8c5c182d26f402992b34a3ba089c267729bae1694c718e"
+        },
+        "birmingham-sustainable-energy-engineering-msc": {
+          "name": "Sustainable Energy Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "Engineering and Physical Sciences",
+          "department": "School of Chemical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "adb01f0a0ac54038f4f518446aa01eea90b931484f5d26a9c37d8c7a86a4f53c"
+        },
+        "birmingham-sustainable-materials-msc": {
+          "name": "Sustainable Materials MSc",
+          "degreeType": "MSc",
           "faculty": "",
           "department": "",
           "parseStatus": "incomplete",
-          "deadlineHash": "0c6b19fdb3f2dcc2475052ce3ee14707fd092c61a67ba9fb6ea7da65e2e96ff9"
+          "deadlineHash": "e51b48cb71a15e03ca01fe4f041fc8ede7a13ac820f395e0eaa336e307ef0677"
+        },
+        "birmingham-teachers-of-children-and-young-people-with-multi-sensory-impairment-deafblindness": {
+          "name": "Teachers of Children and Young People with Multi-Sensory Impairment (Deafblindness)",
+          "degreeType": "Master",
+          "faculty": "Social Sciences",
+          "department": "School of Education",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4a9f2735fecf47183018b6820cf7eb95a2b46af8dda6fb4fd54448620498603b"
+        },
+        "birmingham-tesol-teaching-english-to-speakers-of-other-languages-ma-online": {
+          "name": "TESOL - Teaching English to Speakers of Other Languages MA (Online)",
+          "degreeType": "MA",
+          "faculty": "Arts and Law",
+          "department": "Department of Linguistics and Communication",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-theology-and-religion-mres": {
+          "name": "Theology and Religion MRes",
+          "degreeType": "MRes",
+          "faculty": "Arts and Law",
+          "department": "Department of Theology and Religion",
+          "parseStatus": "incomplete",
+          "deadlineHash": "daddce23f92d0b36b79e38d31461c03307b5d3423304ef554d536e0841e955ad"
+        },
+        "birmingham-toxicology-msc": {
+          "name": "Toxicology MSc",
+          "degreeType": "MSc",
+          "faculty": "Life and Environmental Sciences",
+          "department": "School of Biosciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bb94b849ed477f1bcd08b92158c5601e3ecf25d2d6d9fd1356c7f0734941ca12"
+        },
+        "birmingham-urban-and-regional-planning-with-rtpi-accreditation-msc-pg-diploma": {
+          "name": "Urban and Regional Planning (with RTPI accreditation) MSc/PG Diploma",
+          "degreeType": "MSc",
+          "faculty": "Social Sciences",
+          "department": "Centre for Urban and Regional Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "f75011b0e43de934c1b6e38d8858d5109e1eede43d66711fdd28fb2d2561827c"
+        },
+        "birmingham-urban-planning-msc-online": {
+          "name": "Urban Planning Msc (Online)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "birmingham-urban-sustainability-msc-online": {
+          "name": "Urban Sustainability MSc (online)",
+          "degreeType": "MSc",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         }
       }
     },
