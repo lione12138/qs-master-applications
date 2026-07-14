@@ -23,6 +23,7 @@ from .monash import MonashAdapter
 from .ntu import NTUAdapter
 from .nus import NUSAdapter
 from .oxford import OxfordAdapter
+from .peking import PekingAdapter
 from .polyu import PolyUAdapter
 from .southampton import SouthamptonAdapter
 from .stanford import StanfordAdapter
@@ -53,6 +54,7 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "ntu": NTUAdapter,
     "nus": NUSAdapter,
     "oxford": OxfordAdapter,
+    "peking": PekingAdapter,
     "polyu": PolyUAdapter,
     "southampton": SouthamptonAdapter,
     "stanford": StanfordAdapter,

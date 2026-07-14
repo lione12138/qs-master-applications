@@ -216,7 +216,7 @@ See `docs/assisted-discovery.md`.
 ### Add a dedicated programme adapter
 
 Dedicated adapters live in `src/gradwindow/programme_adapters/`. Existing
-examples include `birmingham.py`, `bristol.py`, `caltech.py`, `mit.py`, `cuhk.py`,
+examples include `birmingham.py`, `bristol.py`, `caltech.py`, `peking.py`, `mit.py`, `cuhk.py`,
 `polyu.py`, `cambridge.py`, `edinburgh.py`, `glasgow.py`, `imperial.py`, `hku.py`,
 `hkust.py`, `melbourne.py`, `monash.py`, `manchester.py`, `ntu.py`, `nus.py`,
 `oxford.py`, `southampton.py`, `sydney.py`, and `uq.py`.
