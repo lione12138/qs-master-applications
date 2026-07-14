@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T22:17:38.421794+00:00",
+    "updatedAt": "2026-07-14T22:44:38.493805+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "partitioning": {
@@ -8,6 +8,7 @@
     "groupKey": null,
     "root": "programme-catalog-state/by-university",
     "files": [
+      "programme-catalog-state/by-university/california-institute-of-technology-caltech.json",
       "programme-catalog-state/by-university/delft-university-of-technology.json",
       "programme-catalog-state/by-university/eth-zurich-swiss-federal-institute-of-technology.json",
       "programme-catalog-state/by-university/harvard-university.json",

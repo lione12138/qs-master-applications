@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
-    "updatedAt": "2026-07-14T22:17:38.421794+00:00",
+    "updatedAt": "2026-07-14T22:44:38.493805+00:00",
     "lastBatchReplaceRemoved": 98
   },
   "partitioning": {
@@ -9,6 +9,7 @@
     "groupKey": "universityId",
     "root": "programme-candidates/by-university",
     "files": [
+      "programme-candidates/by-university/california-institute-of-technology-caltech.json",
       "programme-candidates/by-university/delft-university-of-technology.json",
       "programme-candidates/by-university/eth-zurich-swiss-federal-institute-of-technology.json",
       "programme-candidates/by-university/harvard-university.json",

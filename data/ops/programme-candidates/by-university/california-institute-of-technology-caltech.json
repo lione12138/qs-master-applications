@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "id": "new-programme:caltech-aeronautics-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "california-institute-of-technology-caltech",
+      "detectedAt": "2026-07-14T22:44:38.493805+00:00",
+      "sourceUrl": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/aerospace-ae/",
+      "programme": {
+        "id": "caltech-aeronautics-ms",
+        "universityId": "california-institute-of-technology-caltech",
+        "name": "MS Aeronautics",
+        "degreeType": "MS",
+        "faculty": "Division of Engineering and Applied Science | Aerospace",
+        "applicationUrl": "https://gradoffice.caltech.edu/admissions/applyonline",
+        "sourceUrl": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/aerospace-ae/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The current Caltech Catalog verifies this as a direct-entry master's programme. The Graduate Studies Office states: Deadlines vary by program from December 1 to December 15. It does not currently publish a cycle year or an exact opening date, so no exact application window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:caltech-electrical-engineering-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "california-institute-of-technology-caltech",
+      "detectedAt": "2026-07-14T22:44:38.493805+00:00",
+      "sourceUrl": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/electrical-engineering-ee/",
+      "programme": {
+        "id": "caltech-electrical-engineering-ms",
+        "universityId": "california-institute-of-technology-caltech",
+        "name": "MS Electrical Engineering",
+        "degreeType": "MS",
+        "faculty": "Division of Engineering and Applied Science | Electrical Engineering",
+        "applicationUrl": "https://gradoffice.caltech.edu/admissions/applyonline",
+        "sourceUrl": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/electrical-engineering-ee/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The current Caltech Catalog verifies this as a direct-entry master's programme. The Graduate Studies Office states: Deadlines vary by program from December 1 to December 15. It does not currently publish a cycle year or an exact opening date, so no exact application window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:caltech-space-engineering-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "california-institute-of-technology-caltech",
+      "detectedAt": "2026-07-14T22:44:38.493805+00:00",
+      "sourceUrl": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/aerospace-ae/",
+      "programme": {
+        "id": "caltech-space-engineering-ms",
+        "universityId": "california-institute-of-technology-caltech",
+        "name": "MS Space Engineering",
+        "degreeType": "MS",
+        "faculty": "Division of Engineering and Applied Science | Aerospace",
+        "applicationUrl": "https://gradoffice.caltech.edu/admissions/applyonline",
+        "sourceUrl": "https://catalog.caltech.edu/current/information-for-graduate-students/special-regulations-for-graduate-options/aerospace-ae/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The current Caltech Catalog verifies this as a direct-entry master's programme. The Graduate Studies Office states: Deadlines vary by program from December 1 to December 15. It does not currently publish a cycle year or an exact opening date, so no exact application window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    }
+  ]
+}

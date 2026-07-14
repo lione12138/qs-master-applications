@@ -5,6 +5,7 @@ from collections.abc import Callable
 from .base import ProgrammeAdapter
 from .birmingham import BirminghamAdapter
 from .bristol import BristolAdapter
+from .caltech import CaltechAdapter
 from .cambridge import CambridgeAdapter
 from .cuhk import CUHKAdapter
 from .edinburgh import EdinburghAdapter
@@ -33,6 +34,7 @@ AdapterFactory = Callable[[], ProgrammeAdapter]
 PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "birmingham": BirminghamAdapter,
     "bristol": BristolAdapter,
+    "caltech": CaltechAdapter,
     "cambridge": CambridgeAdapter,
     "cuhk": CUHKAdapter,
     "edinburgh": EdinburghAdapter,
