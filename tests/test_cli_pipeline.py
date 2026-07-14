@@ -43,6 +43,36 @@ def test_pipeline_discovery_report_converts_adapter_failure(monkeypatch) -> None
     }
 
 
+def test_run_dedicated_discovery_returns_only_successful_university_ids(
+    monkeypatch,
+) -> None:
+    class FirstAdapter:
+        university_id = "first-university"
+
+    class SecondAdapter:
+        university_id = "second-university"
+
+    monkeypatch.setattr(
+        cli,
+        "PROGRAMME_ADAPTERS",
+        {"first": FirstAdapter, "second": SecondAdapter},
+    )
+    monkeypatch.setattr(
+        cli,
+        "_pipeline_discovery_report",
+        lambda name, _factory, dry_run=False: {
+            "status": "ok" if name == "first" else "error",
+            "universityId": f"{name}-university",
+            "dryRun": dry_run,
+        },
+    )
+
+    reports, successful_ids = cli._run_dedicated_discovery(dry_run=True)
+
+    assert [report["status"] for report in reports] == ["ok", "error"]
+    assert successful_ids == {"first-university"}
+
+
 def test_approve_all_programmes_uses_all_pending_candidate_universities(
     monkeypatch,
     tmp_path,

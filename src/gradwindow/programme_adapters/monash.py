@@ -10,7 +10,12 @@ from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "monash-university"
 CATALOG_URL = "https://handbook.monash.edu/sitemap.xml"
@@ -40,7 +45,7 @@ MARKETING_PROBE_URL = (
 )
 
 
-class MonashAdapter:
+class MonashAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

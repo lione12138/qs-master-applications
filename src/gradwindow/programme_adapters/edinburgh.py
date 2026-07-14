@@ -11,7 +11,12 @@ from urllib.parse import urljoin, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "university-of-edinburgh"
 CATALOG_URL = "https://study.ed.ac.uk/programmes/postgraduate-taught"
@@ -52,7 +57,7 @@ START_DATE_RE = re.compile(r"Start date:\s*(?P<month>[A-Z][a-z]+)\s+(?P<year>20\
 ENTRY_YEAR_RE = re.compile(r"Year of entry:\s*(?P<year>20\d{2})", re.I)
 
 
-class EdinburghAdapter:
+class EdinburghAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_GUIDANCE_URL

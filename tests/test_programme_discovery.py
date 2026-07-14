@@ -5,6 +5,7 @@ import json
 import pytest
 
 from gradwindow.programme_adapters.base import (
+    BaseProgrammeAdapter,
     DiscoveredCatalog,
     DiscoveredProgramme,
     DiscoveredWindow,
@@ -220,7 +221,7 @@ def test_discovery_creates_candidates_without_mutating_programmes(
 
 
 def test_dedicated_adapter_can_replace_stale_pending_candidates(tmp_path) -> None:
-    class ReplacingAdapter:
+    class ReplacingAdapter(BaseProgrammeAdapter):
         university_id = "example-university"
         catalog_url = "https://example.edu/programmes"
         intake = "September 2027"
@@ -298,7 +299,7 @@ def test_dedicated_adapter_can_replace_stale_pending_candidates(tmp_path) -> Non
 
 
 def test_known_programme_missing_opening_stays_in_guidance_queue(tmp_path) -> None:
-    class GuidanceAdapter:
+    class GuidanceAdapter(BaseProgrammeAdapter):
         university_id = "example-university"
         catalog_url = "https://example.edu/programmes"
         intake = "September 2027"
@@ -467,7 +468,7 @@ def test_known_programme_window_change_becomes_review_candidate(tmp_path) -> Non
 def test_known_programme_inferred_opening_does_not_create_window_candidate(
     tmp_path,
 ) -> None:
-    class InferredOpeningAdapter:
+    class InferredOpeningAdapter(BaseProgrammeAdapter):
         university_id = "example-university"
         catalog_url = "https://example.edu/programmes"
         intake = "September 2027"

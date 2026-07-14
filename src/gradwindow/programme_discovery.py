@@ -16,6 +16,7 @@ from .paths import (
     WINDOW_CANDIDATES_PATH,
 )
 from .predictions import official_cycle_key
+from .programme_adapters.base import ProgrammeAdapter
 from .programme_windows import (
     has_official_exact_window,
     known_programme_window_candidates,
@@ -35,7 +36,7 @@ def fetch_catalog(url: str) -> str:
 
 
 def discover_programmes(
-    adapter,
+    adapter: ProgrammeAdapter,
     *,
     programs_path: Path = PROGRAMS_PATH,
     applications_path: Path = APPLICATIONS_PATH,
@@ -46,11 +47,7 @@ def discover_programmes(
     dry_run: bool = False,
 ) -> dict:
     checked_at = datetime.now(timezone.utc).isoformat()
-    parse_with_fetcher = getattr(adapter, "parse_catalog_from_fetcher", None)
-    if callable(parse_with_fetcher):
-        catalog = parse_with_fetcher(fetcher)
-    else:
-        catalog = adapter.parse_catalog(fetcher(adapter.catalog_url))
+    catalog = adapter.parse_catalog_from_fetcher(fetcher)
     programs_payload = read_json(programs_path)
     known_programmes = {
         item["id"]: item
@@ -71,7 +68,7 @@ def discover_programmes(
         },
     )
     existing = {item["id"]: item for item in candidates_payload.get("items", [])}
-    if getattr(adapter, "replace_pending_candidates", False):
+    if adapter.replace_pending_candidates:
         existing = {
             candidate_id: item
             for candidate_id, item in existing.items()
@@ -300,7 +297,7 @@ def _candidate_record(
     shared_opens_at: str | None,
     detected_at: str,
 ) -> dict:
-    shared_opening_basis = getattr(adapter, "application_opens_at_basis", "official")
+    shared_opening_basis = adapter.application_opens_at_basis
 
     def opening_for(window) -> tuple[str | None, str]:
         opens_at = window.opens_at or shared_opens_at

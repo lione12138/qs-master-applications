@@ -11,7 +11,12 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 
 from ..discovery import same_official_domain
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 DEGREE_RE = re.compile(
     r"\b(MSc|MS|MA|MEng|MEd|MRes|MPhil|MLitt|LLM|MBA|MPH|MPP|MPA|Master(?:'s)?(?:\s+of)?)\b",
@@ -78,7 +83,7 @@ class GenericProgrammeConfig:
     detail_url_replacements: tuple[tuple[str, str], ...] = ()
 
 
-class GenericProgrammeAdapter:
+class GenericProgrammeAdapter(BaseProgrammeAdapter):
     """Generic programme discovery for schools without a bespoke adapter.
 
     The adapter intentionally favours high precision over recall: it only follows

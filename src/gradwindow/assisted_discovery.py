@@ -15,6 +15,7 @@ from bs4 import BeautifulSoup
 from .discovery import same_official_domain
 from .http_client import DEFAULT_USER_AGENT, FetchFailure, fetch_page
 from .programme_adapters.base import (
+    BaseProgrammeAdapter,
     DiscoveredCatalog,
     DiscoveredProgramme,
     DiscoveredWindow,
@@ -93,7 +94,7 @@ class AssistedDiscoveryConfig:
     search_priority: str = "normal"
 
 
-class AssistedCatalogAdapter:
+class AssistedCatalogAdapter(BaseProgrammeAdapter):
     application_opens_at_basis = "official"
 
     def __init__(

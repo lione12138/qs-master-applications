@@ -6,7 +6,12 @@ from datetime import datetime
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = "https://www.gs.cuhk.edu.hk/admissions/application-deadline"
 APPLICATION_URL = "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx"
@@ -28,7 +33,7 @@ OPEN_DATE_RE = re.compile(
 )
 
 
-class CUHKAdapter:
+class CUHKAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

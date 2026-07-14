@@ -10,7 +10,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = "https://www.postgraduate.study.cam.ac.uk/courses/directory"
 APPLICATION_URL = "https://apply.postgraduate.study.cam.ac.uk/applicant/login"
@@ -25,7 +30,7 @@ COURSE_DATES_RE = re.compile(
 )
 
 
-class CambridgeAdapter:
+class CambridgeAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

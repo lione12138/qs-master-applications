@@ -1,6 +1,10 @@
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass, field
+from typing import Protocol, runtime_checkable
+
+Fetcher = Callable[[str], str]
 
 
 @dataclass(slots=True)
@@ -34,3 +38,28 @@ class DiscoveredProgramme:
 class DiscoveredCatalog:
     application_opens_at: str | None
     programmes: list[DiscoveredProgramme]
+
+
+@runtime_checkable
+class ProgrammeAdapter(Protocol):
+    university_id: str
+    catalog_url: str
+    intake: str
+    application_opens_at_basis: str
+    replace_pending_candidates: bool
+
+    def parse_catalog_from_fetcher(self, fetcher: Fetcher) -> DiscoveredCatalog: ...
+
+
+class BaseProgrammeAdapter:
+    """Compatibility defaults shared by every dedicated programme adapter."""
+
+    intake = "Varies by programme"
+    application_opens_at_basis = "official"
+    replace_pending_candidates = False
+
+    def parse_catalog_from_fetcher(self, fetcher: Fetcher) -> DiscoveredCatalog:
+        return self.parse_catalog(fetcher(self.catalog_url))
+
+    def parse_catalog(self, html: str) -> DiscoveredCatalog:
+        raise NotImplementedError

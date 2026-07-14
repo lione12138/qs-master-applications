@@ -10,7 +10,12 @@ from urllib.parse import urlencode
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "national-university-of-singapore-nus"
 CATALOG_URL = "https://study.nus.edu.sg/programme"
@@ -81,7 +86,7 @@ class DeadlineRule:
     complete: bool
 
 
-class NUSAdapter:
+class NUSAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

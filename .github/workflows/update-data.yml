@@ -15,6 +15,11 @@ on:
       - "data/programme-translations.json"
       - "data/universities.json"
       - "data/ops/programme-candidates.json"
+      - "data/ops/programme-candidates/**"
+      - "data/ops/window-candidates.json"
+      - "data/ops/window-candidates/**"
+      - "data/ops/programme-catalog-state.json"
+      - "data/ops/programme-catalog-state/**"
       - "scripts/update_programme_translations.py"
       - "src/gradwindow/**"
       - ".github/workflows/update-data.yml"
@@ -129,9 +134,24 @@ jobs:
         with:
           script: |
             const fs = require("fs");
+            const path = require("path");
+            const readJson = filename => {
+              const payload = JSON.parse(fs.readFileSync(filename, "utf8"));
+              if (!payload.partitioning) return payload;
+              const { collectionKey, groupKey, files } = payload.partitioning;
+              const collection = groupKey ? [] : {};
+              for (const relativeName of files) {
+                const shard = JSON.parse(
+                  fs.readFileSync(path.join(path.dirname(filename), relativeName), "utf8")
+                )[collectionKey];
+                if (groupKey) collection.push(...shard);
+                else Object.assign(collection, shard);
+              }
+              return { meta: payload.meta || {}, [collectionKey]: collection };
+            };
             const queue = JSON.parse(fs.readFileSync("data/ops/review-queue.json", "utf8"));
-            const candidates = JSON.parse(fs.readFileSync("data/ops/window-candidates.json", "utf8"));
-            const programmeCandidates = JSON.parse(fs.readFileSync("data/ops/programme-candidates.json", "utf8"));
+            const candidates = readJson("data/ops/window-candidates.json");
+            const programmeCandidates = readJson("data/ops/programme-candidates.json");
             const universities = JSON.parse(fs.readFileSync("data/universities.json", "utf8"));
             const universityById = new Map(
               universities.universities.map(item => [item.id, item])

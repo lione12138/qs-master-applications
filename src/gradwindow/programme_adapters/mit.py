@@ -6,7 +6,12 @@ from datetime import datetime, timezone
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
 UNIVERSITY_ID = "massachusetts-institute-of-technology-mit"
@@ -17,7 +22,7 @@ MONTH_DAY_RE = re.compile(
 )
 
 
-class MITAdapter:
+class MITAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
 

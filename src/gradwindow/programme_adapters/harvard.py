@@ -8,7 +8,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = "https://gsas.harvard.edu/programs"
 APPLICATION_URL = "https://gsas.harvard.edu/apply"
@@ -20,7 +25,7 @@ MASTER_DEGREE_RE = re.compile(
 PAGE_RE = re.compile(r"[?&]page=(\d+)")
 
 
-class HarvardAdapter:
+class HarvardAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

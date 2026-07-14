@@ -1,0 +1,68 @@
+{
+  "items": [
+    {
+      "id": "new-programme:oxford-mphil-in-english-studies-medieval-period",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-oxford",
+      "detectedAt": "2026-07-14T03:14:35.526337+00:00",
+      "sourceUrl": "https://www.english.ox.ac.uk/masters-programmes",
+      "programme": {
+        "id": "oxford-mphil-in-english-studies-medieval-period",
+        "universityId": "university-of-oxford",
+        "name": "MPhil in English Studies (Medieval Period)",
+        "degreeType": "MPhil",
+        "faculty": "English | Faculty of English",
+        "applicationUrl": "https://www.english.ox.ac.uk/masters-programmes",
+        "sourceUrl": "https://www.english.ox.ac.uk/masters-programmes"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "a 21-month MPhil in English Studies (Medieval Period)",
+      "discoveryEvidence": {
+        "retrievalMethod": "direct-http",
+        "evidenceQuality": "official-fulltext",
+        "documentHash": "e90c33edc214a8fc741ee4bfb35037dfeb279f0c22a77f217d0a0ffc6ce167c7"
+      }
+    },
+    {
+      "id": "new-programme:oxford-oxford-1-1-mba",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-oxford",
+      "detectedAt": "2026-07-14T03:14:35.526337+00:00",
+      "sourceUrl": "https://www.sbs.ox.ac.uk/programmes/mbas/oxford-11-mba",
+      "programme": {
+        "id": "oxford-oxford-1-1-mba",
+        "universityId": "university-of-oxford",
+        "name": "Oxford 1+1 MBA",
+        "degreeType": "MBA",
+        "faculty": "Saïd Business School",
+        "applicationUrl": "https://www.sbs.ox.ac.uk/programmes/mbas/oxford-11-mba",
+        "sourceUrl": "https://www.sbs.ox.ac.uk/programmes/mbas/oxford-11-mba"
+      },
+      "windows": [
+        {
+          "intake": "2027-28",
+          "round": "January",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-06",
+          "sourceUrl": "https://www.sbs.ox.ac.uk/programmes/mbas/oxford-11-mba"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "For 2027-28 intake, this will be Wednesday 6 January 2027.",
+      "discoveryEvidence": {
+        "retrievalMethod": "direct-http",
+        "evidenceQuality": "official-fulltext",
+        "documentHash": "67df39b6db48f2a0f207a2f81a18746a8be5797c2ac7eb42bd63d5a5fe682f31"
+      }
+    }
+  ]
+}

@@ -7,6 +7,7 @@
     {
       "name": "oxford-graduate-taught",
       "universityId": "university-of-oxford",
+      "discoveryRole": "fallback",
       "prefix": "oxford",
       "seedUrls": [
         "https://www.ox.ac.uk/admissions/graduate/courses/courses-a-z-listing",
@@ -45,6 +46,7 @@
     {
       "name": "melbourne-graduate-coursework",
       "universityId": "the-university-of-melbourne",
+      "discoveryRole": "fallback",
       "prefix": "melbourne",
       "seedUrls": [
         "https://study.unimelb.edu.au/find/courses/graduate/"
@@ -64,6 +66,7 @@
     {
       "name": "monash-postgraduate-courses",
       "universityId": "monash-university",
+      "discoveryRole": "fallback",
       "prefix": "monash",
       "seedUrls": [
         "https://www.monash.edu/study/courses/find-a-course"
@@ -83,6 +86,7 @@
     {
       "name": "sydney-postgraduate-coursework",
       "universityId": "the-university-of-sydney",
+      "discoveryRole": "fallback",
       "prefix": "sydney",
       "seedUrls": [
         "https://www.sydney.edu.au/courses/sitemap.xml"
@@ -116,6 +120,7 @@
     {
       "name": "manchester-masters-courses",
       "universityId": "the-university-of-manchester",
+      "discoveryRole": "fallback",
       "prefix": "manchester",
       "seedUrls": [
         "https://www.manchester.ac.uk/study/masters/courses/list/basic/"

@@ -3,93 +3,13 @@
     "description": "Internal exact-window candidates awaiting manual review. This file is never published to the static site.",
     "updatedAt": "2026-07-14T18:21:45.060199+00:00"
   },
-  "items": [
-    {
-      "id": "adapter-window:edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc-2027-main-application-deadline:2026-06-17:2026-07-08",
-      "type": "adapter-new-window",
-      "status": "approved",
-      "universityId": "university-of-edinburgh",
-      "detectedAt": "2026-07-14T18:21:45.060199+00:00",
-      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
-      "openingBasis": "official",
-      "record": {
-        "id": "edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc-2027-main-application-deadline",
-        "universityId": "university-of-edinburgh",
-        "scopeType": "programme",
-        "scopeId": "edinburgh-applied-psychology-healthcare-for-children-and-young-people-msc",
-        "intake": "February 2027",
-        "round": "Main application deadline",
-        "applicantCategories": [
-          "all"
-        ],
-        "opensAt": "2026-06-17",
-        "closesAt": "2026-07-08",
-        "applicationUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
-        "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
-        "verifiedAt": "2026-07-14",
-        "evidence": "The official programme adapter observed MSc Applied Psychology (Healthcare) for Children and Young People opening on 2026-06-17 and closing on 2026-07-08. Source: https://study.ed.ac.uk/programmes/postgraduate-taught/129-applied-psychology-healthcare-for-children-and-young-people",
-        "intakeDetails": {
-          "label": "February 2027",
-          "cycleYear": 2027,
-          "academicYearEnd": null,
-          "term": "other",
-          "startMonth": 2
-        }
-      },
-      "changes": {},
-      "evidenceExcerpt": "When to apply Applications open Application deadline 17 June 2026 8 July 2026",
-      "reviewedBy": "codex",
-      "reviewedAt": "2026-07-14T18:24:24.867760+00:00"
-    },
-    {
-      "id": "tu-delft-computer-science-msc-2027-eu-efta-msc-deadline",
-      "type": "manual-exact-window",
-      "status": "approved",
-      "universityId": "delft-university-of-technology",
-      "record": {
-        "id": "tu-delft-computer-science-msc-2027-eu-efta-msc-deadline",
-        "universityId": "delft-university-of-technology",
-        "scopeType": "programme",
-        "scopeId": "tu-delft-computer-science-msc",
-        "intake": "September 2027",
-        "round": "EU/EFTA MSc deadline",
-        "applicantCategories": [
-          "eu-efta"
-        ],
-        "opensAt": "2026-10-15",
-        "closesAt": "2027-04-01",
-        "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
-        "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
-        "verifiedAt": "2026-07-10",
-        "evidence": "TU Delft's official Dates & Deadlines page lists MSc applications opening on 15 October and a 1 April EU/EFTA deadline for all MSc programmes. Recorded for September 2027: 2026-10-15 to 2027-04-01."
-      },
-      "reviewedBy": "codex",
-      "reviewedAt": "2026-07-10T17:24:34.071237+00:00"
-    },
-    {
-      "id": "tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline",
-      "type": "manual-exact-window",
-      "status": "approved",
-      "universityId": "delft-university-of-technology",
-      "record": {
-        "id": "tu-delft-computer-science-msc-2027-non-eu-efta-early-msc-deadline",
-        "universityId": "delft-university-of-technology",
-        "scopeType": "programme",
-        "scopeId": "tu-delft-computer-science-msc",
-        "intake": "September 2027",
-        "round": "Non-EU/EFTA early MSc deadline",
-        "applicantCategories": [
-          "non-eu-efta"
-        ],
-        "opensAt": "2026-10-15",
-        "closesAt": "2027-01-15",
-        "applicationUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/application-procedure",
-        "sourceUrl": "https://www.tudelft.nl/en/education/admission-and-application/msc-international-diploma/dates-deadlines",
-        "verifiedAt": "2026-07-10",
-        "evidence": "TU Delft's official Dates & Deadlines page lists MSc applications opening on 15 October and a 15 January Non-EU/EFTA deadline for Computer Science. Recorded for September 2027: 2026-10-15 to 2027-01-15."
-      },
-      "reviewedBy": "codex",
-      "reviewedAt": "2026-07-10T17:24:30.725083+00:00"
-    }
-  ]
+  "partitioning": {
+    "collectionKey": "items",
+    "groupKey": "universityId",
+    "root": "window-candidates/by-university",
+    "files": [
+      "window-candidates/by-university/delft-university-of-technology.json",
+      "window-candidates/by-university/university-of-edinburgh.json"
+    ]
+  }
 }

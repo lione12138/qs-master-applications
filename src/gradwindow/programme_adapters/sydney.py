@@ -10,7 +10,12 @@ from xml.etree import ElementTree
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "the-university-of-sydney"
 CATALOG_URL = "https://www.sydney.edu.au/courses/sitemap.xml"
@@ -38,7 +43,7 @@ SPECIFIC_DEADLINE_RE = re.compile(
 )
 
 
-class SydneyAdapter:
+class SydneyAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

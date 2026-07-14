@@ -9,7 +9,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "the-hong-kong-university-of-science-and-technology"
 CATALOG_URL = (
@@ -32,7 +37,7 @@ DATE_RE = re.compile(
 )
 
 
-class HKUSTAdapter:
+class HKUSTAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

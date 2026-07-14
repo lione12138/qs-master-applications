@@ -37,6 +37,11 @@ Important files and folders:
 - `data/ops/generic-programme-discovery.json` — generic discovery seed config.
 - `data/ops/reports/` — generated reports used to decide next work.
 - Root JS/CSS/HTML files — frontend source.
+
+The candidate and programme-catalog state JSON files are partition manifests.
+Their records live under matching `by-university/` directories. Read and write
+them through `gradwindow.io` so commands continue to see the legacy aggregate
+shape while Git changes remain scoped to one university.
 - `site/` — generated site output; do not edit directly.
 
 ## Command shortcuts

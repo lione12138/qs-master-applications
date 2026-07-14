@@ -10,7 +10,12 @@ from urllib.parse import urljoin, urlparse, urlunparse
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = "https://www.imperial.ac.uk/study/courses/postgraduate-taught/"
 APPLICATION_URL = "https://myimperial.powerappsportals.com/"
@@ -27,7 +32,7 @@ OPEN_CLOSE_RE = re.compile(
 COURSE_YEAR_RE = re.compile(r"/postgraduate-taught/(?P<year>20\d{2})/")
 
 
-class ImperialAdapter:
+class ImperialAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

@@ -7,7 +7,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = "https://www.polyu.edu.hk/study/pg/taught-postgraduate"
 APPLICATION_URL = "https://www38.polyu.edu.hk/eAdmission/index.do"
@@ -21,7 +26,7 @@ DEADLINE_RE = re.compile(
 )
 
 
-class PolyUAdapter:
+class PolyUAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

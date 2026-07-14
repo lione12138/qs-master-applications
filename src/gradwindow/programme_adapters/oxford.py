@@ -10,7 +10,12 @@ from urllib.parse import urljoin, urlsplit
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "university-of-oxford"
 CATALOG_URL = "https://www.ox.ac.uk/admissions/graduate/courses/courses-a-z-listing"
@@ -66,7 +71,7 @@ UPCOMING_CYCLE_RE = re.compile(
 )
 
 
-class OxfordAdapter:
+class OxfordAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

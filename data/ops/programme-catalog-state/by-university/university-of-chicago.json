@@ -1,0 +1,29 @@
+{
+  "universities": {
+    "university-of-chicago": {
+      "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/",
+      "checkedAt": "2026-07-07T09:43:51.762509+00:00",
+      "itemCount": 2,
+      "applicationOpensAt": null,
+      "catalogHash": "efc1313010c703efd9782d4a94f782aec9e4ae9e6574c89f4f30def5b33b23a6",
+      "programmes": {
+        "uchicago-ms-in-data-science": {
+          "name": "MS in Data Science",
+          "degreeType": "MS",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "50282b67ef4ba082c3bc4933368f6aaddf597cb1ef5402141e6f5951485be1d9"
+        },
+        "uchicago-ms-in-applied-data-science": {
+          "name": "MS in Applied Data Science",
+          "degreeType": "MS",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

@@ -7,6 +7,7 @@ from gradwindow.generic_discovery_batch import (
     classify_generic_candidates,
     refresh_generic_discovery_report,
     run_assisted_discovery_entry,
+    run_generic_discovery_batch,
 )
 
 
@@ -42,6 +43,77 @@ def test_assisted_entry_passes_configured_search_priority(monkeypatch) -> None:
     )
 
     assert captured["config"].search_priority == "high"
+
+
+def test_batch_skips_fallback_when_dedicated_discovery_succeeded(
+    monkeypatch,
+    tmp_path,
+) -> None:
+    config_path = tmp_path / "config.json"
+    universities_path = tmp_path / "universities.json"
+    candidates_path = tmp_path / "candidates.json"
+    report_path = tmp_path / "report.json"
+    config_path.write_text(
+        json.dumps(
+            {
+                "schools": [
+                    {
+                        "name": "dedicated-fallback",
+                        "universityId": "dedicated-university",
+                        "enabled": True,
+                        "discoveryRole": "fallback",
+                        "seedUrls": ["https://dedicated.example/programmes"],
+                    },
+                    {
+                        "name": "generic-primary",
+                        "universityId": "generic-university",
+                        "enabled": True,
+                        "seedUrls": ["https://generic.example/programmes"],
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    universities_path.write_text(
+        json.dumps(
+            {
+                "universities": [
+                    {
+                        "id": "dedicated-university",
+                        "officialDomains": ["dedicated.example"],
+                    },
+                    {
+                        "id": "generic-university",
+                        "officialDomains": ["generic.example"],
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    candidates_path.write_text(json.dumps({"items": []}), encoding="utf-8")
+    discovered = []
+
+    def fake_discover(adapter, **_kwargs):
+        discovered.append(adapter.university_id)
+        return {"status": "ok", "universityId": adapter.university_id}
+
+    monkeypatch.setattr(generic_discovery_batch, "UNIVERSITIES_PATH", universities_path)
+    monkeypatch.setattr(generic_discovery_batch, "discover_programmes", fake_discover)
+
+    report = run_generic_discovery_batch(
+        config_path=config_path,
+        report_path=report_path,
+        candidates_path=candidates_path,
+        dry_run=True,
+        successful_dedicated_university_ids={"dedicated-university"},
+    )
+
+    assert discovered == ["generic-university"]
+    assert report["summary"]["schoolsSkippedByDedicated"] == 1
+    assert report["results"][0]["batchStatus"] == "skipped"
+    assert report["results"][0]["skipReason"] == "dedicated-primary-succeeded"
 
 
 def test_classify_generic_candidates_splits_review_buckets() -> None:

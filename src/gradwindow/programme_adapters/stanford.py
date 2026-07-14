@@ -7,7 +7,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = (
     "https://applygrad.stanford.edu/portal/explore-programs?cmd=grad-program-list"
@@ -25,7 +30,7 @@ ENTRY_TERM_RE = re.compile(
 DEGREE_SUFFIX_RE = re.compile(r"\s+\((?P<degree>[A-Za-z]+)\)$")
 
 
-class StanfordAdapter:
+class StanfordAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

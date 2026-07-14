@@ -4,29 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       university:
-        description: Programme adapter to run
+        description: Adapter key from programme_adapters/registry.py
         required: true
-        type: choice
-        options:
-          - cambridge
-          - cuhk
-          - edinburgh
-          - eth
-          - glasgow
-          - harvard
-          - hku
-          - hkust
-          - imperial
-          - kcl
-          - melbourne
-          - mit
-          - monash
-          - oxford
-          - polyu
-          - stanford
-          - sydney
-          - tudelft
-          - uq
+        type: string
 
 permissions:
   contents: write
@@ -79,5 +59,8 @@ jobs:
             window is promoted into the published table by this workflow.
           add-paths: |
             data/ops/programme-candidates.json
+            data/ops/programme-candidates/
             data/ops/window-candidates.json
+            data/ops/window-candidates/
             data/ops/programme-catalog-state.json
+            data/ops/programme-catalog-state/

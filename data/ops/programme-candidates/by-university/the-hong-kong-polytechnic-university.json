@@ -1,0 +1,4414 @@
+{
+  "items": [
+    {
+      "id": "new-programme:polyu-advanced-occupational-therapy-msc",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp",
+      "programme": {
+        "id": "polyu-advanced-occupational-therapy-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Advanced Occupational Therapy",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-otf-otp-onf-onp-mhf-mhp-msf-msp"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": ""
+    },
+    {
+      "id": "new-programme:polyu-engineering-business-management-msc-pgd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp",
+      "programme": {
+        "id": "polyu-engineering-business-management-msc-pgd",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc/PgD in Engineering Business Management",
+        "degreeType": "MSc/PgD",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-efm-efd-eqm-eqp"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": ""
+    },
+    {
+      "id": "new-programme:polyu-marriage-and-family-therapy-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmf-pmf",
+      "programme": {
+        "id": "polyu-marriage-and-family-therapy-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Marriage and Family Therapy",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmf-pmf"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": ""
+    },
+    {
+      "id": "new-programme:polyu-supply-chain-and-logistics-management-msc-pgd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-sfm-sfp-sqm-sqp",
+      "programme": {
+        "id": "polyu-supply-chain-and-logistics-management-msc-pgd",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc/PgD in Supply Chain and Logistics Management",
+        "degreeType": "MSc/PgD",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45080-sfm-sfp-sqm-sqp"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": ""
+    },
+    {
+      "id": "new-programme:polyu-accountancy-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm",
+      "programme": {
+        "id": "polyu-accountancy-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Accountancy",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21049-afm-apm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-accounting-and-finance-analytics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam",
+      "programme": {
+        "id": "polyu-accounting-and-finance-analytics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Accounting and Finance Analytics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21052-fam-pam"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-actuarial-and-investment-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm",
+      "programme": {
+        "id": "polyu-actuarial-and-investment-science-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Actuarial and Investment Science",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63032-afm-apm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-advanced-photonic-technology-and-materials-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11045-mft-mpt",
+      "programme": {
+        "id": "polyu-advanced-photonic-technology-and-materials-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Advanced Photonic Technology and Materials",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11045-mft-mpt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-advanced-physiotherapy-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp",
+      "programme": {
+        "id": "polyu-advanced-physiotherapy-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Advanced Physiotherapy",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-ptf-ptp-pnf-pnp-spf-spp-mpf-mpp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-advanced-rehabilitation-sciences-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp",
+      "programme": {
+        "id": "polyu-advanced-rehabilitation-sciences-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Advanced Rehabilitation Sciences",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/51069-rsf-rsp-ddf-ddp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-aerospace-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp",
+      "programme": {
+        "id": "polyu-aerospace-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Aerospace Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48006-amf-amp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-agentic-ai-systems-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61040-fas-pas",
+      "programme": {
+        "id": "polyu-agentic-ai-systems-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Agentic AI Systems",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61040-fas-pas"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-applied-psychology-diverse-learning-needs-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-lnf-lnp",
+      "programme": {
+        "id": "polyu-applied-psychology-diverse-learning-needs-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Applied Psychology (Diverse Learning Needs)",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-lnf-lnp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-applied-psychology-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-ft-pt",
+      "programme": {
+        "id": "polyu-applied-psychology-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Applied Psychology",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54057-ft-pt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-artificial-intelligence-and-big-data-computing-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai",
+      "programme": {
+        "id": "polyu-artificial-intelligence-and-big-data-computing-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Artificial Intelligence and Big Data Computing",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62037-fai-pai"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-asset-and-wealth-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02029-dfm-dpm-ffm-fpm",
+      "programme": {
+        "id": "polyu-asset-and-wealth-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Asset and Wealth Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02029-dfm-dpm-ffm-fpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-aviation-engineering-and-operations-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp",
+      "programme": {
+        "id": "polyu-aviation-engineering-and-operations-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Aviation Engineering and Operations Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48005-omf-omp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-bilingual-corporate-communication-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-bcf-bcp",
+      "programme": {
+        "id": "polyu-bilingual-corporate-communication-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Bilingual Corporate Communication",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-bcf-bcp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-biomedical-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47002-bmf-bmp",
+      "programme": {
+        "id": "polyu-biomedical-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Biomedical Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47002-bmf-bmp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-biopharmaceutical-development-and-commercialization-internship-in-greater-bay-area-via-polyu-zhongshan-technology-and-innovation-research-institute-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063",
+      "programme": {
+        "id": "polyu-biopharmaceutical-development-and-commercialization-internship-in-greater-bay-area-via-polyu-zhongshan-technology-and-innovation-research-institute-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Biopharmaceutical Development and Commercialization (internship in Greater Bay Area via PolyU-Zhongshan Technology and Innovation Research Institute)",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12063"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-biopharmaceutical-development-and-commercialization-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt",
+      "programme": {
+        "id": "polyu-biopharmaceutical-development-and-commercialization-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Biopharmaceutical Development and Commercialization",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12062-mft-mpt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-blockchain-technology-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61036-fbt-pbt",
+      "programme": {
+        "id": "polyu-blockchain-technology-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Blockchain Technology",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61036-fbt-pbt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-brain-machine-interface-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47007-bmf-bmp",
+      "programme": {
+        "id": "polyu-brain-machine-interface-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Brain-Machine Interface",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47007-bmf-bmp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-building-services-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33084-bem-bsm",
+      "programme": {
+        "id": "polyu-building-services-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Building Services Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33084-bem-bsm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-business-analytics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23093-mbf-mbp",
+      "programme": {
+        "id": "polyu-business-analytics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Business Analytics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23093-mbf-mbp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-business-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02022",
+      "programme": {
+        "id": "polyu-business-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Business Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/02022"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-carbon-neutral-cities-and-urban-sustainability-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33088-cfm-cpm",
+      "programme": {
+        "id": "polyu-carbon-neutral-cities-and-urban-sustainability-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Carbon Neutral Cities and Urban Sustainability",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33088-cfm-cpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-chinese-culture-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map",
+      "programme": {
+        "id": "polyu-chinese-culture-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Chinese Culture",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/77002-maf-map"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-chinese-language-and-literature-ma-pgd",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-llf-llp-pdp",
+      "programme": {
+        "id": "polyu-chinese-language-and-literature-ma-pgd",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA/PgD in Chinese Language and Literature",
+        "degreeType": "MA/PgD",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-llf-llp-pdp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-chinese-linguistics-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-clf-clp",
+      "programme": {
+        "id": "polyu-chinese-linguistics-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Chinese Linguistics",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-clf-clp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-civil-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm",
+      "programme": {
+        "id": "polyu-civil-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Civil Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31077-cfm-cpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-construction-and-real-estate-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32111-rfm-rpm",
+      "programme": {
+        "id": "polyu-construction-and-real-estate-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Construction and Real Estate",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32111-rfm-rpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-corporate-governance-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21047-cgf-cgp",
+      "programme": {
+        "id": "polyu-corporate-governance-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Corporate Governance",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21047-cgf-cgp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-cybersecurity-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61039-fcy-pcy",
+      "programme": {
+        "id": "polyu-cybersecurity-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Cybersecurity",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61039-fcy-pcy"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-data-science-and-analytics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm",
+      "programme": {
+        "id": "polyu-data-science-and-analytics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Data Science and Analytics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/62027-dfm-dpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-design-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep",
+      "programme": {
+        "id": "polyu-design-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Design",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73035-ibd-ibp-isd-isp-ssd-ssp-ted-tep"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-dietetics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060",
+      "programme": {
+        "id": "polyu-dietetics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Dietetics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15060"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-economics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem",
+      "programme": {
+        "id": "polyu-economics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Economics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21055-aem-dem"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-electric-vehicles-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt",
+      "programme": {
+        "id": "polyu-electric-vehicles-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Electric Vehicles",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46012-ev-evt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-electrical-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet",
+      "programme": {
+        "id": "polyu-electrical-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Electrical Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46010-ee-eet"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-electronic-and-information-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit",
+      "programme": {
+        "id": "polyu-electronic-and-information-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Electronic and Information Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46011-eie-eit"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-english-studies-for-the-professions-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp",
+      "programme": {
+        "id": "polyu-english-studies-for-the-professions-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in English Studies for the Professions",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/71026-mcf-mcp-mlf-mlp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-environmental-management-and-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm",
+      "programme": {
+        "id": "polyu-environmental-management-and-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Environmental Management and Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/31078-efm-epm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-esg-and-sustainability-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm",
+      "programme": {
+        "id": "polyu-esg-and-sustainability-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in ESG and Sustainability",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21054-efm-epm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-facility-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33085-fam-fmm",
+      "programme": {
+        "id": "polyu-facility-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Facility Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33085-fam-fmm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-fashion-design-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi",
+      "programme": {
+        "id": "polyu-fashion-design-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Fashion Design",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14111-fpp-dfi"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-finance-corporate-finance-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp",
+      "programme": {
+        "id": "polyu-finance-corporate-finance-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Finance (Corporate Finance)",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fcf-cfp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-finance-investment-management-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp",
+      "programme": {
+        "id": "polyu-finance-investment-management-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Finance (Investment Management)",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21050-fim-imp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-fire-and-safety-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm",
+      "programme": {
+        "id": "polyu-fire-and-safety-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Fire and Safety Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/33086-fem-fsm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-generative-ai-and-the-humanities-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72026-atf-atp-lcf-lcp",
+      "programme": {
+        "id": "polyu-generative-ai-and-the-humanities-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Generative AI and the Humanities",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72026-atf-atp-lcf-lcp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-geomatics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm",
+      "programme": {
+        "id": "polyu-geomatics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Geomatics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34084-gfm-gpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-global-business-and-decision-analysis-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm",
+      "programme": {
+        "id": "polyu-global-business-and-decision-analysis-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Global Business and Decision Analysis",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44094-bfm-bpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-global-communication-and-event-hosting-arts-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp",
+      "programme": {
+        "id": "polyu-global-communication-and-event-hosting-arts-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Global Communication and Event Hosting Arts",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72029-ehf-ehp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-global-fashion-management-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg",
+      "programme": {
+        "id": "polyu-global-fashion-management-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Global Fashion Management",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14105-ftg-ptg"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-global-food-safety-management-and-risk-analysis-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft",
+      "programme": {
+        "id": "polyu-global-food-safety-management-and-risk-analysis-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Global Food Safety Management and Risk Analysis",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15057-mft"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-global-hospitality-business-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043",
+      "programme": {
+        "id": "polyu-global-hospitality-business-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Global Hospitality Business",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24043"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-global-supply-chain-management-msc-pgd",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp",
+      "programme": {
+        "id": "polyu-global-supply-chain-management-msc-pgd",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc/PgD in Global Supply Chain Management",
+        "degreeType": "MSc/PgD",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44089-sfm-sfp-gpm-spp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-guidance-and-counselling-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp",
+      "programme": {
+        "id": "polyu-guidance-and-counselling-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Guidance and Counselling",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-gcf-gcp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-health-informatics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip",
+      "programme": {
+        "id": "polyu-health-informatics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Health Informatics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/06003-hif-hip"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-hospitality-and-tourism-management-msc-scheme",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp",
+      "programme": {
+        "id": "polyu-hospitality-and-tourism-management-msc-scheme",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc Scheme in Hospitality and Tourism Management",
+        "degreeType": "MSc Scheme",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/24045-maf-paf-map-pap-mhf-phf-mhp-php-mvf-pvf-mvp-pvp-mwf-pwf-mwp-pwp-mlf-plf-mlp-plp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-human-resource-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp",
+      "programme": {
+        "id": "polyu-human-resource-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Human Resource Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mhf-mhp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-industrial-logistics-systems-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml",
+      "programme": {
+        "id": "polyu-industrial-logistics-systems-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Industrial Logistics Systems",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mls-ml"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-innovative-multimedia-entertainment-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm",
+      "programme": {
+        "id": "polyu-innovative-multimedia-entertainment-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Innovative Multimedia Entertainment",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/73040-ftm-ptm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-intelligent-construction-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm",
+      "programme": {
+        "id": "polyu-intelligent-construction-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Intelligent Construction",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32114-ifm-ipm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-intelligent-robotics-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt",
+      "programme": {
+        "id": "polyu-intelligent-robotics-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Intelligent Robotics Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43101-ir-irt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-intelligent-wearable-technology-msc-pgd",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14110-iwt-pwt-pgd",
+      "programme": {
+        "id": "polyu-intelligent-wearable-technology-msc-pgd",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc/PgD in Intelligent Wearable Technology",
+        "degreeType": "MSc/PgD",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14110-iwt-pwt-pgd"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-international-management-and-leadership-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif",
+      "programme": {
+        "id": "polyu-international-management-and-leadership-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in International Management and Leadership",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mif"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-international-shipping-and-transport-logistics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss",
+      "programme": {
+        "id": "polyu-international-shipping-and-transport-logistics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in International Shipping and Transport Logistics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-iss"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-international-shipping-and-transport-logistics-msc-pgd",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp",
+      "programme": {
+        "id": "polyu-international-shipping-and-transport-logistics-msc-pgd",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc/PgD in International Shipping and Transport Logistics",
+        "degreeType": "MSc/PgD",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44087-ifm-tfp-ipm-tpp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-knowledge-and-technology-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt",
+      "programme": {
+        "id": "polyu-knowledge-and-technology-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Knowledge and Technology Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-mt-mtt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-low-altitude-economy-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp",
+      "programme": {
+        "id": "polyu-low-altitude-economy-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Low-altitude Economy",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48007-lmf-lmp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-marketing-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp",
+      "programme": {
+        "id": "polyu-marketing-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Marketing Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/23090-mkf-mkp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-mathematics-for-artificial-intelligence-technology-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63031-afm-apm",
+      "programme": {
+        "id": "polyu-mathematics-for-artificial-intelligence-technology-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Mathematics for Artificial Intelligence Technology",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63031-afm-apm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-mechanical-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met",
+      "programme": {
+        "id": "polyu-mechanical-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Mechanical Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43100-me-met"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-medical-data-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-mfd-mpd",
+      "programme": {
+        "id": "polyu-medical-data-science-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Medical Data Science",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-mfd-mpd"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-medical-imaging-and-radiation-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm",
+      "programme": {
+        "id": "polyu-medical-imaging-and-radiation-science-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Medical Imaging and Radiation Science",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-frm-prm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-medical-imaging-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55006",
+      "programme": {
+        "id": "polyu-medical-imaging-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Medical Imaging",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55006"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-medical-laboratory-science-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55007",
+      "programme": {
+        "id": "polyu-medical-laboratory-science-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Medical Laboratory Science",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55007"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-medical-laboratory-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm",
+      "programme": {
+        "id": "polyu-medical-laboratory-science-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Medical Laboratory Science",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-fmm-pmm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-medical-physics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-msf-msp",
+      "programme": {
+        "id": "polyu-medical-physics-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Medical Physics",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/55005-msf-msp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-mental-health-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmh-pmh",
+      "programme": {
+        "id": "polyu-mental-health-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Mental Health",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-fmh-pmh"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-metaverse-technology-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038",
+      "programme": {
+        "id": "polyu-metaverse-technology-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Metaverse Technology",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/61038"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-microelectronics-and-quantum-systems-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt",
+      "programme": {
+        "id": "polyu-microelectronics-and-quantum-systems-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Microelectronics and Quantum Systems Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/46013-mq-mqt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-microelectronics-technology-and-materials-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11044",
+      "programme": {
+        "id": "polyu-microelectronics-technology-and-materials-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Microelectronics Technology and Materials",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/11044"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-nursing-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53081",
+      "programme": {
+        "id": "polyu-nursing-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Nursing",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53081"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-nursing-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt",
+      "programme": {
+        "id": "polyu-nursing-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Nursing",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/53070-fts-pt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-nutrition-and-healthy-ageing-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft",
+      "programme": {
+        "id": "polyu-nutrition-and-healthy-ageing-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Nutrition and Healthy Ageing",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-mft"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-nutrition-and-healthy-ageing-nutrition-in-practice-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf",
+      "programme": {
+        "id": "polyu-nutrition-and-healthy-ageing-nutrition-in-practice-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Nutrition and Healthy Ageing (Nutrition in Practice)",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/15058-npf"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-operational-research-and-risk-analysis-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm",
+      "programme": {
+        "id": "polyu-operational-research-and-risk-analysis-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Operational Research and Risk Analysis",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63024-ofm-opm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-operations-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm",
+      "programme": {
+        "id": "polyu-operations-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Operations Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/44092-ofm-opm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-professional-accounting-master-pgd",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap",
+      "programme": {
+        "id": "polyu-professional-accounting-master-pgd",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master/PgD in Professional Accounting",
+        "degreeType": "Master/PgD",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/21046-maf-paf-mae-pap"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-project-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm",
+      "programme": {
+        "id": "polyu-project-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Project Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/32113-pfm-ppm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-quantitative-finance-and-fintech-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63029-qfm-qpm",
+      "programme": {
+        "id": "polyu-quantitative-finance-and-fintech-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Quantitative Finance and FinTech",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/63029-qfm-qpm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-satellite-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp",
+      "programme": {
+        "id": "polyu-satellite-engineering-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Satellite Engineering",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/48008-smf-smp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-school-and-community-psychology-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54072-ft-pt",
+      "programme": {
+        "id": "polyu-school-and-community-psychology-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in School and Community Psychology",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54072-ft-pt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-smart-manufacturing-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp",
+      "programme": {
+        "id": "polyu-smart-manufacturing-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Smart Manufacturing",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/45100-smf-smp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-social-policy-and-social-development-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54055-sdf-sdp",
+      "programme": {
+        "id": "polyu-social-policy-and-social-development-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Social Policy and Social Development",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54055-sdf-sdp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-social-work-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw",
+      "programme": {
+        "id": "polyu-social-work-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Social Work",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/54047-msw"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-sports-technology-and-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47005-stf-stp",
+      "programme": {
+        "id": "polyu-sports-technology-and-management-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Sports Technology and Management",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/47005-stf-stp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-sustainable-energy-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set",
+      "programme": {
+        "id": "polyu-sustainable-energy-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Sustainable Energy",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/43102-se-set"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-sustainable-fashion-and-innovation-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs",
+      "programme": {
+        "id": "polyu-sustainable-fashion-and-innovation-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Sustainable Fashion and Innovation",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/14107-ffs-pfs"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-sustainable-technology-for-carbon-neutrality-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt",
+      "programme": {
+        "id": "polyu-sustainable-technology-for-carbon-neutrality-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Sustainable Technology for Carbon Neutrality",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/12060-mft-mpt"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-teaching-chinese-as-a-foreign-language-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-tlf-tlp",
+      "programme": {
+        "id": "polyu-teaching-chinese-as-a-foreign-language-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Teaching Chinese as a Foreign Language",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72017-tlf-tlp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-technology-entrepreneurship-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/07001-fte-pte",
+      "programme": {
+        "id": "polyu-technology-entrepreneurship-master",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "Master of Technology Entrepreneurship",
+        "degreeType": "Master",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/07001-fte-pte"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-translation-and-language-technology-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp",
+      "programme": {
+        "id": "polyu-translation-and-language-technology-ma",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MA in Translation and Language Technology",
+        "degreeType": "MA",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/72030-ttf-ttp"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-urban-informatics-and-smart-cities-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm",
+      "programme": {
+        "id": "polyu-urban-informatics-and-smart-cities-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Urban Informatics and Smart Cities",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/34083-ifm-ipm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-vision-science-and-innovation-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-01T15:38:01.428699+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm",
+      "programme": {
+        "id": "polyu-vision-science-and-innovation-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in Vision Science and Innovation",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/52049-ftm-ptm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "closesAt": "2026-10-20"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    }
+  ]
+}

@@ -36,6 +36,7 @@ def run_generic_discovery_batch(
     dry_run: bool = False,
     replace_existing: bool = False,
     only: set[str] | None = None,
+    successful_dedicated_university_ids: set[str] | None = None,
 ) -> dict[str, Any]:
     config = read_json(config_path)
     universities = {
@@ -52,11 +53,29 @@ def run_generic_discovery_batch(
             or entry.get("name") in only
         )
     ]
+    successful_dedicated_university_ids = successful_dedicated_university_ids or set()
+    skipped_entries = [
+        entry
+        for entry in entries
+        if entry.get("discoveryRole") == "fallback"
+        and entry["universityId"] in successful_dedicated_university_ids
+    ]
+    runnable_entries = [entry for entry in entries if entry not in skipped_entries]
     if replace_existing and not dry_run:
-        _remove_pending_batch_candidates(candidates_path, entries)
+        _remove_pending_batch_candidates(candidates_path, runnable_entries)
     checked_at = datetime.now(timezone.utc).isoformat()
-    results = []
-    for entry in entries:
+    results = [
+        {
+            "batchStatus": "skipped",
+            "status": "skipped",
+            "skipReason": "dedicated-primary-succeeded",
+            "universityId": entry["universityId"],
+            "sourceUrl": (entry.get("seedUrls") or [""])[0],
+            "dryRun": dry_run,
+        }
+        for entry in skipped_entries
+    ]
+    for entry in runnable_entries:
         university_id = entry["universityId"]
         if entry.get("accessStatus") == "blocked":
             if entry.get("assistedDiscovery", {}).get("enabled", False):
@@ -169,6 +188,7 @@ def run_generic_discovery_batch(
             "schoolsSkipped": sum(
                 item.get("batchStatus") == "skipped" for item in results
             ),
+            "schoolsSkippedByDedicated": len(skipped_entries),
             "schoolsAssisted": sum(
                 bool(item.get("assistedDiscovery")) for item in results
             ),

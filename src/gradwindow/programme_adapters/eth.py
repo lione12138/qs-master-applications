@@ -8,7 +8,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "eth-zurich-swiss-federal-institute-of-technology"
 PROFILE_REQUIREMENTS_URL = (
@@ -33,7 +38,7 @@ DATE_RANGE_RE = re.compile(
 )
 
 
-class ETHAdapter:
+class ETHAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = PROFILE_REQUIREMENTS_URL
     application_url = APPLICATION_URL

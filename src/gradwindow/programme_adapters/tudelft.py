@@ -8,7 +8,12 @@ from urllib.parse import urljoin, urlparse
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "delft-university-of-technology"
 CATALOG_URL = "https://www.tudelft.nl/en/education/programmes/masters"
@@ -38,7 +43,7 @@ EARLY_NON_EU_DEADLINE_PROGRAMMES = {
 }
 
 
-class TUDelftAdapter:
+class TUDelftAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

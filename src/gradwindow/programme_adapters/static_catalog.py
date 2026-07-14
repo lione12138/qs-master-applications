@@ -10,7 +10,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 DEGREE_RE = re.compile(
     r"\b(MSc|MRes|MPhil|MLitt|LLM|MBA|MPH|MEd|MMus|MFin|MA|MS|Master)\b",
@@ -32,7 +37,7 @@ class StaticCatalogConfig:
     application_opens_at_basis: str = "inferred-cycle-default"
 
 
-class StaticCatalogAdapter:
+class StaticCatalogAdapter(BaseProgrammeAdapter):
     def __init__(
         self,
         config: StaticCatalogConfig,

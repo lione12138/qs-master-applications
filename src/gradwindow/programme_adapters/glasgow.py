@@ -10,7 +10,12 @@ from urllib.parse import urljoin
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 CATALOG_URL = "https://www.gla.ac.uk/postgraduate/taught/"
 APPLICATION_URL = "https://www.gla.ac.uk/postgraduate/apply/"
@@ -35,7 +40,7 @@ HOME_RE = re.compile(
 )
 
 
-class GlasgowAdapter:
+class GlasgowAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

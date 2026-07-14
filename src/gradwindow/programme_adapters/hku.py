@@ -9,7 +9,12 @@ from urllib.parse import quote
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "the-university-of-hong-kong"
 CATALOG_URL = "https://portal.hku.hk/tpg-admissions/programme-listing"
@@ -40,7 +45,7 @@ INTAKE_RE = re.compile(
 )
 
 
-class HKUAdapter:
+class HKUAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

@@ -24,6 +24,8 @@ data/
     window-candidates.json   exact-window proposals awaiting approval
     programme-candidates.json newly discovered programmes awaiting review
     programme-catalog-state.json latest official catalogue snapshots
+    */by-university/        per-university shards referenced by the three
+                            operational collection manifests above
     reports/                 daily internal monitoring reports
   coverage.json              generated QS top-200 quality metrics
   sources.json               dedicated programme parser configuration

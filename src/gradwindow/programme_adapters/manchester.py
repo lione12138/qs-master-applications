@@ -10,7 +10,12 @@ from urllib.parse import urljoin, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "the-university-of-manchester"
 CATALOG_URL = "https://www.manchester.ac.uk/study/masters/courses/list/basic/"
@@ -52,7 +57,7 @@ class SharedDeadlineRule:
     excerpt: str
 
 
-class ManchesterAdapter:
+class ManchesterAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

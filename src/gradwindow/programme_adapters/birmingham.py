@@ -10,7 +10,12 @@ from urllib.parse import urlencode, urljoin, urlsplit, urlunsplit
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "university-of-birmingham"
 CATALOG_URL = "https://www.birmingham.ac.uk/study/postgraduate/taught/course-search"
@@ -88,7 +93,7 @@ class _CourseRecord:
     start_date: str
 
 
-class BirminghamAdapter:
+class BirminghamAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

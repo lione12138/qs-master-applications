@@ -10,7 +10,12 @@ from urllib.parse import parse_qs, urlsplit
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "the-university-of-melbourne"
 HANDBOOK_ORIGIN = "https://uom-handbook.herokuapp.com"
@@ -34,7 +39,7 @@ DEADLINE_RE = re.compile(
 )
 
 
-class MelbourneAdapter:
+class MelbourneAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL

@@ -25,30 +25,8 @@ from .paths import (
     UNIVERSITIES_PATH,
 )
 from .predictions import generate_predictions
-from .programme_adapters.birmingham import BirminghamAdapter
-from .programme_adapters.bristol import BristolAdapter
-from .programme_adapters.cambridge import CambridgeAdapter
-from .programme_adapters.cuhk import CUHKAdapter
-from .programme_adapters.edinburgh import EdinburghAdapter
-from .programme_adapters.eth import ETHAdapter
 from .programme_adapters.generic import GenericProgrammeAdapter, GenericProgrammeConfig
-from .programme_adapters.glasgow import GlasgowAdapter
-from .programme_adapters.harvard import HarvardAdapter
-from .programme_adapters.hku import HKUAdapter
-from .programme_adapters.hkust import HKUSTAdapter
-from .programme_adapters.imperial import ImperialAdapter
-from .programme_adapters.kcl import KCLAdapter
-from .programme_adapters.manchester import ManchesterAdapter
-from .programme_adapters.melbourne import MelbourneAdapter
-from .programme_adapters.mit import MITAdapter
-from .programme_adapters.monash import MonashAdapter
-from .programme_adapters.nus import NUSAdapter
-from .programme_adapters.oxford import OxfordAdapter
-from .programme_adapters.polyu import PolyUAdapter
-from .programme_adapters.stanford import StanfordAdapter
-from .programme_adapters.sydney import SydneyAdapter
-from .programme_adapters.tudelft import TUDelftAdapter
-from .programme_adapters.uq import UQAdapter
+from .programme_adapters.registry import PROGRAMME_ADAPTERS
 from .programme_discovery import discover_programmes
 from .readme import generate_readmes
 from .review import generate_review_outputs
@@ -56,32 +34,6 @@ from .schemas import export_schemas
 from .site import build_site
 from .source_monitor import monitor_application_sources
 from .validation import validate_data
-
-PROGRAMME_ADAPTERS = {
-    "birmingham": BirminghamAdapter,
-    "bristol": BristolAdapter,
-    "cambridge": CambridgeAdapter,
-    "cuhk": CUHKAdapter,
-    "edinburgh": EdinburghAdapter,
-    "eth": ETHAdapter,
-    "glasgow": GlasgowAdapter,
-    "harvard": HarvardAdapter,
-    "hku": HKUAdapter,
-    "hkust": HKUSTAdapter,
-    "imperial": ImperialAdapter,
-    "kcl": KCLAdapter,
-    "melbourne": MelbourneAdapter,
-    "manchester": ManchesterAdapter,
-    "mit": MITAdapter,
-    "monash": MonashAdapter,
-    "nus": NUSAdapter,
-    "oxford": OxfordAdapter,
-    "polyu": PolyUAdapter,
-    "stanford": StanfordAdapter,
-    "sydney": SydneyAdapter,
-    "tudelft": TUDelftAdapter,
-    "uq": UQAdapter,
-}
 
 
 def main() -> None:
@@ -214,15 +166,7 @@ def main() -> None:
         print_summary(monitor_application_sources(workers=args.workers))
     elif args.command == "discover-programmes":
         if args.university == "all":
-            report = []
-            for name, adapter_factory in PROGRAMME_ADAPTERS.items():
-                report.append(
-                    _pipeline_discovery_report(
-                        name,
-                        adapter_factory,
-                        dry_run=args.dry_run,
-                    )
-                )
+            report, _successful_ids = _run_dedicated_discovery(dry_run=args.dry_run)
         else:
             report = discover_programmes(
                 PROGRAMME_ADAPTERS[args.university](),
@@ -353,10 +297,12 @@ def main() -> None:
             print_summary(
                 monitor_application_sources(workers=max(1, args.workers // 2))
             )
-            for name, adapter_factory in PROGRAMME_ADAPTERS.items():
-                discovery_report = _pipeline_discovery_report(name, adapter_factory)
+            discovery_reports, successful_dedicated_ids = _run_dedicated_discovery()
+            for discovery_report in discovery_reports:
                 print(json.dumps(discovery_report, ensure_ascii=False))
-            generic_report = run_generic_discovery_batch()
+            generic_report = run_generic_discovery_batch(
+                successful_dedicated_university_ids=successful_dedicated_ids
+            )
             print(json.dumps(generic_report["summary"], ensure_ascii=False))
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
@@ -429,6 +375,22 @@ def _pipeline_discovery_report(
             "message": str(exc),
             "dryRun": dry_run,
         }
+
+
+def _run_dedicated_discovery(
+    *,
+    dry_run: bool = False,
+) -> tuple[list[dict], set[str]]:
+    reports = [
+        _pipeline_discovery_report(name, adapter_factory, dry_run=dry_run)
+        for name, adapter_factory in PROGRAMME_ADAPTERS.items()
+    ]
+    successful_university_ids = {
+        report["universityId"]
+        for report in reports
+        if report.get("status") == "ok" and report.get("universityId")
+    }
+    return reports, successful_university_ids
 
 
 def _approve_all_programmes(*, reviewer: str, parsed_only: bool) -> dict:

@@ -58,6 +58,13 @@ Operational data:
 - `data/ops/reports/*.json` — generated audit/report outputs.
 - `data/ops/*-state.json` — generated monitoring/discovery state.
 
+The large programme and window candidate collections, plus programme catalogue
+state, use small JSON manifests backed by per-university files under matching
+`by-university/` directories. Always access these manifests through
+`gradwindow.io.read_json` and `write_json`; do not parse the manifest files
+directly or hand-edit shards. A single-school refresh should change only that
+school's shard and the small manifest when the partition list changes.
+
 Do not publish an application window unless all of these are known and official:
 
 - university
@@ -213,6 +220,13 @@ examples include `birmingham.py`, `bristol.py`, `mit.py`, `cuhk.py`, `polyu.py`,
 `cambridge.py`, `edinburgh.py`, `glasgow.py`, `imperial.py`, `hku.py`, `hkust.py`,
 `melbourne.py`, `monash.py`, `manchester.py`, `nus.py`, `oxford.py`, `sydney.py`,
 and `uq.py`.
+
+Register each dedicated adapter exactly once in
+`programme_adapters/registry.py`; the CLI and manual Actions workflow derive
+their supported keys from that registry. Do not add another hard-coded school
+list to a workflow. If an enabled generic entry overlaps a dedicated adapter,
+set `discoveryRole: "fallback"`: the daily pipeline runs it only when the
+dedicated adapter fails.
 
 #### Definition of done
 

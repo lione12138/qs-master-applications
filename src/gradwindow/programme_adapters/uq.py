@@ -9,7 +9,12 @@ from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 
-from .base import DiscoveredCatalog, DiscoveredProgramme, DiscoveredWindow
+from .base import (
+    BaseProgrammeAdapter,
+    DiscoveredCatalog,
+    DiscoveredProgramme,
+    DiscoveredWindow,
+)
 
 UNIVERSITY_ID = "the-university-of-queensland"
 CATALOG_URL = "https://study.uq.edu.au/sitemap.xml"
@@ -35,7 +40,7 @@ SITEMAP_PAGE_RE = re.compile(
 )
 
 
-class UQAdapter:
+class UQAdapter(BaseProgrammeAdapter):
     university_id = UNIVERSITY_ID
     catalog_url = CATALOG_URL
     application_url = APPLICATION_URL
