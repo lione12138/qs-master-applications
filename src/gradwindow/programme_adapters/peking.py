@@ -282,10 +282,11 @@ def _windows_for_guide(
             "fully explicit opening-and-closing date range. No dates were inferred."
         )
 
+    intake = _intake_from_guide(text)
     windows = [
         DiscoveredWindow(
             round=("Main round" if len(ranges) == 1 else f"Round {index}"),
-            intake="Autumn 2026",
+            intake=intake,
             opens_at=opens_at,
             closes_at=closes_at,
             applicant_categories=["international-students"],
@@ -297,6 +298,22 @@ def _windows_for_guide(
     return windows, (
         "PKU's official programme guide provides the following fully explicit "
         f"application period(s): {evidence}."
+    )
+
+
+def _intake_from_guide(text: str) -> str:
+    patterns = (
+        r"北京大学[^。]{0,120}?(20\d{2})\s*年[^。]{0,100}(?:招生简章|招生说明)",
+        r"(?:for|Fall|Entry|Intake)\s+(20\d{2})",
+        r"(20\d{2})\s+(?:Entry|Admission|Intake|Application)",
+    )
+    for pattern in patterns:
+        match = re.search(pattern, text, re.I)
+        if match is not None:
+            return f"Autumn {match.group(1)}"
+    raise ValueError(
+        "PKU official programme guide contained exact application dates but no "
+        "explicit intake year"
     )
 
 

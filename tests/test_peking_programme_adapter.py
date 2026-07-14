@@ -108,6 +108,7 @@ CATALOG = {
 
 STANDARD_HTML = """
 <main>
+  <h1>北京大学2026年外国留学生研究生招生简章</h1>
   <p>四、申请时间（北京时间）</p>
   <p>2025 年10月20日至2025年12月23日</p>
   <p>注：各英文授课硕士项目的申请截止日期见相应招生说明。</p>
@@ -116,6 +117,7 @@ STANDARD_HTML = """
 
 COMPUTER_HTML = """
 <main>
+  <h1>2026 Application Guide for International Graduate Students</h1>
   <p>Application Period (Beijing time)</p>
   <p>Chinese-taught Program: October 20, 2025 - December 23, 2025</p>
   <p>English-taught Program: October 20, 2025 - January 10, 2026</p>
@@ -167,9 +169,21 @@ def test_peking_adapter_uses_only_fully_explicit_official_date_ranges() -> None:
     chinese = by_name["计算机科学与技术（中文授课）"]
     assert chinese.parse_status == "parsed"
     assert [
-        (window.opens_at, window.closes_at, window.applicant_categories)
+        (
+            window.intake,
+            window.opens_at,
+            window.closes_at,
+            window.applicant_categories,
+        )
         for window in chinese.windows
-    ] == [("2025-10-20", "2025-12-23", ["international-students"])]
+    ] == [
+        (
+            "Autumn 2026",
+            "2025-10-20",
+            "2025-12-23",
+            ["international-students"],
+        )
+    ]
 
     english = by_name["计算机科学与技术（英文授课）"]
     assert english.windows[0].opens_at == "2025-10-20"
