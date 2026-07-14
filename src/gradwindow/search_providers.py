@@ -126,6 +126,7 @@ class SearchRouter:
         self.providers = providers
         self.merge_all = merge_all
         self.used_providers: list[str] = []
+        self.errors: list[dict[str, str | int]] = []
         self.usage = {
             name: {"queries": 0, "results": 0, "errors": 0}
             for name, _searcher in providers
@@ -149,6 +150,7 @@ class SearchRouter:
                 provider_results = searcher(query, count)
             except Exception as exc:
                 self.usage[name]["errors"] += 1
+                self.errors.append(_search_error(name, exc))
                 errors.append(f"{name}: {type(exc).__name__}: {exc}")
                 continue
             successful_provider = True
@@ -174,3 +176,15 @@ def search_router_from_environment(search_priority: str) -> SearchRouter:
         tuple(providers),
         merge_all=search_priority.strip().lower() == "high",
     )
+
+
+def _search_error(provider: str, exc: Exception) -> dict[str, str | int]:
+    error: dict[str, str | int] = {
+        "provider": provider,
+        "errorType": type(exc).__name__,
+        "message": str(exc.args[0] if exc.args else exc)[:300],
+    }
+    if isinstance(exc, httpx.HTTPStatusError):
+        error["statusCode"] = exc.response.status_code
+        error["responseBody"] = exc.response.text[:300]
+    return error

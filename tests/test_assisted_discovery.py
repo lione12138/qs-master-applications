@@ -400,7 +400,17 @@ def test_standard_search_falls_back_to_brave_when_serper_fails(monkeypatch) -> N
     monkeypatch.setenv("BRAVE_SEARCH_API_KEY", "brave-secret")
 
     def serper_search(_self, _query: str, _count: int) -> list[SearchResult]:
-        raise httpx.TimeoutException("Serper timeout")
+        request = httpx.Request("POST", "https://google.serper.dev/search")
+        response = httpx.Response(
+            400,
+            request=request,
+            json={"message": "Invalid search request"},
+        )
+        raise httpx.HTTPStatusError(
+            "Serper rejected the request",
+            request=request,
+            response=response,
+        )
 
     def brave_search(_self, _query: str, _count: int) -> list[SearchResult]:
         return [
@@ -430,6 +440,22 @@ def test_standard_search_falls_back_to_brave_when_serper_fails(monkeypatch) -> N
 
     assert report["searchProvider"] == "brave"
     assert report["searchResults"] == 2
+    assert report["searchErrors"] == [
+        {
+            "provider": "serper",
+            "errorType": "HTTPStatusError",
+            "statusCode": 400,
+            "message": "Serper rejected the request",
+            "responseBody": '{"message": "Invalid search request"}',
+        },
+        {
+            "provider": "serper",
+            "errorType": "HTTPStatusError",
+            "statusCode": 400,
+            "message": "Serper rejected the request",
+            "responseBody": '{"message": "Invalid search request"}',
+        },
+    ]
 
 
 def test_assisted_discovery_skips_llm_for_irrelevant_documents() -> None:

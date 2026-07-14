@@ -127,6 +127,7 @@ def run_assisted_discovery(
 
     search_provider = "injected"
     search_usage: dict[str, dict[str, int]] = {}
+    search_errors: list[dict[str, str | int]] = []
     search_router = None
     if searcher is None:
         search_router = search_router_from_environment(config.search_priority)
@@ -140,10 +141,20 @@ def run_assisted_discovery(
     try:
         results = _search_official_sources(config, searcher)
     except Exception as exc:
-        return _error_report(config, "search", exc, dry_run)
+        report = _error_report(config, "search", exc, dry_run)
+        if search_router is not None:
+            report.update(
+                {
+                    "searchProvider": search_router.provider_label,
+                    "searchUsage": search_router.usage,
+                    "searchErrors": search_router.errors,
+                }
+            )
+        return report
     if search_router is not None:
         search_provider = search_router.provider_label
         search_usage = search_router.usage
+        search_errors = search_router.errors
     try:
         retrieved_documents = [page_loader(result) for result in results]
     except Exception as exc:
@@ -155,6 +166,7 @@ def run_assisted_discovery(
             "sourceUrl": config.seed_urls[0],
             "searchProvider": search_provider,
             "searchUsage": search_usage,
+            "searchErrors": search_errors,
             "searchResults": 0,
             "documents": [],
             "documentsConsidered": 0,
@@ -169,6 +181,7 @@ def run_assisted_discovery(
             "sourceUrl": config.seed_urls[0],
             "searchProvider": search_provider,
             "searchUsage": search_usage,
+            "searchErrors": search_errors,
             "searchResults": len(results),
             "documents": _document_report(retrieved_documents),
             "documentsConsidered": len(retrieved_documents),
@@ -188,6 +201,7 @@ def run_assisted_discovery(
             "sourceUrl": config.seed_urls[0],
             "searchProvider": search_provider,
             "searchUsage": search_usage,
+            "searchErrors": search_errors,
             "searchResults": len(results),
             "documents": _document_report(documents),
             "documentsConsidered": len(retrieved_documents),
@@ -206,6 +220,7 @@ def run_assisted_discovery(
             "assistedDiscovery": True,
             "searchProvider": search_provider,
             "searchUsage": search_usage,
+            "searchErrors": search_errors,
             "searchResults": len(results),
             "documents": _document_report(documents),
             "documentsConsidered": len(retrieved_documents),
