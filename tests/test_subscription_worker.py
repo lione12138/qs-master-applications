@@ -113,3 +113,104 @@ def test_worker_preflight_allows_comment_reads_and_writes() -> None:
     assert "POST" in response["methods"]
     assert "PATCH" in response["methods"]
     assert "PUT" in response["methods"]
+
+
+def test_admin_roadmap_stats_require_a_dedicated_secret_and_only_aggregate() -> None:
+    node = shutil.which("node")
+    assert node is not None, "Node.js is required for subscription worker tests"
+    worker_uri = (
+        (Path(__file__).parents[1] / "subscriptions" / "worker.js").resolve().as_uri()
+    )
+    script = f"""
+      import worker from {json.dumps(worker_uri)};
+      const DB = {{
+        prepare(sql) {{
+          return {{
+            bind() {{ return this; }},
+            async first() {{
+              if (!sql.includes("AS total_votes")) throw new Error(sql);
+              return {{
+                total_votes: 4,
+                unique_voters: 2,
+                first_vote_at: "2026-06-21T13:43:23.358Z",
+                last_vote_at: "2026-06-28T14:26:05.510Z",
+              }};
+            }},
+            async all() {{
+              if (!sql.includes("GROUP BY p.id")) throw new Error(sql);
+              return {{ results: [{{
+                id: "wechat-mini-program",
+                title_en: "WeChat Mini Program",
+                title_zh: "微信小程序",
+                source: "owner",
+                votes: 2,
+                first_vote_at: "2026-06-21T13:43:23.358Z",
+                last_vote_at: "2026-06-28T14:26:00.789Z",
+              }}] }};
+            }},
+          }};
+        }},
+      }};
+      const env = {{
+        ALLOWED_ORIGINS: "https://gradwindow.com,https://www.gradwindow.com",
+        ROADMAP_ADMIN_API_KEY: "roadmap-admin-secret\\n",
+        DB,
+      }};
+      const unauthorized = await worker.fetch(
+        new Request("https://worker.example/admin/roadmap/stats", {{
+          headers: {{ Origin: "https://gradwindow.com" }},
+        }}),
+        env,
+      );
+      const authorized = await worker.fetch(
+        new Request("https://worker.example/admin/roadmap/stats", {{
+          headers: {{
+            Origin: "https://gradwindow.com",
+            Authorization: "Bearer roadmap-admin-secret",
+          }},
+        }}),
+        env,
+      );
+      console.log(JSON.stringify({{
+        unauthorizedStatus: unauthorized.status,
+        authorizedStatus: authorized.status,
+        body: await authorized.json(),
+      }}));
+    """
+    result = subprocess.run(
+        [node, "--input-type=module", "-e", script],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    response = json.loads(result.stdout)
+    assert response["unauthorizedStatus"] == 401
+    assert response["authorizedStatus"] == 200
+    assert response["body"] == {
+        "summary": {
+            "totalVotes": 4,
+            "uniqueVoters": 2,
+            "firstVoteAt": "2026-06-21T13:43:23.358Z",
+            "lastVoteAt": "2026-06-28T14:26:05.510Z",
+        },
+        "proposals": [
+            {
+                "id": "wechat-mini-program",
+                "title": {"en": "WeChat Mini Program", "zh": "微信小程序"},
+                "source": "owner",
+                "votes": 2,
+                "firstVoteAt": "2026-06-21T13:43:23.358Z",
+                "lastVoteAt": "2026-06-28T14:26:00.789Z",
+            }
+        ],
+    }
+    assert "visitor_hash" not in json.dumps(response["body"])
+
+
+def test_worker_configuration_allows_both_canonical_hostnames() -> None:
+    config = (
+        Path(__file__).parents[1] / "subscriptions" / "wrangler.toml.example"
+    ).read_text(encoding="utf-8")
+
+    assert "https://gradwindow.com" in config
+    assert "https://www.gradwindow.com" in config

@@ -248,6 +248,56 @@ async function listRoadmap(request, env) {
   });
 }
 
+async function roadmapAdminStats(request, env) {
+  const expected = String(env.ROADMAP_ADMIN_API_KEY || "").trim();
+  if (
+    !expected ||
+    request.headers.get("Authorization") !== `Bearer ${expected}`
+  ) {
+    return jsonResponse(request, env, { ok: false }, 401);
+  }
+  const [summary, proposals] = await Promise.all([
+    env.DB.prepare(
+      `SELECT COUNT(v.proposal_id) AS total_votes,
+              COUNT(DISTINCT v.visitor_hash) AS unique_voters,
+              MIN(v.created_at) AS first_vote_at,
+              MAX(v.created_at) AS last_vote_at
+         FROM roadmap_proposals p
+         LEFT JOIN roadmap_votes v ON v.proposal_id = p.id
+        WHERE p.hidden_at IS NULL`,
+    ).first(),
+    env.DB.prepare(
+      `SELECT p.id, p.source, p.title_en, p.title_zh,
+              COUNT(v.proposal_id) AS votes,
+              MIN(v.created_at) AS first_vote_at,
+              MAX(v.created_at) AS last_vote_at
+         FROM roadmap_proposals p
+         LEFT JOIN roadmap_votes v ON v.proposal_id = p.id
+        WHERE p.hidden_at IS NULL
+        GROUP BY p.id
+        ORDER BY votes DESC, p.created_at ASC`,
+    ).all(),
+  ]);
+  const response = jsonResponse(request, env, {
+    summary: {
+      totalVotes: Number(summary?.total_votes || 0),
+      uniqueVoters: Number(summary?.unique_voters || 0),
+      firstVoteAt: summary?.first_vote_at || null,
+      lastVoteAt: summary?.last_vote_at || null,
+    },
+    proposals: (proposals.results || []).map((row) => ({
+      id: row.id,
+      title: { en: row.title_en, zh: row.title_zh || row.title_en },
+      source: row.source,
+      votes: Number(row.votes || 0),
+      firstVoteAt: row.first_vote_at || null,
+      lastVoteAt: row.last_vote_at || null,
+    })),
+  });
+  response.headers.set("Cache-Control", "private, no-store");
+  return response;
+}
+
 async function voteForRoadmapProposal(request, env) {
   if (!allowedOrigin(request.headers.get("Origin"), env.ALLOWED_ORIGINS)) {
     return jsonResponse(request, env, { ok: false }, 403);
@@ -1023,6 +1073,9 @@ export default {
     }
     if (request.method === "GET" && url.pathname === "/roadmap") {
       return listRoadmap(request, env);
+    }
+    if (request.method === "GET" && url.pathname === "/admin/roadmap/stats") {
+      return roadmapAdminStats(request, env);
     }
     if (request.method === "POST" && url.pathname === "/roadmap/votes") {
       return voteForRoadmapProposal(request, env);

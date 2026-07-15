@@ -66,6 +66,8 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "privacy.html").exists()
     assert (tmp_path / "roadmap.html").exists()
     assert (tmp_path / "roadmap.js").exists()
+    assert (tmp_path / "admin.html").exists()
+    assert (tmp_path / "admin.js").exists()
     assert (tmp_path / "styles.css").exists()
     assert (tmp_path / "og-image.png").exists()
     assert (tmp_path / "favicon.svg").exists()
@@ -89,6 +91,7 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert not (tmp_path / "data" / "window-candidates.json").exists()
     assert not (tmp_path / "data" / "evidence").exists()
     assert (tmp_path / "sitemap.xml").exists()
+    assert "admin.html" not in (tmp_path / "sitemap.xml").read_text(encoding="utf-8")
     assert (tmp_path / "robots.txt").exists()
     assert (tmp_path / "university" / "university-of-cambridge" / "index.html").exists()
     assert (tmp_path / "country" / "united-kingdom" / "index.html").exists()
@@ -281,3 +284,17 @@ def test_build_site_injects_roadmap_endpoint_into_roadmap_page(
     assert 'data-action", "turnstile-spin-v1"' in roadmap_js
     assert "roadmapTurnstileError" in roadmap_js
     assert "EMAIL_ENCRYPTION_KEY" not in roadmap_html
+
+
+def test_build_site_injects_endpoint_into_unindexed_admin_page(
+    tmp_path,
+    monkeypatch,
+) -> None:
+    monkeypatch.setenv("GRADWINDOW_ROADMAP_URL", "https://api.example.workers.dev")
+
+    build_site(tmp_path)
+
+    admin_html = (tmp_path / "admin.html").read_text(encoding="utf-8")
+    assert '"roadmapUrl": "https://api.example.workers.dev"' in admin_html
+    assert 'name="robots" content="noindex, nofollow"' in admin_html
+    assert "roadmap-admin-secret" not in admin_html

@@ -31,11 +31,13 @@ PUBLIC_FILES = (
     "calendar.html",
     "contact.html",
     "roadmap.html",
+    "admin.html",
     "privacy.html",
     "app.js",
     "calendar.js",
     "contact.js",
     "roadmap.js",
+    "admin.js",
     "exception-status.js",
     "status.js",
     "intake-filter.js",
@@ -129,6 +131,7 @@ def build_site(output_dir: Path = SITE_DIR) -> Path:
         "calendar.html",
         "contact.html",
         "roadmap.html",
+        "admin.html",
         "privacy.html",
     ):
         page_path = output_dir / page_name

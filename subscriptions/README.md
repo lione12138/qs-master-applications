@@ -186,6 +186,14 @@ Community suggestions are published immediately, intentionally shown in a
 collapsed section, and can be hidden by setting `hidden_at` to an ISO timestamp.
 Keep `TURNSTILE_SECRET_KEY` configured before enabling public submissions.
 
+The unlisted `admin.html` page reads aggregate vote statistics from
+`GET /admin/roadmap/stats`. Configure a separate long random key before using
+it; the page keeps the key in memory only and never exposes voter hashes:
+
+```powershell
+npx wrangler secret put ROADMAP_ADMIN_API_KEY --config subscriptions/wrangler.toml
+```
+
 ## Accounts and comments
 
 Accounts are passwordless. A user enters an email address, receives a six-digit

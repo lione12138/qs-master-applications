@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GradWindow private voting statistics." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="color-scheme" content="light dark" />
+    <title>投票统计 · GradWindow</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">G</span>
+          <span>GradWindow</span>
+        </a>
+        <nav class="header-nav" aria-label="管理员导航">
+          <a href="./roadmap.html">查看公开投票页</a>
+          <a href="./index.html">返回主页</a>
+        </nav>
+      </header>
+
+      <main class="admin-page">
+        <section class="admin-heading">
+          <span class="section-kicker">PRIVATE ADMIN</span>
+          <h1>功能投票统计</h1>
+          <p>这里只显示汇总数据，不提供访客哈希、IP 或其他身份信息。</p>
+        </section>
+
+        <section class="admin-auth-card" id="admin-auth-card">
+          <form id="admin-auth-form">
+            <label for="admin-api-key">管理员访问密钥</label>
+            <div class="admin-auth-row">
+              <input
+                id="admin-api-key"
+                name="admin-api-key"
+                type="password"
+                autocomplete="off"
+                required
+                placeholder="输入 ROADMAP_ADMIN_API_KEY"
+              />
+              <button class="primary-button" type="submit">加载统计</button>
+            </div>
+            <p>密钥仅用于本次请求，不会保存在浏览器中。</p>
+          </form>
+          <p class="admin-status" id="admin-status" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="admin-dashboard" hidden>
+          <div class="admin-summary-grid">
+            <article class="admin-stat-card">
+              <span>总票数</span>
+              <strong id="admin-total-votes">0</strong>
+            </article>
+            <article class="admin-stat-card">
+              <span>匿名参与浏览器</span>
+              <strong id="admin-unique-voters">0</strong>
+            </article>
+            <article class="admin-stat-card">
+              <span>最后投票时间</span>
+              <strong id="admin-last-vote">—</strong>
+            </article>
+          </div>
+
+          <section class="admin-table-card">
+            <div class="admin-table-heading">
+              <div>
+                <span class="section-kicker">BY PROPOSAL</span>
+                <h2>各功能投票情况</h2>
+              </div>
+              <button class="secondary-button" id="admin-refresh" type="button">刷新</button>
+            </div>
+            <div class="admin-table-wrap">
+              <table class="admin-table">
+                <thead>
+                  <tr>
+                    <th>功能</th>
+                    <th>来源</th>
+                    <th>票数</th>
+                    <th>首次投票</th>
+                    <th>最后投票</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-proposals"></tbody>
+              </table>
+            </div>
+          </section>
+        </section>
+      </main>
+    </div>
+    <script>window.GRADWINDOW_CONFIG = {};</script>
+    <script type="module" src="./admin.js"></script>
+  </body>
+</html>
