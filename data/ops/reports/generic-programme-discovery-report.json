@@ -1,20 +1,20 @@
 {
   "meta": {
-    "updatedAt": "2026-07-14T19:07:20.520051+00:00",
+    "updatedAt": "2026-07-15T00:52:36.181712+00:00",
     "dryRun": false,
     "replaceExisting": true,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed.",
     "classificationRefreshedFromCandidates": true
   },
   "summary": {
-    "schoolsConfigured": 10,
+    "schoolsConfigured": 9,
     "schoolsSucceeded": 8,
     "schoolsErrored": 0,
     "schoolsSkipped": 2,
     "readyToApprove": 0,
     "needsOpeningReview": 0,
-    "needsOpeningDate": 289,
-    "needsAdapter": 381,
+    "needsOpeningDate": 463,
+    "needsAdapter": 385,
     "comingSoonMonitor": 4,
     "deadlineUnavailableMonitor": 172
   },
@@ -2529,33 +2529,6 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
-        "id": "new-programme:birmingham-master-of-business-administration-full-time-uk",
-        "universityId": "university-of-birmingham",
-        "programmeName": "Master of Business Administration (Full-time, UK)",
-        "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/subjects/business-and-management-courses/mba",
-        "windowCount": 1,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:birmingham-physiotherapy-pre-registration-msc",
-        "universityId": "university-of-birmingham",
-        "programmeName": "Physiotherapy (pre-registration) MSc",
-        "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/sport-exercise/physio-pre-reg.aspx",
-        "windowCount": 1,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:birmingham-space-engineering-msc",
-        "universityId": "university-of-birmingham",
-        "programmeName": "Space Engineering MSc",
-        "sourceUrl": "https://www.birmingham.ac.uk/postgraduate/courses/taught/metallurgy-materials/space-engineering.aspx",
-        "windowCount": 1,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
         "id": "new-programme:uchicago-ms-in-data-science",
         "universityId": "university-of-chicago",
         "programmeName": "MS in Data Science",
@@ -2574,10 +2547,199 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "known-programme-guidance:southampton-computer-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Computer Science (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/computer-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-accounting-and-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Accounting and Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-accounting-and-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Accounting and Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/accounting-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-acoustical-and-vibration-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Acoustical and Vibration Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/acoustical-vibration-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-actuarial-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Actuarial Science (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/actuarial-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-advanced-audiology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Advanced Audiology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-audiology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-advanced-biological-sciences-mres",
+        "universityId": "university-of-southampton",
+        "programmeName": "Advanced Biological Sciences (MRes)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-biological-sciences-masters-mres",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-advanced-chemical-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Advanced Chemical Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-chemical-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-advanced-clinical-practice-advanced-allied-health-practitioner-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Advanced Clinical Practice (Advanced Allied Health Practitioner) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-clinical-practice-advanced-allied-health-practitioner-masters-msc",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-advanced-clinical-practice-advanced-critical-care-practitioner-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Advanced Clinical Practice (Advanced Critical Care Practitioner) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-clinical-practice-advanced-critical-care-practitioner-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-advanced-clinical-practice-advanced-neonatal-nurse-practitioner-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Advanced Clinical Practice (Advanced Neonatal Nurse Practitioner) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-clinical-practice-advanced-neonatal-nurse-practitioner-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-advanced-clinical-practice-advanced-nurse-practitioner-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Advanced Clinical Practice (Advanced Nurse Practitioner) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/advanced-clinical-practice-advanced-nurse-practitioner-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-aerodynamics-and-computation-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Aerodynamics and Computation (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/aerodynamics-computation-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-allergy-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Allergy (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/allergy-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-amputation-and-prosthetic-rehabilitation-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Amputation and Prosthetic Rehabilitation (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/amputation-prosthetic-rehabilitation-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-applied-coastal-and-offshore-geoscience-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Applied Coastal and Offshore Geoscience (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/applied-coastal-offshore-geoscience-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-applied-linguistics-ma",
         "universityId": "university-of-southampton",
         "programmeName": "Applied Linguistics (MA)",
         "sourceUrl": "https://www.southampton.ac.uk/courses/applied-linguistics-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-applied-statistics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Applied Statistics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/applied-statistics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-archaeology-bioarchaeology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Archaeology Bioarchaeology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/archaeology-bioarchaeology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-archaeology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Archaeology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/archaeology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-archaeology-palaeoanthropology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Archaeology Palaeoanthropology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/archaeology-palaeoanthropology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-artificial-intelligence-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Artificial Intelligence (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/artificial-intelligence-masters-msc",
         "windowCount": 2,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
@@ -2592,6 +2754,159 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "new-programme:southampton-audiology-with-clinical-placement-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Audiology with Clinical Placement (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/audiology-with-clinical-placement-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-banking-and-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Banking and Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/banking-finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-big-data-biology-mres",
+        "universityId": "university-of-southampton",
+        "programmeName": "Big Data Biology (MRes)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/big-data-biology-masters-mres",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-biodiversity-and-conservation-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Biodiversity and Conservation (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/biodiversity-conservation-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-biomedical-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Biomedical Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/biomedical-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-biomedical-sciences-by-research-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Biomedical Sciences by Research (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/biomedical-sciences-by-research-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-business-analytics-and-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Business Analytics and Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/business-analytics-finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-business-analytics-and-management-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Business Analytics and Management Science (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/business-analytics-management-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-business-and-heritage-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Business and Heritage Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/business-heritage-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-business-strategy-and-innovation-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Business Strategy and Innovation Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/business-strategy-innovation-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-cancer-biology-and-immunology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cancer Biology and Immunology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cancer-biology-immunology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-chemistry-by-research-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Chemistry by Research (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/chemistry-by-research-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-chemistry-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Chemistry (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/chemistry-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-civil-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Civil Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/civil-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-clinical-and-health-research-mres",
+        "universityId": "university-of-southampton",
+        "programmeName": "Clinical and Health Research (MRes)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/clinical-health-research-masters-mres",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-clinical-exercise-physiology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Clinical Exercise Physiology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/clinical-exercise-physiology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-clinical-psychology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Clinical Psychology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/clinical-psychology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-communication-design-ma",
         "universityId": "university-of-southampton",
         "programmeName": "Communication Design (MA)",
@@ -2601,10 +2916,28 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "new-programme:southampton-computational-engineering-design-advanced-mechanical-engineering-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Computational Engineering Design (Advanced Mechanical Engineering Science) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/computational-engineering-design-advanced-mechanical-engineering-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-contemporary-curating-ma",
         "universityId": "university-of-southampton",
         "programmeName": "Contemporary Curating (MA)",
         "sourceUrl": "https://www.southampton.ac.uk/courses/contemporary-curating-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-creative-technologies-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Creative Technologies (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/creative-technologies-masters-msc",
         "windowCount": 2,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
@@ -2655,10 +2988,46 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "new-programme:southampton-cyber-security-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Cyber Security (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cyber-security-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-data-and-decision-analytics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Data and Decision Analytics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/data-decision-analytics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-data-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Data Science (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/data-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-design-innovation-and-technology-ma",
         "universityId": "university-of-southampton",
         "programmeName": "Design Innovation and Technology (MA)",
         "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-design-innovation-and-technology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Design Innovation and Technology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/design-innovation-technology-masters-msc",
         "windowCount": 2,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
@@ -2673,10 +3042,172 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "new-programme:southampton-digital-business-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Digital Business (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-business-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-digital-chemistry-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Digital Chemistry (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-chemistry-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-digital-humanities-data-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Digital Humanities (Data Science) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-humanities-data-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-digital-marketing-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Digital Marketing (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-marketing-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-digital-media-ma",
         "universityId": "university-of-southampton",
         "programmeName": "Digital Media (MA)",
         "sourceUrl": "https://www.southampton.ac.uk/courses/digital-media-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-digital-strategy-and-information-systems-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Digital Strategy and Information Systems (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/digital-strategy-information-systems-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-e-textiles-and-wearable-technologies-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "E-textiles and Wearable Technologies (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/e-textiles-wearable-technologies-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-economics-mres",
+        "universityId": "university-of-southampton",
+        "programmeName": "Economics (MRes)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/economics-masters-mres",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-economics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Economics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/economics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-education-management-and-leadership-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Education Management and Leadership (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/education-management-and-leadership-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-education-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Education (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/education-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-education-online-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Education (Online) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/education-online-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-education-practice-and-innovation-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Education Practice and Innovation (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/education-practice-innovation-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-electrical-power-systems-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Electrical Power Systems (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/electrical-power-systems-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-electrochemistry-and-battery-technologies-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Electrochemistry and Battery Technologies (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/electrochemistry-battery-technologies-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-electronic-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Electronic Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/electronic-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-energy-and-sustainability-energy-environment-and-buildings-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Energy and Sustainability: Energy, Environment and Buildings (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/energy-sustainability-energy-environment-buildings-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-energy-and-sustainability-energy-resources-and-climate-change-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Energy and Sustainability: Energy, Resources and Climate Change (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/energy-sustainability-energy-resources-climate-change-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-engineering-materials-advanced-mechanical-engineering-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Engineering Materials (Advanced Mechanical Engineering Science) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/engineering-materials-advanced-mechanical-engineering-science-masters-msc",
         "windowCount": 2,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
@@ -2718,10 +3249,370 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "new-programme:southampton-english-literature-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "English Literature (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/english-literature-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-environmental-consultancy-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Environmental Consultancy (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/environmental-consultancy-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-environmental-monitoring-and-assessment-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Environmental Monitoring and Assessment (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/environmental-monitoring-assessment-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-environmental-pollution-control-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Environmental Pollution Control (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/environmental-pollution-control-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-evolution-from-the-galapagos-to-the-21st-century-mres",
+        "universityId": "university-of-southampton",
+        "programmeName": "Evolution: From the Galapagos to the 21st Century (MRes)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/evolution-from-the-galapagos-to-the-21st-century-masters-mres",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-fashion-design-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Fashion Design (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/fashion-design-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-fashion-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Fashion Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/fashion-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-fashion-marketing-and-branding-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Fashion Marketing and Branding (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/fashion-marketing-branding-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-film-and-cultural-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Film and Cultural Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/film-cultural-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-film-studies-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Film Studies (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/film-studies-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-finance-and-econometrics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Finance and Econometrics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/finance-econometrics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-finance-and-economics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Finance and Economics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/finance-economics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-finance-and-investment-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Finance and Investment (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/finance-investment-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-financial-technology-fintech-and-ai-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Financial Technology (FinTech) and AI (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/financial-technology-ai-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-fine-art-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Fine Art (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/fine-art-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-genomics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Genomics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/genomics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-geographical-information-systems-and-remote-sensing-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Geographical Information Systems and Remote Sensing (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/geographical-information-systems-remote-sensing-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-geophysics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Geophysics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/geophysics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-gerontology-distance-learning-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Gerontology (Distance Learning) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/gerontology-distance-learning-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-gerontology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Gerontology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/gerontology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-gerontology-research-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Gerontology: Research (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/gerontology-research-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-advertising-and-branding-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Advertising and Branding (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-advertising-branding-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-ageing-and-policy-distance-learning-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Ageing and Policy (Distance Learning) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-ageing-policy-distance-learning-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-business-ethics-and-philosophy-of-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Business Ethics and Philosophy of Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-business-ethics-philosophy-of-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-challenges-history-policy-and-practice-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Challenges - History, Policy and Practice (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-challenges-history-policy-practice-degree-MA",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-executive-master-of-business-administration-mba",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Executive Master of Business Administration (MBA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-executive-masters-mba",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-health-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Health (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-health-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-media-and-publishing-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Media and Publishing Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-media-publishing-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-global-sociology-challenges-interventions-and-action-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Sociology: Challenges, Interventions and Action (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-sociology-challenges-interventions-action-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-health-psychology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Health Psychology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/health-psychology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-higher-archaeological-practice-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Higher Archaeological Practice (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/higher-archaeological-practice-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-history-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "History (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/history-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-holocaust-history-experience-heritage-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Holocaust: History, Experience, Heritage (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/holocaust-history-experience-heritage-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-human-factors-and-ergonomics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Human Factors and Ergonomics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/human-factors-ergonomics-degree-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-human-resource-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Human Resource Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/human-resource-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-accounting-and-governance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Accounting and Governance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-accounting-governance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-accounting-and-sustainability-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Accounting and Sustainability (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-accounting-sustainability-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-international-commercial-and-corporate-law-llm",
         "universityId": "university-of-southampton",
         "programmeName": "International Commercial and Corporate Law (LLM)",
         "sourceUrl": "https://www.southampton.ac.uk/courses/international-commercial-corporate-law-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-criminology-and-criminal-justice-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Criminology and Criminal Justice (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-criminology-criminal-justice-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-entrepreneurship-and-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Entrepreneurship and Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-entrepreneurship-management-masters-msc",
         "windowCount": 2,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
@@ -2736,6 +3627,51 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "new-programme:southampton-international-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-music-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Music Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-music-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-international-security-and-risk-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "International Security and Risk (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/international-security-risk-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-internet-of-things-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Internet of Things (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/internet-of-things-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-languages-and-cultures-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Languages and Cultures (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/languages-cultures-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-laws-llm",
         "universityId": "university-of-southampton",
         "programmeName": "Laws (LLM)",
@@ -2745,10 +3681,640 @@
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
       {
+        "id": "new-programme:southampton-leadership-and-management-in-health-and-social-care-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Leadership and Management in Health and Social Care (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/leadership-management-in-health-social-care-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-logistics-and-supply-chain-analytics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Logistics and Supply Chain Analytics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/logistics-supply-chain-analytics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-luxury-brand-management-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Luxury Brand Management (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/luxury-brand-management-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-machine-learning-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Machine Learning (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/machine-learning-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-management-and-artificial-intelligence-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Management and Artificial Intelligence (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/management-artificial-intelligence-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-archaeology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Archaeology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-archaeology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-engineering-science-advanced-computational-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Engineering Science: Advanced Computational Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-engineering-science-advanced-computational-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-engineering-science-marine-engineering-and-autonomy-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Engineering Science: Marine Engineering and Autonomy (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-engineering-science-marine-engineering-autonomy-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-engineering-science-naval-architecture-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Engineering Science: Naval Architecture (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-engineering-science-naval-architecture-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-engineering-science-ocean-energy-offshore-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Engineering Science: Ocean Energy & Offshore Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-engineering-science-ocean-energy-offshore-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-maritime-engineering-science-yacht-and-high-performance-craft-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Maritime Engineering Science: Yacht and High-performance Craft (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-engineering-science-yacht-high-performance-craft-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
         "id": "new-programme:southampton-maritime-law-llm",
         "universityId": "university-of-southampton",
         "programmeName": "Maritime Law (LLM)",
         "sourceUrl": "https://www.southampton.ac.uk/courses/maritime-law-masters-llm",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-marketing-analytics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Marketing Analytics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/marketing-analytics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-marketing-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Marketing Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/marketing-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-mba-master-of-business-administration-mba",
+        "universityId": "university-of-southampton",
+        "programmeName": "MBA Master of Business Administration (MBA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/master-of-business-administration-masters-mba",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-mechatronics-advanced-mechanical-engineering-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Mechatronics (Advanced Mechanical Engineering Science) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/mechatronics-advanced-mechanical-engineering-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-medical-technology-innovation-and-design-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Medical Technology, Innovation and Design (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/medical-technology-innovation-design-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-micro-and-nanotechnology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Micro and Nanotechnology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/micro-nanotechnology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-microelectronics-systems-design-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Microelectronics Systems Design (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/microelectronics-systems-design-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-mobile-communications-and-smart-networking-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Mobile Communications and Smart Networking (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/mobile-communications-smart-networking-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-music-composition-mmus",
+        "universityId": "university-of-southampton",
+        "programmeName": "Music (Composition) (MMus)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/music-composition-masters-mmus",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-music-education-mmus",
+        "universityId": "university-of-southampton",
+        "programmeName": "Music (Education) (MMus)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/music-education-masters-mmus",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-music-musicology-mmus",
+        "universityId": "university-of-southampton",
+        "programmeName": "Music (Musicology) (MMus)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/music-musicology-masters-mmus",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-music-performance-mmus",
+        "universityId": "university-of-southampton",
+        "programmeName": "Music (Performance) (MMus)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/music-performance-masters-mmus",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-neonatology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Neonatology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/neonatology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-nursing-adult-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Nursing: Adult (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/nursing-adult-masters-msc",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-nursing-child-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Nursing: Child (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/nursing-child-masters-msc",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-nursing-mental-health-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Nursing: Mental Health (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/nursing-mental-health-masters-msc",
+        "windowCount": 1,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-nursing-studies-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Nursing Studies (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/nursing-studies-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-ocean-and-earth-science-by-research-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Ocean and Earth Science by Research (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/ocean-earth-science-by-research-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-oceanography-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Oceanography (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/oceanography-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-operational-research-and-data-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Operational Research and Data Science (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/operational-research-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-operational-research-and-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Operational Research and Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/operational-research-finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-optical-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Optical Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/optical-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-philosophy-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Philosophy (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/philosophy-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-politics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Politics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/politics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-professional-practice-in-health-sciences-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Professional Practice in Health Sciences (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/professional-practice-in-health-sciences-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-project-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Project Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/project-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-propulsion-and-engine-systems-engineering-advanced-mechanical-engineering-science-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Propulsion and Engine Systems Engineering (Advanced Mechanical Engineering Science) (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/propulsion-engine-systems-engineering-advanced-mechanical-engineering-science-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-psychology-cognitive-psychology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Psychology: Cognitive Psychology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/cognitive-psychology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-psychology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Psychology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/psychology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-psychology-research-methods-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Psychology: Research Methods (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/psychology-research-methods-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-psychology-social-psychology-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Psychology: Social Psychology (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/social-psychology-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-public-administration-mpa",
+        "universityId": "university-of-southampton",
+        "programmeName": "Public Administration (MPA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/public-administration-masters-mpa",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-public-health-mph",
+        "universityId": "university-of-southampton",
+        "programmeName": "Public Health (MPH)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/public-health-masters-mph",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-race-car-aerodynamics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Race Car Aerodynamics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/race-car-aerodynamics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-risk-and-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Risk and Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/risk-finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-risk-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Risk Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/risk-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-robotics-and-autonomous-systems-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Robotics and Autonomous Systems (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/robotics-autonomous-systems-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-shipping-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Shipping Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/shipping-finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-social-research-methods-with-applied-statistics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Social Research Methods with Applied Statistics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/social-research-methods-with-applied-statistics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-social-research-methods-with-demography-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Social Research Methods with Demography (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/social-research-methods-with-demography-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-software-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Software Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/software-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-space-systems-engineering-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Space Systems Engineering (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/space-systems-engineering-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-statistics-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Statistics (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/statistics-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-statistics-with-applications-in-medicine-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Statistics with Applications in Medicine (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/statistics-with-applications-in-medicine-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-strategic-operations-and-supply-chain-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Strategic Operations and Supply Chain Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/strategic-operations-supply-chain-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-sustainability-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Sustainability (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/sustainability-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-sustainable-energy-technologies-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Sustainable Energy Technologies (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/sustainable-energy-technologies-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-sustainable-finance-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Sustainable Finance (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/sustainable-finance-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-systems-control-and-signal-processing-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Systems, Control and Signal Processing (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/systems-control-signal-processing-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-tesol-for-experienced-teachers-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "TESOL for Experienced Teachers (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/tesol-for-experienced-teachers-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-tesol-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "TESOL (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/tesol-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-textile-design-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Textile Design (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/textile-design-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-translation-technology-digital-communication-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Translation Technology & Digital Communication (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/translation-technology-digital-communication-masters-ma",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-transportation-planning-and-engineering-behaviour-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Transportation Planning and Engineering: Behaviour (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/transportation-planning-engineering-behaviour-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-transportation-planning-and-engineering-infrastructure-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Transportation Planning and Engineering: Infrastructure (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/transportation-planning-engineering-infrastructure-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-transportation-planning-and-engineering-operations-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Transportation Planning and Engineering: Operations (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/transportation-planning-engineering-operations-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-water-resources-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Water Resources Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/water-resources-management-masters-msc",
+        "windowCount": 2,
+        "parseStatus": "incomplete",
+        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
+      },
+      {
+        "id": "new-programme:southampton-wildlife-conservation-mres",
+        "universityId": "university-of-southampton",
+        "programmeName": "Wildlife Conservation (MRes)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/wildlife-conservation-masters-mres",
         "windowCount": 2,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
@@ -6180,6 +7746,42 @@
         "universityId": "the-university-of-melbourne",
         "programmeName": "Master of Youth Mental Health",
         "sourceUrl": "https://handbook.unimelb.edu.au/2026/courses/mc-youthmh",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:southampton-environmental-and-spatial-design-ma",
+        "universityId": "university-of-southampton",
+        "programmeName": "Environmental and Spatial Design (MA)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/environmental-spatial-design-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:southampton-european-master-s-in-embedded-computing-systems-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "European Master's in Embedded Computing Systems (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/european-masters-in-embedded-computing-systems-masters-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:southampton-global-marine-resource-management-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Global Marine Resource Management (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/global-marine-resource-management-masters-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:southampton-marine-environment-and-resources-msc",
+        "universityId": "university-of-southampton",
+        "programmeName": "Marine Environment and Resources (MSc)",
+        "sourceUrl": "https://www.southampton.ac.uk/courses/marine-environment-resources-masters-msc",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."

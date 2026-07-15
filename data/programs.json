@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Master's programmes tracked by GradWindow. A programme may inherit an institution or programme-group window and only store exceptions locally.",
-    "updatedAt": "2026-07-14",
+    "updatedAt": "2026-07-15",
     "updatedForRankingEdition": "QS World University Rankings 2027"
   },
   "programs": [
@@ -12320,6 +12320,150 @@
       "programmeGroupId": "penn-engineering-masters",
       "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
       "sourceUrl": "https://gradadm.seas.upenn.edu/masters/"
+    },
+    {
+      "id": "penn-bioengineering-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Bioengineering, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/bioengineering-mse/"
+    },
+    {
+      "id": "penn-biotechnology-mbiot",
+      "universityId": "university-of-pennsylvania",
+      "name": "Biotechnology, MBIOT",
+      "degreeType": "MBIOT",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/biotechnology-mbiot/"
+    },
+    {
+      "id": "penn-chemical-biomolecular-engineering-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Chemical & Biomolecular Engineering, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/chemical-biomolecular-engineering-mse/"
+    },
+    {
+      "id": "penn-computer-graphics-game-technology-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Computer Graphics & Game Technology, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/computer-graphics-game-technology-mse/"
+    },
+    {
+      "id": "penn-computer-information-science-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Computer & Information Science, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/computer-information-science-mse/"
+    },
+    {
+      "id": "penn-data-science-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Data Science, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/data-science-mse/"
+    },
+    {
+      "id": "penn-electrical-engineering-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Electrical Engineering, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/electrical-engineering-mse/"
+    },
+    {
+      "id": "penn-energy-sustainability-engineering-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Energy and Sustainability Engineering, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/energy-sustainability-engineering-mse/"
+    },
+    {
+      "id": "penn-integrated-product-design-mipd",
+      "universityId": "university-of-pennsylvania",
+      "name": "Integrated Product Design, MIPD",
+      "degreeType": "MIPD",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/integrated-product-design-mipd/"
+    },
+    {
+      "id": "penn-integrated-product-design-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Integrated Product Design, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/integrated-product-design-mse/"
+    },
+    {
+      "id": "penn-materials-science-engineering-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Materials Science and Engineering, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/materials-science-engineering-mse/"
+    },
+    {
+      "id": "penn-mechanical-engineering-applied-mechanics-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Mechanical Engineering & Applied Mechanics, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/mechanical-engineering-applied-mechanics-mse/"
+    },
+    {
+      "id": "penn-robotics-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Robotics, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/robotics-mse/"
+    },
+    {
+      "id": "penn-scientific-computing-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Scientific Computing, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/scientific-computing-mse/"
+    },
+    {
+      "id": "penn-software-systems-cybersecurity-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Software Systems and Cybersecurity, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/software-systems-cybersecurity-mse/"
+    },
+    {
+      "id": "penn-systems-engineering-mse",
+      "universityId": "university-of-pennsylvania",
+      "name": "Systems Engineering, MSE",
+      "degreeType": "MSE",
+      "faculty": "School of Engineering and Applied Science",
+      "applicationUrl": "https://gradadm.seas.upenn.edu/how-to-apply/",
+      "sourceUrl": "https://catalog.upenn.edu/graduate/programs/systems-engineering-mse/"
     },
     {
       "id": "reading-masters-programmes",

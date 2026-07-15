@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
-    "updatedAt": "2026-07-15T00:17:47.609405+00:00",
+    "updatedAt": "2026-07-15T00:52:34.522382+00:00",
     "lastBatchReplaceRemoved": 98
   },
   "partitioning": {
@@ -39,6 +39,7 @@
       "programme-candidates/by-university/university-of-edinburgh.json",
       "programme-candidates/by-university/university-of-glasgow.json",
       "programme-candidates/by-university/university-of-oxford.json",
+      "programme-candidates/by-university/university-of-pennsylvania.json",
       "programme-candidates/by-university/university-of-southampton.json"
     ]
   }

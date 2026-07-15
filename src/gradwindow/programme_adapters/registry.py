@@ -30,6 +30,7 @@ from .stanford import StanfordAdapter
 from .sydney import SydneyAdapter
 from .tsinghua import TsinghuaAdapter
 from .tudelft import TUDelftAdapter
+from .upenn import UpennAdapter
 from .uq import UQAdapter
 
 AdapterFactory = Callable[[], ProgrammeAdapter]
@@ -63,4 +64,5 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "tsinghua": TsinghuaAdapter,
     "tudelft": TUDelftAdapter,
     "uq": UQAdapter,
+    "upenn": UpennAdapter,
 }
