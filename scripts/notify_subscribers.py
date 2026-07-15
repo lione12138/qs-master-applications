@@ -107,7 +107,7 @@ def notify(events: list[dict]) -> bool:
         f"sent {total_sent} alerts; "
         f"{total_failed} deliveries failed."
     )
-    return True
+    return total_failed == 0
 
 
 def main() -> None:
@@ -115,7 +115,8 @@ def main() -> None:
     if "--dry-run" in sys.argv:
         print(json.dumps({"events": events}, ensure_ascii=False, indent=2))
         return
-    notify(events)
+    if not notify(events):
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

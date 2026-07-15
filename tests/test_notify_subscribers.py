@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 from datetime import date
 from io import BytesIO
 from pathlib import Path
 from urllib.error import HTTPError
+
+import pytest
 
 
 def load_module():
@@ -28,7 +31,7 @@ def test_current_open_events_only_returns_official_open_windows() -> None:
     assert all(event["applicationUrl"].startswith("https://") for event in events)
 
 
-def test_notify_http_error_is_reported_without_failing_job(
+def test_notify_http_error_is_reported(
     monkeypatch,
     capsys,
 ) -> None:
@@ -64,3 +67,57 @@ def test_notify_http_error_is_reported_without_failing_job(
 
     assert ok is False
     assert "HTTP 401 Unauthorized" in capsys.readouterr().err
+
+
+class FakeResponse:
+    def __init__(self, payload: dict) -> None:
+        self.payload = payload
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *_args) -> None:
+        return None
+
+    def read(self) -> bytes:
+        return json.dumps(self.payload).encode("utf-8")
+
+
+def test_notify_reports_provider_delivery_failures(monkeypatch, capsys) -> None:
+    module = load_module()
+    monkeypatch.setenv("GRADWINDOW_SUBSCRIBE_URL", "https://notify.example")
+    monkeypatch.setenv("GRADWINDOW_NOTIFY_API_KEY", "shared-key")
+    monkeypatch.setattr(
+        module,
+        "urlopen",
+        lambda *_args, **_kwargs: FakeResponse({"ok": True, "sent": 1, "failed": 1}),
+    )
+
+    ok = module.notify(
+        [
+            {
+                "id": "window-1",
+                "school": "Example University",
+                "program": "MSc Example",
+                "opensAt": "2026-07-01",
+                "closesAt": "2026-07-31",
+                "applicationUrl": "https://example.edu/apply",
+                "sourceUrl": "https://example.edu/source",
+            }
+        ]
+    )
+
+    assert ok is False
+    assert "1 deliveries failed" in capsys.readouterr().out
+
+
+def test_main_exits_nonzero_when_notification_fails(monkeypatch) -> None:
+    module = load_module()
+    monkeypatch.setattr(module, "current_open_events", lambda: [{"id": "window-1"}])
+    monkeypatch.setattr(module, "notify", lambda _events: False)
+    monkeypatch.setattr(module.sys, "argv", ["notify_subscribers.py"])
+
+    with pytest.raises(SystemExit) as exc_info:
+        module.main()
+
+    assert exc_info.value.code == 1

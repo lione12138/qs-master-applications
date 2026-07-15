@@ -214,3 +214,11 @@ def test_worker_configuration_allows_both_canonical_hostnames() -> None:
 
     assert "https://gradwindow.com" in config
     assert "https://www.gradwindow.com" in config
+
+
+def test_notify_admin_secret_ignores_cli_trailing_newline() -> None:
+    worker = (Path(__file__).parents[1] / "subscriptions" / "worker.js").read_text(
+        encoding="utf-8"
+    )
+
+    assert 'String(env.ADMIN_API_KEY || "").trim()' in worker

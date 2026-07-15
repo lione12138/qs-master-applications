@@ -943,7 +943,11 @@ function validEvent(event) {
 }
 
 async function notify(request, env) {
-  if (request.headers.get("Authorization") !== `Bearer ${env.ADMIN_API_KEY}`) {
+  const adminApiKey = String(env.ADMIN_API_KEY || "").trim();
+  if (
+    !adminApiKey ||
+    request.headers.get("Authorization") !== `Bearer ${adminApiKey}`
+  ) {
     return jsonResponse(request, env, { ok: false }, 401);
   }
   const payload = await request.json();
