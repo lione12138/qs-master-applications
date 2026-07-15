@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from html.parser import HTMLParser
 from pathlib import Path
 
 import pytest
@@ -10,6 +11,26 @@ from gradwindow.paths import ROOT, SITE_DIR, WEB_DIR
 from gradwindow.site import build_site
 
 ANALYTICS_BEACON = "https://static.cloudflareinsights.com/beacon.min.js"
+
+
+class MetaDescriptionParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.description = ""
+        self.robots = ""
+
+    def handle_starttag(
+        self,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+    ) -> None:
+        values = dict(attrs)
+        if tag != "meta":
+            return
+        if values.get("name") == "description":
+            self.description = values.get("content") or ""
+        if values.get("name") == "robots":
+            self.robots = values.get("content") or ""
 
 
 @pytest.mark.parametrize("target_name", ["root", "ancestor", "src", "data"])
@@ -72,6 +93,10 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "og-image.png").exists()
     assert (tmp_path / "favicon.svg").exists()
     assert (tmp_path / "CNAME").read_text(encoding="utf-8").strip() == "gradwindow.com"
+    indexnow_key = "ffcdfa5871ff4d52aed733120c248bf8"
+    assert (tmp_path / f"{indexnow_key}.txt").read_text(
+        encoding="utf-8"
+    ).strip() == indexnow_key
     assert (tmp_path / ".nojekyll").exists()
     assert (tmp_path / "sources.html").exists()
     assert (tmp_path / "data" / "universities.json").exists()
@@ -96,6 +121,22 @@ def test_build_site_only_publishes_public_assets(tmp_path) -> None:
     assert (tmp_path / "university" / "university-of-cambridge" / "index.html").exists()
     assert (tmp_path / "country" / "united-kingdom" / "index.html").exists()
     assert (tmp_path / "deadline" / "2026-02" / "index.html").exists()
+
+
+def test_indexable_pages_have_substantial_unique_meta_descriptions(tmp_path) -> None:
+    build_site(tmp_path)
+    descriptions: list[str] = []
+
+    for path in tmp_path.rglob("*.html"):
+        parser = MetaDescriptionParser()
+        parser.feed(path.read_text(encoding="utf-8"))
+        if "noindex" in parser.robots:
+            continue
+        assert len(parser.description) >= 120, path.relative_to(tmp_path)
+        assert len(parser.description) <= 180, path.relative_to(tmp_path)
+        descriptions.append(parser.description)
+
+    assert len(descriptions) == len(set(descriptions))
 
 
 def test_cloudflare_worker_build_has_a_static_assets_entrypoint() -> None:

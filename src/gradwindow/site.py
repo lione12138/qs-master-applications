@@ -27,6 +27,7 @@ from .paths import (
 
 PUBLIC_FILES = (
     "CNAME",
+    "ffcdfa5871ff4d52aed733120c248bf8.txt",
     "index.html",
     "calendar.html",
     "contact.html",
@@ -237,9 +238,9 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
             render_static_page(
                 f"{university['school']} master's application dates",
                 (
-                    f"Browse verified master's application windows, deadlines, "
-                    f"and unofficial next-cycle calendar-shift references for "
-                    f"{university['school']}."
+                    "Browse verified master's application dates, deadlines, "
+                    "official links, and clearly labelled next-cycle estimates "
+                    f"for {university['school']}."
                 ),
                 body,
                 canonical,
@@ -274,7 +275,11 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         (country_dir / "index.html").write_text(
             render_static_page(
                 f"QS Top 200 master's applications in {country}",
-                f"Directory of QS Top 200 universities in {country} with master's application links.",
+                (
+                    f"Explore {len(items)} QS Top 200 universities in {country}, "
+                    "with official university and graduate admissions links plus "
+                    "verified master's application windows and deadlines."
+                ),
                 body,
                 canonical,
                 [
@@ -313,7 +318,11 @@ def generate_index_pages(output_dir: Path, public_site_url: str) -> list[str]:
         (month_dir / "index.html").write_text(
             render_static_page(
                 f"{month} master's application deadlines",
-                f"Verified master's application deadlines and unofficial calendar-shift references for {month}.",
+                (
+                    f"Review {len(items)} verified official and clearly labelled "
+                    f"estimated master's application deadlines for {month}, with "
+                    "university, programme, intake, and source details."
+                ),
                 body,
                 canonical,
                 [

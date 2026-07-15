@@ -25,6 +25,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Check out deployment utilities
+        uses: actions/checkout@v6
       - name: Download tested site artifact
         uses: actions/download-artifact@v8
         with:
@@ -42,3 +44,8 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Notify search engines with IndexNow
+        run: >-
+          python3 scripts/submit_indexnow.py
+          --sitemap site/sitemap.xml
+          --key-file site/ffcdfa5871ff4d52aed733120c248bf8.txt
