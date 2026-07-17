@@ -54,3 +54,4 @@ GENERIC_PROGRAMME_DISCOVERY_REPORT_PATH = (
     REPORTS_DIR / "generic-programme-discovery-report.json"
 )
 GENERIC_SEED_DISCOVERY_REPORT_PATH = REPORTS_DIR / "generic-seed-discovery-report.json"
+ADAPTER_COMPLETION_REPORT_PATH = REPORTS_DIR / "adapter-completion.json"

@@ -5,6 +5,7 @@ import json
 import sys
 from pathlib import Path
 
+from .adapter_completion import generate_adapter_completion_report
 from .approvals import approve_programme_candidates, approve_window
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
@@ -108,6 +109,10 @@ def main() -> None:
         "refresh-generic-report",
         help="Refresh generic discovery review buckets without network requests",
     )
+    subparsers.add_parser(
+        "adapter-completion",
+        help="Generate the machine-readable dedicated-adapter completion report",
+    )
     assisted_discovery = subparsers.add_parser(
         "discover-assisted",
         help="Search official domains and use DeepSeek to extract review candidates",
@@ -172,6 +177,8 @@ def main() -> None:
                 PROGRAMME_ADAPTERS[args.university](),
                 dry_run=args.dry_run,
             )
+        if not args.dry_run:
+            generate_adapter_completion_report()
         print(json.dumps(report, ensure_ascii=False))
     elif args.command == "discover-generic-programmes":
         university = _university_by_id(args.university)
@@ -289,6 +296,9 @@ def main() -> None:
     elif args.command == "refresh-generic-report":
         report = refresh_generic_discovery_report()
         print(json.dumps(report["summary"], ensure_ascii=False))
+    elif args.command == "adapter-completion":
+        report = generate_adapter_completion_report()
+        print(json.dumps(report["summary"], ensure_ascii=False))
     elif args.command == "pipeline":
         generate_predictions()
         _validate_or_exit()
@@ -304,6 +314,8 @@ def main() -> None:
                 successful_dedicated_university_ids=successful_dedicated_ids
             )
             print(json.dumps(generic_report["summary"], ensure_ascii=False))
+            completion_report = generate_adapter_completion_report()
+            print(json.dumps(completion_report["summary"], ensure_ascii=False))
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
             raise SystemExit(1)

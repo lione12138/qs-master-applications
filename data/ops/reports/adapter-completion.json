@@ -1,0 +1,1717 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-17T10:05:08.439868+00:00",
+    "description": "Machine-readable dedicated-adapter completion report. Discovery and candidate counts do not imply publication or maintainer review."
+  },
+  "summary": {
+    "registeredAdapters": 69,
+    "cataloguesDiscovered": 69,
+    "catalogueOnly": 22,
+    "withExactWindowCandidates": 24,
+    "withMissingOpeningDates": 22,
+    "pendingCandidates": 8234,
+    "exactWindowCandidates": 2034
+  },
+  "adapters": [
+    {
+      "adapterKey": "anu",
+      "universityId": "australian-national-university",
+      "sourceUrl": "https://programsandcourses.anu.edu.au/search",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 135,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 135,
+      "pendingCandidateCount": 135,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T15:11:59.549822+00:00"
+    },
+    {
+      "adapterKey": "auckland",
+      "universityId": "the-university-of-auckland",
+      "sourceUrl": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option.html",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 95,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 92,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 92,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 15,
+      "pendingCandidateCount": 95,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 92,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T06:20:00.604141+00:00"
+    },
+    {
+      "adapterKey": "berkeley",
+      "universityId": "university-of-california-berkeley-ucb",
+      "sourceUrl": "https://grad.berkeley.edu/admissions/our-programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 109,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 87,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 87,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 22,
+      "pendingCandidateCount": 109,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 87,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T13:48:16.721746+00:00"
+    },
+    {
+      "adapterKey": "birmingham",
+      "universityId": "university-of-birmingham",
+      "sourceUrl": "https://www.birmingham.ac.uk/study/postgraduate/taught/course-search",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 311,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 409,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 409,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 102,
+      "pendingCandidateCount": 311,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 409,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T20:03:29.327396+00:00"
+    },
+    {
+      "adapterKey": "bristol",
+      "universityId": "university-of-bristol",
+      "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 146,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 277,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 277,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 6,
+      "pendingCandidateCount": 146,
+      "publishedProgrammeCount": 23,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 277,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T19:05:09.917759+00:00"
+    },
+    {
+      "adapterKey": "brown",
+      "universityId": "brown-university",
+      "sourceUrl": "https://graduateprograms.brown.edu/graduate_programs",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 49,
+      "windowStatus": "partial-exact-window-candidates",
+      "candidateWindowCount": 48,
+      "exactWindowCount": 15,
+      "missingOpeningDateCount": 33,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 37,
+      "pendingCandidateCount": 49,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 33,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T06:00:56.329581+00:00"
+    },
+    {
+      "adapterKey": "caltech",
+      "universityId": "california-institute-of-technology-caltech",
+      "sourceUrl": "https://catalog.caltech.edu/sitemap.xml",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 3,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 3,
+      "pendingCandidateCount": 3,
+      "publishedProgrammeCount": 0,
+      "publishedWindowCount": 0,
+      "integrationStatus": "candidate-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T22:44:38.493805+00:00"
+    },
+    {
+      "adapterKey": "cambridge",
+      "universityId": "university-of-cambridge",
+      "sourceUrl": "https://www.postgraduate.study.cam.ac.uk/courses/directory",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 159,
+      "windowStatus": "unclassified-window-candidates",
+      "candidateWindowCount": 127,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 127,
+      "noDeadlineProgrammeCount": 30,
+      "pendingCandidateCount": 30,
+      "publishedProgrammeCount": 129,
+      "publishedWindowCount": 129,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "opening-basis-unclassified",
+          "count": 127,
+          "message": "Legacy candidates have opening dates without opensAtBasis metadata."
+        }
+      ],
+      "lastSuccessAt": "2026-07-01T16:13:46.525518+00:00"
+    },
+    {
+      "adapterKey": "cmu",
+      "universityId": "carnegie-mellon-university",
+      "sourceUrl": "https://coursecatalog.web.cmu.edu/degreesoffered/graduate-degrees/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 176,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 176,
+      "pendingCandidateCount": 176,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T03:35:46.159986+00:00"
+    },
+    {
+      "adapterKey": "columbia",
+      "universityId": "columbia-university",
+      "sourceUrl": "https://app.powerbi.com/view?r=eyJrIjoiNWU5MDIzNmEtNjc1ZC00YzBmLWFlMDktZTRiODJiOTIyZGQzIiwidCI6ImQ5OTY4ODc1LTU0OWUtNGE2ZS04OGMzLTJlMWIzYTYwNTVjYiIsImMiOjN9",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 263,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 263,
+      "pendingCandidateCount": 263,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T01:49:04.827291+00:00"
+    },
+    {
+      "adapterKey": "cornell",
+      "universityId": "cornell-university",
+      "sourceUrl": "https://catalog.cornell.edu/programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 108,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 108,
+      "pendingCandidateCount": 108,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-15T05:02:17.211399+00:00"
+    },
+    {
+      "adapterKey": "cuhk",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 123,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 239,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 9,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 230,
+      "noDeadlineProgrammeCount": 1,
+      "pendingCandidateCount": 10,
+      "publishedProgrammeCount": 122,
+      "publishedWindowCount": 220,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 9,
+          "message": "Closing dates were found without exact official opening dates."
+        },
+        {
+          "code": "opening-basis-unclassified",
+          "count": 230,
+          "message": "Legacy candidates have opening dates without opensAtBasis metadata."
+        }
+      ],
+      "lastSuccessAt": "2026-06-29T10:11:30.147966+00:00"
+    },
+    {
+      "adapterKey": "edinburgh",
+      "universityId": "university-of-edinburgh",
+      "sourceUrl": "https://study.ed.ac.uk/programmes/postgraduate-taught",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 261,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 383,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 250,
+      "inferredOpeningDateCount": 133,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 35,
+      "pendingCandidateCount": 127,
+      "publishedProgrammeCount": 134,
+      "publishedWindowCount": 134,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 250,
+          "message": "Closing dates were found without exact official opening dates."
+        },
+        {
+          "code": "opening-date-inferred",
+          "count": 133,
+          "message": "Opening dates use configured defaults and cannot be batch-promoted."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T18:21:45.060199+00:00"
+    },
+    {
+      "adapterKey": "epfl",
+      "universityId": "cole-polytechnique-f-d-rale-de-lausanne",
+      "sourceUrl": "https://www.epfl.ch/education/master/programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 29,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 29,
+      "pendingCandidateCount": 29,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 2,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T13:54:31.234309+00:00"
+    },
+    {
+      "adapterKey": "eth",
+      "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+      "sourceUrl": "https://ethz.ch/en/studies/master/application/profile-requirements.html",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 45,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 82,
+      "exactWindowCount": 82,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 0,
+      "publishedProgrammeCount": 46,
+      "publishedWindowCount": 84,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-08T06:36:09.250065+00:00"
+    },
+    {
+      "adapterKey": "fudan",
+      "universityId": "fudan-university",
+      "sourceUrl": "https://iso.fudan.edu.cn/isoenglish/EnglishwTaughtProgram/list.htm",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 160,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 320,
+      "exactWindowCount": 320,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 160,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 2,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-16T14:44:51.323602+00:00"
+    },
+    {
+      "adapterKey": "glasgow",
+      "universityId": "university-of-glasgow",
+      "sourceUrl": "https://www.gla.ac.uk/postgraduate/taught/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 246,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 1296,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 183,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 1113,
+      "noDeadlineProgrammeCount": 49,
+      "pendingCandidateCount": 232,
+      "publishedProgrammeCount": 197,
+      "publishedWindowCount": 1114,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 183,
+          "message": "Closing dates were found without exact official opening dates."
+        },
+        {
+          "code": "opening-basis-unclassified",
+          "count": 1113,
+          "message": "Legacy candidates have opening dates without opensAtBasis metadata."
+        }
+      ],
+      "lastSuccessAt": "2026-07-01T16:14:17.834566+00:00"
+    },
+    {
+      "adapterKey": "harvard",
+      "universityId": "harvard-university",
+      "sourceUrl": "https://gsas.harvard.edu/programs",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 12,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 11,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 11,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 1,
+      "pendingCandidateCount": 12,
+      "publishedProgrammeCount": 0,
+      "publishedWindowCount": 0,
+      "integrationStatus": "candidate-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 11,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-07T15:44:51.145053+00:00"
+    },
+    {
+      "adapterKey": "hku",
+      "universityId": "the-university-of-hong-kong",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-listing",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 152,
+      "windowStatus": "inferred-openings-only",
+      "candidateWindowCount": 89,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 89,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 107,
+      "pendingCandidateCount": 107,
+      "publishedProgrammeCount": 45,
+      "publishedWindowCount": 89,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "opening-date-inferred",
+          "count": 89,
+          "message": "Opening dates use configured defaults and cannot be batch-promoted."
+        }
+      ],
+      "lastSuccessAt": "2026-07-06T13:51:15.908719+00:00"
+    },
+    {
+      "adapterKey": "hkust",
+      "universityId": "the-hong-kong-university-of-science-and-technology",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/pgprog/print_result.php?is_s=Y&degree%5B%5D=MSC&degree%5B%5D=MA&degree%5B%5D=MPM&degree%5B%5D=MPP&year=2026-27",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 48,
+      "windowStatus": "inferred-openings-only",
+      "candidateWindowCount": 176,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 176,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 1,
+      "pendingCandidateCount": 1,
+      "publishedProgrammeCount": 47,
+      "publishedWindowCount": 109,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "opening-date-inferred",
+          "count": 176,
+          "message": "Opening dates use configured defaults and cannot be batch-promoted."
+        }
+      ],
+      "lastSuccessAt": "2026-07-06T13:54:59.640808+00:00"
+    },
+    {
+      "adapterKey": "imperial",
+      "universityId": "imperial-college-london",
+      "sourceUrl": "https://www.imperial.ac.uk/study/courses/postgraduate-taught/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 248,
+      "windowStatus": "unclassified-window-candidates",
+      "candidateWindowCount": 510,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 510,
+      "noDeadlineProgrammeCount": 132,
+      "pendingCandidateCount": 132,
+      "publishedProgrammeCount": 116,
+      "publishedWindowCount": 510,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "opening-basis-unclassified",
+          "count": 510,
+          "message": "Legacy candidates have opening dates without opensAtBasis metadata."
+        }
+      ],
+      "lastSuccessAt": "2026-07-05T16:53:57.791108+00:00"
+    },
+    {
+      "adapterKey": "ip-paris",
+      "universityId": "institut-polytechnique-de-paris",
+      "sourceUrl": "https://www.ip-paris.fr/en/education/graduate-programs/masters-science",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 19,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 19,
+      "pendingCandidateCount": 19,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 2,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T01:58:20.176785+00:00"
+    },
+    {
+      "adapterKey": "jhu",
+      "universityId": "johns-hopkins-university",
+      "sourceUrl": "https://e-catalogue.jhu.edu/programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 249,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 249,
+      "pendingCandidateCount": 249,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T13:37:52.872264+00:00"
+    },
+    {
+      "adapterKey": "kaist",
+      "universityId": "kaist",
+      "sourceUrl": "https://admission.kaist.ac.kr/intl-graduate/Admission/Notice",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 31,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 31,
+      "exactWindowCount": 31,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 31,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T05:40:51.145856+00:00"
+    },
+    {
+      "adapterKey": "kcl",
+      "universityId": "king-s-college-london-kcl",
+      "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 172,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 13,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 13,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 166,
+      "pendingCandidateCount": 171,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 13,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-12T15:36:17.748317+00:00"
+    },
+    {
+      "adapterKey": "kfupm",
+      "universityId": "king-fahd-university-of-petroleum-and-minerals",
+      "sourceUrl": "https://www.kfupm.edu.sa/study/graduate-programs-ms",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 79,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 20,
+      "exactWindowCount": 20,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 59,
+      "pendingCandidateCount": 79,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T05:25:36.474977+00:00"
+    },
+    {
+      "adapterKey": "korea",
+      "universityId": "korea-university",
+      "sourceUrl": "https://graduate2.korea.ac.kr/department/major.html",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 75,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 75,
+      "pendingCandidateCount": 75,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T03:19:32.933492+00:00"
+    },
+    {
+      "adapterKey": "ku-leuven",
+      "universityId": "ku-leuven",
+      "sourceUrl": "https://www.kuleuven.be/programmes/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 101,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 101,
+      "pendingCandidateCount": 101,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T04:24:56.412863+00:00"
+    },
+    {
+      "adapterKey": "kyoto",
+      "universityId": "kyoto-university",
+      "sourceUrl": "https://www.kyoto-u.ac.jp/en/education-campus/education-and-admissions/graduate-degree-programs/graduate-schools2",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 25,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 6,
+      "exactWindowCount": 6,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 18,
+      "pendingCandidateCount": 24,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T05:32:29.965368+00:00"
+    },
+    {
+      "adapterKey": "lmu",
+      "universityId": "ludwig-maximilians-universit-t-m-nchen",
+      "sourceUrl": "https://www.lmu.de/en/study/all-degrees-and-programs/international-degree-programs/index.html",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 48,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 3,
+      "exactWindowCount": 3,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 44,
+      "pendingCandidateCount": 47,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T04:54:06.279172+00:00"
+    },
+    {
+      "adapterKey": "lse",
+      "universityId": "london-school-of-economics-and-political-science-lse",
+      "sourceUrl": "https://www.lse.ac.uk/study-at-lse/Graduate/Available-programmes",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 158,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 21,
+      "exactWindowCount": 21,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 145,
+      "pendingCandidateCount": 158,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T05:16:34.390863+00:00"
+    },
+    {
+      "adapterKey": "manchester",
+      "universityId": "the-university-of-manchester",
+      "sourceUrl": "https://www.manchester.ac.uk/study/masters/courses/list/basic/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 272,
+      "windowStatus": "partial-exact-window-candidates",
+      "candidateWindowCount": 427,
+      "exactWindowCount": 72,
+      "missingOpeningDateCount": 355,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 160,
+      "pendingCandidateCount": 254,
+      "publishedProgrammeCount": 19,
+      "publishedWindowCount": 72,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 355,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T15:28:10.660364+00:00"
+    },
+    {
+      "adapterKey": "mcgill",
+      "universityId": "mcgill-university",
+      "sourceUrl": "https://www.mcgill.ca/gradapplicants/sitemap.xml",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 159,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 302,
+      "exactWindowCount": 302,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 6,
+      "pendingCandidateCount": 158,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-16T15:45:14.869939+00:00"
+    },
+    {
+      "adapterKey": "melbourne",
+      "universityId": "the-university-of-melbourne",
+      "sourceUrl": "https://handbook.unimelb.edu.au/courses",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 218,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 218,
+      "pendingCandidateCount": 218,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-13T17:14:04.509844+00:00"
+    },
+    {
+      "adapterKey": "mit",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 29,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 36,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 11,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 25,
+      "noDeadlineProgrammeCount": 1,
+      "pendingCandidateCount": 8,
+      "publishedProgrammeCount": 21,
+      "publishedWindowCount": 25,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 11,
+          "message": "Closing dates were found without exact official opening dates."
+        },
+        {
+          "code": "opening-basis-unclassified",
+          "count": 25,
+          "message": "Legacy candidates have opening dates without opensAtBasis metadata."
+        }
+      ],
+      "lastSuccessAt": "2026-06-29T22:22:15.213395+00:00"
+    },
+    {
+      "adapterKey": "monash",
+      "universityId": "monash-university",
+      "sourceUrl": "https://handbook.monash.edu/sitemap.xml",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 163,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 163,
+      "pendingCandidateCount": 163,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-13T00:37:54.873945+00:00"
+    },
+    {
+      "adapterKey": "northwestern",
+      "universityId": "northwestern-university",
+      "sourceUrl": "https://www.northwestern.edu/academics/graduate-a-to-z.html",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 108,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 11,
+      "exactWindowCount": 11,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 97,
+      "pendingCandidateCount": 108,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T02:14:23.931917+00:00"
+    },
+    {
+      "adapterKey": "ntu",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/programme-listing/GetProgrammes/?programmelevels=master&page=1",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 110,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 28,
+      "exactWindowCount": 28,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 82,
+      "pendingCandidateCount": 110,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-14T23:12:14.995445+00:00"
+    },
+    {
+      "adapterKey": "ntu-taiwan",
+      "universityId": "national-taiwan-university-ntu",
+      "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 72,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 71,
+      "exactWindowCount": 71,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 71,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 2,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T03:30:06.584568+00:00"
+    },
+    {
+      "adapterKey": "nus",
+      "universityId": "national-university-of-singapore-nus",
+      "sourceUrl": "https://study.nus.edu.sg/programme",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 168,
+      "windowStatus": "partial-exact-window-candidates",
+      "candidateWindowCount": 89,
+      "exactWindowCount": 60,
+      "missingOpeningDateCount": 29,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 102,
+      "pendingCandidateCount": 123,
+      "publishedProgrammeCount": 45,
+      "publishedWindowCount": 60,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 29,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T09:07:10.236473+00:00"
+    },
+    {
+      "adapterKey": "nyu",
+      "universityId": "new-york-university-nyu",
+      "sourceUrl": "https://bulletins.nyu.edu/programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 233,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 233,
+      "pendingCandidateCount": 233,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T04:11:24.145792+00:00"
+    },
+    {
+      "adapterKey": "oxford",
+      "universityId": "university-of-oxford",
+      "sourceUrl": "https://www.ox.ac.uk/admissions/graduate/courses/courses-a-z-listing",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 2,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 1,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 1,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 1,
+      "pendingCandidateCount": 2,
+      "publishedProgrammeCount": 0,
+      "publishedWindowCount": 0,
+      "integrationStatus": "candidate-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 1,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T03:14:35.526337+00:00"
+    },
+    {
+      "adapterKey": "peking",
+      "universityId": "peking-university",
+      "sourceUrl": "https://www.isd.pku.edu.cn/cn/graduate_do.php?act=majorQuery&termid=2&departmentid=0&major=&direction=&language=0&degreetype=0&kw=",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 209,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 174,
+      "exactWindowCount": 174,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 42,
+      "pendingCandidateCount": 209,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-14T23:43:59.957757+00:00"
+    },
+    {
+      "adapterKey": "polyu",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/taught-postgraduate",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 108,
+      "windowStatus": "unclassified-window-candidates",
+      "candidateWindowCount": 206,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 206,
+      "noDeadlineProgrammeCount": 4,
+      "pendingCandidateCount": 4,
+      "publishedProgrammeCount": 104,
+      "publishedWindowCount": 104,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "opening-basis-unclassified",
+          "count": 206,
+          "message": "Legacy candidates have opening dates without opensAtBasis metadata."
+        }
+      ],
+      "lastSuccessAt": "2026-07-01T15:38:01.428699+00:00"
+    },
+    {
+      "adapterKey": "princeton",
+      "universityId": "princeton-university",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 12,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 12,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 12,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 12,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 12,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T14:58:06.174136+00:00"
+    },
+    {
+      "adapterKey": "psl",
+      "universityId": "psl-university",
+      "sourceUrl": "https://psl.eu/formations?field_niveau%5B30%5D=30",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 58,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 58,
+      "pendingCandidateCount": 58,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T16:15:14.667083+00:00"
+    },
+    {
+      "adapterKey": "sjtu",
+      "universityId": "shanghai-jiao-tong-university",
+      "sourceUrl": "https://isc.sjtu.edu.cn/cn/content.aspx?flag=64&info_lb=101",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 112,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 112,
+      "pendingCandidateCount": 112,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T16:34:55.336516+00:00"
+    },
+    {
+      "adapterKey": "snu",
+      "universityId": "seoul-national-university",
+      "sourceUrl": "https://en.snu.ac.kr/admission/graduate/application",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 202,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 201,
+      "exactWindowCount": 201,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 201,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-16T17:08:09.486268+00:00"
+    },
+    {
+      "adapterKey": "southampton",
+      "universityId": "university-of-southampton",
+      "sourceUrl": "https://www.southampton.ac.uk/courses/postgraduate-taught",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 201,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 390,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 390,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 4,
+      "pendingCandidateCount": 201,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 390,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-14T22:17:38.421794+00:00"
+    },
+    {
+      "adapterKey": "stanford",
+      "universityId": "stanford-university",
+      "sourceUrl": "https://applygrad.stanford.edu/portal/explore-programs?cmd=grad-program-list",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 46,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 65,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 65,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 1,
+      "pendingCandidateCount": 46,
+      "publishedProgrammeCount": 0,
+      "publishedWindowCount": 0,
+      "integrationStatus": "candidate-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 65,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-07T14:46:18.827071+00:00"
+    },
+    {
+      "adapterKey": "sydney",
+      "universityId": "the-university-of-sydney",
+      "sourceUrl": "https://www.sydney.edu.au/courses/sitemap.xml",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 169,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 677,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 677,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 170,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 677,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-12T16:14:25.454784+00:00"
+    },
+    {
+      "adapterKey": "toronto",
+      "universityId": "university-of-toronto",
+      "sourceUrl": "https://www.sgs.utoronto.ca/programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 155,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 2,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 2,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 154,
+      "pendingCandidateCount": 155,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 2,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T16:02:28.535224+00:00"
+    },
+    {
+      "adapterKey": "tsinghua",
+      "universityId": "tsinghua-university",
+      "sourceUrl": "https://yz.tsinghua.edu.cn/en/Programs/Master_s_Degrees.htm",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 233,
+      "windowStatus": "partial-exact-window-candidates",
+      "candidateWindowCount": 396,
+      "exactWindowCount": 167,
+      "missingOpeningDateCount": 229,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 233,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 229,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-15T00:17:47.609405+00:00"
+    },
+    {
+      "adapterKey": "tudelft",
+      "universityId": "delft-university-of-technology",
+      "sourceUrl": "https://www.tudelft.nl/en/education/programmes/masters",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 37,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 46,
+      "exactWindowCount": 46,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 0,
+      "publishedProgrammeCount": 37,
+      "publishedWindowCount": 48,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-10T17:16:27.367750+00:00"
+    },
+    {
+      "adapterKey": "tum",
+      "universityId": "technical-university-of-munich",
+      "sourceUrl": "https://www.tum.de/en/studies/degree-programs?tx_solr%5Bq%5D=&graduation=Master",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 115,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 2,
+      "exactWindowCount": 2,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 114,
+      "pendingCandidateCount": 115,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 2,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-16T14:15:35.990069+00:00"
+    },
+    {
+      "adapterKey": "ubc",
+      "universityId": "university-of-british-columbia",
+      "sourceUrl": "https://www.grad.ubc.ca/prospective-students/graduate-degree-programs",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 228,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 134,
+      "exactWindowCount": 134,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 140,
+      "pendingCandidateCount": 228,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T02:26:38.825733+00:00"
+    },
+    {
+      "adapterKey": "uchicago",
+      "universityId": "university-of-chicago",
+      "sourceUrl": "https://grad.uchicago.edu/admissions/programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 39,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 39,
+      "pendingCandidateCount": 39,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T14:02:03.212658+00:00"
+    },
+    {
+      "adapterKey": "ucl",
+      "universityId": "ucl-university-college-london",
+      "sourceUrl": "https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees?query=",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 522,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 522,
+      "pendingCandidateCount": 522,
+      "publishedProgrammeCount": 10,
+      "publishedWindowCount": 20,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T17:40:05.845298+00:00"
+    },
+    {
+      "adapterKey": "ucla",
+      "universityId": "university-of-california-los-angeles-ucla",
+      "sourceUrl": "https://grad.ucla.edu/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 104,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 104,
+      "pendingCandidateCount": 104,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T02:52:19.567862+00:00"
+    },
+    {
+      "adapterKey": "um",
+      "universityId": "universiti-malaya-um",
+      "sourceUrl": "https://study.um.edu.my/programmes",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 136,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 136,
+      "exactWindowCount": 136,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 135,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T03:58:16.109339+00:00"
+    },
+    {
+      "adapterKey": "umich",
+      "universityId": "university-of-michigan-ann-arbor",
+      "sourceUrl": "https://rackham.umich.edu/programs-of-study/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 86,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 86,
+      "pendingCandidateCount": 86,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T03:09:09.197470+00:00"
+    },
+    {
+      "adapterKey": "unsw",
+      "universityId": "the-university-of-new-south-wales",
+      "sourceUrl": "https://www.unsw.edu.au/study.sitemap.xml",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 120,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 120,
+      "pendingCandidateCount": 120,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 3,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T13:25:56.885600+00:00"
+    },
+    {
+      "adapterKey": "upenn",
+      "universityId": "university-of-pennsylvania",
+      "sourceUrl": "https://catalog.upenn.edu/programs/",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 159,
+      "windowStatus": "partial-exact-window-candidates",
+      "candidateWindowCount": 30,
+      "exactWindowCount": 17,
+      "missingOpeningDateCount": 13,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 130,
+      "pendingCandidateCount": 143,
+      "publishedProgrammeCount": 17,
+      "publishedWindowCount": 18,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 13,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-15T00:47:37.357985+00:00"
+    },
+    {
+      "adapterKey": "uq",
+      "universityId": "the-university-of-queensland",
+      "sourceUrl": "https://study.uq.edu.au/sitemap.xml",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 89,
+      "windowStatus": "inferred-openings-only",
+      "candidateWindowCount": 285,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 285,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 3,
+      "pendingCandidateCount": 3,
+      "publishedProgrammeCount": 87,
+      "publishedWindowCount": 151,
+      "integrationStatus": "published-windows",
+      "limitations": [
+        {
+          "code": "opening-date-inferred",
+          "count": 285,
+          "message": "Opening dates use configured defaults and cannot be batch-promoted."
+        }
+      ],
+      "lastSuccessAt": "2026-07-06T13:50:25.975297+00:00"
+    },
+    {
+      "adapterKey": "utokyo",
+      "universityId": "the-university-of-tokyo",
+      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/graduate_schools.html",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 86,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 7,
+      "exactWindowCount": 7,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 80,
+      "pendingCandidateCount": 85,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-16T17:24:28.983207+00:00"
+    },
+    {
+      "adapterKey": "uva",
+      "universityId": "the-university-of-amsterdam",
+      "sourceUrl": "https://www.uva.nl/en/education/master-s/master-s-programmes/masters-programmes.html",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 201,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 201,
+      "pendingCandidateCount": 201,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T04:42:06.509963+00:00"
+    },
+    {
+      "adapterKey": "yale",
+      "universityId": "yale-university",
+      "sourceUrl": "https://gsas.yale.edu/programs-of-study",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 23,
+      "windowStatus": "closing-dates-only",
+      "candidateWindowCount": 23,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 23,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 23,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "official-opening-date-missing",
+          "count": 23,
+          "message": "Closing dates were found without exact official opening dates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-16T10:32:34.341257+00:00"
+    },
+    {
+      "adapterKey": "yonsei",
+      "universityId": "yonsei-university",
+      "sourceUrl": "https://graduate.yonsei.ac.kr/graduate_en/admission/forein_schedule.do",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 109,
+      "windowStatus": "exact-window-candidates",
+      "candidateWindowCount": 108,
+      "exactWindowCount": 108,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 0,
+      "pendingCandidateCount": 108,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 1,
+      "integrationStatus": "published-windows",
+      "limitations": [],
+      "lastSuccessAt": "2026-07-17T01:08:42.131081+00:00"
+    },
+    {
+      "adapterKey": "zju",
+      "universityId": "zhejiang-university",
+      "sourceUrl": "https://iczu.zju.edu.cn/admissionsen/wasterwswwegreewwrograms/list.htm",
+      "catalogueStatus": "discovered",
+      "catalogueProgrammeCount": 284,
+      "windowStatus": "catalogue-only",
+      "candidateWindowCount": 0,
+      "exactWindowCount": 0,
+      "missingOpeningDateCount": 0,
+      "inferredOpeningDateCount": 0,
+      "unclassifiedOpeningBasisCount": 0,
+      "noDeadlineProgrammeCount": 284,
+      "pendingCandidateCount": 284,
+      "publishedProgrammeCount": 1,
+      "publishedWindowCount": 0,
+      "integrationStatus": "published-programmes-only",
+      "limitations": [
+        {
+          "code": "no-window-candidates",
+          "count": 1,
+          "message": "Catalogue discovery produced no application-window candidates."
+        }
+      ],
+      "lastSuccessAt": "2026-07-17T02:37:57.414315+00:00"
+    }
+  ]
+}
