@@ -19,7 +19,8 @@
       "windows": [],
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": ""
+      "evidenceExcerpt": "",
+      "evidenceHash": "cba1c43f579f6aebe99ccc0a65f9fbc03f0c3dfd5163f3499f72c787bb370015"
     },
     {
       "id": "new-programme:polyu-engineering-business-management-msc-pgd",
@@ -40,7 +41,8 @@
       "windows": [],
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": ""
+      "evidenceExcerpt": "",
+      "evidenceHash": "1954d93640fd66aa6a7b5f0bbba990129471503378ffc21c8bea15720b6e8159"
     },
     {
       "id": "new-programme:polyu-marriage-and-family-therapy-ma",
@@ -61,7 +63,8 @@
       "windows": [],
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": ""
+      "evidenceExcerpt": "",
+      "evidenceHash": "601f42962e2f83415207dcf2f8788ebf5770a54df3761cbad5df69c117d0603c"
     },
     {
       "id": "new-programme:polyu-supply-chain-and-logistics-management-msc-pgd",
@@ -82,7 +85,8 @@
       "windows": [],
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": ""
+      "evidenceExcerpt": "",
+      "evidenceHash": "4ce565a595c4411ac3edf2f933fd6aba22d8b8665032647e4eab1ee5e01a8038"
     },
     {
       "id": "new-programme:polyu-accountancy-msc",
@@ -108,7 +112,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -117,14 +122,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "25a7eb868ad372d1621732cd16feaafeb995200896fed10df731cda5290640ea"
     },
     {
       "id": "new-programme:polyu-accounting-and-finance-analytics-msc",
@@ -150,7 +157,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -159,14 +167,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "bd8e079d197d2afae7ac6e7c79a69124653042b13aada87915a555485cc18fc4"
     },
     {
       "id": "new-programme:polyu-actuarial-and-investment-science-msc",
@@ -192,7 +202,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -201,14 +212,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "0f271478d68a88dd6ae219c14455238b4b4e99e50d1967fe0d0298469df20f07"
     },
     {
       "id": "new-programme:polyu-advanced-photonic-technology-and-materials-msc",
@@ -234,7 +247,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -243,14 +257,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "6add158d726c4fedec84336ca3b72cf3c95ba77fcd42bffe4422e726b5413919"
     },
     {
       "id": "new-programme:polyu-advanced-physiotherapy-msc",
@@ -276,7 +292,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -285,14 +302,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5830a35133b90cdbf86b37328bd78d60ecf2d0cc9ac0ae9fa6a100e9670a172c"
     },
     {
       "id": "new-programme:polyu-advanced-rehabilitation-sciences-msc",
@@ -318,7 +337,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -327,14 +347,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "0ec074c27724e29fbaccfbc36bbedbe90ddcf6ede1b0b157e2a602aa12dc6a3c"
     },
     {
       "id": "new-programme:polyu-aerospace-engineering-msc",
@@ -360,7 +382,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -369,14 +392,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "91331802eab3bd50b0cf3d6fe4d3c4cf14de4d4199c53e96bd02097426e05def"
     },
     {
       "id": "new-programme:polyu-agentic-ai-systems-msc",
@@ -402,7 +427,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -411,14 +437,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "bac20f30ac54c80ba4ffa43028e67fb41ed09e1c9ff86a0a902abd9882bf170e"
     },
     {
       "id": "new-programme:polyu-applied-psychology-diverse-learning-needs-master",
@@ -444,7 +472,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -453,14 +482,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "2c09823b0f580192a3bce29286374bc2547a28b61bc6abef64261ea4eeec5419"
     },
     {
       "id": "new-programme:polyu-applied-psychology-master",
@@ -486,7 +517,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -495,14 +527,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "bf8c4e42a610136f01e40fc5e704c55a69a69dfe91905bbfa0b740ef13b5c2a3"
     },
     {
       "id": "new-programme:polyu-artificial-intelligence-and-big-data-computing-msc",
@@ -528,7 +562,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -537,14 +572,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "2e2c6ee50963823a954128ce455a5a64d3b34b3adbe2099dc2cc124fd4a277d6"
     },
     {
       "id": "new-programme:polyu-asset-and-wealth-management-msc",
@@ -570,7 +607,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -579,14 +617,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "dc8455c5f687f08f103608e34a0685c22588f7649f6961910db95c444f225c87"
     },
     {
       "id": "new-programme:polyu-aviation-engineering-and-operations-management-msc",
@@ -612,7 +652,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -621,14 +662,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "10a36cb4d9904a0ffb8d8b7366bd052f7e13d38c84b048c5725143902285bdcf"
     },
     {
       "id": "new-programme:polyu-bilingual-corporate-communication-ma",
@@ -654,7 +697,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -663,14 +707,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "56031ad7d0dd9f771a934bf466f7230b534f889f3d30657933e34aa51d1f6d51"
     },
     {
       "id": "new-programme:polyu-biomedical-engineering-msc",
@@ -696,7 +742,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -705,14 +752,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "1c3df47d90de8724958a0def84779cc8590a003d50080a52a3c8c3f7ffe8a5c9"
     },
     {
       "id": "new-programme:polyu-biopharmaceutical-development-and-commercialization-internship-in-greater-bay-area-via-polyu-zhongshan-technology-and-innovation-research-institute-msc",
@@ -738,7 +787,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -747,14 +797,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "135da92bf03fa0157c5852a24439157dc7d26a86eecf5ab80b3b38e325f77ca3"
     },
     {
       "id": "new-programme:polyu-biopharmaceutical-development-and-commercialization-msc",
@@ -780,7 +832,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -789,14 +842,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "86d8c80cae41617cd9ef3a774ce31e51dc44eb00d77696decd0c48515764e514"
     },
     {
       "id": "new-programme:polyu-blockchain-technology-msc",
@@ -822,7 +877,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -831,14 +887,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "0d0a4ed20cbdcfc16b6bf151ffaf5e208b470af417db8bbf57d8d4d1cf51807f"
     },
     {
       "id": "new-programme:polyu-brain-machine-interface-msc",
@@ -864,7 +922,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -873,14 +932,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "14bc9544d5b5dd405d9f8e40e24549835911f1a5c64c2059f0684654ddb66b9f"
     },
     {
       "id": "new-programme:polyu-building-services-engineering-msc",
@@ -906,7 +967,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -915,14 +977,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "aaf84dbca51ae8355f6a0ea5011f0488233d46d556778b179f048192d22c19ca"
     },
     {
       "id": "new-programme:polyu-business-analytics-msc",
@@ -948,7 +1012,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -957,14 +1022,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "1274f81de03e79d588a29bb5cb9b5a32dacba20e23c5540cab6bb3d50dff328a"
     },
     {
       "id": "new-programme:polyu-business-management-msc",
@@ -990,7 +1057,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -999,14 +1067,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "858802973480c540eceec70beb9cd56736b68d6ad5754c12b68c958d3ed11e5a"
     },
     {
       "id": "new-programme:polyu-carbon-neutral-cities-and-urban-sustainability-msc",
@@ -1032,7 +1102,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1041,14 +1112,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "ccb67627ab8139aea029009c7eced74b9352928e67235dce1d6424e199e9bb62"
     },
     {
       "id": "new-programme:polyu-chinese-culture-ma",
@@ -1074,7 +1147,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1083,14 +1157,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "34276dea507c46604b6fa82ac6403d006cb0df6842164dcd9fa94c9a47d50262"
     },
     {
       "id": "new-programme:polyu-chinese-language-and-literature-ma-pgd",
@@ -1116,7 +1192,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1125,14 +1202,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "b5769478b63fb7410bf191463d16114ede0f64f13e9d9686b29d54d03eaf1751"
     },
     {
       "id": "new-programme:polyu-chinese-linguistics-ma",
@@ -1158,7 +1237,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1167,14 +1247,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "be4a2f321cd0374f059bffabd6513032f776f8da270160566d4cc87555cb1d59"
     },
     {
       "id": "new-programme:polyu-civil-engineering-msc",
@@ -1200,7 +1282,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1209,14 +1292,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "7fc87c9e94531ca4f2bd1d899ffd0d7d2bab02090d52fc94ad2aa5c30674f48f"
     },
     {
       "id": "new-programme:polyu-construction-and-real-estate-msc",
@@ -1242,7 +1327,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1251,14 +1337,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "07d13ca5354ed0ed223d80c13e05856397c5173e35a9901e92a2b7e6be89bdf0"
     },
     {
       "id": "new-programme:polyu-corporate-governance-master",
@@ -1284,7 +1372,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1293,14 +1382,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "ac0338fe82de89ab834ad69a751644aeacbbb390019d7592393f01ff6860963c"
     },
     {
       "id": "new-programme:polyu-cybersecurity-msc",
@@ -1326,7 +1417,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1335,14 +1427,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "c0faf7055e326d9aac192159eecee17f9010f0ac1ae28b99bb00d7d8994e429d"
     },
     {
       "id": "new-programme:polyu-data-science-and-analytics-msc",
@@ -1368,7 +1462,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1377,14 +1472,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "6f2c26223df0fa75bba97ac0ef06af439db2ad70bd2838a8ef7f54d6a4318b22"
     },
     {
       "id": "new-programme:polyu-design-master",
@@ -1410,7 +1507,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1419,14 +1517,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "16601e9988f45b3a3c912ddf6db4e090c9fdc3b235d6a528dc2ab043b35b97d1"
     },
     {
       "id": "new-programme:polyu-dietetics-msc",
@@ -1452,7 +1552,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1461,14 +1562,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "a2b93ffec5c550ad4cfe2ad368221299a68969c463e68ee24ba3c17857fbdeb1"
     },
     {
       "id": "new-programme:polyu-economics-msc",
@@ -1494,7 +1597,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1503,14 +1607,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "b0044c71d5e6d97cceec83d8eced7aac2308dd5036da1a30dc0a35c0170cb8d3"
     },
     {
       "id": "new-programme:polyu-electric-vehicles-msc",
@@ -1536,7 +1642,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1545,14 +1652,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "9061e311b163633ac5b7269098b185f1e328cb5ae0736f02f54fb3db09e0afcc"
     },
     {
       "id": "new-programme:polyu-electrical-engineering-msc",
@@ -1578,7 +1687,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1587,14 +1697,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "4c98773dcd37beb16eb405b703a5fe484c5b2d400e0d26adaca2747bcb3030d2"
     },
     {
       "id": "new-programme:polyu-electronic-and-information-engineering-msc",
@@ -1620,7 +1732,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1629,14 +1742,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "0adafe3e3e90514f6056252e2dea98b95488ab8f40558f061f848f714755403d"
     },
     {
       "id": "new-programme:polyu-english-studies-for-the-professions-ma",
@@ -1662,7 +1777,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1671,14 +1787,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "42c5f9e6945214d6aabe59992e71b5b98fd423a692f092caf2b68ebe04732326"
     },
     {
       "id": "new-programme:polyu-environmental-management-and-engineering-msc",
@@ -1704,7 +1822,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1713,14 +1832,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5d0037086b9436ce879ee21f70e3e49108dd304f8b2ee8816bb63fba893f04bb"
     },
     {
       "id": "new-programme:polyu-esg-and-sustainability-msc",
@@ -1746,7 +1867,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1755,14 +1877,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "e2c608f78adf8e08bc470bbd4c87f486675184c161482dc9f74e9fe5394e6d3d"
     },
     {
       "id": "new-programme:polyu-facility-management-msc",
@@ -1788,7 +1912,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1797,14 +1922,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "cd6dca416d5bd49f8ea24bfeba5951e2f82e85b39752d7b5074efde01cb716fb"
     },
     {
       "id": "new-programme:polyu-fashion-design-ma",
@@ -1830,7 +1957,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1839,14 +1967,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "d4fb6716a64d2ce870b0ca1109200f0e177b14125be3d90b6b7647a536a3f4e0"
     },
     {
       "id": "new-programme:polyu-finance-corporate-finance-master",
@@ -1872,7 +2002,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1881,14 +2012,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "8f8b46afa6bae2124e32427740b317bf1a88abc880ea969c7ace35479d35c668"
     },
     {
       "id": "new-programme:polyu-finance-investment-management-master",
@@ -1914,7 +2047,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1923,14 +2057,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "76a5af2c727d07d6ce88f211566ca69dedff1381cefc3ec688704a1475324916"
     },
     {
       "id": "new-programme:polyu-fire-and-safety-engineering-msc",
@@ -1956,7 +2092,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -1965,14 +2102,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "6b41699154ad4cdf9e797eb8475bc6243c96473991878106b93f046e01acbff6"
     },
     {
       "id": "new-programme:polyu-generative-ai-and-the-humanities-msc",
@@ -1998,7 +2137,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2007,14 +2147,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "323d93c781eeca9708da47cf9c78f23dfde494eded16b18fd4ca1b2b4707ebfc"
     },
     {
       "id": "new-programme:polyu-geomatics-msc",
@@ -2040,7 +2182,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2049,14 +2192,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5885bb7d59bfd825b2532f981c0d548a32a79f0b43541e6333b878e78f8480c9"
     },
     {
       "id": "new-programme:polyu-global-business-and-decision-analysis-msc",
@@ -2082,7 +2227,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2091,14 +2237,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "f864e8c205446b5c829425a0585f6fdc9570aa5e3dd32141806a5c60afb88ece"
     },
     {
       "id": "new-programme:polyu-global-communication-and-event-hosting-arts-ma",
@@ -2124,7 +2272,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2133,14 +2282,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "caa174a3ae9701a66d34725832ce806b6ba8f885fd2ee17e59b22c8f0a8f932d"
     },
     {
       "id": "new-programme:polyu-global-fashion-management-ma",
@@ -2166,7 +2317,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2175,14 +2327,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5954d9a0bf1d91f8a18d192e531b0f844f132ce99488e7214829b6db13e1a492"
     },
     {
       "id": "new-programme:polyu-global-food-safety-management-and-risk-analysis-msc",
@@ -2208,7 +2362,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2217,14 +2372,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "86ccd5f6c2e4c10db425be2540420fe7a4f8cf6227630a868a28560fbf5bd76d"
     },
     {
       "id": "new-programme:polyu-global-hospitality-business-msc",
@@ -2250,7 +2407,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2259,14 +2417,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "32c64947723e8ffed539a77d16fff3b726e397c86450a3a2c23798d47916a17c"
     },
     {
       "id": "new-programme:polyu-global-supply-chain-management-msc-pgd",
@@ -2292,7 +2452,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2301,14 +2462,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "ea043a7b133c441e7e88476d857272387d5ee452d92e8befa2837767b7f4923d"
     },
     {
       "id": "new-programme:polyu-guidance-and-counselling-ma",
@@ -2334,7 +2497,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2343,14 +2507,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "b663ef395a350328bdd541f4d015813c561321b805e40da24a754279d6a95f72"
     },
     {
       "id": "new-programme:polyu-health-informatics-msc",
@@ -2376,7 +2542,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2385,14 +2552,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "6edfeffe2a03e95a5afa9d61d10f8b248bfd72216bb1ea6a5b738d8236f27388"
     },
     {
       "id": "new-programme:polyu-hospitality-and-tourism-management-msc-scheme",
@@ -2418,7 +2587,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2427,14 +2597,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5871ef17c01f59dd67eed258ff1c909698ad04a530baf256e9b39396c0c4528d"
     },
     {
       "id": "new-programme:polyu-human-resource-management-msc",
@@ -2460,7 +2632,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2469,14 +2642,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "e260860e89aa53e6d34e81ed0c767fdec9fdc4225e4167362ff64738b1c09337"
     },
     {
       "id": "new-programme:polyu-industrial-logistics-systems-msc",
@@ -2502,7 +2677,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2511,14 +2687,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "38200da7e5af9470345cb3d19bd1cd4086cac9f11341ffc6eb853d38aac17c5d"
     },
     {
       "id": "new-programme:polyu-innovative-multimedia-entertainment-msc",
@@ -2544,7 +2722,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2553,14 +2732,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "e8d31639305e1adae135fad1ab482e82b141a636c544220965c3655b40020913"
     },
     {
       "id": "new-programme:polyu-intelligent-construction-msc",
@@ -2586,7 +2767,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2595,14 +2777,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "a7de7579f76fb5eca7b97d0c342afd5f4515b9166c2231e55bb2977023927268"
     },
     {
       "id": "new-programme:polyu-intelligent-robotics-engineering-msc",
@@ -2628,7 +2812,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2637,14 +2822,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "d01c022ed565231b6624c8983175551c5a9c0a8bd11b0e576905abd6a5cc4a2a"
     },
     {
       "id": "new-programme:polyu-intelligent-wearable-technology-msc-pgd",
@@ -2670,7 +2857,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2679,14 +2867,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "c9268198d573be8829f654bf1ce6a72d73de32ff6609830b9ea18cfa3f54f7ba"
     },
     {
       "id": "new-programme:polyu-international-management-and-leadership-msc",
@@ -2712,7 +2902,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2721,14 +2912,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "0b4557597b5bb312eac6fcfee35ef0774c91e81f5e0435a3159785caa692fa73"
     },
     {
       "id": "new-programme:polyu-international-shipping-and-transport-logistics-msc",
@@ -2754,7 +2947,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2763,14 +2957,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "c63f37d0c7ba9a51070525b4b376fbcbed870f734017258e54602d99deb74f3c"
     },
     {
       "id": "new-programme:polyu-international-shipping-and-transport-logistics-msc-pgd",
@@ -2796,7 +2992,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2805,14 +3002,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "7e9e1eb4bc0907a70ed20abc01f06fbc5ef7850270becf367dc73832dca0d2a2"
     },
     {
       "id": "new-programme:polyu-knowledge-and-technology-management-msc",
@@ -2838,7 +3037,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2847,14 +3047,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "bd19a3de62ad4b46715eb73a5f4bef5ef230f0da09db5fee03073c966af5e9e8"
     },
     {
       "id": "new-programme:polyu-low-altitude-economy-msc",
@@ -2880,7 +3082,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2889,14 +3092,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "dd6b5e73f994c1dacea7021866a14423f13713a68ad4334046aeeb5383c5cff0"
     },
     {
       "id": "new-programme:polyu-marketing-management-msc",
@@ -2922,7 +3127,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2931,14 +3137,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5bb0c14d03f9ddb9a0d590bf07f518e41a913cdea67619d1393b5af5932a1396"
     },
     {
       "id": "new-programme:polyu-mathematics-for-artificial-intelligence-technology-msc",
@@ -2964,7 +3172,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -2973,14 +3182,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "02f831bc5869f4cefcf3ae9d45710f8a72ac4cdb535ce123abe0484471196511"
     },
     {
       "id": "new-programme:polyu-mechanical-engineering-msc",
@@ -3006,7 +3217,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3015,14 +3227,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "8df9cd2c8b17f053e65ac3694de7c629899dbe879883c46ff0e5726fc4594272"
     },
     {
       "id": "new-programme:polyu-medical-data-science-msc",
@@ -3048,7 +3262,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3057,14 +3272,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5042280e6738f4bb55ac43d6f9217be661e3d87a244b24a6b04c663dd7c2f403"
     },
     {
       "id": "new-programme:polyu-medical-imaging-and-radiation-science-msc",
@@ -3090,7 +3307,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3099,14 +3317,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "f3c5f56c10ff72ee6b820e2c6a7988854a30660b1dcf14690f08f77523fda45c"
     },
     {
       "id": "new-programme:polyu-medical-imaging-master",
@@ -3132,7 +3352,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3141,14 +3362,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "0cd017a2c777accc5e9545bf09105b0627ed45d3ad5add50a77fdf24f47d19c1"
     },
     {
       "id": "new-programme:polyu-medical-laboratory-science-master",
@@ -3174,7 +3397,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3183,14 +3407,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "c02dbb57a6fa2451444fa88970490a94f156346c9d8aace4f8a8601fc4fc79ab"
     },
     {
       "id": "new-programme:polyu-medical-laboratory-science-msc",
@@ -3216,7 +3442,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3225,14 +3452,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "6e44b1b38974ddf38c67137a5461bd7579e33c7c1fb18d2f28f0fa7952b9a7d3"
     },
     {
       "id": "new-programme:polyu-medical-physics-msc",
@@ -3258,7 +3487,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3267,14 +3497,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "88b3243eb746c2d934661bb0d5b67c7a406084009d9d6513dc91cef01b5da670"
     },
     {
       "id": "new-programme:polyu-mental-health-ma",
@@ -3300,7 +3532,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3309,14 +3542,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "0c356213a5d581d6af13e29b229b333c78fc6336d6a0776cae18161dc99672a5"
     },
     {
       "id": "new-programme:polyu-metaverse-technology-msc",
@@ -3342,7 +3577,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3351,14 +3587,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "01971c91e13ff84114c6597717d1014eff16181ce35d6fe05a58eeb769750f6c"
     },
     {
       "id": "new-programme:polyu-microelectronics-and-quantum-systems-engineering-msc",
@@ -3384,7 +3622,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3393,14 +3632,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "f0f45eb6443668dbea36da33b234f3d1d2ab7676a7c044725106fa773041d1ef"
     },
     {
       "id": "new-programme:polyu-microelectronics-technology-and-materials-msc",
@@ -3426,7 +3667,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3435,14 +3677,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "38f70fc51b4801c1c69107fe45d61f72b90133c8cead17b1e335a7d52fe950c2"
     },
     {
       "id": "new-programme:polyu-nursing-master",
@@ -3468,7 +3712,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3477,14 +3722,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "8dd5737981884a028055e05dbd00effc6976e777cc61da9171e45e87ae3080e8"
     },
     {
       "id": "new-programme:polyu-nursing-msc",
@@ -3510,7 +3757,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3519,14 +3767,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "141679255590a9abca5bf7e108ef3f1dfdb6513723c1a98b379e16bc7a1c4f9d"
     },
     {
       "id": "new-programme:polyu-nutrition-and-healthy-ageing-msc",
@@ -3552,7 +3802,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3561,14 +3812,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5522409821e26f25d425f260e1c65da7e1e7562f29f1caea8c73182f12843bfd"
     },
     {
       "id": "new-programme:polyu-nutrition-and-healthy-ageing-nutrition-in-practice-msc",
@@ -3594,7 +3847,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3603,14 +3857,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "fb3cbfefbe7b1f85367d2eae8504406570a63aab55e810c030c2c5f4500113dc"
     },
     {
       "id": "new-programme:polyu-operational-research-and-risk-analysis-msc",
@@ -3636,7 +3892,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3645,14 +3902,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "b306e28ca52ad466e369cd5e1a0e84df4ff07f1ee91a0ab2f4644825604deb04"
     },
     {
       "id": "new-programme:polyu-operations-management-msc",
@@ -3678,7 +3937,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3687,14 +3947,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "e2a6d130e192ff304756d3b9ef8ecbe4c0531a6784840e1a15bd44fef3f46710"
     },
     {
       "id": "new-programme:polyu-professional-accounting-master-pgd",
@@ -3720,7 +3982,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3729,14 +3992,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "c8768916a19faf48f655d8dbee9b5ecf5b66a9706ff57c990b4cfed58326f919"
     },
     {
       "id": "new-programme:polyu-project-management-msc",
@@ -3762,7 +4027,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3771,14 +4037,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "e546baa910258f2d192957ea14e36b04519cfe77959f004677cdb8f4334caa9e"
     },
     {
       "id": "new-programme:polyu-quantitative-finance-and-fintech-msc",
@@ -3804,7 +4072,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3813,14 +4082,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "9260c005a2c584c1b57756ff3e61c5950a70c9933aaeec133e74c7b7e7060aab"
     },
     {
       "id": "new-programme:polyu-satellite-engineering-msc",
@@ -3846,7 +4117,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3855,14 +4127,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "5151a87f861b7c4edc602d1d21237e4b1124779087ee4ea2e355cb28594d3cde"
     },
     {
       "id": "new-programme:polyu-school-and-community-psychology-ma",
@@ -3888,7 +4162,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3897,14 +4172,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "2f566cad46dfa3687db4690abe850b3bc798a4ac331de0eeefc5e757ee5bab28"
     },
     {
       "id": "new-programme:polyu-smart-manufacturing-msc",
@@ -3930,7 +4207,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3939,14 +4217,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "badc2d73a6edc891af042bad50a889d6ea8e95e5d766147a5f60e38be9b0d70e"
     },
     {
       "id": "new-programme:polyu-social-policy-and-social-development-ma",
@@ -3972,7 +4252,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -3981,14 +4262,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "445df3f1d62571134d55d5982fd925fe58c1b1aa8feb9fd8da41d6fec3bf2ed8"
     },
     {
       "id": "new-programme:polyu-social-work-master",
@@ -4014,7 +4297,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4023,14 +4307,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "95d9e59f7d747c0d6571e60ca971660508e4e3c0143c794bb13b6bd6aecab4f4"
     },
     {
       "id": "new-programme:polyu-sports-technology-and-management-msc",
@@ -4056,7 +4342,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4065,14 +4352,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "04de8c3a2cb516c9e1821930bd41fe8a9f1b7f14935a5f6cc076aa85cd6b3199"
     },
     {
       "id": "new-programme:polyu-sustainable-energy-msc",
@@ -4098,7 +4387,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4107,14 +4397,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "00d1c1ee2d2148b12f007b5217cd4ef18ab9d95e21c4353d52045e7111841efb"
     },
     {
       "id": "new-programme:polyu-sustainable-fashion-and-innovation-ma",
@@ -4140,7 +4432,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4149,14 +4442,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "9e075d92adaaa5f3d12e08b05d52a83f6f0d8934702fb75827016da0cc34c0dc"
     },
     {
       "id": "new-programme:polyu-sustainable-technology-for-carbon-neutrality-msc",
@@ -4182,7 +4477,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4191,14 +4487,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "bbbfc5f98193026733cdc04072541ae4c025422299e810211e4dc543edf0b073"
     },
     {
       "id": "new-programme:polyu-teaching-chinese-as-a-foreign-language-ma",
@@ -4224,7 +4522,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4233,14 +4532,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "b33c66da5d7328c9d42614c29a05f9e0fb712b235dc16d251a23ca06f579c24a"
     },
     {
       "id": "new-programme:polyu-technology-entrepreneurship-master",
@@ -4266,7 +4567,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4275,14 +4577,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "ca73b601d5c15b557cba965d5a405c544bc3e72e2ab1da1e58b1efb97e4c5c9c"
     },
     {
       "id": "new-programme:polyu-translation-and-language-technology-ma",
@@ -4308,7 +4612,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4317,14 +4622,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "e0b4ba38a555d284b56690cc687ac5944563d99b926805aae5fe0cc482d60658"
     },
     {
       "id": "new-programme:polyu-urban-informatics-and-smart-cities-msc",
@@ -4350,7 +4657,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4359,14 +4667,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "f0f119ab8370f1ecf78256ed7e5e0208f832954cc5679de936cf848e8ca4b853"
     },
     {
       "id": "new-programme:polyu-vision-science-and-innovation-msc",
@@ -4392,7 +4702,8 @@
             "domestic-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         },
         {
           "intake": "September 2027",
@@ -4401,14 +4712,16 @@
             "international-students"
           ],
           "opensAt": "2026-07-02",
-          "closesAt": "2026-10-20"
+          "closesAt": "2026-10-20",
+          "opensAtBasis": "legacy-unclassified"
         }
       ],
       "parseStatus": "parsed",
       "reviewReason": "Review the automatically discovered programme and application rounds.",
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
-      "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+      "reviewedAt": "2026-07-05T17:17:06.423915+00:00",
+      "evidenceHash": "bdebbc98caff2138104abca6dda35a4f275cf96e1e12734f56ce49117f88abe8"
     }
   ]
 }

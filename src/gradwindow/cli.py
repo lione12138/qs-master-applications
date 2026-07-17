@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .adapter_completion import generate_adapter_completion_report
 from .approvals import approve_programme_candidate, approve_window
+from .candidate_migration import migrate_programme_candidate_metadata
 from .candidate_review import programme_candidate_evidence_hash
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
@@ -114,6 +115,11 @@ def main() -> None:
         "adapter-completion",
         help="Generate the machine-readable dedicated-adapter completion report",
     )
+    candidate_migration = subparsers.add_parser(
+        "migrate-programme-candidates",
+        help="Add explicit opening provenance and evidence hashes to old candidates",
+    )
+    candidate_migration.add_argument("--dry-run", action="store_true")
     assisted_discovery = subparsers.add_parser(
         "discover-assisted",
         help="Search official domains and use DeepSeek to extract review candidates",
@@ -299,6 +305,11 @@ def main() -> None:
         print(json.dumps(report["summary"], ensure_ascii=False))
     elif args.command == "adapter-completion":
         report = generate_adapter_completion_report()
+        print(json.dumps(report["summary"], ensure_ascii=False))
+    elif args.command == "migrate-programme-candidates":
+        report = migrate_programme_candidate_metadata(dry_run=args.dry_run)
+        if not args.dry_run:
+            generate_adapter_completion_report()
         print(json.dumps(report["summary"], ensure_ascii=False))
     elif args.command == "pipeline":
         generate_predictions()

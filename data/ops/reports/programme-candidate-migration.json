@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "generatedAt": "2026-07-17T10:17:58.329517+00:00",
+    "dryRun": false,
+    "description": "Migration report for explicit programme-candidate opening provenance and evidence hashes. Legacy provenance is never upgraded to official."
+  },
+  "summary": {
+    "candidateCount": 9224,
+    "candidatesChanged": 9224,
+    "windowsMissingOpeningBasis": 2414,
+    "windowsMarkedLegacyUnclassified": 2211,
+    "evidenceHashesAdded": 9224,
+    "evidenceHashesUpdated": 0
+  }
+}

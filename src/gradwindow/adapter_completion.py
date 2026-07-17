@@ -67,7 +67,11 @@ def generate_adapter_completion_report(
             for window in windows
         )
         unclassified_opening_count = sum(
-            bool(window.get("opensAt")) and "opensAtBasis" not in window
+            bool(window.get("opensAt"))
+            and (
+                "opensAtBasis" not in window
+                or window.get("opensAtBasis") == "legacy-unclassified"
+            )
             for window in windows
         )
         no_deadline_count = sum(

@@ -2,7 +2,9 @@
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
     "updatedAt": "2026-07-17T06:20:00.604141+00:00",
-    "lastBatchReplaceRemoved": 98
+    "lastBatchReplaceRemoved": 98,
+    "metadataMigratedAt": "2026-07-17T10:17:58.329517+00:00",
+    "metadataVersion": 2
   },
   "partitioning": {
     "collectionKey": "items",
