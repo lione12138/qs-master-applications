@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 from .adapter_completion import generate_adapter_completion_report
+from .adapter_schedule import select_due_adapter_keys
 from .approvals import approve_programme_candidate, approve_window
 from .candidate_migration import migrate_programme_candidate_metadata
 from .candidate_review import programme_candidate_evidence_hash
@@ -21,6 +22,7 @@ from .intakes import migrate_application_intakes
 from .io import read_json
 from .monitor import monitor_universities, print_summary
 from .paths import (
+    ADAPTER_COMPLETION_REPORT_PATH,
     APPLICATION_SOURCE_STATE_PATH,
     GENERIC_PROGRAMME_DISCOVERY_CONFIG_PATH,
     PROGRAMME_CANDIDATES_PATH,
@@ -97,6 +99,12 @@ def main() -> None:
         action="append",
         help="Limit to a university id or configured name. Can be repeated.",
     )
+    generic_batch.add_argument(
+        "--role",
+        action="append",
+        choices=("primary", "fallback"),
+        help="Limit discovery to one configured role. Can be repeated.",
+    )
     generic_seeds = subparsers.add_parser(
         "discover-generic-seeds",
         help="Audit configured generic discovery seeds and recommend replacements",
@@ -133,7 +141,18 @@ def main() -> None:
     pipeline = subparsers.add_parser("pipeline", help="Run the daily pipeline")
     pipeline.add_argument("--workers", type=int, default=16)
     pipeline.add_argument("--skip-monitor", action="store_true")
+    pipeline.add_argument("--skip-programme-discovery", action="store_true")
     pipeline.add_argument("--skip-build", action="store_true")
+    scheduled_discovery = subparsers.add_parser(
+        "discover-scheduled-programmes",
+        help="Refresh a bounded set of stale dedicated adapters",
+    )
+    scheduled_discovery.add_argument(
+        "--tier", choices=("active", "catalogue"), required=True
+    )
+    scheduled_discovery.add_argument("--min-age-days", type=int)
+    scheduled_discovery.add_argument("--max-adapters", type=int)
+    scheduled_discovery.add_argument("--dry-run", action="store_true")
     subparsers.add_parser("coverage", help="Generate QS top-200 coverage metrics")
     subparsers.add_parser(
         "predictions", help="Generate non-official next-cycle estimates"
@@ -225,6 +244,7 @@ def main() -> None:
             dry_run=args.dry_run,
             replace_existing=args.replace_existing,
             only=set(args.only) if args.only else None,
+            roles=set(args.role) if args.role else None,
         )
         print(json.dumps(report["summary"], ensure_ascii=False))
     elif args.command == "discover-generic-seeds":
@@ -319,6 +339,7 @@ def main() -> None:
             print_summary(
                 monitor_application_sources(workers=max(1, args.workers // 2))
             )
+        if not args.skip_programme_discovery:
             discovery_reports, successful_dedicated_ids = _run_dedicated_discovery()
             for discovery_report in discovery_reports:
                 print(json.dumps(discovery_report, ensure_ascii=False))
@@ -349,6 +370,61 @@ def main() -> None:
         )
         if not args.skip_build:
             print(f"Wrote site: {build_site()}")
+    elif args.command == "discover-scheduled-programmes":
+        defaults = {
+            "active": {"min_age_days": 7, "max_adapters": 8},
+            "catalogue": {"min_age_days": 30, "max_adapters": 6},
+        }[args.tier]
+        completion_report = (
+            read_json(ADAPTER_COMPLETION_REPORT_PATH)
+            if ADAPTER_COMPLETION_REPORT_PATH.exists()
+            else generate_adapter_completion_report()
+        )
+        adapter_keys = select_due_adapter_keys(
+            completion_report,
+            tier=args.tier,
+            min_age_days=(
+                args.min_age_days
+                if args.min_age_days is not None
+                else defaults["min_age_days"]
+            ),
+            max_adapters=(
+                args.max_adapters
+                if args.max_adapters is not None
+                else defaults["max_adapters"]
+            ),
+        )
+        reports, successful_ids = _run_selected_dedicated_discovery(
+            adapter_keys,
+            dry_run=args.dry_run,
+        )
+        selected_university_ids = {
+            PROGRAMME_ADAPTERS[key]().university_id for key in adapter_keys
+        }
+        fallback_report = None
+        if selected_university_ids:
+            fallback_report = run_generic_discovery_batch(
+                dry_run=args.dry_run,
+                only=selected_university_ids,
+                roles={"fallback"},
+                successful_dedicated_university_ids=successful_ids,
+            )
+        if not args.dry_run and adapter_keys:
+            generate_adapter_completion_report()
+        print(
+            json.dumps(
+                {
+                    "tier": args.tier,
+                    "selectedAdapters": adapter_keys,
+                    "results": reports,
+                    "fallbackSummary": (
+                        fallback_report["summary"] if fallback_report else None
+                    ),
+                    "dryRun": args.dry_run,
+                },
+                ensure_ascii=False,
+            )
+        )
 
 
 def _validate_or_exit() -> dict[str, int]:
@@ -417,7 +493,28 @@ def _run_dedicated_discovery(
     return reports, successful_university_ids
 
 
-def _programme_candidate_hash(candidate_id: str) -> dict[str, str]:
+def _run_selected_dedicated_discovery(
+    adapter_keys: list[str],
+    *,
+    dry_run: bool = False,
+) -> tuple[list[dict], set[str]]:
+    reports = [
+        _pipeline_discovery_report(
+            adapter_key,
+            PROGRAMME_ADAPTERS[adapter_key],
+            dry_run=dry_run,
+        )
+        for adapter_key in adapter_keys
+    ]
+    successful_university_ids = {
+        report["universityId"]
+        for report in reports
+        if report.get("status") == "ok" and report.get("universityId")
+    }
+    return reports, successful_university_ids
+
+
+def _programme_candidate_hash(candidate_id: str) -> dict[str, str | bool]:
     candidates = read_json(PROGRAMME_CANDIDATES_PATH, {"items": []})
     candidate = next(
         (
@@ -437,7 +534,7 @@ def _programme_candidate_hash(candidate_id: str) -> dict[str, str]:
         "candidateId": candidate_id,
         "status": candidate.get("status", "pending"),
         "evidenceHash": stored_hash,
-        "contentMatchesHash": str(stored_hash == computed_hash).lower(),
+        "contentMatchesHash": stored_hash == computed_hash,
     }
 
 

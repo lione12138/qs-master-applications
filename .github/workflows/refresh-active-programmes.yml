@@ -1,11 +1,14 @@
-name: Discover programmes for one university
+name: Refresh active programme adapters
 
 on:
+  schedule:
+    - cron: "37 6 * * *"
   workflow_dispatch:
     inputs:
-      university:
-        description: Adapter key from programme_adapters/registry.py
-        required: true
+      max_adapters:
+        description: Maximum stale active adapters to refresh
+        required: false
+        default: "8"
         type: string
 
 permissions:
@@ -17,7 +20,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  discover:
+  refresh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -27,36 +30,36 @@ jobs:
           cache: pip
       - name: Install
         run: pip install -e ".[dev]"
-      - name: Run selected programme adapter
-        if: inputs.university != 'oxford'
-        run: gradwindow discover-programmes --university "${{ inputs.university }}"
-      - name: Run Oxford assisted official-domain discovery
-        if: inputs.university == 'oxford'
+      - name: Refresh stale active adapters
         env:
+          MAX_ADAPTERS: ${{ inputs.max_adapters || '8' }}
           SERPER_SEARCH_API_KEY: ${{ secrets.SERPER_SEARCH_API_KEY }}
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          CLOUDFLARE_BROWSER_API_TOKEN: ${{ secrets.CLOUDFLARE_BROWSER_API_TOKEN }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        run: gradwindow discover-assisted --university university-of-oxford
+          CLOUDFLARE_BROWSER_API_TOKEN: ${{ secrets.CLOUDFLARE_BROWSER_API_TOKEN }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL }}
+        run: >-
+          gradwindow discover-scheduled-programmes
+          --tier active
+          --min-age-days 7
+          --max-adapters "$MAX_ADAPTERS"
       - name: Validate discovery outputs
         run: |
           gradwindow validate
           pytest -q
-      - name: Open or update programme discovery pull request
+      - name: Open or update active-adapter review pull request
         uses: peter-evans/create-pull-request@v8
         with:
-          commit-message: "data: refresh ${{ inputs.university }} programme discovery"
-          branch: automation/programme-discovery-${{ inputs.university }}
+          commit-message: "data: refresh active programme adapters"
+          branch: automation/active-programme-refresh
           delete-branch: true
-          title: "data: review ${{ inputs.university }} programme discovery"
+          title: "data: review active programme-adapter refresh"
           body: |
-            Runs the selected official programme adapter and updates its
-            programme candidates, exact-window candidates, and catalogue state.
-
-            Discovery outputs remain operational review data. No application
-            window is promoted into the published table by this workflow.
+            Refreshes a bounded set of adapters with current window candidates.
+            Each adapter is eligible only after seven days since its last
+            successful snapshot. Outputs remain review candidates.
           add-paths: |
             data/ops/programme-candidates.json
             data/ops/programme-candidates/

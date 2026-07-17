@@ -36,6 +36,7 @@ def run_generic_discovery_batch(
     dry_run: bool = False,
     replace_existing: bool = False,
     only: set[str] | None = None,
+    roles: set[str] | None = None,
     successful_dedicated_university_ids: set[str] | None = None,
 ) -> dict[str, Any]:
     config = read_json(config_path)
@@ -47,6 +48,7 @@ def run_generic_discovery_batch(
         entry
         for entry in config.get("schools", [])
         if entry.get("enabled", True)
+        and (roles is None or entry.get("discoveryRole", "primary") in roles)
         and (
             only is None
             or entry.get("universityId") in only

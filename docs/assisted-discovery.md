@@ -88,7 +88,9 @@ Run the configured generic batch, including enabled assisted fallbacks:
 gradwindow discover-generic-batch --replace-existing
 ```
 
-The scheduled `pipeline` command also runs the generic batch. Missing optional
+Full `pipeline` runs and the low-frequency catalogue workflow run the generic
+batch; scheduled dedicated refreshes run matching fallback entries only after a
+dedicated failure. Missing optional
 credentials result in a recorded `skipped` status instead of a failed workflow.
 
 ## Cost and trust gates

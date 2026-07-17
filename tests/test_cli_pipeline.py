@@ -92,4 +92,4 @@ def test_programme_candidate_hash_returns_one_locked_candidate(
 
     assert report["candidateId"] == candidate["id"]
     assert report["evidenceHash"] == candidate["evidenceHash"]
-    assert report["contentMatchesHash"] == "true"
+    assert report["contentMatchesHash"] is True

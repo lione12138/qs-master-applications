@@ -155,6 +155,16 @@ Daily-style pipeline:
 gradwindow pipeline --skip-build
 ```
 
+The scheduled high-frequency monitor excludes catalogue discovery:
+
+```powershell
+gradwindow pipeline --skip-build --skip-programme-discovery
+```
+
+Dedicated adapters with window candidates are refreshed on a bounded seven-day
+schedule; catalogue-only adapters use a bounded 30-day schedule. See
+`docs/operations-schedule.md`.
+
 ## Common workflows
 
 ### Add or correct an exact application window
@@ -230,8 +240,8 @@ Register each dedicated adapter exactly once in
 `programme_adapters/registry.py`; the CLI and manual Actions workflow derive
 their supported keys from that registry. Do not add another hard-coded school
 list to a workflow. If an enabled generic entry overlaps a dedicated adapter,
-set `discoveryRole: "fallback"`: the daily pipeline runs it only when the
-dedicated adapter fails.
+set `discoveryRole: "fallback"`: full or scheduled dedicated discovery runs it
+only when the corresponding dedicated adapter fails.
 
 #### Definition of done
 
@@ -374,7 +384,12 @@ Main checks:
   - site build
 - `.github/workflows/update-data.yml`
   - on push to relevant data/source files: predictions, validation, coverage
-  - on schedule/manual dispatch: daily pipeline, translations, data review PR
+  - on schedule/manual dispatch: high-frequency monitoring, translations, data
+    review PR
+- `.github/workflows/refresh-active-programmes.yml`
+  - bounded seven-day refresh for adapters with current window candidates
+- `.github/workflows/scan-programme-catalogues.yml`
+  - bounded 30-day catalogue-only scans and generic primary discovery
 - Cloudflare Workers/Pages deployment runs `gradwindow build-site` via Wrangler.
 
 When CI fails, reproduce the exact failing command locally first. Common quick

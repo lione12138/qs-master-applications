@@ -116,6 +116,69 @@ def test_batch_skips_fallback_when_dedicated_discovery_succeeded(
     assert report["results"][0]["skipReason"] == "dedicated-primary-succeeded"
 
 
+def test_batch_can_limit_discovery_to_primary_roles(monkeypatch, tmp_path) -> None:
+    config_path = tmp_path / "config.json"
+    universities_path = tmp_path / "universities.json"
+    candidates_path = tmp_path / "candidates.json"
+    report_path = tmp_path / "report.json"
+    config_path.write_text(
+        json.dumps(
+            {
+                "schools": [
+                    {
+                        "name": "fallback",
+                        "universityId": "fallback-university",
+                        "discoveryRole": "fallback",
+                        "seedUrls": ["https://fallback.example/programmes"],
+                    },
+                    {
+                        "name": "primary",
+                        "universityId": "primary-university",
+                        "seedUrls": ["https://primary.example/programmes"],
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    universities_path.write_text(
+        json.dumps(
+            {
+                "universities": [
+                    {
+                        "id": "fallback-university",
+                        "officialDomains": ["fallback.example"],
+                    },
+                    {
+                        "id": "primary-university",
+                        "officialDomains": ["primary.example"],
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
+    candidates_path.write_text('{"items": []}', encoding="utf-8")
+    discovered = []
+
+    def fake_discover(adapter, **_kwargs):
+        discovered.append(adapter.university_id)
+        return {"status": "ok", "universityId": adapter.university_id}
+
+    monkeypatch.setattr(generic_discovery_batch, "UNIVERSITIES_PATH", universities_path)
+    monkeypatch.setattr(generic_discovery_batch, "discover_programmes", fake_discover)
+
+    run_generic_discovery_batch(
+        config_path=config_path,
+        report_path=report_path,
+        candidates_path=candidates_path,
+        dry_run=True,
+        roles={"primary"},
+    )
+
+    assert discovered == ["primary-university"]
+
+
 def test_classify_generic_candidates_splits_review_buckets() -> None:
     candidates = [
         {
