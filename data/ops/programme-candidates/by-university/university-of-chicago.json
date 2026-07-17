@@ -1,57 +1,1018 @@
 {
   "items": [
     {
-      "id": "new-programme:uchicago-ms-in-applied-data-science",
-      "type": "new-programme",
+      "id": "known-programme-guidance:uchicago-applied-data-science-ms",
+      "type": "known-programme-window-guidance",
       "status": "pending",
       "universityId": "university-of-chicago",
-      "detectedAt": "2026-07-07T09:43:51.762509+00:00",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
       "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
       "programme": {
-        "id": "uchicago-ms-in-applied-data-science",
+        "id": "uchicago-applied-data-science-ms",
         "universityId": "university-of-chicago",
         "name": "MS in Applied Data Science",
         "degreeType": "MS",
-        "faculty": "",
-        "applicationUrl": "https://grad.uchicago.edu/admissions/",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
         "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/"
       },
       "windows": [],
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": "plying to the program. The In-Person and Online program admits full- and part-time students for entrance in the autumn quarter annually. The application portal* for 2027 entrance will open in September 2026. Only completed applications are sent for committee review. *The application portal may close early if the cohort is filled. Next Application Deadlines: Coming soon! Letters of Recommendation The MS in Applied Data Science program requires two letters of recommendation. We strongly recommend that at least one letter is written by someone such as a direct manager/supervisor or internship supervisor who can attest to skills you demonstrated or gained though a professional workplace experience (e.g., leadership, teamwork, collaboration, initiative, management, other). Note: Letters of recommendation can be uploaded after you submit your application. Recommended sources for letters of recommendation include: professors; supervisors or managers; professional mentors. We do not accept letters of recommendation from family members, friends, or peers. Candidate Statement The candidate statement is a key part of your application. The admissions committee pays careful attention to how you understand and present your aims and qualifications. The application w"
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
     },
     {
-      "id": "new-programme:uchicago-ms-in-data-science",
+      "id": "new-programme:uchicago-biomedical-informatics-master-of-science",
       "type": "new-programme",
       "status": "pending",
       "universityId": "university-of-chicago",
-      "detectedAt": "2026-07-07T09:43:51.762509+00:00",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://bmi.bsd.uchicago.edu/about/",
+      "programme": {
+        "id": "uchicago-biomedical-informatics-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Biomedical Informatics, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Biological Sciences",
+        "applicationUrl": "https://bmi.bsd.uchicago.edu/about/",
+        "sourceUrl": "https://bmi.bsd.uchicago.edu/about/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-biomedical-sciences-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://www.biomedicalsciences.bsd.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-biomedical-sciences-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Biomedical Sciences, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Biological Sciences",
+        "applicationUrl": "https://www.biomedicalsciences.bsd.uchicago.edu/",
+        "sourceUrl": "https://www.biomedicalsciences.bsd.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-chemistry-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://chemistry.uchicago.edu/ms-in-chemistry",
+      "programme": {
+        "id": "uchicago-chemistry-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Chemistry, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://chemistry.uchicago.edu/ms-in-chemistry",
+        "sourceUrl": "https://chemistry.uchicago.edu/ms-in-chemistry"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-computational-analysis-and-public-policy-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ms-computational-analysis-and-public-policy-mscapp",
+      "programme": {
+        "id": "uchicago-computational-analysis-and-public-policy-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Computational Analysis and Public Policy, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Harris",
+        "applicationUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ms-computational-analysis-and-public-policy-mscapp",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ms-computational-analysis-and-public-policy-mscapp"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-computational-social-science-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://macss.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-computational-social-science-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "Computational Social Science, Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Social Sciences",
+        "applicationUrl": "https://macss.uchicago.edu/",
+        "sourceUrl": "https://macss.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-computer-science-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://masters.cs.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-computer-science-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Computer Science, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://masters.cs.uchicago.edu/",
+        "sourceUrl": "https://masters.cs.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-data-science-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
       "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
       "programme": {
-        "id": "uchicago-ms-in-data-science",
+        "id": "uchicago-data-science-master-of-science",
         "universityId": "university-of-chicago",
-        "name": "MS in Data Science",
+        "name": "Data Science, Master of Science",
         "degreeType": "MS",
-        "faculty": "",
-        "applicationUrl": "https://grad.uchicago.edu/admissions/",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
         "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/"
       },
-      "windows": [
-        {
-          "intake": "Autumn 2027",
-          "round": "Application deadline",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": null,
-          "opensAtBasis": "missing",
-          "closesAt": "2027-01-29"
-        }
-      ],
-      "parseStatus": "incomplete",
-      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
-      "evidenceExcerpt": " needed to meet our English Language Proficiency Requirement Application Fee There is a $90.00 non-refundable application fee. For all questions regarding fee waivers, please refer to the Physical Sciences Division fee waiver policy . Standardized Test Scores The Physical Sciences Division (PSD) does not require the GRE or other standardized test scores for admission into the MSDS or PhD programs. Applicants may choose to submit scores if they have already completed a standardized exam but it is not required that you do so. For those who plan to submit the GRE, please be advised that it will only be considered valid if the exam was taken within five (5) years prior to the application deadline. The Educational Testing Service (ETS) institutional code for the University of Chicago is 1832. Application Deadlines Below are the deadlines for prospective students applying for our Fall 2027 quarter. Please note that we do not admit candidates in any other term beyond the Fall quarter. All application materials must be submitted by the dates below in order to be considered for admission. PhD in Data Science – December 16, 2026 MS in Data Science (MSDS) – January 29, 2027 CDS Committee on Data Science John Crerar Library Building 5730 South Ellis Avenue, Sui  or other standardized test scores for admission into the MSDS or PhD programs. Applicants may choose to submit scores if they have already completed a standardized exam but it is not required that you do so. For those who plan to submit the GRE, please be advised that it will only be considered valid if the exam was taken withi"
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-digital-studies-of-language-culture-and-history-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://digitalstudies.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-digital-studies-of-language-culture-and-history-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "Digital Studies of Language, Culture, and History, Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Arts & Humanities",
+        "applicationUrl": "https://digitalstudies.uchicago.edu/",
+        "sourceUrl": "https://digitalstudies.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-economics-ssd-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://economics.uchicago.edu/masters-programs/master-arts-economics",
+      "programme": {
+        "id": "uchicago-economics-ssd-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "Economics (SSD), Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Social Sciences",
+        "applicationUrl": "https://economics.uchicago.edu/masters-programs/master-arts-economics",
+        "sourceUrl": "https://economics.uchicago.edu/masters-programs/master-arts-economics"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-environmental-science-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://geosci.uchicago.edu/academics/ms-in-environmental-sciences/",
+      "programme": {
+        "id": "uchicago-environmental-science-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Environmental Science, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://geosci.uchicago.edu/academics/ms-in-environmental-sciences/",
+        "sourceUrl": "https://geosci.uchicago.edu/academics/ms-in-environmental-sciences/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-financial-mathematics-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://finmath.uchicago.edu",
+      "programme": {
+        "id": "uchicago-financial-mathematics-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Financial Mathematics, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://finmath.uchicago.edu",
+        "sourceUrl": "https://finmath.uchicago.edu"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-international-relations-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://cir.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-international-relations-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "International Relations, Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Social Sciences",
+        "applicationUrl": "https://cir.uchicago.edu/",
+        "sourceUrl": "https://cir.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-law-legal-studies-master-of-laws",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://www.law.uchicago.edu/llm",
+      "programme": {
+        "id": "uchicago-law-legal-studies-master-of-laws",
+        "universityId": "university-of-chicago",
+        "name": "Law/Legal Studies, Master of Laws",
+        "degreeType": "LLM",
+        "faculty": "Law",
+        "applicationUrl": "https://www.law.uchicago.edu/llm",
+        "sourceUrl": "https://www.law.uchicago.edu/llm"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-law-legal-studies-master-of-legal-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://www.law.uchicago.edu/mls-program",
+      "programme": {
+        "id": "uchicago-law-legal-studies-master-of-legal-studies",
+        "universityId": "university-of-chicago",
+        "name": "Law/Legal Studies, Master of Legal Studies",
+        "degreeType": "MLS",
+        "faculty": "Law",
+        "applicationUrl": "https://www.law.uchicago.edu/mls-program",
+        "sourceUrl": "https://www.law.uchicago.edu/mls-program"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-management-science-operations-management-master-of-management",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://www.chicagobooth.edu/master-in-management",
+      "programme": {
+        "id": "uchicago-management-science-operations-management-master-of-management",
+        "universityId": "university-of-chicago",
+        "name": "Management Science/Operations Management, Master of Management",
+        "degreeType": "MiM",
+        "faculty": "Booth",
+        "applicationUrl": "https://www.chicagobooth.edu/master-in-management",
+        "sourceUrl": "https://www.chicagobooth.edu/master-in-management"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://divinity.uchicago.edu/admissions/MAprogram",
+      "programme": {
+        "id": "uchicago-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Divinity",
+        "applicationUrl": "https://divinity.uchicago.edu/admissions/MAprogram",
+        "sourceUrl": "https://divinity.uchicago.edu/admissions/MAprogram"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-arts-in-religious-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://divinity.uchicago.edu/MA-AMRS-programs",
+      "programme": {
+        "id": "uchicago-master-of-arts-in-religious-studies",
+        "universityId": "university-of-chicago",
+        "name": "Master of Arts in Religious Studies",
+        "degreeType": "MA",
+        "faculty": "Divinity",
+        "applicationUrl": "https://divinity.uchicago.edu/MA-AMRS-programs",
+        "sourceUrl": "https://divinity.uchicago.edu/MA-AMRS-programs"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-arts-program-in-the-humanities",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://maph.uchicago.edu",
+      "programme": {
+        "id": "uchicago-master-of-arts-program-in-the-humanities",
+        "universityId": "university-of-chicago",
+        "name": "Master of Arts Program in the Humanities",
+        "degreeType": "MA",
+        "faculty": "Arts & Humanities",
+        "applicationUrl": "https://maph.uchicago.edu",
+        "sourceUrl": "https://maph.uchicago.edu"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-arts-program-in-the-social-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://mapss.uchicago.edu",
+      "programme": {
+        "id": "uchicago-master-of-arts-program-in-the-social-sciences",
+        "universityId": "university-of-chicago",
+        "name": "Master of Arts Program in the Social Sciences",
+        "degreeType": "MA",
+        "faculty": "Social Sciences / Harris",
+        "applicationUrl": "https://mapss.uchicago.edu",
+        "sourceUrl": "https://mapss.uchicago.edu"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-business-administration",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://www.chicagobooth.edu/mba",
+      "programme": {
+        "id": "uchicago-master-of-business-administration",
+        "universityId": "university-of-chicago",
+        "name": "Master of Business Administration",
+        "degreeType": "MBA",
+        "faculty": "Booth",
+        "applicationUrl": "https://www.chicagobooth.edu/mba",
+        "sourceUrl": "https://www.chicagobooth.edu/mba"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-divinity",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://divinity.uchicago.edu/admissions/MDivprogram",
+      "programme": {
+        "id": "uchicago-master-of-divinity",
+        "universityId": "university-of-chicago",
+        "name": "Master of Divinity",
+        "degreeType": "MDiv",
+        "faculty": "Divinity",
+        "applicationUrl": "https://divinity.uchicago.edu/admissions/MDivprogram",
+        "sourceUrl": "https://divinity.uchicago.edu/admissions/MDivprogram"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://pme.uchicago.edu/academics/masters-of-engineering",
+      "programme": {
+        "id": "uchicago-master-of-engineering",
+        "universityId": "university-of-chicago",
+        "name": "Master of Engineering",
+        "degreeType": "MEng",
+        "faculty": "PME",
+        "applicationUrl": "https://pme.uchicago.edu/academics/masters-of-engineering",
+        "sourceUrl": "https://pme.uchicago.edu/academics/masters-of-engineering"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-finance",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://www.chicagobooth.edu/master-in-finance",
+      "programme": {
+        "id": "uchicago-master-of-finance",
+        "universityId": "university-of-chicago",
+        "name": "Master of Finance",
+        "degreeType": "MFin",
+        "faculty": "Booth",
+        "applicationUrl": "https://www.chicagobooth.edu/master-in-finance",
+        "sourceUrl": "https://www.chicagobooth.edu/master-in-finance"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-liberal-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://masterliberalarts.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-master-of-liberal-arts",
+        "universityId": "university-of-chicago",
+        "name": "Master of Liberal Arts",
+        "degreeType": "MLA",
+        "faculty": "Graham",
+        "applicationUrl": "https://masterliberalarts.uchicago.edu/",
+        "sourceUrl": "https://masterliberalarts.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-public-health",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://publichealth.bsd.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-master-of-public-health",
+        "universityId": "university-of-chicago",
+        "name": "Master of Public Health",
+        "degreeType": "MPH",
+        "faculty": "Biological Sciences",
+        "applicationUrl": "https://publichealth.bsd.uchicago.edu/",
+        "sourceUrl": "https://publichealth.bsd.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-of-public-policy",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/master-public-policy-mpp",
+      "programme": {
+        "id": "uchicago-master-of-public-policy",
+        "universityId": "university-of-chicago",
+        "name": "Master of Public Policy",
+        "degreeType": "MPP",
+        "faculty": "Harris",
+        "applicationUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/master-public-policy-mpp",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/master-public-policy-mpp"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-master-s-program-in-computational-and-applied-mathematics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://cam.uchicago.edu/academics/ms-in-computational-and-applied-mathematics/",
+      "programme": {
+        "id": "uchicago-master-s-program-in-computational-and-applied-mathematics",
+        "universityId": "university-of-chicago",
+        "name": "Master's Program in Computational and Applied Mathematics",
+        "degreeType": "MS",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://cam.uchicago.edu/academics/ms-in-computational-and-applied-mathematics/",
+        "sourceUrl": "https://cam.uchicago.edu/academics/ms-in-computational-and-applied-mathematics/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-middle-eastern-studies-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://cmes.uchicago.edu/ma-program",
+      "programme": {
+        "id": "uchicago-middle-eastern-studies-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "Middle Eastern Studies, Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Arts & Humanities",
+        "applicationUrl": "https://cmes.uchicago.edu/ma-program",
+        "sourceUrl": "https://cmes.uchicago.edu/ma-program"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-precision-health-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://voices.uchicago.edu/precisionhealth/",
+      "programme": {
+        "id": "uchicago-precision-health-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Precision Health, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Biological Sciences",
+        "applicationUrl": "https://voices.uchicago.edu/precisionhealth/",
+        "sourceUrl": "https://voices.uchicago.edu/precisionhealth/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-public-health-master-of-science-for-clinical-professionals",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "http://health.bsd.uchicago.edu/Education/DegreePrograms/MSCP",
+      "programme": {
+        "id": "uchicago-public-health-master-of-science-for-clinical-professionals",
+        "universityId": "university-of-chicago",
+        "name": "Public Health, Master of Science for Clinical Professionals",
+        "degreeType": "MS",
+        "faculty": "Biological Sciences",
+        "applicationUrl": "http://health.bsd.uchicago.edu/Education/DegreePrograms/MSCP",
+        "sourceUrl": "http://health.bsd.uchicago.edu/Education/DegreePrograms/MSCP"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-public-policy-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-ma",
+      "programme": {
+        "id": "uchicago-public-policy-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "Public Policy, Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Harris",
+        "applicationUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-ma",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-public-policy-master-of-arts-evening",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://harris.uchicago.edu/eveningprogram",
+      "programme": {
+        "id": "uchicago-public-policy-master-of-arts-evening",
+        "universityId": "university-of-chicago",
+        "name": "Public Policy, Master of Arts (Evening)",
+        "degreeType": "MA",
+        "faculty": "Harris",
+        "applicationUrl": "https://harris.uchicago.edu/eveningprogram",
+        "sourceUrl": "https://harris.uchicago.edu/eveningprogram"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-public-policy-with-certificate-in-research-methods-master-of-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-certificate-research-methods-macrm",
+      "programme": {
+        "id": "uchicago-public-policy-with-certificate-in-research-methods-master-of-arts",
+        "universityId": "university-of-chicago",
+        "name": "Public Policy with Certificate in Research Methods, Master of Arts",
+        "degreeType": "MA",
+        "faculty": "Harris",
+        "applicationUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-certificate-research-methods-macrm",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-certificate-research-methods-macrm"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-social-sector-leadership-and-nonprofit-management-master-of-arts-ssl",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://crownschool.uchicago.edu/admissions/masters-admissions/social-sector-leadership-admission-requirements",
+      "programme": {
+        "id": "uchicago-social-sector-leadership-and-nonprofit-management-master-of-arts-ssl",
+        "universityId": "university-of-chicago",
+        "name": "Social Sector Leadership and Nonprofit Management, Master of Arts SSL",
+        "degreeType": "MA",
+        "faculty": "CFS",
+        "applicationUrl": "https://crownschool.uchicago.edu/admissions/masters-admissions/social-sector-leadership-admission-requirements",
+        "sourceUrl": "https://crownschool.uchicago.edu/admissions/masters-admissions/social-sector-leadership-admission-requirements"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-social-work-social-policy-and-social-administration-master-of-arts-in-social-work",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://crownschool.uchicago.edu/academic-programs/masters-social-work",
+      "programme": {
+        "id": "uchicago-social-work-social-policy-and-social-administration-master-of-arts-in-social-work",
+        "universityId": "university-of-chicago",
+        "name": "Social Work, Social Policy, and Social Administration, Master of Arts in Social Work",
+        "degreeType": "MASW",
+        "faculty": "CFS",
+        "applicationUrl": "https://crownschool.uchicago.edu/academic-programs/masters-social-work",
+        "sourceUrl": "https://crownschool.uchicago.edu/academic-programs/masters-social-work"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-statistics-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://stat.uchicago.edu/academics/ms-in-statistics/",
+      "programme": {
+        "id": "uchicago-statistics-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Statistics, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Physical Sciences",
+        "applicationUrl": "https://stat.uchicago.edu/academics/ms-in-statistics/",
+        "sourceUrl": "https://stat.uchicago.edu/academics/ms-in-statistics/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-threat-and-response-management-master-of-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://threatresponse.bsd.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-threat-and-response-management-master-of-science",
+        "universityId": "university-of-chicago",
+        "name": "Threat and Response Management, Master of Science",
+        "degreeType": "MS",
+        "faculty": "Biological Sciences",
+        "applicationUrl": "https://threatresponse.bsd.uchicago.edu/",
+        "sourceUrl": "https://threatresponse.bsd.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:uchicago-visual-arts-master-of-fine-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-chicago",
+      "detectedAt": "2026-07-16T14:02:03.212658+00:00",
+      "sourceUrl": "https://dova.uchicago.edu/",
+      "programme": {
+        "id": "uchicago-visual-arts-master-of-fine-arts",
+        "universityId": "university-of-chicago",
+        "name": "Visual Arts, Master of Fine Arts",
+        "degreeType": "MFA",
+        "faculty": "Arts & Humanities",
+        "applicationUrl": "https://dova.uchicago.edu/",
+        "sourceUrl": "https://dova.uchicago.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "The official UChicagoGRAD directory confirms this master's programme and its academic unit. UChicago's academic units set their own application windows, and the university directory does not publish an exact opening and closing date pair. The programme admissions page remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-graduate-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
     }
   ]
 }

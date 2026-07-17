@@ -1,17 +1,44 @@
-# GradWindow
+<p align="center">
+  <a href="https://gradwindow.com/">
+    <img src="docs/readme-hero.svg" width="100%" alt="GradWindow — graduate deadlines without the guesswork">
+  </a>
+</p>
 
-[![Tests](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml/badge.svg)](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml)
-[![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)](https://gradwindow.com/)
+<p align="center">
+  <a href="https://gradwindow.com/"><img alt="Website" src="https://img.shields.io/badge/website-gradwindow.com-1e6548?style=for-the-badge"></a>
+  <a href="https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/lione12138/qs-master-applications/tests.yml?branch=main&amp;style=for-the-badge&amp;label=tests"></a>
+  <a href="https://github.com/lione12138/qs-master-applications/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/lione12138/qs-master-applications?style=for-the-badge&amp;color=f3b72e"></a>
+  <a href="LICENSE"><img alt="Code license" src="https://img.shields.io/badge/code-AGPL--3.0-315f4c?style=for-the-badge"></a>
+</p>
 
-[中文](README.zh-CN.md) · [Live website](https://gradwindow.com/)
+<p align="center"><a href="README.zh-CN.md">简体中文</a> · <a href="https://gradwindow.com/">Live website</a> · <a href="https://github.com/lione12138/qs-master-applications/issues">Issues</a></p>
 
-**Licensing:** [Code](LICENSE) and [data](DATA_LICENSE.md) are licensed separately. Reuse of the curated admissions dataset requires attribution to GradWindow and is limited to noncommercial use under CC BY-NC 4.0. Official university pages remain the authoritative source.
+<p align="center"><strong>200</strong> universities &nbsp;·&nbsp; <strong>1,391</strong> programmes &nbsp;·&nbsp; <strong>2,945</strong> official windows</p>
 
-A QS Top 200 master's application tracker using official university sources. The tables below show only applications that are open now or scheduled to open within 30 days.
+Stop checking dozens of university pages. GradWindow brings exact master's application windows for QS Top 200 universities into one searchable, reviewable tracker, backed by official sources.
 
-Status date: **2026-07-15**
+[**Explore live deadlines →**](https://gradwindow.com/)
 
-> **Estimate** means the date is shifted from the latest verified cycle and is not an official forecast. Always confirm dates on the linked university source.
+| | What you get |
+|---|---|
+| 🏛️ **Official sources first** | Every published window links back to the university page used for verification. |
+| 🔎 **No hidden guesswork** | Verified dates and generated estimates are visibly separated. |
+| 📅 **Ready for action** | Filter by university, programme, intake, or applicant type, then add a deadline to your calendar. |
+| 🌏 **One shared university index** | QS, THE, and ARWU views use the same canonical university records. |
+
+## Built for trust, not deadline spam
+
+Admissions data is only useful when you can audit it. Parsers never publish directly: new dates enter a review queue, and an exact window is published only when its scope, intake, applicant category, opening date, closing date, and official source are known. Month-only wording stays out of the official dataset.
+
+## Live deadline snapshot
+
+> [!IMPORTANT]
+> **Estimate** means a date was shifted from the latest verified cycle. It is planning guidance, not an official forecast. Always confirm on the linked university source before applying.
+
+Updated **2026-07-16** · 310 open now · 171 opening within 30 days
+
+<details>
+<summary><strong>Open now — 310 windows</strong></summary>
 
 ## Open Now
 
@@ -92,7 +119,6 @@ Status date: **2026-07-15**
 | =8 | UCL | Robotics and Artificial Intelligence MSc | Applicants not requiring a UK Student visa | September 2026 | 2025-10-20 | 2026-08-28 | Official | [Apply](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc) · [Source](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Robotics%20and%20Artificial%20Intelligence%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL | Scientific and Data Intensive Computing MSc | Applicants not requiring a UK Student visa | September 2026 | 2025-10-20 | 2026-08-28 | Official | [Apply](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc) · [Source](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Scientific%20and%20Data%20Intensive%20Computing%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL | Software Systems Engineering MSc | Applicants not requiring a UK Student visa | September 2026 | 2025-10-20 | 2026-08-28 | Official | [Apply](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc) · [Source](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Software%20Systems%20Engineering%20MSc%20application%20deadline&dates=20260828%2F20260829) |
-| 10 | National University of Singapore (NUS) | MSc (Data Science and Machine Learning) | All applicants | August 2027 | 2026-05-16 | 2026-07-15 | Official | [Apply](https://gradapp.nus.edu.sg/portal/app_manage) · [Source](https://www.math.nus.edu.sg/cdsml/ms-dsml/dsml-prospective-students/) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=National%20University%20of%20Singapore%20%28NUS%29%20MSc%20%28Data%20Science%20and%20Machine%20Learning%29%20application%20deadline&dates=20260715%2F20260716) |
 | 35 | The University of Edinburgh | MSc Medieval History | All applicants | September 2026 | 2025-10-01 | 2026-07-20 | Official | [Apply](https://study.ed.ac.uk/postgraduate/applying) · [Source](https://study.ed.ac.uk/programmes/postgraduate-taught/149-medieval-history) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Edinburgh%20MSc%20Medieval%20History%20application%20deadline&dates=20260720%2F20260721) |
 | 35 | The University of Edinburgh | MSc Accounting and Financial Management | All applicants | September 2026 | 2025-10-01 | 2026-07-23 | Official | [Apply](https://study.ed.ac.uk/postgraduate/applying) · [Source](https://study.ed.ac.uk/programmes/postgraduate-taught/1126-accounting-and-financial-management) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Edinburgh%20MSc%20Accounting%20and%20Financial%20Management%20application%20deadline&dates=20260723%2F20260724) |
 | 35 | The University of Edinburgh | MSc AI for Business | All applicants | September 2026 | 2025-10-01 | 2026-07-23 | Official | [Apply](https://study.ed.ac.uk/postgraduate/applying) · [Source](https://study.ed.ac.uk/programmes/postgraduate-taught/1138-ai-for-business) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Edinburgh%20MSc%20AI%20for%20Business%20application%20deadline&dates=20260723%2F20260724) |
@@ -329,6 +355,11 @@ Status date: **2026-07-15**
 | =82 | The University of Sheffield | Civil and Structural Engineering MSc | All applicants | September 2026 | 2025-09-15 | 2026-09-04 | Official | [Apply](https://www.sheffield.ac.uk/postgraduate/taught/apply) · [Source](https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Sheffield%20Civil%20and%20Structural%20Engineering%20MSc%20application%20deadline&dates=20260904%2F20260905) |
 | =162 | Université de Montréal | Maîtrise en informatique | All applicants | Hiver 2027 | 2026-02-01 | 2026-09-01 | Official | [Apply](https://admission.umontreal.ca/programmes/maitrise-en-informatique/) · [Source](https://admission.umontreal.ca/programmes/maitrise-en-informatique/) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Universit%C3%A9%20de%20Montr%C3%A9al%20Ma%C3%AEtrise%20en%20informatique%20application%20deadline&dates=20260901%2F20260902) |
 
+</details>
+
+<details>
+<summary><strong>Opening within 30 days — 171 windows</strong></summary>
+
 ## Opening Within 30 Days
 
 | QS | University | Programme / scope | Applicant category | Intake | Opens | Deadline | Data | Links |
@@ -504,3 +535,31 @@ Status date: **2026-07-15**
 | =40 | The University of Queensland | Master of Sustainable Energy | Domestic students | Semester 2 2027 | 2026-08-01 | 2027-06-30 | Estimate | [Apply](https://apply.uq.edu.au/) · [Source](https://study.uq.edu.au/study-options/programs/master-sustainable-energy-5684) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5BESTIMATE%5D%20The%20University%20of%20Queensland%20Master%20of%20Sustainable%20Energy%20application%20deadline&dates=20270630%2F20270701) |
 | 84 | Universidad de Buenos Aires (UBA) | Maestr?a en Explotaci?n de Datos y Descubrimiento del Conocimiento | All applicants | Ciclo Lectivo 2027 | 2026-08-06 | 2026-08-11 | Estimate | [Apply](https://datamining.dc.uba.ar/datamining/academico/) · [Source](https://datamining.dc.uba.ar/datamining/academico/) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5BESTIMATE%5D%20Universidad%20de%20Buenos%20Aires%20%28UBA%29%20Maestr%3Fa%20en%20Explotaci%3Fn%20de%20Datos%20y%20Descubrimiento%20del%20Conocimiento%20application%20deadline&dates=20260811%2F20260812) |
 | =87 | The University of Technology Sydney (UTS) | Master of Information Technology | Domestic students | Autumn 2027 | 2026-07-28 | 2027-01-31 | Official | [Apply](https://student-portal.uts.edu.au/) · [Source](https://www.uts.edu.au/for-students/admissions-entry/application-dates) · [Calendar](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Technology%20Sydney%20%28UTS%29%20Master%20of%20Information%20Technology%20application%20deadline&dates=20270131%2F20270201) |
+
+</details>
+
+## Run it locally
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -e ".[dev]"
+gradwindow validate
+gradwindow build-site
+```
+
+See [technical documentation](docs/TECHNICAL.md) for the data model and maintenance workflows.
+
+## Help make GradWindow better
+
+Found a missing programme or a changed deadline?
+
+- [Report a data error](https://github.com/lione12138/qs-master-applications/issues/new?template=report-data-error.yml)
+- [Submit an official application window](https://github.com/lione12138/qs-master-applications/issues/new?template=submit-programme-window.yml)
+- Read the [QS Top 200 coverage roadmap](docs/QS200_ROADMAP.md)
+
+If GradWindow saves you a round of deadline hunting, **[leave a ⭐](https://github.com/lione12138/qs-master-applications)**. It helps more applicants discover the project.
+
+## License
+
+[Code](LICENSE) and [data](DATA_LICENSE.md) are licensed separately. The curated dataset requires attribution and is available for noncommercial use under CC BY-NC 4.0. Official university pages remain the authoritative source.

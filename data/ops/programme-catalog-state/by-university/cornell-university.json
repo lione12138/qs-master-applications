@@ -1,0 +1,877 @@
+{
+  "universities": {
+    "cornell-university": {
+      "sourceUrl": "https://catalog.cornell.edu/programs/",
+      "checkedAt": "2026-07-15T05:02:17.211399+00:00",
+      "itemCount": 108,
+      "applicationOpensAt": null,
+      "catalogHash": "9a5c9e48fc109b8a4ad05a50614d08e8fc3a5309c250e19110a18ef171bda88e",
+      "programmes": {
+        "cornell-advanced-architectural-design-ms-aad": {
+          "name": "Advanced Architectural Design (MS)",
+          "degreeType": "MS",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-advanced-urban-design-ms-aud": {
+          "name": "Advanced Urban Design (MS)",
+          "degreeType": "MS",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-aerospace-engineering-meng": {
+          "name": "Aerospace Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-agriculture-life-sciences-biological-environmental-engineering-mps": {
+          "name": "Agriculture and Life Sciences (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-animal-science-mps": {
+          "name": "Animal Science (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-animal-science-ms": {
+          "name": "Animal Science (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-apparel-design-ma": {
+          "name": "Apparel Design (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-applied-economics-management-mps": {
+          "name": "Applied Economics and Management (MPS)",
+          "degreeType": "MPS",
+          "faculty": "College of Agriculture and Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-applied-economics-management-ms": {
+          "name": "Applied Economics and Management (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-applied-physics-ms": {
+          "name": "Applied Physics (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-applied-statistics-mps-as": {
+          "name": "Applied Statistics (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-archaeology-ma": {
+          "name": "Archaeology (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-architecture-march": {
+          "name": "Architecture I (MAR)",
+          "degreeType": "MArch",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-asian-studies-ma": {
+          "name": "Asian Studies (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-atmospheric-science-ms": {
+          "name": "Atmospheric Sciences (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-biological-environmental-engineering-meng": {
+          "name": "Biological and Environmental Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "College of Agriculture and Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-biological-environmental-engineering-ms": {
+          "name": "Biological and Environmental Engineering (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-biomedical-engineering-meng": {
+          "name": "Biomedical Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-biomedical-engineering-ms": {
+          "name": "Biomedical Engineering (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-business-analytics-bana-ms": {
+          "name": "Business Analytics (BANA-MS)",
+          "degreeType": "MS",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-business-analytics-ny-bana-ms": {
+          "name": "Business Analytics (NYBANA-MS)",
+          "degreeType": "MS",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-chemical-engineering-meng": {
+          "name": "Chemical Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-chemical-engineering-ms": {
+          "name": "Chemical Engineering (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-chemistry-chemical-biology-ms": {
+          "name": "Chemistry (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-city-regional-planning-mrp": {
+          "name": "City & Regional Planning (MRP)",
+          "degreeType": "MRP",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-regional-planning-real-estate-mps-re-mrp": {
+          "name": "City & Regional Planning and Real Estate (MRP/MPS)",
+          "degreeType": "MRP/MPS",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-civil-environmental-engineering-meng": {
+          "name": "Civil & Environmental Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-civil-environmental-engineering-ms": {
+          "name": "Civil and Environmental Engineering (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-classics-ma": {
+          "name": "Classics (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-computer-science-meng": {
+          "name": "Computer Science (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-computer-science-ms": {
+          "name": "Computer Science (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-computer-science-nysc-meng": {
+          "name": "Computer Science (NYCS-MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-creative-visual-arts-mfa": {
+          "name": "Creative Visual Arts (MFA)",
+          "degreeType": "MFA",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-creative-writing-mfa": {
+          "name": "Creative Writing (MFA)",
+          "degreeType": "MFA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-data-science-decision-analytics-meng": {
+          "name": "Data Science and Decision Analytics (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-data-science-public-policy": {
+          "name": "Data Science for Public Policy (MS)",
+          "degreeType": "MS",
+          "faculty": "Brooks School of Public Policy",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-design-ma": {
+          "name": "Design (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-design-technology-ms": {
+          "name": "Design Technology (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-design-technology-studio-ms": {
+          "name": "Design Technology: Studio (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-developmental-psychology-ma": {
+          "name": "Developmental Psychology (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-earth-science-engineering-meng": {
+          "name": "Earth Science and Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-electrical-computer-engineering-meng": {
+          "name": "Electrical and Computer Engineering (EENG-MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-electrical-computer-engineering-nyee-meng": {
+          "name": "Electrical and Computer Engineering (NYEE-MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-engineering-management-meng": {
+          "name": "Engineering Management (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-engineering-physics-meng": {
+          "name": "Engineering Physics (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-entomology-ms": {
+          "name": "Entomology (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-environmental-sustainability-policy": {
+          "name": "Environmental & Sustainability Policy (MS)",
+          "degreeType": "MS",
+          "faculty": "Brooks School of Public Policy",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-executive-data-science-public-policy": {
+          "name": "Executive Data Science for Public Policy (MS)",
+          "degreeType": "MS",
+          "faculty": "Brooks School of Public Policy",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-emha": {
+          "name": "Executive Health Administration (MHA)",
+          "degreeType": "MHA",
+          "faculty": "Brooks School of Public Policy",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-emmh": {
+          "name": "Executive Hospitality Management (MMH)",
+          "degreeType": "MMH",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-cornell-executive-mba-metro-ny": {
+          "name": "Executive MBA (MBA)",
+          "degreeType": "MBA",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-healthcare-leadership-executive-mba-ms": {
+          "name": "Executive MBA/MS in Healthcare Leadership (MBA/MS)",
+          "degreeType": "MBA/MS",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-empa": {
+          "name": "Executive Public Administration (MPA)",
+          "degreeType": "MPA",
+          "faculty": "Brooks School of Public Policy",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-fiber-science-ms": {
+          "name": "Fiber Science (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-food-science-technology-ms": {
+          "name": "Food Science & Technology (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-food-science-technology-mfs": {
+          "name": "Food Science (MFS)",
+          "degreeType": "MFS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-geological-sciences-ms": {
+          "name": "Geological Sciences (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-global-development-mps": {
+          "name": "Global Development (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-health-administration-mha": {
+          "name": "Health Administration (MHA)",
+          "degreeType": "MHA",
+          "faculty": "Brooks School of Public Policy",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-historic-preservation-planning-ma": {
+          "name": "Historic Preservation Planning (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-horticultural-biology-ms": {
+          "name": "Horticultural Biology (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-hospitality-management-mmh": {
+          "name": "Hospitality Management (MMH)",
+          "degreeType": "MMH",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-hotel-administration-ms": {
+          "name": "Hotel Administration (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-human-development-family-studies-ma": {
+          "name": "Human Development (MA)",
+          "degreeType": "MA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-human-ecology-mps": {
+          "name": "Human Ecology (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-human-environment-relations-ms": {
+          "name": "Human Environment Relations (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-executive-master-hr-management-mps-hr": {
+          "name": "Human Resources (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-image-text-mfa": {
+          "name": "Image Text (MFA)",
+          "degreeType": "MFA",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-industrial-labor-relations-milr": {
+          "name": "Industrial and Labor Relations (MILR)",
+          "degreeType": "MILR",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-industrial-labor-relations-mps": {
+          "name": "Industrial and Labor Relations (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-industrial-labor-relations-ms": {
+          "name": "Industrial and Labor Relations (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-information-science-isci-mps": {
+          "name": "Information Science (ISCI-MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-information-systems-ms": {
+          "name": "Information Systems (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-integrative-plant-science-mps": {
+          "name": "Integrative Plant Science (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-landscape-architecture-mla": {
+          "name": "Landscape Architecture (MLA)",
+          "degreeType": "MLA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-landscape-architecture-mps": {
+          "name": "Landscape Architecture (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-landscape-architecture-mla-adv-deg": {
+          "name": "Landscape Architecture - Advanced Degree (MLA)",
+          "degreeType": "MLA",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-mla-mrp": {
+          "name": "Landscape Architecture and City & Regional Planning (MLA/MRP)",
+          "degreeType": "MLA/MRP",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-llm": {
+          "name": "Law (LLM)",
+          "degreeType": "LLM",
+          "faculty": "Law School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-law-tech-intnl-llm-program": {
+          "name": "Law, Tech & Entrepreneurship - International 3 Semester (LLM)",
+          "degreeType": "LLM",
+          "faculty": "Law School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-cornell-tech-llm-program": {
+          "name": "Law, Technology and Entrepreneurship (LLM)",
+          "degreeType": "LLM",
+          "faculty": "Law School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-msls-program": {
+          "name": "Legal Studies (MS)",
+          "degreeType": "MS",
+          "faculty": "Law School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-johnson-cornell-tech-mba": {
+          "name": "Management (MBA)",
+          "degreeType": "MBA",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-management-mps": {
+          "name": "Management (MPS)",
+          "degreeType": "MPS",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-cornell-tsinghua-mba-fmba": {
+          "name": "Management (w/ Tsinghua U-China) (MBA)",
+          "degreeType": "MBA",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-two-year-residential-management-science-mba-stem-certified": {
+          "name": "Management Science, 2 Year (MBA)",
+          "degreeType": "MBA",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-milr-mba": {
+          "name": "Management and Industrial & Labor Relations (MBA/MILR)",
+          "degreeType": "MBA/MILR",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-dual-degree-program-jd-mba": {
+          "name": "Management and Law (MBA/JD)",
+          "degreeType": "MBA/JD",
+          "faculty": "Law School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-two-year-residential-mba": {
+          "name": "Management, 2 year (MBA)",
+          "degreeType": "MBA",
+          "faculty": "SC Johnson College of Business",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-materials-science-engineering-meng": {
+          "name": "Materials Science & Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-materials-science-engineering-ms": {
+          "name": "Materials Science and Engineering (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-mechanical-engineering-meng": {
+          "name": "Mechanical Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-mechanical-engineering-ms": {
+          "name": "Mechanical Engineering (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-natural-resources-ms": {
+          "name": "Natural Resources (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-natural-resources-mps": {
+          "name": "Natural Resources and the Environment (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-nutrition-ms": {
+          "name": "Nutrition (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-operations-research--information-engineering-nyor-meng": {
+          "name": "Operations Research & Information Engineering (NYOR-MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-operations-research-information-engineering-orie-meng": {
+          "name": "Operations Research & Information Engineering (ORIE-MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-plant-breeding-ms": {
+          "name": "Plant Breeding (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-plant-pathology-ms": {
+          "name": "Plant Pathology (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-public-administration-mpa": {
+          "name": "Public Administration (MPA)",
+          "degreeType": "MPA",
+          "faculty": "Brooks School of Public Policy",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-public-health-mph": {
+          "name": "Public Health (MPH)",
+          "degreeType": "MPH",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-real-estate-mps-re": {
+          "name": "Real Estate (MPS)",
+          "degreeType": "MPS",
+          "faculty": "College of Architecture, Art and Planning",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-regional-science-ms": {
+          "name": "Regional Science (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-soil-crop-science-ms": {
+          "name": "Soil and Crop Sciences (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-systems-ms": {
+          "name": "Systems (MS)",
+          "degreeType": "MS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-systems-engineering-meng": {
+          "name": "Systems Engineering (MEng)",
+          "degreeType": "MEng",
+          "faculty": "Duffield College of Engineering",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "cornell-veterinary-medical-sciences-mps": {
+          "name": "Veterinary Parasitology (MPS)",
+          "degreeType": "MPS",
+          "faculty": "Graduate School",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

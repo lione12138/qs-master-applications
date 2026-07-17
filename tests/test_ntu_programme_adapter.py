@@ -1,117 +1,111 @@
 from __future__ import annotations
 
-import json
+import pytest
 
-from gradwindow.programme_adapters.ntu import (
-    APPLICATION_URL,
-    NTUAdapter,
-    catalog_page_url,
+from gradwindow.programme_adapters.ntu_tw import (
+    ADMISSIONS_URL,
+    NTUTaiwanAdapter,
 )
 
-PAGE_ONE = {
-    "totalPages": 2,
-    "totalItems": 4,
-    "items": [
-        {
-            "title": "Master of Science in Maritime Studies",
-            "url": "/education/graduate-programme/master-of-science-in-maritime-studies",
-            "tag": "Science | Sustainability",
-            "description": "Study maritime policy and operations.",
-        },
-        {
-            "title": "Master of Computing In Applied AI (MCAAI)",
-            "url": "/education/graduate-programme/master-of-computing-in-applied-ai-mcaai",
-            "tag": "Computing",
-            "description": "Applied artificial intelligence coursework.",
-        },
-    ],
-}
+CATALOG_URL = (
+    "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/"
+    "dept.list/id/current/fsemester/1/fdisplay/1?lang=en"
+)
 
-PAGE_TWO = {
-    "totalPages": 2,
-    "totalItems": 4,
-    "items": [
-        {
-            "title": "Master of Arts in Translation and Interpretation",
-            "url": "/education/graduate-programme/master-of-arts-in-translation-and-interpretation",
-            "tag": "Humanities",
-            "description": "Professional translation and interpretation.",
-        },
-        {
-            "title": "Master of Science Technopreneurship and Innovation Programme (CN)",
-            "url": "/education/graduate-programme/technopreneurship-cn",
-            "tag": "Business | Innovation/Entrepreneurship",
-            "description": "Chinese-language programme.",
-        },
-    ],
-}
+ADMISSIONS_HTML = f"""
+<main>
+  <a href="{CATALOG_URL}">2027 February Entry (Graduate programs only)</a>
+  <a href="https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/fall?lang=en">2027 September Entry (TBA)</a>
+</main>
+"""
 
-APPLICATION_HTML = """
-<html><body>
+CATALOG_HTML = """
+<main>
+  <h1>2026/2027 Available Graduate Degree Programs and Application Requirements</h1>
+  <p>First Round：2026-08-03~2026-09-17</p>
   <table>
-    <tr><th>Admission Year &amp; Intake</th><th>Admission Date</th>
-      <th>Programme Name</th><th>Opening Date</th><th>Closing Date</th></tr>
-    <tr><td>2026 / Semester 2</td><td>11-Jan-27</td>
-      <td>202 - MSC(MARITIME STUDIES)</td><td>1-Jul-26</td><td>31-Aug-26</td></tr>
-    <tr><td>2026 / Semester 2</td><td>11-Jan-27</td>
-      <td>282 - MASTER OF ARTS (TRANSLATION &amp; INTERPRETATION)</td>
-      <td>1-Jul-26</td><td>31-Aug-26</td></tr>
+    <tr><th>College</th><th>Department/Graduate Institute</th><th>First Round</th></tr>
+    <tr class="js-degreeTr js-showM js-showD">
+      <td class="js-college">College of Electrical Engineering and Computer Science</td>
+      <td class="js-deptName" data-degree="B">Department of Computer Science and Information Engineering</td><td data-degree="B">-</td>
+      <td class="js-deptName" data-degree="M">Department of Computer Science and Information Engineering</td>
+      <td data-degree="M"><a href="/globaladmission/foreign/requirement/dept.detail/id/current/degree_key/M/sn/1"><span class="circle blue"></span></a></td>
+      <td class="js-deptName" data-degree="D">Department of Computer Science and Information Engineering</td><td data-degree="D">-</td>
+    </tr>
+    <tr class="js-degreeTr js-showM">
+      <td class="js-college">College of Science</td>
+      <td class="js-deptName" data-degree="M">Institute of Astrophysics</td>
+      <td data-degree="M"><a href="/globaladmission/foreign/requirement/dept.detail/id/current/degree_key/M/sn/2"><span class="circle gray"></span></a></td>
+    </tr>
+    <tr class="js-degreeTr js-showD">
+      <td class="js-college">College of Medicine</td>
+      <td class="js-deptName" data-degree="M">Doctoral-only Example</td><td data-degree="M">-</td>
+      <td class="js-deptName" data-degree="D">Doctoral-only Example</td><td data-degree="D"><a href="/doctoral"></a></td>
+    </tr>
   </table>
-</body></html>
+</main>
 """
 
 
 def _fetcher(url: str) -> str:
-    if url == catalog_page_url(1):
-        return json.dumps(PAGE_ONE)
-    if url == catalog_page_url(2):
-        return json.dumps(PAGE_TWO)
-    if url == APPLICATION_URL:
-        return APPLICATION_HTML
+    if url == ADMISSIONS_URL:
+        return ADMISSIONS_HTML
+    if url == CATALOG_URL:
+        return CATALOG_HTML
     raise AssertionError(url)
 
 
-def test_ntu_adapter_combines_catalogue_with_live_application_windows() -> None:
-    catalog = NTUAdapter(minimum_expected_programmes=4).parse_catalog_from_fetcher(
+def _adapter(**kwargs) -> NTUTaiwanAdapter:
+    kwargs.setdefault("minimum_expected_programmes", 2)
+    return NTUTaiwanAdapter(**kwargs)
+
+
+def test_ntu_adapter_discovers_only_available_masters_programmes() -> None:
+    catalog = _adapter(maximum_expected_programmes=3).parse_catalog_from_fetcher(
         _fetcher
     )
 
-    assert catalog.application_opens_at is None
-    assert [programme.id for programme in catalog.programmes] == [
-        "ntu-applied-artificial-intelligence-mcomp",
-        "ntu-maritime-studies-msc",
-        "ntu-technopreneurship-and-innovation-programme-cn-msc",
-        "ntu-translation-and-interpretation-ma",
-    ]
-    assert catalog.programmes[0].windows == []
-    assert catalog.programmes[0].parse_status == "no-deadline"
-    maritime = catalog.programmes[1]
-    assert maritime.parse_status == "parsed"
-    assert [
-        (
-            window.intake,
-            window.round,
-            window.opens_at,
-            window.closes_at,
-            window.applicant_categories,
-        )
-        for window in maritime.windows
-    ] == [
-        (
-            "January 2027",
-            "Semester 2",
-            "2026-07-01",
-            "2026-08-31",
-            ["all"],
-        )
-    ]
-    assert catalog.programmes[3].windows[0].closes_at == "2026-08-31"
+    assert {programme.name for programme in catalog.programmes} == {
+        "Master's in Computer Science and Information Engineering",
+        "Master's in Astrophysics",
+    }
+    assert all(programme.parse_status == "parsed" for programme in catalog.programmes)
 
 
-def test_ntu_adapter_rejects_truncated_catalogue() -> None:
-    try:
-        NTUAdapter(minimum_expected_programmes=5).parse_catalog_from_fetcher(_fetcher)
-    except ValueError as exc:
-        assert "only contained 4" in str(exc)
-    else:
-        raise AssertionError("Truncated NTU catalogue was accepted")
+def test_ntu_adapter_preserves_existing_cse_identity() -> None:
+    catalog = _adapter().parse_catalog_from_fetcher(_fetcher)
+    cse = next(item for item in catalog.programmes if "Computer Science" in item.name)
+
+    assert cse.id == "ntu-computer-science-information-engineering-master"
+    assert cse.faculty == "College of Electrical Engineering and Computer Science"
+    assert cse.source_url.endswith("/degree_key/M/sn/1")
+
+
+def test_ntu_adapter_assigns_the_exact_february_2027_window() -> None:
+    catalog = _adapter().parse_catalog_from_fetcher(_fetcher)
+
+    assert catalog.application_opens_at == "2026-08-03"
+    assert all(len(programme.windows) == 1 for programme in catalog.programmes)
+    window = catalog.programmes[0].windows[0]
+    assert window.opens_at == "2026-08-03"
+    assert window.closes_at == "2026-09-17"
+    assert window.intake == "February 2027"
+    assert window.applicant_categories == ["international-students"]
+    assert window.source_url == CATALOG_URL
+
+
+def test_ntu_adapter_rejects_a_truncated_catalogue() -> None:
+    with pytest.raises(ValueError, match="only contained 2 available master's"):
+        _adapter(minimum_expected_programmes=3).parse_catalog_from_fetcher(_fetcher)
+
+
+def test_ntu_adapter_rejects_a_missing_official_opening_date() -> None:
+    def fetcher(url: str) -> str:
+        if url == ADMISSIONS_URL:
+            return ADMISSIONS_HTML
+        return CATALOG_HTML.replace(
+            "First Round：2026-08-03~2026-09-17", "First Round: dates TBA"
+        )
+
+    with pytest.raises(ValueError, match="exact First Round date range"):
+        _adapter().parse_catalog_from_fetcher(fetcher)

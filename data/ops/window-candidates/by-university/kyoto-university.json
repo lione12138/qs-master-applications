@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "adapter-window:kyoto-informatics-data-science-master-2027-august-2026-entrance-examination:2026-06-05:2026-06-19",
+      "type": "adapter-new-window",
+      "status": "pending",
+      "universityId": "kyoto-university",
+      "detectedAt": "2026-07-17T05:32:29.965368+00:00",
+      "sourceUrl": "https://www.i.kyoto-u.ac.jp/assets/pdf/admission/application/master-2027-4-en.pdf",
+      "openingBasis": "official",
+      "record": {
+        "id": "kyoto-informatics-data-science-master-2027-august-2026-entrance-examination",
+        "universityId": "kyoto-university",
+        "scopeType": "programme",
+        "scopeId": "kyoto-informatics-data-science-master",
+        "intake": "April 2027",
+        "round": "August 2026 entrance examination",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2026-06-05",
+        "closesAt": "2026-06-19",
+        "applicationUrl": "https://www.i.kyoto-u.ac.jp/en/admission/application/",
+        "sourceUrl": "https://www.i.kyoto-u.ac.jp/assets/pdf/admission/application/master-2027-4-en.pdf",
+        "verifiedAt": "2026-07-17",
+        "evidence": "The official programme adapter observed Master's Program in Informatics (Data Science Course) opening on 2026-06-05 and closing on 2026-06-19. Source: https://www.i.kyoto-u.ac.jp/assets/pdf/admission/application/master-2027-4-en.pdf",
+        "intakeDetails": {
+          "label": "April 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "other",
+          "startMonth": 4
+        }
+      },
+      "changes": {},
+      "evidenceExcerpt": "Kyoto Informatics' official April 2027 master's guidelines list this course and require postal applications from 2026-06-05 through 2026-06-19."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Seed pages for the generic official-site programme discovery runner. These entries create review candidates, not published application windows.",
-    "updatedAt": "2026-07-14"
+    "updatedAt": "2026-07-16"
   },
   "schools": [
     {
@@ -31,8 +31,35 @@
       "enabled": true
     },
     {
+      "name": "princeton-terminal-masters",
+      "universityId": "princeton-university",
+      "discoveryRole": "fallback",
+      "prefix": "princeton",
+      "seedUrls": [
+        "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study"
+      ],
+      "officialDomains": [
+        "gradschool.princeton.edu",
+        "princeton.edu"
+      ],
+      "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+      "defaultIntake": "Fall 2027",
+      "minimumExpected": 8,
+      "maxDetailPages": 12,
+      "noDeadlineHandling": "monitor",
+      "accessStatus": "blocked",
+      "accessReason": "The Princeton Graduate School Fields of Study pages return a Cloudflare HTTP 403 challenge to direct GitHub-runner requests. The dedicated Princeton adapter uses a bounded full-text reader fallback for the same official URLs; assisted official-domain discovery runs only if that adapter fails and never promotes snippet dates.",
+      "assistedDiscovery": {
+        "enabled": true,
+        "maxResults": 12,
+        "searchPriority": "high"
+      },
+      "enabled": true
+    },
+    {
       "name": "uchicago-data-science",
       "universityId": "university-of-chicago",
+      "discoveryRole": "fallback",
       "prefix": "uchicago",
       "seedUrls": [
         "https://datascience.uchicago.edu/education/masters-programs/"
@@ -79,6 +106,30 @@
       "assistedDiscovery": {
         "enabled": true,
         "maxResults": 12,
+        "searchPriority": "high"
+      },
+      "enabled": true
+    },
+    {
+      "name": "cityu-taught-postgraduate-programmes",
+      "universityId": "city-university-of-hong-kong",
+      "prefix": "cityu",
+      "seedUrls": [
+        "https://www.cityu.edu.hk/pg/taught-postgraduate-programmes/list"
+      ],
+      "officialDomains": [
+        "cityu.edu.hk"
+      ],
+      "applicationUrl": "https://www.cityu.edu.hk/pg/apply",
+      "defaultIntake": "2026/27",
+      "minimumExpected": 60,
+      "maxDetailPages": 20,
+      "noDeadlineHandling": "monitor",
+      "accessStatus": "blocked",
+      "accessReason": "The official 2026/27 taught-postgraduate list contains 65 master's programmes in a real browser, but direct GitHub-runner requests return only an Incapsula challenge shell. Assisted official-domain discovery monitors the catalogue and programme pages without promoting snippet dates; a dedicated adapter remains pending until CityUHK exposes a stable first-party HTML or data endpoint.",
+      "assistedDiscovery": {
+        "enabled": true,
+        "maxResults": 20,
         "searchPriority": "high"
       },
       "enabled": true

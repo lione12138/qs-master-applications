@@ -1,0 +1,613 @@
+{
+  "universities": {
+    "korea-university": {
+      "sourceUrl": "https://graduate2.korea.ac.kr/department/major.html",
+      "checkedAt": "2026-07-17T03:19:32.933492+00:00",
+      "itemCount": 75,
+      "applicationOpensAt": null,
+      "catalogHash": "fb96543ce585c32477d74cf999164e49a9b14c49a93db29643f447f7092a02d9",
+      "programmes": {
+        "korea-university-classics-translation-master": {
+          "name": "Master's in Classics Translation",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Classics Translation",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-comparative-literature-comparative-culture-master": {
+          "name": "Master's in Comparative Literature & Comparative Culture",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Comparative Literature & Comparative Culture",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-computer-science-master": {
+          "name": "Master's in Computer Science and Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Informatics",
+          "department": "Department of Computer Science and Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-creative-convergence-design-master": {
+          "name": "Master's in Creative Convergence Design",
+          "degreeType": "Master",
+          "faculty": "School of Art & Design",
+          "department": "Creative Convergence Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-architecture-master": {
+          "name": "Master's in Architecture",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Architecture",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-art-and-design-master": {
+          "name": "Master's in Art and Design",
+          "degreeType": "Master",
+          "faculty": "School of Art & Design",
+          "department": "Department of Art and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-artificial-intelligence-master": {
+          "name": "Master's in Artificial Intelligence",
+          "degreeType": "Master",
+          "faculty": "College of Informatics",
+          "department": "Department of Artificial Intelligence",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-battery-smart-factory-contracted-department-master": {
+          "name": "Master's in Battery-Smart Factory(Contracted Department)",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Battery-Smart Factory(Contracted Department)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-bioengineering-master": {
+          "name": "Master's in Bioengineering",
+          "degreeType": "Master",
+          "faculty": "College of Health Science",
+          "department": "Department of Bioengineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-biomedical-informatics-master": {
+          "name": "Master's in Biomedical Informatics",
+          "degreeType": "Master",
+          "faculty": "College of Medicine",
+          "department": "Department of Biomedical Informatics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-biomedical-sciences-master": {
+          "name": "Master's in Biomedical Sciences",
+          "degreeType": "Master",
+          "faculty": "College of Medicine",
+          "department": "Department of Biomedical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-biotechnology-master": {
+          "name": "Master's in Biotechnology",
+          "degreeType": "Master",
+          "faculty": "College of Life Sciences and Biotechnology",
+          "department": "Department of Biotechnology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-brain-and-cognitive-engineering-master": {
+          "name": "Master's in Brain and Cognitive Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Informatics",
+          "department": "Department of Brain and Cognitive Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-business-administration-master": {
+          "name": "Master's in Business Administration",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Department of Business Administration",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-chemical-and-biological-engineering-master": {
+          "name": "Master's in Chemical and Biological Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Chemical and Biological Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-chemistry-master": {
+          "name": "Master's in Chemistry",
+          "degreeType": "Master",
+          "faculty": "College of Science",
+          "department": "Department of Chemistry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-chinese-japanese-language-and-literature-master": {
+          "name": "Master's in Chinese&Japanese Language and Literature",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of Chinese&Japanese Language and Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-civil-environmental-and-architectural-engineering-master": {
+          "name": "Master's in Civil,Environmental and Architectural Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Civil,Environmental and Architectural Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-curriculum-and-instruction-master": {
+          "name": "Master's in Curriculum and Instruction",
+          "degreeType": "Master",
+          "faculty": "College of Education",
+          "department": "Department of Curriculum and Instruction",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-cyber-security-master": {
+          "name": "Master's in Cyber Security",
+          "degreeType": "Master",
+          "faculty": "School of Smart Security",
+          "department": "Department of Cyber Security",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-earth-and-environmental-sciences-master": {
+          "name": "Master's in Earth and Environmental Sciences",
+          "degreeType": "Master",
+          "faculty": "College of Science",
+          "department": "Department of Earth and Environmental Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-economics-master": {
+          "name": "Master's in Economics",
+          "degreeType": "Master",
+          "faculty": "College of Political Science & Economics",
+          "department": "Department of Economics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-education-master": {
+          "name": "Master's in Education",
+          "degreeType": "Master",
+          "faculty": "College of Education",
+          "department": "Department of Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-electrical-and-computer-engineering-master": {
+          "name": "Master's in Electrical and Computer Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Electrical and Computer Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-english-education-master": {
+          "name": "Master's in English Education",
+          "degreeType": "Master",
+          "faculty": "College of Education",
+          "department": "Department of English Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-english-language-and-literature-master": {
+          "name": "Master's in English Language and Literature",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of English Language and Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-environmental-science-ecological-engineering-master": {
+          "name": "Master's in Environmental Science & Ecological Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Life Sciences and Biotechnology",
+          "department": "Department of Environmental Science & Ecological Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-food-and-resource-economics-master": {
+          "name": "Master's in Food and Resource Economics",
+          "degreeType": "Master",
+          "faculty": "College of Life Sciences and Biotechnology",
+          "department": "Department of Food and Resource Economics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-french-language-and-literature-master": {
+          "name": "Master's in French Language and Literature",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of French Language and Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-future-convergence-materials-master": {
+          "name": "Master's in Future Convergence Materials",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Future Convergence Materials",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-geography-master": {
+          "name": "Master's in Geography",
+          "degreeType": "Master",
+          "faculty": "College of Education",
+          "department": "Department of Geography",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-german-language-and-literature-master": {
+          "name": "Master's in German Language and Literature",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of German Language and Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-health-and-safety-convergence-science-master": {
+          "name": "Master's in Health and Safety Convergence Science",
+          "degreeType": "Master",
+          "faculty": "College of Health Science",
+          "department": "Department of Health and Safety Convergence Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-health-care-sciences-master": {
+          "name": "Master's in Health Care Sciences",
+          "degreeType": "Master",
+          "faculty": "College of Health Science",
+          "department": "Department of Health Care Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-healthcare-and-medicine-for-unified-korea-master": {
+          "name": "Master's in Healthcare and Medicine for Unified Korea",
+          "degreeType": "Master",
+          "faculty": "College of Medicine",
+          "department": "Department of Healthcare and Medicine for Unified Korea",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-historical-studies-master": {
+          "name": "Master's in Historical Studies",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of Historical Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-human-ecology-master": {
+          "name": "Master's in Human Ecology",
+          "degreeType": "Master",
+          "faculty": "College of Education",
+          "department": "Department of Human Ecology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-industrial-and-management-engineering-master": {
+          "name": "Master's in industrial and Management Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of industrial and Management Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-integrated-biomedical-and-life-sciences-master": {
+          "name": "Master's in Integrated Biomedical and Life Sciences",
+          "degreeType": "Master",
+          "faculty": "College of Health Science",
+          "department": "Department of Integrated Biomedical and Life Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-korean-language-and-literature-master": {
+          "name": "Master's in Korean Language and Literature",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of Korean Language and Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-korean-language-education-master": {
+          "name": "Master's in Korean Language Education",
+          "degreeType": "Master",
+          "faculty": "College of Education",
+          "department": "Department of Korean Language Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-law-master": {
+          "name": "Master's in Law",
+          "degreeType": "Master",
+          "faculty": "School of Law",
+          "department": "Department of Law",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-life-sciences-master": {
+          "name": "Master's in Life Sciences",
+          "degreeType": "Master",
+          "faculty": "College of Life Sciences and Biotechnology",
+          "department": "Department of Life Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-linguistics-master": {
+          "name": "Master's in Linguistics",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of Linguistics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-materials-science-and-engineering-master": {
+          "name": "Master's in Materials Science and Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Materials Science and Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-mathematics-master": {
+          "name": "Master's in Mathematics",
+          "degreeType": "Master",
+          "faculty": "College of Science",
+          "department": "Department of Mathematics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-mechanical-engineering-master": {
+          "name": "Master's in Mechanical Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Mechanical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-media-and-communication-master": {
+          "name": "Master's in Media and Communication",
+          "degreeType": "Master",
+          "faculty": "School of Media & Communication",
+          "department": "Department of Media and Communication",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-medical-education-master": {
+          "name": "Master's in Medical Education",
+          "degreeType": "Master",
+          "faculty": "College of Medicine",
+          "department": "Department of Medical Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-medicine-master": {
+          "name": "Master's in Medicine",
+          "degreeType": "Master",
+          "faculty": "College of Medicine",
+          "department": "Department of Medicine",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-micro-nano-systems-master": {
+          "name": "Master's in Micro/Nano Systems",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Micro/Nano Systems",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-nursing-master": {
+          "name": "Master's in Nursing",
+          "degreeType": "Master",
+          "faculty": "College of Nursing",
+          "department": "Department of Nursing",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-physical-education-master": {
+          "name": "Master's in Physical Education",
+          "degreeType": "Master",
+          "faculty": "College of Education",
+          "department": "Department of Physical Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-physics-master": {
+          "name": "Master's in Physics",
+          "degreeType": "Master",
+          "faculty": "College of Science",
+          "department": "Department of Physics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-plant-biotechnology-master": {
+          "name": "Master's in Plant Biotechnology",
+          "degreeType": "Master",
+          "faculty": "College of Life Sciences and Biotechnology",
+          "department": "Department of Plant Biotechnology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-political-science-and-international-relations-master": {
+          "name": "Master's in Political Science and International Relations",
+          "degreeType": "Master",
+          "faculty": "College of Political Science & Economics",
+          "department": "Department of Political Science and International Relations",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-psychology-master": {
+          "name": "Master's in Psychology",
+          "degreeType": "Master",
+          "faculty": "School of Psychology",
+          "department": "Department of Psychology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-public-administration-master": {
+          "name": "Master's in Public Administration",
+          "degreeType": "Master",
+          "faculty": "College of Political Science & Economics",
+          "department": "Department of Public Administration",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-public-health-sciences-master": {
+          "name": "Master's in Public Health Sciences",
+          "degreeType": "Master",
+          "faculty": "College of Health Science",
+          "department": "Department of Public Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-russian-language-and-literature-master": {
+          "name": "Master's in Russian Language and Literature",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of Russian Language and Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-semiconductor-systems-engineering-contracted-department-master": {
+          "name": "Master's in Semiconductor Systems Engineering(Contracted Department)",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Semiconductor Systems Engineering(Contracted Department)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-smart-convergence-contracted-department-master": {
+          "name": "Master's in Smart Convergence(Contracted Department)",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Department of Smart Convergence(Contracted Department)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-sociology-master": {
+          "name": "Master's in Sociology",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department of Sociology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-of-statistics-master": {
+          "name": "Master's in Statistics",
+          "degreeType": "Master",
+          "faculty": "College of Political Science & Economics",
+          "department": "Department of Statistics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-department-spanish-language-and-literature-master": {
+          "name": "Master's in Department Spanish Language and Literature",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Department Spanish Language and Literature",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-interdisciplinary-program-in-cultural-heritage-studies-master": {
+          "name": "Master's in Interdisciplinary Program in Cultural Heritage Studies",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Interdisciplinary Program in Cultural Heritage Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-actuarial-science-and-financial-engineering-master": {
+          "name": "Master's in Actuarial Science and Financial Engineering",
+          "degreeType": "Master",
+          "faculty": "College of Science",
+          "department": "Program in Actuarial Science and Financial Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-biostatistics-master": {
+          "name": "Master's in Biostatistics",
+          "degreeType": "Master",
+          "faculty": "College of Medicine",
+          "department": "Program in Biostatistics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-global-korean-language-and-culture-studies-master": {
+          "name": "Master's in Global Korean Language and Culture Studies",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Program in Global Korean Language and Culture Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-hunanities-and-east-asian-cultural-industry-master": {
+          "name": "Master's in Hunanities and East Asian Cultural Industry",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Program in Hunanities and East Asian Cultural Industry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-labor-studies-master": {
+          "name": "Master's in Labor Studies",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Program in Labor Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-public-health-master": {
+          "name": "Master's in Public Health",
+          "degreeType": "Master",
+          "faculty": "College of Medicine",
+          "department": "Program in Public Health",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-science-technology-studies-master": {
+          "name": "Master's in Science & Technology Studies",
+          "degreeType": "Master",
+          "faculty": "College of Political Science & Economics",
+          "department": "Program in Science & Technology Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-program-in-smart-urban-regeneration-master": {
+          "name": "Master's in Smart Urban Regeneration",
+          "degreeType": "Master",
+          "faculty": "College of Engineering",
+          "department": "Program in Smart Urban Regeneration",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "korea-university-visual-culture-master": {
+          "name": "Master's in Visual Culture",
+          "degreeType": "Master",
+          "faculty": "College of Liberal Arts",
+          "department": "Visual Culture",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "adapter-window:lmu-statistics-data-science-msc-2026-international-office-movein-application-international-students:2026-05-15:2026-07-15",
+      "type": "adapter-new-window",
+      "status": "pending",
+      "universityId": "ludwig-maximilians-universit-t-m-nchen",
+      "detectedAt": "2026-07-17T04:54:06.279172+00:00",
+      "sourceUrl": "https://www.lmu.de/en/study/degree-students/applications-for-admission/index.html",
+      "openingBasis": "official",
+      "record": {
+        "id": "lmu-statistics-data-science-msc-2026-international-office-movein-application-international-students",
+        "universityId": "ludwig-maximilians-universit-t-m-nchen",
+        "scopeType": "programme",
+        "scopeId": "lmu-statistics-data-science-msc",
+        "intake": "Winter semester 2026/27",
+        "round": "International Office MoveIN application",
+        "applicantCategories": [
+          "international-students"
+        ],
+        "opensAt": "2026-05-15",
+        "closesAt": "2026-07-15",
+        "applicationUrl": "https://www.stat.lmu.de/en/studies/interested-master/",
+        "sourceUrl": "https://www.lmu.de/en/study/degree-students/applications-for-admission/index.html",
+        "verifiedAt": "2026-07-17",
+        "evidence": "The official programme adapter observed MSc Statistics and Data Science opening on 2026-05-15 and closing on 2026-07-15. Source: https://www.lmu.de/en/study/degree-students/applications-for-admission/index.html",
+        "intakeDetails": {
+          "label": "Winter semester 2026/27",
+          "cycleYear": 2026,
+          "academicYearEnd": 2027,
+          "term": "winter",
+          "startMonth": 1
+        }
+      },
+      "changes": {},
+      "evidenceExcerpt": "LMU's official international catalogue lists this programme. The official International Office page publishes the exact MoveIN period 2026-05-15 through 2026-07-15."
+    }
+  ]
+}

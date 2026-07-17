@@ -109,3 +109,38 @@ def test_submit_urls_accepts_indexnow_pending_validation(monkeypatch) -> None:
         "content_type": "application/json; charset=utf-8",
         "timeout": 45,
     }
+
+
+def test_wait_for_key_retries_until_deployed_content_is_live(monkeypatch) -> None:
+    module = load_module()
+    responses = ["old-key", "abc12345"]
+    sleeps: list[float] = []
+
+    class Response:
+        def __init__(self, body: str) -> None:
+            self.body = body
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *_args):
+            return None
+
+        def read(self) -> bytes:
+            return self.body.encode("utf-8")
+
+    def fake_urlopen(_request, timeout):
+        assert timeout == 15
+        return Response(responses.pop(0))
+
+    monkeypatch.setattr(module, "urlopen", fake_urlopen)
+    monkeypatch.setattr(module, "sleep", sleeps.append)
+
+    module.wait_for_key(
+        "https://gradwindow.com/abc12345.txt",
+        "abc12345",
+        attempts=3,
+        delay=0.25,
+    )
+
+    assert sleeps == [0.25]

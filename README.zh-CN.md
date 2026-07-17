@@ -1,17 +1,44 @@
-# GradWindow
+<p align="center">
+  <a href="https://gradwindow.com/">
+    <img src="docs/readme-hero.svg" width="100%" alt="GradWindow — graduate deadlines without the guesswork">
+  </a>
+</p>
 
-[![Tests](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml/badge.svg)](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml)
-[![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)](https://gradwindow.com/)
+<p align="center">
+  <a href="https://gradwindow.com/"><img alt="Website" src="https://img.shields.io/badge/website-gradwindow.com-1e6548?style=for-the-badge"></a>
+  <a href="https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/lione12138/qs-master-applications/tests.yml?branch=main&amp;style=for-the-badge&amp;label=tests"></a>
+  <a href="https://github.com/lione12138/qs-master-applications/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/lione12138/qs-master-applications?style=for-the-badge&amp;color=f3b72e"></a>
+  <a href="LICENSE"><img alt="Code license" src="https://img.shields.io/badge/code-AGPL--3.0-315f4c?style=for-the-badge"></a>
+</p>
 
-[English](README.md) · [Live website](https://gradwindow.com/)
+<p align="center"><a href="README.md">English</a> · <a href="https://gradwindow.com/">在线网站</a> · <a href="https://github.com/lione12138/qs-master-applications/issues">问题反馈</a></p>
 
-**许可说明：**[代码](LICENSE)与[数据](DATA_LICENSE.md)采用不同许可证。复用 GradWindow 整理的申请数据集必须署名，并仅限 CC BY-NC 4.0 允许的非商业用途。大学官网始终是权威信息来源。
+<p align="center"><strong>200</strong> 所大学 &nbsp;·&nbsp; <strong>1,391</strong> 个项目 &nbsp;·&nbsp; <strong>2,945</strong> 个官网窗口</p>
 
-基于大学官网数据的 QS 前 200 硕士申请追踪项目。下面只展示当前正在开放，以及未来 30 天内即将开放的申请窗口。
+不用再逐个翻找大学官网。GradWindow 把 QS 前 200 大学的硕士申请开放与截止日期整理成一个可搜索、可核验的追踪器。
 
-状态日期：**2026-07-15**
+[**查看实时申请窗口 →**](https://gradwindow.com/)
 
-> **预测参考**表示日期由最近一个官网核验周期平移一年得到，不是学校官方预测。申请前请始终核对表格中的官网来源。
+| | 你可以获得什么 |
+|---|---|
+| 🏛️ **官网来源优先** | 每条已发布窗口都链接到核验时使用的大学官网。 |
+| 🔎 **不把预测伪装成事实** | 官网核验日期与生成的预测日期始终明确分开。 |
+| 📅 **查完就能行动** | 按学校、项目、入学季和申请人类别筛选，并一键加入日历。 |
+| 🌏 **统一的大学索引** | QS、THE 与 ARWU 排名视图共用同一份大学记录。 |
+
+## 宁可少，也不要未经核验的截止日期
+
+申请数据只有可追溯才有价值。解析器不会直接发布数据：新日期先进入审核队列；只有项目范围、入学季、申请人类别、开放日期、截止日期和官网来源全部明确后，才会进入正式数据集。“九月开放”“秋季开放”这类模糊表述不会被强行转换成具体日期。
+
+## 实时申请窗口
+
+> [!IMPORTANT]
+> **预测参考**表示日期由最近一个官网核验周期平移得到，仅用于规划，不是学校官方预测。正式申请前请始终核对表格中的官网来源。
+
+更新于 **2026-07-16** · 310 个正在开放 · 171 个将在 30 天内开放
+
+<details>
+<summary><strong>正在开放 — 310 个窗口</strong></summary>
 
 ## 正在开放
 
@@ -92,7 +119,6 @@
 | =8 | UCL / 伦敦大学学院 | Robotics and Artificial Intelligence MSc | 无需英国学生签证 | September 2026 | 2025-10-20 | 2026-08-28 | 官网核验 | [申请](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc) · [来源](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/robotics-and-artificial-intelligence-msc) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Robotics%20and%20Artificial%20Intelligence%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL / 伦敦大学学院 | Scientific and Data Intensive Computing MSc | 无需英国学生签证 | September 2026 | 2025-10-20 | 2026-08-28 | 官网核验 | [申请](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc) · [来源](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/scientific-and-data-intensive-computing-msc) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Scientific%20and%20Data%20Intensive%20Computing%20MSc%20application%20deadline&dates=20260828%2F20260829) |
 | =8 | UCL / 伦敦大学学院 | Software Systems Engineering MSc | 无需英国学生签证 | September 2026 | 2025-10-20 | 2026-08-28 | 官网核验 | [申请](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc) · [来源](https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/software-systems-engineering-msc) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=UCL%20Software%20Systems%20Engineering%20MSc%20application%20deadline&dates=20260828%2F20260829) |
-| 10 | National University of Singapore (NUS) / 新加坡国立大学 | MSc (Data Science and Machine Learning) | 所有申请人 | August 2027 | 2026-05-16 | 2026-07-15 | 官网核验 | [申请](https://gradapp.nus.edu.sg/portal/app_manage) · [来源](https://www.math.nus.edu.sg/cdsml/ms-dsml/dsml-prospective-students/) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=National%20University%20of%20Singapore%20%28NUS%29%20MSc%20%28Data%20Science%20and%20Machine%20Learning%29%20application%20deadline&dates=20260715%2F20260716) |
 | 35 | The University of Edinburgh / 爱丁堡大学 | MSc Medieval History | 所有申请人 | September 2026 | 2025-10-01 | 2026-07-20 | 官网核验 | [申请](https://study.ed.ac.uk/postgraduate/applying) · [来源](https://study.ed.ac.uk/programmes/postgraduate-taught/149-medieval-history) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Edinburgh%20MSc%20Medieval%20History%20application%20deadline&dates=20260720%2F20260721) |
 | 35 | The University of Edinburgh / 爱丁堡大学 | MSc Accounting and Financial Management | 所有申请人 | September 2026 | 2025-10-01 | 2026-07-23 | 官网核验 | [申请](https://study.ed.ac.uk/postgraduate/applying) · [来源](https://study.ed.ac.uk/programmes/postgraduate-taught/1126-accounting-and-financial-management) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Edinburgh%20MSc%20Accounting%20and%20Financial%20Management%20application%20deadline&dates=20260723%2F20260724) |
 | 35 | The University of Edinburgh / 爱丁堡大学 | MSc AI for Business | 所有申请人 | September 2026 | 2025-10-01 | 2026-07-23 | 官网核验 | [申请](https://study.ed.ac.uk/postgraduate/applying) · [来源](https://study.ed.ac.uk/programmes/postgraduate-taught/1138-ai-for-business) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Edinburgh%20MSc%20AI%20for%20Business%20application%20deadline&dates=20260723%2F20260724) |
@@ -329,6 +355,11 @@
 | =82 | The University of Sheffield / 谢菲尔德大学 | Civil and Structural Engineering MSc | 所有申请人 | September 2026 | 2025-09-15 | 2026-09-04 | 官网核验 | [申请](https://www.sheffield.ac.uk/postgraduate/taught/apply) · [来源](https://www.sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Sheffield%20Civil%20and%20Structural%20Engineering%20MSc%20application%20deadline&dates=20260904%2F20260905) |
 | =162 | Université de Montréal / 蒙特利尔大学 | Maîtrise en informatique | 所有申请人 | Hiver 2027 | 2026-02-01 | 2026-09-01 | 官网核验 | [申请](https://admission.umontreal.ca/programmes/maitrise-en-informatique/) · [来源](https://admission.umontreal.ca/programmes/maitrise-en-informatique/) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=Universit%C3%A9%20de%20Montr%C3%A9al%20Ma%C3%AEtrise%20en%20informatique%20application%20deadline&dates=20260901%2F20260902) |
 
+</details>
+
+<details>
+<summary><strong>30 天内即将开放 — 171 个窗口</strong></summary>
+
 ## 30 天内即将开放
 
 | QS | 大学 | 项目 / 范围 | 申请人类别 | 入学季 | 开放日期 | 截止日期 | 数据类型 | 链接 |
@@ -504,3 +535,31 @@
 | =40 | The University of Queensland / 昆士兰大学 | Master of Sustainable Energy | 本地/国内申请人 | Semester 2 2027 | 2026-08-01 | 2027-06-30 | 预测参考 | [申请](https://apply.uq.edu.au/) · [来源](https://study.uq.edu.au/study-options/programs/master-sustainable-energy-5684) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5BESTIMATE%5D%20The%20University%20of%20Queensland%20Master%20of%20Sustainable%20Energy%20application%20deadline&dates=20270630%2F20270701) |
 | 84 | Universidad de Buenos Aires (UBA) / 布宜诺斯艾利斯大学 | Maestr?a en Explotaci?n de Datos y Descubrimiento del Conocimiento | 所有申请人 | Ciclo Lectivo 2027 | 2026-08-06 | 2026-08-11 | 预测参考 | [申请](https://datamining.dc.uba.ar/datamining/academico/) · [来源](https://datamining.dc.uba.ar/datamining/academico/) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=%5BESTIMATE%5D%20Universidad%20de%20Buenos%20Aires%20%28UBA%29%20Maestr%3Fa%20en%20Explotaci%3Fn%20de%20Datos%20y%20Descubrimiento%20del%20Conocimiento%20application%20deadline&dates=20260811%2F20260812) |
 | =87 | The University of Technology Sydney (UTS) / 悉尼科技大学 | Master of Information Technology | 本地/国内申请人 | Autumn 2027 | 2026-07-28 | 2027-01-31 | 官网核验 | [申请](https://student-portal.uts.edu.au/) · [来源](https://www.uts.edu.au/for-students/admissions-entry/application-dates) · [日历](https://calendar.google.com/calendar/render?action=TEMPLATE&text=The%20University%20of%20Technology%20Sydney%20%28UTS%29%20Master%20of%20Information%20Technology%20application%20deadline&dates=20270131%2F20270201) |
+
+</details>
+
+## 本地运行
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -e ".[dev]"
+gradwindow validate
+gradwindow build-site
+```
+
+数据模型和维护流程见[技术文档](docs/TECHNICAL.md)。
+
+## 一起完善 GradWindow
+
+发现遗漏的项目或变更的截止日期？
+
+- [报告数据错误](https://github.com/lione12138/qs-master-applications/issues/new?template=report-data-error.yml)
+- [提交官网申请窗口](https://github.com/lione12138/qs-master-applications/issues/new?template=submit-programme-window.yml)
+- 查看 [QS 前 200 覆盖路线图](docs/QS200_ROADMAP.md)
+
+如果 GradWindow 帮你省下了逐个查截止日期的时间，欢迎**[点一颗 ⭐](https://github.com/lione12138/qs-master-applications)**，让更多申请人找到它。
+
+## 许可
+
+[代码](LICENSE)与[数据](DATA_LICENSE.md)采用不同许可证。整理后的数据集须署名，并仅限 CC BY-NC 4.0 允许的非商业用途。 大学官网始终是权威信息来源。

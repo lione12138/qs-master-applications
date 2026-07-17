@@ -16,6 +16,7 @@ from .paths import (
 )
 
 SITE_URL = "https://gradwindow.com/"
+REPOSITORY_URL = "https://github.com/lione12138/qs-master-applications"
 README_PATH = ROOT / "README.md"
 README_ZH_PATH = ROOT / "README.zh-CN.md"
 
@@ -66,6 +67,11 @@ def generate_readmes(today: date | None = None) -> tuple[Path, Path]:
             group_names,
             category_names,
             today,
+            stats={
+                "universities": len(universities),
+                "programmes": len(programs),
+                "official_windows": len(applications),
+            },
             language="en",
         ),
         encoding="utf-8",
@@ -79,6 +85,11 @@ def generate_readmes(today: date | None = None) -> tuple[Path, Path]:
             group_names,
             category_names,
             today,
+            stats={
+                "universities": len(universities),
+                "programmes": len(programs),
+                "official_windows": len(applications),
+            },
             language="zh",
         ),
         encoding="utf-8",
@@ -190,69 +201,206 @@ def _render_readme(
     group_names: dict[str, str],
     category_names: dict[str, dict],
     today: date,
+    stats: dict[str, int],
     language: str,
 ) -> str:
     if language == "en":
-        language_link = "[中文](README.zh-CN.md)"
+        language_link = '<a href="README.zh-CN.md">简体中文</a>'
         license_notice = (
-            "**Licensing:** [Code](LICENSE) and [data](DATA_LICENSE.md) are "
-            "licensed separately. Reuse of the curated admissions dataset "
-            "requires attribution to GradWindow and is limited to "
-            "noncommercial use under CC BY-NC 4.0. Official university "
-            "pages remain the authoritative source."
+            "[Code](LICENSE) and [data](DATA_LICENSE.md) are licensed separately. "
+            "The curated dataset requires attribution and is available for "
+            "noncommercial use under CC BY-NC 4.0."
         )
-        intro = (
-            "A QS Top 200 master's application tracker using official "
-            "university sources. The tables below show only applications "
-            "that are open now or scheduled to open within 30 days."
+        tagline = (
+            "Stop checking dozens of university pages. GradWindow brings exact "
+            "master's application windows for QS Top 200 universities into one "
+            "searchable, reviewable tracker, backed by official sources."
         )
+        navigation = (
+            f'{language_link} · <a href="{SITE_URL}">Live website</a> · '
+            f'<a href="{REPOSITORY_URL}/issues">Issues</a>'
+        )
+        stats_line = (
+            f"<strong>{stats['universities']:,}</strong> universities &nbsp;·&nbsp; "
+            f"<strong>{stats['programmes']:,}</strong> programmes &nbsp;·&nbsp; "
+            f"<strong>{stats['official_windows']:,}</strong> official windows"
+        )
+        primary_cta = f"[**Explore live deadlines →**]({SITE_URL})"
+        features = """| | What you get |
+|---|---|
+| 🏛️ **Official sources first** | Every published window links back to the university page used for verification. |
+| 🔎 **No hidden guesswork** | Verified dates and generated estimates are visibly separated. |
+| 📅 **Ready for action** | Filter by university, programme, intake, or applicant type, then add a deadline to your calendar. |
+| 🌏 **One shared university index** | QS, THE, and ARWU views use the same canonical university records. |"""
+        trust_heading = "## Built for trust, not deadline spam"
+        trust_copy = (
+            "Admissions data is only useful when you can audit it. Parsers never "
+            "publish directly: new dates enter a review queue, and an exact window "
+            "is published only when its scope, intake, applicant category, opening "
+            "date, closing date, and official source are known. Month-only wording "
+            "stays out of the official dataset."
+        )
+        snapshot_heading = "## Live deadline snapshot"
         open_heading = "## Open Now"
         upcoming_heading = "## Opening Within 30 Days"
         note = (
-            "> **Estimate** means the date is shifted from the latest "
-            "verified cycle and is not an official forecast. Always confirm "
-            "dates on the linked university source."
+            "> [!IMPORTANT]\n"
+            "> **Estimate** means a date was shifted from the latest verified "
+            "cycle. It is planning guidance, not an official forecast. Always "
+            "confirm on the linked university source before applying."
         )
-        updated = f"Status date: **{today.isoformat()}**"
+        updated = f"Updated **{today.isoformat()}** · {len(active):,} open now · {len(upcoming):,} opening within 30 days"
+        open_summary = (
+            f"<summary><strong>Open now — {len(active):,} windows</strong></summary>"
+        )
+        upcoming_summary = f"<summary><strong>Opening within 30 days — {len(upcoming):,} windows</strong></summary>"
+        local_heading = "## Run it locally"
+        local_copy = """```powershell
+python -m venv .venv
+.\\.venv\\Scripts\\Activate.ps1
+pip install -e ".[dev]"
+gradwindow validate
+gradwindow build-site
+```
+
+See [technical documentation](docs/TECHNICAL.md) for the data model and maintenance workflows."""
+        contribute_heading = "## Help make GradWindow better"
+        contribute_copy = f"""Found a missing programme or a changed deadline?
+
+- [Report a data error]({REPOSITORY_URL}/issues/new?template=report-data-error.yml)
+- [Submit an official application window]({REPOSITORY_URL}/issues/new?template=submit-programme-window.yml)
+- Read the [QS Top 200 coverage roadmap](docs/QS200_ROADMAP.md)
+
+If GradWindow saves you a round of deadline hunting, **[leave a ⭐]({REPOSITORY_URL})**. It helps more applicants discover the project."""
+        license_heading = "## License"
+        authority_notice = "Official university pages remain the authoritative source."
     else:
-        language_link = "[English](README.md)"
+        language_link = '<a href="README.md">English</a>'
         license_notice = (
-            "**许可说明：**[代码](LICENSE)与[数据](DATA_LICENSE.md)采用不同"
-            "许可证。复用 GradWindow 整理的申请数据集必须署名，并仅限 "
-            "CC BY-NC 4.0 允许的非商业用途。大学官网始终是权威信息来源。"
+            "[代码](LICENSE)与[数据](DATA_LICENSE.md)采用不同许可证。整理后的"
+            "数据集须署名，并仅限 CC BY-NC 4.0 允许的非商业用途。"
         )
-        intro = (
-            "基于大学官网数据的 QS 前 200 硕士申请追踪项目。下面只展示"
-            "当前正在开放，以及未来 30 天内即将开放的申请窗口。"
+        tagline = (
+            "不用再逐个翻找大学官网。GradWindow 把 QS 前 200 大学的硕士申请"
+            "开放与截止日期整理成一个可搜索、可核验的追踪器。"
         )
+        navigation = (
+            f'{language_link} · <a href="{SITE_URL}">在线网站</a> · '
+            f'<a href="{REPOSITORY_URL}/issues">问题反馈</a>'
+        )
+        stats_line = (
+            f"<strong>{stats['universities']:,}</strong> 所大学 &nbsp;·&nbsp; "
+            f"<strong>{stats['programmes']:,}</strong> 个项目 &nbsp;·&nbsp; "
+            f"<strong>{stats['official_windows']:,}</strong> 个官网窗口"
+        )
+        primary_cta = f"[**查看实时申请窗口 →**]({SITE_URL})"
+        features = """| | 你可以获得什么 |
+|---|---|
+| 🏛️ **官网来源优先** | 每条已发布窗口都链接到核验时使用的大学官网。 |
+| 🔎 **不把预测伪装成事实** | 官网核验日期与生成的预测日期始终明确分开。 |
+| 📅 **查完就能行动** | 按学校、项目、入学季和申请人类别筛选，并一键加入日历。 |
+| 🌏 **统一的大学索引** | QS、THE 与 ARWU 排名视图共用同一份大学记录。 |"""
+        trust_heading = "## 宁可少，也不要未经核验的截止日期"
+        trust_copy = (
+            "申请数据只有可追溯才有价值。解析器不会直接发布数据：新日期先进入"
+            "审核队列；只有项目范围、入学季、申请人类别、开放日期、截止日期和"
+            "官网来源全部明确后，才会进入正式数据集。“九月开放”“秋季开放”"
+            "这类模糊表述不会被强行转换成具体日期。"
+        )
+        snapshot_heading = "## 实时申请窗口"
         open_heading = "## 正在开放"
         upcoming_heading = "## 30 天内即将开放"
         note = (
-            "> **预测参考**表示日期由最近一个官网核验周期平移一年得到，"
-            "不是学校官方预测。申请前请始终核对表格中的官网来源。"
+            "> [!IMPORTANT]\n"
+            "> **预测参考**表示日期由最近一个官网核验周期平移得到，仅用于规划，"
+            "不是学校官方预测。正式申请前请始终核对表格中的官网来源。"
         )
-        updated = f"状态日期：**{today.isoformat()}**"
+        updated = f"更新于 **{today.isoformat()}** · {len(active):,} 个正在开放 · {len(upcoming):,} 个将在 30 天内开放"
+        open_summary = (
+            f"<summary><strong>正在开放 — {len(active):,} 个窗口</strong></summary>"
+        )
+        upcoming_summary = f"<summary><strong>30 天内即将开放 — {len(upcoming):,} 个窗口</strong></summary>"
+        local_heading = "## 本地运行"
+        local_copy = """```powershell
+python -m venv .venv
+.\\.venv\\Scripts\\Activate.ps1
+pip install -e ".[dev]"
+gradwindow validate
+gradwindow build-site
+```
 
-    return f"""# GradWindow
+数据模型和维护流程见[技术文档](docs/TECHNICAL.md)。"""
+        contribute_heading = "## 一起完善 GradWindow"
+        contribute_copy = f"""发现遗漏的项目或变更的截止日期？
 
-[![Tests](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml/badge.svg)](https://github.com/lione12138/qs-master-applications/actions/workflows/tests.yml)
-[![Website](https://img.shields.io/badge/Website-GradWindow-1e6548)]({SITE_URL})
+- [报告数据错误]({REPOSITORY_URL}/issues/new?template=report-data-error.yml)
+- [提交官网申请窗口]({REPOSITORY_URL}/issues/new?template=submit-programme-window.yml)
+- 查看 [QS 前 200 覆盖路线图](docs/QS200_ROADMAP.md)
 
-{language_link} · [Live website]({SITE_URL})
+如果 GradWindow 帮你省下了逐个查截止日期的时间，欢迎**[点一颗 ⭐]({REPOSITORY_URL})**，让更多申请人找到它。"""
+        license_heading = "## 许可"
+        authority_notice = "大学官网始终是权威信息来源。"
 
-{license_notice}
+    return f"""<p align="center">
+  <a href="{SITE_URL}">
+    <img src="docs/readme-hero.svg" width="100%" alt="GradWindow — graduate deadlines without the guesswork">
+  </a>
+</p>
 
-{intro}
+<p align="center">
+  <a href="{SITE_URL}"><img alt="Website" src="https://img.shields.io/badge/website-gradwindow.com-1e6548?style=for-the-badge"></a>
+  <a href="{REPOSITORY_URL}/actions/workflows/tests.yml"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/lione12138/qs-master-applications/tests.yml?branch=main&amp;style=for-the-badge&amp;label=tests"></a>
+  <a href="{REPOSITORY_URL}/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/lione12138/qs-master-applications?style=for-the-badge&amp;color=f3b72e"></a>
+  <a href="LICENSE"><img alt="Code license" src="https://img.shields.io/badge/code-AGPL--3.0-315f4c?style=for-the-badge"></a>
+</p>
+
+<p align="center">{navigation}</p>
+
+<p align="center">{stats_line}</p>
+
+{tagline}
+
+{primary_cta}
+
+{features}
+
+{trust_heading}
+
+{trust_copy}
+
+{snapshot_heading}
+
+{note}
 
 {updated}
 
-{note}
+<details>
+{open_summary}
 
 {open_heading}
 
 {_table(active, university_by_id, program_names, group_names, category_names, language)}
 
+</details>
+
+<details>
+{upcoming_summary}
+
 {upcoming_heading}
 
 {_table(upcoming, university_by_id, program_names, group_names, category_names, language)}
+
+</details>
+
+{local_heading}
+
+{local_copy}
+
+{contribute_heading}
+
+{contribute_copy}
+
+{license_heading}
+
+{license_notice} {authority_notice}
 """

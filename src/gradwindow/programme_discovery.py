@@ -3,11 +3,15 @@ from __future__ import annotations
 import hashlib
 import json
 from collections.abc import Callable
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
+from io import BytesIO
 from pathlib import Path
+
+from openpyxl import load_workbook
 
 from .http_client import DEFAULT_USER_AGENT, fetch_page
 from .io import read_json, write_json
+from .monitor import extract_fetched_text
 from .paths import (
     APPLICATIONS_PATH,
     PROGRAMME_CANDIDATES_PATH,
@@ -24,7 +28,7 @@ from .programme_windows import (
 
 
 def fetch_catalog(url: str) -> str:
-    return fetch_page(
+    page = fetch_page(
         url,
         user_agent=DEFAULT_USER_AGENT,
         timeout=30,
@@ -32,7 +36,32 @@ def fetch_catalog(url: str) -> str:
             "text/html,application/xhtml+xml,application/xml;q=0.9,"
             "text/xml;q=0.8,*/*;q=0.7"
         ),
-    ).body
+    )
+    if (
+        "spreadsheetml.sheet" in page.content_type.lower()
+        or page.final_url.lower().split("?", 1)[0].endswith(".xlsx")
+    ):
+        return _xlsx_payload(page.raw_bytes)
+    return extract_fetched_text(page)
+
+
+def _xlsx_payload(raw_bytes: bytes) -> str:
+    workbook = load_workbook(BytesIO(raw_bytes), read_only=True, data_only=True)
+    worksheets = []
+    for sheet in workbook.worksheets:
+        rows = [
+            [_json_cell(value) for value in row]
+            for row in sheet.iter_rows(values_only=True)
+        ]
+        worksheets.append({"name": sheet.title, "rows": rows})
+    workbook.close()
+    return json.dumps({"worksheets": worksheets}, ensure_ascii=False)
+
+
+def _json_cell(value):
+    if isinstance(value, (date, datetime)):
+        return value.isoformat()
+    return value
 
 
 def discover_programmes(

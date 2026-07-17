@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Internal exact-window candidates awaiting manual review. This file is never published to the static site.",
-    "updatedAt": "2026-07-14T18:21:45.060199+00:00"
+    "updatedAt": "2026-07-17T06:20:00.604141+00:00"
   },
   "partitioning": {
     "collectionKey": "items",
@@ -9,7 +9,13 @@
     "root": "window-candidates/by-university",
     "files": [
       "window-candidates/by-university/delft-university-of-technology.json",
-      "window-candidates/by-university/university-of-edinburgh.json"
+      "window-candidates/by-university/kyoto-university.json",
+      "window-candidates/by-university/ludwig-maximilians-universit-t-m-nchen.json",
+      "window-candidates/by-university/mcgill-university.json",
+      "window-candidates/by-university/national-taiwan-university-ntu.json",
+      "window-candidates/by-university/universiti-malaya-um.json",
+      "window-candidates/by-university/university-of-edinburgh.json",
+      "window-candidates/by-university/yonsei-university.json"
     ]
   }
 }

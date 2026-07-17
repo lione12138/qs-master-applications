@@ -1,0 +1,845 @@
+{
+  "universities": {
+    "university-of-california-los-angeles-ucla": {
+      "sourceUrl": "https://grad.ucla.edu/",
+      "checkedAt": "2026-07-17T02:52:19.567862+00:00",
+      "itemCount": 104,
+      "applicationOpensAt": null,
+      "catalogHash": "f91f0a16d46120a95385737199e266e373ced4ae701f5649953e161712c890e3",
+      "programmes": {
+        "ucla-aerospace-engineering": {
+          "name": "Aerospace Engineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Aerospace Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-african-american-studies": {
+          "name": "African American Studies",
+          "degreeType": "M.A.",
+          "faculty": "Social Sciences",
+          "department": "African American Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-african-studies": {
+          "name": "African Studies",
+          "degreeType": "M.A.",
+          "faculty": "International Institute",
+          "department": "African Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-american-indian-studies": {
+          "name": "American Indian Studies",
+          "degreeType": "M.A.",
+          "faculty": "Social Sciences",
+          "department": "American Indian Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-architecture": {
+          "name": "Architecture",
+          "degreeType": "M.A.",
+          "faculty": "School Of Arts And Architecture",
+          "department": "Architecture",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-architecture-m-arch": {
+          "name": "Architecture - M.Arch.",
+          "degreeType": "M.Arch.",
+          "faculty": "School Of Arts And Architecture",
+          "department": "Architecture - M.Arch.",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-architecture-m-s-in-architecture-and-urban-design": {
+          "name": "Architecture - M.S. in Architecture and Urban Design",
+          "degreeType": "M.S.",
+          "faculty": "School Of Arts And Architecture",
+          "department": "Architecture - M.S. in Architecture and Urban Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-art": {
+          "name": "Art",
+          "degreeType": "M.F.A.",
+          "faculty": "School Of Arts And Architecture",
+          "department": "Art",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-asian-american-studies": {
+          "name": "Asian American Studies",
+          "degreeType": "M.A.",
+          "faculty": "Social Sciences",
+          "department": "Asian American Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-astronomy-and-astrophysics-mat": {
+          "name": "Astronomy and Astrophysics-MAT",
+          "degreeType": "M.A.T.",
+          "faculty": "Physical Sciences",
+          "department": "Astronomy and Astrophysics-MAT",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-atmospheric-and-oceanic-sciences": {
+          "name": "Atmospheric and Oceanic Sciences",
+          "degreeType": "M.S.",
+          "faculty": "Physical Sciences",
+          "department": "Atmospheric and Oceanic Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-bioengineering": {
+          "name": "Bioengineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Bioengineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-bioinformatics": {
+          "name": "Bioinformatics",
+          "degreeType": "M.S.",
+          "faculty": "Life Sciences",
+          "department": "Bioinformatics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-biology": {
+          "name": "Biology",
+          "degreeType": "M.S.",
+          "faculty": "Life Sciences",
+          "department": "Biology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-biomathematics": {
+          "name": "Biomathematics",
+          "degreeType": "M.S.",
+          "faculty": "David Geffen School Of Medicine",
+          "department": "Biomathematics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-biostatistics": {
+          "name": "Biostatistics",
+          "degreeType": "M.S.",
+          "faculty": "School Of Public Health",
+          "department": "Biostatistics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-biostatistics-mph": {
+          "name": "Biostatistics MPH",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Biostatistics MPH",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-chemical-engineering": {
+          "name": "Chemical Engineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Chemical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-chemistry-master-of-applied-chemical-sciences": {
+          "name": "Chemistry - Master of Applied Chemical Sciences",
+          "degreeType": "M.A.C.S.",
+          "faculty": "Physical Sciences",
+          "department": "Chemistry - Master of Applied Chemical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-choreographic-inquiry": {
+          "name": "Choreographic Inquiry",
+          "degreeType": "M.F.A.",
+          "faculty": "School Of Arts And Architecture",
+          "department": "Choreographic Inquiry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-civil-engineering": {
+          "name": "Civil Engineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Civil Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-clinical-research": {
+          "name": "Clinical Research",
+          "degreeType": "M.S.",
+          "faculty": "David Geffen School Of Medicine",
+          "department": "Clinical Research",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-community-health-sciences": {
+          "name": "Community Health Sciences",
+          "degreeType": "M.S.",
+          "faculty": "School Of Public Health",
+          "department": "Community Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-community-health-sciences-mph": {
+          "name": "Community Health Sciences MPH",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Community Health Sciences MPH",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-computer-science-ms": {
+          "name": "Computer Science",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Computer Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-conservation-of-cultural-heritage": {
+          "name": "Conservation of Cultural Heritage",
+          "degreeType": "M.A.",
+          "faculty": "Social Sciences",
+          "department": "Conservation of Cultural Heritage",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-data-science-in-biomedicine": {
+          "name": "Data Science in Biomedicine",
+          "degreeType": "M.S.",
+          "faculty": "David Geffen School Of Medicine",
+          "department": "Data Science in Biomedicine",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-data-science-in-health": {
+          "name": "Data Science in Health",
+          "degreeType": "M.D.S.H.",
+          "faculty": "School Of Public Health",
+          "department": "Data Science in Health",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-design-media-arts": {
+          "name": "Design | Media Arts",
+          "degreeType": "M.F.A.",
+          "faculty": "School Of Arts And Architecture",
+          "department": "Design | Media Arts",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-east-asian-studies": {
+          "name": "East Asian Studies",
+          "degreeType": "M.A.",
+          "faculty": "International Institute",
+          "department": "East Asian Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-economics-master-of-quantitative-economics": {
+          "name": "Economics - Master of Quantitative Economics",
+          "degreeType": "M.Q.E.",
+          "faculty": "Social Sciences",
+          "department": "Economics - Master of Quantitative Economics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-education": {
+          "name": "Education",
+          "degreeType": "M.Ed. & M.A.",
+          "faculty": "School Of Education And Information Studies",
+          "department": "Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-electrical-computer-engineering": {
+          "name": "Electrical & Computer Engineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Electrical & Computer Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-master-of-engineering": {
+          "name": "Engineering - Master of Engineering",
+          "degreeType": "M.Engr.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - Master of Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-aerospace-online": {
+          "name": "Engineering - MS in Engineering-Aerospace, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Aerospace, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-computer-networking-online": {
+          "name": "Engineering - MS in Engineering-Computer Networking, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Computer Networking, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-electrical-online": {
+          "name": "Engineering - MS in Engineering-Electrical, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Electrical, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-electronic-materials-online": {
+          "name": "Engineering - MS in Engineering-Electronic Materials, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Electronic Materials, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-integrated-circuits-online": {
+          "name": "Engineering - MS in Engineering-Integrated Circuits, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Integrated Circuits, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-manufacturing-and-design-online": {
+          "name": "Engineering - MS in Engineering-Manufacturing and Design, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Manufacturing and Design, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-materials-science-online": {
+          "name": "Engineering - MS in Engineering-Materials Science, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Materials Science, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-mechanical-online": {
+          "name": "Engineering - MS in Engineering-Mechanical, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Mechanical, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-online": {
+          "name": "Engineering - MS in Engineering, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-signal-processing-and-communications-online": {
+          "name": "Engineering - MS in Engineering-Signal Processing and Communications, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Signal Processing and Communications, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-engineering-ms-in-engineering-structural-materials-online": {
+          "name": "Engineering - MS in Engineering-Structural Materials, Online",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Engineering - MS in Engineering-Structural Materials, Online",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-environmental-health-sciences": {
+          "name": "Environmental Health Sciences",
+          "degreeType": "M.S.",
+          "faculty": "School Of Public Health",
+          "department": "Environmental Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-environmental-health-sciences-mph": {
+          "name": "Environmental Health Sciences MPH",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Environmental Health Sciences MPH",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-epidemiology": {
+          "name": "Epidemiology",
+          "degreeType": "M.S.",
+          "faculty": "School Of Public Health",
+          "department": "Epidemiology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-epidemiology-mph": {
+          "name": "Epidemiology MPH",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Epidemiology MPH",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-executive-master-of-public-health": {
+          "name": "Executive Master of Public Health",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Executive Master of Public Health",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-film-television": {
+          "name": "Film & Television",
+          "degreeType": "M.A. & M.F.A.",
+          "faculty": "School Of Theater Film And Television",
+          "department": "Film & Television",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-genetic-counseling": {
+          "name": "Genetic Counseling",
+          "degreeType": "M.S.",
+          "faculty": "David Geffen School Of Medicine",
+          "department": "Genetic Counseling",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-geochemistry": {
+          "name": "Geochemistry",
+          "degreeType": "M.S.",
+          "faculty": "Physical Sciences",
+          "department": "Geochemistry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-geology": {
+          "name": "Geology",
+          "degreeType": "M.S.",
+          "faculty": "Physical Sciences",
+          "department": "Geology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-geophysics-space-physics": {
+          "name": "Geophysics & Space Physics",
+          "degreeType": "M.S.",
+          "faculty": "Physical Sciences",
+          "department": "Geophysics & Space Physics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-greek": {
+          "name": "Greek",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Greek",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-health-management-mph": {
+          "name": "Health Management MPH",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Health Management MPH",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-health-policy-management": {
+          "name": "Health Policy & Management",
+          "degreeType": "M.S.",
+          "faculty": "School Of Public Health",
+          "department": "Health Policy & Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-health-policy-management-mph": {
+          "name": "Health Policy & Management MPH",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Health Policy & Management MPH",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-health-policy-mph": {
+          "name": "Health Policy MPH",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Health Policy MPH",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-healthcare-administration": {
+          "name": "Healthcare Administration",
+          "degreeType": "M.H.A.",
+          "faculty": "School Of Public Health",
+          "department": "Healthcare Administration",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-indo-european-studies": {
+          "name": "Indo-European Studies",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Indo-European Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-islamic-studies": {
+          "name": "Islamic Studies",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Islamic Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-latin": {
+          "name": "Latin",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Latin",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-latin-american-studies": {
+          "name": "Latin American Studies",
+          "degreeType": "M.A.",
+          "faculty": "International Institute",
+          "department": "Latin American Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-library-information-science": {
+          "name": "Library & Information Science",
+          "degreeType": "M.L.I.S.",
+          "faculty": "School Of Education And Information Studies",
+          "department": "Library & Information Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-management-business-analytics-ms": {
+          "name": "Management - Business Analytics MS",
+          "degreeType": "M.S.",
+          "faculty": "Anderson School Of Management",
+          "department": "Management - Business Analytics MS",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-management-executive-mba": {
+          "name": "Management - Executive MBA",
+          "degreeType": "M.B.A.",
+          "faculty": "Anderson School Of Management",
+          "department": "Management - Executive MBA",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-management-fully-employed-mba-femba": {
+          "name": "Management - Fully Employed MBA (FEMBA)",
+          "degreeType": "M.B.A.",
+          "faculty": "Anderson School Of Management",
+          "department": "Management - Fully Employed MBA (FEMBA)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-management-global-executive-mba-for-asia-pacific": {
+          "name": "Management - Global Executive MBA for Asia Pacific",
+          "degreeType": "M.B.A.",
+          "faculty": "Anderson School Of Management",
+          "department": "Management - Global Executive MBA for Asia Pacific",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-management-master-of-financial-engineering": {
+          "name": "Management - Master of Financial Engineering",
+          "degreeType": "M.F.E.",
+          "faculty": "Anderson School Of Management",
+          "department": "Management - Master of Financial Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-management-mba": {
+          "name": "Management - MBA",
+          "degreeType": "M.B.A.",
+          "faculty": "Anderson School Of Management",
+          "department": "Management - MBA",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-manufacturing-engineering": {
+          "name": "Manufacturing Engineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Manufacturing Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-master-of-applied-geospatial-information-systems-technologies": {
+          "name": "Master of Applied Geospatial Information Systems & Technologies",
+          "degreeType": "M.A.G.I.S.T.",
+          "faculty": "Social Sciences",
+          "department": "Master of Applied Geospatial Information Systems & Technologies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-master-of-legal-studies": {
+          "name": "Master of Legal Studies",
+          "degreeType": "M.L.S.",
+          "faculty": "School Of Law",
+          "department": "Master of Legal Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-master-of-public-health-in-community-health-health-promotion-and-education": {
+          "name": "Master of Public Health in Community Health, Health Promotion and Education",
+          "degreeType": "M.P.H.",
+          "faculty": "School Of Public Health",
+          "department": "Master of Public Health in Community Health, Health Promotion and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-master-of-quantum-science-and-technology": {
+          "name": "Master of Quantum Science and Technology",
+          "degreeType": "M.Q.S.T.",
+          "faculty": "Physical Sciences",
+          "department": "Master of Quantum Science and Technology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-master-of-real-estate-development": {
+          "name": "Master of Real Estate Development",
+          "degreeType": "M.R.E.D.",
+          "faculty": "School Of Public Affairs",
+          "department": "Master of Real Estate Development",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-master-of-social-science": {
+          "name": "Master of Social Science",
+          "degreeType": "M.S.S.",
+          "faculty": "Social Sciences",
+          "department": "Master of Social Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-materials-science-engineering": {
+          "name": "Materials Science & Engineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Materials Science & Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-mathematics": {
+          "name": "Mathematics",
+          "degreeType": "M.A. & M.A.T.",
+          "faculty": "Physical Sciences",
+          "department": "Mathematics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-mechanical-engineering": {
+          "name": "Mechanical Engineering",
+          "degreeType": "M.S.",
+          "faculty": "School Of Engineering And Applied Science",
+          "department": "Mechanical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-medical-informatics": {
+          "name": "Medical Informatics",
+          "degreeType": "M.S.",
+          "faculty": "Life Sciences",
+          "department": "Medical Informatics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-molecular-biology": {
+          "name": "Molecular Biology",
+          "degreeType": "M.S.",
+          "faculty": "Life Sciences",
+          "department": "Molecular Biology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-molecular-cell-developmental-biology": {
+          "name": "Molecular, Cell, & Developmental Biology",
+          "degreeType": "M.S.",
+          "faculty": "Life Sciences",
+          "department": "Molecular, Cell, & Developmental Biology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-music": {
+          "name": "Music",
+          "degreeType": "M.A. & M.M.",
+          "faculty": "Herb Alpert School Of Music",
+          "department": "Music",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-near-eastern-languages-cultures": {
+          "name": "Near Eastern Languages & Cultures",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Near Eastern Languages & Cultures",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-nursing": {
+          "name": "Nursing",
+          "degreeType": "M.S.N.",
+          "faculty": "School Of Nursing",
+          "department": "Nursing",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-oral-biology": {
+          "name": "Oral Biology",
+          "degreeType": "M.S.",
+          "faculty": "School Of Dentistry",
+          "department": "Oral Biology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-physics-biology-in-medicine": {
+          "name": "Physics & Biology in Medicine",
+          "degreeType": "M.S.",
+          "faculty": "David Geffen School Of Medicine",
+          "department": "Physics & Biology in Medicine",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-physiological-science": {
+          "name": "Physiological Science",
+          "degreeType": "M.S.",
+          "faculty": "Life Sciences",
+          "department": "Physiological Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-planetary-science": {
+          "name": "Planetary Science",
+          "degreeType": "M.S.",
+          "faculty": "Physical Sciences",
+          "department": "Planetary Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-portuguese": {
+          "name": "Portuguese",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Portuguese",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-public-policy": {
+          "name": "Public Policy",
+          "degreeType": "M.P.P.",
+          "faculty": "School Of Public Affairs",
+          "department": "Public Policy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-scandinavian": {
+          "name": "Scandinavian",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Scandinavian",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-slavic-east-european-and-eurasian-languages-cultures": {
+          "name": "Slavic, East European, and Eurasian Languages & Cultures",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Slavic, East European, and Eurasian Languages & Cultures",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-social-welfare": {
+          "name": "Social Welfare",
+          "degreeType": "M.S.W.",
+          "faculty": "School Of Public Affairs",
+          "department": "Social Welfare",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-spanish": {
+          "name": "Spanish",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Spanish",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-statistics": {
+          "name": "Statistics",
+          "degreeType": "M.S.",
+          "faculty": "Physical Sciences",
+          "department": "Statistics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-statistics-master-of-applied-statistics-and-data-science": {
+          "name": "Statistics - Master of Applied Statistics and Data Science",
+          "degreeType": "M.A.S.D.S.",
+          "faculty": "Physical Sciences",
+          "department": "Statistics - Master of Applied Statistics and Data Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-teaching-asian-languages": {
+          "name": "Teaching Asian Languages",
+          "degreeType": "M.A.",
+          "faculty": "Humanities",
+          "department": "Teaching Asian Languages",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-theater": {
+          "name": "Theater",
+          "degreeType": "M.F.A.",
+          "faculty": "School Of Theater Film And Television",
+          "department": "Theater",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-urban-and-regional-planning": {
+          "name": "Urban and Regional Planning",
+          "degreeType": "M.U.R.P.",
+          "faculty": "School Of Public Affairs",
+          "department": "Urban and Regional Planning",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "ucla-urban-and-regional-planning-institut-d-etudes-de-paris": {
+          "name": "Urban and Regional Planning - Institut d'Etudes de Paris",
+          "degreeType": "M.U.R.P.",
+          "faculty": "School Of Public Affairs",
+          "department": "Urban and Regional Planning - Institut d'Etudes de Paris",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,460 @@
+{
+  "items": [
+    {
+      "id": "known-programme-guidance:princeton-computer-science-mse",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/computer-science",
+      "programme": {
+        "id": "princeton-computer-science-mse",
+        "universityId": "princeton-university",
+        "name": "MSE in Computer Science",
+        "degreeType": "MSE",
+        "faculty": "Princeton University Graduate School | Computer Science",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/computer-science"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/computer-science"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.S.E. application deadline for Fall 2026 as 2025-12-15. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page-via-reader",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "403b3844434b08f303291ae827eb6b26958a3d5968ab85b79dd802858b5a2285"
+      }
+    },
+    {
+      "id": "new-programme:princeton-architecture-march",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/architecture",
+      "programme": {
+        "id": "princeton-architecture-march",
+        "universityId": "princeton-university",
+        "name": "M.Arch. in Architecture",
+        "degreeType": "MARCH",
+        "faculty": "Princeton University Graduate School | Architecture",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/architecture"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-30",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/architecture"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.Arch. application deadline for Fall 2026 as 2025-12-30. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "ad12463402ad5b11dc78296d41b6da8c2e17835a50c9db616edb7b1529e10053"
+      }
+    },
+    {
+      "id": "new-programme:princeton-chemical-and-biological-engineering-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/chemical-and-biological-engineering",
+      "programme": {
+        "id": "princeton-chemical-and-biological-engineering-meng",
+        "universityId": "princeton-university",
+        "name": "M.Eng. in Chemical and Biological Engineering",
+        "degreeType": "MENG",
+        "faculty": "Princeton University Graduate School | Chemical and Biological Engineering",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/chemical-and-biological-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/chemical-and-biological-engineering"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.Eng. application deadline for Fall 2026 as 2025-12-01. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "8fd44e3a132feb16e5e01cbc179df809583d2d077626adf513f74f4ae3305e4d"
+      }
+    },
+    {
+      "id": "new-programme:princeton-chemical-and-biological-engineering-mse",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/chemical-and-biological-engineering",
+      "programme": {
+        "id": "princeton-chemical-and-biological-engineering-mse",
+        "universityId": "princeton-university",
+        "name": "M.S.E. in Chemical and Biological Engineering",
+        "degreeType": "MSE",
+        "faculty": "Princeton University Graduate School | Chemical and Biological Engineering",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/chemical-and-biological-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/chemical-and-biological-engineering"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.S.E. application deadline for Fall 2026 as 2025-12-01. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "8fd44e3a132feb16e5e01cbc179df809583d2d077626adf513f74f4ae3305e4d"
+      }
+    },
+    {
+      "id": "new-programme:princeton-civil-and-environmental-engineering-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/civil-and-environmental-engineering",
+      "programme": {
+        "id": "princeton-civil-and-environmental-engineering-meng",
+        "universityId": "princeton-university",
+        "name": "M.Eng. in Civil and Environmental Engineering",
+        "degreeType": "MENG",
+        "faculty": "Princeton University Graduate School | Civil and Environmental Engineering",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/civil-and-environmental-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-30",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/civil-and-environmental-engineering"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.Eng. application deadline for Fall 2026 as 2025-12-30. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "512e64c9f36bc61acbfd3ba95a3b891356f64e6f3610b9d4cce45a010e7bf8c1"
+      }
+    },
+    {
+      "id": "new-programme:princeton-civil-and-environmental-engineering-mse",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/civil-and-environmental-engineering",
+      "programme": {
+        "id": "princeton-civil-and-environmental-engineering-mse",
+        "universityId": "princeton-university",
+        "name": "M.S.E. in Civil and Environmental Engineering",
+        "degreeType": "MSE",
+        "faculty": "Princeton University Graduate School | Civil and Environmental Engineering",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/civil-and-environmental-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-30",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/civil-and-environmental-engineering"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.S.E. application deadline for Fall 2026 as 2025-12-30. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "512e64c9f36bc61acbfd3ba95a3b891356f64e6f3610b9d4cce45a010e7bf8c1"
+      }
+    },
+    {
+      "id": "new-programme:princeton-electrical-and-computer-engineering-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/electrical-and-computer-engineering",
+      "programme": {
+        "id": "princeton-electrical-and-computer-engineering-meng",
+        "universityId": "princeton-university",
+        "name": "M.Eng. in Electrical and Computer Engineering",
+        "degreeType": "MENG",
+        "faculty": "Princeton University Graduate School | Electrical and Computer Engineering",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/electrical-and-computer-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-30",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/electrical-and-computer-engineering"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.Eng. application deadline for Fall 2026 as 2025-12-30. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "36ae9ff60ac63aeb1726a64381d4967b4c56eb66bc4e78bcd044cc0106670af3"
+      }
+    },
+    {
+      "id": "new-programme:princeton-finance-mfin",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/finance",
+      "programme": {
+        "id": "princeton-finance-mfin",
+        "universityId": "princeton-university",
+        "name": "M.Fin. in Finance",
+        "degreeType": "MFIN",
+        "faculty": "Princeton University Graduate School | Finance",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/finance"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/finance"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.Fin. application deadline for Fall 2026 as 2025-12-15. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page-via-reader",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "abb6c2ee22f2580d1e1f3c3f27330aa422db7eec248314d9e03f4945bf6be12c"
+      }
+    },
+    {
+      "id": "new-programme:princeton-mechanical-and-aerospace-engineering-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering",
+      "programme": {
+        "id": "princeton-mechanical-and-aerospace-engineering-meng",
+        "universityId": "princeton-university",
+        "name": "M.Eng. in Mechanical and Aerospace Engineering",
+        "degreeType": "MENG",
+        "faculty": "Princeton University Graduate School | Mechanical and Aerospace Engineering",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.Eng. application deadline for Fall 2026 as 2025-12-01. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page-via-reader",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "19d479fe7aea839886d7b37d134de4e935d931d39754e9fd59424aff60c01e6d"
+      }
+    },
+    {
+      "id": "new-programme:princeton-mechanical-and-aerospace-engineering-mse",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering",
+      "programme": {
+        "id": "princeton-mechanical-and-aerospace-engineering-mse",
+        "universityId": "princeton-university",
+        "name": "M.S.E. in Mechanical and Aerospace Engineering",
+        "degreeType": "MSE",
+        "faculty": "Princeton University Graduate School | Mechanical and Aerospace Engineering",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/mechanical-and-aerospace-engineering"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.S.E. application deadline for Fall 2026 as 2025-12-01. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page-via-reader",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "19d479fe7aea839886d7b37d134de4e935d931d39754e9fd59424aff60c01e6d"
+      }
+    },
+    {
+      "id": "new-programme:princeton-school-of-public-and-international-affairs-mpa",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/princeton-school-public-and-international-affairs",
+      "programme": {
+        "id": "princeton-school-of-public-and-international-affairs-mpa",
+        "universityId": "princeton-university",
+        "name": "M.P.A. in Princeton School of Public and International Affairs",
+        "degreeType": "MPA",
+        "faculty": "Princeton University Graduate School | Princeton School of Public and International Affairs",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/princeton-school-public-and-international-affairs"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/princeton-school-public-and-international-affairs"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.P.A. application deadline for Fall 2026 as 2025-12-15. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "a62e6cd726d1d726945e4400d58a9d39139157677e362c12751cca4c098ae0c7"
+      }
+    },
+    {
+      "id": "new-programme:princeton-school-of-public-and-international-affairs-mpp",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "princeton-university",
+      "detectedAt": "2026-07-16T14:58:06.174136+00:00",
+      "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/princeton-school-public-and-international-affairs",
+      "programme": {
+        "id": "princeton-school-of-public-and-international-affairs-mpp",
+        "universityId": "princeton-university",
+        "name": "M.P.P. in Princeton School of Public and International Affairs",
+        "degreeType": "MPP",
+        "faculty": "Princeton University Graduate School | Princeton School of Public and International Affairs",
+        "applicationUrl": "https://gradschool.princeton.edu/admission-onboarding/apply",
+        "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/princeton-school-public-and-international-affairs"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2026",
+          "round": "Main deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/princeton-school-public-and-international-affairs"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Princeton lists the M.P.P. application deadline for Fall 2026 as 2025-12-15. The central admissions page says 'application for Fall 2027 will open in September 2026', so no exact opening date is currently published.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": "a62e6cd726d1d726945e4400d58a9d39139157677e362c12751cca4c098ae0c7"
+      }
+    }
+  ]
+}

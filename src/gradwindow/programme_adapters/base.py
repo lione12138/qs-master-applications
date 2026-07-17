@@ -57,6 +57,8 @@ class BaseProgrammeAdapter:
     intake = "Varies by programme"
     application_opens_at_basis = "official"
     replace_pending_candidates = False
+    known_programme_window_scope_type = "programme"
+    known_programme_window_scope_id: str | None = None
 
     def parse_catalog_from_fetcher(self, fetcher: Fetcher) -> DiscoveredCatalog:
         return self.parse_catalog(fetcher(self.catalog_url))

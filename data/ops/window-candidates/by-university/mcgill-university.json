@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "id": "adapter-window:mcgill-computer-science-msc-thesis-2027-fall-domestic-deadline-domestic:2026-09-15:2027-02-15",
+      "type": "adapter-new-window",
+      "status": "pending",
+      "universityId": "mcgill-university",
+      "detectedAt": "2026-07-16T15:38:59.590782+00:00",
+      "sourceUrl": "https://www.mcgill.ca/gradapplicants/program/computer-science-msc",
+      "openingBasis": "official",
+      "record": {
+        "id": "mcgill-computer-science-msc-thesis-2027-fall-domestic-deadline-domestic",
+        "universityId": "mcgill-university",
+        "scopeType": "programme",
+        "scopeId": "mcgill-computer-science-msc-thesis",
+        "intake": "Fall 2027",
+        "round": "Fall domestic deadline",
+        "applicantCategories": [
+          "domestic"
+        ],
+        "opensAt": "2026-09-15",
+        "closesAt": "2027-02-15",
+        "applicationUrl": "https://www.mcgill.ca/gradapplicants/apply",
+        "sourceUrl": "https://www.mcgill.ca/gradapplicants/program/computer-science-msc",
+        "verifiedAt": "2026-07-16",
+        "evidence": "The official programme adapter observed MSc in Computer Science (Thesis) opening on 2026-09-15 and closing on 2027-02-15. Source: https://www.mcgill.ca/gradapplicants/program/computer-science-msc",
+        "intakeDetails": {
+          "label": "Fall 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {},
+      "evidenceExcerpt": "McGill's official programme table lists Fall 2027: FALL | September 15 | December 15 | February 15. The official Fall cycle opens on 2026-09-15."
+    },
+    {
+      "id": "adapter-window:mcgill-computer-science-msc-thesis-2027-fall-international-deadline-international:2026-09-15:2026-12-15",
+      "type": "adapter-new-window",
+      "status": "pending",
+      "universityId": "mcgill-university",
+      "detectedAt": "2026-07-16T15:38:59.590782+00:00",
+      "sourceUrl": "https://www.mcgill.ca/gradapplicants/program/computer-science-msc",
+      "openingBasis": "official",
+      "record": {
+        "id": "mcgill-computer-science-msc-thesis-2027-fall-international-deadline-international",
+        "universityId": "mcgill-university",
+        "scopeType": "programme",
+        "scopeId": "mcgill-computer-science-msc-thesis",
+        "intake": "Fall 2027",
+        "round": "Fall international deadline",
+        "applicantCategories": [
+          "international"
+        ],
+        "opensAt": "2026-09-15",
+        "closesAt": "2026-12-15",
+        "applicationUrl": "https://www.mcgill.ca/gradapplicants/apply",
+        "sourceUrl": "https://www.mcgill.ca/gradapplicants/program/computer-science-msc",
+        "verifiedAt": "2026-07-16",
+        "evidence": "The official programme adapter observed MSc in Computer Science (Thesis) opening on 2026-09-15 and closing on 2026-12-15. Source: https://www.mcgill.ca/gradapplicants/program/computer-science-msc",
+        "intakeDetails": {
+          "label": "Fall 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {},
+      "evidenceExcerpt": "McGill's official programme table lists Fall 2027: FALL | September 15 | December 15 | February 15. The official Fall cycle opens on 2026-09-15."
+    }
+  ]
+}

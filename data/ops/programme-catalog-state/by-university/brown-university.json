@@ -1,0 +1,405 @@
+{
+  "universities": {
+    "brown-university": {
+      "sourceUrl": "https://graduateprograms.brown.edu/graduate_programs",
+      "checkedAt": "2026-07-17T06:00:56.329581+00:00",
+      "itemCount": 49,
+      "applicationOpensAt": null,
+      "catalogHash": "58b5c4e1b2363256398f8d2bdd972406f27677f90c54fcef0b678945bd080d5f",
+      "programmes": {
+        "brown-biomedical-engineering-meng": {
+          "name": "M.Eng. in Biomedical Engineering",
+          "degreeType": "MENG",
+          "faculty": "School of Engineering",
+          "department": "Biomedical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-biomedical-engineering-scm": {
+          "name": "Sc.M. in Biomedical Engineering",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Biomedical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-biostatistics-am": {
+          "name": "A.M. in Biostatistics",
+          "degreeType": "AM",
+          "faculty": "School of Public Health",
+          "department": "Biostatistics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-biostatistics-online-scm": {
+          "name": "Sc.M. in Biostatistics (Online)",
+          "degreeType": "SCM",
+          "faculty": "School of Public Health",
+          "department": "Biostatistics (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "e46f1d70de4bbe9491705089b072d435e92c30167c4f6863ced69ebabfdaf415"
+        },
+        "brown-biostatistics-scm": {
+          "name": "Sc.M. in Biostatistics",
+          "degreeType": "SCM",
+          "faculty": "School of Public Health",
+          "department": "Biostatistics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-biotechnology-am": {
+          "name": "A.M. in Biotechnology",
+          "degreeType": "AM",
+          "faculty": "Biology & Medicine",
+          "department": "Biotechnology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-biotechnology-scm": {
+          "name": "Sc.M. in Biotechnology",
+          "degreeType": "SCM",
+          "faculty": "Biology & Medicine",
+          "department": "Biotechnology",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-business-analytics-online-scm": {
+          "name": "Sc.M. in Business Analytics (Online)",
+          "degreeType": "SCM",
+          "faculty": "School of Professional Studies",
+          "department": "Business Analytics (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d0673d5523c737b4704bf92813fd4db0742ea0598b7ea34228874c6e9d64ee12"
+        },
+        "brown-chemical-engineering-scm": {
+          "name": "Sc.M. in Chemical Engineering",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Chemical Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-computer-science-scm": {
+          "name": "Sc.M. in Computer Science",
+          "degreeType": "SCM",
+          "faculty": "Computer Science",
+          "department": "Computer Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-cybersecurity-scm": {
+          "name": "Sc.M. in Cybersecurity",
+          "degreeType": "SCM",
+          "faculty": "Computer Science",
+          "department": "Cybersecurity",
+          "parseStatus": "incomplete",
+          "deadlineHash": "737e721bb35ac3e1b3152586cc87f5b95ecb6131112245acbb290c8b422f2c7f"
+        },
+        "brown-data-enabled-computational-engineering-and-science-scm": {
+          "name": "Sc.M. in Data-Enabled Computational Engineering and Science",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Data-Enabled Computational Engineering and Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-data-science-policy-governance-society-online-scm": {
+          "name": "Sc.M. in Data Science: Policy, Governance & Society (Online)",
+          "degreeType": "SCM",
+          "faculty": "Data Science Institute",
+          "department": "Data Science: Policy, Governance & Society (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "3c047d5c5b6d41444c39c53459ad10ebc54acb836b3ca01b3c6d8b93f8276ebe"
+        },
+        "brown-data-science-scm": {
+          "name": "Sc.M. in Data Science",
+          "degreeType": "SCM",
+          "faculty": "Data Science Institute",
+          "department": "Data Science",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-design-engineering-am": {
+          "name": "A.M. in Design Engineering",
+          "degreeType": "AM",
+          "faculty": "School of Engineering",
+          "department": "Design Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-education-master-of-arts-in-teaching-mat": {
+          "name": "MAT in Education: Master of Arts in Teaching",
+          "degreeType": "MAT",
+          "faculty": "Education",
+          "department": "Education: Master of Arts in Teaching",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-education-urban-education-policy-am": {
+          "name": "A.M. in Education: Urban Education Policy",
+          "degreeType": "AM",
+          "faculty": "Education",
+          "department": "Education: Urban Education Policy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-electrical-and-computer-engineering-scm": {
+          "name": "Sc.M. in Electrical and Computer Engineering",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Electrical and Computer Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-engineering-am": {
+          "name": "A.M. in Engineering",
+          "degreeType": "AM",
+          "faculty": "School of Engineering",
+          "department": "Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-engineering-meng": {
+          "name": "M.Eng. in Engineering",
+          "degreeType": "MENG",
+          "faculty": "School of Engineering",
+          "department": "Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-engineering-scm": {
+          "name": "Sc.M. in Engineering",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-environmental-engineering-scm": {
+          "name": "Sc.M. in Environmental Engineering",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Environmental Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-health-informatics-and-ai-scm": {
+          "name": "Sc.M. in Health Informatics and AI",
+          "degreeType": "SCM",
+          "faculty": "Biology & Medicine",
+          "department": "Health Informatics and AI",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-healthcare-leadership-scm": {
+          "name": "Sc.M. in Healthcare Leadership",
+          "degreeType": "SCM",
+          "faculty": "School of Professional Studies",
+          "department": "Healthcare Leadership",
+          "parseStatus": "parsed",
+          "deadlineHash": "bc428630961b513c57f2ad10e6da16e9895af5541526ca5742404447ae090176"
+        },
+        "brown-ie-brown-executive-mba-emba": {
+          "name": "IE Brown Executive MBA",
+          "degreeType": "EMBA",
+          "faculty": "School of Professional Studies",
+          "department": "IE Brown Executive MBA",
+          "parseStatus": "incomplete",
+          "deadlineHash": "bb81fd6d815c17b7a2bd62c3e67e2b53064a7a46f42daf2a3d7fbbeb9eace4fe"
+        },
+        "brown-innovation-management-and-entrepreneurship-online-scm": {
+          "name": "Sc.M. in Innovation Management and Entrepreneurship (Online)",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Innovation Management and Entrepreneurship (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "33f7d1b340bbd5b070309f40788cfc66d14021b67220f260d403e984b5b7c25b"
+        },
+        "brown-innovation-management-and-entrepreneurship-scm": {
+          "name": "Sc.M. in Innovation Management and Entrepreneurship",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Innovation Management and Entrepreneurship",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-integrative-studies-am": {
+          "name": "A.M. in Integrative Studies",
+          "degreeType": "AM",
+          "faculty": "Graduate School",
+          "department": "Integrative Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-integrative-studies-scm": {
+          "name": "Sc.M. in Integrative Studies",
+          "degreeType": "SCM",
+          "faculty": "Graduate School",
+          "department": "Integrative Studies",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-literary-arts-mfa": {
+          "name": "MFA in Literary Arts",
+          "degreeType": "MFA",
+          "faculty": "Graduate School",
+          "department": "Literary Arts",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-management-online-mim": {
+          "name": "MiM in Management (Online)",
+          "degreeType": "MIM",
+          "faculty": "School of Professional Studies",
+          "department": "Management (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5e1cc81e0bb2931669c8116c41f62da8ee9657dd3ca28c721cc12a151390aeff"
+        },
+        "brown-materials-science-and-engineering-scm": {
+          "name": "Sc.M. in Materials Science and Engineering",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Materials Science and Engineering",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-mechanical-engineering-and-applied-mechanics-scm": {
+          "name": "Sc.M. in Mechanical Engineering and Applied Mechanics",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Mechanical Engineering and Applied Mechanics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-medical-physics-scm": {
+          "name": "Sc.M. in Medical Physics",
+          "degreeType": "SCM",
+          "faculty": "Warren Alpert Medical School",
+          "department": "Medical Physics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-medical-sciences-scm": {
+          "name": "Sc.M. in Medical Sciences",
+          "degreeType": "SCM",
+          "faculty": "Warren Alpert Medical School",
+          "department": "Medical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-organizational-leadership-online-scm": {
+          "name": "Sc.M. in Organizational Leadership (Online)",
+          "degreeType": "SCM",
+          "faculty": "School of Professional Studies",
+          "department": "Organizational Leadership (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c7f90c94570590c711dbaad2a9828acd52f728979f6e5f7b6e6a77f4154aa0a8"
+        },
+        "brown-physics-scm": {
+          "name": "Sc.M. in Physics",
+          "degreeType": "SCM",
+          "faculty": "Physics",
+          "department": "Physics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-public-affairs-mpa": {
+          "name": "MPA in Public Affairs",
+          "degreeType": "MPA",
+          "faculty": "Watson School of International and Public Affairs",
+          "department": "Public Affairs",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-public-health-accelerated-mph": {
+          "name": "MPH in Public Health (Accelerated)",
+          "degreeType": "MPH",
+          "faculty": "School of Public Health",
+          "department": "Public Health (Accelerated)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-public-health-and-public-affairs-dual-degree-mpa-mph": {
+          "name": "Public Health and Public Affairs Dual Degree",
+          "degreeType": "MPA/MPH",
+          "faculty": "School of Public Health",
+          "department": "Public Health and Public Affairs Dual Degree",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-public-health-mph": {
+          "name": "MPH in Public Health",
+          "degreeType": "MPH",
+          "faculty": "School of Public Health",
+          "department": "Public Health",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-public-health-online-mph": {
+          "name": "MPH in Public Health (Online)",
+          "degreeType": "MPH",
+          "faculty": "School of Public Health",
+          "department": "Public Health (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "c7aed5a28413b8fd2432166187c605590213a2d46c189e45f18adaea094c205f"
+        },
+        "brown-public-humanities-integrative-studies-am": {
+          "name": "A.M. in Public Humanities (Integrative Studies)",
+          "degreeType": "AM",
+          "faculty": "Ruth J. Simmons Center for the Study of Slavery and Justice",
+          "department": "Public Humanities (Integrative Studies)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-public-policy-online-mpp": {
+          "name": "MPP in Public Policy (Online)",
+          "degreeType": "MPP",
+          "faculty": "Watson School of International and Public Affairs",
+          "department": "Public Policy (Online)",
+          "parseStatus": "incomplete",
+          "deadlineHash": "77b7f0c1184ab912720fdf195c9747958bdf7f102fc4e1869d3ee297f575d5ee"
+        },
+        "brown-social-data-analytics-scm": {
+          "name": "Sc.M. in Social Data Analytics",
+          "degreeType": "SCM",
+          "faculty": "Population Studies and Training Center",
+          "department": "Social Data Analytics",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-sustainable-energy-scm": {
+          "name": "Sc.M. in Sustainable Energy",
+          "degreeType": "SCM",
+          "faculty": "School of Engineering",
+          "department": "Sustainable Energy",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-technology-leadership-scm": {
+          "name": "Sc.M. in Technology Leadership",
+          "degreeType": "SCM",
+          "faculty": "School of Professional Studies",
+          "department": "Technology Leadership",
+          "parseStatus": "parsed",
+          "deadlineHash": "592754880975283e9b0bfff8ad6401318c826939a29335ff1f4fcad664da6c6d"
+        },
+        "brown-theatre-arts-and-performance-studies-playwriting-mfa": {
+          "name": "MFA in Theatre Arts and Performance Studies: Playwriting",
+          "degreeType": "MFA",
+          "faculty": "Graduate School",
+          "department": "Theatre Arts and Performance Studies: Playwriting",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "brown-theatre-brown-trinity-rep-acting-and-directing-mfa": {
+          "name": "MFA in Theatre: Brown/Trinity Rep Acting and Directing",
+          "degreeType": "MFA",
+          "faculty": "Graduate School",
+          "department": "Theatre: Brown/Trinity Rep Acting and Directing",
+          "parseStatus": "incomplete",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

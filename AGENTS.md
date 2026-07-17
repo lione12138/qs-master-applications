@@ -216,11 +216,15 @@ See `docs/assisted-discovery.md`.
 ### Add a dedicated programme adapter
 
 Dedicated adapters live in `src/gradwindow/programme_adapters/`. Existing
-examples include `birmingham.py`, `bristol.py`, `caltech.py`, `peking.py`,
+examples include `birmingham.py`, `bristol.py`, `caltech.py`, `cornell.py`, `peking.py`,
 `tsinghua.py`, `upenn.py`, `mit.py`, `cuhk.py`,
 `polyu.py`, `cambridge.py`, `edinburgh.py`, `glasgow.py`, `imperial.py`, `hku.py`,
 `hkust.py`, `melbourne.py`, `monash.py`, `manchester.py`, `ntu.py`, `nus.py`,
 `oxford.py`, `southampton.py`, `sydney.py`, and `uq.py`.
+
+`cornell.py` uses Cornell's central official catalogue as a complete catalogue
+source; yearless programme deadlines remain monitoring evidence rather than
+published windows.
 
 Register each dedicated adapter exactly once in
 `programme_adapters/registry.py`; the CLI and manual Actions workflow derive

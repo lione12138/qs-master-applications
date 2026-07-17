@@ -1,0 +1,933 @@
+{
+  "universities": {
+    "technical-university-of-munich": {
+      "sourceUrl": "https://www.tum.de/en/studies/degree-programs?tx_solr%5Bq%5D=&graduation=Master",
+      "checkedAt": "2026-07-16T14:15:35.990069+00:00",
+      "itemCount": 115,
+      "applicationOpensAt": null,
+      "catalogHash": "0a6353ef92a1fa8dc5bcf8ba93d0b7bd290d0112cdcf90463aa97cb02609a062",
+      "programmes": {
+        "tum-aerospace-engineering-master-of-science-msc": {
+          "name": "MSc Aerospace Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM Asia",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-aerospace-master-of-science-msc": {
+          "name": "MSc Aerospace",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-agricultural-biosciences-master-of-science-msc": {
+          "name": "MSc Agricultural Biosciences",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-agrifood-economics-policy-and-regulation": {
+          "name": "MSc AgriFood Economics, Policy and Regulation",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-agrosystem-sciences-master-of-science-msc": {
+          "name": "MSc Agrosystem Sciences",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-ai-in-biomedicine-master-of-science-msc": {
+          "name": "MSc AI in Biomedicine",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-ai-in-society": {
+          "name": "MSc AI in Society",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-architecture-master-of-arts-ma": {
+          "name": "MA Architecture",
+          "degreeType": "MA",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-automotive-engineering-master-of-science-msc": {
+          "name": "MSc Automotive Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-biochemistry-master-of-science-msc": {
+          "name": "MSc Biochemistry",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-bioeconomy-master-of-science-msc": {
+          "name": "MSc Bioeconomy",
+          "degreeType": "MSc",
+          "faculty": "TUM Campus Straubing for Biotechnology and Sustainability",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-bioinformatics-master-of-science-msc-1": {
+          "name": "MSc Bioinformatics",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-biology-master-of-science-msc": {
+          "name": "MSc Biology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-biomass-technology-master-of-science-msc": {
+          "name": "MSc Biomass Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM Campus Straubing for Biotechnology and Sustainability",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-biomedical-engineering-and-medical-physics-master-of-science-msc": {
+          "name": "MSc Biomedical Engineering and Medical Physics",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "parsed",
+          "deadlineHash": "452d8f8bee9fe106cccedcc4bb7f24575b7fe1d2dac7ad2009794827d719df25"
+        },
+        "tum-biomedical-neuroscience-master-of-science-msc": {
+          "name": "MSc Biomedical Neuroscience",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-brewing-and-beverage-technology-master-of-science-msc": {
+          "name": "MSc Brewing and Beverage Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-business-education-i-master-of-science-msc": {
+          "name": "MSc Business Education I",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-business-education-ii-with-second-teaching-subject-master-of-science-msc": {
+          "name": "MSc Business Education II with second teaching subject",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-cartography-master-of-science-msc": {
+          "name": "MSc Cartography",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-chemical-biotechnology-master-of-science-msc": {
+          "name": "MSc Chemical Biotechnology",
+          "degreeType": "MSc",
+          "faculty": "TUM Campus Straubing for Biotechnology and Sustainability",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-chemical-engineering-master-of-science-msc": {
+          "name": "MSc Chemical Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-chemistry-master-of-science-msc": {
+          "name": "MSc Chemistry",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-civil-engineering-master-of-science-msc": {
+          "name": "MSc Civil Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-communications-engineering-master-of-science-msc": {
+          "name": "MSc Communications and Electronics Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-computational-mechanics-master-of-science-msc": {
+          "name": "MSc Computational Mechanics",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-computational-science-and-engineering-cse-master-of-science-msc": {
+          "name": "MSc Computational Science and Engineering (CSE)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-conservation-and-landscape-planning-master-of-science-msc": {
+          "name": "MSc Conservation and Landscape Planning",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-consumer-science-master-of-science-msc": {
+          "name": "MSc Consumer Science",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-data-and-society-master-of-science-msc": {
+          "name": "MSc Data & Society",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-data-engineering-and-analytics-master-of-science-msc": {
+          "name": "MSc Data Engineering and Analytics",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-development-production-and-management-in-mechanical-engineering-master-of-science-msc": {
+          "name": "MSc Development, Production and Management in Mechanical Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-ecological-engineering-master-of-science-msc": {
+          "name": "MSc Ecological Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-electrical-engineering-and-information-technology-master-of-science-msc": {
+          "name": "MSc Electrical Engineering and Information Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-energy-and-process-engineering-master-of-science-msc": {
+          "name": "MSc Energy and Process Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-engineering-geology-and-hydrogeology-master-of-science-msc": {
+          "name": "MSc Engineering Geology and Hydrogeology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-environmental-engineering-master-of-science-msc": {
+          "name": "MSc Environmental Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-ergonomics-human-factors-engineering-master-of-science-msc": {
+          "name": "MSc Human Factors Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-espace-earth-oriented-space-science-and-technology-master-of-science-msc": {
+          "name": "MSc ESPACE – Earth Oriented Space Science and Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-executive-mba-in-business-it-master-of-business-administration-mba": {
+          "name": "MBA Executive MBA in Business & IT",
+          "degreeType": "MBA",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-executive-mba-in-general-management-master-of-business-administration-mba": {
+          "name": "MBA Executive MBA in General Management",
+          "degreeType": "MBA",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-executive-mba-in-innovation-and-business-creation-master-of-business-administration-mba": {
+          "name": "MBA Executive MBA in Innovation and Business Creation",
+          "degreeType": "MBA",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-finance-and-information-management-fim-master-of-science-msc": {
+          "name": "MSc Finance and Information Management (FIM)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-food-chemistry-master-of-science-msc": {
+          "name": "MSc Food Chemistry",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-food-technology-and-biotechnology-master-of-science-msc": {
+          "name": "MSc Food Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-forest-and-wood-science-master-of-science-msc": {
+          "name": "MSc Forest and Wood Science",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-geodesy-and-geoinformation-master-of-science-msc": {
+          "name": "MSc Geodesy and Geoinformation",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-geomaterials-and-geochemistry-master-of-science-msc": {
+          "name": "MSc Geomaterials and Geochemistry",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-geophysics": {
+          "name": "MSc Geophysics",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-geothermie-geoenergie-master-of-science-msc": {
+          "name": "MSc GeoThermie / GeoEnergie",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-green-electronics-master-of-science-msc": {
+          "name": "MSc Green Electronics",
+          "degreeType": "MSc",
+          "faculty": "TUM Asia",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-health-science-prevention-and-health-promotion-master-of-science-msc": {
+          "name": "MSc Health Science – Prevention and Health Promotion",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-industrial-biotechnology-master-of-science-msc": {
+          "name": "MSc Industrial Biotechnology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-industrial-chemistry-master-of-science-msc": {
+          "name": "MSc Industrial Chemistry",
+          "degreeType": "MSc",
+          "faculty": "TUM Asia",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-informatics-games-engineering-master-of-science-msc": {
+          "name": "MSc Informatics: Games Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-informatics-msc": {
+          "name": "MSc Informatics",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-information-engineering-master-of-science-msc": {
+          "name": "MSc Information Engineering (at TUM Campus Heilbronn)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-information-systems-master-of-science-msc": {
+          "name": "MSc Information Systems",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-information-technologies-for-the-built-environment-master-of-science-msc": {
+          "name": "MSc Information Technologies for the Built Environment",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-integrated-circuit-design-master-of-science-msc": {
+          "name": "MSc Integrated Circuit Design",
+          "degreeType": "MSc",
+          "faculty": "TUM Asia",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-land-management-and-geospatial-science-master-of-science-msc": {
+          "name": "MSc Land Management and Geospatial Science",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-landscape-architecture-master-of-arts-ma": {
+          "name": "MA Landscape Architecture",
+          "degreeType": "MA",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-lehramt-an-beruflichen-schulen-masterstudiengang-berufliche-bildung-integriert-master-of-education-med": {
+          "name": "MEd Lehramt an beruflichen Schulen – Masterstudiengang Berufliche Bildung Integriert",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-logistics-engineering-and-management-master-of-science-msc": {
+          "name": "MSc Logistics Engineering and Management",
+          "degreeType": "MSc",
+          "faculty": "TUM Asia",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-management-and-digital-technology": {
+          "name": "MSc Management and Digital Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-management-and-innovation-master-of-science-msc": {
+          "name": "MSc Management and Innovation",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-management-and-technology-tum-bwl-master-of-science-msc": {
+          "name": "MSc Management and Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-management-main-location-heilbronn-master-of-science-msc": {
+          "name": "MSc Management (am Campus Heilbronn)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-management-main-location-munich-master-of-science-msc": {
+          "name": "MSc Management (Main Location: Munich)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Management",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-materials-science-and-engineering-master-of-science-msc": {
+          "name": "MSc Materials Science and Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-mathematical-finance-and-actuarial-science-master-of-science-msc": {
+          "name": "MSc Mathematical Finance and Actuarial Science",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-mathematics-in-data-science-master-of-science-msc": {
+          "name": "MSc Mathematics in Data Science",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-mathematics-in-science-and-engineering-master-of-science-msc": {
+          "name": "MSc Mathematics in Science and Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-mathematics-master-of-science-msc": {
+          "name": "MSc Mathematics",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-mechanical-engineering-master-of-science-msc": {
+          "name": "MSc Mechanical Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-mechatronics-robotics-and-biomechanical-engineering": {
+          "name": "MSc Mechatronics, Robotics and Biomechanical Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-medical-engineering-master-of-science-msc": {
+          "name": "MSc Medical Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-microelectronics-and-chip-design-master-of-science-msc": {
+          "name": "MSc Microelectronics and Chip Design",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-molecular-biotechnology-master-of-science-msc": {
+          "name": "MSc Molecular Biotechnology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-neuroengineering-master-of-science-msc": {
+          "name": "MSc Neuroengineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-nutrition-and-biomedicine-master-of-science-msc": {
+          "name": "MSc Nutrition and Biomedicine",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-pharmaceutical-bioprocess-engineering-master-of-science-msc": {
+          "name": "MSc Pharmaceutical Bioprocess Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-physics-applied-and-engineering-physics-master-of-science-msc": {
+          "name": "MSc Physics (Applied and Engineering Physics)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-physics-biophysics-master-of-science-msc": {
+          "name": "MSc Physics (Biophysics)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-physics-condensed-matter-physics-master-of-science-msc": {
+          "name": "MSc Physics (Condensed Matter Physics)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-physics-nuclear-particle-and-astrophysics-master-of-science-msc": {
+          "name": "MSc Physics (Nuclear, Particle and Astrophysics)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Natural Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-politics-technology-master-of-science-msc": {
+          "name": "MSc Politics & Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-power-engineering-master-of-science-msc": {
+          "name": "MSc Power Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-quantum-science-technology-master-of-science-msc": {
+          "name": "MSc Quantum Science & Technology",
+          "degreeType": "MSc",
+          "faculty": "Department of Physics",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-radiation-biology-master-of-science-msc": {
+          "name": "MSc Radiation Biology",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-rail-and-urban-transport-master-of-science-msc": {
+          "name": "MSc Rail and Urban Transport",
+          "degreeType": "MSc",
+          "faculty": "TUM Asia",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-resource-efficient-and-sustainable-building-master-of-science-msc": {
+          "name": "MSc Resource Efficient and Sustainable Building",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-responsibility-in-science-engineering-and-technology-reset-master-of-arts-ma": {
+          "name": "MA Responsibility in Science, Engineering and Technology (RESET)",
+          "degreeType": "MA",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-risk-and-safety": {
+          "name": "MSc Risk and Safety",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-robotics-cognition-intelligence-master-of-science-msc": {
+          "name": "MSc Robotics, Cognition, Intelligence",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-science-and-technology-of-materials-stm-1": {
+          "name": "MSc Science and Technology of Materials (STM)",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-science-and-technology-studies-sts-master-of-arts-ma": {
+          "name": "MA Science and Technology Studies (STS)",
+          "degreeType": "MA",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-software-engineering-master-of-science-msc": {
+          "name": "MSc Software Engineering",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Computation, Information and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-sport-and-exercise-science-master-of-science-msc": {
+          "name": "MSc Sport and Exercise Science",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Medicine and Health",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-sustainable-energy-and-processes-master-of-science-msc": {
+          "name": "MSc Sustainable Energy and Processes",
+          "degreeType": "MSc",
+          "faculty": "TUM Campus Straubing for Biotechnology and Sustainability",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-sustainable-food": {
+          "name": "MSc Sustainable Food",
+          "degreeType": "MSc",
+          "faculty": "TUM Asia",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-sustainable-management-and-technology-master-of-science-msc": {
+          "name": "MSc Sustainable Management and Technology",
+          "degreeType": "MSc",
+          "faculty": "TUM Campus Straubing for Biotechnology and Sustainability",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-sustainable-real-estate-master-of-advanced-studies-mas": {
+          "name": "MAS Sustainable Real Estate",
+          "degreeType": "MAS",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-sustainable-resource-management-master-of-science-msc": {
+          "name": "MSc Sustainable Resource Management",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Life Sciences",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-teaching-at-academic-secondary-schools-scientific-education-master-of-education-med": {
+          "name": "MEd Teaching at Academic Secondary Schools – Scientific Education",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-technology-of-biogenic-resources-master-of-science-msc": {
+          "name": "MSc Technology of Biogenic Resources",
+          "degreeType": "MSc",
+          "faculty": "TUM Campus Straubing for Biotechnology and Sustainability",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-transportation-systems-master-of-science-msc": {
+          "name": "MSc Transportation Systems",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-urbanism-urban-and-landscape-studies-and-design-master-of-science-msc": {
+          "name": "MSc Urbanism – Urban and Landscape Studies and Design",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Engineering and Design",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-vocational-education-agriculture-teaching-at-vocational-schools-master-of-education-med": {
+          "name": "MEd Vocational Education Agriculture (Teaching at Vocational Schools)",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-vocational-education-and-innovation-master-of-science-msc": {
+          "name": "MSc Vocational Education and Innovation",
+          "degreeType": "MSc",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-vocational-education-electrical-engineering-and-information-technology-teaching-at-vocational-schools-master-of-education-med": {
+          "name": "MEd Vocational Education Electrical Engineering and Information Technology (Teaching at Vocational Schools)",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-vocational-education-health-and-health-care-science-teaching-at-vocational-schools-master-of-education-med": {
+          "name": "MEd Vocational Education Health and Health Care Science (Teaching at Vocational Schools)",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-vocational-education-metal-engineering-teaching-at-vocational-schools-master-of-education-med": {
+          "name": "MEd Vocational Education Metal Engineering (Teaching at Vocational Schools)",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-vocational-education-nutrition-and-home-economics-teaching-at-vocational-schools-master-of-education-med": {
+          "name": "MEd Vocational Education Nutrition and Home Economics (Teaching at Vocational Schools)",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "tum-vocational-education-structural-engineering-teaching-at-vocational-schools-master-of-education-med": {
+          "name": "MEd Vocational Education Structural Engineering (Teaching at Vocational Schools)",
+          "degreeType": "MEd",
+          "faculty": "TUM School of Social Sciences and Technology",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

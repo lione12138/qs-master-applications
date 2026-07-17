@@ -1,0 +1,2240 @@
+{
+  "items": [
+    {
+      "id": "known-programme-guidance:michigan-computer-science-engineering-mse",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://www.eecs.umich.edu/eecs/graduate",
+      "programme": {
+        "id": "michigan-computer-science-engineering-mse",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Computer Science and Engineering",
+        "degreeType": "MS / MSE",
+        "faculty": "Engineering | Computer Science and Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://www.eecs.umich.edu/eecs/graduate"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S., M.S.E.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-aerospace-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://aero.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-aerospace-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Aerospace Engineering",
+        "degreeType": "MSE",
+        "faculty": "Engineering | Aerospace Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://aero.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S.E.); Winter: October 7', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-applied-and-interdisciplinary-mathematics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://lsa.umich.edu/math/graduates/GraduateStudentHandbook/applied-and-interdisciplinary-mathematics--aim-.html",
+      "programme": {
+        "id": "michigan-applied-and-interdisciplinary-mathematics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Applied and Interdisciplinary Mathematics",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Applied and Interdisciplinary Mathematics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://lsa.umich.edu/math/graduates/GraduateStudentHandbook/applied-and-interdisciplinary-mathematics--aim-.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.) February 1 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-applied-economics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/econ/mae.html",
+      "programme": {
+        "id": "michigan-applied-economics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Applied Economics",
+        "degreeType": "AM",
+        "faculty": "Literature, Science, and the Arts | Applied Economics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/econ/mae.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-applied-physics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/appliedphysics",
+      "programme": {
+        "id": "michigan-applied-physics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Applied Physics",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Applied Physics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/appliedphysics"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 5', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-applied-statistics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/stats/",
+      "programme": {
+        "id": "michigan-applied-statistics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Applied Statistics",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Applied Statistics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/stats/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 15 (M.S., M.S. Bridge); March 15 (AMDP); April 1 (M.S. Dual Degree); Winter: December 1 (M.S. Dual Degree)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-arabic-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://lsa.umich.edu/middleeast/graduates/ma-admissions.html",
+      "programme": {
+        "id": "michigan-arabic-studies",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Arabic Studies",
+        "degreeType": "MA",
+        "faculty": "Literature, Science, and the Arts | Arabic Studies",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://lsa.umich.edu/middleeast/graduates/ma-admissions.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-architecture",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://taubmancollege.umich.edu/",
+      "programme": {
+        "id": "michigan-architecture",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Architecture",
+        "degreeType": "MS",
+        "faculty": "Architecture and Urban Planning (Taubman College) | Architecture",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://taubmancollege.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'December 15 (Ph.D.), January 15 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-art",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://stamps.umich.edu/graduate-programs/mfa",
+      "programme": {
+        "id": "michigan-art",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Art",
+        "degreeType": "MFA",
+        "faculty": "Art and Design | Art",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://stamps.umich.edu/graduate-programs/mfa"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 3', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-athletic-training",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://www.kines.umich.edu/academics/graduate-programs/masters-athletic-training",
+      "programme": {
+        "id": "michigan-athletic-training",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Athletic Training",
+        "degreeType": "MS",
+        "faculty": "Kinesiology | Athletic Training",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://www.kines.umich.edu/academics/graduate-programs/masters-athletic-training"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Contact department', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-bioinformatics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/computational-medicine-bioinformatics",
+      "programme": {
+        "id": "michigan-bioinformatics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Bioinformatics",
+        "degreeType": "MS",
+        "faculty": "Medicine | Bioinformatics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/computational-medicine-bioinformatics"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), March 1 (M.S.), April 1 (AMDP), August 1 (Dual Degree); Winter: October 1 (Ph.D.—current U-M students only)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-biological-chemistry",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/biological-chemistry/",
+      "programme": {
+        "id": "michigan-biological-chemistry",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Biological Chemistry",
+        "degreeType": "MS",
+        "faculty": "Medicine | Biological Chemistry",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/biological-chemistry/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: April 15 (International Students); May 1 (U.S. Citizens and Permanent Resident Students)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-biomedical-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://bme.umich.edu/",
+      "programme": {
+        "id": "michigan-biomedical-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Biomedical Engineering",
+        "degreeType": "MS",
+        "faculty": "Engineering | Biomedical Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://bme.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), January 15 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-biostatistics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/biostat/",
+      "programme": {
+        "id": "michigan-biostatistics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Biostatistics",
+        "degreeType": "MS",
+        "faculty": "Public Health | Biostatistics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/biostat/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (PhD), December 1 (MS)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-biostatistics-health-data-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/biostat/programs/masters-hds.html",
+      "programme": {
+        "id": "michigan-biostatistics-health-data-science",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Biostatistics: Health Data Science",
+        "degreeType": "MS",
+        "faculty": "Public Health | Biostatistics: Health Data Science",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/biostat/programs/masters-hds.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (MS)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-chemical-biology-of-cancer",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://www.chembio.umich.edu/about-program/ms-degree",
+      "programme": {
+        "id": "michigan-chemical-biology-of-cancer",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Chemical Biology of Cancer",
+        "degreeType": "MS",
+        "faculty": "Life Sciences Institute | Chemical Biology of Cancer",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://www.chembio.umich.edu/about-program/ms-degree"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: April 11 (International); June 20 (domestic)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-chemical-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://che.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-chemical-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Chemical Engineering",
+        "degreeType": "MSE",
+        "faculty": "Engineering | Chemical Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://che.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), January 15 (M.S.E.); Winter: October 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-chemistry",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/chem/",
+      "programme": {
+        "id": "michigan-chemistry",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Chemistry",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Chemistry",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/chem/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), May 31 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-civil-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://cee.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-civil-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Civil Engineering",
+        "degreeType": "MSE",
+        "faculty": "Engineering | Civil Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://cee.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S.E.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-classical-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/classics/",
+      "programme": {
+        "id": "michigan-classical-studies",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Classical Studies",
+        "degreeType": "Master's",
+        "faculty": "Literature, Science, and the Arts | Classical Studies",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/classics/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-climate-and-space-sciences-and-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://clasp.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-climate-and-space-sciences-and-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Climate and Space Sciences and Engineering",
+        "degreeType": "MS",
+        "faculty": "Engineering | Climate and Space Sciences and Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://clasp.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 30 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-clinical-research-design-and-statistical-analysis",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/biostat/programs/crdsa.html",
+      "programme": {
+        "id": "michigan-clinical-research-design-and-statistical-analysis",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Clinical Research Design and Statistical Analysis",
+        "degreeType": "MS",
+        "faculty": "Public Health | Clinical Research Design and Statistical Analysis",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/biostat/programs/crdsa.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Currently Not Accepting Applications', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-composition",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://smtd.umich.edu/degree/doctor-of-musical-arts-in-composition/",
+      "programme": {
+        "id": "michigan-composition",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Composition",
+        "degreeType": "AM",
+        "faculty": "Music, Theatre, and Dance | Composition",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://smtd.umich.edu/degree/doctor-of-musical-arts-in-composition/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-computational-epidemiology-and-systems-modeling",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/epid/programs/ms/computational-epidemiology-systems-modeling.html",
+      "programme": {
+        "id": "michigan-computational-epidemiology-and-systems-modeling",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Computational Epidemiology and Systems Modeling",
+        "degreeType": "MS",
+        "faculty": "Public Health | Computational Epidemiology and Systems Modeling",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/epid/programs/ms/computational-epidemiology-systems-modeling.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-construction-engineering-and-management",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://tcmp.engin.umich.edu/programs-m-s-e-cem/",
+      "programme": {
+        "id": "michigan-construction-engineering-and-management",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Construction Engineering and Management",
+        "degreeType": "MSE",
+        "faculty": "Engineering | Construction Engineering and Management",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://tcmp.engin.umich.edu/programs-m-s-e-cem/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-creative-writing",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/writers/",
+      "programme": {
+        "id": "michigan-creative-writing",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Creative Writing",
+        "degreeType": "MFA",
+        "faculty": "Literature, Science, and the Arts | Creative Writing",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/writers/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 10', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-dance",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://smtd.umich.edu/degree/master-of-fine-arts-in-dance/",
+      "programme": {
+        "id": "michigan-dance",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Dance",
+        "degreeType": "MFA",
+        "faculty": "Music, Theatre, and Dance | Dance",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://smtd.umich.edu/degree/master-of-fine-arts-in-dance/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-data-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://lsa.umich.edu/stats/masters_students/mastersprograms/data-science-masters-program.html",
+      "programme": {
+        "id": "michigan-data-science",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Data Science",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Data Science",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://lsa.umich.edu/stats/masters_students/mastersprograms/data-science-masters-program.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 15 (MS); Fall: April 1, Winter: December 1 (MS Dual Degree)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-dental-hygiene",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://www.dent.umich.edu/education/dental-hygiene-graduate-program-ms",
+      "programme": {
+        "id": "michigan-dental-hygiene",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Dental Hygiene",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Dental Hygiene",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://www.dent.umich.edu/education/dental-hygiene-graduate-program-ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: February 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-design",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://stamps.umich.edu/graduate-programs/mdes",
+      "programme": {
+        "id": "michigan-design",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Design",
+        "degreeType": "MDes",
+        "faculty": "Art and Design | Design",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://stamps.umich.edu/graduate-programs/mdes"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 10', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-design-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://designscience.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-design-science",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Design Science",
+        "degreeType": "MS",
+        "faculty": "Engineering | Design Science",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://designscience.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 early decision (M.S.), March 15 regular decision (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-earth-and-environmental-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/earth",
+      "programme": {
+        "id": "michigan-earth-and-environmental-sciences",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Earth and Environmental Sciences",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Earth and Environmental Sciences",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/earth"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 19', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-ecology-and-evolutionary-biology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/eeb/",
+      "programme": {
+        "id": "michigan-ecology-and-evolutionary-biology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Ecology and Evolutionary Biology",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Ecology and Evolutionary Biology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/eeb/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), December 1 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-educational-leadership-and-policy",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://soe.umich.edu/academics-admissions/degrees/masters/educational-leadership-and-policy",
+      "programme": {
+        "id": "michigan-educational-leadership-and-policy",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Educational Leadership and Policy",
+        "degreeType": "MA",
+        "faculty": "Education | Educational Leadership and Policy",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://soe.umich.edu/academics-admissions/degrees/masters/educational-leadership-and-policy"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 2 (Priority Scholarship and Final International Applicant Deadline); February 15 (Final Domestic Applicant Deadline)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-educational-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://soe.umich.edu/academics-admissions/es",
+      "programme": {
+        "id": "michigan-educational-studies",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Educational Studies",
+        "degreeType": "MA",
+        "faculty": "Education | Educational Studies",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://soe.umich.edu/academics-admissions/es"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: November 15 (Ph.D.), January 2 (M.A., priority scholarship and final international applicant deadline), February 15 (M.A., final domestic applicant deadline); Summer: November 15 (M.A. with Elementary or Secondary Certificate)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-electrical-and-computer-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://ece.engin.umich.edu/eecs/graduate/",
+      "programme": {
+        "id": "michigan-electrical-and-computer-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Electrical and Computer Engineering",
+        "degreeType": "MS / MSE",
+        "faculty": "Engineering | Electrical and Computer Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://ece.engin.umich.edu/eecs/graduate/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S., M.S.E.); Winter: October 1 (Ph.D., current U-M students only)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-endodontics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://www.dent.umich.edu/education/endodontics-graduate-program-ms",
+      "programme": {
+        "id": "michigan-endodontics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Endodontics",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Endodontics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://www.dent.umich.edu/education/endodontics-graduate-program-ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Summer: July 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-engineering-education-research",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://eer.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-engineering-education-research",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Engineering Education Research",
+        "degreeType": "MS",
+        "faculty": "Engineering | Engineering Education Research",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://eer.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S.), August 1 (Certificate)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-environment-and-sustainability",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://seas.umich.edu/academics/ms",
+      "programme": {
+        "id": "michigan-environment-and-sustainability",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Environment and Sustainability",
+        "degreeType": "MS",
+        "faculty": "Environment and Sustainability | Environment and Sustainability",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://seas.umich.edu/academics/ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Priority Funding Consideration Deadline), January 15 (Final Funding Consideration Deadline)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-environmental-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://cee.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-environmental-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Environmental Engineering",
+        "degreeType": "MSE",
+        "faculty": "Engineering | Environmental Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://cee.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S.E.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-environmental-health-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/ehs/index.html",
+      "programme": {
+        "id": "michigan-environmental-health-sciences",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Environmental Health Sciences",
+        "degreeType": "MS",
+        "faculty": "Public Health | Environmental Health Sciences",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/ehs/index.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), December 1 (M.S. Priority), July 1 (M.S. Final), January 15 (ADMP)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-genetic-counseling",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/human-genetics",
+      "programme": {
+        "id": "michigan-genetic-counseling",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Genetic Counseling",
+        "degreeType": "MS",
+        "faculty": "Medicine | Genetic Counseling",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/human-genetics"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 5', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-greek",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/classics/",
+      "programme": {
+        "id": "michigan-greek",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Greek",
+        "degreeType": "AM",
+        "faculty": "Literature, Science, and the Arts | Greek",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/classics/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-health-and-health-care-research",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://ihpi.umich.edu/about/education-training/programs/ihpi-clinician-scholars-program/curriculum",
+      "programme": {
+        "id": "michigan-health-and-health-care-research",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Health and Health Care Research",
+        "degreeType": "MS",
+        "faculty": "Medicine | Health and Health Care Research",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://ihpi.umich.edu/about/education-training/programs/ihpi-clinician-scholars-program/curriculum"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: May 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-health-behavior-and-health-equity",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/hbhe/",
+      "programme": {
+        "id": "michigan-health-behavior-and-health-equity",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Health Behavior and Health Equity",
+        "degreeType": "MS",
+        "faculty": "Public Health | Health Behavior and Health Equity",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/hbhe/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1; Currently not accepting MS applications', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-health-infrastructures-and-learning-systems",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://medicine.umich.edu/dept/lhs/education/health-infrastructures-learning-systems-hils-msphd",
+      "programme": {
+        "id": "michigan-health-infrastructures-and-learning-systems",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Health Infrastructures and Learning Systems",
+        "degreeType": "MS",
+        "faculty": "Medicine | Health Infrastructures and Learning Systems",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://medicine.umich.edu/dept/lhs/education/health-infrastructures-learning-systems-hils-msphd"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D. – all), February 1 (international M.S.), June 15 (USPR M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-health-infrastructures-and-learning-systems-online",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/lhs/education/health-infrastructures-learning-systems-hils-online",
+      "programme": {
+        "id": "michigan-health-infrastructures-and-learning-systems-online",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Health Infrastructures and Learning Systems – Online",
+        "degreeType": "MS Online",
+        "faculty": "Medicine | Health Infrastructures and Learning Systems – Online",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/lhs/education/health-infrastructures-learning-systems-hils-online"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: February 1 (Early Decision), June 15 (Final Decision)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-higher-education",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://soe.umich.edu/academics-admissions/cshpe",
+      "programme": {
+        "id": "michigan-higher-education",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Higher Education",
+        "degreeType": "AM",
+        "faculty": "Education | Higher Education",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://soe.umich.edu/academics-admissions/cshpe"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), January 1 (M.A.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-human-genetics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/human-genetics/education/masters-degree-human-genetics",
+      "programme": {
+        "id": "michigan-human-genetics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Human Genetics",
+        "degreeType": "Master's",
+        "faculty": "Medicine | Human Genetics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/human-genetics/education/masters-degree-human-genetics"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: March 15 (international students); April 1 (domestic and permanent resident students)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-industrial-and-operations-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://ioe.engin.umich.edu/academics/graduate/",
+      "programme": {
+        "id": "michigan-industrial-and-operations-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Industrial and Operations Engineering",
+        "degreeType": "MS / MSE",
+        "faculty": "Engineering | Industrial and Operations Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://ioe.engin.umich.edu/academics/graduate/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 10 (Ph.D.), January 15 (M.S., M.S.E.); Winter: October 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-integrated-pharmaceutical-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://pharmacy.umich.edu/program/ms-integrated-pharmaceutical-sciences",
+      "programme": {
+        "id": "michigan-integrated-pharmaceutical-sciences",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Integrated Pharmaceutical Sciences",
+        "degreeType": "MS",
+        "faculty": "Pharmacy | Integrated Pharmaceutical Sciences",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://pharmacy.umich.edu/program/ms-integrated-pharmaceutical-sciences"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance '1-Feb', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-international-and-regional-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://ii.umich.edu/ii/students/MIRS.html",
+      "programme": {
+        "id": "michigan-international-and-regional-studies",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "International and Regional Studies",
+        "degreeType": "MA",
+        "faculty": "Literature, Science, and the Arts | International and Regional Studies",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://ii.umich.edu/ii/students/MIRS.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-landscape-architecture",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://seas.umich.edu/la",
+      "programme": {
+        "id": "michigan-landscape-architecture",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Landscape Architecture",
+        "degreeType": "MLArch",
+        "faculty": "Environment and Sustainability | Landscape Architecture",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://seas.umich.edu/la"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Priority Funding Consideration Deadline), January 15 (Final Funding Consideration Deadline)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-latin",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/classics/",
+      "programme": {
+        "id": "michigan-latin",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Latin",
+        "degreeType": "AM / MAT",
+        "faculty": "Literature, Science, and the Arts | Latin",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/classics/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15, MAT Currently Not Accepting Applications', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-macromolecular-science-and-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://macro.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-macromolecular-science-and-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Macromolecular Science and Engineering",
+        "degreeType": "MS / MSE",
+        "faculty": "Engineering | Macromolecular Science and Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://macro.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S./M.S.E./SUGs)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-materials-science-and-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://msewww.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-materials-science-and-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Materials Science and Engineering",
+        "degreeType": "MSE",
+        "faculty": "Engineering | Materials Science and Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://msewww.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), January 15 (M.S.E.); Winter: October 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-mathematics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://lsa.umich.edu/math",
+      "programme": {
+        "id": "michigan-mathematics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Mathematics",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Mathematics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://lsa.umich.edu/math"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.), February 1 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-mechanical-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://me.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-mechanical-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Mechanical Engineering",
+        "degreeType": "MSE",
+        "faculty": "Engineering | Mechanical Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://me.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), January 15 (M.S.E.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-media-arts",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://smtd.umich.edu/degree/master-of-arts-in-media-arts/",
+      "programme": {
+        "id": "michigan-media-arts",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Media Arts",
+        "degreeType": "AM",
+        "faculty": "Music, Theatre, and Dance | Media Arts",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://smtd.umich.edu/degree/master-of-arts-in-media-arts/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-microbiology-and-immunology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/microbiology-immunology/",
+      "programme": {
+        "id": "michigan-microbiology-and-immunology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Microbiology and Immunology",
+        "degreeType": "MS",
+        "faculty": "Medicine | Microbiology and Immunology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/microbiology-immunology/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: March 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-molecular-and-integrative-physiology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/molecular-integrative-physiology/education/masters-program",
+      "programme": {
+        "id": "michigan-molecular-and-integrative-physiology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Molecular and Integrative Physiology",
+        "degreeType": "MS",
+        "faculty": "Medicine | Molecular and Integrative Physiology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/molecular-integrative-physiology/education/masters-program"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: May 8', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-molecular-cellular-and-developmental-biology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/mcdb/",
+      "programme": {
+        "id": "michigan-molecular-cellular-and-developmental-biology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Molecular, Cellular, and Developmental Biology",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Molecular, Cellular, and Developmental Biology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/mcdb/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), March 1 (MS); Winter: November 1 (M.S.); Summer: March 1 (Pathways Master’s)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-movement-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://www.kines.umich.edu/academics/graduate-programs/ms-movement-science",
+      "programme": {
+        "id": "michigan-movement-science",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Movement Science",
+        "degreeType": "MS",
+        "faculty": "Kinesiology | Movement Science",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://www.kines.umich.edu/academics/graduate-programs/ms-movement-science"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), February 1 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-musicology-ethnomusicology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://smtd.umich.edu/degree/doctor-of-philosophy-in-musicology-ethnomusicological-emphasis/",
+      "programme": {
+        "id": "michigan-musicology-ethnomusicology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Musicology: Ethnomusicology",
+        "degreeType": "AM",
+        "faculty": "Music, Theatre, and Dance | Musicology: Ethnomusicology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://smtd.umich.edu/degree/doctor-of-philosophy-in-musicology-ethnomusicological-emphasis/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-naval-architecture-and-marine-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://name.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-naval-architecture-and-marine-engineering",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Naval Architecture and Marine Engineering",
+        "degreeType": "MS / MSE",
+        "faculty": "Engineering | Naval Architecture and Marine Engineering",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://name.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.); January 15 (M.S., M.S.E.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-nuclear-engineering-and-radiological-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://ners.engin.umich.edu/",
+      "programme": {
+        "id": "michigan-nuclear-engineering-and-radiological-sciences",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Nuclear Engineering and Radiological Sciences",
+        "degreeType": "MS / MSE",
+        "faculty": "Engineering | Nuclear Engineering and Radiological Sciences",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://ners.engin.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15 (Ph.D.); January 15 (M.S., M.S.E.); Winter: October 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-nutritional-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/ns/",
+      "programme": {
+        "id": "michigan-nutritional-sciences",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Nutritional Sciences",
+        "degreeType": "MS",
+        "faculty": "Public Health | Nutritional Sciences",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/ns/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Application Deadline: Fall: December 1 (Ph.D. Final), December 1 (M.S. Early), January 15 (M.S. International Final), May 15 (M.S. Domestic Final), February 15 (AMD Final)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-oral-health-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://dent.umich.edu/education/academic-programs/oral-health-sciences-phd-masters",
+      "programme": {
+        "id": "michigan-oral-health-sciences",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Oral Health Sciences",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Oral Health Sciences",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://dent.umich.edu/education/academic-programs/oral-health-sciences-phd-masters"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 5 (Ph.D.); Summer: February 5 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-orthodontics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://www.dent.umich.edu/education/orthodontics-graduate-program-ms",
+      "programme": {
+        "id": "michigan-orthodontics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Orthodontics",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Orthodontics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://www.dent.umich.edu/education/orthodontics-graduate-program-ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Summer: August 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-pediatric-dentistry",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://dent.umich.edu/education/academic-programs/graduate-programs/pediatric-dentistry-graduate-program-ms",
+      "programme": {
+        "id": "michigan-pediatric-dentistry",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Pediatric Dentistry",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Pediatric Dentistry",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://dent.umich.edu/education/academic-programs/graduate-programs/pediatric-dentistry-graduate-program-ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Summer: October 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-periodontics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://www.dent.umich.edu/education/periodontics-graduate-program-ms",
+      "programme": {
+        "id": "michigan-periodontics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Periodontics",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Periodontics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://www.dent.umich.edu/education/periodontics-graduate-program-ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Summer: June 30', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-pharmacology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://medicine.umich.edu/dept/pharmacology/",
+      "programme": {
+        "id": "michigan-pharmacology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Pharmacology",
+        "degreeType": "MS",
+        "faculty": "Medicine | Pharmacology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://medicine.umich.edu/dept/pharmacology/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: March 15 (international); April 15 (domestic)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-philosophy",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/philosophy/",
+      "programme": {
+        "id": "michigan-philosophy",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Philosophy",
+        "degreeType": "MA",
+        "faculty": "Literature, Science, and the Arts | Philosophy",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/philosophy/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'MA Fall: December 5, PhD Fall: December 5', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-population-and-health-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/online/index.html",
+      "programme": {
+        "id": "michigan-population-and-health-sciences",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Population and Health Sciences",
+        "degreeType": "MS",
+        "faculty": "Public Health | Population and Health Sciences",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/online/index.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Currently Not Accepting Applications', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-prosthodontics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://www.dent.umich.edu/education/prosthodontics-graduate-program-ms",
+      "programme": {
+        "id": "michigan-prosthodontics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Prosthodontics",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Prosthodontics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://www.dent.umich.edu/education/prosthodontics-graduate-program-ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Summer: September 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-psychology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://lsa.umich.edu/psych/prospective-students/graduate.html",
+      "programme": {
+        "id": "michigan-psychology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Psychology",
+        "degreeType": "Master's",
+        "faculty": "Literature, Science, and the Arts | Psychology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://lsa.umich.edu/psych/prospective-students/graduate.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: November 15 (Ph.D); February 1 (SUGS AMDP)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-public-affairs",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://fordschool.umich.edu/mpp-mpa/degrees",
+      "programme": {
+        "id": "michigan-public-affairs",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Public Affairs",
+        "degreeType": "MPA",
+        "faculty": "Public Policy | Public Affairs",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://fordschool.umich.edu/mpp-mpa/degrees"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-public-policy",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://fordschool.umich.edu/mpp-mpa/degrees",
+      "programme": {
+        "id": "michigan-public-policy",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Public Policy",
+        "degreeType": "MPP",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://fordschool.umich.edu/mpp-mpa/degrees"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-quantitative-finance-and-risk-management",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://lsa.umich.edu/stats/masters_students/mastersprograms/quantitative-finance-program.html",
+      "programme": {
+        "id": "michigan-quantitative-finance-and-risk-management",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Quantitative Finance and Risk Management",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Quantitative Finance and Risk Management",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://lsa.umich.edu/stats/masters_students/mastersprograms/quantitative-finance-program.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: February 9', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-restorative-dentistry",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://dent.umich.edu/education/academic-programs/graduate-programs/graduate-restorative-dentistry-program-ms",
+      "programme": {
+        "id": "michigan-restorative-dentistry",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Restorative Dentistry",
+        "degreeType": "MS",
+        "faculty": "Dentistry | Restorative Dentistry",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://dent.umich.edu/education/academic-programs/graduate-programs/graduate-restorative-dentistry-program-ms"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Summer: August 1', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-robotics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://robotics.umich.edu/",
+      "programme": {
+        "id": "michigan-robotics",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Robotics",
+        "degreeType": "MS",
+        "faculty": "Engineering | Robotics",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://robotics.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), January 15 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-sport-management",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://www.kines.umich.edu/academics/graduate-programs/ms-sport-management",
+      "programme": {
+        "id": "michigan-sport-management",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Sport Management",
+        "degreeType": "MS",
+        "faculty": "Kinesiology | Sport Management",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://www.kines.umich.edu/academics/graduate-programs/ms-sport-management"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), February 1 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-survey-and-data-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://psm.isr.umich.edu/",
+      "programme": {
+        "id": "michigan-survey-and-data-science",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Survey and Data Science",
+        "degreeType": "MS",
+        "faculty": "Literature, Science, and the Arts | Survey and Data Science",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://psm.isr.umich.edu/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 8 (Ph.D.) and January 15 (M.S.)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-toxicology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "https://sph.umich.edu/ehs/programs/toxicology.html",
+      "programme": {
+        "id": "michigan-toxicology",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Toxicology",
+        "degreeType": "MS",
+        "faculty": "Public Health | Toxicology",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "https://sph.umich.edu/ehs/programs/toxicology.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 1 (Ph.D.), December 1 (M.S. Priority), July 1 (M.S. Final), January 15 (AMDP)', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-transcultural-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://lsa.umich.edu/transcultural",
+      "programme": {
+        "id": "michigan-transcultural-studies",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Transcultural Studies",
+        "degreeType": "MA",
+        "faculty": "Literature, Science, and the Arts | Transcultural Studies",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://lsa.umich.edu/transcultural"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: December 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:michigan-urban-and-regional-planning",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-michigan-ann-arbor",
+      "detectedAt": "2026-07-17T03:09:09.197470+00:00",
+      "sourceUrl": "http://taubmancollege.umich.edu/urbanplanning",
+      "programme": {
+        "id": "michigan-urban-and-regional-planning",
+        "universityId": "university-of-michigan-ann-arbor",
+        "name": "Urban and Regional Planning",
+        "degreeType": "MURP",
+        "faculty": "Architecture and Urban Planning (Taubman College) | Urban and Regional Planning",
+        "applicationUrl": "https://rackham.umich.edu/admissions/applying/",
+        "sourceUrl": "http://taubmancollege.umich.edu/urbanplanning"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Rackham's official Ann Arbor programs-of-study table lists the programme-specific closing guidance 'Fall: January 15', but does not attach a cycle year or publish an exact application opening date. The yearless deadline is retained as monitoring evidence and no window is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-rackham-programs-of-study-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    }
+  ]
+}

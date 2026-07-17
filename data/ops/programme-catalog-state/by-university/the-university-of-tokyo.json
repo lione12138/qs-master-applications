@@ -1,0 +1,701 @@
+{
+  "universities": {
+    "the-university-of-tokyo": {
+      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/graduate_schools.html",
+      "checkedAt": "2026-07-16T17:24:28.983207+00:00",
+      "itemCount": 86,
+      "applicationOpensAt": null,
+      "catalogHash": "7474c0d00b6bef961a4416f4a74eae6a099c1cb6c355957b9cb2da6d454c9d13",
+      "programmes": {
+        "utokyo-computer-science-master": {
+          "name": "Master's Program in Computer Science",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Information Science and Technology",
+          "department": "Computer Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "aa703e44d9f81ec35fff46478e6c43f48db1e4379d8ff266b7051abe81da81dc"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-agricultural-and-environmental-biology-master": {
+          "name": "Master's in Agricultural and Environmental Biology",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Agricultural and Environmental Biology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-agricultural-and-resource-economics-master": {
+          "name": "Master's in Agricultural and Resource Economics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Agricultural and Resource Economics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-animal-resource-sciences-master": {
+          "name": "Master's in Animal Resource Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Animal Resource Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-applied-biological-chemistry-master": {
+          "name": "Master's in Applied Biological Chemistry",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Applied Biological Chemistry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-aquatic-bioscience-master": {
+          "name": "Master's in Aquatic Bioscience",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Aquatic Bioscience",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-biological-and-environmental-engineering-master": {
+          "name": "Master's in Biological and Environmental Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Biological and Environmental Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-biomaterial-sciences-master": {
+          "name": "Master's in Biomaterial Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Biomaterial Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-biotechnology-master": {
+          "name": "Master's in Biotechnology",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Biotechnology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-ecosystem-studies-master": {
+          "name": "Master's in Ecosystem Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Ecosystem Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-forest-science-master": {
+          "name": "Master's in Forest Science",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Forest Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-agricultural-and-life-sciences-global-agricultural-sciences-master": {
+          "name": "Master's in Global Agricultural Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agricultural and Life Sciences",
+          "department": "Global Agricultural Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-advanced-social-and-international-studies-master": {
+          "name": "Master's in Advanced Social and International Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Advanced Social and International Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-area-studies-master": {
+          "name": "Master's in Area Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Area Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-graduate-program-on-environmental-sciences-gpes-master": {
+          "name": "Master's in Graduate Program on Environmental Sciences (GPES)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Graduate Program on Environmental Sciences (GPES)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-graduate-program-on-global-humanities-ghp-master": {
+          "name": "Master's in Graduate Program on Global Humanities (GHP)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Graduate Program on Global Humanities (GHP)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-graduate-program-on-global-society-gsp-master": {
+          "name": "Master's in Graduate Program on Global Society (GSP)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Graduate Program on Global Society (GSP)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-integrated-human-sciences-program-for-cultural-diversity-ihs-master": {
+          "name": "Master's in Integrated Human Sciences Program for Cultural Diversity (IHS)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Integrated Human Sciences Program for Cultural Diversity (IHS)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-interdisciplinary-cultural-studies-master": {
+          "name": "Master's in Interdisciplinary Cultural Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Interdisciplinary Cultural Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-language-and-information-sciences-master": {
+          "name": "Master's in Language and Information Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Language and Information Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-multidisciplinary-sciences-master": {
+          "name": "Master's in Multidisciplinary Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "Multidisciplinary Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-arts-and-sciences-the-graduate-program-on-human-security-hsp-master": {
+          "name": "Master's in The Graduate Program on Human Security (HSP)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Arts and Sciences",
+          "department": "The Graduate Program on Human Security (HSP)",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-economics-area-studies-master": {
+          "name": "Master's in Area Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Area Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-economics-economic-history-master": {
+          "name": "Master's in Economic History",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Economic History",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-economics-economics-master": {
+          "name": "Master's in Economics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Economics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-economics-management-master": {
+          "name": "Master's in Management",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-economics-quantitative-finance-master": {
+          "name": "Master's in Quantitative Finance",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Quantitative Finance",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-economics-statistics-master": {
+          "name": "Master's in Statistics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Statistics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-education-advanced-research-in-school-education-master": {
+          "name": "Master's in Advanced Research in School Education",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Education",
+          "department": "Advanced Research in School Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-education-integrated-educational-sciences-master": {
+          "name": "Master's in Integrated Educational Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Education",
+          "department": "Integrated Educational Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-advanced-interdisciplinary-studies-master": {
+          "name": "Master's in Advanced Interdisciplinary Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Advanced Interdisciplinary Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-aeronautics-and-astronautics-master": {
+          "name": "Master's in Aeronautics and Astronautics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Aeronautics and Astronautics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-applied-chemistry-master": {
+          "name": "Master's in Applied Chemistry",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Applied Chemistry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-applied-physics-master": {
+          "name": "Master's in Applied Physics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Applied Physics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-architecture-master": {
+          "name": "Master's in Architecture",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Architecture",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-bioengineering-master": {
+          "name": "Master's in Bioengineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Bioengineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-chemical-system-engineering-master": {
+          "name": "Master's in Chemical System Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Chemical System Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-chemistry-and-biotechnology-master": {
+          "name": "Master's in Chemistry and Biotechnology",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Chemistry and Biotechnology",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-civil-engineering-master": {
+          "name": "Master's in Civil Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Civil Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-electrical-engineering-and-information-systems-master": {
+          "name": "Master's in Electrical Engineering and Information Systems",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Electrical Engineering and Information Systems",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-materials-engineering-master": {
+          "name": "Master's in Materials Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Materials Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-mechanical-engineering-master": {
+          "name": "Master's in Mechanical Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Mechanical Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-nuclear-engineering-and-management-master": {
+          "name": "Master's in Nuclear Engineering and Management",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Nuclear Engineering and Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-nuclear-professional-school-master": {
+          "name": "Master's in Nuclear Professional School",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Nuclear Professional School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-precision-engineering-master": {
+          "name": "Master's in Precision Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Precision Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-systems-innovation-master": {
+          "name": "Master's in Systems Innovation",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Systems Innovation",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-technology-management-for-innovation-master": {
+          "name": "Master's in Technology Management for Innovation",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Technology Management for Innovation",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-engineering-urban-engineering-master": {
+          "name": "Master's in Urban Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Urban Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-advanced-energy-master": {
+          "name": "Master's in Advanced Energy",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Advanced Energy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-advanced-materials-science-master": {
+          "name": "Master's in Advanced Materials Science",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Advanced Materials Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-complexity-science-and-engineering-master": {
+          "name": "Master's in Complexity Science and Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Complexity Science and Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-computational-biology-and-medical-sciences-master": {
+          "name": "Master's in Computational Biology and Medical Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Computational Biology and Medical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-environment-systems-master": {
+          "name": "Master's in Environment Systems",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Environment Systems",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-graduate-program-in-sustainability-science-master": {
+          "name": "Master's in Graduate Program in Sustainability Science",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Graduate Program in Sustainability Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-human-and-engineered-environmental-studies-master": {
+          "name": "Master's in Human and Engineered Environmental Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Human and Engineered Environmental Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-integrated-biosciences-master": {
+          "name": "Master's in Integrated Biosciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Integrated Biosciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-international-studies-master": {
+          "name": "Master's in International Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "International Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-natural-environmental-studies-master": {
+          "name": "Master's in Natural Environmental Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Natural Environmental Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-ocean-technology-policy-and-environment-master": {
+          "name": "Master's in Ocean Technology, Policy, and Environment",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Ocean Technology, Policy, and Environment",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-frontier-sciences-socio-cultural-environmental-studies-master": {
+          "name": "Master's in Socio-Cultural Environmental Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Frontier Sciences",
+          "department": "Socio-Cultural Environmental Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-humanities-and-sociology-asian-studies-master": {
+          "name": "Master's in Asian Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Humanities and Sociology",
+          "department": "Asian Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-humanities-and-sociology-cultural-resources-studies-master": {
+          "name": "Master's in Cultural Resources Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Humanities and Sociology",
+          "department": "Cultural Resources Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-humanities-and-sociology-european-and-american-studies-master": {
+          "name": "Master's in European and American Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Humanities and Sociology",
+          "department": "European and American Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-humanities-and-sociology-general-culture-master": {
+          "name": "Master's in General Culture",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Humanities and Sociology",
+          "department": "General Culture",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-humanities-and-sociology-japanese-studies-master": {
+          "name": "Master's in Japanese Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Humanities and Sociology",
+          "department": "Japanese Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-humanities-and-sociology-korean-studies-master": {
+          "name": "Master's in Korean Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Humanities and Sociology",
+          "department": "Korean Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-humanities-and-sociology-socio-cultural-studies-master": {
+          "name": "Master's in Socio-cultural Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Humanities and Sociology",
+          "department": "Socio-cultural Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-information-science-and-technology-creative-informatics-master": {
+          "name": "Master's in Creative Informatics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Information Science and Technology",
+          "department": "Creative Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "cc00face1aef9ad298998e1a6e72eb12d088c2fe207247ae09c1596c35dee0ce"
+        },
+        "utokyo-graduate-school-of-information-science-and-technology-information-and-communication-engineering-master": {
+          "name": "Master's in Information and Communication Engineering",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Information Science and Technology",
+          "department": "Information and Communication Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "aa703e44d9f81ec35fff46478e6c43f48db1e4379d8ff266b7051abe81da81dc"
+        },
+        "utokyo-graduate-school-of-information-science-and-technology-information-physics-and-computing-master": {
+          "name": "Master's in Information Physics and Computing",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Information Science and Technology",
+          "department": "Information Physics and Computing",
+          "parseStatus": "parsed",
+          "deadlineHash": "cc00face1aef9ad298998e1a6e72eb12d088c2fe207247ae09c1596c35dee0ce"
+        },
+        "utokyo-graduate-school-of-information-science-and-technology-mathematical-informatics-master": {
+          "name": "Master's in Mathematical Informatics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Information Science and Technology",
+          "department": "Mathematical Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "aa703e44d9f81ec35fff46478e6c43f48db1e4379d8ff266b7051abe81da81dc"
+        },
+        "utokyo-graduate-school-of-information-science-and-technology-mechano-informatics-master": {
+          "name": "Master's in Mechano-Informatics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Information Science and Technology",
+          "department": "Mechano-Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "aa703e44d9f81ec35fff46478e6c43f48db1e4379d8ff266b7051abe81da81dc"
+        },
+        "utokyo-graduate-school-of-interdisciplinary-information-studies-interdisciplinary-information-studies-master": {
+          "name": "Master's in Interdisciplinary Information Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Interdisciplinary Information Studies",
+          "department": "Interdisciplinary Information Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-mathematical-sciences-mathematical-sciences-master": {
+          "name": "Master's in Mathematical Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Mathematical Sciences",
+          "department": "Mathematical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-medicine-health-sciences-and-nursing-master": {
+          "name": "Master's in Health Sciences and Nursing",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Medicine",
+          "department": "Health Sciences and Nursing",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-medicine-international-health-master": {
+          "name": "Master's in International Health",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Medicine",
+          "department": "International Health",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-medicine-medical-science-master": {
+          "name": "Master's in Medical Science",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Medicine",
+          "department": "Medical Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-medicine-public-health-master": {
+          "name": "Master of Public Health",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Medicine",
+          "department": "Public Health",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-pharmaceutical-sciences-pharmaceutical-sciences-master": {
+          "name": "Master's in Pharmaceutical Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Pharmaceutical Sciences",
+          "department": "Pharmaceutical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-public-policy-public-policy-master": {
+          "name": "Master of Public Policy",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Public Policy",
+          "department": "Public Policy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-science-astronomy-master": {
+          "name": "Master's in Astronomy",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Science",
+          "department": "Astronomy",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-science-biological-sciences-master": {
+          "name": "Master's in Biological Sciences",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Science",
+          "department": "Biological Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-science-chemistry-master": {
+          "name": "Master's in Chemistry",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Science",
+          "department": "Chemistry",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-science-earth-and-planetary-science-master": {
+          "name": "Master's in Earth and Planetary Science",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Science",
+          "department": "Earth and Planetary Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-school-of-science-physics-master": {
+          "name": "Master's in Physics",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Science",
+          "department": "Physics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "utokyo-graduate-schools-for-law-and-politics-legal-and-political-studies-master": {
+          "name": "Master's in Legal and Political Studies",
+          "degreeType": "Master",
+          "faculty": "Graduate Schools for Law and Politics",
+          "department": "Legal and Political Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,8 @@ import json
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from time import sleep
+from urllib.error import HTTPError, URLError
 from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 
@@ -87,6 +89,34 @@ def submit_urls(
     return status
 
 
+def wait_for_key(
+    key_location: str,
+    expected_key: str,
+    *,
+    attempts: int = 12,
+    delay: float = 5,
+) -> None:
+    last_problem = "key file was not checked"
+    for attempt in range(1, attempts + 1):
+        request = Request(
+            key_location,
+            headers={"User-Agent": "GradWindow-IndexNow/1.0"},
+        )
+        try:
+            with urlopen(request, timeout=15) as response:
+                body = response.read().decode("utf-8").strip()
+            if body == expected_key:
+                return
+            last_problem = "key file content did not match"
+        except (HTTPError, URLError, TimeoutError) as exc:
+            last_problem = f"{type(exc).__name__}: {exc}"
+        if attempt < attempts:
+            sleep(delay)
+    raise RuntimeError(
+        f"IndexNow key file was not ready at {key_location}: {last_problem}"
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Submit the built GradWindow sitemap to IndexNow"
@@ -103,6 +133,7 @@ def main() -> None:
     if args.dry_run:
         print(json.dumps(payload, ensure_ascii=False, indent=2))
         return
+    wait_for_key(str(payload["keyLocation"]), key)
     status = submit_urls(payload, endpoint=args.endpoint)
     print(f"IndexNow accepted {len(urls)} URLs with HTTP {status}.")
 

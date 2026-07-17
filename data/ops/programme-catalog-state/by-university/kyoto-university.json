@@ -1,0 +1,213 @@
+{
+  "universities": {
+    "kyoto-university": {
+      "sourceUrl": "https://www.kyoto-u.ac.jp/en/education-campus/education-and-admissions/graduate-degree-programs/graduate-schools2",
+      "checkedAt": "2026-07-17T05:32:29.965368+00:00",
+      "itemCount": 25,
+      "applicationOpensAt": "2026-06-05",
+      "catalogHash": "2e1c945f71f9e88311603cd6ec338a6bc99606b77db177d0cd6e2a4ff204b9f4",
+      "programmes": {
+        "kyoto-agriculture-agronomy-and-horticultural-science-forest-and-biomaterials-science-applied-life-sciences-applied-biosciences-environmental-science-and-technology-natural-resource-economics-and-food-science-and-biotechnology": {
+          "name": "Master's Program in Agriculture (Agronomy and Horticultural Science, Forest and Biomaterials Science, Applied Life Sciences, Applied Biosciences, Environmental Science and Technology, Natural Resource Economics, and Food Science and Biotechnology)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Agriculture",
+          "department": "Graduate School of Agriculture",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-biostudies-integrated-life-science-and-systemic-life-science": {
+          "name": "Master's Program in Biostudies (Integrated Life Science, and Systemic Life Science)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Biostudies",
+          "department": "Graduate School of Biostudies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-economics-economics": {
+          "name": "Master's Program in Economics (Economics)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Graduate School of Economics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-economics-international-joint-master-degree-program-in-global-markets-local-creativities": {
+          "name": "International Joint Master Degree Program in Global Markets, Local Creativities",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Economics",
+          "department": "Graduate School of Economics",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-education-educational-studies-and-clinical-studies-of-education": {
+          "name": "Master's Program in Education (Educational Studies, and Clinical Studies of Education)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Education",
+          "department": "Graduate School of Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-energy-science-socio-environmental-energy-science-fundamental-energy-science-energy-conversion-science-and-energy-science-and-technology": {
+          "name": "Master's Program in Energy Science (Socio-Environmental Energy Science, Fundamental Energy Science, Energy Conversion Science, and Energy Science and Technology)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Energy Science",
+          "department": "Graduate School of Energy Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-engineering-civil-and-earth-resources-engineering-urban-management-environmental-engineering-architecture-and-architectural-engineering-mechanical-engineering-and-science-micro-engineering-aeronautics-and-astronautics-nuclear-engineering-materials-science-and-engineering-electrical-engineering-electronic-science-and-engineering-material-chemistry-energy-and-hydrocarbon-chemistry-molecular-engineering-polymer-chemistry-synthetic-chemistry-and-biological-chemistry-and-chemical-engineering": {
+          "name": "Master's Program in Engineering (Civil and Earth Resources Engineering, Urban Management, Environmental Engineering, Architecture and Architectural Engineering, Mechanical Engineering and Science, Micro Engineering, Aeronautics and Astronautics, Nuclear Engineering, Materials Science and Engineering, Electrical Engineering, Electronic Science and Engineering, Material Chemistry, Energy and Hydrocarbon Chemistry, Molecular Engineering, Polymer Chemistry, Synthetic Chemistry and Biological Chemistry, and Chemical Engineering)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Engineering",
+          "department": "Graduate School of Engineering",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-global-environmental-studies-environmental-management": {
+          "name": "Master's Program in Global Environmental Studies (Environmental Management)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Global Environmental Studies",
+          "department": "Graduate School of Global Environmental Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-government-public-policy": {
+          "name": "Professional Master's Program in Public Policy",
+          "degreeType": "MPP",
+          "faculty": "Graduate School of Government",
+          "department": "Graduate School of Government",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-human-and-environmental-studies-department-of-human-and-environmental-studies": {
+          "name": "Master's Program in Human and Environmental Studies (Department of Human and Environmental Studies)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Human and Environmental Studies",
+          "department": "Graduate School of Human and Environmental Studies",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-informatics-advanced-mathematical-sciences-master": {
+          "name": "Master's Program in Informatics (Advanced Mathematical Sciences Course)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Informatics",
+          "department": "Graduate School of Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "6708728614772b33fe33e65723c1e091b5319d39d674f1d6e49d6107ade2e86b"
+        },
+        "kyoto-informatics-applied-mathematics-and-physics-master": {
+          "name": "Master's Program in Informatics (Applied Mathematics and Physics Course)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Informatics",
+          "department": "Graduate School of Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "6708728614772b33fe33e65723c1e091b5319d39d674f1d6e49d6107ade2e86b"
+        },
+        "kyoto-informatics-communications-and-computer-engineering-master": {
+          "name": "Master's Program in Informatics (Communications and Computer Engineering Course)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Informatics",
+          "department": "Graduate School of Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "6708728614772b33fe33e65723c1e091b5319d39d674f1d6e49d6107ade2e86b"
+        },
+        "kyoto-informatics-data-science-master": {
+          "name": "Master's Program in Informatics (Data Science Course)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Informatics",
+          "department": "Graduate School of Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "6708728614772b33fe33e65723c1e091b5319d39d674f1d6e49d6107ade2e86b"
+        },
+        "kyoto-informatics-intelligence-science-and-technology-master": {
+          "name": "Master's Program in Informatics (Intelligence Science and Technology Course)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Informatics",
+          "department": "Graduate School of Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "6708728614772b33fe33e65723c1e091b5319d39d674f1d6e49d6107ade2e86b"
+        },
+        "kyoto-informatics-social-informatics-master": {
+          "name": "Master's Program in Informatics (Social Informatics Course)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Informatics",
+          "department": "Graduate School of Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "6708728614772b33fe33e65723c1e091b5319d39d674f1d6e49d6107ade2e86b"
+        },
+        "kyoto-informatics-systems-science-master": {
+          "name": "Master's Program in Informatics (Systems Science Course)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Informatics",
+          "department": "Graduate School of Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "6708728614772b33fe33e65723c1e091b5319d39d674f1d6e49d6107ade2e86b"
+        },
+        "kyoto-law-legal-and-political-studies": {
+          "name": "Master's Program in Law (Legal and Political Studies)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Law",
+          "department": "Graduate School of Law",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-letters-joint-degree-master-of-arts-program-in-transcultural-studies": {
+          "name": "Joint Degree Master of Arts Program in Transcultural Studies",
+          "degreeType": "MA",
+          "faculty": "Graduate School of Letters",
+          "department": "Graduate School of Letters",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-letters-literature-philosophy-history-behavioral-studies-and-contemporary-culture": {
+          "name": "Master's Program in Letters (Literature, Philosophy, History, Behavioral Studies, and Contemporary Culture)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Letters",
+          "department": "Graduate School of Letters",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-management-business-administration": {
+          "name": "Professional Master's Program in Business Administration",
+          "degreeType": "MBA",
+          "faculty": "Graduate School of Management",
+          "department": "Graduate School of Management",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-medicine-human-health-sciences": {
+          "name": "Master's Program in Medicine (Human Health Sciences)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Medicine",
+          "department": "Graduate School of Medicine",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-medicine-medical-science": {
+          "name": "Master's Program in Medicine (Medical Science)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Medicine",
+          "department": "Graduate School of Medicine",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-pharmaceutical-sciences-pharmaceutical-sciences-bioinformatics-and-chemical-genomics-not-accepting-new-students": {
+          "name": "Master's Program in Pharmaceutical Sciences (Pharmaceutical Sciences, Bioinformatics and Chemical Genomics (not accepting new students))",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Pharmaceutical Sciences",
+          "department": "Graduate School of Pharmaceutical Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "kyoto-science-mathematics-and-mathematical-sciences-physics-and-astronomy-earth-and-planetary-sciences-chemistry-and-biological-sciences": {
+          "name": "Master's Program in Science (Mathematics and Mathematical Sciences, Physics and Astronomy, Earth and Planetary Sciences, Chemistry, and Biological Sciences)",
+          "degreeType": "Master",
+          "faculty": "Graduate School of Science",
+          "department": "Graduate School of Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

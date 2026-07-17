@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">GradWindow</title>
+  <desc id="description">Official-source master's application windows for QS Top 200 universities.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b3b2f"/>
+      <stop offset="1" stop-color="#1e6548"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ffb627"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#05251c" flood-opacity=".38"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#background)"/>
+  <circle cx="1200" cy="-40" r="286" fill="#2b7f5d" opacity=".44"/>
+  <circle cx="1250" cy="-12" r="148" fill="#45a47a" opacity=".25"/>
+  <circle cx="1080" cy="650" r="230" fill="#082f26" opacity=".42"/>
+  <path d="M0 568C250 505 436 610 674 552c218-54 376-39 606 34v54H0Z" fill="#0a352a" opacity=".52"/>
+
+  <g transform="translate(82 68)">
+    <rect width="72" height="72" rx="19" fill="url(#gold)" filter="url(#shadow)"/>
+    <text x="36" y="50" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="800" fill="#164d3b">G</text>
+    <text x="94" y="52" font-family="Segoe UI, Arial, sans-serif" font-size="46" font-weight="760" fill="#fffdf7">GradWindow</text>
+  </g>
+
+  <rect x="82" y="176" width="237" height="42" rx="21" fill="#2b805e"/>
+  <circle cx="107" cy="197" r="7" fill="#78d5a8"/>
+  <text x="126" y="205" font-family="Segoe UI, Arial, sans-serif" font-size="20" font-weight="650" fill="#e4f5ed">QS TOP 200 · MASTER'S</text>
+
+  <text x="82" y="310" font-family="Segoe UI, Arial, sans-serif" font-size="67" font-weight="770" fill="#fffdf7">Graduate deadlines,</text>
+  <text x="82" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="67" font-weight="770" fill="url(#gold)">without the guesswork.</text>
+  <text x="86" y="440" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#d7ede4">Searchable application windows backed by official university sources.</text>
+
+  <g transform="translate(82 492)" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#e8f6ef">
+    <circle cx="9" cy="-6" r="8" fill="#f3b72e"/>
+    <path d="m5-6 3 3 6-7" fill="none" stroke="#164d3b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="28" y="1">Official sources</text>
+    <circle cx="209" cy="-6" r="8" fill="#f3b72e"/>
+    <path d="m205-6 3 3 6-7" fill="none" stroke="#164d3b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="228" y="1">Exact dates</text>
+    <circle cx="361" cy="-6" r="8" fill="#f3b72e"/>
+    <path d="m357-6 3 3 6-7" fill="none" stroke="#164d3b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="380" y="1">Transparent estimates</text>
+  </g>
+
+  <g transform="translate(870 158)" filter="url(#shadow)">
+    <rect width="320" height="264" rx="26" fill="#fffdf7"/>
+    <rect width="320" height="64" rx="26" fill="#f3b72e"/>
+    <rect y="37" width="320" height="27" fill="#f3b72e"/>
+    <circle cx="52" cy="32" r="7" fill="#164d3b" opacity=".52"/>
+    <circle cx="77" cy="32" r="7" fill="#164d3b" opacity=".52"/>
+    <text x="28" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#1e6548">APPLICATION WINDOW</text>
+    <text x="28" y="153" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="780" fill="#173e32">OPEN NOW</text>
+    <path d="M28 181h264" stroke="#d7e7e0" stroke-width="2"/>
+    <circle cx="41" cy="216" r="10" fill="#2d936c"/>
+    <path d="m36 216 4 4 8-10" fill="none" stroke="#fffdf7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="63" y="224" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#49665c">Verified source</text>
+  </g>
+
+  <text x="1192" y="550" text-anchor="end" font-family="Consolas, Menlo, monospace" font-size="22" font-weight="650" fill="#8de0b7">gradwindow.com</text>
+</svg>
