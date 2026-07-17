@@ -6,9 +6,11 @@ from collections.abc import Callable
 from datetime import date, datetime, timezone
 from io import BytesIO
 from pathlib import Path
+from typing import Any
 
 from openpyxl import load_workbook
 
+from .candidate_review import attach_programme_candidate_evidence_hash
 from .http_client import DEFAULT_USER_AGENT, fetch_page
 from .io import read_json, write_json
 from .monitor import extract_fetched_text
@@ -176,11 +178,7 @@ def discover_programmes(
                 if previous is None:
                     created_guidance_candidates += 1
                 else:
-                    guidance["status"] = previous.get("status", "pending")
-                    guidance["detectedAt"] = previous.get("detectedAt", checked_at)
-                    for key in ("reviewedAt", "reviewedBy", "reviewNotes"):
-                        if key in previous:
-                            guidance[key] = previous[key]
+                    _merge_candidate_review_state(guidance, previous, checked_at)
                 existing[guidance["id"]] = guidance
             continue
         candidate_id = f"new-programme:{programme.id}"
@@ -194,11 +192,7 @@ def discover_programmes(
         if previous is None:
             created += 1
         else:
-            candidate["status"] = previous.get("status", "pending")
-            candidate["detectedAt"] = previous.get("detectedAt", checked_at)
-            for key in ("reviewedAt", "reviewedBy", "reviewNotes"):
-                if key in previous:
-                    candidate[key] = previous[key]
+            _merge_candidate_review_state(candidate, previous, checked_at)
         existing[candidate_id] = candidate
 
     items = sorted(
@@ -317,7 +311,7 @@ def _known_programme_guidance_candidate(
     candidate["id"] = f"known-programme-guidance:{programme.id}"
     candidate["type"] = "known-programme-window-guidance"
     candidate["windows"] = unresolved_windows
-    return candidate
+    return attach_programme_candidate_evidence_hash(candidate)
 
 
 def _candidate_record(
@@ -408,7 +402,32 @@ def _candidate_record(
             "evidenceQuality": programme.evidence_quality,
             "documentHash": programme.evidence_document_hash,
         }
-    return candidate
+    return attach_programme_candidate_evidence_hash(candidate)
+
+
+def _merge_candidate_review_state(
+    candidate: dict[str, Any],
+    previous: dict[str, Any],
+    checked_at: str,
+) -> None:
+    previous_hash = previous.get("evidenceHash")
+    evidence_changed = bool(
+        previous_hash and previous_hash != candidate.get("evidenceHash")
+    )
+    candidate["detectedAt"] = (
+        checked_at if evidence_changed else previous.get("detectedAt", checked_at)
+    )
+    candidate["status"] = (
+        "pending" if evidence_changed else previous.get("status", "pending")
+    )
+    if previous.get("reviewHistory"):
+        candidate["reviewHistory"] = previous["reviewHistory"]
+    if evidence_changed:
+        candidate["evidenceChangedAt"] = checked_at
+        return
+    for key in ("reviewedAt", "reviewedBy", "reviewNotes", "evidenceChangedAt"):
+        if key in previous:
+            candidate[key] = previous[key]
 
 
 def _hash(value: str) -> str:

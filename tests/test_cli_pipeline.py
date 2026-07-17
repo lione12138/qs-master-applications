@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-import json
-
 from gradwindow import cli
+from gradwindow.candidate_review import attach_programme_candidate_evidence_hash
+from gradwindow.io import write_json
 
 
 class FakeAdapter:
@@ -73,64 +73,23 @@ def test_run_dedicated_discovery_returns_only_successful_university_ids(
     assert successful_ids == {"first-university"}
 
 
-def test_approve_all_programmes_uses_all_pending_candidate_universities(
-    monkeypatch,
-    tmp_path,
+def test_programme_candidate_hash_returns_one_locked_candidate(
+    monkeypatch, tmp_path
 ) -> None:
-    approved = []
     candidates_path = tmp_path / "programme-candidates.json"
-    candidates_path.write_text(
-        json.dumps(
-            {
-                "items": [
-                    {
-                        "id": "new-programme:a",
-                        "type": "new-programme",
-                        "status": "pending",
-                        "universityId": "generic-university",
-                    },
-                    {
-                        "id": "new-programme:b",
-                        "type": "new-programme",
-                        "status": "approved",
-                        "universityId": "already-approved-university",
-                    },
-                    {
-                        "id": "other:c",
-                        "type": "other",
-                        "status": "pending",
-                        "universityId": "other-university",
-                    },
-                    {
-                        "id": "new-programme:d",
-                        "type": "new-programme",
-                        "status": "pending",
-                        "universityId": "adapter-university",
-                    },
-                ]
-            }
-        ),
-        encoding="utf-8",
+    candidate = attach_programme_candidate_evidence_hash(
+        {
+            "id": "new-programme:a",
+            "type": "new-programme",
+            "status": "pending",
+            "universityId": "generic-university",
+        }
     )
+    write_json(candidates_path, {"items": [candidate]})
     monkeypatch.setattr(cli, "PROGRAMME_CANDIDATES_PATH", candidates_path)
 
-    def fake_approve_programme_candidates(*, university_id, reviewer, parsed_only):
-        approved.append((university_id, reviewer, parsed_only))
-        return {"promotedProgrammes": 1, "promotedWindows": 2}
+    report = cli._programme_candidate_hash(candidate["id"])
 
-    monkeypatch.setattr(
-        cli,
-        "approve_programme_candidates",
-        fake_approve_programme_candidates,
-    )
-
-    report = cli._approve_all_programmes(reviewer="codex", parsed_only=False)
-
-    assert approved == [
-        ("adapter-university", "codex", False),
-        ("generic-university", "codex", False),
-    ]
-    assert report == {
-        "adapter-university": {"promotedProgrammes": 1, "promotedWindows": 2},
-        "generic-university": {"promotedProgrammes": 1, "promotedWindows": 2},
-    }
+    assert report["candidateId"] == candidate["id"]
+    assert report["evidenceHash"] == candidate["evidenceHash"]
+    assert report["contentMatchesHash"] == "true"

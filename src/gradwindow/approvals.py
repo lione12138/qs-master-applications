@@ -2,16 +2,20 @@ from __future__ import annotations
 
 import copy
 import hashlib
+import secrets
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 from uuid import uuid4
 
+from .candidate_review import programme_candidate_evidence_hash
 from .evidence_store import write_evidence_snapshot
 from .intakes import with_intake_details
 from .io import read_json, write_json
 from .paths import (
     APPLICATIONS_PATH,
     PREDICTIONS_PATH,
+    PROGRAMME_APPROVAL_AUDIT_PATH,
     PROGRAMME_CANDIDATES_PATH,
     PROGRAMS_PATH,
     WINDOW_CANDIDATES_PATH,
@@ -118,16 +122,63 @@ def approve_window(
     return record
 
 
-def approve_programme_candidates(
+def approve_programme_candidate(
+    candidate_id: str,
+    evidence_hash: str,
     *,
-    university_id: str,
     reviewer: str,
-    parsed_only: bool = True,
     candidates_path: Path = PROGRAMME_CANDIDATES_PATH,
     programs_path: Path = PROGRAMS_PATH,
     applications_path: Path = APPLICATIONS_PATH,
-) -> dict[str, int]:
+    audit_path: Path | None = None,
+) -> dict[str, Any]:
     candidates = read_json(candidates_path)
+    candidate = next(
+        (
+            item
+            for item in candidates.get("items", [])
+            if item.get("id") == candidate_id
+        ),
+        None,
+    )
+    if candidate is None:
+        raise ValueError(f"Unknown programme candidate: {candidate_id}")
+    if candidate.get("type") != "new-programme":
+        raise ValueError(f"Candidate {candidate_id} is not a new programme")
+    if candidate.get("status", "pending") != "pending":
+        raise ValueError(
+            f"Candidate {candidate_id} is {candidate.get('status')}, not pending"
+        )
+    stored_hash = candidate.get("evidenceHash")
+    if not stored_hash:
+        raise ValueError(
+            f"Candidate {candidate_id} has no evidenceHash; run the candidate "
+            "metadata migration before approval"
+        )
+    computed_hash = programme_candidate_evidence_hash(candidate)
+    if not secrets.compare_digest(stored_hash, computed_hash):
+        raise ValueError(
+            f"Candidate {candidate_id} evidenceHash does not match its current content"
+        )
+    if not secrets.compare_digest(evidence_hash, stored_hash):
+        raise ValueError(f"Candidate {candidate_id} evidence hash mismatch")
+    if any(
+        review.get("evidenceHash") == stored_hash
+        for review in candidate.get("reviewHistory", [])
+    ):
+        raise ValueError(
+            f"Candidate {candidate_id} evidence version has already been reviewed"
+        )
+    if candidate.get("parseStatus") != "parsed":
+        raise ValueError(f"Candidate {candidate_id} is not parsed")
+
+    windows = candidate.get("windows") or []
+    exact_windows = [window for window in windows if has_official_exact_window(window)]
+    if not exact_windows:
+        raise ValueError(
+            f"Candidate {candidate_id} has no official exact application windows"
+        )
+
     programs_payload = read_json(programs_path)
     applications_payload = read_json(applications_path)
     known_program_ids = {item["id"] for item in programs_payload.get("programs", [])}
@@ -137,84 +188,57 @@ def approve_programme_candidates(
     approved_at = datetime.now(timezone.utc)
     verified_at = approved_at.date().isoformat()
     promoted_programmes = 0
-    promoted_windows = 0
+    promoted_window_ids: list[str] = []
     evidence_records: list[tuple[dict, dict]] = []
+    university_id = candidate["universityId"]
+    programme = copy.deepcopy(candidate.get("programme") or {})
+    programme_id = programme.get("id")
+    if not programme_id:
+        raise ValueError(f"Candidate {candidate_id} has no programme id")
+    programme["faculty"] = _dedupe_faculty(programme.get("faculty", ""))
+    if programme_id not in known_program_ids:
+        programs_payload.setdefault("programs", []).append(programme)
+        known_program_ids.add(programme_id)
+        promoted_programmes += 1
+    for window in exact_windows:
+        record_id = programme_window_record_id(
+            programme_id,
+            window,
+            existing_ids=known_application_ids,
+        )
+        if record_id in known_application_ids:
+            continue
+        record = with_intake_details(
+            {
+                "id": record_id,
+                "universityId": university_id,
+                "scopeType": "programme",
+                "scopeId": programme_id,
+                "intake": window["intake"],
+                "round": window.get("round", ""),
+                "applicantCategories": window.get("applicantCategories", ["all"]),
+                "opensAt": window["opensAt"],
+                "closesAt": window["closesAt"],
+                "applicationUrl": programme["applicationUrl"],
+                "sourceUrl": window.get("sourceUrl") or programme["sourceUrl"],
+                "verifiedAt": verified_at,
+                "evidence": _programme_window_evidence(
+                    programme["name"],
+                    window,
+                    window.get("sourceUrl") or programme["sourceUrl"],
+                ),
+            }
+        )
+        applications_payload.setdefault("applications", []).append(record)
+        if applications_path == APPLICATIONS_PATH:
+            evidence_records.append((record, candidate))
+        known_application_ids.add(record_id)
+        promoted_window_ids.append(record_id)
 
-    for candidate in candidates.get("items", []):
-        if candidate.get("type") != "new-programme":
-            continue
-        if candidate.get("universityId") != university_id:
-            continue
-        if candidate.get("status", "pending") != "pending":
-            continue
-        windows = candidate.get("windows") or []
-        exact_windows = [
-            window for window in windows if has_official_exact_window(window)
-        ]
-        if parsed_only and candidate.get("parseStatus") != "parsed":
-            continue
-        if not exact_windows:
-            continue
-        programme = copy.deepcopy(candidate.get("programme") or {})
-        programme_id = programme.get("id")
-        if not programme_id:
-            continue
-        programme["faculty"] = _dedupe_faculty(programme.get("faculty", ""))
-        if programme_id not in known_program_ids:
-            programs_payload.setdefault("programs", []).append(programme)
-            known_program_ids.add(programme_id)
-            promoted_programmes += 1
-        for window in exact_windows:
-            record_id = programme_window_record_id(
-                programme_id,
-                window,
-                existing_ids=known_application_ids,
-            )
-            if record_id in known_application_ids:
-                continue
-            record = with_intake_details(
-                {
-                    "id": record_id,
-                    "universityId": university_id,
-                    "scopeType": "programme",
-                    "scopeId": programme_id,
-                    "intake": window["intake"],
-                    "round": window.get("round", ""),
-                    "applicantCategories": window.get("applicantCategories", ["all"]),
-                    "opensAt": window["opensAt"],
-                    "closesAt": window["closesAt"],
-                    "applicationUrl": programme["applicationUrl"],
-                    "sourceUrl": window.get("sourceUrl") or programme["sourceUrl"],
-                    "verifiedAt": verified_at,
-                    "evidence": _programme_window_evidence(
-                        programme["name"],
-                        window,
-                        window.get("sourceUrl") or programme["sourceUrl"],
-                    ),
-                }
-            )
-            applications_payload.setdefault("applications", []).append(record)
-            if applications_path == APPLICATIONS_PATH:
-                evidence_records.append((record, candidate))
-            known_application_ids.add(record_id)
-            promoted_windows += 1
-        if len(exact_windows) == len(windows):
-            candidate["status"] = "approved"
-            candidate["reviewedBy"] = reviewer
-            candidate["reviewedAt"] = approved_at.isoformat()
-        else:
-            candidate["reviewNotes"] = (
-                "Official exact windows were promoted, but at least one window "
-                "is missing an official opening or closing date and still needs "
-                "review."
-            )
-
-    if promoted_windows == 0:
-        return {
-            "promotedProgrammes": 0,
-            "promotedWindows": 0,
-            "remainingPending": _pending_count(candidates, university_id),
-        }
+    if not promoted_window_ids:
+        raise ValueError(
+            f"Candidate {candidate_id} has no new exact windows to promote"
+        )
 
     programs_payload["programs"].sort(
         key=lambda item: (item["universityId"], item["id"])
@@ -231,14 +255,65 @@ def approve_programme_candidates(
         "updatedAt": approved_at.isoformat(),
     }
 
+    decision = (
+        "approved" if len(exact_windows) == len(windows) else "partially-approved"
+    )
+    review_record = {
+        "reviewId": f"programme-review:{candidate_id}:{stored_hash[:16]}",
+        "candidateId": candidate_id,
+        "universityId": university_id,
+        "programmeId": programme_id,
+        "evidenceHash": stored_hash,
+        "reviewedBy": reviewer,
+        "reviewedAt": approved_at.isoformat(),
+        "decision": decision,
+        "promotedWindowIds": promoted_window_ids,
+        "unresolvedWindowCount": len(windows) - len(exact_windows),
+    }
+    if audit_path is None:
+        audit_path = (
+            PROGRAMME_APPROVAL_AUDIT_PATH
+            if candidates_path == PROGRAMME_CANDIDATES_PATH
+            else candidates_path.with_name("programme-approval-audit.json")
+        )
+    audit = read_json(
+        audit_path,
+        {
+            "meta": {
+                "description": (
+                    "Append-only audit records for evidence-locked programme approvals."
+                )
+            },
+            "items": [],
+        },
+    )
+    if any(
+        item.get("reviewId") == review_record["reviewId"]
+        for item in audit.get("items", [])
+    ):
+        raise ValueError(f"Duplicate programme review: {review_record['reviewId']}")
+
     _validate_programme_promotion(programs_payload, applications_payload)
 
     write_json(programs_path, programs_payload)
     write_json(applications_path, applications_payload)
     for record, candidate in evidence_records:
         _write_programme_candidate_evidence(record, candidate, approved_at)
+    candidate.setdefault("reviewHistory", []).append(review_record)
+    if decision == "approved":
+        candidate["status"] = "approved"
+        candidate["reviewedBy"] = reviewer
+        candidate["reviewedAt"] = approved_at.isoformat()
+    else:
+        candidate["reviewNotes"] = (
+            "This evidence version was reviewed and its official exact windows were "
+            "promoted; unresolved windows require new official evidence."
+        )
     candidates.setdefault("meta", {})["updatedAt"] = approved_at.isoformat()
     write_json(candidates_path, candidates)
+    audit.setdefault("items", []).append(review_record)
+    audit.setdefault("meta", {})["updatedAt"] = approved_at.isoformat()
+    write_json(audit_path, audit)
     prediction_output = (
         PREDICTIONS_PATH
         if applications_path == APPLICATIONS_PATH
@@ -249,9 +324,12 @@ def approve_programme_candidates(
         applications_path=applications_path,
     )
     return {
+        "candidateId": candidate_id,
+        "evidenceHash": stored_hash,
+        "decision": decision,
         "promotedProgrammes": promoted_programmes,
-        "promotedWindows": promoted_windows,
-        "remainingPending": _pending_count(candidates, university_id),
+        "promotedWindows": len(promoted_window_ids),
+        "promotedWindowIds": promoted_window_ids,
     }
 
 
@@ -378,12 +456,3 @@ def _dedupe_faculty(value: str) -> str:
     parts = [part.strip() for part in value.split("|") if part.strip()]
     deduped = list(dict.fromkeys(parts))
     return " | ".join(deduped)
-
-
-def _pending_count(candidates: dict, university_id: str) -> int:
-    return sum(
-        item.get("type") == "new-programme"
-        and item.get("universityId") == university_id
-        and item.get("status", "pending") == "pending"
-        for item in candidates.get("items", [])
-    )

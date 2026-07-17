@@ -4,7 +4,8 @@ import json
 
 import pytest
 
-from gradwindow.approvals import approve_programme_candidates, approve_window
+from gradwindow.approvals import approve_programme_candidate, approve_window
+from gradwindow.candidate_review import attach_programme_candidate_evidence_hash
 from gradwindow.paths import APPLICATIONS_PATH, PROGRAMS_PATH
 
 
@@ -112,7 +113,7 @@ def test_parser_candidate_gets_fresh_review_evidence(tmp_path) -> None:
     assert "2026-04-01 to 2026-05-01" in approved["evidence"]
 
 
-def test_approve_programme_candidates_promotes_parsed_windows(tmp_path) -> None:
+def test_approve_programme_candidate_promotes_matching_evidence(tmp_path) -> None:
     programs_path = tmp_path / "programs.json"
     applications_path = tmp_path / "applications.json"
     candidates_path = tmp_path / "programme-candidates.json"
@@ -151,13 +152,15 @@ def test_approve_programme_candidates_promotes_parsed_windows(tmp_path) -> None:
         ],
         "parseStatus": "parsed",
     }
+    attach_programme_candidate_evidence_hash(candidate)
     candidates_path.write_text(
         json.dumps({"meta": {}, "items": [candidate]}),
         encoding="utf-8",
     )
 
-    report = approve_programme_candidates(
-        university_id="imperial-college-london",
+    report = approve_programme_candidate(
+        candidate["id"],
+        candidate["evidenceHash"],
         reviewer="test-reviewer",
         candidates_path=candidates_path,
         programs_path=programs_path,
@@ -182,9 +185,17 @@ def test_approve_programme_candidates_promotes_parsed_windows(tmp_path) -> None:
     assert window["intakeDetails"]["cycleYear"] == 2026
     candidates = json.loads(candidates_path.read_text(encoding="utf-8"))["items"]
     assert candidates[0]["status"] == "approved"
+    assert (
+        candidates[0]["reviewHistory"][0]["evidenceHash"] == candidate["evidenceHash"]
+    )
+    audit = json.loads(
+        (tmp_path / "programme-approval-audit.json").read_text(encoding="utf-8")
+    )
+    assert audit["items"][0]["candidateId"] == candidate["id"]
+    assert audit["items"][0]["decision"] == "approved"
 
 
-def test_approve_programme_candidates_rejects_inferred_opening(tmp_path) -> None:
+def test_approve_programme_candidate_rejects_inferred_opening(tmp_path) -> None:
     programs_path = tmp_path / "programs.json"
     applications_path = tmp_path / "applications.json"
     candidates_path = tmp_path / "programme-candidates.json"
@@ -194,53 +205,73 @@ def test_approve_programme_candidates_rejects_inferred_opening(tmp_path) -> None
     applications_path.write_text(
         APPLICATIONS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
     )
-    candidates_path.write_text(
-        json.dumps(
+    candidate = {
+        "id": "new-programme:inferred-example",
+        "type": "new-programme",
+        "status": "pending",
+        "universityId": "imperial-college-london",
+        "programme": {
+            "id": "inferred-example",
+            "universityId": "imperial-college-london",
+            "name": "MSc Inferred Example",
+            "degreeType": "MSc",
+            "faculty": "",
+            "applicationUrl": "https://www.imperial.ac.uk/study/",
+            "sourceUrl": "https://www.imperial.ac.uk/study/",
+        },
+        "windows": [
             {
-                "items": [
-                    {
-                        "id": "new-programme:inferred-example",
-                        "type": "new-programme",
-                        "status": "pending",
-                        "universityId": "imperial-college-london",
-                        "programme": {
-                            "id": "inferred-example",
-                            "universityId": "imperial-college-london",
-                            "name": "MSc Inferred Example",
-                            "degreeType": "MSc",
-                            "faculty": "",
-                            "applicationUrl": "https://www.imperial.ac.uk/study/",
-                            "sourceUrl": "https://www.imperial.ac.uk/study/",
-                        },
-                        "windows": [
-                            {
-                                "intake": "September 2027",
-                                "round": "Main",
-                                "applicantCategories": ["all"],
-                                "opensAt": "2026-10-01",
-                                "opensAtBasis": "inferred-cycle-default",
-                                "closesAt": "2027-01-01",
-                            }
-                        ],
-                        "parseStatus": "parsed",
-                    }
-                ]
+                "intake": "September 2027",
+                "round": "Main",
+                "applicantCategories": ["all"],
+                "opensAt": "2026-10-01",
+                "opensAtBasis": "inferred-cycle-default",
+                "closesAt": "2027-01-01",
             }
-        ),
+        ],
+        "parseStatus": "parsed",
+    }
+    attach_programme_candidate_evidence_hash(candidate)
+    candidates_path.write_text(
+        json.dumps({"items": [candidate]}),
         encoding="utf-8",
     )
 
-    report = approve_programme_candidates(
-        university_id="imperial-college-london",
-        reviewer="test-reviewer",
-        candidates_path=candidates_path,
-        programs_path=programs_path,
-        applications_path=applications_path,
-    )
+    with pytest.raises(ValueError, match="no official exact"):
+        approve_programme_candidate(
+            candidate["id"],
+            candidate["evidenceHash"],
+            reviewer="test-reviewer",
+            candidates_path=candidates_path,
+            programs_path=programs_path,
+            applications_path=applications_path,
+        )
 
-    assert report["promotedProgrammes"] == 0
-    assert report["promotedWindows"] == 0
-    assert report["remainingPending"] == 1
+
+def test_approve_programme_candidate_rejects_wrong_evidence_hash(tmp_path) -> None:
+    candidate = attach_programme_candidate_evidence_hash(
+        {
+            "id": "new-programme:example",
+            "type": "new-programme",
+            "status": "pending",
+            "universityId": "imperial-college-london",
+            "programme": {"id": "example"},
+            "windows": [],
+            "parseStatus": "parsed",
+        }
+    )
+    candidates_path = tmp_path / "programme-candidates.json"
+    candidates_path.write_text(json.dumps({"items": [candidate]}), encoding="utf-8")
+
+    with pytest.raises(ValueError, match="evidence hash mismatch"):
+        approve_programme_candidate(
+            candidate["id"],
+            "0" * 64,
+            reviewer="test-reviewer",
+            candidates_path=candidates_path,
+            programs_path=PROGRAMS_PATH,
+            applications_path=APPLICATIONS_PATH,
+        )
 
 
 def test_approve_window_rejects_non_official_opening_basis(tmp_path) -> None:

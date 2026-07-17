@@ -114,23 +114,30 @@ Do not publish as official windows:
 - `no-deadline`: programme exists, but no exact application window was found.
 
 Only `parsed` windows whose `opensAtBasis` is exactly `official` may be
-batch-promoted. A configured or inferred exact-looking date remains a review
+promoted. A configured or inferred exact-looking date remains a review
 observation and must not cross the publication boundary.
 
 ### 7. Promotion rule
 
-Use:
+First inspect the immutable evidence hash:
 
 ```bash
-python -m gradwindow.cli approve-programmes \
-  --university <university-id> \
+python -m gradwindow.cli programme-candidate-hash <candidate-id>
+```
+
+Then approve that exact candidate and evidence version:
+
+```bash
+python -m gradwindow.cli approve-programme <candidate-id> \
+  --evidence-hash <sha256> \
   --reviewer <reviewer>
 ```
 
-This promotes only pending `new-programme` candidates with `parseStatus:
-parsed` and officially sourced exact openings, creates programme-scoped
-application windows, marks fully promoted candidates as approved, and
-regenerates predictions.
+This promotes only the named pending `new-programme` candidate when its current
+content matches the supplied evidence hash, `parseStatus` is `parsed`, and the
+opening dates are officially sourced. It creates programme-scoped application
+windows, writes an append-only approval audit record, marks a fully promoted
+candidate as approved, and regenerates predictions.
 
 Dedicated and generic adapters also revisit programmes that already exist in
 `data/programs.json`. A newly observed official intake cycle becomes an

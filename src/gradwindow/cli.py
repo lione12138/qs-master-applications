@@ -6,7 +6,8 @@ import sys
 from pathlib import Path
 
 from .adapter_completion import generate_adapter_completion_report
-from .approvals import approve_programme_candidates, approve_window
+from .approvals import approve_programme_candidate, approve_window
+from .candidate_review import programme_candidate_evidence_hash
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
 from .generic_discovery_batch import (
@@ -145,17 +146,18 @@ def main() -> None:
     )
     approve.add_argument("candidate_id")
     approve.add_argument("--reviewer", required=True)
-    approve_programmes = subparsers.add_parser(
-        "approve-programmes",
-        help="Promote reviewed programme candidates with exact windows",
+    approve_programme = subparsers.add_parser(
+        "approve-programme",
+        help="Promote one evidence-locked programme candidate",
     )
-    approve_programmes.add_argument("--university", required=True)
-    approve_programmes.add_argument("--reviewer", required=True)
-    approve_programmes.add_argument(
-        "--include-unparsed",
-        action="store_true",
-        help="Also promote candidates whose parseStatus is not parsed",
+    approve_programme.add_argument("candidate_id")
+    approve_programme.add_argument("--evidence-hash", required=True)
+    approve_programme.add_argument("--reviewer", required=True)
+    candidate_hash = subparsers.add_parser(
+        "programme-candidate-hash",
+        help="Show the review hash for one programme candidate",
     )
+    candidate_hash.add_argument("candidate_id")
     args = parser.parse_args()
 
     if args.command == "validate":
@@ -278,21 +280,20 @@ def main() -> None:
             f"Approved {record['id']}; "
             f"{coverage['summary']['verifiedWindows']} verified windows tracked."
         )
-    elif args.command == "approve-programmes":
-        if args.university == "all":
-            report = _approve_all_programmes(
-                reviewer=args.reviewer,
-                parsed_only=not args.include_unparsed,
-            )
-        else:
-            report = approve_programme_candidates(
-                university_id=args.university,
-                reviewer=args.reviewer,
-                parsed_only=not args.include_unparsed,
-            )
+    elif args.command == "approve-programme":
+        report = approve_programme_candidate(
+            args.candidate_id,
+            args.evidence_hash,
+            reviewer=args.reviewer,
+        )
         refresh_generic_discovery_report()
+        generate_adapter_completion_report()
         generate_predictions()
         print(json.dumps(report, ensure_ascii=False))
+    elif args.command == "programme-candidate-hash":
+        print(
+            json.dumps(_programme_candidate_hash(args.candidate_id), ensure_ascii=False)
+        )
     elif args.command == "refresh-generic-report":
         report = refresh_generic_discovery_report()
         print(json.dumps(report["summary"], ensure_ascii=False))
@@ -405,28 +406,28 @@ def _run_dedicated_discovery(
     return reports, successful_university_ids
 
 
-def _approve_all_programmes(*, reviewer: str, parsed_only: bool) -> dict:
-    report = {}
-    for university_id in _pending_programme_candidate_university_ids():
-        report[university_id] = approve_programme_candidates(
-            university_id=university_id,
-            reviewer=reviewer,
-            parsed_only=parsed_only,
-        )
-    return report
-
-
-def _pending_programme_candidate_university_ids() -> list[str]:
+def _programme_candidate_hash(candidate_id: str) -> dict[str, str]:
     candidates = read_json(PROGRAMME_CANDIDATES_PATH, {"items": []})
-    return sorted(
-        {
-            item["universityId"]
+    candidate = next(
+        (
+            item
             for item in candidates.get("items", [])
-            if item.get("type") == "new-programme"
-            and item.get("status", "pending") == "pending"
-            and item.get("universityId")
-        }
+            if item.get("id") == candidate_id
+        ),
+        None,
     )
+    if candidate is None:
+        raise ValueError(f"Unknown programme candidate: {candidate_id}")
+    stored_hash = candidate.get("evidenceHash")
+    if not stored_hash:
+        raise ValueError(f"Candidate {candidate_id} has no evidenceHash")
+    computed_hash = programme_candidate_evidence_hash(candidate)
+    return {
+        "candidateId": candidate_id,
+        "status": candidate.get("status", "pending"),
+        "evidenceHash": stored_hash,
+        "contentMatchesHash": str(stored_hash == computed_hash).lower(),
+    }
 
 
 def _university_by_id(university_id: str) -> dict:
