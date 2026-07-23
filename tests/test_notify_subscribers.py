@@ -121,3 +121,23 @@ def test_main_exits_nonzero_when_notification_fails(monkeypatch) -> None:
         module.main()
 
     assert exc_info.value.code == 1
+
+
+def test_notify_normalizes_bearer_api_key(monkeypatch) -> None:
+    module = load_module()
+    captured: dict[str, str] = {}
+
+    def fake_urlopen(request, timeout=45):
+        captured["url"] = request.full_url
+        captured["authorization"] = request.get_header("Authorization")
+        return FakeResponse({"ok": True, "sent": 1, "failed": 0})
+
+    monkeypatch.setenv("GRADWINDOW_SUBSCRIBE_URL", " https://example.edu/ ")
+    monkeypatch.setenv(
+        "GRADWINDOW_NOTIFY_API_KEY", "  " + "Bearer " + "demo-token" + " \n"
+    )
+    monkeypatch.setattr(module, "urlopen", fake_urlopen)
+
+    assert module.notify([{"id": "example-window", "opensAt": "2026-07-10"}]) is True
+    assert captured["url"] == "https://example.edu/admin/notify"
+    assert captured["authorization"] == "Bearer " + "demo-token"

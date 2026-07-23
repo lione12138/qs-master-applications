@@ -58,8 +58,13 @@ def current_open_events(today: date | None = None) -> list[dict]:
 
 
 def notify(events: list[dict]) -> bool:
-    endpoint = os.environ.get("GRADWINDOW_SUBSCRIBE_URL", "").rstrip("/")
-    api_key = os.environ.get("GRADWINDOW_NOTIFY_API_KEY", "")
+    endpoint = os.environ.get("GRADWINDOW_SUBSCRIBE_URL", "").strip().rstrip("/")
+    raw_api_key = os.environ.get("GRADWINDOW_NOTIFY_API_KEY", "").strip()
+    api_key = (
+        raw_api_key[7:].strip()
+        if raw_api_key.lower().startswith("bearer ")
+        else raw_api_key
+    )
     if not endpoint or not api_key:
         print("Subscriber notification service is not configured; skipping.")
         return False
