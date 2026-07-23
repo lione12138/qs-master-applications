@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
-    "updatedAt": "2026-07-23T10:27:35.352022+00:00",
+    "updatedAt": "2026-07-23T10:53:10.419723+00:00",
     "lastBatchReplaceRemoved": 98
   },
   "partitioning": {
@@ -10,10 +10,12 @@
     "root": "programme-candidates/by-university",
     "files": [
       "programme-candidates/by-university/california-institute-of-technology-caltech.json",
+      "programme-candidates/by-university/cornell-university.json",
       "programme-candidates/by-university/delft-university-of-technology.json",
       "programme-candidates/by-university/eth-zurich-swiss-federal-institute-of-technology.json",
       "programme-candidates/by-university/harvard-university.json",
       "programme-candidates/by-university/imperial-college-london.json",
+      "programme-candidates/by-university/johns-hopkins-university.json",
       "programme-candidates/by-university/king-s-college-london-kcl.json",
       "programme-candidates/by-university/massachusetts-institute-of-technology-mit.json",
       "programme-candidates/by-university/monash-university.json",
@@ -27,11 +29,13 @@
       "programme-candidates/by-university/the-university-of-hong-kong.json",
       "programme-candidates/by-university/the-university-of-manchester.json",
       "programme-candidates/by-university/the-university-of-melbourne.json",
+      "programme-candidates/by-university/the-university-of-new-south-wales.json",
       "programme-candidates/by-university/the-university-of-nottingham.json",
       "programme-candidates/by-university/the-university-of-queensland.json",
       "programme-candidates/by-university/the-university-of-sheffield.json",
       "programme-candidates/by-university/the-university-of-sydney.json",
       "programme-candidates/by-university/tsinghua-university.json",
+      "programme-candidates/by-university/ucl-university-college-london.json",
       "programme-candidates/by-university/university-of-birmingham.json",
       "programme-candidates/by-university/university-of-bristol.json",
       "programme-candidates/by-university/university-of-cambridge.json",
@@ -40,7 +44,8 @@
       "programme-candidates/by-university/university-of-glasgow.json",
       "programme-candidates/by-university/university-of-oxford.json",
       "programme-candidates/by-university/university-of-pennsylvania.json",
-      "programme-candidates/by-university/university-of-southampton.json"
+      "programme-candidates/by-university/university-of-southampton.json",
+      "programme-candidates/by-university/yale-university.json"
     ]
   }
 }
