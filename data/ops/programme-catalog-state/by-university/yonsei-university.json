@@ -1,0 +1,885 @@
+{
+  "universities": {
+    "yonsei-university": {
+      "sourceUrl": "https://graduate.yonsei.ac.kr/graduate_en/admission/forein_schedule.do",
+      "checkedAt": "2026-07-23T15:50:23.771059+00:00",
+      "itemCount": 109,
+      "applicationOpensAt": null,
+      "catalogHash": "e56ce0852d0d8918368b2ff71066b2621636a88940df3c463df5d5c450221f1c",
+      "programmes": {
+        "yonsei-computer-science-master": {
+          "name": "Master's in Computer Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Computing",
+          "department": "Computer Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-industrial-pharmaceutical-sciences-master": {
+          "name": "Master's in Industrial Pharmaceutical Sciences",
+          "degreeType": "Master",
+          "faculty": "International Campus | Pharmacy",
+          "department": "Industrial Pharmaceutical Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-innovation-master": {
+          "name": "Master's in Innovation",
+          "degreeType": "Master",
+          "faculty": "International Campus | Underwood International College",
+          "department": "Innovation",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-integrated-science-engineering-master": {
+          "name": "Master's in Integrated Science & Engineering",
+          "degreeType": "Master",
+          "faculty": "International Campus | Underwood International College",
+          "department": "Integrated Science & Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-integrated-technology-master": {
+          "name": "Master's in Integrated Technology",
+          "degreeType": "Master",
+          "faculty": "International Campus | Computing",
+          "department": "Integrated Technology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-integrative-biotechnology-master": {
+          "name": "Master's in Integrative Biotechnology",
+          "degreeType": "Master",
+          "faculty": "International Campus | Institute for Convergence Research and Education in Advanced Technology",
+          "department": "Integrative Biotechnology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-pharmaceutical-medicine-regulatory-science-master": {
+          "name": "Master's in Pharmaceutical Medicine & Regulatory Science",
+          "degreeType": "Master",
+          "faculty": "International Campus | Medicine",
+          "department": "Pharmaceutical Medicine & Regulatory Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-pharmacy-master": {
+          "name": "Master's in Pharmacy",
+          "degreeType": "Master",
+          "faculty": "International Campus | Pharmacy",
+          "department": "Pharmacy",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-international-campus-quantum-information-master": {
+          "name": "Master's in Quantum Information",
+          "degreeType": "Master",
+          "faculty": "International Campus | Institute for Convergence Research and Education in Advanced Technology",
+          "department": "Quantum Information",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-ai-semiconductor-master": {
+          "name": "Master's in AI Semiconductor",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Science and Technology Convergence",
+          "department": "AI Semiconductor",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-bio-ai-convergence-master": {
+          "name": "Master's in Bio-AI Convergence",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Medicine (Wonju)",
+          "department": "Bio-AI Convergence",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-biological-science-and-technology-master": {
+          "name": "Master's in Biological Science and Technology",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Science and Technology Convergence",
+          "department": "Biological Science and Technology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-biomedical-engineering-master": {
+          "name": "Master's in Biomedical Engineering",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Biomedical Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-biomedical-laboratory-science-master": {
+          "name": "Master's in Biomedical Laboratory Science",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Biomedical Laboratory Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-business-administration-master": {
+          "name": "Master's in Business Administration",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-chemistry-master": {
+          "name": "Master's in Chemistry",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Science and Technology Convergence",
+          "department": "Chemistry",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-computer-science-master": {
+          "name": "Master's in Computer Science",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Computer Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-dental-hygiene-master": {
+          "name": "Master's in Dental Hygiene",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Dental Hygiene",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-design-management-master": {
+          "name": "Master's in Design Management",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Design Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-digital-healthcare-master": {
+          "name": "Master's in Digital Healthcare",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Digital Healthcare",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-economics-master": {
+          "name": "Master's in Economics",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Economics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-english-language-and-literature-master": {
+          "name": "Master's in English Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "English Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-environmental-and-energy-engineering-master": {
+          "name": "Master's in Environmental and Energy Engineering",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Science and Technology Convergence",
+          "department": "Environmental and Energy Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-environmental-finance-master": {
+          "name": "Master's in Environmental Finance",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Environmental Finance",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-global-medical-science-master": {
+          "name": "Master's in Global Medical Science",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Medicine (Wonju)",
+          "department": "Global Medical Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-health-administration-master": {
+          "name": "Master's in Health Administration",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Health Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-history-master": {
+          "name": "Master's in History",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "History",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-industrial-design-master": {
+          "name": "Master's in Industrial Design",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Industrial Design",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-information-and-statistics-master": {
+          "name": "Master's in Information and Statistics",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Information and Statistics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-international-relations-master": {
+          "name": "Master's in International Relations",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "International Relations",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-korean-language-and-literature-master": {
+          "name": "Master's in Korean Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Korean Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-medical-informatics-and-biostatistics-master": {
+          "name": "Master's in Medical Informatics and Biostatistics",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Medicine (Wonju)",
+          "department": "Medical Informatics and Biostatistics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-medicine-master": {
+          "name": "Master's in Medicine",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Medicine (Wonju)",
+          "department": "Medicine",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-nursing-master": {
+          "name": "Master's in Nursing",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Nursing (Wonju)",
+          "department": "Nursing",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-occupational-therapy-master": {
+          "name": "Master's in Occupational Therapy",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Occupational Therapy",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-packaging-master": {
+          "name": "Master's in Packaging",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Science and Technology Convergence",
+          "department": "Packaging",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-philosophy-master": {
+          "name": "Master's in Philosophy",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Philosophy",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-physical-therapy-master": {
+          "name": "Master's in Physical Therapy",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Physical Therapy",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-physics-master": {
+          "name": "Master's in Physics",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Science and Technology Convergence",
+          "department": "Physics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-public-administration-master": {
+          "name": "Master's in Public Administration",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Public Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-radiation-convergence-engineering-master": {
+          "name": "Master's in Radiation Convergence Engineering",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Software and Digital Healthcare Convergence",
+          "department": "Radiation Convergence Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-visual-communication-design-master": {
+          "name": "Master's in Visual Communication Design",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Global Creative Convergence",
+          "department": "Visual Communication Design",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-wellness-and-healthy-aging-master": {
+          "name": "Master's in Wellness and Healthy Aging",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Medicine (Wonju)",
+          "department": "Wellness and Healthy Aging",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-mirae-campus-ym-kist-bio-health-convergence-master": {
+          "name": "Master's in YM-KIST Bio-Health Convergence",
+          "degreeType": "Master",
+          "faculty": "Mirae Campus | Science and Technology Convergence",
+          "department": "YM-KIST Bio-Health Convergence",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-applied-life-science-master": {
+          "name": "Master's in Applied Life Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Dentistry",
+          "department": "Applied Life Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-architecture-architectural-engineering-master": {
+          "name": "Master's in Architecture & Architectural Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Architecture & Architectural Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-area-studies-master": {
+          "name": "Master's in Area Studies",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Social Sciences",
+          "department": "Area Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-artificial-intelligence-master": {
+          "name": "Master's in Artificial Intelligence",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Computing",
+          "department": "Artificial Intelligence",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-bioindustrial-engineering-master": {
+          "name": "Master's in Bioindustrial Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Life Science & Biotechnology",
+          "department": "Bioindustrial Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-biostatistics-and-computing-master": {
+          "name": "Master's in Biostatistics and Computing",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Biostatistics and Computing",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-business-administration-master": {
+          "name": "Master's in Business Administration",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Business",
+          "department": "Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-chemical-and-biomolecular-engineering-master": {
+          "name": "Master's in Chemical and Biomolecular Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Chemical and Biomolecular Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-chemistry-master": {
+          "name": "Master's in Chemistry",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Science",
+          "department": "Chemistry",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-child-and-family-studies-master": {
+          "name": "Master's in Child and Family Studies",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Human Ecology",
+          "department": "Child and Family Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-chinese-language-and-literature-master": {
+          "name": "Master's in Chinese Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Chinese Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-civil-and-environmental-engineering-master": {
+          "name": "Master's in Civil and Environmental Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Civil and Environmental Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-clothing-and-textiles-master": {
+          "name": "Master's in Clothing and Textiles",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Human Ecology",
+          "department": "Clothing and Textiles",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-cognitive-science-master": {
+          "name": "Master's in Cognitive Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Cognitive Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-communication-master": {
+          "name": "Master's in Communication",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Social Sciences",
+          "department": "Communication",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-comparative-literature-master": {
+          "name": "Master's in Comparative Literature",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Comparative Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-cultural-anthropology-master": {
+          "name": "Master's in Cultural Anthropology",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Social Sciences",
+          "department": "Cultural Anthropology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-dentistry-master": {
+          "name": "Master's in Dentistry",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Dentistry",
+          "department": "Dentistry",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-earth-system-sciences-master": {
+          "name": "Master's in Earth System Sciences",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Science",
+          "department": "Earth System Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-economics-master": {
+          "name": "Master's in Economics",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Commerce & Economics",
+          "department": "Economics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-education-master": {
+          "name": "Master's in Education",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Educational Sciences",
+          "department": "Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-electrical-and-electronic-engineering-master": {
+          "name": "Master's in Electrical and Electronic Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Electrical and Electronic Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-english-language-and-literature-master": {
+          "name": "Master's in English Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "English Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-food-and-nutrition-master": {
+          "name": "Master's in Food and Nutrition",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Human Ecology",
+          "department": "Food and Nutrition",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-french-language-and-literature-master": {
+          "name": "Master's in French Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "French Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-german-language-and-literature-master": {
+          "name": "Master's in German Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "German Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-history-master": {
+          "name": "Master's in History",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "History",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-industrial-engineering-master": {
+          "name": "Master's in Industrial Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Industrial Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-integrated-design-master": {
+          "name": "Master's in Integrated Design",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Human Ecology",
+          "department": "Integrated Design",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-integrated-omics-biomedical-science-master": {
+          "name": "Master's in Integrated OMICS Biomedical Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Life Science & Biotechnology",
+          "department": "Integrated OMICS Biomedical Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-integrative-medicine-master": {
+          "name": "Master's in Integrative Medicine",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Integrative Medicine",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-interior-architecture-built-environment-master": {
+          "name": "Master's in Interior Architecture & Built Environment",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Human Ecology",
+          "department": "Interior Architecture & Built Environment",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-korean-language-and-literature-master": {
+          "name": "Master's in Korean Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Korean Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-korean-studies-master": {
+          "name": "Master's in Korean Studies",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Korean Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-korean-unification-studies-master": {
+          "name": "Master's in Korean Unification Studies",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Social Sciences",
+          "department": "Korean Unification Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-law-master": {
+          "name": "Master's in Law",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | (former) Law",
+          "department": "Law",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-library-and-information-science-master": {
+          "name": "Master's in Library and Information Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Library and Information Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-life-sciences-master": {
+          "name": "Master's in Life Sciences",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Life Science & Biotechnology",
+          "department": "Life Sciences",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-linguistics-and-informatics-master": {
+          "name": "Master's in Linguistics and Informatics",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Linguistics and Informatics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-materials-science-and-engineering-master": {
+          "name": "Master's in Materials Science and Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Materials Science and Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-mathematics-and-computing-master": {
+          "name": "Master's in Mathematics and Computing",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Science",
+          "department": "Mathematics and Computing",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-mechanical-engineering-master": {
+          "name": "Master's in Mechanical Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Mechanical Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-medical-device-engineering-and-management-master": {
+          "name": "Master's in Medical Device Engineering and Management",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Medical Device Engineering and Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-medical-humanities-and-social-science-master": {
+          "name": "Master's in Medical Humanities and Social Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Medical Humanities and Social Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-medical-law-ethics-master": {
+          "name": "Master's in Medical Law & Ethics",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Medical Law & Ethics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-medical-sciences-bk21-project-master": {
+          "name": "Master's in Medical Sciences (BK21 Project)",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Medical Sciences (BK21 Project)",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-medicine-master": {
+          "name": "Master's in Medicine",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Medicine",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-music-master": {
+          "name": "Master's in Music",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Music",
+          "department": "Music",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-nano-biomedical-engineering-master": {
+          "name": "Master's in Nano Biomedical Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Advanced Science Institute",
+          "department": "Nano Biomedical Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-nursing-master": {
+          "name": "Master's in Nursing",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Nursing",
+          "department": "Nursing",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-philosophy-master": {
+          "name": "Master's in Philosophy",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Philosophy",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-physical-education-master": {
+          "name": "Master's in Physical Education",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Educational Sciences",
+          "department": "Physical Education",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-physics-master": {
+          "name": "Master's in Physics",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Science",
+          "department": "Physics",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-political-science-master": {
+          "name": "Master's in Political Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Social Sciences",
+          "department": "Political Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-psychology-master": {
+          "name": "Master's in Psychology",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Psychology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-public-health-master": {
+          "name": "Master's in Public Health",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Public Health",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-public-policy-and-management-master": {
+          "name": "Master's in Public Policy and Management",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Social Sciences",
+          "department": "Public Policy and Management",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-russian-language-and-literature-master": {
+          "name": "Master's in Russian Language and Literature",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Liberal Arts",
+          "department": "Russian Language and Literature",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-sociology-master": {
+          "name": "Master's in Sociology",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Social Sciences",
+          "department": "Sociology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-speech-pathology-master": {
+          "name": "Master's in Speech Pathology",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Medicine",
+          "department": "Speech Pathology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-sport-industry-studies-master": {
+          "name": "Master's in Sport Industry Studies",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Educational Sciences",
+          "department": "Sport Industry Studies",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-statistics-and-data-science-master": {
+          "name": "Master's in Statistics and Data Science",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Commerce & Economics",
+          "department": "Statistics and Data Science",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-technology-and-business-administration-master": {
+          "name": "Master's in Technology and Business Administration",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Graduate School Department",
+          "department": "Technology and Business Administration",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-theology-master": {
+          "name": "Master's in Theology",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Theology",
+          "department": "Theology",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        },
+        "yonsei-sinchon-campus-urban-planning-engineering-master": {
+          "name": "Master's in Urban Planning Engineering",
+          "degreeType": "Master",
+          "faculty": "Sinchon Campus | Engineering",
+          "department": "Urban Planning Engineering",
+          "parseStatus": "parsed",
+          "deadlineHash": "265a916219cc46209bf2ff47f3bd1e5632898b8550361262b38e12c7cd97b74a"
+        }
+      }
+    }
+  }
+}

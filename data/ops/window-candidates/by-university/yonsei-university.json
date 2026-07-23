@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "adapter-window:yonsei-computer-science-master-2027-international-student-track-international-students:2026-10-07:2026-10-14",
+      "type": "adapter-new-window",
+      "status": "pending",
+      "universityId": "yonsei-university",
+      "detectedAt": "2026-07-23T15:50:23.771059+00:00",
+      "sourceUrl": "https://graduate.yonsei.ac.kr/graduate/admission/schedule.do",
+      "openingBasis": "official",
+      "record": {
+        "id": "yonsei-computer-science-master-2027-international-student-track-international-students",
+        "universityId": "yonsei-university",
+        "scopeType": "programme-group",
+        "scopeId": "yonsei-international-graduate-admissions",
+        "intake": "Spring (March) 2027",
+        "round": "International student track",
+        "applicantCategories": [
+          "international-students"
+        ],
+        "opensAt": "2026-10-07",
+        "closesAt": "2026-10-14",
+        "applicationUrl": "https://www.gradnet.co.kr/",
+        "sourceUrl": "https://graduate.yonsei.ac.kr/graduate/admission/schedule.do",
+        "verifiedAt": "2026-07-23",
+        "evidence": "The official programme adapter observed Master's in Computer Science opening on 2026-10-07 and closing on 2026-10-14. Source: https://graduate.yonsei.ac.kr/graduate/admission/schedule.do",
+        "intakeDetails": {
+          "label": "Spring (March) 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "spring",
+          "startMonth": 3
+        }
+      },
+      "changes": {},
+      "evidenceExcerpt": "The latest English Spring 2026 international guide confirms master's eligibility, and Yonsei's official admissions schedule publishes the exact Spring 2027 international application period."
+    }
+  ]
+}
