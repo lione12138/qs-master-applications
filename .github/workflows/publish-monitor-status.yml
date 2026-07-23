@@ -8,8 +8,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  actions: write
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: publish-monitor-status
@@ -17,6 +18,9 @@ concurrency:
 
 jobs:
   publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -54,8 +58,32 @@ jobs:
           git push
           echo "published=true" >> "$GITHUB_OUTPUT"
 
-      - name: Build and deploy the published status
+      - name: Build the published status
         if: steps.publish.outputs.published == 'true'
         env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run tests.yml --ref main
+          GRADWINDOW_SUBSCRIBE_URL: ${{ vars.GRADWINDOW_SUBSCRIBE_URL }}
+          GRADWINDOW_TURNSTILE_SITE_KEY: ${{ vars.GRADWINDOW_TURNSTILE_SITE_KEY }}
+          GRADWINDOW_ROADMAP_URL: ${{ vars.GRADWINDOW_ROADMAP_URL }}
+        run: gradwindow build-site
+
+      - name: Configure Pages
+        if: steps.publish.outputs.published == 'true'
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages artifact
+        if: steps.publish.outputs.published == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: site
+
+      - name: Deploy the published status
+        if: steps.publish.outputs.published == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+      - name: Notify search engines with IndexNow
+        if: steps.publish.outputs.published == 'true'
+        run: >-
+          python3 scripts/submit_indexnow.py
+          --sitemap site/sitemap.xml
+          --key-file site/ffcdfa5871ff4d52aed733120c248bf8.txt
