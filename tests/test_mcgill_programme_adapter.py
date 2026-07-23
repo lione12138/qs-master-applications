@@ -148,8 +148,8 @@ def test_mcgill_adapter_creates_exact_fall_windows_by_applicant_category() -> No
         (window.applicant_categories, window.opens_at, window.closes_at)
         for window in thesis.windows
     ] == [
-        (["international"], "2026-09-15", "2026-12-15"),
-        (["domestic"], "2026-09-15", "2027-02-15"),
+        (["international-students"], "2026-09-15", "2026-12-15"),
+        (["domestic-students"], "2026-09-15", "2027-02-15"),
     ]
     assert all(window.intake == "Fall 2027" for window in thesis.windows)
     assert all(window.source_url == CS_THESIS_URL for window in thesis.windows)

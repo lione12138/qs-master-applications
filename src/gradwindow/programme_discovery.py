@@ -128,6 +128,13 @@ def discover_programmes(
     existing_window_candidates = {
         item["id"]: item for item in window_candidates_payload.get("items", [])
     }
+    if adapter.replace_pending_candidates:
+        existing_window_candidates = {
+            candidate_id: item
+            for candidate_id, item in existing_window_candidates.items()
+            if item.get("universityId") != adapter.university_id
+            or item.get("status", "pending") != "pending"
+        }
     original_window_candidate_items = window_candidates_payload.get("items", [])
     applications_by_cycle = {
         official_cycle_key(item): item

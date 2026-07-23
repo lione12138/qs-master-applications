@@ -364,7 +364,11 @@ def _fall_windows(
     open_text = fall_values[indexes["open"]]
     opens_at = _cycle_date(open_text, intake_year)
     windows = []
-    for category in ("international", "domestic"):
+    category_ids = {
+        "international": "international-students",
+        "domestic": "domestic-students",
+    }
+    for category, applicant_category_id in category_ids.items():
         closes_at = _cycle_date(
             fall_values[indexes[category]],
             intake_year,
@@ -379,7 +383,7 @@ def _fall_windows(
         windows.append(
             DiscoveredWindow(
                 round=f"Fall {category} deadline",
-                applicant_categories=[category],
+                applicant_categories=[applicant_category_id],
                 opens_at=opens_at,
                 closes_at=closes_at,
                 intake=f"Fall {intake_year}",

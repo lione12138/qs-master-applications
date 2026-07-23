@@ -315,6 +315,7 @@ def test_dedicated_adapter_can_replace_stale_pending_candidates(tmp_path) -> Non
 
     programs_path = tmp_path / "programs.json"
     candidates_path = tmp_path / "programme-candidates.json"
+    window_candidates_path = tmp_path / "window-candidates.json"
     state_path = tmp_path / "programme-catalog-state.json"
     programs_path.write_text(json.dumps({"programs": []}), encoding="utf-8")
     candidates_path.write_text(
@@ -344,11 +345,39 @@ def test_dedicated_adapter_can_replace_stale_pending_candidates(tmp_path) -> Non
         ),
         encoding="utf-8",
     )
+    window_candidates_path.write_text(
+        json.dumps(
+            {
+                "items": [
+                    {
+                        "id": "adapter-window:example-stale",
+                        "type": "adapter-new-window",
+                        "universityId": "example-university",
+                        "status": "pending",
+                    },
+                    {
+                        "id": "adapter-window:example-reviewed",
+                        "type": "adapter-new-window",
+                        "universityId": "example-university",
+                        "status": "approved",
+                    },
+                    {
+                        "id": "adapter-window:other",
+                        "type": "adapter-new-window",
+                        "universityId": "other-university",
+                        "status": "pending",
+                    },
+                ]
+            }
+        ),
+        encoding="utf-8",
+    )
 
     discover_programmes(
         ReplacingAdapter(),
         programs_path=programs_path,
         candidates_path=candidates_path,
+        window_candidates_path=window_candidates_path,
         state_path=state_path,
         fetcher=lambda url: "",
     )
@@ -361,6 +390,16 @@ def test_dedicated_adapter_can_replace_stale_pending_candidates(tmp_path) -> Non
         "new-programme:example-current-msc",
         "new-programme:example-reviewed-msc",
         "new-programme:other-msc",
+    }
+    window_candidate_ids = {
+        item["id"]
+        for item in json.loads(window_candidates_path.read_text(encoding="utf-8"))[
+            "items"
+        ]
+    }
+    assert window_candidate_ids == {
+        "adapter-window:example-reviewed",
+        "adapter-window:other",
     }
 
 

@@ -5,7 +5,11 @@ import json
 import sys
 from pathlib import Path
 
-from .approvals import approve_programme_candidates, approve_window
+from .approvals import (
+    approve_official_adapter_window_candidates,
+    approve_programme_candidates,
+    approve_window,
+)
 from .coverage import generate_coverage
 from .deadlines import update_deadlines
 from .generic_discovery_batch import (
@@ -151,6 +155,11 @@ def main() -> None:
         action="store_true",
         help="Also promote candidates whose parseStatus is not parsed",
     )
+    approve_adapter_windows = subparsers.add_parser(
+        "approve-adapter-windows",
+        help="Promote all complete official exact-window candidates from adapters",
+    )
+    approve_adapter_windows.add_argument("--reviewer", required=True)
     args = parser.parse_args()
 
     if args.command == "validate":
@@ -286,6 +295,12 @@ def main() -> None:
         refresh_generic_discovery_report()
         generate_predictions()
         print(json.dumps(report, ensure_ascii=False))
+    elif args.command == "approve-adapter-windows":
+        report = approve_official_adapter_window_candidates(
+            reviewer=args.reviewer,
+        )
+        generate_predictions()
+        print(json.dumps(report, ensure_ascii=False))
     elif args.command == "refresh-generic-report":
         report = refresh_generic_discovery_report()
         print(json.dumps(report["summary"], ensure_ascii=False))
@@ -304,6 +319,27 @@ def main() -> None:
                 successful_dedicated_university_ids=successful_dedicated_ids
             )
             print(json.dumps(generic_report["summary"], ensure_ascii=False))
+            auto_programme_report = {
+                university_id: approve_programme_candidates(
+                    university_id=university_id,
+                    reviewer="automated-official-source-policy",
+                    parsed_only=False,
+                )
+                for university_id in sorted(successful_dedicated_ids)
+            }
+            auto_window_report = approve_official_adapter_window_candidates(
+                reviewer="automated-official-source-policy",
+                university_ids=successful_dedicated_ids,
+            )
+            print(
+                json.dumps(
+                    {
+                        "autoPublishedProgrammes": auto_programme_report,
+                        "autoPublishedAdapterWindows": auto_window_report,
+                    },
+                    ensure_ascii=False,
+                )
+            )
         report = update_deadlines()
         if any(item["status"] == "error" for item in report["results"]):
             raise SystemExit(1)

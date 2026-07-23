@@ -209,44 +209,6 @@
       }
     },
     {
-      "id": "new-programme:northwestern-brass-performance-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/brass",
-      "programme": {
-        "id": "northwestern-brass-performance-mm",
-        "universityId": "northwestern-university",
-        "name": "Brass Performance MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Brass Performance MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/brass"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:northwestern-chemical-and-biological-engineering-ms",
       "type": "new-programme",
       "status": "pending",
@@ -424,44 +386,6 @@
       "evidenceExcerpt": "Northwestern's official university-wide graduate directory confirms this master's programme. TGS publishes only a mid-September opening description, while programme and professional-school deadlines vary; no exact opening and closing pair for Fall 2027 is inferred.",
       "discoveryEvidence": {
         "retrievalMethod": "official-university-graduate-directory-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:northwestern-conducting-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/conducting",
-      "programme": {
-        "id": "northwestern-conducting-mm",
-        "universityId": "northwestern-university",
-        "name": "Conducting MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Conducting MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/conducting"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
         "evidenceQuality": "official-full-text",
         "documentHash": null
       }
@@ -1273,44 +1197,6 @@
       }
     },
     {
-      "id": "new-programme:northwestern-jazz-studies",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/jazz",
-      "programme": {
-        "id": "northwestern-jazz-studies",
-        "universityId": "northwestern-university",
-        "name": "Jazz Studies",
-        "degreeType": "MM",
-        "faculty": "Bienen | Jazz Studies",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/jazz"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:northwestern-joint-master-of-science-in-mechanical-engineering-and-materials-science-and-engineering",
       "type": "new-programme",
       "status": "pending",
@@ -2117,120 +2003,6 @@
       }
     },
     {
-      "id": "new-programme:northwestern-music-education-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-education",
-      "programme": {
-        "id": "northwestern-music-education-mm",
-        "universityId": "northwestern-university",
-        "name": "Music Education MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Music Education MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-education"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:northwestern-music-theory-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-theory-cognition",
-      "programme": {
-        "id": "northwestern-music-theory-mm",
-        "universityId": "northwestern-university",
-        "name": "Music Theory MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Music Theory MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-theory-cognition"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:northwestern-musicology-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/musicology",
-      "programme": {
-        "id": "northwestern-musicology-mm",
-        "universityId": "northwestern-university",
-        "name": "Musicology MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Musicology MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/musicology"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:northwestern-neurobiology",
       "type": "new-programme",
       "status": "pending",
@@ -2252,44 +2024,6 @@
       "evidenceExcerpt": "Northwestern's official university-wide graduate directory confirms this master's programme. TGS publishes only a mid-September opening description, while programme and professional-school deadlines vary; no exact opening and closing pair for Fall 2027 is inferred.",
       "discoveryEvidence": {
         "retrievalMethod": "official-university-graduate-directory-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:northwestern-percussion-performance-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/percussion",
-      "programme": {
-        "id": "northwestern-percussion-performance-mm",
-        "universityId": "northwestern-university",
-        "name": "Percussion Performance MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Percussion Performance MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/percussion"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
         "evidenceQuality": "official-full-text",
         "documentHash": null
       }
@@ -2342,44 +2076,6 @@
       "evidenceExcerpt": "Northwestern's official university-wide graduate directory confirms this master's programme. TGS publishes only a mid-September opening description, while programme and professional-school deadlines vary; no exact opening and closing pair for Fall 2027 is inferred.",
       "discoveryEvidence": {
         "retrievalMethod": "official-university-graduate-directory-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:northwestern-piano-performance-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/piano",
-      "programme": {
-        "id": "northwestern-piano-performance-mm",
-        "universityId": "northwestern-university",
-        "name": "Piano Performance MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Piano Performance MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/piano"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
         "evidenceQuality": "official-full-text",
         "documentHash": null
       }
@@ -2749,44 +2445,6 @@
       }
     },
     {
-      "id": "new-programme:northwestern-string-performance-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/strings",
-      "programme": {
-        "id": "northwestern-string-performance-mm",
-        "universityId": "northwestern-university",
-        "name": "String Performance MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | String Performance MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/strings"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:northwestern-theoretical-and-applied-mechanics-ms",
       "type": "new-programme",
       "status": "pending",
@@ -2808,82 +2466,6 @@
       "evidenceExcerpt": "Northwestern's official university-wide graduate directory confirms this master's programme. TGS publishes only a mid-September opening description, while programme and professional-school deadlines vary; no exact opening and closing pair for Fall 2027 is inferred.",
       "discoveryEvidence": {
         "retrievalMethod": "official-university-graduate-directory-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:northwestern-voice-and-opera-performance-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/voice-opera",
-      "programme": {
-        "id": "northwestern-voice-and-opera-performance-mm",
-        "universityId": "northwestern-university",
-        "name": "Voice and Opera Performance MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Voice and Opera Performance MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/voice-opera"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:northwestern-wind-performance-mm",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "northwestern-university",
-      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
-      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/woodwinds",
-      "programme": {
-        "id": "northwestern-wind-performance-mm",
-        "universityId": "northwestern-university",
-        "name": "Wind Performance MM",
-        "degreeType": "MM",
-        "faculty": "Bienen | Wind Performance MM",
-        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
-        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/woodwinds"
-      },
-      "windows": [
-        {
-          "intake": "Fall 2027",
-          "round": "MM graduate application",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-08-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-12-01",
-          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
         "evidenceQuality": "official-full-text",
         "documentHash": null
       }
@@ -2939,6 +2521,446 @@
         "evidenceQuality": "official-full-text",
         "documentHash": null
       }
+    },
+    {
+      "id": "new-programme:northwestern-brass-performance-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/brass",
+      "programme": {
+        "id": "northwestern-brass-performance-mm",
+        "universityId": "northwestern-university",
+        "name": "Brass Performance MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Brass Performance MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/brass"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-conducting-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/conducting",
+      "programme": {
+        "id": "northwestern-conducting-mm",
+        "universityId": "northwestern-university",
+        "name": "Conducting MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Conducting MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/conducting"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-jazz-studies",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/jazz",
+      "programme": {
+        "id": "northwestern-jazz-studies",
+        "universityId": "northwestern-university",
+        "name": "Jazz Studies",
+        "degreeType": "MM",
+        "faculty": "Bienen | Jazz Studies",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/jazz"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-music-education-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-education",
+      "programme": {
+        "id": "northwestern-music-education-mm",
+        "universityId": "northwestern-university",
+        "name": "Music Education MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Music Education MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-education"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-music-theory-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-theory-cognition",
+      "programme": {
+        "id": "northwestern-music-theory-mm",
+        "universityId": "northwestern-university",
+        "name": "Music Theory MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Music Theory MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/music-theory-cognition"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-musicology-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/musicology",
+      "programme": {
+        "id": "northwestern-musicology-mm",
+        "universityId": "northwestern-university",
+        "name": "Musicology MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Musicology MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/musicology"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-percussion-performance-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/percussion",
+      "programme": {
+        "id": "northwestern-percussion-performance-mm",
+        "universityId": "northwestern-university",
+        "name": "Percussion Performance MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Percussion Performance MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/percussion"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-piano-performance-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/piano",
+      "programme": {
+        "id": "northwestern-piano-performance-mm",
+        "universityId": "northwestern-university",
+        "name": "Piano Performance MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Piano Performance MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/piano"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-string-performance-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/strings",
+      "programme": {
+        "id": "northwestern-string-performance-mm",
+        "universityId": "northwestern-university",
+        "name": "String Performance MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | String Performance MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/strings"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-voice-and-opera-performance-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/voice-opera",
+      "programme": {
+        "id": "northwestern-voice-and-opera-performance-mm",
+        "universityId": "northwestern-university",
+        "name": "Voice and Opera Performance MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Voice and Opera Performance MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/voice-opera"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
+    },
+    {
+      "id": "new-programme:northwestern-wind-performance-mm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "northwestern-university",
+      "detectedAt": "2026-07-23T16:20:40.597438+00:00",
+      "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/woodwinds",
+      "programme": {
+        "id": "northwestern-wind-performance-mm",
+        "universityId": "northwestern-university",
+        "name": "Wind Performance MM",
+        "degreeType": "MM",
+        "faculty": "Bienen | Wind Performance MM",
+        "applicationUrl": "https://apply.music.northwestern.edu/apply/",
+        "sourceUrl": "https://www.music.northwestern.edu/academics/areas-of-study/woodwinds"
+      },
+      "windows": [
+        {
+          "intake": "Fall 2027",
+          "round": "MM graduate application",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-08-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-12-01",
+          "sourceUrl": "https://www.music.northwestern.edu/admission/graduate/application-timeline"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Northwestern's official graduate directory confirms this MM programme, and Bienen's official timeline publishes the exact Fall 2027 application opening and closing dates.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-university-directory-and-bienen-timeline-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:09.381617+00:00"
     }
   ]
 }

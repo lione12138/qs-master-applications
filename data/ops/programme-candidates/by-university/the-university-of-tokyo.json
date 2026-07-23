@@ -1717,218 +1717,6 @@
       }
     },
     {
-      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-creative-informatics-master",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "the-university-of-tokyo",
-      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
-      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
-      "programme": {
-        "id": "utokyo-graduate-school-of-information-science-and-technology-creative-informatics-master",
-        "universityId": "the-university-of-tokyo",
-        "name": "Master's in Creative Informatics",
-        "degreeType": "Master",
-        "faculty": "Graduate School of Information Science and Technology | Creative Informatics",
-        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
-        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
-      },
-      "windows": [
-        {
-          "intake": "Spring (April) 2027",
-          "round": "Summer entrance examination",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-05-29",
-          "opensAtBasis": "official",
-          "closesAt": "2026-06-04",
-          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
-        },
-        {
-          "intake": "Fall (October) 2027",
-          "round": "Winter entrance examination",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-11-11",
-          "opensAtBasis": "official",
-          "closesAt": "2026-11-17",
-          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-information-and-communication-engineering-master",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "the-university-of-tokyo",
-      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
-      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
-      "programme": {
-        "id": "utokyo-graduate-school-of-information-science-and-technology-information-and-communication-engineering-master",
-        "universityId": "the-university-of-tokyo",
-        "name": "Master's in Information and Communication Engineering",
-        "degreeType": "Master",
-        "faculty": "Graduate School of Information Science and Technology | Information and Communication Engineering",
-        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
-        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
-      },
-      "windows": [
-        {
-          "intake": "Spring (April) 2027",
-          "round": "Summer entrance examination",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-05-29",
-          "opensAtBasis": "official",
-          "closesAt": "2026-06-04",
-          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-information-physics-and-computing-master",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "the-university-of-tokyo",
-      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
-      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
-      "programme": {
-        "id": "utokyo-graduate-school-of-information-science-and-technology-information-physics-and-computing-master",
-        "universityId": "the-university-of-tokyo",
-        "name": "Master's in Information Physics and Computing",
-        "degreeType": "Master",
-        "faculty": "Graduate School of Information Science and Technology | Information Physics and Computing",
-        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
-        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
-      },
-      "windows": [
-        {
-          "intake": "Spring (April) 2027",
-          "round": "Summer entrance examination",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-05-29",
-          "opensAtBasis": "official",
-          "closesAt": "2026-06-04",
-          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
-        },
-        {
-          "intake": "Fall (October) 2027",
-          "round": "Winter entrance examination",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-11-11",
-          "opensAtBasis": "official",
-          "closesAt": "2026-11-17",
-          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-mathematical-informatics-master",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "the-university-of-tokyo",
-      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
-      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
-      "programme": {
-        "id": "utokyo-graduate-school-of-information-science-and-technology-mathematical-informatics-master",
-        "universityId": "the-university-of-tokyo",
-        "name": "Master's in Mathematical Informatics",
-        "degreeType": "Master",
-        "faculty": "Graduate School of Information Science and Technology | Mathematical Informatics",
-        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
-        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
-      },
-      "windows": [
-        {
-          "intake": "Spring (April) 2027",
-          "round": "Summer entrance examination",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-05-29",
-          "opensAtBasis": "official",
-          "closesAt": "2026-06-04",
-          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-mechano-informatics-master",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "the-university-of-tokyo",
-      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
-      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
-      "programme": {
-        "id": "utokyo-graduate-school-of-information-science-and-technology-mechano-informatics-master",
-        "universityId": "the-university-of-tokyo",
-        "name": "Master's in Mechano-Informatics",
-        "degreeType": "Master",
-        "faculty": "Graduate School of Information Science and Technology | Mechano-Informatics",
-        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
-        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
-      },
-      "windows": [
-        {
-          "intake": "Spring (April) 2027",
-          "round": "Summer entrance examination",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-05-29",
-          "opensAtBasis": "official",
-          "closesAt": "2026-06-04",
-          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:utokyo-graduate-school-of-interdisciplinary-information-studies-interdisciplinary-information-studies-master",
       "type": "new-programme",
       "status": "pending",
@@ -2291,6 +2079,228 @@
         "evidenceQuality": "official-full-text",
         "documentHash": null
       }
+    },
+    {
+      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-creative-informatics-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-tokyo",
+      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
+      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
+      "programme": {
+        "id": "utokyo-graduate-school-of-information-science-and-technology-creative-informatics-master",
+        "universityId": "the-university-of-tokyo",
+        "name": "Master's in Creative Informatics",
+        "degreeType": "Master",
+        "faculty": "Graduate School of Information Science and Technology | Creative Informatics",
+        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
+        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
+      },
+      "windows": [
+        {
+          "intake": "Spring (April) 2027",
+          "round": "Summer entrance examination",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-05-29",
+          "opensAtBasis": "official",
+          "closesAt": "2026-06-04",
+          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
+        },
+        {
+          "intake": "Fall (October) 2027",
+          "round": "Winter entrance examination",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-11-11",
+          "opensAtBasis": "official",
+          "closesAt": "2026-11-17",
+          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:50.664956+00:00"
+    },
+    {
+      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-information-and-communication-engineering-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-tokyo",
+      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
+      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
+      "programme": {
+        "id": "utokyo-graduate-school-of-information-science-and-technology-information-and-communication-engineering-master",
+        "universityId": "the-university-of-tokyo",
+        "name": "Master's in Information and Communication Engineering",
+        "degreeType": "Master",
+        "faculty": "Graduate School of Information Science and Technology | Information and Communication Engineering",
+        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
+        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
+      },
+      "windows": [
+        {
+          "intake": "Spring (April) 2027",
+          "round": "Summer entrance examination",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-05-29",
+          "opensAtBasis": "official",
+          "closesAt": "2026-06-04",
+          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:50.664956+00:00"
+    },
+    {
+      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-information-physics-and-computing-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-tokyo",
+      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
+      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
+      "programme": {
+        "id": "utokyo-graduate-school-of-information-science-and-technology-information-physics-and-computing-master",
+        "universityId": "the-university-of-tokyo",
+        "name": "Master's in Information Physics and Computing",
+        "degreeType": "Master",
+        "faculty": "Graduate School of Information Science and Technology | Information Physics and Computing",
+        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
+        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
+      },
+      "windows": [
+        {
+          "intake": "Spring (April) 2027",
+          "round": "Summer entrance examination",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-05-29",
+          "opensAtBasis": "official",
+          "closesAt": "2026-06-04",
+          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
+        },
+        {
+          "intake": "Fall (October) 2027",
+          "round": "Winter entrance examination",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-11-11",
+          "opensAtBasis": "official",
+          "closesAt": "2026-11-17",
+          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:50.664956+00:00"
+    },
+    {
+      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-mathematical-informatics-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-tokyo",
+      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
+      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
+      "programme": {
+        "id": "utokyo-graduate-school-of-information-science-and-technology-mathematical-informatics-master",
+        "universityId": "the-university-of-tokyo",
+        "name": "Master's in Mathematical Informatics",
+        "degreeType": "Master",
+        "faculty": "Graduate School of Information Science and Technology | Mathematical Informatics",
+        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
+        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
+      },
+      "windows": [
+        {
+          "intake": "Spring (April) 2027",
+          "round": "Summer entrance examination",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-05-29",
+          "opensAtBasis": "official",
+          "closesAt": "2026-06-04",
+          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:50.664956+00:00"
+    },
+    {
+      "id": "new-programme:utokyo-graduate-school-of-information-science-and-technology-mechano-informatics-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-tokyo",
+      "detectedAt": "2026-07-23T15:49:54.153095+00:00",
+      "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html",
+      "programme": {
+        "id": "utokyo-graduate-school-of-information-science-and-technology-mechano-informatics-master",
+        "universityId": "the-university-of-tokyo",
+        "name": "Master's in Mechano-Informatics",
+        "degreeType": "Master",
+        "faculty": "Graduate School of Information Science and Technology | Mechano-Informatics",
+        "applicationUrl": "https://admission.i.u-tokyo.ac.jp/",
+        "sourceUrl": "https://www.u-tokyo.ac.jp/en/academics/grad_ist.html"
+      },
+      "windows": [
+        {
+          "intake": "Spring (April) 2027",
+          "round": "Summer entrance examination",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-05-29",
+          "opensAtBasis": "official",
+          "closesAt": "2026-06-04",
+          "sourceUrl": "https://www.i.u-tokyo.ac.jp/edu/entra/entra_e.shtml"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "The official IST admissions page publishes exact Summer and Winter application periods for Academic Year 2027.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-central-school-catalogue-and-ist-admissions-html",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:50.664956+00:00"
     }
   ]
 }
