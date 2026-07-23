@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
-    "updatedAt": "2026-07-23T11:25:14.667686+00:00",
+    "updatedAt": "2026-07-23T15:18:39.943433+00:00",
     "lastBatchReplaceRemoved": 98
   },
   "partitioning": {
@@ -9,6 +9,7 @@
     "groupKey": "universityId",
     "root": "programme-candidates/by-university",
     "files": [
+      "programme-candidates/by-university/australian-national-university.json",
       "programme-candidates/by-university/california-institute-of-technology-caltech.json",
       "programme-candidates/by-university/cole-polytechnique-f-d-rale-de-lausanne.json",
       "programme-candidates/by-university/cornell-university.json",
@@ -20,10 +21,13 @@
       "programme-candidates/by-university/johns-hopkins-university.json",
       "programme-candidates/by-university/king-s-college-london-kcl.json",
       "programme-candidates/by-university/massachusetts-institute-of-technology-mit.json",
+      "programme-candidates/by-university/mcgill-university.json",
       "programme-candidates/by-university/monash-university.json",
       "programme-candidates/by-university/nanyang-technological-university-singapore-ntu-singapore.json",
       "programme-candidates/by-university/national-university-of-singapore-nus.json",
       "programme-candidates/by-university/peking-university.json",
+      "programme-candidates/by-university/princeton-university.json",
+      "programme-candidates/by-university/psl-university.json",
       "programme-candidates/by-university/stanford-university.json",
       "programme-candidates/by-university/technical-university-of-munich.json",
       "programme-candidates/by-university/the-chinese-university-of-hong-kong.json",
@@ -49,6 +53,7 @@
       "programme-candidates/by-university/university-of-oxford.json",
       "programme-candidates/by-university/university-of-pennsylvania.json",
       "programme-candidates/by-university/university-of-southampton.json",
+      "programme-candidates/by-university/university-of-toronto.json",
       "programme-candidates/by-university/yale-university.json"
     ]
   }

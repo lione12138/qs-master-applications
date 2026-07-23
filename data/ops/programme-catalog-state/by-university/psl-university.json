@@ -1,0 +1,477 @@
+{
+  "universities": {
+    "psl-university": {
+      "sourceUrl": "https://psl.eu/formations?field_niveau%5B30%5D=30",
+      "checkedAt": "2026-07-23T15:18:39.943433+00:00",
+      "itemCount": 58,
+      "applicationOpensAt": null,
+      "catalogHash": "ac38ff9f9a1264b9b315ca5862165087c11dc5830e071fc3438d64c97a868e1a",
+      "programmes": {
+        "psl-computer-science-master": {
+          "name": "Master Informatique",
+          "degreeType": "Master",
+          "faculty": "Dauphine-PSL, ENS-PSL and MINES Paris-PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-cycle-ingenieur-civil-mines-paris-psl": {
+          "name": "Cycle ingénieur civil MINES Paris - PSL",
+          "degreeType": "Grade de master",
+          "faculty": "Mines Paris PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-cycle-ingenieur-ecole-nationale-superieure-de-chimie-de-paris-psl": {
+          "name": "Cycle ingénieur École nationale supérieure de Chimie de Paris - PSL",
+          "degreeType": "Grade de master",
+          "faculty": "Chimie ParisTech PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-cycle-ingenieur-espci-paris": {
+          "name": "Cycle ingénieur ESPCI Paris - PSL",
+          "degreeType": "Grade de master",
+          "faculty": "EPSCI Paris member université psl",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-cycle-ingenieur-isupfere-specialite-energetique-mines-paris-psl": {
+          "name": "Cycle ingénieur ISUPFERE spécialité énergétique - MINES Paris - PSL",
+          "degreeType": "Grade de master",
+          "faculty": "Mines Paris PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-diplome-de-deuxieme-cycle-de-lensad-psl": {
+          "name": "Diplôme de deuxième cycle de l'ENSAD - PSL",
+          "degreeType": "Grade de master",
+          "faculty": "Ecole des arts décoratifs - PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-diplome-de-lens-psl": {
+          "name": "Diplôme de l'ENS - PSL",
+          "degreeType": "Grade de master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-diplome-detat-darchitecte-deuxi%C3%A8me-cycle": {
+          "name": "Diplôme d'Etat d'architecte (deuxième cycle)",
+          "degreeType": "Grade de master",
+          "faculty": "École nationale supérieure d'architecture Paris-Malaquais",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-enamoma": {
+          "name": "Mode et Matière (ENAMOMA-PSL)",
+          "degreeType": "Grade de master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-jouer-et-mettre-en-scene-2eme-cycle": {
+          "name": "Jouer et mettre en scène (2ème cycle)",
+          "degreeType": "Grade de master",
+          "faculty": "cnsad",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-affaires-internationales-et-developpement": {
+          "name": "Master Affaires internationales et développement",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-analyse-et-politique-economiques": {
+          "name": "Master Analyse et politique économiques",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-archives": {
+          "name": "Master Archives (Technologies numériques appliquées à l’histoire)",
+          "degreeType": "Master",
+          "faculty": "Chartes PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-chimie": {
+          "name": "Master Chimie",
+          "degreeType": "Master",
+          "faculty": "Chimie ParisTech PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-civilisations-cultures-et-societes": {
+          "name": "Master Civilisations, cultures et sociétés",
+          "degreeType": "Master",
+          "faculty": "EPHE PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-comptabilite-controle-audit-cca": {
+          "name": "Master Comptabilité - Contrôle - Audit (CCA)",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-controle-audit-reporting-financier-carf": {
+          "name": "Master Contrôle - Audit - Reporting Financier (CARF)",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-droit-de-lentreprise": {
+          "name": "Master Droit de l'entreprise",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-droit-des-affaires": {
+          "name": "Master Droit des affaires",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-droit-notarial": {
+          "name": "Master Droit notarial",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-droit-public": {
+          "name": "Master Droit public",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-economie-appliquee-ppd": {
+          "name": "Master Politiques publiques et développement (Économie appliquée)",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-economie-et-finance": {
+          "name": "Master Economie et finance",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-economie-et-gestion-de-la-sante": {
+          "name": "Master Économie et gestion de la santé",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-economie-quantitative": {
+          "name": "Master Economie quantitative",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-energie": {
+          "name": "Master Énergie",
+          "degreeType": "Master",
+          "faculty": "Mines Paris PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-etudes-approfondies-en-management": {
+          "name": "Master Etudes approfondies en management",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-etudes-asiatiques": {
+          "name": "Master Etudes asiatiques",
+          "degreeType": "Master",
+          "faculty": "EPHE PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-finance": {
+          "name": "Master Finance",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-gestion-de-patrimoine": {
+          "name": "Master Gestion de Patrimoine",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-histoire": {
+          "name": "Master Histoire",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-histoire-de-lart-et-archeologie": {
+          "name": "Master Histoire de l'art et archéologie",
+          "degreeType": "Master",
+          "faculty": "EPHE PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-humanites-numeriques": {
+          "name": "Master Humanités numériques",
+          "degreeType": "Master",
+          "faculty": "Chartes PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-ingenierie-de-la-sante": {
+          "name": "Master Ingénierie de la santé",
+          "degreeType": "Master",
+          "faculty": "EPSCI Paris member université psl",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-ingenierie-nucleaire": {
+          "name": "Master Ingénierie nucléaire",
+          "degreeType": "Master",
+          "faculty": "Chimie ParisTech PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-ingenierie-quantique": {
+          "name": "Master Ingénierie quantique",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-institutions-organisations-economie-et-societe": {
+          "name": "Master Sciences économiques et sociales (IOES)",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-intelligence-artificielle-et-societe": {
+          "name": "Master Intelligence artificielle et société",
+          "degreeType": "Master",
+          "faculty": "psl",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-journalisme": {
+          "name": "Master Journalisme",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-lettres-et-humanites": {
+          "name": "Master Lettres et humanités",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-management-de-linnovation": {
+          "name": "Master Management de l'innovation",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-management-des-ressources-humaines": {
+          "name": "Master Management des ressources humaines",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-management-et-organisations": {
+          "name": "Master Management & organisations",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-marketing-et-strategie": {
+          "name": "Master Marketing et stratégie",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-mathematiques-et-applications": {
+          "name": "Master Mathématiques et applications",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-miage": {
+          "name": "Master MIAGE",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-philosophie": {
+          "name": "Master Philosophie",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-physique": {
+          "name": "Master Physique",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-politiques-publiques": {
+          "name": "Master Politiques publiques",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-science-de-la-durabilite": {
+          "name": "Master Science de la durabilité",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-sciences-cognitives": {
+          "name": "Master Sciences cognitives",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-sciences-de-l-univers-et-technologies-spatiales": {
+          "name": "Master Sciences de l'Univers et Technologies spatiales",
+          "degreeType": "Master",
+          "faculty": "logo_observatoire-de-paris-psl",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-sciences-de-la-planete": {
+          "name": "Master Sciences de la terre et des planètes, environnement",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-sciences-des-religions-et-societes-srs": {
+          "name": "Master Sciences des religions et sociétés (SRS)",
+          "degreeType": "Master",
+          "faculty": "EPHE PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-sciences-du-vivant": {
+          "name": "Master Sciences du vivant",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-sciences-et-genie-des-materiaux": {
+          "name": "Master Sciences et Génie des matériaux",
+          "degreeType": "Master",
+          "faculty": "Chimie ParisTech PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-sciences-sociales": {
+          "name": "Master Sciences sociales",
+          "degreeType": "Master",
+          "faculty": "ENS PSL",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "psl-master-systemes-dinformation-reseaux-et-numerique": {
+          "name": "Master Systèmes d'information, réseaux et numérique",
+          "degreeType": "Master",
+          "faculty": "Paris-Dauphine",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

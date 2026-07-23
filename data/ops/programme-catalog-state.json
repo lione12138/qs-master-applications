@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-23T11:25:14.667686+00:00",
+    "updatedAt": "2026-07-23T15:18:39.943433+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "partitioning": {
@@ -8,6 +8,7 @@
     "groupKey": null,
     "root": "programme-catalog-state/by-university",
     "files": [
+      "programme-catalog-state/by-university/australian-national-university.json",
       "programme-catalog-state/by-university/california-institute-of-technology-caltech.json",
       "programme-catalog-state/by-university/cole-polytechnique-f-d-rale-de-lausanne.json",
       "programme-catalog-state/by-university/cornell-university.json",
@@ -19,10 +20,13 @@
       "programme-catalog-state/by-university/johns-hopkins-university.json",
       "programme-catalog-state/by-university/king-s-college-london-kcl.json",
       "programme-catalog-state/by-university/massachusetts-institute-of-technology-mit.json",
+      "programme-catalog-state/by-university/mcgill-university.json",
       "programme-catalog-state/by-university/monash-university.json",
       "programme-catalog-state/by-university/nanyang-technological-university-singapore-ntu-singapore.json",
       "programme-catalog-state/by-university/national-university-of-singapore-nus.json",
       "programme-catalog-state/by-university/peking-university.json",
+      "programme-catalog-state/by-university/princeton-university.json",
+      "programme-catalog-state/by-university/psl-university.json",
       "programme-catalog-state/by-university/stanford-university.json",
       "programme-catalog-state/by-university/technical-university-of-munich.json",
       "programme-catalog-state/by-university/the-chinese-university-of-hong-kong.json",
@@ -48,6 +52,7 @@
       "programme-catalog-state/by-university/university-of-oxford.json",
       "programme-catalog-state/by-university/university-of-pennsylvania.json",
       "programme-catalog-state/by-university/university-of-southampton.json",
+      "programme-catalog-state/by-university/university-of-toronto.json",
       "programme-catalog-state/by-university/yale-university.json"
     ]
   }
