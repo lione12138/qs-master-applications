@@ -1,9 +1,13 @@
 from __future__ import annotations
 
 import json
+from io import BytesIO
 
 import pytest
+from openpyxl import Workbook
 
+from gradwindow import programme_discovery
+from gradwindow.http_client import FetchedPage
 from gradwindow.programme_adapters.base import (
     BaseProgrammeAdapter,
     DiscoveredCatalog,
@@ -12,6 +16,68 @@ from gradwindow.programme_adapters.base import (
 )
 from gradwindow.programme_adapters.cuhk import CUHKAdapter
 from gradwindow.programme_discovery import discover_programmes
+
+
+def test_fetch_catalog_extracts_pdf_text(monkeypatch) -> None:
+    page = FetchedPage(
+        body="%PDF binary text",
+        raw_bytes=b"pdf bytes",
+        final_url="https://example.edu/catalog.pdf",
+        status_code=200,
+        content_type="application/pdf",
+        charset="utf-8",
+        bytes_read=9,
+        truncated=False,
+    )
+    monkeypatch.setattr(programme_discovery, "fetch_page", lambda *args, **kwargs: page)
+    monkeypatch.setattr(
+        programme_discovery,
+        "extract_fetched_text",
+        lambda fetched: "extracted official PDF text",
+        raising=False,
+    )
+
+    assert programme_discovery.fetch_catalog(page.final_url) == (
+        "extracted official PDF text"
+    )
+
+
+def test_fetch_catalog_extracts_xlsx_rows(monkeypatch) -> None:
+    workbook = Workbook()
+    sheet = workbook.active
+    sheet.title = "Programmes"
+    sheet.append(["Faculty", "Programme"])
+    sheet.append(["School of Science", "Mathematics"])
+    output = BytesIO()
+    workbook.save(output)
+    page = FetchedPage(
+        body="PK zip text",
+        raw_bytes=output.getvalue(),
+        final_url="https://example.edu/catalog.xlsx",
+        status_code=200,
+        content_type=(
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        ),
+        charset="utf-8",
+        bytes_read=len(output.getvalue()),
+        truncated=False,
+    )
+    monkeypatch.setattr(programme_discovery, "fetch_page", lambda *args, **kwargs: page)
+
+    payload = json.loads(programme_discovery.fetch_catalog(page.final_url))
+
+    assert payload == {
+        "worksheets": [
+            {
+                "name": "Programmes",
+                "rows": [
+                    ["Faculty", "Programme"],
+                    ["School of Science", "Mathematics"],
+                ],
+            }
+        ]
+    }
+
 
 CUHK_HTML = """
 <html><body>
