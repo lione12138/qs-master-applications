@@ -4,7 +4,11 @@ import json
 
 import pytest
 
-from gradwindow.approvals import approve_programme_candidates, approve_window
+from gradwindow.approvals import (
+    approve_official_adapter_window_candidates,
+    approve_programme_candidates,
+    approve_window,
+)
 from gradwindow.paths import APPLICATIONS_PATH, PROGRAMS_PATH
 
 
@@ -269,3 +273,75 @@ def test_approve_window_rejects_non_official_opening_basis(tmp_path) -> None:
             candidates_path,
             APPLICATIONS_PATH,
         )
+
+
+def test_batch_approval_only_promotes_official_adapter_windows(tmp_path) -> None:
+    applications_path = tmp_path / "applications.json"
+    candidates_path = tmp_path / "window-candidates.json"
+    applications_path.write_text(
+        APPLICATIONS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
+    )
+    base_record = {
+        "universityId": "eth-zurich-swiss-federal-institute-of-technology",
+        "scopeType": "institution",
+        "scopeId": "eth-zurich-swiss-federal-institute-of-technology",
+        "intake": "2027 Fall",
+        "round": "Main",
+        "applicantCategories": ["all"],
+        "opensAt": "2026-09-01",
+        "closesAt": "2026-12-01",
+        "applicationUrl": "https://ethz.ch/en/studies/master/application.html",
+        "sourceUrl": "https://ethz.ch/en/studies/master/application/dates.html",
+        "verifiedAt": "2026-07-01",
+        "evidence": "Official exact dates used by the batch approval test.",
+    }
+    candidates_path.write_text(
+        json.dumps(
+            {
+                "meta": {},
+                "items": [
+                    {
+                        "id": "official-adapter-window",
+                        "type": "adapter-new-window",
+                        "status": "pending",
+                        "openingBasis": "official",
+                        "record": {**base_record, "id": "batch-official-window"},
+                    },
+                    {
+                        "id": "inferred-adapter-window",
+                        "type": "adapter-new-window",
+                        "status": "pending",
+                        "openingBasis": "inferred-cycle-default",
+                        "record": {**base_record, "id": "batch-inferred-window"},
+                    },
+                    {
+                        "id": "parser-window",
+                        "type": "parser-date-change",
+                        "status": "pending",
+                        "openingBasis": "official",
+                        "record": {**base_record, "id": "batch-parser-window"},
+                    },
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    report = approve_official_adapter_window_candidates(
+        reviewer="automated-policy",
+        university_ids={"eth-zurich-swiss-federal-institute-of-technology"},
+        candidates_path=candidates_path,
+        applications_path=applications_path,
+    )
+
+    assert report == {"promotedWindows": 1, "remainingPending": 1}
+    applications = json.loads(applications_path.read_text(encoding="utf-8"))[
+        "applications"
+    ]
+    assert any(item["id"] == "batch-official-window" for item in applications)
+    assert not any(item["id"] == "batch-inferred-window" for item in applications)
+    candidates = json.loads(candidates_path.read_text(encoding="utf-8"))["items"]
+    assert candidates[0]["status"] == "approved"
+    assert candidates[0]["reviewedBy"] == "automated-policy"
+    assert candidates[1]["status"] == "pending"
+    assert candidates[2]["status"] == "pending"

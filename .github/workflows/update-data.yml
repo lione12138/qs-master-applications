@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 4 * * *"
   workflow_dispatch:
+    inputs:
+      translation_only:
+        description: "Only update missing programme translations"
+        type: boolean
+        default: false
   push:
     branches:
       - main
@@ -58,7 +63,7 @@ jobs:
           gradwindow coverage
 
       - name: Run daily pipeline
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && !inputs.translation_only
         env:
           SERPER_SEARCH_API_KEY: ${{ secrets.SERPER_SEARCH_API_KEY }}
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
@@ -96,8 +101,24 @@ jobs:
             echo "Successfully checkpointed translation batches are preserved and the data review pull request will still be created."
           } >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Commit translation-only refresh
+        if: >-
+          github.event_name == 'workflow_dispatch' &&
+          inputs.translation_only &&
+          steps.programme_translations.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/programme-translations.json
+          if git diff --cached --quiet; then
+            echo "No translation changes to commit."
+            exit 0
+          fi
+          git commit -m "data: translate published programmes"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
       - name: Open or update data review pull request
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && !inputs.translation_only
         id: data-pr
         uses: peter-evans/create-pull-request@v8
         with:
@@ -110,8 +131,10 @@ jobs:
             programme-discovery candidates, predictions, evidence snapshots,
             coverage, and review reports.
 
-            No parser candidate is promoted into `applications.json` without
-            explicit maintainer approval.
+            Dedicated adapters automatically promote only complete application
+            windows with official exact opening and closing dates. Inferred or
+            incomplete windows and parser date changes still require explicit
+            approval.
           add-paths: |
             data/applications.json
             data/predictions.json
@@ -123,13 +146,16 @@ jobs:
             README.zh-CN.md
 
       - name: Run tests on the data review branch
-        if: github.event_name != 'push' && steps.data-pr.outputs.pull-request-number
+        if: >-
+          github.event_name != 'push' &&
+          !inputs.translation_only &&
+          steps.data-pr.outputs.pull-request-number
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run tests.yml --ref automation/application-data
 
       - name: Open issue for newly confirmed page changes
-        if: github.event_name != 'push'
+        if: github.event_name != 'push' && !inputs.translation_only
         uses: actions/github-script@v9
         with:
           script: |

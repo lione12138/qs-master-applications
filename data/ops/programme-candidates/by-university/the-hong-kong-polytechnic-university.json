@@ -22,50 +22,6 @@
       "evidenceExcerpt": ""
     },
     {
-      "id": "new-programme:polyu-ai-for-architectural-and-habitat-design-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "the-hong-kong-polytechnic-university",
-      "detectedAt": "2026-07-23T10:24:17.653438+00:00",
-      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm",
-      "programme": {
-        "id": "polyu-ai-for-architectural-and-habitat-design-msc",
-        "universityId": "the-hong-kong-polytechnic-university",
-        "name": "MSc in AI for Architectural and Habitat Design",
-        "degreeType": "MSc",
-        "faculty": "",
-        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
-        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm"
-      },
-      "windows": [
-        {
-          "intake": "September 2027",
-          "round": "Early round",
-          "applicantCategories": [
-            "domestic-students"
-          ],
-          "opensAt": "2026-07-02",
-          "opensAtBasis": "official",
-          "closesAt": "2026-10-20",
-          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm"
-        },
-        {
-          "intake": "September 2027",
-          "round": "Early round",
-          "applicantCategories": [
-            "international-students"
-          ],
-          "opensAt": "2026-07-02",
-          "opensAtBasis": "official",
-          "closesAt": "2026-10-20",
-          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)"
-    },
-    {
       "id": "new-programme:polyu-engineering-business-management-msc-pgd",
       "type": "new-programme",
       "status": "pending",
@@ -463,6 +419,52 @@
       "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
       "reviewedBy": "codex",
       "reviewedAt": "2026-07-05T17:17:06.423915+00:00"
+    },
+    {
+      "id": "new-programme:polyu-ai-for-architectural-and-habitat-design-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-hong-kong-polytechnic-university",
+      "detectedAt": "2026-07-23T10:24:17.653438+00:00",
+      "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm",
+      "programme": {
+        "id": "polyu-ai-for-architectural-and-habitat-design-msc",
+        "universityId": "the-hong-kong-polytechnic-university",
+        "name": "MSc in AI for Architectural and Habitat Design",
+        "degreeType": "MSc",
+        "faculty": "",
+        "applicationUrl": "https://www38.polyu.edu.hk/eAdmission/index.do",
+        "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "domestic-students"
+          ],
+          "opensAt": "2026-07-02",
+          "opensAtBasis": "official",
+          "closesAt": "2026-10-20",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Early round",
+          "applicantCategories": [
+            "international-students"
+          ],
+          "opensAt": "2026-07-02",
+          "opensAtBasis": "official",
+          "closesAt": "2026-10-20",
+          "sourceUrl": "https://www.polyu.edu.hk/study/pg/tpg/2027/35002-afm-apm"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Local Application Deadline: 20 Oct 2026 (Early Round) Non-Local Application Deadline: 20 Oct 2026 (Early Round)",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:43.062980+00:00"
     },
     {
       "id": "new-programme:polyu-applied-psychology-diverse-learning-needs-master",

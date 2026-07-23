@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-23T10:27:50.080468+00:00",
+    "generatedAt": "2026-07-23T17:21:54.882445+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -14,16 +14,16 @@
     "broadMastersAvailability": 195,
     "limitedMastersAvailability": 5,
     "universitiesWithPrograms": 190,
-    "universitiesWithWindows": 49,
-    "verifiedWindows": 2945,
-    "universitiesWithPredictions": 49,
-    "predictedWindows": 2929,
+    "universitiesWithWindows": 52,
+    "verifiedWindows": 4520,
+    "universitiesWithPredictions": 52,
+    "predictedWindows": 4465,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
       "select-target-programmes": 10,
-      "verify-exact-windows": 141,
-      "monitor-and-refresh": 49
+      "verify-exact-windows": 138,
+      "monitor-and-refresh": 52
     }
   },
   "batches": [
@@ -51,7 +51,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 4,
       "universitiesWithWindows": 4,
-      "predictedWindows": 279
+      "predictedWindows": 287
     },
     {
       "batch": 3,
@@ -64,7 +64,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 5,
-      "predictedWindows": 110
+      "predictedWindows": 479
     },
     {
       "batch": 4,
@@ -90,7 +90,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 3,
-      "predictedWindows": 5
+      "predictedWindows": 6
     },
     {
       "batch": 6,
@@ -102,8 +102,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 1,
-      "predictedWindows": 2
+      "universitiesWithWindows": 2,
+      "predictedWindows": 626
     },
     {
       "batch": 7,
@@ -129,7 +129,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 3,
-      "predictedWindows": 74
+      "predictedWindows": 282
     },
     {
       "batch": 9,
@@ -141,8 +141,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 3,
-      "predictedWindows": 154
+      "universitiesWithWindows": 4,
+      "predictedWindows": 273
     },
     {
       "batch": 10,
@@ -154,8 +154,8 @@
       "entriesLocated": 5,
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
-      "universitiesWithWindows": 2,
-      "predictedWindows": 152
+      "universitiesWithWindows": 3,
+      "predictedWindows": 358
     },
     {
       "batch": 11,
@@ -246,7 +246,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 4,
-      "predictedWindows": 22
+      "predictedWindows": 23
     },
     {
       "batch": 18,
@@ -732,8 +732,8 @@
         "notes": "The applicable window depends on the country of the applicant's Bachelor's degree and scholarship/direct-doctorate status."
       },
       "programmeCount": 46,
-      "windowCount": 84,
-      "predictionCount": 84,
+      "windowCount": 92,
+      "predictionCount": 92,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -822,9 +822,9 @@
         "opensText": "Dates vary by programme",
         "notes": "The Master of Computing in Applied Artificial Intelligence lists a 1 November to 31 March period for the August 2026 intake."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 29,
+      "windowCount": 29,
+      "predictionCount": 29,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -846,9 +846,9 @@
         "opensText": "20 October to 23 December 2025",
         "notes": "The standard international route is closed; English-taught master's programmes may have different deadlines."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 168,
+      "windowCount": 175,
+      "predictionCount": 175,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -870,9 +870,9 @@
         "opensText": "Programme-specific rounds within the September 2025 to February 2026 cycle",
         "notes": "The Advanced Computing programme published an exact second-round window from 1 January to 27 February 2026."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 136,
+      "windowCount": 168,
+      "predictionCount": 168,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1134,9 +1134,9 @@
         "opensText": "Informatics MSc: 1 February–31 May for winter; 1 October–30 November for summer",
         "notes": "The programme page publishes stable month/day periods without an explicit cycle year, so they are retained as recurring guidance rather than exact calendar records."
       },
-      "programmeCount": 1,
-      "windowCount": 2,
-      "predictionCount": 2,
+      "programmeCount": 2,
+      "windowCount": 4,
+      "predictionCount": 3,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1158,9 +1158,9 @@
         "opensText": "13 October–12 December 2025 and 1–31 March 2026",
         "notes": "The official English-taught postgraduate admissions brochure publishes two complete application phases for international applicants."
       },
-      "programmeCount": 1,
-      "windowCount": 2,
-      "predictionCount": 2,
+      "programmeCount": 161,
+      "windowCount": 322,
+      "predictionCount": 322,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1254,10 +1254,10 @@
         "opensText": "Computer Science MSc opens 15 September",
         "notes": "The thesis MSc lists 15 December for international applicants and 15 February for domestic applicants. The non-thesis MSc lists 15 December for both, but the page does not bind these dates to a calendar year."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 153,
+      "windowCount": 304,
+      "predictionCount": 304,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "monash-university",
@@ -1446,9 +1446,9 @@
         "opensText": "6-9 July 2026",
         "notes": "The official Spring 2027 international graduate guide gives a complete online application and document-upload period in Korea Standard Time."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 202,
+      "windowCount": 202,
+      "predictionCount": 202,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1470,9 +1470,9 @@
         "opensText": "29 May-4 June 2026",
         "notes": "The IST application page gives a complete summer application period. The Computer Science guide states that its master's programme does not accept winter-examination applications."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 6,
+      "windowCount": 8,
+      "predictionCount": 8,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1542,9 +1542,9 @@
         "opensText": "6-13 April 2026",
         "notes": "The official international-student schedule gives a complete application period for Fall 2026."
       },
-      "programmeCount": 1,
-      "windowCount": 1,
-      "predictionCount": 1,
+      "programmeCount": 109,
+      "windowCount": 110,
+      "predictionCount": 109,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -1614,10 +1614,10 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 12,
+      "windowCount": 11,
+      "predictionCount": 11,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "university-of-british-columbia",
@@ -1638,10 +1638,10 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 1,
-      "windowCount": 0,
-      "predictionCount": 0,
-      "nextAction": "verify-exact-windows"
+      "programmeCount": 90,
+      "windowCount": 136,
+      "predictionCount": 99,
+      "nextAction": "monitor-and-refresh"
     },
     {
       "universityId": "zhejiang-university",
@@ -1734,9 +1734,9 @@
         "opensText": "2 July 2025 to 30 April 2026",
         "notes": "The MSc in Information Technology had early and main deadlines on 15 October 2025 and 15 January 2026, followed by an extended deadline on 30 April 2026."
       },
-      "programmeCount": 104,
-      "windowCount": 104,
-      "predictionCount": 104,
+      "programmeCount": 105,
+      "windowCount": 211,
+      "predictionCount": 211,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -2527,8 +2527,8 @@
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
       "programmeCount": 20,
-      "windowCount": 19,
-      "predictionCount": 19,
+      "windowCount": 20,
+      "predictionCount": 20,
       "nextAction": "monitor-and-refresh"
     },
     {

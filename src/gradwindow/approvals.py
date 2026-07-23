@@ -118,6 +118,105 @@ def approve_window(
     return record
 
 
+def approve_official_adapter_window_candidates(
+    *,
+    reviewer: str,
+    university_ids: set[str] | None = None,
+    candidates_path: Path = WINDOW_CANDIDATES_PATH,
+    applications_path: Path = APPLICATIONS_PATH,
+) -> dict[str, int]:
+    """Promote pending adapter windows that contain complete official dates."""
+    approved_at = datetime.now(timezone.utc)
+    verified_at = approved_at.date().isoformat()
+    candidates = read_json(candidates_path)
+    applications = read_json(applications_path)
+    records_by_id = {
+        item["id"]: copy.deepcopy(item) for item in applications.get("applications", [])
+    }
+    promoted: list[tuple[dict, dict]] = []
+
+    for candidate in candidates.get("items", []):
+        if candidate.get("status", "pending") != "pending":
+            continue
+        if candidate.get("type") not in {
+            "adapter-new-window",
+            "adapter-window-change",
+        }:
+            continue
+        record = copy.deepcopy(candidate.get("record"))
+        if not isinstance(record, dict):
+            continue
+        if (
+            university_ids is not None
+            and record.get("universityId") not in university_ids
+        ):
+            continue
+        if candidate.get("openingBasis") != "official":
+            continue
+        if not all(
+            record.get(field)
+            for field in (
+                "id",
+                "universityId",
+                "opensAt",
+                "closesAt",
+                "applicationUrl",
+                "sourceUrl",
+            )
+        ):
+            continue
+
+        record = with_intake_details(record)
+        record["verifiedAt"] = verified_at
+        records_by_id[record["id"]] = record
+        promoted.append((record, candidate))
+
+    if not promoted:
+        return {
+            "promotedWindows": 0,
+            "remainingPending": _pending_adapter_window_count(
+                candidates, university_ids
+            ),
+        }
+
+    proposed_payload = {
+        **applications,
+        "meta": {
+            **applications.get("meta", {}),
+            "updatedAt": approved_at.isoformat(),
+        },
+        "applications": sorted(
+            records_by_id.values(),
+            key=lambda item: (item["universityId"], item["closesAt"], item["id"]),
+        ),
+    }
+    _validate_programme_promotion(read_json(PROGRAMS_PATH), proposed_payload)
+
+    write_json(applications_path, proposed_payload)
+    if applications_path == APPLICATIONS_PATH:
+        for record, candidate in promoted:
+            _write_window_candidate_evidence(record, candidate, approved_at)
+    for _record, candidate in promoted:
+        candidate["status"] = "approved"
+        candidate["reviewedBy"] = reviewer
+        candidate["reviewedAt"] = approved_at.isoformat()
+    candidates.setdefault("meta", {})["updatedAt"] = approved_at.isoformat()
+    write_json(candidates_path, candidates)
+    prediction_output = (
+        PREDICTIONS_PATH
+        if applications_path == APPLICATIONS_PATH
+        else applications_path.with_name("predictions.json")
+    )
+    generate_predictions(
+        output_path=prediction_output,
+        applications_path=applications_path,
+    )
+    return {
+        "promotedWindows": len(promoted),
+        "remainingPending": _pending_adapter_window_count(candidates, university_ids),
+    }
+
+
 def approve_programme_candidates(
     *,
     university_id: str,
@@ -385,5 +484,19 @@ def _pending_count(candidates: dict, university_id: str) -> int:
         item.get("type") == "new-programme"
         and item.get("universityId") == university_id
         and item.get("status", "pending") == "pending"
+        for item in candidates.get("items", [])
+    )
+
+
+def _pending_adapter_window_count(
+    candidates: dict, university_ids: set[str] | None
+) -> int:
+    return sum(
+        item.get("type") in {"adapter-new-window", "adapter-window-change"}
+        and item.get("status", "pending") == "pending"
+        and (
+            university_ids is None
+            or (item.get("record") or {}).get("universityId") in university_ids
+        )
         for item in candidates.get("items", [])
     )

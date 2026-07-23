@@ -261,44 +261,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-applied-materials-analytics-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-applied-materials-analytics",
-      "programme": {
-        "id": "ntu-applied-materials-analytics-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Applied Materials Analytics",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-applied-materials-analytics"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 321 - MSC(APPLIED MATERIALS ANALYTICS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-applied-psychology-ma",
       "type": "new-programme",
       "status": "pending",
@@ -351,44 +313,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-artificial-intelligence-msai-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-artificial-intelligence",
-      "programme": {
-        "id": "ntu-artificial-intelligence-msai-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Artificial Intelligence (MSAI)",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-artificial-intelligence"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 244 - MSC(ARTIFICIAL INTELLIGENCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-asset-wealth-management-msc",
       "type": "new-programme",
       "status": "pending",
@@ -408,44 +332,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-aviation-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-aviation",
-      "programme": {
-        "id": "ntu-aviation-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Aviation",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-aviation"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 297 - MSC(AVIATION) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -661,44 +547,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-china-and-global-governance-msocsci",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-social-sciences-(china-and-global-governance)",
-      "programme": {
-        "id": "ntu-china-and-global-governance-msocsci",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Social Sciences in China and Global Governance",
-        "degreeType": "MSocSci",
-        "faculty": "Social Sciences | Social Sciences",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-social-sciences-(china-and-global-governance)"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 250 - MASTER OF SOCIAL SCIENCES (CHINA & GLOBAL GOVERNANCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-chinese-language-med",
       "type": "new-programme",
       "status": "pending",
@@ -744,120 +592,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-civil-engineering-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-civil-engineering",
-      "programme": {
-        "id": "ntu-civil-engineering-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Civil Engineering",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Sustainability | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-civil-engineering"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 293 - MSC(CIVIL ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-communications-engineering-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-communications-engineering",
-      "programme": {
-        "id": "ntu-communications-engineering-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Communications Engineering",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-communications-engineering"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 254 - MSC(COMMUNICATIONS ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-computer-control-automation-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-computer-control-automation",
-      "programme": {
-        "id": "ntu-computer-control-automation-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Computer Control & Automation",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-computer-control-automation"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 255 - MSC(COMPUTER CONTROL & AUTOMATION) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -936,120 +670,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-cybersecurity-applied-cryptography-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-master-of-science-in-cybersecurity-applied-cryptography",
-      "programme": {
-        "id": "ntu-cybersecurity-applied-cryptography-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Cybersecurity (Applied Cryptography)",
-        "degreeType": "MSc",
-        "faculty": "Science | Business | Sustainability | Science",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-master-of-science-in-cybersecurity-applied-cryptography"
-      },
-      "windows": [
-        {
-          "intake": "November 2026",
-          "round": "Trimester2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-06-18",
-          "opensAtBasis": "official",
-          "closesAt": "2026-07-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 326 - MSC (CYBERSECURITY) - APPLIED CRYPTOGRAPHY for November 2026: applications open 2026-06-18 and close 2026-07-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-cybersecurity-applied-cybersecurity-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-cybersecurity-(applied-cybersecurity",
-      "programme": {
-        "id": "ntu-cybersecurity-applied-cybersecurity-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Cybersecurity (Applied Cybersecurity)",
-        "degreeType": "MSc",
-        "faculty": "Computing | Engineering | Computing",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-cybersecurity-(applied-cybersecurity"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-09-14",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 325 - MSC(CYBERSECURITY) - APPLIED CYBERSECURITY for January 2027: applications open 2026-07-01 and close 2026-09-14.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-data-science-msds-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-data-science-(msds)",
-      "programme": {
-        "id": "ntu-data-science-msds-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Data Science (MSDS)",
-        "degreeType": "MSc",
-        "faculty": "Computing | Engineering | Computing",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-data-science-(msds)"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 277 - MSC(DATA SCIENCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -1265,44 +885,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-english-mpa",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-public-administration-(english)",
-      "programme": {
-        "id": "ntu-english-mpa",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Public Administration (English)",
-        "degreeType": "MPA",
-        "faculty": "Social Sciences | Social Sciences",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-public-administration-(english)"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 249 - MASTER OF PUBLIC ADMINISTRATION - ENGLISH for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-enterprise-artificial-intelligence-msc",
       "type": "new-programme",
       "status": "pending",
@@ -1322,44 +904,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-environmental-sustainability-science-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-environmental-sustainability-science",
-      "programme": {
-        "id": "ntu-environmental-sustainability-science-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Environmental Sustainability Science",
-        "degreeType": "MSc",
-        "faculty": "Science | Science",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-environmental-sustainability-science"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 307 - MSC(ENVIRONMENTAL SUSTAINABILITY SCIENCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -1549,44 +1093,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-green-energy-technologies-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-green-energy-technologies",
-      "programme": {
-        "id": "ntu-green-energy-technologies-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Green Energy Technologies",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-green-energy-technologies"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 311 - MSC (GREEN ENERGY TECHNOLOGIES) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-high-ability-studies-med",
       "type": "new-programme",
       "status": "pending",
@@ -1769,82 +1275,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-integrated-circuits-and-microelectronics-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-integrated-circuits-and-microelectronics",
-      "programme": {
-        "id": "ntu-integrated-circuits-and-microelectronics-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Integrated Circuits and Microelectronics",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-integrated-circuits-and-microelectronics"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 319 - MSC(INTEGRATED CIRCUITS & MICROELECTRONICS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-international-construction-management-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-international-construction-management",
-      "programme": {
-        "id": "ntu-international-construction-management-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in International Construction Management",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-international-construction-management"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 57 - MSC(INTERNATIONAL CONSTRUCTION MGT) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-knowledge-management-km-msc",
       "type": "new-programme",
       "status": "pending",
@@ -1923,44 +1353,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-linguistics-ma",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-arts-in-linguistics",
-      "programme": {
-        "id": "ntu-linguistics-ma",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Arts in Linguistics",
-        "degreeType": "MA",
-        "faculty": "Humanities | Humanities",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-arts-in-linguistics"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 283 - MASTER OF ARTS (LINGUISTICS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-malay-language-med",
       "type": "new-programme",
       "status": "pending",
@@ -1980,44 +1372,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-managerial-economics-english-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-managerial-economics-(english)",
-      "programme": {
-        "id": "ntu-managerial-economics-english-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Managerial Economics (English)",
-        "degreeType": "MSc",
-        "faculty": "Social Sciences | Interdisciplinary | Social Sciences",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-managerial-economics-(english)"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 262 - MSC(MANAGERIAL ECONOMICS) - ENGLISH for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -2077,44 +1431,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-maritime-studies-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-maritime-studies",
-      "programme": {
-        "id": "ntu-maritime-studies-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Maritime Studies",
-        "degreeType": "MSc",
-        "faculty": "Science | Sustainability | Science",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-maritime-studies"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 202 - MSC(MARITIME STUDIES) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-marketing-science-msc",
       "type": "new-programme",
       "status": "pending",
@@ -2134,44 +1450,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-materials-science-and-engineering-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-materials-science-and-engineering",
-      "programme": {
-        "id": "ntu-materials-science-and-engineering-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Materials Science and Engineering",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Sustainability | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-materials-science-and-engineering"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 259 - MSC(MATERIALS SCIENCE & ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -2224,44 +1502,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-mechanical-engineering-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-mechanical-engineering-2",
-      "programme": {
-        "id": "ntu-mechanical-engineering-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Mechanical Engineering",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-mechanical-engineering-2"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 279 - MSC(MECHANICAL ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -2607,44 +1847,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-power-engineering-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-power-engineering",
-      "programme": {
-        "id": "ntu-power-engineering-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Power Engineering",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Sustainability | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-power-engineering"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 257 - MSC(POWER ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-precision-scientific-instrumentation-msc",
       "type": "new-programme",
       "status": "pending",
@@ -2697,44 +1899,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-project-management-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-project-management",
-      "programme": {
-        "id": "ntu-project-management-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Project Management",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-project-management"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 246 - MSC(PROJECT MANAGEMENT) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-psychology-msc",
       "type": "new-programme",
       "status": "pending",
@@ -2754,44 +1918,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-robotics-and-intelligent-systems-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-(robotics-and-intelligent-systems)",
-      "programme": {
-        "id": "ntu-robotics-and-intelligent-systems-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science (Robotics and Intelligent Systems)",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-(robotics-and-intelligent-systems)"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 302 - MSC(ROBOTICS & INTELLIGENT SYSTEMS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -2851,82 +1977,6 @@
       }
     },
     {
-      "id": "new-programme:ntu-signal-processing-and-machine-learning-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-signal-processing",
-      "programme": {
-        "id": "ntu-signal-processing-and-machine-learning-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Signal Processing and Machine Learning",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-signal-processing"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 287 - MSC(SIGNAL PROCESSING & MACHINE LEARNING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-smart-manufacturing-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-smart-manufacturing",
-      "programme": {
-        "id": "ntu-smart-manufacturing-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Smart Manufacturing",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Sustainability | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-smart-manufacturing"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 266 - MSC(SMART MANUFACTURING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:ntu-special-education-med",
       "type": "new-programme",
       "status": "pending",
@@ -2946,82 +1996,6 @@
       "parseStatus": "no-deadline",
       "reviewReason": "No application deadline was parsed.",
       "evidenceExcerpt": "Programme found in NTU's official coursework master's catalogue, but it is not listed in the current live application-window table.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-supply-chain-engineering-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-supply-chain-logistics",
-      "programme": {
-        "id": "ntu-supply-chain-engineering-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Supply Chain Engineering",
-        "degreeType": "MSc",
-        "faculty": "Engineering | Engineering",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-supply-chain-logistics"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 269 - MSC(SUPPLY CHAIN ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-api",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
-      "id": "new-programme:ntu-sustainability-and-environmental-engineering-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
-      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-sustainability-and-environmental-engineering",
-      "programme": {
-        "id": "ntu-sustainability-and-environmental-engineering-msc",
-        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
-        "name": "Master of Science in Sustainability and Environmental Engineering",
-        "degreeType": "MSc",
-        "faculty": "Sustainability | Engineering | Sustainability",
-        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
-        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-sustainability-and-environmental-engineering"
-      },
-      "windows": [
-        {
-          "intake": "January 2027",
-          "round": "Semester 2",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-07-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-08-31",
-          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "NTU's official live application table lists 308 - MSC (SUSTAINABILITY & ENVIRONMENTAL ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
       "discoveryEvidence": {
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
@@ -3159,9 +2133,1089 @@
       }
     },
     {
+      "id": "new-programme:ntu-applied-materials-analytics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-applied-materials-analytics",
+      "programme": {
+        "id": "ntu-applied-materials-analytics-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Applied Materials Analytics",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-applied-materials-analytics"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 321 - MSC(APPLIED MATERIALS ANALYTICS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-artificial-intelligence-msai-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-artificial-intelligence",
+      "programme": {
+        "id": "ntu-artificial-intelligence-msai-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Artificial Intelligence (MSAI)",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-artificial-intelligence"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 244 - MSC(ARTIFICIAL INTELLIGENCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-aviation-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-aviation",
+      "programme": {
+        "id": "ntu-aviation-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Aviation",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-aviation"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 297 - MSC(AVIATION) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-china-and-global-governance-msocsci",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-social-sciences-(china-and-global-governance)",
+      "programme": {
+        "id": "ntu-china-and-global-governance-msocsci",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Social Sciences in China and Global Governance",
+        "degreeType": "MSocSci",
+        "faculty": "Social Sciences | Social Sciences",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-social-sciences-(china-and-global-governance)"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 250 - MASTER OF SOCIAL SCIENCES (CHINA & GLOBAL GOVERNANCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-civil-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-civil-engineering",
+      "programme": {
+        "id": "ntu-civil-engineering-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Civil Engineering",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Sustainability | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-civil-engineering"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 293 - MSC(CIVIL ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-communications-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-communications-engineering",
+      "programme": {
+        "id": "ntu-communications-engineering-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Communications Engineering",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-communications-engineering"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 254 - MSC(COMMUNICATIONS ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-computer-control-automation-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-computer-control-automation",
+      "programme": {
+        "id": "ntu-computer-control-automation-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Computer Control & Automation",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-computer-control-automation"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 255 - MSC(COMPUTER CONTROL & AUTOMATION) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-cybersecurity-applied-cryptography-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-master-of-science-in-cybersecurity-applied-cryptography",
+      "programme": {
+        "id": "ntu-cybersecurity-applied-cryptography-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Cybersecurity (Applied Cryptography)",
+        "degreeType": "MSc",
+        "faculty": "Science | Business | Sustainability | Science",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-master-of-science-in-cybersecurity-applied-cryptography"
+      },
+      "windows": [
+        {
+          "intake": "November 2026",
+          "round": "Trimester2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-06-18",
+          "opensAtBasis": "official",
+          "closesAt": "2026-07-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 326 - MSC (CYBERSECURITY) - APPLIED CRYPTOGRAPHY for November 2026: applications open 2026-06-18 and close 2026-07-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-cybersecurity-applied-cybersecurity-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-cybersecurity-(applied-cybersecurity",
+      "programme": {
+        "id": "ntu-cybersecurity-applied-cybersecurity-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Cybersecurity (Applied Cybersecurity)",
+        "degreeType": "MSc",
+        "faculty": "Computing | Engineering | Computing",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-cybersecurity-(applied-cybersecurity"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-09-14",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 325 - MSC(CYBERSECURITY) - APPLIED CYBERSECURITY for January 2027: applications open 2026-07-01 and close 2026-09-14.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-data-science-msds-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-data-science-(msds)",
+      "programme": {
+        "id": "ntu-data-science-msds-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Data Science (MSDS)",
+        "degreeType": "MSc",
+        "faculty": "Computing | Engineering | Computing",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-data-science-(msds)"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 277 - MSC(DATA SCIENCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-english-mpa",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-public-administration-(english)",
+      "programme": {
+        "id": "ntu-english-mpa",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Public Administration (English)",
+        "degreeType": "MPA",
+        "faculty": "Social Sciences | Social Sciences",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-public-administration-(english)"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 249 - MASTER OF PUBLIC ADMINISTRATION - ENGLISH for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-environmental-sustainability-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-environmental-sustainability-science",
+      "programme": {
+        "id": "ntu-environmental-sustainability-science-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Environmental Sustainability Science",
+        "degreeType": "MSc",
+        "faculty": "Science | Science",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-environmental-sustainability-science"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 307 - MSC(ENVIRONMENTAL SUSTAINABILITY SCIENCE) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-green-energy-technologies-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-green-energy-technologies",
+      "programme": {
+        "id": "ntu-green-energy-technologies-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Green Energy Technologies",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-green-energy-technologies"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 311 - MSC (GREEN ENERGY TECHNOLOGIES) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-integrated-circuits-and-microelectronics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-integrated-circuits-and-microelectronics",
+      "programme": {
+        "id": "ntu-integrated-circuits-and-microelectronics-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Integrated Circuits and Microelectronics",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-integrated-circuits-and-microelectronics"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 319 - MSC(INTEGRATED CIRCUITS & MICROELECTRONICS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-international-construction-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-international-construction-management",
+      "programme": {
+        "id": "ntu-international-construction-management-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in International Construction Management",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-international-construction-management"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 57 - MSC(INTERNATIONAL CONSTRUCTION MGT) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-linguistics-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-arts-in-linguistics",
+      "programme": {
+        "id": "ntu-linguistics-ma",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Arts in Linguistics",
+        "degreeType": "MA",
+        "faculty": "Humanities | Humanities",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-arts-in-linguistics"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 283 - MASTER OF ARTS (LINGUISTICS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-managerial-economics-english-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-managerial-economics-(english)",
+      "programme": {
+        "id": "ntu-managerial-economics-english-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Managerial Economics (English)",
+        "degreeType": "MSc",
+        "faculty": "Social Sciences | Interdisciplinary | Social Sciences",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-managerial-economics-(english)"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 262 - MSC(MANAGERIAL ECONOMICS) - ENGLISH for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-maritime-studies-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-maritime-studies",
+      "programme": {
+        "id": "ntu-maritime-studies-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Maritime Studies",
+        "degreeType": "MSc",
+        "faculty": "Science | Sustainability | Science",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-maritime-studies"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 202 - MSC(MARITIME STUDIES) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-materials-science-and-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-materials-science-and-engineering",
+      "programme": {
+        "id": "ntu-materials-science-and-engineering-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Materials Science and Engineering",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Sustainability | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-materials-science-and-engineering"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 259 - MSC(MATERIALS SCIENCE & ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-mechanical-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-mechanical-engineering-2",
+      "programme": {
+        "id": "ntu-mechanical-engineering-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Mechanical Engineering",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-mechanical-engineering-2"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 279 - MSC(MECHANICAL ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-power-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-power-engineering",
+      "programme": {
+        "id": "ntu-power-engineering-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Power Engineering",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Sustainability | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-power-engineering"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 257 - MSC(POWER ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-project-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-project-management",
+      "programme": {
+        "id": "ntu-project-management-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Project Management",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-project-management"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 246 - MSC(PROJECT MANAGEMENT) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-robotics-and-intelligent-systems-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-(robotics-and-intelligent-systems)",
+      "programme": {
+        "id": "ntu-robotics-and-intelligent-systems-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science (Robotics and Intelligent Systems)",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-(robotics-and-intelligent-systems)"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 302 - MSC(ROBOTICS & INTELLIGENT SYSTEMS) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-signal-processing-and-machine-learning-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-signal-processing",
+      "programme": {
+        "id": "ntu-signal-processing-and-machine-learning-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Signal Processing and Machine Learning",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-signal-processing"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 287 - MSC(SIGNAL PROCESSING & MACHINE LEARNING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-smart-manufacturing-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-smart-manufacturing",
+      "programme": {
+        "id": "ntu-smart-manufacturing-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Smart Manufacturing",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Sustainability | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-smart-manufacturing"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 266 - MSC(SMART MANUFACTURING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-supply-chain-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-supply-chain-logistics",
+      "programme": {
+        "id": "ntu-supply-chain-engineering-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Supply Chain Engineering",
+        "degreeType": "MSc",
+        "faculty": "Engineering | Engineering",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-supply-chain-logistics"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 269 - MSC(SUPPLY CHAIN ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
+      "id": "new-programme:ntu-sustainability-and-environmental-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+      "detectedAt": "2026-07-23T10:22:56.495215+00:00",
+      "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-sustainability-and-environmental-engineering",
+      "programme": {
+        "id": "ntu-sustainability-and-environmental-engineering-msc",
+        "universityId": "nanyang-technological-university-singapore-ntu-singapore",
+        "name": "Master of Science in Sustainability and Environmental Engineering",
+        "degreeType": "MSc",
+        "faculty": "Sustainability | Engineering | Sustainability",
+        "applicationUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now",
+        "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-sustainability-and-environmental-engineering"
+      },
+      "windows": [
+        {
+          "intake": "January 2027",
+          "round": "Semester 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-07-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-08-31",
+          "sourceUrl": "https://www.ntu.edu.sg/admissions/graduate/cwadmissionguide/apply-now"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "NTU's official live application table lists 308 - MSC (SUSTAINABILITY & ENVIRONMENTAL ENGINEERING) for January 2027: applications open 2026-07-01 and close 2026-08-31.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
+    },
+    {
       "id": "new-programme:ntu-translation-and-interpretation-ma",
       "type": "new-programme",
-      "status": "pending",
+      "status": "approved",
       "universityId": "nanyang-technological-university-singapore-ntu-singapore",
       "detectedAt": "2026-07-23T10:22:56.495215+00:00",
       "sourceUrl": "https://www.ntu.edu.sg/education/graduate-programme/master-of-arts-in-translation-and-interpretation",
@@ -3194,7 +3248,9 @@
         "retrievalMethod": "official-api",
         "evidenceQuality": "official-full-text",
         "documentHash": null
-      }
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:04.458558+00:00"
     }
   ]
 }

@@ -1,9 +1,10 @@
 {
   "meta": {
-    "updatedAt": "2026-07-23T10:27:00.669379+00:00",
+    "updatedAt": "2026-07-23T17:19:28.476966+00:00",
     "dryRun": false,
     "replaceExisting": false,
-    "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed."
+    "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed.",
+    "classificationRefreshedFromCandidates": true
   },
   "summary": {
     "schoolsConfigured": 9,
@@ -14,9 +15,9 @@
     "schoolsAssisted": 1,
     "readyToApprove": 0,
     "needsOpeningReview": 0,
-    "needsOpeningDate": 464,
-    "needsAdapter": 385,
-    "comingSoonMonitor": 3,
+    "needsOpeningDate": 463,
+    "needsAdapter": 424,
+    "comingSoonMonitor": 2,
     "deadlineUnavailableMonitor": 172
   },
   "results": [
@@ -2515,15 +2516,6 @@
         "programmeName": "Master of Veterinary Studies (Clinical Residency Program)",
         "sourceUrl": "https://www.sydney.edu.au/courses/courses/pc/master-of-veterinary-studies-clinical-residency-program.html",
         "windowCount": 4,
-        "parseStatus": "incomplete",
-        "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
-      },
-      {
-        "id": "new-programme:uchicago-ms-in-data-science",
-        "universityId": "university-of-chicago",
-        "programmeName": "MS in Data Science",
-        "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
-        "windowCount": 1,
         "parseStatus": "incomplete",
         "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page."
       },
@@ -7741,6 +7733,357 @@
         "reviewReason": "No application deadline was parsed."
       },
       {
+        "id": "known-programme-guidance:uchicago-applied-data-science-ms",
+        "universityId": "university-of-chicago",
+        "programmeName": "MS in Applied Data Science",
+        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-biomedical-informatics-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Biomedical Informatics, Master of Science",
+        "sourceUrl": "https://bmi.bsd.uchicago.edu/about/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-biomedical-sciences-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Biomedical Sciences, Master of Science",
+        "sourceUrl": "https://www.biomedicalsciences.bsd.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-chemistry-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Chemistry, Master of Science",
+        "sourceUrl": "https://chemistry.uchicago.edu/ms-in-chemistry",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-computational-analysis-and-public-policy-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Computational Analysis and Public Policy, Master of Science",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ms-computational-analysis-and-public-policy-mscapp",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-computational-social-science-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Computational Social Science, Master of Arts",
+        "sourceUrl": "https://macss.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-computer-science-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Computer Science, Master of Science",
+        "sourceUrl": "https://masters.cs.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-data-science-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Data Science, Master of Science",
+        "sourceUrl": "https://codas.uchicago.edu/academics/ms-data-science/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-digital-studies-of-language-culture-and-history-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Digital Studies of Language, Culture, and History, Master of Arts",
+        "sourceUrl": "https://digitalstudies.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-economics-ssd-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Economics (SSD), Master of Arts",
+        "sourceUrl": "https://economics.uchicago.edu/masters-programs/master-arts-economics",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-environmental-science-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Environmental Science, Master of Science",
+        "sourceUrl": "https://geosci.uchicago.edu/academics/ms-in-environmental-sciences/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-financial-mathematics-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Financial Mathematics, Master of Science",
+        "sourceUrl": "https://finmath.uchicago.edu",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-international-relations-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "International Relations, Master of Arts",
+        "sourceUrl": "https://cir.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-law-legal-studies-master-of-laws",
+        "universityId": "university-of-chicago",
+        "programmeName": "Law/Legal Studies, Master of Laws",
+        "sourceUrl": "https://www.law.uchicago.edu/llm",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-law-legal-studies-master-of-legal-studies",
+        "universityId": "university-of-chicago",
+        "programmeName": "Law/Legal Studies, Master of Legal Studies",
+        "sourceUrl": "https://www.law.uchicago.edu/mls-program",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-management-science-operations-management-master-of-management",
+        "universityId": "university-of-chicago",
+        "programmeName": "Management Science/Operations Management, Master of Management",
+        "sourceUrl": "https://www.chicagobooth.edu/master-in-management",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Arts",
+        "sourceUrl": "https://divinity.uchicago.edu/admissions/MAprogram",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-arts-in-religious-studies",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Arts in Religious Studies",
+        "sourceUrl": "https://divinity.uchicago.edu/MA-AMRS-programs",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-arts-program-in-the-humanities",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Arts Program in the Humanities",
+        "sourceUrl": "https://maph.uchicago.edu",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-arts-program-in-the-social-sciences",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Arts Program in the Social Sciences",
+        "sourceUrl": "https://mapss.uchicago.edu",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-business-administration",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Business Administration",
+        "sourceUrl": "https://www.chicagobooth.edu/mba",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-divinity",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Divinity",
+        "sourceUrl": "https://divinity.uchicago.edu/admissions/MDivprogram",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-engineering",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Engineering",
+        "sourceUrl": "https://pme.uchicago.edu/academics/masters-of-engineering",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-finance",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Finance",
+        "sourceUrl": "https://www.chicagobooth.edu/master-in-finance",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-liberal-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Liberal Arts",
+        "sourceUrl": "https://masterliberalarts.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-public-health",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Public Health",
+        "sourceUrl": "https://publichealth.bsd.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-of-public-policy",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master of Public Policy",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/master-public-policy-mpp",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-master-s-program-in-computational-and-applied-mathematics",
+        "universityId": "university-of-chicago",
+        "programmeName": "Master's Program in Computational and Applied Mathematics",
+        "sourceUrl": "https://cam.uchicago.edu/academics/ms-in-computational-and-applied-mathematics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-middle-eastern-studies-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Middle Eastern Studies, Master of Arts",
+        "sourceUrl": "https://cmes.uchicago.edu/ma-program",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-precision-health-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Precision Health, Master of Science",
+        "sourceUrl": "https://voices.uchicago.edu/precisionhealth/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-public-health-master-of-science-for-clinical-professionals",
+        "universityId": "university-of-chicago",
+        "programmeName": "Public Health, Master of Science for Clinical Professionals",
+        "sourceUrl": "http://health.bsd.uchicago.edu/Education/DegreePrograms/MSCP",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-public-policy-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Public Policy, Master of Arts",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-public-policy-master-of-arts-evening",
+        "universityId": "university-of-chicago",
+        "programmeName": "Public Policy, Master of Arts (Evening)",
+        "sourceUrl": "https://harris.uchicago.edu/eveningprogram",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-public-policy-with-certificate-in-research-methods-master-of-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Public Policy with Certificate in Research Methods, Master of Arts",
+        "sourceUrl": "https://harris.uchicago.edu/academics/programs-degrees/degrees/ma-public-policy-certificate-research-methods-macrm",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-social-sector-leadership-and-nonprofit-management-master-of-arts-ssl",
+        "universityId": "university-of-chicago",
+        "programmeName": "Social Sector Leadership and Nonprofit Management, Master of Arts SSL",
+        "sourceUrl": "https://crownschool.uchicago.edu/admissions/masters-admissions/social-sector-leadership-admission-requirements",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-social-work-social-policy-and-social-administration-master-of-arts-in-social-work",
+        "universityId": "university-of-chicago",
+        "programmeName": "Social Work, Social Policy, and Social Administration, Master of Arts in Social Work",
+        "sourceUrl": "https://crownschool.uchicago.edu/academic-programs/masters-social-work",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-statistics-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Statistics, Master of Science",
+        "sourceUrl": "https://stat.uchicago.edu/academics/ms-in-statistics/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-threat-and-response-management-master-of-science",
+        "universityId": "university-of-chicago",
+        "programmeName": "Threat and Response Management, Master of Science",
+        "sourceUrl": "https://threatresponse.bsd.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "new-programme:uchicago-visual-arts-master-of-fine-arts",
+        "universityId": "university-of-chicago",
+        "programmeName": "Visual Arts, Master of Fine Arts",
+        "sourceUrl": "https://dova.uchicago.edu/",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
         "id": "new-programme:southampton-environmental-and-spatial-design-ma",
         "universityId": "university-of-southampton",
         "programmeName": "Environmental and Spatial Design (MA)",
@@ -7792,15 +8135,6 @@
         "universityId": "the-university-of-nottingham",
         "programmeName": "Applied Translation Studies MA",
         "sourceUrl": "https://www.nottingham.ac.uk/pgstudy/course/taught/applied-translation-studies-ma",
-        "windowCount": 0,
-        "parseStatus": "no-deadline",
-        "reviewReason": "No application deadline was parsed."
-      },
-      {
-        "id": "new-programme:uchicago-ms-in-applied-data-science",
-        "universityId": "university-of-chicago",
-        "programmeName": "MS in Applied Data Science",
-        "sourceUrl": "https://datascience.uchicago.edu/education/masters-programs/ms-in-applied-data-science/",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."

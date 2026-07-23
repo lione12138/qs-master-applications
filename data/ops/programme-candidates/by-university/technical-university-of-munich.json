@@ -391,55 +391,6 @@
       }
     },
     {
-      "id": "new-programme:tum-biomedical-engineering-and-medical-physics-master-of-science-msc",
-      "type": "new-programme",
-      "status": "pending",
-      "universityId": "technical-university-of-munich",
-      "detectedAt": "2026-07-23T11:23:27.368882+00:00",
-      "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc",
-      "programme": {
-        "id": "tum-biomedical-engineering-and-medical-physics-master-of-science-msc",
-        "universityId": "technical-university-of-munich",
-        "name": "MSc Biomedical Engineering and Medical Physics",
-        "degreeType": "MSc",
-        "faculty": "TUM School of Natural Sciences",
-        "applicationUrl": "https://www.tum.de/en/studies/application/application-info-portal/online-application",
-        "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc"
-      },
-      "windows": [
-        {
-          "intake": "Winter semester 2026/27",
-          "round": "Application period",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-04-15",
-          "opensAtBasis": "official",
-          "closesAt": "2026-05-31",
-          "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc"
-        },
-        {
-          "intake": "Summer semester 2027",
-          "round": "Application period",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": "2026-09-01",
-          "opensAtBasis": "official",
-          "closesAt": "2026-11-30",
-          "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc"
-        }
-      ],
-      "parseStatus": "parsed",
-      "reviewReason": "Review the automatically discovered programme and application rounds.",
-      "evidenceExcerpt": "Winter semester 2026/27: 15.04.2026 – 31.05.2026 Summer semester 2027: 01.09.2026 – 30.11.2026",
-      "discoveryEvidence": {
-        "retrievalMethod": "official-tum-master-catalogue-and-detail-page",
-        "evidenceQuality": "official-full-text",
-        "documentHash": null
-      }
-    },
-    {
       "id": "new-programme:tum-biomedical-neuroscience-master-of-science-msc",
       "type": "new-programme",
       "status": "pending",
@@ -3012,6 +2963,57 @@
         "evidenceQuality": "official-full-text",
         "documentHash": null
       }
+    },
+    {
+      "id": "new-programme:tum-biomedical-engineering-and-medical-physics-master-of-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "technical-university-of-munich",
+      "detectedAt": "2026-07-23T11:23:27.368882+00:00",
+      "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc",
+      "programme": {
+        "id": "tum-biomedical-engineering-and-medical-physics-master-of-science-msc",
+        "universityId": "technical-university-of-munich",
+        "name": "MSc Biomedical Engineering and Medical Physics",
+        "degreeType": "MSc",
+        "faculty": "TUM School of Natural Sciences",
+        "applicationUrl": "https://www.tum.de/en/studies/application/application-info-portal/online-application",
+        "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc"
+      },
+      "windows": [
+        {
+          "intake": "Winter semester 2026/27",
+          "round": "Application period",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-04-15",
+          "opensAtBasis": "official",
+          "closesAt": "2026-05-31",
+          "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc"
+        },
+        {
+          "intake": "Summer semester 2027",
+          "round": "Application period",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2026-09-01",
+          "opensAtBasis": "official",
+          "closesAt": "2026-11-30",
+          "sourceUrl": "https://www.tum.de/en/studies/degree-programs/detail/biomedical-engineering-and-medical-physics-master-of-science-msc"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Review the automatically discovered programme and application rounds.",
+      "evidenceExcerpt": "Winter semester 2026/27: 15.04.2026 – 31.05.2026 Summer semester 2027: 01.09.2026 – 30.11.2026",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-tum-master-catalogue-and-detail-page",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:09:38.628654+00:00"
     }
   ]
 }

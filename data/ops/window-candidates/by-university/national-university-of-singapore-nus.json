@@ -3,7 +3,7 @@
     {
       "id": "adapter-window:nus-master-of-public-health-coursework-2027-main:2026-08-01:2026-11-01",
       "type": "adapter-window-change",
-      "status": "pending",
+      "status": "approved",
       "universityId": "national-university-of-singapore-nus",
       "detectedAt": "2026-07-23T10:23:05.580797+00:00",
       "sourceUrl": "https://sph.nus.edu.sg/education/mph/",
@@ -38,7 +38,9 @@
           "observed": "2026-11-01"
         }
       },
-      "evidenceExcerpt": "The official NUS Master of Public Health page lists applications as open from 2026-08-01 to 2026-11-01."
+      "evidenceExcerpt": "The official NUS Master of Public Health page lists applications as open from 2026-08-01 to 2026-11-01.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-23T17:15:05.725914+00:00"
     }
   ]
 }
