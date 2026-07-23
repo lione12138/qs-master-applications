@@ -9,13 +9,14 @@ from gradwindow.programme_adapters.registry import PROGRAMME_ADAPTERS
 
 
 def test_registry_is_the_complete_unique_source_of_dedicated_adapters() -> None:
-    assert len(PROGRAMME_ADAPTERS) == 44
+    assert len(PROGRAMME_ADAPTERS) == 49
     assert set(PROGRAMME_ADAPTERS) >= {
         "anu",
         "berkeley",
         "birmingham",
         "bristol",
         "caltech",
+        "columbia",
         "cornell",
         "epfl",
         "fudan",
@@ -27,6 +28,8 @@ def test_registry_is_the_complete_unique_source_of_dedicated_adapters() -> None:
         "peking",
         "princeton",
         "psl",
+        "sjtu",
+        "snu",
         "southampton",
         "toronto",
         "tsinghua",
@@ -35,7 +38,9 @@ def test_registry_is_the_complete_unique_source_of_dedicated_adapters() -> None:
         "ucl",
         "unsw",
         "upenn",
+        "utokyo",
         "yale",
+        "yonsei",
     }
     university_ids = [factory.university_id for factory in PROGRAMME_ADAPTERS.values()]
     assert len(university_ids) == len(set(university_ids))

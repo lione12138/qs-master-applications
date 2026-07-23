@@ -59,6 +59,12 @@ def known_programme_window_candidates(
     detected_at: str,
 ) -> list[dict]:
     shared_opening_basis = getattr(adapter, "application_opens_at_basis", "official")
+    scope_type = getattr(
+        adapter,
+        "known_programme_window_scope_type",
+        "programme",
+    )
+    scope_id = getattr(adapter, "known_programme_window_scope_id", None) or programme.id
     candidates = []
     for window in programme.windows:
         opens_at = window.opens_at or shared_opens_at
@@ -80,8 +86,8 @@ def known_programme_window_candidates(
                     existing_ids=application_ids,
                 ),
                 "universityId": adapter.university_id,
-                "scopeType": "programme",
-                "scopeId": programme.id,
+                "scopeType": scope_type,
+                "scopeId": scope_id,
                 "intake": window.intake or adapter.intake,
                 "round": window.round,
                 "applicantCategories": window.applicant_categories,

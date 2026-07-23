@@ -9,6 +9,7 @@ from .birmingham import BirminghamAdapter
 from .bristol import BristolAdapter
 from .caltech import CaltechAdapter
 from .cambridge import CambridgeAdapter
+from .columbia import ColumbiaAdapter
 from .cornell import CornellAdapter
 from .cuhk import CUHKAdapter
 from .edinburgh import EdinburghAdapter
@@ -34,6 +35,8 @@ from .peking import PekingAdapter
 from .polyu import PolyUAdapter
 from .princeton import PrincetonAdapter
 from .psl import PSLAdapter
+from .sjtu import SJTUAdapter
+from .snu import SNUAdapter
 from .southampton import SouthamptonAdapter
 from .stanford import StanfordAdapter
 from .sydney import SydneyAdapter
@@ -46,7 +49,9 @@ from .ucl import UCLAdapter
 from .unsw import UNSWAdapter
 from .upenn import UpennAdapter
 from .uq import UQAdapter
+from .utokyo import UTokyoAdapter
 from .yale import YaleAdapter
+from .yonsei import YonseiAdapter
 
 AdapterFactory = Callable[[], ProgrammeAdapter]
 
@@ -57,6 +62,7 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "bristol": BristolAdapter,
     "caltech": CaltechAdapter,
     "cambridge": CambridgeAdapter,
+    "columbia": ColumbiaAdapter,
     "cornell": CornellAdapter,
     "cuhk": CUHKAdapter,
     "edinburgh": EdinburghAdapter,
@@ -82,6 +88,8 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "polyu": PolyUAdapter,
     "princeton": PrincetonAdapter,
     "psl": PSLAdapter,
+    "sjtu": SJTUAdapter,
+    "snu": SNUAdapter,
     "southampton": SouthamptonAdapter,
     "stanford": StanfordAdapter,
     "sydney": SydneyAdapter,
@@ -94,5 +102,7 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "unsw": UNSWAdapter,
     "uq": UQAdapter,
     "upenn": UpennAdapter,
+    "utokyo": UTokyoAdapter,
     "yale": YaleAdapter,
+    "yonsei": YonseiAdapter,
 }

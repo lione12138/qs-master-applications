@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "Automatically discovered programme candidates awaiting manual review. This file is not published.",
-    "updatedAt": "2026-07-23T15:18:39.943433+00:00",
+    "updatedAt": "2026-07-23T16:03:48.086071+00:00",
     "lastBatchReplaceRemoved": 98
   },
   "partitioning": {
@@ -12,6 +12,7 @@
       "programme-candidates/by-university/australian-national-university.json",
       "programme-candidates/by-university/california-institute-of-technology-caltech.json",
       "programme-candidates/by-university/cole-polytechnique-f-d-rale-de-lausanne.json",
+      "programme-candidates/by-university/columbia-university.json",
       "programme-candidates/by-university/cornell-university.json",
       "programme-candidates/by-university/delft-university-of-technology.json",
       "programme-candidates/by-university/eth-zurich-swiss-federal-institute-of-technology.json",
@@ -28,6 +29,8 @@
       "programme-candidates/by-university/peking-university.json",
       "programme-candidates/by-university/princeton-university.json",
       "programme-candidates/by-university/psl-university.json",
+      "programme-candidates/by-university/seoul-national-university.json",
+      "programme-candidates/by-university/shanghai-jiao-tong-university.json",
       "programme-candidates/by-university/stanford-university.json",
       "programme-candidates/by-university/technical-university-of-munich.json",
       "programme-candidates/by-university/the-chinese-university-of-hong-kong.json",
@@ -41,6 +44,7 @@
       "programme-candidates/by-university/the-university-of-queensland.json",
       "programme-candidates/by-university/the-university-of-sheffield.json",
       "programme-candidates/by-university/the-university-of-sydney.json",
+      "programme-candidates/by-university/the-university-of-tokyo.json",
       "programme-candidates/by-university/tsinghua-university.json",
       "programme-candidates/by-university/ucl-university-college-london.json",
       "programme-candidates/by-university/university-of-birmingham.json",
@@ -54,7 +58,8 @@
       "programme-candidates/by-university/university-of-pennsylvania.json",
       "programme-candidates/by-university/university-of-southampton.json",
       "programme-candidates/by-university/university-of-toronto.json",
-      "programme-candidates/by-university/yale-university.json"
+      "programme-candidates/by-university/yale-university.json",
+      "programme-candidates/by-university/yonsei-university.json"
     ]
   }
 }
