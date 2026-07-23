@@ -1,6 +1,27 @@
 {
   "items": [
     {
+      "id": "known-programme-guidance:kcl-advanced-computing-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "king-s-college-london-kcl",
+      "detectedAt": "2026-07-23T10:18:52.712809+00:00",
+      "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/advanced-computing-msc/requirements",
+      "programme": {
+        "id": "kcl-advanced-computing-msc",
+        "universityId": "king-s-college-london-kcl",
+        "name": "Advanced Computing MSc",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Natural, Mathematical & Engineering Sciences | Department of Informatics",
+        "applicationUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/how-to-apply",
+        "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/advanced-computing-msc/requirements"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Application closing date guidance "
+    },
+    {
       "id": "new-programme:kcl-accounting-accountability-financial-management-msc",
       "type": "new-programme",
       "status": "pending",

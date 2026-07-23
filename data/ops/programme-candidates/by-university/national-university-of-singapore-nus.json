@@ -1,6 +1,214 @@
 {
   "items": [
     {
+      "id": "known-programme-guidance:nus-llm-asian-legal-studies-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-llm-asian-legal-studies-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "LLM (Asian Legal Studies)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:nus-llm-corporate-and-financial-services-law-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-llm-corporate-and-financial-services-law-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "LLM (Corporate and Financial Services Law)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:nus-llm-intellectual-property-and-technology-law-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-llm-intellectual-property-and-technology-law-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "LLM (Intellectual Property and Technology Law)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:nus-llm-international-and-comparative-law-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-llm-international-and-comparative-law-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "LLM (International and Comparative Law)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:nus-llm-international-arbitration-and-dispute-resolution-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-llm-international-arbitration-and-dispute-resolution-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "LLM (International Arbitration and Dispute Resolution)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:nus-llm-international-business-law-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-llm-international-business-law-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "LLM (International Business Law)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:nus-llm-maritime-law-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-llm-maritime-law-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "LLM (Maritime Law)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time;Part-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:nus-master-of-laws-llm-coursework",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html",
+      "programme": {
+        "id": "nus-master-of-laws-llm-coursework",
+        "universityId": "national-university-of-singapore-nus",
+        "name": "Master of Laws (LLM)",
+        "degreeType": "LLM",
+        "faculty": "LAW",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://law1a.nus.edu.sg/admissions/llm.html"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "NUS's official postgraduate catalogue confirms this programme (Master's by Coursework; intake: Aug; mode: Full-Time), but does not publish an exact application opening and closing date.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-api",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
       "id": "new-programme:nus-duke-nus-master-of-international-translational-medicine-coursework",
       "type": "new-programme",
       "status": "pending",

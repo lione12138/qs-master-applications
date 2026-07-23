@@ -2,10 +2,10 @@
   "universities": {
     "university-of-bristol": {
       "sourceUrl": "https://www.bristol.ac.uk/study/postgraduate/search/",
-      "checkedAt": "2026-07-14T19:05:09.917759+00:00",
+      "checkedAt": "2026-07-23T10:13:15.754860+00:00",
       "itemCount": 146,
       "applicationOpensAt": null,
-      "catalogHash": "f610a6e5631a8fa90423c262950202070e4bdcd4bd711055a4bd1308a78829d3",
+      "catalogHash": "614aee0d65ea200e65ba251a8a2d8db3ac75edc8d88898847f27bb2115881692",
       "programmes": {
         "bristol-computer-science-conversion-msc": {
           "name": "MSc Computer Science (Conversion)",
@@ -802,16 +802,16 @@
         "bristol-msc-interpreting": {
           "name": "MSc Interpreting",
           "degreeType": "MSc",
-          "faculty": "Arts Law and Social Sciences",
-          "department": "School of Modern Languages",
-          "parseStatus": "incomplete",
-          "deadlineHash": "4f51eb2eec5f78266d041c244d0283c9fb8b6258325a1285494b6c20652de9b3"
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "bristol-msc-leading-strategic-change": {
           "name": "MSc Leading Strategic Change",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
+          "faculty": "Arts Law and Social Sciences",
+          "department": "University of Bristol Business School",
           "parseStatus": "no-deadline",
           "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
