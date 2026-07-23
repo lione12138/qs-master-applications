@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-23T16:03:48.086071+00:00",
+    "updatedAt": "2026-07-23T16:23:51.279468+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "partitioning": {
@@ -18,6 +18,7 @@
       "programme-catalog-state/by-university/fudan-university.json",
       "programme-catalog-state/by-university/harvard-university.json",
       "programme-catalog-state/by-university/imperial-college-london.json",
+      "programme-catalog-state/by-university/institut-polytechnique-de-paris.json",
       "programme-catalog-state/by-university/johns-hopkins-university.json",
       "programme-catalog-state/by-university/king-s-college-london-kcl.json",
       "programme-catalog-state/by-university/massachusetts-institute-of-technology-mit.json",
@@ -25,6 +26,7 @@
       "programme-catalog-state/by-university/monash-university.json",
       "programme-catalog-state/by-university/nanyang-technological-university-singapore-ntu-singapore.json",
       "programme-catalog-state/by-university/national-university-of-singapore-nus.json",
+      "programme-catalog-state/by-university/northwestern-university.json",
       "programme-catalog-state/by-university/peking-university.json",
       "programme-catalog-state/by-university/princeton-university.json",
       "programme-catalog-state/by-university/psl-university.json",
@@ -48,7 +50,9 @@
       "programme-catalog-state/by-university/ucl-university-college-london.json",
       "programme-catalog-state/by-university/university-of-birmingham.json",
       "programme-catalog-state/by-university/university-of-bristol.json",
+      "programme-catalog-state/by-university/university-of-british-columbia.json",
       "programme-catalog-state/by-university/university-of-california-berkeley-ucb.json",
+      "programme-catalog-state/by-university/university-of-california-los-angeles-ucla.json",
       "programme-catalog-state/by-university/university-of-cambridge.json",
       "programme-catalog-state/by-university/university-of-chicago.json",
       "programme-catalog-state/by-university/university-of-edinburgh.json",
@@ -58,7 +62,8 @@
       "programme-catalog-state/by-university/university-of-southampton.json",
       "programme-catalog-state/by-university/university-of-toronto.json",
       "programme-catalog-state/by-university/yale-university.json",
-      "programme-catalog-state/by-university/yonsei-university.json"
+      "programme-catalog-state/by-university/yonsei-university.json",
+      "programme-catalog-state/by-university/zhejiang-university.json"
     ]
   }
 }
