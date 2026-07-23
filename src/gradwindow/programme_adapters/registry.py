@@ -3,6 +3,7 @@ from __future__ import annotations
 from collections.abc import Callable
 
 from .base import ProgrammeAdapter
+from .berkeley import BerkeleyAdapter
 from .birmingham import BirminghamAdapter
 from .bristol import BristolAdapter
 from .caltech import CaltechAdapter
@@ -10,7 +11,9 @@ from .cambridge import CambridgeAdapter
 from .cornell import CornellAdapter
 from .cuhk import CUHKAdapter
 from .edinburgh import EdinburghAdapter
+from .epfl import EPFLAdapter
 from .eth import ETHAdapter
+from .fudan import FudanAdapter
 from .glasgow import GlasgowAdapter
 from .harvard import HarvardAdapter
 from .hku import HKUAdapter
@@ -32,6 +35,8 @@ from .stanford import StanfordAdapter
 from .sydney import SydneyAdapter
 from .tsinghua import TsinghuaAdapter
 from .tudelft import TUDelftAdapter
+from .tum import TUMAdapter
+from .uchicago import UChicagoAdapter
 from .ucl import UCLAdapter
 from .unsw import UNSWAdapter
 from .upenn import UpennAdapter
@@ -41,6 +46,7 @@ from .yale import YaleAdapter
 AdapterFactory = Callable[[], ProgrammeAdapter]
 
 PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
+    "berkeley": BerkeleyAdapter,
     "birmingham": BirminghamAdapter,
     "bristol": BristolAdapter,
     "caltech": CaltechAdapter,
@@ -48,7 +54,9 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "cornell": CornellAdapter,
     "cuhk": CUHKAdapter,
     "edinburgh": EdinburghAdapter,
+    "epfl": EPFLAdapter,
     "eth": ETHAdapter,
+    "fudan": FudanAdapter,
     "glasgow": GlasgowAdapter,
     "harvard": HarvardAdapter,
     "hku": HKUAdapter,
@@ -70,6 +78,8 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "sydney": SydneyAdapter,
     "tsinghua": TsinghuaAdapter,
     "tudelft": TUDelftAdapter,
+    "tum": TUMAdapter,
+    "uchicago": UChicagoAdapter,
     "ucl": UCLAdapter,
     "unsw": UNSWAdapter,
     "uq": UQAdapter,

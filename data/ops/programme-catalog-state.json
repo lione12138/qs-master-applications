@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-23T10:53:10.419723+00:00",
+    "updatedAt": "2026-07-23T11:25:14.667686+00:00",
     "description": "Latest official programme-catalog discovery snapshots."
   },
   "partitioning": {
@@ -9,9 +9,11 @@
     "root": "programme-catalog-state/by-university",
     "files": [
       "programme-catalog-state/by-university/california-institute-of-technology-caltech.json",
+      "programme-catalog-state/by-university/cole-polytechnique-f-d-rale-de-lausanne.json",
       "programme-catalog-state/by-university/cornell-university.json",
       "programme-catalog-state/by-university/delft-university-of-technology.json",
       "programme-catalog-state/by-university/eth-zurich-swiss-federal-institute-of-technology.json",
+      "programme-catalog-state/by-university/fudan-university.json",
       "programme-catalog-state/by-university/harvard-university.json",
       "programme-catalog-state/by-university/imperial-college-london.json",
       "programme-catalog-state/by-university/johns-hopkins-university.json",
@@ -22,6 +24,7 @@
       "programme-catalog-state/by-university/national-university-of-singapore-nus.json",
       "programme-catalog-state/by-university/peking-university.json",
       "programme-catalog-state/by-university/stanford-university.json",
+      "programme-catalog-state/by-university/technical-university-of-munich.json",
       "programme-catalog-state/by-university/the-chinese-university-of-hong-kong.json",
       "programme-catalog-state/by-university/the-hong-kong-polytechnic-university.json",
       "programme-catalog-state/by-university/the-hong-kong-university-of-science-and-technology.json",
@@ -37,6 +40,7 @@
       "programme-catalog-state/by-university/ucl-university-college-london.json",
       "programme-catalog-state/by-university/university-of-birmingham.json",
       "programme-catalog-state/by-university/university-of-bristol.json",
+      "programme-catalog-state/by-university/university-of-california-berkeley-ucb.json",
       "programme-catalog-state/by-university/university-of-cambridge.json",
       "programme-catalog-state/by-university/university-of-chicago.json",
       "programme-catalog-state/by-university/university-of-edinburgh.json",

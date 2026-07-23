@@ -1,0 +1,3882 @@
+{
+  "items": [
+    {
+      "id": "known-programme-guidance:berkeley-eecs-meng",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-meng/",
+      "programme": {
+        "id": "berkeley-eecs-meng",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Electrical Engineering & Computer Sciences MEng",
+        "degreeType": "MEng",
+        "faculty": "Electrical Engineering & Computer Sciences | Electrical Engineering & Computer Sciences",
+        "applicationUrl": "https://eecs.berkeley.edu/academics/graduate/industry-programs/meng/",
+        "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-meng/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-14",
+          "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-meng/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 14, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20325-urban-design",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/urban-design/",
+      "programme": {
+        "id": "berkeley-20325-urban-design",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Urban Design MUD",
+        "degreeType": "MUD",
+        "faculty": "Institute of Urban & Regional Development | Institute of Urban & Regional Development",
+        "applicationUrl": "https://ced.berkeley.edu/iurd/urban-design/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/urban-design/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-18",
+          "sourceUrl": "https://grad.berkeley.edu/program/urban-design/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 18, 2026 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20326-translational-medicine-joint-with-ucsf",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/translational-medicine-joint-with-ucsf/",
+      "programme": {
+        "id": "berkeley-20326-translational-medicine-joint-with-ucsf",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Translational Medicine (joint UCSF) MTM",
+        "degreeType": "MTM",
+        "faculty": "Bioengineering | Bioengineering",
+        "applicationUrl": "https://mtm.berkeley.edu/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/translational-medicine-joint-with-ucsf/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-07",
+          "sourceUrl": "https://grad.berkeley.edu/program/translational-medicine-joint-with-ucsf/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 7, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20327-statistics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/statistics/",
+      "programme": {
+        "id": "berkeley-20327-statistics",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Statistics MA",
+        "degreeType": "MA",
+        "faculty": "Statistics | Statistics",
+        "applicationUrl": "https://statistics.berkeley.edu/academics/masters",
+        "sourceUrl": "https://grad.berkeley.edu/program/statistics/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/statistics/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20342-architecture",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/architecture/",
+      "programme": {
+        "id": "berkeley-20342-architecture",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Architecture MArch",
+        "degreeType": "MArch",
+        "faculty": "Architecture | Architecture",
+        "applicationUrl": "https://ced.berkeley.edu/arch/degrees-admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/architecture/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-05",
+          "sourceUrl": "https://grad.berkeley.edu/program/architecture/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 5, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20343-art-practice",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/art-practice/",
+      "programme": {
+        "id": "berkeley-20343-art-practice",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Art Practice MFA",
+        "degreeType": "MFA",
+        "faculty": "Art Practice | Art Practice",
+        "applicationUrl": "https://art.berkeley.edu/degrees/master-fine-arts-mfa-degree",
+        "sourceUrl": "https://grad.berkeley.edu/program/art-practice/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/art-practice/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20344-asian-studies",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/asian-studies/",
+      "programme": {
+        "id": "berkeley-20344-asian-studies",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Asian Studies MA",
+        "degreeType": "MA",
+        "faculty": "Asian Studies Graduate Group | Asian Studies Graduate Group",
+        "applicationUrl": "https://asianstudies.berkeley.edu/program/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/asian-studies/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/asian-studies/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20350-bioengineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/bioengineering/",
+      "programme": {
+        "id": "berkeley-20350-bioengineering",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Bioengineering MEng",
+        "degreeType": "MEng",
+        "faculty": "Bioengineering | Bioengineering",
+        "applicationUrl": "https://bioeng.berkeley.edu/meng",
+        "sourceUrl": "https://grad.berkeley.edu/program/bioengineering/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-14",
+          "sourceUrl": "https://grad.berkeley.edu/program/bioengineering/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 14, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20352-biostatistics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/biostatistics/",
+      "programme": {
+        "id": "berkeley-20352-biostatistics",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Biostatistics MA",
+        "degreeType": "MA",
+        "faculty": "University of California, Berkeley | University of California, Berkeley",
+        "applicationUrl": "https://publichealth.berkeley.edu/admissions/on-campus-non-sophas",
+        "sourceUrl": "https://grad.berkeley.edu/program/biostatistics/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/biostatistics/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20355-chemical-and-biomolecular-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/chemical-and-biomolecular-engineering/",
+      "programme": {
+        "id": "berkeley-20355-chemical-and-biomolecular-engineering",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Chemical and Biomolecular Engineering MS",
+        "degreeType": "MS",
+        "faculty": "Chemistry & Biomolecular Engineering | Chemistry & Biomolecular Engineering",
+        "applicationUrl": "https://chemistry.berkeley.edu/grad/cbe/ms/admission",
+        "sourceUrl": "https://grad.berkeley.edu/program/chemical-and-biomolecular-engineering/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'Paused for admissions' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20359-civil-environmental-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/civil-environmental-engineering/",
+      "programme": {
+        "id": "berkeley-20359-civil-environmental-engineering",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Civil and Environmental Engineering MEng",
+        "degreeType": "MEng",
+        "faculty": "Civil & Environmental Engineering | Civil & Environmental Engineering",
+        "applicationUrl": "https://ce.berkeley.edu/grad/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/civil-environmental-engineering/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-14",
+          "sourceUrl": "https://grad.berkeley.edu/program/civil-environmental-engineering/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 14, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20366-computer-science",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/computer-science/",
+      "programme": {
+        "id": "berkeley-20366-computer-science",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Computer Science MS",
+        "degreeType": "MS",
+        "faculty": "Electrical Engineering & Computer Sciences | Electrical Engineering & Computer Sciences",
+        "applicationUrl": "https://eecs.berkeley.edu/academics/graduate",
+        "sourceUrl": "https://grad.berkeley.edu/program/computer-science/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/computer-science/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20367-demography",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/demography/",
+      "programme": {
+        "id": "berkeley-20367-demography",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Demography MA",
+        "degreeType": "MA",
+        "faculty": "Demography | Demography",
+        "applicationUrl": "https://www.demog.berkeley.edu/graduate-admission-information/",
+        "sourceUrl": "https://grad.berkeley.edu/program/demography/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/demography/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20368-development-practice",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/development-practice/",
+      "programme": {
+        "id": "berkeley-20368-development-practice",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Development Practice MDP",
+        "degreeType": "MDP",
+        "faculty": "Development Practice Grad Group | Development Practice Grad Group",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/master-of-development-practice-mdp/applying-for-the-mdp",
+        "sourceUrl": "https://grad.berkeley.edu/program/development-practice/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/development-practice/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20382-environmental-health-sciences",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/environmental-health-sciences/",
+      "programme": {
+        "id": "berkeley-20382-environmental-health-sciences",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Environmental Health Sciences MS",
+        "degreeType": "MS",
+        "faculty": "Environmental Health Sciences Graduate Group | Environmental Health Sciences Graduate Group",
+        "applicationUrl": "https://publichealth.berkeley.edu/academics/programs/environmental-health-sciences-ms",
+        "sourceUrl": "https://grad.berkeley.edu/program/environmental-health-sciences/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/environmental-health-sciences/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20384-epidemiology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/epidemiology/",
+      "programme": {
+        "id": "berkeley-20384-epidemiology",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Epidemiology MS",
+        "degreeType": "MS",
+        "faculty": "Epidemiology Graduate Group | Epidemiology Graduate Group",
+        "applicationUrl": "https://publichealth.berkeley.edu/academics/epidemiology/epidemiology-ms/",
+        "sourceUrl": "https://grad.berkeley.edu/program/epidemiology/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/epidemiology/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20387-folklore",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/folklore/",
+      "programme": {
+        "id": "berkeley-20387-folklore",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Folklore MA",
+        "degreeType": "MA",
+        "faculty": "Folklore Graduate Group | Folklore Graduate Group",
+        "applicationUrl": "https://folklore.berkeley.edu/",
+        "sourceUrl": "https://grad.berkeley.edu/program/folklore/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/folklore/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20400-information-management-systems",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/information-management-systems/",
+      "programme": {
+        "id": "berkeley-20400-information-management-systems",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Information Management & Systems MIMS",
+        "degreeType": "MIMS/PhD",
+        "faculty": "Information | Information",
+        "applicationUrl": "https://www.ischool.berkeley.edu/programs/mims/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/information-management-systems/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/information-management-systems/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20403-journalism",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/journalism/",
+      "programme": {
+        "id": "berkeley-20403-journalism",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Journalism MJ",
+        "degreeType": "MJ",
+        "faculty": "Journalism | Journalism",
+        "applicationUrl": "https://journalism.berkeley.edu/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/journalism/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-18",
+          "sourceUrl": "https://grad.berkeley.edu/program/journalism/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 18, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20415-metabolic-biology",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/metabolic-biology/",
+      "programme": {
+        "id": "berkeley-20415-metabolic-biology",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Metabolic Biology MS",
+        "degreeType": "MS",
+        "faculty": "Metabolic Biology Graduate Group | Metabolic Biology Graduate Group",
+        "applicationUrl": "https://mbn.berkeley.edu/graduate-programs/metabolic-biology/metabolic-biology-admissions-0",
+        "sourceUrl": "https://grad.berkeley.edu/program/metabolic-biology/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/metabolic-biology/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20426-range-management",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/range-management/",
+      "programme": {
+        "id": "berkeley-20426-range-management",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Rangeland and Wildlife Management MS",
+        "degreeType": "MS",
+        "faculty": "Rangeland & Wildlife Mgmt Graduate Group | Rangeland & Wildlife Mgmt Graduate Group",
+        "applicationUrl": "https://ourenvironment.berkeley.edu/graduate-programs/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/range-management/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/range-management/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20457-health-medical-sciences-medical-program-joint-program-with-ucsf",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/health-medical-sciences-medical-program-joint-program-with-ucsf/",
+      "programme": {
+        "id": "berkeley-20457-health-medical-sciences-medical-program-joint-program-with-ucsf",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Health and Medical Sciences (Joint UCSF) MS (Dept pre-approval to apply)",
+        "degreeType": "MS",
+        "faculty": "Health & Medical Sciences Graduate Group Group | Health & Medical Sciences Graduate Group Group",
+        "applicationUrl": "https://publichealth.berkeley.edu/academics/joint-medical-program/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/health-medical-sciences-medical-program-joint-program-with-ucsf/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-02-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/health-medical-sciences-medical-program-joint-program-with-ucsf/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists February 15, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20462-business-administration-mba-for-executives",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-mba-for-executives/",
+      "programme": {
+        "id": "berkeley-20462-business-administration-mba-for-executives",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "MBA for Executives",
+        "degreeType": "MBA",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://mbaforexecs.haas.berkeley.edu/admissions/emba-contact",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-mba-for-executives/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20463-business-administration-full-time-mba-program",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-full-time-mba-program/",
+      "programme": {
+        "id": "berkeley-20463-business-administration-full-time-mba-program",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Full-Time MBA",
+        "degreeType": "MBA",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://mba.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-full-time-mba-program/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20464-business-administration-masters-in-financial-engineering-program",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-masters-in-financial-engineering-program/",
+      "programme": {
+        "id": "berkeley-20464-business-administration-masters-in-financial-engineering-program",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Financial Engineering MFE",
+        "degreeType": "MFE",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://mfe.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-masters-in-financial-engineering-program/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Spring admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20467-business-administration-evening-weekend-mba-program",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-evening-weekend-mba-program/",
+      "programme": {
+        "id": "berkeley-20467-business-administration-evening-weekend-mba-program",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Evening & Weekend MBA",
+        "degreeType": "MBA",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://ewmba.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-evening-weekend-mba-program/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-20955-forestry",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/forestry/",
+      "programme": {
+        "id": "berkeley-20955-forestry",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Forestry MF",
+        "degreeType": "MF",
+        "faculty": "Environmental Science Policy & Management | Environmental Science Policy & Management",
+        "applicationUrl": "https://ourenvironment.berkeley.edu/graduate-programs/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/forestry/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/forestry/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-21480-master-of-public-affairs",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-public-affairs/",
+      "programme": {
+        "id": "berkeley-21480-master-of-public-affairs",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Affairs MPA",
+        "degreeType": "MPA",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-affairs-mpa",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-public-affairs/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-04-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-public-affairs/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists April 1, 2026 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-23173-global-studies-pending-approval",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/global-studies-pending-approval/",
+      "programme": {
+        "id": "berkeley-23173-global-studies-pending-approval",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Global Studies MA",
+        "degreeType": "MA",
+        "faculty": "Global Studies Graduate Group | Global Studies Graduate Group",
+        "applicationUrl": "https://globalstudies.berkeley.edu/graduate/ma-global-studies",
+        "sourceUrl": "https://grad.berkeley.edu/program/global-studies-pending-approval/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/global-studies-pending-approval/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-24810-master-in-real-estate-development-design",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-in-real-estate-development-design/",
+      "programme": {
+        "id": "berkeley-24810-master-in-real-estate-development-design",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Real Estate Development + Design (MRED+D)",
+        "degreeType": "MRED+D",
+        "faculty": "Institute of Urban & Regional Development | Institute of Urban & Regional Development",
+        "applicationUrl": "https://ced.berkeley.edu/iurd/mredd",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-in-real-estate-development-design/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-02-02",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-in-real-estate-development-design/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists February 2, 2026 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-29143-master-of-design",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-design/",
+      "programme": {
+        "id": "berkeley-29143-master-of-design",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Design MDes",
+        "degreeType": "MDes",
+        "faculty": "Design Innovation | Design Innovation",
+        "applicationUrl": "https://design.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-design/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-design/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-29145-molecular-science-and-software-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/molecular-science-and-software-engineering/",
+      "programme": {
+        "id": "berkeley-29145-molecular-science-and-software-engineering",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Molecular Science and Software Engineering MSSE",
+        "degreeType": "MSSE",
+        "faculty": "Chemistry | Chemistry",
+        "applicationUrl": "https://msse.berkeley.edu/apply/",
+        "sourceUrl": "https://grad.berkeley.edu/program/molecular-science-and-software-engineering/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Summer, Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-31618-master-of-development-engineering",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-development-engineering/",
+      "programme": {
+        "id": "berkeley-31618-master-of-development-engineering",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Development Engineering",
+        "degreeType": "MDevEng",
+        "faculty": "University of California, Berkeley | University of California, Berkeley",
+        "applicationUrl": "https://developmentengineering.berkeley.edu/apply/",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-development-engineering/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-02-17",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-development-engineering/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists February 17, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-33598-master-of-analytics-manlytx",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-analytics-manlytx/",
+      "programme": {
+        "id": "berkeley-33598-master-of-analytics-manlytx",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Analytics MAnlytx",
+        "degreeType": "MAnlytx",
+        "faculty": "Industrial Engineering & Operations Research | Industrial Engineering & Operations Research",
+        "applicationUrl": "https://analytics.berkeley.edu/how-to-apply/",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-analytics-manlytx/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-07",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-analytics-manlytx/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 7, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-36400-nutritional-sciences-and-dietetics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/nutritional-sciences-and-dietetics/",
+      "programme": {
+        "id": "berkeley-36400-nutritional-sciences-and-dietetics",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Nutritional Sciences and Dietetics MNSD",
+        "degreeType": "MNSD",
+        "faculty": "Metabolic Biology & Nutrition | Metabolic Biology & Nutrition",
+        "applicationUrl": "https://mbn.berkeley.edu/mnsd",
+        "sourceUrl": "https://grad.berkeley.edu/program/nutritional-sciences-and-dietetics/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/nutritional-sciences-and-dietetics/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40579-anthropology-5th-year-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/anthropology-5th-year-ma/",
+      "programme": {
+        "id": "berkeley-40579-anthropology-5th-year-ma",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Anthropology 5th-Year MA (For UC Berkeley Students)",
+        "degreeType": "MA",
+        "faculty": "Anthropology | Anthropology",
+        "applicationUrl": "https://anthropology.berkeley.edu/home",
+        "sourceUrl": "https://grad.berkeley.edu/program/anthropology-5th-year-ma/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-04-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/anthropology-5th-year-ma/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists April 15, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40604-architecture-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/architecture-ms/",
+      "programme": {
+        "id": "berkeley-40604-architecture-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Architecture MS",
+        "degreeType": "MS",
+        "faculty": "Architecture | Architecture",
+        "applicationUrl": "https://ced.berkeley.edu/arch/degrees-admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/architecture-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-05",
+          "sourceUrl": "https://grad.berkeley.edu/program/architecture-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 5, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40636-chemical-and-biomolecular-engineering-prof-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/chemical-and-biomolecular-engineering-prof-ms/",
+      "programme": {
+        "id": "berkeley-40636-chemical-and-biomolecular-engineering-prof-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Chemical and Biomolecular Engineering Prof MS (PDP)",
+        "degreeType": "MS",
+        "faculty": "Chemistry & Biomolecular Engineering | Chemistry & Biomolecular Engineering",
+        "applicationUrl": "https://chemistry.berkeley.edu/grad/cbe/pdp/apply",
+        "sourceUrl": "https://grad.berkeley.edu/program/chemical-and-biomolecular-engineering-prof-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-12",
+          "sourceUrl": "https://grad.berkeley.edu/program/chemical-and-biomolecular-engineering-prof-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 12, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40649-city-planning-civil-and-environmental-engineering-mcp-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/city-planning-civil-and-environmental-engineering-mcp-ms/",
+      "programme": {
+        "id": "berkeley-40649-city-planning-civil-and-environmental-engineering-mcp-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "City Planning & Civil and Environmental Engineering MCP/MS",
+        "degreeType": "MCP/MS",
+        "faculty": "City & Regional Planning | City & Regional Planning",
+        "applicationUrl": "https://ced.berkeley.edu/academics/degrees-certificates/concurrent-degrees/mcp-ms-engineering",
+        "sourceUrl": "https://grad.berkeley.edu/program/city-planning-civil-and-environmental-engineering-mcp-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/city-planning-civil-and-environmental-engineering-mcp-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40656-city-planning-law-hastings-mcp-jd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/city-planning-law-hastings-mcp-jd/",
+      "programme": {
+        "id": "berkeley-40656-city-planning-law-hastings-mcp-jd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "City Planning & Law (Hastings) MCP/JD",
+        "degreeType": "MCP/JD",
+        "faculty": "City & Regional Planning | City & Regional Planning",
+        "applicationUrl": "https://ced.berkeley.edu/city/degrees-admissions/concurrent-dcrp-degrees",
+        "sourceUrl": "https://grad.berkeley.edu/program/city-planning-law-hastings-mcp-jd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/city-planning-law-hastings-mcp-jd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40658-city-planning-law-mcp-jd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/city-planning-law-mcp-jd/",
+      "programme": {
+        "id": "berkeley-40658-city-planning-law-mcp-jd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "City Planning & Law MCP/JD",
+        "degreeType": "MCP/JD",
+        "faculty": "City & Regional Planning | City & Regional Planning",
+        "applicationUrl": "https://ced.berkeley.edu/city/degrees-admissions/concurrent-dcrp-degrees",
+        "sourceUrl": "https://grad.berkeley.edu/program/city-planning-law-mcp-jd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/city-planning-law-mcp-jd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40660-city-planning-public-health-mcp-mph",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/city-planning-public-health-mcp-mph/",
+      "programme": {
+        "id": "berkeley-40660-city-planning-public-health-mcp-mph",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "City Planning & Public Health MCP/MPH",
+        "degreeType": "MCP/MPH",
+        "faculty": "City & Regional Planning | City & Regional Planning",
+        "applicationUrl": "https://publichealth.berkeley.edu/admissions/on-campus",
+        "sourceUrl": "https://grad.berkeley.edu/program/city-planning-public-health-mcp-mph/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/city-planning-public-health-mcp-mph/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40666-civil-environmental-engineering-prof-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/civil-environmental-engineering-prof-ms/",
+      "programme": {
+        "id": "berkeley-40666-civil-environmental-engineering-prof-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Civil & Environmental Engineering Prof MS",
+        "degreeType": "MS",
+        "faculty": "Civil & Environmental Engineering | Civil & Environmental Engineering",
+        "applicationUrl": "https://ce.berkeley.edu/grad/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/civil-environmental-engineering-prof-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/civil-environmental-engineering-prof-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40678-computer-science-ms-phd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/computer-science-ms-phd/",
+      "programme": {
+        "id": "berkeley-40678-computer-science-ms-phd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Computer Science MS/PhD",
+        "degreeType": "MS/PhD",
+        "faculty": "Electrical Engineering & Computer Sciences | Electrical Engineering & Computer Sciences",
+        "applicationUrl": "https://eecs.berkeley.edu/academics/graduate",
+        "sourceUrl": "https://grad.berkeley.edu/program/computer-science-ms-phd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/computer-science-ms-phd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40691-earth-and-planetary-science-5th-year-ma-for-uc-berkeley-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/earth-and-planetary-science-5th-year-ma-for-uc-berkeley-students/",
+      "programme": {
+        "id": "berkeley-40691-earth-and-planetary-science-5th-year-ma-for-uc-berkeley-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Earth and Planetary Science 5th-Year MA (For UC Berkeley Students)",
+        "degreeType": "MA",
+        "faculty": "Earth & Planetary Science | Earth & Planetary Science",
+        "applicationUrl": "https://eps.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/earth-and-planetary-science-5th-year-ma-for-uc-berkeley-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/earth-and-planetary-science-5th-year-ma-for-uc-berkeley-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40696-economics-ma-for-uc-berkeley-graduate-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/economics-ma-for-uc-berkeley-graduate-students/",
+      "programme": {
+        "id": "berkeley-40696-economics-ma-for-uc-berkeley-graduate-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Economics MA (For UC Berkeley Graduate Students)",
+        "degreeType": "MA",
+        "faculty": "Economics | Economics",
+        "applicationUrl": "https://www.econ.berkeley.edu/grad/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/economics-ma-for-uc-berkeley-graduate-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/economics-ma-for-uc-berkeley-graduate-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40702-education-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/education-ma/",
+      "programme": {
+        "id": "berkeley-40702-education-ma",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Education MA",
+        "degreeType": "MA",
+        "faculty": "Education | Education",
+        "applicationUrl": "https://bse.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/education-ma/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/education-ma/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40706-education-admin-services-credential-cred-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/education-admin-services-credential-cred-ma/",
+      "programme": {
+        "id": "berkeley-40706-education-admin-services-credential-cred-ma",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Education-Admin Services Credential Cred/MA",
+        "degreeType": "Cred/MA",
+        "faculty": "Education | Education",
+        "applicationUrl": "https://bse.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/education-admin-services-credential-cred-ma/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/education-admin-services-credential-cred-ma/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40711-education-teaching-credential-cred-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/education-teaching-credential-cred-ma/",
+      "programme": {
+        "id": "berkeley-40711-education-teaching-credential-cred-ma",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Education-Teaching Credential Cred/MA",
+        "degreeType": "Cred/MA",
+        "faculty": "Education | Education",
+        "applicationUrl": "https://bse.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/education-teaching-credential-cred-ma/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/education-teaching-credential-cred-ma/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40715-electrical-engineering-computer-sciences-5th-year-ms-for-uc-berkeley-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-5th-year-ms-for-uc-berkeley-students/",
+      "programme": {
+        "id": "berkeley-40715-electrical-engineering-computer-sciences-5th-year-ms-for-uc-berkeley-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Electrical Engineering & Computer Sciences 5th-Year MS (For UC Berkeley students)",
+        "degreeType": "MS",
+        "faculty": "Electrical Engineering & Computer Sciences | Electrical Engineering & Computer Sciences",
+        "applicationUrl": "https://eecs.berkeley.edu/academics/graduate/industry-programs/",
+        "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-5th-year-ms-for-uc-berkeley-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-16",
+          "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-5th-year-ms-for-uc-berkeley-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 16, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40719-electrical-engineering-computer-sciences-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-ms/",
+      "programme": {
+        "id": "berkeley-40719-electrical-engineering-computer-sciences-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Electrical Engineering & Computer Sciences MS",
+        "degreeType": "MS",
+        "faculty": "Electrical Engineering & Computer Sciences | Electrical Engineering & Computer Sciences",
+        "applicationUrl": "https://eecs.berkeley.edu/academics/graduate/industry-programs/",
+        "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40721-electrical-engineering-computer-sciences-ms-phd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-ms-phd/",
+      "programme": {
+        "id": "berkeley-40721-electrical-engineering-computer-sciences-ms-phd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Electrical Engineering & Computer Sciences MS/PhD",
+        "degreeType": "MS/PhD",
+        "faculty": "Electrical Engineering & Computer Sciences | Electrical Engineering & Computer Sciences",
+        "applicationUrl": "https://eecs.berkeley.edu/academics/graduate/research-programs/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-ms-phd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/electrical-engineering-computer-sciences-ms-phd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40729-energy-and-resources-m-a-law-j-d-berkeley",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-m-a-law-j-d-berkeley/",
+      "programme": {
+        "id": "berkeley-40729-energy-and-resources-m-a-law-j-d-berkeley",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Energy and Resources (M.A.) – Law (J.D.) – Berkeley",
+        "degreeType": "MA/JD",
+        "faculty": "Energy & Resources Graduate Group | Energy & Resources Graduate Group",
+        "applicationUrl": "https://erg.berkeley.edu/academics/programs/",
+        "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-m-a-law-j-d-berkeley/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'Paused for Admissions' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40731-energy-and-resources-m-s-law-j-d-berkeley",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-m-s-law-j-d-berkeley/",
+      "programme": {
+        "id": "berkeley-40731-energy-and-resources-m-s-law-j-d-berkeley",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Energy and Resources (M.S.) – Law (J.D.) — Berkeley",
+        "degreeType": "JD/MS",
+        "faculty": "Energy & Resources Graduate Group | Energy & Resources Graduate Group",
+        "applicationUrl": "https://erg.berkeley.edu/academics/programs/",
+        "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-m-s-law-j-d-berkeley/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-m-s-law-j-d-berkeley/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40733-energy-and-resources-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-ma/",
+      "programme": {
+        "id": "berkeley-40733-energy-and-resources-ma",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Energy and Resources MA",
+        "degreeType": "MA",
+        "faculty": "Energy & Resources Graduate Group | Energy & Resources Graduate Group",
+        "applicationUrl": "https://erg.berkeley.edu/",
+        "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-ma/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'Paused for Admissions' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40735-energy-and-resources-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-ms/",
+      "programme": {
+        "id": "berkeley-40735-energy-and-resources-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Energy and Resources MS",
+        "degreeType": "MS",
+        "faculty": "Energy & Resources Graduate Group | Energy & Resources Graduate Group",
+        "applicationUrl": "https://erg.berkeley.edu/",
+        "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/energy-and-resources-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40753-forestry-5th-year-mf-ucb-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/forestry-5th-year-mf-ucb-students/",
+      "programme": {
+        "id": "berkeley-40753-forestry-5th-year-mf-ucb-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Forestry 5th Year MF (For UC Berkeley students)",
+        "degreeType": "MF",
+        "faculty": "Environmental Science Policy & Management PhD | Environmental Science Policy & Management PhD",
+        "applicationUrl": "https://ourenvironment.berkeley.edu/graduate-programs/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/forestry-5th-year-mf-ucb-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/forestry-5th-year-mf-ucb-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40769-industrial-engineering-operations-research-5th-year-ms-for-uc-berkeley-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-5th-year-ms-for-uc-berkeley-students/",
+      "programme": {
+        "id": "berkeley-40769-industrial-engineering-operations-research-5th-year-ms-for-uc-berkeley-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Industrial Engineering & Operations Research 5th-year MS (For UC Berkeley students)",
+        "degreeType": "MS",
+        "faculty": "Industrial Engineering & Operations Research | Industrial Engineering & Operations Research",
+        "applicationUrl": "https://ieor.berkeley.edu/academics/bs-ms-ieor/",
+        "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-5th-year-ms-for-uc-berkeley-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-5th-year-ms-for-uc-berkeley-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40771-industrial-engineering-operations-research-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-meng/",
+      "programme": {
+        "id": "berkeley-40771-industrial-engineering-operations-research-meng",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Industrial Engineering & Operations Research MEng",
+        "degreeType": "MEng",
+        "faculty": "Industrial Engineering & Operations Research | Industrial Engineering & Operations Research",
+        "applicationUrl": "https://ieor.berkeley.edu/academics/master-of-engineering/",
+        "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-meng/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-07",
+          "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-meng/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 7, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40773-industrial-engineering-operations-research-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-ms/",
+      "programme": {
+        "id": "berkeley-40773-industrial-engineering-operations-research-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Industrial Engineering & Operations Research MS",
+        "degreeType": "MS",
+        "faculty": "Industrial Engineering & Operations Research | Industrial Engineering & Operations Research",
+        "applicationUrl": "https://ieor.berkeley.edu/academics/master-of-science/",
+        "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/industrial-engineering-operations-research-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40777-information-cyber-security-mics",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/information-cyber-security-mics/",
+      "programme": {
+        "id": "berkeley-40777-information-cyber-security-mics",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Information & Cyber Security MICS",
+        "degreeType": "MICS",
+        "faculty": "Information | Information",
+        "applicationUrl": "https://ischoolonline.berkeley.edu/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/information-cyber-security-mics/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Spring, Summer, Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40779-information-data-science-mids",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/information-data-science-mids/",
+      "programme": {
+        "id": "berkeley-40779-information-data-science-mids",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Information & Data Science MIDS",
+        "degreeType": "MIDS",
+        "faculty": "Information | Information",
+        "applicationUrl": "https://ischoolonline.berkeley.edu/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/information-data-science-mids/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Spring, Summer, Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40793-journalism-asian-studies-mjour-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/journalism-asian-studies-mjour-ma/",
+      "programme": {
+        "id": "berkeley-40793-journalism-asian-studies-mjour-ma",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Journalism & Asian Studies MJ/MA",
+        "degreeType": "MA/MJ",
+        "faculty": "Journalism | Journalism",
+        "applicationUrl": "https://journalism.berkeley.edu/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/journalism-asian-studies-mjour-ma/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/journalism-asian-studies-mjour-ma/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40798-landscape-architecture-architecture-mla-march",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-architecture-mla-march/",
+      "programme": {
+        "id": "berkeley-40798-landscape-architecture-architecture-mla-march",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Landscape Architecture & Architecture MLA/MArch",
+        "degreeType": "MArch/MLA",
+        "faculty": "Landscape Architecture & Environmental Planning | Landscape Architecture & Environmental Planning",
+        "applicationUrl": "https://ced.berkeley.edu/admissions/graduate-admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-architecture-mla-march/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-05",
+          "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-architecture-mla-march/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 5, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40800-landscape-architecture-city-planning-mla-mcp",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-city-planning-mla-mcp/",
+      "programme": {
+        "id": "berkeley-40800-landscape-architecture-city-planning-mla-mcp",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Landscape Architecture & City Planning MLA/MCP",
+        "degreeType": "MCP/MLA",
+        "faculty": "Landscape Architecture & Environmental Planning | Landscape Architecture & Environmental Planning",
+        "applicationUrl": "https://ced.berkeley.edu/academics/degrees-certificates/concurrent-degrees",
+        "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-city-planning-mla-mcp/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-city-planning-mla-mcp/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40802-landscape-architecture-mla",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-mla/",
+      "programme": {
+        "id": "berkeley-40802-landscape-architecture-mla",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Landscape Architecture MLA",
+        "degreeType": "MLA",
+        "faculty": "Landscape Architecture & Environmental Planning | Landscape Architecture & Environmental Planning",
+        "applicationUrl": "https://ced.berkeley.edu/admissions/graduate-admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-mla/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-05",
+          "sourceUrl": "https://grad.berkeley.edu/program/landscape-architecture-mla/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 5, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40808-law-llm",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/law-llm/",
+      "programme": {
+        "id": "berkeley-40808-law-llm",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Law LLM",
+        "degreeType": "LLM",
+        "faculty": "Law | Law",
+        "applicationUrl": "https://www.law.berkeley.edu/academics/llm/",
+        "sourceUrl": "https://grad.berkeley.edu/program/law-llm/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Varies by programme admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40812-master-of-advanced-architectural-design-maad",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-advanced-architectural-design-maad/",
+      "programme": {
+        "id": "berkeley-40812-master-of-advanced-architectural-design-maad",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Advanced Architectural Design MAAD",
+        "degreeType": "MAAD",
+        "faculty": "University of California, Berkeley | University of California, Berkeley",
+        "applicationUrl": "https://ced.berkeley.edu/arch/degrees-admissions/maad",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-advanced-architectural-design-maad/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-advanced-architectural-design-maad/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40814-master-of-advanced-study-in-engineering-mas-e",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-advanced-study-in-engineering-mas-e/",
+      "programme": {
+        "id": "berkeley-40814-master-of-advanced-study-in-engineering-mas-e",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Advanced Study in Engineering MAS-E",
+        "degreeType": "MASE",
+        "faculty": "University of California, Berkeley | University of California, Berkeley",
+        "applicationUrl": "https://mas-e.engineering.berkeley.edu/apply/",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-advanced-study-in-engineering-mas-e/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Spring, Summer, Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40816-master-of-bioprocess-engineering-mbe",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-bioprocess-engineering-mbe/",
+      "programme": {
+        "id": "berkeley-40816-master-of-bioprocess-engineering-mbe",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Bioprocess Engineering MBE",
+        "degreeType": "MBE",
+        "faculty": "Chemistry | Chemistry",
+        "applicationUrl": "https://chemistry.berkeley.edu/grad/cbe/bioprocess-engineering/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-bioprocess-engineering-mbe/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-20",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-bioprocess-engineering-mbe/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 20, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40818-master-of-city-planning-mcp",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-city-planning-mcp/",
+      "programme": {
+        "id": "berkeley-40818-master-of-city-planning-mcp",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of City Planning MCP",
+        "degreeType": "MCP",
+        "faculty": "City & Regional Planning | City & Regional Planning",
+        "applicationUrl": "https://ced.berkeley.edu/city/degrees-admissions/master-of-city-planning",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-city-planning-mcp/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-city-planning-mcp/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40825-materials-science-engineering-5th-year-ms-for-uc-berkeley-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-5th-year-ms-for-uc-berkeley-students/",
+      "programme": {
+        "id": "berkeley-40825-materials-science-engineering-5th-year-ms-for-uc-berkeley-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Materials Science & Engineering 5th-Year MS (For UC Berkeley Students)",
+        "degreeType": "MS",
+        "faculty": "Materials Science & Engineering | Materials Science & Engineering",
+        "applicationUrl": "https://mse.berkeley.edu/five-year-bs-ms/",
+        "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-5th-year-ms-for-uc-berkeley-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-5th-year-ms-for-uc-berkeley-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40827-materials-science-engineering-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-meng/",
+      "programme": {
+        "id": "berkeley-40827-materials-science-engineering-meng",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Materials Science & Engineering MEng",
+        "degreeType": "MEng",
+        "faculty": "Materials Science & Engineering | Materials Science & Engineering",
+        "applicationUrl": "https://mse.berkeley.edu/master-of-engineering/",
+        "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-meng/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-14",
+          "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-meng/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 14, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40829-materials-science-engineering-ms-phd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-ms-phd/",
+      "programme": {
+        "id": "berkeley-40829-materials-science-engineering-ms-phd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Materials Science & Engineering MS/PhD",
+        "degreeType": "MS/PhD",
+        "faculty": "Materials Science & Engineering | Materials Science & Engineering",
+        "applicationUrl": "https://mse.berkeley.edu/graduate-admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-ms-phd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/materials-science-engineering-ms-phd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40833-mathematics-ma-for-uc-berkeley-graduate-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/mathematics-ma-for-uc-berkeley-graduate-students/",
+      "programme": {
+        "id": "berkeley-40833-mathematics-ma-for-uc-berkeley-graduate-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Mathematics MA (For UC Berkeley Graduate Students)",
+        "degreeType": "MA",
+        "faculty": "Mathematics | Mathematics",
+        "applicationUrl": "https://math.berkeley.edu/programs/graduate/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/mathematics-ma-for-uc-berkeley-graduate-students/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Spring, Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40837-mechanical-engineering-5th-year-ms-for-uc-berkeley-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-5th-year-ms-for-uc-berkeley-students/",
+      "programme": {
+        "id": "berkeley-40837-mechanical-engineering-5th-year-ms-for-uc-berkeley-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Mechanical Engineering 5th-Year MS (For UC Berkeley Students)",
+        "degreeType": "MS",
+        "faculty": "Mechanical Engineering | Mechanical Engineering",
+        "applicationUrl": "https://me.berkeley.edu/graduate/fifth-year/5th-year-masters-program-handbook/",
+        "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-5th-year-ms-for-uc-berkeley-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-5th-year-ms-for-uc-berkeley-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40839-mechanical-engineering-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-meng/",
+      "programme": {
+        "id": "berkeley-40839-mechanical-engineering-meng",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Mechanical Engineering MEng",
+        "degreeType": "MEng",
+        "faculty": "Mechanical Engineering | Mechanical Engineering",
+        "applicationUrl": "https://me.berkeley.edu/graduate/meng-admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-meng/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-14",
+          "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-meng/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 14, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40841-mechanical-engineering-ms-phd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-ms-phd/",
+      "programme": {
+        "id": "berkeley-40841-mechanical-engineering-ms-phd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Mechanical Engineering MS/PhD",
+        "degreeType": "MS/PhD",
+        "faculty": "Mechanical Engineering | Mechanical Engineering",
+        "applicationUrl": "https://me.berkeley.edu/graduate/application-requirements/",
+        "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-ms-phd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-03",
+          "sourceUrl": "https://grad.berkeley.edu/program/mechanical-engineering-ms-phd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 3, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40861-nuclear-engineering-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/nuclear-engineering-meng/",
+      "programme": {
+        "id": "berkeley-40861-nuclear-engineering-meng",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Nuclear Engineering MEng",
+        "degreeType": "MEng",
+        "faculty": "Nuclear Engineering | Nuclear Engineering",
+        "applicationUrl": "https://funginstitute.berkeley.edu/apply/",
+        "sourceUrl": "https://grad.berkeley.edu/program/nuclear-engineering-meng/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-14",
+          "sourceUrl": "https://grad.berkeley.edu/program/nuclear-engineering-meng/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 14, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40877-public-health-journalism-mph-mjour",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-health-journalism-mph-mjour/",
+      "programme": {
+        "id": "berkeley-40877-public-health-journalism-mph-mjour",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Health & Journalism MPH/MJour",
+        "degreeType": "MJ/MPH",
+        "faculty": "Public Health | Public Health",
+        "applicationUrl": "https://journalism.berkeley.edu/admissions/",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-health-journalism-mph-mjour/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-health-journalism-mph-mjour/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40880-public-health-mph",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-health-mph/",
+      "programme": {
+        "id": "berkeley-40880-public-health-mph",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Health MPH",
+        "degreeType": "MPH",
+        "faculty": "Public Health | Public Health",
+        "applicationUrl": "https://publichealth.berkeley.edu/admissions/on-campus",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-health-mph/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-health-mph/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40882-public-health-mph-summer-start",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-health-mph-summer-start/",
+      "programme": {
+        "id": "berkeley-40882-public-health-mph-summer-start",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Health MPH – Summer Start",
+        "degreeType": "MPH",
+        "faculty": "Public Health | Public Health",
+        "applicationUrl": "https://publichealth.berkeley.edu/admissions/on-campus",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-health-mph-summer-start/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-health-mph-summer-start/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40884-public-health-on-campus-online-mph",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-health-on-campus-online-mph/",
+      "programme": {
+        "id": "berkeley-40884-public-health-on-campus-online-mph",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Health On-Campus/Online MPH",
+        "degreeType": "MPH",
+        "faculty": "Public Health | Public Health",
+        "applicationUrl": "https://publichealth.berkeley.edu/admissions/online",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-health-on-campus-online-mph/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Spring, Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40890-public-policy-civil-and-environmental-engineering-mpp-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-civil-and-environmental-engineering-mpp-ms/",
+      "programme": {
+        "id": "berkeley-40890-public-policy-civil-and-environmental-engineering-mpp-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Civil and Environmental Engineering MPP/MS",
+        "degreeType": "MPP/MS",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp/concurrent-degree-programs",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-civil-and-environmental-engineering-mpp-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-civil-and-environmental-engineering-mpp-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40892-public-policy-electrical-engineering-and-computer-sciences-mpp-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-electrical-engineering-and-computer-sciences-mpp-ms/",
+      "programme": {
+        "id": "berkeley-40892-public-policy-electrical-engineering-and-computer-sciences-mpp-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Electrical Engineering and Computer Sciences MPP/MS",
+        "degreeType": "MPP/MS",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://eecs.berkeley.edu/academics/graduate/industry-programs/",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-electrical-engineering-and-computer-sciences-mpp-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-electrical-engineering-and-computer-sciences-mpp-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40894-public-policy-energy-and-resources-mpp-ma",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-energy-and-resources-mpp-ma/",
+      "programme": {
+        "id": "berkeley-40894-public-policy-energy-and-resources-mpp-ma",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Energy and Resources MPP/MA",
+        "degreeType": "MA/MPP",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp/concurrent-degree-programs",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-energy-and-resources-mpp-ma/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'Paused for Admissions' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40896-public-policy-energy-and-resources-mpp-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-energy-and-resources-mpp-ms/",
+      "programme": {
+        "id": "berkeley-40896-public-policy-energy-and-resources-mpp-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Energy and Resources MPP/MS",
+        "degreeType": "MPP/MS",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp/concurrent-degree-programs",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-energy-and-resources-mpp-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-energy-and-resources-mpp-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40899-public-policy-law-mpp-jd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-law-mpp-jd/",
+      "programme": {
+        "id": "berkeley-40899-public-policy-law-mpp-jd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Law MPP/JD",
+        "degreeType": "JD/MPP",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp/concurrent-degree-programs",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-law-mpp-jd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-law-mpp-jd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40901-public-policy-mechanical-engineering-mpp-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-mechanical-engineering-mpp-ms/",
+      "programme": {
+        "id": "berkeley-40901-public-policy-mechanical-engineering-mpp-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Mechanical Engineering MPP/MS",
+        "degreeType": "MPP/MS",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp/concurrent-degree-programs",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-mechanical-engineering-mpp-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-mechanical-engineering-mpp-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40903-public-policy-nuclear-engineering-mpp-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-nuclear-engineering-mpp-ms/",
+      "programme": {
+        "id": "berkeley-40903-public-policy-nuclear-engineering-mpp-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Nuclear Engineering MPP/MS",
+        "degreeType": "MPP/MS",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp/concurrent-degree-programs",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-nuclear-engineering-mpp-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-nuclear-engineering-mpp-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40905-public-policy-public-health-mpp-mph",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-public-health-mpp-mph/",
+      "programme": {
+        "id": "berkeley-40905-public-policy-public-health-mpp-mph",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy & Public Health MPP/MPH",
+        "degreeType": "MPH/MPP",
+        "faculty": "Public Health | Public Health",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp/concurrent-degree-programs",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-public-health-mpp-mph/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-public-health-mpp-mph/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40907-public-policy-mpp",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/public-policy-mpp/",
+      "programme": {
+        "id": "berkeley-40907-public-policy-mpp",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Public Policy MPP",
+        "degreeType": "MPP",
+        "faculty": "Public Policy | Public Policy",
+        "applicationUrl": "https://gspp.berkeley.edu/programs/masters-of-public-policy-mpp",
+        "sourceUrl": "https://grad.berkeley.edu/program/public-policy-mpp/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/public-policy-mpp/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40923-social-welfare-law-msw-jd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-law-msw-jd/",
+      "programme": {
+        "id": "berkeley-40923-social-welfare-law-msw-jd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Social Welfare & Law MSW/JD",
+        "degreeType": "JD/MSW",
+        "faculty": "Social Welfare | Social Welfare",
+        "applicationUrl": "https://socialwelfare.berkeley.edu/admissions/admissions-advising-and-info-sessions",
+        "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-law-msw-jd/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-law-msw-jd/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40925-social-welfare-public-health-msw-mph",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-public-health-msw-mph/",
+      "programme": {
+        "id": "berkeley-40925-social-welfare-public-health-msw-mph",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Social Welfare & Public Health MSW/MPH",
+        "degreeType": "MPH/MSW",
+        "faculty": "Social Welfare | Social Welfare",
+        "applicationUrl": "https://socialwelfare.berkeley.edu/admissions/admissions-advising-and-info-sessions",
+        "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-public-health-msw-mph/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-public-health-msw-mph/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40927-social-welfare-public-policy-msw-mpp",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-public-policy-msw-mpp/",
+      "programme": {
+        "id": "berkeley-40927-social-welfare-public-policy-msw-mpp",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Social Welfare & Public Policy MSW/MPP",
+        "degreeType": "MPP/MSW",
+        "faculty": "Social Welfare | Social Welfare",
+        "applicationUrl": "https://socialwelfare.berkeley.edu/admissions/admissions-advising-and-info-sessions",
+        "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-public-policy-msw-mpp/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-public-policy-msw-mpp/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40929-social-welfare-advanced-standing-flex-msw",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-advanced-standing-flex-msw/",
+      "programme": {
+        "id": "berkeley-40929-social-welfare-advanced-standing-flex-msw",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Social Welfare Advanced Standing Flex MSW",
+        "degreeType": "MSW",
+        "faculty": "Social Welfare | Social Welfare",
+        "applicationUrl": "https://socialwelfare.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-advanced-standing-flex-msw/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'Paused for admissions' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40931-social-welfare-extended-flex-msw",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-extended-flex-msw/",
+      "programme": {
+        "id": "berkeley-40931-social-welfare-extended-flex-msw",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Social Welfare Extended Flex MSW",
+        "degreeType": "MSW",
+        "faculty": "Social Welfare | Social Welfare",
+        "applicationUrl": "https://socialwelfare.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-extended-flex-msw/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'Paused for admissions' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40933-social-welfare-msw",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-msw/",
+      "programme": {
+        "id": "berkeley-40933-social-welfare-msw",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Social Welfare MSW",
+        "degreeType": "MSW",
+        "faculty": "Social Welfare | Social Welfare",
+        "applicationUrl": "https://socialwelfare.berkeley.edu/admissions/admissions-advising-and-info-sessions",
+        "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-msw/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/social-welfare-msw/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40954-architecture-city-planning-march-mcp",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/architecture-city-planning-march-mcp/",
+      "programme": {
+        "id": "berkeley-40954-architecture-city-planning-march-mcp",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Architecture & City Planning MArch/MCP",
+        "degreeType": "MArch/MCP",
+        "faculty": "Architecture | Architecture",
+        "applicationUrl": "https://ced.berkeley.edu/academics/degrees-certificates/concurrent-degrees/concurrent-m-arch-mcp",
+        "sourceUrl": "https://grad.berkeley.edu/program/architecture-city-planning-march-mcp/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://grad.berkeley.edu/program/architecture-city-planning-march-mcp/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 1, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40956-architecture-civil-engineering-march-ms",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/architecture-civil-engineering-march-ms/",
+      "programme": {
+        "id": "berkeley-40956-architecture-civil-engineering-march-ms",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Architecture & Civil Engineering MArch/MS",
+        "degreeType": "MArch/MS",
+        "faculty": "Architecture | Architecture",
+        "applicationUrl": "https://ced.berkeley.edu/arch/degrees-admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/architecture-civil-engineering-march-ms/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2025-12-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/architecture-civil-engineering-march-ms/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists December 15, 2025 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40960-business-administration-law-hastings-mba-jd-m-b-a",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-law-hastings-mba-jd-m-b-a/",
+      "programme": {
+        "id": "berkeley-40960-business-administration-law-hastings-mba-jd-m-b-a",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Business Administration & Law (Hastings) MBA/JD M.B.A.",
+        "degreeType": "JD/MBA",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://mba.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-law-hastings-mba-jd-m-b-a/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40962-business-administration-law-mba-jd",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-law-mba-jd/",
+      "programme": {
+        "id": "berkeley-40962-business-administration-law-mba-jd",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Business Administration & Law MBA/JD",
+        "degreeType": "JD/MBA",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://mba.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-law-mba-jd/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40964-business-administration-masters-of-engineering-mba-meng",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-masters-of-engineering-mba-meng/",
+      "programme": {
+        "id": "berkeley-40964-business-administration-masters-of-engineering-mba-meng",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Business Administration & Masters of Engineering MBA/MEng",
+        "degreeType": "MBA/MEng",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://mba.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-masters-of-engineering-mba-meng/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-40966-business-administration-public-health-mba-mph",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-public-health-mba-mph/",
+      "programme": {
+        "id": "berkeley-40966-business-administration-public-health-mba-mph",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Business Administration & Public Health MBA/MPH",
+        "degreeType": "MBA/MPH",
+        "faculty": "Business | Business",
+        "applicationUrl": "https://mba.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-public-health-mba-mph/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-41031-master-of-computational-social-science-mcss",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-computational-social-science-mcss/",
+      "programme": {
+        "id": "berkeley-41031-master-of-computational-social-science-mcss",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Computational Social Science MaCSS",
+        "degreeType": "MCSS",
+        "faculty": "Computational Social Science Graduate Group | Computational Social Science Graduate Group",
+        "applicationUrl": "https://macss.berkeley.edu/apply/?tab=admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-computational-social-science-mcss/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-computational-social-science-mcss/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-41140-master-of-biotechnology-mbt",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-biotechnology-mbt/",
+      "programme": {
+        "id": "berkeley-41140-master-of-biotechnology-mbt",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Biotechnology",
+        "degreeType": "MBT",
+        "faculty": "Molecular & Cell Biology | Molecular & Cell Biology",
+        "applicationUrl": "https://mcb.berkeley.edu/masters/apply",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-biotechnology-mbt/"
+      },
+      "windows": [
+        {
+          "intake": "Summer admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-15",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-biotechnology-mbt/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 15, 2026 for Summer admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-45636-business-administration-master-of-climate-solutions-mba-mcs",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/business-administration-master-of-climate-solutions-mba-mcs/",
+      "programme": {
+        "id": "berkeley-45636-business-administration-master-of-climate-solutions-mba-mcs",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Business Administration & Master of Climate Solutions MBA/MCS",
+        "degreeType": "MBA/MCS",
+        "faculty": "University of California, Berkeley | University of California, Berkeley",
+        "applicationUrl": "https://mba.haas.berkeley.edu/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/business-administration-master-of-climate-solutions-mba-mcs/"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists the application deadline as 'See program website' for Fall admission. No exact opening and closing pair is available from the directory, so the programme remains monitored and no dates are inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-45837-master-of-climate-solutions-mcs",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/master-of-climate-solutions-mcs/",
+      "programme": {
+        "id": "berkeley-45837-master-of-climate-solutions-mcs",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Master of Climate Solutions MCS",
+        "degreeType": "MCS",
+        "faculty": "University of California, Berkeley | University of California, Berkeley",
+        "applicationUrl": "https://climatesolutions.berkeley.edu/mcs/admissions-overview-2/",
+        "sourceUrl": "https://grad.berkeley.edu/program/master-of-climate-solutions-mcs/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-30",
+          "sourceUrl": "https://grad.berkeley.edu/program/master-of-climate-solutions-mcs/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 30, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:berkeley-55128-statistics-5th-year-ma-for-uc-berkeley-students",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "university-of-california-berkeley-ucb",
+      "detectedAt": "2026-07-23T11:22:56.672814+00:00",
+      "sourceUrl": "https://grad.berkeley.edu/program/statistics-5th-year-ma-for-uc-berkeley-students/",
+      "programme": {
+        "id": "berkeley-55128-statistics-5th-year-ma-for-uc-berkeley-students",
+        "universityId": "university-of-california-berkeley-ucb",
+        "name": "Statistics 5th Year MA (For UC Berkeley Students)",
+        "degreeType": "MA",
+        "faculty": "Statistics | Statistics",
+        "applicationUrl": "https://statistics.berkeley.edu/academics/masters/admissions",
+        "sourceUrl": "https://grad.berkeley.edu/program/statistics-5th-year-ma-for-uc-berkeley-students/"
+      },
+      "windows": [
+        {
+          "intake": "Fall admission",
+          "round": "Application deadline",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-01-06",
+          "sourceUrl": "https://grad.berkeley.edu/program/statistics-5th-year-ma-for-uc-berkeley-students/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Berkeley's official Graduate Division directory lists January 6, 2026 for Fall admission. The central application policy does not state an exact application opening date, so the closing date remains a review candidate and no opening date is inferred.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-graduate-program-directory",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    }
+  ]
+}
