@@ -21,6 +21,7 @@ from .harvard import HarvardAdapter
 from .hku import HKUAdapter
 from .hkust import HKUSTAdapter
 from .imperial import ImperialAdapter
+from .ip_paris import IPParisAdapter
 from .jhu import JHUAdapter
 from .kcl import KCLAdapter
 from .manchester import ManchesterAdapter
@@ -28,6 +29,7 @@ from .mcgill import McGillAdapter
 from .melbourne import MelbourneAdapter
 from .mit import MITAdapter
 from .monash import MonashAdapter
+from .northwestern import NorthwesternAdapter
 from .ntu import NTUAdapter
 from .nus import NUSAdapter
 from .oxford import OxfordAdapter
@@ -44,14 +46,17 @@ from .toronto import TorontoAdapter
 from .tsinghua import TsinghuaAdapter
 from .tudelft import TUDelftAdapter
 from .tum import TUMAdapter
+from .ubc import UBCAdapter
 from .uchicago import UChicagoAdapter
 from .ucl import UCLAdapter
+from .ucla import UCLAAdapter
 from .unsw import UNSWAdapter
 from .upenn import UpennAdapter
 from .uq import UQAdapter
 from .utokyo import UTokyoAdapter
 from .yale import YaleAdapter
 from .yonsei import YonseiAdapter
+from .zju import ZJUAdapter
 
 AdapterFactory = Callable[[], ProgrammeAdapter]
 
@@ -74,6 +79,7 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "hku": HKUAdapter,
     "hkust": HKUSTAdapter,
     "imperial": ImperialAdapter,
+    "ip-paris": IPParisAdapter,
     "jhu": JHUAdapter,
     "kcl": KCLAdapter,
     "mcgill": McGillAdapter,
@@ -81,6 +87,7 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "manchester": ManchesterAdapter,
     "mit": MITAdapter,
     "monash": MonashAdapter,
+    "northwestern": NorthwesternAdapter,
     "ntu": NTUAdapter,
     "nus": NUSAdapter,
     "oxford": OxfordAdapter,
@@ -97,12 +104,15 @@ PROGRAMME_ADAPTERS: dict[str, AdapterFactory] = {
     "tsinghua": TsinghuaAdapter,
     "tudelft": TUDelftAdapter,
     "tum": TUMAdapter,
+    "ubc": UBCAdapter,
     "uchicago": UChicagoAdapter,
     "ucl": UCLAdapter,
+    "ucla": UCLAAdapter,
     "unsw": UNSWAdapter,
     "uq": UQAdapter,
     "upenn": UpennAdapter,
     "utokyo": UTokyoAdapter,
     "yale": YaleAdapter,
     "yonsei": YonseiAdapter,
+    "zju": ZJUAdapter,
 }
