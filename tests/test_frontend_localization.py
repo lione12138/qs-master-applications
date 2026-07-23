@@ -1,9 +1,14 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 from pathlib import Path
+
+from gradwindow.io import read_json
+
+ROOT = Path(__file__).parents[1]
 
 
 def test_frontend_localizes_chinese_record_labels() -> None:
@@ -114,3 +119,31 @@ def test_frontend_english_mode_does_not_show_chinese_school_alias() -> None:
         "primary": "UCL (University College London)",
         "secondary": "",
     }
+
+
+def test_every_published_scope_has_a_chinese_translation() -> None:
+    applications = read_json(ROOT / "data" / "applications.json")["applications"]
+    predictions = read_json(ROOT / "data" / "predictions.json")["predictions"]
+    translations = read_json(ROOT / "data" / "programme-translations.json")[
+        "translations"
+    ]
+    displayed_scope_ids = {
+        record["scopeId"] for record in [*applications, *predictions]
+    }
+    missing = sorted(displayed_scope_ids - translations.keys())
+    empty = sorted(
+        scope_id
+        for scope_id in displayed_scope_ids.intersection(translations)
+        if not str(translations[scope_id].get("zh", "")).strip()
+    )
+    non_chinese = sorted(
+        scope_id
+        for scope_id in displayed_scope_ids.intersection(translations)
+        if not re.search(r"[\u3400-\u9fff]", translations[scope_id].get("zh", ""))
+    )
+
+    assert not missing, f"Missing Chinese programme translations: {missing[:20]}"
+    assert not empty, f"Empty Chinese programme translations: {empty[:20]}"
+    assert not non_chinese, (
+        f"Programme translations without Chinese text: {non_chinese[:20]}"
+    )
