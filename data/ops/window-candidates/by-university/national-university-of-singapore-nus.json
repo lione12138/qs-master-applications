@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "id": "adapter-window:nus-master-of-public-health-coursework-2027-main:2026-08-01:2026-11-01",
+      "type": "adapter-window-change",
+      "status": "pending",
+      "universityId": "national-university-of-singapore-nus",
+      "detectedAt": "2026-07-23T10:23:05.580797+00:00",
+      "sourceUrl": "https://sph.nus.edu.sg/education/mph/",
+      "openingBasis": "official",
+      "record": {
+        "id": "nus-master-of-public-health-coursework-2027-main",
+        "universityId": "national-university-of-singapore-nus",
+        "scopeType": "programme",
+        "scopeId": "nus-master-of-public-health-coursework",
+        "intake": "August 2027",
+        "round": "Main",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2026-08-01",
+        "closesAt": "2026-11-01",
+        "applicationUrl": "https://gradapp.nus.edu.sg/portal/app_manage",
+        "sourceUrl": "https://sph.nus.edu.sg/education/mph/",
+        "verifiedAt": "2026-07-23",
+        "evidence": "The official programme adapter observed Master of Public Health opening on 2026-08-01 and closing on 2026-11-01. Source: https://sph.nus.edu.sg/education/mph/",
+        "intakeDetails": {
+          "label": "August 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "other",
+          "startMonth": 8
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-11-15",
+          "observed": "2026-11-01"
+        }
+      },
+      "evidenceExcerpt": "The official NUS Master of Public Health page lists applications as open from 2026-08-01 to 2026-11-01."
+    }
+  ]
+}

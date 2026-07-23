@@ -1,6 +1,1997 @@
 {
   "items": [
     {
+      "id": "known-programme-guidance:hku-applied-linguistics-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-applied-linguistics-arts&mode=FT",
+      "programme": {
+        "id": "hku-applied-linguistics-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in Applied Linguistics",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-applied-linguistics-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-29",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-applied-linguistics-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-31",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-applied-linguistics-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "A(AppliedLinguistics) | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees Composition fee (Provisional) HK$263,200 Expected Programme Start Date September 2026 Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 29, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), March 31, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-artificial-intelligence-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-artificial-intelligence-sci&mode=FT",
+      "programme": {
+        "id": "hku-artificial-intelligence-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Artificial Intelligence",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-artificial-intelligence-sci&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-artificial-intelligence-sci&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-09",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-artificial-intelligence-sci&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "aculty of Science Master of Science in Artificial Intelligence MSc(AI) | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1.5 years Fees HK$390,000 Expected Programme Start Date September 2026 Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), February 09, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-buddhist-studies-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-buddhist-studies-arts&mode=FT",
+      "programme": {
+        "id": "hku-buddhist-studies-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Buddhist Studies",
+        "degreeType": "Master",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-buddhist-studies-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-12",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-buddhist-studies-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-27",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-buddhist-studies-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "culty of Arts Master of Buddhist Studies MBuddhStud | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees HK$175,200 Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), December 12, 2025 Round 2: 12:00 noon (GMT +8), February 27, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-computer-science-cyber-security-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-cyber-security-stream-cds&mode=FT",
+      "programme": {
+        "id": "hku-computer-science-cyber-security-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Computer Science - Cyber Security Stream",
+        "degreeType": "MSc",
+        "faculty": "School of Computing and Data Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-cyber-security-stream-cds&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-cyber-security-stream-cds&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-cyber-security-stream-cds&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "versity's approval. *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-computer-science-financial-computing-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-financial-computing-stream-cds&mode=FT",
+      "programme": {
+        "id": "hku-computer-science-financial-computing-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Computer Science - Financial Computing Stream",
+        "degreeType": "MSc",
+        "faculty": "School of Computing and Data Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-financial-computing-stream-cds&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-financial-computing-stream-cds&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-financial-computing-stream-cds&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "versity's approval. *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-computer-science-general-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-general-stream-cds&mode=FT",
+      "programme": {
+        "id": "hku-computer-science-general-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Computer Science - General Stream",
+        "degreeType": "MSc",
+        "faculty": "School of Computing and Data Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-general-stream-cds&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-general-stream-cds&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-general-stream-cds&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "versity's approval. *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-computer-science-multimedia-computing-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-multimedia-computing-stream-cds&mode=FT",
+      "programme": {
+        "id": "hku-computer-science-multimedia-computing-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Computer Science - Multimedia Computing Stream",
+        "degreeType": "MSc",
+        "faculty": "School of Computing and Data Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-multimedia-computing-stream-cds&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-multimedia-computing-stream-cds&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-computer-science-multimedia-computing-stream-cds&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "versity's approval. *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-data-science-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-data-science-cds&mode=FT",
+      "programme": {
+        "id": "hku-data-science-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Data Science",
+        "degreeType": "Master",
+        "faculty": "School of Computing and Data Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-data-science-cds&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-data-science-cds&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-31",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-data-science-cds&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$339,840 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date September 2026 Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), March 31, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-electronic-commerce-and-internet-computing-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-electronic-commerce-and-internet-computing-cds&mode=FT",
+      "programme": {
+        "id": "hku-electronic-commerce-and-internet-computing-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Electronic Commerce and Internet Computing",
+        "degreeType": "MSc",
+        "faculty": "School of Computing and Data Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-electronic-commerce-and-internet-computing-cds&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-electronic-commerce-and-internet-computing-cds&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-electronic-commerce-and-internet-computing-cds&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "versity's approval. *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-building-services-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28building-services-engineering%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-building-services-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Building Services Engineering)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28building-services-engineering%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28building-services-engineering%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28building-services-engineering%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-civil-engineering-environmental-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-environmental-engineering-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-civil-engineering-environmental-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Civil Engineering) - Environmental Engineering Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-environmental-engineering-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-environmental-engineering-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-environmental-engineering-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-civil-engineering-general-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-general-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-civil-engineering-general-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Civil Engineering) - General Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-general-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-general-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-general-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-civil-engineering-geotechnical-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-geotechnical-engineering-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-civil-engineering-geotechnical-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Civil Engineering) - Geotechnical Engineering Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-geotechnical-engineering-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-geotechnical-engineering-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-geotechnical-engineering-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-civil-engineering-structural-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-structural-engineering-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-civil-engineering-structural-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Civil Engineering) - Structural Engineering Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-structural-engineering-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-structural-engineering-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28civil-engineering%29-structural-engineering-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-electrical-and-electronic-engineering-communications-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-communications-engineering-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-electrical-and-electronic-engineering-communications-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - Communications Engineering Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-communications-engineering-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-communications-engineering-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-communications-engineering-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-electrical-and-electronic-engineering-general-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-general-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-electrical-and-electronic-engineering-general-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - General Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-general-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-general-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-general-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-electrical-and-electronic-engineering-power-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-power-engineering-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-electrical-and-electronic-engineering-power-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Electrical and Electronic Engineering) - Power Engineering Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-power-engineering-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-power-engineering-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28electrical-and-electronic-engineering%29-power-engineering-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-energy-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28energy-engineering%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-energy-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Energy Engineering)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28energy-engineering%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28energy-engineering%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28energy-engineering%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-industrial-engineering-and-logistics-management-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28industrial-engineering-and-logistics-management%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-industrial-engineering-and-logistics-management-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Industrial Engineering and Logistics Management)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28industrial-engineering-and-logistics-management%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28industrial-engineering-and-logistics-management%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28industrial-engineering-and-logistics-management%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-infrastructure-engineering-and-management-digital-infrastructure-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-digital-infrastructure-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-infrastructure-engineering-and-management-digital-infrastructure-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Infrastructure Engineering and Management) - Digital Infrastructure Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-digital-infrastructure-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-digital-infrastructure-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-digital-infrastructure-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-infrastructure-engineering-and-management-infrastructure-project-management-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-infrastructure-project-management-stream-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-infrastructure-engineering-and-management-infrastructure-project-management-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Infrastructure Engineering and Management) - Infrastructure Project Management Stream",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-infrastructure-project-management-stream-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-infrastructure-project-management-stream-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28infrastructure-engineering-and-management%29-infrastructure-project-management-stream-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-innovative-design-and-technology-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28innovative-design-and-technology%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-innovative-design-and-technology-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Innovative Design and Technology)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28innovative-design-and-technology%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28innovative-design-and-technology%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28innovative-design-and-technology%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-integrated-circuits-and-electronic-systems-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28integrated-circuits-and-electronic-systems%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-integrated-circuits-and-electronic-systems-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Integrated Circuits and Electronic Systems)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28integrated-circuits-and-electronic-systems%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28integrated-circuits-and-electronic-systems%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28integrated-circuits-and-electronic-systems%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-low-altitude-technology-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28low-altitude-technology%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-low-altitude-technology-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Low-Altitude Technology)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28low-altitude-technology%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28low-altitude-technology%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28low-altitude-technology%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$420,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-mechanical-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28mechanical-engineering%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-mechanical-engineering-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Mechanical Engineering)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28mechanical-engineering%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28mechanical-engineering%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28mechanical-engineering%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-microelectronics-science-and-technology-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28microelectronics-science-and-technology%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-microelectronics-science-and-technology-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Microelectronics Science and Technology)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28microelectronics-science-and-technology%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28microelectronics-science-and-technology%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28microelectronics-science-and-technology%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-engineering-robotics-and-intelligent-systems-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28robotics-and-intelligent-systems%29-engg&mode=FT",
+      "programme": {
+        "id": "hku-engineering-robotics-and-intelligent-systems-msc",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Science in Engineering (Robotics and Intelligent Systems)",
+        "degreeType": "MSc",
+        "faculty": "Faculty of Engineering",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28robotics-and-intelligent-systems%29-engg&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28robotics-and-intelligent-systems%29-engg&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-science-in-engineering-%28robotics-and-intelligent-systems%29-engg&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$375,000 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), January 02, 2026 Round 2 (Clearing): 12:00 noon (GMT +8), April 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-fine-arts-in-the-field-of-creative-writing-in-english-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-fine-arts-in-the-field-of-creative-writing-in-english-arts&mode=FT",
+      "programme": {
+        "id": "hku-fine-arts-in-the-field-of-creative-writing-in-english-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Fine Arts in the field of Creative Writing in English",
+        "degreeType": "Master",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-fine-arts-in-the-field-of-creative-writing-in-english-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-11-28",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-fine-arts-in-the-field-of-creative-writing-in-english-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-fine-arts-in-the-field-of-creative-writing-in-english-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "he field of Creative Writing in English MFA | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees Composition fee (Provisional) HK$307,800 Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), November 28, 2025 Round 2: 12:00 noon (GMT +8), March 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-master-of-public-health-mph",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-public-health-med&mode=FT",
+      "programme": {
+        "id": "hku-master-of-public-health-mph",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Public Health",
+        "degreeType": "MPH",
+        "faculty": "LKS Faculty of Medicine",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-public-health-med&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-public-health-med&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$264,240 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date 2026 September Application Deadline Round 1 (Main): 12:00 noon (GMT +8), April 30, 2026 Round 2 (Clearing) (for local applicants only): 12:00 noon (GMT +8), June 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-nursing-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-nursing-med&mode=FT",
+      "programme": {
+        "id": "hku-nursing-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Nursing",
+        "degreeType": "Master",
+        "faculty": "LKS Faculty of Medicine",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-nursing-med&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-31",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-nursing-med&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-nursing-med&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees HK$150,000 Message from Faculty: Subject to the University's approval Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), January 31, 2026 Round 2: 12:00 noon (GMT +8), March 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-social-sciences-in-the-field-of-behavioral-health-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-behavioral-health-socsc&mode=FT",
+      "programme": {
+        "id": "hku-social-sciences-in-the-field-of-behavioral-health-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Social Sciences in the field of Behavioral Health",
+        "degreeType": "Master",
+        "faculty": "Faculty of Social Sciences",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-behavioral-health-socsc&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-behavioral-health-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-behavioral-health-socsc&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "ield of Behavioral Health MSocSc(BH) | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees Self-funded HK$231,840 Expected Programme Start Date September 1, 2026 Application Deadline Round 1: 12:00 noon (GMT +8), December 01, 2025 Round 2: 12:00 noon (GMT +8), February 02, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-social-sciences-in-the-field-of-gerontology-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-gerontology-socsc&mode=FT",
+      "programme": {
+        "id": "hku-social-sciences-in-the-field-of-gerontology-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Social Sciences in the field of Gerontology",
+        "degreeType": "Master",
+        "faculty": "Faculty of Social Sciences",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-gerontology-socsc&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-gerontology-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-26",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-gerontology-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 3",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-gerontology-socsc&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": " Social Sciences in the field of Gerontology MSocSc(Geron) | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees Self-funded HK$231,840 Expected Programme Start Date September 1, 2026 Application Deadline Round 1: 12:00 noon (GMT +8), December 02, 2025 Round 2: 12:00 noon (GMT +8), January 26, 2026 Round 3: 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-social-sciences-in-the-field-of-nonprofit-management-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-nonprofit-management-socsc&mode=FT",
+      "programme": {
+        "id": "hku-social-sciences-in-the-field-of-nonprofit-management-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Social Sciences in the field of Nonprofit Management",
+        "degreeType": "Master",
+        "faculty": "Faculty of Social Sciences",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-nonprofit-management-socsc&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-11-24",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-nonprofit-management-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-23",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-nonprofit-management-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 3",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-nonprofit-management-socsc&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "of Nonprofit Management MSocSc(NPM) | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees Self-funded HK$237,320 Expected Programme Start Date Sepetember 1, 2026 Application Deadline Round 1: 12:00 noon (GMT +8), November 24, 2025 Round 2: 12:00 noon (GMT +8), February 23, 2026 Round 3: 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-social-sciences-in-the-field-of-population-and-policy-analysis-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-population-and-policy-analysis-socsc&mode=FT",
+      "programme": {
+        "id": "hku-social-sciences-in-the-field-of-population-and-policy-analysis-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Social Sciences in the field of Population and Policy Analysis",
+        "degreeType": "Master",
+        "faculty": "Faculty of Social Sciences",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-population-and-policy-analysis-socsc&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 3 (Clearing Round*)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-27",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-population-and-policy-analysis-socsc&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "al Sciences in the field of Population and Policy Analysis MSocSc(Pop&PA) | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees HK$250,000 Expected Programme Start Date September 2026 Application Deadline Round 1 Application Deadline: 12:00 noon (GMT +8), November 28, 2025 Round 2 Application Deadline: 12:00 noon (GMT +8), January 16, 2026 Round 3 (Clearing Round*): 12:00 noon (GMT +8), February 27, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-social-sciences-in-the-field-of-psychology-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-psychology-socsc&mode=FT",
+      "programme": {
+        "id": "hku-social-sciences-in-the-field-of-psychology-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Social Sciences in the field of Psychology",
+        "degreeType": "Master",
+        "faculty": "Faculty of Social Sciences",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-psychology-socsc&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-psychology-socsc&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "Psy) | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees Self-funded (subject to university's approval) HK$209,800 Expected Programme Start Date September 2026 Application Deadline Main Round: 12:00 noon (GMT +8), December 01, 2025 Round 2: 12:00 noon (GMT +8), February 02, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-social-sciences-in-the-field-of-social-data-analytics-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-social-data-analytics-socsc&mode=FT",
+      "programme": {
+        "id": "hku-social-sciences-in-the-field-of-social-data-analytics-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Social Sciences in the field of Social Data Analytics",
+        "degreeType": "Master",
+        "faculty": "Faculty of Social Sciences",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-social-data-analytics-socsc&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-11-16",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-social-data-analytics-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-05",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-social-data-analytics-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 3",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-sciences-in-the-field-of-social-data-analytics-socsc&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "l Sciences in the field of Social Data Analytics MSocSc(SDA) | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees Self-funded HK$262,500 Expected Programme Start Date September, 2026 Application Deadline Round 1: 12:00 noon (GMT +8), November 16, 2025 Round 2: 12:00 noon (GMT +8), January 05, 2026 Round 3: 12:00 noon (GMT +8), March 02, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-social-work-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-work-socsc&mode=FT",
+      "programme": {
+        "id": "hku-social-work-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Social Work",
+        "degreeType": "Master",
+        "faculty": "Faculty of Social Sciences",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-work-socsc&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-11-03",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-work-socsc&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-23",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-social-work-socsc&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": " Sciences Master of Social Work MSW | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 2 years Fees Self-funded HK$369,600 Expected Programme Start Date September 1, 2026 Application Deadline Round 1: 12:00 noon (GMT +8), November 03, 2025 Round 2: 12:00 noon (GMT +8), February 23, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-statistics-master",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-statistics-cds&mode=FT",
+      "programme": {
+        "id": "hku-statistics-master",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Statistics",
+        "degreeType": "Master",
+        "faculty": "School of Computing and Data Science",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-statistics-cds&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1 (Main)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-12-01",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-statistics-cds&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2 (Clearing)",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-31",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-statistics-cds&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "n-local: HK$238,800 *A ‘non-local’ student is a person entering Hong Kong for the purpose of education with a student visa/entry permit issued by the Director of Immigration. Expected Programme Start Date September 2026 Application Deadline Round 1 (Main): 12:00 noon (GMT +8), December 01, 2025 Round 2 (Clearing): 12:00 noon (GMT +8), March 31, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-the-field-of-chinese-historical-studies-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-historical-studies-arts&mode=FT",
+      "programme": {
+        "id": "hku-the-field-of-chinese-historical-studies-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in the field of Chinese Historical Studies",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-historical-studies-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-historical-studies-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-historical-studies-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "Historical Studies MA | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees Composition fee (Provisional) HK$229,000 Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), February 02, 2026 Round 2: 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-the-field-of-chinese-language-and-literature-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-language-and-literature-arts&mode=FT",
+      "programme": {
+        "id": "hku-the-field-of-chinese-language-and-literature-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in the field of Chinese Language and Literature",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-language-and-literature-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-29",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-language-and-literature-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-chinese-language-and-literature-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "ge and Literature MA | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees Composition fee (Provisional) HK$229,000 Expected Programme Start Date September, 2026 Application Deadline Round 1: 12:00 noon (GMT +8), January 29, 2026 Round 2: 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-the-field-of-creative-communications-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-creative-communications-arts&mode=FT",
+      "programme": {
+        "id": "hku-the-field-of-creative-communications-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in the field of Creative Communications",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-creative-communications-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-11-28",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-creative-communications-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-creative-communications-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": " in the field of Creative Communications MA | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees Composition fee (Provisional) HK$292,000 Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), November 28, 2025 Round 2: 12:00 noon (GMT +8), March 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-the-field-of-english-studies-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-english-studies-arts&mode=FT",
+      "programme": {
+        "id": "hku-the-field-of-english-studies-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in the field of English Studies",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-english-studies-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2025-11-28",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-english-studies-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-20",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-english-studies-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": " of Arts in the field of English Studies MA | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees Composition fee (Provisional) HK$263,200 Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), November 28, 2025 Round 2: 12:00 noon (GMT +8), March 20, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-the-field-of-literary-and-cultural-studies-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-literary-and-cultural-studies-arts&mode=FT",
+      "programme": {
+        "id": "hku-the-field-of-literary-and-cultural-studies-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in the field of Literary and Cultural Studies",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-literary-and-cultural-studies-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-literary-and-cultural-studies-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-03-27",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-literary-and-cultural-studies-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": " in the field of Literary and Cultural Studies MA | Full-time & Part-time Add to Bookmark Programme Highlights: Full-time Part-time Expected Duration 1 year Fees To be updated Expected Programme Start Date To be updated Application Deadline Round 1: 12:00 noon (GMT +8), January 02, 2026 Round 2: 12:00 noon (GMT +8), March 27, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-the-field-of-philosophy-politics-and-economics-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-philosophy%2C-politics-and-economics-arts&mode=FT",
+      "programme": {
+        "id": "hku-the-field-of-philosophy-politics-and-economics-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in the field of Philosophy, Politics and Economics",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-philosophy%2C-politics-and-economics-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-01-23",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-philosophy%2C-politics-and-economics-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-philosophy%2C-politics-and-economics-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 3",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-06-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-philosophy%2C-politics-and-economics-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "ld of Philosophy, Politics and Economics MA | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees Composition fee (Provisional) HK$300,000 Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), January 23, 2026 Round 2: 12:00 noon (GMT +8), April 30, 2026 Round 3: 12:00 noon (GMT +8), June 30, 2026"
+    },
+    {
+      "id": "known-programme-guidance:hku-the-field-of-translation-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-hong-kong",
+      "detectedAt": "2026-07-23T10:15:25.487409+00:00",
+      "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-translation-arts&mode=FT",
+      "programme": {
+        "id": "hku-the-field-of-translation-ma",
+        "universityId": "the-university-of-hong-kong",
+        "name": "Master of Arts in the field of Translation",
+        "degreeType": "MA",
+        "faculty": "Faculty of Arts",
+        "applicationUrl": "https://portal.hku.hk/tpg-admissions/applying",
+        "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-translation-arts&mode=FT"
+      },
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-02-02",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-translation-arts&mode=FT"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": "2025-09-01",
+          "opensAtBasis": "inferred-cycle-default",
+          "closesAt": "2026-04-30",
+          "sourceUrl": "https://portal.hku.hk/tpg-admissions/programme-details?programme=master-of-arts-in-the-field-of-translation-arts&mode=FT"
+        }
+      ],
+      "parseStatus": "parsed",
+      "reviewReason": "Opening date uses a configured cycle default; review the officially parsed deadline before promotion.",
+      "evidenceExcerpt": "ster of Arts in the field of Translation MA | Full-time Add to Bookmark Programme Highlights: Full-time Expected Duration 1 year Fees Composition fee (Provisional) HK$229,000 Expected Programme Start Date September 2026 Application Deadline Round 1: 12:00 noon (GMT +8), February 02, 2026 Round 2: 12:00 noon (GMT +8), April 30, 2026"
+    },
+    {
       "id": "new-programme:hku-accounting-analytics-master",
       "type": "new-programme",
       "status": "pending",

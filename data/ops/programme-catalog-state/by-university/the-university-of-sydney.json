@@ -2,10 +2,10 @@
   "universities": {
     "the-university-of-sydney": {
       "sourceUrl": "https://www.sydney.edu.au/courses/sitemap.xml",
-      "checkedAt": "2026-07-12T16:14:25.454784+00:00",
-      "itemCount": 169,
+      "checkedAt": "2026-07-23T10:25:03.939474+00:00",
+      "itemCount": 170,
       "applicationOpensAt": null,
-      "catalogHash": "6fcc03119ab1be275551669d3768b1fca6edf64b88f46ff5958c07d1aa5f8a5c",
+      "catalogHash": "4f19cd2158cb3de452651d6fe17274e4c735e333490da5f1d92317ad8d74994c",
       "programmes": {
         "sydney-executive-master-of-business-administration": {
           "name": "Executive Master of Business Administration",
@@ -17,6 +17,14 @@
         },
         "sydney-master-of-administrative-law-and-policy": {
           "name": "Master of Administrative Law and Policy",
+          "degreeType": "Master",
+          "faculty": "",
+          "department": "",
+          "parseStatus": "incomplete",
+          "deadlineHash": "d668e737137c1da6651522f9c68dea203be431c788b799df689b0640df6a737a"
+        },
+        "sydney-master-of-advanced-nursing-practice0": {
+          "name": "Master of Advanced Nursing Practice",
           "degreeType": "Master",
           "faculty": "",
           "department": "",

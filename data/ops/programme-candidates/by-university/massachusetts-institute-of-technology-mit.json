@@ -24,12 +24,80 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2026-11-08"
+          "opensAtBasis": "missing",
+          "closesAt": "2026-11-08",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         }
       ],
       "parseStatus": "incomplete",
       "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
       "evidenceExcerpt": "Application opens: Summer/Fall; deadline: November 8"
+    },
+    {
+      "id": "new-programme:mit-sloan-evening-mba-program-masters",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "detectedAt": "2026-07-23T10:22:23.658134+00:00",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "programme": {
+        "id": "mit-sloan-evening-mba-program-masters",
+        "universityId": "massachusetts-institute-of-technology-mit",
+        "name": "MIT Sloan Evening MBA Program",
+        "degreeType": "MBA",
+        "faculty": "MIT Sloan Evening MBA Program",
+        "applicationUrl": "https://oge.mit.edu/programs/mit-sloan-evening-mba-program/",
+        "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-11-03",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-02-02",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Round 3",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-04-02",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Round 4",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-06-01",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Application opens: Summer; deadline: November 3, February 2, April 2, June 1"
     },
     {
       "id": "new-programme:mit-sloan-executive-mba-program-masters",
@@ -76,7 +144,9 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2026-10-20"
+          "opensAtBasis": "missing",
+          "closesAt": "2026-10-20",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         },
         {
           "intake": "September 2027",
@@ -85,7 +155,9 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2027-01-26"
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-26",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         }
       ],
       "parseStatus": "incomplete",
@@ -116,7 +188,9 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2027-01-03"
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-03",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         }
       ],
       "parseStatus": "incomplete",
@@ -147,7 +221,9 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2027-01-05"
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-05",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         }
       ],
       "parseStatus": "incomplete",
@@ -178,7 +254,9 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2027-02-20"
+          "opensAtBasis": "missing",
+          "closesAt": "2027-02-20",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         }
       ],
       "parseStatus": "incomplete",
@@ -235,6 +313,50 @@
       "evidenceExcerpt": "Application opens: Summer; deadline: September 29, January 13, April 6"
     },
     {
+      "id": "new-programme:mit-sloan-traditional-mba-program-masters",
+      "type": "new-programme",
+      "status": "pending",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "detectedAt": "2026-07-23T10:22:23.658134+00:00",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "programme": {
+        "id": "mit-sloan-traditional-mba-program-masters",
+        "universityId": "massachusetts-institute-of-technology-mit",
+        "name": "MIT Sloan Traditional MBA Program",
+        "degreeType": "MBA",
+        "faculty": "MIT Sloan Traditional MBA Program",
+        "applicationUrl": "https://oge.mit.edu/programs/mit-sloan-mba-program/",
+        "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+      },
+      "windows": [
+        {
+          "intake": "September 2027",
+          "round": "Round 1",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-09-29",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+        },
+        {
+          "intake": "September 2027",
+          "round": "Round 2",
+          "applicantCategories": [
+            "all"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2027-01-12",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Application opens: Summer; deadline: September 29, January 12"
+    },
+    {
       "id": "new-programme:mit-system-design-and-management-masters",
       "type": "new-programme",
       "status": "pending",
@@ -258,7 +380,9 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2026-12-13"
+          "opensAtBasis": "missing",
+          "closesAt": "2026-12-13",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         },
         {
           "intake": "September 2027",
@@ -267,7 +391,9 @@
             "all"
           ],
           "opensAt": null,
-          "closesAt": "2027-02-28"
+          "opensAtBasis": "missing",
+          "closesAt": "2027-02-28",
+          "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/"
         }
       ],
       "parseStatus": "incomplete",
