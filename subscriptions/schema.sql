@@ -83,6 +83,9 @@ CREATE TABLE IF NOT EXISTS deliveries (
     ON DELETE CASCADE
 );
 
+CREATE INDEX IF NOT EXISTS idx_deliveries_email
+  ON deliveries(email_hash, event_key);
+
 CREATE TABLE IF NOT EXISTS roadmap_proposals (
   id TEXT PRIMARY KEY,
   source TEXT NOT NULL CHECK (source IN ('owner', 'community')),

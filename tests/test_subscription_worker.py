@@ -222,3 +222,134 @@ def test_notify_admin_secret_ignores_cli_trailing_newline() -> None:
     )
 
     assert 'String(env.ADMIN_API_KEY || "").trim()' in worker
+
+
+def test_notification_worker_sends_one_digest_for_multiple_events() -> None:
+    node = shutil.which("node")
+    assert node is not None, "Node.js is required for subscription worker tests"
+    root = Path(__file__).parents[1]
+    worker_uri = (root / "subscriptions" / "worker.js").resolve().as_uri()
+    core_uri = (root / "subscriptions" / "core.js").resolve().as_uri()
+    script = f"""
+      import worker from {json.dumps(worker_uri)};
+      import {{ bytesToBase64Url, encryptEmail }} from {json.dumps(core_uri)};
+
+      const encryptionKey = bytesToBase64Url(
+        crypto.getRandomValues(new Uint8Array(32)),
+      );
+      const encrypted = await encryptEmail("user@example.com", encryptionKey);
+      const discovered = new Map();
+      const deliveries = [];
+      const emails = [];
+      globalThis.fetch = async (_url, options) => {{
+        emails.push(JSON.parse(options.body));
+        return new Response("", {{ status: 200 }});
+      }};
+      const DB = {{
+        prepare(sql) {{
+          let values = [];
+          return {{
+            bind(...bound) {{ values = bound; return this; }},
+            async run() {{
+              if (sql.includes("INTO notification_events")) {{
+                for (let index = 0; index < values.length; index += 3) {{
+                  if (!discovered.has(values[index])) {{
+                    discovered.set(values[index], values[index + 2]);
+                  }}
+                }}
+              }} else if (sql.includes("INTO deliveries")) {{
+                for (const eventKey of values.slice(2)) {{
+                  deliveries.push({{ eventKey, emailHash: values[0] }});
+                }}
+              }}
+              return {{ success: true }};
+            }},
+            async all() {{
+              if (sql.includes("FROM notification_events")) {{
+                return {{
+                  results: values.map((eventKey) => ({{
+                    event_key: eventKey,
+                    discovered_at: discovered.get(eventKey),
+                  }})),
+                }};
+              }}
+              if (sql.includes("FROM subscribers")) {{
+                return {{ results: [{{
+                  email_hash: "hash-1",
+                  email_ciphertext: encrypted.ciphertext,
+                  email_iv: encrypted.iv,
+                  language: "en",
+                  confirmed_at: "2026-01-01T00:00:00.000Z",
+                }}] }};
+              }}
+              if (sql.includes("FROM deliveries")) {{
+                return {{
+                  results: deliveries
+                    .filter((item) => item.emailHash === values[0])
+                    .map((item) => ({{ event_key: item.eventKey }})),
+                }};
+              }}
+              throw new Error(sql);
+            }},
+          }};
+        }},
+      }};
+      const event = (id, program) => ({{
+        id,
+        school: "Example University",
+        schoolZh: "示例大学",
+        program,
+        opensAt: "2026-07-01",
+        closesAt: "2026-12-01",
+        applicationUrl: "https://example.edu/apply",
+        sourceUrl: "https://example.edu/source",
+      }});
+      const response = await worker.fetch(
+        new Request("https://worker.example/admin/notify", {{
+          method: "POST",
+          headers: {{
+            Authorization: "Bearer admin-secret",
+            "Content-Type": "application/json",
+          }},
+          body: JSON.stringify({{
+            events: Array.from(
+              {{ length: 502 }},
+              (_, index) => event(`window-${{index}}`, `MSc ${{index}}`),
+            ),
+          }}),
+        }}),
+        {{
+          ADMIN_API_KEY: "admin-secret",
+          API_BASE_URL: "https://worker.example",
+          PUBLIC_SITE_URL: "https://gradwindow.com",
+          EMAIL_ENCRYPTION_KEY: encryptionKey,
+          TOKEN_SIGNING_KEY: "signing-secret",
+          RESEND_API_KEY: "resend-secret",
+          RESEND_FROM: "GradWindow <alerts@example.edu>",
+          DB,
+        }},
+      );
+      console.log(JSON.stringify({{
+        body: await response.json(),
+        emailCount: emails.length,
+        subject: emails[0]?.subject || "",
+        emailText: emails[0]?.text || "",
+        deliveryCount: deliveries.length,
+      }}));
+    """
+    result = subprocess.run(
+        [node, "--input-type=module", "-e", script],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    response = json.loads(result.stdout)
+    assert response["body"] == {"ok": True, "sent": 1, "failed": 0}
+    assert response["emailCount"] == 1
+    assert response["subject"] == "GradWindow digest: updates from 1 university"
+    assert (
+        "Example University: 502 programmes, deadline 2026-12-01"
+        in response["emailText"]
+    )
+    assert "MSc 0" not in response["emailText"]
+    assert response["deliveryCount"] == 502

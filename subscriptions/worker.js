@@ -12,8 +12,10 @@ import {
 } from "./core.js";
 
 const JSON_HEADERS = { "Content-Type": "application/json; charset=utf-8" };
-const MAX_EVENTS = 20;
+const MAX_EVENTS = 1000;
 const MAX_SENDS_PER_REQUEST = 80;
+const MAX_DIGEST_GROUPS = 8;
+const MAX_SQL_VALUES = 90;
 const AUTH_CODE_TTL_MS = 10 * 60 * 1000;
 const AUTH_SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
 
@@ -901,30 +903,90 @@ async function unsubscribe(env, url) {
   );
 }
 
-function alertEmail(language, event, unsubscribeUrl) {
-  const school = language === "zh" && event.schoolZh
-    ? event.schoolZh
-    : event.school;
+function chunks(items, size) {
+  const result = [];
+  for (let index = 0; index < items.length; index += size) {
+    result.push(items.slice(index, index + size));
+  }
+  return result;
+}
+
+function placeholders(count) {
+  return Array.from({ length: count }, () => "?").join(", ");
+}
+
+function groupedDigestItems(language, events) {
+  const groups = new Map();
+  for (const event of events) {
+    const school = language === "zh" && event.schoolZh
+      ? event.schoolZh
+      : event.school;
+    const key = `${school}\u0000${event.closesAt}`;
+    const current = groups.get(key) || {
+      school,
+      closesAt: event.closesAt,
+      count: 0,
+    };
+    current.count += 1;
+    groups.set(key, current);
+  }
+  return [...groups.values()].sort(
+    (left, right) =>
+      right.count - left.count ||
+      left.school.localeCompare(right.school) ||
+      left.closesAt.localeCompare(right.closesAt),
+  );
+}
+
+function digestEmail(language, events, unsubscribeUrl, siteUrl) {
+  const groups = groupedDigestItems(language, events);
+  const visibleGroups = groups.slice(0, MAX_DIGEST_GROUPS);
+  const schoolCount = new Set(events.map((event) => event.school)).size;
+  const deadlineCount = new Set(events.map((event) => event.closesAt)).size;
   const subject = language === "zh"
-    ? `${school} 的申请现已开放`
-    : `${school} applications are now open`;
-  const lines = [
-    `${school} — ${event.program}`,
-    `${event.opensAt} → ${event.closesAt}`,
-    event.applicationUrl,
-  ];
+    ? `GradWindow：${schoolCount} 所学校的申请窗口更新`
+    : `GradWindow digest: updates from ${schoolCount} ${
+        schoolCount === 1 ? "university" : "universities"
+      }`;
   const intro = language === "zh"
-    ? "GradWindow 新核验的官网申请窗口现已开放："
-    : "A newly verified official application window is now open:";
+    ? `本次官网核验发现申请窗口更新，涉及 ${schoolCount} 所学校和 ${deadlineCount} 个截止日期。相同学校和截止日期已合并。`
+    : `This official-source check found application-window updates across ${schoolCount} universities and ${deadlineCount} deadlines. Matching universities and deadlines are grouped.`;
+  const textItems = visibleGroups.map((group) =>
+    language === "zh"
+      ? `${group.school}：${group.count} 个项目，截止日期 ${group.closesAt}`
+      : `${group.school}: ${group.count} programmes, deadline ${group.closesAt}`,
+  );
+  const remaining = groups.length - visibleGroups.length;
+  if (remaining > 0) {
+    textItems.push(
+      language === "zh"
+        ? `另有 ${remaining} 组更新，请在网站查看完整清单。`
+        : `${remaining} more grouped updates are available on the website.`,
+    );
+  }
+  const callToAction = language === "zh"
+    ? `查看完整申请窗口：${siteUrl}`
+    : `View all application windows: ${siteUrl}`;
+  const htmlItems = visibleGroups.map((group) => {
+    const line = language === "zh"
+      ? `${group.school}：${group.count} 个项目，截止日期 ${group.closesAt}`
+      : `${group.school}: ${group.count} programmes, deadline ${group.closesAt}`;
+    return `<li>${escapeHtml(line)}</li>`;
+  }).join("");
+  const remainingHtml = remaining > 0
+    ? `<p>${escapeHtml(
+        language === "zh"
+          ? `另有 ${remaining} 组更新，请在网站查看完整清单。`
+          : `${remaining} more grouped updates are available on the website.`,
+      )}</p>`
+    : "";
   return {
     subject,
-    text: `${intro}\n\n${lines.join("\n")}\n\nUnsubscribe: ${unsubscribeUrl}`,
+    text: `${intro}\n\n${textItems.join("\n")}\n\n${callToAction}\n\nUnsubscribe: ${unsubscribeUrl}`,
     html: `<p>${escapeHtml(intro)}</p>
-      <h2>${escapeHtml(school)}</h2>
-      <p>${escapeHtml(event.program)}</p>
-      <p><strong>${escapeHtml(event.opensAt)}</strong> → <strong>${escapeHtml(event.closesAt)}</strong></p>
-      <p><a href="${escapeHtml(event.applicationUrl)}">Open application / 打开申请</a></p>
-      <p><a href="${escapeHtml(event.sourceUrl)}">Official source / 官网来源</a></p>
+      <ul>${htmlItems}</ul>
+      ${remainingHtml}
+      <p><a href="${escapeHtml(siteUrl)}">View all application windows / 查看完整申请窗口</a></p>
       <hr><p style="font-size:12px"><a href="${escapeHtml(unsubscribeUrl)}">Unsubscribe / 退订</a></p>`,
   };
 }
@@ -942,6 +1004,87 @@ function validEvent(event) {
   );
 }
 
+async function storeNotificationEvents(env, eventByKey, discoveredAt) {
+  for (const batch of chunks([...eventByKey.entries()], MAX_SQL_VALUES / 3)) {
+    const values = batch.flatMap(([eventKey, event]) => [
+      eventKey,
+      JSON.stringify(event),
+      discoveredAt,
+    ]);
+    const rows = batch.map(() => "(?, ?, ?)").join(", ");
+    await env.DB.prepare(
+      `INSERT OR IGNORE INTO notification_events
+       (event_key, payload_json, discovered_at) VALUES ${rows}`,
+    ).bind(...values).run();
+  }
+}
+
+async function notificationDiscoveryTimes(env, eventKeys) {
+  const discoveredByKey = new Map();
+  for (const batch of chunks(eventKeys, MAX_SQL_VALUES)) {
+    const result = await env.DB.prepare(
+      `SELECT event_key, discovered_at FROM notification_events
+       WHERE event_key IN (${placeholders(batch.length)})`,
+    ).bind(...batch).all();
+    for (const row of result.results || []) {
+      discoveredByKey.set(row.event_key, row.discovered_at);
+    }
+  }
+  return discoveredByKey;
+}
+
+async function pendingSubscribers(env, eventKeys) {
+  const subscribers = new Map();
+  for (const batch of chunks(eventKeys, MAX_SQL_VALUES - 1)) {
+    if (subscribers.size >= MAX_SENDS_PER_REQUEST) break;
+    const result = await env.DB.prepare(
+      `SELECT DISTINCT s.email_hash, s.email_ciphertext, s.email_iv,
+         s.language, s.confirmed_at
+       FROM subscribers s
+       JOIN notification_events e
+         ON e.event_key IN (${placeholders(batch.length)})
+       LEFT JOIN deliveries d
+         ON d.email_hash = s.email_hash AND d.event_key = e.event_key
+       WHERE s.status = 'active'
+         AND s.confirmed_at <= e.discovered_at
+         AND d.event_key IS NULL
+       LIMIT ?`,
+    ).bind(
+      ...batch,
+      MAX_SENDS_PER_REQUEST - subscribers.size,
+    ).all();
+    for (const subscriber of result.results || []) {
+      subscribers.set(subscriber.email_hash, subscriber);
+    }
+  }
+  return [...subscribers.values()];
+}
+
+async function deliveredEventKeys(env, emailHash, eventKeys) {
+  const delivered = new Set();
+  for (const batch of chunks(eventKeys, MAX_SQL_VALUES - 1)) {
+    const result = await env.DB.prepare(
+      `SELECT event_key FROM deliveries
+       WHERE email_hash = ?
+         AND event_key IN (${placeholders(batch.length)})`,
+    ).bind(emailHash, ...batch).all();
+    for (const row of result.results || []) {
+      delivered.add(row.event_key);
+    }
+  }
+  return delivered;
+}
+
+async function recordDigestDeliveries(env, eventKeys, emailHash, sentAt) {
+  for (const batch of chunks(eventKeys, MAX_SQL_VALUES - 2)) {
+    await env.DB.prepare(
+      `INSERT OR IGNORE INTO deliveries (event_key, email_hash, sent_at)
+       SELECT event_key, ?, ? FROM notification_events
+       WHERE event_key IN (${placeholders(batch.length)})`,
+    ).bind(emailHash, sentAt, ...batch).run();
+  }
+}
+
 async function notify(request, env) {
   const adminApiKey = String(env.ADMIN_API_KEY || "").trim();
   if (
@@ -956,63 +1099,64 @@ async function notify(request, env) {
     return jsonResponse(request, env, { ok: false }, 400);
   }
 
+  const discoveredAt = new Date().toISOString();
+  const eventByKey = new Map(
+    events.map((event) => [`${event.id}:${event.opensAt}`, event]),
+  );
+  const eventKeys = [...eventByKey.keys()];
+  await storeNotificationEvents(env, eventByKey, discoveredAt);
+  const discoveredByKey = await notificationDiscoveryTimes(env, eventKeys);
+  const subscribers = await pendingSubscribers(env, eventKeys);
+
   let sent = 0;
   let failed = 0;
-  for (const event of events) {
-    const eventKey = `${event.id}:${event.opensAt}`;
-    await env.DB.prepare(
-      `INSERT OR IGNORE INTO notification_events
-       (event_key, payload_json, discovered_at) VALUES (?1, ?2, ?3)`,
-    ).bind(eventKey, JSON.stringify(event), new Date().toISOString()).run();
-    const storedEvent = await env.DB.prepare(
-      "SELECT discovered_at FROM notification_events WHERE event_key = ?1",
-    ).bind(eventKey).first();
-    const subscribers = await env.DB.prepare(
-      `SELECT s.email_hash, s.email_ciphertext, s.email_iv, s.language
-       FROM subscribers s
-       LEFT JOIN deliveries d
-         ON d.email_hash = s.email_hash AND d.event_key = ?1
-       WHERE s.status = 'active'
-         AND s.confirmed_at <= ?2
-         AND d.event_key IS NULL
-       LIMIT ?3`,
-    ).bind(
-      eventKey,
-      storedEvent.discovered_at,
-      MAX_SENDS_PER_REQUEST - sent,
-    ).all();
-
-    for (const subscriber of subscribers.results || []) {
-      if (sent >= MAX_SENDS_PER_REQUEST) break;
-      try {
-        const email = await decryptEmail(
-          subscriber.email_ciphertext,
-          subscriber.email_iv,
-          env.EMAIL_ENCRYPTION_KEY,
-        );
-        const unsubscribeToken = await signedUnsubscribeToken(
-          subscriber.email_hash,
-          env.TOKEN_SIGNING_KEY,
-        );
-        const unsubscribeUrl =
-          `${env.API_BASE_URL.replace(/\/$/, "")}/unsubscribe?token=` +
-          encodeURIComponent(unsubscribeToken);
-        await sendEmail(env, {
-          to: email,
-          headers: {
-            "List-Unsubscribe": `<${unsubscribeUrl}>`,
-            "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
-          },
-          ...alertEmail(subscriber.language, event, unsubscribeUrl),
-        });
-        await env.DB.prepare(
-          `INSERT OR IGNORE INTO deliveries
-           (event_key, email_hash, sent_at) VALUES (?1, ?2, ?3)`,
-        ).bind(eventKey, subscriber.email_hash, new Date().toISOString()).run();
-        sent += 1;
-      } catch {
-        failed += 1;
-      }
+  for (const subscriber of subscribers) {
+    try {
+      const delivered = await deliveredEventKeys(
+        env,
+        subscriber.email_hash,
+        eventKeys,
+      );
+      const pendingEntries = [...eventByKey.entries()].filter(
+        ([eventKey]) =>
+          !delivered.has(eventKey) &&
+          subscriber.confirmed_at <= discoveredByKey.get(eventKey),
+      );
+      if (!pendingEntries.length) continue;
+      const email = await decryptEmail(
+        subscriber.email_ciphertext,
+        subscriber.email_iv,
+        env.EMAIL_ENCRYPTION_KEY,
+      );
+      const unsubscribeToken = await signedUnsubscribeToken(
+        subscriber.email_hash,
+        env.TOKEN_SIGNING_KEY,
+      );
+      const unsubscribeUrl =
+        `${env.API_BASE_URL.replace(/\/$/, "")}/unsubscribe?token=` +
+        encodeURIComponent(unsubscribeToken);
+      await sendEmail(env, {
+        to: email,
+        headers: {
+          "List-Unsubscribe": `<${unsubscribeUrl}>`,
+          "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        },
+        ...digestEmail(
+          subscriber.language,
+          pendingEntries.map(([, event]) => event),
+          unsubscribeUrl,
+          env.PUBLIC_SITE_URL,
+        ),
+      });
+      await recordDigestDeliveries(
+        env,
+        pendingEntries.map(([eventKey]) => eventKey),
+        subscriber.email_hash,
+        new Date().toISOString(),
+      );
+      sent += 1;
+    } catch {
+      failed += 1;
     }
   }
   return jsonResponse(request, env, { ok: true, sent, failed });

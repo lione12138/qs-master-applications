@@ -1,8 +1,10 @@
 # GradWindow email subscriptions
 
-This Worker provides privacy-preserving, double-opt-in email alerts for newly
-opened official application windows. It also backs the public roadmap, school
-comments, and the lightweight GradWindow account system.
+This Worker provides privacy-preserving, double-opt-in email digests for newly
+opened official application windows. Each notification run sends at most one
+email per subscriber. The message groups programmes that share a university
+and closing date, then links to GradWindow for the full list. It also backs the
+public roadmap, school comments, and the lightweight GradWindow account system.
 
 ## Privacy design
 
