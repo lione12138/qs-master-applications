@@ -1,6 +1,48 @@
 {
   "items": [
     {
+      "id": "adapter-window:mit-mechanical-engineering-masters-2027-main-deadline:2026-09-15:2026-12-01",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "massachusetts-institute-of-technology-mit",
+      "detectedAt": "2026-07-24T06:59:10.449754+00:00",
+      "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+      "openingBasis": "official",
+      "record": {
+        "id": "mit-mechanical-engineering-masters-2027-main-deadline",
+        "universityId": "massachusetts-institute-of-technology-mit",
+        "scopeType": "programme",
+        "scopeId": "mit-mechanical-engineering-masters",
+        "intake": "September 2027",
+        "round": "Main deadline",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2026-09-15",
+        "closesAt": "2026-12-01",
+        "applicationUrl": "https://oge.mit.edu/programs/mechanical-engineering/",
+        "sourceUrl": "https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed Mechanical Engineering opening on 2026-09-15 and closing on 2026-12-01. Source: https://oge.mit.edu/graduate-admissions/programs/masters-degrees/",
+        "intakeDetails": {
+          "label": "September 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-12-15",
+          "observed": "2026-12-01"
+        }
+      },
+      "evidenceExcerpt": "Application opens: September 15; deadline: December 1",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
       "id": "adapter-window:mit-whoi-joint-program-in-oceanography-applied-ocean-science-and-engineering-masters-2027-round-1:2026-07-15:2026-10-01",
       "type": "adapter-window-change",
       "status": "approved",
