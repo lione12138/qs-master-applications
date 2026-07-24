@@ -135,6 +135,7 @@
     {
       "name": "sheffield-postgraduate-taught",
       "universityId": "the-university-of-sheffield",
+      "discoveryRole": "fallback",
       "prefix": "sheffield",
       "seedUrls": [
         "https://www.sheffield.ac.uk/postgraduate/taught/courses"

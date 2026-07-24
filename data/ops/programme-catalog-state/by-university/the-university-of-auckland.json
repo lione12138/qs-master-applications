@@ -1,0 +1,773 @@
+{
+  "universities": {
+    "the-university-of-auckland": {
+      "sourceUrl": "https://www.auckland.ac.nz/en/study/study-options/find-a-study-option.html",
+      "checkedAt": "2026-07-24T06:29:57.873109+00:00",
+      "itemCount": 95,
+      "applicationOpensAt": null,
+      "catalogHash": "1b1b39fd2ab38b3de5740e78cea24079268119b9761c80111905afcbd98935e0",
+      "programmes": {
+        "auckland-master-of-aerospace-engineering": {
+          "name": "Master of Aerospace Engineering",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-applied-finance": {
+          "name": "Master of Applied Finance",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-architecture": {
+          "name": "Master of Architecture",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-architecture-professional": {
+          "name": "Master of Architecture (Professional)",
+          "degreeType": "Professional",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-architecture-professional-and-urban-design": {
+          "name": "Master of Architecture (Professional) and Urban Design",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-architecture-professional-and-urban-planning-professional": {
+          "name": "Master of Architecture (Professional) and Urban Planning (Professional)",
+          "degreeType": "Professional",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-artificial-intelligence": {
+          "name": "Master of Artificial Intelligence",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-arts": {
+          "name": "Master of Arts",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-audiology": {
+          "name": "Master of Audiology",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-behaviour-analysis": {
+          "name": "Master of Behaviour Analysis",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-biomedical-science": {
+          "name": "Master of Biomedical Science",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-bioscience-enterprise": {
+          "name": "Master of Bioscience Enterprise",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-biotechnology": {
+          "name": "Master of Biotechnology",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-business-administration": {
+          "name": "Master of Business Administration",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-business-analytics": {
+          "name": "Master of Business Analytics",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-business-management": {
+          "name": "Master of Business Management",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-chemistry": {
+          "name": "Master of Chemistry",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-civil-engineering": {
+          "name": "Master of Civil Engineering",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-clinical-education": {
+          "name": "Master of Clinical Education",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-clinical-exercise-physiology": {
+          "name": "Master of Clinical Exercise Physiology",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-clinical-pharmacy": {
+          "name": "Master of Clinical Pharmacy",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-commerce": {
+          "name": "Master of Commerce",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-communication": {
+          "name": "Master of Communication",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-community-dance": {
+          "name": "Master of Community Dance",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-conflict-and-terrorism-studies": {
+          "name": "Master of Conflict and Terrorism Studies",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-counselling": {
+          "name": "Master of Counselling",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-creative-arts-therapy": {
+          "name": "Master of Creative Arts Therapy",
+          "degreeType": "Master",
+          "faculty": "Creative Arts and Industries",
+          "department": "Creative Arts and Industries",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-creative-writing": {
+          "name": "Master of Creative Writing",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-dance-movement-therapy": {
+          "name": "Master of Dance Movement Therapy",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-dance-studies": {
+          "name": "Master of Dance Studies",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-data-science-master": {
+          "name": "Master of Data Science",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-design": {
+          "name": "Master of Design",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-disaster-management": {
+          "name": "Master of Disaster Management",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-earthquake-engineering": {
+          "name": "Master of Earthquake Engineering",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-ecology": {
+          "name": "Master of Ecology",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-education": {
+          "name": "Master of Education",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-education-practice": {
+          "name": "Master of Education Practice",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-educational-leadership": {
+          "name": "Master of Educational Leadership",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-energy": {
+          "name": "Master of Energy",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-engineering": {
+          "name": "Master of Engineering",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-engineering-geology": {
+          "name": "Master of Engineering Geology",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-engineering-management": {
+          "name": "Master of Engineering Management",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-engineering-project-management": {
+          "name": "Master of Engineering Project Management",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-engineering-studies": {
+          "name": "Master of Engineering Studies",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-environmental-science": {
+          "name": "Master of Environmental Science",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-fine-arts": {
+          "name": "Master of Fine Arts",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-food-science": {
+          "name": "Master of Food Science",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-global-studies": {
+          "name": "Master of Global Studies",
+          "degreeType": "Master",
+          "faculty": "The University of Auckland",
+          "department": "The University of Auckland",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-health-leadership": {
+          "name": "Master of Health Leadership",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-health-practice": {
+          "name": "Master of Health Practice",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-health-psychology": {
+          "name": "Master of Health Psychology",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-health-sciences": {
+          "name": "Master of Health Sciences",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-indigenous-studies": {
+          "name": "Master of Indigenous Studies",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-information-governance": {
+          "name": "Master of Information Governance",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-information-technology": {
+          "name": "Master of Information Technology",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-intellectual-property": {
+          "name": "Master of Intellectual Property",
+          "degreeType": "Master",
+          "faculty": "Auckland Law School",
+          "department": "Auckland Law School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-international-business": {
+          "name": "Master of International Business",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-laws": {
+          "name": "Master of Laws",
+          "degreeType": "Master",
+          "faculty": "Auckland Law School",
+          "department": "Auckland Law School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-legal-studies": {
+          "name": "Master of Legal Studies",
+          "degreeType": "Master",
+          "faculty": "Auckland Law School",
+          "department": "Auckland Law School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-literature": {
+          "name": "Master of Literature",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-marine-conservation": {
+          "name": "Master of Marine Conservation",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-marine-studies": {
+          "name": "Master of Marine Studies",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-marketing": {
+          "name": "Master of Marketing",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-mathematical-modelling": {
+          "name": "Master of Mathematical Modelling",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-medical-engineering": {
+          "name": "Master of Medical Engineering",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-music": {
+          "name": "Master of Music",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-nursing": {
+          "name": "Master of Nursing",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-nursing-science": {
+          "name": "Master of Nursing Science",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-nutrition-and-dietetics": {
+          "name": "Master of Nutrition and Dietetics",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-operations-research-and-analytics": {
+          "name": "Master of Operations Research and Analytics",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-organisational-psychology": {
+          "name": "Master of Organisational Psychology",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-paediatrics": {
+          "name": "Master of Paediatrics",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-physiotherapy-practice": {
+          "name": "Master of Physiotherapy Practice",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-professional-accounting": {
+          "name": "Master of Professional Accounting",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-professional-engineering": {
+          "name": "Master of Professional Engineering",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-professional-studies": {
+          "name": "Master of Professional Studies",
+          "degreeType": "Master",
+          "faculty": "The University of Auckland",
+          "department": "The University of Auckland",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-professional-supervision": {
+          "name": "Master of Professional Supervision",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-professional-supervision-practice": {
+          "name": "Master of Professional Supervision Practice",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-property-practice": {
+          "name": "Master of Property Practice",
+          "degreeType": "Master",
+          "faculty": "Business School",
+          "department": "Business School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-public-health": {
+          "name": "Master of Public Health",
+          "degreeType": "Master",
+          "faculty": "Medical and Health Sciences",
+          "department": "Medical and Health Sciences",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-public-policy": {
+          "name": "Master of Public Policy",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-robotics-and-automation-engineering": {
+          "name": "Master of Robotics and Automation Engineering",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-science": {
+          "name": "Master of Science",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-social-work": {
+          "name": "Master of Social Work",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-social-work-professional": {
+          "name": "Master of Social Work (Professional)",
+          "degreeType": "Professional",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-social-and-community-leadership": {
+          "name": "Master of Social and Community Leadership",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-speech-language-therapy-practice": {
+          "name": "Master of Speech Language Therapy Practice",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-taxation-studies": {
+          "name": "Master of Taxation Studies",
+          "degreeType": "Master",
+          "faculty": "Auckland Law School",
+          "department": "Auckland Law School",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-teaching-english-to-speakers-of-other-languages": {
+          "name": "Master of Teaching English to Speakers of Other Languages",
+          "degreeType": "Master",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-teaching-and-learning-early-childhood": {
+          "name": "Master of Teaching and Learning (Early Childhood)",
+          "degreeType": "Early Childhood",
+          "faculty": "Arts and Education",
+          "department": "Arts and Education",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-urban-design": {
+          "name": "Master of Urban Design",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-urban-planning": {
+          "name": "Master of Urban Planning",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-urban-planning-professional": {
+          "name": "Master of Urban Planning (Professional)",
+          "degreeType": "Professional",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-urban-planning-professional-and-urban-design": {
+          "name": "Master of Urban Planning (Professional) and Urban Design",
+          "degreeType": "Master",
+          "faculty": "Engineering and Design",
+          "department": "Engineering and Design",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "auckland-master-of-wine-science": {
+          "name": "Master of Wine Science",
+          "degreeType": "Master",
+          "faculty": "Science",
+          "department": "Science",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        }
+      }
+    }
+  }
+}

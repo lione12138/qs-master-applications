@@ -1,6 +1,6 @@
 {
   "meta": {
-    "updatedAt": "2026-07-23T17:19:28.476966+00:00",
+    "updatedAt": "2026-07-24T06:36:57.134417+00:00",
     "dryRun": false,
     "replaceExisting": false,
     "description": "Batch generic programme discovery report. Candidates stay in data/ops/programme-candidates.json until reviewed.",
@@ -16,7 +16,7 @@
     "readyToApprove": 0,
     "needsOpeningReview": 0,
     "needsOpeningDate": 463,
-    "needsAdapter": 424,
+    "needsAdapter": 444,
     "comingSoonMonitor": 2,
     "deadlineUnavailableMonitor": 172
   },
@@ -7728,6 +7728,186 @@
         "universityId": "the-university-of-melbourne",
         "programmeName": "Master of Youth Mental Health",
         "sourceUrl": "https://handbook.unimelb.edu.au/2026/courses/mc-youthmh",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-advanced-computer-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Advanced Computer Science MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-computer-science-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-advanced-mechanical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Advanced Mechanical Engineering MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-aerospace-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Aerospace Engineering MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-applied-linguistics-and-tesol-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Applied Linguistics and TESOL MA",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-applied-professional-studies-in-education-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Applied Professional Studies in Education MA",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-archaeology-and-heritage-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Archaeology and Heritage MA",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-architectural-design-ma",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Architectural Design MA",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-artificial-intelligence-for-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Artificial Intelligence for Engineering MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-artificial-intelligence-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Artificial Intelligence MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-astrophysics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Astrophysics MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-biodiversity-and-conservation-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biodiversity and Conservation MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-biological-and-bioprocess-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biological and Bioprocess Engineering MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-biomedical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biomedical Engineering MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-biomedical-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Biomedical Science MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-business-analytics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business Analytics MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-business-and-organisational-psychology-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business and Organisational Psychology MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-business-finance-and-economics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Business Finance and Economics MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-cancer-biology-and-therapeutics-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Cancer Biology and Therapeutics MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-chemistry-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Chemistry MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc",
+        "windowCount": 0,
+        "parseStatus": "no-deadline",
+        "reviewReason": "No application deadline was parsed."
+      },
+      {
+        "id": "known-programme-guidance:sheffield-civil-and-structural-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "programmeName": "Civil and Structural Engineering MSc",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc",
         "windowCount": 0,
         "parseStatus": "no-deadline",
         "reviewReason": "No application deadline was parsed."

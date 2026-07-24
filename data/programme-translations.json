@@ -1,12 +1,13 @@
 {
   "meta": {
     "description": "Chinese programme and programme-group labels used by GradWindow. Manual labels override generated labels; generated labels are cached after review.",
-    "updatedAt": "2026-07-23",
+    "updatedAt": "2026-07-24",
     "defaultLanguage": "zh",
     "providers": [
       "manual",
       "deepseek",
-      "rule"
+      "rule",
+      "official"
     ]
   },
   "translations": {
@@ -19340,6 +19341,372 @@
       "source": "deepseek",
       "model": "deepseek-v4-flash",
       "updatedAt": "2026-07-23"
+    },
+    "ntu-international-master-10635": {
+      "zh": "中國文學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10638": {
+      "zh": "外國語文學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10657": {
+      "zh": "藝術史研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10659": {
+      "zh": "語言學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10661": {
+      "zh": "音樂學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10668": {
+      "zh": "物理學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10680": {
+      "zh": "心理學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10684": {
+      "zh": "地理環境資源學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10695": {
+      "zh": "天文物理研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10697": {
+      "zh": "應用物理學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-11654": {
+      "zh": "統計與數據科學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10921": {
+      "zh": "公共事務研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10716": {
+      "zh": "藥學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10735": {
+      "zh": "臨床牙醫學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10736": {
+      "zh": "生物化學暨分子生物學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10732": {
+      "zh": "藥理學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10738": {
+      "zh": "病理學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10726": {
+      "zh": "解剖學暨細胞生物學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10740": {
+      "zh": "毒理學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10748": {
+      "zh": "口腔生物科學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10751": {
+      "zh": "基因體暨蛋白體醫學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10919": {
+      "zh": "醫療器材與醫學影像研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10778": {
+      "zh": "化學工程學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10781": {
+      "zh": "工程科學及海洋工程學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10784": {
+      "zh": "材料科學與工程學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10925": {
+      "zh": "醫學工程學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10789": {
+      "zh": "應用力學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10791": {
+      "zh": "建築與城鄉研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10793": {
+      "zh": "工業工程學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10801": {
+      "zh": "生物環境系統工程學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10804": {
+      "zh": "農業化學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10810": {
+      "zh": "動物科學技術學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-11640": {
+      "zh": "農業經濟學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10832": {
+      "zh": "生物產業傳播暨發展學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10829": {
+      "zh": "昆蟲學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10834": {
+      "zh": "食品科技研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10836": {
+      "zh": "生物科技研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10838": {
+      "zh": "臨床動物醫學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10848": {
+      "zh": "資訊管理學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10863": {
+      "zh": "公共衛生碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10932": {
+      "zh": "全球衛生碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10931": {
+      "zh": "環境與職業健康科學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10865": {
+      "zh": "電機工程學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-computer-science-information-engineering-master": {
+      "zh": "資訊工程學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10874": {
+      "zh": "電信工程學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10876": {
+      "zh": "電子工程學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10878": {
+      "zh": "資訊網路與多媒體研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10880": {
+      "zh": "生醫電子與資訊學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10889": {
+      "zh": "生化科技學系",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10892": {
+      "zh": "植物科學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10894": {
+      "zh": "分子與細胞生物學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10896": {
+      "zh": "生態學與演化生物學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10902": {
+      "zh": "生化科學研究所",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10916": {
+      "zh": "基因體與系統生物學學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10945": {
+      "zh": "運動設施與健康管理碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10936": {
+      "zh": "積體電路設計與自動化碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10938": {
+      "zh": "元件材料與異質整合碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10940": {
+      "zh": "奈米工程與科學碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10943": {
+      "zh": "精準健康碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10935": {
+      "zh": "智慧醫療與健康資訊碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
+    },
+    "ntu-international-master-10942": {
+      "zh": "防災減害與韌性碩士學位學程",
+      "source": "official",
+      "sourceUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign/requirement/dept.list/id/hXwLg3Je9mtt/fsemester/1/fdisplay/1?lang=zh",
+      "updatedAt": "2026-07-24"
     }
   }
 }

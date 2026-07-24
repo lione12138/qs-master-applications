@@ -1,171 +1,987 @@
 {
   "universities": {
     "the-university-of-sheffield": {
-      "sourceUrl": "https://www.sheffield.ac.uk/postgraduate/taught/courses",
-      "checkedAt": "2026-07-23T10:27:22.850172+00:00",
-      "itemCount": 20,
-      "applicationOpensAt": "2025-09-15",
-      "catalogHash": "25c7480c0cff0772e63513a57af682baa8bf88e9323b9c800962c878982f914c",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026",
+      "checkedAt": "2026-07-24T06:30:35.830580+00:00",
+      "itemCount": 122,
+      "applicationOpensAt": null,
+      "catalogHash": "179ee36e9bab3ef8d29367209ed6e595d1d4bcc867269bfbff65844b6d90aaf9",
       "programmes": {
+        "sheffield-advanced-clinical-practice-gp-mmedsci": {
+          "name": "Advanced Clinical Practice (GP) MMedSci",
+          "degreeType": "MMedSci",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-advanced-clinical-practice-neonatal-mmedsci": {
+          "name": "Advanced Clinical Practice (Neonatal) MMedSci",
+          "degreeType": "MMedSci",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-advanced-clinical-practice-paediatrics-mmedsci": {
+          "name": "Advanced Clinical Practice (Paediatrics) MMedSci",
+          "degreeType": "MMedSci",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
         "sheffield-advanced-computer-science-msc": {
           "name": "Advanced Computer Science MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-advanced-control-and-systems-engineering-msc-eng": {
+          "name": "Advanced Control and Systems Engineering MSc(Eng)",
+          "degreeType": "MSc(Eng)",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-advanced-mechanical-engineering-msc": {
           "name": "Advanced Mechanical Engineering MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-aerospace-engineering-msc": {
           "name": "Aerospace Engineering MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-applied-linguistics-and-tesol-ma": {
           "name": "Applied Linguistics and TESOL MA",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-applied-professional-studies-in-education-ma": {
           "name": "Applied Professional Studies in Education MA",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-archaeology-and-heritage-ma": {
           "name": "Archaeology and Heritage MA",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-architectural-design-ma": {
           "name": "Architectural Design MA",
           "degreeType": "MA",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
-        "sheffield-artificial-intelligence-for-engineering-msc": {
-          "name": "Artificial Intelligence for Engineering MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+        "sheffield-architecture-march": {
+          "name": "Architecture MArch",
+          "degreeType": "MArch",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-architecture-collaborative-practice-march": {
+          "name": "Architecture: Collaborative Practice MArch",
+          "degreeType": "MArch",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-artificial-intelligence-msc": {
           "name": "Artificial Intelligence MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-artificial-intelligence-for-engineering-msc": {
+          "name": "Artificial Intelligence for Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-astrophysics-msc": {
           "name": "Astrophysics MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-biodiversity-and-conservation-msc": {
           "name": "Biodiversity and Conservation MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-biological-and-bioprocess-engineering-msc": {
           "name": "Biological and Bioprocess Engineering MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-biomedical-engineering-msc": {
           "name": "Biomedical Engineering MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-biomedical-science-msc": {
           "name": "Biomedical Science MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-business-analytics-msc": {
           "name": "Business Analytics MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
-        },
-        "sheffield-business-and-organisational-psychology-msc": {
-          "name": "Business and Organisational Psychology MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-business-finance-and-economics-msc": {
           "name": "Business Finance and Economics MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-business-and-organisational-psychology-msc": {
+          "name": "Business and Organisational Psychology MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-cancer-biology-and-therapeutics-msc": {
           "name": "Cancer Biology and Therapeutics MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-chemistry-msc": {
           "name": "Chemistry MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-civil-engineering-and-project-management-msc": {
+          "name": "Civil Engineering and Project Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "sheffield-civil-and-structural-engineering-msc": {
           "name": "Civil and Structural Engineering MSc",
-          "degreeType": "MSC",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "parsed",
-          "deadlineHash": "e49ed9220c300aa76a3e00fcb55ac44b71d5133dba83893b990613265879a7bc"
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-clinical-neurology-msc": {
+          "name": "Clinical Neurology MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-clinical-research-msc": {
+          "name": "Clinical Research MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-cognitive-neuroscience-and-human-neuroimaging-msc": {
+          "name": "Cognitive Neuroscience and Human Neuroimaging MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-cognitive-science-and-philosophy-of-ai-ma": {
+          "name": "Cognitive Science and Philosophy of AI MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-cognitive-and-computational-neuroscience-msc": {
+          "name": "Cognitive and Computational Neuroscience MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-computer-science-msc": {
+          "name": "Computer Science MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-computer-science-with-speech-and-natural-language-processing-msc": {
+          "name": "Computer Science with Speech and Natural Language Processing MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-creative-and-cultural-industries-management-msc": {
+          "name": "Creative and Cultural Industries Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-cultural-heritage-ma": {
+          "name": "Cultural Heritage MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-cybersecurity-and-artificial-intelligence-msc": {
+          "name": "Cybersecurity and Artificial Intelligence MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-data-science-msc": {
+          "name": "Data Science MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-data-and-digital-humanities-msc": {
+          "name": "Data and Digital Humanities MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-digital-culture-and-communication-ma": {
+          "name": "Digital Culture and Communication MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-digital-marketing-msc": {
+          "name": "Digital Marketing MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-digital-media-and-society-ma": {
+          "name": "Digital Media and Society MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-drug-discovery-science-msc": {
+          "name": "Drug Discovery Science MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-east-asian-business-msc": {
+          "name": "East Asian Business MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-economics-msc": {
+          "name": "Economics MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-education-ma": {
+          "name": "Education MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-electronic-and-electrical-engineering-msc-eng": {
+          "name": "Electronic and Electrical Engineering MSc(Eng)",
+          "degreeType": "MSc(Eng)",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-energy-engineering-with-industrial-management-msc": {
+          "name": "Energy Engineering with Industrial Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-english-literature-ma": {
+          "name": "English Literature MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-environmental-science-and-data-msc": {
+          "name": "Environmental Science and Data MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-europubhealth-european-masters-programme-in-public-health-european-public-health-master": {
+          "name": "Europubhealth: European Masters Programme in Public Health European Public Health Master",
+          "degreeType": "European Public Health Master",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-finance-msc": {
+          "name": "Finance MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-finance-and-accounting-msc": {
+          "name": "Finance and Accounting MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-financial-technology-and-innovation-msc": {
+          "name": "Financial Technology and Innovation MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-geographical-information-systems-gis-msc": {
+          "name": "Geographical Information Systems (GIS) MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-global-journalism-ma": {
+          "name": "Global Journalism MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-health-economics-and-decision-modelling-msc": {
+          "name": "Health Economics and Decision Modelling MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-health-and-clinical-research-delivery-msc": {
+          "name": "Health and Clinical Research Delivery MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-history-ma": {
+          "name": "History MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-human-resource-management-msc": {
+          "name": "Human Resource Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-human-and-molecular-genetics-msc": {
+          "name": "Human and Molecular Genetics MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-information-management-msc": {
+          "name": "Information Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-information-systems-msc": {
+          "name": "Information Systems MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-information-systems-management-msc": {
+          "name": "Information Systems Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-international-criminology-ma": {
+          "name": "International Criminology MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-international-development-msc": {
+          "name": "International Development MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-international-management-msc": {
+          "name": "International Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-international-marketing-and-management-msc": {
+          "name": "International Marketing and Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-international-political-economy-ma": {
+          "name": "International Political Economy MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-international-public-and-political-communication-ma": {
+          "name": "International Public and Political Communication MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-international-relations-ma": {
+          "name": "International Relations MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-journalism-ma": {
+          "name": "Journalism MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-llm-corporate-and-commercial-law-llm": {
+          "name": "LLM Corporate and Commercial Law LLM",
+          "degreeType": "LLM",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-llm-international-law-and-global-justice-llm": {
+          "name": "LLM International Law and Global Justice LLM",
+          "degreeType": "LLM",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-llm-the-sheffield-llm-llm": {
+          "name": "LLM The Sheffield LLM LLM",
+          "degreeType": "LLM",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-landscape-architecture-ma": {
+          "name": "Landscape Architecture MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-landscape-design-planning-and-management-ma": {
+          "name": "Landscape Design, Planning and Management MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-law-ma": {
+          "name": "Law MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-librarianship-ma": {
+          "name": "Librarianship MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-library-and-information-services-management-distance-learning-ma": {
+          "name": "Library and Information Services Management (Distance Learning) MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-logistics-and-supply-chain-management-msc": {
+          "name": "Logistics and Supply Chain Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-mba-master-of-business-administration-mba": {
+          "name": "MBA (Master of Business Administration) MBA",
+          "degreeType": "MBA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-management-msc": {
+          "name": "Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-management-and-international-business-msc": {
+          "name": "Management and International Business MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-materials-science-and-engineering-msc": {
+          "name": "Materials Science and Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-mathematical-and-theoretical-physics-msc": {
+          "name": "Mathematical and Theoretical Physics MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-mathematics-msc": {
+          "name": "Mathematics MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-mechanical-engineering-with-industrial-management-msc": {
+          "name": "Mechanical Engineering with Industrial Management MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-molecular-biology-and-biotechnology-msc": {
+          "name": "Molecular Biology and Biotechnology MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-money-banking-and-finance-msc": {
+          "name": "Money, Banking and Finance MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-music-performance-studies-ma": {
+          "name": "Music Performance Studies MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-music-management-and-innovation-ma": {
+          "name": "Music, Management and Innovation MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-musicology-ma": {
+          "name": "Musicology MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-ophthalmology-advanced-clinical-practice-paediatrics-mmedsci": {
+          "name": "Ophthalmology Advanced Clinical Practice (Paediatrics) MMedSci",
+          "degreeType": "MMedSci",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-pharmaceutical-engineering-msc": {
+          "name": "Pharmaceutical Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-philosophy-ma": {
+          "name": "Philosophy MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-physics-msc": {
+          "name": "Physics MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-politics-and-media-in-east-asia-ma": {
+          "name": "Politics and Media in East Asia MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-politics-governance-and-public-policy-ma": {
+          "name": "Politics, Governance and Public Policy MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-process-safety-and-loss-prevention-msc-eng": {
+          "name": "Process Safety and Loss Prevention MSc(Eng)",
+          "degreeType": "MSc(Eng)",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-psychological-research-methods-msc": {
+          "name": "Psychological Research Methods MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-psychology-and-education-conversion-msc": {
+          "name": "Psychology and Education (Conversion) MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-psychology-and-education-ma": {
+          "name": "Psychology and Education MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-psychology-of-music-ma": {
+          "name": "Psychology of Music MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-public-health-health-services-research-mph": {
+          "name": "Public Health (Health Services Research) MPH",
+          "degreeType": "MPH",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-public-health-management-and-leadership-mph": {
+          "name": "Public Health (Management and Leadership) MPH",
+          "degreeType": "MPH",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-public-health-online-mph": {
+          "name": "Public Health (Online) MPH",
+          "degreeType": "MPH",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-public-health-mph": {
+          "name": "Public Health MPH",
+          "degreeType": "MPH",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-real-estate-msc": {
+          "name": "Real Estate MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-reproductive-and-developmental-medicine-msc": {
+          "name": "Reproductive and Developmental Medicine MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-robotics-msc": {
+          "name": "Robotics MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-science-communication-msc": {
+          "name": "Science Communication MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-social-research-ma": {
+          "name": "Social Research MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-speech-and-language-therapy-mmedsci": {
+          "name": "Speech and Language Therapy MMedSci",
+          "degreeType": "MMedSci",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-strategic-marketing-and-branding-msc": {
+          "name": "Strategic Marketing and Branding MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-sustainability-and-energy-engineering-msc": {
+          "name": "Sustainability and Energy Engineering MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-translation-and-intercultural-studies-ma": {
+          "name": "Translation and Intercultural Studies MA",
+          "degreeType": "MA",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-translational-neuroscience-msc": {
+          "name": "Translational Neuroscience MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-urban-design-and-planning-msc": {
+          "name": "Urban Design and Planning MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-urban-and-regional-planning-msc": {
+          "name": "Urban and Regional Planning MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-vision-and-strabismus-mmedsci": {
+          "name": "Vision and Strabismus MMedSci",
+          "degreeType": "MMedSci",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+        },
+        "sheffield-wireless-communication-systems-msc": {
+          "name": "Wireless Communication Systems MSc",
+          "degreeType": "MSc",
+          "faculty": "The University of Sheffield",
+          "department": "The University of Sheffield",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         }
       }
     }

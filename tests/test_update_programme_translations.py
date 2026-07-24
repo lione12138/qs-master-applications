@@ -246,3 +246,41 @@ def test_incomplete_batch_is_rejected_without_checkpoint(monkeypatch) -> None:
             model="deepseek-v4-flash",
             timeout=10,
         )
+
+
+def test_official_translations_are_saved_without_an_api_key(
+    monkeypatch, tmp_path
+) -> None:
+    module = load_module()
+    translation_path = tmp_path / "programme-translations.json"
+    monkeypatch.setattr(module, "TRANSLATIONS_PATH", translation_path)
+    monkeypatch.setattr(
+        module,
+        "build_scope_catalog",
+        lambda: {
+            "ntu-international-master-101": {
+                "id": "ntu-international-master-101",
+                "english": "Master's Programme in Graduate Institute of Linguistics",
+                "scopeType": "programme",
+                "university": "National Taiwan University",
+                "country": "Taiwan",
+                "description": "",
+            }
+        },
+    )
+    monkeypatch.setattr(
+        module,
+        "fetch_official_translations",
+        lambda _catalog: {"ntu-international-master-101": "語言學研究所"},
+    )
+
+    translated = module.update_translations(api_key=None)
+
+    assert translated == 1
+    saved = json.loads(translation_path.read_text(encoding="utf-8"))
+    assert saved["translations"]["ntu-international-master-101"] == {
+        "zh": "語言學研究所",
+        "source": "official",
+        "sourceUrl": module.NTU_CHINESE_CATALOG_URL,
+        "updatedAt": module.date.today().isoformat(),
+    }

@@ -1,6 +1,3382 @@
 {
   "items": [
     {
+      "id": "known-programme-guidance:sheffield-advanced-computer-science-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-computer-science-msc",
+      "programme": {
+        "id": "sheffield-advanced-computer-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Advanced Computer Science MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-computer-science-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-advanced-mechanical-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc",
+      "programme": {
+        "id": "sheffield-advanced-mechanical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Advanced Mechanical Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-mechanical-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-aerospace-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc",
+      "programme": {
+        "id": "sheffield-aerospace-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Aerospace Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/aerospace-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-applied-linguistics-and-tesol-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma",
+      "programme": {
+        "id": "sheffield-applied-linguistics-and-tesol-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Applied Linguistics and TESOL MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/applied-linguistics-and-tesol-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-applied-professional-studies-in-education-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma",
+      "programme": {
+        "id": "sheffield-applied-professional-studies-in-education-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Applied Professional Studies in Education MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/applied-professional-studies-education-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-archaeology-and-heritage-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma",
+      "programme": {
+        "id": "sheffield-archaeology-and-heritage-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Archaeology and Heritage MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/archaeology-and-heritage-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-architectural-design-ma",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma",
+      "programme": {
+        "id": "sheffield-architectural-design-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Architectural Design MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architectural-design-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-artificial-intelligence-for-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc",
+      "programme": {
+        "id": "sheffield-artificial-intelligence-for-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Artificial Intelligence for Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-artificial-intelligence-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc",
+      "programme": {
+        "id": "sheffield-artificial-intelligence-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Artificial Intelligence MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/artificial-intelligence-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-astrophysics-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc",
+      "programme": {
+        "id": "sheffield-astrophysics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Astrophysics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/astrophysics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-biodiversity-and-conservation-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc",
+      "programme": {
+        "id": "sheffield-biodiversity-and-conservation-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Biodiversity and Conservation MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biodiversity-and-conservation-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-biological-and-bioprocess-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc",
+      "programme": {
+        "id": "sheffield-biological-and-bioprocess-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Biological and Bioprocess Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biological-and-bioprocess-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-biomedical-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc",
+      "programme": {
+        "id": "sheffield-biomedical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Biomedical Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-biomedical-science-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc",
+      "programme": {
+        "id": "sheffield-biomedical-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Biomedical Science MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/biomedical-science-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-business-analytics-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc",
+      "programme": {
+        "id": "sheffield-business-analytics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Business Analytics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-analytics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-business-and-organisational-psychology-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc",
+      "programme": {
+        "id": "sheffield-business-and-organisational-psychology-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Business and Organisational Psychology MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-and-organisational-psychology-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-business-finance-and-economics-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc",
+      "programme": {
+        "id": "sheffield-business-finance-and-economics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Business Finance and Economics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/business-finance-and-economics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-cancer-biology-and-therapeutics-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc",
+      "programme": {
+        "id": "sheffield-cancer-biology-and-therapeutics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Cancer Biology and Therapeutics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cancer-biology-and-therapeutics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-chemistry-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc",
+      "programme": {
+        "id": "sheffield-chemistry-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Chemistry MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/chemistry-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "known-programme-guidance:sheffield-civil-and-structural-engineering-msc",
+      "type": "known-programme-window-guidance",
+      "status": "pending",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc",
+      "programme": {
+        "id": "sheffield-civil-and-structural-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Civil and Structural Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/civil-and-structural-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      }
+    },
+    {
+      "id": "new-programme:sheffield-advanced-clinical-practice-gp-mmedsci",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-clinical-practice-gp-mmedsci",
+      "programme": {
+        "id": "sheffield-advanced-clinical-practice-gp-mmedsci",
+        "universityId": "the-university-of-sheffield",
+        "name": "Advanced Clinical Practice (GP) MMedSci",
+        "degreeType": "MMedSci",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-clinical-practice-gp-mmedsci"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-advanced-clinical-practice-neonatal-mmedsci",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-clinical-practice-neonatal-mmedsci",
+      "programme": {
+        "id": "sheffield-advanced-clinical-practice-neonatal-mmedsci",
+        "universityId": "the-university-of-sheffield",
+        "name": "Advanced Clinical Practice (Neonatal) MMedSci",
+        "degreeType": "MMedSci",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-clinical-practice-neonatal-mmedsci"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-advanced-clinical-practice-paediatrics-mmedsci",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-clinical-practice-paediatrics-mmedsci",
+      "programme": {
+        "id": "sheffield-advanced-clinical-practice-paediatrics-mmedsci",
+        "universityId": "the-university-of-sheffield",
+        "name": "Advanced Clinical Practice (Paediatrics) MMedSci",
+        "degreeType": "MMedSci",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-clinical-practice-paediatrics-mmedsci"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-advanced-control-and-systems-engineering-msc-eng",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-control-and-systems-engineering-msceng",
+      "programme": {
+        "id": "sheffield-advanced-control-and-systems-engineering-msc-eng",
+        "universityId": "the-university-of-sheffield",
+        "name": "Advanced Control and Systems Engineering MSc(Eng)",
+        "degreeType": "MSc(Eng)",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/advanced-control-and-systems-engineering-msceng"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-architecture-collaborative-practice-march",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architecture-collaborative-practice-march",
+      "programme": {
+        "id": "sheffield-architecture-collaborative-practice-march",
+        "universityId": "the-university-of-sheffield",
+        "name": "Architecture: Collaborative Practice MArch",
+        "degreeType": "MArch",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architecture-collaborative-practice-march"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-architecture-march",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architecture-march",
+      "programme": {
+        "id": "sheffield-architecture-march",
+        "universityId": "the-university-of-sheffield",
+        "name": "Architecture MArch",
+        "degreeType": "MArch",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/architecture-march"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-civil-engineering-and-project-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/civil-engineering-and-project-management-msc",
+      "programme": {
+        "id": "sheffield-civil-engineering-and-project-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Civil Engineering and Project Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/civil-engineering-and-project-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-clinical-neurology-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/clinical-neurology-msc",
+      "programme": {
+        "id": "sheffield-clinical-neurology-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Clinical Neurology MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/clinical-neurology-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-clinical-research-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/clinical-research-msc",
+      "programme": {
+        "id": "sheffield-clinical-research-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Clinical Research MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/clinical-research-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-cognitive-and-computational-neuroscience-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cognitive-and-computational-neuroscience-msc",
+      "programme": {
+        "id": "sheffield-cognitive-and-computational-neuroscience-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Cognitive and Computational Neuroscience MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cognitive-and-computational-neuroscience-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-cognitive-neuroscience-and-human-neuroimaging-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cognitive-neuroscience-and-human-neuroimaging-msc",
+      "programme": {
+        "id": "sheffield-cognitive-neuroscience-and-human-neuroimaging-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Cognitive Neuroscience and Human Neuroimaging MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cognitive-neuroscience-and-human-neuroimaging-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-cognitive-science-and-philosophy-of-ai-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cognitive-science-and-philosophy-ai-ma",
+      "programme": {
+        "id": "sheffield-cognitive-science-and-philosophy-of-ai-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Cognitive Science and Philosophy of AI MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cognitive-science-and-philosophy-ai-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-computer-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/computer-science-msc",
+      "programme": {
+        "id": "sheffield-computer-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Computer Science MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/computer-science-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-computer-science-with-speech-and-natural-language-processing-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/computer-science-speech-and-natural-language-processing-msc",
+      "programme": {
+        "id": "sheffield-computer-science-with-speech-and-natural-language-processing-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Computer Science with Speech and Natural Language Processing MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/computer-science-speech-and-natural-language-processing-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-creative-and-cultural-industries-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/creative-and-cultural-industries-management-msc",
+      "programme": {
+        "id": "sheffield-creative-and-cultural-industries-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Creative and Cultural Industries Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/creative-and-cultural-industries-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-cultural-heritage-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cultural-heritage-ma",
+      "programme": {
+        "id": "sheffield-cultural-heritage-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Cultural Heritage MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cultural-heritage-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-cybersecurity-and-artificial-intelligence-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cybersecurity-and-artificial-intelligence-msc",
+      "programme": {
+        "id": "sheffield-cybersecurity-and-artificial-intelligence-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Cybersecurity and Artificial Intelligence MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/cybersecurity-and-artificial-intelligence-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-data-and-digital-humanities-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/data-and-digital-humanities-msc",
+      "programme": {
+        "id": "sheffield-data-and-digital-humanities-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Data and Digital Humanities MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/data-and-digital-humanities-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-data-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/data-science-msc",
+      "programme": {
+        "id": "sheffield-data-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Data Science MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/data-science-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-digital-culture-and-communication-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/digital-culture-and-communication-ma",
+      "programme": {
+        "id": "sheffield-digital-culture-and-communication-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Digital Culture and Communication MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/digital-culture-and-communication-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-digital-marketing-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/digital-marketing-msc",
+      "programme": {
+        "id": "sheffield-digital-marketing-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Digital Marketing MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/digital-marketing-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-digital-media-and-society-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/digital-media-and-society-ma",
+      "programme": {
+        "id": "sheffield-digital-media-and-society-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Digital Media and Society MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/digital-media-and-society-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-drug-discovery-science-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/drug-discovery-science-msc",
+      "programme": {
+        "id": "sheffield-drug-discovery-science-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Drug Discovery Science MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/drug-discovery-science-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-east-asian-business-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/east-asian-business-msc",
+      "programme": {
+        "id": "sheffield-east-asian-business-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "East Asian Business MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/east-asian-business-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-economics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/economics-msc",
+      "programme": {
+        "id": "sheffield-economics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Economics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/economics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-education-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/education-ma",
+      "programme": {
+        "id": "sheffield-education-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Education MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/education-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-electronic-and-electrical-engineering-msc-eng",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/electronic-and-electrical-engineering-msceng",
+      "programme": {
+        "id": "sheffield-electronic-and-electrical-engineering-msc-eng",
+        "universityId": "the-university-of-sheffield",
+        "name": "Electronic and Electrical Engineering MSc(Eng)",
+        "degreeType": "MSc(Eng)",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/electronic-and-electrical-engineering-msceng"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-energy-engineering-with-industrial-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/energy-engineering-industrial-management-msc",
+      "programme": {
+        "id": "sheffield-energy-engineering-with-industrial-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Energy Engineering with Industrial Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/energy-engineering-industrial-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-english-literature-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/english-literature-ma",
+      "programme": {
+        "id": "sheffield-english-literature-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "English Literature MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/english-literature-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-environmental-science-and-data-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/environmental-science-and-data-msc",
+      "programme": {
+        "id": "sheffield-environmental-science-and-data-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Environmental Science and Data MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/environmental-science-and-data-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-europubhealth-european-masters-programme-in-public-health-european-public-health-master",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/europubhealth-european-masters-programme-public-health-european-public-health-master",
+      "programme": {
+        "id": "sheffield-europubhealth-european-masters-programme-in-public-health-european-public-health-master",
+        "universityId": "the-university-of-sheffield",
+        "name": "Europubhealth: European Masters Programme in Public Health European Public Health Master",
+        "degreeType": "European Public Health Master",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/europubhealth-european-masters-programme-public-health-european-public-health-master"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-finance-and-accounting-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/finance-and-accounting-msc",
+      "programme": {
+        "id": "sheffield-finance-and-accounting-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Finance and Accounting MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/finance-and-accounting-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-finance-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/finance-msc",
+      "programme": {
+        "id": "sheffield-finance-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Finance MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/finance-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-financial-technology-and-innovation-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/financial-technology-and-innovation-msc",
+      "programme": {
+        "id": "sheffield-financial-technology-and-innovation-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Financial Technology and Innovation MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/financial-technology-and-innovation-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-geographical-information-systems-gis-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/geographical-information-systems-gis-msc",
+      "programme": {
+        "id": "sheffield-geographical-information-systems-gis-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Geographical Information Systems (GIS) MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/geographical-information-systems-gis-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-global-journalism-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/global-journalism-ma",
+      "programme": {
+        "id": "sheffield-global-journalism-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Global Journalism MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/global-journalism-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-health-and-clinical-research-delivery-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/health-and-clinical-research-delivery-msc-pg-certificate-pg-diploma",
+      "programme": {
+        "id": "sheffield-health-and-clinical-research-delivery-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Health and Clinical Research Delivery MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/health-and-clinical-research-delivery-msc-pg-certificate-pg-diploma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-health-economics-and-decision-modelling-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/health-economics-and-decision-modelling-msc",
+      "programme": {
+        "id": "sheffield-health-economics-and-decision-modelling-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Health Economics and Decision Modelling MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/health-economics-and-decision-modelling-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-history-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/history-ma",
+      "programme": {
+        "id": "sheffield-history-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "History MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/history-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-human-and-molecular-genetics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/human-and-molecular-genetics-msc",
+      "programme": {
+        "id": "sheffield-human-and-molecular-genetics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Human and Molecular Genetics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/human-and-molecular-genetics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-human-resource-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/human-resource-management-msc",
+      "programme": {
+        "id": "sheffield-human-resource-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Human Resource Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/human-resource-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-information-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/information-management-msc",
+      "programme": {
+        "id": "sheffield-information-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Information Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/information-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-information-systems-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/information-systems-management-msc",
+      "programme": {
+        "id": "sheffield-information-systems-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Information Systems Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/information-systems-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-information-systems-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/information-systems-msc",
+      "programme": {
+        "id": "sheffield-information-systems-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Information Systems MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/information-systems-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-international-criminology-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-criminology-ma",
+      "programme": {
+        "id": "sheffield-international-criminology-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "International Criminology MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-criminology-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-international-development-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-development-msc",
+      "programme": {
+        "id": "sheffield-international-development-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "International Development MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-development-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-international-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-management-msc",
+      "programme": {
+        "id": "sheffield-international-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "International Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-international-marketing-and-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-marketing-and-management-msc",
+      "programme": {
+        "id": "sheffield-international-marketing-and-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "International Marketing and Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-marketing-and-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-international-political-economy-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-political-economy-ma",
+      "programme": {
+        "id": "sheffield-international-political-economy-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "International Political Economy MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-political-economy-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-international-public-and-political-communication-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-public-and-political-communication-ma",
+      "programme": {
+        "id": "sheffield-international-public-and-political-communication-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "International Public and Political Communication MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-public-and-political-communication-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-international-relations-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-relations-ma",
+      "programme": {
+        "id": "sheffield-international-relations-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "International Relations MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/international-relations-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-journalism-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/journalism-ma",
+      "programme": {
+        "id": "sheffield-journalism-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Journalism MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/journalism-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-landscape-architecture-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/landscape-architecture-ma",
+      "programme": {
+        "id": "sheffield-landscape-architecture-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Landscape Architecture MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/landscape-architecture-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-landscape-design-planning-and-management-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/landscape-design-planning-and-management-ma",
+      "programme": {
+        "id": "sheffield-landscape-design-planning-and-management-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Landscape Design, Planning and Management MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/landscape-design-planning-and-management-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-law-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/law-ma",
+      "programme": {
+        "id": "sheffield-law-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Law MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/law-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-librarianship-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/librarianship-ma",
+      "programme": {
+        "id": "sheffield-librarianship-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Librarianship MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/librarianship-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-library-and-information-services-management-distance-learning-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/library-and-information-services-management-distance-learning-ma-pg-certificate-pg-diploma",
+      "programme": {
+        "id": "sheffield-library-and-information-services-management-distance-learning-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Library and Information Services Management (Distance Learning) MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/library-and-information-services-management-distance-learning-ma-pg-certificate-pg-diploma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-llm-corporate-and-commercial-law-llm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/llm-corporate-and-commercial-law-llm",
+      "programme": {
+        "id": "sheffield-llm-corporate-and-commercial-law-llm",
+        "universityId": "the-university-of-sheffield",
+        "name": "LLM Corporate and Commercial Law LLM",
+        "degreeType": "LLM",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/llm-corporate-and-commercial-law-llm"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-llm-international-law-and-global-justice-llm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/llm-international-law-and-global-justice-llm",
+      "programme": {
+        "id": "sheffield-llm-international-law-and-global-justice-llm",
+        "universityId": "the-university-of-sheffield",
+        "name": "LLM International Law and Global Justice LLM",
+        "degreeType": "LLM",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/llm-international-law-and-global-justice-llm"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-llm-the-sheffield-llm-llm",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/llm-sheffield-llm-llm",
+      "programme": {
+        "id": "sheffield-llm-the-sheffield-llm-llm",
+        "universityId": "the-university-of-sheffield",
+        "name": "LLM The Sheffield LLM LLM",
+        "degreeType": "LLM",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/llm-sheffield-llm-llm"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-logistics-and-supply-chain-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/logistics-and-supply-chain-management-msc",
+      "programme": {
+        "id": "sheffield-logistics-and-supply-chain-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Logistics and Supply Chain Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/logistics-and-supply-chain-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-management-and-international-business-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/management-and-international-business-msc",
+      "programme": {
+        "id": "sheffield-management-and-international-business-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Management and International Business MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/management-and-international-business-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/management-msc",
+      "programme": {
+        "id": "sheffield-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-materials-science-and-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/materials-science-and-engineering-msc",
+      "programme": {
+        "id": "sheffield-materials-science-and-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Materials Science and Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/materials-science-and-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-mathematical-and-theoretical-physics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mathematical-and-theoretical-physics-msc",
+      "programme": {
+        "id": "sheffield-mathematical-and-theoretical-physics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Mathematical and Theoretical Physics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mathematical-and-theoretical-physics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-mathematics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mathematics-msc",
+      "programme": {
+        "id": "sheffield-mathematics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Mathematics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mathematics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-mba-master-of-business-administration-mba",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mba-master-business-administration-mba",
+      "programme": {
+        "id": "sheffield-mba-master-of-business-administration-mba",
+        "universityId": "the-university-of-sheffield",
+        "name": "MBA (Master of Business Administration) MBA",
+        "degreeType": "MBA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mba-master-business-administration-mba"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-mechanical-engineering-with-industrial-management-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mechanical-engineering-industrial-management-msc",
+      "programme": {
+        "id": "sheffield-mechanical-engineering-with-industrial-management-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Mechanical Engineering with Industrial Management MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/mechanical-engineering-industrial-management-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-molecular-biology-and-biotechnology-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/molecular-biology-and-biotechnology-msc",
+      "programme": {
+        "id": "sheffield-molecular-biology-and-biotechnology-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Molecular Biology and Biotechnology MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/molecular-biology-and-biotechnology-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-money-banking-and-finance-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/money-banking-and-finance-msc",
+      "programme": {
+        "id": "sheffield-money-banking-and-finance-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Money, Banking and Finance MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/money-banking-and-finance-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-music-management-and-innovation-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/music-management-and-innovation-ma",
+      "programme": {
+        "id": "sheffield-music-management-and-innovation-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Music, Management and Innovation MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/music-management-and-innovation-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-music-performance-studies-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/music-performance-studies-ma",
+      "programme": {
+        "id": "sheffield-music-performance-studies-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Music Performance Studies MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/music-performance-studies-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-musicology-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/musicology-ma",
+      "programme": {
+        "id": "sheffield-musicology-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Musicology MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/musicology-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-ophthalmology-advanced-clinical-practice-paediatrics-mmedsci",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/ophthalmology-advanced-clinical-practice-paediatrics-mmedsci",
+      "programme": {
+        "id": "sheffield-ophthalmology-advanced-clinical-practice-paediatrics-mmedsci",
+        "universityId": "the-university-of-sheffield",
+        "name": "Ophthalmology Advanced Clinical Practice (Paediatrics) MMedSci",
+        "degreeType": "MMedSci",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/ophthalmology-advanced-clinical-practice-paediatrics-mmedsci"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-pharmaceutical-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/pharmaceutical-engineering-msc",
+      "programme": {
+        "id": "sheffield-pharmaceutical-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Pharmaceutical Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/pharmaceutical-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-philosophy-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/philosophy-ma",
+      "programme": {
+        "id": "sheffield-philosophy-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Philosophy MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/philosophy-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-physics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/physics-msc",
+      "programme": {
+        "id": "sheffield-physics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Physics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/physics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-politics-and-media-in-east-asia-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/politics-and-media-east-asia-ma",
+      "programme": {
+        "id": "sheffield-politics-and-media-in-east-asia-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Politics and Media in East Asia MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/politics-and-media-east-asia-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-politics-governance-and-public-policy-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/politics-governance-and-public-policy-ma",
+      "programme": {
+        "id": "sheffield-politics-governance-and-public-policy-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Politics, Governance and Public Policy MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/politics-governance-and-public-policy-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-process-safety-and-loss-prevention-msc-eng",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/process-safety-and-loss-prevention-msceng",
+      "programme": {
+        "id": "sheffield-process-safety-and-loss-prevention-msc-eng",
+        "universityId": "the-university-of-sheffield",
+        "name": "Process Safety and Loss Prevention MSc(Eng)",
+        "degreeType": "MSc(Eng)",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/process-safety-and-loss-prevention-msceng"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-psychological-research-methods-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychological-research-methods-msc",
+      "programme": {
+        "id": "sheffield-psychological-research-methods-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Psychological Research Methods MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychological-research-methods-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-psychology-and-education-conversion-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychology-and-education-conversion-msc",
+      "programme": {
+        "id": "sheffield-psychology-and-education-conversion-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Psychology and Education (Conversion) MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychology-and-education-conversion-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-psychology-and-education-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychology-and-education-ma",
+      "programme": {
+        "id": "sheffield-psychology-and-education-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Psychology and Education MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychology-and-education-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-psychology-of-music-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychology-music-ma",
+      "programme": {
+        "id": "sheffield-psychology-of-music-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Psychology of Music MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/psychology-music-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-public-health-health-services-research-mph",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-health-services-research-mph",
+      "programme": {
+        "id": "sheffield-public-health-health-services-research-mph",
+        "universityId": "the-university-of-sheffield",
+        "name": "Public Health (Health Services Research) MPH",
+        "degreeType": "MPH",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-health-services-research-mph"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-public-health-management-and-leadership-mph",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-management-and-leadership-mph",
+      "programme": {
+        "id": "sheffield-public-health-management-and-leadership-mph",
+        "universityId": "the-university-of-sheffield",
+        "name": "Public Health (Management and Leadership) MPH",
+        "degreeType": "MPH",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-management-and-leadership-mph"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-public-health-mph",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-mph",
+      "programme": {
+        "id": "sheffield-public-health-mph",
+        "universityId": "the-university-of-sheffield",
+        "name": "Public Health MPH",
+        "degreeType": "MPH",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-mph"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-public-health-online-mph",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-online-mph-pg-certificate",
+      "programme": {
+        "id": "sheffield-public-health-online-mph",
+        "universityId": "the-university-of-sheffield",
+        "name": "Public Health (Online) MPH",
+        "degreeType": "MPH",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/public-health-online-mph-pg-certificate"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-real-estate-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/real-estate-msc",
+      "programme": {
+        "id": "sheffield-real-estate-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Real Estate MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/real-estate-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-reproductive-and-developmental-medicine-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/reproductive-and-developmental-medicine-msc",
+      "programme": {
+        "id": "sheffield-reproductive-and-developmental-medicine-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Reproductive and Developmental Medicine MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/reproductive-and-developmental-medicine-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-robotics-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/robotics-msc",
+      "programme": {
+        "id": "sheffield-robotics-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Robotics MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/robotics-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-science-communication-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/science-communication-msc",
+      "programme": {
+        "id": "sheffield-science-communication-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Science Communication MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/science-communication-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-social-research-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/social-research-ma",
+      "programme": {
+        "id": "sheffield-social-research-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Social Research MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/social-research-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-speech-and-language-therapy-mmedsci",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/speech-and-language-therapy-mmedsci",
+      "programme": {
+        "id": "sheffield-speech-and-language-therapy-mmedsci",
+        "universityId": "the-university-of-sheffield",
+        "name": "Speech and Language Therapy MMedSci",
+        "degreeType": "MMedSci",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/speech-and-language-therapy-mmedsci"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-strategic-marketing-and-branding-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/strategic-marketing-and-branding-msc",
+      "programme": {
+        "id": "sheffield-strategic-marketing-and-branding-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Strategic Marketing and Branding MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/strategic-marketing-and-branding-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-sustainability-and-energy-engineering-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/sustainability-and-energy-engineering-msc",
+      "programme": {
+        "id": "sheffield-sustainability-and-energy-engineering-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Sustainability and Energy Engineering MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/sustainability-and-energy-engineering-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-translation-and-intercultural-studies-ma",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/translation-and-intercultural-studies-ma",
+      "programme": {
+        "id": "sheffield-translation-and-intercultural-studies-ma",
+        "universityId": "the-university-of-sheffield",
+        "name": "Translation and Intercultural Studies MA",
+        "degreeType": "MA",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/translation-and-intercultural-studies-ma"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-translational-neuroscience-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/translational-neuroscience-msc",
+      "programme": {
+        "id": "sheffield-translational-neuroscience-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Translational Neuroscience MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/translational-neuroscience-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-urban-and-regional-planning-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/urban-and-regional-planning-msc",
+      "programme": {
+        "id": "sheffield-urban-and-regional-planning-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Urban and Regional Planning MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/urban-and-regional-planning-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-urban-design-and-planning-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/urban-design-and-planning-msc",
+      "programme": {
+        "id": "sheffield-urban-design-and-planning-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Urban Design and Planning MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/urban-design-and-planning-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-vision-and-strabismus-mmedsci",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/vision-and-strabismus-mmedsci",
+      "programme": {
+        "id": "sheffield-vision-and-strabismus-mmedsci",
+        "universityId": "the-university-of-sheffield",
+        "name": "Vision and Strabismus MMedSci",
+        "degreeType": "MMedSci",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/vision-and-strabismus-mmedsci"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
+      "id": "new-programme:sheffield-wireless-communication-systems-msc",
+      "type": "new-programme",
+      "status": "approved",
+      "universityId": "the-university-of-sheffield",
+      "detectedAt": "2026-07-24T06:30:35.830580+00:00",
+      "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/wireless-communication-systems-msc",
+      "programme": {
+        "id": "sheffield-wireless-communication-systems-msc",
+        "universityId": "the-university-of-sheffield",
+        "name": "Wireless Communication Systems MSc",
+        "degreeType": "MSc",
+        "faculty": "The University of Sheffield | The University of Sheffield",
+        "applicationUrl": "https://sheffield.ac.uk/postgraduate/taught/apply",
+        "sourceUrl": "https://sheffield.ac.uk/postgraduate/taught/courses/2026/wireless-communication-systems-msc"
+      },
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Sheffield's official deadlines page publishes exact general opening and closing dates, but explicitly states that some courses use exceptions shown on their individual pages. Until those exceptions are checked systematically, no general date is assigned to this programme.",
+      "discoveryEvidence": {
+        "retrievalMethod": "official-postgraduate-taught-a-z",
+        "evidenceQuality": "official-full-text",
+        "documentHash": null
+      },
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:36:52.480134+00:00"
+    },
+    {
       "id": "new-programme:sheffield-advanced-mechanical-engineering-msc",
       "type": "new-programme",
       "status": "approved",

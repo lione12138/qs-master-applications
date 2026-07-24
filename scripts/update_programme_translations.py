@@ -18,6 +18,18 @@ if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from gradwindow.io import read_json, write_json
+from gradwindow.programme_adapters.ntu_taiwan import (
+    CATALOG_URL as NTU_ENGLISH_CATALOG_URL,
+)
+from gradwindow.programme_adapters.ntu_taiwan import (
+    CHINESE_CATALOG_URL as NTU_CHINESE_CATALOG_URL,
+)
+from gradwindow.programme_adapters.ntu_taiwan import (
+    EXISTING_CS_ID as NTU_EXISTING_CS_ID,
+)
+from gradwindow.programme_adapters.ntu_taiwan import (
+    parse_official_chinese_translations,
+)
 
 DATA_DIR = ROOT / "data"
 TRANSLATIONS_PATH = DATA_DIR / "programme-translations.json"
@@ -110,6 +122,32 @@ def needs_translation(
     if current.get("source") == "manual" and not include_manual:
         return False
     return force or not current.get("zh")
+
+
+def fetch_official_translations(
+    catalog: dict[str, dict[str, str]],
+) -> dict[str, str]:
+    target_ids = {
+        scope_id
+        for scope_id in catalog
+        if scope_id == NTU_EXISTING_CS_ID
+        or scope_id.startswith("ntu-international-master-")
+    }
+    if not target_ids:
+        return {}
+    with httpx.Client(follow_redirects=True, timeout=60) as client:
+        english_response = client.get(NTU_ENGLISH_CATALOG_URL)
+        english_response.raise_for_status()
+        chinese_response = client.get(NTU_CHINESE_CATALOG_URL)
+        chinese_response.raise_for_status()
+    translations = parse_official_chinese_translations(
+        english_response.text, chinese_response.text
+    )
+    return {
+        scope_id: value
+        for scope_id, value in translations.items()
+        if scope_id in target_ids
+    }
 
 
 def strip_json_fence(text: str) -> str:
@@ -367,6 +405,36 @@ def update_translations(
     payload = load_translation_payload()
     translations = payload.setdefault("translations", {})
     catalog = build_scope_catalog()
+
+    if not dry_run:
+        missing_catalog = {
+            scope_id: item
+            for scope_id, item in catalog.items()
+            if needs_translation(scope_id, translations, False, False)
+        }
+        official_translations = fetch_official_translations(missing_catalog)
+        official_count = 0
+        for scope_id, value in official_translations.items():
+            if not needs_translation(scope_id, translations, False, False):
+                continue
+            translations[scope_id] = {
+                "zh": value,
+                "source": "official",
+                "sourceUrl": NTU_CHINESE_CATALOG_URL,
+                "updatedAt": date.today().isoformat(),
+            }
+            official_count += 1
+        if official_count:
+            meta = payload.setdefault("meta", {})
+            providers = meta.setdefault("providers", [])
+            if "official" not in providers:
+                providers.append("official")
+            meta["updatedAt"] = date.today().isoformat()
+            write_json(TRANSLATIONS_PATH, payload)
+            print(f"Imported and checkpointed {official_count} official translations.")
+    else:
+        official_count = 0
+
     pending = [
         item
         for scope_id, item in catalog.items()
@@ -386,13 +454,13 @@ def update_translations(
         return 0
     if not pending:
         print("No missing programme translations.")
-        return 0
+        return official_count
 
     api_key = api_key or os.environ.get("DEEPSEEK_API_KEY")
     if not api_key:
         raise SystemExit("Set DEEPSEEK_API_KEY before running this script.")
 
-    translated_count = 0
+    translated_count = official_count
     for start in range(0, len(pending), batch_size):
         batch = pending[start : start + batch_size]
         translated = translate_batch(
