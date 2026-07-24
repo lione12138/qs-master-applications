@@ -2,10 +2,10 @@
   "universities": {
     "king-s-college-london-kcl": {
       "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses",
-      "checkedAt": "2026-07-23T10:18:52.712809+00:00",
+      "checkedAt": "2026-07-24T06:55:36.835381+00:00",
       "itemCount": 172,
       "applicationOpensAt": null,
-      "catalogHash": "b6078653f49fd886f74a3ed5b71cf99d26fa7da588865fc2bb4bef2f2a6b65ea",
+      "catalogHash": "9aaad6eb6be6d794bbb11898ea1bb28f976d012f613a53ac5105037d24fcaf3d",
       "programmes": {
         "kcl-accounting-accountability-financial-management-msc": {
           "name": "Accounting, Accountability & Financial Management MSc",
@@ -202,10 +202,10 @@
         "kcl-clinical-education-ma": {
           "name": "Clinical Education MA",
           "degreeType": "MA",
-          "faculty": "Faculty of Life Sciences & Medicine",
-          "department": "King’s Learning Institute",
-          "parseStatus": "incomplete",
-          "deadlineHash": "e556a3ce08c056b166855c29d4f2212d83621b41b8307b990f27837739a4f107"
+          "faculty": "",
+          "department": "",
+          "parseStatus": "no-deadline",
+          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
         },
         "kcl-clinical-neurodevelopmental-sciences-msc": {
           "name": "Clinical Neurodevelopmental Sciences MSc",
@@ -242,10 +242,10 @@
         "kcl-clinical-pharmacology-msc": {
           "name": "Clinical Pharmacology MSc",
           "degreeType": "MSc",
-          "faculty": "",
-          "department": "",
-          "parseStatus": "no-deadline",
-          "deadlineHash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+          "faculty": "Faculty of Life Sciences & Medicine",
+          "department": "School of Cancer & Pharmaceutical Sciences",
+          "parseStatus": "incomplete",
+          "deadlineHash": "5857c2f76942a1bf553b6e59090b0b41295e759093f84a9d524eae1f0f449aa2"
         },
         "kcl-clinical-research-delivery-msc": {
           "name": "Clinical Research Delivery MSc",

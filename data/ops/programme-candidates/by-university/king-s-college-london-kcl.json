@@ -607,37 +607,14 @@
         "universityId": "king-s-college-london-kcl",
         "name": "Clinical Education MA",
         "degreeType": "MA",
-        "faculty": "Faculty of Life Sciences & Medicine | King’s Learning Institute",
+        "faculty": "",
         "applicationUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/how-to-apply",
         "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/clinical-education-ma-pg-dip-pg-cert/requirements"
       },
-      "windows": [
-        {
-          "intake": "September 2026",
-          "round": "First application deadline",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": null,
-          "opensAtBasis": "missing",
-          "closesAt": "2026-07-25",
-          "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/clinical-education-ma-pg-dip-pg-cert/requirements"
-        },
-        {
-          "intake": "September 2026",
-          "round": "Final application deadline",
-          "applicantCategories": [
-            "all"
-          ],
-          "opensAt": null,
-          "opensAtBasis": "missing",
-          "closesAt": "2026-08-25",
-          "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/clinical-education-ma-pg-dip-pg-cert/requirements"
-        }
-      ],
-      "parseStatus": "incomplete",
-      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
-      "evidenceExcerpt": "Application closing date guidance We encourage you to apply as early as possible so that there is sufficient time for your application to be assessed. We may need to request further information from you during the application process. Our first application deadline is on 25 July 2026 (23:59 UK time) The final application deadline is on 25 August 2026 (23:59 UK time) After the first application deadline: if the programme is not yet full, we will continue to accept applications until all available places are filled up to the final application deadlines above if the programme becomes full before the final application deadlines stated above, we will close the programme to further applications Please note: Students apply via our experienced Distance Learning partner, Informa Connect, who deliver the Diploma programme in conjunction with King’s. Informa will guide you through the application process. "
+      "windows": [],
+      "parseStatus": "no-deadline",
+      "reviewReason": "No application deadline was parsed.",
+      "evidenceExcerpt": "Course found in the official KCL sitemap, but its requirements page could not be fetched during discovery: FetchFailure: HTTP 429"
     },
     {
       "id": "new-programme:kcl-clinical-neurodevelopmental-sciences-msc",
@@ -769,14 +746,37 @@
         "universityId": "king-s-college-london-kcl",
         "name": "Clinical Pharmacology MSc",
         "degreeType": "MSc",
-        "faculty": "",
+        "faculty": "Faculty of Life Sciences & Medicine | School of Cancer & Pharmaceutical Sciences",
         "applicationUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/how-to-apply",
         "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/clinical-pharmacology-msc/requirements"
       },
-      "windows": [],
-      "parseStatus": "no-deadline",
-      "reviewReason": "No application deadline was parsed.",
-      "evidenceExcerpt": "Course found in the official KCL sitemap, but its requirements page could not be fetched during discovery: FetchFailure: HTTP 429"
+      "windows": [
+        {
+          "intake": "September 2026",
+          "round": "Final application deadline",
+          "applicantCategories": [
+            "international"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-07-25",
+          "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/clinical-pharmacology-msc/requirements"
+        },
+        {
+          "intake": "September 2026",
+          "round": "Final application deadline",
+          "applicantCategories": [
+            "home"
+          ],
+          "opensAt": null,
+          "opensAtBasis": "missing",
+          "closesAt": "2026-08-25",
+          "sourceUrl": "https://www.kcl.ac.uk/study/postgraduate-taught/courses/clinical-pharmacology-msc/requirements"
+        }
+      ],
+      "parseStatus": "incomplete",
+      "reviewReason": "At least one opening date is not published as an exact date; confirm it on the programme page.",
+      "evidenceExcerpt": "Application closing date guidance We encourage you to apply as early as possible so that there is sufficient time for your application to be assessed and we may need to request further information from you during the application process. Full-time MSc: The final application deadlines for this programme are: Overseas (international) fee status: 25 July 2026 (23:59 UK time) Home fee status: 25 August 2026 (23:59 UK time) If the programme becomes full before the final application deadlines stated above, we will close the programme to further applications. Please note, you will not be eligible for an application fee refund if we are unable to process further offers because places are filled and we close the course before the final application deadline. Part-time MSc: We accept applications on a rolling basis throughout the year, but you should submit your application at the latest two months before the module start date. Applicants who will require a visa to enter and study in the UK should note that they will be unable to obtain a Student visa for standalone modules or part-time study. A visa can only be obtained for the full-time study option of this programme. Please note funding applications may be subject to specific deadlines. "
     },
     {
       "id": "new-programme:kcl-clinical-research-delivery-msc",

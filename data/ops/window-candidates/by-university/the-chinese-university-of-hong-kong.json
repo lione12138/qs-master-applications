@@ -1,6 +1,468 @@
 {
   "items": [
     {
+      "id": "adapter-window:cuhk-accountancy-master-2026-main-application-period:2025-09-01:2026-03-31",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-accountancy-master-2026-main-application-period",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-accountancy-master",
+        "intake": "September 2026",
+        "round": "Main application period",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-03-31",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed Master of Accountancy opening on 2025-09-01 and closing on 2026-03-31. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-04-30",
+          "observed": "2026-03-31"
+        }
+      },
+      "evidenceExcerpt": "1 August 2025 (Early Round) 31 March 2026 Application will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. The application may be closed early if places are no longer available. The subsequent applications received may not be considered. 1 August 2025 (Early Round) 30 April 2026 Application will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. The application may be closed early if places are no longer available. The subsequent applications received may not be considered.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-cardiology-msc-2026-main-application-period:2025-09-01:2026-02-28",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-cardiology-msc-2026-main-application-period",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-cardiology-msc",
+        "intake": "September 2026",
+        "round": "Main application period",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-02-28",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MSc in Cardiology opening on 2025-09-01 and closing on 2026-02-28. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-05-31",
+          "observed": "2026-02-28"
+        }
+      },
+      "evidenceExcerpt": "28 February 2026 (Non-local) 31 May 2026 (Local)",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-chinese-art-history-ma-2026-main-round:2025-09-01:2025-12-31",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-chinese-art-history-ma-2026-main-round",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-chinese-art-history-ma",
+        "intake": "September 2026",
+        "round": "Main round",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2025-12-31",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MA in Chinese Art History opening on 2025-09-01 and closing on 2025-12-31. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-04-17",
+          "observed": "2025-12-31"
+        }
+      },
+      "evidenceExcerpt": "1 st round: 31 December 2025 2 nd round: 17 April 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-environmental-information-health-and-public-management-msc-2026-main-application-period:2025-09-01:2026-03-31",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-environmental-information-health-and-public-management-msc-2026-main-application-period",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-environmental-information-health-and-public-management-msc",
+        "intake": "September 2026",
+        "round": "Main application period",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-03-31",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MSc in Environmental Information, Health and Public Management opening on 2025-09-01 and closing on 2026-03-31. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-04-30",
+          "observed": "2026-03-31"
+        }
+      },
+      "evidenceExcerpt": "31 March 2026 30 April 2026",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-epidemiology-and-biostatistics-msc-2026-final-round:2025-09-01:2026-05-17",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-epidemiology-and-biostatistics-msc-2026-final-round",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-epidemiology-and-biostatistics-msc",
+        "intake": "September 2026",
+        "round": "Final round",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-05-17",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MSc in Epidemiology and Biostatistics opening on 2025-09-01 and closing on 2026-05-17. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-06-14",
+          "observed": "2026-05-17"
+        }
+      },
+      "evidenceExcerpt": "Priority round: 28 February 2026 Final round: 17 May 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered. Priority round: 15 March 2026 Final round: 14 June 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-epidemiology-and-biostatistics-msc-2026-priority-round:2025-09-01:2026-02-28",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-epidemiology-and-biostatistics-msc-2026-priority-round",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-epidemiology-and-biostatistics-msc",
+        "intake": "September 2026",
+        "round": "Priority round",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-02-28",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MSc in Epidemiology and Biostatistics opening on 2025-09-01 and closing on 2026-02-28. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-03-15",
+          "observed": "2026-02-28"
+        }
+      },
+      "evidenceExcerpt": "Priority round: 28 February 2026 Final round: 17 May 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered. Priority round: 15 March 2026 Final round: 14 June 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-finance-msc-2026-main-application-period:2025-09-01:2026-03-31",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-finance-msc-2026-main-application-period",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-finance-msc",
+        "intake": "September 2026",
+        "round": "Main application period",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-03-31",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MSc in Finance opening on 2025-09-01 and closing on 2026-03-31. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-04-30",
+          "observed": "2026-03-31"
+        }
+      },
+      "evidenceExcerpt": "31 March 2026 Application will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. The application may be closed early if places are no longer available. The subsequent applications received may not be considered. 30 April 2026 Application will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. The application may be closed early if places are no longer available. The subsequent applications received may not be considered.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-musculoskeletal-medicine-rehabilitation-and-geriatric-orthopaedics-msc-2026-main-application-period:2025-09-01:2026-04-30",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-musculoskeletal-medicine-rehabilitation-and-geriatric-orthopaedics-msc-2026-main-application-period",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-musculoskeletal-medicine-rehabilitation-and-geriatric-orthopaedics-msc",
+        "intake": "September 2026",
+        "round": "Main application period",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-04-30",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MSc in Musculoskeletal Medicine, Rehabilitation and Geriatric Orthopaedics opening on 2025-09-01 and closing on 2026-04-30. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-05-31",
+          "observed": "2026-04-30"
+        }
+      },
+      "evidenceExcerpt": "30 April 2026 31 May 2026",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-public-health-master-2026-final-round:2025-09-01:2026-05-17",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-public-health-master-2026-final-round",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-public-health-master",
+        "intake": "September 2026",
+        "round": "Final round",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-05-17",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed Master of Public Health opening on 2025-09-01 and closing on 2026-05-17. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-06-14",
+          "observed": "2026-05-17"
+        }
+      },
+      "evidenceExcerpt": "Priority round: 28 February 2026 Final round: 17 May 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered. Priority round: 15 March 2026 Final round: 14 June 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-public-health-master-2026-priority-round:2025-09-01:2026-02-28",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-public-health-master-2026-priority-round",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-public-health-master",
+        "intake": "September 2026",
+        "round": "Priority round",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-02-28",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed Master of Public Health opening on 2025-09-01 and closing on 2026-02-28. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-03-15",
+          "observed": "2026-02-28"
+        }
+      },
+      "evidenceExcerpt": "Priority round: 28 February 2026 Final round: 17 May 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered. Priority round: 15 March 2026 Final round: 14 June 2026 Applications will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. If places are no longer available after the priority round, the subsequent applications received may not be considered.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
+      "id": "adapter-window:cuhk-sustainable-global-business-msc-2026-main-application-period:2025-09-01:2026-03-31",
+      "type": "adapter-window-change",
+      "status": "approved",
+      "universityId": "the-chinese-university-of-hong-kong",
+      "detectedAt": "2026-07-24T06:50:32.427065+00:00",
+      "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+      "openingBasis": "official",
+      "record": {
+        "id": "cuhk-sustainable-global-business-msc-2026-main-application-period",
+        "universityId": "the-chinese-university-of-hong-kong",
+        "scopeType": "programme",
+        "scopeId": "cuhk-sustainable-global-business-msc",
+        "intake": "September 2026",
+        "round": "Main application period",
+        "applicantCategories": [
+          "all"
+        ],
+        "opensAt": "2025-09-01",
+        "closesAt": "2026-03-31",
+        "applicationUrl": "https://www.gradsch.cuhk.edu.hk/OnlineApp/login_email.aspx",
+        "sourceUrl": "https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed MSc in Sustainable Global Business opening on 2025-09-01 and closing on 2026-03-31. Source: https://www.gs.cuhk.edu.hk/admissions/application-deadline",
+        "intakeDetails": {
+          "label": "September 2026",
+          "cycleYear": 2026,
+          "academicYearEnd": null,
+          "term": "fall",
+          "startMonth": 9
+        }
+      },
+      "changes": {
+        "closesAt": {
+          "previous": "2026-04-30",
+          "observed": "2026-03-31"
+        }
+      },
+      "evidenceExcerpt": "1 August 2025 (Early Round) 31 March 2026 Application will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. The application may be closed early if places are no longer available. The subsequent applications received may not be considered. 1 August 2025 (Early Round) 30 April 2026 Application will be processed on a rolling basis until all places have been filled. Therefore, early applications are strongly encouraged. The application may be closed early if places are no longer available. The subsequent applications received may not be considered.",
+      "reviewedBy": "automated-official-source-policy",
+      "reviewedAt": "2026-07-24T07:10:13.503237+00:00"
+    },
+    {
       "id": "adapter-window:cuhk-accountancy-master-2026-main-application-period:2025-09-01:2026-04-30",
       "type": "adapter-window-change",
       "status": "approved",
