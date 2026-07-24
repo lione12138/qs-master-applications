@@ -2136,6 +2136,15 @@ body.window-detail-open {
   overflow-wrap: anywhere;
 }
 
+.school-country-inline,
+.mobile-date-range {
+  display: none;
+}
+
+.desktop-deadline-stack {
+  display: contents;
+}
+
 .program-cell {
   max-width: 220px;
 }
@@ -4160,6 +4169,22 @@ footer p {
     font-size: 15px;
   }
 
+  .application-table:not(.university-table) .school-country-inline {
+    display: inline;
+    color: var(--ink);
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .application-table:not(.university-table) .school-meta,
+  .application-table:not(.university-table) .desktop-deadline-stack {
+    display: none;
+  }
+
+  .application-table:not(.university-table) .mobile-date-range {
+    display: block;
+  }
+
   .application-table:not(.university-table) .school-link::after {
     display: none;
   }
@@ -4718,7 +4743,12 @@ footer p {
   }
 
   .application-table:not(.university-table) .school-group-summary {
-    gap: 5px;
+    gap: 0;
+  }
+
+  .application-table:not(.university-table) .school-group-summary-heading,
+  .application-table:not(.university-table) .school-group-counts {
+    display: none;
   }
 
   .application-table:not(.university-table) .school-group-kicker {
