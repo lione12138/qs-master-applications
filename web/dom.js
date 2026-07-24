@@ -33,6 +33,16 @@ export function parseDate(value) {
   return new Date(`${value}T00:00:00Z`);
 }
 
+export function formatCompactDate(value) {
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(value || ""));
+  if (!match) return value || "—";
+  return `${Number(match[1])}.${Number(match[2])}.${Number(match[3])}`;
+}
+
+export function formatDateRange(opensAt, closesAt) {
+  return `${formatCompactDate(opensAt)} - ${formatCompactDate(closesAt)}`;
+}
+
 export function acronym(value = "") {
   return String(value)
     .split(/[^A-Za-z0-9]+/)

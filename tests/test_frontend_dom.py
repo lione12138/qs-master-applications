@@ -40,6 +40,22 @@ def test_frontend_parse_date_and_acronym() -> None:
     }
 
 
+def test_frontend_compact_date_range_uses_mobile_numeric_format() -> None:
+    script = """
+      import { formatCompactDate, formatDateRange } from __MODULE__;
+      console.log(JSON.stringify({
+        date: formatCompactDate("2026-08-18"),
+        range: formatDateRange("2026-08-18", "2026-09-28"),
+        missingOpen: formatDateRange("", "2026-09-28"),
+      }));
+    """.replace("__MODULE__", json.dumps(MODULE_URI))
+    assert run_node(script) == {
+        "date": "2026.8.18",
+        "range": "2026.8.18 - 2026.9.28",
+        "missingOpen": "— - 2026.9.28",
+    }
+
+
 def test_frontend_safe_url_blocks_unsafe_protocols() -> None:
     script = """
       globalThis.window = { location: { href: "https://gradwindow.com/" } };

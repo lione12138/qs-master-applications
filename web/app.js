@@ -14,7 +14,14 @@ import {
   setupReviewPanel,
   updateReviewAuthState,
 } from "./review.js";
-import { acronym, makeElement, makeLink, parseDate, safeUrl } from "./dom.js";
+import {
+  acronym,
+  formatDateRange,
+  makeElement,
+  makeLink,
+  parseDate,
+  safeUrl,
+} from "./dom.js";
 import {
   canonicalIntake,
   compareIntakes,
@@ -185,6 +192,53 @@ function daysUntil(dateValue) {
 
 function formatDate(value) {
   return dateFormatter().format(parseDate(value));
+}
+
+function makeSchoolDisplay(record) {
+  const school = document.createDocumentFragment();
+  const schoolText = schoolLabels(record, state.language);
+  const country = countryLabel(record.country, state.language);
+  school.appendChild(
+    makeLink(schoolText.primary, record.applicationUrl, "school-link"),
+  );
+  if (country) {
+    school.appendChild(
+      makeElement("span", {
+        className: "school-country-inline",
+        text: `(${country})`,
+      }),
+    );
+  }
+  school.appendChild(
+    makeElement("span", {
+      className: "school-meta",
+      text: [schoolText.secondary, country].filter(Boolean).join(" · "),
+    }),
+  );
+  return school;
+}
+
+function makeResponsiveDeadline(
+  opensAt,
+  closesAt,
+  secondary,
+  primaryClass = "date-primary",
+) {
+  const deadline = document.createDocumentFragment();
+  const desktop = makeElement("span", {
+    className: "desktop-deadline-stack",
+  });
+  desktop.appendChild(
+    makeTextStack(formatDate(closesAt), secondary, primaryClass),
+  );
+  deadline.append(
+    desktop,
+    makeElement("span", {
+      className: `mobile-date-range ${primaryClass}`,
+      text: formatDateRange(opensAt, closesAt),
+    }),
+  );
+  return deadline;
 }
 
 function recordIntake(record) {
@@ -942,19 +996,7 @@ function createRow(record, status, windowGroup = null) {
         record.qsRank,
     ),
   });
-  const school = document.createDocumentFragment();
-  const schoolText = schoolLabels(record, state.language);
-  school.appendChild(
-    makeLink(schoolText.primary, record.applicationUrl, "school-link"),
-  );
-  school.appendChild(
-    makeElement("span", {
-      className: "school-meta",
-      text: [schoolText.secondary, countryLabel(record.country, state.language)]
-        .filter(Boolean)
-        .join(" · "),
-    }),
-  );
+  const school = makeSchoolDisplay(record);
   const intake = intakeLabel(recordIntake(record), state.language);
   const localizedRound = roundLabel(record.round, state.language);
   const programme = makeLinkedTextStack(
@@ -1008,8 +1050,9 @@ function createRow(record, status, windowGroup = null) {
         : `${t("verifiedOn")} ${record.verifiedAt}`,
     }),
   );
-  const deadline = makeTextStack(
-    formatDate(record.closesAt),
+  const deadline = makeResponsiveDeadline(
+    record.opensAt,
+    record.closesAt,
     deadlineNote(record, status),
     `date-primary ${deadlineClass}`.trim(),
   );
@@ -1084,22 +1127,7 @@ function createUniversityGroupRow(universityGroup, status) {
         representative.qsRank,
     ),
   });
-  const school = document.createDocumentFragment();
-  const schoolText = schoolLabels(representative, state.language);
-  school.appendChild(
-    makeLink(schoolText.primary, representative.applicationUrl, "school-link"),
-  );
-  school.appendChild(
-    makeElement("span", {
-      className: "school-meta",
-      text: [
-        schoolText.secondary,
-        countryLabel(representative.country, state.language),
-      ]
-        .filter(Boolean)
-        .join(" · "),
-    }),
-  );
+  const school = makeSchoolDisplay(representative);
 
   const programmes = new Set(records.map((record) => record.scopeId));
   const programmeSummary = makeElement("div", {
@@ -1196,8 +1224,9 @@ function createUniversityGroupRow(universityGroup, status) {
     ),
     makeCell(
       t("deadline"),
-      makeTextStack(
-        formatDate(nearestDeadline.closesAt),
+      makeResponsiveDeadline(
+        earliestOpen,
+        nearestDeadline.closesAt,
         `${t("nextDeadlineLabel")} · ${deadlineNote(nearestDeadline, status)}`,
       ),
     ),
