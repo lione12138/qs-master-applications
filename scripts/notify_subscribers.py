@@ -10,7 +10,7 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).parents[1]
 DATA_DIR = ROOT / "data"
-MAX_EVENTS_PER_REQUEST = 20
+MAX_EVENTS_PER_DIGEST = 1000
 
 
 def read_json(name: str) -> dict:
@@ -71,45 +71,48 @@ def notify(events: list[dict]) -> bool:
     if not events:
         print("No official application windows are currently open.")
         return True
-    total_sent = 0
-    total_failed = 0
-    for start in range(0, len(events), MAX_EVENTS_PER_REQUEST):
-        batch = events[start : start + MAX_EVENTS_PER_REQUEST]
-        request = Request(
-            f"{endpoint}/admin/notify",
-            data=json.dumps({"events": batch}).encode("utf-8"),
-            headers={
-                "Authorization": f"Bearer {api_key}",
-                "Content-Type": "application/json",
-                "User-Agent": "GradWindow-GitHub-Actions/1.0",
-            },
-            method="POST",
+    if len(events) > MAX_EVENTS_PER_DIGEST:
+        print(
+            f"Refusing to split {len(events)} events into multiple emails; "
+            f"the digest limit is {MAX_EVENTS_PER_DIGEST}.",
+            file=sys.stderr,
         )
-        try:
-            with urlopen(request, timeout=45) as response:
-                result = json.loads(response.read().decode("utf-8"))
-        except HTTPError as exc:
-            response_body = exc.read().decode("utf-8", errors="replace")
-            print(
-                "Notification request failed: "
-                f"HTTP {exc.code} {exc.reason}; body={response_body[:1000]}",
-                file=sys.stderr,
-            )
-            return False
-        except (URLError, TimeoutError) as exc:
-            print(
-                f"Notification request failed: {type(exc).__name__}: {exc}",
-                file=sys.stderr,
-            )
-            return False
-        if not result.get("ok"):
-            print("Notification service rejected the request.", file=sys.stderr)
-            return False
-        total_sent += result.get("sent", 0)
-        total_failed += result.get("failed", 0)
+        return False
+    request = Request(
+        f"{endpoint}/admin/notify",
+        data=json.dumps({"events": events}).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "User-Agent": "GradWindow-GitHub-Actions/1.0",
+        },
+        method="POST",
+    )
+    try:
+        with urlopen(request, timeout=45) as response:
+            result = json.loads(response.read().decode("utf-8"))
+    except HTTPError as exc:
+        response_body = exc.read().decode("utf-8", errors="replace")
+        print(
+            "Notification request failed: "
+            f"HTTP {exc.code} {exc.reason}; body={response_body[:1000]}",
+            file=sys.stderr,
+        )
+        return False
+    except (URLError, TimeoutError) as exc:
+        print(
+            f"Notification request failed: {type(exc).__name__}: {exc}",
+            file=sys.stderr,
+        )
+        return False
+    if not result.get("ok"):
+        print("Notification service rejected the request.", file=sys.stderr)
+        return False
+    total_sent = result.get("sent", 0)
+    total_failed = result.get("failed", 0)
     print(
         f"Processed {len(events)} open official windows; "
-        f"sent {total_sent} alerts; "
+        f"sent {total_sent} digest emails; "
         f"{total_failed} deliveries failed."
     )
     return total_failed == 0

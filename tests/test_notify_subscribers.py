@@ -141,3 +141,21 @@ def test_notify_normalizes_bearer_api_key(monkeypatch) -> None:
     assert module.notify([{"id": "example-window", "opensAt": "2026-07-10"}]) is True
     assert captured["url"] == "https://example.edu/admin/notify"
     assert captured["authorization"] == "Bearer " + "demo-token"
+
+
+def test_notify_sends_a_large_event_set_in_one_digest_request(monkeypatch) -> None:
+    module = load_module()
+    requests: list[list[dict]] = []
+
+    def fake_urlopen(request, timeout=45):
+        assert timeout == 45
+        requests.append(json.loads(request.data.decode("utf-8"))["events"])
+        return FakeResponse({"ok": True, "sent": 1, "failed": 0})
+
+    monkeypatch.setenv("GRADWINDOW_SUBSCRIBE_URL", "https://notify.example")
+    monkeypatch.setenv("GRADWINDOW_NOTIFY_API_KEY", "shared-key")
+    monkeypatch.setattr(module, "urlopen", fake_urlopen)
+    events = [{"id": f"window-{index}"} for index in range(502)]
+
+    assert module.notify(events) is True
+    assert requests == [events]
