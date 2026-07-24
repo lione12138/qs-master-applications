@@ -250,9 +250,9 @@ def approve_programme_candidates(
         exact_windows = [
             window for window in windows if has_official_exact_window(window)
         ]
-        if parsed_only and candidate.get("parseStatus") != "parsed":
-            continue
-        if not exact_windows:
+        if parsed_only and (
+            candidate.get("parseStatus") != "parsed" or not exact_windows
+        ):
             continue
         programme = copy.deepcopy(candidate.get("programme") or {})
         programme_id = programme.get("id")
@@ -308,7 +308,7 @@ def approve_programme_candidates(
                 "review."
             )
 
-    if promoted_windows == 0:
+    if promoted_programmes == 0 and promoted_windows == 0:
         return {
             "promotedProgrammes": 0,
             "promotedWindows": 0,

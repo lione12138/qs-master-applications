@@ -247,6 +247,59 @@ def test_approve_programme_candidates_rejects_inferred_opening(tmp_path) -> None
     assert report["remainingPending"] == 1
 
 
+def test_approve_programme_candidates_can_publish_catalogue_only_records(
+    tmp_path,
+) -> None:
+    programs_path = tmp_path / "programs.json"
+    applications_path = tmp_path / "applications.json"
+    candidates_path = tmp_path / "programme-candidates.json"
+    programs_path.write_text(
+        PROGRAMS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
+    )
+    applications_path.write_text(
+        APPLICATIONS_PATH.read_text(encoding="utf-8"), encoding="utf-8"
+    )
+    candidate = {
+        "id": "new-programme:catalogue-only-example",
+        "type": "new-programme",
+        "status": "pending",
+        "universityId": "imperial-college-london",
+        "programme": {
+            "id": "catalogue-only-example",
+            "universityId": "imperial-college-london",
+            "name": "MSc Catalogue Only Example",
+            "degreeType": "MSc",
+            "faculty": "Department A",
+            "applicationUrl": "https://www.imperial.ac.uk/study/",
+            "sourceUrl": "https://www.imperial.ac.uk/study/courses/",
+        },
+        "windows": [],
+        "parseStatus": "no-deadline",
+    }
+    candidates_path.write_text(
+        json.dumps({"meta": {}, "items": [candidate]}), encoding="utf-8"
+    )
+
+    report = approve_programme_candidates(
+        university_id="imperial-college-london",
+        reviewer="test-reviewer",
+        parsed_only=False,
+        candidates_path=candidates_path,
+        programs_path=programs_path,
+        applications_path=applications_path,
+    )
+
+    assert report == {
+        "promotedProgrammes": 1,
+        "promotedWindows": 0,
+        "remainingPending": 0,
+    }
+    programs = json.loads(programs_path.read_text(encoding="utf-8"))["programs"]
+    assert any(item["id"] == "catalogue-only-example" for item in programs)
+    candidates = json.loads(candidates_path.read_text(encoding="utf-8"))["items"]
+    assert candidates[0]["status"] == "approved"
+
+
 def test_approve_window_rejects_non_official_opening_basis(tmp_path) -> None:
     candidates_path = tmp_path / "window-candidates.json"
     candidates_path.write_text(

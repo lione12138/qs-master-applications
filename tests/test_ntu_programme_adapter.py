@@ -1,117 +1,75 @@
-from __future__ import annotations
-
-import json
-
-from gradwindow.programme_adapters.ntu import (
-    APPLICATION_URL,
-    NTUAdapter,
-    catalog_page_url,
+from gradwindow.programme_adapters.ntu_taiwan import (
+    ADMISSIONS_URL,
+    CATALOG_URL,
+    NTUTaiwanAdapter,
+    parse_official_chinese_translations,
 )
 
-PAGE_ONE = {
-    "totalPages": 2,
-    "totalItems": 4,
-    "items": [
-        {
-            "title": "Master of Science in Maritime Studies",
-            "url": "/education/graduate-programme/master-of-science-in-maritime-studies",
-            "tag": "Science | Sustainability",
-            "description": "Study maritime policy and operations.",
-        },
-        {
-            "title": "Master of Computing In Applied AI (MCAAI)",
-            "url": "/education/graduate-programme/master-of-computing-in-applied-ai-mcaai",
-            "tag": "Computing",
-            "description": "Applied artificial intelligence coursework.",
-        },
-    ],
-}
+CATALOGUE = """
+<h1>2026/2027 Available Graduate Degree Programs and Application Requirements</h1>
+<table><tbody>
+  <tr class="js-degreeTr js-showM"><td class="js-college">College of Liberal Arts</td>
+    <td class="js-deptName" data-degree="M">Graduate Institute of Linguistics</td>
+    <td data-degree="M"><a href="/globaladmission/foreign/requirement/dept.detail/id/demo/degree_key/M/sn/101">Open</a></td></tr>
+  <tr class="js-degreeTr js-showM"><td class="js-college">College of Electrical Engineering and Computer Science</td>
+    <td class="js-deptName" data-degree="M">Department of Computer Science and Information Engineering</td>
+    <td data-degree="M"><a href="/globaladmission/foreign/requirement/dept.detail/id/demo/degree_key/M/sn/202">Open</a></td></tr>
+  <tr class="js-degreeTr"><td class="js-college">College of Science</td>
+    <td class="js-deptName" data-degree="M">Closed Institute</td><td data-degree="M"><span>-</span></td></tr>
+</tbody></table>
+"""
 
-PAGE_TWO = {
-    "totalPages": 2,
-    "totalItems": 4,
-    "items": [
-        {
-            "title": "Master of Arts in Translation and Interpretation",
-            "url": "/education/graduate-programme/master-of-arts-in-translation-and-interpretation",
-            "tag": "Humanities",
-            "description": "Professional translation and interpretation.",
-        },
-        {
-            "title": "Master of Science Technopreneurship and Innovation Programme (CN)",
-            "url": "/education/graduate-programme/technopreneurship-cn",
-            "tag": "Business | Innovation/Entrepreneurship",
-            "description": "Chinese-language programme.",
-        },
-    ],
-}
+ADMISSIONS = """
+<h5>2027 February Entry (Graduate programs only)</h5>
+<p>Application Period: August 3 (11AM) – September 17, 2026 (4PM)</p>
+"""
 
-APPLICATION_HTML = """
-<html><body>
-  <table>
-    <tr><th>Admission Year &amp; Intake</th><th>Admission Date</th>
-      <th>Programme Name</th><th>Opening Date</th><th>Closing Date</th></tr>
-    <tr><td>2026 / Semester 2</td><td>11-Jan-27</td>
-      <td>202 - MSC(MARITIME STUDIES)</td><td>1-Jul-26</td><td>31-Aug-26</td></tr>
-    <tr><td>2026 / Semester 2</td><td>11-Jan-27</td>
-      <td>282 - MASTER OF ARTS (TRANSLATION &amp; INTERPRETATION)</td>
-      <td>1-Jul-26</td><td>31-Aug-26</td></tr>
-  </table>
-</body></html>
+CHINESE_CATALOGUE = """
+<table><tbody>
+  <tr class="js-degreeTr"><td class="js-college">文學院</td>
+    <td class="js-deptName" data-degree="M">語言學研究所</td>
+    <td data-degree="M"><a href="/globaladmission/foreign/requirement/dept.detail/id/demo/degree_key/M/sn/101">查看</a></td></tr>
+  <tr class="js-degreeTr"><td class="js-college">電機資訊學院</td>
+    <td class="js-deptName" data-degree="M">資訊工程學系</td>
+    <td data-degree="M"><a href="/globaladmission/foreign/requirement/dept.detail/id/demo/degree_key/M/sn/202">查看</a></td></tr>
+</tbody></table>
 """
 
 
-def _fetcher(url: str) -> str:
-    if url == catalog_page_url(1):
-        return json.dumps(PAGE_ONE)
-    if url == catalog_page_url(2):
-        return json.dumps(PAGE_TWO)
-    if url == APPLICATION_URL:
-        return APPLICATION_HTML
-    raise AssertionError(url)
+def test_ntu_adapter_discovers_available_masters_with_exact_shared_window() -> None:
+    pages = {CATALOG_URL: CATALOGUE, ADMISSIONS_URL: ADMISSIONS}
+    catalog = NTUTaiwanAdapter(
+        minimum_expected_programmes=2
+    ).parse_catalog_from_fetcher(pages.__getitem__)
 
-
-def test_ntu_adapter_combines_catalogue_with_live_application_windows() -> None:
-    catalog = NTUAdapter(minimum_expected_programmes=4).parse_catalog_from_fetcher(
-        _fetcher
+    assert [item.id for item in catalog.programmes] == [
+        "ntu-computer-science-information-engineering-master",
+        "ntu-international-master-101",
+    ]
+    window = catalog.programmes[0].windows[0]
+    assert (window.opens_at, window.closes_at, window.intake) == (
+        "2026-08-03",
+        "2026-09-17",
+        "February 2027",
     )
-
-    assert catalog.application_opens_at is None
-    assert [programme.id for programme in catalog.programmes] == [
-        "ntu-applied-artificial-intelligence-mcomp",
-        "ntu-maritime-studies-msc",
-        "ntu-technopreneurship-and-innovation-programme-cn-msc",
-        "ntu-translation-and-interpretation-ma",
-    ]
-    assert catalog.programmes[0].windows == []
-    assert catalog.programmes[0].parse_status == "no-deadline"
-    maritime = catalog.programmes[1]
-    assert maritime.parse_status == "parsed"
-    assert [
-        (
-            window.intake,
-            window.round,
-            window.opens_at,
-            window.closes_at,
-            window.applicant_categories,
-        )
-        for window in maritime.windows
-    ] == [
-        (
-            "January 2027",
-            "Semester 2",
-            "2026-07-01",
-            "2026-08-31",
-            ["all"],
-        )
-    ]
-    assert catalog.programmes[3].windows[0].closes_at == "2026-08-31"
+    assert window.applicant_categories == ["international-students"]
+    assert window.source_url == ADMISSIONS_URL
 
 
-def test_ntu_adapter_rejects_truncated_catalogue() -> None:
+def test_ntu_adapter_rejects_a_truncated_catalogue() -> None:
+    pages = {CATALOG_URL: CATALOGUE, ADMISSIONS_URL: ADMISSIONS}
     try:
-        NTUAdapter(minimum_expected_programmes=5).parse_catalog_from_fetcher(_fetcher)
-    except ValueError as exc:
-        assert "only contained 4" in str(exc)
+        NTUTaiwanAdapter(minimum_expected_programmes=3).parse_catalog_from_fetcher(
+            pages.__getitem__
+        )
+    except ValueError as error:
+        assert "expected at least 3" in str(error)
     else:
-        raise AssertionError("Truncated NTU catalogue was accepted")
+        raise AssertionError("truncated NTU catalogue was accepted")
+
+
+def test_ntu_official_chinese_names_are_joined_by_programme_number() -> None:
+    assert parse_official_chinese_translations(CATALOGUE, CHINESE_CATALOGUE) == {
+        "ntu-computer-science-information-engineering-master": "資訊工程學系",
+        "ntu-international-master-101": "語言學研究所",
+    }

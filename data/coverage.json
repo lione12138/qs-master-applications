@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-23T17:21:54.882445+00:00",
+    "generatedAt": "2026-07-24T06:47:22.780503+00:00",
     "rankingScope": "QS World University Rankings 2027 top 200",
     "batchSize": 5,
     "definition": "Entry, policy, programme, and exact-window coverage are counted separately. Predictions never count as verified deadlines."
@@ -15,9 +15,9 @@
     "limitedMastersAvailability": 5,
     "universitiesWithPrograms": 190,
     "universitiesWithWindows": 52,
-    "verifiedWindows": 4520,
+    "verifiedWindows": 4581,
     "universitiesWithPredictions": 52,
-    "predictedWindows": 4465,
+    "predictedWindows": 4526,
     "nextActions": {
       "locate-official-entry": 0,
       "verify-window-policy": 0,
@@ -168,7 +168,7 @@
       "policiesVerified": 5,
       "universitiesWithPrograms": 5,
       "universitiesWithWindows": 3,
-      "predictedWindows": 4
+      "predictedWindows": 65
     },
     {
       "batch": 12,
@@ -1806,7 +1806,7 @@
         "opensText": "3-13 March 2026",
         "notes": "Online applications closed on 13 March, while supporting documents were accepted until 17 March 2026."
       },
-      "programmeCount": 1,
+      "programmeCount": 105,
       "windowCount": 1,
       "predictionCount": 1,
       "nextAction": "monitor-and-refresh"
@@ -1830,9 +1830,9 @@
         "opensText": "1 October-13 November 2025 and 1 December 2025-15 January 2026",
         "notes": "The international admissions page publishes two complete September-entry rounds."
       },
-      "programmeCount": 1,
-      "windowCount": 2,
-      "predictionCount": 2,
+      "programmeCount": 61,
+      "windowCount": 63,
+      "predictionCount": 63,
       "nextAction": "monitor-and-refresh"
     },
     {
@@ -2142,7 +2142,7 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 1,
+      "programmeCount": 95,
       "windowCount": 0,
       "predictionCount": 0,
       "nextAction": "verify-exact-windows"
@@ -2166,7 +2166,7 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 1,
+      "programmeCount": 116,
       "windowCount": 0,
       "predictionCount": 0,
       "nextAction": "verify-exact-windows"
@@ -2526,7 +2526,7 @@
         "opensText": "Use the central graduate admissions route; exact dates remain programme-specific unless a central deadline page is published.",
         "notes": "Replaced earlier computer/data-science programme page with institution-level graduate admissions guidance."
       },
-      "programmeCount": 20,
+      "programmeCount": 122,
       "windowCount": 20,
       "predictionCount": 20,
       "nextAction": "monitor-and-refresh"

@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "id": "adapter-window:ntu-computer-science-information-engineering-master-2027-international-application-round-international-students:2026-08-03:2026-09-17",
+      "type": "adapter-new-window",
+      "status": "approved",
+      "universityId": "national-taiwan-university-ntu",
+      "detectedAt": "2026-07-24T06:36:15.074453+00:00",
+      "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+      "openingBasis": "official",
+      "record": {
+        "id": "ntu-computer-science-information-engineering-master-2027-international-application-round-international-students",
+        "universityId": "national-taiwan-university-ntu",
+        "scopeType": "programme",
+        "scopeId": "ntu-computer-science-information-engineering-master",
+        "intake": "February 2027",
+        "round": "International application round",
+        "applicantCategories": [
+          "international-students"
+        ],
+        "opensAt": "2026-08-03",
+        "closesAt": "2026-09-17",
+        "applicationUrl": "https://oiasystem.ntu.edu.tw/globaladmission/foreign",
+        "sourceUrl": "https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+        "verifiedAt": "2026-07-24",
+        "evidence": "The official programme adapter observed Master's Programme in Department of Computer Science and Information Engineering opening on 2026-08-03 and closing on 2026-09-17. Source: https://admissions.ntu.edu.tw/apply/degree-students/international-students/",
+        "intakeDetails": {
+          "label": "February 2027",
+          "cycleYear": 2027,
+          "academicYearEnd": null,
+          "term": "other",
+          "startMonth": 2
+        }
+      },
+      "changes": {},
+      "evidenceExcerpt": "NTU's official international admissions page publishes the February 2027 application period from 2026-08-03 to 2026-09-17.",
+      "reviewedBy": "codex",
+      "reviewedAt": "2026-07-24T06:37:18.452554+00:00"
+    }
+  ]
+}
